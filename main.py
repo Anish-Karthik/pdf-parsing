@@ -19,8 +19,20 @@ if __name__ == '__main__':
 
             # print(underlineObject.all_underline_sentences)
             passageObjects = []
+            section = 1
             for i, passage in enumerate(passages):
-                passageObjects.append(processPassage(passage, i + 1, underlineObject))
+                # section assignment
+                passageObject = processPassage(passage, i + 1, underlineObject)
+                try:
+                    if len(passageObjects) > 1:
+                        prevQuestionNumbers = passageObjects[-1].questionNumbers.split(",")
+                        currQuestionNumbers = passageObject.questionNumbers.split(",")
+                        if int(prevQuestionNumbers[-1]) > int(currQuestionNumbers[0]) and int(prevQuestionNumbers[-1]) > 0 and int(currQuestionNumbers[0]) > 0:
+                            section += 1
+                except Exception as e:
+                    print("Error in section assignment:",e)
+                passageObject.section = section
+                passageObjects.append(passageObject)
 
             write_text_to_file("****************************************\n\n\n".join(passages), "debug/SAT1tempPassages.txt")
             write_text_to_file("".join(pdf_text), "debug/SAT1temp.txt")
