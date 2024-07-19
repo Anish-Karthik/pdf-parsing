@@ -1,10 +1,11 @@
+import re
 from typing import Tuple
+
 from classes.metadata import Metadata
 from classes.passage import Passage
 from classes.wordlist import WordList
 from utils.util import removenextline
 
-import re
 class PassageUtils:
   @staticmethod
   def split_passages(text: str) -> list:
@@ -81,7 +82,10 @@ def extract_character_metadata(data: str) -> Tuple[str, Metadata]:
   # replace all the patten matching with this regex (\.|\?)\n with (\.|\?)\n\t
   data = re.sub(r"(\.|\?)\n", r"\1\n\t", data)
   # data = strip_excess_whitespace_paragraphs(data)
-  lines = [0] + [m.end(0) for m in re.finditer(r"\n", data)]
+  # match all the \n except the \n following the pattern Passage \d*
+  # data = re.sub(r"(?<!Passage \d*)\n", "", data)
+  
+  lines = [0] + [m.end(0) for m in re.finditer(r"(?<!Passage \d)\n", data)]
   paragraphs = [0] + [m.end(0)-1 for m in re.finditer(r"(\.|\?)\n\t", data)]
   # replace all the \n with " ", which are not followed by \t
   data = re.sub(r"\n(?!\t)", r" ", data)

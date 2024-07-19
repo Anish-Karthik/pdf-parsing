@@ -42,3 +42,6 @@ def merge2dataframes(df1: pd.DataFrame, df2: pd.DataFrame) -> pd.DataFrame:
 
 def mergeNdataframes(dfs: List[pd.DataFrame]) -> pd.DataFrame:
     return pd.concat(dfs, ignore_index=True)
+
+def readExcelIntoDataFrame(filename: str) -> pd.DataFrame:
+    return pd.read_excel(filename)
