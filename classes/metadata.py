@@ -1,11 +1,11 @@
-from typing import List
+from typing import List, Tuple
 class Metadata:
-  def __init__(self, paragraphs: List[int], lines: List[int], sentences: List[int], imagePositions: List[int]):
+  def __init__(self, paragraphs: List[int], lines: List[int], sentences: List[int], imagePositions: List[int], underlines: List[Tuple[int,int]] = []) -> None:
     self.paragraphs = paragraphs
     self.lines = lines
     self.sentences = sentences
     self.imagePositions = imagePositions
-    self.underlines = []
+    self.underlines = underlines
   
   def __str__(self):
     return f"Paragraphs: {self.paragraphs}\nLines: {self.lines}\nSentences: {self.sentences}\nImage Positions: {self.imagePositions}"
