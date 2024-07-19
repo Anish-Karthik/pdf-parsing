@@ -1,10 +1,11 @@
 import re
-from typing import Tuple
+from typing import Tuple, List
 
 from classes.metadata import Metadata
 from classes.passage import Passage
 from classes.wordlist import WordList
 from utils.util import removenextline
+from utils.underline import Underline
 
 class PassageUtils:
   @staticmethod
@@ -92,8 +93,71 @@ def extract_character_metadata(data: str) -> Tuple[str, Metadata]:
   sentences = [0] + [m.end(0) for m in re.finditer(r"\. ", data)]
   return data, Metadata(paragraphs, lines, sentences, [])
 
+def add_reference_number_to_underline(underlineObject: Underline, data: str) -> str:
+  try:
+    breakNow = False
+    cnt = 1
+    underlines = []
+    inc = 0
+    i = underlineObject.current
+    passage = data.replace("\n", " ") 
+    while not breakNow and i < len(underlineObject.all_underline_sentences):
+      [sentence, qn_no] = underlineObject.all_underline_sentences[i]
+      tmp = re.search(r"\d\n? ?" + sentence, passage)
+      if tmp is not None:
+        underlines.append((tmp.start(), tmp.end()))
+        pass
+      else:
+        tmp = [m for m in re.finditer(sentence, passage)]
+        matchIs = None
+        if len(tmp) == 1:
+          matchIs = tmp[0]
+        elif len(tmp) == 0:
+          if i != underlineObject.current:
+            print("Could not find underlined sentence: " + sentence)
+          breakNow = True
+        else:
+          if len(underlines) == 0:
+            matchIs = tmp[0]
+          else:
+            for i in range(1, len(tmp)):
+              if tmp[i].start() > underlines[-1][1]:
+                matchIs = tmp[i]
+                break
+            else:
+              matchIs = None
+        if matchIs is None:
+          breakNow = True
+        else:
+          passage = passage.replace(sentence, str(cnt)+" "+sentence)
+          cnt+=1
+          continue
+      i += 1
+    return passage
+  except Exception as e:
+    print(f"Error in adding reference number to underline: {e}")
+    raise Exception("Error in adding reference number to underline")
 
-def processPassage(passage: str, passageNo) -> Passage:
+def map_metadata_to_underlines(underlineObject: Underline, passage: str) -> List[int]:
+  underlines = []
+  # find the index of the underlined sentence in the passage matching the regex pattern
+  breakNow = False
+  i = underlineObject.current
+  while not breakNow and i < len(underlineObject.all_underline_sentences):
+    [sentence, qn_no] = underlineObject.all_underline_sentences[i]
+    tmp = re.search(r"\d\n? ?" + sentence, passage)
+    if tmp is not None:
+      underlines.append((tmp.start(), tmp.end()))
+    if sentence not in passage:
+      breakNow = True
+    if breakNow and i == underlineObject.current:
+      break
+    i += 1
+  underlineObject.current = i
+  return underlines
+
+from utils.util import write_text_to_file
+def processPassage(passage: str, passageNo, underlineObject: Underline) -> Passage:
   header, data, source_details, questionNumbers, charMetadata, wordMetadata = "", "", "", "", Metadata([], [], [], []), Metadata([], [], [], [])
   section = 1 if passageNo <= 5 else 2
   try:
@@ -103,11 +167,14 @@ def processPassage(passage: str, passageNo) -> Passage:
     source_details = extract_source_details(data)
     data = data.replace(source_details, "").strip()
     data = data.replace("\n\n", "\n")
+    data = add_reference_number_to_underline(underlineObject, data)
 
     source_details = removenextline(source_details)
     header = removenextline(header)
-    
+
     [data, charMetadata] = extract_character_metadata(data)
+    charMetadata.underlines = map_metadata_to_underlines(underlineObject, data)
+    
     wordMetadata = WordList(data).formWordMetadata(charMetadata)
   except Exception as e:
     print(f"Error in passage {passageNo}: {e}")

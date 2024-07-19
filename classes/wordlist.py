@@ -1,5 +1,7 @@
-from utils.word import WordUtils
+from typing import List, Tuple
+
 from classes.metadata import Metadata
+from utils.word import WordUtils
 
 class WordList:
     def __init__(self, data: str):
@@ -20,3 +22,10 @@ class WordList:
             raise Exception("Error in forming word metadata: Key Error")
         except Exception as e:
             raise Exception("Error in forming word metadata")
+        
+    # def formUnderlinedWordsMetadata(self, underlines: List[Tuple[int, int]]) -> List[Tuple[int, int]]:
+    #     underlinedWords = []
+    #     for start, end in underlines:
+    #         if 
+    #         underlinedWords.append((self.wordMap[start], self.wordMap[end]))
+    #     return underlinedWords

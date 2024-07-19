@@ -5,6 +5,7 @@ class Metadata:
     self.lines = lines
     self.sentences = sentences
     self.imagePositions = imagePositions
+    self.underlines = []
   
   def __str__(self):
     return f"Paragraphs: {self.paragraphs}\nLines: {self.lines}\nSentences: {self.sentences}\nImage Positions: {self.imagePositions}"
@@ -14,5 +15,6 @@ class Metadata:
       "paragraphs": self.paragraphs,
       "lines": self.lines,
       "sentences": self.sentences,
+      "underlines": self.underlines,
       "imagePositions": self.imagePositions
     })
