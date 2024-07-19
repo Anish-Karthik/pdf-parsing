@@ -23,6 +23,12 @@ class Underline:
       passage = data.replace("\n", " ") 
       while not breakNow and i < len(self.all_underline_sentences):
         [sentence, qn_no] = self.all_underline_sentences[i]
+        if "red." in sentence:
+          print(sentence)
+        special_chars = ["(", ")", "[", "]", "{", "}", ".", "*", "+", "?", "^", "$", "|", "\\"]
+        for char in special_chars:
+          if char in sentence:
+            sentence = sentence.replace(char, "\\" + char)
         tmp = re.search(r"\d\n? ?" + sentence, passage)
         if tmp is not None:
           underlines.append((tmp.start(), tmp.end()))

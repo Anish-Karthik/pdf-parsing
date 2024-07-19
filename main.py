@@ -8,7 +8,7 @@ from utils.underline import Underline
 if __name__ == '__main__':
     paperNumber = 1
     finalDataFrame = pd.DataFrame(columns=["Sample paper", "Section", "Question no","Passage", "Header", "Source details","Character Metadata","Word Metadata"])
-    for paperNumber in range(1, 2):
+    for paperNumber in range(1, 9):
         try:
             pdf_file_path = f"input/sat{paperNumber}QP_removed.pdf"
             pdf_text = extract_text_from_pdf(pdf_file_path)
@@ -31,4 +31,4 @@ if __name__ == '__main__':
         except Exception as e:
             print(f"Error in paper {paperNumber}: {e}")
             continue
-    # saveDataFrame(finalDataFrame, f"output/SAT1-8Passages.xlsx")
+    saveDataFrame(finalDataFrame, f"output/SAT1-8Passages.xlsx")
