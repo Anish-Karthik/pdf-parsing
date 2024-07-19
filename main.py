@@ -1,4 +1,4 @@
-from typing import List
+from typing import List,Tuple
 from dataclasses import dataclass
 import fitz
 import re
@@ -112,112 +112,227 @@ class PassageUtils:
     passages = PassageUtils.merge_passages(passages)
     return passages
 
-@dataclass
-class Passage:
-  def __init__(self, text: str, questionNumbers: str,header: str, source_details: str,  images: List[str], paragraphs: List[int], 
-        lines: List[int], sentences: List[int], 
-        imagePositions: List[int], section: int):
-    self.text = text
-    self.questionNumbers = questionNumbers
-    self.section = section
-    self.header = header
-    self.source_details = source_details
-    self.images = images
+
+class Metadata:
+  def __init__(self, paragraphs: List[int], lines: List[int], sentences: List[int], imagePositions: List[int]):
     self.paragraphs = paragraphs
     self.lines = lines
     self.sentences = sentences
     self.imagePositions = imagePositions
   
   def __str__(self):
-    return f"Text: {self.text}\nHeader: {self.header}\nSource Details: {self.source_details}\nImages: {self.images}\nParagraphs: {self.paragraphs}\nLines: {self.lines}\nSentences: {self.sentences}\nImage Positions: {self.imagePositions}"
+    return f"Paragraphs: {self.paragraphs}\nLines: {self.lines}\nSentences: {self.sentences}\nImage Positions: {self.imagePositions}"
   
-  def __repr__(self):
-    return f"Text: {self.text}\nHeader: {self.header}\nSource Details: {self.source_details}\nImages: {self.images}\nParagraphs: {self.paragraphs}\nLines: {self.lines}\nSentences: {self.sentences}\nImage Positions: {self.imagePositions}"
-  
+  def jsonize(self) -> str:
+    return str({
+      "paragraphs": self.paragraphs,
+      "lines": self.lines,
+      "sentences": self.sentences,
+      "imagePositions": self.imagePositions
+    })
+
+
+@dataclass
+class Passage:
+  def __init__(self, text: str, header: str, source_details: str, questionNumbers: str , section: str, characterMetadata: Metadata, wordMetadata: Metadata):
+    self.text = text
+    self.images = []
+    self.questionNumbers = questionNumbers
+    self.section = section
+    self.header = header
+    self.source_details = source_details
+    self.characterMetadata = characterMetadata
+    self.wordMetadata = wordMetadata
+
+  def __str__(self):
+    return f"Header: {self.header}\nSource Details: {self.source_details}\nText: {self.text}\nQuestion Numbers: {self.questionNumbers}\nSection: {self.section}\nCharacter Metadata: {self.characterMetadata}\nWord Metadata: {self.wordMetadata}"
+
   def jsonize(self) -> str:
     return str({
       "text": self.text,
       "header": self.header,
       "source_details": self.source_details,
+      "questionNumbers": self.questionNumbers,
+      "section": self.section,
       "images": self.images,
-      "paragraphs": self.paragraphs,
-      "lines": self.lines,
-      "sentences": self.sentences,
-      "imagePositions": self.imagePositions
+      "characterMetadata": {
+        "paragraphs": self.characterMetadata.paragraphs,
+        "lines": self.characterMetadata.lines,
+        "sentences": self.characterMetadata.sentences,
+        "imagePositions": self.characterMetadata.imagePositions
+      },
+      "wordMetadata": {
+        "paragraphs": self.wordMetadata.paragraphs,
+        "lines": self.wordMetadata.lines,
+        "sentences": self.wordMetadata.sentences,
+        "imagePositions": self.wordMetadata.imagePositions
+      }
     })
 
   def jsonifyMetadata(self):
     return str({
-      "header": self.header,
-      "source_details": self.source_details,
-      "images": self.images,
-      "paragraphs": self.paragraphs,
-      "lines": self.lines,
-      "sentences": self.sentences,
-      "imagePositions": self.imagePositions
+      "paragraphs": self.characterMetadata.paragraphs,
+      "lines": self.characterMetadata.lines,
+      "sentences": self.characterMetadata.sentences,
+      "imagePositions": self.characterMetadata.imagePositions
     })
+def extract_header(passage: str) -> str:
+  tmp = re.match(r"(Questions \d*-\d*(.|\n)*?(?=[A-Z]))", passage)
+  if tmp is None:
+    return "No header found"
+  return tmp.group()
 
-def processPassage(passage: str) -> Passage:
-    try:
-        # extract headers
-        tmp = re.match(r"(Questions \d*-\d*(.|\n)*?(?=[A-Z]))",passage)
-        # print(tmp.group())
-        header = tmp.group()
-        data = passage.replace(header,"").strip()
+def extract_data(passage: str, header: str) -> str:
+  return passage.replace(header, "").strip()
 
-        tmp = re.findall(r"\d*-\d*", header)
-        if tmp is None or len(tmp) == 0:
-            questionNumbers = "No question numbers found"
-        else:
-            questionNumbers = tmp[0]
+def extract_question_numbers(header: str) -> str:
+  tmp = re.findall(r"\d*-\d*", header)
+  if tmp is None or len(tmp) == 0:
+    return "No question numbers found"
+  return tmp[0]
 
-        # extract source details
-        tmp = re.match(r"(((This passage is)|(Passage \d{1,})) (((?:.|\n)*?\.\n)|((?:.|\n)*?\.){3}))", data) # re.split(r"(?<=\n\n)(.|\n)*?(?=\n\n)",data)
-        section = 1
-        if tmp is None:
-            source_details = "No source details found"
-            section = 2
-        else:
-        # print("".join(tmp.groups()))
-          source_details = tmp.group()  #"".join([x for x in tmp.groups() if x is not None])
+def extract_source_details(data: str) -> str:
+  tmp = re.match(r"(((This passage is)|(Passage \d{1,})) (((?:.|\n)*?\.\n)|((?:.|\n)*?\.){3}))", data)
+  if tmp is None:
+    return "No source details found"
+  return tmp.group()
 
-        data = data.replace(source_details,"")
+def strip_excess_whitespace_paragraphs(data: str) -> str:
+  # strip out the leading and trailing whitespaces
+  # replace all the whitespace followed by \n\t till the first non-whitespace character
+  data = re.sub(r"\s+\n\t(?=\S)", r"\n\t", data)
+  # replace all the whitespace followed by non-whitespace character till the first \n\t
+  data = re.sub(r"\s+(?=\S+\n\t)", r"", data)
+  return data
 
-        data = data.replace("\n\n","\n")
-        # indices of line breaks
-        # paragraphs = re.findall(r"\n\n", data)
+def extract_character_metadata(data: str) -> Tuple[str, Metadata]:
+  # replace all the patten matching with this regex (\.|\?)\n with (\.|\?)\n\t
+  data = re.sub(r"(\.|\?)\n", r"\1\n\t", data)
+  # data = strip_excess_whitespace_paragraphs(data)
+  lines = [0] + [m.end(0) for m in re.finditer(r"\n", data)]
+  paragraphs = [0] + [m.end(0)-1 for m in re.finditer(r"(\.|\?)\n\t", data)]
+  # replace all the \n with " ", which are not followed by \t
+  data = re.sub(r"\n(?!\t)", r" ", data)
+  sentences = [0] + [m.end(0) for m in re.finditer(r"\. ", data)]
+  return data, Metadata(paragraphs, lines, sentences, [])
 
-        lines = [0] + [m.end(0) for m in re.finditer(r"\n", data)]
+class Word:
+    def __init__(self, word: str, start: int, end: int, pos: int):
+        self.word = word
+        self.start = start
+        self.end = end
+        self.pos = pos # denoting the position of the word in the data
 
-        paragraphs = [0] + [m.end(0) for m in re.finditer(r"(\.|\?)\n", data)]
+    @staticmethod
+    def from_string(word: str, start: int, pos: int):
+        return Word(word, start, start + len(word), pos)
+    
+class WordList:
+    def __init__(self, data: str):
+        self.words = WordUtils.extract_words(data)
+        self.wordMap = {}
+        self.data = data
+        for word in self.words:
+            self.wordMap[word.start] = word.pos
+        
 
-        sentences = [0] + [m.end(0) for m in re.finditer(r"\. ", data)]
+    def formWordMetadata(self, charMetadata: Metadata) -> Metadata:
+        try:
+            lines = [self.wordMap[ind] for ind in charMetadata.lines]
+            paragraphs = [self.wordMap[ind] for ind in charMetadata.paragraphs]
+            sentences = [self.wordMap[ind] for ind in charMetadata.sentences]
+            imagePositions = []
+            return Metadata(paragraphs, lines, sentences, imagePositions)
+        except KeyError as e:
+            raise Exception("Error in forming word metadata: Key Error")
+        except Exception as e:
+            raise Exception("Error in forming word metadata")
+class WordUtils:
+    @staticmethod
+    def extract_words(data: str) -> List[Word]:
+        words = []
+        start = 0
+        cnt = 1
+        try:
+          for i in range(len(data)):
+            if data[i] == " " or data[i] == "\n":
+              if data[start:i] == " ":
+                start = i + 1
+                continue
+              words.append(Word(data[start:i], start, i, cnt))
+              start = i + 1
+              cnt += 1
+            # append the last word
+          if data[start:] != " " and words[-1].start != start:
+            words.append(Word(data[start:], start, len(data), cnt))
+          return words
+        except Exception as e:
+          raise Exception("Error in extracting words")
+    
+    @staticmethod
+    def indexToPos(words: List[Word], index: int) -> int:
+        for word in words:
+            if word.start <= index < word.end:
+                return word.pos
+        return -1
+    
+    def extract_words_metadata_from_char_metadata(words: List[Word], charMetadata: Metadata) -> Metadata:
+        paragraphs = [WordUtils.indexToPos(words, charMetadata.paragraphs[0])]
+        lines = [WordUtils.indexToPos(words, charMetadata.lines[0])]
+        sentences = [WordUtils.indexToPos(words, charMetadata.sentences[0])]
+        imagePositions = []
+        return Metadata(paragraphs, lines, sentences, imagePositions)
 
-        # Extract images
-        # images = re.findall(r"Image \d{1,}", passage)
-        # imagePositions = []
-        # for image in images:
-        #     imagePositions.append(passage.index(image))
-        # # Extract paragraphs
-        # paragraphs = re.findall(r"\n\n", passage)
-        # # Extract lines
-        # lines = re.findall(r"\n", passage)
-        # # Extract sentences
-        # sentences = re.findall(r"\. ", passage)
-        return Passage(data, questionNumbers, header, source_details, [], paragraphs, lines, sentences, [], section)
-    except Exception as e:
-        print(f"Error in passage: {e}")
-        return Passage(passage, "Error in passage", "Error in passage", "Error in passage", [], [], [], [], [], 0)
+
+    @staticmethod
+    def extract_words_metadata(words: List[Word]) -> Metadata:
+        paragraphs = [0]
+        lines = [0]
+        sentences = [0]
+        imagePositions = []
+        for word in words:
+            if word.word == "\n":
+                lines.append(word.pos)
+            if word.word == ".":
+                sentences.append(word.pos)
+        return Metadata(paragraphs, lines, sentences, imagePositions)
+    def extract_words_metadata_from_string(data: str) -> Metadata:
+        return WordUtils.extract_words_metadata(WordUtils.extract_words(data))
+
+def processPassage(passage: str, passageNo) -> Passage:
+  header, data, source_details, questionNumbers, charMetadata, wordMetadata = "", "", "", "", Metadata([], [], [], []), Metadata([], [], [], [])
+  section = 1 if passageNo <= 5 else 2
+  try:
+    header = extract_header(passage)
+    data = extract_data(passage, header)
+    questionNumbers = extract_question_numbers(header)
+    source_details = extract_source_details(data)
+    data = data.replace(source_details, "").strip()
+    data = data.replace("\n\n", "\n")
+
+    source_details = removenextline(source_details)
+    header = removenextline(header)
+    
+    [data, charMetadata] = extract_character_metadata(data)
+    wordMetadata = WordList(data).formWordMetadata(charMetadata)
+  except Exception as e:
+    print(f"Error in passage {passageNo}: {e}")
+  return Passage(data, header, source_details, questionNumbers, section, charMetadata, wordMetadata)
 
 def asPanadasDF(passages: List[Passage], paperNumber) -> pd.DataFrame:
-    df = pd.DataFrame(columns=["Sample paper", "Section", "Question no","Passage","Metadata"])
-    for passage in passages:
+    df = pd.DataFrame(columns=["Sample paper", "Section", "Question no","Passage", "Header", "Source details","Character Metadata","Word Metadata"])
+    for i, passage in enumerate(passages):
+        # if i > 4:
+        #     passage.section = 2
         df = pd.concat([df, pd.DataFrame({
             "Sample paper": [paperNumber],
             "Section": [passage.section],
             "Question no": [passage.questionNumbers],
             "Passage": [passage.text],
-            "Metadata": [passage.jsonifyMetadata()]
+            "Header": [passage.header],
+            "Source details": [passage.source_details],
+            "Character Metadata": [passage.characterMetadata.jsonize()],
+            "Word Metadata": [passage.wordMetadata.jsonize()]
         })], ignore_index=True)
     return df
 
@@ -226,7 +341,17 @@ def saveAsExcel(passages: List[Passage], filename: str, paperNumber) -> None:
     print(df)
     # write_text_to_file(df.to_string(), filename.replace("xlsx","txt"))
     # error here
-    df.to_excel(filename, index=False)
+    # df.to_excel(filename, index=False)
+    writer = pd.ExcelWriter(filename, engine='xlsxwriter')
+    df.to_excel(writer, index=False)
+    workbook = writer.book
+    worksheet = writer.sheets['Sheet1']
+    format_wrap = workbook.add_format({'text_wrap': True, 'valign': 'top'})
+    for i in range(3):
+        worksheet.set_column(i, i, 13, format_wrap)
+    for i in range(3, len(df.columns)):
+        worksheet.set_column(i, i, 60, format_wrap)
+    writer.close()
 
 if __name__ == '__main__':
     paperNumber = 1
@@ -239,9 +364,9 @@ if __name__ == '__main__':
 
             # print(len(passages))
             passageObjects = []
-            for passage in passages:
+            for i, passage in enumerate(passages):
                 # process passage
-                passageObjects.append(processPassage(passage))
+                passageObjects.append(processPassage(passage, i + 1))
                 # print(passageObjects[-1])
 
             # print(len(passageObjects))

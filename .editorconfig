@@ -1,0 +1,25 @@
+# EditorConfig helps developers define and maintain consistent coding styles across different editors and IDEs
+
+# Top-most EditorConfig file
+root = true
+
+# Set the default charset to UTF-8
+[*]
+charset = utf-8
+
+# Indentation settings
+[*.py]
+indent_style = space
+indent_size = 4
+
+# End of line settings
+[*.py]
+end_of_line = lf
+
+# Trim trailing whitespaces
+[*]
+trim_trailing_whitespace = true
+
+# Ensure a newline at the end of each file
+[*]
+insert_final_newline = true
