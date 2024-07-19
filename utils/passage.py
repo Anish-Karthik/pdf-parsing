@@ -48,7 +48,20 @@ def extract_question_numbers(header: str) -> str:
   tmp = re.findall(r"\d*-\d*", header)
   if tmp is None or len(tmp) == 0:
     return "No question numbers found"
-  return tmp[0]
+  qnos = []
+  st, en = -1, 0
+  try:
+    st,en = map(int, tmp[0].split("-"))
+  except:
+    if st == -1 and en == -1:
+      return "No question numbers found"
+    if en == -1:
+      en = st + 10
+    if st == -1:
+      st = en - 10
+  for i in range(st, en+1):
+    qnos.append(str(i))
+  return ",".join(qnos)
 
 def extract_source_details(data: str) -> str:
   tmp = re.match(r"(((This passage is)|(Passage \d{1,})) (((?:.|\n)*?\.\n)|((?:.|\n)*?\.){3}))", data)

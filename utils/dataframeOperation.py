@@ -19,6 +19,8 @@ def asPanadasDF(passages: List[Passage], paperNumber) -> pd.DataFrame:
 
 def saveDataFrame(df: pd.DataFrame, filename: str) -> None:
     writer = pd.ExcelWriter(filename, engine='xlsxwriter')
+    print("Saving data frame")
+    print(df)
     df.to_excel(writer, index=False)
     workbook = writer.book
     worksheet = writer.sheets['Sheet1']
