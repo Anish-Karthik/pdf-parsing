@@ -1,3 +1,4 @@
+import os
 import re
 
 import fitz
@@ -52,12 +53,16 @@ def extract_passages_from_pdf(pdf_file: str):
 
 
 if __name__ == '__main__':
-    paperNumber = 1
     finalDataFrame = pd.DataFrame(columns=["Sample paper", "Section", "Question no","Passage", "Header", "Source details","Character Metadata","Word Metadata"])
-    pdf_file_path = f"input/CAT2021_paper1.pdf"
-    for paperNumber in range(1, 2):
+    pdf_file_path = ""
+    file_list = os.listdir("input/cat")
+
+    # Iterate over each file
+    for file_name in file_list[:3]:
+        if file_name.endswith(".pdf"):
+            pdf_file_path = os.path.join("input/cat", file_name)
+            paperNumber = file_name.rstrip(".pdf")
         try:
-            pdf_file_path = f"input/CAT2021_paper{paperNumber}.pdf"
             [headers,passages,qnos] = extract_passages_from_pdf(pdf_file_path)
             passageObjects = []
             section = 1
@@ -76,11 +81,11 @@ if __name__ == '__main__':
                     print("Error in section assignment:",e)
                 passageObject.section = section
                 passageObjects.append(passageObject)
-
+            
             df = asPanadasDF(passageObjects, paperNumber)
-            saveDataFrame(df, f"output/cat/CAT{paperNumber}Passages.xlsx")
+            saveDataFrame(df, f"output/cat/{paperNumber}Passages.xlsx")
             finalDataFrame = merge2dataframes(finalDataFrame, df)
         except Exception as e:
             print(f"Error in paper {paperNumber}: {e}")
             continue
-    saveDataFrame(finalDataFrame, f"output/cat/CAT1-8Passages.xlsx")
+    saveDataFrame(finalDataFrame, f"output/cat/CATPassages.xlsx")
