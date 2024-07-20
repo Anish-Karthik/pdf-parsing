@@ -81,7 +81,7 @@ def strip_excess_whitespace_paragraphs(data: str) -> str:
 
 def extract_character_metadata(data: str) -> Tuple[str, Metadata]:
   # replace all the patten matching with this regex (\.|\?)\n with (\.|\?)\n\t
-  data = re.sub(r"(\.|\?)\n", r"\1\n\t", data)
+  data = re.sub(r"(\.|\?) ?\n", r"\1\n\t", data)
   # data = strip_excess_whitespace_paragraphs(data)
   # match all the \n except the \n following the pattern Passage \d*
   # data = re.sub(r"(?<!Passage \d*)\n", "", data)
@@ -93,7 +93,7 @@ def extract_character_metadata(data: str) -> Tuple[str, Metadata]:
   sentences = [0] + [m.end(0) for m in re.finditer(r"\. ", data)]
   return data, Metadata(paragraphs, lines, sentences, [])
 
-def processPassage(passage: str, passageNo, underlineObject: Underline) -> Passage:
+def processPassage(passage: str, passageNo, underlineObject: Underline = None) -> Passage:
   header, data, source_details, questionNumbers, charMetadata, wordMetadata = "", "", "", "", Metadata([], [], [], []), Metadata([], [], [], [])
   section = 1 if passageNo <= 5 else 2
   try:
@@ -103,13 +103,15 @@ def processPassage(passage: str, passageNo, underlineObject: Underline) -> Passa
     source_details = extract_source_details(data)
     data = data.replace(source_details, "").strip()
     data = data.replace("\n\n", "\n")
-    data = underlineObject.add_reference_number_to_underline(data)
+    if underlineObject is not None:
+      data = underlineObject.add_reference_number_to_underline(data)
 
     source_details = removenextline(source_details)
     header = removenextline(header)
 
     [data, charMetadata] = extract_character_metadata(data)
-    charMetadata.underlines = underlineObject.map_metadata_to_underlines(data)
+    if underlineObject is not None:
+      charMetadata.underlines = underlineObject.map_metadata_to_underlines(data)
     
     wordMetadata = WordList(data).formWordMetadata(charMetadata)
   except Exception as e:
