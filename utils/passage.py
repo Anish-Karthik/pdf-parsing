@@ -104,7 +104,7 @@ def processPassage(passage: str, passageNo, underlineObject: Underline = None) -
     data = data.replace(source_details, "").strip()
     data = data.replace("\n\n", "\n")
     if underlineObject is not None:
-      data = underlineObject.add_reference_number_to_underline(data)
+      underlineObject.add_reference_number_to_underline(data)
 
     source_details = removenextline(source_details)
     header = removenextline(header)

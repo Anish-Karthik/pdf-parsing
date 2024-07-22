@@ -13,7 +13,7 @@ class Underline:
     self.current = 0
     return self.all_underline_sentences
   
-  def add_reference_number_to_underline(self, data: str) -> str:
+  def add_reference_number_to_underline(self, data: str):
     try:
       breakNow = False
       cnt = 1
@@ -59,7 +59,6 @@ class Underline:
             cnt+=1
             continue
         i += 1
-      return passage
     except Exception as e:
       print(f"Error in adding reference number to underline: {e}")
       raise Exception("Error in adding reference number to underline")
