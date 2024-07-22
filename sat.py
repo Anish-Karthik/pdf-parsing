@@ -36,6 +36,8 @@ if __name__ == '__main__':
                         currQuestionNumbers = passageObject.questionNumbers.split(",")
                         if int(prevQuestionNumbers[-1]) > int(currQuestionNumbers[0]) and int(prevQuestionNumbers[-1]) > 0 and int(currQuestionNumbers[0]) > 0:
                             section += 1
+                    if section >= 2:
+                        break
                 except Exception as e:
                     print("Error in section assignment:",e)
                 passageObject.section = section

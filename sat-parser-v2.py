@@ -9,19 +9,29 @@ from utils.util import write_text_to_file
 
 
 def isStartOfPassage(block):
-    return bool(re.match(r'Questions \d*-\d*', block[4]))
+    isStart =  bool(re.match(r'Questions \d*.*\d*', block[4]))
+    return isStart
+
+def fixBugForPassage4(txt):
+    if "22-\x142" in txt:
+        return txt.replace("22-\x142", "22-32")
+    if "\x14\x14-\x152" in txt:
+        return txt.replace("\x14\x14-\x152", "33-42")
+    if "\x15\x14-52" in txt:
+        return txt.replace("\x15\x14-52", "43-52")
+    return txt
 
 def isEndOfPassage(block, qno = None):
     if qno:
-        return re.search(r"^"+str(qno), block[4])
-    return block[0] in [338.7315979003906, 318.2538146972656, 39.872100830078125, 42.38639831542969]
+        return re.search(r"^"+str(qno)+"", block[4])
+    return block[0] in [338.7315979003906, 318.2538146972656, 39.872100830078125, 42.38639831542969, 68.39437866210938]
 
-def parseQuestionNumber(block) -> list:
-    tmp = [int(x) for x in re.findall(r"\d+", block[4])]
-    if tmp is None:
+def parseQuestionNumber(txt) -> list:
+    tmp = [int(x) for x in re.findall(r"\d+", txt)]
+    if tmp is None or len(tmp) < 2:
         return []
     st, end = tmp
-    return list(range(st, end+1))
+    return list(range(st, max(end,st+10)+1))
 
 def is_extra(block) -> bool:
     # isNum = bool(re.match(r"\d+\n",block[4]))
@@ -31,11 +41,12 @@ def is_extra(block) -> bool:
         re.search(r"Unauthorized copying", block[4]) or
         re.search(r"CO NTI N U E", block[4]) or
         re.search(r"STOP", block[4]) or
+        re.search(r"SAT.*PRACTICE\n", block[4]) or
         not re.search(r'[a-zA-Z]', block[4])
     )
 
 
-def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf"):
+def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 4.pdf"):
     doc = fitz.open(pdf_file)
     passages = []
     isPassageStarted = False
@@ -46,8 +57,12 @@ def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf
     for page in doc:
         blocks = page.get_text("blocks") 
         for block in blocks:
+            # print(block)
             if isPassageStarted:
-                if isEndOfPassage(block, qnos[-1][0]):
+                tmp = None
+                try: tmp = qnos[-1][0] 
+                except IndexError: pass
+                if isEndOfPassage(block, tmp):
                     isPassageStarted = False
                     passages.append("".join(passage))
                     passage = []
@@ -58,21 +73,22 @@ def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf
                 continue
             if isStartOfPassage(block):
                 headers.append(block[4])
-                qnos.append(parseQuestionNumber(block))
+                qnos.append(parseQuestionNumber(fixBugForPassage4(block[4])))
                 isPassageStarted = True
                 continue
-    print(passages)
+    # print(passages)
     write_text_to_file("\n\n\n\n".join(passages), "debug/SAT1tempPassages.txt")
-    print(qnos)
+    # print(qnos)
+    # print(headers)
     return (headers,passages,qnos)
-
+# extract_passages_from_pdf()
 if __name__ == '__main__':
     finalDataFrame = pd.DataFrame(columns=["Sample paper", "Section", "Question no","Passage", "Header", "Source details","Character Metadata","Word Metadata"])
     pdf_file_path = ""
     file_list = os.listdir("input/sat")
 
     # Iterate over each file
-    for paperNumber, file_name in enumerate(file_list[3:4], start=4):
+    for paperNumber, file_name in enumerate(file_list, start=1):
         if file_name.endswith(".pdf"):
             pdf_file_path = os.path.join("input/sat", file_name)
             # paperNumber = file_name.rstrip(".pdf")
@@ -104,4 +120,4 @@ if __name__ == '__main__':
         except Exception as e:
             print(f"Error in paper {paperNumber}: {e}")
             continue
-    saveDataFrame(finalDataFrame, f"output/sat2/SATPassages.xlsx")
+    saveDataFrame(finalDataFrame, f"output/sat2/final/SATPassages.xlsx")
