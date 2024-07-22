@@ -7,12 +7,13 @@ from utils.util import write_text_to_file
 
 
 def isStartOfPassage(block):
-    return bool(re.match(r'Questions \d*-\d*', block[4]))
+    return re.search(r'Questions \d+.\d+', block[4])
 
 def isEndOfPassage(block, qno = None):
-    if qno:
-        return re.search(r"^"+str(qno), block[4])
-    return block[0] in [338.7315979003906, 318.2538146972656, 39.872100830078125, 42.38639831542969]
+#     if qno:
+#         return re.search(r"^"+str(qno), block[4])
+#     print(block[4])
+    return block[0] in [10.040771484375]
 
 def parseQuestionNumber(block) -> list:
     tmp = [int(x) for x in re.findall(r"\d+", block[4])]
@@ -33,7 +34,7 @@ def is_extra(block) -> bool:
     )
 
 
-def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf"):
+def extract_passages_from_pdf(pdf_file: str):
     doc = fitz.open(pdf_file)
     passages = []
     isPassageStarted = False
@@ -41,13 +42,13 @@ def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf
     headers = []
     qnos = []
     
-    for page in doc:
+    for page in doc[14:118]:
         blocks = page.get_text("blocks") 
         for block in blocks:
             print(block)
             
             if isPassageStarted:
-                if isEndOfPassage(block, qnos[-1][0]):
+                if isEndOfPassage(block):
                     isPassageStarted = False
                     passages.append("".join(passage))
                     passage = []
@@ -62,8 +63,9 @@ def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf
                 isPassageStarted = True
                 continue
     print(passages)
-    write_text_to_file("\n\n\n\n".join(passages), "debug/SAT1tempPassages.txt")
+    write_text_to_file("\n\n\n\n".join(passages), "debug/baron1tempPassages.txt")
     print(qnos)
+    print(headers)
     return (headers,passages,qnos)
 
-extract_passages_from_pdf()
+extract_passages_from_pdf("input/baron.pdf")
