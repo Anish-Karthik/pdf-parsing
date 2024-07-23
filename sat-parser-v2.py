@@ -36,6 +36,7 @@ def parseQuestionNumber(txt) -> list:
     st, end = tmp
     return list(range(st, max(end,st+10)+1))
 
+
 def is_extra(block) -> bool:
     # isNum = bool(re.match(r"\d+\n",block[4]))
     # if not alphanumeric
@@ -66,6 +67,29 @@ def isStartOfParagraph(block, prevBlock = None):
 def modifyBlockText(block, txt):
     return (*block[:4], txt, *block[5:])
 
+def getReferences(passage: str, startline: int, endLine = None):
+    print("REFERENCES number", startline, endLine)
+    lines = passage.split("\n")
+    startline -= 1
+    if endLine:
+        endLine -= 1
+    startWord = len(" ".join(lines[:startline]).split())
+    if not endLine:
+        endLine = startline
+    if endLine == len(lines):
+        endWord = len(" ".join(lines).split())
+    endWord = len(" ".join(lines[:endLine + 1]).split())
+    print(re.sub(r"\n", " ", passage).split()[startWord:endWord])
+    print("References:", startWord, endWord)
+    return (startWord, endWord)
+
+def cleanPassage(passage: list) -> str:
+    text = "".join([b[4] for b in passage]).strip()
+    text = re.sub(r"\n+", "\n", text)
+    tmp =  text.split("\t", 1)
+    text = tmp[1] if len(tmp) > 1 else text
+    return text
+
 def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf"):
     doc = fitz.open(pdf_file)
     passages = []
@@ -77,7 +101,7 @@ def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf
     for page in doc:
         blocks = page.get_text("blocks") 
         for block in blocks:
-            print(block)
+            # print(block)
             block = list(block) + [False]
             if isPassageStarted:
                 tmp = None
@@ -88,7 +112,13 @@ def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf
                     continue
                 if isEndOfPassage(block, tmp):
                     isPassageStarted = False
-                    passages.append("".join([b[4] for b in passage]))
+                    text = cleanPassage(passage)
+                    passages.append(text)
+                    # getReferences(text, 5)
+                    # getReferences(text, 7,8)
+                    # getReferences(text, 34,37)
+                    # getReferences(text, len(text.split("\n")))
+                    # getReferences(text, len(text.split("\n"))-2, len(text.split("\n")))
                     passage = []
                     continue
                 if is_extra(block):
@@ -108,7 +138,6 @@ def extract_passages_from_pdf(pdf_file: str = "input/sat/SAT Practice Test 1.pdf
     print(qnos)
     print(headers)
     return (headers,passages,qnos)
-# extract_passages_from_pdf()
 
 def computeSection(passageObject, passageObjects, currentSection):
     try:
@@ -122,6 +151,8 @@ def computeSection(passageObject, passageObjects, currentSection):
     return currentSection
 
 extract_passages_from_pdf()
+
+
 
 # if __name__ == '__main__':
 #     finalDataFrame = pd.DataFrame(columns=["Sample paper", "Section", "Question no","Passage", "Header", "Source details","Character Metadata","Word Metadata"])
