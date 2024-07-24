@@ -58,24 +58,43 @@ def get_options(lines):
             all_options.append(options[1:5])
     return all_options
 
-def get_options_alter(lines) -> List[Option]:
-    all_options:List[Option]  = []
-    
+def get_questions_alter(lines) -> List[Question]:
+    all_questions:List[Question] = []
+    options:List[Option] = []
+    # all_options:List[Option]  = []
+
     cur_op = 0
-    text = ""
+    qn_no = 0
+    qn_text = ""
+    op_text = ""
     options_started = False
     for ind,line in enumerate(lines):
         if (cur_op<3 and is_option_match(cur_op+1,line)) or (cur_op==3 and not is_part_of_last_option(lines[ind-1],line)):
             if cur_op == 3:
                 options_started = False
-            all_options.append(Option(text))
-            text = ""
+                all_questions.append(Question(qn_no,qn_text,options))
+            options.append(Option(op_text))
+            op_text = ""
             cur_op = (cur_op+1)%4
         if is_option_match(cur_op,line) or options_started:
+            
+            if cur_op == 0:
+                qn_no,qn_text = helper_get_question(lines,ind)
+                options = []
+                
             options_started = True
-            text += remove_next_line(line[4])
+            op_text += remove_next_line(line[4])
         # print(options_started,line[4])
-    return all_options
+    return all_questions
+
+def helper_get_question(lines,ind) -> Tuple[str,str]:
+    qn_text = ""
+    cur = ind-1
+    while not is_qn_no(lines[cur]):
+        qn_text = lines[cur][4] + qn_text
+        cur-=1
+    qn_no = lines[cur][4]
+    return remove_next_line(qn_no).strip(),remove_next_line(qn_text)
 
 def get_questions(lines, options) -> List[Question]:
     questions: List[Question] = []
