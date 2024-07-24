@@ -199,8 +199,7 @@ doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
 all_passages = extract_passages_from_pdf(blocks)
-all_options = get_options_alter(blocks)
-all_questions = get_questions(blocks, all_options)
+all_questions = get_questions_alter(blocks)
 
 all_comprehensions: List[ReadingComprehension] = []
 
