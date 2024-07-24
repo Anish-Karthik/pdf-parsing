@@ -4,10 +4,18 @@ import pandas as pd
 import pdf2image
 import re
 import os
+from typing import *
+
+class AnswerTmp:
+    def __init__(self, section: int, question_number: int, answer: str, detailed_solution: Optional[str] = None):
+        self.section = section 
+        self.question_number = question_number
+        self.answer = answer
+        self.detailed_solution = detailed_solution
+
 class SolutionParsing:
     sectionNo = 0 
     sample_paper_no = "-1"
-    passage_df = pd.DataFrame(columns=["Sample paper","Section","Question No", "Answer", "Detailed solution"])
 
     def __init__(self, pdf_path):
         self.pdf_path = pdf_path
@@ -27,7 +35,7 @@ class SolutionParsing:
                 text += pytesseract.image_to_string(page)
             cls.sample_paper_no = cls.extractSamplePaperNumber(text)
             print("Sample Paper Number : " + str(cls.sample_paper_no) + str(type(cls.sample_paper_no)))
-            cls.extractQuestions(text)
+            cls.extractAnswers(text)
             cls.sectionNo = 0
             cls.sample_paper_no = "-1"
         except Exception as e:
@@ -41,11 +49,11 @@ class SolutionParsing:
         paper_no = re.findall(paper_no_pattern,text)
         return "-1" if len(paper_no) == 0 else paper_no[0]
     @classmethod
-    def extractQuestions(cls, text):
+    def extractAnswers(cls, text) -> List[AnswerTmp]:
         # Regex pattern to match each question separately
         pattern = r"QUESTION \d+[\s\S]*?(?=QUESTION \d+|$)"
         questions = re.findall(pattern, text)
-        rows_to_add = []
+        answerObjects = []
         for question in questions:
             questionNoPattern = r"QUESTION (\d{1,})"
             questionNo = int(re.findall(questionNoPattern, question)[0])
@@ -54,34 +62,10 @@ class SolutionParsing:
             correctOption = '' if len(correctOption) == 0 else correctOption[0]
             if questionNo == 1:
                 cls.sectionNo += 1  # Increment class variable sectionNo for each new section
-            formatted_question = question.strip().replace('QUESTION '+str(questionNo),'').replace('\n',' ');
-            formatted_question = cls.replace_unwanted_text(formatted_question)
-            formatted_question = re.sub(correctOptionPattern, r'\nChoice \1', formatted_question)
-            row = {
-                "Sample paper": cls.sample_paper_no,
-                "Section": cls.sectionNo,
-                "Question No": questionNo,
-                "Answer": correctOption,
-                "Detailed solution": formatted_question
-            }
-            rows_to_add.append(row)
-        cls.passage_df = pd.concat([cls.passage_df, pd.DataFrame(rows_to_add)], ignore_index=True)
-    def export_to_excel(filename):
-        try:
-            SolutionParsing.passage_df.to_excel(filename, index=False)
-            print(f"Data exported to {filename} successfully.")
-        except Exception as e:
-            print(f"Error exporting to Excel: {e}")
-# Example usage:
-if __name__ == "__main__":
-    current_path = os.getcwd()
-    folders = os.listdir(current_path)
-    pdf_files = []
-    for i in folders:
-        if i.endswith(".pdf"):
-            pdf_files.append(i)
-    pdf_files.sort()
-    for i in pdf_files:
-        print(i)
-        SolutionParsing.extract_text_with_ocr(i)
-    SolutionParsing.export_to_excel("SAT_Solution.xlsx")
+
+            detailed_solution = question.strip().replace('QUESTION '+str(questionNo),'').replace('\n',' ');
+            detailed_solution = cls.replace_unwanted_text(detailed_solution)
+            detailed_solution = re.sub(correctOptionPattern, r'\nChoice \1', detailed_solution)
+            answerObj = AnswerTmp(cls.sectionNo, questionNo, correctOption, detailed_solution)
+            answerObjects.append(answerObj)
+        return answerObjects

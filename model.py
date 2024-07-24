@@ -27,11 +27,12 @@ class Option:
     }
 
 class Question:
-  def __init__(self, qno: int, description: str, options: List[Option], correct_option: Optional[str] = None):
+  def __init__(self, qno: int, description: str, options: List[Option], correct_option: Optional[str] = None, detailed_answer: Optional[str] = None):
     self.qno = qno
     self.description = description
     self.options = options
     self.correct_option = correct_option
+    self.detailed_answer = detailed_answer
     self.references: List[Reference] = []
   
   def to_json(self):
@@ -57,9 +58,10 @@ class Passage:
     return self.passage
 
 class ReadingComprehension:
-  def __init__(self, passage: Passage, questions: List[Question]):
+  def __init__(self, passage: Passage, questions: List[Question], section: int = 1):
     self.passage = passage
     self.questions = questions
+    self.section = section
 
   def to_json(self):
     return {
