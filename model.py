@@ -41,6 +41,7 @@ class Question:
       "description": self.description,
       "options": [option.to_json() for option in self.options],
       "correct_option": self.correct_option,
+      "detailed_answer": self.detailed_answer,
       "references": [reference.to_json() for reference in self.references]
     }
   
@@ -65,6 +66,7 @@ class ReadingComprehension:
 
   def to_json(self):
     return {
+      "section": self.section,
       "passage": self.passage.to_json(),
       "questions": [question.to_json() for question in self.questions]
     }

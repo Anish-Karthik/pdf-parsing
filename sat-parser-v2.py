@@ -3,9 +3,8 @@ from  typing import List
 import json
 
 import fitz
-from utils.dataframeOperation import asPanadasDF, merge2dataframes,saveDataFrame
-from utils.passage import processPassage
 from utils.util import write_text_to_file
+from answerSat import AnswerTmp, SolutionParsing
 
 from satQuestionParser import *
 
@@ -195,25 +194,36 @@ def populate_reference(comprehension: ReadingComprehension):
     return comprehension
 
 pdf_path = "input/sat/SAT Practice Test 1.pdf"
+answer_pdf_path = "input/sat-answers/SAT Practice Test 1.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
 all_passages = extract_passages_from_pdf(blocks)
 all_options = get_options_alter(blocks)
 all_questions = get_questions(blocks, all_options)
+all_answers = SolutionParsing.extract_text_with_ocr()
+print(len(all_answers))
+print(len(all_questions))
 
 all_comprehensions: List[ReadingComprehension] = []
 
+section = 0
 # error on all_pass 5
 for i, passage in enumerate(all_passages[:5]):
     # write_text_to_file(, f"debug/SAT1Passage{i+1}.txt")
+    if passage.qnos[0] == 1:
+        section += 1
     for ind, q in enumerate(passage.qnos, start=1):
         all_questions[q-1].qno = ind
-    obj = populate_reference(
-        ReadingComprehension(
+        answerTmpObj = all_answers[q-1]
+        if answerTmpObj.answer:
+            all_questions[q-1].correct_option = answerTmpObj.answer
+            all_questions[q-1].detailed_answer = answerTmpObj.detailed_solution
+    obj = populate_reference(ReadingComprehension(
         Passage(passage.text), 
-        all_questions[passage.qnos[0]-1: passage.qnos[-1]])
-    )
+        all_questions[passage.qnos[0]-1: passage.qnos[-1]],
+        section,
+    ))
     all_comprehensions.append(obj)
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/SATJson/sat-sample-paper-1-passage{i+1}.json")
 
