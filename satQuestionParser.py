@@ -58,7 +58,7 @@ def get_options(lines):
             all_options.append(options[1:5])
     return all_options
 
-def get_questions_alter(lines) -> List[Option]:
+def get_questions_alter(lines) -> List[Question]:
     all_questions:List[Question] = []
     options:List[Option] = []
     # all_options:List[Option]  = []
