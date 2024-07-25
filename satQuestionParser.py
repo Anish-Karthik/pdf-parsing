@@ -88,7 +88,7 @@ def get_questions_alter(lines) -> List[Question]:
     op_text = ""
     op_0_ind = None
     options_started = False
-    lines.append([0,lines[-1][3]+5,0,0,""])
+    lines.append([0,lines[-1][3]+5,0,0,"",0,0,False])
     for ind,line in enumerate(lines):
         if cur_op==3 and not is_part_of_last_option(lines[ind-1],line):
             options.append(Option(op_text))

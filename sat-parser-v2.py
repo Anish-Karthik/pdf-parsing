@@ -148,7 +148,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         # print(block)
         block = list(block) + [False]
         if isEndOfPassage(block, tmp):
-            print(block)
+            # print(block)
             text = cleanPassage(passage)
             passageObjects.append(PassageTemp(text, header, qnos))
             
@@ -166,12 +166,6 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         else:
             passage.append(block)
     return None
-    # # print(passages)
-    # write_text_to_file("\n\n\n\n".join(passage), "debug/SAT1tempPassages.txt")
-    # # print(qnos)
-    # # print(headers)
-    
-    # return all_comprehensions
 
 def isStartOfWrittingComprehension(block):
     return bool(re.search(r"WRITING AND LANGUAGE TEST", block[4], re.IGNORECASE))
@@ -220,10 +214,10 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
 
     cur_passage_questions = get_questions_alter(blocks)
     for block in blocks[1:]:
-        if (not block[-1]): continue
+        if (not block[7]): continue
         block = list(block) + [False]
         # not isLeft
-        print(block)
+        # print(block)
         if re.search(r"STOP", block[4]):
             break
         if is_extra(block):
@@ -243,50 +237,18 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
         )
     )
     return obj
-    # passages = []
-    # isRightHalf = False
-    # passage = []
-    # headers = []
-    # qnos = []
-    # passageObjects: List[PassageTemp] = []
-    # section = 2
-    # for i, block in enumerate(blocks):
-    #     block = list(block) + [False]
-    #     print(block)
-    #     # not isLeft
-    #     if (not block[7]): continue
-    #     if isStartOfPassage(block):
-    #         headers.append(block[4])
-    #         qnos.append(parseQuestionNumber(block[4]))
-    #         if len(qnos) == 1:
-    #             continue
-    #         text = cleanPassage(passage)
-    #         passages.append(text)
-    #         print("Passage found", text[:100],"\n***********\n",text[-100:])
-    #         passageObjects.append(PassageTemp(text, headers[-2], qnos[-2]))
-    #         continue
-    #     if is_extra(block):
-    #         continue
-    #     if isSectionHeader(block):
-    #         print("Section header found")
-    #         continue
-    #     if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-    #         passage.append(modifyBlockText(block, "\t"+block[4]))
-    #     else:
-    #         passage.append(block)
-    # return passageObjects
 
 
 pdf_path = "input/sat/SAT Practice Test 1.pdf"
 answer_pdf_path = "input/sat-answers/SAT Practice Test 1.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
-for block in blocks:
-    print(block)
+# for block in blocks:
+#     print(block)
 
 
 all_comprehensions = []
-all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
+# all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
 
 passage_split = split_passages(blocks)
 print(len(passage_split))
@@ -296,70 +258,13 @@ for i, split in enumerate(passage_split):
     comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
     if comprehension is not None:
         all_comprehensions.append(comprehension)
-        for j, question in enumerate(comprehension.questions):
-            question.correct_option = all_answers[i + j].answer
-            question.detailed_answer = all_answers[i + j].detailed_solution
+        # for j, question in enumerate(comprehension.questions):
+            # question.correct_option = all_answers[i + j].answer
+            # question.detailed_answer = all_answers[i + j].detailed_solution
 
-section = 0
-# error on all_pass 5
 for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/SATJson/sat-sample-paper-1-passage{i+1}.json")
 
 
 # print(json.dumps([c.to_json() for c in all_comprehensions]))
 write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
-
-# all_options = get_references(all_options)
-
-# for op in all_options:
-#     print(op)
-
-# [qtxt,qno, references]
-    
-
-
-# all_questions = get_references(all_questions)
-
-
-
-# for qn in all_questions[:50]:
-#     print(qn.description)
-#     populate_reference(qn)
-
-
-
-# if __name__ == '__main__':
-#     finalDataFrame = pd.DataFrame(columns=["Sample paper", "Section", "Question no","Passage", "Header", "Source details","Character Metadata","Word Metadata"])
-
-#     pdf_file_path = ""
-#     file_list = os.listdir("input/sat")
-
-#     # Iterate over each file
-#     for paperNumber, file_name in enumerate(file_list, start=1):
-#         if file_name.endswith(".pdf"):
-#             pdf_file_path = os.path.join("input/sat", file_name)
-#         try:
-#             [headers,passages,qnos] = extract_passages_from_pdf(pdf_file_path)
-#             passageObjects = []
-#             section = 1
-#             for i, passage in enumerate(passages):
-#                 # section assignment
-#                 passageObject = processPassage(passage, i + 1)
-
-#                 passageObject.header = headers[i]
-#                 passageObject.questionNumbers = ",".join([str(x) for x in qnos[i]])
-
-#                 section = computeSection(passageObject, passageObjects, section)
-#                 passageObject.section = section
-
-#                 if section >= 2:
-#                     break
-#                 passageObjects.append(passageObject)
-#             # Save to dataframe
-#             df = asPanadasDF(passageObjects, paperNumber)
-#             saveDataFrame(df, f"output/sat2/SAT{paperNumber}Passages.xlsx")
-#             finalDataFrame = merge2dataframes(finalDataFrame, df)
-#         except Exception as e:
-#             print(f"Error in paper {paperNumber}: {e}")
-#             continue
-#     saveDataFrame(finalDataFrame, f"output/sat2/final/SATPassages.xlsx")
