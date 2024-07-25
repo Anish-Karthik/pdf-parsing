@@ -30,6 +30,9 @@ def is_part_of_last_option(prev_line,line):
 def remove_next_line(text):
     return re.sub(r"\n"," ",text)
 
+def remove_option_number(text):
+    return re.sub(r"(?<!.)[A-D]\) ?", "", text)
+
 
 def get_each_lines(doc):
     lines = []
@@ -91,7 +94,7 @@ def get_questions_alter(lines) -> List[Question]:
     lines.append([0,lines[-1][3]+5,0,0,"",0,0,False])
     for ind,line in enumerate(lines):
         if cur_op==3 and not is_part_of_last_option(lines[ind-1],line):
-            options.append(Option(op_text))
+            options.append(Option(remove_option_number(op_text)))
             qn_no,qn_text = get_question(lines,op_0_ind)
             all_questions.append(Question(qn_no,qn_text,options))
             options_started = False
@@ -101,7 +104,7 @@ def get_questions_alter(lines) -> List[Question]:
             
         if (cur_op<3 and is_option_match(cur_op+1,line)):
             cur_op += 1
-            options.append(Option(op_text))
+            options.append(Option(remove_option_number(op_text)))
         
         if is_option_match(cur_op,line):
             if cur_op == 0:
