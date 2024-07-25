@@ -224,6 +224,8 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
         block = list(block) + [False]
         # not isLeft
         print(block)
+        if re.search(r"STOP", block[4]):
+            break
         if is_extra(block):
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
@@ -284,14 +286,19 @@ for block in blocks:
 
 
 all_comprehensions = []
+all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
 
 passage_split = split_passages(blocks)
 print(len(passage_split))
-for split, isWritingComprehension in passage_split:
+for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
+    split, isWritingComprehension = split
     comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
     if comprehension is not None:
         all_comprehensions.append(comprehension)
+        for j, question in enumerate(comprehension.questions):
+            question.correct_option = all_answers[i + j].answer
+            question.detailed_answer = all_answers[i + j].detailed_solution
 
 section = 0
 # error on all_pass 5

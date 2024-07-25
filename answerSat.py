@@ -29,15 +29,16 @@ class SolutionParsing:
         return text
     @classmethod
     def extract_text_with_ocr(cls, pdf_path = "C:/Users/anish/Documents/_intern/testline-intern/pdf-parsing/input/sat-answers/SAT Practice Test 1.pdf") -> List[AnswerTmp]:
-            text = ""
-            pages = pdf2image.convert_from_path(pdf_path)
-            for page_number, page in enumerate(pages):
-                text += pytesseract.image_to_string(page)
-            cls.sample_paper_no = cls.extractSamplePaperNumber(text)
-            print("Sample Paper Number : " + str(cls.sample_paper_no) + str(type(cls.sample_paper_no)))
-            cls.sectionNo = 0
-            cls.sample_paper_no = "-1"
-            return cls.extractAnswers(text)
+        text = ""
+        pages = pdf2image.convert_from_path(pdf_path)
+        for page_number, page in enumerate(pages):
+            print(f"Processing page {page_number}")
+            text += pytesseract.image_to_string(page)
+        cls.sample_paper_no = cls.extractSamplePaperNumber(text)
+        print("Sample Paper Number : " + str(cls.sample_paper_no) + str(type(cls.sample_paper_no)))
+        cls.sectionNo = 0
+        cls.sample_paper_no = "-1"
+        return cls.extractAnswers(text)
     @classmethod
     def extractSamplePaperNumber(cls, text):
         # print(text)
