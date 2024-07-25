@@ -3,9 +3,8 @@ from  typing import List
 import json
 
 import fitz
-from utils.dataframeOperation import asPanadasDF, merge2dataframes,saveDataFrame
-from utils.passage import processPassage
 from utils.util import write_text_to_file
+from answerSat import AnswerTmp, SolutionParsing
 
 from satQuestionParser import *
 
@@ -206,6 +205,7 @@ def computeSection(passageObject, passageObjects, currentSection):
 
 
 pdf_path = "input/sat/SAT Practice Test 1.pdf"
+answer_pdf_path = "input/sat-answers/SAT Practice Test 1.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 for block in blocks:
@@ -222,6 +222,7 @@ for split in passage_split:
     if comprehension is not None:
         all_comprehensions.append(comprehension)
 
+section = 0
 # error on all_pass 5
 for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/SATJson/sat-sample-paper-1-passage{i+1}.json")

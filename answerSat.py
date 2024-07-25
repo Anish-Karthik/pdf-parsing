@@ -12,13 +12,14 @@ class AnswerTmp:
         self.question_number = question_number
         self.answer = answer
         self.detailed_solution = detailed_solution
+    
+    def __str__(self) -> str:
+        return f"Section: {self.section}, Question Number: {self.question_number}, Answer: {self.answer}, Detailed Solution: {self.detailed_solution}"
 
 class SolutionParsing:
     sectionNo = 0 
     sample_paper_no = "-1"
 
-    def __init__(self, pdf_path):
-        self.pdf_path = pdf_path
     @staticmethod
     def replace_unwanted_text(text):
         text = re.sub(r'© \d{4}[^\n]*', '', text, flags=re.MULTILINE)
@@ -27,19 +28,16 @@ class SolutionParsing:
         # print(text)
         return text
     @classmethod
-    def extract_text_with_ocr(cls, pdf_path):
-        try:
+    def extract_text_with_ocr(cls, pdf_path = "C:/Users/anish/Documents/_intern/testline-intern/pdf-parsing/input/sat-answers/SAT Practice Test 1.pdf") -> List[AnswerTmp]:
             text = ""
             pages = pdf2image.convert_from_path(pdf_path)
             for page_number, page in enumerate(pages):
                 text += pytesseract.image_to_string(page)
             cls.sample_paper_no = cls.extractSamplePaperNumber(text)
             print("Sample Paper Number : " + str(cls.sample_paper_no) + str(type(cls.sample_paper_no)))
-            cls.extractAnswers(text)
             cls.sectionNo = 0
             cls.sample_paper_no = "-1"
-        except Exception as e:
-            print(f"Error: {e}")
+            return cls.extractAnswers(text)
     @classmethod
     def extractSamplePaperNumber(cls, text):
         # print(text)
@@ -66,6 +64,8 @@ class SolutionParsing:
             detailed_solution = question.strip().replace('QUESTION '+str(questionNo),'').replace('\n',' ');
             detailed_solution = cls.replace_unwanted_text(detailed_solution)
             detailed_solution = re.sub(correctOptionPattern, r'\nChoice \1', detailed_solution)
+
             answerObj = AnswerTmp(cls.sectionNo, questionNo, correctOption, detailed_solution)
+            print(answerObj)
             answerObjects.append(answerObj)
         return answerObjects

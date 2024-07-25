@@ -76,6 +76,7 @@ def is_extra(block) -> bool:
         re.search(r"STOP", block[4]) or
         re.search(r"SAT.*PRACTICE\n", block[4])
     )
+
 def get_questions_alter(lines) -> List[Question]:
     all_questions:List[Question] = []
     options:List[Option] = []
@@ -182,8 +183,6 @@ def populate_referencesV1(input_list: List[Question]):
             all_items[ind] = [all_items[ind], reference_lines]
     
     return all_items
-
-
 
 '''
 FINAL OUTPUT:
