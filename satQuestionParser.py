@@ -3,6 +3,10 @@ import re
 from typing import *
 from model import *
 
+def isStartOfPassage(block):
+    isStart =  bool(re.match(r'Questions \d*.*\d*', block[4]))
+    return isStart
+
 def is_qn_no(block):
     return re.search(r"(?<!.)\d+( ){0,1}\n",block[4])
 
@@ -26,15 +30,19 @@ def is_part_of_last_option(prev_line,line):
 def remove_next_line(text):
     return re.sub(r"\n"," ",text)
 
+
 def get_each_lines(doc):
     lines = []
     for page in doc:
         line = []
         blocks = page.get_text("blocks")
+        border = 323
         for block in blocks:
             if not re.search(r"(?<!.)\.",block[4]):
                 line.append(block)
-        line = sorted(line, key=lambda x: (0 if x[0]<323 else 1,x[1]))
+            else:
+                border = block[0]
+        line = sorted(line, key=lambda x: (0 if x[0]<border else 1,x[1]))
         lines.extend(line)
     return lines
 
@@ -52,63 +60,85 @@ def get_options(lines):
             while is_part_of_last_option(lines[cur-1],lines[cur]):
                 text += lines[cur][4]
                 cur+=1
-            print(text)
+            # print(text)
             options = re.split(r"(?<!.)[A-D]\)",text)
             options = [remove_next_line(option) for option in options]
             all_options.append(options[1:5])
     return all_options
 
-def get_questions_alter(lines) -> List[Option]:
+def is_extra(block) -> bool:
+    # isNum = bool(re.match(r"\d+\n",block[4]))
+    # if not alphanumeric
+    return (
+        re.search(r"Line\n5?",block[4]) or
+        re.search(r"Unauthorized copying", block[4]) or
+        re.search(r"CO NTI N U E", block[4]) or
+        re.search(r"STOP", block[4]) or
+        re.search(r"SAT.*PRACTICE\n", block[4])
+    )
+def get_questions_alter(lines) -> List[Question]:
     all_questions:List[Question] = []
     options:List[Option] = []
     # all_options:List[Option]  = []
-
     cur_op = 0
-    qn_no = 0
-    qn_text = ""
     op_text = ""
+    op_0_ind = None
     options_started = False
+    lines.append([0,lines[-1][3]+5,0,0,""])
     for ind,line in enumerate(lines):
-        if (cur_op<3 and is_option_match(cur_op+1,line)) or (cur_op==3 and not is_part_of_last_option(lines[ind-1],line)):
-            if cur_op == 3:
-                options_started = False
-                all_questions.append(Question(qn_no,qn_text,options))
+        if cur_op==3 and not is_part_of_last_option(lines[ind-1],line):
             options.append(Option(op_text))
-            op_text = ""
-            cur_op = (cur_op+1)%4
-        if is_option_match(cur_op,line) or options_started:
-            
+            qn_no,qn_text = get_question(lines,op_0_ind)
+            all_questions.append(Question(qn_no,qn_text,options))
+            options_started = False
+            options = []
+            op_0_ind = None
+            cur_op = 0
+             
+        if (cur_op<3 and is_option_match(cur_op+1,line)):
+            cur_op += 1
+            options.append(Option(op_text))
+        
+        if is_option_match(cur_op,line):
             if cur_op == 0:
-                qn_no,qn_text = helper_get_question(lines,ind)
-                options = []
-                
+                op_0_ind = ind
             options_started = True
-            op_text += remove_next_line(line[4])
+            op_text = ""
+            
+        if options_started:
+            op_text += remove_next_line(line[4]) 
+            
         # print(options_started,line[4])
     return all_questions
 
-def helper_get_question(lines,ind) -> Tuple[str,str]:
+
+    
+def get_question(lines,ind):
+    # return lines[ind-1][4]
+    # for line in lines:
+        # print(line)
     qn_text = ""
     cur = ind-1
     while not is_qn_no(lines[cur]):
-        qn_text = lines[cur][4] + qn_text
+        if not is_extra(lines[cur]):
+            qn_text = lines[cur][4] + qn_text
         cur-=1
     qn_no = lines[cur][4]
-    return remove_next_line(qn_no).strip(),remove_next_line(qn_text)
+    return remove_next_line(qn_no),remove_next_line(qn_text)
 
-def get_questions(lines, options) -> List[Question]:
-    questions: List[Question] = []
-    for ind,line in enumerate(lines):
-        if is_first_option(line):
-            qn_text = ""
-            cur = ind-1
-            while not is_qn_no(lines[cur]):
-                qn_text = lines[cur][4] + qn_text
-                cur-=1
-            qn_no = lines[cur][4]
-            # print(qn_no, qn_text)
-            questions.append(Question(remove_next_line(qn_no),remove_next_line(qn_text), options[len(questions) * 4: len(questions) * 4 + 4]))
-    return questions
+# def get_questions(lines, options) -> List[Question]:
+#     questions: List[Question] = []
+#     for ind,line in enumerate(lines):
+#         if is_first_option(line):
+#             qn_text = ""
+#             cur = ind-1
+#             while not is_qn_no(lines[cur]):
+#                 qn_text = lines[cur][4] + qn_text
+#                 cur-=1
+#             qn_no = lines[cur][4]
+#             # print(qn_no, qn_text)
+#             questions.append(Question(remove_next_line(qn_no),remove_next_line(qn_text), options[len(questions) * 4: len(questions) * 4 + 4]))
+#     return questions
             
 # def get_questions_refernce(questions):
 #     all_questions = questions

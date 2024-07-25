@@ -70,93 +70,21 @@ def modifyBlockText(block, txt):
     return (*block[:4], txt, *block[5:])
 
 def getReferences(passageText: str, startline: int, endLine = None) -> Reference:
-    print(passageText[:100])
+    # print(passageText[:100])
     lines = passageText.split("\n")
     startline -= 1
     if endLine:
         endLine -= 1
-    print("REFERENCES number", startline, endLine)
+    # print("REFERENCES number", startline, endLine)
     startWord = len(" ".join(lines[:startline]).split())
     if not endLine:
         endLine = startline
     if endLine == len(lines):
         endWord = len(" ".join(lines).split())
     endWord = len(" ".join(lines[:endLine + 1]).split())
-    print(re.sub(r"\n", " ", passageText).split()[startWord:endWord])
-    print("References:", startWord, endWord)
+    # print(re.sub(r"\n", " ", passageText).split()[startWord:endWord])
+    # print("References:", startWord, endWord)
     return Reference(startWord, endWord)
-
-def cleanPassage(passage: list) -> str:
-    text = "".join([b[4] for b in passage]).strip()
-    text = re.sub(r"\n+", "\n", text)
-    tmp =  text.split("\t", 1)
-    text = tmp[1] if len(tmp) > 1 else text
-    return text
-
-class PassageTemp:
-    def __init__(self, text: str, header: str, qnos: List[int]) -> None:
-        self.text = text
-        self.header = remove_next_line(header)
-        self.qnos = qnos
-
-def extract_passages_from_pdf(blocks):
-    passages = []
-    isPassageStarted = False
-    passage = []
-    headers = []
-    qnos = []
-    passageObjects: List[PassageTemp] = []
-    for block in blocks:
-        # print(block)
-        block = list(block) + [False]
-        if isPassageStarted:
-            tmp = None
-            try: tmp = qnos[-1][0] 
-            except IndexError: pass
-            if isSectionHeader(block):
-                print("Section header found")
-                continue
-            if isEndOfPassage(block, tmp):
-                isPassageStarted = False
-                text = cleanPassage(passage)
-                passages.append(text)
-                passageObjects.append(PassageTemp(text, headers[-1], qnos[-1]))
-                # getReferences(text, 5)
-                # getReferences(text, 7,8)
-                # getReferences(text, 34,37)
-                # getReferences(text, len(text.split("\n")))
-                # getReferences(text, len(text.split("\n"))-2, len(text.split("\n")))
-                passage = []
-                continue
-            if is_extra(block):
-                continue
-            if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-                passage.append(modifyBlockText(block, "\t"+block[4]))
-            else:
-                passage.append(block)
-            continue
-        if isStartOfPassage(block):
-            headers.append(block[4])
-            qnos.append(parseQuestionNumber(fixBugForPassage4(block[4])))
-            isPassageStarted = True
-            continue
-    # print(passages)
-    write_text_to_file("\n\n\n\n".join(passages), "debug/SAT1tempPassages.txt")
-    print(qnos)
-    print(headers)
-    
-    return passageObjects
-
-def computeSection(passageObject, passageObjects, currentSection):
-    try:
-        if len(passageObjects) > 1:
-            prevQuestionNumbers = passageObjects[-1].questionNumbers.split(",")
-            currQuestionNumbers = passageObject.questionNumbers.split(",")
-            if int(prevQuestionNumbers[-1]) > int(currQuestionNumbers[0]) and int(prevQuestionNumbers[-1]) > 0 and int(currQuestionNumbers[0]) > 0:
-                currentSection += 1
-    except Exception as e:
-        print("Error in section assignment:",e)
-    return currentSection
 
 def populate_reference(comprehension: ReadingComprehension):
     pattern1 = r"Lines\s+(\d+)\s*-\s*(\d+)"
@@ -168,10 +96,10 @@ def populate_reference(comprehension: ReadingComprehension):
         pattern2_match = re.findall(pattern2, question.description, re.IGNORECASE)
         pattern3_match = re.findall(pattern3, question.description, re.IGNORECASE)
         references = []
-        print(comprehension.passage.passage[:100])
-        print(question.description)
-        print(pattern1_match)
-        print(pattern2_match)
+        # print(comprehension.passage.passage[:100])
+        # print(question.description)
+        # print(pattern1_match)
+        # print(pattern2_match)
         if len(pattern1_match):
             references.append(getReferences(comprehension.passage.passage, int(pattern1_match[0][0]), int(pattern1_match[0][-1])))
         for startLine in pattern2_match:
@@ -190,30 +118,112 @@ def populate_reference(comprehension: ReadingComprehension):
             if len(pattern2_match):
                 option.reference = (getReferences(comprehension.passage.passage, int(pattern2_match[0])))
 
-    print(pattern1_match)
-    print(pattern2_match)
+    # print(pattern1_match)
+    # print(pattern2_match)
     return comprehension
+
+def cleanPassage(passage: list) -> str:
+    text = "".join([b[4] for b in passage]).strip()
+    text = re.sub(r"\n+", "\n", text)
+    tmp =  text.split("\t", 1)
+    text = tmp[1] if len(tmp) > 1 else text
+    return text
+
+class PassageTemp:
+    def __init__(self, text: str, header: str, qnos: List[int]) -> None:
+        self.text = text
+        self.header = remove_next_line(header)
+        self.qnos = qnos
+
+def extract_passages(blocks) -> ReadingComprehension:
+    passage = []
+    passageObjects: List[PassageTemp] = []
+    header = blocks[0][4]
+    qnos = parseQuestionNumber(fixBugForPassage4(header))
+    tmp = None
+    try: tmp = qnos[0] 
+    except IndexError: pass
+
+    cur_passage_questions = get_questions_alter(blocks)
+    for block in blocks[1:]:
+        # print(block)
+        block = list(block) + [False]
+        if isEndOfPassage(block, tmp):
+            print(block)
+            text = cleanPassage(passage)
+            passageObjects.append(PassageTemp(text, header, qnos))
+            
+            obj = populate_reference(
+                ReadingComprehension(
+                    Passage(text),
+                    cur_passage_questions
+                )
+            )
+            return obj
+        if is_extra(block):
+            continue
+        if isStartOfParagraph(block, passage[-1] if len(passage) else None):
+            passage.append(modifyBlockText(block, "\t"+block[4]))
+        else:
+            passage.append(block)
+    return None
+    # # print(passages)
+    # write_text_to_file("\n\n\n\n".join(passage), "debug/SAT1tempPassages.txt")
+    # # print(qnos)
+    # # print(headers)
+    
+    # return all_comprehensions
+
+def split_passages(blocks) -> List[List[str]]:
+    passages = []
+    isPassageStarted = False
+    passage_lines = []
+    all_comprehensions: List[ReadingComprehension] = []
+    for i,block in enumerate(blocks):
+        # print(block)
+        if isStartOfPassage(block):
+            # print(cur_passage_questions)
+            isPassageStarted = True
+            passage_lines.append(passages)
+            passages = []
+        if isPassageStarted:
+            if isSectionHeader(block):
+                continue
+            passages.append(block)
+    passage_lines.append(passages)
+    return passage_lines[1:]
+
+def computeSection(passageObject, passageObjects, currentSection):
+    try:
+        if len(passageObjects) > 1:
+            prevQuestionNumbers = passageObjects[-1].questionNumbers.split(",")
+            currQuestionNumbers = passageObject.questionNumbers.split(",")
+            if int(prevQuestionNumbers[-1]) > int(currQuestionNumbers[0]) and int(prevQuestionNumbers[-1]) > 0 and int(currQuestionNumbers[0]) > 0:
+                currentSection += 1
+    except Exception as e:
+        print("Error in section assignment:",e)
+    return currentSection
+
 
 pdf_path = "input/sat/SAT Practice Test 1.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
+for block in blocks:
+    print(block)
 
-all_passages = extract_passages_from_pdf(blocks)
-all_questions = get_questions_alter(blocks)
 
-all_comprehensions: List[ReadingComprehension] = []
+all_comprehensions = []
+
+passage_split = split_passages(blocks)
+print(len(passage_split))
+for split in passage_split:
+    # print(split,"\n\n\n\n\n\n\n\n\n")
+    comprehension = extract_passages(split)
+    if comprehension is not None:
+        all_comprehensions.append(comprehension)
 
 # error on all_pass 5
-for i, passage in enumerate(all_passages[:5]):
-    # write_text_to_file(, f"debug/SAT1Passage{i+1}.txt")
-    for ind, q in enumerate(passage.qnos, start=1):
-        all_questions[q-1].qno = ind
-    obj = populate_reference(
-        ReadingComprehension(
-        Passage(passage.text), 
-        all_questions[passage.qnos[0]-1: passage.qnos[-1]])
-    )
-    all_comprehensions.append(obj)
+for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/SATJson/sat-sample-paper-1-passage{i+1}.json")
 
 
