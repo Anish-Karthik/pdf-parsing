@@ -38,11 +38,14 @@ def get_each_lines(doc):
         blocks = page.get_text("blocks")
         border = 323
         for block in blocks:
+            block = list(block)
             if not re.search(r"(?<!.)\.",block[4]):
                 line.append(block)
             else:
                 border = block[0]
         line = sorted(line, key=lambda x: (0 if x[0]<border else 1,x[1]))
+        # extra property to check isLeft
+        line = [list(block) + [block[0] < border] for block in line]
         lines.extend(line)
     return lines
 
@@ -95,7 +98,7 @@ def get_questions_alter(lines) -> List[Question]:
             options = []
             op_0_ind = None
             cur_op = 0
-             
+            
         if (cur_op<3 and is_option_match(cur_op+1,line)):
             cur_op += 1
             options.append(Option(op_text))

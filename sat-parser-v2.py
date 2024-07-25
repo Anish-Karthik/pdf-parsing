@@ -134,7 +134,7 @@ class PassageTemp:
         self.header = remove_next_line(header)
         self.qnos = qnos
 
-def extract_passages(blocks) -> ReadingComprehension:
+def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
     passageObjects: List[PassageTemp] = []
     header = blocks[0][4]
@@ -173,23 +173,32 @@ def extract_passages(blocks) -> ReadingComprehension:
     
     # return all_comprehensions
 
-def split_passages(blocks) -> List[List[str]]:
+def isStartOfWrittingComprehension(block):
+    return bool(re.search(r"WRITING AND LANGUAGE TEST", block[4], re.IGNORECASE))
+
+def split_passages(blocks) -> List[Tuple[List[str],bool]]:
     passages = []
     isPassageStarted = False
     passage_lines = []
+    isWritingComprehension = 0
     all_comprehensions: List[ReadingComprehension] = []
     for i,block in enumerate(blocks):
         # print(block)
+        if isStartOfWrittingComprehension(block):
+            isWritingComprehension = 1
+            continue
         if isStartOfPassage(block):
             # print(cur_passage_questions)
             isPassageStarted = True
-            passage_lines.append(passages)
+            passage_lines.append((passages, isWritingComprehension == 2))
             passages = []
+            if (isWritingComprehension == 1): 
+                isWritingComprehension = 2
         if isPassageStarted:
             if isSectionHeader(block):
                 continue
             passages.append(block)
-    passage_lines.append(passages)
+    passage_lines.append((passages, isWritingComprehension == 2))
     return passage_lines[1:]
 
 def computeSection(passageObject, passageObjects, currentSection):
@@ -202,6 +211,68 @@ def computeSection(passageObject, passageObjects, currentSection):
     except Exception as e:
         print("Error in section assignment:",e)
     return currentSection
+
+def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
+    passage = []
+    passageObjects: List[PassageTemp] = []
+    header = blocks[0][4]
+    qnos = parseQuestionNumber(fixBugForPassage4(header))
+
+    cur_passage_questions = get_questions_alter(blocks)
+    for block in blocks[1:]:
+        if (not block[-1]): continue
+        block = list(block) + [False]
+        # not isLeft
+        print(block)
+        if is_extra(block):
+            continue
+        if isStartOfParagraph(block, passage[-1] if len(passage) else None):
+            passage.append(modifyBlockText(block, "\t"+block[4]))
+        else:
+            passage.append(block)
+
+    text = cleanPassage(passage)
+    passageObjects.append(PassageTemp(text, header, qnos))
+    
+    obj = populate_reference(
+        ReadingComprehension(
+            Passage(text),
+            cur_passage_questions
+        )
+    )
+    return obj
+    # passages = []
+    # isRightHalf = False
+    # passage = []
+    # headers = []
+    # qnos = []
+    # passageObjects: List[PassageTemp] = []
+    # section = 2
+    # for i, block in enumerate(blocks):
+    #     block = list(block) + [False]
+    #     print(block)
+    #     # not isLeft
+    #     if (not block[7]): continue
+    #     if isStartOfPassage(block):
+    #         headers.append(block[4])
+    #         qnos.append(parseQuestionNumber(block[4]))
+    #         if len(qnos) == 1:
+    #             continue
+    #         text = cleanPassage(passage)
+    #         passages.append(text)
+    #         print("Passage found", text[:100],"\n***********\n",text[-100:])
+    #         passageObjects.append(PassageTemp(text, headers[-2], qnos[-2]))
+    #         continue
+    #     if is_extra(block):
+    #         continue
+    #     if isSectionHeader(block):
+    #         print("Section header found")
+    #         continue
+    #     if isStartOfParagraph(block, passage[-1] if len(passage) else None):
+    #         passage.append(modifyBlockText(block, "\t"+block[4]))
+    #     else:
+    #         passage.append(block)
+    # return passageObjects
 
 
 pdf_path = "input/sat/SAT Practice Test 1.pdf"
@@ -216,9 +287,9 @@ all_comprehensions = []
 
 passage_split = split_passages(blocks)
 print(len(passage_split))
-for split in passage_split:
+for split, isWritingComprehension in passage_split:
     # print(split,"\n\n\n\n\n\n\n\n\n")
-    comprehension = extract_passages(split)
+    comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
     if comprehension is not None:
         all_comprehensions.append(comprehension)
 
