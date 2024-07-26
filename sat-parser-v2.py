@@ -11,8 +11,7 @@ from satQuestionParser import *
 
 
 def isStartOfPassage(block):
-    isStart =  bool(re.match(r'Questions \d*.*\d*', block[4]))
-    return isStart
+    return  bool(re.match(r'(?<!.)Passage\s\d+A?\s*$', block[4]))
 
 def fixBugForPassage4(txt):
     if "22-\x142" in txt:
@@ -23,13 +22,8 @@ def fixBugForPassage4(txt):
         return txt.replace("\x15\x14-52", "43-52")
     return txt
 
-def isEndOfPassage(block, qno = None):
-    if qno:
-        # get all the numbers in the text
-        try: int(re.sub(r"[^\d]", "", block[4]))
-        except ValueError: return False
-        return int(re.sub(r"[^\d]", "", block[4])) == qno and re.search(r"^"+str(qno)+"", block[4])
-    return block[0] in [338.7315979003906, 318.2538146972656, 39.872100830078125, 42.38639831542969, 68.39437866210938]
+def isEndOfPassage(block):
+    return re.match(r"(?<!.)\d+\.", block[4])
 
 def parseQuestionNumber(txt) -> list:
     tmp = [int(x) for x in re.findall(r"\d+", txt)]
@@ -125,9 +119,11 @@ def populate_reference(comprehension: ReadingComprehension):
 def cleanPassage(passage: list) -> str:
     text = "".join([b[4] for b in passage]).strip()
     text = re.sub(r"\n+", "\n", text)
-    tmp =  text.split("\t", 1)
-    text = tmp[1] if len(tmp) > 1 else text
     return text
+
+def clean_block(block):
+    block[4] = re.sub(r"\u2013", "-", block[4])
+    return block
 
 class PassageTemp:
     def __init__(self, text: str, header: str, qnos: List[int]) -> None:
@@ -137,21 +133,12 @@ class PassageTemp:
 
 def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
-    passageObjects: List[PassageTemp] = []
-    header = blocks[0][4]
-    qnos = parseQuestionNumber(fixBugForPassage4(header))
-    tmp = None
-    try: tmp = qnos[0] 
-    except IndexError: pass
 
     cur_passage_questions = get_questions_alter(blocks)
     for block in blocks[1:]:
-        # print(block)
         block = list(block) + [False]
-        if isEndOfPassage(block, tmp):
-            # print(block)
+        if isEndOfPassage(block):
             text = cleanPassage(passage)
-            passageObjects.append(PassageTemp(text, header, qnos))
             
             obj = populate_reference(
                 ReadingComprehension(
@@ -161,51 +148,14 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
             )
             return obj
         if is_extra(block):
+            print(block)
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
             passage.append(modifyBlockText(block, "\t"+block[4]))
         else:
             passage.append(block)
+            
     return None
-
-def isStartOfWrittingComprehension(block):
-    return bool(re.search(r"WRITING AND LANGUAGE TEST", block[4], re.IGNORECASE))
-
-def split_passages(blocks) -> List[Tuple[List[str],bool]]:
-    passages = []
-    isPassageStarted = False
-    passage_lines = []
-    isWritingComprehension = 0
-    all_comprehensions: List[ReadingComprehension] = []
-    for i,block in enumerate(blocks):
-        # print(block)
-        if isStartOfWrittingComprehension(block):
-            isWritingComprehension = 1
-            continue
-        if isStartOfPassage(block):
-            # print(cur_passage_questions)
-            isPassageStarted = True
-            passage_lines.append((passages, isWritingComprehension == 2))
-            passages = []
-            if (isWritingComprehension == 1): 
-                isWritingComprehension = 2
-        if isPassageStarted:
-            if isSectionHeader(block):
-                continue
-            passages.append(block)
-    passage_lines.append((passages, isWritingComprehension == 2))
-    return passage_lines[1:]
-
-def computeSection(passageObject, passageObjects, currentSection):
-    try:
-        if len(passageObjects) > 1:
-            prevQuestionNumbers = passageObjects[-1].questionNumbers.split(",")
-            currQuestionNumbers = passageObject.questionNumbers.split(",")
-            if int(prevQuestionNumbers[-1]) > int(currQuestionNumbers[0]) and int(prevQuestionNumbers[-1]) > 0 and int(currQuestionNumbers[0]) > 0:
-                currentSection += 1
-    except Exception as e:
-        print("Error in section assignment:",e)
-    return currentSection
 
 def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
     passage = []
@@ -219,7 +169,7 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
         block = list(block) + [False]
         # not isLeft
         # print(block)
-        if re.search(r"STOP", block[4]):
+        if re.search(r"STOP", block[4]) or isEndOfPassage(block):
             break
         if is_extra(block):
             continue
@@ -239,23 +189,36 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
     )
     return obj
 
+def split_passages(blocks) -> List[Tuple[List[str],bool]]:
+    passages = []
+    isPassageStarted = False
+    passage_lines = []
+    for i,block in enumerate(blocks):
+        # print(block)
+        block = clean_block(block)
+        if isStartOfPassage(block):
+            # print(cur_passage_questions)
+            isPassageStarted = True
+            passage_lines.append((passages, len(passage_lines) > 22))
+            passages = []
+        if isPassageStarted:
+            if isSectionHeader(block):
+                continue
+            passages.append(block)
+    passage_lines.append((passages, len(passage_lines)))
+    return passage_lines[1:]
 
-pdf_path = "input/sat/SAT Practice Test 1.pdf"
-answer_pdf_path = "input/sat-answers/SAT Practice Test 1.pdf"
+pdf_path = "McGraw_Hills_500_SAT_Reading_Writing.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
-# for block in blocks:
-#     print(block)
 
 
 all_comprehensions = []
-# all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
-doc = fitz.open(answer_pdf_path)
-answer_blocks = get_each_lines(doc)
-all_answers = parse_answer(answer_blocks)
+all_answers = parse_answer(blocks)
 
-passage_split = split_passages(blocks)
+passage_split = split_passages(blocks)[:44]
 print(len(passage_split))
+
 qno_cnt = 0
 for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
@@ -269,7 +232,7 @@ for i, split in enumerate(passage_split):
             qno_cnt += 1
 
 for i, obj in enumerate(all_comprehensions):
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/SATJson/sat-sample-paper-1-passage{i+1}.json")
+    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/mcgrawhill-passage{i+1}.json")
 
 
 # print(json.dumps([c.to_json() for c in all_comprehensions]))

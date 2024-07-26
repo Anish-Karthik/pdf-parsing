@@ -15,19 +15,18 @@ def parse_answer(blocks) -> List[AnswerTmp]:
     all_answers = []
     section = 1
     current_question = 1
+    answer_started = False
     for block in blocks:
-        # print(block[4])
-        option_match = re.findall(r"Choice\s+(.)\sis\s(correct|the best)", block[4])
-        question_match = re.findall(r"QUESTION\s+(\d+)", block[4])
-        
-        if len(question_match) > 0 and question_match[0] == "1" and current_question != 1:
-            section += 1
-            current_question = 1
-            if section > 2:
-                break
+        if "Critical Reading Answers" in block[4]:
+            answer_started = True
+        if not answer_started:
+            continue
 
-        if (len(option_match) > 0):
-            print(current_question, option_match[0][0], section)
-            all_answers.append(AnswerTmp(section, current_question, option_match[0][0]))
-            current_question += 1
+        # print(block)
+        answer_match = re.findall(r"(?<!.)(\d+)\.\s+\(([A-D])\)", block[4])
+        
+        if len(answer_match) > 0:
+            current_question = answer_match[0][0]
+            option = answer_match[0][1]
+            all_answers.append(AnswerTmp(section, current_question, option))
     return all_answers
