@@ -5,8 +5,10 @@ import os
 from typing import List, Tuple, Any
 
 def mapNumberToLetter(num):
-    return chr(int(num.strip())+64)
-
+    try:
+        return chr(int(num)+64)
+    except:
+        return num
 def get_all_answers(pdf_path) -> List[Tuple[str, str]]:
     pdf = pdfplumber.open(pdf_path)
     table_rows = []

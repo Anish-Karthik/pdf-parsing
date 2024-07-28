@@ -10,7 +10,10 @@ from catAnswerParser import get_all_answers
 from utils.util import write_text_to_file, removenextline
 from catQuestionParser import get_all_questions
 def isStartOfPassage(block):
-    return block[4].startswith("Instruction for questions ")
+    return re.search(r"^Instruction for questions?", block[4]) or re.search(r"The passage below", block[4]) or re.search(r"^Comprehension", block[4])
+
+def isStartOfPassageSecondLine(block):
+    return re.search(r"^question\.", block[4])
 
 def isEndOfPassage(block):
     return block[4].startswith("Q.")
@@ -25,30 +28,6 @@ def parseQuestionNumber(block) -> list:
 def is_extra(block) -> bool:
     return "bodheeprep.com" in block[4]
 
-def extract_passages_from_pdf(pdf_file: str):
-    doc = fitz.open(pdf_file)
-    passages = []
-    isPassageStarted = False
-    passage = []
-    headers = []
-    qnos = []
-    for page in doc:
-        blocks = page.get_text("blocks") 
-        for block in blocks:
-            if isPassageStarted:
-                if isEndOfPassage(block):
-                    isPassageStarted = False
-                    passages.append("".join(passage))
-                    passage = []
-                    continue
-                passage.append(block[4])
-                continue
-            if isStartOfPassage(block):
-                headers.append(block[4])
-                qnos.append(parseQuestionNumber(block))
-                isPassageStarted = True
-                continue
-    return (headers,passages,qnos)
 
 def isEndOfVARC(block):
     return block[4].startswith("Q.") and "17" in block[4]
@@ -58,7 +37,7 @@ def clean_text(text: str) -> str:
     text = re.sub(r"\n(?!\t)", r" ", text)
     return text
 
-def split_passages(blocks) -> List[List[Any]]:
+def split_passages(blocks, pdf_path) -> List[List[Any]]:
     passages: List[PassageTemp] = []
     isPassageStarted = False
     passage = []
@@ -69,16 +48,19 @@ def split_passages(blocks) -> List[List[Any]]:
             print(len(passages))
             return passages
         if isPassageStarted:
+            if isStartOfPassageSecondLine(block) or isStartOfPassage(block):
+                continue
             if isEndOfPassage(block):
                 isPassageStarted = False
-                passageText = clean_text("".join(passage))
-                obj = PassageTemp(passageText, passage[0][4], parseQuestionNumber(passage[0]))
+                passageText = clean_text("".join(passage[1:]))
+                obj = PassageTemp(passageText, passage[0][4], parseQuestionNumber(passage[0])) if "2021" in pdf_path else PassageTemp(passageText, "", list(range(len(passages) * 4 + 1, len(passages) * 4 + 5)))
                 passages.append(obj)
                 passage = []
                 continue
             passage.append(block[4])
             continue
         if isStartOfPassage(block):
+            print(block)
             passage.append(block[4])
             isPassageStarted = True
             continue
@@ -110,8 +92,6 @@ def get_each_lines(doc):
             block = list(block)
             line.append(block)
         lines.extend(line)
-    print(len(lines))
-    print(lines[0])
     return lines
 
 def add_answers_to_questions(questions: List[Question], answers: List[Tuple[str,str]]) -> List[Question]:
@@ -119,19 +99,45 @@ def add_answers_to_questions(questions: List[Question], answers: List[Tuple[str,
         questions[i].correct_option = answers[i][1]
     return questions
 
+def parseForAllFiles():
+    file_list = os.listdir("input/cat")
+    cnt = 0
+    print(file_list)
+    for file_name in file_list:
+        if file_name.endswith(".pdf"):
+            pdf_file_path = os.path.join("input/cat", file_name)
+            paperNumber = file_name.rstrip(".pdf")
+        print(pdf_file_path)
+        doc = fitz.open(pdf_file_path)
+        blocks = get_each_lines(doc)
+        
+        allAnswers = get_all_answers(pdf_file_path)
+        allQuestions = add_answers_to_questions(get_all_questions(pdf_file_path), allAnswers)
+        passages = split_passages(blocks, pdf_file_path)
+        comprehensions = [extract_comprehension(p, allQuestions) for p in passages]
+        print(len(comprehensions))
+        for c in comprehensions:
+            cnt += 1
+            write_text_to_file(json.dumps(c.to_json(), indent=2), f"output/cat/cat-passage{cnt}.json")
 
-pdf_path = "input/cat/CAT 2021 Paper Slot 1.pdf"
-answer_pdf_path = pdf_path
+    print(cnt)
+        
 
-doc = fitz.open(pdf_path)
-blocks = get_each_lines(doc)
-
-allAnswers = get_all_answers(answer_pdf_path)
-allQuestions = add_answers_to_questions(get_all_questions(pdf_path), allAnswers)
+parseForAllFiles()
 
 
-passages = split_passages(blocks)
-comprehensions = [extract_comprehension(p, allQuestions) for p in passages]
+# pdf_path = "input/cat/CAT 2021 Paper Slot 1.pdf"
+# answer_pdf_path = pdf_path
 
-write_text_to_file(json.dumps([c.to_json() for c in comprehensions], indent=2),"output/cat/CAT 2021 Paper Slot 1-passages.json")
-print(len(passages))
+# doc = fitz.open(pdf_path)
+# blocks = get_each_lines(doc)
+
+# allAnswers = get_all_answers(answer_pdf_path)
+# allQuestions = add_answers_to_questions(get_all_questions(pdf_path), allAnswers)
+
+
+# passages = split_passages(blocks)
+# comprehensions = [extract_comprehension(p, allQuestions) for p in passages]
+
+# write_text_to_file(json.dumps([c.to_json() for c in comprehensions], indent=2),"output/cat/CAT 2021 Paper Slot 1-passages.json")
+# print(len(passages))
