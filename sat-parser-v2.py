@@ -8,7 +8,7 @@ from answerSat import AnswerTmp, SolutionParsing
 from answerParser import parse_answer
 
 from satQuestionParser import *
-
+from underline import *
 
 def isStartOfPassage(block):
     isStart =  bool(re.match(r'Questions \d*.*\d*', block[4]))
@@ -237,11 +237,13 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
             cur_passage_questions
         )
     )
+    obj = underlined_references(
+        obj,
+        doc
+    )
     return obj
 
-
 pdf_path = "input/sat/SAT Practice Test 1.pdf"
-answer_pdf_path = "input/sat-answers/SAT Practice Test 1.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 # for block in blocks:
@@ -250,12 +252,13 @@ blocks = get_each_lines(doc)
 
 all_comprehensions = []
 # all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
-doc = fitz.open(answer_pdf_path)
-answer_blocks = get_each_lines(doc)
+answer_pdf_path = "input/sat-answers/SAT Practice Test 1.pdf"
+ans_doc = fitz.open(answer_pdf_path)
+answer_blocks = get_each_lines(ans_doc)
 all_answers = parse_answer(answer_blocks)
 
 passage_split = split_passages(blocks)
-print(len(passage_split))
+# print(len(passage_split))
 qno_cnt = 0
 for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")

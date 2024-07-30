@@ -27,7 +27,7 @@ def parse_answer(blocks) -> List[AnswerTmp]:
                 break
 
         if (len(option_match) > 0):
-            print(current_question, option_match[0][0], section)
+            # print(current_question, option_match[0][0], section)
             all_answers.append(AnswerTmp(section, current_question, option_match[0][0]))
             current_question += 1
     return all_answers

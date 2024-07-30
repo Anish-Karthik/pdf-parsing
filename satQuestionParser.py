@@ -3,10 +3,6 @@ import re
 from typing import *
 from model import *
 
-def isStartOfPassage(block):
-    isStart =  bool(re.match(r'Questions \d*.*\d*', block[4]))
-    return isStart
-
 def is_qn_no(block):
     return re.search(r"(?<!.)\d+( ){0,1}\n",block[4])
 
@@ -96,7 +92,7 @@ def get_questions_alter(lines) -> List[Question]:
         if cur_op==3 and not is_part_of_last_option(lines[ind-1],line):
             options.append(Option(remove_option_number(op_text)))
             qn_no,qn_text = get_question(lines,op_0_ind)
-            all_questions.append(Question(qn_no,qn_text,options))
+            all_questions.append(Question(qn_no.strip(),qn_text,options))
             options_started = False
             options = []
             op_0_ind = None
