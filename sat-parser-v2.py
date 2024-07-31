@@ -1,5 +1,5 @@
 import re
-from  typing import List
+from typing import List
 import json
 
 import fitz
@@ -8,10 +8,12 @@ from answerSat import AnswerTmp, SolutionParsing
 from answerParser import parse_answer
 
 from satQuestionParser import *
+from underline import *
 
 
 def isStartOfPassage(block):
-    return  bool(re.match(r'(?<!.)Passage\s\d+A?\s*$', block[4]))
+    return bool(re.match(r'(?<!.)Passage\s\d+A?\s*$', block[4]))
+
 
 def fixBugForPassage4(txt):
     if "22-\x142" in txt:
@@ -22,48 +24,55 @@ def fixBugForPassage4(txt):
         return txt.replace("\x15\x14-52", "43-52")
     return txt
 
+
 def isEndOfPassage(block):
     return re.match(r"(?<!.)\d+\.", block[4])
+
 
 def parseQuestionNumber(txt) -> list:
     tmp = [int(x) for x in re.findall(r"\d+", txt)]
     if tmp is None or len(tmp) < 2:
         return []
     st, end = tmp
-    return list(range(st, max(end,st+10)+1))
+    return list(range(st, max(end, st + 10) + 1))
 
 
 def is_extra(block) -> bool:
     # isNum = bool(re.match(r"\d+\n",block[4]))
     # if not alphanumeric
     return (
-        re.search(r"Line\n5?",block[4]) or
+        re.search(r"Line\n5?", block[4]) or
         re.search(r"Unauthorized copying", block[4]) or
         re.search(r"CO NTI N U E", block[4]) or
         re.search(r"STOP", block[4]) or
         re.search(r"SAT.*PRACTICE\n", block[4]) or
         not re.search(r'[a-zA-Z]', block[4])
     )
+
+
 def isSectionHeader(block) -> bool:
     return (
-        re.search(r"1\n1\n",block[4]) or
-        re.search(r"2\n2\n", block[4]) 
+        re.search(r"1\n1\n", block[4]) or
+        re.search(r"2\n2\n", block[4])
     )
 
-def isStartOfParagraph(block, prevBlock = None):
+
+def isStartOfParagraph(block, prevBlock=None):
     if not prevBlock:
         return False
     # compare x values
     block[-1] = (
-        (block[0] - prevBlock[0] > 12) or 
+        (block[0] - prevBlock[0] > 12) or
         (prevBlock[-1] and block[0] == prevBlock[0])
     )
     return block[-1]
 
+
 def modifyBlockText(block, txt):
     return (*block[:4], txt, *block[5:])
 
-def getReferences(passageText: str, startline: int, endLine = None) -> Reference:
+
+def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
     # print(passageText[:100])
     lines = passageText.split("\n")
     startline -= 1
@@ -80,11 +89,12 @@ def getReferences(passageText: str, startline: int, endLine = None) -> Reference
     # print("References:", startWord, endWord)
     return Reference(startWord, endWord)
 
+
 def populate_reference(comprehension: ReadingComprehension):
     pattern1 = r"Lines\s+(\d+)\s*-\s*(\d+)"
     pattern2 = r"Line\s+(\d+)"
     pattern3 = r"Lines\s+(\d+)\s*and\s*(\d+)"
-    
+
     for question in comprehension.questions:
         pattern1_match = re.findall(pattern1, question.description, re.IGNORECASE)
         pattern2_match = re.findall(pattern2, question.description, re.IGNORECASE)
@@ -102,7 +112,7 @@ def populate_reference(comprehension: ReadingComprehension):
             references.append(getReferences(comprehension.passage.passage, int(startLine1)))
             references.append(getReferences(comprehension.passage.passage, int(startLine2)))
         question.references = references
-        
+
         # options
         for option in question.options:
             pattern1_match = re.findall(pattern1, option.description, re.IGNORECASE)
@@ -116,20 +126,24 @@ def populate_reference(comprehension: ReadingComprehension):
     # print(pattern2_match)
     return comprehension
 
+
 def cleanPassage(passage: list) -> str:
     text = "".join([b[4] for b in passage]).strip()
     text = re.sub(r"\n+", "\n", text)
     return text
 
+
 def clean_block(block):
     block[4] = re.sub(r"\u2013", "-", block[4])
     return block
+
 
 class PassageTemp:
     def __init__(self, text: str, header: str, qnos: List[int]) -> None:
         self.text = text
         self.header = remove_next_line(header)
         self.qnos = qnos
+
 
 def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
@@ -139,7 +153,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         block = list(block) + [False]
         if isEndOfPassage(block):
             text = cleanPassage(passage)
-            
+
             obj = populate_reference(
                 ReadingComprehension(
                     Passage(text),
@@ -151,11 +165,12 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
             print(block)
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-            passage.append(modifyBlockText(block, "\t"+block[4]))
+            passage.append(modifyBlockText(block, "\t" + block[4]))
         else:
             passage.append(block)
-            
+
     return None
+
 
 def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
     passage = []
@@ -165,7 +180,8 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
 
     cur_passage_questions = get_questions_alter(blocks)
     for block in blocks[1:]:
-        if (not block[7]): continue
+        if (not block[7]):
+            continue
         block = list(block) + [False]
         # not isLeft
         # print(block)
@@ -174,26 +190,22 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
         if is_extra(block):
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-            passage.append(modifyBlockText(block, "\t"+block[4]))
+            passage.append(modifyBlockText(block, "\t" + block[4]))
         else:
             passage.append(block)
 
     text = cleanPassage(passage)
     passageObjects.append(PassageTemp(text, header, qnos))
-    
-    obj = populate_reference(
-        ReadingComprehension(
-            Passage(text),
-            cur_passage_questions
-        )
-    )
-    return obj
 
-def split_passages(blocks) -> List[Tuple[List[str],bool]]:
+    return underlined_references(
+        ReadingComprehension(Passage(text), cur_passage_questions), doc)
+
+
+def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     passages = []
     isPassageStarted = False
     passage_lines = []
-    for i,block in enumerate(blocks):
+    for i, block in enumerate(blocks):
         # print(block)
         block = clean_block(block)
         if isStartOfPassage(block):
@@ -207,6 +219,7 @@ def split_passages(blocks) -> List[Tuple[List[str],bool]]:
             passages.append(block)
     passage_lines.append((passages, len(passage_lines)))
     return passage_lines[1:]
+
 
 pdf_path = "McGraw_Hills_500_SAT_Reading_Writing.pdf"
 doc = fitz.open(pdf_path)

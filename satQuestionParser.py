@@ -135,8 +135,8 @@ def get_question(lines,ind):
             return remove_next_line(qn_no), remove_next_line(remove_question_number(qn_text))
 
         cur-=1
-    return "", ""
-    
+    return "", "" 
+     
 
 # def populate_reference()
 # [[qtext, qno]]
