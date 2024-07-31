@@ -2,17 +2,18 @@ import fitz
 import re
 from model import *
 
-all_words = []
-
 
 def calculate_overlap(line, word):
+
     line_x1 = line[1].x
     line_x2 = line[2].x
     word_x1 = word[0]
     word_x2 = word[2]
 
     overlap = max(0, min(line_x2, word_x2) - max(line_x1, word_x1))
+
     word_len = word_x2 - word_x1
+
     return overlap / word_len
 
 
@@ -41,9 +42,7 @@ def get_lines(page):
 
 
 def get_all_words(doc):
-    if (len(all_words) != 0):
-        return all_words
-
+    all_words = []
     for pgno, page in enumerate(doc):
         words = page.get_text("words")
         for word in words:
@@ -75,7 +74,7 @@ def get_words_from_passage(passage_words: List, words) -> List:
 
         for i in range(max_match_start, max_match_start + max_match):
             match_words.append(words[i])
-            # print(words[i])
+            print(words[i])
 
         start = max_match_start + max_match
         start_p += max_match
@@ -83,17 +82,23 @@ def get_words_from_passage(passage_words: List, words) -> List:
     return match_words
 
 
+def passage_to_words(passage) -> List[str]:
+    passage = re.sub(r"\t", " ", (re.sub(r"\n", " ", passage)))
+    passage = [w for w in passage.split(" ") if len(w) > 0 and w != " "]
+    for w in passage:
+        print(w,end = " ")
+    print()
+    return passage
+
+
 def underlined_references(comprehension: ReadingComprehension, doc) -> ReadingComprehension:
-    passage = comprehension.passage.passage
-    passage = re.sub(r"\t", "", (re.sub(r"\n", " ", passage)))
+    # passage = comprehension.passage.passage
+    # passage = re.sub(r"\t", "", (re.sub(r"\n", " ", passage)))
+    passage = passage_to_words(comprehension.passage.passage)
     all_words = get_all_words(doc)
-    print(passage)
-    print("\n\n\n\n")
-    print(len(all_words))
-    words = get_words_from_passage(passage.split(" "), all_words)
-    print("\n\n\n\n")
-    for word in words:
-        print(word[4])
+    # print(passage)
+    words = get_words_from_passage(passage, all_words)
+    # print("\n\n\n\n")
 
     drawn_lines = []
     for page in doc:
@@ -120,14 +125,25 @@ def underlined_references(comprehension: ReadingComprehension, doc) -> ReadingCo
         else:
             if prev_word_is_underlined:
                 end_word = ind - 1
-
+                print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
                 if qn_no != 0:
                     for qn in comprehension.questions:
                         if qn.qno == qn_no:
-                            qn.references.append(
-                                Reference(start_word, end_word))
+                            qn.references.append(Reference(start_word, end_word))
+                            
+                            # print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
                             break
 
             prev_word_is_underlined = False
 
+    # print("\n\n\n\n")
+
+    # for ref in references:
+    #     print(ref.start_word,ref.end_word)
+    # print(len(references))
     return comprehension
+
+pdf_path = "/Users/pranav/Downloads/SAT Practice Test 1 12.22.54 PM.pdf"
+
+doc = fitz.open(pdf_path)
+

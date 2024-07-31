@@ -221,7 +221,7 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     return passage_lines[1:]
 
 
-pdf_path = "McGraw_Hills_500_SAT_Reading_Writing.pdf"
+pdf_path = "/Users/pranav/Downloads/sat/McGraw Hill/McGraw_Hills_500_SAT_Reading_Writing.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
