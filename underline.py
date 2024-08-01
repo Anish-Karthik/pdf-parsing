@@ -41,19 +41,10 @@ def get_lines(page):
     return drawn_lines
 
 
-def get_all_words(doc):
-    all_words = []
-    for pgno, page in enumerate(doc):
-        words = page.get_text("words")
-        for word in words:
-            word = tuple(list(word) + [pgno])
-            all_words.append(word)
-    return all_words
-
-
-def get_words_from_passage(passage_words: List, words) -> List:
+def get_words_from_passage(passage_words: List, words, words_index) -> List:
     start_p = 0
-    start = 0
+    start = words_index
+    last_index = 0
     match_words = []
     while start_p < len(passage_words) and start < len(words):
         max_match = 0
@@ -74,30 +65,26 @@ def get_words_from_passage(passage_words: List, words) -> List:
 
         for i in range(max_match_start, max_match_start + max_match):
             match_words.append(words[i])
-            print(words[i])
 
         start = max_match_start + max_match
+        last_index = start
         start_p += max_match
 
-    return match_words
+    return last_index,match_words
 
 
 def passage_to_words(passage) -> List[str]:
     passage = re.sub(r"\t", " ", (re.sub(r"\n", " ", passage)))
     passage = [w for w in passage.split(" ") if len(w) > 0 and w != " "]
-    for w in passage:
-        print(w,end = " ")
-    print()
     return passage
 
 
-def underlined_references(comprehension: ReadingComprehension, doc) -> ReadingComprehension:
+def underlined_references(comprehension: ReadingComprehension,all_words,all_words_index, doc) -> ReadingComprehension:
     # passage = comprehension.passage.passage
     # passage = re.sub(r"\t", "", (re.sub(r"\n", " ", passage)))
     passage = passage_to_words(comprehension.passage.passage)
-    all_words = get_all_words(doc)
     # print(passage)
-    words = get_words_from_passage(passage, all_words)
+    last_index,words = get_words_from_passage(passage, all_words, all_words_index)
     # print("\n\n\n\n")
 
     drawn_lines = []
@@ -125,7 +112,7 @@ def underlined_references(comprehension: ReadingComprehension, doc) -> ReadingCo
         else:
             if prev_word_is_underlined:
                 end_word = ind - 1
-                print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
+                # print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
                 if qn_no != 0:
                     for qn in comprehension.questions:
                         if qn.qno == qn_no:
@@ -141,7 +128,7 @@ def underlined_references(comprehension: ReadingComprehension, doc) -> ReadingCo
     # for ref in references:
     #     print(ref.start_word,ref.end_word)
     # print(len(references))
-    return comprehension
+    return last_index,comprehension
 
 pdf_path = "/Users/pranav/Downloads/SAT Practice Test 1 12.22.54 PM.pdf"
 

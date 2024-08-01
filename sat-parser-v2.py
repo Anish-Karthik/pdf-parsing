@@ -171,8 +171,17 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
 
     return None
 
+def get_all_words_for_underline(doc):
+    all_words = []
+    for pgno, page in enumerate(doc):
+        words = page.get_text("words")
+        for word in words:
+            word = tuple(list(word) + [pgno])
+            all_words.append(word)
+    return all_words
 
-def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
+def extract_passages_writing_comprehension(blocks: List[Tuple[Any]], all_words):
+    global all_words_index
     passage = []
     passageObjects: List[PassageTemp] = []
     header = blocks[0][4]
@@ -197,8 +206,12 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
     text = cleanPassage(passage)
     passageObjects.append(PassageTemp(text, header, qnos))
 
-    return underlined_references(
-        ReadingComprehension(Passage(text), cur_passage_questions), doc)
+    last_index,obj = underlined_references(
+        ReadingComprehension(Passage(text), cur_passage_questions), all_words,all_words_index, doc)
+
+    all_words_index = last_index
+
+    return obj
 
 
 def split_passages(blocks) -> List[Tuple[List[str], bool]]:
@@ -228,6 +241,8 @@ blocks = get_each_lines(doc)
 
 all_comprehensions = []
 all_answers = parse_answer(blocks)
+all_words_for_underline = get_all_words_for_underline(doc)
+all_words_index = 0
 
 passage_split = split_passages(blocks)[:44]
 print(len(passage_split))
@@ -236,7 +251,7 @@ qno_cnt = 0
 for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
     split, isWritingComprehension = split
-    comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
+    comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
     if comprehension is not None:
         all_comprehensions.append(comprehension)
         for j, question in enumerate(comprehension.questions):
