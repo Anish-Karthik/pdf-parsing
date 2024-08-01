@@ -41,20 +41,12 @@ def get_lines(page):
     return drawn_lines
 
 
-def get_all_words(doc):
-    all_words = []
-    for pgno, page in enumerate(doc):
-        words = page.get_text("words")
-        for word in words:
-            word = tuple(list(word) + [pgno])
-            all_words.append(word)
-    return all_words
 
-
-def get_words_from_passage(passage_words: List, words) -> List:
+def get_words_from_passage(passage_words: List, words, words_index) -> List:
     start_p = 0
-    start = 0
+    start = words_index
     match_words = []
+    last_index = 0
     while start_p < len(passage_words) and start < len(words):
         max_match = 0
         max_match_start = start
@@ -77,9 +69,10 @@ def get_words_from_passage(passage_words: List, words) -> List:
             # print(words[i])
 
         start = max_match_start + max_match
+        last_index = start
         start_p += max_match
 
-    return match_words
+    return last_index,match_words
 
 
 def passage_to_words(passage) -> List[str]:
@@ -90,20 +83,18 @@ def passage_to_words(passage) -> List[str]:
     return passage
 
 
-def underlined_references(comprehension: ReadingComprehension, doc) -> ReadingComprehension:
+def underlined_references(comprehension: ReadingComprehension, all_words, all_words_index, doc) -> ReadingComprehension:
     # passage = comprehension.passage.passage
     # passage = re.sub(r"\t", "", (re.sub(r"\n", " ", passage)))
     passage = passage_to_words(comprehension.passage.passage)
-    all_words = get_all_words(doc)
     # print(passage)
-    words = get_words_from_passage(passage, all_words)
+    last_index,words = get_words_from_passage(passage, all_words, all_words_index)
     # print("\n\n\n\n")
 
     drawn_lines = []
     for page in doc:
         drawn_lines.append(get_lines(page))
 
-    references: List[Reference] = []
     prev_word_is_underlined = False
     start_word = 0
     end_word = 0
@@ -139,7 +130,7 @@ def underlined_references(comprehension: ReadingComprehension, doc) -> ReadingCo
     # for ref in references:
     #     print(ref.start_word,ref.end_word)
     # print(len(references))
-    return comprehension
+    return last_index,comprehension
 
 # def underlined_text(pdf_path):
 

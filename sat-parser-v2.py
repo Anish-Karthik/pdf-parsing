@@ -227,8 +227,19 @@ def computeSection(passageObject, passageObjects, currentSection):
         print("Error in section assignment:", e)
     return currentSection
 
+def get_all_words_for_underline(doc):
+    all_words = []
+    for pgno, page in enumerate(doc):
+        words = page.get_text("words")
+        for word in words:
+            word = tuple(list(word) + [pgno])
+            all_words.append(word)
+    return all_words
 
+
+all_words_index = 0
 def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
+    global all_words_index
     passage = []
     passageObjects: List[PassageTemp] = []
     header = blocks[0][4]
@@ -259,10 +270,13 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
             cur_passage_questions
         )
     )
-    obj = underlined_references(
+    doc_index,obj = underlined_references(
         obj,
+        get_all_words_for_underline(doc),
+        all_words_index,
         doc
     )
+    all_words_index = doc_index
     return obj
 
 
