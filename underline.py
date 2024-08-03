@@ -70,7 +70,7 @@ def get_words_from_passage(passage_words: List, words, words_index) -> List:
         last_index = start
         start_p += max_match
 
-    return last_index,match_words
+    return last_index, match_words
 
 
 def passage_to_words(passage) -> List[str]:
@@ -79,12 +79,12 @@ def passage_to_words(passage) -> List[str]:
     return passage
 
 
-def underlined_references(comprehension: ReadingComprehension,all_words,all_words_index, doc) -> ReadingComprehension:
+def underlined_references(comprehension: ReadingComprehension, all_words, all_words_index, doc) -> ReadingComprehension:
     # passage = comprehension.passage.passage
     # passage = re.sub(r"\t", "", (re.sub(r"\n", " ", passage)))
     passage = passage_to_words(comprehension.passage.passage)
     # print(passage)
-    last_index,words = get_words_from_passage(passage, all_words, all_words_index)
+    last_index, words = get_words_from_passage(passage, all_words, all_words_index)
     # print("\n\n\n\n")
 
     drawn_lines = []
@@ -107,7 +107,7 @@ def underlined_references(comprehension: ReadingComprehension,all_words,all_word
                 else:
                     qn_no = 0
                 start_word = ind
-            # print(w[4],end=" ")
+            # print(w[4], end=" ")
             prev_word_is_underlined = True
         else:
             if prev_word_is_underlined:
@@ -117,7 +117,7 @@ def underlined_references(comprehension: ReadingComprehension,all_words,all_word
                     for qn in comprehension.questions:
                         if qn.qno == qn_no:
                             qn.references.append(Reference(start_word, end_word))
-                            
+
                             # print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
                             break
 
@@ -128,9 +128,9 @@ def underlined_references(comprehension: ReadingComprehension,all_words,all_word
     # for ref in references:
     #     print(ref.start_word,ref.end_word)
     # print(len(references))
-    return last_index,comprehension
+    return last_index, comprehension
+
 
 pdf_path = "/Users/pranav/Downloads/SAT Practice Test 1 12.22.54 PM.pdf"
 
 doc = fitz.open(pdf_path)
-

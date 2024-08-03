@@ -171,6 +171,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
 
     return None
 
+
 def get_all_words_for_underline(doc):
     all_words = []
     for pgno, page in enumerate(doc):
@@ -179,6 +180,7 @@ def get_all_words_for_underline(doc):
             word = tuple(list(word) + [pgno])
             all_words.append(word)
     return all_words
+
 
 def extract_passages_writing_comprehension(blocks: List[Tuple[Any]], all_words):
     global all_words_index
@@ -206,8 +208,8 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]], all_words):
     text = cleanPassage(passage)
     passageObjects.append(PassageTemp(text, header, qnos))
 
-    last_index,obj = underlined_references(
-        ReadingComprehension(Passage(text), cur_passage_questions), all_words,all_words_index, doc)
+    last_index, obj = underlined_references(
+        ReadingComprehension(Passage(text), cur_passage_questions), all_words, all_words_index, doc)
 
     all_words_index = last_index
 
@@ -260,7 +262,7 @@ for i, split in enumerate(passage_split):
             qno_cnt += 1
 
 for i, obj in enumerate(all_comprehensions):
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/mcgrawhill-passage{i+1}.json")
+    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/mcgrawhill-passage{i + 1}.json")
 
 
 # print(json.dumps([c.to_json() for c in all_comprehensions]))
