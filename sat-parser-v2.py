@@ -12,8 +12,10 @@ from underline import *
 
 
 def isStartOfPassage(block):
-    return bool(re.match(r'Questions \d*.*\d*', block[4])) or bool(re.match(r'The following passage is from', block[4])) or bool(re.match(r'Passage [A-Z]\d*', block[4]))
-
+    if bool(re.match(r'^A Natural Synthetic\n', block[4])) or bool(re.match(r'^The Slums\n', block[4])):
+        print(block)
+        return True
+    return bool(re.match(r'Questions \d*.*\d*', block[4])) or bool(re.match(r'The following passage is from', block[4])) or bool(re.match(r'Passage [A-Z]\d*', block[4])) or bool(re.match(r'Two contemporary writers', block[4]))
 
 def fixBugForPassage4(txt):
     if "22-\x142" in txt:
@@ -223,7 +225,9 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     for i, block in enumerate(blocks):
         # print(block)
         block = clean_block(block)
-        if isStartOfPassage(block):
+        if not re.search(r"^Questions \d+.*\d+", block[4]) and re.search(r"Questions \d+.*\d+", block[4]):
+            print("Error:", block)
+        if isStartOfPassage(block) or not re.search(r"^Questions \d+.*\d+", block[4]) and re.search(r"Questions \d+.*\d+", block[4]):
             # print(cur_passage_questions)
             isPassageStarted = True
             passage_lines.append((passages, len(passage_lines) > 22))
@@ -236,6 +240,13 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
             break
     passage_lines.append((passages, len(passage_lines)))
     return passage_lines[1:]
+
+def fix_buggy_question(question: Question):
+    if re.search(r"\d+\.", question.description):
+        question.qno = re.findall(r"\d+\.", question.description)[0].replace(".", "")
+        question.description = re.split(r"\d+\.", question.description, 1)[1]
+        # assign the correct qno
+    return question
 
 
 pdf_path = "input/baron.pdf"
@@ -251,6 +262,9 @@ all_words_index = 0
 passage_split = split_passages(blocks)
 print(len(passage_split))
 print(len(all_answers))
+import numpy as np
+# print("\n\n".join(str(x) for x in all_answers))
+write_text_to_file(json.dumps([c.to_json() for c in all_answers], indent=2), "debug/jsonOutputAnswers.json")
 qno_cnt = 0
 for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
@@ -261,16 +275,17 @@ for i, split in enumerate(passage_split):
     if not comprehension:
         continue
     comprehension.questions = [q for q in comprehension.questions if q.qno != ""]
-    if comprehension is not None:
-        all_comprehensions.append(comprehension)
-        # for j, question in enumerate(comprehension.questions):
-        #     try:
-        #         question.correct_option = all_answers[qno_cnt].answer
-        #         question.detailed_answer = all_answers[qno_cnt].detailed_solution
-        #     except: 
-        #         print(f"Error at {qno_cnt}")
-        #     qno_cnt += 1
-
+    # fix buggy questions
+    comprehension.questions = [fix_buggy_question(q) for q in comprehension.questions]
+    all_comprehensions.append(comprehension)
+    for j, question in enumerate(comprehension.questions):
+        try:
+            question.correct_option = all_answers[qno_cnt].answer
+            question.detailed_answer = all_answers[qno_cnt].detailed_solution
+        except: 
+            print(f"Error at {qno_cnt}")
+        qno_cnt += 1
+print(qno_cnt)
 for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/baron/baron-passage{i + 1}.json")
 
