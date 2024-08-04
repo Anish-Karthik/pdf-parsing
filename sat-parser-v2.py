@@ -162,7 +162,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
             )
             return obj
         if is_extra(block):
-            print(block)
+            # print(block)
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
             passage.append(modifyBlockText(block, "\t" + block[4]))
@@ -236,7 +236,7 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     return passage_lines[1:]
 
 
-pdf_path = "input/baron.pdf"
+pdf_path = "/Users/pranav/Downloads/sat/Barron_s/Barron_s Reading workbook for New SAT.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
@@ -246,11 +246,11 @@ all_answers = parse_answer(blocks)
 all_words_for_underline = get_all_words_for_underline(doc)
 all_words_index = 0
 
-passage_split = split_passages(blocks)[:44]
+passage_split = split_passages(blocks)
 print(len(passage_split))
 
 qno_cnt = 0
-for i, split in enumerate(passage_split[1:3]):
+for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
     split, isWritingComprehension = split
     comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
