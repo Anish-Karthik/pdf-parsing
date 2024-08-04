@@ -9,7 +9,10 @@ import cv2
 
 
 def is_qn_no(block):
-    return re.search(r"(?<!.)\d+\.", block[4])
+    if re.search(r"(?<!.)\d+\.", block[4]):
+        print(block[4])
+        return True
+    return False
 
 
 def is_option(block):
@@ -172,6 +175,54 @@ def is_extra(block) -> bool:
         re.search(r"SAT.*PRACTICE\n", block[4])
     )
 
+def split_line(text):
+    # split the text into questions and options
+    def fixAnomalyOptions(text):
+        # options with question as a single line
+        # split by (A) or (B) or (C) or (D) without removing the option
+        res_content = []
+        options = []
+        optionLetters = re.findall(r"\([A-D]\)", text)
+        options = re.split(r"\([A-D]\)", text)
+        options = [options[0]] + [(optionLetters[i] + options[i + 1]).strip() for i in range(0, len(optionLetters))]
+        res_content.extend(options)
+        return res_content
+    def fixAnomalyQuestion(text):
+        # question with options as a single line
+        # split by number followed by . without removing the number
+        res_content = []
+        questions = []
+        qnos = re.findall(r"\d+\.", text)
+        questions = re.split(r"\d+\.", text)
+        questions = [questions[0]] + [(qnos[i] + questions[i+1]).strip() for i in range(len(qnos))]
+        question_with_options = [fixAnomalyOptions(questions[i]) for i in range(0, len(questions))]
+        question_with_options = [item for sublist in question_with_options for item in sublist]
+        res_content.extend(question_with_options)
+        # print(res_content)
+        return res_content
+    
+    lines = re.split(r"\n", text)
+    res_lines = []
+    for line in lines:
+        if re.search(r"\([A-D]\)", line):
+            res_lines.extend(fixAnomalyOptions(line))
+        elif re.search(r"\d+\.", line):
+            res_lines.extend(fixAnomalyQuestion(line))
+        else:
+            res_lines.append(line)
+
+    return res_lines
+
+def split_line1(text):
+    res_lines = []
+    lines = re.split(r"\n|(\([A-D]\))|(\d+\.)", text)
+    # print(lines)
+    res_lines = [lines.pop(0)]
+    for i in range(0, len(lines), 3):
+        if i + 1 < len(lines):
+            res_lines.append((lines[i] if lines[i] else "") + (lines[i + 1] if lines[i+1] else "") + lines[i + 2])
+    res_lines = [line for line in res_lines if line or line != ""]
+    return res_lines
 
 def get_questions_alter(lines) -> List[Question]:
     all_questions: List[Question] = []
@@ -182,13 +233,17 @@ def get_questions_alter(lines) -> List[Question]:
     op_0_ind = None
     options_started = False
     lines.append([0, lines[-1][3] + 5, 0, 0, "", 0, 0, False])
-    for ind, line in enumerate(lines):
-        for content in line[4].split("\n"):
+    for ind, line in enumerate(lines[:100]):
+        newContents = split_line1(line[4])
+        print(line)
+        print("*newContents", newContents)
+        for content in newContents:
             if cur_op == 3 and not is_part_of_last_option(lines[ind - 1], line):
                 options.append(Option(remove_option_number(op_text)))
-                qn_no, qn_text = get_question(lines, op_0_ind)
-                all_questions.append(Question(qn_no, qn_text, options))
-                options_started = False
+                if op_0_ind:
+                    qn_no, qn_text = get_question(lines, op_0_ind)
+                    all_questions.append(Question(qn_no, qn_text, options))
+                    options_started = False
                 options = []
                 op_0_ind = None
                 cur_op = 0
@@ -208,6 +263,10 @@ def get_questions_alter(lines) -> List[Question]:
                 op_text += remove_next_line(content)
 
         # print(options_started,line[4])
+    # print(all_questions)  using json
+
+    import json
+    # print(json.dumps([question.to_json() for question in all_questions], indent=4))
     return all_questions
 
 
@@ -221,7 +280,6 @@ def get_question(lines, ind):
         if is_qn_no(lines[cur]):
             qn_no = extract_question_number(lines[cur][4])
             return remove_next_line(qn_no), remove_next_line(remove_question_number(qn_text))
-
         cur -= 1
     return "", ""
 

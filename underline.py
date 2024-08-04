@@ -130,7 +130,7 @@ def underlined_references(comprehension: ReadingComprehension, all_words, all_wo
     # print(len(references))
     return last_index, comprehension
 
+if __name__ == "__main__":
+    pdf_path = "/Users/pranav/Downloads/SAT Practice Test 1 12.22.54 PM.pdf"
 
-pdf_path = "/Users/pranav/Downloads/SAT Practice Test 1 12.22.54 PM.pdf"
-
-doc = fitz.open(pdf_path)
+    doc = fitz.open(pdf_path)
