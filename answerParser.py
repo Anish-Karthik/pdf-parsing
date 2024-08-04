@@ -19,8 +19,9 @@ def parse_answer(blocks) -> List[AnswerTmp]:
     current_question = 1
     answer_started = False
     for block in blocks:
-        if "Critical Reading Answers" in block[4]:
+        if "ANSWERS EXPLAINED" in block[4]:
             answer_started = True
+            continue
         if not answer_started:
             continue
 

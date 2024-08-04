@@ -12,7 +12,7 @@ from underline import *
 
 
 def isStartOfPassage(block):
-    return bool(re.match(r'Questions \d*.*\d*', block[4]))
+    return bool(re.match(r'Questions \d*.*\d*', block[4])) or bool(re.match(r'The following passage is from', block[4])) or bool(re.match(r'Passage [A-Z]\d*', block[4]))
 
 
 def fixBugForPassage4(txt):
@@ -232,11 +232,13 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
             if isSectionHeader(block):
                 continue
             passages.append(block)
+        if "ANSWERS EXPLAINED" in block[4]:
+            break
     passage_lines.append((passages, len(passage_lines)))
     return passage_lines[1:]
 
 
-pdf_path = "/Users/pranav/Downloads/sat/Barron_s/Barron_s Reading workbook for New SAT.pdf"
+pdf_path = "input/baron.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
@@ -248,17 +250,25 @@ all_words_index = 0
 
 passage_split = split_passages(blocks)
 print(len(passage_split))
-
+print(len(all_answers))
 qno_cnt = 0
 for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
     split, isWritingComprehension = split
     comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
+    # remove the questions that are not having qnos
+
+    if not comprehension:
+        continue
+    comprehension.questions = [q for q in comprehension.questions if q.qno != ""]
     if comprehension is not None:
         all_comprehensions.append(comprehension)
         # for j, question in enumerate(comprehension.questions):
-        #     question.correct_option = all_answers[qno_cnt].answer
-        #     question.detailed_answer = all_answers[qno_cnt].detailed_solution
+        #     try:
+        #         question.correct_option = all_answers[qno_cnt].answer
+        #         question.detailed_answer = all_answers[qno_cnt].detailed_solution
+        #     except: 
+        #         print(f"Error at {qno_cnt}")
         #     qno_cnt += 1
 
 for i, obj in enumerate(all_comprehensions):
