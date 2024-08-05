@@ -225,13 +225,13 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
         block = clean_block(block)
         if isStartOfPassage(block):
             isPassageStarted = True
-            passage_lines.append((passages, len(passage_lines) > 22))
+            passage_lines.append((passages, False))
             passages = []
         if isPassageStarted:
             if isSectionHeader(block):
                 continue
             passages.append(block)
-    passage_lines.append((passages, len(passage_lines)))
+    passage_lines.append((passages, False))
     return passage_lines[1:]
 
 
