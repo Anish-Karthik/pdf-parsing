@@ -12,7 +12,8 @@ from underline import *
 
 
 def isStartOfPassage(block):
-    return bool(re.match(r'(?<!.)Questions\s\d.\d', block[4])) or bool(re.match(r'(?<!.)Questions\s\d\sand\s\d', block[4]))
+    return (bool(re.match(r'(?<!.)Questions\s\d+.\d+', block[4])) or
+            bool(re.match(r'(?<!.)Questions\s\d+\sand\s\d+', block[4])))
 
 
 def fixBugForPassage4(txt):
@@ -162,7 +163,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
             )
             return obj
         if is_extra(block):
-            print(block)
+            # print(block)
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
             passage.append(modifyBlockText(block, "\t" + block[4]))
@@ -221,10 +222,8 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     isPassageStarted = False
     passage_lines = []
     for i, block in enumerate(blocks):
-        # print(block)
         block = clean_block(block)
         if isStartOfPassage(block):
-            # print(cur_passage_questions)
             isPassageStarted = True
             passage_lines.append((passages, len(passage_lines) > 22))
             passages = []
@@ -246,7 +245,7 @@ all_answers = parse_answer(blocks)
 all_words_for_underline = get_all_words_for_underline(doc)
 all_words_index = 0
 
-passage_split = split_passages(blocks)[:44]
+passage_split = split_passages(blocks)
 print(len(passage_split))
 
 qno_cnt = 0

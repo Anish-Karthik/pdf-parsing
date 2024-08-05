@@ -13,20 +13,20 @@ def is_qn_no(block):
 
 
 def is_option(block):
-    return re.search(r"(?<!.)[A-D]\)", block[4])
+    return re.search(r"(?<!.\)\([A-E]\)", block[4])
 
 
 def is_first_option(block):
-    return re.search(r"(?<!.)A\)", block[4])
+    return re.search(r"(?<!.)\(A\)", block[4])
 
 
 def is_option_match(ind, option_text):
-    options = ["A", "B", "C", "D"]
+    options = ["A", "B", "C", "D", "E"]
     return re.search(r"(?<!.)\(" + options[ind] + r"\)", option_text)
 
 
 def is_last_option(block):
-    return re.search(r"(?<!.)D\)", block[4])
+    return re.search(r"(?<!.)\(E\)", block[4])
 
 
 def is_part_of_last_option(prev_line, line):
@@ -39,7 +39,7 @@ def remove_next_line(text):
 
 
 def remove_option_number(text):
-    return re.sub(r"(?<!.)\([A-D]\)\s+ ?", "", text)
+    return re.sub(r"(?<!.)\([A-E]\)\s+ ?", "", text)
 
 
 def remove_question_number(text):
@@ -110,20 +110,19 @@ def get_each_lines(doc):
     for page in doc:
         line = []
         blocks = page.get_text("blocks")
-        border = 323
+        border = 270
         for block in blocks:
             block = list(block)
-            # if isAnswer:
-            #     line.append(block)
-            #     continue
             if not re.search(r"^\.", block[4]):
                 line.append(block)
             else:
                 border = block[0]
+
         line = sorted(line, key=lambda x: (0 if x[0] < border else 1, x[1]))
         # extra property to check isLeft
         line = [list(block) + [block[0] < border] for block in line]
         lines.extend(line)
+
     return lines
 
 
@@ -171,7 +170,8 @@ def get_questions_alter(lines) -> List[Question]:
     lines.append([0, lines[-1][3] + 5, 0, 0, "", 0, 0, False])
     for ind, line in enumerate(lines):
         for content in line[4].split("\n"):
-            if cur_op == 3 and not is_part_of_last_option(lines[ind - 1], line):
+
+            if cur_op == 4 and not is_part_of_last_option(lines[ind - 1], line):
                 options.append(Option(remove_option_number(op_text)))
                 if op_0_ind is not None:
                     qn_no, qn_text = get_question(lines, op_0_ind)
@@ -181,7 +181,7 @@ def get_questions_alter(lines) -> List[Question]:
                 op_0_ind = None
                 cur_op = 0
 
-            if (cur_op < 3 and is_option_match(cur_op + 1, content)):
+            if (cur_op < 4 and is_option_match(cur_op + 1, content)):
                 cur_op += 1
                 options.append(Option(remove_option_number(op_text)))
 
@@ -201,14 +201,14 @@ def get_questions_alter(lines) -> List[Question]:
 
 def get_question(lines, ind):
     qn_text = ""
-    cur = ind - 1
+    cur = ind
     while cur >= 0:
         if not is_extra(lines[cur]):
             qn_text = lines[cur][4] + qn_text
 
         if is_qn_no(lines[cur]):
             qn_no = extract_question_number(lines[cur][4])
-            return remove_next_line(qn_no), remove_next_line(remove_question_number(qn_text))
+            return remove_next_line(qn_no), remove_next_line(remove_question_number(qn_text.split("(A)", 1)[0]))
 
         cur -= 1
     return "", ""
