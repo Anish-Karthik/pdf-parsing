@@ -29,12 +29,8 @@ def parse_answer(blocks) -> List[AnswerTmp]:
     option_started = False
     option = ""
     for block in blocks:
-        if re.search(r"^Practice Test", block[4]):
-            option_started = False
-            continue
         if "ANSWERS EXPLAINED" in block[4]:
             answer_started = True
-            option_started = False
             print("Answer started")
             continue
         if not answer_started:
@@ -42,27 +38,38 @@ def parse_answer(blocks) -> List[AnswerTmp]:
 
         # print(block)
         # answer_match = re.findall(r"(?<!.)(\d+)\..*\(([A-D])\)", block[4])
-        qno_match = re.findall(r"(?<!.)(\d+)\. $", block[4])
+        qno_match = re.findall(r"(?<!.)(\d+)\.\s*(\([A-D]\))", block[4])
         if len(qno_match) > 0 and current_question == "2" and qno_match[0] == "15":
             print("debug",block,qno_match)
 
-        elif len(qno_match) > 0:
-            # print(block,qno_match)
-            current_question = qno_match[0]
-            if current_question == "1":
-                section += 1
-            if option_started and option != "":
-                # split the option and detailed solution
-                # option, detailed_solution = option.split(r"\(([A-D])\)", 1)
-                all_answers.append(AnswerTmp(section, current_question, option))
-                option = ""
-            option_started = True
-            continue
-        if option_started:
-            option += block[4]
+        if len(qno_match) > 0 and qno_match[0][0] == "1":
+            section += 1
+        
+        if len(qno_match) > 0:
+            print(block)
+            print(qno_match)    
+            all_answers.append(AnswerTmp(section, qno_match[0][0], block[4]))
+        
+
+        # elif len(qno_match) > 0:
+        #     # print(block,qno_match)
+        #     current_question = qno_match[0]
+        #     if current_question == "1":
+        #         section += 1
+        #     if option_started and option != "":
+        #         # split the option and detailed solution
+        #         # option, detailed_solution = option.split(r"\(([A-D])\)", 1)
+        #         all_answers.append(AnswerTmp(section, current_question, option))
+        #         option = ""
+        #     option_started = True
+        #     continue
+        # if option_started:
+        #     option += block[4]
 
         # if len(answer_match) > 0:
         #     current_question = answer_match[0][0]
         #     option = answer_match[0][1]
         #     all_answers.append(AnswerTmp(section, current_question, option))
+    for answer in all_answers:
+        print(answer)
     return all_answers

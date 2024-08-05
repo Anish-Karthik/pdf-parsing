@@ -6,10 +6,10 @@ import pytesseract
 from PIL import Image
 import io
 import cv2
-
+import json
 
 def is_qn_no(block):
-    if re.search(r"^\d+\.", block[4]):
+    if re.search(r"^\d+\.\s+", block[4]):
         # print(block[4])
         return True
     return False
@@ -42,15 +42,15 @@ def remove_next_line(text):
 
 
 def remove_option_number(text):
-    return re.sub(r"(?<!.)\([A-D]\)\s+ ?", "", text)
+    return re.sub(r"(?<!.)\([A-D]\)\s+", "", text)
 
 
 def remove_question_number(text):
-    return re.sub(r"(?<!.)\d+\.\s+ ?", "", text)
+    return re.sub(r"(?<!.)\d+\.\s+", "", text)
 
 
 def extract_question_number(text):
-    qno = re.findall(r"(?<!.)(\d+)\.", text)
+    qno = re.findall(r"(?<!.)(\d+)\.\s+", text)
     return qno[0] if len(qno) > 0 else None
 
 
@@ -118,8 +118,9 @@ def is_multi_block(block):
 
 def split_multi_block(block):
     text = block[4]
+    # print("INPUT:",text)
     output = split_line1(text)
-    
+    # print("OUTPUT:","\n".join(output), end="\n\n")
     output_text = [item for item in output if item]
             
     output_blocks = []
@@ -131,7 +132,9 @@ def split_multi_block(block):
 
 def get_each_lines(doc):
     lines = []
-    for page in doc[6:]:
+    hasAnswersStarted = False
+    skip = False
+    for page in doc[:]:
         # images = page.get_images()
 
         pg_lines = []
@@ -149,16 +152,32 @@ def get_each_lines(doc):
         border = 323
         for block in blocks:
             block = list(block)
-            if not re.search(r"(?<!.)\.", block[4]):
+            print(block)
+            if "STEP-BY-STEP PRACTICE" in block[4]:
+                skip = True
+                continue
+            if skip:
+                if "PRACTICE EXERCISES" in block[4]:
+                    skip = False
+                continue
+            if "ANSWERS EXPLAINED" in block[4]:
+                skip = False
+                hasAnswersStarted = True
+                print("Answer started Split")
+            if not re.search(r"(?<!.)\.{5,}", block[4]):
                 # print(block)
 
-                if is_multi_block(block):
+                # if is_multi_block(block):
                     # print("\n\n\n\n\n")
-                    split_blocks = split_multi_block(block)
-                    # print("\n\n\n\n\n")
-                    pg_lines.extend(split_blocks)
-                else:
+                if hasAnswersStarted:
                     pg_lines.append(block)
+                    continue
+                split_blocks = split_multi_block(block)
+                print(split_blocks)
+                print("\n\n\n\n\n")
+                pg_lines.extend(split_blocks)
+                # else:
+                #     pg_lines.append(block)
 
             else:
                 border = block[0]
@@ -209,50 +228,11 @@ def is_extra(block) -> bool:
     )
 
 
-def split_line(text):
-    # split the text into questions and options
-    def fixAnomalyOptions(text):
-        # options with question as a single line
-        # split by (A) or (B) or (C) or (D) without removing the option
-        res_content = []
-        options = []
-        optionLetters = re.findall(r"\([A-D]\)", text)
-        options = re.split(r"\([A-D]\)", text)
-        options = [options[0]] + [(optionLetters[i] + options[i + 1]).strip() for i in range(0, len(optionLetters))]
-        res_content.extend(options)
-        return res_content
-
-    def fixAnomalyQuestion(text):
-        # question with options as a single line
-        # split by number followed by . without removing the number
-        res_content = []
-        questions = []
-        qnos = re.findall(r"\d+\.", text)
-        questions = re.split(r"\d+\.", text)
-        questions = [questions[0]] + [(qnos[i] + questions[i + 1]).strip() for i in range(len(qnos))]
-        question_with_options = [fixAnomalyOptions(questions[i]) for i in range(0, len(questions))]
-        question_with_options = [item for sublist in question_with_options for item in sublist]
-        res_content.extend(question_with_options)
-        # print(res_content)
-        return res_content
-
-    lines = re.split(r"\n", text)
-    res_lines = []
-    for line in lines:
-        if re.search(r"\([A-D]\)", line):
-            res_lines.extend(fixAnomalyOptions(line))
-        elif re.search(r"\d+\.", line):
-            res_lines.extend(fixAnomalyQuestion(line))
-        else:
-            res_lines.append(line)
-
-    return res_lines
-
-
 def split_line1(text):
     res_lines = []
-    lines = re.split(r"\n|(\([A-D]\))|(\d+\.)", text)
+    lines = re.split(r"\n|(\([A-D]\))|(\d+\.\s+)", text)
     # print(lines)
+    # ["sdsd","(A)", None, "asda"]
     res_lines = [lines.pop(0)]
     for i in range(0, len(lines), 3):
         if i + 1 < len(lines):
@@ -269,6 +249,7 @@ def get_questions_alter(lines) -> List[Question]:
     op_text = ""
     op_0_ind = None
     options_started = False
+    import json
     lines.append([0, lines[-1][3] + 5, 0, 0, "", 0, 0, False])
     for ind, line in enumerate(lines):
         # newContents = split_line1(line[4])
@@ -281,7 +262,9 @@ def get_questions_alter(lines) -> List[Question]:
             options.append(Option(remove_option_number(op_text)))
             if op_0_ind:
                 qn_no, qn_text = get_question(lines, op_0_ind)
+                print(qn_no, qn_text)
                 all_questions.append(Question(qn_no, qn_text, options))
+                print(json.dumps(all_questions[-1].to_json(), indent=4))
                 options_started = False
             options = []
             op_0_ind = None
@@ -314,11 +297,11 @@ def get_question(lines, ind):
     cur = ind - 1
     while cur >= 0:
         if not is_extra(lines[cur]):
-            qn_text = lines[cur][4] + qn_text
+            qn_text = lines[cur][4] +" "+ qn_text
 
         if is_qn_no(lines[cur]):
             qn_no = extract_question_number(lines[cur][4])
-            return remove_next_line(qn_no), remove_next_line(remove_question_number(qn_text))
+            return remove_next_line(qn_no), remove_next_line(remove_question_number(qn_text)).replace(r"\s+", " ")
         cur -= 1
     return "", ""
 

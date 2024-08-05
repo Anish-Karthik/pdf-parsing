@@ -1,3 +1,4 @@
+import numpy as np
 import re
 from typing import List
 import json
@@ -12,10 +13,17 @@ from underline import *
 
 
 def isStartOfPassage(block):
-    if bool(re.match(r'^A Natural Synthetic\n', block[4])) or bool(re.match(r'^The Slums\n', block[4])):
+    if re.match(r'^A Natural Synthetic\n', block[4]) or re.match(r'The Slums', block[4]):
         print(block)
         return True
-    return bool(re.match(r'Questions \d*.*\d*', block[4])) or bool(re.match(r'The following passage is from', block[4])) or bool(re.match(r'Passage [A-Z]\d*', block[4])) or bool(re.match(r'Two contemporary writers', block[4]))
+    return (
+        re.match(r'Questions \d*.*\d*', block[4])
+        or re.match(r'The following passage is from', block[4])
+        or re.match(r'Passage [A-Z]\d*', block[4])
+        or re.match(r'Two contemporary writers', block[4])
+        or re.match(r'Below are \d+', block[4])
+    )
+
 
 def fixBugForPassage4(txt):
     if "22-\x142" in txt:
@@ -225,12 +233,12 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     for i, block in enumerate(blocks):
         # print(block)
         block = clean_block(block)
-        if not re.search(r"^Questions \d+.*\d+", block[4]) and re.search(r"Questions \d+.*\d+", block[4]):
-            print("Error:", block)
-        if isStartOfPassage(block) or not re.search(r"^Questions \d+.*\d+", block[4]) and re.search(r"Questions \d+.*\d+", block[4]):
+        # if not re.search(r"^Questions \d+.*\d+", block[4]) and re.search(r"Questions \d+.*\d+", block[4]):
+        #     print("Error:", block)
+        if isStartOfPassage(block):
             # print(cur_passage_questions)
             isPassageStarted = True
-            passage_lines.append((passages, len(passage_lines) > 22))
+            passage_lines.append((passages, False))
             passages = []
         if isPassageStarted:
             if isSectionHeader(block):
@@ -238,14 +246,17 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
             passages.append(block)
         if "ANSWERS EXPLAINED" in block[4]:
             break
-    passage_lines.append((passages, len(passage_lines)))
+    passage_lines.append((passages, False))
     return passage_lines[1:]
 
+
 def fix_buggy_question(question: Question):
+    print(question.to_json())
     if re.search(r"\d+\.", question.description):
         question.qno = re.findall(r"\d+\.", question.description)[0].replace(".", "")
         question.description = re.split(r"\d+\.", question.description, 1)[1]
         # assign the correct qno
+    print(question.to_json())
     return question
 
 
@@ -262,10 +273,12 @@ all_words_index = 0
 passage_split = split_passages(blocks)
 print(len(passage_split))
 print(len(all_answers))
-import numpy as np
 # print("\n\n".join(str(x) for x in all_answers))
 write_text_to_file(json.dumps([c.to_json() for c in all_answers], indent=2), "debug/jsonOutputAnswers.json")
+
+
 qno_cnt = 0
+print(len(passage_split))
 for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
     split, isWritingComprehension = split
@@ -276,15 +289,28 @@ for i, split in enumerate(passage_split):
         continue
     comprehension.questions = [q for q in comprehension.questions if q.qno != ""]
     # fix buggy questions
-    comprehension.questions = [fix_buggy_question(q) for q in comprehension.questions]
+    comprehension.questions = [q for q in comprehension.questions]
     all_comprehensions.append(comprehension)
+
+    write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
+
     for j, question in enumerate(comprehension.questions):
-        try:
-            question.correct_option = all_answers[qno_cnt].answer
-            question.detailed_answer = all_answers[qno_cnt].detailed_solution
-        except: 
-            print(f"Error at {qno_cnt}")
+        # try:
+        if question.qno != all_answers[qno_cnt].question_number:
+            print()
+            print(json.dumps([(x.to_json()) for x in all_answers[qno_cnt - j - 1:len(comprehension.questions) + qno_cnt]], indent=2))
+            raise Exception(f"Number mismatch at {qno_cnt}, Passage {len(all_comprehensions)}, A: {all_answers[qno_cnt].question_number}, Q: {question.qno}")
+        question.correct_option = all_answers[qno_cnt].answer
+        question.detailed_answer = all_answers[qno_cnt].detailed_solution
+        # except Exception as e:
+        #     print(e)
+        #     print(f"Error at {qno_cnt}")
         qno_cnt += 1
+
+    # remove
+    write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
+
+
 print(qno_cnt)
 for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/baron/baron-passage{i + 1}.json")
