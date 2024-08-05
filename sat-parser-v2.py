@@ -12,7 +12,7 @@ from underline import *
 
 
 def isStartOfPassage(block):
-    return bool(re.match(r'(?<!.)Passage\s\d+A?\s*$', block[4]))
+    return bool(re.match(r'(?<!.)Questions\s\d.\d', block[4])) or bool(re.match(r'(?<!.)Questions\s\d\sand\s\d', block[4]))
 
 
 def fixBugForPassage4(txt):
@@ -236,7 +236,7 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     return passage_lines[1:]
 
 
-pdf_path = "/Users/pranav/Downloads/sat/McGraw Hill/McGraw_Hills_500_SAT_Reading_Writing.pdf"
+pdf_path = "SAT WorkBook.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
@@ -256,13 +256,13 @@ for i, split in enumerate(passage_split):
     comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
     if comprehension is not None:
         all_comprehensions.append(comprehension)
-        for j, question in enumerate(comprehension.questions):
-            question.correct_option = all_answers[qno_cnt].answer
-            question.detailed_answer = all_answers[qno_cnt].detailed_solution
-            qno_cnt += 1
+        # for j, question in enumerate(comprehension.questions):
+        #     question.correct_option = all_answers[qno_cnt].answer
+        #     question.detailed_answer = all_answers[qno_cnt].detailed_solution
+        #     qno_cnt += 1
 
 for i, obj in enumerate(all_comprehensions):
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/mcgrawhill-passage{i + 1}.json")
+    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/barron-workbook-passage{i + 1}.json")
 
 
 # print(json.dumps([c.to_json() for c in all_comprehensions]))

@@ -107,36 +107,23 @@ def insert_underlined_text(lines):
 
 def get_each_lines(doc):
     lines = []
-    for page in doc[6:]:
-        images = page.get_images()
-
-        pg_lines = []
-        for img_index, img in enumerate(images):
-            xref = img[0]
-            img_rect = page.get_image_rects(xref)[0]
-
-            if abs(img_rect.y0 - img_rect.y1) < 50:  # is text image
-                text = get_underlined_text(doc, img, img_index)
-                coords = (img_rect.x0, img_rect.y0, img_rect.x1, img_rect.y1, text)
-
-                pg_lines.append(coords)
-
+    for page in doc:
+        line = []
         blocks = page.get_text("blocks")
         border = 323
         for block in blocks:
             block = list(block)
-            if not re.search(r"(?<!.)\.", block[4]):
-                pg_lines.append(block)
+            # if isAnswer:
+            #     line.append(block)
+            #     continue
+            if not re.search(r"^\.", block[4]):
+                line.append(block)
             else:
                 border = block[0]
-        pg_lines = sorted(pg_lines, key=lambda x: (x[3], x[0]))
-
-        pg_lines = insert_underlined_text(pg_lines)
-
+        line = sorted(line, key=lambda x: (0 if x[0] < border else 1, x[1]))
         # extra property to check isLeft
-        pg_lines = [list(block) + [block[0] < border] for block in pg_lines]
-
-        lines.extend(pg_lines)
+        line = [list(block) + [block[0] < border] for block in line]
+        lines.extend(line)
     return lines
 
 
@@ -186,9 +173,10 @@ def get_questions_alter(lines) -> List[Question]:
         for content in line[4].split("\n"):
             if cur_op == 3 and not is_part_of_last_option(lines[ind - 1], line):
                 options.append(Option(remove_option_number(op_text)))
-                qn_no, qn_text = get_question(lines, op_0_ind)
-                all_questions.append(Question(qn_no, qn_text, options))
-                options_started = False
+                if op_0_ind is not None:
+                    qn_no, qn_text = get_question(lines, op_0_ind)
+                    all_questions.append(Question(qn_no, qn_text, options))
+                    options_started = False
                 options = []
                 op_0_ind = None
                 cur_op = 0
