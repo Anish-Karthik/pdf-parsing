@@ -152,7 +152,7 @@ def get_each_lines(doc):
         border = 323
         for block in blocks:
             block = list(block)
-            print(block)
+            # print(block)
             if "STEP-BY-STEP PRACTICE" in block[4]:
                 skip = True
                 continue
@@ -170,12 +170,12 @@ def get_each_lines(doc):
                 # if is_multi_block(block):
                     # print("\n\n\n\n\n")
                 if hasAnswersStarted:
-                    pg_lines.append(block)
+                    pg_lines.append([*block[:4],block[4].strip()+" ",*block[5:]])
                     continue
                 split_blocks = split_multi_block(block)
-                print(split_blocks)
-                print("\n\n\n\n\n")
-                pg_lines.extend(split_blocks)
+                # print(split_blocks)
+                # print("\n\n\n\n\n")
+                pg_lines.extend([[*b[:4],b[4].strip()+" ",*b[5:]] for b in split_blocks])
                 # else:
                 #     pg_lines.append(block)
 
@@ -230,7 +230,7 @@ def is_extra(block) -> bool:
 
 def split_line1(text):
     res_lines = []
-    lines = re.split(r"\n|(\([A-D]\))|(\d+\.\s+)", text)
+    lines = re.split(r"\n|(\([A-D]\))|(\b\d{0,2}\.\s+)", text)
     # print(lines)
     # ["sdsd","(A)", None, "asda"]
     res_lines = [lines.pop(0)]
@@ -262,9 +262,9 @@ def get_questions_alter(lines) -> List[Question]:
             options.append(Option(remove_option_number(op_text)))
             if op_0_ind:
                 qn_no, qn_text = get_question(lines, op_0_ind)
-                print(qn_no, qn_text)
+                # print(qn_no, qn_text)
                 all_questions.append(Question(qn_no, qn_text, options))
-                print(json.dumps(all_questions[-1].to_json(), indent=4))
+                # print(json.dumps(all_questions[-1].to_json(), indent=4))
                 options_started = False
             options = []
             op_0_ind = None

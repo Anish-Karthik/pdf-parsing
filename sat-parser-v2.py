@@ -251,12 +251,12 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
 
 
 def fix_buggy_question(question: Question):
-    print(question.to_json())
+    # print(question.to_json())
     if re.search(r"\d+\.", question.description):
         question.qno = re.findall(r"\d+\.", question.description)[0].replace(".", "")
         question.description = re.split(r"\d+\.", question.description, 1)[1]
         # assign the correct qno
-    print(question.to_json())
+    # print(question.to_json())
     return question
 
 

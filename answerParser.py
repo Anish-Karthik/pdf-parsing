@@ -46,8 +46,6 @@ def parse_answer(blocks) -> List[AnswerTmp]:
             section += 1
         
         if len(qno_match) > 0:
-            print(block)
-            print(qno_match)    
             all_answers.append(AnswerTmp(section, qno_match[0][0], block[4]))
         
 
@@ -70,6 +68,6 @@ def parse_answer(blocks) -> List[AnswerTmp]:
         #     current_question = answer_match[0][0]
         #     option = answer_match[0][1]
         #     all_answers.append(AnswerTmp(section, current_question, option))
-    for answer in all_answers:
-        print(answer)
+    # for answer in all_answers:
+    #     print(answer)
     return all_answers
