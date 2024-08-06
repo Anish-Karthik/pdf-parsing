@@ -1,3 +1,4 @@
+import os
 import re
 from typing import List
 import json
@@ -226,6 +227,7 @@ def computeSection(passageObject, passageObjects, currentSection):
         print("Error in section assignment:", e)
     return currentSection
 
+
 def get_all_words_for_underline(doc):
     all_words = []
     for pgno, page in enumerate(doc):
@@ -237,6 +239,8 @@ def get_all_words_for_underline(doc):
 
 
 all_words_index = 0
+
+
 def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
     global all_words_index
     passage = []
@@ -269,7 +273,7 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
             cur_passage_questions
         )
     )
-    doc_index,obj = underlined_references(
+    doc_index, obj = underlined_references(
         obj,
         get_all_words_for_underline(doc),
         all_words_index,
@@ -279,39 +283,65 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
     return obj
 
 
-sample_paper = "8"
-
-pdf_path = "input/sat/SAT Practice Test 1.pdf"
-doc = fitz.open(pdf_path)
-blocks = get_each_lines(doc)
-# for block in blocks:
-#     print(block)
-
-
-all_comprehensions = []
-# all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
-answer_pdf_path = "input/sat-answers/SAT Practice Test 1.pdf"
-ans_doc = fitz.open(answer_pdf_path)
-answer_blocks = get_each_lines(ans_doc, True)
-all_answers = parse_answer(answer_blocks)
-
-passage_split = split_passages(blocks)
-# print(len(passage_split))
-qno_cnt = 0
-for i, split in enumerate(passage_split):
-    # print(split,"\n\n\n\n\n\n\n\n\n")
-    split, isWritingComprehension = split
-    comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
-    if comprehension is not None:
-        all_comprehensions.append(comprehension)
-        for j, question in enumerate(comprehension.questions):
-            question.correct_option = all_answers[qno_cnt].answer
-            question.detailed_answer = all_answers[qno_cnt].detailed_solution
-            qno_cnt += 1
-
-for i, obj in enumerate(all_comprehensions):
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), "output/SATJson/sat-sample-paper-" + sample_paper + f"-passage{i + 1}.json")
+def proccessPassageText(text):
+    # text = re.sub(r"\n", " ", text)
+    text = re.sub(r" +", " ", text)
+    text = re.sub(r" +\.", ".", text)
+    # remove \n that are not followed by a \t
+    text = re.sub(r"\n(?!\t)", " ", text)
+    if text.startswith("\n"):
+        text = text[1:]
+    if not text.startswith("\t"):
+        text = "\t" + text
+    return text
 
 
-# print(json.dumps([c.to_json() for c in all_comprehensions]))
-write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
+pdf_paths = []
+answer_pdf_paths = []
+
+for file in os.listdir("sat/inputPDF"):
+    if file.endswith("Answers.pdf"):
+        answer_pdf_paths.append("sat/inputPDF/" + file)
+    elif file.endswith(".pdf"):
+        pdf_paths.append("sat/inputPDF/" + file)
+
+files = zip(pdf_paths, answer_pdf_paths)
+print(pdf_paths, answer_pdf_paths)
+
+for sample_paper, (pdf_path, answer_pdf_path) in enumerate(files, start=1):
+    # sample_paper = "8"
+    sample_paper = str(sample_paper)
+
+    pdf_path = "input/sat/SAT Practice Test 1.pdf"
+    doc = fitz.open(pdf_path)
+    blocks = get_each_lines(doc)
+    # for block in blocks:
+    #     print(block)
+
+    all_comprehensions = []
+    # all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
+    answer_pdf_path = "sat/inputPDF/SAT Practice Test 1 Answers.pdf"
+    ans_doc = fitz.open(answer_pdf_path)
+    answer_blocks = get_each_lines(ans_doc, True)
+    all_answers = parse_answer(answer_blocks)
+
+    passage_split = split_passages(blocks)
+    # print(len(passage_split))
+    qno_cnt = 0
+    for i, split in enumerate(passage_split):
+        # print(split,"\n\n\n\n\n\n\n\n\n")
+        split, isWritingComprehension = split
+        comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
+        if comprehension is not None:
+            comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
+            all_comprehensions.append(comprehension)
+            for j, question in enumerate(comprehension.questions):
+                question.correct_option = all_answers[qno_cnt].answer
+                question.detailed_answer = all_answers[qno_cnt].detailed_solution
+                qno_cnt += 1
+
+    for i, obj in enumerate(all_comprehensions):
+        write_text_to_file(json.dumps(obj.to_json(), indent=2), "sat/outputJSON/sat-sample-paper-" + sample_paper + f"-passage{i + 1}.json")
+
+    # print(json.dumps([c.to_json() for c in all_comprehensions]))
+    write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
