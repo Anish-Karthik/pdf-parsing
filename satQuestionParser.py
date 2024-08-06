@@ -96,38 +96,37 @@ def is_extra(block) -> bool:
 def get_questions_alter(lines) -> List[Question]:
     all_questions: List[Question] = []
     options: List[Option] = []
-    # all_options:List[Option]  = []
     cur_op = 0
     op_text = ""
     op_0_ind = None
     options_started = False
     lines.append([0, lines[-1][3] + 5, 0, 0, "", 0, 0, False])
+    
     for ind, line in enumerate(lines):
         if cur_op == 3 and not is_part_of_last_option(lines[ind - 1], line):
-            options.append(Option(remove_option_number(op_text)))
-            qn_no, qn_text = get_question(lines, op_0_ind)
-            all_questions.append(Question(qn_no.strip(), qn_text, options))
+            if op_0_ind is not None:
+                options.append(Option(remove_option_number(op_text)))
+                qn_no, qn_text = get_question(lines, op_0_ind)
+                all_questions.append(Question(qn_no, qn_text, options))
             options_started = False
             options = []
             op_0_ind = None
             cur_op = 0
-
-        if (cur_op < 3 and is_option_match(cur_op + 1, line)):
+        
+        if cur_op < 3 and is_option_match(cur_op + 1, line):
             cur_op += 1
             options.append(Option(remove_option_number(op_text)))
-
+        
         if is_option_match(cur_op, line):
             if cur_op == 0:
                 op_0_ind = ind
             options_started = True
             op_text = ""
-
+        
         if options_started:
             op_text += remove_next_line(line[4])
-
-        # print(options_started,line[4])
+    
     return all_questions
-
 
 def get_question(lines, ind):
     # return lines[ind-1][4]

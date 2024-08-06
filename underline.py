@@ -172,7 +172,7 @@ def underlined_references(comprehension: ReadingComprehension, all_words, all_wo
 
 #     return underlined_sentences_all_pages
 
-pdf_path = "/Users/pranav/Downloads/SAT Practice Test 1 12.22.54 PM.pdf"
+pdf_path = "input/psat/pdf_psat-nmsqt-practice-test-2.pdf"
 
 doc = fitz.open(pdf_path)
 

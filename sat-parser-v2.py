@@ -4,7 +4,6 @@ import json
 
 import fitz
 from utils.util import write_text_to_file
-from answerSat import AnswerTmp, SolutionParsing
 from answerParser import parse_answer
 
 from satQuestionParser import *
@@ -282,7 +281,7 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
 
 sample_paper = "8"
 
-pdf_path = "input/sat/SAT Practice Test " + sample_paper + ".pdf"
+pdf_path = "input/sat/SAT Practice Test 1.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 # for block in blocks:
@@ -291,7 +290,7 @@ blocks = get_each_lines(doc)
 
 all_comprehensions = []
 # all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
-answer_pdf_path = "input/sat-answers/SAT Practice Test " + sample_paper + ".pdf"
+answer_pdf_path = "input/sat-answers/SAT Practice Test 1.pdf"
 ans_doc = fitz.open(answer_pdf_path)
 answer_blocks = get_each_lines(ans_doc, True)
 all_answers = parse_answer(answer_blocks)
