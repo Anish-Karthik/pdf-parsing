@@ -279,7 +279,7 @@ def proccessPassageText(text):
     return text
 
 
-pdf_path = "input/baron.pdf"
+pdf_path = "baron/inputPDF/baron.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
@@ -333,7 +333,7 @@ for i, split in enumerate(passage_split):
 
 print(qno_cnt)
 for i, obj in enumerate(all_comprehensions):
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/baron/baron-passage{i + 1}.json")
+    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"baron/outputJSON/baron-passage{i + 1}.json")
 
 
 # print(json.dumps([c.to_json() for c in all_comprehensions]))
