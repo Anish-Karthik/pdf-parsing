@@ -2,7 +2,8 @@ import os
 import google.generativeai as generativeai
 from model import *
 from prompt import *
-
+import json
+import glob
 
 def configure_client(api_key):
     generativeai.configure(
@@ -10,16 +11,14 @@ def configure_client(api_key):
     )
 
 
-def get_writing_comprehension():
+def get_writing_comprehension(json_data, i):
 
     raw_response = model.generate_content(
-        prompt
+        get_prompt(json_data["passage"])
     )
-    # response = json.loads(raw_response.text)
-    with open("raw_response.txt", "w") as f:
+    
+    with open(f"output/gemini/raw_response{i}.txt", "w") as f:
         f.write(raw_response.text)
-
-    return raw_response.text
 
     # print(json.dumps(response, indent=4))
 
@@ -32,4 +31,8 @@ if __name__ == "__main__":
         model_name="models/gemini-1.5-pro-latest"
     )
 
-    text = get_writing_comprehension()
+    # for i, json_data in enumerate(map(lambda x: json.load(x), map(open, glob.glob("input/gemini/*.json")))):
+    #     get_writing_comprehension(json_data, i)
+    for i in range(3,4):
+        json_data = json.load(open(f"input/gemini/College Duniya SAT Sample Passage {6+i}.json"))
+        get_writing_comprehension(json_data, i)

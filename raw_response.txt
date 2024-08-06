@@ -1,102 +1,19 @@
 ```python
 [
-    "Which choice best combines the first two sentences of the passage?",
-    [
-        "Every day, millions of shoppers hit the stores in full force—both online and on foot—to frantically search for the perfect gift.",
-        "Millions of shoppers frantically search for the perfect gift every day, both online and on foot.",
-        "Shopping both online and on foot, millions search frantically for the perfect gift every day.",
-        "Frantically searching for the perfect gift, millions of shoppers hit the stores every day, both online and on foot."
-    ],
-    "B"
-],
-[
-    "The writer is considering deleting the statistic about how much Americans spend at retail stores in December. Should this statistic be kept or deleted?",
-    [
-        "Kept, because it provides a compelling example of excessive spending on gifts.",
-        "Kept, because it establishes the context of holiday shopping.",
-        "Deleted, because it is irrelevant to the passage’s main argument.",
-        "Deleted, because it undermines the credibility of the author."
-    ],
-    "A"
-],
-[
-    "Which choice most effectively establishes the main idea of the second paragraph?",
-    [
-        "NO CHANGE",
-        "Gift-giving can be understood from a variety of perspectives.",
-        "Anthropologists and economists have debated the value of gift-giving.",
-        "While gift-giving is often viewed positively, there are economic drawbacks to consider."
-    ],
-    "D"
-],
-[
-    "Which choice most effectively combines the sentences at the underlined portion?", 
-    [
-        "purchase (this is what is referred to as “the deadweight loss of Christmas”),",
-        "purchase—a phenomenon referred to as “the deadweight loss of Christmas.”", 
-        "purchase, which economists call “the deadweight loss of Christmas,”",
-        "purchase—and this is what economists call “the deadweight loss of Christmas.”"
-    ],
-    "B"
-],
-[
-    "The writer is considering replacing “To wit” with “For example”. Should the writer make this change?",
-    [
-        "Yes, because “For example” is more widely understood and less formal.",
-        "Yes, because “To wit” is an outdated expression.",
-        "No, because “To wit” adds a touch of formality to the passage.",
-        "No, because “For example”  is grammatically incorrect in this context."
-    ],
-    "A"
-],
-[
-    "Which choice best maintains the tone established in the third paragraph?",
-    [
-        "It’s wild, right?",
-        "Surprisingly,",
-        "This discrepancy is peculiar,",
-        "This is quite shocking,"
-    ],
-    "C"
-],
-[
-    "Which choice provides the most effective transition from the previous paragraph to the information that follows?",
-    [
-        "NO CHANGE",
-        "In order to understand this phenomenon,",
-        "Despite this apparent disconnect,",
-        "To solve this gift-giving conundrum,"
-    ],
-    "C"
-],
-[
-    "Which choice most effectively combines the sentences at the underlined portion?", 
-    [
-        "gift—that is, gift-givers believe that how much they",
-        "gift, which is to say that gift-givers equate how much they", 
-        "gift: gift-givers equate how much they",
-        "gift, believing that how much they"
-    ],
-    "C"
-],
-[
-    "Which choice best introduces the central idea of the sixth paragraph?",
-    [
-        "NO CHANGE",
-        "The psychology of gift-giving is complex.",
-        "There are several reasons why gift-givers may overspend.",
-        "Gift-givers often have good intentions."
-    ],
-    "B"
-],
-[
-    "At this point, the writer wants to provide a concluding statement that summarizes the main idea of the passage. Which choice most effectively accomplishes this goal?",
-    [
-        "Gift-giving is a complex social ritual with both positive and negative aspects.",
-        "Ultimately, the overspending problem highlights a significant disconnect between givers and recipients.",
-        "Further research is needed to fully understand the motivations behind gift-giving.",
-        "By understanding the psychology of gift-giving, we can all become more mindful consumers."
-    ],
-    "B"
+    ["Which choice most effectively combines the sentences at the underlined portion? \n\n 'This frequent experience of gift-giving can engender ambivalent feelings in gift-givers. Many relish the opportunity to buy presents because gift-giving offers a powerful means to build stronger bonds with one’s closest peers.'", ["Although this frequent experience of gift-giving can engender ambivalent feelings in gift-givers, many relish the opportunity to buy presents because gift-giving offers a powerful means to build stronger bonds with one’s closest peers.", "This frequent experience of gift-giving can engender ambivalent feelings in gift-givers, many of them relish the opportunity to buy presents because gift-giving offers a powerful means to build stronger bonds with one’s closest peers.", "Many relish the opportunity to buy presents because gift-giving offers a powerful means to build stronger bonds with one’s closest peers, this frequent experience of gift-giving can engender ambivalent feelings in gift-givers.", "This frequent experience of gift-giving can engender ambivalent feelings in gift-givers, many relish the opportunity to buy presents, which offers a powerful means to build stronger bonds with one’s closest peers."], "A"],
+    ["Is the use of 'At the same time' in the following sentence grammatically correct? If not, what could be a better alternative?\n\n'At the same time, many dread the thought of buying gifts; they worry that their purchases will disappoint rather than delight the intended recipients.'", ["Yes, it's used correctly.", "No, replace it with 'However'", "No, replace it with 'Similarly'", "No, replace it with 'In contrast'"], "D"],
+    ["Should the phrase 'To wit' be deleted from the passage for better flow and clarity?", ["Yes, it's unnecessary and disrupts the flow", "No, it adds a touch of formality and sophistication", "Yes, it's too informal for the tone of the passage", "No, it helps clarify a complex economic concept"], "A"],
+    ["Would you consider replacing the word 'overspend' in the following sentence with a synonym for better style? If so, which synonym would you choose?\n\n'What is surprising is that gift-givers have considerable experience acting as both gift-givers and gift-recipients, but nevertheless tend to overspend each time they set out to purchase a meaningful gift.'", ["No, 'overspend' is the most accurate and concise word choice.", "Yes, replace with 'splurge'", "Yes, replace with 'exceed their budget'", "Yes, replace with 'lavishly spend'"], "B"],
+    ["Is the following sentence grammatically correct? If not, what needs to be corrected?\n\n'Although a link between gift price and feelings of appreciation might seem intuitive to gift-givers, such an assumption may be unfounded.'", ["Yes, the sentence is grammatically correct.", "No, replace 'might seem' with 'may seem'", "No, replace 'such an' with 'this'", "No, replace 'may be' with 'is possibly'"], "A"], 
+    ["Which choice most effectively combines the underlined sentences?\n\n'Indeed, we propose that gift-recipients will be less inclined to base their feelings of appreciation on the magnitude of a gift than givers assume. Why do gift-givers assume that gift price is closely linked to gift-recipients’ feelings of appreciation?'", ["Indeed, we propose that gift-recipients will be less inclined to base their feelings of appreciation on the magnitude of a gift than givers assume, which raises the question of why gift-givers make this assumption.", "Indeed, we propose that gift-recipients will be less inclined to base their feelings of appreciation on the magnitude of a gift than givers assume, so why do gift-givers assume that gift price is closely linked to gift-recipients’ feelings of appreciation?", "Indeed, we propose that gift-recipients will be less inclined to base their feelings of appreciation on the magnitude of a gift than givers assume; however, why do gift-givers assume that gift price is closely linked to gift-recipients’ feelings of appreciation?", "Indeed, we propose that, contrary to the assumptions of gift-givers, gift-recipients will be less inclined to base their feelings of appreciation on the magnitude of a gift. Why would gift-givers make such an assumption?"], "D"],
+    ["Should the em-dashes in the following sentence be replaced with commas for better readability?\n\n'According to Camerer (1988) and others, gift-giving represents a symbolic ritual, whereby gift-givers attempt to signal their positive attitudes toward the intended recipient—and their willingness to invest resources in a future relationship.'", ["Yes, commas would be less disruptive and easier to read.", "No, em-dashes create a more emphatic pause and highlight the importance of the phrase.", "Yes, commas are more formally appropriate in this context.", "No, em-dashes are necessary to set off the parenthetical information."], "B"],
+    ["Does the use of the phrase 'In this sense' in the following sentence contribute to the coherence and flow of the paragraph?\n\n'In this sense, gift-givers may be motivated to spend more money on a gift in order to send a “stronger signal” to their intended recipient.'", ["Yes, it effectively links the current sentence to the preceding idea.", "No, it's vague and doesn't clearly connect to the previous point.", "Yes, it adds a sense of formality to the sentence.", "No, it's redundant and can be removed without affecting the meaning."], "A"],
+    ["Is the following sentence too wordy? If so, how would you revise it?\n\n'The notion of gift-givers and gift-recipients being unable to account for the other party’s perspective seems puzzling because people slip in and out of these roles every day, and, in some cases, multiple times in the course of the same day.'", ["No, the sentence is concise and clear.", "Yes, revise to: 'It's puzzling that gift-givers and recipients can't see the other's perspective, given how often people switch between these roles daily.'", "Yes, revise to: 'The inability of gift-givers and recipients to understand each other's perspectives is puzzling, as people frequently transition between these roles.'", "Yes, revise to: 'The fact that gift-givers and gift-recipients struggle to grasp each other's viewpoints is baffling because individuals constantly shift between these roles throughout a single day, sometimes even multiple times.'"], "B"],
+    ["Should the phrase 'Yet, despite' in the following sentence be replaced with a more concise transition?\n\n'Yet, despite the extensive experience that people have as both givers and receivers, they often struggle to transfer information gained from one role (e.g., as a giver) and apply it in another, complementary role (e.g., as a receiver).'", ["Yes, replace with 'However'", "No, 'Yet, despite' adds a necessary emphasis and contrast.", "Yes, replace with 'Although'", "Yes, replace with 'While'"], "A"],
+    ["Does the use of parentheses in the following sentence enhance or detract from the clarity of the text?\n\n'They often struggle to transfer information gained from one role (e.g., as a giver) and apply it in another, complementary role (e.g., as a receiver).'", ["Enhance, the examples provide helpful clarification.", "Detract, the parentheses interrupt the flow of the sentence.", "Enhance, the parentheses add a touch of formality.", "Detract, the examples are irrelevant and unnecessary."], "A"],
+    ["In the sentence 'In theoretical terms, people fail to utilize information about their own preferences and experiences in order to produce more efficient outcomes in their exchange relations,' does the phrase 'in order to' sound natural and contribute to the clarity of the sentence?", ["Yes, it clearly shows the purpose of utilizing information.", "No, it's wordy and can be replaced with 'to' without loss of meaning.", "No, it's too formal for the tone of the passage.", "Yes, it emphasizes the importance of efficient outcomes."], "B"],
+    ["Would replacing the phrase 'In practical terms' in the following sentence with a transitional phrase improve the flow of the paragraph?\n\n'In practical terms, people spend hundreds of dollars each year on gifts, but somehow never learn to calibrate their gift expenditures according to personal insight.'", ["Yes, replace with 'Consequently'", "No, 'In practical terms' provides a helpful shift in perspective.", "Yes, replace with 'Furthermore'", "Yes, replace with 'As a result'"], "A"], 
+    ["Is the following sentence grammatically correct? If not, what correction is needed?\n\n'Givers’ Perceived and Recipients’ Actual Gift Appreciations'", ["Yes, the sentence is grammatically correct.", "No, it should be 'Givers' and Recipients' Perceived and Actual Gift Appreciations'", "No, it should be 'Perceived Gift Appreciations of Givers and Actual Gift Appreciations of Recipients'", "No, it should be 'Gift Appreciations: Givers' Perceptions Versus Recipients' Reality'"], "C"],
+    ["Does the use of 'less expensive gift' and 'more expensive gift' as labels in the graph effectively convey the intended meaning?", ["Yes, they are clear and concise labels.", "No, they should be replaced with 'Lower Priced Gift' and 'Higher Priced Gift' for better clarity.", "No, they should be 'Gifts of Lesser Value' and 'Gifts of Greater Value'", "No, they are too informal; use 'Inexpensive Gift' and 'Expensive Gift'"], "B"]  
 ]
 ```
