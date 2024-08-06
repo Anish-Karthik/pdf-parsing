@@ -71,11 +71,17 @@ def isStartOfParagraph(block, prevBlock=None):
     if not prevBlock:
         return False
     # compare x values
-    block[-1] = (
+    if block[4].startswith(". "):
+        block[7] = False
+        return False
+    block[7] = (
         (block[0] - prevBlock[0] > 12) or
-        (prevBlock[-1] and block[0] == prevBlock[0])
+        (prevBlock[7] and block[0] == prevBlock[0])
     )
-    return block[-1]
+    if block[7]:
+        print("bk",block)
+        # print("pb",prevBlock)
+    return block[7]
 
 
 def modifyBlockText(block, txt):
@@ -175,7 +181,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
             # print(block)
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-            passage.append(modifyBlockText(block, "\t" + block[4]))
+            passage.append(modifyBlockText(block, "\n\t" + block[4]))
         else:
             passage.append(block)
 
