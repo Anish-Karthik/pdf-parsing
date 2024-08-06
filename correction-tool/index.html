@@ -74,6 +74,9 @@
         column-gap: 10px;
         align-items: start;
       }
+      .correct-option {
+        color: rgb(10, 154, 10);
+      }
       .highlighted {
         font-weight: bold;
         color: #4285f4;
@@ -365,7 +368,11 @@
         return question.options
           .map(
             (option, index) =>
-              `<p>${String.fromCharCode(65 + index)}. ${option.description}</p>`
+              `<p class = '${
+                String.fromCharCode(65 + index) == question.correct_option
+                  ? "correct-option"
+                  : "incorrect-option"
+              }'>${String.fromCharCode(65 + index)}. ${option.description}</p>`
           )
           .join("");
       }
