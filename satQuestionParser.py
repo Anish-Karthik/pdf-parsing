@@ -107,7 +107,7 @@ def get_questions_alter(lines) -> List[Question]:
             if op_0_ind is not None:
                 options.append(Option(remove_option_number(op_text)))
                 qn_no, qn_text = get_question(lines, op_0_ind)
-                all_questions.append(Question(qn_no, qn_text, options))
+                all_questions.append(Question(qn_no.strip(), qn_text, options))
             options_started = False
             options = []
             op_0_ind = None
@@ -140,47 +140,6 @@ def get_question(lines, ind):
         cur -= 1
     qn_no = lines[cur][4]
     return remove_next_line(qn_no), remove_next_line(qn_text)
-
-# def get_questions(lines, options) -> List[Question]:
-#     questions: List[Question] = []
-#     for ind,line in enumerate(lines):
-#         if is_first_option(line):
-#             qn_text = ""
-#             cur = ind-1
-#             while not is_qn_no(lines[cur]):
-#                 qn_text = lines[cur][4] + qn_text
-#                 cur-=1
-#             qn_no = lines[cur][4]
-#             # print(qn_no, qn_text)
-#             questions.append(Question(remove_next_line(qn_no),remove_next_line(qn_text), options[len(questions) * 4: len(questions) * 4 + 4]))
-#     return questions
-
-# def get_questions_refernce(questions):
-#     all_questions = questions
-#     pattern = r"lines*\s*(\d+)(?:\s*(?:,|-|and)\s*(\d+))?"
-
-#     for ind,qn in enumerate(all_questions):
-#         reference_lines_match = re.findall(pattern,qn[1],re.IGNORECASE)
-#         reference_lines = []
-#         for ref_line in reference_lines_match:
-#            reference_lines.append(list(ref_line))
-#         all_questions[ind].append(reference_lines)
-#     return all_questions
-
-# def get_options_refernce(options):
-#     all_options = options
-#     pattern = r"lines*\s*(\d+)(?:\s*(?:,|-|and)\s*(\d+))?"
-
-#     for ind,op in enumerate(all_options):
-#         reference_lines_match = re.findall(pattern,op,re.IGNORECASE)
-#         reference_lines = []
-#         for ref_line in reference_lines_match:
-#            reference_lines.append(list(ref_line))
-#         all_options[ind] = [all_options[ind],reference_lines]
-#     return all_options
-
-# def populate_reference()
-# [[qtext, qno]]
 
 
 def populate_referencesV1(input_list: List[Question]):
