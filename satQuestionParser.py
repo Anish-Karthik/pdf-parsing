@@ -143,7 +143,7 @@ def get_each_lines(doc):
     lines = []
     hasAnswersStarted = False
     skip = False
-    for page in doc[13:]:
+    for page in doc[13:18]:
         # images = page.get_images()
 
         pg_lines = []
