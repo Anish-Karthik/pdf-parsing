@@ -99,7 +99,7 @@
         <div>Start Ref : <span id="modifyStartRef"></span></div>
         <div>End Ref : <span id="modifyEndRef"></span></div>
         <button onclick="modifyRef()">ModifyRef</button>
-        <button style="margin-left: 30px" onclick="deleteRef()">
+        <button class="" onclick="delRef()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="15"
@@ -192,11 +192,6 @@
               const jsonData = JSON.parse(e.target.result);
               data = jsonData;
               renderContent(data);
-              document.getElementById("output").textContent = JSON.stringify(
-                jsonData,
-                null,
-                2
-              );
             } catch (error) {
               console.log(error); //
             }
@@ -206,7 +201,26 @@
           alert("No file selected");
         }
       }
-
+      function delRef() {
+        console.log(helper);
+        if (!helper.selectedRef) {
+          alert("No reference is selected");
+        }
+        data.questions.forEach((question, index) => {
+          if (question.id == helper.selectedQuestion.id) {
+            console.log(data.questions[index].references);
+            data.questions[index].references = question.references.filter(
+              (ref, index) => {
+                return ref.id != helper.selectedRef.id;
+              }
+            );
+            console.log(data.questions[index].references);
+          }
+        });
+        helper.element = null;
+        helper.selectedRef = null;
+        renderContent(data);
+      }
       function passageHightlight(startIndex, wordsByLine) {
         startIndex.forEach((item) => {
           let start_word = item.start;
@@ -258,6 +272,7 @@
         });
       }
       function modifyRef() {
+        console.log("modifyRef ", helper);
         const selectedElements = logSelectedAttributes();
         if (!selectedElements) {
           alert("No text is selected");
@@ -270,9 +285,18 @@
         let startWord = selectedElements[0].id.split("-")[2];
         let endWord =
           selectedElements[selectedElements.length - 1].id.split("-")[2];
+
         if (helper.element) {
-          helper.selectedRef.start_word = startWord;
-          helper.selectedRef.end_word = endWord;
+          data.questions.forEach((question) => {
+            if (question.id == helper.selectedQuestion.id) {
+              question.references.forEach((ref, index) => {
+                if (ref.referId === helper.selectedRef.referId) {
+                  question.references[index].start_word = startWord;
+                  question.references[index].end_word = endWord;
+                }
+              });
+            }
+          });
           helper.element = null;
         } else {
           console.log("hello");
@@ -280,7 +304,7 @@
           document.getElementById("modifyEndRef").innerHTML = endWord;
 
           data.questions.forEach((question, ind) => {
-            if (question.id === helper.newRefQuestion.id) {
+            if (question.id === helper.selectedQuestion.id) {
               data.questions[ind].references.push({
                 referId:
                   data.section +
@@ -418,7 +442,7 @@
           if (question.id === questionId) {
             document.getElementById("selectedQuestionId").innerHTML =
               question.qno + ". " + question.description;
-            helper.newRefQuestion = question;
+            helper.selectedQuestion = question;
           }
         });
         setTimeout(() => {
