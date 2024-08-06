@@ -79,8 +79,9 @@ def isStartOfParagraph(block, prevBlock=None):
         (prevBlock[7] and block[0] == prevBlock[0])
     )
     if block[7]:
-        print("bk",block)
+        # print("bk",block)
         # print("pb",prevBlock)
+        pass
     return block[7]
 
 
@@ -265,6 +266,18 @@ def fix_buggy_question(question: Question):
     # print(question.to_json())
     return question
 
+def proccessPassageText(text):
+    # text = re.sub(r"\n", " ", text)
+    text = re.sub(r" +", " ", text)
+    text = re.sub(r" +\.", ".", text)
+    # remove \n that are not followed by a \t
+    text = re.sub(r"\n(?!\t)", " ", text)
+    if text.startswith("\n"):
+        text = text[1:]
+    if not text.startswith("\t"):
+        text = "\t" + text
+    return text
+
 
 pdf_path = "input/baron.pdf"
 doc = fitz.open(pdf_path)
@@ -293,6 +306,7 @@ for i, split in enumerate(passage_split):
 
     if not comprehension:
         continue
+    comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
     comprehension.questions = [q for q in comprehension.questions if q.qno != ""]
     # fix buggy questions
     comprehension.questions = [q for q in comprehension.questions]
