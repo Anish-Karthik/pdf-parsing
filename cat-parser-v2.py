@@ -99,13 +99,25 @@ def add_answers_to_questions(questions: List[Question], answers: List[Tuple[str,
         questions[i].correct_option = answers[i][1]
     return questions
 
+def proccessPassageText(text):
+    # text = re.sub(r"\n", " ", text)
+    text = re.sub(r" +", " ", text)
+    text = re.sub(r" +\.", ".", text)
+    # remove \n that are not followed by a \t
+    text = re.sub(r"\n(?!\t)", " ", text)
+    if not text.startswith("\t"):
+        text = "\t" + text
+    if text.endswith("\n\t"):
+        text = text[:-2]
+    return text
+
 def parseForAllFiles():
-    file_list = os.listdir("input/cat")
+    file_list = os.listdir("cat/inputPDF")
     cnt = 0
     print(file_list)
     for file_name in file_list:
         if file_name.endswith(".pdf"):
-            pdf_file_path = os.path.join("input/cat", file_name)
+            pdf_file_path = os.path.join("cat/inputPDF", file_name)
             paperNumber = file_name.rstrip(".pdf")
         print(pdf_file_path)
         doc = fitz.open(pdf_file_path)
@@ -117,8 +129,9 @@ def parseForAllFiles():
         comprehensions = [extract_comprehension(p, allQuestions) for p in passages]
         print(len(comprehensions))
         for c in comprehensions:
+            c.passage.passage = proccessPassageText(c.passage.passage)
             cnt += 1
-            write_text_to_file(json.dumps(c.to_json(), indent=2), f"output/cat/cat-passage{cnt}.json")
+            write_text_to_file(json.dumps(c.to_json(), indent=2), f"cat/outputJSON/cat-passage{cnt}.json")
 
     print(cnt)
         
