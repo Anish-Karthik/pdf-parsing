@@ -130,11 +130,20 @@ def split_multi_block(block):
     # print(output_blocks)
     return output_blocks
 
+def processBlock(block):
+    # if block starts (/d+) then block[0] = 39.5645751953125
+    if re.search(r"^\(\d+\)", block[4]) or re.search(r"^Line\s+", block[4]):
+        block = list(block)
+        block[0] = 39.5645751953125
+        block[4] = re.sub(r"^\(\d+\)", "", block[4])
+        block[4] = re.sub(r"^Line\s+", "", block[4])
+    return block
+
 def get_each_lines(doc):
     lines = []
     hasAnswersStarted = False
     skip = False
-    for page in doc[:]:
+    for page in doc[13:18]:
         # images = page.get_images()
 
         pg_lines = []
@@ -166,7 +175,7 @@ def get_each_lines(doc):
                 print("Answer started Split")
             if not re.search(r"(?<!.)\.{5,}", block[4]):
                 # print(block)
-
+                block = processBlock(block)
                 # if is_multi_block(block):
                     # print("\n\n\n\n\n")
                 if hasAnswersStarted:
