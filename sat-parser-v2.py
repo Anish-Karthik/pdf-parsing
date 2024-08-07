@@ -247,8 +247,19 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
         passage_lines.append((passages, False))
     return passage_lines
 
+def proccessPassageText(text):
+    # text = re.sub(r"\n", " ", text)
+    text = re.sub(r" +", " ", text)
+    text = re.sub(r" +\.", ".", text)
+    # remove \n that are not followed by a \t
+    text = re.sub(r"\n(?!\t)", " ", text)
+    if not text.startswith("\t"):
+        text = "\t" + text
+    if text.endswith("\n\t"):
+        text = text[:-2]
+    return text
 
-pdf_path = "SAT WorkBook.pdf"
+pdf_path = "baron/inputPDF/SAT WorkBook.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
@@ -268,6 +279,7 @@ for i, split in enumerate(passage_split):
     split, isWritingComprehension = split
     comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
     if comprehension is not None:
+        comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
         all_comprehensions.append(comprehension)
         for j, question in enumerate(comprehension.questions):
             qns.append(question.qno)
@@ -278,7 +290,7 @@ print(qno_cnt)
 print(qns)
 
 for i, obj in enumerate(all_comprehensions):
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/barron-workbook-passage{i + 1}.json")
+    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"baron/outputJSON/barron-workbook-passage{i + 1}.json")
 
 
 # print(json.dumps([c.to_json() for c in all_comprehensions]))
