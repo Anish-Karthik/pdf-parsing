@@ -235,8 +235,20 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     passage_lines.append((passages, len(passage_lines)))
     return passage_lines[1:]
 
+def proccessPassageText(text):
+    # text = re.sub(r"\n", " ", text)
+    text = re.sub(r" +", " ", text)
+    text = re.sub(r" +\.", ".", text)
+    # remove \n that are not followed by a \t
+    text = re.sub(r"\n(?!\t)", " ", text)
+    if not text.startswith("\t"):
+        text = "\t" + text
+    if text.endswith("\n\t"):
+        text = text[:-2]
+    return text
 
-pdf_path = "/Users/pranav/Downloads/sat/McGraw Hill/McGraw_Hills_500_SAT_Reading_Writing.pdf"
+
+pdf_path = "mcgrawhill/inputPDF/Mcgraw Hill 6 Tests.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
@@ -255,6 +267,7 @@ for i, split in enumerate(passage_split):
     split, isWritingComprehension = split
     comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
     if comprehension is not None:
+        comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
         all_comprehensions.append(comprehension)
         for j, question in enumerate(comprehension.questions):
             question.correct_option = all_answers[qno_cnt].answer
@@ -262,7 +275,7 @@ for i, split in enumerate(passage_split):
             qno_cnt += 1
 
 for i, obj in enumerate(all_comprehensions):
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/mcgrawhill-passage{i + 1}.json")
+    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"mcgrawhill/outputJSON/mcgrawhill-2-passage-{i + 1}.json")
 
 
 # print(json.dumps([c.to_json() for c in all_comprehensions]))
