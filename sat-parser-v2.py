@@ -312,7 +312,7 @@ for sample_paper, (pdf_path, answer_pdf_path) in enumerate(files, start=1):
     # sample_paper = "8"
     sample_paper = str(sample_paper)
 
-    pdf_path = "input/sat/SAT Practice Test 1.pdf"
+    # pdf_path = "input/sat/SAT Practice Test 1.pdf"
     doc = fitz.open(pdf_path)
     blocks = get_each_lines(doc)
     # for block in blocks:
@@ -320,7 +320,7 @@ for sample_paper, (pdf_path, answer_pdf_path) in enumerate(files, start=1):
 
     all_comprehensions = []
     # all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
-    answer_pdf_path = "sat/inputPDF/SAT Practice Test 1 Answers.pdf"
+    # answer_pdf_path = "sat/inputPDF/SAT Practice Test 1 Answers.pdf"
     ans_doc = fitz.open(answer_pdf_path)
     answer_blocks = get_each_lines(ans_doc, True)
     all_answers = parse_answer(answer_blocks)
