@@ -5,6 +5,7 @@
     background-color: rgb(244, 63, 63);
 }
 .left-panel {
+    margin-top: 20px;
     display: flex;
     row-gap: 5px;
     flex-direction: column;
@@ -39,9 +40,7 @@ input[type="file"]::file-selector-button {
 input[type="file"]::file-selector-button:hover {
     background: #084cdf;
 }
-.upload,
-#downloadBtn,
-.modify-ref {
+.btn {
     background-color: #0078ff;
     padding-left: 16px;
     padding-right: 16px;
@@ -51,6 +50,13 @@ input[type="file"]::file-selector-button:hover {
     border-radius: 6px;
     color: white;
     font-weight: bold;
+}
+#deleteBtn {
+    background-color: red;
+    margin-left: 20px;
+}
+#downloadBtn {
+    margin-left: 20px;
 }
 .header {
     padding: 10px;
