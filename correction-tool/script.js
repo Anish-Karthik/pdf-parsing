@@ -51,7 +51,7 @@ function delRef() {
         alert("No reference is selected");
     }
     data.questions.forEach((question, index) => {
-        if (question.id == helper.selectedQuestion.id) {
+        if (question.qno == helper.selectedQuestion.qno) {
             console.log(data.questions[index].references);
             data.questions[index].references = question.references.filter(
                 (ref, index) => {
@@ -158,7 +158,7 @@ function modifyRef() {
 
     if (helper.element) {
         data.questions.forEach((question) => {
-            if (question.id == helper.selectedQuestion.id) {
+            if (question.qno == helper.selectedQuestion.qno) {
                 question.references.forEach((ref, index) => {
                     if (ref.referId === helper.selectedRef.referId) {
                         question.references[index].start_word = startWord;
@@ -174,7 +174,7 @@ function modifyRef() {
         document.getElementById("modifyEndRef").innerHTML = endWord;
 
         data.questions.forEach((question, ind) => {
-            if (question.id === helper.selectedQuestion.id) {
+            if (question.qno === helper.selectedQuestion.qno) {
                 data.questions[ind].references.push({
                     referId:
                         data.section +
@@ -309,7 +309,7 @@ function clickQuestionRef(element) {
     const questionId = element.id;
     element.style.backgroundColor = "yellow";
     data.questions.forEach((question) => {
-        if (question.id === questionId) {
+        if (question.qno === questionId) {
             document.getElementById("selectedQuestionId").innerHTML =
                 question.qno + ". " + question.description;
             helper.selectedQuestion = question;
@@ -326,9 +326,7 @@ function questionHtml(data) {
             (question) =>
                 `<div>
                 <div class="question">
-                    <p><strong id=${question.id
-                } onclick="clickQuestionRef(this)" >Question ${question.qno
-                }:</strong>
+                    <p><strong id="${question.qno}" onclick="clickQuestionRef(this)" >Question ${question.qno}:</strong>
                     ${getQuestionDescriptionHtml(
                     data.section,
                     question.description,
