@@ -279,40 +279,66 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
     all_words_index = doc_index
     return obj
 
+def proccessPassageText(text):
+    # text = re.sub(r"\n", " ", text)
+    text = re.sub(r" +", " ", text)
+    text = re.sub(r" +\.", ".", text)
+    # remove \n that are not followed by a \t
+    text = re.sub(r"\n(?!\t)", " ", text)
+    if not text.startswith("\t"):
+        text = "\t" + text
+    if text.endswith("\n\t"):
+        text = text[:-2]
+    return text
 
-sample_paper = "8"
+import os
+pdf_paths = []
+answer_pdf_paths = []
 
-pdf_path = "input/sat/SAT Practice Test " + sample_paper + ".pdf"
-doc = fitz.open(pdf_path)
-blocks = get_each_lines(doc)
-# for block in blocks:
-#     print(block)
+for file in os.listdir("psat/inputPDF"):
+    if file.endswith("answers.pdf"):
+        answer_pdf_paths.append("psat/inputPDF/" + file)
+    elif file.endswith(".pdf"):
+        pdf_paths.append("psat/inputPDF/" + file)
 
+files = zip(pdf_paths, answer_pdf_paths)
+print(pdf_paths, answer_pdf_paths)
 
-all_comprehensions = []
-# all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
-answer_pdf_path = "input/sat-answers/SAT Practice Test " + sample_paper + ".pdf"
-ans_doc = fitz.open(answer_pdf_path)
-answer_blocks = get_each_lines(ans_doc, True)
-all_answers = parse_answer(answer_blocks)
-
-passage_split = split_passages(blocks)
-# print(len(passage_split))
-qno_cnt = 0
-for i, split in enumerate(passage_split):
-    # print(split,"\n\n\n\n\n\n\n\n\n")
-    split, isWritingComprehension = split
-    comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
-    if comprehension is not None:
-        all_comprehensions.append(comprehension)
-        for j, question in enumerate(comprehension.questions):
-            question.correct_option = all_answers[qno_cnt].answer
-            question.detailed_answer = all_answers[qno_cnt].detailed_solution
-            qno_cnt += 1
-
-for i, obj in enumerate(all_comprehensions):
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), "output/SATJson/sat-sample-paper-" + sample_paper + f"-passage{i + 1}.json")
+for sample_paper, (pdf_path, answer_pdf_path) in enumerate(files, start=1):
+    # sample_paper = "8"
+    sample_paper = str(sample_paper)
+    # pdf_path = "psat/inputPDF/pdf_psat-nmsqt-practice-test-1.pdf"
+    doc = fitz.open(pdf_path)
+    blocks = get_each_lines(doc)
+    # for block in blocks:
+    #     print(block)
 
 
-# print(json.dumps([c.to_json() for c in all_comprehensions]))
-write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
+    all_comprehensions = []
+    # all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
+    # answer_pdf_path = "psat/inputPDF/pdf_psat-nmsqt-practice-test-1-answers.pdf"
+    ans_doc = fitz.open(answer_pdf_path)
+    answer_blocks = get_each_lines(ans_doc, True)
+    all_answers = parse_answer(answer_blocks)
+
+    passage_split = split_passages(blocks)
+    # print(len(passage_split))
+    qno_cnt = 0
+    for i, split in enumerate(passage_split):
+        # print(split,"\n\n\n\n\n\n\n\n\n")
+        split, isWritingComprehension = split
+        comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
+        if comprehension is not None:
+            comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
+            all_comprehensions.append(comprehension)
+            for j, question in enumerate(comprehension.questions):
+                question.correct_option = all_answers[qno_cnt].answer
+                question.detailed_answer = all_answers[qno_cnt].detailed_solution
+                qno_cnt += 1
+
+    for i, obj in enumerate(all_comprehensions):
+        write_text_to_file(json.dumps(obj.to_json(), indent=2), "psat/outputJson/psat-sample-paper-" + sample_paper + f"-passage{i + 1}.json")
+
+
+    # print(json.dumps([c.to_json() for c in all_comprehensions]))
+    write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")

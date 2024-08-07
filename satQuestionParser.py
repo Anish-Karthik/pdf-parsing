@@ -104,9 +104,10 @@ def get_questions_alter(lines) -> List[Question]:
     lines.append([0, lines[-1][3] + 5, 0, 0, "", 0, 0, False])
     for ind, line in enumerate(lines):
         if cur_op == 3 and not is_part_of_last_option(lines[ind - 1], line):
-            options.append(Option(remove_option_number(op_text)))
-            qn_no, qn_text = get_question(lines, op_0_ind)
-            all_questions.append(Question(qn_no.strip(), qn_text, options))
+            if op_0_ind is not None:
+                options.append(Option(remove_option_number(op_text)))
+                qn_no, qn_text = get_question(lines, op_0_ind)
+                all_questions.append(Question(qn_no.strip(), qn_text, options))
             options_started = False
             options = []
             op_0_ind = None
