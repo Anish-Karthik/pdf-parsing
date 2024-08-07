@@ -110,9 +110,13 @@ def get_each_lines(doc):
     for page in doc:
         line = []
         blocks = page.get_text("blocks")
-        border = 270
+        border = 200
+        stop_block = None
         for block in blocks:
             block = list(block)
+            if "STOP" in block[4]:
+                stop_block = block
+                continue
             if not re.search(r"^\.", block[4]):
                 line.append(block)
             else:
@@ -120,6 +124,8 @@ def get_each_lines(doc):
 
         line = sorted(line, key=lambda x: (0 if x[0] < border else 1, x[1]))
         # extra property to check isLeft
+        if stop_block:
+            line.append(stop_block)
         line = [list(block) + [block[0] < border] for block in line]
         lines.extend(line)
 

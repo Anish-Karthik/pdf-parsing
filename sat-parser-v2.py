@@ -13,7 +13,8 @@ from underline import *
 
 def isStartOfPassage(block):
     return (bool(re.match(r'(?<!.)Questions\s\d+.\d+', block[4])) or
-            bool(re.match(r'(?<!.)Questions\s\d+\sand\s\d+', block[4])))
+            bool(re.match(r'(?<!.)Questions\s\d+\sand\s\d+', block[4])) or
+            bool(re.match(r'For each of the following questions', block[4])))
 
 
 def fixBugForPassage4(txt):
@@ -28,6 +29,10 @@ def fixBugForPassage4(txt):
 
 def isEndOfPassage(block):
     return re.match(r"(?<!.)\d+\.", block[4])
+
+
+def isEndOfReadingComprehension(block):
+    return "STOP" in block[4]
 
 
 def parseQuestionNumber(txt) -> list:
@@ -223,16 +228,24 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     passage_lines = []
     for i, block in enumerate(blocks):
         block = clean_block(block)
+        if isEndOfReadingComprehension(block):
+            isPassageStarted = False
+            if len(passages) > 0:
+                passage_lines.append((passages, False))
+                passages = []
+            continue
         if isStartOfPassage(block):
             isPassageStarted = True
-            passage_lines.append((passages, False))
-            passages = []
+            if len(passages) > 0:
+                passage_lines.append((passages, False))
+                passages = []
         if isPassageStarted:
             if isSectionHeader(block):
                 continue
             passages.append(block)
-    passage_lines.append((passages, False))
-    return passage_lines[1:]
+    if len(passages) > 0:
+        passage_lines.append((passages, False))
+    return passage_lines
 
 
 pdf_path = "SAT WorkBook.pdf"
@@ -241,7 +254,7 @@ blocks = get_each_lines(doc)
 
 
 all_comprehensions = []
-all_answers = parse_answer(blocks)
+all_answers = parse_answer(doc)
 all_words_for_underline = get_all_words_for_underline(doc)
 all_words_index = 0
 
@@ -249,16 +262,20 @@ passage_split = split_passages(blocks)
 print(len(passage_split))
 
 qno_cnt = 0
+qns = []
 for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
     split, isWritingComprehension = split
     comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
     if comprehension is not None:
         all_comprehensions.append(comprehension)
-        # for j, question in enumerate(comprehension.questions):
-        #     question.correct_option = all_answers[qno_cnt].answer
-        #     question.detailed_answer = all_answers[qno_cnt].detailed_solution
-        #     qno_cnt += 1
+        for j, question in enumerate(comprehension.questions):
+            qns.append(question.qno)
+            question.correct_option = all_answers[qno_cnt].answer
+            question.detailed_answer = all_answers[qno_cnt].detailed_solution
+            qno_cnt += 1
+print(qno_cnt)
+print(qns)
 
 for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"output/barron-workbook-passage{i + 1}.json")
