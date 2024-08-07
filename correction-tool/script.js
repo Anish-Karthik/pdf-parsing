@@ -21,6 +21,7 @@ function uploadFile() {
             try {
                 const jsonData = JSON.parse(e.target.result);
                 data = jsonData;
+                preprocessData();
                 renderContent(data);
             } catch (error) {
                 console.log(error); //
@@ -30,6 +31,18 @@ function uploadFile() {
     } else {
         alert("No file selected");
     }
+}
+
+function preprocessData() {
+    data.passage = data.passage.replace("\n\t", " \n\t");
+    data.passage = data.passage.replace("\n", " \n");
+
+    passageWords = data.passage.split(" ");
+    data.words = [];
+    for (i = 0; i < passageWords.length; i++) {
+        data.words.push({"wordId": `1-1-${i}`, "word": passageWords[i]});
+    }
+
 }
 
 function delRef() {
@@ -59,23 +72,50 @@ function passageHightlight(startIndex, wordsByLine) {
         let end_word = item.end;
 
         for (let i = 0; i < wordsByLine.length; i++) {
+            let isTabbed = false;
+            let isLineBreak = false;
+            if (wordsByLine[i].word.startsWith("\n\t")) {
+                isTabbed = true;
+                isLineBreak = true;
+            }
+            if (wordsByLine[i].word.startsWith("\n")) {
+                isLineBreak = true;
+            }
+    
             if (i >= start_word && i <= end_word) {
+                
                 if (i == start_word) {
                     wordsByLine[i].html =
                         `<span id="${item.referId}" onclick="clickRef(this)">
-                            <span class="question-no-style">Q${item.qno} </span>
+                            <span  class="question-no-style ${isTabbed ? "tab" : ""}">Q${item.qno} </span>
                         </span>
                         <span class="highlighted" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
                 } else if (wordsByLine[i].html == "") {
                     wordsByLine[i].html =
-                        `<span class="highlighted" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
+                        `<span class="highlighted ${isTabbed ? "tab" : ""}" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
+                }
+                
+                if (isLineBreak) {
+                    wordsByLine[i].html = "<br/>" + wordsByLine[i].html; 
                 }
             }
         }
     });
     for (let i = 0; i < wordsByLine.length; i++) {
+        let isTabbed = false;
+        let isLineBreak = false;
+        if (wordsByLine[i].word.startsWith("\n\t")) {
+            isTabbed = true;
+            isLineBreak = true;
+        }
+        if (wordsByLine[i].word.startsWith("\n")) {
+            isLineBreak = true;
+        }
         if (wordsByLine[i].html == "") {
-            wordsByLine[i].html = `<span id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
+            wordsByLine[i].html = `<span class="${isTabbed ? "tab" : ""}" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
+            if (isLineBreak) {
+                wordsByLine[i].html = "<br/>" + wordsByLine[i].html; 
+            }
         }
     }
     return wordsByLine;
@@ -183,9 +223,7 @@ function passageHtml(data) {
         })
         .filter((reference) => reference);
 
-    var wordsByLine = data.passage.split(" ");
-
-    wordsByLine = wordsByLine.map((word) => {
+    wordsByLine = data.words.map((word) => {
         return { html: ``, ...word };
     });
     return append_question_box(wordsByLine, references);

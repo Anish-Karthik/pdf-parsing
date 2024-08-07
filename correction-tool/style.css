@@ -70,6 +70,7 @@ input[type="file"]::file-selector-button:hover {
 html {
     padding: 25px;
     font-size: small;
+    overflow: hidden;
 }
 .section {
     text-align: center;
@@ -110,7 +111,8 @@ a {
     align-items: start;
 }
 .correct-option {
-    color: rgb(10, 154, 10);
+    color: rgb(52, 168, 83);
+    font-weight: bold;
 }
 .highlighted {
     font-weight: bold;
@@ -126,4 +128,7 @@ input {
 .section-html {
     height: 100vh;
     overflow: scroll;
+}
+.tab {
+    padding-left: 20px;
 }
