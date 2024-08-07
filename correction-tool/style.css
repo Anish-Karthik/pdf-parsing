@@ -1,0 +1,123 @@
+.delete-btn {
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: rgb(244, 63, 63);
+}
+.left-panel {
+    display: flex;
+    row-gap: 5px;
+    flex-direction: column;
+}
+.title {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+input[type="file"] {
+    width: 250px;
+    max-width: 100%;
+    height: 50px;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+input[type="file"]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #0078ff;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: #084cdf;
+}
+.upload,
+#downloadBtn,
+.modify-ref {
+    background-color: #0078ff;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
+.header {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+html {
+    padding: 25px;
+    font-size: small;
+}
+.section {
+    text-align: center;
+    width: 100%;
+}
+.question-no-style {
+    background-color: #636467;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: x-small;
+    font-weight: 800;
+    margin: 3px;
+}
+.up-down-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+#content {
+    padding-top: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+}
+.line-of-passage {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    display: inline;
+}
+.question {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 10px;
+    align-items: start;
+}
+.correct-option {
+    color: rgb(10, 154, 10);
+}
+.highlighted {
+    font-weight: bold;
+    color: #4285f4;
+    font-size: small;
+}
+input {
+    margin-top: 3px;
+    height: 20px;
+    width: 20px;
+}
+.question-html,
+.section-html {
+    height: 100vh;
+    overflow: scroll;
+}
