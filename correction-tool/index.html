@@ -10,7 +10,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link href="style.css" rel="stylesheet" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -23,41 +26,56 @@
     <div id="content"></div>
     <div class="header">
       <div>
-          <input
-            type="file"
-            id="fileInput"
-            accept=".json"
-            placeholder="choose file"
-            style="margin-right: 7px"
-          />
-        <button onclick="uploadFile()" id="uploadBtn" class="btn"><i class="fa fa-upload"></i> Upload</button>
-        <button style="width: 80px; margin-left: 30px;" class="btn" onclick="modifyRef()">Modify</button>
-        <button id="deleteBtn" class="btn" onclick="delRef()"><i class="fa fa-trash"></i> </button>
-        <button id="downloadBtn" style="margin-left: 30px;" class="btn"><i class="fa fa-download"></i> Download</button>
+        <input
+          type="file"
+          id="fileInput"
+          accept=".json"
+          placeholder="choose file"
+          style="margin-right: 7px"
+        />
+        <button onclick="uploadFile()" id="uploadBtn" class="btn">
+          <i class="fa fa-upload"></i> Upload
+        </button>
+        <button
+          style="width: 80px; margin-left: 30px"
+          class="btn"
+          onclick="modifyRef()"
+        >
+          Modify
+        </button>
+        <button id="deleteBtn" class="btn" onclick="delRef()">
+          <i class="fa fa-trash"></i>
+        </button>
+        <button id="downloadBtn" style="margin-left: 30px" class="btn">
+          <i class="fa fa-download"></i> Download
+        </button>
       </div>
       <div class="editMode">
         <span class="editModeLabel">Edit mode</span>
         <label class="switch">
-          <input id="editMode" type="checkbox" onclick="editModeChanged()">
+          <input id="editMode" type="checkbox" onclick="editModeChanged()" />
           <span class="slider round"></span>
         </label>
       </div>
-      <br/>
+      <br />
       <div>
         <div class="title">
-          Selected Question : <span class="headerValue" id="selectedQuestionId"></span>
+          Selected Question :
+          <span class="headerValue" id="selectedQuestionId"></span>
         </div>
         <div class="title">
-          Selected content : <span class="headerValue" id="selectedContent"></span>
+          Selected content :
+          <span class="headerValue" id="selectedContent"></span>
         </div>
       </div>
     </div>
 
     <script>
-      document.getElementById("downloadBtn")
-      .addEventListener("click", function () {
+      document
+        .getElementById("downloadBtn")
+        .addEventListener("click", function () {
           downloadJSONFile(data, "data.json");
-      });
+        });
     </script>
   </body>
 </html>

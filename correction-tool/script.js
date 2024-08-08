@@ -265,10 +265,10 @@ function optionHtml(question) {
     return question.options
         .map(
             (option, index) =>
-                `<p class = '${String.fromCharCode(65 + index) == question.correct_option
+                `<p class = 'option option-${question.qno} ${String.fromCharCode(65 + index) == question.correct_option
                     ? "correct-option"
                     : "incorrect-option"
-                }' style="margin-left:20px;">${String.fromCharCode(65 + index)}. ${option.description}</p>`
+                }' style="margin-left:20px;">${String.fromCharCode(65 + index)}. ${option.description} <button class="opt-disable-btn">tick</button></p>`
         )
         .join("");
 }
@@ -411,7 +411,42 @@ function getSelectedContent() {
         document.getElementById("selectedContent").innerHTML = "";
     }
 }
-
+function editOptionMode(){
+    function handleClick(element,event){
+       if(!confirm(`Are you sure you want to change the option to ${element.innerText}`)) return;
+        changeCorrectOption(element,event)
+    }
+   let options = document.getElementsByClassName('option');
+   if(document.getElementById('editMode').checked){
+     for(let i = 0; i < options.length; i++){
+        options[i].getElementsByTagName('button')[0].className = 'opt-change-btn'
+        options[i].removeEventListener("click", function(event) {
+            handleClick(options[i], event);
+        });
+        options[i].getElementsByTagName('button')[0].addEventListener("click",function(event) {
+            handleClick(options[i], event);
+          });
+     }
+   }else{
+    for(let i = 0; i < options.length; i++){
+        options[i].getElementsByTagName('button')[0].className = "opt-disable-btn"
+     }
+   }
+}
+function changeCorrectOption(element,event){
+    let regex = /option-\d{1,}/;
+    let classes = Array.from(element.classList)
+    let matchingIndex = classes.findIndex(className => regex.test(className));
+    all_match_options = document.getElementsByClassName(classes[matchingIndex])
+    for(let i = 0;i<all_match_options.length;i++){
+       if(Array.from(all_match_options[i].classList).includes(classes[matchingIndex])){
+        all_match_options[i].classList.remove("correct-option");
+        all_match_options[i].classList.add("incorrect-option");
+       }
+    }
+    element.classList.remove("incorrect-option")
+    element.classList.add("correct-option")
+}
 function editModeChanged() {
     let passageElements = document.getElementsByClassName("passage-word");
     if (document.getElementById('editMode').checked) {
@@ -423,4 +458,5 @@ function editModeChanged() {
             passageElements[i].setAttribute("contenteditable", "false");
         }
     }
+    editOptionMode();
 }
