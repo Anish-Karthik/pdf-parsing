@@ -35,8 +35,8 @@ function uploadFile() {
 }
 
 function preprocessData() {
-    data.passage = data.passage.replace("\n\t", " \n\t");
-    data.passage = data.passage.replace("\n", " \n");
+    data.passage = data.passage.replaceAll("\n\t", " \n\t");
+    data.passage = data.passage.replaceAll("\n", " \n");
 
     passageWords = data.passage.split(" ");
     data.words = [];
