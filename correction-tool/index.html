@@ -31,24 +31,17 @@
             style="margin-right: 7px"
           />
         <button onclick="uploadFile()" id="uploadBtn" class="btn"><i class="fa fa-upload"></i> Upload</button>
-        <button id="downloadBtn" class="btn"><i class="fa fa-download"></i> Download</button>
+        <button style="width: 80px; margin-left: 30px;" class="btn" onclick="modifyRef()">Modify</button>
+        <button id="deleteBtn" class="btn" onclick="delRef()"><i class="fa fa-trash"></i> </button>
+        <button id="downloadBtn" style="margin-left: 30px;" class="btn"><i class="fa fa-download"></i> Download</button>
       </div>
       <br/>
-      <div class="left-panel">
+      <div>
         <div class="title">
-          Choosen Question : <span id="selectedQuestionId"></span>
+          Selected Question : <span class="headerValue" id="selectedQuestionId"></span>
         </div>
         <div class="title">
-          Start Reference : <span id="modifyStartRef"></span>
-        </div>
-        <div class="title">
-          End Reference : <span id="modifyEndRef"></span>
-        </div>
-        <div>
-          <button style="width: 80px" class="btn" onclick="modifyRef()">
-            Modify
-          </button>
-          <button id="deleteBtn" class="btn" onclick="delRef()"><i class="fa fa-trash"></i> </button>
+          Selected content : <span class="headerValue" id="selectedContent"></span>
         </div>
       </div>
     </div>

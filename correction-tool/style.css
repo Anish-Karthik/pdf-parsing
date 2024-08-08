@@ -4,16 +4,14 @@
     border-radius: 5px;
     background-color: rgb(244, 63, 63);
 }
-.left-panel {
-    margin-top: 20px;
-    display: flex;
-    row-gap: 5px;
-    flex-direction: column;
-}
 .title {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: larger;
+}
+.headerValue {
+    font-weight: normal;
+    font-size: small;
 }
 input[type="file"] {
     width: 250px;
@@ -60,17 +58,24 @@ input[type="file"]::file-selector-button:hover {
 }
 .header {
     padding: 10px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 150px;
     width: 100%;
     position: fixed;
     top: 0;
+    background: beige;
+    max-height: 200px;
+    overflow: scroll;
+}
+.highlightSelection {
+    /* From https://css.glass */
+    background: rgba(44, 125, 155, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(44, 125, 155, 0.3);
 }
 html {
-    padding: 25px;
     font-size: small;
-    overflow: hidden;
 }
 .section {
     text-align: center;
@@ -92,6 +97,7 @@ html {
     padding: 20px;
 }
 #content {
+    padding-left: 25px;
     padding-top: 200px;
     display: grid;
     grid-template-columns: 50% 50%;

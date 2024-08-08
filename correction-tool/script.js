@@ -138,7 +138,11 @@ function passageHightlight(startIndex, wordsByLine) {
         let end_word = item.end;
         for (let i = 0; i < wordsByLine.length; i++) {
             var isHighlighted = i >= start_word && i <= end_word;
-            getWord(item.referId, wordsByLine[i],isHighlighted,i == start_word ? item.qno : undefined,isHighlighted ? item.qno : undefined)
+            getWord(
+                item.referId, 
+                wordsByLine[i],
+                isHighlighted,i == start_word ? item.qno : undefined,
+                isHighlighted ? item.qno : undefined);
         }
     });
     
@@ -385,6 +389,7 @@ function renderContent(data) {
 
 function logSelectedAttributes() {
     const selection = window.getSelection();
+    let selectedText = "";
 
     // Check if there's an actual selection
     if (selection.rangeCount > 0 && !selection.isCollapsed) {
@@ -394,11 +399,16 @@ function logSelectedAttributes() {
         // Get all elements that intersect with the selected range
         document.querySelectorAll("span").forEach((span) => {
             if (range.intersectsNode(span)) {
+                selectedText += span.innerHTML;
                 selectedElements.push(span);
             }
         });
 
+        document.getElementById("selectedContent").innerHTML = selectedText;
+
         // Log the attributes of selected elements
         return selectedElements;
+    } else {
+        document.getElementById("selectedContent").innerHTML = "";
     }
 }
