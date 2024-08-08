@@ -21,7 +21,8 @@ function uploadFile() {
             try {
                 const jsonData = JSON.parse(e.target.result);
                 data = jsonData;
-                console.log(data)
+                preprocessData();
+                console.log("preprocess data",data)
                 renderContent(data);
             } catch (error) {
                 console.log(error); //
@@ -33,13 +34,25 @@ function uploadFile() {
     }
 }
 
+function preprocessData() {
+    data.passage = data.passage.replace("\n\t", " \n\t");
+    data.passage = data.passage.replace("\n", " \n");
+
+    passageWords = data.passage.split(" ");
+    data.words = [];
+    for (i = 0; i < passageWords.length; i++) {
+        data.words.push({"wordId": `1-1-${i}`, "word": passageWords[i]});
+    }
+
+}
+
 function delRef() {
     console.log(helper);
     if (!helper.selectedRef) {
         alert("No reference is selected");
     }
     data.questions.forEach((question, index) => {
-        if (question.id == helper.selectedQuestion.id) {
+        if (question.qno == helper.selectedQuestion.qno) {
             console.log(data.questions[index].references);
             data.questions[index].references = question.references.filter(
                 (ref, index) => {
@@ -54,32 +67,95 @@ function delRef() {
     renderContent(data);
 }
 
+function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
+        let isTabbed = false;
+        let isLineBreak = false;
+        if (wordByLine.word.startsWith("\n\t")) {
+            isTabbed = true;
+            isLineBreak = true;
+        }
+        if (wordByLine.word.startsWith("\n")) {
+            isLineBreak = true;
+        }
+        if(isHighlighted){
+            wordByLine.css += ` highlighted  highlight-${highlightQno}`;
+        }
+        
+        if (questionNo) {
+            wordByLine.question += `<span id="${referId}" onclick="clickRef(this)">
+                    <span  class="question-no-style ${isTabbed ? "tab" : ""}" >Q${questionNo} </span>
+                </span>`;
+        }
+        wordByLine.html = wordByLine.question + `<span class="${wordByLine.css}" id='${wordByLine.wordId}'> ${wordByLine.word}</span>`;
+        if (isLineBreak) {
+            wordByLine.html = "<br/>" + wordByLine.html; 
+        }
+}
+function updateReference(){
+    let refId; 
+    data.questions.forEach((question)=>{
+       var elements = document.getElementsByClassName(`highlight-${question.qno}`)
+       for(let i = 0; i < elements.length; i++){
+        console.log(elements[i].innerHTML)
+       }
+    })
+}
 function passageHightlight(startIndex, wordsByLine) {
     console.log("inside passageHightlight",wordsByLine)
     startIndex.forEach((item) => {
         let start_word = item.start;
         let end_word = item.end;
-
         for (let i = 0; i < wordsByLine.length; i++) {
-            if (i >= start_word && i <= end_word) {
-                if (i == start_word) {
-                    wordsByLine[i].html =
-                        `<span id="${item.referId}" onclick="clickRef(this)">
-                            <span class="question-no-style">Q${item.qno} </span>
-                        </span>
-                        <span class="highlighted" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
-                } else if (wordsByLine[i].html == "") {
-                    wordsByLine[i].html =
-                        `<span class="highlighted" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
-                }
-            }
+            var isHighlighted = i >= start_word && i <= end_word;
+            getWord(item.referId, wordsByLine[i],isHighlighted,i == start_word ? item.qno : undefined,isHighlighted ? item.qno : undefined)
         }
+        // for (let i = 0; i < wordsByLine.length; i++) {
+        //     let isTabbed = false;
+        //     let isLineBreak = false;
+        //     if (wordsByLine[i].word.startsWith("\n\t")) {
+        //         isTabbed = true;
+        //         isLineBreak = true;
+        //     }
+        //     if (wordsByLine[i].word.startsWith("\n")) {
+        //         isLineBreak = true;
+        //     }
+    
+        //     if (i >= start_word && i <= end_word) {
+                
+        //         if (i == start_word) {
+        //             wordsByLine[i].html =
+        //                 `<span id="${item.referId}" onclick="clickRef(this)">
+        //                     <span  class="question-no-style ${isTabbed ? "tab" : ""} highlight-${item.qno}" >Q${item.qno} </span>
+        //                 </span>
+        //                 <span class="highlighted" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
+        //         } else if (wordsByLine[i].html == "") {
+        //             wordsByLine[i].html =
+        //                 `<span class="highlighted ${isTabbed ? "tab" : ""}" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
+        //         }
+                
+        //         if (isLineBreak) {
+        //             wordsByLine[i].html = "<br/>" + wordsByLine[i].html; 
+        //         }
+        //     }
+        // }
     });
-    for (let i = 0; i < wordsByLine.length; i++) {
-        if (wordsByLine[i].html == "") {
-            wordsByLine[i].html = `<span id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
-        }
-    }
+    // for (let i = 0; i < wordsByLine.length; i++) {
+    //     let isTabbed = false;
+    //     let isLineBreak = false;
+    //     if (wordsByLine[i].word.startsWith("\n\t")) {
+    //         isTabbed = true;
+    //         isLineBreak = true;
+    //     }
+    //     if (wordsByLine[i].word.startsWith("\n")) {
+    //         isLineBreak = true;
+    //     }
+    //     if (wordsByLine[i].html == "") {
+    //         wordsByLine[i].html = `<span class="${isTabbed ? "tab" : ""}" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
+    //         if (isLineBreak) {
+    //             wordsByLine[i].html = "<br/>" + wordsByLine[i].html; 
+    //         }
+    //     }
+    // }
     return wordsByLine;
 }
 
@@ -120,7 +196,7 @@ function modifyRef() {
 
     if (helper.element) {
         data.questions.forEach((question) => {
-            if (question.id == helper.selectedQuestion.id) {
+            if (question.qno == helper.selectedQuestion.qno) {
                 question.references.forEach((ref, index) => {
                     if (ref.referId === helper.selectedRef.referId) {
                         question.references[index].start_word = startWord;
@@ -136,7 +212,7 @@ function modifyRef() {
         document.getElementById("modifyEndRef").innerHTML = endWord;
 
         data.questions.forEach((question, ind) => {
-            if (question.id === helper.selectedQuestion.id) {
+            if (question.qno === helper.selectedQuestion.qno) {
                 data.questions[ind].references.push({
                     referId:
                         data.section +
@@ -185,10 +261,8 @@ function passageHtml(data) {
         })
         .filter((reference) => reference);
 
-    var wordsByLine = data.passage.split(" ");
-
-    wordsByLine = wordsByLine.map((word) => {
-        return { html: ``, ...word };
+    wordsByLine = data.words.map((word) => {
+        return {question : ``, css : ``, html: ``, ...word };
     });
     console.log("wordsByLine", wordsByLine)
     return append_question_box(wordsByLine, references);
@@ -274,7 +348,7 @@ function clickQuestionRef(element) {
     const questionId = element.id;
     element.style.backgroundColor = "yellow";
     data.questions.forEach((question) => {
-        if (question.id === questionId) {
+        if (question.qno === questionId) {
             document.getElementById("selectedQuestionId").innerHTML =
                 question.qno + ". " + question.description;
             helper.selectedQuestion = question;
@@ -291,9 +365,7 @@ function questionHtml(data) {
             (question) =>
                 `<div>
                 <div class="question">
-                    <p><strong id=${question.id
-                } onclick="clickQuestionRef(this)" >Question ${question.qno
-                }:</strong>
+                    <p><strong id="${question.qno}" onclick="clickQuestionRef(this)" >Question ${question.qno}:</strong>
                     ${getQuestionDescriptionHtml(
                     data.section,
                     question.description,
