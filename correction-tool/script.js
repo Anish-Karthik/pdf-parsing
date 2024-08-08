@@ -81,93 +81,85 @@ function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
         }
         
         if (questionNo) {
-            wordByLine.question += `<span id="${referId}" onclick="clickRef(this)">
+            wordByLine.question += 
+                `<span id="${referId}" onclick="clickRef(this)">
                     <span  class="question-no-style ${isTabbed ? "tab" : ""}" >Q${questionNo} </span>
                 </span>`;
         }
-        wordByLine.html = wordByLine.question + `<span class="${wordByLine.css}" id='${wordByLine.wordId}'> ${wordByLine.word}</span>`;
+        wordByLine.html = 
+            wordByLine.question + `
+                <span class="passage-word ${wordByLine.css}" id='${wordByLine.wordId}'> 
+                    ${wordByLine.word}
+                </span>`;
         if (isLineBreak) {
             wordByLine.html = "<br/>" + wordByLine.html; 
         }
 }
-function updateReference(){
-    let refId; 
-    data.questions.forEach((question)=>{
-       var elements = document.getElementsByClassName(`highlight-${question.qno}`)
-       for(let i = 0; i < elements.length; i++){
-        console.log(elements[i].innerHTML)
-       }
-    })
+
+function populateDataFromHtml(){
+    let wordElements = document.getElementsByClassName("passage-word");
+    let currentWordCount = 0;
+    let highlights = {};
+    let passage = "";
+    for (let i = 0; i < wordElements.length; i++) {
+        let wordElement =  wordElements[i];
+        passage += wordElement.innerHTML;
+
+        let cssClasses = wordElement.getAttribute("class").split(" ");
+        let highlightedQuestions = [];
+        cssClasses.forEach(cssClass => {
+            if (cssClass.startsWith("highlight-")) {
+                highlightedQuestions.push(cssClass.replace("highlight-", ""));
+                
+            }
+        });
+        highlightedQuestions.forEach(question => {
+            if (!highlights[question]) {
+                highlights[question] = currentWordCount;
+            }
+        });
+
+        Object.keys(highlights).forEach(question => {
+            if (!highlightedQuestions.includes(question)) {
+                console.log(question, highlights[question], currentWordCount - 1);
+                delete highlights[question];
+            }
+        });
+
+        currentWordCount += wordElement.innerHTML.trim().split(" ").length;
+    }
+
+    Object.keys(highlights).forEach(question => {
+        console.log(question, highlights[question], currentWordCount);
+    });
 }
+
 function passageHightlight(startIndex, wordsByLine) {
-    console.log("inside passageHightlight",wordsByLine)
     startIndex.forEach((item) => {
         let start_word = item.start;
         let end_word = item.end;
         for (let i = 0; i < wordsByLine.length; i++) {
             var isHighlighted = i >= start_word && i <= end_word;
-            getWord(item.referId, wordsByLine[i],isHighlighted,i == start_word ? item.qno : undefined,isHighlighted ? item.qno : undefined)
+            getWord(
+                item.referId, 
+                wordsByLine[i],
+                isHighlighted,i == start_word ? item.qno : undefined,
+                isHighlighted ? item.qno : undefined);
         }
-        // for (let i = 0; i < wordsByLine.length; i++) {
-        //     let isTabbed = false;
-        //     let isLineBreak = false;
-        //     if (wordsByLine[i].word.startsWith("\n\t")) {
-        //         isTabbed = true;
-        //         isLineBreak = true;
-        //     }
-        //     if (wordsByLine[i].word.startsWith("\n")) {
-        //         isLineBreak = true;
-        //     }
-    
-        //     if (i >= start_word && i <= end_word) {
-                
-        //         if (i == start_word) {
-        //             wordsByLine[i].html =
-        //                 `<span id="${item.referId}" onclick="clickRef(this)">
-        //                     <span  class="question-no-style ${isTabbed ? "tab" : ""} highlight-${item.qno}" >Q${item.qno} </span>
-        //                 </span>
-        //                 <span class="highlighted" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
-        //         } else if (wordsByLine[i].html == "") {
-        //             wordsByLine[i].html =
-        //                 `<span class="highlighted ${isTabbed ? "tab" : ""}" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
-        //         }
-                
-        //         if (isLineBreak) {
-        //             wordsByLine[i].html = "<br/>" + wordsByLine[i].html; 
-        //         }
-        //     }
-        // }
     });
-    // for (let i = 0; i < wordsByLine.length; i++) {
-    //     let isTabbed = false;
-    //     let isLineBreak = false;
-    //     if (wordsByLine[i].word.startsWith("\n\t")) {
-    //         isTabbed = true;
-    //         isLineBreak = true;
-    //     }
-    //     if (wordsByLine[i].word.startsWith("\n")) {
-    //         isLineBreak = true;
-    //     }
-    //     if (wordsByLine[i].html == "") {
-    //         wordsByLine[i].html = `<span class="${isTabbed ? "tab" : ""}" id='${wordsByLine[i].wordId}'> ${wordsByLine[i].word}</span>`;
-    //         if (isLineBreak) {
-    //             wordsByLine[i].html = "<br/>" + wordsByLine[i].html; 
-    //         }
-    //     }
-    // }
+    
     return wordsByLine;
 }
 
 function clickRef(element) {
+    removeHighlightedQuestion();
+
     let referId = element.id;
     data.questions.forEach((question) => {
         question.references.forEach((ref) => {
             if (ref.referId == referId) {
                 document.getElementById("selectedQuestionId").innerText =
                     question.qno + ". " + question.description;
-                document.getElementById("modifyStartRef").innerText =
-                    ref.start_word;
-                document.getElementById("modifyEndRef").innerText = ref.end_word;
                 highlight(data.section, ref.start_word, ref.end_word);
                 helper.selectedQuestion = question;
                 helper.selectedRef = ref;
@@ -178,9 +170,16 @@ function clickRef(element) {
     });
 }
 
+function removeHighlightedQuestion() {
+    let questionElements = document.getElementsByClassName("questionSection");
+    for (let i = 0; i < questionElements.length; i++) {
+        questionElements[i].classList.remove("highlightSelection");
+    }
+}
+
 function modifyRef() {
     console.log("modifyRef ", helper);
-    const selectedElements = logSelectedAttributes();
+    const selectedElements = getSelectedContent();
     if (!selectedElements) {
         alert("No text is selected");
         return;
@@ -206,10 +205,6 @@ function modifyRef() {
         });
         helper.element = null;
     } else {
-        console.log("hello");
-        document.getElementById("modifyStartRef").innerHTML = startWord;
-        document.getElementById("modifyEndRef").innerHTML = endWord;
-
         data.questions.forEach((question, ind) => {
             if (question.qno === helper.selectedQuestion.qno) {
                 data.questions[ind].references.push({
@@ -263,7 +258,6 @@ function passageHtml(data) {
     wordsByLine = data.words.map((word) => {
         return {question : ``, css : ``, html: ``, ...word };
     });
-    console.log("wordsByLine", wordsByLine)
     return append_question_box(wordsByLine, references);
 }
 
@@ -274,7 +268,7 @@ function optionHtml(question) {
                 `<p class = '${String.fromCharCode(65 + index) == question.correct_option
                     ? "correct-option"
                     : "incorrect-option"
-                }'>${String.fromCharCode(65 + index)}. ${option.description}</p>`
+                }' style="margin-left:20px;">${String.fromCharCode(65 + index)}. ${option.description}</p>`
         )
         .join("");
 }
@@ -340,48 +334,43 @@ function getQuestionDescriptionHtml(
             html += questionDescription[i];
         }
     }
-    return html;
+    return `<div>${html}</div>` ;
 }
 
 function clickQuestionRef(element) {
+    removeHighlightedQuestion();
+
     const questionId = element.id;
-    element.style.backgroundColor = "yellow";
     data.questions.forEach((question) => {
         if (question.qno === questionId) {
             document.getElementById("selectedQuestionId").innerHTML =
                 question.qno + ". " + question.description;
             helper.selectedQuestion = question;
+            element.parentNode.classList.add("highlightSelection");
         }
     });
-    setTimeout(() => {
-        element.style.backgroundColor = "";
-    }, 1000);
 }
 
 function questionHtml(data) {
     return data.questions
         .map(
-            (question) =>
-                `<div>
-                <div class="question">
-                    <p><strong id="${question.qno}" onclick="clickQuestionRef(this)" >Question ${question.qno}:</strong>
-                    ${getQuestionDescriptionHtml(
-                    data.section,
-                    question.description,
-                    question.references
-                )}
-                    </p>
-                </div>
+            (question) => `
+                <div class="questionSection">
+                    <div id="${question.qno}" onclick="clickQuestionRef(this)" class="question">
+                        <p><strong>Question ${question.qno}:</strong>
+                            ${getQuestionDescriptionHtml(
+                                data.section, question.description,question.references)}
+                        </p>
+                    </div>
                     ${optionHtml(question)}
-            </div>`
+                </div>`
         )
         .join("");
 }
 
 function reRender(data) {
     const contentDiv = document.getElementById("content");
-    let html = `<div class="section-html">
-            <h1 class="section">Section: ${data.section}</h1>`;
+    let html = `<div class="section-html">`;
     html += passageHtml(data);
     html += `<div class="question-html">${questionHtml(data)}
         </div>`;
@@ -390,15 +379,16 @@ function reRender(data) {
 
 function renderContent(data) {
     // Listen for mouseup event to trigger the function after selection
-    document.addEventListener("mouseup", logSelectedAttributes);
-    document.addEventListener("dblclick", logSelectedAttributes);
+    document.addEventListener("mouseup", getSelectedContent);
+    document.addEventListener("dblclick", getSelectedContent);
 
     if (!data) return;
     reRender(data);
 }
 
-function logSelectedAttributes() {
+function getSelectedContent() {
     const selection = window.getSelection();
+    let selectedText = "";
 
     // Check if there's an actual selection
     if (selection.rangeCount > 0 && !selection.isCollapsed) {
@@ -408,11 +398,29 @@ function logSelectedAttributes() {
         // Get all elements that intersect with the selected range
         document.querySelectorAll("span").forEach((span) => {
             if (range.intersectsNode(span)) {
+                selectedText += span.innerHTML;
                 selectedElements.push(span);
             }
         });
 
+        document.getElementById("selectedContent").innerHTML = selectedText;
+
         // Log the attributes of selected elements
         return selectedElements;
+    } else {
+        document.getElementById("selectedContent").innerHTML = "";
+    }
+}
+
+function editModeChanged() {
+    let passageElements = document.getElementsByClassName("passage-word");
+    if (document.getElementById('editMode').checked) {
+        for (let i = 0; i < passageElements.length; i++) {
+            passageElements[i].setAttribute("contenteditable", "true");
+        }
+    } else {
+        for (let i = 0; i < passageElements.length; i++) {
+            passageElements[i].setAttribute("contenteditable", "false");
+        }
     }
 }
