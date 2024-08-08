@@ -150,15 +150,14 @@ function passageHightlight(startIndex, wordsByLine) {
 }
 
 function clickRef(element) {
+    removeHighlightedQuestion();
+
     let referId = element.id;
     data.questions.forEach((question) => {
         question.references.forEach((ref) => {
             if (ref.referId == referId) {
                 document.getElementById("selectedQuestionId").innerText =
                     question.qno + ". " + question.description;
-                document.getElementById("modifyStartRef").innerText =
-                    ref.start_word;
-                document.getElementById("modifyEndRef").innerText = ref.end_word;
                 highlight(data.section, ref.start_word, ref.end_word);
                 helper.selectedQuestion = question;
                 helper.selectedRef = ref;
@@ -169,9 +168,16 @@ function clickRef(element) {
     });
 }
 
+function removeHighlightedQuestion() {
+    let questionElements = document.getElementsByClassName("questionSection");
+    for (let i = 0; i < questionElements.length; i++) {
+        questionElements[i].classList.remove("highlightSelection");
+    }
+}
+
 function modifyRef() {
     console.log("modifyRef ", helper);
-    const selectedElements = logSelectedAttributes();
+    const selectedElements = getSelectedContent();
     if (!selectedElements) {
         alert("No text is selected");
         return;
@@ -197,10 +203,6 @@ function modifyRef() {
         });
         helper.element = null;
     } else {
-        console.log("hello");
-        document.getElementById("modifyStartRef").innerHTML = startWord;
-        document.getElementById("modifyEndRef").innerHTML = endWord;
-
         data.questions.forEach((question, ind) => {
             if (question.qno === helper.selectedQuestion.qno) {
                 data.questions[ind].references.push({
@@ -264,7 +266,7 @@ function optionHtml(question) {
                 `<p class = '${String.fromCharCode(65 + index) == question.correct_option
                     ? "correct-option"
                     : "incorrect-option"
-                }'>${String.fromCharCode(65 + index)}. ${option.description}</p>`
+                }' style="margin-left:20px;">${String.fromCharCode(65 + index)}. ${option.description}</p>`
         )
         .join("");
 }
@@ -334,44 +336,39 @@ function getQuestionDescriptionHtml(
 }
 
 function clickQuestionRef(element) {
+    removeHighlightedQuestion();
+
     const questionId = element.id;
-    element.style.backgroundColor = "yellow";
     data.questions.forEach((question) => {
         if (question.qno === questionId) {
             document.getElementById("selectedQuestionId").innerHTML =
                 question.qno + ". " + question.description;
             helper.selectedQuestion = question;
+            element.parentNode.classList.add("highlightSelection");
         }
     });
-    setTimeout(() => {
-        element.style.backgroundColor = "";
-    }, 1000);
 }
 
 function questionHtml(data) {
     return data.questions
         .map(
-            (question) =>
-                `<div>
-                <div class="question">
-                    <p><strong id="${question.qno}" onclick="clickQuestionRef(this)" >Question ${question.qno}:</strong>
-                    ${getQuestionDescriptionHtml(
-                    data.section,
-                    question.description,
-                    question.references
-                )}
-                    </p>
-                </div>
+            (question) => `
+                <div class="questionSection">
+                    <div id="${question.qno}" onclick="clickQuestionRef(this)" class="question">
+                        <p><strong>Question ${question.qno}:</strong>
+                            ${getQuestionDescriptionHtml(
+                                data.section, question.description,question.references)}
+                        </p>
+                    </div>
                     ${optionHtml(question)}
-            </div>`
+                </div>`
         )
         .join("");
 }
 
 function reRender(data) {
     const contentDiv = document.getElementById("content");
-    let html = `<div class="section-html">
-            <h1 class="section">Section: ${data.section}</h1>`;
+    let html = `<div class="section-html">`;
     html += passageHtml(data);
     html += `<div class="question-html">${questionHtml(data)}
         </div>`;
@@ -380,14 +377,14 @@ function reRender(data) {
 
 function renderContent(data) {
     // Listen for mouseup event to trigger the function after selection
-    document.addEventListener("mouseup", logSelectedAttributes);
-    document.addEventListener("dblclick", logSelectedAttributes);
+    document.addEventListener("mouseup", getSelectedContent);
+    document.addEventListener("dblclick", getSelectedContent);
 
     if (!data) return;
     reRender(data);
 }
 
-function logSelectedAttributes() {
+function getSelectedContent() {
     const selection = window.getSelection();
     let selectedText = "";
 
