@@ -89,7 +89,7 @@ function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
         }
         wordByLine.html = 
             wordByLine.question + `
-                <span class="passage-word ${wordByLine.css}" id='${wordByLine.wordId}'> 
+                <span class="passage-word ${isTabbed ? "tab" : ""} ${wordByLine.css}" id='${wordByLine.wordId}'> 
                     ${wordByLine.word}
                 </span>`;
         if (isLineBreak) {
