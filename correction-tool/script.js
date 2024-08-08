@@ -34,8 +34,8 @@ function downloadJSONFile(data, filename = "data.json") {
 }
 
 function preprocessData() {
-    data.passage = data.passage.replace("\n\t", " \n\t");
-    data.passage = data.passage.replace("\n", " \n");
+    data.passage = data.passage.replaceAll("\n\t", " \n\t");
+    data.passage = data.passage.replaceAll("\n", " \n");
 
     passageWords = data.passage.split(" ");
     data.words = [];
@@ -88,7 +88,7 @@ function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
         }
         wordByLine.html = 
             wordByLine.question + `
-                <span class="passage-word ${wordByLine.css}" id='${wordByLine.wordId}'> 
+                <span class="passage-word ${isTabbed ? "tab" : ""} ${wordByLine.css}" id='${wordByLine.wordId}'> 
                     ${wordByLine.word}
                 </span>`;
         if (isLineBreak) {
