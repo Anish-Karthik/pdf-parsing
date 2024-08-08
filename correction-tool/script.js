@@ -10,8 +10,7 @@ function downloadJSONFile(data, filename = "data.json") {
     link.click();
     document.body.removeChild(link);
 }
-
-function uploadFile() {
+ function uploadFile() {
     const fileInput = document.getElementById("fileInput");
     const file = fileInput.files[0];
 
