@@ -88,7 +88,10 @@ function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
                 </span>`;
         }
         wordByLine.html = 
-            wordByLine.question + `<span class="passage-word ${wordByLine.css}" id='${wordByLine.wordId}'> ${wordByLine.word}</span>`;
+            wordByLine.question + `
+                <span class="passage-word ${wordByLine.css}" id='${wordByLine.wordId}'> 
+                    ${wordByLine.word}
+                </span>`;
         if (isLineBreak) {
             wordByLine.html = "<br/>" + wordByLine.html; 
         }
@@ -332,7 +335,7 @@ function getQuestionDescriptionHtml(
             html += questionDescription[i];
         }
     }
-    return html;
+    return `<div>${html}</div>` ;
 }
 
 function clickQuestionRef(element) {
@@ -407,5 +410,18 @@ function getSelectedContent() {
         return selectedElements;
     } else {
         document.getElementById("selectedContent").innerHTML = "";
+    }
+}
+
+function editModeChanged() {
+    let passageElements = document.getElementsByClassName("passage-word");
+    if (document.getElementById('editMode').checked) {
+        for (let i = 0; i < passageElements.length; i++) {
+            passageElements[i].setAttribute("contenteditable", "true");
+        }
+    } else {
+        for (let i = 0; i < passageElements.length; i++) {
+            passageElements[i].setAttribute("contenteditable", "false");
+        }
     }
 }
