@@ -147,8 +147,18 @@ function populateDataFromHtml(){
     });
 }
 
-function passageHightlight(structReferences, wordsByLine) {
-    structReferences.forEach((item) => {
+function passageHightlight(startIndex, wordsByLine) {
+    if (!startIndex || startIndex.length == 0) {
+        for (let i = 0; i < wordsByLine.length; i++) {
+            getWord(
+                undefined, 
+                wordsByLine[i],
+                false,
+                undefined,
+                undefined);
+        }
+    }
+    startIndex.forEach((item) => {
         let start_word = item.start;
         let end_word = item.end;
         for (let i = 0; i < wordsByLine.length; i++) {
@@ -156,7 +166,8 @@ function passageHightlight(structReferences, wordsByLine) {
             getWord(
                 item.referId, 
                 wordsByLine[i],
-                isHighlighted,i == start_word ? item.qno : undefined,
+                isHighlighted,
+                i == start_word ? item.qno : undefined,
                 isHighlighted ? item.qno : undefined);
         }
     });
