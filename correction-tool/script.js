@@ -20,9 +20,10 @@ function downloadJSONFile(data, filename = "data.json") {
             try {
                 const jsonData = JSON.parse(e.target.result);
                 data = jsonData;
+                helper = structuredClone(data);
                 preprocessData();
                 console.log("preprocess data",data)
-                renderContent(data);
+                renderContent(helper);
             } catch (error) {
                 console.log(error); //
             }
@@ -34,36 +35,47 @@ function downloadJSONFile(data, filename = "data.json") {
 }
 
 function preprocessData() {
-    data.passage = data.passage.replaceAll("\n\t", " \n\t");
-    data.passage = data.passage.replaceAll("\n", " \n");
+    helper.passage = helper.passage.replaceAll("\n\t", " \n\t");
+    helper.passage = helper.passage.replaceAll("\n", " \n");
 
-    passageWords = data.passage.split(" ");
-    data.words = [];
+    passageWords = helper.passage.split(" ");
+    helper.words = [];
     for (i = 0; i < passageWords.length; i++) {
-        data.words.push({"wordId": `1-1-${i}`, "word": passageWords[i]});
+        helper.words.push({"wordId": `1-1-${i}`, "word": passageWords[i]});
     }
+    for(let i = 0;i < helper.questions.length; i++) {
+        helper.questions[i].references = helper.questions[i].references.map((ref,index) => {
+            return {referId : `${i+1}-${index}`,...ref};
+        });
+    }
+    console.log(helper)
 
 }
 
 function delRef() {
-    console.log(helper);
+    // console.log(helper);
     if (!helper.selectedRef) {
         alert("No reference is selected");
+        return;
     }
-    data.questions.forEach((question, index) => {
-        if (question.qno == helper.selectedQuestion.qno) {
-            console.log(data.questions[index].references);
-            data.questions[index].references = question.references.filter(
-                (ref, index) => {
-                    return ref.id != helper.selectedRef.id;
-                }
-            );
-            console.log(data.questions[index].references);
+    document.getElementById(helper.selectedRef.referId).remove();
+    for(let i = helper.selectedRef.start_word;i <= helper.selectedRef.end_word;i++){
+       element = document.getElementById(`1-1-${i}`)
+        if(!element) continue;
+        var classesToRemove = [];
+        let wordCount = 0  
+        element.classList.forEach((cls) => {
+            if (cls.startsWith('highlight')) {
+                wordCount++;
+            }
+        });
+        if(wordCount == 2){
+            element.classList.remove('highlighted');
         }
-    });
+        element.classList.remove(`highlight-${helper.selectedQuestion.qno}`)
+    }
     helper.element = null;
     helper.selectedRef = null;
-    renderContent(data);
 }
 
 function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
@@ -113,6 +125,7 @@ function populateDataFromHtml(){
                 
             }
         });
+        console.log(highlightedQuestions)
         highlightedQuestions.forEach(question => {
             if (!highlights[question]) {
                 highlights[question] = currentWordCount;
@@ -121,7 +134,7 @@ function populateDataFromHtml(){
 
         Object.keys(highlights).forEach(question => {
             if (!highlightedQuestions.includes(question)) {
-                console.log(question, highlights[question], currentWordCount - 1);
+                // console.log(question, highlights[question], currentWordCount - 1);
                 delete highlights[question];
             }
         });
@@ -134,8 +147,8 @@ function populateDataFromHtml(){
     });
 }
 
-function passageHightlight(startIndex, wordsByLine) {
-    startIndex.forEach((item) => {
+function passageHightlight(structReferences, wordsByLine) {
+    structReferences.forEach((item) => {
         let start_word = item.start;
         let end_word = item.end;
         for (let i = 0; i < wordsByLine.length; i++) {
@@ -153,14 +166,14 @@ function passageHightlight(startIndex, wordsByLine) {
 
 function clickRef(element) {
     removeHighlightedQuestion();
-
+    // console.log(element)
     let referId = element.id;
-    data.questions.forEach((question) => {
+    helper.questions.forEach((question) => {
         question.references.forEach((ref) => {
             if (ref.referId == referId) {
                 document.getElementById("selectedQuestionId").innerText =
                     question.qno + ". " + question.description;
-                highlight(data.section, ref.start_word, ref.end_word);
+                highlight(helper.section, ref.start_word, ref.end_word);
                 helper.selectedQuestion = question;
                 helper.selectedRef = ref;
                 helper.element = element;
@@ -178,7 +191,7 @@ function removeHighlightedQuestion() {
 }
 
 function modifyRef() {
-    console.log("modifyRef ", helper);
+    // console.log("modifyRef ", helper);
     const selectedElements = getSelectedContent();
     if (!selectedElements) {
         alert("No text is selected");
@@ -193,7 +206,7 @@ function modifyRef() {
         selectedElements[selectedElements.length - 1].id.split("-")[2];
 
     if (helper.element) {
-        data.questions.forEach((question) => {
+        helper.questions.forEach((question) => {
             if (question.qno == helper.selectedQuestion.qno) {
                 question.references.forEach((ref, index) => {
                     if (ref.referId === helper.selectedRef.referId) {
@@ -205,32 +218,31 @@ function modifyRef() {
         });
         helper.element = null;
     } else {
-        data.questions.forEach((question, ind) => {
+        helper.questions.forEach((question, ind) => {
             if (question.qno === helper.selectedQuestion.qno) {
-                data.questions[ind].references.push({
+                helper.questions[ind].references.push({
                     referId:
-                        data.section +
+                        helper.section +
                         "-" +
                         1 +
                         "-" +
-                        data.questions[ind].references.length,
+                        helper.questions[ind].references.length,
                     start_word: startWord,
                     end_word: endWord,
                 });
             }
         });
-        console.log(data);
-        renderContent(data);
+        // console.log(helper);
     }
-    renderContent(data);
+    renderContent(helper);
 }
 
 function append_question_box(wordsByLine, references) {
-    var startIndex = [];
+    var structReferences = [];
     references.forEach((item) => {
         let q_no = item.qno;
         item.references.forEach((ref) => {
-            startIndex.push({
+            structReferences.push({
                 qno: q_no,
                 referId: ref.referId,
                 start: ref.start_word,
@@ -238,24 +250,24 @@ function append_question_box(wordsByLine, references) {
             });
         });
     });
-    startIndex.sort((a, b) => a.start - b.start);
+    structReferences.sort((a, b) => a.start - b.start);
     var html = ``;
-    wordsByLine = passageHightlight(startIndex, wordsByLine);
+    wordsByLine = passageHightlight(structReferences, wordsByLine);
     wordsByLine.forEach((word, wordInde) => {
         html += word.html;
     });
     return `${html}</div>`;
 }
 
-function passageHtml(data) {
-    const references = data.questions
-        .map((question) => {
+function passageHtml(helper) {
+    const references = helper.questions
+        .map((question,index) => {
             if (question.references == 0) return;
-            return { qno: question.qno, references: question.references };
+            return { qno: question.qno, references: question.references};
         })
         .filter((reference) => reference);
-
-    wordsByLine = data.words.map((word) => {
+    // console.log(helper)
+    wordsByLine = helper.words.map((word) => {
         return {question : ``, css : ``, html: ``, ...word };
     });
     return append_question_box(wordsByLine, references);
@@ -288,60 +300,16 @@ function highlight(section, start, end, timeout = 4000) {
     }
 }
 
-function getQuestionDescriptionHtml(
-    section_no,
-    questionDescription,
-    references
-) {
-    const patterns = [
-        /Lines\s+(\d+)\s*-\s*(\d+)/i,
-        /Line\s+(\d+)/i,
-        /Lines\s+(\d+)\s*and\s*(\d+)/i,
-    ];
-    let matches = [];
-
-    patterns.forEach((pattern) => {
-        let match = pattern.exec(questionDescription);
-        if (match) {
-            matches.push({
-                start: match.index,
-                end: match.index + match[0].length,
-            });
-        }
-    });
-
-    if (matches.length === 0) return questionDescription;
-
-    let html = "";
-    let ptr = 0;
-
-    for (let i = 0; i < questionDescription.length; i++) {
-        if (
-            ptr < matches.length &&
-            ptr < references.length &&
-            i === matches[ptr].start
-        ) {
-            let startId = `${section_no}1${references[ptr].start_word}`;
-            html += `<a onclick="highlight(${section_no},${references[ptr].start_word
-                },${references[ptr].end_word
-                })" href='#${startId}'>${questionDescription.slice(
-                    i,
-                    matches[ptr].end + 1
-                )}</a>`;
-            i = matches[ptr].end;
-            ptr++;
-        } else {
-            html += questionDescription[i];
-        }
-    }
-    return `<div>${html}</div>` ;
-}
 
 function clickQuestionRef(element) {
     removeHighlightedQuestion();
-
+    if(helper.selectedRef){
+        helper.selectedRef = null;
+        helper.element = null;
+    }
     const questionId = element.id;
-    data.questions.forEach((question) => {
+    // console.log(element)
+    helper.questions.forEach((question) => {
         if (question.qno === questionId) {
             document.getElementById("selectedQuestionId").innerHTML =
                 question.qno + ". " + question.description;
@@ -351,15 +319,14 @@ function clickQuestionRef(element) {
     });
 }
 
-function questionHtml(data) {
-    return data.questions
+function questionHtml(helper) {
+    return helper.questions
         .map(
             (question) => `
                 <div class="questionSection">
                     <div id="${question.qno}" onclick="clickQuestionRef(this)" class="question">
                         <p><strong>Question ${question.qno}:</strong>
-                            ${getQuestionDescriptionHtml(
-                                data.section, question.description,question.references)}
+                            ${question.description}
                         </p>
                     </div>
                     ${optionHtml(question)}
@@ -368,22 +335,22 @@ function questionHtml(data) {
         .join("");
 }
 
-function reRender(data) {
+function reRender(helper) {
     const contentDiv = document.getElementById("content");
     let html = `<div class="section-html">`;
-    html += passageHtml(data);
-    html += `<div class="question-html">${questionHtml(data)}
+    html += passageHtml(helper);
+    html += `<div class="question-html">${questionHtml(helper)}
         </div>`;
     contentDiv.innerHTML = html;
 }
 
-function renderContent(data) {
+function renderContent(helper) {
     // Listen for mouseup event to trigger the function after selection
     document.addEventListener("mouseup", getSelectedContent);
     document.addEventListener("dblclick", getSelectedContent);
 
-    if (!data) return;
-    reRender(data);
+    if (!helper) return;
+    reRender(helper);
 }
 
 function getSelectedContent() {
