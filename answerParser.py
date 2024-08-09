@@ -41,7 +41,7 @@ def parse_answer(doc) -> List[AnswerTmp]:
                     all_answers.append(AnswerTmp(section, current_question, option))
                     answers.append(current_question)
 
-    print(len(all_answers))
-    print(answers)
+    # print(len(all_answers))
+    # print(answers)
 
     return all_answers

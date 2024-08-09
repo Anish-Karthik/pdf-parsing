@@ -263,14 +263,18 @@ pdf_path = "baron/inputPDF/SAT WorkBook.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
+for i in blocks:
+    print(i, "\n\n")
+
 
 all_comprehensions = []
 all_answers = parse_answer(doc)
+print(len(all_answers))
 all_words_for_underline = get_all_words_for_underline(doc)
 all_words_index = 0
 
 passage_split = split_passages(blocks)
-print(len(passage_split))
+# print(len(passage_split))
 
 qno_cnt = 0
 qns = []
@@ -278,6 +282,7 @@ for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
     split, isWritingComprehension = split
     comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
+    
     if comprehension is not None:
         comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
         all_comprehensions.append(comprehension)
@@ -286,8 +291,8 @@ for i, split in enumerate(passage_split):
             question.correct_option = all_answers[qno_cnt].answer
             question.detailed_answer = all_answers[qno_cnt].detailed_solution
             qno_cnt += 1
-print(qno_cnt)
-print(qns)
+# print(qno_cnt)
+# print(qns)
 
 for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"baron/outputJSON/barron-workbook-passage{i + 1}.json")

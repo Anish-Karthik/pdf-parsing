@@ -104,6 +104,11 @@ def insert_underlined_text(lines):
                 lines[ind + 1][4] = replace_with_underlined_text(lines[ind + 1][4], line[4])
     return new_lines
 
+def clean_block(str):
+    str = re.sub(r"-\n","",str)
+    str = str.replace("Passage", "\nPassage")
+    str = str.replace("TIME—25 MINUTES 24 QUESTIONS ","")
+    return str
 
 def get_each_lines(doc):
     lines = []
@@ -114,6 +119,12 @@ def get_each_lines(doc):
         stop_block = None
         for block in blocks:
             block = list(block)
+
+            block[4] = clean_block(block[4])
+
+            if is_extra(block):
+                continue
+            
             if "STOP" in block[4]:
                 stop_block = block
                 continue
@@ -159,10 +170,14 @@ def is_extra(block) -> bool:
     return (
         re.search(r"Line\n5?", block[4]) or
         re.search(r"Unauthorized copying", block[4]) or
-        re.search(r"CO NTI N U E", block[4]) or
-        re.search(r"STOP", block[4]) or
-        re.search(r"SAT.*PRACTICE\n", block[4])
-    )
+        re.search(r"READING COMPREHENSION", block[4]) or
+        re.search(r"SAT.*PRACTICE\n", block[4]) or 
+        re.search(r"NEXT PAGE", block[4]) or
+        re.search(r"CRITICAL READING", block[4]) or
+        re.search(r"SELF-ASSESSMENT TEST", block[4]) or
+        (re.search(r"TIME", block[4]) and re.search(r"MINUTES", block[4])) or
+        re.search(r".com",block[4])
+    ) and len(block[4]) < 50
 
 
 def get_questions_alter(lines) -> List[Question]:
