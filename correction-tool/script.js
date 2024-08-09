@@ -62,17 +62,16 @@ function delRef() {
     for(let i = helper.selectedRef.start_word;i <= helper.selectedRef.end_word;i++){
        element = document.getElementById(`1-1-${i}`)
         if(!element) continue;
-        var classesToRemove = [];
         let wordCount = 0  
-        element.classList.forEach((cls) => {
-            if (cls.startsWith('highlight')) {
+        element.className.split(" ").forEach((cls) => {
+            if (cls.startsWith('highlight-')) {
                 wordCount++;
             }
         });
-        if(wordCount == 2){
+        if(wordCount == 1){
             element.classList.remove('highlighted');
         }
-        element.classList.remove(`highlight-${helper.selectedQuestion.qno}`)
+        element.className = element.className.replace(`highlight-${helper.selectedQuestion.qno}`,'');
     }
     helper.element = null;
     helper.selectedRef = null;
@@ -232,12 +231,7 @@ function modifyRef() {
         helper.questions.forEach((question, ind) => {
             if (question.qno === helper.selectedQuestion.qno) {
                 helper.questions[ind].references.push({
-                    referId:
-                        helper.section +
-                        "-" +
-                        1 +
-                        "-" +
-                        helper.questions[ind].references.length,
+                    referId: `${helper.selectedQuestion.qno}-${helper.questions[ind].references.length}`,
                     start_word: startWord,
                     end_word: endWord,
                 });
