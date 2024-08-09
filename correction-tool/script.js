@@ -199,24 +199,26 @@ function modifyRef() {
         alert("No text is selected");
         return;
     }
-    if (!helper.selectedRefId) {
+    let refId = helper.selectedRefId;
+    if (!refId) {
         alert("No reference selected.");
         return;
     }
-    if(helper.selectedRefId) {
+    if(refId) {
         delRef();
     }
     selectedElements.forEach((element)=>{
         element.classList.add("highlighted");
-        element.classList.add("highlight-"+helper.selectedQuestion.qno);
-        element.classList.add(helper.selectedRefId)
+        element.classList.add("highlight-" + helper.selectedQuestion.qno);
+        element.classList.add(refId)
     });
-    let questionHtml = document.createElement("span");
-    questionHtml.innerHTML = `<span id="${helper.selectedRefId}" onclick="clickRef(this)">
-                    <span  class="question-no-style" >Q${helper.selectedQuestion.qno} </span>
-                </span>`;
-    selectedElements[0].insertBefore(questionHtml,null);
-    
+    let questionElement = document.createElement("span");
+    questionElement.innerHTML = 
+        `<span id="${refId}" onclick="clickRef(this)">
+            <span  class="question-no-style">Q${helper.selectedQuestion.qno} </span>
+        </span>`;
+    document.getElementById("passage-section").
+        insertBefore(questionElement.firstChild, selectedElements[0]);
 }
 
 function append_question_box(wordsByLine, references) {
@@ -318,7 +320,7 @@ function questionHtml(helper) {
 
 function reRender(helper) {
     const contentDiv = document.getElementById("content");
-    let html = `<div class="section-html">`;
+    let html = `<div id="passage-section" class="section-html">`;
     html += passageHtml(helper);
     html += `<div class="question-html">${questionHtml(helper)}
         </div>`;
