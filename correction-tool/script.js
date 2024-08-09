@@ -183,6 +183,7 @@ function clickRef(element) {
             return;
         }
     });
+    document.getElementById("modifyRefButton").innerText = "Modify";
 }
 
 function removeHighlightedQuestion() {
@@ -200,12 +201,14 @@ function modifyRef() {
         return;
     }
     let refId = helper.selectedRefId;
-    if (!refId) {
+    if (!refId && !helper.selectedQuestion) {
         alert("No reference selected.");
         return;
     }
     if(refId) {
         delRef();
+    } else {
+        refId = referenceCount++;
     }
     selectedElements.forEach((element)=>{
         element.classList.add("highlighted");
@@ -300,6 +303,8 @@ function clickQuestionRef(element) {
             element.parentNode.classList.add("highlightSelection");
         }
     });
+
+    document.getElementById("modifyRefButton").innerText = "Add";
 }
 
 function questionHtml(helper) {
