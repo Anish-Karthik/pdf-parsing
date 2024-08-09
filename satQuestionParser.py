@@ -3,7 +3,7 @@ import re
 from typing import *
 from model import *
 import pytesseract
-from PIL import Image
+# from PIL import Image
 import io
 import cv2
 import json
@@ -54,40 +54,40 @@ def extract_question_number(text):
     return qno[0] if len(qno) > 0 else None
 
 
-def get_underlined_text(doc, image, ind):
+# def get_underlined_text(doc, image, ind):
 
-    img = doc.extract_image(image[0])
-    pix = fitz.Pixmap(doc, image[0])
-    image_bytes = pix.tobytes("png")
-    image = Image.open(io.BytesIO(image_bytes))
-    image.save("images/" + str(ind) + ".jpg")
-    width, height = image.size
+#     img = doc.extract_image(image[0])
+#     pix = fitz.Pixmap(doc, image[0])
+#     image_bytes = pix.tobytes("png")
+#     image = Image.open(io.BytesIO(image_bytes))
+#     image.save("images/" + str(ind) + ".jpg")
+#     width, height = image.size
 
-    top_half = image.crop((0, 0, width, height // 2))  # Crop the top half
-    top_half.save("images/" + str(ind) + "half.jpg")
+#     top_half = image.crop((0, 0, width, height // 2))  # Crop the top half
+#     top_half.save("images/" + str(ind) + "half.jpg")
 
-    bottom_half = image.crop((0, height * 0.6, width, height))
-    bottom_half.save("images/" + str(ind) + "bottom_half.jpg")
+#     bottom_half = image.crop((0, height * 0.6, width, height))
+#     bottom_half.save("images/" + str(ind) + "bottom_half.jpg")
 
-    img = cv2.imread("images/" + str(ind) + "half.jpg")
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
-    text = pytesseract.image_to_string(Image.fromarray(thresh), config='--psm 6')
+#     img = cv2.imread("images/" + str(ind) + "half.jpg")
+#     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#     thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
+#     text = pytesseract.image_to_string(Image.fromarray(thresh), config='--psm 6')
 
-    # print(text)
+#     # print(text)
 
-    img = cv2.imread("images/" + str(ind) + "bottom_half.jpg")
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    blur = cv2.GaussianBlur(gray, (5, 5), 0)
-    thresh = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
+#     img = cv2.imread("images/" + str(ind) + "bottom_half.jpg")
+#     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+#     blur = cv2.GaussianBlur(gray, (5, 5), 0)
+#     thresh = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
 
-    Image.fromarray(thresh).save("images/" + str(ind) + 'cv2.jpg')
+#     Image.fromarray(thresh).save("images/" + str(ind) + 'cv2.jpg')
 
-    bottom_text = pytesseract.image_to_string(Image.fromarray(thresh), config='--psm 6')
+#     bottom_text = pytesseract.image_to_string(Image.fromarray(thresh), config='--psm 6')
 
-    # print(bottom_text)
+#     # print(bottom_text)
 
-    return re.sub(r"\n", "", text)
+#     return re.sub(r"\n", "", text)
 
 
 def replace_with_underlined_text(text, underlined_text):

@@ -46,7 +46,11 @@ def parse_answer(blocks) -> List[AnswerTmp]:
             section += 1
         
         if len(qno_match) > 0:
-            all_answers.append(AnswerTmp(section, qno_match[0][0], block[4]))
+            answer = block[4]
+            correct_option = re.findall(r"\d+.\s\([A-D]\)",answer)[0]
+            correct_option = re.search(r"[A-D]", correct_option).group(0)
+            
+            all_answers.append(AnswerTmp(section, qno_match[0][0], correct_option))
         
 
         # elif len(qno_match) > 0:
