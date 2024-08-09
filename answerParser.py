@@ -46,7 +46,18 @@ def parse_answer(blocks) -> List[AnswerTmp]:
             section += 1
         
         if len(qno_match) > 0:
-            all_answers.append(AnswerTmp(section, qno_match[0][0], block[4]))
+            # extract question number and option, and detailed solution
+            # \d+\. for question number
+            # \([A-D]\). for option
+            # text after option is detailed solution
+            m = re.match(r"(\d+)\.\s*\(([A-D])\)\s*(.*)", block[4])
+            if m:
+                all_answers.append(AnswerTmp(section, m.group(1).strip(), m.group(2).strip(), m.group(3).strip()))
+            else:
+                raise ValueError(f"Error in matching: {block[4]}")
+                # all_answers.append(AnswerTmp(section, qno_match[0][0], qno_match[0][1]))
+
+            # all_answers.append(AnswerTmp(section, qno_match[0][0], block[4]))
         
 
         # elif len(qno_match) > 0:
