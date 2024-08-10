@@ -58,6 +58,14 @@ function preprocessData() {
 }
 
 function delRef() {
+    if (helper.selectedOption != null) {
+        optionRef = "option-ref-" + helper.selectedQuestion.qno + "-" + helper.selectedOption;
+        let existingRef = document.getElementsByClassName(optionRef);
+        while(existingRef.length > 0) {
+            existingRef[0].classList.remove(optionRef,"highlightOptionRef");
+        }
+        return;
+    }
     if (!helper.selectedRefId) {
         alert("No reference is selected");
         return;
@@ -73,9 +81,11 @@ function delRef() {
         }
         element.classList.remove(helper.selectedRefId);
     }
-    helper.selectedRefId = null;
 }
-
+function delRefAction(){
+    delRef();
+    resetHelper();
+}
 function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
         let isTabbed = false;
         let isLineBreak = false;
@@ -106,6 +116,11 @@ function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
         }
 }
 function populateOption(){
+    data.questions.forEach((question,qnInd)=>{
+        question.options.forEach((option,opInd)=>{
+            option.reference = null;
+        })
+    })
     let wordElements = document.getElementsByClassName("passage-word");
     let currentWordCount = 0;
     let highlights = {};
@@ -126,35 +141,30 @@ function populateOption(){
             }
         });
         if(questionNumber){
-            if (highlights["question-" + questionNumber] === undefined) {
-                highlights["question-" + questionNumber] = {};
+            let ref = questionNumber + "-" + optionNumber;
+            if(highlights[ref] === undefined){
+                highlights[ref] = {};
             }
-            if (highlights["question-" + questionNumber]["option-" + optionNumber] === undefined) {
-                highlights["question-" + questionNumber]["option-" + optionNumber] = {};
+            if(highlights[ref]["start_word"] === undefined) {
+                highlights[ref]["start_word"] = currentWordCount;
             }
-            if(highlights["question-" + questionNumber]["option-" + optionNumber]["start_word"] === undefined) {
-                highlights["question-" + questionNumber]["option-" + optionNumber]["start_word"] = currentWordCount;
-            }
-            highlights["question-" + questionNumber]["option-" + optionNumber]["end_word"] = currentWordCount;
+            highlights[ref]["end_word"] = currentWordCount;
          }
-
          currentWordCount += wordElement.innerText.trim().split(" ").length;
     }
     console.log(highlights)
-    Object.keys(highlights).forEach(question => {
-        let qno = parseInt(question.replace("question-",""))
-        Object.keys(highlights[question]).forEach(option => {
-           let optionNo = option.replace("option-","")
-           console.log(option)
+    Object.keys(highlights).forEach(optRef => {
+        let splitRef = optRef.split("-")
+        let qno = parseInt(splitRef[0])
+        let optionNo = splitRef[1]
            data.questions[qno-1].options[optionNo].reference = {
-            start_word: highlights[question][option].start_word,
-            end_word: highlights[question][option].end_word
+            start_word: highlights[optRef].start_word,
+            end_word: highlights[optRef].end_word
           }
-          console.log(data.questions[qno].options[optionNo].reference)
-        });
     });
     console.log(highlights)
 }
+
 function populateDataFromHtml(){
     let wordElements = document.getElementsByClassName("passage-word");
     let questionElements = document.getElementsByClassName("question");
@@ -174,7 +184,7 @@ function populateDataFromHtml(){
             if(optionElements[j].className.split(" ").includes("correct-option")){
                 data.questions[i].correct_option = String.fromCharCode(65 + j);;
             }
-            data.questions[i].options[j].description = optionElements[j].innerText.trim().slice(2)
+            data.questions[i].options[j].description = optionElements[j].childNodes[2].textContent.trim()
         } 
     }
     for (let i = 0; i < wordElements.length; i++) {
@@ -240,8 +250,8 @@ function populateDataFromHtml(){
     console.log(data)
 }
 
-function passageHightlight(startIndex, wordsByLine) {
-    if (!startIndex || startIndex.length == 0) {
+function passageHightlight(questionReferences, wordsByLine) {
+    if (!questionReferences || questionReferences.length == 0) {
         for (let i = 0; i < wordsByLine.length; i++) {
             getWord(
                 undefined, 
@@ -251,7 +261,23 @@ function passageHightlight(startIndex, wordsByLine) {
                 undefined);
         }
     }
-    startIndex.forEach((item) => {
+    data.questions.forEach((question) => {
+        question.options.forEach((option, index) => {
+            if(!option.reference) {
+                return;
+            }
+            let start_word = option.reference.start_word; 
+            let end_word = option.reference.end_word; 
+            for (let i = 0; i < wordsByLine.length; i++) {
+                var isHighlighted = i >= start_word && i <= end_word;
+                var cssClass = " option-ref-"+question.qno+"-"+index;
+                if(isHighlighted){
+                    wordsByLine[i].css += cssClass;
+                }
+            }
+        });
+    })
+    questionReferences.forEach((item) => {
         let start_word = item.start;
         let end_word = item.end;
         for (let i = 0; i < wordsByLine.length; i++) {
@@ -306,6 +332,9 @@ function clickOption(element) {
     for(let i = 0; i < optionReference.length; i++) {
         optionReference[i].classList.add("highlightOptionRef");
     }
+    if(optionReference.length > 0) {
+        optionReference[0].scrollIntoView({ behavior: 'smooth' });
+    }
     console.log(optionReference)
     helper.questions.forEach((question) => {
           if(question.qno == questionNo){
@@ -357,14 +386,11 @@ function modifyRef() {
         refId = "reference-"+referenceCount++;
     }
     let optionRef = "";
-    if (helper.selectedOption != null) {
+    //reference delete
+    if(helper.selectedOption != null){
         optionRef = "option-ref-" + helper.selectedQuestion.qno + "-" + helper.selectedOption;
-        let existingRef = document.getElementsByClassName(optionRef);
-        while(existingRef.length > 0) {
-            existingRef[0].classList.remove(optionRef,"highlightOptionRef");
-        }
+        delRef();
     }
-
     selectedElements.forEach((element)=>{
         if (helper.selectedOption != null) {
             element.classList.add(optionRef);
@@ -427,14 +453,16 @@ function optionHtml(question) {
     return question.options
         .map(
             (option, index) =>
-                `<p 
+                `<div>
+                  <p 
                     id=${question.qno}-${index}
                     class = 'option option-${question.qno}  ${String.fromCharCode(65 + index) == question.correct_option ? "correct-option" : "incorrect-option"}' 
                     style="margin-left:20px;" 
                     onclick="clickOption(this);" >
-                        ${String.fromCharCode(65 + index)}. ${option.description} 
-                    <button class="opt-disable-btn">tick</button>
-                </p>`
+                        <span>${String.fromCharCode(65 + index)}.</span> ${option.description} 
+                    
+                </p>
+                <button class="opt-disable-btn">tick</button></div>`
         )
         .join("");
 }
