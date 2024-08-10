@@ -245,7 +245,7 @@ def is_extra(block) -> bool:
 
 def split_line1(text):
     res_lines = []
-    lines = re.split(r"\n|(\([A-D]\))|(\b\d{0,2}\.\s+)", text)
+    lines = re.split(r"\n|(\([A-D]\))|(\b\d{1,2}\.\s+)", text)
     # print(lines)
     # ["sdsd","(A)", None, "asda"]
     res_lines = [lines.pop(0)]

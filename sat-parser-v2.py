@@ -70,9 +70,9 @@ def isStartOfParagraph(block, prevBlock=None):
     if not prevBlock:
         return False
     # compare x values
-    if block[4].startswith(". "):
-        block[7] = False
-        return False
+    # if block[4].startswith(". "):
+    #     block[7] = False
+    #     return False
     block[7] = (
         (block[0] - prevBlock[0] > 12) or
         (prevBlock[7] and block[0] == prevBlock[0])
@@ -208,7 +208,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
                 passage.append(block)
                 continue
             text = cleanPassage(passage)
-
+            
             obj = populate_reference(
                 ReadingComprehension(
                     Passage(text),
