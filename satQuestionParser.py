@@ -8,6 +8,7 @@ import io
 import cv2
 import json
 
+
 def is_qn_no(block):
     if re.search(r"^\d+\.\s+", block[4]):
         # print(block[4])
@@ -34,7 +35,9 @@ def is_last_option(block):
 
 def is_part_of_last_option(prev_line, line):
     diff = prev_line[3] - line[1]
-    return diff >= 1 and diff < 3
+    return (diff >= -1 and
+            diff < 3 and
+            not re.match(r"^\d+.", line[4]))
 
 
 def remove_next_line(text):
@@ -116,19 +119,21 @@ def is_multi_block(block):
         return True
     return False
 
+
 def split_multi_block(block):
     text = block[4]
     # print("INPUT:",text)
     output = split_line1(text)
     # print("OUTPUT:","\n".join(output), end="\n\n")
     output_text = [item for item in output if item]
-            
+
     output_blocks = []
     for text in output_text:
         output_blocks.append([block[0], block[1], block[2], block[3], text, block[5], block[6]])
 
     # print(output_blocks)
     return output_blocks
+
 
 def processBlock(block):
     # if block starts (/d+) then block[0] = 39.5645751953125
@@ -138,6 +143,7 @@ def processBlock(block):
         block[4] = re.sub(r"^\(\d+\)", "", block[4])
         block[4] = re.sub(r"^Line\s+", "", block[4])
     return block
+
 
 def get_each_lines(doc):
     lines = []
@@ -177,14 +183,14 @@ def get_each_lines(doc):
                 # print(block)
                 block = processBlock(block)
                 # if is_multi_block(block):
-                    # print("\n\n\n\n\n")
+                # print("\n\n\n\n\n")
                 if hasAnswersStarted:
-                    pg_lines.append([*block[:4],block[4].strip()+" ",*block[5:]])
+                    pg_lines.append([*block[:4], block[4].strip() + " ", *block[5:]])
                     continue
                 split_blocks = split_multi_block(block)
                 # print(split_blocks)
                 # print("\n\n\n\n\n")
-                pg_lines.extend([[*b[:4],b[4].strip()+" ",*b[5:]] for b in split_blocks])
+                pg_lines.extend([[*b[:4], b[4].strip() + " ", *b[5:]] for b in split_blocks])
                 # else:
                 #     pg_lines.append(block)
 
@@ -199,7 +205,7 @@ def get_each_lines(doc):
 
         # for line in pg_lines:
         #     print(line)
-            
+
         lines.extend(pg_lines)
     return lines
 
@@ -249,6 +255,7 @@ def split_line1(text):
     res_lines = [line for line in res_lines if line or line != ""]
     return res_lines
 
+
 def clean_text(text):
     text = text.strip()
     text = re.sub(r"\n+", "\n", text)
@@ -259,6 +266,7 @@ def clean_text(text):
     text = re.sub(r" +\.", ".", text)
     text = re.sub(r"\.\.\.", " ...", text)
     return text
+
 
 def get_questions_alter(lines) -> List[Question]:
     all_questions: List[Question] = []
@@ -316,7 +324,7 @@ def get_question(lines, ind):
     cur = ind - 1
     while cur >= 0:
         if not is_extra(lines[cur]):
-            qn_text = lines[cur][4] +" "+ qn_text
+            qn_text = lines[cur][4] + " " + qn_text
 
         if is_qn_no(lines[cur]):
             qn_no = extract_question_number(lines[cur][4])
