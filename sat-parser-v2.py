@@ -17,14 +17,8 @@ def isStartOfPassage(block):
 
 
 def fixBugForPassage4(txt):
-    if "22-\x142" in txt:
-        return txt.replace("22-\x142", "22-32")
-    if "\x14\x14-\x152" in txt:
-        return txt.replace("\x14\x14-\x152", "33-42")
-    if "\x15\x14-52" in txt:
-        return txt.replace("\x15\x14-52", "43-52")
-    return txt
-
+    txt = txt.replace("\x14", "3")
+    return txt.replace("\x15", "4")
 
 def isEndOfPassage(block, qno=None):
     if qno:
@@ -45,7 +39,7 @@ def parseQuestionNumber(txt) -> list:
     return list(range(st, max(end, st + 10) + 1))
 
 
-def is_extra(block) -> bool:
+def is_extra_content_in_passage(block) -> bool:
     # isNum = bool(re.match(r"\d+\n",block[4]))
     # if not alphanumeric
     return (
@@ -74,10 +68,6 @@ def isStartOfParagraph(block, prevBlock=None):
         (prevBlock[-1] and block[0] == prevBlock[0])
     )
     return block[-1]
-
-
-def modifyBlockText(block, txt):
-    return (*block[:4], txt, *block[5:])
 
 
 def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
@@ -140,7 +130,29 @@ def cleanPassage(passage: list) -> str:
     text = re.sub(r"\n+", "\n", text)
     tmp = text.split("\t", 1)
     text = tmp[1] if len(tmp) > 1 else text
+    text = re.sub(r" +", " ", text)
+
+    text = re.sub(r"^\n", "", text)
+
     return text
+
+def remove_line_no_from_passage(passage):
+    isLineNoStarted = False
+    curLine = 5
+
+    new_passage = []
+    
+    for line in passage:
+        if "Line" in line[4]:
+            isLineNoStarted = True
+        if isLineNoStarted and re.search(rf"^{str(curLine)}", line[4]):
+            line[4] = re.sub(rf"^{str(curLine)} ", "", line[4])
+            curLine += 5
+        new_passage.append(line)
+    return new_passage
+
+    
+        
 
 
 class PassageTemp:
@@ -154,7 +166,9 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
     passageObjects: List[PassageTemp] = []
     header = blocks[0][4]
+    
     qnos = parseQuestionNumber(fixBugForPassage4(header))
+    
     tmp = None
     try:
         tmp = qnos[0]
@@ -166,28 +180,30 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         # print(block)
         block = list(block) + [False]
         if isEndOfPassage(block, tmp):
-            # print(block)
-            text = cleanPassage(passage)
-            passageObjects.append(PassageTemp(text, header, qnos))
 
+            passage = remove_line_no_from_passage(passage)
+            text = cleanPassage(passage)
+            
+            passageObjects.append(PassageTemp(text, header, qnos))
+            
             obj = populate_reference(
                 ReadingComprehension(
                     Passage(text),
                     cur_passage_questions
                 )
             )
+            obj.passage.passage = re.sub(r"\n(?!\t)", " ", obj.passage.passage)
             return obj
-        if is_extra(block):
+        if is_extra_content_in_passage(block):
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-            passage.append(modifyBlockText(block, "\t" + block[4]))
-        else:
-            passage.append(block)
+            block[4] = "\t" + block[4]
+        passage.append(block)
     return None
 
 
 def isStartOfWrittingComprehension(block):
-    return bool(re.search(r"WRITING AND LANGUAGE TEST", block[4], re.IGNORECASE))
+    return bool(re.search(r"Section 2", block[4], re.IGNORECASE))
 
 
 def split_passages(blocks) -> List[Tuple[List[str], bool]]:
@@ -257,12 +273,11 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
         # print(block)
         if re.search(r"STOP", block[4]):
             break
-        if is_extra(block):
+        if is_extra_content_in_passage(block):
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-            passage.append(modifyBlockText(block, "\t" + block[4]))
-        else:
-            passage.append(block)
+            block[4] = "\t" + block[4]
+        passage.append(block)
 
     text = cleanPassage(passage)
     passageObjects.append(PassageTemp(text, header, qnos))
@@ -280,33 +295,47 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
         doc
     )
     all_words_index = doc_index
+    obj.passage.passage = re.sub(r"\n(?!\t)", " ", obj.passage.passage)
     return obj
 
 
-def proccessPassageText(text):
-    # text = re.sub(r"\n", " ", text)
-    text = re.sub(r" +", " ", text)
-    text = re.sub(r" +\.", ".", text)
-    # remove \n that are not followed by a \t
-    text = re.sub(r"\n(?!\t)", " ", text)
-    if text.startswith("\n"):
-        text = text[1:]
-    if not text.startswith("\t"):
-        text = "\t" + text
-    return text
+# def proccessPassageText(text):
+#     text = re.sub(r"\n(?!\t)", " ", text)
+#     text = re.sub(r"\n\t"," \n\t",text)
+#     return text
+#     # text = re.sub(r"\n", " ", text)
+#     change = (len(re.findall(r" +", text))-1+len(re.findall(r" +\.", text))-1)
+#     text = re.sub(r" +", " ", text)
+#     text = re.sub(r" +\.", ".", text)
+#     # remove \n that are not followed by a \t
+#     text = re.sub(r"\n(?!\t)", " ", text)
+#     if text.startswith("\n"):
+#         text = text[1:]
+#         change +=1
+#     if not text.startswith("\t"):
+#         text = "\t" + text
+#         change -=1
+
+#     print("change",change)
+#     return text
 
 
 pdf_paths = []
 answer_pdf_paths = []
 
+# pdf_paths.append("sat/inputPDF/SAT Practice Test 4.pdf")
+# answer_pdf_paths.append("sat/inputPDF/SAT Practice Test 4 Answers.pdf")
 for file in os.listdir("sat/inputPDF"):
     if file.endswith("Answers.pdf"):
         answer_pdf_paths.append("sat/inputPDF/" + file)
     elif file.endswith(".pdf"):
         pdf_paths.append("sat/inputPDF/" + file)
 
+pdf_paths.sort()
+answer_pdf_paths.sort()
+
 files = zip(pdf_paths, answer_pdf_paths)
-print(pdf_paths, answer_pdf_paths)
+# print(pdf_paths, answer_pdf_paths)
 
 for sample_paper, (pdf_path, answer_pdf_path) in enumerate(files, start=1):
     # sample_paper = "8"
@@ -331,9 +360,9 @@ for sample_paper, (pdf_path, answer_pdf_path) in enumerate(files, start=1):
     for i, split in enumerate(passage_split):
         # print(split,"\n\n\n\n\n\n\n\n\n")
         split, isWritingComprehension = split
+        # print(split, isWritingComprehension)
         comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
         if comprehension is not None:
-            comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
             all_comprehensions.append(comprehension)
             for j, question in enumerate(comprehension.questions):
                 question.correct_option = all_answers[qno_cnt].answer

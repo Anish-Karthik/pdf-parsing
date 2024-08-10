@@ -49,6 +49,8 @@ def get_each_lines(doc, isAnswer=False):
             # if isAnswer:
             #     line.append(block)
             #     continue
+            if is_extra(block):
+                continue
             if not re.search(r"^\.", block[4]):
                 line.append(block)
             else:
@@ -88,8 +90,8 @@ def is_extra(block) -> bool:
         re.search(r"Line\n5?", block[4]) or
         re.search(r"Unauthorized copying", block[4]) or
         re.search(r"CO NTI N U E", block[4]) or
-        re.search(r"STOP", block[4]) or
-        re.search(r"SAT.*PRACTICE\n", block[4])
+        re.search(r"SAT.*PRACTICE\n", block[4]) or
+        re.search(r"SAT-PRACTICE TEST", block[4])
     )
 
 

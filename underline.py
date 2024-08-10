@@ -120,7 +120,7 @@ def underlined_references(comprehension: ReadingComprehension, all_words, all_wo
                         if qn.qno == qn_no:
                             qn.references.append(Reference(start_word, end_word))
                             
-                            print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
+                            # print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
                             break
 
             prev_word_is_underlined = False
