@@ -13,7 +13,6 @@ from underline import *
 
 def isStartOfPassage(block):
     if re.match(r'^A Natural Synthetic ', block[4]) or re.match(r'^The Slums ', block[4]):
-        print(block)
         return True
     return (
         re.match(r'Questions \d*.*\d*', block[4])
@@ -84,11 +83,8 @@ def isStartOfParagraph(block, prevBlock=None):
     return block[7]
 
 
-def modifyBlockText(block, txt):
-    return (*block[:4], txt, *block[5:])
-
-
-def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
+def getReferences(passageText: str, line_reference, startline: int, endLine=None) -> Reference:
+    return get_reference_v2(passageText, line_reference,startline, endLine)
     # print(passageText[:100])
     lines = passageText.split("\n")
     startline -= 1
@@ -105,8 +101,36 @@ def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
     # print("References:", startWord, endWord)
     return Reference(startWord, endWord)
 
+def get_reference_v2(passage, line_reference ,startline ,endline = None):
+    words = passage.split()
 
-def populate_reference(comprehension: ReadingComprehension):
+    words_with_line_no = []
+    for key, value in line_reference:
+        line_words = value.split()
+        words_with_line_no.extend([(key+1, word) for word in line_words])
+
+    cur_word_ind = 0
+    start_word_reference = None
+    end_word_reference = None
+    if not endline:
+        endline = startline
+
+    print(startline, endline)
+    
+    for key, word in words_with_line_no:
+        print(word,words[cur_word_ind])
+        if word == words[cur_word_ind]:
+            if key == startline and start_word_reference is None:
+                start_word_reference = cur_word_ind
+            if key == endline:
+                end_word_reference = cur_word_ind
+            cur_word_ind += 1
+        else:
+            continue
+
+    return Reference(start_word_reference, end_word_reference)
+
+def populate_reference(comprehension: ReadingComprehension, line_reference):
     pattern1 = r"Lines\s+(\d+)\s*-\s*(\d+)"
     pattern2 = r"Line\s+(\d+)"
     pattern3 = r"Lines\s+(\d+)\s*and\s*(\d+)"
@@ -121,12 +145,12 @@ def populate_reference(comprehension: ReadingComprehension):
         # print(pattern1_match)
         # print(pattern2_match)
         if len(pattern1_match):
-            references.append(getReferences(comprehension.passage.passage, int(pattern1_match[0][0]), int(pattern1_match[0][-1])))
+            references.append(getReferences(comprehension.passage.passage, line_reference, int(pattern1_match[0][0]), int(pattern1_match[0][-1])))
         for startLine in pattern2_match:
-            references.append(getReferences(comprehension.passage.passage, int(startLine)))
+            references.append(getReferences(comprehension.passage.passage, line_reference,int(startLine)))
         for [startLine1, startLine2] in pattern3_match:
-            references.append(getReferences(comprehension.passage.passage, int(startLine1)))
-            references.append(getReferences(comprehension.passage.passage, int(startLine2)))
+            references.append(getReferences(comprehension.passage.passage, line_reference,int(startLine1)))
+            references.append(getReferences(comprehension.passage.passage, line_reference,int(startLine2)))
         question.references = references
 
         # options
@@ -134,9 +158,9 @@ def populate_reference(comprehension: ReadingComprehension):
             pattern1_match = re.findall(pattern1, option.description, re.IGNORECASE)
             pattern2_match = re.findall(pattern2, option.description, re.IGNORECASE)
             if len(pattern1_match):
-                option.reference = (getReferences(comprehension.passage.passage, int(pattern1_match[0][0]), int(pattern1_match[0][-1])))
+                option.reference = (getReferences(comprehension.passage.passage, line_reference,int(pattern1_match[0][0]), int(pattern1_match[0][-1])))
             if len(pattern2_match):
-                option.reference = (getReferences(comprehension.passage.passage, int(pattern2_match[0])))
+                option.reference = (getReferences(comprehension.passage.passage, line_reference,int(pattern2_match[0])))
 
     # print(pattern1_match)
     # print(pattern2_match)
@@ -146,9 +170,7 @@ def populate_reference(comprehension: ReadingComprehension):
 def proccessPassageText(text):
     text = re.sub(r"\n+", "\n", text)
     text = re.sub(r" +", " ", text)
-    print(len(text))
     text = re.sub(r"\s+\.", ".", text)
-    print(len(text))
     # need to fix, but multiple lines parsing messed up everything
     text = re.sub(r"- *\n", "", text)
     # remove whitespace before and after \n or \n\t
@@ -165,7 +187,9 @@ def proccessPassageText(text):
 
 
 def cleanPassage(passage: list) -> str:
-    print("Passage Length:", len(passage))
+    for block in passage:
+        block[4] = re.sub(r"^\(\d+\)", "", block[4])
+        
     text = "\n".join([b[4] for b in passage]).strip()
     if re.search(r"Try\s+to\s+take\s+about\s+5\s+minutes\s+to\s+read\s+this\s+passage", text):
         text = re.split(r"Try\s+to\s+take\s+about\s+5\s+minutes\s+to\s+read\s+this\s+passage", text)[1]
@@ -192,6 +216,29 @@ class PassageTemp:
         self.header = remove_next_line(header)
         self.qnos = qnos
 
+def create_line_references(blocks):
+    line_references = list()
+    for ind,block in enumerate(blocks):
+        if re.match(r"^\((\d+)\)", block[4]):
+            block[4] = re.sub(r"^\(\d+\)", "", block[4])
+            count = 0
+            if len(line_references) == 0:
+                for it,temp in enumerate(blocks):
+                    count+=1
+                    if(temp == block):
+                        break
+                for it,temp in enumerate(blocks):
+                    line_references.append((it - (count - 5),temp[4]))
+                    if(temp == block):
+                        break
+                    
+            else:
+                for i in range(4,0,-1):
+                    line_references.append((line_references[-1][0]+1,blocks[ind - i][4]))
+                line_references.append((line_references[-1][0]+1,block[4]))
+
+    return line_references
+        
 
 def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
@@ -207,23 +254,36 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
                 buggy -= 1
                 passage.append(block)
                 continue
+            
+            line_references = create_line_references(passage)
             text = cleanPassage(passage)
+
+            line_ref = []
+            for i in line_references:
+                line_ref.append(i[1])
+                
+            print("\n\n\n")
+            min_l = min(len(text.split()), len((" ".join(line_ref)).split()))
+            for i in range(min_l):
+                if text.split()[i] != (" ".join(line_ref)).split()[i]:
+                    print(i, text.split()[i], (" ".join(line_ref)).split()[i])
             
             obj = populate_reference(
                 ReadingComprehension(
                     Passage(text),
-                    cur_passage_questions
-                )
+                    cur_passage_questions,
+                ),
+                line_references
             )
+            
             obj.passage.passage = cleanPassagePostReference(obj.passage.passage)
             return obj
         if is_extra(block):
             # print(block)
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-            passage.append(modifyBlockText(block, "\n\t" + block[4]))
-        else:
-            passage.append(block)
+            block[4] = "\n\t" + block[4]
+        passage.append(block)
 
     return None
 

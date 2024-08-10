@@ -140,7 +140,7 @@ def processBlock(block):
     if re.search(r"^\(\d+\)", block[4]) or re.search(r"^Line\s+", block[4]):
         block = list(block)
         block[0] = 39.5645751953125
-        block[4] = re.sub(r"^\(\d+\)", "", block[4])
+        # block[4] = re.sub(r"^\(\d+\)", "", block[4])
         block[4] = re.sub(r"^Line\s+", "", block[4])
     return block
 
