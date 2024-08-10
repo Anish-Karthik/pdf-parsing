@@ -18,6 +18,9 @@ def remove_qn_no(text):
     text = re.sub(r"Q.( ){0,1}","",text)
     return re.sub(r"\)","",text)
 
+def is_extra(block) -> bool:
+    return re.search(r"bodheeprep", block[4], re.IGNORECASE) or re.search(r"\d* *CAT \d+ QUESTION", block[4], re.IGNORECASE)
+
 
 def get_qns(doc):
     qns = []
@@ -25,6 +28,8 @@ def get_qns(doc):
     for page in doc:
         blocks = page.get_text("blocks")
         for block in blocks:
+            if is_extra(block):
+                continue
             lines.append(block)
 
     for ind,line in enumerate(lines):
@@ -50,6 +55,8 @@ def get_options(pdf_path,doc):
     for page in doc:
         blocks = page.get_text("blocks")
         for block in blocks:
+            if is_extra(block):
+                continue
             if is_option(block):
                 options += block[4]
     
