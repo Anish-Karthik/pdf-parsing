@@ -142,6 +142,7 @@ def populate_reference(comprehension: ReadingComprehension):
     # print(pattern2_match)
     return comprehension
 
+
 def proccessPassageText(text):
     text = re.sub(r"\n+", "\n", text)
     text = re.sub(r" +", " ", text)
@@ -152,7 +153,7 @@ def proccessPassageText(text):
     text = re.sub(r"- *\n", "", text)
     # remove whitespace before and after \n or \n\t
     text = re.sub(r" *\n *", "\n", text)
-    text = re.sub(r" *\n\t *", "\n\t", text) 
+    text = re.sub(r" *\n\t *", "\n\t", text)
     text = re.sub(r"(?<!\n\t)(Passage \d+)\n\t", r"\n\t\1\n\t", text)
     # remove \n that are not followed by a \t
     # text = re.sub(r"\n(?!\t)", " ", text)
@@ -161,6 +162,7 @@ def proccessPassageText(text):
     if not text.startswith("\t"):
         text = "\t" + text
     return text + "."
+
 
 def cleanPassage(passage: list) -> str:
     print("Passage Length:", len(passage))
@@ -303,6 +305,7 @@ def fix_buggy_question(question: Question):
     # print(question.to_json())
     return question
 
+
 def processQnos(comprehension: ReadingComprehension, all_comprehensions: List[ReadingComprehension]):
     st = set()
     for j, question in enumerate(comprehension.questions):
@@ -318,7 +321,6 @@ def processQnos(comprehension: ReadingComprehension, all_comprehensions: List[Re
                 all_comprehensions.append(other_comprehension_questions)
         st.add(question.qno)
     return comprehension
-
 
 
 pdf_path = "baron/inputPDF/baron.pdf"
@@ -378,10 +380,10 @@ for i, split in enumerate(passage_split):
     # write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
 
 
-print(qno_cnt)
+# print(qno_cnt)
 # print(debug_qno)
-for i,x in enumerate(debug_qno, start=1):
-    print(i,x)
+# for i, x in enumerate(debug_qno, start=1):
+#     print(i, x)
 for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"baron/outputJSON/baron-passage{i + 1}.json")
 
