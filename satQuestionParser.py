@@ -87,7 +87,7 @@ def is_extra(block) -> bool:
     # isNum = bool(re.match(r"\d+\n",block[4]))
     # if not alphanumeric
     return (
-        re.search(r"Line\n5?", block[4]) or
+        re.search(r"^Line\n5", block[4]) or
         re.search(r"Unauthorized copying", block[4]) or
         re.search(r"CO NTI N U E", block[4]) or
         re.search(r"SAT.*PRACTICE\n", block[4]) or

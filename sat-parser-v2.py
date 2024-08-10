@@ -43,7 +43,7 @@ def is_extra_content_in_passage(block) -> bool:
     # isNum = bool(re.match(r"\d+\n",block[4]))
     # if not alphanumeric
     return (
-        re.search(r"Line\n5?", block[4]) or
+        re.search(r"^Line\n5", block[4]) or
         re.search(r"Unauthorized copying", block[4]) or
         re.search(r"CO NTI N U E", block[4]) or
         re.search(r"STOP", block[4]) or
@@ -128,22 +128,24 @@ def populate_reference(comprehension: ReadingComprehension):
 def cleanPassage(passage: list) -> str:
     text = "".join([b[4] for b in passage]).strip()
     text = re.sub(r"\n+", "\n", text)
+    text = re.sub(r"Line\n", "", text)
+    text = re.sub(r" +", " ", text)
     tmp = text.split("\t", 1)
     text = tmp[1] if len(tmp) > 1 else text
-    text = re.sub(r" +", " ", text)
-
     text = re.sub(r"^\n", "", text)
+
 
     return text
 
 def remove_line_no_from_passage(passage):
-    isLineNoStarted = False
+    isLineNoStarted = True
     curLine = 5
 
     new_passage = []
     
     for line in passage:
         if "Line" in line[4]:
+            line[4] = re.sub(r"^Line ", "", line[4])
             isLineNoStarted = True
         if isLineNoStarted and re.search(rf"^{str(curLine)}", line[4]):
             line[4] = re.sub(rf"^{str(curLine)} ", "", line[4])
@@ -161,6 +163,11 @@ class PassageTemp:
         self.header = remove_next_line(header)
         self.qnos = qnos
 
+
+def format_passage(text):
+    text = re.sub(r"(?<! )\n(?!\t)", " ", text)
+    text = re.sub(r"(?<= )\n(?!\t)", "", text)
+    return text
 
 def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
@@ -182,7 +189,10 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         if isEndOfPassage(block, tmp):
 
             passage = remove_line_no_from_passage(passage)
+            # for i in passage:
+            #     print(i[4])
             text = cleanPassage(passage)
+            # print(text)
             
             passageObjects.append(PassageTemp(text, header, qnos))
             
@@ -192,7 +202,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
                     cur_passage_questions
                 )
             )
-            obj.passage.passage = re.sub(r"\n(?!\t)", " ", obj.passage.passage)
+            obj.passage.passage = format_passage(obj.passage.passage)
             return obj
         if is_extra_content_in_passage(block):
             continue
@@ -295,7 +305,7 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
         doc
     )
     all_words_index = doc_index
-    obj.passage.passage = re.sub(r"\n(?!\t)", " ", obj.passage.passage)
+    obj.passage.passage = format_passage(obj.passage.passage)
     return obj
 
 
@@ -323,8 +333,8 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
 pdf_paths = []
 answer_pdf_paths = []
 
-# pdf_paths.append("sat/inputPDF/SAT Practice Test 4.pdf")
-# answer_pdf_paths.append("sat/inputPDF/SAT Practice Test 4 Answers.pdf")
+# pdf_paths.append("sat/inputPDF/SAT Practice Test 8.pdf")
+# answer_pdf_paths.append("sat/inputPDF/SAT Practice Test 8 Answers.pdf")
 for file in os.listdir("sat/inputPDF"):
     if file.endswith("Answers.pdf"):
         answer_pdf_paths.append("sat/inputPDF/" + file)
@@ -338,24 +348,19 @@ files = zip(pdf_paths, answer_pdf_paths)
 # print(pdf_paths, answer_pdf_paths)
 
 for sample_paper, (pdf_path, answer_pdf_path) in enumerate(files, start=1):
-    # sample_paper = "8"
     sample_paper = str(sample_paper)
 
-    # pdf_path = "input/sat/SAT Practice Test 1.pdf"
     doc = fitz.open(pdf_path)
     blocks = get_each_lines(doc)
-    # for block in blocks:
-    #     print(block)
 
     all_comprehensions = []
-    # all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
-    # answer_pdf_path = "sat/inputPDF/SAT Practice Test 1 Answers.pdf"
+
     ans_doc = fitz.open(answer_pdf_path)
     answer_blocks = get_each_lines(ans_doc, True)
     all_answers = parse_answer(answer_blocks)
 
     passage_split = split_passages(blocks)
-    # print(len(passage_split))
+    print(len(passage_split))
     qno_cnt = 0
     for i, split in enumerate(passage_split):
         # print(split,"\n\n\n\n\n\n\n\n\n")
