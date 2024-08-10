@@ -130,8 +130,8 @@ function populateDataFromHtml(){
     }
     for (let i = 0; i < wordElements.length; i++) {
         let wordElement =  wordElements[i];
-        let txt =  wordElement.innerText;
-        if(txt.trim().length === 0){
+        let txt = wordElement.innerText.replace(/\s+/g,' ').trim();
+        if(txt.length === 0){
             continue;
         }
         if(wordElement.className.includes("tab")){
@@ -140,7 +140,7 @@ function populateDataFromHtml(){
         if(wordElement.className.includes("new-line")){
             txt = "\n" + txt;
         }
-        passage += txt;
+        passage += " " + txt;
         let cssClasses = wordElement.getAttribute("class").split(" ");
         let highlightedQuestions = [];
         cssClasses.forEach(cssClass => {
@@ -171,7 +171,7 @@ function populateDataFromHtml(){
             }
         });
 
-        currentWordCount += wordElement.innerText.trim().split(" ").length;
+        currentWordCount += txt.split(" ").length;
     }
     data.passage = passage;
     
