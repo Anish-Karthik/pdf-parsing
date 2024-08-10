@@ -105,9 +105,57 @@ function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
             wordByLine.html = "<br/>" + wordByLine.html; 
         }
 }
+function populateOption(){
+    let wordElements = document.getElementsByClassName("passage-word");
+    let currentWordCount = 0;
+    let highlights = {};
+    for (let i = 0; i < wordElements.length; i++) {
+        let wordElement =  wordElements[i];
+        let txt =  wordElement.innerText;
+        if(txt.trim().length === 0){
+            continue;
+        }
+        let cssClasses = wordElement.getAttribute("class").split(" ");
+        let questionNumber;
+        let optionNumber;
+        cssClasses.forEach(cssClass => {
+            if (cssClass.startsWith("option-ref-")) {
+                let clsSplit = cssClass.replace("option-ref-", "").split("-");
+                questionNumber = clsSplit[0];
+                optionNumber = clsSplit[1];
+            }
+        });
+        if(questionNumber){
+            if (highlights["question-" + questionNumber] === undefined) {
+                highlights["question-" + questionNumber] = {};
+            }
+            if (highlights["question-" + questionNumber]["option-" + optionNumber] === undefined) {
+                highlights["question-" + questionNumber]["option-" + optionNumber] = {};
+            }
+            if(highlights["question-" + questionNumber]["option-" + optionNumber]["start_word"] === undefined) {
+                highlights["question-" + questionNumber]["option-" + optionNumber]["start_word"] = currentWordCount;
+            }
+            highlights["question-" + questionNumber]["option-" + optionNumber]["end_word"] = currentWordCount;
+         }
 
+         currentWordCount += wordElement.innerText.trim().split(" ").length;
+    }
+    console.log(highlights)
+    Object.keys(highlights).forEach(question => {
+        let qno = parseInt(question.replace("question-",""))
+        Object.keys(highlights[question]).forEach(option => {
+           let optionNo = option.replace("option-","")
+           console.log(option)
+           data.questions[qno-1].options[optionNo].reference = {
+            start_word: highlights[question][option].start_word,
+            end_word: highlights[question][option].end_word
+          }
+          console.log(data.questions[qno].options[optionNo].reference)
+        });
+    });
+    console.log(highlights)
+}
 function populateDataFromHtml(){
-    
     let wordElements = document.getElementsByClassName("passage-word");
     let questionElements = document.getElementsByClassName("question");
     let currentWordCount = 0;
@@ -116,6 +164,7 @@ function populateDataFromHtml(){
     data.questions.forEach(question => {
         question.references = [];
     });
+    
     for(let i = 0; i < questionElements.length; i++) {
         data.questions[i].description = questionElements[i].childNodes[1].childNodes[1].textContent.trim();
         
@@ -186,6 +235,8 @@ function populateDataFromHtml(){
             }
         })
     });
+
+    populateOption();
     console.log(data)
 }
 
@@ -253,7 +304,7 @@ function clickOption(element) {
     let questionNo = element.id.split("-")[0];
     let optionReference = document.getElementsByClassName(`option-ref-${questionNo}-${optionIndex}`);
     for(let i = 0; i < optionReference.length; i++) {
-        optionReference[i].classList.add("highlightSelection");
+        optionReference[i].classList.add("highlightOptionRef");
     }
     console.log(optionReference)
     helper.questions.forEach((question) => {
@@ -282,6 +333,10 @@ function removeHighlightedQuestion() {
     while (highlightedElements.length > 0) {
         highlightedElements[0].classList.remove("highlightSelection");
     }
+    highlightedElements = document.getElementsByClassName("highlightOptionRef");
+    while (highlightedElements.length > 0) {
+        highlightedElements[0].classList.remove("highlightOptionRef");
+    }
 }
 
 function modifyRef() {
@@ -306,14 +361,14 @@ function modifyRef() {
         optionRef = "option-ref-" + helper.selectedQuestion.qno + "-" + helper.selectedOption;
         let existingRef = document.getElementsByClassName(optionRef);
         while(existingRef.length > 0) {
-            existingRef[0].classList.remove(optionRef,"highlightSelection");
+            existingRef[0].classList.remove(optionRef,"highlightOptionRef");
         }
     }
 
     selectedElements.forEach((element)=>{
         if (helper.selectedOption != null) {
             element.classList.add(optionRef);
-            element.classList.add("highlightSelection");
+            element.classList.add("highlightOptionRef");
         } else {
             element.className += " highlighted highlight-" + helper.selectedQuestion.qno + " " + refId;
         }

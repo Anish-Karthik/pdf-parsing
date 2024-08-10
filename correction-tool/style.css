@@ -84,6 +84,16 @@ input[type="file"]::file-selector-button:hover {
     max-height: 200px;
     overflow: scroll;
 }
+.highlightOptionRef{
+    background: rgba(255, 192, 205, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #FFC0CB;
+    border-right: 0px;
+    border-left: 0px;
+    padding: 2px;
+}
 .highlightSelection {
     /* From https://css.glass */
     background: rgba(44, 125, 155, 0.2);
