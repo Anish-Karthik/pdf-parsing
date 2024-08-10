@@ -129,6 +129,7 @@ def cleanPassage(passage: list) -> str:
     text = "".join([b[4] for b in passage]).strip()
     text = re.sub(r"\n+", "\n", text)
     text = re.sub(r"Line\n", "", text)
+    text = re.sub(r"\d+\n", "", text)
     text = re.sub(r" +", " ", text)
     tmp = text.split("\t", 1)
     text = tmp[1] if len(tmp) > 1 else text
