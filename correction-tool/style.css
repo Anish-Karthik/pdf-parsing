@@ -10,11 +10,21 @@
   }
 
   /* When the parent is hovered, show the child */
-  .option:hover .opt-change-btn {
+  .option-parent:hover .opt-change-btn {
     display: block;
     visibility: visible;
   }
-
+.option-parent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 3px;
+}
+.option-parent button {
+    border-radius: 40px;
+    background-color: white;
+    border: rgb(52, 168, 83) 2px solid;
+}
 .option {
     padding: 5px;
 } 

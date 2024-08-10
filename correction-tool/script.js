@@ -453,16 +453,15 @@ function optionHtml(question) {
     return question.options
         .map(
             (option, index) =>
-                `<div>
+                `<div class="option-parent">
                   <p 
                     id=${question.qno}-${index}
                     class = 'option option-${question.qno}  ${String.fromCharCode(65 + index) == question.correct_option ? "correct-option" : "incorrect-option"}' 
-                    style="margin-left:20px;" 
-                    onclick="clickOption(this);" >
-                        <span>${String.fromCharCode(65 + index)}.</span> ${option.description} 
-                    
-                </p>
-                <button class="opt-disable-btn">tick</button></div>`
+                    style="margin-left:20px; onclick="clickOption(this);">
+                            <span>${String.fromCharCode(65 + index)}.</span> ${option.description} 
+                    </p>
+                <button class="opt-disable-btn"><i class="fa fa-check" style="color: rgb(52, 168, 83);"></i></button>
+                </div>`
         )
         .join("");
 }
@@ -561,15 +560,15 @@ function editOptionMode(){
        if(!confirm(`Are you sure you want to change the option to ${element.innerText}`)) return;
         changeCorrectOption(element,event)
     }
-   let options = document.getElementsByClassName('option');
+   let options = document.getElementsByClassName('option-parent');
    if(document.getElementById('editMode').checked){
      for(let i = 0; i < options.length; i++){
         options[i].getElementsByTagName('button')[0].className = 'opt-change-btn'
-        options[i].removeEventListener("click", function(event) {
-            handleClick(options[i], event);
+        options[i].getElementsByTagName('button')[0].removeEventListener("click", function(event) {
+            handleClick(options[i].childNodes[1], event);
         });
         options[i].getElementsByTagName('button')[0].addEventListener("click",function(event) {
-            handleClick(options[i], event);
+            handleClick(options[i].childNodes[1], event);
           });
      }
    }else{
