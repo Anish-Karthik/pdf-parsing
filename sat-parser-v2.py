@@ -12,7 +12,7 @@ from underline import *
 
 
 def isStartOfPassage(block):
-    if re.match(r'^A Natural Synthetic\n', block[4]) or re.match(r'The Slums', block[4]):
+    if re.match(r'^A Natural Synthetic ', block[4]) or re.match(r'^The Slums ', block[4]):
         print(block)
         return True
     return (
