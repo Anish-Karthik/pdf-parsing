@@ -237,7 +237,6 @@ function clickRef(element) {
             helper.selectedQuestion = question;
             highlight(element.id);
             helper.selectedRefId = referId;
-            helper.selectedOption = null;
             return;
         }
     });
@@ -268,13 +267,14 @@ function clickOption(element) {
             return;
         }
     });
+    element.classList.add("highlightSelection");
     document.getElementById("modifyRefButton").innerText = "Modify";
 }
 
 function removeHighlightedQuestion() {
-    let questionElements = document.getElementsByClassName("questionSection");
-    for (let i = 0; i < questionElements.length; i++) {
-        questionElements[i].classList.remove("highlightSelection");
+    let highlightedElements = document.getElementsByClassName("highlightSelection");
+    while (highlightedElements.length > 0) {
+        highlightedElements[0].classList.remove("highlightSelection");
     }
 }
 
@@ -295,19 +295,34 @@ function modifyRef() {
     } else {
         refId = "reference-"+referenceCount++;
     }
+    let optionRef = "";
+    if (helper.selectedOption != null) {
+        optionRef = "option-ref-" + helper.selectedQuestion.qno + "-" + helper.selectedOption;
+        let existingRef = document.getElementsByClassName(optionRef);
+        while(existingRef.length > 0) {
+            existingRef[0].classList.remove(optionRef);
+        }
+    }
+
     selectedElements.forEach((element)=>{
-        // element.classList.add("highlighted");
-        element.className += " highlighted highlight-" + helper.selectedQuestion.qno + " " + refId;
-        // element.classList.add(refId)
+        if (helper.selectedOption != null) {
+            element.classList.add(optionRef);
+        } else {
+            element.className += " highlighted highlight-" + helper.selectedQuestion.qno + " " + refId;
+        }
     });
-    let questionElement = document.createElement("span");
-    questionElement.innerHTML = 
-        `<span id="${refId}" onclick="clickRef(this)">
-            <span  class="question-no-style">Q${helper.selectedQuestion.qno} </span>
-        </span>`;
-    document.getElementById("passage-section").
-        insertBefore(questionElement.firstChild, selectedElements[0]);
-    helper.selectedRefId = null;
+
+    if (helper.selectedOption == null) {
+        let questionElement = document.createElement("span");
+        questionElement.innerHTML = 
+            `<span id="${refId}" onclick="clickRef(this)">
+                <span  class="question-no-style">Q${helper.selectedQuestion.qno} </span>
+            </span>`;
+        document.getElementById("passage-section").
+            insertBefore(questionElement.firstChild, selectedElements[0]);
+    }
+    
+    resetHelper();
 }
 
 function append_question_box(wordsByLine, references) {
