@@ -169,8 +169,16 @@ function passageHightlight(startIndex, wordsByLine) {
     return wordsByLine;
 }
 
+function resetHelper() {
+    helper.selectedRefId = null;
+    helper.selectedQuestion = null;
+    helper.selectedOption = null;
+}
+
 function clickRef(element) {
     removeHighlightedQuestion();
+    resetHelper();
+
     // console.log(element)
     let referId = element.id;
     let questionNo = element.innerText.trim().replace("Q",'');
@@ -180,6 +188,34 @@ function clickRef(element) {
             question.qno + ". " + question.description;
             helper.selectedQuestion = question;
             helper.selectedRefId = referId;
+            helper.selectedOption = null;
+            return;
+        }
+    });
+    document.getElementById("modifyRefButton").innerText = "Modify";
+}
+
+function clickOption(element) {
+    removeHighlightedQuestion();
+    resetHelper();
+
+    // console.log(element)
+    let optionIndex = element.id.split("-")[1];
+    let questionNo = element.id.split("-")[0];
+    helper.questions.forEach((question) => {
+          if(question.qno == questionNo){
+            document.getElementById("selectedQuestionId").innerText =
+                question.qno + ". " + question.description;
+            helper.selectedQuestion = question;
+            helper.selectedOption = optionIndex;
+
+            for (let i = 0; i < question.options.length; i++) {
+                if (i == optionIndex) {
+                    document.getElementById("selectedOption").innerText =
+                        "ABCDE".charAt(i) + ". " + question.options[i].description;
+                    break;
+                }
+            }
             return;
         }
     });
@@ -264,10 +300,14 @@ function optionHtml(question) {
     return question.options
         .map(
             (option, index) =>
-                `<p class = 'option option-${question.qno} ${String.fromCharCode(65 + index) == question.correct_option
-                    ? "correct-option"
-                    : "incorrect-option"
-                }' style="margin-left:20px;">${String.fromCharCode(65 + index)}. ${option.description} <button class="opt-disable-btn">tick</button></p>`
+                `<p 
+                    id=${question.qno}-${index}
+                    class = 'option option-${question.qno}  ${String.fromCharCode(65 + index) == question.correct_option ? "correct-option" : "incorrect-option"}' 
+                    style="margin-left:20px;" 
+                    onclick="clickOption(this);" >
+                        ${String.fromCharCode(65 + index)}. ${option.description} 
+                    <button class="opt-disable-btn">tick</button>
+                </p>`
         )
         .join("");
 }
@@ -290,9 +330,8 @@ function highlight(section, start, end, timeout = 4000) {
 
 function clickQuestionRef(element) {
     removeHighlightedQuestion();
-    if(helper.selectedRefId){
-        helper.selectedRefId = null;
-    }
+    resetHelper();
+
     const questionId = element.id;
     // console.log(element)
     helper.questions.forEach((question) => {
@@ -327,8 +366,7 @@ function reRender(helper) {
     const contentDiv = document.getElementById("content");
     let html = `<div id="passage-section" class="section-html">`;
     html += passageHtml(helper);
-    html += `<div class="question-html">${questionHtml(helper)}
-        </div>`;
+    html += `<div class="question-html">${questionHtml(helper)}</div>`;
     contentDiv.innerHTML = html;
 }
 
@@ -388,6 +426,7 @@ function editOptionMode(){
      }
    }
 }
+
 function changeCorrectOption(element,event){
     let regex = /option-\d{1,}/;
     let classes = Array.from(element.classList)
@@ -402,6 +441,7 @@ function changeCorrectOption(element,event){
     element.classList.remove("incorrect-option")
     element.classList.add("correct-option")
 }
+
 function editModeChanged() {
     let passageElements = document.getElementsByClassName("passage-word");
     if (document.getElementById('editMode').checked) {
