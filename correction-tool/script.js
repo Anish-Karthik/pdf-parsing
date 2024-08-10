@@ -122,7 +122,7 @@ function populateDataFromHtml(){
         let optionElements = document.getElementsByClassName("option-"+(i+1));
         console.log(optionElements);
         for(let j = 0; j < optionElements.length; j++) {
-            if(optionElements[j].className.includes("correct-option")){
+            if(optionElements[j].className.split(" ").includes("correct-option")){
                 data.questions[i].correct_option = String.fromCharCode(65 + j);;
             }
             data.questions[i].options[j].description = optionElements[j].innerText.trim().slice(2)
