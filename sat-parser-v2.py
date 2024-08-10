@@ -165,6 +165,9 @@ def cleanPassage(passage: list) -> str:
         text = re.split(r"Try to take about 5 minutes to read this passage", text)[1]
         text = re.split(r"Time Travel", text ,1)[1]
         text = re.split(r"With each of these questions", text, 1)[0].strip()
+    text = re.split(r"Source:", text, 1)[0].strip()
+    text = re.split(r"\d*\s*Citation:", text, 1)[0].strip()
+    # remove any hyperlinks
     text = re.sub(r"\n+", "\n", text)
     text = proccessPassageText(text)
     return text
