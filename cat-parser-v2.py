@@ -26,7 +26,7 @@ def parseQuestionNumber(block) -> list:
     return list(range(st, end+1))
 
 def is_extra(block) -> bool:
-    return "bodheeprep.com" in block[4]
+    return re.search(r"bodheeprep", block[4], re.IGNORECASE) or re.search(r"\d* *CAT \d+ QUESTION", block[4], re.IGNORECASE)
 
 
 def isEndOfVARC(block):
