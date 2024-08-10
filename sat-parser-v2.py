@@ -146,7 +146,8 @@ def proccessPassageText(text):
     text = re.sub(r"\n+", "\n", text)
     text = re.sub(r" +", " ", text)
     text = re.sub(r" +\.", ".", text)
-    text = re.sub(r"\-\n", "", text)
+    # need to fix, but multiple lines parsing messed up everything
+    text = re.sub(r"\- *\n", "", text)
     # remove whitespace before and after \n or \n\t
     text = re.sub(r" *\n *", "\n", text)
     text = re.sub(r" *\n\t *", "\n\t", text) 
@@ -157,7 +158,7 @@ def proccessPassageText(text):
         text = text[1:]
     if not text.startswith("\t"):
         text = "\t" + text
-    return text
+    return text + "."
 
 def cleanPassage(passage: list) -> str:
     text = "".join([b[4] for b in passage]).strip()
