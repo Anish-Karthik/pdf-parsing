@@ -145,15 +145,17 @@ def populate_reference(comprehension: ReadingComprehension):
 def proccessPassageText(text):
     text = re.sub(r"\n+", "\n", text)
     text = re.sub(r" +", " ", text)
-    text = re.sub(r" +\.", ".", text)
+    print(len(text))
+    text = re.sub(r"\s+\.", ".", text)
+    print(len(text))
     # need to fix, but multiple lines parsing messed up everything
-    text = re.sub(r"\- *\n", "", text)
+    text = re.sub(r"- *\n", "", text)
     # remove whitespace before and after \n or \n\t
     text = re.sub(r" *\n *", "\n", text)
     text = re.sub(r" *\n\t *", "\n\t", text) 
     text = re.sub(r"(?<!\n\t)(Passage \d+)\n\t", r"\n\t\1\n\t", text)
     # remove \n that are not followed by a \t
-    text = re.sub(r"\n(?!\t)", " ", text)
+    # text = re.sub(r"\n(?!\t)", " ", text)
     if text.startswith("\n"):
         text = text[1:]
     if not text.startswith("\t"):
@@ -161,18 +163,21 @@ def proccessPassageText(text):
     return text + "."
 
 def cleanPassage(passage: list) -> str:
-    text = "".join([b[4] for b in passage]).strip()
-    if re.search(r"Try to take about 5 minutes to read this passage", text):
-        text = re.split(r"Try to take about 5 minutes to read this passage", text)[1]
-        text = re.split(r"Time Travel", text ,1)[1]
-        text = re.split(r"With each of these questions", text, 1)[0].strip()
+    print("Passage Length:", len(passage))
+    text = "\n".join([b[4] for b in passage]).strip()
+    if re.search(r"Try\s+to\s+take\s+about\s+5\s+minutes\s+to\s+read\s+this\s+passage", text):
+        text = re.split(r"Try\s+to\s+take\s+about\s+5\s+minutes\s+to\s+read\s+this\s+passage", text)[1]
+        text = re.split(r"Time\s+Travel", text ,1)[1]
+        text = re.split(r"With\s+each\s+of\s+these\s+questions", text, 1)[0].strip()
     text = re.split(r"Source:", text, 1)[0].strip()
     text = re.split(r"\d*\s*Citation:", text, 1)[0].strip()
     # remove any hyperlinks
-    text = re.sub(r"\n+", "\n", text)
     text = proccessPassageText(text)
     return text
 
+def cleanPassagePostReference(text) -> str:
+    text = re.sub(r"\n(?!\t)", " ", text)
+    return text
 
 def clean_block(block):
     block[4] = re.sub(r"\u2013", "-", block[4])
@@ -208,6 +213,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
                     cur_passage_questions
                 )
             )
+            obj.passage.passage = cleanPassagePostReference(obj.passage.passage)
             return obj
         if is_extra(block):
             # print(block)
