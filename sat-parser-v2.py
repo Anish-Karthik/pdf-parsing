@@ -142,10 +142,27 @@ def populate_reference(comprehension: ReadingComprehension):
     # print(pattern2_match)
     return comprehension
 
+def proccessPassageText(text):
+    text = re.sub(r"\n+", "\n", text)
+    text = re.sub(r" +", " ", text)
+    text = re.sub(r" +\.", ".", text)
+    text = re.sub(r"\-\n", "", text)
+    # remove whitespace before and after \n or \n\t
+    text = re.sub(r" *\n *", "\n", text)
+    text = re.sub(r" *\n\t *", "\n\t", text) 
+    text = re.sub(r"(?<!\n\t)(Passage \d+)\n\t", r"\n\t\1\n\t", text)
+    # remove \n that are not followed by a \t
+    text = re.sub(r"\n(?!\t)", " ", text)
+    if text.startswith("\n"):
+        text = text[1:]
+    if not text.startswith("\t"):
+        text = "\t" + text
+    return text
 
 def cleanPassage(passage: list) -> str:
     text = "".join([b[4] for b in passage]).strip()
     text = re.sub(r"\n+", "\n", text)
+    text = proccessPassageText(text)
     return text
 
 
@@ -265,17 +282,6 @@ def fix_buggy_question(question: Question):
     # print(question.to_json())
     return question
 
-def proccessPassageText(text):
-    # text = re.sub(r"\n", " ", text)
-    text = re.sub(r" +", " ", text)
-    text = re.sub(r" +\.", ".", text)
-    # remove \n that are not followed by a \t
-    text = re.sub(r"\n(?!\t)", " ", text)
-    if text.startswith("\n"):
-        text = text[1:]
-    if not text.startswith("\t"):
-        text = "\t" + text
-    return text
 
 
 pdf_path = "baron/inputPDF/baron.pdf"
@@ -305,13 +311,13 @@ for i, split in enumerate(passage_split):
 
     if not comprehension:
         continue
-    comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
+    # comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
     comprehension.questions = [q for q in comprehension.questions if q.qno != ""]
     # fix buggy questions
     comprehension.questions = [q for q in comprehension.questions]
     all_comprehensions.append(comprehension)
 
-    write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
+    # write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
 
     for j, question in enumerate(comprehension.questions):
         # try:
@@ -327,7 +333,7 @@ for i, split in enumerate(passage_split):
         qno_cnt += 1
 
     # remove
-    write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
+    # write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
 
 
 print(qno_cnt)
