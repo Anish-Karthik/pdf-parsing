@@ -38,7 +38,7 @@ function downloadJSONFile(data, filename = "data.json") {
 
 function preprocessData() {
     helper.passage = helper.passage.replaceAll("\n\t", " \n\t");
-    helper.passage = helper.passage.replaceAll("\n", " \n");
+    // helper.passage = helper.passage.replaceAll("\n", " \n");
 
     passageWords = helper.passage.split(" ");
     helper.words = [];
