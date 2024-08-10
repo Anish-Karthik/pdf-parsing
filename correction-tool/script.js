@@ -2,6 +2,7 @@ var helper = {};
 var data = [];
 var referenceCount = 0;
 function downloadJSONFile(data, filename = "data.json") {
+    populateDataFromHtml();
     const jsonStr = JSON.stringify(data, null, 2);
     const blob = new Blob([jsonStr], { type: "application/json" });
     const link = document.createElement("a");
@@ -42,6 +43,10 @@ function preprocessData() {
     passageWords = helper.passage.split(" ");
     helper.words = [];
     for (i = 0; i < passageWords.length; i++) {
+    //    console.log(passageWords[i],i)
+        if (passageWords[i].trim() === "") {
+            continue;
+        }
         helper.words.push({"wordId": `1-1-${i}`, "word": passageWords[i]});
     }
     for(let i = 0;i < helper.questions.length; i++) {
@@ -49,8 +54,7 @@ function preprocessData() {
             return {referId : `reference-${referenceCount++}`,...ref};
         });
     }
-    console.log(helper)
-
+    // console.log(helper)
 }
 
 function delRef() {
@@ -94,7 +98,7 @@ function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
         }
         wordByLine.html = 
             wordByLine.question + `
-                <span class="passage-word ${isTabbed ? "tab" : ""} ${wordByLine.css}" id='${wordByLine.wordId}'> 
+                <span class="passage-word ${isTabbed ? "tab" : ""} ${isLineBreak ? "new-line" : ""} ${wordByLine.css}" id='${wordByLine.wordId}'> 
                     ${wordByLine.word}
                 </span>`;
         if (isLineBreak) {
@@ -103,14 +107,40 @@ function getWord(referId,wordByLine, isHighlighted,questionNo,highlightQno){
 }
 
 function populateDataFromHtml(){
+    
     let wordElements = document.getElementsByClassName("passage-word");
+    let questionElements = document.getElementsByClassName("question");
     let currentWordCount = 0;
     let highlights = {};
     let passage = "";
+    data.questions.forEach(question => {
+        question.references = [];
+    });
+    for(let i = 0; i < questionElements.length; i++) {
+        data.questions[i].description = questionElements[i].childNodes[1].childNodes[1].textContent.trim();
+        
+        let optionElements = document.getElementsByClassName("option-"+(i+1));
+        console.log(optionElements);
+        for(let j = 0; j < optionElements.length; j++) {
+            if(optionElements[j].className.split(" ").includes("correct-option")){
+                data.questions[i].correct_option = String.fromCharCode(65 + j);;
+            }
+            data.questions[i].options[j].description = optionElements[j].innerText.trim().slice(2)
+        } 
+    }
     for (let i = 0; i < wordElements.length; i++) {
         let wordElement =  wordElements[i];
-        passage += wordElement.innerHTML;
-
+        let txt =  wordElement.innerText;
+        if(txt.trim().length === 0){
+            continue;
+        }
+        if(wordElement.className.includes("tab")){
+            txt = "\t" + txt;
+        }
+        if(wordElement.className.includes("new-line")){
+            txt = "\n" + txt;
+        }
+        passage += txt;
         let cssClasses = wordElement.getAttribute("class").split(" ");
         let highlightedQuestions = [];
         cssClasses.forEach(cssClass => {
@@ -119,9 +149,9 @@ function populateDataFromHtml(){
                 
             }
         });
-        console.log(highlightedQuestions)
+        // console.log(highlightedQuestions)
         highlightedQuestions.forEach(question => {
-            if (!highlights[question]) {
+            if (highlights[question] == undefined) {
                 highlights[question] = currentWordCount;
             }
         });
@@ -129,16 +159,34 @@ function populateDataFromHtml(){
         Object.keys(highlights).forEach(question => {
             if (!highlightedQuestions.includes(question)) {
                 // console.log(question, highlights[question], currentWordCount - 1);
+                data.questions.forEach(qn => {
+                    if (qn.qno == question) {
+                        qn.references.push({
+                            start_word: highlights[question],
+                            end_word: currentWordCount - 1,
+                        });
+                    }
+                })
                 delete highlights[question];
             }
         });
 
-        currentWordCount += wordElement.innerHTML.trim().split(" ").length;
+        currentWordCount += wordElement.innerText.trim().split(" ").length;
     }
-
+    data.passage = passage;
+    
     Object.keys(highlights).forEach(question => {
-        console.log(question, highlights[question], currentWordCount);
+        // console.log(question, highlights[question], currentWordCount);
+        data.questions.forEach(qn => {
+            if (qn.qno == question) {
+                qn.references.push({
+                    start_word: highlights[question],
+                    end_word: currentWordCount,
+                });
+            }
+        })
     });
+    console.log(data)
 }
 
 function passageHightlight(startIndex, wordsByLine) {
@@ -187,6 +235,7 @@ function clickRef(element) {
             document.getElementById("selectedQuestionId").innerText =
             question.qno + ". " + question.description;
             helper.selectedQuestion = question;
+            highlight(element.id);
             helper.selectedRefId = referId;
             helper.selectedOption = null;
             return;
@@ -244,12 +293,12 @@ function modifyRef() {
     if(refId) {
         delRef();
     } else {
-        refId = referenceCount++;
+        refId = "reference-"+referenceCount++;
     }
     selectedElements.forEach((element)=>{
-        element.classList.add("highlighted");
-        element.classList.add("highlight-" + helper.selectedQuestion.qno);
-        element.classList.add(refId)
+        // element.classList.add("highlighted");
+        element.className += " highlighted highlight-" + helper.selectedQuestion.qno + " " + refId;
+        // element.classList.add(refId)
     });
     let questionElement = document.createElement("span");
     questionElement.innerHTML = 
@@ -258,6 +307,7 @@ function modifyRef() {
         </span>`;
     document.getElementById("passage-section").
         insertBefore(questionElement.firstChild, selectedElements[0]);
+    helper.selectedRefId = null;
 }
 
 function append_question_box(wordsByLine, references) {
@@ -312,19 +362,16 @@ function optionHtml(question) {
         .join("");
 }
 
-function highlight(section, start, end, timeout = 4000) {
-    for (let i = start; i <= end; i++) {
-        document.getElementById(`${section}-1-${i}`).style.background =
-            "yellow";
+function highlight(cls,timeout= 2000) {
+    element = document.getElementsByClassName(cls)
+    for(let i = 0; i < element.length; i++) {
+        element[i].style.background = "yellow";
     }
-    if (timeout > 0) {
-        setTimeout(() => {
-            for (let i = start; i <= end; i++) {
-                document.getElementById(`${section}-1-${i}`).style.background =
-                    "";
-            }
-        }, timeout);
-    }
+    setTimeout(() => {
+        for(let i = 0; i < element.length; i++) {
+            element[i].style.background = "";
+        }
+    }, timeout);
 }
 
 
@@ -443,14 +490,28 @@ function changeCorrectOption(element,event){
 }
 
 function editModeChanged() {
+    let optionElements = document.getElementsByClassName("option")
     let passageElements = document.getElementsByClassName("passage-word");
+    let questionElements = document.getElementsByClassName("question");
     if (document.getElementById('editMode').checked) {
         for (let i = 0; i < passageElements.length; i++) {
             passageElements[i].setAttribute("contenteditable", "true");
         }
+        for(let i = 0;i<questionElements.length;i++){
+            questionElements[i].setAttribute("contenteditable","true");
+        }
+        for(let i = 0;i < optionElements.length;i++){
+            optionElements[i].setAttribute("contenteditable", "true");
+        }
     } else {
         for (let i = 0; i < passageElements.length; i++) {
             passageElements[i].setAttribute("contenteditable", "false");
+        }
+        for(let i = 0;i<questionElements.length;i++){
+            questionElements[i].setAttribute("contenteditable","false");
+        }
+        for(let i = 0;i < optionElements.length;i++){
+            optionElements[i].setAttribute("contenteditable", "false");
         }
     }
     editOptionMode();
