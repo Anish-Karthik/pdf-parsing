@@ -33,7 +33,8 @@ def isEndOfVARC(block):
     return block[4].startswith("Q.") and "17" in block[4]
 
 def clean_text(text: str) -> str:
-    text = re.sub(r"(\.|\?) ?\n", r"\1\n\t", text)
+    text = re.sub(r"(\.|\?) ?\n", r"\1\n\t", text)    
+    text = re.sub(r"\- *\n", "", text)
     text = re.sub(r"\n(?!\t)", r" ", text)
     return text
 
@@ -105,6 +106,8 @@ def proccessPassageText(text):
     text = re.sub(r" +\.", ".", text)
     # remove \n that are not followed by a \t
     text = re.sub(r"\n(?!\t)", " ", text)
+    # remove the text till 1st \n\t, if text starts with ^Direction for
+    text = re.sub(r"Direction for.*\n\t", "", text)
     if not text.startswith("\t"):
         text = "\t" + text
     if text.endswith("\n\t"):
