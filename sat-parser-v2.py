@@ -161,6 +161,10 @@ def proccessPassageText(text):
 
 def cleanPassage(passage: list) -> str:
     text = "".join([b[4] for b in passage]).strip()
+    if re.search(r"Try to take about 5 minutes to read this passage", text):
+        text = re.split(r"Try to take about 5 minutes to read this passage", text)[1]
+        text = re.split(r"Time Travel", text ,1)[1]
+        text = re.split(r"With each of these questions", text, 1)[0].strip()
     text = re.sub(r"\n+", "\n", text)
     text = proccessPassageText(text)
     return text
