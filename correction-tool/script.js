@@ -245,11 +245,17 @@ function clickRef(element) {
 
 function clickOption(element) {
     removeHighlightedQuestion();
-    resetHelper();
 
+    resetHelper();
+    
     // console.log(element)
     let optionIndex = element.id.split("-")[1];
     let questionNo = element.id.split("-")[0];
+    let optionReference = document.getElementsByClassName(`option-ref-${questionNo}-${optionIndex}`);
+    for(let i = 0; i < optionReference.length; i++) {
+        optionReference[i].classList.add("highlightSelection");
+    }
+    console.log(optionReference)
     helper.questions.forEach((question) => {
           if(question.qno == questionNo){
             document.getElementById("selectedQuestionId").innerText =
@@ -300,13 +306,14 @@ function modifyRef() {
         optionRef = "option-ref-" + helper.selectedQuestion.qno + "-" + helper.selectedOption;
         let existingRef = document.getElementsByClassName(optionRef);
         while(existingRef.length > 0) {
-            existingRef[0].classList.remove(optionRef);
+            existingRef[0].classList.remove(optionRef,"highlightSelection");
         }
     }
 
     selectedElements.forEach((element)=>{
         if (helper.selectedOption != null) {
             element.classList.add(optionRef);
+            element.classList.add("highlightSelection");
         } else {
             element.className += " highlighted highlight-" + helper.selectedQuestion.qno + " " + refId;
         }
