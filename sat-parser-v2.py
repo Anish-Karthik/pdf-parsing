@@ -289,6 +289,22 @@ def fix_buggy_question(question: Question):
     # print(question.to_json())
     return question
 
+def processQnos(comprehension: ReadingComprehension, all_comprehensions: List[ReadingComprehension]):
+    st = set()
+    for j, question in enumerate(comprehension.questions):
+        if question.qno in st:
+            # make this as a new Comprehension
+            # remove the questions from the current comprehension
+            # add the questions to the new comprehension
+            # add the new comprehension to the all_comprehensions
+            other_comprehension_questions = comprehension.questions[j:]
+            comprehension.questions = comprehension.questions[:j]
+            if len(other_comprehension_questions):
+                other_comprehension_questions = processQnos(ReadingComprehension(Passage(None), other_comprehension_questions), all_comprehensions)
+                all_comprehensions.append(other_comprehension_questions)
+        st.add(question.qno)
+    return comprehension
+
 
 
 pdf_path = "baron/inputPDF/baron.pdf"
@@ -341,6 +357,8 @@ for i, split in enumerate(passage_split):
         # print(f"Question {question.qno} added")
         each_qnos.append(question.qno)
         qno_cnt += 1
+    # check for repeating qnos from "1"
+    processQnos(comprehension, all_comprehensions)
     debug_qno.append(each_qnos)
     # remove
     # write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
