@@ -182,9 +182,16 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
 
     cur_passage_questions = get_questions_alter(blocks)
+    buggy = 0
     for block in blocks[1:]:
         block = list(block) + [False]
+        if re.match(r'MEDITATION I.', block[4]):
+            buggy = 4
         if isEndOfPassage(block):
+            if buggy > 0:
+                buggy -= 1
+                passage.append(block)
+                continue
             text = cleanPassage(passage)
 
             obj = populate_reference(
@@ -303,6 +310,7 @@ write_text_to_file(json.dumps([c.to_json() for c in all_answers], indent=2), "de
 
 qno_cnt = 0
 print(len(passage_split))
+debug_qno = []
 for i, split in enumerate(passage_split):
     # print(split,"\n\n\n\n\n\n\n\n\n")
     split, isWritingComprehension = split
@@ -318,7 +326,7 @@ for i, split in enumerate(passage_split):
     all_comprehensions.append(comprehension)
 
     # write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
-
+    each_qnos = []
     for j, question in enumerate(comprehension.questions):
         # try:
         if question.qno != all_answers[qno_cnt].question_number:
@@ -330,13 +338,18 @@ for i, split in enumerate(passage_split):
         # except Exception as e:
         #     print(e)
         #     print(f"Error at {qno_cnt}")
+        # print(f"Question {question.qno} added")
+        each_qnos.append(question.qno)
         qno_cnt += 1
-
+    debug_qno.append(each_qnos)
     # remove
     # write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
 
 
 print(qno_cnt)
+# print(debug_qno)
+for i,x in enumerate(debug_qno, start=1):
+    print(i,x)
 for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"baron/outputJSON/baron-passage{i + 1}.json")
 
