@@ -87,9 +87,52 @@ def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
     # print("References:", startWord, endWord)
     return Reference(startWord, endWord)
 
+def get_reference_words(s):
+    s = s.replace("\u201c", "“").replace("\u201d", "”")
+    tmp = re.findall(r"\(“(.+)”\)",s)
+    if len(tmp)==0 and " . . . " in s:
+        tmp = re.findall(r"“(.+)”",s)
+    if len(tmp)!=0:
+        words = re.split(r" \. \. \. ",tmp[0])
+        start_words = words[0].split(" ")
+        end_words = words[1].split(" ")
+        return start_words, end_words
+    return None, None
+
+def match_words(words, passage_words):
+    for i in range(len(passage_words) - len(words) + 1):
+        m_words = [x.replace("\u201c", "“").replace("\u201d", "”").replace("“","").replace("”","") for x in passage_words[i:i+len(words)]]
+        
+        if [words[j] in m_words[j] for j in range(len(words))].count(True) == len(words):
+            return i
+    return None
+
+def modify_option_reference(option: Option, comprehension: ReadingComprehension, debug =""):
+    start_words, end_words = get_reference_words(option.description)
+    passage_words = re.sub(r"\n", " ", comprehension.passage.passage).split()[option.reference.start_word:option.reference.end_word]
+    del_start_ind = None
+    del_end_ind = None
+    print(option.description)
+    if start_words is not None and end_words is not None:
+        del_start_ind = match_words(start_words, passage_words)
+        del_end_ind = match_words(end_words, passage_words[del_start_ind:])
+        print(del_start_ind, del_end_ind)
+    else:
+        print(f"Error{debug}: No words found")
+    print(passage_words)
+    print(start_words, end_words)
+    print(option.reference.start_word, option.reference.end_word)
+    if del_start_ind is not None and del_end_ind is not None:
+        print("REf",del_start_ind, del_end_ind)
+        print(option.reference.start_word+del_start_ind, option.reference.end_word-del_end_ind)
+        option.reference.start_word += del_start_ind
+        option.reference.end_word = option.reference.start_word+del_end_ind
+    else:
+        print(f"Error{debug}: words sequence not found")
+    print("\n")
 
 def populate_reference(comprehension: ReadingComprehension):
-    pattern1 = r"Lines\s+(\d+)\s*-\s*(\d+)"
+    pattern1 = r"Lines\s+(\d+)\s*-\s*(\d+)" # option reference
     pattern2 = r"Line\s+(\d+)"
     pattern3 = r"Lines\s+(\d+)\s*and\s*(\d+)"
 
@@ -116,9 +159,14 @@ def populate_reference(comprehension: ReadingComprehension):
             pattern1_match = re.findall(pattern1, option.description, re.IGNORECASE)
             pattern2_match = re.findall(pattern2, option.description, re.IGNORECASE)
             if len(pattern1_match):
+                # work here match 1st word followed by \( and then match the last word before \)
                 option.reference = (getReferences(comprehension.passage.passage, int(pattern1_match[0][0]), int(pattern1_match[0][-1])))
+                # print the matched text by referencing the passage
+                modify_option_reference(option, comprehension, "multiple")
+
             if len(pattern2_match):
                 option.reference = (getReferences(comprehension.passage.passage, int(pattern2_match[0])))
+                modify_option_reference(option, comprehension, "Single")
 
     # print(pattern1_match)
     # print(pattern2_match)
@@ -348,7 +396,7 @@ answer_pdf_paths.sort()
 files = zip(pdf_paths, answer_pdf_paths)
 # print(pdf_paths, answer_pdf_paths)
 
-for sample_paper, (pdf_path, answer_pdf_path) in enumerate(files, start=1):
+for sample_paper, (pdf_path, answer_pdf_path) in enumerate(list(files), start=1):
     sample_paper = str(sample_paper)
 
     doc = fitz.open(pdf_path)
