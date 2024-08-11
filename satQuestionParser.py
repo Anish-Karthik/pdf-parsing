@@ -56,43 +56,6 @@ def extract_question_number(text):
     qno = re.findall(r"(?<!.)(\d+)\.\s+", text)
     return qno[0] if len(qno) > 0 else None
 
-
-# def get_underlined_text(doc, image, ind):
-
-#     img = doc.extract_image(image[0])
-#     pix = fitz.Pixmap(doc, image[0])
-#     image_bytes = pix.tobytes("png")
-#     image = Image.open(io.BytesIO(image_bytes))
-#     image.save("images/" + str(ind) + ".jpg")
-#     width, height = image.size
-
-#     top_half = image.crop((0, 0, width, height // 2))  # Crop the top half
-#     top_half.save("images/" + str(ind) + "half.jpg")
-
-#     bottom_half = image.crop((0, height * 0.6, width, height))
-#     bottom_half.save("images/" + str(ind) + "bottom_half.jpg")
-
-#     img = cv2.imread("images/" + str(ind) + "half.jpg")
-#     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-#     thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
-#     text = pytesseract.image_to_string(Image.fromarray(thresh), config='--psm 6')
-
-#     # print(text)
-
-#     img = cv2.imread("images/" + str(ind) + "bottom_half.jpg")
-#     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-#     blur = cv2.GaussianBlur(gray, (5, 5), 0)
-#     thresh = cv2.threshold(blur, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)[1]
-
-#     Image.fromarray(thresh).save("images/" + str(ind) + 'cv2.jpg')
-
-#     bottom_text = pytesseract.image_to_string(Image.fromarray(thresh), config='--psm 6')
-
-#     # print(bottom_text)
-
-#     return re.sub(r"\n", "", text)
-
-
 def replace_with_underlined_text(text, underlined_text):
     text = re.sub(r"(?<=\s)\n", underlined_text, text)
     return text
@@ -150,18 +113,7 @@ def get_each_lines(doc):
     hasAnswersStarted = False
     skip = False
     for page in doc[13:]:
-        # images = page.get_images()
-
         pg_lines = []
-        # for img_index, img in enumerate(images):
-        #     xref = img[0]
-        #     img_rect = page.get_image_rects(xref)[0]
-
-        #     if abs(img_rect.y0 - img_rect.y1) < 50:  # is text image
-        #         text = get_underlined_text(doc, img, img_index)
-        #         coords = (img_rect.x0, img_rect.y0, img_rect.x1, img_rect.y1, text)
-
-        #         pg_lines.append(coords)
 
         blocks = page.get_text("blocks")
         border = 323
@@ -178,21 +130,13 @@ def get_each_lines(doc):
             if "ANSWERS EXPLAINED" in block[4]:
                 skip = False
                 hasAnswersStarted = True
-                print("Answer started Split")
             if not re.search(r"(?<!.)\.{5,}", block[4]):
-                # print(block)
                 block = processBlock(block)
-                # if is_multi_block(block):
-                # print("\n\n\n\n\n")
                 if hasAnswersStarted:
                     pg_lines.append([*block[:4], block[4].strip() + " ", *block[5:]])
                     continue
                 split_blocks = split_multi_block(block)
-                # print(split_blocks)
-                # print("\n\n\n\n\n")
                 pg_lines.extend([[*b[:4], b[4].strip() + " ", *b[5:]] for b in split_blocks])
-                # else:
-                #     pg_lines.append(block)
 
             else:
                 border = block[0]

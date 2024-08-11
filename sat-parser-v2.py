@@ -85,24 +85,14 @@ def isStartOfParagraph(block, prevBlock=None):
 
 def getReferences(passageText: str, line_reference, startline: int, endLine=None) -> Reference:
     return get_reference_v2(passageText, line_reference,startline, endLine)
-    # print(passageText[:100])
-    lines = passageText.split("\n")
-    startline -= 1
-    if endLine:
-        endLine -= 1
-    # print("REFERENCES number", startline, endLine)
-    startWord = len(" ".join(lines[:startline]).split())
-    if not endLine:
-        endLine = startline
-    if endLine == len(lines):
-        endWord = len(" ".join(lines).split())
-    endWord = len(" ".join(lines[:endLine + 1]).split())
-    # print(re.sub(r"\n", " ", passageText).split()[startWord:endWord])
-    # print("References:", startWord, endWord)
-    return Reference(startWord, endWord)
+
+reference_count = 0
+reference_found_count = 0
 
 def get_reference_v2(passage, line_reference ,startline ,endline = None):
+    global reference_count, reference_found_count
     words = passage.split()
+    reference_count+=1
 
     words_with_line_no = []
     for key, value in line_reference:
@@ -115,19 +105,32 @@ def get_reference_v2(passage, line_reference ,startline ,endline = None):
     if not endline:
         endline = startline
 
-    print(startline, endline)
-    
-    for key, word in words_with_line_no:
-        print(word,words[cur_word_ind])
-        if word == words[cur_word_ind]:
-            if key == startline and start_word_reference is None:
-                start_word_reference = cur_word_ind
-            if key == endline:
-                end_word_reference = cur_word_ind
-            cur_word_ind += 1
-        else:
-            continue
+    cur_dic_ind = 0
+    breaking_ind = None
+    while cur_word_ind < len(words):
+        if breaking_ind:
+            cur_dic_ind = breaking_ind
+            breaking_ind = None
+        while cur_dic_ind < len(words_with_line_no):
+            key = words_with_line_no[cur_dic_ind][0]
+            word = words_with_line_no[cur_dic_ind][1]
+           
+            if word == words[cur_word_ind] or word in words[cur_word_ind] or words[cur_word_ind] in word:
+                if key == startline and start_word_reference is None:
+                    start_word_reference = cur_word_ind
+                    reference_found_count+=1
+                if key == endline:
+                    end_word_reference = cur_word_ind
+                cur_word_ind += 1
+                if cur_word_ind == len(words):
+                    break
+            else:
+                if not breaking_ind:
+                    breaking_ind = cur_dic_ind
+            cur_dic_ind += 1         
+        cur_word_ind +=1
 
+    # if start_word_reference is not None and end_word_reference is not None:
     return Reference(start_word_reference, end_word_reference)
 
 def populate_reference(comprehension: ReadingComprehension, line_reference):
@@ -140,10 +143,7 @@ def populate_reference(comprehension: ReadingComprehension, line_reference):
         pattern2_match = re.findall(pattern2, question.description, re.IGNORECASE)
         pattern3_match = re.findall(pattern3, question.description, re.IGNORECASE)
         references = []
-        # print(comprehension.passage.passage[:100])
-        # print(question.description)
-        # print(pattern1_match)
-        # print(pattern2_match)
+
         if len(pattern1_match):
             references.append(getReferences(comprehension.passage.passage, line_reference, int(pattern1_match[0][0]), int(pattern1_match[0][-1])))
         for startLine in pattern2_match:
@@ -220,6 +220,9 @@ def create_line_references(blocks):
     line_references = list()
     for ind,block in enumerate(blocks):
         if re.match(r"^\((\d+)\)", block[4]):
+            line_no = int(re.findall(r"^\((\d+)\)", block[4])[0])
+            required_lines =  line_no if not line_references else line_no - line_references[-1][0]
+            
             block[4] = re.sub(r"^\(\d+\)", "", block[4])
             count = 0
             if len(line_references) == 0:
@@ -228,12 +231,12 @@ def create_line_references(blocks):
                     if(temp == block):
                         break
                 for it,temp in enumerate(blocks):
-                    line_references.append((it - (count - 5),temp[4]))
+                    line_references.append((it - (count - required_lines),temp[4]))
                     if(temp == block):
                         break
                     
             else:
-                for i in range(4,0,-1):
+                for i in range(required_lines-1,0,-1):
                     line_references.append((line_references[-1][0]+1,blocks[ind - i][4]))
                 line_references.append((line_references[-1][0]+1,block[4]))
 
@@ -261,12 +264,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
             line_ref = []
             for i in line_references:
                 line_ref.append(i[1])
-                
-            print("\n\n\n")
-            min_l = min(len(text.split()), len((" ".join(line_ref)).split()))
-            for i in range(min_l):
-                if text.split()[i] != (" ".join(line_ref)).split()[i]:
-                    print(i, text.split()[i], (" ".join(line_ref)).split()[i])
+
             
             obj = populate_reference(
                 ReadingComprehension(
@@ -275,11 +273,10 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
                 ),
                 line_references
             )
-            
+
             obj.passage.passage = cleanPassagePostReference(obj.passage.passage)
             return obj
         if is_extra(block):
-            # print(block)
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
             block[4] = "\n\t" + block[4]
@@ -296,40 +293,6 @@ def get_all_words_for_underline(doc):
             word = tuple(list(word) + [pgno])
             all_words.append(word)
     return all_words
-
-
-def extract_passages_writing_comprehension(blocks: List[Tuple[Any]], all_words):
-    global all_words_index
-    passage = []
-    passageObjects: List[PassageTemp] = []
-    header = blocks[0][4]
-    qnos = parseQuestionNumber(fixBugForPassage4(header))
-
-    cur_passage_questions = get_questions_alter(blocks)
-    for block in blocks[1:]:
-        if (not block[7]):
-            continue
-        block = list(block) + [False]
-        # not isLeft
-        # print(block)
-        if re.search(r"STOP", block[4]) or isEndOfPassage(block):
-            break
-        if is_extra(block):
-            continue
-        if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-            passage.append(modifyBlockText(block, "\t" + block[4]))
-        else:
-            passage.append(block)
-
-    text = cleanPassage(passage)
-    passageObjects.append(PassageTemp(text, header, qnos))
-
-    last_index, obj = underlined_references(
-        ReadingComprehension(Passage(text), cur_passage_questions), all_words, all_words_index, doc)
-
-    all_words_index = last_index
-
-    return obj
 
 
 def split_passages(blocks) -> List[Tuple[List[str], bool]]:
@@ -404,9 +367,8 @@ qno_cnt = 0
 print(len(passage_split))
 debug_qno = []
 for i, split in enumerate(passage_split):
-    # print(split,"\n\n\n\n\n\n\n\n\n")
     split, isWritingComprehension = split
-    comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
+    comprehension = extract_passages(split) 
     # remove the questions that are not having qnos
 
     if not comprehension:
@@ -417,36 +379,22 @@ for i, split in enumerate(passage_split):
     comprehension.questions = [q for q in comprehension.questions]
     all_comprehensions.append(comprehension)
 
-    # write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
     each_qnos = []
     for j, question in enumerate(comprehension.questions):
-        # try:
+    
         if question.qno != all_answers[qno_cnt].question_number:
-            print()
-            print(json.dumps([(x.to_json()) for x in all_answers[qno_cnt - j - 1:len(comprehension.questions) + qno_cnt]], indent=2))
-            raise Exception(f"Number mismatch at {qno_cnt}, Passage {len(all_comprehensions)}, A: {all_answers[qno_cnt].question_number}, Q: {question.qno}")
+            print("wrong answer matched:", question.qno, all_answers[qno_cnt].question_number)
         question.correct_option = all_answers[qno_cnt].answer
         question.detailed_answer = all_answers[qno_cnt].detailed_solution
-        # except Exception as e:
-        #     print(e)
-        #     print(f"Error at {qno_cnt}")
-        # print(f"Question {question.qno} added")
+      
         each_qnos.append(question.qno)
         qno_cnt += 1
     # check for repeating qnos from "1"
     processQnos(comprehension, all_comprehensions)
     debug_qno.append(each_qnos)
-    # remove
-    # write_text_to_file(json.dumps(comprehension.to_json(), indent=2), f"output/baron/baron-passage{len(all_comprehensions)}.json")
-
-
-# print(qno_cnt)
-# print(debug_qno)
-# for i, x in enumerate(debug_qno, start=1):
-#     print(i, x)
+    
 for i, obj in enumerate(all_comprehensions):
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"baron/outputJSON/baron-passage{i + 1}.json")
 
-
-# print(json.dumps([c.to_json() for c in all_comprehensions]))
 write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
+# print(reference_found_count,reference_count)

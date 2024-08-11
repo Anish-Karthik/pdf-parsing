@@ -31,7 +31,6 @@ def parse_answer(blocks) -> List[AnswerTmp]:
     for block in blocks:
         if "ANSWERS EXPLAINED" in block[4]:
             answer_started = True
-            print("Answer started")
             continue
         if not answer_started:
             continue
