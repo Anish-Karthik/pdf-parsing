@@ -114,28 +114,28 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
     passage_words = re.sub(r"\n", " ", comprehension.passage.passage).split()[reference.start_word:reference.end_word]
     del_start_ind = None
     del_end_ind = None
-    print(description)
+    # print(description)
     if start_words is not None and end_words is not None:
         del_start_ind = match_words(start_words, passage_words)
         del_end_ind = match_words(end_words, passage_words[del_start_ind:])
-        print(del_start_ind, del_end_ind)
+        # print(del_start_ind, del_end_ind)
     elif start_words is not None:
         del_start_ind = match_words(start_words, passage_words)
         del_end_ind = len(start_words) - 1
-        print("v2",del_start_ind)
+        # print("v2",del_start_ind)
     else:
         print(f"Error{debug}: No words found")
-    print(passage_words)
-    print(start_words, end_words)
-    print(reference.start_word, reference.end_word)
+    # print(passage_words)
+    # print(start_words, end_words)
+    # print(reference.start_word, reference.end_word)
     if del_start_ind is not None and del_end_ind is not None:
-        print("REf",del_start_ind, del_end_ind)
-        print(reference.start_word+del_start_ind, reference.end_word-del_end_ind)
+        # print("REf",del_start_ind, del_end_ind)
+        # print(reference.start_word+del_start_ind, reference.end_word-del_end_ind)
         reference.start_word += del_start_ind
         reference.end_word = reference.start_word+del_end_ind
     else:
         print(f"Error{debug}: words sequence not found")
-    print("\n")
+    # print("\n")
 
 def modify_option_reference(option: Option, comprehension: ReadingComprehension, debug =""):
     return modify_single_reference(option.description, option.reference, comprehension, debug)
@@ -186,18 +186,19 @@ def populate_reference(comprehension: ReadingComprehension):
     return comprehension
 
 
-def cleanPassage(passage: list) -> str:
+def cleanPassage(passage: list) -> Tuple[Optional[str], str]:
     text = "".join([b[4] for b in passage]).strip()
     text = re.sub(r"\n+", "\n", text)
     text = re.sub(r"Line\n", "", text)
     text = re.sub(r"\d+\n", "", text)
     text = re.sub(r" +", " ", text)
     tmp = text.split("\t", 1)
+    actual_header = remove_next_line(tmp[0]).strip() if len(tmp) > 1 else None
     text = tmp[1] if len(tmp) > 1 else text
     text = re.sub(r"^\n", "", text)
 
 
-    return text
+    return actual_header, text
 
 def remove_line_no_from_passage(passage):
     isLineNoStarted = True
@@ -235,7 +236,6 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
     passageObjects: List[PassageTemp] = []
     header = blocks[0][4]
-    
     qnos = parseQuestionNumber(fixBugForPassage4(header))
     
     tmp = None
@@ -253,7 +253,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
             passage = remove_line_no_from_passage(passage)
             # for i in passage:
             #     print(i[4])
-            text = cleanPassage(passage)
+            actual_header, text = cleanPassage(passage)
             # print(text)
             
             passageObjects.append(PassageTemp(text, header, qnos))
@@ -265,6 +265,8 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
                 )
             )
             obj.passage.passage = format_passage(obj.passage.passage)
+            obj.header = actual_header
+            # obj.header = remove_next_line(header)
             return obj
         if is_extra_content_in_passage(block):
             continue
@@ -351,7 +353,7 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
             block[4] = "\t" + block[4]
         passage.append(block)
 
-    text = cleanPassage(passage)
+    actual_header, text = cleanPassage(passage)
     passageObjects.append(PassageTemp(text, header, qnos))
 
     obj = populate_reference(
@@ -360,6 +362,7 @@ def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
             cur_passage_questions
         )
     )
+    obj.header = actual_header
     doc_index, obj = underlined_references(
         obj,
         get_all_words_for_underline(doc),

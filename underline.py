@@ -1,6 +1,7 @@
 import fitz
 import re
 from model import *
+from typing import *
 
 
 def calculate_overlap(line, word):
@@ -83,7 +84,7 @@ def passage_to_words(passage) -> List[str]:
     return passage
 
 
-def underlined_references(comprehension: ReadingComprehension, all_words, all_words_index, doc) -> ReadingComprehension:
+def underlined_references(comprehension: ReadingComprehension, all_words, all_words_index, doc) -> Tuple[Any, ReadingComprehension]:
     # passage = comprehension.passage.passage
     # passage = re.sub(r"\t", "", (re.sub(r"\n", " ", passage)))
     passage = passage_to_words(comprehension.passage.passage)

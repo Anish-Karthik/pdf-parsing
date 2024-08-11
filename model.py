@@ -60,11 +60,19 @@ class Passage:
 
 class ReadingComprehension:
   def __init__(self, passage: Passage, questions: List[Question], section: int = 1):
+    self.header = None
     self.passage = passage
     self.questions = questions
     self.section = section
 
   def to_json(self):
+    if self.header:
+      return {
+        "section": self.section,
+        "header": self.header,
+        "passage": self.passage.to_json(),
+        "questions": [question.to_json() for question in self.questions]
+      }
     return {
       "section": self.section,
       "passage": self.passage.to_json(),
