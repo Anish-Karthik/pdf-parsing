@@ -166,6 +166,7 @@ def populate_reference(comprehension: ReadingComprehension):
             references.append(getReferences(comprehension.passage.passage, int(startLine1)))
             references.append(getReferences(comprehension.passage.passage, int(startLine2)))
         question.references = references
+        modify_question_reference(question, comprehension, "question multiple")
 
         # options
         for option in question.options:
@@ -435,6 +436,11 @@ for sample_paper, (pdf_path, answer_pdf_path) in enumerate(list(files), start=1)
         if comprehension is not None:
             all_comprehensions.append(comprehension)
             for j, question in enumerate(comprehension.questions):
+                # if str(all_answers[qno_cnt].question_number).strip() != question.qno.strip():
+                #     print(all_answers[qno_cnt].question_number, question.qno)
+                #     print(f"sample paper{sample_paper}-passage{len(all_comprehensions)}")
+                #     print(question.description)
+                #     print("Error: Question number mismatch")
                 question.correct_option = all_answers[qno_cnt].answer
                 question.detailed_answer = all_answers[qno_cnt].detailed_solution
                 question.qno = str(j + 1)
