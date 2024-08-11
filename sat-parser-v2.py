@@ -90,11 +90,13 @@ def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
 def get_reference_words(s):
     s = s.replace("\u201c", "“").replace("\u201d", "”")
     tmp = re.findall(r"\(“(.+)”\)",s)
-    if len(tmp)==0 and " . . . " in s:
+    if len(tmp)==0:
         tmp = re.findall(r"“(.+)”",s)
     if len(tmp)!=0:
         words = re.split(r" \. \. \. ",tmp[0])
         start_words = words[0].split(" ")
+        if len(words) == 1:
+            return words[0].split(" "), None
         end_words = words[1].split(" ")
         return start_words, end_words
     return None, None
@@ -107,29 +109,40 @@ def match_words(words, passage_words):
             return i
     return None
 
-def modify_option_reference(option: Option, comprehension: ReadingComprehension, debug =""):
-    start_words, end_words = get_reference_words(option.description)
-    passage_words = re.sub(r"\n", " ", comprehension.passage.passage).split()[option.reference.start_word:option.reference.end_word]
+def modify_single_reference(description: str, reference: Reference, comprehension: ReadingComprehension, debug =""):
+    start_words, end_words = get_reference_words(description)
+    passage_words = re.sub(r"\n", " ", comprehension.passage.passage).split()[reference.start_word:reference.end_word]
     del_start_ind = None
     del_end_ind = None
-    print(option.description)
+    print(description)
     if start_words is not None and end_words is not None:
         del_start_ind = match_words(start_words, passage_words)
         del_end_ind = match_words(end_words, passage_words[del_start_ind:])
         print(del_start_ind, del_end_ind)
+    elif start_words is not None:
+        del_start_ind = match_words(start_words, passage_words)
+        del_end_ind = len(start_words) - 1
+        print("v2",del_start_ind)
     else:
         print(f"Error{debug}: No words found")
     print(passage_words)
     print(start_words, end_words)
-    print(option.reference.start_word, option.reference.end_word)
+    print(reference.start_word, reference.end_word)
     if del_start_ind is not None and del_end_ind is not None:
         print("REf",del_start_ind, del_end_ind)
-        print(option.reference.start_word+del_start_ind, option.reference.end_word-del_end_ind)
-        option.reference.start_word += del_start_ind
-        option.reference.end_word = option.reference.start_word+del_end_ind
+        print(reference.start_word+del_start_ind, reference.end_word-del_end_ind)
+        reference.start_word += del_start_ind
+        reference.end_word = reference.start_word+del_end_ind
     else:
         print(f"Error{debug}: words sequence not found")
     print("\n")
+
+def modify_option_reference(option: Option, comprehension: ReadingComprehension, debug =""):
+    return modify_single_reference(option.description, option.reference, comprehension, debug)
+
+def modify_question_reference(question: Question, comprehension: ReadingComprehension, debug =""):
+    for reference in question.references:
+        modify_single_reference(question.description, reference, comprehension, debug)
 
 def populate_reference(comprehension: ReadingComprehension):
     pattern1 = r"Lines\s+(\d+)\s*-\s*(\d+)" # option reference
