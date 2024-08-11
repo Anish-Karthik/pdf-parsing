@@ -158,7 +158,7 @@ function populateOption(){
         let splitRef = optRef.split("-")
         let qno = parseInt(splitRef[0])
         let optionNo = splitRef[1]
-           data.questions[qno-1].options[optionNo].reference = {
+           data.questions[qno-parseInt(helper.questions[0].qno)].options[optionNo].reference = {
             start_word: highlights[optRef].start_word,
             end_word: highlights[optRef].end_word
           }
