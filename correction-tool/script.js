@@ -174,7 +174,7 @@ function populateDataFromHtml(){
     data.questions.forEach(question => {
         question.references = [];
     });
-    
+    data.header = document.getElementById("passage-header").innerText;
     for(let i = 0; i < questionElements.length; i++) {
         data.questions[i].description = questionElements[i].childNodes[1].childNodes[1].textContent.trim();
         
@@ -467,7 +467,7 @@ function optionHtml(question) {
         .join("");
 }
 
-function highlight(cls,timeout= 2000) {
+function highlight(cls,timeout= 500) {
     element = document.getElementsByClassName(cls)
     for(let i = 0; i < element.length; i++) {
         element[i].style.background = "yellow";
@@ -497,7 +497,18 @@ function clickQuestionRef(element) {
 
     document.getElementById("modifyRefButton").innerText = "Add";
 }
+function makeHeader(){
+    let selectedElements = getSelectedContent();
+    let headerTxt = "";
+    selectedElements.forEach((element) => {
+        headerTxt += element.textContent.trim() + " ";
+    });
 
+    document.getElementById("passage-header").innerText = headerTxt
+    selectedElements.forEach((element) => {
+        element.remove();
+    })
+}
 function questionHtml(helper) {
     return helper.questions
         .map(
@@ -519,6 +530,7 @@ function reRender(helper) {
     let html = `<div id="passage-section" class="section-html">`;
     html += passageHtml(helper);
     html += `<div class="question-html">${questionHtml(helper)}</div>`;
+    document.getElementById("passage-header").innerText = !data.header ? '' : data.header;
     contentDiv.innerHTML = html;
 }
 
@@ -549,7 +561,11 @@ function getSelectedContent() {
         });
 
         document.getElementById("selectedContent").innerHTML = selectedText;
-
+        if(selectedElements[0] === document.getElementsByClassName("passage-word")[0]){
+            document.getElementById("passage-header-btn").style = "display: block;";
+        }else{
+            document.getElementById("passage-header-btn").style = "display: none;";
+        }
         // Log the attributes of selected elements
         return selectedElements;
     } else {
@@ -599,6 +615,7 @@ function editModeChanged() {
     let passageElements = document.getElementsByClassName("passage-word");
     let questionElements = document.getElementsByClassName("question");
     if (document.getElementById('editMode').checked) {
+        document.getElementById('passage-header').setAttribute("contenteditable", "true");
         for (let i = 0; i < passageElements.length; i++) {
             passageElements[i].setAttribute("contenteditable", "true");
         }
@@ -609,6 +626,7 @@ function editModeChanged() {
             optionElements[i].setAttribute("contenteditable", "true");
         }
     } else {
+        document.getElementById('passage-header').setAttribute("contenteditable", "false");
         for (let i = 0; i < passageElements.length; i++) {
             passageElements[i].setAttribute("contenteditable", "false");
         }

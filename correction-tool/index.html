@@ -23,6 +23,7 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <h1 id="passage-header"></h1>
     <div id="content"></div>
     <div class="header">
       <div>
@@ -47,6 +48,14 @@
         </button>
         <button id="downloadBtn" style="margin-left: 30px" class="btn">
           <i class="fa fa-download"></i> Download
+        </button>
+        <button
+          onclick="makeHeader()"
+          id="passage-header-btn"
+          style="margin-left: 30px"
+          class="btn"
+        >
+          Make header
         </button>
       </div>
       <div class="editMode">

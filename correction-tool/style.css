@@ -138,9 +138,13 @@ html {
     align-items: center;
     padding: 20px;
 }
+#passage-header{
+    margin-top: 210px;
+    padding-left: 25px;
+}
 #content {
     padding-left: 25px;
-    padding-top: 200px;
+    padding-top: 25px;
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 20px;
