@@ -1,7 +1,8 @@
 var helper = {};
 var data = [];
 var referenceCount = 0;
-function downloadJSONFile(data, filename = "data.json") {
+var uploadedFileName = "data.json";
+function downloadJSONFile(data, filename = uploadedFileName) {
     populateDataFromHtml();
     const jsonStr = JSON.stringify(data, null, 2);
     const blob = new Blob([jsonStr], { type: "application/json" });
@@ -15,7 +16,7 @@ function downloadJSONFile(data, filename = "data.json") {
  function uploadFile() {
     const fileInput = document.getElementById("fileInput");
     const file = fileInput.files[0];
-
+    uploadedFileName = file.name;
     if (file) {
         const reader = new FileReader();
         reader.onload = function (e) {
