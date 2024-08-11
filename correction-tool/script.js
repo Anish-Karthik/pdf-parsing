@@ -321,6 +321,7 @@ function clickRef(element) {
 }
 
 function clickOption(element) {
+    console.log(element)
     removeHighlightedQuestion();
 
     resetHelper();
@@ -457,7 +458,7 @@ function optionHtml(question) {
                   <p 
                     id=${question.qno}-${index}
                     class = 'option option-${question.qno}  ${String.fromCharCode(65 + index) == question.correct_option ? "correct-option" : "incorrect-option"}' 
-                    style="margin-left:20px; onclick="clickOption(this);">
+                    style="margin-left:20px;" onclick="clickOption(this);">
                             <span>${String.fromCharCode(65 + index)}.</span> ${option.description} 
                     </p>
                 <button class="opt-disable-btn"><i class="fa fa-check" style="color: rgb(52, 168, 83);"></i></button>
