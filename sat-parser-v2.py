@@ -443,7 +443,7 @@ for sample_paper, (pdf_path, answer_pdf_path) in enumerate(list(files), start=1)
                 #     print("Error: Question number mismatch")
                 question.correct_option = all_answers[qno_cnt].answer
                 question.detailed_answer = all_answers[qno_cnt].detailed_solution
-                question.qno = str(j + 1)
+                # question.qno = str(j + 1)
                 qno_cnt += 1
 
     for i, obj in enumerate(all_comprehensions):
