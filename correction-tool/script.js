@@ -510,6 +510,14 @@ function makeHeader(){
         element.remove();
     })
 }
+function removeText(){
+    let selectedElements = getSelectedContent();
+    selectedElements.forEach((element) => {
+        if(element.classList.contains("passage-word")){
+            element.remove();
+        }
+    })
+}
 function questionHtml(helper) {
     return helper.questions
         .map(
