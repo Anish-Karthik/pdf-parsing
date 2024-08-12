@@ -187,6 +187,8 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     for block in blocks[start_index:]:
         block = list(block) + [False]
         if isEndOfPassage(block):
+            if header:
+                header = proccessPassageText(header)
             obj = populate_reference(
                 ReadingComprehension(
                     Passage("".join([b[4] for b in passage]).strip()),
