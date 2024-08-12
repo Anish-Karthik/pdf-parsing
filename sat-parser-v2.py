@@ -132,7 +132,7 @@ def populate_reference(comprehension: ReadingComprehension):
 
 
 def cleanPassage(passage: list) -> str:
-    text = "".join([b[4] for b in passage]).strip()
+    text = "".join([re.sub(r"\.\n", ".\n\t", b[4]) for b in passage]).strip()
     text = re.sub(r"\n+", "\n", text)
     return proccessPassageText(text)
 
