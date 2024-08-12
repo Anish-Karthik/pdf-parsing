@@ -20,18 +20,56 @@ def isStartOfPassage(block):
         or re.match(r'Passage [A-Z]\d*', block[4])
         or re.match(r'Two contemporary writers', block[4])
         or re.match(r'Below are \d+', block[4])
+        # or re.match(r'The following is an excerpt from', block[4])
     )
 
+# MEDITATION I.
+# Of the Things of Which We May Now Doubt
 
 def isStartOfPassageInclusive(block):
     # Fix: Below is an excerpt adapted from Booke
-    # if (
-    #     re.match(r'^A Natural Synthetic ', block[4]) 
-    #     or re.match(r'^The Slums ', block[4])
-    #     or re.match(r'The following passage is from', block[4])
-    #     or re.match(r'Two contemporary writers', block[4])
-    # ):
-    #     return True
+    if (
+        re.match(r'^A Natural Synthetic ', block[4]) 
+        or re.match(r'^The Slums ', block[4])
+        or re.match(r'^Microbiomes ', block[4])
+        or re.match(r'^Hemoglobin ', block[4])
+        or re.match(r'^Time Travel ', block[4])
+        # or re.match(r'^Ain’t I a Woman? ', block[4])
+        # or re.match(r'^Earthquakes ', block[4])
+        # or re.match(r'^Buyer.s Remorse ', block[4])
+        # or re.match(r'^The Value of Engineering ', block[4])
+        # or re.match(r'^Chemistry of Cooking ', block[4])
+        # or re.match(r'^Is It the Heart or the Brain? ', block[4])
+        # or re.match(r'^Sages and Fools ', block[4])
+        # or re.match(r'^Surfactants ', block[4])
+        # or re.match(r'^Alternative Splicing ', block[4])
+        # or re.match(r'^The Woes of Consumerism ', block[4])
+        # or re.match(r'^Alternative Energy ', block[4])
+        # or re.match(r'^What’s Not to “Like”? ', block[4])
+        # or re.match(r'^Searching the Skies ', block[4])
+        # or re.match(r'^Finnegan—A short story ', block[4])
+        # or re.match(r'^A Democratic Duel ', block[4])
+        # or re.match(r'^Humanity’s Code ', block[4])
+        # or re.match(r'^Influenza ', block[4])
+
+        # or re.match(r'^Charles Dickens’s ', block[4])
+        # or re.match(r'Estella.', block[4])
+        # or re.match(r'The first is a speech', block[4])
+        # or re.match(r'The following passage is from', block[4])
+        # or re.match(r'Two contemporary writers', block[4])
+        # or re.match(r'Two scientists', block[4])
+        # or re.match(r'Two passages', block[4])
+        # or re.match(r'adapted from', block[4], re.IGNORECASE)
+        # or re.match(r'The following is an excerpt from', block[4])
+        # or re.match(r'Below is', block[4])
+        # or re.match(r'In 18\d\d', block[4], re.IGNORECASE)
+        # or re.match(r'Below are \d+', block[4])
+        # or re.match(r'The future of this', block[4])
+        # or re.match(r'An English professor', block[4]) # has subheading
+        # or re.match(r'excerpt ', block[4])
+        # or re.match(r'Dwight D. Eisenhower', block[4])
+    ):
+        return True
     return False
 
 
@@ -264,7 +302,7 @@ def create_line_references(blocks):
 
 def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
-
+    headers = []
     cur_passage_questions = get_questions_alter(blocks)
     buggy = 0
     for block in blocks[1:]:
@@ -291,6 +329,8 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
                 ),
                 line_references
             )
+            if len(headers):
+                obj.header = "".join([h[4] for h in headers])
 
             # obj.passage.passage = cleanPassagePostReference(obj.passage.passage)
             return obj
@@ -298,6 +338,9 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
             block[4] = "\n\t" + block[4]
+        if isStartOfPassageInclusive(block):
+            headers.append(block)
+            continue
         passage.append(block)
 
     return None
@@ -330,6 +373,8 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
             if isStartOfPassageInclusive(block):
                 passages = [block]
         if isPassageStarted:
+            if isStartOfPassageInclusive(block):
+                passages = [block]
             if isSectionHeader(block):
                 continue
             passages.append(block)
