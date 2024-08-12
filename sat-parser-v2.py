@@ -23,6 +23,18 @@ def isStartOfPassage(block):
     )
 
 
+def isStartOfPassageInclusive(block):
+    # Fix: Below is an excerpt adapted from Booke
+    # if (
+    #     re.match(r'^A Natural Synthetic ', block[4]) 
+    #     or re.match(r'^The Slums ', block[4])
+    #     or re.match(r'The following passage is from', block[4])
+    #     or re.match(r'Two contemporary writers', block[4])
+    # ):
+    #     return True
+    return False
+
+
 def fixBugForPassage4(txt):
     if "22-\x142" in txt:
         return txt.replace("22-\x142", "22-32")
@@ -34,7 +46,7 @@ def fixBugForPassage4(txt):
 
 
 def isEndOfPassage(block):
-    return re.match(r"(?<!.)\d+\.", block[4])
+    return re.match(r"(?<!.)\d{1,2}\.", block[4])
 
 
 def parseQuestionNumber(txt) -> list:
@@ -315,6 +327,8 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
             isPassageStarted = True
             passage_lines.append((passages, False))
             passages = []
+            if isStartOfPassageInclusive(block):
+                passages = [block]
         if isPassageStarted:
             if isSectionHeader(block):
                 continue
