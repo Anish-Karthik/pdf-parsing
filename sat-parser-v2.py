@@ -89,6 +89,62 @@ def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
     # print("References:", startWord, endWord)
     return Reference(startWord, endWord)
 
+def get_reference_words(s):
+    s = s.replace("\u201c", "“").replace("\u201d", "”")
+    tmp = re.findall(r"\(“(.+)”\)",s)
+    if len(tmp)==0:
+        tmp = re.findall(r"“(.+)”",s)
+    if len(tmp)!=0:
+        words = re.split(r" \. \. \. ",tmp[0])
+        start_words = words[0].split(" ")
+        if len(words) == 1:
+            return words[0].split(" "), None
+        end_words = words[1].split(" ")
+        return start_words, end_words
+    return None, None
+
+def match_words(words, passage_words):
+    for i in range(len(passage_words) - len(words) + 1):
+        m_words = [x.replace("\u201c", "“").replace("\u201d", "”").replace("“","").replace("”","") for x in passage_words[i:i+len(words)]]
+        
+        if [words[j] in m_words[j] for j in range(len(words))].count(True) == len(words):
+            return i
+    return None
+
+def modify_single_reference(description: str, reference: Reference, comprehension: ReadingComprehension, debug =""):
+    start_words, end_words = get_reference_words(description)
+    passage_words = re.sub(r"\n", " ", comprehension.passage.passage).split()[reference.start_word:reference.end_word]
+    del_start_ind = None
+    del_end_ind = None
+    # print(description)
+    if start_words is not None and end_words is not None:
+        del_start_ind = match_words(start_words, passage_words)
+        del_end_ind = match_words(end_words, passage_words[del_start_ind:])
+        # print(del_start_ind, del_end_ind)
+    elif start_words is not None:
+        del_start_ind = match_words(start_words, passage_words)
+        del_end_ind = len(start_words) - 1
+        # print("v2",del_start_ind)
+    else:
+        print(f"Error{debug}: No words found")
+    # print(passage_words)
+    # print(start_words, end_words)
+    # print(reference.start_word, reference.end_word)
+    if del_start_ind is not None and del_end_ind is not None:
+        # print("REf",del_start_ind, del_end_ind)
+        # print(reference.start_word+del_start_ind, reference.end_word-del_end_ind)
+        reference.start_word += del_start_ind
+        reference.end_word = reference.start_word+del_end_ind
+    else:
+        print(f"Error{debug}: words sequence not found")
+    # print("\n")
+
+def modify_option_reference(option: Option, comprehension: ReadingComprehension, debug =""):
+    return modify_single_reference(option.description, option.reference, comprehension, debug)
+
+def modify_question_reference(question: Question, comprehension: ReadingComprehension, debug =""):
+    for reference in question.references:
+        modify_single_reference(question.description, reference, comprehension, debug)
 
 def populate_reference(comprehension: ReadingComprehension):
     pattern1 = r"Lines\s+(\d+)\s*-\s*(\d+)"
@@ -112,6 +168,7 @@ def populate_reference(comprehension: ReadingComprehension):
             references.append(getReferences(comprehension.passage.passage, int(startLine1)))
             references.append(getReferences(comprehension.passage.passage, int(startLine2)))
         question.references = references
+        modify_question_reference(question, comprehension, " question")
 
         # options
         for option in question.options:
@@ -119,8 +176,10 @@ def populate_reference(comprehension: ReadingComprehension):
             pattern2_match = re.findall(pattern2, option.description, re.IGNORECASE)
             if len(pattern1_match):
                 option.reference = (getReferences(comprehension.passage.passage, int(pattern1_match[0][0]), int(pattern1_match[0][-1])))
+                modify_option_reference(option, comprehension, " option multiple")
             if len(pattern2_match):
                 option.reference = (getReferences(comprehension.passage.passage, int(pattern2_match[0])))
+                modify_option_reference(option, comprehension, " option single")
 
     # print(pattern1_match)
     # print(pattern2_match)
@@ -248,7 +307,7 @@ def proccessPassageText(text):
     return text
 
 
-pdf_path = "mcgrawhill/inputPDF/Mcgraw Hill 6 Tests.pdf"
+pdf_path = "mcgrawhill/inputPDF/McGraw_Hills_500_SAT_Reading_Writing.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
@@ -275,7 +334,7 @@ for i, split in enumerate(passage_split):
             qno_cnt += 1
 
 for i, obj in enumerate(all_comprehensions):
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"mcgrawhill/outputJSON/mcgrawhill-2-passage-{i + 1}.json")
+    write_text_to_file(json.dumps(obj.to_json(), indent=2), f"mcgrawhill/outputJSON/mcgrawhill-1-passage-{i + 1}.json")
 
 
 # print(json.dumps([c.to_json() for c in all_comprehensions]))
