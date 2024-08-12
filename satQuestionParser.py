@@ -188,7 +188,8 @@ def get_options(lines):
 def is_extra(block) -> bool:
     # isNum = bool(re.match(r"\d+\n",block[4]))
     # if not alphanumeric
-    return (
+    is_extra = re.search(r'CRITICAL READING WORKBOOK FOR THE SAT', block[4])
+    return is_extra or ((
         re.search(r"Line\n5?", block[4]) or
         re.search(r"Unauthorized copying", block[4]) or
         re.search(r"READING COMPREHENSION", block[4]) or
@@ -198,7 +199,7 @@ def is_extra(block) -> bool:
         re.search(r"SELF-ASSESSMENT TEST", block[4]) or
         (re.search(r"TIME", block[4]) and re.search(r"MINUTES", block[4])) or
         re.search(r".com", block[4])
-    ) and len(block[4]) < 50
+    ) and len(block[4]) < 50)
 
 
 def get_questions_alter(lines) -> List[Question]:
