@@ -132,7 +132,6 @@ def fix_hyphens(str):
 
 def get_each_lines(doc):
     lines = []
-    strip_first_word = False
     for page in doc:
         line = []
         blocks = page.get_text("blocks")
@@ -140,10 +139,6 @@ def get_each_lines(doc):
         stop_block = None
         for block in blocks:
             block = list(block)
-
-            if strip_first_word:
-                block[4] = " ".join(block[4].split()[1:])
-                strip_first_word = False
 
             block[4] = clean_block(block[4])
             block[4] = fix_hyphens(block[4])
