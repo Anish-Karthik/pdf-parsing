@@ -189,13 +189,13 @@ def is_extra(block) -> bool:
 
 def split_line1(text):
     res_lines = []
-    lines = re.split(r"\n|(\([A-D]\))|(\b\d{1,2}\.\s+)", text)
+    lines = re.split(r"\n|(\([A-D]\))|(\b\d{1,2}\.\s+)|(Questions \d+.\d+.*)", text)
     # print(lines)
     # ["sdsd","(A)", None, "asda"]
     res_lines = [lines.pop(0)]
-    for i in range(0, len(lines), 3):
+    for i in range(0, len(lines), 4):
         if i + 1 < len(lines):
-            res_lines.append((lines[i] if lines[i] else "") + (lines[i + 1] if lines[i + 1] else "") + lines[i + 2])
+            res_lines.append((lines[i] if lines[i] else "") + (lines[i + 1] if lines[i + 1] else "") + (lines[i + 2] if lines[i + 2] else "") + lines[i + 3])
     res_lines = [line for line in res_lines if line or line != ""]
     return res_lines
 
