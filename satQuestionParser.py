@@ -104,14 +104,35 @@ def insert_underlined_text(lines):
                 lines[ind + 1][4] = replace_with_underlined_text(lines[ind + 1][4], line[4])
     return new_lines
 
+
 def clean_block(str):
-    str = re.sub(r"-\n","",str)
     str = str.replace("Passage", "\nPassage")
-    str = str.replace("TIME—25 MINUTES 24 QUESTIONS ","")
+    str = str.replace("TIME—25 MINUTES 24 QUESTIONS ", "")
     return str
+
+
+def fix_hyphens(str):
+    splits = re.split(r"-\n", str)
+    fixed_str = ""
+    for ind, val in enumerate(splits):
+        fixed_str += val
+
+        if ind < len(splits) - 1:
+            next_line = splits[ind + 1].split(" ", 1)
+            if len(next_line) > 0:
+                fixed_str += next_line[0]
+
+            if len(next_line) > 1:
+                splits[ind + 1] = "\n" + next_line[1]
+            else:
+                splits[ind + 1] = "\n"
+
+    return fixed_str
+
 
 def get_each_lines(doc):
     lines = []
+    strip_first_word = False
     for page in doc:
         line = []
         blocks = page.get_text("blocks")
@@ -120,11 +141,16 @@ def get_each_lines(doc):
         for block in blocks:
             block = list(block)
 
+            if strip_first_word:
+                block[4] = " ".join(block[4].split()[1:])
+                strip_first_word = False
+
             block[4] = clean_block(block[4])
+            block[4] = fix_hyphens(block[4])
 
             if is_extra(block):
                 continue
-            
+
             if "STOP" in block[4]:
                 stop_block = block
                 continue
@@ -171,12 +197,12 @@ def is_extra(block) -> bool:
         re.search(r"Line\n5?", block[4]) or
         re.search(r"Unauthorized copying", block[4]) or
         re.search(r"READING COMPREHENSION", block[4]) or
-        re.search(r"SAT.*PRACTICE\n", block[4]) or 
+        re.search(r"SAT.*PRACTICE\n", block[4]) or
         re.search(r"NEXT PAGE", block[4]) or
         re.search(r"CRITICAL READING", block[4]) or
         re.search(r"SELF-ASSESSMENT TEST", block[4]) or
         (re.search(r"TIME", block[4]) and re.search(r"MINUTES", block[4])) or
-        re.search(r".com",block[4])
+        re.search(r".com", block[4])
     ) and len(block[4]) < 50
 
 

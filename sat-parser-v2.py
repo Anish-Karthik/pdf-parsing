@@ -81,6 +81,7 @@ def modifyBlockText(block, txt):
 def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
     # print(passageText[:100])
     lines = passageText.split("\n")
+    # print(lines, "\n\n\n\n")
     startline -= 1
     if endLine:
         endLine -= 1
@@ -106,10 +107,7 @@ def populate_reference(comprehension: ReadingComprehension):
         pattern2_match = re.findall(pattern2, question.description, re.IGNORECASE)
         pattern3_match = re.findall(pattern3, question.description, re.IGNORECASE)
         references = []
-        # print(comprehension.passage.passage[:100])
-        # print(question.description)
-        # print(pattern1_match)
-        # print(pattern2_match)
+
         if len(pattern1_match):
             references.append(getReferences(comprehension.passage.passage, int(pattern1_match[0][0]), int(pattern1_match[0][-1])))
         for startLine in pattern2_match:
@@ -136,12 +134,36 @@ def populate_reference(comprehension: ReadingComprehension):
 def cleanPassage(passage: list) -> str:
     text = "".join([b[4] for b in passage]).strip()
     text = re.sub(r"\n+", "\n", text)
-    return text
+    return proccessPassageText(text)
 
 
 def clean_block(block):
     block[4] = re.sub(r"\u2013", "-", block[4])
     return block
+
+
+def get_header_index(blocks):
+    header_prefixes = [
+        "The following passage",
+        "Each of the following sentences",
+        "In this excerpt",
+        "In the following excerpt",
+        "The following excerpt",
+        "In the following passage",
+        "The book from which the following passage",
+        "Taken from the writings of",
+        "These passages are portraits of",
+        "Both passages relate to",
+        "African elephants now are an",
+        "Passage 1 is an excerpt",
+        "Pablo Picasso was probably the",
+        "Largely unexplored, the canopy or treetop",
+        "The style of the renowned modern artist",
+    ]
+    for index, block in enumerate(blocks[:5]):
+        for prefix in header_prefixes:
+            if prefix in block[4]:
+                return index
 
 
 class PassageTemp:
@@ -154,18 +176,25 @@ class PassageTemp:
 def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
 
+    start_index = 1
+    header_index = get_header_index(blocks)
+    header = None
+    if header_index:
+        header = blocks[header_index][4]
+        start_index = header_index + 1
+
     cur_passage_questions = get_questions_alter(blocks)
-    for block in blocks[1:]:
+    for block in blocks[start_index:]:
         block = list(block) + [False]
         if isEndOfPassage(block):
-            text = cleanPassage(passage)
-
             obj = populate_reference(
                 ReadingComprehension(
-                    Passage(text),
-                    cur_passage_questions
+                    Passage("".join([b[4] for b in passage]).strip()),
+                    cur_passage_questions,
+                    header=header
                 )
             )
+            obj.passage.passage = cleanPassage(passage)
             return obj
         if is_extra(block):
             # print(block)
@@ -186,40 +215,6 @@ def get_all_words_for_underline(doc):
             word = tuple(list(word) + [pgno])
             all_words.append(word)
     return all_words
-
-
-def extract_passages_writing_comprehension(blocks: List[Tuple[Any]], all_words):
-    global all_words_index
-    passage = []
-    passageObjects: List[PassageTemp] = []
-    header = blocks[0][4]
-    qnos = parseQuestionNumber(fixBugForPassage4(header))
-
-    cur_passage_questions = get_questions_alter(blocks)
-    for block in blocks[1:]:
-        if (not block[7]):
-            continue
-        block = list(block) + [False]
-        # not isLeft
-        # print(block)
-        if re.search(r"STOP", block[4]) or isEndOfPassage(block):
-            break
-        if is_extra(block):
-            continue
-        if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-            passage.append(modifyBlockText(block, "\t" + block[4]))
-        else:
-            passage.append(block)
-
-    text = cleanPassage(passage)
-    passageObjects.append(PassageTemp(text, header, qnos))
-
-    last_index, obj = underlined_references(
-        ReadingComprehension(Passage(text), cur_passage_questions), all_words, all_words_index, doc)
-
-    all_words_index = last_index
-
-    return obj
 
 
 def split_passages(blocks) -> List[Tuple[List[str], bool]]:
@@ -247,6 +242,7 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
         passage_lines.append((passages, False))
     return passage_lines
 
+
 def proccessPassageText(text):
     # text = re.sub(r"\n", " ", text)
     text = re.sub(r" +", " ", text)
@@ -259,13 +255,10 @@ def proccessPassageText(text):
         text = text[:-2]
     return text
 
+
 pdf_path = "baron/inputPDF/SAT WorkBook.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
-
-for i in blocks:
-    print(i, "\n\n")
-
 
 all_comprehensions = []
 all_answers = parse_answer(doc)
@@ -279,12 +272,10 @@ passage_split = split_passages(blocks)
 qno_cnt = 0
 qns = []
 for i, split in enumerate(passage_split):
-    # print(split,"\n\n\n\n\n\n\n\n\n")
     split, isWritingComprehension = split
-    comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split, all_words_for_underline)
-    
+    comprehension = extract_passages(split)
+
     if comprehension is not None:
-        comprehension.passage.passage = proccessPassageText(comprehension.passage.passage)
         all_comprehensions.append(comprehension)
         for j, question in enumerate(comprehension.questions):
             qns.append(question.qno)
