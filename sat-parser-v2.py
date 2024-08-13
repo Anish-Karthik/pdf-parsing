@@ -115,6 +115,21 @@ def isStartOfPassageHeader(block):
         or re.match(r'the chapter is', block[4])
         or re.match(r'which he muses about', block[4])
         or re.search(r'in 18\d\d', block[4], re.IGNORECASE)
+        or re.search(r'economic recovery\.1', block[4])
+        or re.search(r'Russia 1917\.', block[4])
+        or re.search(r'Thornfield Hall, is engaged', block[4])
+        or re.search(r'unexpected events to him that have recently occurred', block[4])
+
+        or re.search(r'Dedalus, Joyce', block[4])
+        or re.search(r'Below he contemplates the diverging paths before him after a priest warns', block[4])
+        or re.search(r'his intended holy position', block[4])
+
+        or re.search(r'MEDITATION I.', block[4])
+        or re.search(r'Of the Things of Which We May Now Doubt', block[4])
+
+        or re.match(r'^. Y ', block[4])
+        or re.match(r'oung, \u201cPathogenesis of Hemoglobinopathies', block[4])
+
         # or re.match(r'Below are \d+', block[4])
         or re.search(r'The future of this', block[4])
         or re.match(r'An English professor', block[4]) # has subheading
