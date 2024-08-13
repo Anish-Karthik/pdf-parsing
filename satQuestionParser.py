@@ -230,11 +230,11 @@ def get_questions_alter(lines) -> List[Question]:
         # # print("*newContents", newContents)
         #     # print(line[4])
         if cur_op == 3 and not is_part_of_last_option(lines[ind - 1], line):
-            options.append(Option(clean_text(remove_option_number(op_text))))
+            options.append(Option(clean_text(remove_option_number(op_text)).replace(" ... ", " . . . ")))
             if op_0_ind:
                 qn_no, qn_text = get_question(lines, op_0_ind)
                 # print(qn_no, qn_text)
-                all_questions.append(Question(qn_no, clean_text(qn_text), options))
+                all_questions.append(Question(qn_no, clean_text(qn_text).replace(" ... ", " . . . "), options))
                 # print(json.dumps(all_questions[-1].to_json(), indent=4))
                 options_started = False
             options = []
@@ -243,7 +243,7 @@ def get_questions_alter(lines) -> List[Question]:
 
         if (cur_op < 3 and is_option_match(cur_op + 1, line[4])):
             cur_op += 1
-            options.append(Option(clean_text(remove_option_number(op_text))))
+            options.append(Option(clean_text(remove_option_number(op_text)).replace(" ... ", " . . . ")))
 
         if is_option_match(cur_op, line[4]):
             # print(line[4])
