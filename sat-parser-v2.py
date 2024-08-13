@@ -79,6 +79,7 @@ def isStartOfPassageHeader(block):
         or re.match(r'^Microbiomes ', block[4])
         or re.match(r'^Hemoglobin ', block[4])
         or re.match(r'^Time Travel ', block[4])
+        or re.match(r'^The Downfall of Democracy\? ', block[4])
         # or re.match(r'^Ain’t I a Woman? ', block[4])
         # or re.match(r'^Earthquakes ', block[4])
         # or re.match(r'^Buyer.s Remorse ', block[4])
@@ -112,10 +113,10 @@ def isStartOfPassageHeader(block):
         or re.match(r'which he muses about', block[4])
         or re.search(r'in 18\d\d', block[4], re.IGNORECASE)
         # or re.match(r'Below are \d+', block[4])
-        # or re.match(r'The future of this', block[4])
+        or re.search(r'The future of this', block[4])
         # or re.match(r'An English professor', block[4]) # has subheading
         # or re.match(r'excerpt ', block[4])
-        # or re.match(r'Dwight D. Eisenhower', block[4])
+        or re.search(r'Dwight D. Eisenhower', block[4])
     )
 
 
