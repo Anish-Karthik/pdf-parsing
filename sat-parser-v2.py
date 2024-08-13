@@ -114,8 +114,10 @@ def isStartOfPassageHeader(block):
         or re.search(r'in 18\d\d', block[4], re.IGNORECASE)
         # or re.match(r'Below are \d+', block[4])
         or re.search(r'The future of this', block[4])
-        # or re.match(r'An English professor', block[4]) # has subheading
-        # or re.match(r'excerpt ', block[4])
+        or re.match(r'An English professor', block[4]) # has subheading
+        or re.search(r'excerpt ', block[4])
+        or re.search(r'Fitzgerald', block[4])
+        or re.search(r'protagonist, Amory Blaine.', block[4])
         or re.search(r'Dwight D. Eisenhower', block[4])
     )
 
