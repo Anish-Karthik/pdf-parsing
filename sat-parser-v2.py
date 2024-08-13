@@ -9,6 +9,8 @@ from answerParser import parse_answer
 from satQuestionParser import *
 from underline import *
 
+WRC_CNT = [0]
+SMC_CNT = [0]
 
 def isStartOfPassage(block):
     if re.match(r'^A Natural Synthetic ', block[4]) or re.match(r'^The Slums ', block[4]):
@@ -153,7 +155,7 @@ def get_reference_words(s):
     if len(tmp)==0:
         tmp = re.findall(r"“(.+)”",s)
     if len(tmp)!=0:
-        words = re.split(r" \. \. \. ",tmp[0])
+        words = re.split(r" \. ?\. ?\. ",tmp[0])
         start_words = words[0].split(" ")
         if len(words) == 1:
             return words[0].split(" "), None
@@ -169,19 +171,31 @@ def match_words(words, passage_words):
             return i
     return None
 
-def modify_single_reference(description: str, reference: Reference, comprehension: ReadingComprehension, debug =""):
+def modify_single_reference(description: str, reference: Reference, comprehension: ReadingComprehension, debug ="", cnt = 0):
+    if cnt == 3:
+        return False
     start_words, end_words = get_reference_words(description)
+    f = False
     if not reference:
+        # print(description)
+        # print(f"Error{debug}: reference not found")
+        return False
+    if "paragraph" in description and (not reference.start_word or not reference.end_word):
+        print("***********************DESCRIPTION***********\n",description,"\n")
+        return False
+    if not reference.start_word and not reference.end_word:
         print(description)
-        print(f"Error{debug}: reference not found")
-        return
+        print(f"Error{debug}: reference start and end word not found")
+        return False
     if not reference.start_word:
-        print(description)
-        print(f"Error{debug}: reference start word not found")
-        return
+        # print(description)
+        # print(f"Error{debug}: reference start word not found")
+        return False
     if not reference.end_word:
+        f = True
         print(description)
-        print(f"Error{debug}: reference end word not found")
+        # print(f"Error{debug}: reference end word not found")
+        # reference.end_word = len(comprehension.passage.passage.split())
         return
     passage_words = re.sub(r"\n", " ", comprehension.passage.passage).split()[reference.start_word:reference.end_word]
     del_start_ind = None
@@ -196,7 +210,23 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
         del_end_ind = len(start_words) - 1
         # print("v2",del_start_ind)
     else:
-        # print(f"Error{debug}: No words found")
+        if f:
+            print(start_words, end_words)
+            print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
+            print(f"Error{debug}: No words found")
+            print("\n")
+            # reference.start_word = 0
+            # reference.end_word = len(comprehension.passage.passage.split())
+            # WRC_CNT[0] += 1
+
+            # if modify_single_reference(description, reference, comprehension, debug, cnt + 1):
+            #     WRC_CNT[0] -=1 
+            #     print("Succeeded")
+            #     return True
+            # else:
+            #     print("Failed")
+            #     return False
+        f = False
         pass
     # print(passage_words)
     # print(start_words, end_words)
@@ -207,8 +237,22 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
         reference.start_word += del_start_ind
         reference.end_word = reference.start_word+del_end_ind
     else:
-        # print(f"Error{debug}: words sequence not found")
+        if f: 
+            print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
+            print(f"Error{debug}: words sequence not found")
+            print("\n")
+            # reference.start_word = 0
+            # reference.end_word = len(comprehension.passage.passage.split())-1
+            # SMC_CNT[0] += 1
+            # if modify_single_reference(description, reference, comprehension, debug, cnt + 1):
+            #     SMC_CNT[0] -= 1
+            #     print("Succeeded")
+            #     return True
+            # else:
+            #     print("Failed")
+            #     return False
         pass
+    return True
     # print("\n")
 
 def modify_option_reference(option: Option, comprehension: ReadingComprehension, debug =""):
@@ -499,3 +543,5 @@ for i, obj in enumerate(all_comprehensions):
 
 write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
 # print(reference_found_count,reference_count)
+
+print(WRC_CNT, SMC_CNT)
