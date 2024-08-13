@@ -186,10 +186,12 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
     if not reference.start_word and not reference.end_word:
         print(description)
         print(f"Error{debug}: reference start and end word not found")
+        WRC_CNT[0] += 1
         return False
     if not reference.start_word:
         # print(description)
         # print(f"Error{debug}: reference start word not found")
+
         return False
     if not reference.end_word:
         f = True
@@ -215,17 +217,6 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
             print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
             print(f"Error{debug}: No words found")
             print("\n")
-            # reference.start_word = 0
-            # reference.end_word = len(comprehension.passage.passage.split())
-            # WRC_CNT[0] += 1
-
-            # if modify_single_reference(description, reference, comprehension, debug, cnt + 1):
-            #     WRC_CNT[0] -=1 
-            #     print("Succeeded")
-            #     return True
-            # else:
-            #     print("Failed")
-            #     return False
         f = False
         pass
     # print(passage_words)
@@ -241,16 +232,6 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
             print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
             print(f"Error{debug}: words sequence not found")
             print("\n")
-            # reference.start_word = 0
-            # reference.end_word = len(comprehension.passage.passage.split())-1
-            # SMC_CNT[0] += 1
-            # if modify_single_reference(description, reference, comprehension, debug, cnt + 1):
-            #     SMC_CNT[0] -= 1
-            #     print("Succeeded")
-            #     return True
-            # else:
-            #     print("Failed")
-            #     return False
         pass
     return True
     # print("\n")
