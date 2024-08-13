@@ -98,8 +98,9 @@ def isStartOfPassageHeader(block):
         # or re.match(r'^Humanity’s Code ', block[4])
         # or re.match(r'^Influenza ', block[4])
 
-        # or re.match(r'^Charles Dickens’s ', block[4])
-        # or re.match(r'Estella.', block[4])
+        or re.match(r'^Charles Dickens’s ', block[4])
+        or re.match(r'cared for by his sister', block[4])
+        or re.match(r'of his affections while simultaneously', block[4])
         # or re.match(r'The first is a speech', block[4])
         or re.match(r'The following passage is from', block[4])
         or re.match(r'Two contemporary writers', block[4])
