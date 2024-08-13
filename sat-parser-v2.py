@@ -110,7 +110,7 @@ def isStartOfPassageHeader(block):
         or re.match(r'Below is', block[4])
         or re.match(r'the chapter is', block[4])
         or re.match(r'which he muses about', block[4])
-        # or re.match(r'In 18\d\d', block[4], re.IGNORECASE)
+        or re.search(r'in 18\d\d', block[4], re.IGNORECASE)
         # or re.match(r'Below are \d+', block[4])
         # or re.match(r'The future of this', block[4])
         # or re.match(r'An English professor', block[4]) # has subheading
