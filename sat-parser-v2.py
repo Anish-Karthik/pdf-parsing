@@ -130,6 +130,14 @@ def isStartOfPassageHeader(block):
         or re.match(r'^. Y ', block[4])
         or re.match(r'oung, \u201cPathogenesis of Hemoglobinopathies', block[4])
 
+        or re.match(r'American wilderness. He would later be called the godfather of the American environmental', block[4])
+        or re.match(r'^movement. $', block[4])
+
+        or re.match(r'^Civilization\u201d at the Smithsonian',block[4])
+
+        or re.search(r'1895. The second is part of a 1903 response, titled \u201cOf Mr. Booker T. Washington', block[4])
+        or re.search(r'W\.E\.B\. DuBois\. \(As historical texts, these use antiquated language\.\)', block[4])
+
         # or re.match(r'Below are \d+', block[4])
         or re.search(r'The future of this', block[4])
         or re.match(r'An English professor', block[4]) # has subheading
