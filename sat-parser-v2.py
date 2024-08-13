@@ -102,9 +102,9 @@ def isStartOfPassageHeader(block):
         # or re.match(r'The first is a speech', block[4])
         or re.match(r'The following passage is from', block[4])
         or re.match(r'Two contemporary writers', block[4])
-        # or re.match(r'Two scientists', block[4])
-        # or re.match(r'Two passages', block[4])
-        # or re.match(r'adapted from', block[4], re.IGNORECASE)
+        or re.match(r'Two scientists', block[4])
+        or re.match(r'Two passages', block[4])
+        or 'adapted from' in block[4].lower()
         or re.match(r'The following is an excerpt from', block[4])
         or re.match(r'Price, returns home after', block[4])
         # or re.match(r'Below is', block[4])
@@ -374,6 +374,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
                 line_references
             )
             if len(headers):
+                # TODO: process indent for headers
                 obj.header = "".join([h[4] for h in headers])
 
             # obj.passage.passage = cleanPassagePostReference(obj.passage.passage)
