@@ -77,21 +77,33 @@ def isStartOfParagraph(block, prevBlock=None):
 def modifyBlockText(block, txt):
     return (*block[:4], txt, *block[5:])
 
+def is_subheading(line):
+    return re.match(r"Passage \d", line) and len(line) < 14
 
-def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
+def get_line_reference_index(lines):
+    return len(" ".join(lines).split())
+
+def getReferences(passageText: str, startline: int,endLine=None) -> Reference:
     # print(passageText[:100])
-    lines = passageText.split("\n")
-    # print(lines, "\n\n\n\n")
-    startline -= 1
-    if endLine:
-        endLine -= 1
-    # print("REFERENCES number", startline, endLine)
-    startWord = len(" ".join(lines[:startline]).split())
     if not endLine:
         endLine = startline
+    startline -= 1
+    endLine -= 1
+    
+    lines = passageText.split("\n")
+    
+    for line_no,line in enumerate(lines):
+        if is_subheading(line):
+            if line_no < startline:
+                startline += 1
+            if line_no < endLine:
+                endLine += 1
+             
+    # print("REFERENCES number", startline, endLine)
+    startWord = get_line_reference_index(lines[:startline])
     if endLine == len(lines):
-        endWord = len(" ".join(lines).split())
-    endWord = len(" ".join(lines[:endLine + 1]).split())
+        endWord = get_line_reference_index(lines)
+    endWord = get_line_reference_index(lines[:endLine + 1])
     # print(re.sub(r"\n", " ", passageText).split()[startWord:endWord])
     # print("References:", startWord, endWord)
     return Reference(startWord, endWord)
@@ -173,6 +185,22 @@ class PassageTemp:
         self.qnos = qnos
 
 
+def get_subheading_references(passage_text) -> List[Reference]:
+    passage_list = passage_text.split("\n")
+    # print(len(" ".join(passage_list).split()))
+    subheading_references = []
+    for ind, line in enumerate(passage_list):
+        if is_subheading(line):
+            start_ind = get_line_reference_index(passage_list[:ind])
+            for word in line.split():
+                if word == "Passage":
+                    break
+                start_ind += 1
+            subheading_references.append(Reference(start_ind, start_ind+1))
+    
+    return subheading_references
+
+
 def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
 
@@ -189,13 +217,15 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         if isEndOfPassage(block):
             if header:
                 header = proccessPassageText(header)
-            obj = populate_reference(
-                ReadingComprehension(
-                    Passage("".join([b[4] for b in passage]).strip()),
-                    cur_passage_questions,
-                    header=header
-                )
+
+            obj = ReadingComprehension(
+                Passage("".join([b[4] for b in passage]).strip()),
+                cur_passage_questions,
+                header=header
             )
+
+            obj.subheading_references = get_subheading_references(obj.passage.passage)
+            obj = populate_reference(obj)
             obj.passage.passage = cleanPassage(passage)
             return obj
         if is_extra(block):

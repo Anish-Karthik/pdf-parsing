@@ -67,6 +67,7 @@ class ReadingComprehension:
     def __init__(self, passage: Passage, questions: List[Question], header: str, section: int = 1):
         self.passage = passage
         self.questions = questions
+        self.subheading_references : List[Reference] = []
         self.header = header
         self.section = section
 
@@ -75,6 +76,7 @@ class ReadingComprehension:
             "section": self.section,
             "passage": self.passage.to_json(),
             "header": self.header,
+            "subheading_references": [reference.to_json() for reference in self.subheading_references],
             "questions": [question.to_json() for question in self.questions]
         }
 
