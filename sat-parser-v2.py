@@ -165,11 +165,14 @@ def get_reference_words(s):
         return start_words, end_words
     return None, None
 
+def compare_alpha_numeric_only(a, b):
+    return re.sub(r"\W", "", a).strip() == re.sub(r"\W", "", b).strip()
+
 def match_words(words, passage_words):
     for i in range(len(passage_words) - len(words) + 1):
         m_words = [x.replace("\u201c", "“").replace("\u201d", "”").replace("“","").replace("”","") for x in passage_words[i:i+len(words)]]
         
-        if [words[j] in m_words[j] for j in range(len(words))].count(True) == len(words):
+        if [compare_alpha_numeric_only(words[j], m_words[j]) for j in range(len(words))].count(True) == len(words):
             return i
     return None
 
