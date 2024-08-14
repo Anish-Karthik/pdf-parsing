@@ -372,6 +372,9 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         elif "Hemoglobinopathies" in block[4]:
             print("Buggy")
             buggy = 1
+        elif "The earthquake in Haiti had a magnitude of" in block[4]:
+            print("Buggy 2")
+            buggy = 1
         if isEndOfPassage(block):
             if buggy > 0:
                 buggy -= 1
