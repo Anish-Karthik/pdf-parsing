@@ -365,10 +365,12 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     headers = []
     cur_passage_questions = get_questions_alter(blocks)
     buggy = 0
+    indent = 0
     for block in blocks[1:]:
         block = list(block) + [False]
         if re.match(r'MEDITATION I.', block[4]):
             buggy = 4
+            indent = 4
         elif "Hemoglobinopathies" in block[4]:
             print("Buggy")
             buggy = 1
@@ -378,6 +380,8 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         if isEndOfPassage(block):
             if buggy > 0:
                 buggy -= 1
+                block[4] = ("\n\t" if indent else "") + block[4]
+                indent -= 1
                 passage.append(block)
                 continue
 
