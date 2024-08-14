@@ -9,8 +9,6 @@ from answerParser import parse_answer
 from satQuestionParser import *
 from underline import *
 
-WRC_CNT = [0]
-SMC_CNT = [0]
 
 def isStartOfPassage(block):
     if re.match(r'^A Natural Synthetic ', block[4]) or re.match(r'^The Slums ', block[4]):
@@ -154,13 +152,14 @@ def get_reference_v2(passage, line_reference, startline, endline=None):
     # if start_word_reference is not None and end_word_reference is not None:
     return Reference(start_word_reference, end_word_reference)
 
+
 def get_reference_words(s):
     s = s.replace("\u201c", "“").replace("\u201d", "”")
-    tmp = re.findall(r"\(“(.+)”\)",s)
-    if len(tmp)==0:
-        tmp = re.findall(r"“(.+)”",s)
-    if len(tmp)!=0:
-        words = re.split(r" \. ?\. ?\. ",tmp[0])
+    tmp = re.findall(r"\(“(.+)”\)", s)
+    if len(tmp) == 0:
+        tmp = re.findall(r"“(.+)”", s)
+    if len(tmp) != 0:
+        words = re.split(r" \. ?\. ?\. ", tmp[0])
         start_words = words[0].split(" ")
         if len(words) == 1:
             return words[0].split(" "), None
@@ -168,45 +167,32 @@ def get_reference_words(s):
         return start_words, end_words
     return None, None
 
+
 def compare_alpha_numeric_only(a, b):
     return re.sub(r"\W", "", a).strip() == re.sub(r"\W", "", b).strip()
 
+
 def match_words(words, passage_words):
     for i in range(len(passage_words) - len(words) + 1):
-        m_words = [x.replace("\u201c", "“").replace("\u201d", "”").replace("“","").replace("”","") for x in passage_words[i:i+len(words)]]
-        
+        m_words = [x.replace("\u201c", "“").replace("\u201d", "”").replace("“", "").replace("”", "") for x in passage_words[i:i + len(words)]]
+
         if [compare_alpha_numeric_only(words[j], m_words[j]) for j in range(len(words))].count(True) == len(words):
             return i
     return None
 
-def modify_single_reference(description: str, reference: Reference, comprehension: ReadingComprehension, debug ="", cnt = 0):
-    if cnt == 3:
-        return False
+
+def modify_single_reference(description: str, reference: Reference, comprehension: ReadingComprehension, debug=""):
+
     start_words, end_words = get_reference_words(description)
-    f = False
-    if not reference:
+
+    if not reference or not reference.start_word or not reference.end_word:
         # print(description)
         # print(f"Error{debug}: reference not found")
         return False
     if "paragraph" in description and (not reference.start_word or not reference.end_word):
         # print("***********************DESCRIPTION***********\n",description,"\n")
         return False
-    if not reference.start_word and not reference.end_word:
-        print(description)
-        # print(f"Error{debug}: reference start and end word not found")
-        WRC_CNT[0] += 1
-        return False
-    if not reference.start_word:
-        # print(description)
-        # print(f"Error{debug}: reference start word not found")
 
-        return False
-    if not reference.end_word:
-        f = True
-        # print(description)
-        # print(f"Error{debug}: reference end word not found")
-        # reference.end_word = len(comprehension.passage.passage.split())
-        return
     passage_words = re.sub(r"\n", " ", comprehension.passage.passage).split()[reference.start_word:reference.end_word]
     del_start_ind = None
     del_end_ind = None
@@ -219,37 +205,24 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
         del_start_ind = match_words(start_words, passage_words)
         del_end_ind = len(start_words) - 1
         # print("v2",del_start_ind)
-    else:
-        # if f:
-        #     print(start_words, end_words)
-        #     print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
-        #     print(f"Error{debug}: No words found")
-        #     print("\n")
-        f = False
-        pass
-    # print(passage_words)
-    # print(start_words, end_words)
-    # print(reference.start_word, reference.end_word)
+
     if del_start_ind is not None and del_end_ind is not None:
         # print("REf",del_start_ind, del_end_ind)
         # print(reference.start_word+del_start_ind, reference.end_word-del_end_ind)
         reference.start_word += del_start_ind
-        reference.end_word = reference.start_word+del_end_ind
-    else:
-        # if f: 
-        #     print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
-        #     print(f"Error{debug}: words sequence not found")
-        #     print("\n")
-        pass
-    return True
-    # print("\n")
+        reference.end_word = reference.start_word + del_end_ind
 
-def modify_option_reference(option: Option, comprehension: ReadingComprehension, debug =""):
+    return True
+
+
+def modify_option_reference(option: Option, comprehension: ReadingComprehension, debug=""):
     return modify_single_reference(option.description, option.reference, comprehension, debug)
 
-def modify_question_reference(question: Question, comprehension: ReadingComprehension, debug =""):
+
+def modify_question_reference(question: Question, comprehension: ReadingComprehension, debug=""):
     for reference in question.references:
         modify_single_reference(question.description, reference, comprehension, debug)
+
 
 def populate_reference(comprehension: ReadingComprehension, line_reference):
     pattern1 = r"Lines\s+(\d+)\s*-\s*(\d+)"
@@ -379,12 +352,10 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         if re.match(r'MEDITATION I.', block[4]):
             buggy = 4
             indent = 4
-        elif "Hemoglobinopathies" in block[4]:
+        elif "Hemoglobinopathies" in block[4] or "The earthquake in Haiti had a magnitude of" in block[4]:
             print("Buggy")
             buggy = 1
-        elif "The earthquake in Haiti had a magnitude of" in block[4]:
-            print("Buggy 2")
-            buggy = 1
+
         if isEndOfPassage(block):
             if buggy > 0:
                 buggy -= 1
