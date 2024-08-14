@@ -369,6 +369,9 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         block = list(block) + [False]
         if re.match(r'MEDITATION I.', block[4]):
             buggy = 4
+        elif "Hemoglobinopathies" in block[4]:
+            print("Buggy")
+            buggy = 1
         if isEndOfPassage(block):
             if buggy > 0:
                 buggy -= 1
