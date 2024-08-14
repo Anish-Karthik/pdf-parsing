@@ -34,6 +34,7 @@ def isStartOfPassageInclusive(block):
         or re.match(r'The following passage is from', block[4])
         or re.match(r'Two contemporary writers', block[4])
         or re.match(r'The following is an excerpt from', block[4])
+        or re.match(r'Below are \d+', block[4])
     )
 
 
