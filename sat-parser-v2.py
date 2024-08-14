@@ -340,6 +340,16 @@ def create_line_references(blocks):
 
     return line_references
 
+def processHeaderIndents(headers: List) -> str:
+
+    headers_res = []
+    for block in headers:
+        if isStartOfParagraph(block, headers_res[-1] if len(headers_res) else None):
+            block[4] = ("\n\t" if not block[4].startswith("\n\t") else "") + block[4]
+        headers_res.append(block)
+    return headers_res
+
+
 
 def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
@@ -379,8 +389,7 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
                 line_references
             )
             if len(headers):
-                # TODO: process indent for headers
-                obj.header = "".join([h[4] for h in headers])
+                obj.header = "".join([h[4] for h in processHeaderIndents(headers)]).strip()
 
             # obj.passage.passage = cleanPassagePostReference(obj.passage.passage)
             return obj
