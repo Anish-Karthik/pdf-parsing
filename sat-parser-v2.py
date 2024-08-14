@@ -20,7 +20,7 @@ def isStartOfPassage(block):
         or re.match(r'The following passage is from', block[4])
         or re.match(r'Passage [A-Z]\d*', block[4])
         or re.match(r'Two contemporary writers', block[4])
-        or re.match(r'Below are \d+', block[4])
+        or re.search(r'Below are \d+', block[4])
         # or re.match(r'The following is an excerpt from', block[4])
     )
 
@@ -34,7 +34,7 @@ def isStartOfPassageInclusive(block):
         or re.match(r'The following passage is from', block[4])
         or re.match(r'Two contemporary writers', block[4])
         or re.match(r'The following is an excerpt from', block[4])
-        or re.match(r'Below are \d+', block[4])
+        or re.search(r'Below are \d+', block[4])
     )
 
 
@@ -473,23 +473,6 @@ def fix_buggy_question(question: Question):
     return question
 
 
-def processQnos(comprehension: ReadingComprehension, all_comprehensions: List[ReadingComprehension]):
-    st = set()
-    for j, question in enumerate(comprehension.questions):
-        if question.qno in st:
-            # make this as a new Comprehension
-            # remove the questions from the current comprehension
-            # add the questions to the new comprehension
-            # add the new comprehension to the all_comprehensions
-            other_comprehension_questions = comprehension.questions[j:]
-            comprehension.questions = comprehension.questions[:j]
-            if len(other_comprehension_questions):
-                other_comprehension_questions = processQnos(ReadingComprehension(Passage(None), other_comprehension_questions), all_comprehensions)
-                all_comprehensions.append(other_comprehension_questions)
-        st.add(question.qno)
-    return comprehension
-
-
 pdf_path = "baron/inputPDF/baron.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
@@ -534,7 +517,7 @@ for i, split in enumerate(passage_split):
         each_qnos.append(question.qno)
         qno_cnt += 1
     # check for repeating qnos from "1"
-    processQnos(comprehension, all_comprehensions)
+    # processQnos(comprehension, all_comprehensions)
     debug_qno.append(each_qnos)
 
 for i, obj in enumerate(all_comprehensions):
@@ -542,5 +525,3 @@ for i, obj in enumerate(all_comprehensions):
 
 write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
 # print(reference_found_count,reference_count)
-
-print(WRC_CNT, SMC_CNT)
