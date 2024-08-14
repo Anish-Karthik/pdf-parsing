@@ -296,8 +296,8 @@ def proccessPassageText(text):
     # text = re.sub(r"\n(?!\t)", " ", text)
     if text.startswith("\n"):
         text = text[1:]
-    if not text.startswith("\t"):
-        text = "\t" + text
+    if not text.startswith("\n\t"):
+        text = "\n\t" + text
     return text
 
 
