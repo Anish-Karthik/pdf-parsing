@@ -82,6 +82,8 @@ def isSectionHeader(block) -> bool:
 
 
 def isStartOfParagraph(block, prevBlock=None):
+    if block[4].startswith("\u25a0"):
+        return True
     if not prevBlock:
         return False
     # compare x values
