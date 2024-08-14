@@ -298,8 +298,6 @@ def proccessPassageText(text):
         text = text[1:]
     if not text.startswith("\t"):
         text = "\t" + text
-    if not text.endswith("."):
-        text += "."
     return text
 
 
