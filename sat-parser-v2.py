@@ -90,7 +90,7 @@ def isStartOfParagraph(block, prevBlock=None):
     #     return False
     block[7] = (
         (block[0] - prevBlock[0] > 12) or
-        (prevBlock[7] and block[0] == prevBlock[0])
+        (prevBlock[7] and abs(block[0] - prevBlock[0]) <= 0.001)
     )
     if block[7]:
         # print("bk",block)
