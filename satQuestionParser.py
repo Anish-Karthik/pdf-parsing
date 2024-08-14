@@ -56,6 +56,7 @@ def extract_question_number(text):
     qno = re.findall(r"(?<!.)(\d+)\.\s+", text)
     return qno[0] if len(qno) > 0 else None
 
+
 def replace_with_underlined_text(text, underlined_text):
     text = re.sub(r"(?<=\s)\n", underlined_text, text)
     return text
@@ -108,6 +109,20 @@ def processBlock(block):
     return block
 
 
+def remove_before_first_alphabet(text):
+    text = re.sub(r"^\(\d+\)\s*", "", text)
+    return text
+
+
+def findLineNumberMatchingWord(words, linenumber):
+    for ind, word in enumerate(words):
+        if word[4] == linenumber:
+            if (ind + 1) < len(words):
+                return words[ind + 1]
+    print("Failed Search", linenumber)
+    return None
+
+
 def get_each_lines(doc):
     lines = []
     hasAnswersStarted = False
@@ -142,10 +157,23 @@ def get_each_lines(doc):
                 border = block[0]
         pg_lines = sorted(pg_lines, key=lambda x: (x[3], x[0]))
 
+        words = page.get_text("words")
+
+        # print(f"Word: {word}, Coordinates")
+        for ind, line in enumerate(pg_lines):
+            remaining_text = remove_before_first_alphabet(line[4]).split()
+            if re.match(r"^\(\d+\)", line[4]):
+                correct_word_block = findLineNumberMatchingWord(words, re.match(r"^\(\d+\)", line[4]).group(0))
+                correct_line_ind = ind if len(remaining_text) > 0 else ind + 1
+
+                if correct_line_ind < len(pg_lines) and correct_word_block and pg_lines[correct_line_ind][0] != correct_word_block[0]:
+                    pg_lines[correct_line_ind][0] = correct_word_block[0]
+                    # print("Corrected Line:", pg_lines[ind])
+
         # pg_lines = insert_underlined_text(pg_lines)
 
         # extra property to check isLeft
-        pg_lines = [list(block) + [block[0] < border] for block in pg_lines]
+        # pg_lines = [list(block) + [block[0] < border] for block in pg_lines]
 
         # for line in pg_lines:
         #     print(line)

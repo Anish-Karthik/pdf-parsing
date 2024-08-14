@@ -186,11 +186,11 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
         # print(f"Error{debug}: reference not found")
         return False
     if "paragraph" in description and (not reference.start_word or not reference.end_word):
-        print("***********************DESCRIPTION***********\n",description,"\n")
+        # print("***********************DESCRIPTION***********\n",description,"\n")
         return False
     if not reference.start_word and not reference.end_word:
         print(description)
-        print(f"Error{debug}: reference start and end word not found")
+        # print(f"Error{debug}: reference start and end word not found")
         WRC_CNT[0] += 1
         return False
     if not reference.start_word:
@@ -200,7 +200,7 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
         return False
     if not reference.end_word:
         f = True
-        print(description)
+        # print(description)
         # print(f"Error{debug}: reference end word not found")
         # reference.end_word = len(comprehension.passage.passage.split())
         return
@@ -217,11 +217,11 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
         del_end_ind = len(start_words) - 1
         # print("v2",del_start_ind)
     else:
-        if f:
-            print(start_words, end_words)
-            print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
-            print(f"Error{debug}: No words found")
-            print("\n")
+        # if f:
+        #     print(start_words, end_words)
+        #     print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
+        #     print(f"Error{debug}: No words found")
+        #     print("\n")
         f = False
         pass
     # print(passage_words)
@@ -233,10 +233,10 @@ def modify_single_reference(description: str, reference: Reference, comprehensio
         reference.start_word += del_start_ind
         reference.end_word = reference.start_word+del_end_ind
     else:
-        if f: 
-            print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
-            print(f"Error{debug}: words sequence not found")
-            print("\n")
+        # if f: 
+        #     print(comprehension.passage.passage[reference.start_word:reference.end_word+1])
+        #     print(f"Error{debug}: words sequence not found")
+        #     print("\n")
         pass
     return True
     # print("\n")
