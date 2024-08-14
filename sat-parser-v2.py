@@ -298,7 +298,9 @@ def proccessPassageText(text):
         text = text[1:]
     if not text.startswith("\t"):
         text = "\t" + text
-    return text + "."
+    if not text.endswith("."):
+        text += "."
+    return text
 
 
 def cleanPassage(passage: list) -> str:
