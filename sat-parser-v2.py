@@ -48,6 +48,8 @@ def fixBugForPassage4(txt):
 
 
 def isEndOfPassage(block):
+    if re.search("With each of these questions, take these general steps", block[4]):
+        return True
     return re.match(r"(?<!.)\d{1,2}\.", block[4])
 
 
