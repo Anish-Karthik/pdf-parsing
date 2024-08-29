@@ -3,17 +3,24 @@ import json
 
 
 class PassageLink:
-    def __init__(self, question: int, option: int, word_index: int, is_start: bool):
+    def __init__(self, question: int, option: int, word_index: int, is_start: bool, is_header: bool):
         self.question = question
         self.option = option
         self.word_index = word_index
+        self.is_header = is_header
         self.is_start = is_start
 
     def link(self):
         if self.is_start:
-            link = "QS$$" + str(self.question)
+            if self.is_header:
+                link = "SHS$$"
+            else:
+                link = "QS$$" + str(self.question)
         else:
-            link = "QE$$" + str(self.question)
+            if self.is_header:
+                link = "SHE$$"
+            else:
+                link = "QE$$" + str(self.question)
         if self.option is not None:
             if self.is_start:
                 link += ("OS$$" + str(self.option))

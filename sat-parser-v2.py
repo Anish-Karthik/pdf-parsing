@@ -296,12 +296,16 @@ def mergeReferencesWithPassage(readingComprehension: ReadingComprehension):
     for qid, question in enumerate(readingComprehension.questions):
         for opt_index, option in enumerate(question.options):
             if option.reference is not None and option.reference.start_word is not None and option.reference.end_word is not None:
-                passage_links.append(PassageLink(question=qid, option=opt_index, word_index=option.reference.start_word, is_start=True))
-                passage_links.append(PassageLink(question=qid, option=opt_index, word_index=option.reference.end_word, is_start=False))
+                passage_links.append(PassageLink(question=qid, option=opt_index, word_index=option.reference.start_word, is_start=True, is_header=False))
+                passage_links.append(PassageLink(question=qid, option=opt_index, word_index=option.reference.end_word + 1, is_start=False, is_header=False))
 
         for reference in question.references:
-            passage_links.append(PassageLink(question=qid, option=None, word_index=reference.start_word, is_start=True))
-            passage_links.append(PassageLink(question=qid, option=None, word_index=reference.end_word, is_start=False))
+            passage_links.append(PassageLink(question=qid, option=None, word_index=reference.start_word, is_start=True, is_header=False))
+            passage_links.append(PassageLink(question=qid, option=None, word_index=reference.end_word + 1, is_start=False, is_header=False))
+
+    for ref in readingComprehension.subheading_references:
+        passage_links.append(PassageLink(question=qid, option=None, word_index=ref.start_word, is_start=True, is_header=True))
+        passage_links.append(PassageLink(question=qid, option=None, word_index=ref.end_word + 1, is_start=False, is_header=True))
 
     passage_links = sorted(passage_links, key=lambda link: link.word_index)
     passage_links.reverse()
