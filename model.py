@@ -2,6 +2,26 @@ from typing import List, Optional
 import json
 
 
+class PassageLink:
+    def __init__(self, question: int, option: int, word_index: int, is_start: bool):
+        self.question = question
+        self.option = option
+        self.word_index = word_index
+        self.is_start = is_start
+
+    def link(self):
+        if self.is_start:
+            link = "QS$$" + str(self.question)
+        else:
+            link = "QE$$" + str(self.question)
+        if self.option is not None:
+            if self.is_start:
+                link += ("OS$$" + str(self.option))
+            else:
+                link += ("OE$$" + str(self.option))
+        return link
+
+
 class Reference:
     def __init__(self, start_word: int, end_word: int):
         self.start_word = start_word
@@ -67,7 +87,7 @@ class ReadingComprehension:
     def __init__(self, passage: Passage, questions: List[Question], header: str, section: int = 1):
         self.passage = passage
         self.questions = questions
-        self.subheading_references : List[Reference] = []
+        self.subheading_references: List[Reference] = []
         self.header = header
         self.section = section
 

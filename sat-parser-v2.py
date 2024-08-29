@@ -77,28 +77,31 @@ def isStartOfParagraph(block, prevBlock=None):
 def modifyBlockText(block, txt):
     return (*block[:4], txt, *block[5:])
 
+
 def is_subheading(line):
     return re.match(r"Passage \d", line) and len(line) < 14
+
 
 def get_line_reference_index(lines):
     return len(" ".join(lines).split())
 
-def getReferences(passageText: str, startline: int,endLine=None) -> Reference:
+
+def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
     # print(passageText[:100])
     if not endLine:
         endLine = startline
     startline -= 1
     endLine -= 1
-    
+
     lines = passageText.split("\n")
-    
-    for line_no,line in enumerate(lines):
+
+    for line_no, line in enumerate(lines):
         if is_subheading(line):
             if line_no < startline:
                 startline += 1
             if line_no < endLine:
                 endLine += 1
-             
+
     # print("REFERENCES number", startline, endLine)
     startWord = get_line_reference_index(lines[:startline])
     if endLine == len(lines):
@@ -196,8 +199,8 @@ def get_subheading_references(passage_text) -> List[Reference]:
                 if word == "Passage":
                     break
                 start_ind += 1
-            subheading_references.append(Reference(start_ind, start_ind+1))
-    
+            subheading_references.append(Reference(start_ind, start_ind + 1))
+
     return subheading_references
 
 
@@ -288,6 +291,28 @@ def proccessPassageText(text):
     return text
 
 
+def mergeReferencesWithPassage(readingComprehension: ReadingComprehension):
+    passage_links = []
+    for qid, question in enumerate(readingComprehension.questions):
+        for opt_index, option in enumerate(question.options):
+            if option.reference is not None and option.reference.start_word is not None and option.reference.end_word is not None:
+                passage_links.append(PassageLink(question=qid, option=opt_index, word_index=option.reference.start_word, is_start=True))
+                passage_links.append(PassageLink(question=qid, option=opt_index, word_index=option.reference.end_word, is_start=False))
+
+        for reference in question.references:
+            passage_links.append(PassageLink(question=qid, option=None, word_index=reference.start_word, is_start=True))
+            passage_links.append(PassageLink(question=qid, option=None, word_index=reference.end_word, is_start=False))
+
+    passage_links = sorted(passage_links, key=lambda link: link.word_index)
+    passage_links.reverse()
+
+    passage_words = readingComprehension.passage.passage.split(" ")
+    for link in passage_links:
+        passage_words.insert(link.word_index, link.link())
+
+    readingComprehension.passage.passage = " ".join(passage_words)
+
+
 pdf_path = "baron/inputPDF/SAT WorkBook.pdf"
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
@@ -314,6 +339,8 @@ for i, split in enumerate(passage_split):
             question.correct_option = all_answers[qno_cnt].answer
             question.detailed_answer = all_answers[qno_cnt].detailed_solution
             qno_cnt += 1
+
+        mergeReferencesWithPassage(comprehension)
 # print(qno_cnt)
 # print(qns)
 
