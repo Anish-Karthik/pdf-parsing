@@ -24,7 +24,7 @@ def mergeReferencesWithPassage(readingComprehension: ReadingComprehension):
     passage_links = sorted(passage_links, key=lambda link: link.word_index)
     passage_links.reverse()
 
-    passage_words = readingComprehension.passage.passage.split(" ")
+    passage_words = readingComprehension.passage.passage.strip().split(" ")
     for link in passage_links:
         passage_words.insert(link.word_index, link.link())
 
@@ -100,5 +100,3 @@ for filename in json_files:
     
     except Exception as e:
         print(f"An error occurred with file {filename}: {e}")
-         # Remove this line if you want to process all files
-    break
