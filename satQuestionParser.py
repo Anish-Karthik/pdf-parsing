@@ -10,14 +10,10 @@ import json
 
 
 def is_qn_no(block):
-<<<<<<< HEAD
-    return re.search(r"(?<!.)\d+( ){0,1}\n", block[4])
-=======
     if re.search(r"^\d+\.\s+", block[4]):
         # print(block[4])
         return True
     return False
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
 
 def is_option(block):
@@ -28,26 +24,13 @@ def is_first_option(block):
     return re.search(r"(?<!.)A\)", block[4])
 
 
-<<<<<<< HEAD
-def is_option_match(ind, block):
-    options = ["A", "B", "C", "D"]
-    return re.search(r"(?<!.)" + options[ind] + r"\)", block[4])
-=======
 def is_option_match(ind, option_text):
     options = ["A", "B", "C", "D"]
     return re.search(r"(?<!.)\(" + options[ind] + r"\)", option_text)
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
 
 def is_last_option(block):
     return re.search(r"(?<!.)D\)", block[4])
-<<<<<<< HEAD
-
-
-def is_part_of_last_option(prev_line, line):
-    diff = prev_line[3] - line[1]
-    return diff >= 1 and diff < 3
-=======
 
 
 def is_part_of_last_option(prev_line, line):
@@ -56,7 +39,6 @@ def is_part_of_last_option(prev_line, line):
             diff < 3 and
             not re.match(r"^\d+.", line[4]))
 
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
 
 def remove_next_line(text):
@@ -138,16 +120,6 @@ def get_each_lines(doc, isAnswer=False):
         border = 323
         for block in blocks:
             block = list(block)
-<<<<<<< HEAD
-            # if isAnswer:
-            #     line.append(block)
-            #     continue
-            if not re.search(r"^\.", block[4]):
-                line.append(block)
-            else:
-                border = block[0]
-        line = sorted(line, key=lambda x: (0 if x[0] < border else 1, x[1]))
-=======
             # print(block)
             if "STEP-BY-STEP PRACTICE" in block[4]:
                 skip = True
@@ -173,7 +145,6 @@ def get_each_lines(doc, isAnswer=False):
 
         # pg_lines = insert_underlined_text(pg_lines)
 
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
         # extra property to check isLeft
         pg_lines = [list(block) + [block[0] < border] for block in pg_lines]
 
@@ -217,11 +188,6 @@ def is_extra(block) -> bool:
     )
 
 
-<<<<<<< HEAD
-def get_questions_alter(lines) -> List[Question]:
-    all_questions: List[Question] = []
-    options: List[Option] = []
-=======
 def split_line1(text):
     res_lines = []
     lines = re.split(r"\n|(\([A-D]\))|(\b\d{1,2}\.\s+)|(Questions \d+.\d+.*)", text)
@@ -251,31 +217,10 @@ def get_questions_alter(lines) -> List[Question]:
     all_questions: List[Question] = []
     options: List[Option] = []
     # all_options:List[Option]  = []
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     cur_op = 0
     op_text = ""
     op_0_ind = None
     options_started = False
-<<<<<<< HEAD
-    lines.append([0, lines[-1][3] + 5, 0, 0, "", 0, 0, False])
-    
-    for ind, line in enumerate(lines):
-        if cur_op == 3 and not is_part_of_last_option(lines[ind - 1], line):
-            if op_0_ind is not None:
-                options.append(Option(remove_option_number(op_text)))
-                qn_no, qn_text = get_question(lines, op_0_ind)
-                all_questions.append(Question(qn_no.strip(), qn_text, options))
-            options_started = False
-            options = []
-            op_0_ind = None
-            cur_op = 0
-        
-        if cur_op < 3 and is_option_match(cur_op + 1, line):
-            cur_op += 1
-            options.append(Option(remove_option_number(op_text)))
-        
-        if is_option_match(cur_op, line):
-=======
     import json
     lines.append([0, lines[-1][3] + 5, 0, 0, "", 0, 0, False])
     for ind, line in enumerate(lines):
@@ -303,33 +248,10 @@ def get_questions_alter(lines) -> List[Question]:
 
         if is_option_match(cur_op, line[4]):
             # print(line[4])
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
             if cur_op == 0:
                 op_0_ind = ind
             options_started = True
             op_text = ""
-<<<<<<< HEAD
-        
-        if options_started:
-            op_text += remove_next_line(line[4])
-    
-    return all_questions
-
-def get_question(lines, ind):
-    # return lines[ind-1][4]
-    # for line in lines:
-    # print(line)
-    qn_text = ""
-    cur = ind - 1
-    while not is_qn_no(lines[cur]):
-        if not is_extra(lines[cur]):
-            qn_text = lines[cur][4] + qn_text
-        cur -= 1
-    qn_no = lines[cur][4]
-    return remove_next_line(qn_no), remove_next_line(qn_text)
-
-
-=======
 
         if options_started:
             op_text += remove_next_line(line[4])
@@ -358,7 +280,6 @@ def get_question(lines, ind):
 
 # def populate_reference()
 # [[qtext, qno]]
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 def populate_referencesV1(input_list: List[Question]):
     all_items = input_list
     pattern = r"lines*\s*(\d+)(?:\s*(?:,|-|and)\s*(\d+))?"

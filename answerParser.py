@@ -35,12 +35,6 @@ def parse_answer(blocks) -> List[AnswerTmp]:
         if not answer_started:
             continue
 
-<<<<<<< HEAD
-        if (len(option_match) > 0):
-            # print(current_question, option_match[0][0], section)
-            all_answers.append(AnswerTmp(section, current_question, option_match[0][0]))
-            current_question += 1
-=======
         # print(block)
         # answer_match = re.findall(r"(?<!.)(\d+)\..*\(([A-D])\)", block[4])
         qno_match = re.findall(r"(?<!.)(\d+)\.\s*(\([A-D]\))", block[4])
@@ -79,5 +73,4 @@ def parse_answer(blocks) -> List[AnswerTmp]:
         #     all_answers.append(AnswerTmp(section, current_question, option))
     # for answer in all_answers:
     #     print(answer)
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     return all_answers

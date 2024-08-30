@@ -3,11 +3,7 @@ from typing import List
 import json
 
 import fitz
-<<<<<<< HEAD
-from utils.util import write_text_to_file
-=======
 from utils.util import write_text_to_file, isStartOfPassageHeaderBaron as isStartOfPassageHeader
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 from answerParser import parse_answer
 
 from satQuestionParser import *
@@ -17,10 +13,6 @@ WRC_CNT = [0]
 SMC_CNT = [0]
 
 def isStartOfPassage(block):
-<<<<<<< HEAD
-    isStart = bool(re.match(r'Questions \d*.*\d*', block[4]))
-    return isStart
-=======
     if re.match(r'^A Natural Synthetic ', block[4]) or re.match(r'^The Slums ', block[4]):
         return True
     return (
@@ -44,7 +36,6 @@ def isStartOfPassageInclusive(block):
         or re.match(r'The following is an excerpt from', block[4])
     )
 
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
 
 def fixBugForPassage4(txt):
@@ -57,23 +48,11 @@ def fixBugForPassage4(txt):
     return txt
 
 
-<<<<<<< HEAD
-def isEndOfPassage(block, qno=None):
-    if qno:
-        # get all the numbers in the text
-        try:
-            int(re.sub(r"[^\d]", "", block[4]))
-        except ValueError:
-            return False
-        return int(re.sub(r"[^\d]", "", block[4])) == qno and re.search(r"^" + str(qno) + "", block[4])
-    return block[0] in [338.7315979003906, 318.2538146972656, 39.872100830078125, 42.38639831542969, 68.39437866210938]
-=======
 def isEndOfPassage(block):
     if re.search("With each of these questions, take these general steps", block[4]):
         return True
     return re.match(r"(?<!.)\d{1,2}\.", block[4])
 
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
 
 def parseQuestionNumber(txt) -> list:
@@ -108,18 +87,12 @@ def isStartOfParagraph(block, prevBlock=None):
     if not prevBlock:
         return False
     # compare x values
-<<<<<<< HEAD
-    block[-1] = (
-        (block[0] - prevBlock[0] > 12) or
-        (prevBlock[-1] and block[0] == prevBlock[0])
-=======
     # if block[4].startswith(". "):
     #     block[7] = False
     #     return False
     block[7] = (
         (block[0] - prevBlock[0] > 12) or
         (prevBlock[7] and block[0] == prevBlock[0])
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     )
     if block[7]:
         # print("bk",block)
@@ -127,32 +100,6 @@ def isStartOfParagraph(block, prevBlock=None):
         pass
     return block[7]
 
-<<<<<<< HEAD
-
-def modifyBlockText(block, txt):
-    return (*block[:4], txt, *block[5:])
-
-
-def getReferences(passageText: str, startline: int, endLine=None) -> Reference:
-    # print(passageText[:100])
-    lines = passageText.split("\n")
-    startline -= 1
-    if endLine:
-        endLine -= 1
-    # print("REFERENCES number", startline, endLine)
-    startWord = len(" ".join(lines[:startline]).split())
-    if not endLine:
-        endLine = startline
-    if endLine == len(lines):
-        endWord = len(" ".join(lines).split())
-    endWord = len(" ".join(lines[:endLine + 1]).split())
-    # print(re.sub(r"\n", " ", passageText).split()[startWord:endWord])
-    # print("References:", startWord, endWord)
-    return Reference(startWord, endWord)
-
-
-def populate_reference(comprehension: ReadingComprehension):
-=======
 
 def getReferences(passageText: str, line_reference, startline: int, endLine=None) -> Reference:
     return get_reference_v2(passageText, line_reference, startline, endLine)
@@ -301,7 +248,6 @@ def modify_question_reference(question: Question, comprehension: ReadingComprehe
         modify_single_reference(question.description, reference, comprehension, debug)
 
 def populate_reference(comprehension: ReadingComprehension, line_reference):
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     pattern1 = r"Lines\s+(\d+)\s*-\s*(\d+)"
     pattern2 = r"Line\s+(\d+)"
     pattern3 = r"Lines\s+(\d+)\s*and\s*(\d+)"
@@ -320,10 +266,7 @@ def populate_reference(comprehension: ReadingComprehension, line_reference):
             references.append(getReferences(comprehension.passage.passage, line_reference, int(startLine1)))
             references.append(getReferences(comprehension.passage.passage, line_reference, int(startLine2)))
         question.references = references
-<<<<<<< HEAD
-=======
         modify_question_reference(question, comprehension, " question reference")
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
         # options
         for option in question.options:
@@ -341,16 +284,6 @@ def populate_reference(comprehension: ReadingComprehension, line_reference):
     return comprehension
 
 
-<<<<<<< HEAD
-def cleanPassage(passage: list) -> str:
-    text = "".join([b[4] for b in passage]).strip()
-    text = re.sub(r"\n+", "\n", text)
-    tmp = text.split("\t", 1)
-    text = tmp[1] if len(tmp) > 1 else text
-    return text
-
-
-=======
 def proccessPassageText(text):
     text = re.sub(r"\n+", "\n", text)
     text = re.sub(r" +", " ", text)
@@ -397,7 +330,6 @@ def clean_block(block):
     return block
 
 
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 class PassageTemp:
     def __init__(self, text: str, header: str, qnos: List[int]) -> None:
         self.text = text
@@ -405,19 +337,6 @@ class PassageTemp:
         self.qnos = qnos
 
 
-<<<<<<< HEAD
-def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
-    passage = []
-    passageObjects: List[PassageTemp] = []
-    header = blocks[0][4]
-    qnos = parseQuestionNumber(fixBugForPassage4(header))
-    tmp = None
-    try:
-        tmp = qnos[0]
-    except IndexError:
-        pass
-
-=======
 def create_line_references(blocks):
     line_references = list()
     for ind, block in enumerate(blocks):
@@ -448,7 +367,6 @@ def create_line_references(blocks):
 def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
     passage = []
     headers = []
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     cur_passage_questions = get_questions_alter(blocks)
     buggy = 0
     indent = 0
@@ -473,14 +391,10 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
 
             line_references = create_line_references(passage)
             text = cleanPassage(passage)
-<<<<<<< HEAD
-            passageObjects.append(PassageTemp(text, header, qnos))
-=======
 
             line_ref = []
             for i in line_references:
                 line_ref.append(i[1])
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
             obj = populate_reference(
                 ReadingComprehension(
@@ -498,17 +412,6 @@ def extract_passages(blocks: List[Tuple[Any]]) -> ReadingComprehension:
         if is_extra(block):
             continue
         if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-<<<<<<< HEAD
-            passage.append(modifyBlockText(block, "\t" + block[4]))
-        else:
-            passage.append(block)
-    return None
-
-
-def isStartOfWrittingComprehension(block):
-    return bool(re.search(r"WRITING AND LANGUAGE TEST", block[4], re.IGNORECASE))
-
-=======
             block[4] = "\n\t" + block[4]
         if isStartOfPassageHeader(block):
             headers.append(block)
@@ -527,17 +430,11 @@ def get_all_words_for_underline(doc):
             all_words.append(word)
     return all_words
 
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
 def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     passages = []
     isPassageStarted = False
     passage_lines = []
-<<<<<<< HEAD
-    isWritingComprehension = 0
-    all_comprehensions: List[ReadingComprehension] = []
-=======
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     for i, block in enumerate(blocks):
         # print(block)
         block = clean_block(block)
@@ -548,13 +445,8 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
             isPassageStarted = True
             passage_lines.append((passages, False))
             passages = []
-<<<<<<< HEAD
-            if (isWritingComprehension == 1):
-                isWritingComprehension = 2
-=======
             if isStartOfPassageInclusive(block):
                 passages = [block]
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
         if isPassageStarted:
             if isStartOfPassageInclusive(block):
                 passages = [block]
@@ -566,76 +458,6 @@ def split_passages(blocks) -> List[Tuple[List[str], bool]]:
     passage_lines.append((passages, False))
     return passage_lines[1:]
 
-<<<<<<< HEAD
-
-def computeSection(passageObject, passageObjects, currentSection):
-    try:
-        if len(passageObjects) > 1:
-            prevQuestionNumbers = passageObjects[-1].questionNumbers.split(",")
-            currQuestionNumbers = passageObject.questionNumbers.split(",")
-            if int(prevQuestionNumbers[-1]) > int(currQuestionNumbers[0]) and int(prevQuestionNumbers[-1]) > 0 and int(currQuestionNumbers[0]) > 0:
-                currentSection += 1
-    except Exception as e:
-        print("Error in section assignment:", e)
-    return currentSection
-
-def get_all_words_for_underline(doc):
-    all_words = []
-    for pgno, page in enumerate(doc):
-        words = page.get_text("words")
-        for word in words:
-            word = tuple(list(word) + [pgno])
-            all_words.append(word)
-    return all_words
-
-
-all_words_index = 0
-def extract_passages_writing_comprehension(blocks: List[Tuple[Any]]):
-    global all_words_index
-    passage = []
-    passageObjects: List[PassageTemp] = []
-    header = blocks[0][4]
-    qnos = parseQuestionNumber(fixBugForPassage4(header))
-
-    cur_passage_questions = get_questions_alter(blocks)
-    for block in blocks[1:]:
-        if (not block[7]):
-            continue
-        block = list(block) + [False]
-        # not isLeft
-        # print(block)
-        if re.search(r"STOP", block[4]):
-            break
-        if is_extra(block):
-            continue
-        if isStartOfParagraph(block, passage[-1] if len(passage) else None):
-            passage.append(modifyBlockText(block, "\t" + block[4]))
-        else:
-            passage.append(block)
-
-    text = cleanPassage(passage)
-    passageObjects.append(PassageTemp(text, header, qnos))
-
-    obj = populate_reference(
-        ReadingComprehension(
-            Passage(text),
-            cur_passage_questions
-        )
-    )
-    doc_index,obj = underlined_references(
-        obj,
-        get_all_words_for_underline(doc),
-        all_words_index,
-        doc
-    )
-    all_words_index = doc_index
-    return obj
-
-
-sample_paper = "8"
-
-pdf_path = "input/sat/SAT Practice Test 1.pdf"
-=======
 
 def fix_buggy_question(question: Question):
     # print(question.to_json())
@@ -665,22 +487,11 @@ def processQnos(comprehension: ReadingComprehension, all_comprehensions: List[Re
 
 
 pdf_path = "baron/inputPDF/baron.pdf"
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 doc = fitz.open(pdf_path)
 blocks = get_each_lines(doc)
 
 
 all_comprehensions = []
-<<<<<<< HEAD
-# all_answers = SolutionParsing.extract_text_with_ocr(answer_pdf_path)
-answer_pdf_path = "input/sat-answers/SAT Practice Test 1.pdf"
-ans_doc = fitz.open(answer_pdf_path)
-answer_blocks = get_each_lines(ans_doc, True)
-all_answers = parse_answer(answer_blocks)
-
-passage_split = split_passages(blocks)
-# print(len(passage_split))
-=======
 all_answers = parse_answer(blocks)
 all_words_for_underline = get_all_words_for_underline(doc)
 all_words_index = 0
@@ -692,7 +503,6 @@ print(len(all_answers))
 write_text_to_file(json.dumps([c.to_json() for c in all_answers], indent=2), "debug/jsonOutputAnswers.json")
 
 
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 qno_cnt = 0
 print(len(passage_split))
 debug_qno = []
@@ -724,17 +534,9 @@ for i, split in enumerate(passage_split):
     debug_qno.append(each_qnos)
 
 for i, obj in enumerate(all_comprehensions):
-<<<<<<< HEAD
-    write_text_to_file(json.dumps(obj.to_json(), indent=2), "output/SATJson/sat-sample-paper-" + sample_paper + f"-passage{i + 1}.json")
-
-
-# print(json.dumps([c.to_json() for c in all_comprehensions]))
-write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
-=======
     write_text_to_file(json.dumps(obj.to_json(), indent=2), f"baron/outputJSON/baron-passage{i + 1}.json")
 
 write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
 # print(reference_found_count,reference_count)
 
 print(WRC_CNT, SMC_CNT)
->>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
