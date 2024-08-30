@@ -188,9 +188,30 @@ function populateDataFromHtml(){
             data.questions[i].options[j].description = optionElements[j].childNodes[2].textContent.trim()
         } 
     }
+    const referenceMap = new Map();
     for (let i = 0; i < wordElements.length; i++) {
         let wordElement =  wordElements[i];
-        let txt = wordElement.innerText.replace(/\s+/g,' ').trim();
+        let txt = "";
+        let cssClasses = wordElement.getAttribute("class").split(" ");
+        cssClasses.forEach((cls)=>{
+            if(cls.startsWith("reference-")){
+                var refData = cls.split("-");
+                var qnNo = refData[refData.length - 1];
+                if(!referenceMap.has(cls)){
+                    referenceMap.set(cls, "");
+                    txt += "QS$$" + (parseInt(qnNo) - parseInt(helper.questions[0].qno)) + " ";
+                }
+            }
+            referenceMap.forEach((value,key) => {
+                if(!cssClasses.includes(key)){
+                    var refData = key.split("-");
+                    var qnNo = refData[refData.length - 1];
+                    txt += "QE$$" + (parseInt(qnNo) - parseInt(helper.questions[0].qno)) + " ";
+                    referenceMap.delete(key);
+                }
+            })
+        })
+        txt += wordElement.innerText.replace(/\s+/g,' ').trim();
         if(txt.length === 0){
             continue;
         }
@@ -201,57 +222,14 @@ function populateDataFromHtml(){
             txt = "\n" + txt;
         }
         passage += " " + txt;
-        let cssClasses = wordElement.getAttribute("class").split(" ");
-        let highlightedQuestions = [];
-        cssClasses.forEach(cssClass => {
-            if (cssClass.startsWith("highlight-")) {
-                highlightedQuestions.push(cssClass.replace("highlight-", ""));
-                
-            }
-        });
-        // console.log(highlightedQuestions)
-        highlightedQuestions.forEach(question => {
-            if (highlights[question] == undefined) {
-                highlights[question] = currentWordCount;
-            }
-        });
-
-        Object.keys(highlights).forEach(question => {
-            if (!highlightedQuestions.includes(question)) {
-                // console.log(question, highlights[question], currentWordCount - 1);
-                data.questions.forEach(qn => {
-                    if (qn.qno == question) {
-                        qn.references.push({
-                            start_word: highlights[question],
-                            end_word: currentWordCount - 1,
-                        });
-                    }
-                })
-                delete highlights[question];
-            }
-        });
-
-        currentWordCount += txt.split(" ").length;
     }
     data.passage = passage;
-    
-    Object.keys(highlights).forEach(question => {
-        // console.log(question, highlights[question], currentWordCount);
-        data.questions.forEach(qn => {
-            if (qn.qno == question) {
-                qn.references.push({
-                    start_word: highlights[question],
-                    end_word: currentWordCount,
-                });
-            }
-        })
-    });
-
     populateOption();
     console.log(data)
 }
 
 function passageHightlight(questionReferences, wordsByLine) {
+    console.log(questionReferences)
     if (!questionReferences || questionReferences.length == 0) {
         for (let i = 0; i < wordsByLine.length; i++) {
             getWord(
@@ -278,19 +256,59 @@ function passageHightlight(questionReferences, wordsByLine) {
             }
         });
     })
-    questionReferences.forEach((item) => {
-        let start_word = item.start;
-        let end_word = item.end;
-        for (let i = 0; i < wordsByLine.length; i++) {
-            var isHighlighted = i >= start_word && i <= end_word;
-            getWord(
-                item.referId, 
-                wordsByLine[i],
-                isHighlighted,
-                i == start_word ? item.qno : undefined,
-                isHighlighted ? item.qno : undefined);
+
+    const questionMap = new Map();
+    var refId = 0;
+    var prev = "";
+    console.log("words by line: " + wordsByLine);
+    wordsByLine.forEach((word,index)=>{
+        var wordText = word.word.trim();
+        if(wordText.startsWith("QS$$")){
+            let qno = parseInt(wordText.replace("QS$$", ""));
+            if(!questionMap.has(qno)) questionMap.set(qno,{freq : 1,refId : refId++});
+            else questionMap.set(qno,{freq : questionMap.get(qno).freq + 1,refId : questionMap.get(qno).refId});
         }
+        else if(wordText.startsWith("QE$$")){
+            let qno = parseInt(wordText.replace("QE$$", ""));
+            if(questionMap.get(qno).freq > 0)questionMap.set(qno,{freq : questionMap.get(qno).freq - 1,refId : questionMap.get(qno).refId});
+            if(questionMap.get(qno).freq === 0) questionMap.delete(qno);
+        }
+        else{
+            if(questionMap.size > 0){
+            questionMap.forEach((value,key) => {
+                console.log("key :" + key)
+                getWord(
+                    "reference-"+(value.refId)+"-"+ (parseInt(key) + parseInt(helper.questions[0].qno)), 
+                    wordsByLine[index],
+                    true,
+                    prev.startsWith("QS$$"+(key)) && value.freq == 1 ? parseInt(key) + parseInt(helper.questions[0].qno) : undefined,
+                    parseInt(key) + parseInt(helper.questions[0].qno));
+            })}
+            else{
+                getWord(
+                    undefined, 
+                    wordsByLine[index],
+                    false,
+                    prev.startsWith("QS$$") ? parseInt(key) + parseInt(helper.questions[0].qno) : undefined,
+                    undefined);
+            }
+        }
+        prev = wordText;
+        console.log(questionMap)
     });
+    // questionReferences.forEach((item) => {
+    //     let start_word = item.start;
+    //     let end_word = item.end;
+    //     for (let i = 0; i < wordsByLine.length; i++) {
+    //         var isHighlighted = i >= start_word && i <= end_word;
+    //         getWord(
+    //             item.referId, 
+    //             wordsByLine[i],
+    //             isHighlighted,
+    //             i == start_word ? item.qno : undefined,
+    //             isHighlighted ? item.qno : undefined);
+    //     }
+    // });
     
     return wordsByLine;
 }
@@ -385,7 +403,7 @@ function modifyRef() {
     if(refId) {
         delRef();
     } else {
-        refId = "reference-"+referenceCount++;
+        refId = "reference-"+(referenceCount++) + "-" + helper.selectedQuestion.qno;
     }
     let optionRef = "";
     //reference delete

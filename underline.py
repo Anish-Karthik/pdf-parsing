@@ -41,12 +41,20 @@ def get_lines(page):
     return drawn_lines
 
 
+<<<<<<< HEAD
 
 def get_words_from_passage(passage_words: List, words, words_index) -> List:
     start_p = 0
     start = words_index
     match_words = []
     last_index = 0
+=======
+def get_words_from_passage(passage_words: List, words, words_index) -> List:
+    start_p = 0
+    start = words_index
+    last_index = 0
+    match_words = []
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     while start_p < len(passage_words) and start < len(words):
         max_match = 0
         max_match_start = start
@@ -66,20 +74,30 @@ def get_words_from_passage(passage_words: List, words, words_index) -> List:
 
         for i in range(max_match_start, max_match_start + max_match):
             match_words.append(words[i])
+<<<<<<< HEAD
             # print(words[i])
+=======
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
         start = max_match_start + max_match
         last_index = start
         start_p += max_match
 
+<<<<<<< HEAD
     return last_index,match_words
+=======
+    return last_index, match_words
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
 
 
 def passage_to_words(passage) -> List[str]:
     passage = re.sub(r"\t", " ", (re.sub(r"\n", " ", passage)))
     passage = [w for w in passage.split(" ") if len(w) > 0 and w != " "]
+<<<<<<< HEAD
     # for w in passage:
     #     print(w)
+=======
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     return passage
 
 
@@ -88,13 +106,21 @@ def underlined_references(comprehension: ReadingComprehension, all_words, all_wo
     # passage = re.sub(r"\t", "", (re.sub(r"\n", " ", passage)))
     passage = passage_to_words(comprehension.passage.passage)
     # print(passage)
+<<<<<<< HEAD
     last_index,words = get_words_from_passage(passage, all_words, all_words_index)
+=======
+    last_index, words = get_words_from_passage(passage, all_words, all_words_index)
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     # print("\n\n\n\n")
 
     drawn_lines = []
     for page in doc:
         drawn_lines.append(get_lines(page))
 
+<<<<<<< HEAD
+=======
+    references: List[Reference] = []
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
     prev_word_is_underlined = False
     start_word = 0
     end_word = 0
@@ -110,17 +136,30 @@ def underlined_references(comprehension: ReadingComprehension, all_words, all_wo
                 else:
                     qn_no = 0
                 start_word = ind
+<<<<<<< HEAD
             # print(w[4],end=" ")
+=======
+            # print(w[4], end=" ")
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
             prev_word_is_underlined = True
         else:
             if prev_word_is_underlined:
                 end_word = ind - 1
+<<<<<<< HEAD
+=======
+                # print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
                 if qn_no != 0:
                     for qn in comprehension.questions:
                         if qn.qno == qn_no:
                             qn.references.append(Reference(start_word, end_word))
+<<<<<<< HEAD
                             
                             print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
+=======
+
+                            # print(f"start_word:{start_word} end_word:{end_word} qn_no:{qn_no}")
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
                             break
 
             prev_word_is_underlined = False
@@ -130,6 +169,7 @@ def underlined_references(comprehension: ReadingComprehension, all_words, all_wo
     # for ref in references:
     #     print(ref.start_word,ref.end_word)
     # print(len(references))
+<<<<<<< HEAD
     return last_index,comprehension
 
 # def underlined_text(pdf_path):
@@ -187,3 +227,11 @@ if __name__ == "__main__":
 #             print(w[4], end=" ")
 #         print()
 #     print()
+=======
+    return last_index, comprehension
+
+if __name__ == "__main__":
+    pdf_path = "/Users/pranav/Downloads/SAT Practice Test 1 12.22.54 PM.pdf"
+
+    doc = fitz.open(pdf_path)
+>>>>>>> 714854eb988c9ca658cd948a77e9d2ffe913469a
