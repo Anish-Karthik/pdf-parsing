@@ -424,30 +424,51 @@ for sample_paper, (pdf_path, answer_pdf_path) in enumerate(list(files), start=1)
     ans_doc = fitz.open(answer_pdf_path)
     answer_blocks = get_each_lines(ans_doc, True)
     all_answers = parse_answer(answer_blocks)
-
-    passage_split = split_passages(blocks)
-    print(len(passage_split))
+    questions  = get_questions_alter(blocks)
     qno_cnt = 0
-    for i, split in enumerate(passage_split):
-        # print(split,"\n\n\n\n\n\n\n\n\n")
-        split, isWritingComprehension = split
-        # print(split, isWritingComprehension)
-        comprehension = extract_passages(split) if not isWritingComprehension else extract_passages_writing_comprehension(split)
-        if comprehension is not None:
-            all_comprehensions.append(comprehension)
-            for j, question in enumerate(comprehension.questions):
-                # if str(all_answers[qno_cnt].question_number).strip() != question.qno.strip():
-                #     print(all_answers[qno_cnt].question_number, question.qno)
-                #     print(f"sample paper{sample_paper}-passage{len(all_comprehensions)}")
-                #     print(question.description)
-                #     print("Error: Question number mismatch")
-                question.correct_option = all_answers[qno_cnt].answer
-                question.detailed_answer = all_answers[qno_cnt].detailed_solution
-                # question.qno = str(j + 1)
-                qno_cnt += 1
 
-    for i, obj in enumerate(all_comprehensions):
-        write_text_to_file(json.dumps(obj.to_json(), indent=2), "sat/outputJSON/sat-sample-paper-" + sample_paper + f"-passage{i + 1}.json")
-
-    # print(json.dumps([c.to_json() for c in all_comprehensions]))
-    write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
+    for j, question in enumerate(questions):
+        if qno_cnt == 66:
+            break
+        # if str(all_answers[qno_cnt].question_number).strip() != question.qno.strip():
+        #     print(all_answers[qno_cnt].question_number, question.qno)
+        #     print(f"sample paper{sample_paper}-passage{len(all_comprehensions)}")
+        #     print(question.description)
+        #     print("Error: Question number mismatch")
+        question.correct_option = all_answers[qno_cnt].answer
+        question.detailed_answer = all_answers[qno_cnt].detailed_solution
+        # question.qno = str(j + 1)
+        qno_cnt += 1
+    obj = []
+    for i, qn in enumerate(questions):
+        if i == 66:
+            break
+        new_qn = {
+            "qno": str(i + 1),
+            "description": qn.description.replace("______", "[BLANK]"),
+            "options": [{"description": opt.description, "reference": opt.reference} for opt in qn.options],
+            "correct_option": qn.correct_option,
+            "detailed_answer": qn.detailed_answer,
+            "references": [ref.to_json() for ref in qn.references]
+        }
+        obj.append(new_qn)
+    # passage_split = split_passages(blocks)
+    # print(len(passage_split))
+    # qno_cnt = 0
+    # for i, split in enumerate([blocks]):
+    #     comprehension = extract_passages(split)
+    #     if comprehension is not None:
+    #         all_comprehensions.append(comprehension)
+    #         for j, question in enumerate(comprehension.questions):
+    #             # if str(all_answers[qno_cnt].question_number).strip() != question.qno.strip():
+    #             #     print(all_answers[qno_cnt].question_number, question.qno)
+    #             #     print(f"sample paper{sample_paper}-passage{len(all_comprehensions)}")
+    #             #     print(question.description)
+    #             #     print("Error: Question number mismatch")
+    #             question.correct_option = all_answers[qno_cnt].answer
+    #             question.detailed_answer = all_answers[qno_cnt].detailed_solution
+    #             # question.qno = str(j + 1)
+    #             qno_cnt += 1
+    write_text_to_file(json.dumps(obj, indent=2), "sat/outputJSONTest/sat-sample-paper-" + sample_paper + f".json")
+    # # print(json.dumps([c.to_json() for c in all_comprehensions]))
+    # write_text_to_file(json.dumps([c.to_json() for c in all_comprehensions], indent=2), "debug/jsonOutput.json")
