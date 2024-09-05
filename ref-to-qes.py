@@ -9,6 +9,7 @@ def mergeReferencesWithPassage(readingComprehension: ReadingComprehension):
     passage_links = []
     for qid, question in enumerate(readingComprehension.questions):
         for opt_index, option in enumerate(question.options):
+            print(option.reference)
             if option.reference is not None and option.reference.start_word is not None and option.reference.end_word is not None:
                 passage_links.append(PassageLink(question=qid, option=opt_index, word_index=option.reference.start_word, is_start=True, is_header=False))
                 passage_links.append(PassageLink(question=qid, option=opt_index, word_index=option.reference.end_word + 1, is_start=False, is_header=False))
@@ -36,6 +37,10 @@ def json_to_reading_comprehension(json_data):
     
     for q in json_data['questions']:
         options = [Option(opt['description']) for opt in q['options']]
+        options = []
+        for option in q['options']:
+            reference = Reference(option['reference']['start_word'], option['reference']['end_word'])
+            options.append(Option(option['description'], Optional(reference)))
         question = Question(
             qno=q['qno'],
             description=q['description'],
@@ -65,7 +70,7 @@ import os
 import json
 import os
 
-directory = 'correctedJsonSat/outputfinal'
+directory = "sat/outputJSON"
 
 json_files = sorted([f for f in os.listdir(directory) if f.endswith('.json')])
 
