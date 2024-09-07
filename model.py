@@ -45,9 +45,9 @@ class Reference:
 
 
 class Option:
-    def __init__(self, description: str):
+    def __init__(self, description: str, reference: Optional[Reference] = None):
         self.description = description
-        self.reference: Optional[Reference] = None
+        self.reference: Optional[Reference] = reference
 
     def to_json(self):
         return {

@@ -35,7 +35,12 @@ def json_to_reading_comprehension(json_data):
     questions = []
     
     for q in json_data['questions']:
-        options = [Option(opt['description']) for opt in q['options']]
+        options = []
+        for option in q['options']:
+            if option['reference'] is not None:
+                options.append(Option(option['description'], Reference(option['reference']['start_word'], option['reference']['end_word'])))
+            else:
+                options.append(Option(option['description']))
         question = Question(
             qno=q['qno'],
             description=q['description'],
@@ -65,7 +70,7 @@ import os
 import json
 import os
 
-directory = 'correctedJsonSat/outputfinal'
+directory = "sat/outputJSON"
 
 json_files = sorted([f for f in os.listdir(directory) if f.endswith('.json')])
 
