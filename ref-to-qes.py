@@ -70,7 +70,7 @@ import os
 import json
 import os
 
-directory = "sat/outputfinal"
+directory = "sat/writing comp"
 
 json_files = sorted([f for f in os.listdir(directory) if f.endswith('.json')])
 
@@ -98,7 +98,7 @@ for filename in json_files:
             data["passage"] = str(reading_comprehension.passage)
             
             # Write the updated data back to the JSON file
-            with open(os.path.join('sat/new-op', filename), 'w') as file:
+            with open(os.path.join('sat/writing-comp-output', filename), 'w') as file:
                 json.dump(data, file, indent=4)
             
             print(f"Processed {filename} and merged references.")
