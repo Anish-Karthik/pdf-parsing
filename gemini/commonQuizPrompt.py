@@ -1,9 +1,9 @@
 from gemini_api import *
 from content import *
 import re
-import pandas as pd
 import time
 from google.api_core.exceptions import ResourceExhausted
+import json
 
 
 def get_quiz_prompt(sample):
@@ -36,6 +36,15 @@ def get_quiz_delayed_prompt(delay=15):
         raw_response = model.generate_content(
             get_quiz_prompt()
         )
+        return filter_response(raw_response.text)
+    except ResourceExhausted as e:
+        print("delay:", delay, e)
+        return get_quiz_delayed_prompt(delay * 2)
+    try:
+        time.sleep(delay)
+        raw_response = model.generate_content(
+            get_quiz_prompt()
+        )
         # print(raw_response.text)
         return filter_response(raw_response.text)
     except ResourceExhausted as e:
@@ -44,10 +53,14 @@ def get_quiz_delayed_prompt(delay=15):
 
 
 def filter_response(text):
-    return re.sub("\\*{1,2}", "", text)
-
-
-api_key = os.environ.get("GEMINI_API_KEY")
+    # Regular expression pattern to match the code block
+    pattern = r"```python"
+    # Replace the code block with the replacement string
+    replaced_text = re.sub(pattern, '', text, flags=re.DOTALL)
+    pattern = r"```"
+    replaced_text = re.sub(pattern, '', text, flags=re.DOTALL)
+    return replaced_text
+api_key = "AIzaSyBf8XSKPjDG5R640Y1P-CYNFOlZXfE83ws"
 configure_client(api_key)
 
 model = generativeai.GenerativeModel(
@@ -55,7 +68,18 @@ model = generativeai.GenerativeModel(
 )
 
 raw_response = model.generate_content(
-    get_quiz_prompt(underline[0])
+      get_quiz_prompt(underline[0])
 )
+print(raw_response.text)
+filtered_text = filter_response(raw_response.text)
+structured_data = filtered_text.replace("python", "")
+print(structured_data)
+json_data = json.dumps(structured_data, indent=2)
+# Save the JSON data to a file if it's not empty
+if json_data:
+    with open("/Users/muthupandi/Desktop/GitHub/pdf-parsing/gemini/output/gemini/raw_response.json", "w") as f:
+        json.dump(json_data, f, indent=2)
+else:
+    print("No valid JSON data to save.")
 with open("output/gemini/raw_response.txt", "w") as f:
     f.write(raw_response.text)
