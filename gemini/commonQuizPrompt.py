@@ -7,7 +7,10 @@ from google.api_core.exceptions import ResourceExhausted
 def get_quiz_prompt():
   return f"""
     give 5 sample english quiz questions with options and correct option
-    Output: give python list(question,[option1,option2,option3,option4],correct_option("A" or "B" or "C" or "D"))
+    Output: give python dict("question":question_description
+    ,"options": [option1,option2,option3,option4],
+    "correct_option":("A" or "B" or "C" or "D")
+    )
     """
 
 def get_quiz_delayed_prompt(delay=15):
