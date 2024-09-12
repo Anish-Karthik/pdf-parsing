@@ -140,3 +140,14 @@ The Indian education system has been _______ from an elite bias since colonial t
 Correct Option - 5
 
 """]
+
+
+theme = [
+  "for learning english vocabulary for a middle school student",
+  "for learning english vocabulary for a college student",
+  "ibps po prelims english vocabulary",
+  "tnpsc english",
+  "about Indian Education",
+  "Famous English Literature",
+  "Indian author books"
+]

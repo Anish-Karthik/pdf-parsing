@@ -6,10 +6,10 @@ from google.api_core.exceptions import ResourceExhausted
 import json
 
 
-def get_quiz_prompt(sample):
+def get_quiz_prompt(text):
     return f"""
       Task:
-  create fill in the blanks questions with options and its correct answer
+  create unique fill in the blanks questions with {text} with options and its correct answer
   each questions should have a minimum of 20-30 words and the questions is of the type fill in the blanks
 
   Rules:
@@ -25,16 +25,14 @@ def get_quiz_prompt(sample):
       ,"options": [option1,option2,option3,option4],
       "correct_option":("A" or "B" or "C" or "D")
       )
-
-  sample:
-  {sample}"""
+  give python output"""
 
 
-def get_quiz_delayed_prompt(delay=15):
+def get_quiz_delayed_prompt(text,delay=15):
     try:
         time.sleep(delay)
         raw_response = model.generate_content(
-            get_quiz_prompt()
+            get_quiz_prompt(text)
         )
         return filter_response(raw_response.text)
     except ResourceExhausted as e:
@@ -53,16 +51,13 @@ model = generativeai.GenerativeModel(
     model_name="models/gemini-1.5-flash"
 )
 
-raw_response = model.generate_content(
-      get_quiz_prompt(underline[0])
-)
-filtered_text = filter_response(raw_response.text)
+for i in range(len(theme)):
+  filtered_text = get_quiz_delayed_prompt(theme[i])
 
-
-if filtered_text:
-    with open("gemini/output/raw_response.json", "w") as f:
-        json.dump(json.loads(filtered_text), f, indent=2)
-else:
-    print("No valid JSON data to save.")
-with open("output/gemini/raw_response.txt", "w") as f:
-    f.write(raw_response.text)
+  if filtered_text:
+      with open(f"gemini/output/raw_response{i+2}.json", "w") as f:
+          json.dump(json.loads(filtered_text), f, indent=2)
+  else:
+      print("No valid JSON data to save.")
+  with open("output/gemini/raw_response.txt", "w") as f:
+      f.write(filtered_text)
