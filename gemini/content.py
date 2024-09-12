@@ -98,7 +98,9 @@ Mr. Loddstone was ___________ on his henchman to aid in the cover up of the murd
 4. Counting
 5. None of the above
 Correct Option - 4
- 
+
+""",
+""" 
 Que. 25 Pick out the most appropriate word from the given words to fill in the blank to make the sentence meaningfully correct.
 In terms of treating acne, neem paste is observed to ______ much of grease and bacteria that can exacerbate the condition.
 1. Keep
