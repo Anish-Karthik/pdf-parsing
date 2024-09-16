@@ -8,24 +8,22 @@ import json
 
 def get_quiz_prompt(text):
     return f"""
-      Task:
-  create unique fill in the blanks questions with {text} with options and its correct answer
-  each questions should have a minimum of 20-30 words and the questions is of the type fill in the blanks
+      {underlined_prompt}
 
-  Rules:
-  Each question should be unique
-  evenly spread the correct options
-  EX. idioms and phrases, or test grammer knowledge
-  The questions should be structured from real world examples or statements
-  and options should be idioms
-  Make the question and option more interesting for indian learners
+      Topic:
+      The questions should be based on:{text} and test their English skills not their general knowledge
 
-  generate 10 fill in the blanks questions with options and its correct answer
-      Output: give python dict("question":question_description
-      ,"options": [option1,option2,option3,option4],
-      "correct_option":("A" or "B" or "C" or "D")
-      )
-  give python output"""
+    """+"""
+      Output: 
+      give python 
+      [
+            "question":question_description,
+            "options":[option1,option2,option3,option4],
+            "correct_option":("A" or "B" or "C" or "D"),
+            "reasoning":reasoning
+      ]
+  give python output 
+  """
 
 
 def get_quiz_delayed_prompt(text,delay=15):
@@ -34,10 +32,14 @@ def get_quiz_delayed_prompt(text,delay=15):
         raw_response = model.generate_content(
             get_quiz_prompt(text)
         )
+        # print(raw_response.text)
         return filter_response(raw_response.text)
     except ResourceExhausted as e:
         print("delay:", delay, e)
         return get_quiz_delayed_prompt(delay * 2)
+    except Exception as e:
+        print(e)
+        return None
 
 
 def filter_response(text):
@@ -48,16 +50,11 @@ api_key = os.getenv("GEMINI_API_KEY")
 configure_client(api_key)
 
 model = generativeai.GenerativeModel(
-    model_name="models/gemini-1.5-flash"
+    model_name="gemini-1.5-flash"
 )
 
-for i in range(len(theme)):
-  filtered_text = get_quiz_delayed_prompt(theme[i])
+for theme in underlined_themes:
+  print(get_quiz_delayed_prompt(theme))
+  print("\n\n\n")
+  
 
-  if filtered_text:
-      with open(f"gemini/output/raw_response{i+2}.json", "w") as f:
-          json.dump(json.loads(filtered_text), f, indent=2)
-  else:
-      print("No valid JSON data to save.")
-  with open("output/gemini/raw_response.txt", "w") as f:
-      f.write(filtered_text)
