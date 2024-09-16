@@ -57,18 +57,23 @@ all_qns_json = []
 
 for theme in underlined_themes:
     json_text = get_quiz_delayed_prompt(theme)
+
+    if json_text is None:
+        continue
+    
     qns_json = json.loads(json_text)
     for qn_json in qns_json:
         all_qns_json.append(qn_json)
+        
 final_qns_json = []
 for qn_obj in all_qns_json:
     final_qns_json.append({
         "question": qn_obj["question"],
         "options": qn_obj["options"],
         "correct_option": qn_obj["correct_option"],
-        "reasoning": qn_obj["reasoning"]
+        "detailed_solution": qn_obj["reasoning"]
     })
-with open('output/sample.json', 'w') as json_file:
+with open('output/final_underlined.json', 'w') as json_file:
     json.dump(final_qns_json, json_file, indent=4)
 
     
