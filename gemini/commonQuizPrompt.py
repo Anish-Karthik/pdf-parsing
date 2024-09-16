@@ -53,8 +53,16 @@ model = generativeai.GenerativeModel(
     model_name="gemini-1.5-flash"
 )
 
+all_qns_json = []
+
 for theme in underlined_themes:
-  print(get_quiz_delayed_prompt(theme))
-  print("\n\n\n")
+  json_text = get_quiz_delayed_prompt(theme)
+  qns_json = json.loads(json_text)
+  
+  for qn_json in qns_json:
+      all_qns_json.append(qn_json)
+
+    
+  
   
 
