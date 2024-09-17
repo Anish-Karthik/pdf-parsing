@@ -1,0 +1,1921 @@
+{
+  "id": 71,
+  "name": null,
+  "title": "Motion In Plane",
+  "description": "",
+  "difficulty_level": null,
+  "topic": "Motion In Plane",
+  "time": "2024-07-21T18:30:00.000+05:30",
+  "is_published": true,
+  "created_at": "2024-07-22T09:13:55.745+05:30",
+  "updated_at": "2024-07-28T18:10:50.005+05:30",
+  "duration": 35,
+  "end_time": "2024-07-22T18:30:00.000+05:30",
+  "negative_marks": "1.0",
+  "correct_answer_marks": "4.0",
+  "shuffle": true,
+  "show_answers": true,
+  "lock_solutions": false,
+  "is_form": false,
+  "show_mastery_option": false,
+  "reading_material": null,
+  "ends_at": "2024-09-18",
+  "lives": null,
+  "live_count": "Free Test",
+  "coin_count": -1,
+  "questions_count": null,
+  "daily_date": "September 17, 2024",
+  "max_mistake_count": 9,
+  "questions": [
+    {
+      "id": 4051,
+      "description": "A man projects a coin upwards from the gate of a uniformly moving train. The path of coin for the man will be -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:29:28.720+05:30",
+      "updated_at": "2024-08-02T10:20:03.328+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16215,
+          "description": "Parabolic",
+          "question_id": 4051,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:29:28.723+05:30",
+          "updated_at": "2024-07-22T07:29:28.723+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16216,
+          "description": "Inclined straight line",
+          "question_id": 4051,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:29:28.724+05:30",
+          "updated_at": "2024-07-22T07:29:28.724+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16217,
+          "description": "Vertical straight line",
+          "question_id": 4051,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:29:28.726+05:30",
+          "updated_at": "2024-07-22T07:29:28.726+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16218,
+          "description": "Horizontal straight line",
+          "question_id": 4051,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:29:28.728+05:30",
+          "updated_at": "2024-07-22T07:29:28.728+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4052,
+      "description": "From the top of a tower at height h, a particle is projected hotizontally with velocity u and another particle is thrown down with the same velocity u. If the time taken by these be t₁ and t₂, then",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:31:38.126+05:30",
+      "updated_at": "2024-08-02T10:20:03.434+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16219,
+          "description": "t₁ > t₂",
+          "question_id": 4052,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:31:38.129+05:30",
+          "updated_at": "2024-07-22T07:31:48.060+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16220,
+          "description": "t₁ < t₂",
+          "question_id": 4052,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:31:38.132+05:30",
+          "updated_at": "2024-07-22T07:31:38.132+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16221,
+          "description": "t₂ = t₂",
+          "question_id": 4052,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:31:38.134+05:30",
+          "updated_at": "2024-07-22T07:31:38.134+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16222,
+          "description": "t₂ = 2t₂",
+          "question_id": 4052,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:31:38.136+05:30",
+          "updated_at": "2024-07-22T07:31:38.136+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4053,
+      "description": "In the above problem the speeds of the particles when they touch the ground level are related",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:33:30.222+05:30",
+      "updated_at": "2024-08-02T10:20:03.533+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16223,
+          "description": "v₁ > v₂",
+          "question_id": 4053,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:33:30.225+05:30",
+          "updated_at": "2024-07-22T07:33:30.225+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16224,
+          "description": "v₁ < v₂",
+          "question_id": 4053,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:33:30.228+05:30",
+          "updated_at": "2024-07-22T07:33:30.228+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16225,
+          "description": "v₁ = v₂",
+          "question_id": 4053,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:33:30.229+05:30",
+          "updated_at": "2024-07-22T07:33:30.229+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16226,
+          "description": "v₁ = 2v₂",
+          "question_id": 4053,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:33:30.231+05:30",
+          "updated_at": "2024-07-22T07:33:30.231+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4054,
+      "description": "A ball is thrown upwards and it returns to ground describing a parabolic path. Which of the following remains constant",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:34:31.850+05:30",
+      "updated_at": "2024-08-02T10:20:03.625+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16227,
+          "description": "Kinetic energy of the ball",
+          "question_id": 4054,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:34:31.853+05:30",
+          "updated_at": "2024-07-22T07:34:31.853+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16228,
+          "description": "Speed of the ball",
+          "question_id": 4054,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:34:31.857+05:30",
+          "updated_at": "2024-07-22T07:34:31.857+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16229,
+          "description": "Horizontal component of velocity",
+          "question_id": 4054,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:34:31.865+05:30",
+          "updated_at": "2024-07-22T07:34:31.865+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16230,
+          "description": "Vertical component of velocity",
+          "question_id": 4054,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:34:31.867+05:30",
+          "updated_at": "2024-07-22T07:34:31.867+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4055,
+      "description": "A gun is aimed at a target in a line of its barrel. The target is released and allowed to fall under gravity at the same instant the gun is fired. The bullet will",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:36:29.713+05:30",
+      "updated_at": "2024-08-02T10:20:03.714+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16231,
+          "description": "Pass above the target",
+          "question_id": 4055,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:36:29.716+05:30",
+          "updated_at": "2024-07-22T07:36:29.716+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16232,
+          "description": "Pass below the target",
+          "question_id": 4055,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:36:29.718+05:30",
+          "updated_at": "2024-07-22T07:36:29.718+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16233,
+          "description": "Hit the target",
+          "question_id": 4055,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:36:29.720+05:30",
+          "updated_at": "2024-07-22T07:36:29.720+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16234,
+          "description": "Certainly miss the target",
+          "question_id": 4055,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:36:29.721+05:30",
+          "updated_at": "2024-07-22T07:36:29.721+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4056,
+      "description": "A cricketer can throw a ball to a maximum horizontal distance of 100 m. With the same effort, he throws the ball vertically upwards. The maximum height attained by the ball is",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:37:00.276+05:30",
+      "updated_at": "2024-08-02T10:20:03.805+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16235,
+          "description": "100 m",
+          "question_id": 4056,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:37:00.279+05:30",
+          "updated_at": "2024-07-22T07:37:00.279+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16236,
+          "description": "80 m",
+          "question_id": 4056,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:37:00.282+05:30",
+          "updated_at": "2024-07-22T07:37:00.282+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16237,
+          "description": "60 m",
+          "question_id": 4056,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:37:00.284+05:30",
+          "updated_at": "2024-07-22T07:37:00.284+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16238,
+          "description": "50 m",
+          "question_id": 4056,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:37:00.286+05:30",
+          "updated_at": "2024-07-22T07:37:00.286+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4057,
+      "description": "The trajectory of a projectile as seen from another projectile is a -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:37:38.141+05:30",
+      "updated_at": "2024-08-02T10:20:03.895+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16239,
+          "description": "straight line",
+          "question_id": 4057,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:37:38.144+05:30",
+          "updated_at": "2024-07-22T07:37:38.144+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16240,
+          "description": "parabola",
+          "question_id": 4057,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:37:38.147+05:30",
+          "updated_at": "2024-07-22T07:37:38.147+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16241,
+          "description": "ellipse",
+          "question_id": 4057,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:37:38.149+05:30",
+          "updated_at": "2024-07-22T07:37:38.149+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16242,
+          "description": "circle",
+          "question_id": 4057,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:37:38.151+05:30",
+          "updated_at": "2024-07-22T07:37:38.151+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4058,
+      "description": "An object is projected with a velocity of 20m/s making an angle of 45⁰ with horizontal. The equation for the tranjectory is h=Ax–Bx² where h is height, x is horizontal distance. A and B are constants. The ratio A:B is (g=10 ms¯²)",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:40:31.612+05:30",
+      "updated_at": "2024-08-02T10:20:03.991+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16243,
+          "description": "1:5",
+          "question_id": 4058,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:40:31.615+05:30",
+          "updated_at": "2024-07-22T07:40:31.615+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16244,
+          "description": "5:1",
+          "question_id": 4058,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:40:31.616+05:30",
+          "updated_at": "2024-07-22T07:40:31.616+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16245,
+          "description": "1:40",
+          "question_id": 4058,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:40:31.618+05:30",
+          "updated_at": "2024-07-22T07:40:31.618+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16246,
+          "description": "40:1",
+          "question_id": 4058,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:40:31.619+05:30",
+          "updated_at": "2024-07-22T07:40:31.619+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4059,
+      "description": "A particle is projected from the ground at an angle of θ with the horizontal with an initial speed of u. Time after which velocity vector of the projectile is perpendicular to the initial velocity is -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:43:50.956+05:30",
+      "updated_at": "2024-08-02T10:20:04.080+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16247,
+          "description": "u/(g sinθ)",
+          "question_id": 4059,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:43:50.960+05:30",
+          "updated_at": "2024-07-22T07:43:50.960+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16248,
+          "description": "u/(g cosθ)",
+          "question_id": 4059,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:43:50.963+05:30",
+          "updated_at": "2024-07-22T07:43:50.963+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16249,
+          "description": "2u/(g sinθ)",
+          "question_id": 4059,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:43:50.965+05:30",
+          "updated_at": "2024-07-22T07:43:50.965+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16250,
+          "description": "2u tanθ)",
+          "question_id": 4059,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:43:50.967+05:30",
+          "updated_at": "2024-07-22T07:43:50.967+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4060,
+      "description": "A ball is projected upwards from the foot of a tower. The ball crosses the top of the tower twice after an interval of 6s and the ball reaches the ground after 12s. The height of the tower is (g = 10m/s²) -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:44:42.700+05:30",
+      "updated_at": "2024-08-02T10:20:04.172+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16251,
+          "description": "120 m",
+          "question_id": 4060,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:44:42.706+05:30",
+          "updated_at": "2024-07-22T07:44:42.706+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16252,
+          "description": "135 m",
+          "question_id": 4060,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:44:42.710+05:30",
+          "updated_at": "2024-07-22T07:44:42.710+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16253,
+          "description": "175 m",
+          "question_id": 4060,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:44:42.712+05:30",
+          "updated_at": "2024-07-22T07:44:42.712+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16254,
+          "description": "80 m",
+          "question_id": 4060,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:44:42.715+05:30",
+          "updated_at": "2024-07-22T07:44:42.715+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4061,
+      "description": "Ratio of minimum kinetic energies of two projectiles of same mass is 4 : 1. The ratio of the maximum height attained by them is also 4 : 1. The ratio of their ranges would be -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:45:39.588+05:30",
+      "updated_at": "2024-08-02T10:20:04.261+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16255,
+          "description": "16 : 1",
+          "question_id": 4061,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:45:39.591+05:30",
+          "updated_at": "2024-07-22T07:45:39.591+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16256,
+          "description": "4 : 1",
+          "question_id": 4061,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:45:39.592+05:30",
+          "updated_at": "2024-07-22T07:45:39.592+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16257,
+          "description": "8 : 1",
+          "question_id": 4061,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:45:39.593+05:30",
+          "updated_at": "2024-07-22T07:45:39.593+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16258,
+          "description": "2 : 1",
+          "question_id": 4061,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:45:39.595+05:30",
+          "updated_at": "2024-07-22T07:45:39.595+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4062,
+      "description": "If the time of flight of a projection is doubled, what happens to the maximum height attained is -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:46:49.025+05:30",
+      "updated_at": "2024-08-02T10:20:04.351+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16259,
+          "description": "Halved",
+          "question_id": 4062,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:46:49.030+05:30",
+          "updated_at": "2024-07-22T07:46:49.030+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16260,
+          "description": "Unchanged",
+          "question_id": 4062,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:46:49.034+05:30",
+          "updated_at": "2024-07-22T07:46:49.034+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16261,
+          "description": "Doubled",
+          "question_id": 4062,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:46:49.036+05:30",
+          "updated_at": "2024-07-22T07:46:49.036+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16262,
+          "description": "Quadrupled",
+          "question_id": 4062,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:46:49.038+05:30",
+          "updated_at": "2024-07-22T07:46:49.038+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4063,
+      "description": "A ball is thrown at different angles with the same speed u and from the same point and it has the same range in both the cases. If y₁ and y₂ be the heights attained in the two cases then y₁ + y₂ = .... -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:49:22.981+05:30",
+      "updated_at": "2024-08-02T10:20:04.441+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16263,
+          "description": "u²/g",
+          "question_id": 4063,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:49:22.984+05:30",
+          "updated_at": "2024-07-22T07:49:22.984+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16264,
+          "description": "2u²/g",
+          "question_id": 4063,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:49:22.987+05:30",
+          "updated_at": "2024-07-22T07:49:22.987+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16265,
+          "description": "u²/2g",
+          "question_id": 4063,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:49:22.989+05:30",
+          "updated_at": "2024-07-22T07:49:22.989+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16266,
+          "description": "u²/4g",
+          "question_id": 4063,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:49:22.991+05:30",
+          "updated_at": "2024-07-22T07:49:22.991+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4064,
+      "description": "A particle moving with velocity of 4m/s is subjected to an acceleration of 1.5 m/s² for 2 sec, in a direction at right angles to its initial direction of motion. The magnitude of its resultant velocity will be -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:52:57.868+05:30",
+      "updated_at": "2024-08-02T10:20:04.534+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16267,
+          "description": "4 m/s",
+          "question_id": 4064,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:52:57.872+05:30",
+          "updated_at": "2024-07-22T07:52:57.872+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16268,
+          "description": "5 m/s",
+          "question_id": 4064,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:52:57.875+05:30",
+          "updated_at": "2024-07-22T07:52:57.875+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16269,
+          "description": "8 m/s",
+          "question_id": 4064,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:52:57.877+05:30",
+          "updated_at": "2024-07-22T07:52:57.877+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16270,
+          "description": "10 m/s",
+          "question_id": 4064,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:52:57.878+05:30",
+          "updated_at": "2024-07-22T07:52:57.878+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4065,
+      "description": "A bullet is fired horizontaly from a gun with a velocity of 10³ m/s. A target 200 m away from the gun is to be pireced by it. At what height from the target should the gun be aimed? (g = 10 ms‾²).",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:54:29.527+05:30",
+      "updated_at": "2024-08-02T10:20:04.622+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16271,
+          "description": "0.2 m",
+          "question_id": 4065,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:54:29.531+05:30",
+          "updated_at": "2024-07-22T07:54:29.531+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16272,
+          "description": "0.1 m",
+          "question_id": 4065,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:54:29.534+05:30",
+          "updated_at": "2024-07-22T07:54:29.534+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16273,
+          "description": "200 m",
+          "question_id": 4065,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:54:29.536+05:30",
+          "updated_at": "2024-07-22T07:54:29.536+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16274,
+          "description": "√2 m",
+          "question_id": 4065,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:54:29.538+05:30",
+          "updated_at": "2024-07-22T07:54:29.538+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4066,
+      "description": "A particle reaches its highest point when it has covered exactly one half of its horizontal range. The corresponding point on the path of its motion is characterised by",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T07:55:46.871+05:30",
+      "updated_at": "2024-08-02T10:20:04.712+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16275,
+          "description": "Negative slope and zero curvature",
+          "question_id": 4066,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:55:46.875+05:30",
+          "updated_at": "2024-07-22T07:55:46.875+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16276,
+          "description": "Zero slope and negative curvature",
+          "question_id": 4066,
+          "is_correct": true,
+          "created_at": "2024-07-22T07:55:46.877+05:30",
+          "updated_at": "2024-07-22T07:55:46.877+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16277,
+          "description": "Zero slope and positive curvature",
+          "question_id": 4066,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:55:46.879+05:30",
+          "updated_at": "2024-07-22T07:55:46.879+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16278,
+          "description": "Positive slopoe and zero curvature",
+          "question_id": 4066,
+          "is_correct": false,
+          "created_at": "2024-07-22T07:55:46.881+05:30",
+          "updated_at": "2024-07-22T07:55:46.881+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4067,
+      "description": "In projectile motion from ground to ground power of the gravitational force :\r\n(a)  is constant throughout\t\r\n(b)  is negative for first half, zero at topmost point and positive for rest half\r\n(c) varies linearly with time\r\n(d) is positive for complete path",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:28:53.830+05:30",
+      "updated_at": "2024-08-02T10:20:04.802+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16279,
+          "description": "only a",
+          "question_id": 4067,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:28:53.833+05:30",
+          "updated_at": "2024-07-22T08:28:53.833+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16280,
+          "description": "only d",
+          "question_id": 4067,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:28:53.835+05:30",
+          "updated_at": "2024-07-22T08:28:53.835+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16281,
+          "description": "b and c",
+          "question_id": 4067,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:28:53.837+05:30",
+          "updated_at": "2024-07-22T08:28:53.837+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16282,
+          "description": "only c",
+          "question_id": 4067,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:28:53.838+05:30",
+          "updated_at": "2024-07-22T08:28:53.838+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4068,
+      "description": "Two particles are projected from the same point on ground simultaneously with speeds 20 m/s and 20/√3 m/s at angle 30⁰ and 60⁰ with the horizontal in the same direction. The distance between them when both of them strike the ground is approximately : (g = 10 m/s²) -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:34:36.456+05:30",
+      "updated_at": "2024-08-02T10:20:04.891+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16283,
+          "description": "23.1 m",
+          "question_id": 4068,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:34:36.491+05:30",
+          "updated_at": "2024-07-22T08:34:36.491+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16284,
+          "description": "16.4 m",
+          "question_id": 4068,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:34:36.496+05:30",
+          "updated_at": "2024-07-22T08:34:36.496+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16285,
+          "description": "30.2 m",
+          "question_id": 4068,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:34:36.499+05:30",
+          "updated_at": "2024-07-22T08:34:36.499+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16286,
+          "description": "10.4 m",
+          "question_id": 4068,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:34:36.502+05:30",
+          "updated_at": "2024-07-22T08:34:36.502+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4069,
+      "description": "In above problem, what is the speed of the particle at this time-",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:40:30.235+05:30",
+      "updated_at": "2024-08-02T10:20:04.982+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16287,
+          "description": "22 m/s",
+          "question_id": 4069,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:40:30.240+05:30",
+          "updated_at": "2024-07-22T08:40:30.240+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16288,
+          "description": "30 m/s",
+          "question_id": 4069,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:40:30.243+05:30",
+          "updated_at": "2024-07-22T08:40:30.243+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16289,
+          "description": "34 m/s",
+          "question_id": 4069,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:40:30.246+05:30",
+          "updated_at": "2024-07-22T08:40:30.246+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16290,
+          "description": "26 m/s",
+          "question_id": 4069,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:40:30.248+05:30",
+          "updated_at": "2024-07-22T08:40:30.248+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4070,
+      "description": "A hiker stands on the edge of a cliff 490 m above the ground and throws a stone horizontally with an initial speed of 15 m/s. Neglecting air resistance, find (i) the time taken by the stone to reach the ground, (ii) speed by which it will strike the ground -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:41:51.304+05:30",
+      "updated_at": "2024-08-02T10:20:05.073+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16291,
+          "description": "5 sec, 99 m/s",
+          "question_id": 4070,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:41:51.307+05:30",
+          "updated_at": "2024-07-22T08:41:51.307+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16292,
+          "description": "10 sec, 99 m/s",
+          "question_id": 4070,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:41:51.309+05:30",
+          "updated_at": "2024-07-22T08:41:51.309+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16293,
+          "description": "12 sec, 90 m/s",
+          "question_id": 4070,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:41:51.312+05:30",
+          "updated_at": "2024-07-22T08:41:51.312+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16294,
+          "description": "8 sec, 80 m/s",
+          "question_id": 4070,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:41:51.314+05:30",
+          "updated_at": "2024-07-22T08:41:51.314+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4071,
+      "description": "A cricket ball is thrown at a speed of 28 m/s in a direction 30⁰ above the horizontal from the ground. Then -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:42:33.218+05:30",
+      "updated_at": "2024-08-02T10:20:05.166+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16295,
+          "description": "Horizontal range is 69 m.",
+          "question_id": 4071,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:42:33.221+05:30",
+          "updated_at": "2024-07-22T08:42:33.221+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16296,
+          "description": "Maximum height is 10 m.",
+          "question_id": 4071,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:42:33.224+05:30",
+          "updated_at": "2024-07-22T08:42:33.224+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16297,
+          "description": "Time of flight is 2.9 sec.",
+          "question_id": 4071,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:42:33.227+05:30",
+          "updated_at": "2024-07-22T08:42:33.227+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16298,
+          "description": "All of these",
+          "question_id": 4071,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:42:33.229+05:30",
+          "updated_at": "2024-07-22T08:42:33.229+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4072,
+      "description": "In the above question, the magnitude of average velocity will be -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:43:27.828+05:30",
+      "updated_at": "2024-08-02T10:20:05.254+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16299,
+          "description": "11.4 km/h",
+          "question_id": 4072,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:43:27.831+05:30",
+          "updated_at": "2024-07-22T08:43:27.831+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16300,
+          "description": "21.4 km/h",
+          "question_id": 4072,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:43:27.834+05:30",
+          "updated_at": "2024-07-22T13:03:45.689+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16301,
+          "description": "15 km/h",
+          "question_id": 4072,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:43:27.836+05:30",
+          "updated_at": "2024-07-22T08:43:27.836+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16302,
+          "description": "30.4 km/h",
+          "question_id": 4072,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:43:27.838+05:30",
+          "updated_at": "2024-07-22T13:03:45.693+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4073,
+      "description": "A man can swmim with a speed of 4 km/h in still water. How long does he take to cross a river 1 km wide if the river flows steadily at 3 km/h and he makes his strokes normal to the river current -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:44:46.827+05:30",
+      "updated_at": "2024-08-02T10:20:05.413+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16303,
+          "description": "5 min",
+          "question_id": 4073,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:44:46.832+05:30",
+          "updated_at": "2024-07-22T08:44:46.832+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16304,
+          "description": "10 min",
+          "question_id": 4073,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:44:46.835+05:30",
+          "updated_at": "2024-07-22T08:44:46.835+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16305,
+          "description": "15 min",
+          "question_id": 4073,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:44:46.838+05:30",
+          "updated_at": "2024-07-22T08:44:46.838+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16306,
+          "description": "20 min",
+          "question_id": 4073,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:44:46.845+05:30",
+          "updated_at": "2024-07-22T08:44:46.845+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4074,
+      "description": "In the above question, how far down the river does he go when he reaches the other bank -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:45:25.975+05:30",
+      "updated_at": "2024-08-02T10:20:05.503+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16307,
+          "description": "250 m",
+          "question_id": 4074,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:45:25.979+05:30",
+          "updated_at": "2024-07-22T08:45:25.979+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16308,
+          "description": "750 m",
+          "question_id": 4074,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:45:25.981+05:30",
+          "updated_at": "2024-07-22T08:45:25.981+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16309,
+          "description": "500 m",
+          "question_id": 4074,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:45:25.984+05:30",
+          "updated_at": "2024-07-22T08:45:25.984+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16310,
+          "description": "1000 m",
+          "question_id": 4074,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:45:25.986+05:30",
+          "updated_at": "2024-07-22T08:45:25.986+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4075,
+      "description": "A cricketer can thrown a ball to a maximum norizontal distance of 100 m. How much high above the ground can the cricketer throw the same ball -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:46:35.671+05:30",
+      "updated_at": "2024-08-02T10:20:05.593+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16311,
+          "description": "25 m",
+          "question_id": 4075,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:46:35.673+05:30",
+          "updated_at": "2024-07-22T08:46:35.673+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16312,
+          "description": "50 m",
+          "question_id": 4075,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:46:35.675+05:30",
+          "updated_at": "2024-07-22T08:46:35.675+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16313,
+          "description": "75 m",
+          "question_id": 4075,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:46:35.677+05:30",
+          "updated_at": "2024-07-22T08:46:35.677+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16314,
+          "description": "100 m",
+          "question_id": 4075,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:46:35.679+05:30",
+          "updated_at": "2024-07-22T08:46:35.679+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4076,
+      "description": "If R and H represent horizontal range and maximum height of the projectile, then the angle of projection with the horizontal is -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:48:25.466+05:30",
+      "updated_at": "2024-08-02T10:20:05.686+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16315,
+          "description": "tan¯¹(H/R)",
+          "question_id": 4076,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:48:25.470+05:30",
+          "updated_at": "2024-07-22T13:04:41.686+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16316,
+          "description": "tan¯¹(2H/R)",
+          "question_id": 4076,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:48:25.473+05:30",
+          "updated_at": "2024-07-22T13:04:41.690+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16317,
+          "description": "tan¯¹(4H/R)",
+          "question_id": 4076,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:48:25.475+05:30",
+          "updated_at": "2024-07-22T13:04:41.692+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16318,
+          "description": "tan¯¹(5H/R)",
+          "question_id": 4076,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:48:25.478+05:30",
+          "updated_at": "2024-07-22T13:04:41.694+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4077,
+      "description": "The horizontal range of a projectile fired at an angle of 15° is 50 m. If it is fired with the same speed at an angle of 45°, its range will be -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:50:24.137+05:30",
+      "updated_at": "2024-08-02T10:20:05.776+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16319,
+          "description": "60 m",
+          "question_id": 4077,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:50:24.143+05:30",
+          "updated_at": "2024-07-22T08:50:24.143+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16320,
+          "description": "71 m",
+          "question_id": 4077,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:50:24.146+05:30",
+          "updated_at": "2024-07-22T08:50:24.146+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16321,
+          "description": "100 m",
+          "question_id": 4077,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:50:24.148+05:30",
+          "updated_at": "2024-07-22T08:50:24.148+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16322,
+          "description": "141 m",
+          "question_id": 4077,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:50:24.151+05:30",
+          "updated_at": "2024-07-22T08:50:24.151+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4078,
+      "description": "A motorboat is racing towards north at 25 km/h and the water current in that region is 10 km/h in the direction of 60⁰ east of south. Find the magnitude of resultant velocity of the boat -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T08:51:26.320+05:30",
+      "updated_at": "2024-08-02T10:20:05.867+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16323,
+          "description": "18 km/h",
+          "question_id": 4078,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:51:26.324+05:30",
+          "updated_at": "2024-07-22T08:51:26.324+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16324,
+          "description": "22 km/h",
+          "question_id": 4078,
+          "is_correct": true,
+          "created_at": "2024-07-22T08:51:26.327+05:30",
+          "updated_at": "2024-07-22T08:51:26.327+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16325,
+          "description": "25 km/h",
+          "question_id": 4078,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:51:26.329+05:30",
+          "updated_at": "2024-07-22T08:51:26.329+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16326,
+          "description": "15 km/h",
+          "question_id": 4078,
+          "is_correct": false,
+          "created_at": "2024-07-22T08:51:26.332+05:30",
+          "updated_at": "2024-07-22T08:51:26.332+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4079,
+      "description": "Two objects are projected from ground with same speed at angle (45° + α) and (45° – α) respectively. Find out ratio of their horizontal range -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T09:00:29.083+05:30",
+      "updated_at": "2024-08-02T10:20:05.960+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16327,
+          "description": "1/2",
+          "question_id": 4079,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:00:29.087+05:30",
+          "updated_at": "2024-07-22T09:00:29.087+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16328,
+          "description": "1/3",
+          "question_id": 4079,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:00:29.090+05:30",
+          "updated_at": "2024-07-22T09:00:29.090+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16329,
+          "description": "1",
+          "question_id": 4079,
+          "is_correct": true,
+          "created_at": "2024-07-22T09:00:29.092+05:30",
+          "updated_at": "2024-07-22T09:00:29.092+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16330,
+          "description": "1/4",
+          "question_id": 4079,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:00:29.094+05:30",
+          "updated_at": "2024-07-22T09:00:29.094+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4080,
+      "description": "On an open ground, a motorist follows a track that turns to his left by an angle of 60° after every 500 m. Starting from a given turn, the displacement of the motorist at the third turn is -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T09:02:08.047+05:30",
+      "updated_at": "2024-08-02T10:20:06.052+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16331,
+          "description": "500 m",
+          "question_id": 4080,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:02:08.049+05:30",
+          "updated_at": "2024-07-22T09:02:08.049+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16332,
+          "description": "500√3 m",
+          "question_id": 4080,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:02:08.051+05:30",
+          "updated_at": "2024-07-22T09:02:08.051+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16333,
+          "description": "1000 m",
+          "question_id": 4080,
+          "is_correct": true,
+          "created_at": "2024-07-22T09:02:08.053+05:30",
+          "updated_at": "2024-07-22T09:02:08.053+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16334,
+          "description": "1000√3 m",
+          "question_id": 4080,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:02:08.055+05:30",
+          "updated_at": "2024-07-22T09:02:08.055+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4081,
+      "description": "In a harbour, wind is blowing at the speed of 72 km/h and the flag on the mast of a boat anchored in the harbour flutters along the N-E direction. If the boat starts moving at a speed of 51 km/h to the north. What is the approximate direction of the flag on the mast of the boat (approximately)",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T09:04:08.542+05:30",
+      "updated_at": "2024-08-02T10:20:06.142+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16335,
+          "description": "East",
+          "question_id": 4081,
+          "is_correct": true,
+          "created_at": "2024-07-22T09:04:08.544+05:30",
+          "updated_at": "2024-07-22T09:04:14.218+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16336,
+          "description": "North",
+          "question_id": 4081,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:04:08.546+05:30",
+          "updated_at": "2024-07-22T09:04:08.546+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16337,
+          "description": "30⁰ east of north",
+          "question_id": 4081,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:04:08.548+05:30",
+          "updated_at": "2024-07-22T09:04:08.548+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16338,
+          "description": "30⁰ north of east",
+          "question_id": 4081,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:04:08.549+05:30",
+          "updated_at": "2024-07-22T09:04:08.549+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4082,
+      "description": "The ceiling of a long hall is 25 m high. what is the maximum horizontal distance that a ball thrown with a speed of 40 m/s can go without hitting the ceiling of the hall -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T09:05:23.595+05:30",
+      "updated_at": "2024-08-02T10:20:06.235+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16339,
+          "description": "110 m",
+          "question_id": 4082,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:05:23.599+05:30",
+          "updated_at": "2024-07-22T09:05:23.599+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16340,
+          "description": "130 m",
+          "question_id": 4082,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:05:23.601+05:30",
+          "updated_at": "2024-07-22T09:05:23.601+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16341,
+          "description": "150.5 m",
+          "question_id": 4082,
+          "is_correct": true,
+          "created_at": "2024-07-22T09:05:23.604+05:30",
+          "updated_at": "2024-07-22T09:05:23.604+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16342,
+          "description": "170.5",
+          "question_id": 4082,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:05:23.606+05:30",
+          "updated_at": "2024-07-22T09:05:23.606+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4083,
+      "description": "An aircraft is flying at a height of 3400 m above the ground. If the angle subtended at a ground observation point by the aircraft positions 10 s apart is 30⁰. What is the speed of the aircraft -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T09:06:39.812+05:30",
+      "updated_at": "2024-08-02T10:20:06.325+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16343,
+          "description": "150 m/s",
+          "question_id": 4083,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:06:39.816+05:30",
+          "updated_at": "2024-07-22T09:06:39.816+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16344,
+          "description": "182 m/s",
+          "question_id": 4083,
+          "is_correct": true,
+          "created_at": "2024-07-22T09:06:39.818+05:30",
+          "updated_at": "2024-07-22T09:06:39.818+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16345,
+          "description": "130 m/s",
+          "question_id": 4083,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:06:39.820+05:30",
+          "updated_at": "2024-07-22T09:06:39.820+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16346,
+          "description": "240 m/s",
+          "question_id": 4083,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:06:39.823+05:30",
+          "updated_at": "2024-07-22T09:06:39.823+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4084,
+      "description": "In above problem, at what minimum altitude should the pilot fly the plane to avoid being hit -",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T09:08:36.433+05:30",
+      "updated_at": "2024-08-02T10:20:06.416+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16347,
+          "description": "4 km",
+          "question_id": 4084,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:08:36.437+05:30",
+          "updated_at": "2024-07-22T09:08:36.437+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16348,
+          "description": "12 km",
+          "question_id": 4084,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:08:36.440+05:30",
+          "updated_at": "2024-07-22T09:08:36.440+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16349,
+          "description": "16 km",
+          "question_id": 4084,
+          "is_correct": true,
+          "created_at": "2024-07-22T09:08:36.442+05:30",
+          "updated_at": "2024-07-22T09:08:36.442+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16350,
+          "description": "20 km",
+          "question_id": 4084,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:08:36.444+05:30",
+          "updated_at": "2024-07-22T09:08:36.444+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4085,
+      "description": "In a two dimensional motion, instantaneous speed v₀ is a positive constant. Then which of the following are necessarily true-",
+      "difficulty_level": null,
+      "topic": "Motion in a Plane",
+      "is_published": true,
+      "created_at": "2024-07-22T09:09:40.653+05:30",
+      "updated_at": "2024-08-02T10:20:06.510+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 16351,
+          "description": "The average velocity is not zero at any time interval.",
+          "question_id": 4085,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:09:40.656+05:30",
+          "updated_at": "2024-07-22T09:09:40.656+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16352,
+          "description": "Average acceleration must always vanish.",
+          "question_id": 4085,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:09:40.658+05:30",
+          "updated_at": "2024-07-22T09:09:40.658+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16353,
+          "description": "Displacements in equal time intervals are equal.",
+          "question_id": 4085,
+          "is_correct": false,
+          "created_at": "2024-07-22T09:09:40.659+05:30",
+          "updated_at": "2024-07-22T09:09:40.659+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 16354,
+          "description": "Equal path lengths are traversed in equal intervals.",
+          "question_id": 4085,
+          "is_correct": true,
+          "created_at": "2024-07-22T09:09:40.661+05:30",
+          "updated_at": "2024-07-22T09:09:40.661+05:30",
+          "unanswered": false
+        }
+      ]
+    }
+  ]
+}

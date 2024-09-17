@@ -1,0 +1,517 @@
+{
+  "id": 136,
+  "name": null,
+  "title": "THERMODYNAMICS",
+  "description": "",
+  "difficulty_level": null,
+  "topic": "Thermodynamics ",
+  "time": "2024-08-17T18:30:00.000+05:30",
+  "is_published": true,
+  "created_at": "2024-08-18T09:47:56.396+05:30",
+  "updated_at": "2024-08-30T17:33:51.472+05:30",
+  "duration": 9,
+  "end_time": "2024-08-18T18:30:00.000+05:30",
+  "negative_marks": "1.0",
+  "correct_answer_marks": "4.0",
+  "shuffle": true,
+  "show_answers": true,
+  "lock_solutions": false,
+  "is_form": false,
+  "show_mastery_option": false,
+  "reading_material": null,
+  "ends_at": "2024-09-18",
+  "lives": null,
+  "live_count": "Free Test",
+  "coin_count": -1,
+  "questions_count": null,
+  "daily_date": "September 17, 2024",
+  "max_mistake_count": 9,
+  "questions": [
+    {
+      "id": 6279,
+      "description": "An ideal gas is compressed to half its initial volume by means of several processes. Which of the process results in the maximum work done on the gas?",
+      "difficulty_level": null,
+      "topic": "THERMODYNAMICS ",
+      "is_published": true,
+      "created_at": "2024-08-18T06:10:49.351+05:30",
+      "updated_at": "2024-08-20T06:08:55.419+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25168,
+          "description": "Isobaric",
+          "question_id": 6279,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:10:49.355+05:30",
+          "updated_at": "2024-08-18T06:10:49.355+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25169,
+          "description": "Isochoric",
+          "question_id": 6279,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:10:49.359+05:30",
+          "updated_at": "2024-08-18T06:10:49.359+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25170,
+          "description": "Isothermal",
+          "question_id": 6279,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:10:49.363+05:30",
+          "updated_at": "2024-08-18T06:10:49.363+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25171,
+          "description": "Adiabatic",
+          "question_id": 6279,
+          "is_correct": true,
+          "created_at": "2024-08-18T06:10:49.370+05:30",
+          "updated_at": "2024-08-18T06:10:49.370+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6280,
+      "description": "A gas is compressed isothermally to half its initial volume. The same gas is compressed separately through an adiabatic process until its volume is again reduced to half. Then",
+      "difficulty_level": null,
+      "topic": "THERMODYNAMICS ",
+      "is_published": true,
+      "created_at": "2024-08-18T06:13:28.968+05:30",
+      "updated_at": "2024-08-18T06:21:33.964+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25172,
+          "description": "Compressing the gas isothermally will require more work to be done.",
+          "question_id": 6280,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:21:33.967+05:30",
+          "updated_at": "2024-08-18T06:21:33.967+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25173,
+          "description": "Compressing the gas through adiabatic process will require more work to be done.",
+          "question_id": 6280,
+          "is_correct": true,
+          "created_at": "2024-08-18T06:21:33.970+05:30",
+          "updated_at": "2024-08-18T06:21:33.970+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25174,
+          "description": "Compressing the gas isothermally or adiabatically will require the same amount of work.",
+          "question_id": 6280,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:21:33.972+05:30",
+          "updated_at": "2024-08-18T06:21:33.972+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25175,
+          "description": "Which of the case (whether compression through isothermal or through adiabatic process) reqqires more work will depend upon the atomicity of the gas",
+          "question_id": 6280,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:21:33.974+05:30",
+          "updated_at": "2024-08-18T06:21:33.974+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6281,
+      "description": "Thermodynamic process are indicated in the following diagram:\r\nmatch the following\r\ncolumn I\r\nP. Process I\r\nQ. Process II\r\nR. Process III\r\nS. Process IV\r\ncolumn II\r\nA. Adiabatic \r\nB. Isobaric\r\nC. Isochoric\r\nD. Isothermal",
+      "difficulty_level": null,
+      "topic": "THERMODYNAMICS ",
+      "is_published": true,
+      "created_at": "2024-08-18T06:39:26.978+05:30",
+      "updated_at": "2024-08-18T06:39:26.978+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25176,
+          "description": "P(C),Q(A),R(D),S(B)",
+          "question_id": 6281,
+          "is_correct": true,
+          "created_at": "2024-08-18T06:39:26.982+05:30",
+          "updated_at": "2024-08-18T06:39:26.982+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25177,
+          "description": "P(C),Q(D),R(B),S(A)",
+          "question_id": 6281,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:39:26.985+05:30",
+          "updated_at": "2024-08-18T06:39:26.985+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25178,
+          "description": "P(D),Q(B),R(A),S(C)",
+          "question_id": 6281,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:39:26.987+05:30",
+          "updated_at": "2024-08-18T06:39:26.987+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25179,
+          "description": "P(A),Q(C),R(D),S(B)",
+          "question_id": 6281,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:39:26.990+05:30",
+          "updated_at": "2024-08-18T06:39:26.990+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6282,
+      "description": "A sample of 0.1 g of water at 100⁰C and normal pressure (1.013 × 10⁵ Nm¯²) require 54 cal of heat energy to convert to steam at 100⁰C. If the volume of the steam produced is 167.1 cc the change in internal energy of the sample is",
+      "difficulty_level": null,
+      "topic": "THERMODYNAMICS ",
+      "is_published": true,
+      "created_at": "2024-08-18T06:58:18.037+05:30",
+      "updated_at": "2024-08-20T06:04:18.877+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25180,
+          "description": "104.3 J",
+          "question_id": 6282,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:58:18.041+05:30",
+          "updated_at": "2024-08-18T06:58:18.041+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25181,
+          "description": "208.7 J",
+          "question_id": 6282,
+          "is_correct": true,
+          "created_at": "2024-08-18T06:58:18.043+05:30",
+          "updated_at": "2024-08-18T06:58:18.043+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25182,
+          "description": "84.5 J",
+          "question_id": 6282,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:58:18.045+05:30",
+          "updated_at": "2024-08-18T06:58:18.045+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25183,
+          "description": "42.2 J",
+          "question_id": 6282,
+          "is_correct": false,
+          "created_at": "2024-08-18T06:58:18.046+05:30",
+          "updated_at": "2024-08-18T06:58:18.046+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6283,
+      "description": "The Volume (v) of a monatomic gas varies with its temperature (T) as shown in the graph. The ratio of work done by the gas to the heat absorbed by it when it undergoes a change from state A to state B is",
+      "difficulty_level": null,
+      "topic": "THERMODYNAMICS ",
+      "is_published": true,
+      "created_at": "2024-08-18T07:01:21.948+05:30",
+      "updated_at": "2024-08-20T07:22:46.801+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25184,
+          "description": "2/5",
+          "question_id": 6283,
+          "is_correct": true,
+          "created_at": "2024-08-18T07:01:21.951+05:30",
+          "updated_at": "2024-08-18T07:01:21.951+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25185,
+          "description": "2/3",
+          "question_id": 6283,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:01:21.954+05:30",
+          "updated_at": "2024-08-18T07:01:21.954+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25186,
+          "description": "2/7",
+          "question_id": 6283,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:01:21.955+05:30",
+          "updated_at": "2024-08-18T07:01:21.955+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25187,
+          "description": "1/3",
+          "question_id": 6283,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:01:21.957+05:30",
+          "updated_at": "2024-08-18T07:01:21.957+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6284,
+      "description": "In Which of the following processes, heat is neither absorbed nor released by a system?",
+      "difficulty_level": null,
+      "topic": "THERMODYNAMICS ",
+      "is_published": true,
+      "created_at": "2024-08-18T07:02:46.546+05:30",
+      "updated_at": "2024-08-18T07:02:46.546+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25188,
+          "description": "isothermal",
+          "question_id": 6284,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:02:46.550+05:30",
+          "updated_at": "2024-08-18T07:02:46.550+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25189,
+          "description": "adiabatic",
+          "question_id": 6284,
+          "is_correct": true,
+          "created_at": "2024-08-18T07:02:46.551+05:30",
+          "updated_at": "2024-08-18T07:02:46.551+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25190,
+          "description": "isobaric",
+          "question_id": 6284,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:02:46.553+05:30",
+          "updated_at": "2024-08-18T07:02:46.553+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25191,
+          "description": "isochoric",
+          "question_id": 6284,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:02:46.554+05:30",
+          "updated_at": "2024-08-18T07:02:46.554+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6285,
+      "description": "Two cylinders A and B of equal capacity are connected to each other via a stop cock. A contains an ideal gas at standard temperature and pressure. B is completely evacuated. The entire system is thermally insulated. The stop cock is suddenly opened. The process is:",
+      "difficulty_level": null,
+      "topic": "THERMODYNAMICS ",
+      "is_published": true,
+      "created_at": "2024-08-18T07:06:07.183+05:30",
+      "updated_at": "2024-08-18T07:06:07.183+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25192,
+          "description": "adiabatic",
+          "question_id": 6285,
+          "is_correct": true,
+          "created_at": "2024-08-18T07:06:07.187+05:30",
+          "updated_at": "2024-08-18T07:06:07.187+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25193,
+          "description": "isochoric",
+          "question_id": 6285,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:06:07.190+05:30",
+          "updated_at": "2024-08-18T07:06:07.190+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25194,
+          "description": "isobaric",
+          "question_id": 6285,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:06:07.192+05:30",
+          "updated_at": "2024-08-18T07:06:07.192+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25195,
+          "description": "isothermal",
+          "question_id": 6285,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:06:07.194+05:30",
+          "updated_at": "2024-08-18T07:06:07.194+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6286,
+      "description": "A Carnot engine has an efficiency of 50% when its source is at a temperature 327⁰ C. The temperature of the sink is",
+      "difficulty_level": null,
+      "topic": "THERMODYNAMICS ",
+      "is_published": true,
+      "created_at": "2024-08-18T07:08:08.475+05:30",
+      "updated_at": "2024-08-18T07:08:08.475+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25196,
+          "description": "27⁰C",
+          "question_id": 6286,
+          "is_correct": true,
+          "created_at": "2024-08-18T07:08:08.478+05:30",
+          "updated_at": "2024-08-18T07:08:08.478+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25197,
+          "description": "15⁰C",
+          "question_id": 6286,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:08:08.481+05:30",
+          "updated_at": "2024-08-18T07:08:08.481+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25198,
+          "description": "100⁰C",
+          "question_id": 6286,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:08:08.483+05:30",
+          "updated_at": "2024-08-18T07:08:08.483+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25199,
+          "description": "200⁰C",
+          "question_id": 6286,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:08:08.485+05:30",
+          "updated_at": "2024-08-18T07:08:08.485+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6287,
+      "description": "An ideal gas undergoes four different processes from the same initial state as shown in the figure below. Those processes are adiabatic, isothermal isobaric and isochoric. The curve which represents the adiabatic process among 1,2,3 and 4 is :",
+      "difficulty_level": null,
+      "topic": "THERMODYNAMICS ",
+      "is_published": true,
+      "created_at": "2024-08-18T07:11:08.672+05:30",
+      "updated_at": "2024-08-18T07:12:10.582+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25200,
+          "description": "2",
+          "question_id": 6287,
+          "is_correct": true,
+          "created_at": "2024-08-18T07:11:08.675+05:30",
+          "updated_at": "2024-08-18T07:11:08.675+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25201,
+          "description": "3",
+          "question_id": 6287,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:11:08.679+05:30",
+          "updated_at": "2024-08-18T07:11:08.679+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25202,
+          "description": "4",
+          "question_id": 6287,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:11:08.681+05:30",
+          "updated_at": "2024-08-18T07:11:08.681+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25203,
+          "description": "1",
+          "question_id": 6287,
+          "is_correct": false,
+          "created_at": "2024-08-18T07:11:08.683+05:30",
+          "updated_at": "2024-08-18T07:11:08.683+05:30",
+          "unanswered": false
+        }
+      ]
+    }
+  ]
+}

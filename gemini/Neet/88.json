@@ -1,0 +1,1921 @@
+{
+  "id": 88,
+  "name": null,
+  "title": "ELECTROSTATICS POTENTIAL AND CAPACITANCE",
+  "description": "",
+  "difficulty_level": null,
+  "topic": "Electrostatics Potential And Capacitance ",
+  "time": "2024-07-26T18:30:00.000+05:30",
+  "is_published": true,
+  "created_at": "2024-07-27T10:59:17.373+05:30",
+  "updated_at": "2024-07-28T19:50:49.727+05:30",
+  "duration": 35,
+  "end_time": "2024-07-27T18:30:00.000+05:30",
+  "negative_marks": "1.0",
+  "correct_answer_marks": "4.0",
+  "shuffle": true,
+  "show_answers": true,
+  "lock_solutions": false,
+  "is_form": false,
+  "show_mastery_option": false,
+  "reading_material": null,
+  "ends_at": "2024-09-18",
+  "lives": null,
+  "live_count": "Free Test",
+  "coin_count": -1,
+  "questions_count": null,
+  "daily_date": "September 17, 2024",
+  "max_mistake_count": 9,
+  "questions": [
+    {
+      "id": 4601,
+      "description": "Three charges 2q, –q, –q are located at the vertices of an equilateral triangle. At the centre of the triangle-",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T08:50:17.764+05:30",
+      "updated_at": "2024-08-02T10:20:50.799+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18415,
+          "description": "the field is zero but potential is non-zero",
+          "question_id": 4601,
+          "is_correct": false,
+          "created_at": "2024-07-27T08:50:17.767+05:30",
+          "updated_at": "2024-07-27T08:50:17.767+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18416,
+          "description": "the field is non-zero but potential is zero",
+          "question_id": 4601,
+          "is_correct": true,
+          "created_at": "2024-07-27T08:50:17.770+05:30",
+          "updated_at": "2024-07-27T08:50:17.770+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18417,
+          "description": "both field and potential are zero",
+          "question_id": 4601,
+          "is_correct": false,
+          "created_at": "2024-07-27T08:50:17.772+05:30",
+          "updated_at": "2024-07-27T08:50:17.772+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18418,
+          "description": "both field and potential are non-zero",
+          "question_id": 4601,
+          "is_correct": false,
+          "created_at": "2024-07-27T08:50:17.774+05:30",
+          "updated_at": "2024-07-27T08:50:17.774+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4602,
+      "description": "Assertion : If a positive charge is released it moves from higher potential to lower potential. \r\nReason : Force on positive charge is along \r\n Ē, which is from high potential to low potential.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:01:58.427+05:30",
+      "updated_at": "2024-08-02T10:20:50.891+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18419,
+          "description": "Both Assertion & Reason are True & the Reason  is a correct explanation of the Assertion.",
+          "question_id": 4602,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:01:58.430+05:30",
+          "updated_at": "2024-07-27T09:01:58.430+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18420,
+          "description": "Both Assertion & Reason are True but Reason is not a correct explanation of the Assertion.",
+          "question_id": 4602,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:01:58.435+05:30",
+          "updated_at": "2024-07-27T09:01:58.435+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18421,
+          "description": "Assertion is True but the Reason is False.",
+          "question_id": 4602,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:01:58.437+05:30",
+          "updated_at": "2024-07-27T09:01:58.437+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18422,
+          "description": "Both Assertion & Reason are False.",
+          "question_id": 4602,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:01:58.441+05:30",
+          "updated_at": "2024-07-27T09:01:58.441+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4603,
+      "description": "If potential at  centre of  charged ring is V₀ then electric field at its centre will be (assume radius = R)",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:04:19.169+05:30",
+      "updated_at": "2024-08-02T10:20:50.981+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18423,
+          "description": "V₀/R",
+          "question_id": 4603,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:04:19.171+05:30",
+          "updated_at": "2024-07-27T09:04:19.171+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18424,
+          "description": "3V₀/2R",
+          "question_id": 4603,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:04:19.173+05:30",
+          "updated_at": "2024-07-27T09:04:19.173+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18425,
+          "description": "V₀/2R",
+          "question_id": 4603,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:04:19.175+05:30",
+          "updated_at": "2024-07-27T09:04:19.175+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18426,
+          "description": "Zero",
+          "question_id": 4603,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:04:19.177+05:30",
+          "updated_at": "2024-07-27T09:04:19.177+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4604,
+      "description": "Potential and field strenght at a certain distance from a point charge are 600 V and 200 N/C. Distance of the point from the charge is –",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:06:21.728+05:30",
+      "updated_at": "2024-08-02T10:20:51.078+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18427,
+          "description": "2 m",
+          "question_id": 4604,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:06:21.731+05:30",
+          "updated_at": "2024-07-27T09:06:21.731+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18428,
+          "description": "4 m",
+          "question_id": 4604,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:06:21.734+05:30",
+          "updated_at": "2024-07-27T09:06:21.734+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18429,
+          "description": "8 m",
+          "question_id": 4604,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:06:21.737+05:30",
+          "updated_at": "2024-07-27T09:06:21.737+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18430,
+          "description": "3 m",
+          "question_id": 4604,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:06:21.739+05:30",
+          "updated_at": "2024-07-27T09:06:21.739+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4605,
+      "description": "Consider the following statements and choose the correct option –\r\n(A)The potential of a charged conductor throughout its volume is same.\r\n(B)The line integral of electric field is zero along any path in electrostatic conductor.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:08:42.965+05:30",
+      "updated_at": "2024-08-02T10:20:51.170+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18431,
+          "description": "Both A and B are correct",
+          "question_id": 4605,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:08:42.970+05:30",
+          "updated_at": "2024-07-27T09:08:42.970+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18432,
+          "description": "Both A and B are incorrect",
+          "question_id": 4605,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:08:42.973+05:30",
+          "updated_at": "2024-07-27T09:08:42.973+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18433,
+          "description": "A is correct but B is incorrect",
+          "question_id": 4605,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:08:42.975+05:30",
+          "updated_at": "2024-07-27T09:08:42.975+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18434,
+          "description": "A is incorrect but B is correct",
+          "question_id": 4605,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:08:42.978+05:30",
+          "updated_at": "2024-07-27T09:08:42.978+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4606,
+      "description": "How electrostatic potential changes from one positive point charge to another identical point charge -",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:19:36.926+05:30",
+      "updated_at": "2024-08-02T10:20:51.262+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18435,
+          "description": "Constant",
+          "question_id": 4606,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:19:36.931+05:30",
+          "updated_at": "2024-07-27T09:19:36.931+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18436,
+          "description": "First increases then decreases",
+          "question_id": 4606,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:19:36.934+05:30",
+          "updated_at": "2024-07-27T09:19:36.934+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18437,
+          "description": "First decreases then increases",
+          "question_id": 4606,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:19:36.936+05:30",
+          "updated_at": "2024-07-27T09:19:36.936+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18438,
+          "description": "Decreases continuously",
+          "question_id": 4606,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:19:36.938+05:30",
+          "updated_at": "2024-07-27T09:19:36.938+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4607,
+      "description": "The radii of two conducting spheres are a and b respectively. They are at equal electric potential. The ratio of their surface density of charge is -",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:28:30.342+05:30",
+      "updated_at": "2024-08-02T10:20:51.352+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18439,
+          "description": "a²/b²",
+          "question_id": 4607,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:28:30.346+05:30",
+          "updated_at": "2024-07-27T09:28:30.346+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18440,
+          "description": "b/a",
+          "question_id": 4607,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:28:30.348+05:30",
+          "updated_at": "2024-07-27T09:28:30.348+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18441,
+          "description": "a/b",
+          "question_id": 4607,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:28:30.350+05:30",
+          "updated_at": "2024-07-27T09:28:30.350+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18442,
+          "description": "b²/a²",
+          "question_id": 4607,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:28:30.352+05:30",
+          "updated_at": "2024-07-27T09:28:30.352+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4608,
+      "description": "A hollow uniformly charged sphere has radius r. If the potential difference between its surface and a point at distance 2r from the centre is V, then the electric field intensity at a distance 2r from the centre is -",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:29:27.408+05:30",
+      "updated_at": "2024-08-02T10:20:51.444+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18443,
+          "description": "V/6r",
+          "question_id": 4608,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:29:27.411+05:30",
+          "updated_at": "2024-07-27T09:29:27.411+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18444,
+          "description": "V/4r",
+          "question_id": 4608,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:29:27.413+05:30",
+          "updated_at": "2024-07-27T09:29:27.413+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18445,
+          "description": "V/3r",
+          "question_id": 4608,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:29:27.414+05:30",
+          "updated_at": "2024-07-27T09:29:27.414+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18446,
+          "description": "V/2r",
+          "question_id": 4608,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:29:27.416+05:30",
+          "updated_at": "2024-07-27T09:29:27.416+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4609,
+      "description": "Electric potential at a point P, r distance away due to a point charge q at point A is V. If twice of this charge is distributed uniformly on the surface of a hollow sphere of radius 4r with centre at point  A, the potential at P now is -",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:36:07.318+05:30",
+      "updated_at": "2024-08-02T10:20:51.536+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18447,
+          "description": "V",
+          "question_id": 4609,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:36:07.322+05:30",
+          "updated_at": "2024-07-27T09:36:07.322+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18448,
+          "description": "V/2",
+          "question_id": 4609,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:36:07.325+05:30",
+          "updated_at": "2024-07-27T09:36:07.325+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18449,
+          "description": "V/4",
+          "question_id": 4609,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:36:07.327+05:30",
+          "updated_at": "2024-07-27T09:36:07.327+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18450,
+          "description": "V/8",
+          "question_id": 4609,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:36:07.329+05:30",
+          "updated_at": "2024-07-27T09:36:07.329+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4610,
+      "description": "At a point in space, the electric field points toward north. In the region surrounding this point, the rate of the change of potential will be zero along -",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:37:21.127+05:30",
+      "updated_at": "2024-08-02T10:20:51.631+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18451,
+          "description": "north",
+          "question_id": 4610,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:37:21.131+05:30",
+          "updated_at": "2024-07-27T09:37:21.131+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18452,
+          "description": "south",
+          "question_id": 4610,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:37:21.134+05:30",
+          "updated_at": "2024-07-27T09:37:21.134+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18453,
+          "description": "north-south",
+          "question_id": 4610,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:37:21.137+05:30",
+          "updated_at": "2024-07-27T09:37:21.137+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18454,
+          "description": "east-west",
+          "question_id": 4610,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:37:21.140+05:30",
+          "updated_at": "2024-07-27T09:37:21.140+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4611,
+      "description": "Identify the wrong statement.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:38:52.402+05:30",
+      "updated_at": "2024-08-02T10:20:51.724+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18455,
+          "description": "In an electric field two equipotential surfaces can never intersect",
+          "question_id": 4611,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:38:52.406+05:30",
+          "updated_at": "2024-07-27T09:38:52.406+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18456,
+          "description": "A charged particle free to move in an electric field shall always move in the direction of  Ē.",
+          "question_id": 4611,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:38:52.409+05:30",
+          "updated_at": "2024-07-27T09:38:52.409+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18457,
+          "description": "Electric field at the surface of a charged conductor is always normal to the surface.",
+          "question_id": 4611,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:38:52.411+05:30",
+          "updated_at": "2024-07-27T09:38:52.411+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18458,
+          "description": "The electric potential decrease along a line of force in an electric field.",
+          "question_id": 4611,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:38:52.413+05:30",
+          "updated_at": "2024-07-27T09:38:52.413+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4612,
+      "description": "Assertion : Electric field lines are perpendicular to the surface of conductor.\r\nReason : Surfaces of conductor are equipotential.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:39:59.546+05:30",
+      "updated_at": "2024-08-02T10:20:51.817+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18459,
+          "description": "Both Assertion & Reason are True & the Reason  is a correct explanation of the Assertion.",
+          "question_id": 4612,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:39:59.551+05:30",
+          "updated_at": "2024-07-27T09:39:59.551+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18460,
+          "description": "Both Assertion & Reason are True but Reason is not a correct explanation of the Assertion.",
+          "question_id": 4612,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:39:59.553+05:30",
+          "updated_at": "2024-07-27T09:39:59.553+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18461,
+          "description": "Assertion is True but the Reason is False.",
+          "question_id": 4612,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:39:59.554+05:30",
+          "updated_at": "2024-07-27T09:39:59.554+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18462,
+          "description": "Both Assertion & Reason are False.",
+          "question_id": 4612,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:39:59.555+05:30",
+          "updated_at": "2024-07-27T09:39:59.555+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4613,
+      "description": "The electric potential in a certain region of space is given by V  = –3x²+ 4x, where x is in meter and V is in volt, in this region, the equipotential surface are :",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:41:16.219+05:30",
+      "updated_at": "2024-08-02T10:20:51.906+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18463,
+          "description": "planes parallel to xy–plane",
+          "question_id": 4613,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:41:16.223+05:30",
+          "updated_at": "2024-07-27T09:41:16.223+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18464,
+          "description": "planes parallel to yz–plane",
+          "question_id": 4613,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:41:16.225+05:30",
+          "updated_at": "2024-07-27T09:41:16.225+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18465,
+          "description": "concentric cylinders with axis as x–axis",
+          "question_id": 4613,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:41:16.227+05:30",
+          "updated_at": "2024-07-27T09:41:16.227+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18466,
+          "description": "concentric spheres centred at origin",
+          "question_id": 4613,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:41:16.229+05:30",
+          "updated_at": "2024-07-27T09:41:16.229+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4614,
+      "description": "Two conducting concentric sphere have radius r₁ and r₂. Potential difference between their surface is V. Now charge on outer sphere becomes double, then potential difference will be –",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:42:50.262+05:30",
+      "updated_at": "2024-08-02T10:20:51.998+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18467,
+          "description": "Double",
+          "question_id": 4614,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:42:50.267+05:30",
+          "updated_at": "2024-07-27T09:42:50.267+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18468,
+          "description": "Same",
+          "question_id": 4614,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:42:50.270+05:30",
+          "updated_at": "2024-07-27T09:42:50.270+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18469,
+          "description": "Half",
+          "question_id": 4614,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:42:50.273+05:30",
+          "updated_at": "2024-07-27T09:42:50.273+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18470,
+          "description": "Zero",
+          "question_id": 4614,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:42:50.275+05:30",
+          "updated_at": "2024-07-27T09:42:50.275+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4615,
+      "description": "Which of the following quantities depends on the choice of zero potential or zero potential energy–",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:44:14.644+05:30",
+      "updated_at": "2024-08-02T10:20:52.092+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18471,
+          "description": "Potential at a particular point",
+          "question_id": 4615,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:44:14.649+05:30",
+          "updated_at": "2024-07-27T09:44:14.649+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18472,
+          "description": "Change in potential energy of a two–charge system",
+          "question_id": 4615,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:44:14.651+05:30",
+          "updated_at": "2024-07-27T09:44:14.651+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18473,
+          "description": "Potential difference between two points",
+          "question_id": 4615,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:44:14.653+05:30",
+          "updated_at": "2024-07-27T09:44:14.653+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18474,
+          "description": "All of these",
+          "question_id": 4615,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:44:14.655+05:30",
+          "updated_at": "2024-07-27T09:44:14.655+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4616,
+      "description": "When the separation between two charges is \r\nincreased, the electric potential energy of the charges–",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:45:03.275+05:30",
+      "updated_at": "2024-08-02T10:20:52.185+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18475,
+          "description": "increases",
+          "question_id": 4616,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:45:03.278+05:30",
+          "updated_at": "2024-07-27T09:45:03.278+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18476,
+          "description": "decreases",
+          "question_id": 4616,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:45:03.280+05:30",
+          "updated_at": "2024-07-27T09:45:03.280+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18477,
+          "description": "an remains the same",
+          "question_id": 4616,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:45:03.281+05:30",
+          "updated_at": "2024-07-27T09:45:03.281+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18478,
+          "description": "may increases or decreases",
+          "question_id": 4616,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:45:03.283+05:30",
+          "updated_at": "2024-07-27T09:45:03.283+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4617,
+      "description": "If an electron is brought towards another electron, the electric potential energy of the system",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:46:24.470+05:30",
+      "updated_at": "2024-08-02T10:20:52.278+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18479,
+          "description": "increase",
+          "question_id": 4617,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:46:24.472+05:30",
+          "updated_at": "2024-07-27T09:46:24.472+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18480,
+          "description": "decreases",
+          "question_id": 4617,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:46:24.474+05:30",
+          "updated_at": "2024-07-27T09:46:24.474+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18481,
+          "description": "becomes zero",
+          "question_id": 4617,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:46:24.475+05:30",
+          "updated_at": "2024-07-27T09:46:24.475+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18482,
+          "description": "remains constant",
+          "question_id": 4617,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:46:24.476+05:30",
+          "updated_at": "2024-07-27T09:46:24.476+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4618,
+      "description": "Assertion : Gauss’s law can not be used to calculate electric field near an electric dipole. \r\nReason : Electric dipoles do not have symmetrical charge distribution.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:47:53.393+05:30",
+      "updated_at": "2024-08-02T10:20:52.370+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18483,
+          "description": "Both Assertion & Reason are True & the Reason  is a correct explanation of the Assertion.",
+          "question_id": 4618,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:47:53.396+05:30",
+          "updated_at": "2024-07-27T09:47:53.396+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18484,
+          "description": "Both Assertion & Reason are True but Reason is not a correct explanation of the Assertion.",
+          "question_id": 4618,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:47:53.398+05:30",
+          "updated_at": "2024-07-27T09:47:53.398+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18485,
+          "description": "Assertion is True but the Reason is False.",
+          "question_id": 4618,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:47:53.400+05:30",
+          "updated_at": "2024-07-27T09:47:53.400+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18486,
+          "description": "Both Assertion & Reason are False.",
+          "question_id": 4618,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:47:53.401+05:30",
+          "updated_at": "2024-07-27T09:47:53.401+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4619,
+      "description": "An electric dipole is placed inside a homogeneous electric field increasing at the rate of α per unit distance along z-axis. The dipole undergoes  -",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:48:55.074+05:30",
+      "updated_at": "2024-08-02T10:20:52.467+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18487,
+          "description": "translational motion along z-axis only",
+          "question_id": 4619,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:48:55.078+05:30",
+          "updated_at": "2024-07-27T09:48:55.078+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18488,
+          "description": "rotational motion only",
+          "question_id": 4619,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:48:55.081+05:30",
+          "updated_at": "2024-07-27T09:48:55.081+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18489,
+          "description": "may a rotational motion and a translational motion along z-axis",
+          "question_id": 4619,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:48:55.084+05:30",
+          "updated_at": "2024-07-27T09:48:55.084+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18490,
+          "description": "translational motion along x-axis only",
+          "question_id": 4619,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:48:55.087+05:30",
+          "updated_at": "2024-07-27T09:48:55.087+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4620,
+      "description": "Electrostatic field is zero ___ the charged conductor.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T09:51:01.443+05:30",
+      "updated_at": "2024-08-02T10:20:52.561+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18491,
+          "description": "Outside",
+          "question_id": 4620,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:51:01.446+05:30",
+          "updated_at": "2024-07-27T09:51:01.446+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18492,
+          "description": "Inside",
+          "question_id": 4620,
+          "is_correct": true,
+          "created_at": "2024-07-27T09:51:01.448+05:30",
+          "updated_at": "2024-07-27T09:51:01.448+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18493,
+          "description": "On surface",
+          "question_id": 4620,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:51:01.450+05:30",
+          "updated_at": "2024-07-27T09:51:01.450+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18494,
+          "description": "At the edge",
+          "question_id": 4620,
+          "is_correct": false,
+          "created_at": "2024-07-27T09:51:01.452+05:30",
+          "updated_at": "2024-07-27T09:51:01.452+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4621,
+      "description": "Assertion : Two adjacent conductors carrying the same charge can be at different potentials.\r\nReason : The conductors may have different size and hence different capacitances.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:08:48.580+05:30",
+      "updated_at": "2024-08-02T10:20:52.659+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18495,
+          "description": "Both Assertion & Reason are True & the Reason  is a correct explanation of the Assertion.",
+          "question_id": 4621,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:08:48.584+05:30",
+          "updated_at": "2024-07-27T10:08:48.584+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18496,
+          "description": "Both Assertion & Reason are True but Reason is not a correct explanation of the Assertion.",
+          "question_id": 4621,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:08:48.587+05:30",
+          "updated_at": "2024-07-27T10:08:48.587+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18497,
+          "description": "Assertion is True but the Reason is False.",
+          "question_id": 4621,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:08:48.591+05:30",
+          "updated_at": "2024-07-27T10:08:48.591+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18498,
+          "description": "Both Assertion & Reason are False.",
+          "question_id": 4621,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:08:48.593+05:30",
+          "updated_at": "2024-07-27T10:08:48.593+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4622,
+      "description": "When two charged conductor are brought into contact the electric charge on them is shared.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:11:05.171+05:30",
+      "updated_at": "2024-08-02T10:20:52.752+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18499,
+          "description": "Equally",
+          "question_id": 4622,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:11:05.175+05:30",
+          "updated_at": "2024-07-27T10:11:05.175+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18500,
+          "description": "In proportion to their capacitance",
+          "question_id": 4622,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:11:05.178+05:30",
+          "updated_at": "2024-07-27T10:11:05.178+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18501,
+          "description": "Inversely as their capacities",
+          "question_id": 4622,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:11:05.181+05:30",
+          "updated_at": "2024-07-27T10:11:05.181+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18502,
+          "description": "None of these",
+          "question_id": 4622,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:11:05.183+05:30",
+          "updated_at": "2024-07-27T10:11:05.183+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4623,
+      "description": "Assertion : When charges are shared between two parallel plate capacitors, charge of system is conserved but some energy is lost.\r\nReason : During the sharing of charges, some energy is dissipated as heat.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:12:24.270+05:30",
+      "updated_at": "2024-08-02T10:20:52.847+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18503,
+          "description": "Both Assertion & Reason are True & the Reason  is a correct explanation of the Assertion.",
+          "question_id": 4623,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:12:24.273+05:30",
+          "updated_at": "2024-07-27T10:12:24.273+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18504,
+          "description": "Both Assertion & Reason are True but Reason is not a correct explanation of the Assertion.",
+          "question_id": 4623,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:12:24.275+05:30",
+          "updated_at": "2024-07-27T10:12:24.275+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18505,
+          "description": "Assertion is True but the Reason is False.",
+          "question_id": 4623,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:12:24.276+05:30",
+          "updated_at": "2024-07-27T10:12:24.276+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18506,
+          "description": "Both Assertion & Reason are False.",
+          "question_id": 4623,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:12:24.278+05:30",
+          "updated_at": "2024-07-27T10:12:24.278+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4624,
+      "description": "A 20F capacitor is charged to 5V and lsolated. It is then connected in parallel with an uncharged 30F capacitor. The energy loss will be-",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:14:11.245+05:30",
+      "updated_at": "2024-08-02T10:20:52.943+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18507,
+          "description": "25 J",
+          "question_id": 4624,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:14:11.249+05:30",
+          "updated_at": "2024-07-27T10:14:11.249+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18508,
+          "description": "200 J",
+          "question_id": 4624,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:14:11.251+05:30",
+          "updated_at": "2024-07-27T10:14:11.251+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18509,
+          "description": "125 J",
+          "question_id": 4624,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:14:11.253+05:30",
+          "updated_at": "2024-07-27T10:14:11.253+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18510,
+          "description": "150 J",
+          "question_id": 4624,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:14:11.255+05:30",
+          "updated_at": "2024-07-27T10:14:11.255+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4625,
+      "description": "Statement-I : A parallel plate capacitor is connected across a battery through a key. A dielectric slab of dielectric constant K is introduced between the plates. The energy which is stored becomes K times.\r\nStatement-II : The potential difference between the plates of capacitor, connected to battery remains constant or unchanged.",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:15:40.524+05:30",
+      "updated_at": "2024-08-02T10:20:53.038+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18511,
+          "description": "Both Statement-I and Statement-II are correct.",
+          "question_id": 4625,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:15:40.527+05:30",
+          "updated_at": "2024-07-27T10:15:40.527+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18512,
+          "description": "Both Statement-I and Statement-II are incorrect.",
+          "question_id": 4625,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:15:40.531+05:30",
+          "updated_at": "2024-07-27T10:15:40.531+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18513,
+          "description": "Statement-I is correct but Statement-II is incorrect.",
+          "question_id": 4625,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:15:40.533+05:30",
+          "updated_at": "2024-07-27T10:15:40.533+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18514,
+          "description": "Statement-I is incorrect but Statement-II is correct.",
+          "question_id": 4625,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:15:40.535+05:30",
+          "updated_at": "2024-07-27T10:15:40.535+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4626,
+      "description": "A parallel plate capacitor is charged and then isolated. What is the effect of increasing the plate separation of charge, potential difference and capacitance, respectively-",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:17:31.372+05:30",
+      "updated_at": "2024-08-02T10:20:53.144+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18515,
+          "description": "Constant, decrease, decreases",
+          "question_id": 4626,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:17:31.379+05:30",
+          "updated_at": "2024-07-27T10:17:31.379+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18516,
+          "description": "Increases, decreases, decreases",
+          "question_id": 4626,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:17:31.382+05:30",
+          "updated_at": "2024-07-27T10:17:31.382+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18517,
+          "description": "Constant, decreases, increases",
+          "question_id": 4626,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:17:31.385+05:30",
+          "updated_at": "2024-07-27T10:17:31.385+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18518,
+          "description": "Constant, increases, decreases",
+          "question_id": 4626,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:17:31.387+05:30",
+          "updated_at": "2024-07-27T11:03:25.777+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4627,
+      "description": "The equivalent capacitance of the combination of three capacitors, each of capacitance C shown in figure between points A and B is-",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:20:41.165+05:30",
+      "updated_at": "2024-08-02T10:20:53.236+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18519,
+          "description": "C/2",
+          "question_id": 4627,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:20:41.168+05:30",
+          "updated_at": "2024-07-27T10:20:41.168+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18520,
+          "description": "3C/2",
+          "question_id": 4627,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:20:41.169+05:30",
+          "updated_at": "2024-07-27T10:20:41.169+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18521,
+          "description": "1/3C",
+          "question_id": 4627,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:20:41.171+05:30",
+          "updated_at": "2024-07-27T10:20:41.171+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18522,
+          "description": "2C",
+          "question_id": 4627,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:20:41.172+05:30",
+          "updated_at": "2024-07-27T10:20:41.172+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4628,
+      "description": "What is the equivalent capacitance between A and B",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:23:14.589+05:30",
+      "updated_at": "2024-08-02T10:20:53.331+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18523,
+          "description": "20 µF",
+          "question_id": 4628,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:23:14.599+05:30",
+          "updated_at": "2024-07-27T10:23:14.599+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18524,
+          "description": "15 µF",
+          "question_id": 4628,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:23:14.602+05:30",
+          "updated_at": "2024-07-27T10:23:14.602+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18525,
+          "description": "30 µF",
+          "question_id": 4628,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:23:14.607+05:30",
+          "updated_at": "2024-07-27T10:23:14.607+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18526,
+          "description": "60 µF",
+          "question_id": 4628,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:23:14.612+05:30",
+          "updated_at": "2024-07-27T10:23:14.612+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4629,
+      "description": "Four identical capacitors are connected as shown in diagram. When a battery of 6V is connected between A and B, the charge stored in the system is found to be 1.5µC. The value of C₁ is",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:31:48.328+05:30",
+      "updated_at": "2024-08-02T10:20:53.422+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18527,
+          "description": "2.5 µF",
+          "question_id": 4629,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:31:48.332+05:30",
+          "updated_at": "2024-07-27T10:31:48.332+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18528,
+          "description": "15 µF",
+          "question_id": 4629,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:31:48.335+05:30",
+          "updated_at": "2024-07-27T10:31:48.335+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18529,
+          "description": "1.5  µF",
+          "question_id": 4629,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:31:48.337+05:30",
+          "updated_at": "2024-07-27T10:31:48.337+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18530,
+          "description": "0.1  µF",
+          "question_id": 4629,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:31:48.340+05:30",
+          "updated_at": "2024-07-27T10:31:48.340+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4630,
+      "description": "The equivalent capacitance between A and B are-",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:33:39.164+05:30",
+      "updated_at": "2024-08-02T10:20:53.512+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18531,
+          "description": "C/4",
+          "question_id": 4630,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:33:39.166+05:30",
+          "updated_at": "2024-07-27T10:33:39.166+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18532,
+          "description": "3C/4",
+          "question_id": 4630,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:33:39.168+05:30",
+          "updated_at": "2024-07-27T10:33:39.168+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18533,
+          "description": "C/4",
+          "question_id": 4630,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:33:39.169+05:30",
+          "updated_at": "2024-07-27T10:33:39.169+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18534,
+          "description": "4C/3",
+          "question_id": 4630,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:33:39.170+05:30",
+          "updated_at": "2024-07-27T10:33:39.170+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4631,
+      "description": "The charge on any one of the 2µF capacitors and 1µF capacitor will be given respectively (in µC) as",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:46:44.985+05:30",
+      "updated_at": "2024-08-02T10:20:53.606+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18535,
+          "description": "1,2",
+          "question_id": 4631,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:46:44.988+05:30",
+          "updated_at": "2024-07-27T10:46:44.988+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18536,
+          "description": "1,1",
+          "question_id": 4631,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:46:44.992+05:30",
+          "updated_at": "2024-07-27T10:46:44.992+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18537,
+          "description": "2,2",
+          "question_id": 4631,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:46:44.993+05:30",
+          "updated_at": "2024-07-27T10:47:28.877+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18538,
+          "description": "2, 1",
+          "question_id": 4631,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:47:28.879+05:30",
+          "updated_at": "2024-07-27T10:47:28.879+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4632,
+      "description": "In the network shown in the figure, the equivalent capacitance between points A and B is",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:49:33.099+05:30",
+      "updated_at": "2024-08-02T10:20:53.697+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18539,
+          "description": "4/3 C",
+          "question_id": 4632,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:49:33.103+05:30",
+          "updated_at": "2024-07-27T10:49:33.103+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18540,
+          "description": "3/4 C",
+          "question_id": 4632,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:49:33.107+05:30",
+          "updated_at": "2024-07-27T10:49:33.107+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18541,
+          "description": "C/3",
+          "question_id": 4632,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:49:33.110+05:30",
+          "updated_at": "2024-07-27T10:49:33.110+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18542,
+          "description": "4C",
+          "question_id": 4632,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:49:33.112+05:30",
+          "updated_at": "2024-07-27T10:49:33.112+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4633,
+      "description": "In the circuit shown, a potential difference of 30V is applied across AB. The potential difference between the points M and N is-",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:51:26.195+05:30",
+      "updated_at": "2024-08-02T10:20:53.788+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18543,
+          "description": "10 V",
+          "question_id": 4633,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:51:26.197+05:30",
+          "updated_at": "2024-07-27T10:51:26.197+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18544,
+          "description": "15 V",
+          "question_id": 4633,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:51:26.199+05:30",
+          "updated_at": "2024-07-27T10:51:26.199+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18545,
+          "description": "20 V",
+          "question_id": 4633,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:51:26.200+05:30",
+          "updated_at": "2024-07-27T10:51:26.200+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18546,
+          "description": "30 V",
+          "question_id": 4633,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:51:26.201+05:30",
+          "updated_at": "2024-07-27T10:51:26.201+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4634,
+      "description": "The resultant capacitance of given circuit between points P & Q is-",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:53:17.382+05:30",
+      "updated_at": "2024-08-02T10:20:53.883+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18547,
+          "description": "3C",
+          "question_id": 4634,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:53:17.387+05:30",
+          "updated_at": "2024-07-27T10:53:17.387+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18548,
+          "description": "2C",
+          "question_id": 4634,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:53:17.391+05:30",
+          "updated_at": "2024-07-27T10:53:17.391+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18549,
+          "description": "C",
+          "question_id": 4634,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:53:17.393+05:30",
+          "updated_at": "2024-07-27T10:53:17.393+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18550,
+          "description": "C/3",
+          "question_id": 4634,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:53:17.395+05:30",
+          "updated_at": "2024-07-27T10:53:17.395+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 4635,
+      "description": "For the circuit shown determine the equivalent capacitance across A and B. All the capacitors are having capacitance C :",
+      "difficulty_level": null,
+      "topic": "Electrostatics Potential and Capacitance",
+      "is_published": true,
+      "created_at": "2024-07-27T10:55:47.619+05:30",
+      "updated_at": "2024-08-02T10:20:53.975+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": true,
+      "pyq_label": null,
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 18551,
+          "description": "2C/5",
+          "question_id": 4635,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:55:47.625+05:30",
+          "updated_at": "2024-07-27T10:55:47.625+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18552,
+          "description": "4C",
+          "question_id": 4635,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:55:47.628+05:30",
+          "updated_at": "2024-07-27T10:55:47.628+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18553,
+          "description": "2C",
+          "question_id": 4635,
+          "is_correct": true,
+          "created_at": "2024-07-27T10:55:47.633+05:30",
+          "updated_at": "2024-07-27T10:55:47.633+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 18554,
+          "description": "3C/2",
+          "question_id": 4635,
+          "is_correct": false,
+          "created_at": "2024-07-27T10:55:47.636+05:30",
+          "updated_at": "2024-07-27T10:55:47.636+05:30",
+          "unanswered": false
+        }
+      ]
+    }
+  ]
+}

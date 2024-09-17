@@ -1,0 +1,571 @@
+{
+  "id": 139,
+  "name": null,
+  "title": "Oscillations",
+  "description": "",
+  "difficulty_level": null,
+  "topic": "Oscillations",
+  "time": "2024-08-17T18:30:00.000+05:30",
+  "is_published": true,
+  "created_at": "2024-08-18T12:19:53.521+05:30",
+  "updated_at": "2024-08-30T17:56:37.389+05:30",
+  "duration": 10,
+  "end_time": "2024-08-18T18:30:00.000+05:30",
+  "negative_marks": "1.0",
+  "correct_answer_marks": "4.0",
+  "shuffle": true,
+  "show_answers": true,
+  "lock_solutions": false,
+  "is_form": false,
+  "show_mastery_option": false,
+  "reading_material": null,
+  "ends_at": "2024-09-18",
+  "lives": null,
+  "live_count": "Free Test",
+  "coin_count": -1,
+  "questions_count": null,
+  "daily_date": "September 17, 2024",
+  "max_mistake_count": 9,
+  "questions": [
+    {
+      "id": 6306,
+      "description": "A particle is executing a simple harmonic motion. Its maximum acceleration is α and maximum velocity is β. Then its time period of vibration will be :",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T11:20:17.272+05:30",
+      "updated_at": "2024-08-18T11:21:17.117+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25277,
+          "description": "α/β",
+          "question_id": 6306,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:20:17.278+05:30",
+          "updated_at": "2024-08-18T11:20:17.278+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25278,
+          "description": "β²/α",
+          "question_id": 6306,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:20:17.281+05:30",
+          "updated_at": "2024-08-18T11:20:17.281+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25279,
+          "description": "2πβ/α",
+          "question_id": 6306,
+          "is_correct": true,
+          "created_at": "2024-08-18T11:20:17.284+05:30",
+          "updated_at": "2024-08-18T11:20:17.284+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25280,
+          "description": "β²/α²",
+          "question_id": 6306,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:20:17.288+05:30",
+          "updated_at": "2024-08-18T11:20:17.288+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6307,
+      "description": "A particle executes linear simple harmonic motion with an amplitude of 3 cm When the particles is at 2 cm from the mean position the magnitude of its velocity is equal to that of its acceleration. Then its time period in seconds is",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T11:26:03.127+05:30",
+      "updated_at": "2024-08-20T05:23:23.324+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25281,
+          "description": "√5/2π",
+          "question_id": 6307,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:26:03.132+05:30",
+          "updated_at": "2024-08-18T11:26:03.132+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25282,
+          "description": "4π/√5",
+          "question_id": 6307,
+          "is_correct": true,
+          "created_at": "2024-08-18T11:26:03.134+05:30",
+          "updated_at": "2024-08-18T11:26:15.232+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25283,
+          "description": "2π/√3",
+          "question_id": 6307,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:26:03.135+05:30",
+          "updated_at": "2024-08-18T11:26:03.135+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25284,
+          "description": "√5/π",
+          "question_id": 6307,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:26:03.137+05:30",
+          "updated_at": "2024-08-18T11:26:03.137+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6308,
+      "description": "A spring of force constant k is cut into lengths of ration 1:2:3. They are connected in series and the new force constant is k'. Then they are connected in parallel and force constant is K''. Then K': k'' is",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T11:28:26.107+05:30",
+      "updated_at": "2024-08-20T05:27:34.557+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25285,
+          "description": "1:9",
+          "question_id": 6308,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:28:26.111+05:30",
+          "updated_at": "2024-08-18T11:28:26.111+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25286,
+          "description": "1:11",
+          "question_id": 6308,
+          "is_correct": true,
+          "created_at": "2024-08-18T11:28:26.113+05:30",
+          "updated_at": "2024-08-18T11:28:26.113+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25287,
+          "description": "1:14",
+          "question_id": 6308,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:28:26.116+05:30",
+          "updated_at": "2024-08-18T11:28:26.116+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25288,
+          "description": "1:6",
+          "question_id": 6308,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:28:26.118+05:30",
+          "updated_at": "2024-08-18T11:28:26.118+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6309,
+      "description": "A pendulum is hung from the roof of a sufficiently high building and is moving freely to and from like a simple harmonic oscillator. The acceleration of the bob of the pendulum is 20 m/s² at a distance of 5 m from the mean position the time period of oscillation is",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T11:32:44.913+05:30",
+      "updated_at": "2024-08-18T11:32:44.913+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25289,
+          "description": "2π s",
+          "question_id": 6309,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:32:44.918+05:30",
+          "updated_at": "2024-08-18T11:32:44.918+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25290,
+          "description": "π s",
+          "question_id": 6309,
+          "is_correct": true,
+          "created_at": "2024-08-18T11:32:44.922+05:30",
+          "updated_at": "2024-08-18T11:32:44.922+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25291,
+          "description": "1 s",
+          "question_id": 6309,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:32:44.924+05:30",
+          "updated_at": "2024-08-18T11:32:44.924+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25292,
+          "description": "2 s",
+          "question_id": 6309,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:32:44.926+05:30",
+          "updated_at": "2024-08-18T11:32:44.926+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6310,
+      "description": "Average velocity of a particle executing SHM in one complete vibration is",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T11:35:08.691+05:30",
+      "updated_at": "2024-08-18T11:35:08.691+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25293,
+          "description": "Aω/2",
+          "question_id": 6310,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:35:08.694+05:30",
+          "updated_at": "2024-08-18T11:35:08.694+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25294,
+          "description": "Aω",
+          "question_id": 6310,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:35:08.697+05:30",
+          "updated_at": "2024-08-18T11:35:08.697+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25295,
+          "description": "Aω²/2",
+          "question_id": 6310,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:35:08.700+05:30",
+          "updated_at": "2024-08-18T11:35:08.700+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25296,
+          "description": "Zero",
+          "question_id": 6310,
+          "is_correct": true,
+          "created_at": "2024-08-18T11:35:08.702+05:30",
+          "updated_at": "2024-08-18T11:35:08.702+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6311,
+      "description": "The phase difference between displacement and acceleration of and acceleration of a particle in a simple harmonic motion is",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T11:37:25.978+05:30",
+      "updated_at": "2024-08-18T11:37:25.978+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25297,
+          "description": "3π/2 rad",
+          "question_id": 6311,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:37:25.982+05:30",
+          "updated_at": "2024-08-18T11:37:25.982+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25298,
+          "description": "π/2 rad",
+          "question_id": 6311,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:37:25.985+05:30",
+          "updated_at": "2024-08-18T11:37:25.985+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25299,
+          "description": "Zero",
+          "question_id": 6311,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:37:25.987+05:30",
+          "updated_at": "2024-08-18T11:37:25.987+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25300,
+          "description": "π rad",
+          "question_id": 6311,
+          "is_correct": true,
+          "created_at": "2024-08-18T11:37:25.989+05:30",
+          "updated_at": "2024-08-18T11:37:25.989+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6312,
+      "description": "A body is executing simple harmonic motion with frequency n the frequency of its potential energy is",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T11:43:07.525+05:30",
+      "updated_at": "2024-08-18T11:43:07.525+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25301,
+          "description": "4n",
+          "question_id": 6312,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:43:07.527+05:30",
+          "updated_at": "2024-08-18T11:43:07.527+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25302,
+          "description": "n",
+          "question_id": 6312,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:43:07.530+05:30",
+          "updated_at": "2024-08-18T11:43:07.530+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25303,
+          "description": "2n",
+          "question_id": 6312,
+          "is_correct": true,
+          "created_at": "2024-08-18T11:43:07.531+05:30",
+          "updated_at": "2024-08-18T11:43:07.531+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25304,
+          "description": "3n",
+          "question_id": 6312,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:43:07.532+05:30",
+          "updated_at": "2024-08-18T11:43:07.532+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6313,
+      "description": "A spring is stretched by 5 cm by a force 10 N The time period of the oscillations when a mas of 2 kg is suspended by it is",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T11:48:12.888+05:30",
+      "updated_at": "2024-08-18T11:48:12.888+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25305,
+          "description": "0.628 S",
+          "question_id": 6313,
+          "is_correct": true,
+          "created_at": "2024-08-18T11:48:12.891+05:30",
+          "updated_at": "2024-08-18T11:48:12.891+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25306,
+          "description": "0.0628s",
+          "question_id": 6313,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:48:12.893+05:30",
+          "updated_at": "2024-08-18T11:48:12.893+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25307,
+          "description": "6.28 s",
+          "question_id": 6313,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:48:12.895+05:30",
+          "updated_at": "2024-08-18T11:48:12.895+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25308,
+          "description": "3.14 s",
+          "question_id": 6313,
+          "is_correct": false,
+          "created_at": "2024-08-18T11:48:12.896+05:30",
+          "updated_at": "2024-08-18T11:48:12.896+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6314,
+      "description": "Two pendulums of length 121 cm and 100 cm start vibrating in phase . At some instant the two are at their mean position in the same phase . The minimum number of vibrations of the shorter pendulum after which the two are again in phase at the mean position is .",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T12:02:11.428+05:30",
+      "updated_at": "2024-08-18T12:02:11.428+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25309,
+          "description": "9",
+          "question_id": 6314,
+          "is_correct": false,
+          "created_at": "2024-08-18T12:02:11.432+05:30",
+          "updated_at": "2024-08-18T12:02:11.432+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25310,
+          "description": "10",
+          "question_id": 6314,
+          "is_correct": false,
+          "created_at": "2024-08-18T12:02:11.435+05:30",
+          "updated_at": "2024-08-18T12:02:11.435+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25311,
+          "description": "8",
+          "question_id": 6314,
+          "is_correct": false,
+          "created_at": "2024-08-18T12:02:11.437+05:30",
+          "updated_at": "2024-08-18T12:02:11.437+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25312,
+          "description": "11",
+          "question_id": 6314,
+          "is_correct": true,
+          "created_at": "2024-08-18T12:02:11.439+05:30",
+          "updated_at": "2024-08-18T12:02:11.439+05:30",
+          "unanswered": false
+        }
+      ]
+    },
+    {
+      "id": 6315,
+      "description": "The x- t graph of a particle performing simple harmonic motion is shown in the figure. The acceleration of the particle at t= 2 s is",
+      "difficulty_level": null,
+      "topic": "Oscillations ",
+      "is_published": true,
+      "created_at": "2024-08-18T12:11:29.961+05:30",
+      "updated_at": "2024-08-18T12:14:49.948+05:30",
+      "detailed_solution": "",
+      "type": "",
+      "is_mandatory": false,
+      "show_in_feed": null,
+      "pyq_label": "",
+      "topic_id": null,
+      "is_saved": false,
+      "options": [
+        {
+          "id": 25313,
+          "description": "π²/8 ms¯²",
+          "question_id": 6315,
+          "is_correct": false,
+          "created_at": "2024-08-18T12:11:29.965+05:30",
+          "updated_at": "2024-08-18T12:11:29.965+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25314,
+          "description": "-π²/8 ms¯²",
+          "question_id": 6315,
+          "is_correct": false,
+          "created_at": "2024-08-18T12:11:29.973+05:30",
+          "updated_at": "2024-08-18T12:11:29.973+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25315,
+          "description": "π²/16 ms¯²",
+          "question_id": 6315,
+          "is_correct": false,
+          "created_at": "2024-08-18T12:11:29.975+05:30",
+          "updated_at": "2024-08-18T12:11:29.975+05:30",
+          "unanswered": false
+        },
+        {
+          "id": 25316,
+          "description": "-π²/16 ms¯²",
+          "question_id": 6315,
+          "is_correct": true,
+          "created_at": "2024-08-18T12:11:29.982+05:30",
+          "updated_at": "2024-08-18T12:11:29.982+05:30",
+          "unanswered": false
+        }
+      ]
+    }
+  ]
+}
