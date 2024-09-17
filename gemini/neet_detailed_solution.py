@@ -37,6 +37,8 @@ def get_detailed_solution(question, topic):
     except ResourceExhausted as e:
         print(e)
         return get_detailed_solution(question, topic, 10)
+    except Exception as e:
+        print(e)
 
 
 api_key = os.environ.get("GEMINI_API_KEY")
@@ -47,7 +49,7 @@ model = generativeai.GenerativeModel(
 )
 
 
-for number in range(75, 101):
+for number in range(88, 101):
     input_file_path = f"""/home/barath/Documents/Neet/{number}.json"""
     output_file_path = f"""/home/barath/Documents/NeetSolution/{number}.json"""
     solution = {}
@@ -56,9 +58,9 @@ for number in range(75, 101):
         questions = quiz["questions"]
         for question in questions:
             solution[question["id"]] = get_detailed_solution(question, quiz["topic"])
-            # print(question["description"])
+            print(question["id"])
             # print(solution, "\n\n")
-            time.sleep(1)
+            time.sleep(0.1)
 
     with open(output_file_path, "w") as f:
         json.dump(solution, f, indent=4)
