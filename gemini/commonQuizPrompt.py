@@ -60,10 +60,14 @@ for theme in underlined_themes:
 
     if json_text is None:
         continue
-    
-    qns_json = json.loads(json_text)
-    for qn_json in qns_json:
-        all_qns_json.append(qn_json)
+
+    try:
+        qns_json = json.loads(json_text)
+        for qn_json in qns_json:
+            all_qns_json.append(qn_json)
+            print(str(qn_json)+"\n\n\n")
+    except Exception as e:
+        print(e)
         
 final_qns_json = []
 for qn_obj in all_qns_json:
