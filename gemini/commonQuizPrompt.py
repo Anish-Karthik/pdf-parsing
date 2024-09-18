@@ -6,6 +6,21 @@ from google.api_core.exceptions import ResourceExhausted
 import json
 
 
+def get_detailed_solution(json,theme):
+    return get_response_delayed_prompt(f"""
+    question: {json}
+
+    The question belongs to the topic '{theme}' to prepare for Banking exams. Give detailed explanation why the answer is correct.
+
+    If there are additional context available on the question description or the topic, provide them as well.
+    The content should be useful for a student to learn and apply the same content for answering similar questions.
+
+    The solution should be relevant to a anyone in india who is preparing for banking exams like sbi po, sbi prelims, ibps po etc.
+
+    Output:
+    Detailed Explanation: "detailed explanation of the answer"
+    """)
+
 def get_theme(sample_questions) -> List[str]:
     themes = get_response_delayed_prompt(
         f"""
@@ -48,8 +63,8 @@ def get_question_prompt(sample_questions):
 
     Task:
     
-    create a prompt to generate a sample question type questions
-    the new prompt should be based on the sample prompt but the objective is to generate similar to sample questions.
+    create a prompt to generate two sample question type questions
+    the new prompt should be based on the sample prompt but the objective is to generate questions similar to sample questions.
 
     Sample question:
     {sample_questions}"""
@@ -129,6 +144,7 @@ for theme in themes:
     try:
         qns_json = json.loads(json_text)
         for qn_json in qns_json:
+            qn_json["reasoning"] = get_detailed_solution(json_text,theme)
             all_qns_json.append(qn_json)
             print(str(qn_json)+"\n\n\n")
     except Exception as e:
