@@ -279,3 +279,33 @@ cloze_test_themes = [
     "Cultural Sensitivity in Language – Filling blanks with culturally sensitive and unbiased language.",
     "Hyperbole and Understatement – Filling sentences with hyperbole or understatement for dramatic effect."
 ]
+
+sample_questions = """
+Que. 37 If the marked price of a laptop is Rs. 24,000 which is 20% more than the cost price. The laptop is sold
+at a profit of Rs. 1000. Find the discount%.
+1. 12.5% 2. 21.5% 3. 22.5% 4. 25% 5. 50%
+Correct Option - 1
+
+Que. 38 T alone can complete the work in 12 days. T and U together worked on a piece of work and completed
+one-third work in 3 days. In how many days can U alone complete the same piece of work?
+1. 36 days
+2. 40 days
+3. 25 days
+4. 30 days
+5. 34 days
+Correct Option - 1
+
+Que. 40 The marked price of an article is 50% above its cost price. If the marked price is Rs. 600, and the profit
+is 30%. Find the selling price of the article?
+1. Rs. 525
+2. Rs. 515
+3. Rs. 510
+4. Rs. 530
+5. None of these
+Correct Option - 5
+
+42 If the respective ratio of the number of bikes sold by company 'Y' in 2021 to that by company 'D' in the same year is 7:8 then what is the average number of bikes sold by companies 'Y', 'A', 'B', and 'C'
+together in 2021?
+1. 720 2. 760 3. 780 4. 800 5. 820
+Correct Option - 1
+"""
