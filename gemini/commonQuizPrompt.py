@@ -5,6 +5,7 @@ import time
 from google.api_core.exceptions import ResourceExhausted
 import json
 import traceback
+import threading
 
 exam = "IBPS PO, SBI PO banking exams"
 title = ""
@@ -66,7 +67,7 @@ def get_subtopic(topic):
         ensure it is a valid json:
 
         """+"""Format:
-        List[{"subtopics": subtopic1}]"""+f"""
+        List[{"subtopic": subtopic1}]"""+f"""
         Sample Questions:
         {sample_questions}
         """
@@ -126,19 +127,14 @@ def get_quiz_json_prompt(question_prompt,subtopic,skills,difficulty):
   """
 
 
-def get_response_delayed_prompt(prompt,delay=1):
+def get_response_delayed_prompt(prompt,delay=0.1):
     try:
-        print(delay)
         time.sleep(delay)
-        print("delay ended")
         raw_response = model.generate_content(
             prompt
         )
-        print("call ended")
-        # print(raw_response.text)
         return raw_response.text
     except ResourceExhausted as e:
-        print("delay:", delay, e)
         return get_response_delayed_prompt(prompt,delay * 2)
     except Exception as e:
         print(e)
@@ -149,12 +145,66 @@ def filter_response(text):
     text = re.sub("\*{2,}","",text)
     text = text[text.index("{"):text.rindex("}") + 1]
     return text
+
+def get_subtopic_question(subtopic,difficulty,quiz_questions):
+    skills = get_response_delayed_prompt(f"""what skills does these {subtopic} test in {exam}.""")
+    question_prompt = get_question_prompt(subtopic,difficulty)
+    
+    json_text = filter_response(
+            get_response_delayed_prompt(
+                get_quiz_json_prompt(question_prompt,subtopic,skills,difficulty)
+            )
+        )
+
+    print(subtopic)
+
+    if json_text is None:
+        return
+
+    try:
+        qn_json = json.loads(json_text)
+        qn_json["reasoning"] = get_detailed_solution(json_text,subtopic)
+        quiz_questions.append(qn_json)
+        qn_json["difficulty"] = difficulty
+        quiz_questions.append(
+            qn_json
+        )
+        print(subtopic,"question added")
+    except Exception as e:
+        print(e)
   
 def filter_response_as_list(text):
     text = re.sub("\*{2,}","",text)
     return text[text.index("["):text.rindex("]") + 1]
 
+def split_into_batches(array, batch_size=5):
+    return [array[i:i + batch_size] for i in range(0, len(array), batch_size)]
 
+quizzes = []
+def get_quiz_json(topic):
+    global quizzes
+    quiz = dict()
+    quiz_questions = []
+    
+    for difficulty in difficulties:
+        print(difficulty)
+        subtopics = get_subtopic(topic)
+        subtopic_batches = split_into_batches(subtopics, 26)
+        for subtopic_batch in subtopic_batches:
+            threads = []
+            for subtopic in subtopic_batch:
+                thread = threading.Thread(target=get_subtopic_question, args=(subtopic["subtopic"],difficulty,quiz_questions))
+                threads.append(thread)
+                thread.start()
+                for thread in threads:
+                    thread.join()
+
+    quiz["topic"] = topic
+    quiz["questions"] = quiz_questions
+    quiz["title"] = title
+
+    with open(f'output/{topic}.json', 'w') as json_file:
+        json.dump(quiz, json_file, indent=4)
 
 api_key = os.getenv("GEMINI_API_KEY")
 configure_client(api_key)
@@ -163,49 +213,13 @@ model = generativeai.GenerativeModel(
     model_name="gemini-1.5-flash"
 )
 
-quizzes = []
 
 
 # sample_questions = input("Enter sample questions: ")
-
 for topic in topics:
-    quiz = dict()
-    quiz_questions = []
-    for difficulty in difficulties:
-        subtopics = get_subtopic(topic)
+    get_quiz_json(topic)
+            
 
-        for subtopic in subtopics[3:]:
-            skills = get_response_delayed_prompt(f"""what skills does these {subtopic} test in {exam}.""")
-            question_prompt = get_question_prompt(subtopic,difficulty)
-            print(question_prompt,subtopics,skills)
-            json_text = filter_response(
-                    get_response_delayed_prompt(
-                        get_quiz_json_prompt(question_prompt,subtopic["subtopics"],skills,difficulty)
-                    )
-                )
-
-            if json_text is None:
-                continue
-
-            try:
-                qn_json = json.loads(json_text)
-                qn_json["reasoning"] = get_detailed_solution(json_text,subtopic)
-                quiz_questions.append(qn_json)
-                print(str(qn_json)+"\n\n\n")
-                qn_json["difficulty"] = difficulty
-                quiz_questions.append(
-                    qn_json
-                )
-            except Exception as e:
-                print(e)
-                
-    quiz["topic"] = topic
-    quiz["questions"] = quiz_questions
-    quiz["title"] = title
-    quizzes.append(quiz)
-
-with open('output/final_test.json', 'w') as json_file:
-    json.dump(quizzes, json_file, indent=4)
 
     
   
