@@ -4,11 +4,14 @@ import re
 import time
 from google.api_core.exceptions import ResourceExhausted
 import json
+import traceback
 
 exam = "IBPS PO, SBI PO banking exams"
+title = ""
 # sample_questions = neet_biology_questions
 difficulties = ["easy","medium","hard"]
-topics = [
+topics = ["Number Systems"]
+topics1 = [
     "Number Systems",
     "Simplification and Approximation",
     "Data Interpretation",
@@ -144,9 +147,7 @@ def get_response_delayed_prompt(prompt,delay=1):
 
 def filter_response(text):
     text = re.sub("\*{2,}","",text)
-    print("####")
     text = text[text.index("{"):text.rindex("}") + 1]
-    print(text)
     return text
   
 def filter_response_as_list(text):
@@ -162,12 +163,14 @@ model = generativeai.GenerativeModel(
     model_name="gemini-1.5-flash"
 )
 
-all_qns_json = []
+quizzes = []
 
 
 # sample_questions = input("Enter sample questions: ")
 
 for topic in topics:
+    quiz = dict()
+    quiz_questions = []
     for difficulty in difficulties:
         subtopics = get_subtopic(topic)
 
@@ -185,26 +188,24 @@ for topic in topics:
                 continue
 
             try:
-                qns_json = json.loads(json_text)
-                for qn_json in qns_json:
-                    qn_json["reasoning"] = get_detailed_solution(json_text,subtopic)
-                    all_qns_json.append(qn_json)
-                    print(str(qn_json)+"\n\n\n")
+                qn_json = json.loads(json_text)
+                qn_json["reasoning"] = get_detailed_solution(json_text,subtopic)
+                quiz_questions.append(qn_json)
+                print(str(qn_json)+"\n\n\n")
+                qn_json["difficulty"] = difficulty
+                quiz_questions.append(
+                    qn_json
+                )
             except Exception as e:
-                print("why")
                 print(e)
                 
-        final_qns_json = []
-        for qn_obj in all_qns_json:
-            final_qns_json.append({
-                "question": qn_obj["question"],
-                "options": qn_obj["options"],
-                "correct_option": qn_obj["correct_option"],
-                "difficulty": difficulty,
-                "detailed_solution": qn_obj["reasoning"]
-            })
-        with open('output/final_test.json', 'w') as json_file:
-            json.dump(final_qns_json, json_file, indent=4)
+    quiz["topic"] = topic
+    quiz["questions"] = quiz_questions
+    quiz["title"] = title
+    quizzes.append(quiz)
+
+with open('output/final_test.json', 'w') as json_file:
+    json.dump(quizzes, json_file, indent=4)
 
     
   
