@@ -309,3 +309,105 @@ together in 2021?
 1. 720 2. 760 3. 780 4. 800 5. 820
 Correct Option - 1
 """
+
+neet_biology_questions="""
+Q.1. In plants, the end product of anaerobic respiration is
+(1) lactic acid
+(2) pyruvic acid
+(3) methyl alcohol
+(4) ethyl alcohol.
+
+Answer
+(4) 
+ 
+
+Q.2. Assertion (A): A typical microsporangium of angiosperm is generally surrounded by four wall layers.
+Reason (R): The outer three wall layers perform the function of protection and help in dehiscence of anther to release the pollen.
+(1) Both (A) and (R) are correct and (R) is the correct explanation of (A).
+(2) Both (A) and (R) are correct but (R) is not the correct explanation of (A).
+(3) (A) is correct but (R) is not correct.
+(4) (A) is not correct but (R) is correct.
+
+Answer
+(2) 
+ 
+
+Q.3. Which of the following are the characteristics of expanding population?
+(i) Pyramid – shaped age structure
+(ii) An urn – shaped age structure
+(iii) Pre-reproductive and reproductive age groups become more or less equal in size
+(iv) Rapidly growing population with high birth rates.
+(1) (i) and (ii) (2) (i) and (iv)
+(3) (iii) and (iv) (4) (ii) and (iii)
+
+Answer
+(2) 
+ 
+
+Q.4. Perisperm differs from endosperm in
+(1) being a diploid tissue
+(2) its formation by fusion of secondary nucleus with several sperms
+(3) being a haploid tissue
+(4) having no reserve food.
+
+Answer
+(1) 
+ 
+
+Q.5. Which cell organelle is related to glycoprotein formation?
+(1) Golgi apparatus
+(2) Rough endoplasmic reticulum
+(3) Glyoxysome
+(4) Mitochondria
+
+Answer
+(1) 
+ 
+
+Q.6. Mendelian recombinations are due to
+(1) linkage
+(2) independent assortment of genes
+(3) mutations
+(4) dominant characters.
+
+Answer
+(4) 
+ 
+
+Q.7. Bicarpellary gynoecium and oblique ovary is found in
+(1) Solanum melongena
+(2) Sesbania
+(3) Pisum sativum
+(4) Brassica campestris.
+
+Answer
+(3) 
+ 
+
+Q.8. Select the incorrect pair.
+(1) Mitochondria-Oxidative phosphorylation
+(2) Endoplasmic reticulum-Protein synthesis
+(3) Chloroplast-Photosynthesis
+(4) Golgi apparatus-Breakdown of complex macromolecules
+
+Answer
+(4) 
+ 
+
+Q.9. Identify the cross that will result in the formation of tall and dwarf pea plants in same (equal) proportions?
+(1) TT × tt (2) tt × tt (3) TT × Tt (4) Tt × tt
+
+Answer
+(1) 
+ 
+
+Q.10. The floral formula, belongs to Family
+
+
+
+(1) Fabaceae (2) Solanaceae
+(3) Compositae (4) Leguminosae.
+
+Answer
+(4) 
+"""
