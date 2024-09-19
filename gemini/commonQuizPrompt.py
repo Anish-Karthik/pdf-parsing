@@ -10,7 +10,7 @@ import threading
 exam = "IBPS PO, SBI PO banking exams"
 title = ""
 # sample_questions = neet_biology_questions
-difficulties = ["easy","medium","hard"]
+difficulties = ["easy", "medium", "hard"]
 topics = ["Number Systems"]
 topics1 = [
     "Number Systems",
@@ -40,7 +40,7 @@ topics1 = [
 ]
 
 
-def get_detailed_solution(json,subtopic):
+def get_detailed_solution(json, subtopic):
     return get_response_delayed_prompt(f"""
     question: {json}
 
@@ -55,6 +55,7 @@ def get_detailed_solution(json,subtopic):
     Detailed Explanation: "detailed explanation of the answer"
     """)
 
+
 def get_subtopic(topic):
     subtopics_list = get_response_delayed_prompt(
         f"""
@@ -66,8 +67,8 @@ def get_subtopic(topic):
 
         ensure it is a valid json:
 
-        """+"""Format:
-        List[{"subtopic": subtopic1}]"""+f"""
+        """ + """Format:
+        List[{"subtopic": subtopic1}]""" + f"""
         Sample Questions:
         {sample_questions}
         """
@@ -76,19 +77,20 @@ def get_subtopic(topic):
 
     return json.loads(filter_response_as_list(subtopics_list))
 
-def get_question_prompt(topic,difficulty):
+
+def get_question_prompt(topic, difficulty):
     return get_response_delayed_prompt(
-        f""" 
+        f"""
         Sample prompt:
-        
+
         create a question with multiple choice with atleast two lines.
-        verify objective type with its correct answer and provide reasoning for the correct answer and why other options are wrong. 
+        verify objective type with its correct answer and provide reasoning for the correct answer and why other options are wrong.
         verify everything is correct
 
     Task:
-    
+
     create a prompt to generate question from {topic}:
-    
+
     the new prompt should be based on the sample prompt but the objective is to generate questions from {topic}.
     make sure the prompt's goal is to find a suitable type of question (define the exact structure of the question description as well) to evaluate a student's profeciency in the {topic}
     the prompt should also contain an example as well.
@@ -98,7 +100,8 @@ def get_question_prompt(topic,difficulty):
    """
     )
 
-def get_quiz_json_prompt(question_prompt,subtopic,skills,difficulty):
+
+def get_quiz_json_prompt(question_prompt, subtopic, skills, difficulty):
     return f"""
       {question_prompt}
 
@@ -112,22 +115,22 @@ def get_quiz_json_prompt(question_prompt,subtopic,skills,difficulty):
 
       difficulty level : '{difficulty}' and creatively make the question '{difficulty}'
     higher difficulty questions should mean the questions are more verbose.
-    it should take the test takers more time to solve if the difficulty is high. 
+    it should take the test takers more time to solve if the difficulty is high.
 
-    """+"""
-      Output: 
-      give python 
+    """ + """
+      Output:
+      give python
       {
             "question":question_description,
             "options":[option1,option2,option3,option4],
             "correct_option":("A" or "B" or "C" or "D"),
             "reasoning":reasoning
       }
-  give python output 
+  give python output
   """
 
 
-def get_response_delayed_prompt(prompt,delay=0.1):
+def get_response_delayed_prompt(prompt, delay=0.1):
     try:
         time.sleep(delay)
         raw_response = model.generate_content(
@@ -135,26 +138,27 @@ def get_response_delayed_prompt(prompt,delay=0.1):
         )
         return raw_response.text
     except ResourceExhausted as e:
-        return get_response_delayed_prompt(prompt,delay * 2)
+        return get_response_delayed_prompt(prompt, delay * 2)
     except Exception as e:
         print(e)
         return None
 
 
 def filter_response(text):
-    text = re.sub("\*{2,}","",text)
+    text = re.sub("\\*{2,}", "", text)
     text = text[text.index("{"):text.rindex("}") + 1]
     return text
 
-def get_subtopic_question(subtopic,difficulty,quiz_questions):
+
+def get_subtopic_question(subtopic, difficulty, quiz_questions):
     skills = get_response_delayed_prompt(f"""what skills does these {subtopic} test in {exam}.""")
-    question_prompt = get_question_prompt(subtopic,difficulty)
-    
+    question_prompt = get_question_prompt(subtopic, difficulty)
+
     json_text = filter_response(
-            get_response_delayed_prompt(
-                get_quiz_json_prompt(question_prompt,subtopic,skills,difficulty)
-            )
+        get_response_delayed_prompt(
+            get_quiz_json_prompt(question_prompt, subtopic, skills, difficulty)
         )
+    )
 
     print(subtopic)
 
@@ -163,41 +167,46 @@ def get_subtopic_question(subtopic,difficulty,quiz_questions):
 
     try:
         qn_json = json.loads(json_text)
-        qn_json["reasoning"] = get_detailed_solution(json_text,subtopic)
+        qn_json["reasoning"] = get_detailed_solution(json_text, subtopic)
         quiz_questions.append(qn_json)
         qn_json["difficulty"] = difficulty
         quiz_questions.append(
             qn_json
         )
-        print(subtopic,"question added")
+        print(subtopic, "question added")
     except Exception as e:
         print(e)
-  
+
+
 def filter_response_as_list(text):
-    text = re.sub("\*{2,}","",text)
+    text = re.sub("\\*{2,}", "", text)
     return text[text.index("["):text.rindex("]") + 1]
+
 
 def split_into_batches(array, batch_size=5):
     return [array[i:i + batch_size] for i in range(0, len(array), batch_size)]
 
+
 quizzes = []
+
+
 def get_quiz_json(topic):
     global quizzes
     quiz = dict()
     quiz_questions = []
-    
+
     for difficulty in difficulties:
         print(difficulty)
         subtopics = get_subtopic(topic)
-        subtopic_batches = split_into_batches(subtopics, 26)
-        for subtopic_batch in subtopic_batches:
-            threads = []
-            for subtopic in subtopic_batch:
-                thread = threading.Thread(target=get_subtopic_question, args=(subtopic["subtopic"],difficulty,quiz_questions))
-                threads.append(thread)
-                thread.start()
-                for thread in threads:
-                    thread.join()
+        # subtopic_batches = split_into_batches(subtopics, 26)
+        # for subtopic_batch in subtopic_batches:
+        threads = []
+        for subtopic in subtopics:
+            thread = threading.Thread(target=get_subtopic_question, args=(subtopic["subtopic"], difficulty, quiz_questions))
+            threads.append(thread)
+            thread.start()
+        for thread in threads:
+            thread.join()
 
     quiz["topic"] = topic
     quiz["questions"] = quiz_questions
@@ -205,6 +214,7 @@ def get_quiz_json(topic):
 
     with open(f'output/{topic}.json', 'w') as json_file:
         json.dump(quiz, json_file, indent=4)
+
 
 api_key = os.getenv("GEMINI_API_KEY")
 configure_client(api_key)
@@ -214,14 +224,6 @@ model = generativeai.GenerativeModel(
 )
 
 
-
 # sample_questions = input("Enter sample questions: ")
 for topic in topics:
     get_quiz_json(topic)
-            
-
-
-    
-  
-  
-
