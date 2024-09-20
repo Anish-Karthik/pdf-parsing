@@ -12,7 +12,7 @@ title = ""
 # sample_questions = neet_biology_questions
 difficulties = ["easy", "medium", "hard"]
 math_topics = [
-    # "Number Systems",
+    "Number Systems",
     "Simplification and Approximation",
     "Data Interpretation",
     "Quadratic Equations",
