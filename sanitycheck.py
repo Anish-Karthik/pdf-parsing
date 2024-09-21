@@ -63,9 +63,15 @@ topics_list = topics = [
     "Logical Reasoning - Seating Arrangement",
     "Logical Reasoning - Puzzle",
     "Logical Reasoning - Syllogism",
+    "Logical Reasoning - Clocks",
     "Logical Reasoning - Blood Relations",
     "Logical Reasoning - Input-Output",
     "Logical Reasoning - Coding-Decoding",
+    "Logical Reasoning - Calendars",
+    "Logical Reasoning - Dice",
+    "Logical Reasoning - Cube and Cuboid",
+    "Logical Reasoning - Truth Tables",
+    "Logical Reasoning - Ranking-Direction-Alphabet Test",
     "Reading Comprehension"
 ]
 
