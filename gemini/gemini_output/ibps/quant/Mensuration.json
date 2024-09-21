@@ -62,22 +62,6 @@
             "difficulty": "easy"
         },
         {
-            "question": {
-                "Difficulty Level": "easy",
-                "Problem Type": "Area of a rectangle",
-                "Context": "A rectangular garden is 10 meters long and 5 meters wide. What is the area of the garden?"
-            },
-            "options": [
-                "50 square meters",
-                "30 square meters",
-                "15 square meters",
-                "25 square meters"
-            ],
-            "correct_option": "A",
-            "reasoning": "## Detailed Explanation:\n\nThe correct answer is **\"50 square meters\" (Option A)**. Here's why:\n\n**Understanding the Concept:**\n\nThe area of a rectangle is the space it occupies within its boundaries. It is calculated by multiplying the length and width of the rectangle.\n\n**Applying the Formula:**\n\n* **Length (l):** 10 meters\n* **Width (w):** 5 meters\n\n**Area (A) = l x w = 10 meters x 5 meters = 50 square meters**\n\n**Why Other Options Are Incorrect:**\n\n* **Option B (30 square meters):** This is incorrect because it represents the perimeter of the rectangle (2(l + w) = 2(10 + 5) = 30 meters). \n* **Option C (15 square meters):** This is incorrect because it represents half the area of the rectangle (10 x 5 / 2 = 15 square meters).\n* **Option D (25 square meters):** This is incorrect because it represents the square of the width of the rectangle (5 x 5 = 25 square meters).\n\n**Relevance to Banking Exams:**\n\nUnderstanding basic geometric concepts like calculating the area of a rectangle is crucial for banking exams like IBPS PO and SBI PO. These exams often include questions related to mensuration, which involve applying geometric principles to solve problems related to areas, volumes, and perimeters.  \n\n**Key Takeaways:**\n\n* Remember the formula for calculating the area of a rectangle: **Area = Length x Width**.\n* Understand the difference between area and perimeter. Perimeter measures the total length of the boundaries of a shape, while area measures the space it occupies.\n* Practice solving similar problems involving rectangles and other geometric shapes to master the concepts.\n\nBy understanding these concepts and applying them effectively, you can increase your chances of success in competitive exams like IBPS PO and SBI PO. \n",
-            "difficulty": "easy"
-        },
-        {
             "question": "A square-shaped park has a side length of 15 meters. What is the perimeter of the park?",
             "options": [
                 "60 meters",
@@ -205,7 +189,7 @@
                 "Equilateral Triangle",
                 "Right Triangle"
             ],
-            "correct_option": "a) Scalene Triangle",
+            "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe correct answer is **a) Scalene Triangle**. Here's why:\n\n* **Understanding Triangle Types:**  Triangles are classified based on their side lengths and angles:\n    * **Scalene Triangle:** All three sides are different lengths, and consequently, all three angles are different.\n    * **Isosceles Triangle:** Two sides are equal, and the angles opposite those sides are also equal.\n    * **Equilateral Triangle:** All three sides are equal, and all three angles are equal (each measuring 60 degrees).\n    * **Right Triangle:** One angle measures 90 degrees.\n\n* **Applying the Definition:** The question states the triangle has angles measuring 45 degrees, 60 degrees, and 75 degrees.  Since all three angles are different, this confirms the triangle is **scalene**.\n\n* **Why other options are incorrect:**\n    * **b) Isosceles Triangle:** This is incorrect because an isosceles triangle has two equal angles. \n    * **c) Equilateral Triangle:**  An equilateral triangle has all angles equal to 60 degrees.\n    * **d) Right Triangle:** A right triangle has one 90-degree angle. \n\n**Key takeaway:** The key to identifying a triangle type is to focus on its side lengths and angles. If all three angles are different, the triangle is scalene. \n\n**Relevance to Banking Exams:** This question tests your understanding of basic geometry concepts, which are frequently assessed in quantitative aptitude sections of banking exams like IBPS PO and SBI PO. These exams often include questions on triangles, their properties, and calculations related to them. \n",
             "difficulty": "medium"
         },
@@ -457,7 +441,7 @@
                 "20 meters",
                 "2.5 meters"
             ],
-            "correct_option": "d)",
+            "correct_option": "D",
             "reasoning": "## Detailed Explanation:\n\nThe question presents a classic mensuration problem often encountered in banking exams like IBPS PO and SBI PO. It tests your understanding of area calculations for circles and the ability to apply a shortcut method to simplify the solution.  Let's break down the explanation:\n\n**1. Understanding the Problem:**\n\n* We have a circular pool with a radius of 10 meters.\n* A rectangular walkway surrounds the pool, creating a larger outer circle.\n* The total area of the pool and walkway is 400\u03c0 square meters.\n* We need to find the width of the walkway.\n\n**2. Applying the Shortcut Method:**\n\nThe question suggests a shortcut method:\n\n* **Area of outer circle - Area of inner circle = Area of the walkway**\n\nThis method cleverly eliminates the need to calculate the area of the rectangular walkway directly. Instead, we focus on the difference in areas between the two circles.\n\n**3. Setting up the Equation:**\n\n* Let 'x' be the width of the walkway.\n* The radius of the outer circle (pool + walkway) is (10 + x) meters.\n\nUsing the shortcut method and the formula for the area of a circle (\u03c0r\u00b2), we can set up the equation:\n\n\u03c0(10 + x)\u00b2 - \u03c0(10)\u00b2 = 400\u03c0\n\n**4. Solving the Equation:**\n\n* Expand the equation: \u03c0(100 + 20x + x\u00b2) - 100\u03c0 = 400\u03c0\n* Simplify: 100\u03c0 + 20\u03c0x + \u03c0x\u00b2 - 100\u03c0 = 400\u03c0\n* Combine like terms: 20\u03c0x + \u03c0x\u00b2 = 400\u03c0\n* Divide both sides by \u03c0: x\u00b2 + 20x - 400 = 0\n* Factor the quadratic equation: (x + 20)(x - 20) = 0\n\nThis gives us two possible solutions: x = -20 or x = 20.\n\n**5. Analyzing the Solution:**\n\n* Since the width of the walkway cannot be negative, we discard x = -20. \n* Therefore, the width of the walkway is **20 meters**.\n\n**6. Addressing the Discrepancy:**\n\nThe question states that the correct answer is \"d) 2.5 meters,\" which is incorrect. The correct answer should be 20 meters based on the calculations. The question seems to have an error in the provided options or the reasoning.\n\n**7. Key Takeaways:**\n\n* **Mensuration is a common topic in banking exams:** Be familiar with formulas for areas of circles and other shapes.\n* **Shortcut methods can simplify calculations:** Look for ways to solve problems efficiently, avoiding unnecessary steps.\n* **Double-check your answers and options:** Be aware of potential errors in questions and options.\n\n**Additional Context:**\n\nThis question is an excellent example of how banking exam questions can test your understanding of basic geometric concepts and problem-solving skills within a time-constrained environment.  Remember to practice various mensuration problems, including those involving circles, rectangles, squares, and triangles. Familiarize yourself with shortcut methods and always double-check your answers and options for accuracy. \n",
             "difficulty": "medium"
         },

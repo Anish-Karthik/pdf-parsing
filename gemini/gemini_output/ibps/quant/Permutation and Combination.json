@@ -206,56 +206,52 @@
             "difficulty": "easy"
         },
         {
-            "easy": [
-                {
-                    "question": "A team of 5 people needs to be chosen from a group of 8 people. How many different teams can be formed?",
-                    "options": [
-                        "56",
-                        "336",
-                        "6720",
-                        "40320"
-                    ],
-                    "correct_option": "A",
-                    "reasoning": "This is a combination problem since the order of people in the team doesn't matter. We use the formula nCr = n! / (r! * (n-r)!).  Here, n = 8 and r = 5. So, \u2078C\u2085 = 8! / (5! * 3!) = 56."
-                },
-                {
-                    "question": "How many different ways can you arrange the letters in the word 'MATH'?",
-                    "options": [
-                        "12",
-                        "24",
-                        "120",
-                        "720"
-                    ],
-                    "correct_option": "C",
-                    "reasoning": "This is a permutation problem since the order of letters matters.  We use the formula nPr = n! / (n-r)!.  Here, n = 4 (number of letters) and r = 4 (all letters are used). So, \u2074P\u2084 = 4! / 0! = 24."
-                }
+            "question": "A team of 5 people needs to be chosen from a group of 8 people. How many different teams can be formed?",
+            "options": [
+                "56",
+                "336",
+                "6720",
+                "40320"
             ],
-            "hard": [
-                {
-                    "question": "A club has 10 members. They need to elect a president, vice-president, and treasurer. How many different ways can these positions be filled if no member can hold more than one position?",
-                    "options": [
-                        "720",
-                        "120",
-                        "1000",
-                        "3600"
-                    ],
-                    "correct_option": "A",
-                    "reasoning": "This is a permutation problem because the order of the positions matters. We use the formula nPr = n! / (n-r)!  Here, n = 10 (number of members) and r = 3 (number of positions). So, \u00b9\u2070P\u2083 = 10! / 7! = 720."
-                },
-                {
-                    "question": "A bag contains 5 red balls and 3 blue balls. What is the probability of drawing 2 red balls in a row if the first ball is not replaced?",
-                    "options": [
-                        "1/4",
-                        "1/2",
-                        "5/14",
-                        "5/28"
-                    ],
-                    "correct_option": "D",
-                    "reasoning": "We need to calculate the probability of drawing a red ball first and then another red ball without replacement. The probability of drawing a red ball first is 5/8. After removing one red ball, there are only 4 left, and 7 total balls. So, the probability of drawing another red ball is 4/7. The overall probability is (5/8) * (4/7) = 5/28."
-                }
+            "correct_option": "A",
+            "difficulty": "medium",
+            "reasoning": "This is a combination problem since the order of people in the team doesn't matter. We use the formula nCr = n! / (r! * (n-r)!).  Here, n = 8 and r = 5. So, \u2078C\u2085 = 8! / (5! * 3!) = 56."
+        },
+        {
+            "question": "How many different ways can you arrange the letters in the word 'MATH'?",
+            "options": [
+                "12",
+                "24",
+                "120",
+                "720"
             ],
-            "reasoning": "## Detailed Explanation:\n\nThe given question set covers fundamental concepts of permutations and combinations, which are crucial for various competitive exams like IBPS PO and SBI PO. Here's a breakdown of each question and its solution:\n\n**Easy Difficulty:**\n\n1. **Question:** \"A team of 5 people needs to be chosen from a group of 8 people. How many different teams can be formed?\"\n\n   **Correct Option:** A (56)\n\n   **Reasoning:** This problem involves choosing a group of people without considering the order in which they are selected. Therefore, it's a combination problem. The formula for combinations is:\n\n   nCr = n! / (r! * (n-r)!)\n\n   Where:\n\n   * n = total number of items (8 people in this case)\n   * r = number of items to be chosen (5 people for the team)\n\n   Applying the formula:\n\n   \u2078C\u2085 = 8! / (5! * 3!) = (8 * 7 * 6) / (3 * 2 * 1) = 56\n\n   **Therefore, there are 56 different teams that can be formed.**\n\n2. **Question:** \"How many different ways can you arrange the letters in the word 'MATH'?\"\n\n   **Correct Option:** C (120)\n\n   **Reasoning:** This problem deals with arranging items in a specific order.  Therefore, it's a permutation problem. The formula for permutations is:\n\n   nPr = n! / (n-r)!\n\n   Where:\n\n   * n = total number of items (4 letters in this case)\n   * r = number of items to be arranged (all 4 letters in this case)\n\n   Applying the formula:\n\n   \u2074P\u2084 = 4! / 0! = (4 * 3 * 2 * 1) / 1 = 24\n\n   **Therefore, there are 24 different ways to arrange the letters in the word 'MATH'.**\n\n**Hard Difficulty:**\n\n1. **Question:** \"A club has 10 members. They need to elect a president, vice-president, and treasurer. How many different ways can these positions be filled if no member can hold more than one position?\"\n\n   **Correct Option:** A (720)\n\n   **Reasoning:** This problem involves assigning specific positions to individuals. The order in which the positions are filled matters (president, then vice-president, then treasurer). Therefore, it's a permutation problem.\n\n   Applying the formula:\n\n   \u00b9\u2070P\u2083 = 10! / 7! = (10 * 9 * 8) = 720\n\n   **Therefore, there are 720 different ways to fill these positions.**\n\n2. **Question:** \"A bag contains 5 red balls and 3 blue balls. What is the probability of drawing 2 red balls in a row if the first ball is not replaced?\"\n\n   **Correct Option:** D (5/28)\n\n   **Reasoning:** This problem involves calculating the probability of two events happening in sequence.  We need to find the probability of drawing a red ball first and then another red ball without replacing the first one.\n\n   * Probability of drawing a red ball first: 5 (red balls) / 8 (total balls) = 5/8\n   * Probability of drawing another red ball (without replacement): 4 (remaining red balls) / 7 (remaining total balls) = 4/7\n\n   The overall probability is the product of these individual probabilities:\n\n   (5/8) * (4/7) = 5/28\n\n   **Therefore, the probability of drawing 2 red balls in a row without replacement is 5/28.**\n\n**Additional Context and Tips for IBPS PO and SBI PO Exams:**\n\n* **Understanding the difference between permutations and combinations is crucial.** Permutations deal with order, while combinations focus on selection.\n* **Practice solving a variety of problems.** The more problems you solve, the better you'll understand the concepts and the faster you'll be able to apply the formulas.\n* **Focus on the key information.** Read the problem carefully and identify the important details, such as the total number of items, the number to be chosen, and whether order matters.\n* **Utilize shortcuts and tricks.** There are various shortcuts and tricks that can help you solve permutation and combination problems more efficiently.\n* **Review previous exam papers.** Analyzing past exam papers will give you an idea of the types of questions asked and the level of difficulty.\n\nBy understanding these concepts and practicing diligently, you can improve your chances of success in competitive banking exams like IBPS PO and SBI PO. \n",
-            "difficulty": "easy"
+            "correct_option": "C",
+            "difficulty": "medium",
+            "reasoning": "This is a permutation problem since the order of letters matters.  We use the formula nPr = n! / (n-r)!.  Here, n = 4 (number of letters) and r = 4 (all letters are used). So, \u2074P\u2084 = 4! / 0! = 24."
+        },
+        {
+            "question": "A club has 10 members. They need to elect a president, vice-president, and treasurer. How many different ways can these positions be filled if no member can hold more than one position?",
+            "options": [
+                "720",
+                "120",
+                "1000",
+                "3600"
+            ],
+            "correct_option": "A",
+            "difficulty": "medium",
+            "reasoning": "This is a permutation problem because the order of the positions matters. We use the formula nPr = n! / (n-r)!  Here, n = 10 (number of members) and r = 3 (number of positions). So, \u00b9\u2070P\u2083 = 10! / 7! = 720."
+        },
+        {
+            "question": "A bag contains 5 red balls and 3 blue balls. What is the probability of drawing 2 red balls in a row if the first ball is not replaced?",
+            "options": [
+                "1/4",
+                "1/2",
+                "5/14",
+                "5/28"
+            ],
+            "correct_option": "D",
+            "difficulty": "medium",
+            "reasoning": "We need to calculate the probability of drawing a red ball first and then another red ball without replacement. The probability of drawing a red ball first is 5/8. After removing one red ball, there are only 4 left, and 7 total balls. So, the probability of drawing another red ball is 4/7. The overall probability is (5/8) * (4/7) = 5/28."
         },
         {
             "question": "A clothing store offers a 'Mix & Match' promotion where customers can choose 3 items from a selection of 5 different types of shirts (t-shirts, polos, dress shirts, sweaters, and hoodies). They can choose the same type of shirt multiple times. How many different 'Mix & Match' combinations are possible?",
@@ -769,7 +765,7 @@
                 "64",
                 "128"
             ],
-            "correct_option": "c) 64",
+            "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThe question focuses on a classic permutation problem with additional constraints, testing your understanding of circular arrangements and restrictions. Here's a detailed breakdown of the solution:\n\n**1. Understanding Circular Permutations:**\n\nIn a circular permutation, we fix one person's position and arrange the rest relative to them. This is because rotating everyone by one position doesn't change the relative arrangement. \n\n**2. Dealing with Constraints:**\n\n* **Alternating Genders:**  We have four male-female pairs. To ensure alternating genders, we need to arrange these four pairs around the table in a circular manner.\n* **Friendship Groups:** Each pair acts as a single unit.  We need to arrange these units in a circle, not individual people.\n* **Distance Restriction:** Alex and Grace cannot sit directly across from each other, limiting the possible positions for Grace.\n\n**3. Step-by-Step Calculation:**\n\n* **Arranging the Units:**  There are (4-1)! = 3! = 6 ways to arrange four units in a circle. However, due to the circular nature, we overcount by a factor of 4. So, there are actually 6/4 = 1.5 ways to arrange the pairs considering alternating genders.\n* **Internal Arrangement:**  Within each pair, the two friends can be arranged in 2! = 2 ways (e.g., Alex-Ben or Ben-Alex). Since we have four pairs, this gives us 2 * 2 * 2 * 2 = 16 possibilities.\n* **Alex-Grace Restriction:** Since Alex and Grace cannot sit directly across, Grace has only two valid positions (next to Alex or two positions away). \n\n**4. Total Arrangements:**\n\nThe total number of possible seating arrangements is: 1.5 (arrangements of pairs) * 16 (internal arrangements) * 2 (valid positions for Grace) = **64**\n\n**Why other options are incorrect:**\n\n* **a) 16:** This result only considers the arrangements of the pairs without factoring in the internal arrangements within each pair or the Alex-Grace restriction.\n* **b) 32:** This result only considers the arrangements of the pairs as units without factoring in the internal arrangements or the Alex-Grace restriction.\n* **d) 128:** This result overestimates the possibilities by not correctly accounting for the circular arrangement and the constraint on Alex and Grace.\n\n**Key Takeaways:**\n\n* **Circular Permutations:** Remember to divide by the number of positions to account for overcounting.\n* **Constraints:** Carefully analyze the restrictions and how they impact the possible arrangements.\n* **Break Down the Problem:**  Divide the problem into smaller steps (arrange pairs, arrange within pairs, handle restrictions) for easier calculation.\n\nBy following this methodical approach, you can confidently solve complex permutation problems like this one, which are frequently encountered in competitive banking exams like IBPS PO and SBI PO. \n",
             "difficulty": "hard"
         },

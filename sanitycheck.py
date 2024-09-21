@@ -93,10 +93,9 @@ def sanity_check(filename):
     if 'topic' not in data or data['topic'] not in topics_list:
         print(filename + ' Invalid topic: ' + data['topic'])
 
-    for qn in data['questions']:
-        check = True
+    for ind, qn in enumerate(data['questions']):
         if 'question' not in qn or len(qn['question']) == 0 or type(qn['question']) is not str:
-            print("Question text is missing")
+            print("Question text is missing " + str(ind))
             continue
         if 'options' not in qn or len(qn['options']) != 4:
             print(truncate(qn["question"]) + " Incorrect number of options")
@@ -122,7 +121,7 @@ def sanity_check(filename):
             print(truncate(qn["question"]) + " Detailed solution missing")
 
         if 'difficulty' not in qn:
-            print(truncate(qn["question"]) + " Difficulty solution missing")
+            print(truncate(qn["question"]) + " Difficulty missing")
 
     write_json(data, filename)
 
@@ -135,5 +134,5 @@ def find_json_files(directory):
 
 
 # Example usage:
-directory_path = "/home/barath/Documents/sat/code/pdf-parsing/gemini/gemini_output"
+directory_path = "/home/barath/Documents/sat/code/pdf-parsing/gemini/gemini_output/ibps/quant/"
 json_files = find_json_files(directory_path)
