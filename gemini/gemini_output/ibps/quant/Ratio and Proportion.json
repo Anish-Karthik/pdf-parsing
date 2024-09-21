@@ -74,18 +74,6 @@
             "difficulty": "easy"
         },
         {
-            "question": "A train travels at a speed of 60 km/h. If the train needs to cover a distance of 300 km, how many hours will it take?",
-            "options": [
-                "5 hours",
-                "6 hours",
-                "7 hours",
-                "8 hours"
-            ],
-            "correct_option": "A",
-            "reasoning": "## Detailed Explanation:\n\nThis question tests your understanding of the relationship between speed, distance, and time.  Let's break it down:\n\n**Key Concepts:**\n\n* **Speed:**  The rate at which something moves. It's measured in units like kilometers per hour (km/h) or miles per hour (mph).\n* **Distance:** The total length covered by the moving object. Measured in units like kilometers (km) or miles (mi).\n* **Time:**  The duration of the movement. Measured in units like hours (h) or minutes (min).\n\n**The Formula:**\n\nThe relationship between these three is represented by the following formula:\n\n* **Distance = Speed x Time**\n\n**Solving the Problem:**\n\n1. **Identify the knowns:**\n    * Speed = 60 km/h\n    * Distance = 300 km\n\n2. **Identify the unknown:**\n    * Time = ?\n\n3. **Apply the formula:**\n    * Time = Distance / Speed\n    * Time = 300 km / 60 km/h\n    * Time = 5 hours\n\n**Therefore, the correct answer is A: 5 hours.**\n\n**Why this makes sense:**\n\n* **Inverse Proportion:** Speed and time are inversely proportional. This means that if the speed increases, the time taken to cover the same distance decreases, and vice versa. \n* **Real-world application:** Imagine two cars traveling the same distance. The car moving faster (higher speed) will take less time to reach the destination compared to the car moving slower.\n\n**Relevance to Banking Exams:**\n\nThis type of problem is common in banking exams like IBPS PO and SBI PO, as these exams test quantitative aptitude. They often include questions related to time, speed, and distance, requiring you to apply formulas and understand their relationships.  Being comfortable with this concept will help you solve similar problems quickly and accurately during the exam. \n\n**Additional Tips:**\n\n* **Practice:**  Practice solving similar problems to solidify your understanding.\n* **Units:** Always pay attention to units. Make sure they are consistent throughout the problem.\n* **Formulas:** Memorize the basic formulas for time, speed, and distance.\n* **Mental Math:**  Try to solve some problems mentally, especially those with simple numbers. This will improve your speed and accuracy. \n",
-            "difficulty": "easy"
-        },
-        {
             "question": "A fruit basket contains 3 apples for every 2 oranges. If there are 12 apples in the basket, how many oranges are there?",
             "options": [
                 "8",
@@ -129,7 +117,7 @@
                 "$12,000",
                 "$30,000"
             ],
-            "correct_option": "a)",
+            "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe question tests your understanding of direct proportion and how to apply it in a practical scenario. Here's a breakdown of the solution:\n\n**Understanding Direct Proportion:**\n\nDirect proportion means that two quantities increase or decrease at the same rate. If one quantity doubles, the other doubles too.  We can express this mathematically as:\n\n* **y \u221d x**  (y is directly proportional to x)\n* **y = kx** (where k is a constant of proportionality)\n\n**Applying it to the Problem:**\n\n* **Identify the variables:**\n    *  x = Number of units sold\n    *  y = Profit\n* **Set up the equation:**\n    * We know profit (y) is directly proportional to the number of units sold (x). So, y = kx.\n* **Find the constant of proportionality (k):**\n    * We're given that when x = 500, y = $10,000. Substitute these values into the equation:\n        * $10,000 = k * 500\n        * k = $10,000 / 500 = $20\n* **Calculate the profit for 1,200 units:**\n    * Now that we know k = $20, we can use the equation y = kx to find the profit when x = 1,200:\n        * y = $20 * 1,200 = $24,000\n\n**Therefore, the correct answer is (a) $24,000.**\n\n**Why this is important for IBPS PO, SBI PO exams:**\n\n* **Quantitative Aptitude:** These exams often test your ability to solve problems involving ratios and proportions. This question exemplifies a basic application of these concepts.\n* **Logical Reasoning:** Understanding direct proportion requires analyzing relationships between quantities, a crucial skill in problem-solving.\n* **Practical Applications:** The scenario of a company's profit being directly proportional to sales is a realistic example, demonstrating the relevance of these concepts to real-world situations.\n\n**Key Takeaways:**\n\n* Direct proportion is a fundamental concept in mathematics that relates two quantities that change at the same rate.\n*  Understanding how to set up and solve equations involving direct proportion is essential for solving various problem types.\n*  Practice applying these concepts to real-world scenarios to enhance your understanding and problem-solving abilities. \n",
             "difficulty": "easy"
         },
@@ -243,30 +231,28 @@
             "difficulty": "easy"
         },
         {
-            "easy": {
-                "question": "A machine learning model is trained on a dataset with a 4:1 ratio of positive to negative examples. If the model predicts 100 positive examples, how many negative examples would you expect it to predict, assuming the model follows the same ratio?",
-                "options": [
-                    "25",
-                    "50",
-                    "100",
-                    "400"
-                ],
-                "correct_option": "A",
-                "reasoning": "The ratio of positive to negative examples is 4:1. This means for every 4 positive examples, there is 1 negative example. If the model predicts 100 positive examples, we can divide this by 4 to find the expected number of negative examples: 100 / 4 = 25."
-            },
-            "higher difficulty": {
-                "question": "A company is developing a machine learning model to predict customer churn. They have a dataset with a 1:10 ratio of churned to non-churned customers.  They want to improve the model's performance by obtaining a new dataset with a 1:4 ratio of churned to non-churned customers.  If they need to have 200 churned customers in the new dataset, how many non-churned customers should they include?",
-                "options": [
-                    "800",
-                    "1000",
-                    "1200",
-                    "1600"
-                ],
-                "correct_option": "C",
-                "reasoning": "The new dataset should have a 1:4 ratio of churned to non-churned customers. This means for every 1 churned customer, there should be 4 non-churned customers. Since they need 200 churned customers, they should include 200 * 4 = 800 non-churned customers in the new dataset. Therefore, the total number of non-churned customers should be 800 + 200 = 1000. So the correct answer is C)."
-            },
-            "reasoning": "## Detailed Explanation:\n\nThis question tests your understanding of ratios and proportions, a crucial concept for machine learning in banking exams. Let's break down the answer:\n\n**Easy Question:**\n\n* **The Concept:** The question highlights the importance of data distribution in training machine learning models. A skewed dataset (like the 4:1 ratio) can lead to biased models that might not accurately predict real-world scenarios.\n* **The Ratio:** The ratio 4:1 means for every 4 positive examples, there's 1 negative example. This information is crucial for understanding the model's behavior.\n* **The Calculation:** The model predicts 100 positive examples. To maintain the 4:1 ratio, we divide the number of positive examples by 4. This gives us 100 / 4 = 25 negative examples.\n\n**Higher Difficulty Question:**\n\n* **The Concept:** This question focuses on the concept of data balancing, which aims to improve model performance by reducing bias caused by imbalanced datasets.\n* **The Problem:** The company has a highly imbalanced dataset with a 1:10 ratio of churned to non-churned customers. This means for every churned customer, there are 10 non-churned customers. \n* **The Solution:** To improve the model's accuracy, they want to create a new dataset with a 1:4 ratio of churned to non-churned customers.  \n* **The Calculation:** The new dataset needs 200 churned customers. To achieve the desired 1:4 ratio, they need 4 times as many non-churned customers (200 * 4 = 800).  \n* **The Total:** The total number of non-churned customers in the new dataset should be 800 + 200 = 1000.\n\n**Key Takeaways:**\n\n* **Understanding ratios:** Knowing how to work with ratios is fundamental in various machine learning contexts, including data preprocessing and model evaluation.\n* **Data Imbalance:** Imbalanced datasets can lead to biased models. \n* **Data Balancing:** To improve model performance, techniques like oversampling, undersampling, or generating synthetic data are used to balance imbalanced datasets.\n\n**How this applies to banking exams:**\n\nThese questions highlight how crucial it is for banking professionals to understand machine learning concepts. Banking institutions heavily rely on these models for tasks like fraud detection, customer segmentation, and credit risk assessment. Being able to analyze and interpret data ratios and understand the impact of imbalanced datasets is a crucial skill for aspiring banking professionals.\n\nRemember to practice more questions on ratios and proportions and explore different data balancing techniques. This will significantly strengthen your understanding of machine learning fundamentals relevant to banking exams. \n",
-            "difficulty": "easy"
+            "question": "A machine learning model is trained on a dataset with a 4:1 ratio of positive to negative examples. If the model predicts 100 positive examples, how many negative examples would you expect it to predict, assuming the model follows the same ratio?",
+            "options": [
+                "25",
+                "50",
+                "100",
+                "400"
+            ],
+            "difficulty": "medium",
+            "correct_option": "A",
+            "reasoning": "The ratio of positive to negative examples is 4:1. This means for every 4 positive examples, there is 1 negative example. If the model predicts 100 positive examples, we can divide this by 4 to find the expected number of negative examples: 100 / 4 = 25."
+        },
+        {
+            "question": "A company is developing a machine learning model to predict customer churn. They have a dataset with a 1:10 ratio of churned to non-churned customers.  They want to improve the model's performance by obtaining a new dataset with a 1:4 ratio of churned to non-churned customers.  If they need to have 200 churned customers in the new dataset, how many non-churned customers should they include?",
+            "options": [
+                "800",
+                "1000",
+                "1200",
+                "1600"
+            ],
+            "difficulty": "medium",
+            "correct_option": "C",
+            "reasoning": "The new dataset should have a 1:4 ratio of churned to non-churned customers. This means for every 1 churned customer, there should be 4 non-churned customers. Since they need 200 churned customers, they should include 200 * 4 = 800 non-churned customers in the new dataset. Therefore, the total number of non-churned customers should be 800 + 200 = 1000. So the correct answer is C)."
         },
         {
             "question": "A car travels 150 miles on 10 gallons of gasoline. If the car maintains the same fuel efficiency, how many gallons of gasoline will it need to travel 300 miles?",
@@ -600,7 +586,7 @@
                 "13:8",
                 "7:4"
             ],
-            "correct_option": "c) 13:8",
+            "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThis question tests your understanding of ratios and proportions in a business context.  It's relevant to banking exams like IBPS PO and SBI PO as these exams often include questions on market share analysis and strategic planning.  Let's break down the solution step-by-step:\n\n**1. Understanding the Initial Market Share:**\n\n* **Bank A:** 50%\n* **Bank B:** 30%\n* **Bank C:** 20%\n\n**2. Analyzing the Impact of Advertising Campaigns:**\n\n* **Bank A's Gain:**  Bank A aims to attract 10% of Bank B's customers. This translates to 10% * 30% = 3% of the total market share.\n* **Bank B's Gain & Loss:**  Bank B aims to retain its existing customers and gain 5% of Bank C's customers (5% * 20% = 1%). However, they lose 3% to Bank A. \n\n**3. Calculating the New Market Shares:**\n\n* **Bank A:**  Initial market share (50%) + Gain from Bank B (3%) = 53%\n* **Bank B:** Initial market share (30%) + Gain from Bank C (1%) - Loss to Bank A (3%) = 28%\n\n**4. Determining the New Ratio:**\n\nThe new ratio of Bank A's market share to Bank B's market share is 53% : 28%. To simplify this ratio, we find the greatest common factor (GCF) of 53 and 28, which is 1. Dividing both numbers by 1, we get the simplified ratio of **13:8**.\n\n**Therefore, the correct answer is (c) 13:8**.\n\n**Key Concepts to Remember:**\n\n* **Ratio:** A comparison of two quantities by division. \n* **Proportion:** An equation that states that two ratios are equal.\n* **Market Share:** The percentage of total sales or customers that a company or product controls in a specific market.\n\n**How This Question Relates to Banking Exams:**\n\nThis question demonstrates how ratio and proportion concepts are applied in real-world scenarios:\n\n* **Market Analysis:** Banks use ratio and proportion to analyze market share, assess competition, and identify growth opportunities.\n* **Strategic Planning:**  The question highlights how advertising campaigns and customer retention strategies impact market share and affect the competitive landscape. \n* **Financial Performance:** Understanding market share is crucial for analyzing a bank's financial performance and assessing its overall competitiveness.\n\nBy mastering these concepts and applying them to practical scenarios, you can confidently tackle similar questions on banking exams like IBPS PO and SBI PO. \n",
             "difficulty": "hard"
         },

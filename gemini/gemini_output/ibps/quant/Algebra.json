@@ -194,16 +194,14 @@
             "difficulty": "easy"
         },
         {
-            "question": {
-                "problem_statement": "A car rental company charges a flat fee of $25 and an additional $0.35 per mile driven.  Represent this cost as a function of the number of miles driven. If a customer drives 150 miles, how much will they be charged?",
-                "multiple_choice_options": [
-                    "a) $77.50",
-                    "b) $100.00",
-                    "c) $122.50",
-                    "d) $150.00"
-                ]
-            },
-            "correct_option": "c",
+            "question": "A car rental company charges a flat fee of $25 and an additional $0.35 per mile driven.  Represent this cost as a function of the number of miles driven. If a customer drives 150 miles, how much will they be charged?",
+            "options": [
+                "$77.50",
+                "$100.00",
+                "$122.50",
+                "$150.00"
+            ],
+            "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThis question tests your understanding of how to represent real-world scenarios using linear functions. Here's a breakdown of the solution:\n\n**1. Identifying the Variables:**\n\n* **Independent Variable:** The number of miles driven (let's represent this with 'x').\n* **Dependent Variable:** The total cost of renting the car (let's represent this with 'C(x)').\n\n**2.  Forming the Linear Function:**\n\n* **Fixed Cost:** The company charges a flat fee of $25, regardless of the distance driven. This is our constant term in the function.\n* **Variable Cost:** The cost per mile driven is $0.35. This is our coefficient for the 'x' term, representing the cost that changes based on the number of miles driven.\n\nTherefore, the total cost function can be represented as:\n\n**C(x) = 0.35x + 25**\n\n**3. Calculating the Cost for 150 Miles:**\n\nTo find the cost for driving 150 miles, we simply substitute 'x' with 150 in our function:\n\nC(150) = 0.35 * 150 + 25 \nC(150) = 52.5 + 25\n**C(150) = 77.50**\n\n**Conclusion:**\n\nThe customer will be charged **$77.50** for driving 150 miles. This makes option **c) $77.50** the correct answer.\n\n**Relevance to Banking Exams:**\n\nUnderstanding linear functions is crucial for banking exams like IBPS PO and SBI PO. These exams often include questions related to:\n\n* **Simple Interest:** Calculating interest earned or paid based on a fixed rate and time.\n* **Compound Interest:**  Calculating interest earned or paid when interest is added to the principal amount.\n* **Profit and Loss:** Analyzing scenarios involving cost price, selling price, and profit or loss.\n\n**Key Takeaways:**\n\n* **Linear Functions:**  Represent relationships where one variable changes at a constant rate with respect to another.\n* **Real-World Applications:**  Linear functions can be used to model various real-world scenarios, including financial calculations, pricing models, and more. \n* **Problem-Solving Strategy:** Break down word problems into identifying variables, forming equations, and applying the appropriate calculations. \n\nBy mastering the concept of linear functions and their applications, you can confidently tackle similar problems in your banking exam preparation. \n",
             "difficulty": "medium"
         },
@@ -292,7 +290,7 @@
             "difficulty": "medium"
         },
         {
-            "question": "Problem: Simplify the following expression by rationalizing the denominator:\n* [Expression]:  `(3\u221a2 + 1)/(\u221a2 - \u221a3)`",
+            "question": "Simplify the following expression by rationalizing the denominator:\n* [Expression]:  `(3\u221a2 + 1)/(\u221a2 - \u221a3)`",
             "options": [
                 " (7\u221a2 + 3\u221a6)/5",
                 " (7\u221a2 + 3\u221a6)/1",
