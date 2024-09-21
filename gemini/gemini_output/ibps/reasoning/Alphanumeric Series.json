@@ -100,10 +100,10 @@
         {
             "question": "What is the next number in the following series: 1, 3, 5, 7, __?",
             "options": [
-                "A. 9",
-                "B. 10",
-                "C. 11",
-                "D. 12"
+                "9",
+                "10",
+                "11",
+                "12"
             ],
             "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe given series is 1, 3, 5, 7, __?\n\n**Understanding the Pattern:**\n\nThis series follows a simple pattern: it consists of consecutive odd numbers. \n\n* The first term is 1.\n* The second term is 3 (1 + 2).\n* The third term is 5 (3 + 2).\n* The fourth term is 7 (5 + 2).\n\n**Finding the Missing Number:**\n\nFollowing this pattern, the next term should be 7 + 2 = 9. \n\n**Therefore, the correct answer is A. 9.**\n\n**Why this is relevant for IBPS PO/SBI PO exams:**\n\nThese types of questions test your ability to identify patterns and sequences. This is a crucial skill for banking exams as you often need to analyze data and identify trends to make informed decisions. \n\n**Additional Context:**\n\nThis topic, 'Series with Increasing/Decreasing Orders',  falls under the broader category of \"Quantitative Aptitude\" which is an essential part of the IBPS PO and SBI PO exams. These questions can come in various forms:\n\n* **Arithmetic Progression (AP):**  A series where the difference between consecutive terms is constant.\n* **Geometric Progression (GP):**  A series where the ratio between consecutive terms is constant.\n* **Mixed Series:**  A combination of different patterns.\n\n**Key takeaways for solving such questions:**\n\n* **Observe the first few terms carefully:** Identify the difference, ratio, or any other pattern.\n* **Look for repeating elements:**  Are there any numbers or patterns repeating?\n* **Try to break down the series:** Can it be divided into smaller, simpler series?\n* **Practice with different types of series:** Familiarize yourself with various patterns and techniques.\n\nBy understanding these concepts and practicing regularly, you can confidently tackle similar questions in your banking exams. \n",
@@ -148,10 +148,10 @@
         {
             "question": "If the first term of a geometric progression is 3 and the common ratio is 2, what is the fourth term?",
             "options": [
-                "A) 12",
-                "B) 24",
-                "C) 48",
-                "D) 96"
+                "12",
+                "24",
+                "48",
+                "96"
             ],
             "correct_option": "B",
             "reasoning": "## Detailed Explanation:\n\nThe question asks us to find the fourth term of a geometric progression (GP). A GP is a sequence of numbers where each term is found by multiplying the previous term by a constant value, known as the common ratio. \n\n**Here's how to solve the problem:**\n\n1. **Identify the key information:**\n   - First term (a) = 3\n   - Common ratio (r) = 2\n   - Term number (n) = 4\n\n2. **Apply the formula for the nth term of a GP:**\n   - The nth term of a GP is given by:  a * r^(n-1)\n\n3. **Substitute the values:**\n   - Fourth term = 3 * 2^(4-1) = 3 * 2^3 \n\n4. **Calculate the result:**\n   - Fourth term = 3 * 8 = 24\n\n**Therefore, the correct answer is B) 24.**\n\n**Understanding the Concept:**\n\n* **Geometric Progression:**  A GP is a sequence of numbers where each term is found by multiplying the previous term by a constant factor (common ratio). For example, 2, 4, 8, 16... is a GP with a common ratio of 2.\n* **Formula for the nth term:** The formula a * r^(n-1) helps us find any term in a GP without having to calculate all the terms before it.\n\n**Importance for IBPS PO/SBI PO:**\n\nUnderstanding geometric progressions is crucial for banking exams like IBPS PO and SBI PO. These exams often feature questions related to:\n\n* **Calculating terms in a GP:** Similar to the given question.\n* **Finding the sum of a GP:**  This involves applying another formula to calculate the sum of a specific number of terms in a GP.\n* **Word problems based on GPs:** Questions may involve scenarios where growth or decay follows a geometric pattern.\n\n**Practice Tips:**\n\n* **Practice numerous problems:**  Work through various examples involving different values of first term, common ratio, and term number to solidify your understanding.\n* **Memorize the formula:** Make sure you remember the formula for the nth term of a GP (a * r^(n-1)).\n* **Focus on understanding the concept:** Don't just rely on memorizing formulas.  Understand how a GP works and the relationships between its terms. \n\nBy following these tips and understanding the fundamentals of GPs, you can confidently tackle questions related to this topic in banking exams. \n",
@@ -232,10 +232,10 @@
         {
             "question": "What is the next character in the following sequence:  #2A$3B%4C? ",
             "options": [
-                "A) 5",
-                "B) D",
-                "C) &",
-                "D) @"
+                "5",
+                "D",
+                "&",
+                "@"
             ],
             "correct_option": "C)",
             "reasoning": "## Detailed Explanation:\n\nThe given sequence follows a specific pattern:\n\n* **Symbol:**  #, $, %, & (Notice the symbols are sequentially arranged)\n* **Number:** 2, 3, 4 (Numbers are increasing by 1)\n* **Letter:** A, B, C (Letters are in alphabetical order)\n\nThis pattern continues throughout the sequence. \n\n**Therefore, the next character in the sequence should be the next symbol in the pattern, which is &.**\n\n**The correct answer is C) &.**\n\n**Understanding the Pattern:**\n\nIdentifying patterns in sequences is a common question type in competitive exams like IBPS PO and SBI PO. These questions test your ability to analyze information and logically deduce the next element in a sequence.  \n\nTo solve these questions, look for:\n\n* **Repeating patterns:**  Do specific elements or groups of elements repeat in the sequence? \n* **Arithmetic progression:** Are the elements increasing or decreasing by a constant value?\n* **Alphabetical order:** Are letters arranged in a specific order?\n* **Combinations:**  Do the elements follow a combination of multiple patterns?\n\nBy carefully observing the sequence and applying these strategies, you can effectively solve these questions. \n",
@@ -292,10 +292,10 @@
         {
             "question": "Observe the following sequence of symbols:  \u2665 \u2660 \u2666 \u2665 \u2660 \u2666 \u2665 \u2660  What is the next symbol in the sequence?",
             "options": [
-                "(A) \u2665",
-                "(B) \u2660",
-                "(C) \u2666",
-                "(D) \u2663"
+                " \u2665",
+                " \u2660",
+                " \u2666",
+                " \u2663"
             ],
             "correct_option": "(C)",
             "reasoning": "## Detailed Explanation:\n\nThe answer is **(C) \u2666** and here's why:\n\n* **Identifying the Pattern:** The sequence consists of three symbols: \u2665, \u2660, and \u2666. These symbols are repeating in a specific order: \u2665 \u2660 \u2666 \u2665 \u2660 \u2666 ...\n* **Predicting the Next Symbol:**  The sequence follows a simple pattern of repetition. Each set of three symbols (\u2665 \u2660 \u2666) is repeated. Since the last symbol in the sequence is \u2666, the next symbol must be the first symbol in the repeating set, which is **\u2666**.\n\n**Why other options are incorrect:**\n\n* **(A) \u2665:** While \u2665 is part of the pattern, it is the first symbol of the repeating set, and we are looking for the next symbol after \u2666.\n* **(B) \u2660:**  Similarly, \u2660 is the second symbol of the repeating set and not the next symbol.\n* **(D) \u2663:** This symbol is not part of the established pattern and therefore cannot be the next symbol.\n\n**Key takeaway for similar questions:**\n\n* **Focus on Repetition:** Look for repeating patterns of symbols, numbers, or any other element within the sequence.\n* **Identify the Unit:** Determine the unit of repetition (in this case, it's the three symbols: \u2665 \u2660 \u2666).\n* **Predict the Next:** Once you identify the pattern, predict the next element based on the repeating unit.\n\n**This skill of identifying patterns is crucial for various sections in banking exams, especially:**\n\n* **Reasoning Ability:** It helps solve questions based on logical reasoning, series, and puzzles.\n* **Quantitative Aptitude:** It aids in recognizing patterns in number sequences and data interpretations.\n* **Verbal Ability:** It can be helpful in understanding the structure and flow of paragraphs and passages. \n\nBy practicing identifying patterns in different contexts, you can strengthen your reasoning skills and enhance your performance in the IBPS PO, SBI PO, and other banking exams. \n",
@@ -328,10 +328,10 @@
         {
             "question": "Consider the following series of words: 'Elephant', 'Giraffe', 'Lion', 'Monkey', 'Zebra'.  If we arrange them in reverse alphabetical order, which word would be the second to last element in the series?",
             "options": [
-                "A. Elephant",
-                "B. Giraffe",
-                "C. Lion",
-                "D. Zebra"
+                "Elephant",
+                "Giraffe",
+                "Lion",
+                "Zebra"
             ],
             "correct_option": "B. Giraffe",
             "reasoning": "## Detailed Explanation:\n\nThe question asks us to arrange the words in reverse alphabetical order and identify the second to last word.  Let's break down the process:\n\n1. **Understanding Reverse Alphabetical Order:** In normal alphabetical order, we arrange words from A to Z. In reverse alphabetical order, we arrange them from Z to A. This means we start with the words that have letters closer to 'Z' and move towards the beginning of the alphabet.\n\n2. **Applying to the Given Words:**\n   - **Zebra** is the only word starting with 'Z', making it the first element in reverse alphabetical order.\n   - **Monkey** comes next, as it starts with 'M', which is before 'L' in 'Lion' and 'G' in 'Giraffe'.\n   - **Lion** follows 'Monkey' as it starts with 'L'.\n   - **Giraffe** and **Elephant** remain.  Since 'G' comes before 'E' in the alphabet, 'Giraffe' is placed before 'Elephant'. \n\n3. **Identifying the Second to Last Word:** Based on the above arrangement, the second to last element in the series is **Giraffe**.\n\n**Therefore, the correct answer is B. Giraffe.**\n\n**Additional Context:**\n\nThis type of question tests your understanding of alphabetical order, both forwards and backwards. These questions are common in competitive exams like IBPS PO and SBI PO, as they assess your logical reasoning and attention to detail. \n\n**Tips for Solving Similar Questions:**\n\n* **Practice:** Solve numerous similar questions to get comfortable with the concept.\n* **Visualize:** Imagine the alphabet and how it changes in reverse order.\n* **Focus on the first letter:**  Compare the starting letters of the words to determine their position in reverse alphabetical order.\n* **Check your answer:** After arranging the words, double-check your work to avoid errors. \n",
@@ -424,10 +424,10 @@
         {
             "question": "A clothing store offers a 20% discount on all items during a sale. During the last week of the sale, they offer an additional 10% discount on the already discounted price. If a shirt originally costs $50, what is the final price after both discounts?",
             "options": [
-                "a) $36",
-                "b) $38",
-                "c) $40",
-                "d) $42"
+                "$36",
+                "$38",
+                "$40",
+                "$42"
             ],
             "correct_option": "a)",
             "reasoning": "## Detailed Explanation:\n\nThe question tests your understanding of consecutive discounts and how they apply to an original price. Here's a breakdown of the solution:\n\n**1. First Discount:**\n\n* The store offers a 20% discount on the original price of the shirt, which is $50.\n* To calculate the discount amount, multiply the original price by the discount percentage: $50 * 0.20 = $10.\n* The price after the first discount is the original price minus the discount amount: $50 - $10 = $40.\n\n**2. Second Discount:**\n\n* During the last week of the sale, there's an additional 10% discount on the already discounted price of $40.\n* Calculate the second discount: $40 * 0.10 = $4.\n* Subtract the second discount from the discounted price to get the final price: $40 - $4 = $36.\n\n**Therefore, the final price of the shirt after both discounts is $36.**\n\n**Key Points for IBPS PO and SBI PO Exams:**\n\n* **Understanding Consecutive Discounts:**  It's important to understand that discounts are applied sequentially. The second discount is applied to the price *after* the first discount has been deducted.\n* **Calculating Percentage:** Practice converting percentages into decimals (e.g., 20% = 0.20) for quick calculations.\n* **Applying Discounts:**  Be able to calculate discount amounts and apply them correctly to find the final price.\n\n**Additional Context:**\n\n* This question tests a fundamental concept often encountered in banking exams. It's crucial to understand discount calculations for scenarios involving interest rates, loan repayment, and various financial transactions.\n* Percentage concepts are a core part of quantitative aptitude, a major section in banking exams like IBPS PO and SBI PO.\n* Practice similar problems with different discount percentages and original prices to solidify your understanding.\n\nBy understanding the principles and practicing with different scenarios, you'll be well-prepared to tackle similar questions in your banking exams. \n",
@@ -448,10 +448,10 @@
         {
             "question": "A series of figures is presented below. Each figure is composed of a set of four circles, with each circle containing either a black or white dot. The arrangement of the dots follows a specific pattern. Identify the next figure in the series:\n\nFigure 1:        \nFigure 2:      *  *\nFigure 3:    *    *\nFigure 4:  *  *    \n\nWhat is Figure 5?",
             "options": [
-                "A.  *  *  *  ",
-                "B.      *  *",
-                "C.    *    *",
-                "D.  *    *  "
+                " *  *  *  ",
+                "     *  *",
+                "   *    *",
+                " *    *  "
             ],
             "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe question presents a series of figures where the arrangement of black dots within four circles follows a specific pattern. Understanding this pattern is key to identifying the next figure in the series.\n\n**The Pattern:**\n\nThe black dots are shifted diagonally across the figure in a clockwise direction.  \n\n* **Figure 1:** All four circles contain black dots.\n* **Figure 2:** The top right black dot is moved down to the bottom left position. \n* **Figure 3:** The top left black dot is moved to the bottom right position.\n* **Figure 4:** The bottom right black dot is moved to the top left position.\n\n**Figure 5:**\n\nFollowing the pattern, the bottom left black dot should be moved to the top right position. This results in all three black dots being in the top row, with only one black dot in the bottom row.\n\n**Why Option A is Correct:**\n\nOption A ( *  *  *  ) accurately represents the arrangement of black dots in Figure 5, with three black dots in the top row and one black dot in the bottom row. \n\n**Why Other Options are Incorrect:**\n\n* **Option B (     *  * )** repeats Figure 2.\n* **Option C (   *    * )** repeats Figure 3.\n* **Option D ( *    *  )** repeats Figure 4.\n\n**Key Takeaway for IBPS PO and SBI PO Exams:**\n\nSpatial reasoning questions are common in banking exams like IBPS PO and SBI PO. These questions test your ability to identify patterns and apply logic to spatial arrangements.  To excel in these questions:\n\n1. **Analyze the pattern:** Carefully observe the changes occurring between each figure in the series.\n2. **Identify the rule:** Define the rule governing the pattern based on your observation.\n3. **Apply the rule:** Use the identified rule to predict the next figure in the series.\n\nBy practicing with similar questions and understanding the principles of spatial reasoning, you can improve your performance in these exams. \n",
@@ -472,10 +472,10 @@
         {
             "question": "Consider the series defined by the sequence {a_n} = {n^2 - 3n + 2}.  Let S be the set of all values of n for which a_n is divisible by 3. What is the set of all limit points of S?",
             "options": [
-                "a) {1, 2}",
-                "b) {1}",
-                "c) {2}",
-                "d) {1, 2, 3}"
+                "{1, 2}",
+                "{1}",
+                "{2}",
+                "{1, 2, 3}"
             ],
             "correct_option": "a)",
             "reasoning": "## Detailed Explanation:\n\nThe question focuses on understanding the concept of limit points in a set, specifically within the context of a sequence and divisibility. Here's a breakdown of the solution:\n\n**1. Analyze the Sequence:**\n\nThe given sequence is {a_n} = {n^2 - 3n + 2}.  The key to understanding the divisibility by 3 lies in factoring the expression.\n\n**2. Factor the Expression:**\n\nFactoring the expression, we get a_n = (n-1)(n-2).  This means a_n is divisible by 3 if and only if either (n-1) or (n-2) is divisible by 3.\n\n**3. Find the Values of n:**\n\n*  **(n-1) divisible by 3:** This occurs when n is of the form 3k+1 (where k is an integer). \n*  **(n-2) divisible by 3:** This occurs when n is of the form 3k+2 (where k is an integer).\n\n**4. Define the Set S:**\n\nTherefore, the set S, containing all values of n for which a_n is divisible by 3, consists of values of the form 3k+1 and 3k+2.\n\n**5. Limit Points:**\n\n* **Definition:** A limit point of a set is a point that can be approached arbitrarily closely by points in the set. \n* **Analysis:** As n approaches infinity, both 3k+1 and 3k+2 will also approach infinity. However, the difference between consecutive terms in S will always be 3 (for example, the difference between 3k+1 and 3(k+1)+1 is 3). This constant difference implies the existence of two limit points:\n    * **1:** Approached by terms of the form 3k+1.\n    * **2:** Approached by terms of the form 3k+2.\n\n**6. The Answer:**\n\nThus, the set of all limit points of S is {1, 2}, making option \"a)\" the correct answer.\n\n**Relevance to Banking Exams:**\n\nThis question tests a student's understanding of:\n\n* **Sequence and Series:** A fundamental concept in mathematics.\n* **Divisibility Rules:**  Understanding divisibility by 3 is essential for number-based problems.\n* **Set Theory:** Recognizing limit points and their properties is crucial in set theory, a topic often encountered in various mathematical sections of banking exams.\n\nThis type of question helps develop analytical and problem-solving skills, which are vital for success in banking exams. By practicing similar questions, students can improve their ability to handle complex mathematical concepts and apply them to diverse scenarios. \n",
@@ -520,10 +520,10 @@
         {
             "question": "A series of letters follows a complex pattern:  X, V, T, R, ?, ?, ?.  The pattern skips letters, but the direction of the skip changes.  What are the next three letters in the series?",
             "options": [
-                "A. P, N, L",
-                "B. Q, N, L",
-                "C. P, M, K",
-                "D. Q, S, U"
+                "P, N, L",
+                "Q, N, L",
+                "P, M, K",
+                "Q, S, U"
             ],
             "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe series  \"X, V, T, R, ?, ?, ?\" follows a pattern based on the reverse alphabetical order, with alternating skip lengths:\n\n1. **X** -> **V**: Skipping one letter (Y).\n2. **V** -> **T**: Skipping two letters (U, W).\n3. **T** -> **R**: Skipping one letter (S).\n\nFollowing this pattern:\n\n4. **R** -> **P**: Skipping two letters (Q, S).\n5. **P** -> **N**: Skipping one letter (M).\n6. **N** -> **L**: Skipping two letters (K, J).\n\nTherefore, the next three letters in the series are **P, N, L**. \n\n**Key takeaways for similar questions:**\n\n* **Identify the Pattern:** Look for repeating patterns in the series. This could involve skips, reversals, additions, subtractions, or other mathematical operations.\n* **Break down the pattern:** Understand the logic behind the pattern. In this case, it was skipping letters in reverse alphabetical order with alternating skip lengths.\n* **Apply the pattern:** Use the identified pattern to predict the missing terms.\n\n**Additional context:**\n\nThis type of question is common in reasoning sections of banking exams like IBPS PO and SBI PO. These exams test your analytical and logical thinking skills. \n\n**Tips for Success:**\n\n* **Practice regularly:** Solve similar series questions from previous year papers and online resources.\n* **Improve your mental math skills:** This will help you identify patterns quickly.\n* **Learn common letter and number series patterns:** Familiarise yourself with different types of patterns used in these questions. \n* **Don't be afraid to write things down:**  Visualising the pattern helps in solving the question. \n\nBy following these tips and understanding the logic behind different patterns, you can confidently tackle series-based reasoning questions in your banking exams. \n",
@@ -580,10 +580,10 @@
         {
             "question": "In the following series, each term is derived from the preceding term by applying a specific set of operations. However, one term does not adhere to this pattern. Identify the term that is incorrect within the series:  \n\n  10, 22, 46, 94, 190, 382, 766",
             "options": [
-                "A) 10",
-                "B) 46",
-                "C) 190",
-                "D) 766"
+                "10",
+                "46",
+                "190",
+                "766"
             ],
             "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThe given question is a classic example of a **number series** problem frequently encountered in banking exams like IBPS PO and SBI PO. These questions test your ability to identify patterns and logical sequences within a set of numbers.\n\nHere's a detailed explanation of why the answer is **C) 190**:\n\n1. **Identifying the Pattern:**  The series follows a consistent pattern:  **Multiply the previous term by 2 and then add 2.**\n\n2. **Analyzing the Series:**\n    * 10 * 2 + 2 = 22 \n    * 22 * 2 + 2 = 46\n    * 46 * 2 + 2 = 94\n    * 94 * 2 + 2 = 190 (This is where the error lies)\n    * 190 * 2 + 2 = 382\n    * 382 * 2 + 2 = 766\n\n3. **The Incorrect Term:** As you can see, the term 190 does not follow the established pattern. Instead of being (94 * 2 + 2 = 190), it should have been (94 * 2 + 2 = 190). \n\n4. **Why the Correct Option is C:**  Option C presents 190 as the incorrect term, aligning with our analysis. \n\n**Important Points to Remember:**\n\n* **Practice is key:**  Solve as many number series problems as possible to improve your pattern recognition skills.\n* **Look for various patterns:** Number series can involve addition, subtraction, multiplication, division, squares, cubes, and combinations of these operations. \n* **Break the series down:** Analyze the difference between consecutive terms to identify the pattern. \n* **Eliminate options:** If you're unsure about the correct term, eliminate options that don't fit the pattern.\n\n**Additional Context:**\n\nNumber series problems are a common component of reasoning sections in banking exams.  These exams often test your analytical skills and your ability to solve problems under time pressure. By mastering the concepts behind number series, you can improve your chances of success. \n",
@@ -592,10 +592,10 @@
         {
             "question": "A1Z2Y3X4W5V6U7T8S9R10Q11P12O13N14M15L16K17J18I19H20G21F22E23D24C25B26\u2026 What is the next element in the series?",
             "options": [
-                "A. A27",
-                "B. 27A",
-                "C. 26A",
-                "D. A26"
+                "A27",
+                "27A",
+                "26A",
+                "A26"
             ],
             "correct_option": "D",
             "reasoning": "## Detailed Explanation:\n\nThe given series is a combination of letters and numbers, following a pattern of alternating descending alphabetical sequence for the letters and ascending numerical sequence for the numbers. Let's break down the pattern:\n\n* **Letters:** The series starts with 'A' and then follows the descending order of the alphabet (Z, Y, X, W, and so on). \n* **Numbers:** The series starts with '1' and then follows an ascending numerical sequence (2, 3, 4, 5, and so on).\n\nTherefore, to find the next element in the series, we need to:\n\n1. **Identify the next letter:**  Since the previous letter was 'A', the next letter in descending order would be 'A' again.\n2. **Identify the next number:** The previous number was '25', so the next number in ascending order would be '26'.\n\nCombining these two, we get **'A26'** as the next element in the series. \n\n**Hence, option D is the correct answer.**\n\n**Key takeaways for solving similar questions:**\n\n* **Identify the pattern:** Look for the underlying pattern in the series. This can involve various techniques like alphabetical order, numerical sequence, alternating elements, etc.\n* **Apply the pattern:** Once you've identified the pattern, apply it to determine the next element in the series.\n* **Check for variations:** Some questions might have more complex patterns or variations within the series. Be prepared to adapt your approach accordingly.\n\n**Additional context:**\n\nQuestions based on series and patterns are common in competitive exams like IBPS PO and SBI PO. These questions test your analytical and logical reasoning abilities.  Understanding how to identify and apply different patterns is crucial for success in these exams.\n",
@@ -616,10 +616,10 @@
         {
             "question": "In this series, each number is the product of the previous number and the square of its position in the series.  The first number is 1. What is the 6th number in this sequence: 1, 4, 27, 256, __?",
             "options": [
-                "A) 3125",
-                "B) 46656",
-                "C) 100000",
-                "D) 1679616"
+                "3125",
+                "46656",
+                "100000",
+                "1679616"
             ],
             "correct_option": "D",
             "reasoning": "## Detailed Explanation:\n\nThe question asks us to find the 6th term in a sequence where each number is the product of the previous number and the square of its position in the sequence. \n\n**Here's how to solve it:**\n\n1. **Understand the Pattern:** The series follows a specific pattern where each term is calculated by multiplying the previous term with the square of its position in the sequence.\n\n2. **Apply the Pattern:** \n   * **1st term:** 1 * (1^2) = 1\n   * **2nd term:** 1 * (2^2) = 4\n   * **3rd term:** 4 * (3^2) = 36\n   * **4th term:** 36 * (4^2) = 256\n   * **5th term:** 256 * (5^2) = 6400\n   * **6th term:** 6400 * (6^2) = 1679616\n\n3. **The Answer:** The 6th number in the sequence is **1679616**.\n\n**Why is this relevant to IBPS PO and SBI PO exams?**\n\nThese types of questions test your ability to:\n\n* **Identify Patterns:** Quickly recognizing patterns is crucial for solving problems involving sequences, series, and data interpretation.\n* **Apply Logical Reasoning:** You need to apply logic and reasoning to understand the underlying pattern and calculate the missing terms.\n* **Perform Basic Arithmetic:** You need to be comfortable with basic arithmetic operations (multiplication, squaring) to calculate the terms.\n\n**Tips for Solving Similar Questions:**\n\n* **Start with the first few terms:** Focus on the initial terms to understand the pattern.\n* **Look for relationships:** Identify how each term is related to the previous term.\n* **Test your pattern:** Verify your pattern with the given terms before calculating the missing ones.\n* **Practice:** Solve similar problems from previous years' papers and practice materials.\n\nBy understanding these concepts and practicing regularly, you can confidently tackle such questions in your IBPS PO and SBI PO exams. \n",
@@ -640,10 +640,10 @@
         {
             "question": "In the following sequence, each symbol represents a unique combination of three characteristics: shape, color, and orientation. The sequence follows a specific pattern based on these characteristics. Identify the symbol that should come next in the sequence.",
             "options": [
-                "A. [Image: A blue circle with 3 points, rotated 45 degrees counter-clockwise]",
-                "B. [Image: A red triangle with 2 points, rotated 90 degrees clockwise]",
-                "C. [Image: A green square with 4 points, rotated 180 degrees]",
-                "D. [Image: A yellow star with 5 points, rotated 90 degrees counter-clockwise]"
+                "[Image: A blue circle with 3 points, rotated 45 degrees counter-clockwise]",
+                "[Image: A red triangle with 2 points, rotated 90 degrees clockwise]",
+                "[Image: A green square with 4 points, rotated 180 degrees]",
+                "[Image: A yellow star with 5 points, rotated 90 degrees counter-clockwise]"
             ],
             "correct_option": "B",
             "reasoning": "## Detailed Explanation:\n\nThe question presents a sequence of symbols, each representing a unique combination of shape, color, and orientation.  The task is to identify the next symbol in the sequence by understanding the pattern.  \n\nHere's the breakdown of the pattern:\n\n* **Shape:** The sequence alternates between the shapes: **Circle, Triangle, Square**, and then repeats. \n* **Color:** The colors change sequentially: **Red, Blue, Green, Yellow**, and then repeats.\n* **Orientation:** The rotation angle increases by **45 degrees clockwise** with each symbol.\n\nBased on this pattern, let's analyze each option:\n\n* **A. [Image: A blue circle with 3 points, rotated 45 degrees counter-clockwise]:**  This option is incorrect. The shape is a circle (correct), the color is blue (correct), but the rotation is 45 degrees counter-clockwise (incorrect).  The pattern requires a clockwise rotation.\n* **B. [Image: A red triangle with 2 points, rotated 90 degrees clockwise]:** This option is **correct**. The shape is a triangle (correct), the color is red (correct), and the rotation is 90 degrees clockwise (correct). \n* **C. [Image: A green square with 4 points, rotated 180 degrees]:** This option is incorrect. The shape is a square (correct), the color is green (correct), but the rotation is 180 degrees (incorrect). The pattern requires a 135 degree clockwise rotation.\n* **D. [Image: A yellow star with 5 points, rotated 90 degrees counter-clockwise]:** This option is incorrect. The shape is not included in the pattern (incorrect), the color is yellow (correct), and the rotation is 90 degrees counter-clockwise (incorrect). \n\n**Therefore, option B is the correct answer.** The next symbol in the sequence should be a red triangle with 2 points, rotated 90 degrees clockwise.\n\n**Key Takeaways:**\n\n* **Identify the individual characteristics:** Break down the symbols into their individual characteristics (shape, color, orientation) to easily understand the pattern.\n* **Look for repeating patterns:**  Observe if any of the characteristics follow a repeating pattern or a sequence.\n* **Apply logic:** Use logical reasoning to determine how each characteristic changes in relation to the others. \n\n**Relevance to Exams:**\n\nThis type of question tests your ability to identify patterns, analyze visual data, and apply logical reasoning. These are essential skills for banking exams like IBPS PO and SBI PO, which often include sections on reasoning and aptitude. \n",
@@ -676,10 +676,10 @@
         {
             "question": "Series Description:\n\n* Animal: Lion (Predator)\n* Animal: Elephant (Herbivore)\n* Plant: Oak (Deciduous)\n* Plant: Pine (Coniferous)\n* Mineral: Diamond (Gemstone)\n* Mineral: Ruby (Gemstone)\n* Object: Car (Transportation)\n* Object: Plane (Transportation)\n* Object: Ship (Transportation)\n* Animal: Zebra (Herbivore)\n\nQuestion Stem:\n\nWhich of the following would be the most logical next entry in the series, considering both the established classification pattern and the inherent relationship between each entry and its sub-classification?\n\n",
             "options": [
-                "A. Animal: Giraffe (Herbivore)",
-                "B. Plant: Rose (Flowering)",
-                "C. Mineral: Gold (Precious Metal)",
-                "D. Object: Bicycle (Transportation)"
+                "Animal: Giraffe (Herbivore)",
+                "Plant: Rose (Flowering)",
+                "Mineral: Gold (Precious Metal)",
+                "Object: Bicycle (Transportation)"
             ],
             "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe question tests your ability to identify patterns and logical progression within a series. This type of question is common in banking exams like IBPS PO and SBI PO, as they assess your analytical and problem-solving skills.\n\n**Understanding the Series:**\n\nThe series follows a pattern of alternating classifications (Animal, Plant, Mineral, Object) with sub-classifications within each category.  The sub-classifications are:\n\n* **Animal:** Predator, Herbivore\n* **Plant:** Deciduous, Coniferous\n* **Mineral:** Gemstone\n* **Object:** Transportation \n\n**Identifying the Pattern:**\n\nThe series adds a new entry in each classification that shares the same sub-classification as the previous entry in that category. For example:\n\n* **Animal:** Lion (Predator) followed by Elephant (Herbivore)\n* **Plant:** Oak (Deciduous) followed by Pine (Coniferous) \n* **Mineral:** Diamond (Gemstone) followed by Ruby (Gemstone)\n\n**Why Option A is Correct:**\n\nOption A (Animal: Giraffe (Herbivore)) fits the established pattern perfectly. It continues the alternating classification pattern and adds a new entry ('Giraffe') under the 'Herbivore' sub-classification, which is consistent with the previous 'Herbivore' entry ('Elephant').\n\n**Why Other Options are Incorrect:**\n\n* **Option B (Plant: Rose (Flowering))** introduces a new sub-classification ('Flowering') within the 'Plant' category, breaking the established pattern.\n* **Option C (Mineral: Gold (Precious Metal))** introduces a new sub-classification ('Precious Metal') within the 'Mineral' category, also breaking the pattern.\n* **Option D (Object: Bicycle (Transportation))** maintains the 'Transportation' sub-classification but doesn't add a new entry consistent with the established pattern.\n\n**Key Takeaways for Similar Questions:**\n\n1. **Focus on Classification and Sub-classification:**  Pay attention to how the series is divided into broader categories and subcategories.\n2. **Identify the Pattern:**  Look for recurring relationships between entries, including alternating classifications, repeated sub-classifications, or any other noticeable pattern.\n3. **Predict the Next Entry:**  Based on the identified pattern, try to predict what the next logical entry would be.\n4. **Eliminate Incorrect Options:**  Carefully evaluate each option and eliminate those that don't fit the established pattern or introduce new, unrelated elements.\n\nBy applying these steps, you can effectively solve similar series-based questions in your banking exams.  Remember, practice is key to mastering this type of reasoning! \n",
@@ -712,10 +712,10 @@
         {
             "question": "A financial advisor suggests an investment plan that promises a 15% annual return.  If you invest $10,000 initially, and the interest is compounded quarterly, what will the total value of your investment be after 5 years, assuming no additional contributions or withdrawals?",
             "options": [
-                "A) $20,113.57",
-                "B) $21,589.25",
-                "C) $19,671.51",
-                "D) $23,107.88"
+                "$20,113.57",
+                "$21,589.25",
+                "$19,671.51",
+                "$23,107.88"
             ],
             "correct_option": "D",
             "reasoning": "## Detailed Explanation:\n\nThis question tests your understanding of compound interest and how it relates to geometric progressions. Here's a step-by-step breakdown of why the correct answer is **D) $23,107.88**:\n\n**1. Understanding Compound Interest:**\n\nCompound interest means earning interest not only on the principal amount but also on the accumulated interest. This leads to exponential growth over time.\n\n**2. Breaking Down the Problem:**\n\n* **Principal (P):** $10,000 \n* **Annual Interest Rate (r):** 15% = 0.15\n* **Number of Compounding Periods per year (n):** 4 (quarterly)\n* **Investment Duration (t):** 5 years\n\n**3. Calculating the Quarterly Interest Rate:**\n\nSince interest is compounded quarterly, we need to calculate the quarterly interest rate:\n\n* **Quarterly Interest Rate (i):** (Annual Interest Rate) / (Number of Compounding Periods) = 0.15 / 4 = 0.0375\n\n**4. Applying the Compound Interest Formula:**\n\nThe formula for calculating the future value (A) of an investment with compound interest is:\n\n* **A = P(1 + i)^nt**\n\nWhere:\n\n* **A:** Future value\n* **P:** Principal amount\n* **i:** Quarterly interest rate\n* **n:** Number of compounding periods per year\n* **t:** Time period in years\n\n**5. Plugging in the Values:**\n\n* **A = $10,000 (1 + 0.0375)^(4 * 5)**\n* **A = $10,000 (1.0375)^20**\n* **A \u2248 $23,107.88**\n\n**6. Why Other Options Are Incorrect:**\n\n* **Option A:** This option ignores the compounding effect and calculates the value as if interest was compounded annually.\n* **Option B:** This option uses an incorrect calculation for the common ratio in the geometric progression.\n* **Option C:** This option underestimates the final value by not considering the compounding effect.\n\n**7. Connecting to Geometric Progressions:**\n\nThis problem can be visualized as a geometric progression:\n\n* **First term (a):** $10,000 (initial investment)\n* **Common ratio (r):** 1 + 0.0375 = 1.0375 (the factor by which the investment grows each quarter)\n* **Number of terms (n):** 20 (total number of quarters in 5 years)\n\nTherefore, the final value of the investment is the 20th term of this geometric progression.\n\n**Key Takeaways for IBPS PO and SBI PO Exams:**\n\n* **Compound Interest is crucial:**  Understand the difference between simple and compound interest and how it impacts your investments.\n* **Geometric Progressions are helpful:** Problems involving compound interest often involve geometric progressions.  Learn to identify the common ratio and apply the formula for the nth term.\n* **Practice, practice, practice:**  Work through similar problems to strengthen your understanding and build speed.\n* **Watch out for misleading options:**  Carefully analyze the given options and ensure you understand why they are correct or incorrect. \n",
@@ -724,12 +724,12 @@
         {
             "question": "The Singh family is a large one. Amar is the father of  Bhavna and Charu, who are twins.  Deepika is Bhavna's paternal aunt and is married to Eshan.  Eshan's sister, Farida, is married to Gaurav, who is Charu's cousin.  Gaurav's mother is  Hema, and she has a brother named  Ishan.  Ishan's wife, Jyoti, is  Charu's mother-in-law.  If Kavi is  Bhavna's husband, what is the relationship between Kavi and Farida?",
             "options": [
-                "a) Farida is Kavi's sister-in-law.",
-                "b) Farida is Kavi's mother-in-law.",
-                "c) Farida is Kavi's aunt.",
-                "d) Farida is Kavi's cousin."
+                "Farida is Kavi's sister-in-law.",
+                "Farida is Kavi's mother-in-law.",
+                "Farida is Kavi's aunt.",
+                "Farida is Kavi's cousin."
             ],
-            "correct_option": "a",
+            "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe question presents a complex family tree, testing your ability to decipher blood relationships. Here's a step-by-step breakdown of the solution:\n\n1. **Identifying the Core Relationship:** We need to figure out the relationship between Kavi and Farida.  We know Kavi is married to Bhavna. \n\n2. **Tracing the Lineage:**  We start with Bhavna's father, Amar.  He has two daughters, Bhavna and Charu, who are twins. \n\n3. **Identifying Key Relatives:** We find that Deepika is Amar's sister (Bhavna's paternal aunt).  Deepika is married to Eshan, who has a sister named Farida.  \n\n4. **Connecting the Dots:** Farida is Eshan's sister, and Eshan is married to Amar's sister (Deepika). Therefore, Farida is also Amar's sister-in-law.  \n\n5. **Final Connection:** Since Kavi is married to Bhavna, who is Amar's daughter, and Farida is Amar's sister-in-law, the relationship between Kavi and Farida is **sister-in-law**.\n\n**Why other options are incorrect:**\n\n* **b) Farida is Kavi's mother-in-law:**  This is incorrect because Farida is Amar's sister-in-law, not Bhavna's mother.\n* **c) Farida is Kavi's aunt:**  This is incorrect because Farida is Amar's sister-in-law, not his sister.\n* **d) Farida is Kavi's cousin:** This is incorrect because Farida is related to Kavi through his wife's father, Amar, making her his sister-in-law.\n\n**Key Concepts for Blood Relation Questions:**\n\n* **Understanding basic terms:**  Familiarize yourself with terms like father, mother, sister, brother, aunt, uncle, cousin, etc.\n* **Visual representation:**  Drawing a family tree can help visualize the relationships and make it easier to follow.\n* **Elimination:**  Use the information provided to eliminate incorrect options and narrow down to the correct answer.\n* **Practice:**  Solving various blood relation questions is essential to improve your understanding and speed.\n\n**Tips for IBPS PO/SBI PO Exams:**\n\n* **Time management:**  Blood relation questions can be time-consuming. Practice solving them within the allotted time.\n* **Avoid assumptions:**  Focus on the information given in the question and avoid making assumptions.\n* **Analyze the question carefully:**  Understand the exact relationship you need to find before starting the analysis. \n\nBy mastering the concepts and practicing diligently, you can confidently tackle blood relation questions in your IBPS PO/SBI PO exams. \n",
             "difficulty": "hard"
         },
@@ -772,12 +772,12 @@
         {
             "question": "A businesswoman invests $50,000 in a high-yield savings account offering 6% interest compounded quarterly.  At the end of the first year, she withdraws $10,000 to cover business expenses.  For the next two years, she adds an additional $2,500 to the account every six months.  However, in the fourth year, the interest rate drops to 4% compounded semi-annually.  Calculate the total amount accumulated in the account at the end of the fourth year.",
             "options": [
-                "a) $57,985.42",
-                "b) $62,345.18",
-                "c) $65,876.33",
-                "d) $68,124.97"
+                "$57,985.42",
+                "$62,345.18",
+                "$65,876.33",
+                "$68,124.97"
             ],
-            "correct_option": "c",
+            "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThis question tests your understanding of compound interest and how it works over multiple periods with changing interest rates and deposits/withdrawals. Here's a detailed breakdown of the solution:\n\n**Understanding the Problem:**\n\nThe businesswoman starts with an initial investment and earns interest compounded quarterly (meaning interest is calculated and added to the principal four times a year). She then makes withdrawals and deposits at different intervals, and finally faces a change in interest rate. To calculate the final amount, we need to account for all these factors.\n\n**Step-by-Step Solution:**\n\n**Year 1:**\n\n* **Initial Principal:** $50,000\n* **Interest Rate:** 6% per year, compounded quarterly (0.06/4 = 0.015 per quarter)\n* **Number of Compounding Periods:** 4 (4 quarters in a year)\n* **Formula for Compound Interest:** A = P(1 + r/n)^(nt) where:\n    * A = Amount after time t\n    * P = Principal\n    * r = Annual Interest Rate\n    * n = Number of times interest is compounded per year\n    * t = Time in years\n* **Amount after Year 1:** $50,000 * (1 + 0.015)^4 = $53,066.01\n* **Withdrawal:** $10,000\n* **Remaining Balance:** $53,066.01 - $10,000 = $43,066.01\n\n**Year 2 & 3:**\n\n* **Principal:** $43,066.01\n* **Interest Rate:** Same as Year 1 (6% compounded quarterly)\n* **Number of Compounding Periods:** 8 (2 years * 4 quarters per year)\n* **Additional Deposits:** $2,500 every 6 months (4 deposits per year, total $10,000 per year)\n* **Calculating the effect of deposits:** We can use the formula for the future value of an ordinary annuity: FV = P * [((1 + r)^n - 1) / r] where:\n    * FV = Future Value\n    * P = Payment amount\n    * r = Interest rate per period\n    * n = Number of periods\n* **Amount after Year 2 & 3:**\n    * Interest earned: $43,066.01 * (1 + 0.015)^8 = $51,595.16\n    * Future value of deposits: $2,500 * [((1 + 0.015)^8 - 1) / 0.015] = $20,392.36\n    * Total Amount: $51,595.16 + $20,392.36 = $60,987.52\n\n**Year 4:**\n\n* **Principal:** $60,987.52\n* **Interest Rate:** 4% compounded semi-annually (0.04/2 = 0.02 per half year)\n* **Number of Compounding Periods:** 2 (2 half years in a year)\n* **Amount after Year 4:** $60,987.52 * (1 + 0.02)^2 = $65,876.33\n\n**Therefore, the correct answer is (c) $65,876.33.**\n\n**Key Takeaways:**\n\n* **Compound Interest:**  Compounding allows interest to be earned not only on the principal but also on the accumulated interest.\n* **Regular Deposits:**  Regular deposits enhance the final amount significantly due to the power of compounding.\n* **Changing Interest Rates:**  Always consider changes in interest rates and recalculate the amount based on the new rate.\n\n**Important Note:**  This is a simplified example. In real-world scenarios, taxes and other fees may apply, impacting the final amount.\n\n**Practice Tips for IBPS PO/SBI PO Exams:**\n\n* **Master the formulas:** Understand the formulas for compound interest, future value of an annuity, and simple interest.\n* **Practice similar problems:** Work through various problems involving compound interest, withdrawals, deposits, and changing interest rates.\n* **Use a financial calculator:** Familiarize yourself with using a financial calculator to make calculations faster and more accurate.\n* **Focus on understanding the concepts:** Don't just memorize formulas. Try to understand the underlying principles and apply them to different scenarios. \n",
             "difficulty": "hard"
         },
