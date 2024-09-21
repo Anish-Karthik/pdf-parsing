@@ -95,6 +95,8 @@ def truncate(str):
 def sanity_check(filename):
     print(filename)
     data = read_json(filename)
+    if 'exam_id' not in data:
+        print(filename + ' Missing exam_id')
 
     if 'topic' not in data or data['topic'] not in topics_list:
         print(filename + ' Invalid topic: ' + data['topic'])
@@ -140,5 +142,5 @@ def find_json_files(directory):
 
 
 # Example usage:
-directory_path = "/home/barath/Documents/sat/code/pdf-parsing/gemini/gemini_output/ibps/quant/"
+directory_path = "gemini/gemini_output/ibps/para_jumbles"
 json_files = find_json_files(directory_path)
