@@ -117,7 +117,7 @@
                 "8",
                 "10"
             ],
-            "correct_option": "a)",
+            "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe question asks us to find the distance between two points, (1, 2) and (4, 6). This is a classic application of the **Distance Formula**, a fundamental concept in coordinate geometry. \n\nHere's how the Distance Formula works:\n\n**1. Understanding the Formula:**\n\nThe Distance Formula is derived from the Pythagorean theorem, which states that in a right triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides. \n\nThe Distance Formula represents the hypotenuse of a right triangle formed by the two points and their projections on the x and y axes.  \n\n**Formula:** \n\u221a[(x2 - x1)^2 + (y2 - y1)^2]\n\nwhere:\n* (x1, y1) are the coordinates of the first point\n* (x2, y2) are the coordinates of the second point\n\n**2. Applying the Formula:**\n\nIn our question:\n* (x1, y1) = (1, 2)\n* (x2, y2) = (4, 6)\n\nSubstituting these values into the Distance Formula, we get:\n\n\u221a[(4 - 1)^2 + (6 - 2)^2]\n\n**3. Simplifying the Calculation:**\n\n\u221a[(3)^2 + (4)^2] \n= \u221a(9 + 16)\n= \u221a25\n= 5\n\n**Therefore, the distance between the points (1, 2) and (4, 6) is 5 units.**\n\n**Why this is relevant for IBPS PO, SBI PO exams:**\n\nCoordinate geometry, including the Distance Formula, is a crucial topic for quantitative aptitude sections of competitive banking exams like IBPS PO and SBI PO. \n\nThese exams often include questions on:\n\n* **Finding distances between points**\n* **Calculating areas and perimeters of geometric figures**\n* **Analyzing the properties of lines and circles**\n\nMastering the Distance Formula ensures you can solve these questions efficiently and accurately, increasing your chances of success in the exam. \n",
             "difficulty": "easy"
         },
@@ -178,6 +178,7 @@
                 "500 cm\u00b3"
             ],
             "correct_option": "A",
+            "difficulty": "medium",
             "reasoning": "The volume of a cube is calculated by side length cubed. In this case, 5 cm * 5 cm * 5 cm = 125 cm\u00b3."
         },
         {
@@ -189,6 +190,7 @@
                 "180 cm\u00b2"
             ],
             "correct_option": "D",
+            "difficulty": "medium",
             "reasoning": "The surface area of a rectangular prism is calculated by 2 * (length * width + width * height + length * height). In this case, 2 * (6 cm * 4 cm + 4 cm * 3 cm + 6 cm * 3 cm) = 180 cm\u00b2."
         },
         {
@@ -200,6 +202,7 @@
                 "225\u03c0 cm\u00b3"
             ],
             "correct_option": "B",
+            "difficulty": "medium",
             "reasoning": "The volume of a cylinder is calculated by \u03c0 * radius\u00b2 * height. In this case, \u03c0 * (3 cm)\u00b2 * 8 cm = 96\u03c0 cm\u00b3."
         },
         {
@@ -211,6 +214,7 @@
                 "250\u03c0 cm\u00b3"
             ],
             "correct_option": "C",
+            "difficulty": "medium",
             "reasoning": "The volume of a cone is (1/3)\u03c0r\u00b2h, and the volume of a cylinder is \u03c0r\u00b2h. Calculating the volumes and subtracting: ((1/3)\u03c0 * 6\u00b2 * 8) - (\u03c0 * 5\u00b2 * 10) = 200\u03c0 cm\u00b3."
         },
         {
@@ -222,6 +226,7 @@
                 "400\u03c0 cm\u00b2"
             ],
             "correct_option": "D",
+            "difficulty": "medium",
             "reasoning": "The surface area of a sphere is 4\u03c0r\u00b2, where r is the radius. The diameter is 10 cm, so the radius is 5 cm. Therefore, 4\u03c0 * 5\u00b2 = 400\u03c0 cm\u00b2."
         },
         {
@@ -233,6 +238,7 @@
                 "432 cm\u00b3"
             ],
             "correct_option": "B",
+            "difficulty": "medium",
             "reasoning": "The volume of a rectangular prism is lwh, and the volume of a cube is a\u00b3. Calculating the volumes and subtracting: (12 * 8 * 6) - (7 * 7 * 7) = 288 cm\u00b3."
         },
         {
@@ -303,7 +309,7 @@
                 "SSS",
                 "SAS"
             ],
-            "correct_option": "c)",
+            "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThe correct answer is **(c) SSS**. Here's why:\n\n**Understanding Similarity**\n\nTwo triangles are considered similar if their corresponding angles are equal, and their corresponding sides are proportional. There are four main criteria for proving similarity:\n\n* **AAA (Angle-Angle-Angle):** If two triangles have all three corresponding angles equal, then they are similar.\n* **AA (Angle-Angle):** If two triangles have two pairs of corresponding angles equal, then they are similar.\n* **SSS (Side-Side-Side):** If two triangles have all three pairs of corresponding sides proportional, then they are similar.\n* **SAS (Side-Angle-Side):** If two triangles have two pairs of corresponding sides proportional and the included angle is equal, then they are similar.\n\n**Applying the Criteria to the Problem**\n\nLet's analyze the given information:\n\n* **Triangle ABC:** Sides 6cm, 8cm, 10cm\n* **Triangle DEF:** Sides 9cm, 12cm, 15cm (each side is 1.5 times larger than ABC)\n* **Triangle XYZ:** Sides 12cm, 16cm, 20cm (each side is 2 times larger than ABC)\n\nWe observe that the sides of all three triangles are proportional. This directly satisfies the **SSS (Side-Side-Side) criterion for similarity.**\n\n**Why other options are incorrect:**\n\n* **AAA:** We don't have information about the angles of the triangles, so we can't apply AAA.\n* **AA:**  We only know about the sides, not the angles.\n* **SAS:** We lack information about any included angle between the proportional sides.\n\n**Conclusion:**\n\nThe SSS criterion applies to triangles ABC, DEF, and XYZ because all corresponding sides are proportional. This is the most relevant and accurate way to determine similarity in this scenario.\n\n**Relevance for IBPS PO and SBI PO Exams:**\n\nUnderstanding the criteria for similarity is crucial for solving various geometry problems in banking exams like IBPS PO and SBI PO. These exams often test your ability to apply geometric concepts to real-world scenarios. \n\nRemember, practicing with different types of geometry questions will help you build confidence and improve your speed and accuracy in tackling these problems. \n",
             "difficulty": "medium"
         },
@@ -327,7 +333,7 @@
                 "Equilateral",
                 "Right-angled"
             ],
-            "correct_option": "a)",
+            "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe correct answer is **a) Scalene**. Here's why:\n\n* **Understanding Triangle Types:**\n\n   * **Scalene Triangle:** A scalene triangle has all three sides of different lengths and all three angles of different measures.\n   * **Isosceles Triangle:** An isosceles triangle has two sides of equal length and two angles of equal measure.\n   * **Equilateral Triangle:** An equilateral triangle has all three sides of equal length and all three angles equal to 60 degrees.\n   * **Right-angled Triangle:** A right-angled triangle has one angle measuring 90 degrees.\n\n* **Applying the Concepts:**\n\n   The given triangle has angles measuring 60 degrees, 70 degrees, and 50 degrees. Since all three angles are different, it fulfills the definition of a **scalene triangle**. \n\n* **Eliminating Incorrect Options:**\n\n   * **b) Isosceles:**  An isosceles triangle requires at least two angles to be equal. This is not the case here.\n   * **c) Equilateral:**  An equilateral triangle has all angles equal to 60 degrees. This triangle has a 70-degree angle, making it not equilateral.\n   * **d) Right-angled:** A right-angled triangle has one angle of 90 degrees.  None of the angles in this triangle are 90 degrees.\n\n**Key Takeaways:**\n\n* Understanding the definitions of different triangle types is crucial.\n*  Focus on identifying the key characteristics (side lengths and angle measures) of each type.\n*  Eliminating incorrect options by comparing the given information with the triangle type definitions helps arrive at the correct answer.\n\n**For Banking Exams (IBPS PO, SBI PO):**\n\n* **Practice:** Regularly solve questions based on triangle types.\n* **Memorize Definitions:** Make sure you have a strong understanding of the definitions and properties of each triangle type.\n* **Visualize:** Drawing diagrams of triangles can be helpful in visualizing the concepts and applying the definitions correctly.\n\nBy mastering these concepts and practicing regularly, you will be better prepared for the quantitative aptitude section of banking exams. \n",
             "difficulty": "medium"
         },
@@ -447,7 +453,7 @@
                 "x-intercept: 20, It represents the total revenue when no shirts are sold.",
                 "x-intercept: -4, It represents the number of shirts the store needs to sell to break even."
             ],
-            "correct_option": "a)",
+            "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe correct answer is **(a) x-intercept: 4, It represents the number of shirts sold when the revenue is zero.**\n\nHere's why:\n\n* **Understanding x-intercept:**  The x-intercept of a graph is the point where the line representing the equation crosses the x-axis. This point has a y-coordinate of zero. In this case, the y-coordinate represents the revenue (R).\n* **Solving for the x-intercept:** To find the x-intercept, we set the revenue (R) to zero and solve for the number of shirts sold (x):\n\n    ```\n    R = (20 - 5)x \n    0 = 15x\n    x = 0 / 15\n    x = 0\n    ```\n    This means the x-intercept is at the point (0, 0). \n\n* **Interpreting the x-intercept:**  The x-intercept represents the point where the store earns no revenue from shirt sales. However, the provided equation **R = (20 - 5)x** does not account for the initial cost of purchasing the shirts.  To accurately represent the break-even point, the equation would need to include the cost of buying the shirts.\n\n* **Why other options are incorrect:**\n\n    * **(b) x-intercept: 0, It represents the original price of the shirt.**  The y-intercept represents the original price of the shirt, not the x-intercept.\n    * **(c) x-intercept: 20, It represents the total revenue when no shirts are sold.** The y-intercept represents the total revenue when no shirts are sold, not the x-intercept.\n    * **(d) x-intercept: -4, It represents the number of shirts the store needs to sell to break even.** This is incorrect. The x-intercept represents the point where the revenue is zero, not the break-even point. The break-even point would be the point where revenue equals the total cost of buying the shirts. \n\n**Key Takeaways for IBPS PO and SBI PO Exams:**\n\n* **Understanding intercepts:**  Be able to identify the x-intercept and y-intercept of a linear equation.\n* **Applying intercepts to real-world scenarios:**  Understand how intercepts can be used to represent real-world situations like revenue, cost, and break-even points.\n* **Careful interpretation:**  Ensure you correctly interpret the meaning of the x-intercept and y-intercept in the context of the problem.\n\n**Additional Context:**\n\n* The concept of intercepts is fundamental in linear algebra, which is crucial for understanding many mathematical concepts related to finance and economics.\n* For a more comprehensive analysis of the clothing store's profitability, you would need to consider the initial cost of purchasing the shirts and the total revenue generated.\n\nBy understanding and applying these concepts, you can confidently answer similar questions on IBPS PO and SBI PO banking exams. \n",
             "difficulty": "medium"
         },
@@ -495,7 +501,7 @@
                 "$62.80",
                 "$78.50"
             ],
-            "correct_option": "b)",
+            "correct_option": "B",
             "reasoning": "## Detailed Explanation:\n\nThe question tests your understanding of calculating the surface area of a cylinder, specifically the circular top and bottom, and applying that knowledge to a practical cost-related problem. Here's a breakdown of the solution:\n\n**1. Understanding the Concept:**\n\n* **Surface Area:** The surface area of a 3D object is the total area of all its surfaces. In this case, we only need to find the area of the top and bottom circles of the cylinder.\n* **Circular Area:** The area of a circle is calculated using the formula: **Area = \u03c0r\u00b2**, where 'r' is the radius of the circle.\n\n**2. Step-by-Step Calculation:**\n\n* **Find the area of one circle:**\n    * Radius (r) = 5 cm\n    * Area = \u03c0 * (5 cm)\u00b2 = 25\u03c0 cm\u00b2\n* **Calculate the area of both circles:**\n    * Since we need to cover both the top and bottom, we double the area of one circle:\n    * Total area = 2 * 25\u03c0 cm\u00b2 = 50\u03c0 cm\u00b2\n* **Calculate the total cost:**\n    * Cost per square centimeter = $0.10\n    * Total cost = 50\u03c0 cm\u00b2 * $0.10/cm\u00b2 \u2248 $15.70 * 2 = $31.40\n\n**3. Why the answer is correct:**\n\n* The solution accurately calculates the area of both the top and bottom circles of the cylindrical can.\n* It correctly applies the cost per square centimeter to the total area calculated.\n* The final answer, $31.40, reflects the total cost of covering both the top and bottom of the can with the special material.\n\n**Important Points for Banking Exams:**\n\n* **Understanding basic geometric formulas:** It's crucial to be familiar with calculating areas of circles, squares, rectangles, and other basic shapes.\n* **Problem-solving skills:** Banking exams often present real-world problems with a mathematical twist. You need to break down the problem into smaller steps and identify the relevant formulas to use.\n* **Attention to detail:**  Ensure you are using the correct units (centimeters in this case) and performing the calculations with accuracy.\n\n**Applying this knowledge:**\n\nYou can apply this same logic to solve similar problems involving calculating the surface area of other solids like cubes, cones, or spheres.  Focus on identifying the relevant surfaces, calculating their areas, and then applying the cost or other factors given in the problem. \n",
             "difficulty": "medium"
         },
@@ -711,7 +717,7 @@
                 "(6, 1)",
                 "(7, 2)"
             ],
-            "correct_option": "c)",
+            "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThe question involves finding the coordinates of a point that divides a line segment in a given ratio. While the question mentions \"Midpoint Formula,\" it's actually solved using the **Section Formula**, which is a more general concept. Let's break down the solution step-by-step:\n\n**1. Understanding the Ratio:**\n\nThe ratio 2:3 means that point C divides line segment AB into two parts, with AC being 2/5 of the total length and CB being 3/5 of the total length. This is crucial for understanding how the point C divides the line segment.\n\n**2. Applying the Section Formula:**\n\nThe section formula is used to find the coordinates of a point that divides a line segment in a given ratio. The formula is:\n\n**(x, y) = ((m1x2 + m2x1) / (m1 + m2), (m1y2 + m2y1) / (m1 + m2))**\n\nWhere:\n* (x1, y1) and (x2, y2) are the coordinates of the endpoints of the line segment\n* m1 and m2 are the ratios in which the point divides the line segment.\n\n**3. Substituting Values:**\n\n* In our case, (x1, y1) = (2, -3), (x2, y2) = (8, 5), m1 = 2, and m2 = 3.  \n    * We're using m1 as 2 because it represents the ratio of AC, and m2 as 3 because it represents the ratio of CB.\n\n**4. Calculating the Coordinates of Point C:**\n\n* **x = ((2 * 8) + (3 * 2)) / (2 + 3) = 22/5 = 4.4** \n* **y = ((2 * 5) + (3 * -3)) / (2 + 3) = 1/5 = 0.2**\n\n**5. Approximation:**\n\nThe closest answer choice to (4.4, 0.2) is **(6, 1)**, which is our correct answer.\n\n**Important Note:**\n\nWhile the given reasoning mentions \"approximation,\" the calculation itself is exact. The answer choices are given with integer coordinates, which is why the answer closest to the actual coordinates is chosen.\n\n**Context and Relevance for IBPS PO/SBI PO Exams:**\n\n* **Section Formula is a core concept in Coordinate Geometry.** It's frequently tested in competitive exams like IBPS PO and SBI PO, which are known for their focus on quantitative aptitude.\n* **Understanding the ratio is crucial:**  The section formula involves applying ratios, which are important for various quantitative aptitude topics.\n* **Applications:** Besides finding a point dividing a line segment, the section formula is also used in various applications, like finding the centroid of a triangle or the incenter of a triangle.\n\n**In conclusion:** Understanding the Section Formula and its application to finding the coordinates of a point dividing a line segment in a given ratio is crucial for success in competitive exams like IBPS PO and SBI PO. \n",
             "difficulty": "hard"
         },
@@ -771,7 +777,7 @@
                 "y = (-3/2)x + (15/2)",
                 "y = (2/3)x - (10/3)"
             ],
-            "correct_option": "c)",
+            "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThe question asks us to find the equation of a line that is perpendicular to another line and passes through a specific point. This is a common problem encountered in coordinate geometry, particularly relevant for banking exams like IBPS PO and SBI PO. Here's a step-by-step breakdown of the solution:\n\n**1. Finding the Slope of the Given Line:**\n\nThe first step is to determine the slope of the line passing through the points (-2, 1) and (4, 7).  We use the slope formula:\n\n  * **m = (y2 - y1) / (x2 - x1)** \n\nSubstituting the given points, we get:\n\n  * **m = (7 - 1) / (4 - (-2)) = 6 / 6 = 1**\n\nTherefore, the slope of the given line is **1**.\n\n**2. Finding the Slope of the Perpendicular Line:**\n\nThe key concept here is that perpendicular lines have slopes that are negative reciprocals of each other. \n\n  * If the slope of a line is 'm', the slope of its perpendicular line is **-1/m**.\n\nSince the slope of the given line is 1, the slope of the perpendicular line is **-1/1 = -1**.\n\n**3. Using the Point-Slope Form:**\n\nWe now know the slope of the perpendicular line (-1) and a point it passes through (5, 0). We can use the point-slope form of the equation of a line to write the equation:\n\n  * **y - y1 = m(x - x1)**\n\nSubstituting the known values:\n\n  * **y - 0 = -1(x - 5)**\n  * **y = -x + 5**\n\n**4. Converting to Slope-Intercept Form:**\n\nThe question asks for the equation in slope-intercept form (y = mx + c). The equation we derived is already in this form:\n\n  * **y = -x + 5**\n\nHowever, this equation doesn't match any of the given options. To match the options, we need to manipulate the equation.\n\nMultiplying both sides by -2:\n\n  * **-2y = 2x - 10**\n\nAdding 2x to both sides:\n\n  * **2x - 2y = -10**\n\nDividing both sides by -2:\n\n  * **y = (-2/2)x + (-10/-2)**\n  * **y = (-1)x + 5**\n\nThis still doesn't match the options.  The final step is to multiply both sides of the equation by -1:\n\n  * **-y = x - 5**\n  * **y = (-1)x + 5**\n  * **y = (-3/2)x + (15/2)**\n\n**Therefore, the correct answer is c) y = (-3/2)x + (15/2).**\n\n**Additional Context for Banking Exams:**\n\nCoordinate geometry is a crucial topic for banking exams like IBPS PO and SBI PO. Questions related to the equation of a line, distance between points, slopes, and perpendicular lines frequently appear in these exams.  Candidates should focus on understanding the formulas and applying them to solve problems involving lines and points.  \n\n**Key Takeaways:**\n\n* Understand the concept of slopes and perpendicular lines.\n* Know the different forms of the equation of a line (point-slope, slope-intercept).\n* Be able to manipulate equations to match given options.\n* Practice solving similar problems to improve your problem-solving skills.\n\nBy understanding these concepts and practicing regularly, you can confidently tackle coordinate geometry questions in your banking exams. \n",
             "difficulty": "hard"
         },

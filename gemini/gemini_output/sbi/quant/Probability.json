@@ -225,7 +225,7 @@
                 "45%",
                 "30%"
             ],
-            "correct_option": "a)",
+            "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe question deals with the **Addition Rule of Probability**, a fundamental concept in probability theory that helps determine the probability of one or more events happening. Here's a detailed explanation of the answer:\n\n**Understanding the Concept:**\n\nThe Addition Rule of Probability states:\n\n* **For mutually exclusive events:**  P(A or B) = P(A) + P(B)\n    * Mutually exclusive events cannot occur together. \n* **For non-mutually exclusive events:** P(A or B) = P(A) + P(B) - P(A and B)\n    * Non-mutually exclusive events can occur together.\n\n**Applying the Rule to the Question:**\n\n1. **Identifying the Events:**\n   * Event A: Respondent likes the design (P(A) = 60%)\n   * Event B: Respondent likes the functionality (P(B) = 45%)\n   * Event (A and B): Respondent likes both design and functionality (P(A and B) = 30%)\n\n2. **Determining Event Relationship:** The events are **not mutually exclusive** because a respondent can like both the design and functionality.\n\n3. **Using the Addition Rule:** We need to find P(A or B), the probability that a respondent liked either the design or the functionality. Since the events are not mutually exclusive, we use the formula:\n\n   P(A or B) = P(A) + P(B) - P(A and B)\n\n4. **Substituting Values:**\n\n   P(A or B) = 0.60 + 0.45 - 0.30 = 0.75\n\n5. **Answer:** Therefore, the probability that a randomly selected respondent liked either the design or the functionality of the product is **75%**.\n\n**Key Takeaways for Exam Preparation:**\n\n* **Understand the difference between mutually exclusive and non-mutually exclusive events:** This is crucial for applying the correct formula.\n* **Memorize the Addition Rule formulas:** Practice applying them to different scenarios.\n* **Visualize using Venn diagrams:**  A Venn diagram can help visualize the relationships between events and understand the overlapping area (P(A and B)).\n\n**Relevance to Banking Exams:**\n\nProbability is an essential topic for banking exams like IBPS PO and SBI PO. Questions involving the Addition Rule of Probability can be found in sections like Quantitative Aptitude and Reasoning Ability. Understanding this concept helps you solve problems involving data analysis, risk assessment, and decision-making, all of which are vital skills in the banking industry. \n",
             "difficulty": "medium"
         },
@@ -285,7 +285,7 @@
                 "0.0018",
                 "0.0164"
             ],
-            "correct_option": "a) 0.018",
+            "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe provided question tests your understanding of the **Bernoulli distribution**, a fundamental concept in probability often encountered in banking exams like IBPS PO and SBI PO. Here's a breakdown of why the correct answer is **a) 0.018** and how to approach similar questions:\n\n**Understanding the Problem:**\n\n* We have a **series of independent events** \u2013 each loan approval is independent of the others.\n* Each event has **two possible outcomes** \u2013 the loan either defaults (success) or doesn't (failure).\n* The **probability of success (default) is constant** for every loan, p = 0.02. \n\nThis scenario perfectly fits the definition of a **Bernoulli trial**, making the Bernoulli distribution the right tool to solve this problem.\n\n**The Bernoulli Distribution Formula:**\n\nThe probability of getting exactly *k* successes in *n* independent Bernoulli trials with probability of success *p* is given by:\n\n**P(X = k) = (n choose k) * p^k * (1 - p)^(n-k)**\n\nwhere:\n\n* **(n choose k)** represents the binomial coefficient, calculated as n! / (k! * (n-k)!), indicating the number of ways to choose *k* successes from *n* trials.\n* **p^k** represents the probability of getting *k* successes.\n* **(1 - p)^(n-k)** represents the probability of getting (n-k) failures.\n\n**Applying the Formula to the Problem:**\n\n* **n = 100** (number of loans)\n* **k = 2** (number of defaults)\n* **p = 0.02** (probability of default)\n\nPlugging these values into the formula:\n\nP(X = 2) = (100 choose 2) * 0.02^2 * 0.98^98 \n\nCalculating this expression (using a calculator or statistical software), we get:\n\nP(X = 2) \u2248 **0.018** \n\n**Therefore, the probability of exactly two loans defaulting out of 100 is approximately 0.018, making option a) the correct answer.**\n\n**Key Takeaways for IBPS PO & SBI PO Exams:**\n\n* **Recognize Bernoulli trials:** Be able to identify scenarios where the Bernoulli distribution applies (independent events, two possible outcomes, constant success probability).\n* **Understand the formula:** Memorize or be familiar with the Bernoulli distribution formula and its components.\n* **Use a calculator or statistical software:** For complex calculations, utilize tools to efficiently compute the probabilities.\n\n**Additional Context:**\n\nUnderstanding the Bernoulli distribution is crucial for banking exams, as it is the foundation for many other probability concepts like the binomial distribution, which is often used to analyze loan portfolios and assess risk.\n\nThe ability to calculate probabilities related to loan defaults helps banks make informed decisions regarding loan approval, pricing, and risk management strategies. \n",
             "difficulty": "medium"
         },
@@ -422,7 +422,7 @@
             "difficulty": "medium"
         },
         {
-            "description": "Calculate the variance of the following data set: [2, 4, 6, 8, 10]",
+            "question": "Calculate the variance of the following data set: [2, 4, 6, 8, 10]",
             "options": [
                 "8",
                 "10",
@@ -430,10 +430,11 @@
                 "16"
             ],
             "correct_option": "B",
+            "difficulty": "medium",
             "reasoning": "The variance is calculated as the average of the squared differences from the mean. In this case, the mean is 6, and the squared differences are 16, 4, 0, 4, and 16. The average of these is 10."
         },
         {
-            "description": "A set of data has a mean of 50 and a standard deviation of 5. What is the range within which approximately 68% of the data points lie?",
+            "question": "A set of data has a mean of 50 and a standard deviation of 5. What is the range within which approximately 68% of the data points lie?",
             "options": [
                 "45-55",
                 "40-60",
@@ -441,10 +442,11 @@
                 "30-70"
             ],
             "correct_option": "A",
+            "difficulty": "medium",
             "reasoning": "The empirical rule states that approximately 68% of the data falls within one standard deviation of the mean. Therefore, the range is 50 \u00b1 5, which is 45-55."
         },
         {
-            "description": "A company's stock prices over the past five days were: $100, $105, $110, $105, $100. What is the standard deviation of the stock prices?",
+            "question": "A company's stock prices over the past five days were: $100, $105, $110, $105, $100. What is the standard deviation of the stock prices?",
             "options": [
                 "2.5",
                 "5",
@@ -452,10 +454,11 @@
                 "25"
             ],
             "correct_option": "B",
+            "difficulty": "medium",
             "reasoning": "Calculate the mean (104), find the deviations from the mean, square the deviations, find the average of the squared deviations (variance = 25), and then take the square root of the variance to get the standard deviation (5)."
         },
         {
-            "description": "A researcher is studying the lifespan of a particular type of battery. They collect data from 100 batteries and find that the mean lifespan is 500 hours with a standard deviation of 50 hours. If the researcher assumes the lifespan follows a normal distribution, approximately how many batteries are expected to have a lifespan between 400 and 600 hours?",
+            "question": "A researcher is studying the lifespan of a particular type of battery. They collect data from 100 batteries and find that the mean lifespan is 500 hours with a standard deviation of 50 hours. If the researcher assumes the lifespan follows a normal distribution, approximately how many batteries are expected to have a lifespan between 400 and 600 hours?",
             "options": [
                 "68",
                 "95",
@@ -463,6 +466,7 @@
                 "Cannot be determined from the information provided"
             ],
             "correct_option": "B",
+            "difficulty": "medium",
             "reasoning": "Using the empirical rule, approximately 95% of the data falls within two standard deviations of the mean. In this case, that range is 500 \u00b1 100 (400 to 600 hours)."
         },
         {
@@ -473,7 +477,7 @@
                 "3/5",
                 "4/5"
             ],
-            "correct_option": "c)",
+            "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThe question asks for the probability of a customer **not** getting a Silver card.  This means we need to consider the probability of getting either a Gold or Bronze card. Here's how to break down the solution:\n\n1. **Total Cards:** There are 5,000 cards in total.\n2. **Favorable Outcomes:** We want the probability of getting a Gold or Bronze card. This means there are 1,000 (Gold) + 2,000 (Bronze) = 3,000 favorable outcomes.\n3. **Probability:** The probability of an event is calculated as: (Number of favorable outcomes) / (Total number of outcomes) \n   Therefore, the probability of getting a Gold or Bronze card is 3,000 / 5,000 = 3/5.\n\n**Therefore, the correct answer is (c) 3/5.**\n\n**Key Concepts:**\n\n* **Probability:**  The likelihood of an event happening. It's represented as a fraction, decimal, or percentage.\n* **Simple Event:** An event that involves only one outcome. \n* **Complement:** The probability of an event not happening. It's calculated as 1 - (Probability of the event happening).\n\n**Why this is important for banking exams:**\n\nProbability questions are common in banking exams like IBPS PO and SBI PO. Understanding basic probability concepts, including the complement rule, is crucial for solving these questions. \n\n**Tips for solving similar questions:**\n\n1. **Identify the event:** Clearly define what the question is asking for (in this case, not getting a Silver card).\n2. **Count the favorable outcomes:**  Determine the number of ways the desired event can happen.\n3. **Count the total outcomes:**  Identify the total number of possible outcomes.\n4. **Calculate the probability:**  Divide the number of favorable outcomes by the total number of outcomes.\n5. **Use the complement rule:** If the question asks for the probability of an event NOT happening, use the complement rule.\n\nBy understanding these concepts and practicing with different scenarios, you'll be well-prepared to handle probability questions on banking exams. \n",
             "difficulty": "hard"
         },
