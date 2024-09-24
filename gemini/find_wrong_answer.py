@@ -19,9 +19,7 @@ def get_new_directory_path(directory_path, new_dir_name):
     return new_directory_path
 
 
-def write_json_in_new_dir(json_obj, file_name, directory_path: str, new_dir_name):
-    new_directory_path = get_new_directory_path(directory_path, new_dir_name)
-
+def write_json(json_obj, file_name, new_directory_path):
     if os.path.exists(new_directory_path):
         pass
     else:
@@ -42,7 +40,7 @@ def seperate_json(file, directory_path):
 
     new_json_obj["questions"] = questions
       
-    write_json_in_new_dir(new_json_obj, file, directory_path, "for_review")
+    write_json(new_json_obj, file, get_new_directory_path(directory_path,  "for_review"))
 
 
 def validate_files(files, directory_path):
@@ -60,10 +58,8 @@ def recur_dir(directory_path):
     validate_files(files, directory_path)
 
     for dir in sub_dir:
-        if not os.path.exists(get_new_directory_path(directory_path, "for_review")):
-          os.mkdir(get_new_directory_path(directory_path, "for_review"))
         recur_dir(os.path.join(directory_path, dir))
 
 
-directory_path = "gemini/gemini_output/ibps"
+directory_path = "gemini/gemini_output/sbi"
 recur_dir(directory_path)
