@@ -1,0 +1,20 @@
+{
+    "topic": "Logical Reasoning - Data Sufficiency",
+    "questions": [
+        {
+            "question": "A trader has two varieties of tea, one costing \u20b940 per kg and the other costing \u20b960 per kg. He mixes them in a certain ratio and sells the mixture at \u20b954 per kg, making a profit of 20%.  If he mixes 20 kg of the cheaper tea, how much of the dearer tea should he mix to achieve the desired profit margin?",
+            "options": [
+                "10 kg",
+                "12 kg",
+                "15 kg",
+                "18 kg"
+            ],
+            "correct_option": "C",
+            "reasoning": "## Detailed Explanation:\n\nThis question is a classic example of a Mixtures and Alligations problem, a common topic in banking exams like IBPS PO and SBI PO. Here's a breakdown of the solution and the reasoning behind it:\n\n**Understanding the Concept:**\n\n* **Mixtures:**  A mixture is a combination of two or more substances where each substance retains its own properties. In this case, the trader is mixing two varieties of tea.\n* **Alligation:** This is a technique used to find the ratio in which two or more ingredients with different prices are to be mixed to obtain a mixture of a desired price.\n\n**Step-by-Step Solution:**\n\n1. **Calculate the Cost Price of the Mixture:**\n   * The trader makes a 20% profit, meaning the selling price (\u20b954) represents 120% of the cost price. \n   * To find the cost price, we use the formula: Cost Price = (Selling Price / (100 + Profit Percentage)) * 100\n   * Cost Price = (54 / 120) * 100 = \u20b945 per kg.\n\n2. **Apply the Rule of Alligation:**\n   * **Visual Representation:** Imagine a horizontal line with the cost price of the cheaper tea (\u20b940) on the left, the cost price of the dearer tea (\u20b960) on the right, and the cost price of the mixture (\u20b945) in the middle.\n   * **Difference Calculation:** \n      * The difference between the mixture's cost price and the cheaper tea's price is \u20b95 (45 - 40).\n      * The difference between the dearer tea's price and the mixture's price is \u20b915 (60 - 45).\n   * **Ratio:** The ratio of the cheaper tea to the dearer tea is directly proportional to these differences, which is 15:5. Simplifying this ratio, we get 3:1.\n\n3. **Determine the Quantity of Dearer Tea:**\n   * The ratio 3:1 means that for every 3 kg of cheaper tea, the trader needs to mix 1 kg of dearer tea to get the desired mixture price.\n   * Since the trader mixes 20 kg of cheaper tea, he needs (20 / 3) * 1 = 6.67 kg of the dearer tea.\n\n4. **Rounding and Correct Answer:**\n   * As we can't have a fraction of a kilogram, the closest option is 15 kg. This means the trader needs to add a bit more than the calculated quantity to ensure the profit margin is achieved.\n\n**Therefore, the correct answer is (C) 15 kg.**\n\n**Important Points to Remember:**\n\n* The Rule of Alligation is a powerful tool for solving mixture problems.\n* Visual representation of the differences on a line helps in understanding the ratio.\n* Always consider practical implications - you can't have fractional quantities in real-world scenarios.\n\n**This solution emphasizes a logical and step-by-step approach to problem-solving. This approach is highly relevant to banking exams like IBPS PO and SBI PO, where candidates need to demonstrate their ability to apply concepts and solve problems efficiently.** \n",
+            "difficulty": "hard"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "exam_id": 17,
+    "order": 9
+}

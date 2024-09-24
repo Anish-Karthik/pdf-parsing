@@ -1,0 +1,20 @@
+{
+    "topic": "Quants - Quadratic Equations",
+    "questions": [
+        {
+            "question": "Given the function f(x) = 2x\u00b2 - 3x + 1, and the function g(x) = x + 2, what is the value of f(g(1))?",
+            "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct_option": "C",
+            "reasoning": "## Detailed Explanation:\n\nThe question asks you to find the value of  `f(g(1))`. This involves a concept called **composition of functions**.  Here's how to break it down:\n\n1. **Understanding Function Composition:**\n\n   Function composition means applying one function to the output of another function.  We write `f(g(x))` to represent this, where:\n\n   *  `g(x)` is the \"inner function\" that we apply first.\n   *  `f(x)` is the \"outer function\" that we apply to the result of `g(x)`.\n\n2. **Step-by-step Calculation:**\n\n   * **Step 1: Find `g(1)`:** Substitute `x = 1` into the function `g(x) = x + 2`.\n     This gives us: `g(1) = 1 + 2 = 3`.\n\n   * **Step 2: Find `f(g(1))` which is `f(3)`:**  Now, substitute `x = 3` into the function `f(x) = 2x\u00b2 - 3x + 1`. \n     This gives us: `f(3) = 2(3)\u00b2 - 3(3) + 1 = 18 - 9 + 1 = 10`.\n\n3. **The Correct Answer:**\n\n   The correct answer is **10**.  However, the question provides no option for this answer.  This suggests an error in the provided options. The closest option is **C (8)**, but it is still incorrect.\n\n## Key Takeaways for IBPS PO/SBI PO Exams:\n\n* **Master function composition:**  Understanding how to apply one function to the output of another is crucial for many quantitative aptitude questions.\n* **Be careful with the provided options:**  While it's easy to get caught up in the calculations, always double-check that the answer matches one of the given options.  If it doesn't, it's likely a question error, and you should approach it cautiously.\n* **Practice, practice, practice:**  Solving similar problems regularly will help you gain confidence and develop a deeper understanding of the concepts. \n\n**Additional Context:**\n\n* **Function composition is a fundamental concept in mathematics**, appearing in various areas, including calculus, linear algebra, and computer science. \n* **IBPS PO/SBI PO exams often include questions related to functions**, testing your understanding of their properties and operations.  Mastering these concepts is essential for achieving a good score.\n\nRemember, while you may encounter question errors, your ability to understand and solve function composition problems is essential for succeeding in these competitive exams. \n",
+            "difficulty": "medium"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "exam_id": 18,
+    "order": 4
+}

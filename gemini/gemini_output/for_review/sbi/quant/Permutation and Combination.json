@@ -1,0 +1,20 @@
+{
+    "topic": "Quants - Permutation and Combination",
+    "questions": [
+        {
+            "question": "An insurance company offers a comprehensive car insurance policy with a variety of optional add-ons. These add-ons include roadside assistance, rental car coverage, collision damage waiver, gap insurance, and personal accident insurance. The company also offers a discount program where customers can choose to bundle any two of these add-ons and receive a reduced premium. If a customer wants to explore all possible combinations of add-ons, including scenarios with no add-ons, how many distinct insurance policy configurations can they choose from, considering both individual add-ons and bundled options?",
+            "options": [
+                "31",
+                "63",
+                "127",
+                "255"
+            ],
+            "correct_option": "C",
+            "reasoning": "## Detailed Explanation:\n\nThe provided question is a great example of how permutation and combination concepts are applied in real-world scenarios, especially in the insurance industry. The correct answer, as explained in the provided reasoning, should be **41**. However, since 41 is not an option, the closest option **C (127)** is likely the result of an error in the question setup. \n\nLet's break down why the solution should be 41:\n\n**1. Understanding the Problem:**\n\nThe question asks for the total number of distinct insurance policy configurations a customer can choose from. This includes both selecting individual add-ons and choosing bundled packages. The key is to avoid double-counting any configurations.\n\n**2. Individual Add-on Configurations:**\n\n* There are 5 individual add-ons, each with two possible choices: \"selected\" or \"not selected\". \n*  Therefore, there are 2 * 2 * 2 * 2 * 2 = 2\u2075 = 32 possible combinations of individual add-ons. \n* This includes the scenario where the customer chooses no add-ons at all.\n\n**3. Bundled Add-on Configurations:**\n\n* The customer can choose any two out of the five add-ons for a bundled package.\n* This is a combination problem (order doesn't matter), and we use the formula:  nCr = n! / (r! * (n-r)!), where n = 5 (total add-ons) and r = 2 (add-ons in a bundle).\n* So, 5C2 = 5! / (2! * 3!) = 10 possible bundled configurations.\n\n**4. Total Configurations:**\n\n* To find the total distinct configurations, we add the individual add-on combinations and the bundled configurations.\n* However, we need to subtract 1 to account for the scenario where no add-ons are chosen (this is counted in both the individual and bundled scenarios).\n\nTherefore, the total number of distinct policy configurations is 32 + 10 - 1 = **41**.\n\n**Why the Answer is Not 127 (Option C):**\n\nThe provided solution, while correct in its approach, seems to have made a calculation error. It's likely that the 127 was obtained by incorrectly adding the individual add-on configurations (32) to the bundled add-on configurations (10) and then multiplying the result by 2 (32 + 10 = 42 * 2 = 84). This approach does not account for the double-counting of the scenario where no add-ons are chosen.\n\n**Key Takeaways for IBPS PO and SBI PO Exams:**\n\n* **Permutation and combination** are essential topics for these exams. Understanding the difference between permutations (order matters) and combinations (order doesn't matter) is crucial.\n* **Real-world applications:** These concepts are tested in various scenarios, like insurance policies, loan options, investment strategies, etc. \n* **Problem-solving approach:** Break down complex problems into smaller parts, carefully identify the required calculations (permutation or combination), and avoid double-counting.\n\nBy mastering these concepts and practicing with various examples, aspiring bank officers can confidently tackle these types of questions in their IBPS PO and SBI PO exams. \n",
+            "difficulty": "hard"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "exam_id": 18,
+    "order": 14
+}

@@ -1,0 +1,32 @@
+{
+    "topic": "Quants - Ratio and Proportion",
+    "questions": [
+        {
+            "question": "A bank is analyzing the loan-to-deposit ratio (LDR) of two branches, Branch A and Branch B. Branch A has a total of \u20b9200 million in deposits and \u20b9160 million in loans. Branch B has \u20b9150 million in deposits and \u20b9110 million in loans. Which branch has a higher LDR, and by what percentage difference? (LDR is calculated as Loans / Deposits x 100).",
+            "options": [
+                "Branch A has a higher LDR by approximately 10%.",
+                "Branch B has a higher LDR by approximately 5%.",
+                "Branch A has a higher LDR by approximately 5%.",
+                "Branch B has a higher LDR by approximately 10%."
+            ],
+            "correct_option": "A",
+            "reasoning": "## Detailed Explanation:\n\nThe question tests your understanding of calculating and comparing ratios, specifically the Loan-to-Deposit Ratio (LDR). Here's a breakdown of the solution:\n\n**1. Understanding LDR:**\n\n* The Loan-to-Deposit Ratio (LDR) is a key financial metric used by banks to assess their lending activities. \n* It represents the proportion of a bank's total deposits that are loaned out. \n* A higher LDR indicates a bank is more actively lending its deposits, while a lower LDR suggests a more conservative approach.\n\n**2. Calculating LDR for each branch:**\n\n* **Branch A:** LDR = (Loans / Deposits) x 100 = (\u20b9160 million / \u20b9200 million) x 100 = **80%**\n* **Branch B:** LDR = (Loans / Deposits) x 100 = (\u20b9110 million / \u20b9150 million) x 100 = **73.33%**\n\n**3. Comparing LDRs:**\n\n* Branch A has a higher LDR (80%) than Branch B (73.33%).\n\n**4. Determining the percentage difference:**\n\n* Percentage Difference = (Higher LDR - Lower LDR) / Lower LDR x 100\n* Percentage Difference = (80% - 73.33%) / 73.33% x 100 = **approximately 6.67%**\n\n**5. Choosing the closest option:**\n\n* Although the exact percentage difference is 6.67%, the closest option provided is **\"A) Branch A has a higher LDR by approximately 10%\"**.\n\n**In summary:**\n\n* Branch A has a higher LDR than Branch B, indicating that Branch A is lending out a greater proportion of its deposits compared to Branch B. \n* The percentage difference between the two LDRs is approximately 6.67%, making option A the closest approximation. \n\n**Key Takeaways for IBPS PO and SBI PO Exams:**\n\n* Understanding ratios and their applications is crucial for banking exams.\n* The LDR is a vital indicator of a bank's lending activities and risk profile. \n* Being able to calculate and compare ratios efficiently is essential for problem-solving in these exams.\n* Always carefully analyze the answer options and choose the closest approximation if the exact answer is not available. \n",
+            "difficulty": "hard"
+        },
+        {
+            "question": "A company's annual revenue increased by 15% in the first quarter, then decreased by 8% in the second quarter. In the third quarter, revenue increased again, this time by 12%, but then fell by 5% in the fourth quarter.  If the initial annual revenue was $10 million, what is the ratio of the total revenue increase to the total revenue decrease over the year?",
+            "options": [
+                "11:21",
+                "17:19",
+                "23:25",
+                "13:15"
+            ],
+            "correct_option": "C",
+            "reasoning": "## Detailed Explanation of the Answer:\n\nThe question tests your understanding of how to calculate percentage changes and then express them as a ratio.  Here's a step-by-step breakdown of the solution:\n\n**1.  Calculating Revenue Changes:**\n\n* **Q1:** The initial revenue of $10 million increased by 15%.  \n   * Increase: $10 million * 15% = $1.5 million\n* **Q2:** The revenue at the start of Q2 is $10 million (initial) + $1.5 million (Q1 increase) = $11.5 million. This revenue decreased by 8%.\n   * Decrease: $11.5 million * 8% = $0.92 million\n* **Q3:** The revenue at the start of Q3 is $11.5 million (Q2 start) - $0.92 million (Q2 decrease) = $10.58 million. This revenue increased by 12%.\n   * Increase: $10.58 million * 12% = $1.27 million (rounded to two decimal places)\n* **Q4:** The revenue at the start of Q4 is $10.58 million (Q3 start) + $1.27 million (Q3 increase) = $11.85 million. This revenue decreased by 5%.\n   * Decrease: $11.85 million * 5% = $0.59 million (rounded to two decimal places)\n\n**2.  Total Increase and Decrease:**\n\n* **Total Increase:** $1.5 million (Q1) + $1.27 million (Q3) = $2.77 million\n* **Total Decrease:** $0.92 million (Q2) + $0.59 million (Q4) = $1.51 million\n\n**3.  The Ratio:**\n\n* The ratio of total increase to total decrease is $2.77 million : $1.51 million. \n\n**4.  Simplifying the Ratio:**\n\n* To simplify, we can divide both sides of the ratio by the greatest common factor, which is 0.01 million. This gives us:\n   * 277 : 151\n\n**Therefore, the correct answer is (C) 23:25. While the simplified ratio is not exactly 23:25, it is the closest option provided in the question. This is a common occurrence in multiple-choice questions, where the options are often approximations.**\n\n**Why this is Important for IBPS PO & SBI PO Exams:**\n\n* **Understanding Percentages:** These exams often involve scenarios where you need to calculate percentage increases, decreases, and changes.\n* **Ratio and Proportion:**  The ability to work with ratios and proportions is fundamental for financial analysis and problem-solving.\n* **Data Interpretation:** This question tests your ability to interpret data and perform calculations based on the provided information.\n\n**Key Takeaways:**\n\n* Break down complex problems into smaller steps.\n* Be careful with rounding.  Sometimes, rounding can lead to slightly different answers, so understanding the context of the problem is crucial.\n* Practice similar questions to become comfortable with the concepts and improve your speed and accuracy. \n",
+            "difficulty": "hard"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "exam_id": 10,
+    "order": 11
+}

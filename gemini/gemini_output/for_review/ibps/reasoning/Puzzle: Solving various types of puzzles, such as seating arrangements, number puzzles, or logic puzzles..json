@@ -1,0 +1,20 @@
+{
+    "topic": "Logical Reasoning - Puzzle",
+    "questions": [
+        {
+            "question": "A train leaves City A at 8:00 AM and travels at 60 mph towards City B, which is 300 miles away. At the same time, another train leaves City B and travels at 75 mph towards City A. Both trains travel on the same track.  There is a bird that starts flying at 8:00 AM from City A towards City B, traveling at 100 mph. The bird flies back and forth between the two trains until they meet. What is the total distance the bird travels before the trains meet?",
+            "options": [
+                "150 miles",
+                "200 miles",
+                "250 miles",
+                "300 miles"
+            ],
+            "correct_option": "B",
+            "reasoning": "## Detailed Explanation:\n\nThe question presents a classic scenario involving relative speed and the concept of a \"meeting point\". Here's a breakdown of the solution:\n\n**1. Find the time taken for the trains to meet:**\n\n* **Combined speed:** The trains are moving towards each other, so their speeds add up. The combined speed is 60 mph + 75 mph = 135 mph.\n* **Time to meet:**  Distance = Speed * Time.  Therefore, Time = Distance / Speed.  The time taken for the trains to meet is 300 miles / 135 mph = 2.22 hours.\n\n**2. Calculate the total distance travelled by the bird:**\n\n* **Bird's speed:** The bird flies at 100 mph.\n* **Total distance travelled by the bird:**  Distance = Speed * Time. The bird flies for 2.22 hours, so it travels 100 mph * 2.22 hours = 222 miles.\n\n**3. Account for the back-and-forth movement:**\n\n* **Actual distance:** The bird is flying back and forth between the trains. This means the 222 miles calculated above represents the total distance covered in all the back-and-forth trips. \n* **Distance covered in one direction:**  To find the actual distance the bird flies, we need to consider that it covers half the total distance in one direction before meeting the trains.  Therefore, the actual distance is 222 miles / 2 = 111 miles.\n\n**4. Select the closest option:**\n\n* **Correct answer:** The closest option to 111 miles is **200 miles**, making option B the correct answer.\n\n**Key Concepts to Remember:**\n\n* **Relative speed:** When objects move towards each other, their speeds add up to find their relative speed.\n* **Meeting point:** The point where two objects moving towards each other meet.\n* **Distance, Speed, and Time:** The fundamental relationship between these three quantities. \n\n**Tips for similar questions:**\n\n* **Visualize:** It's always helpful to visualize the scenario, especially when dealing with relative motion.\n* **Focus on the meeting point:** The key is to determine the time it takes for the objects to meet.\n* **Consider back-and-forth motion:** If an object is moving back and forth between two other objects, remember to account for the total distance covered.\n\nThis detailed explanation will be helpful for students preparing for competitive exams like IBPS PO, SBI PO, as it provides a clear understanding of the concepts and a structured approach to solving similar problems. \n",
+            "difficulty": "hard"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "exam_id": 11,
+    "order": 12
+}

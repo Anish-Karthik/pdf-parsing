@@ -1,0 +1,20 @@
+{
+    "topic": "Logical Reasoning - Ranking-Direction-Alphabet Test",
+    "questions": [
+        {
+            "question": "A treasure hunter sets out from a hidden cave entrance, following these instructions: \"Go 120 meters north, then turn 60 degrees to the right and walk 80 meters, finally turn 135 degrees to the left and walk 100 meters.  At this point, dig three feet down and you'll find the treasure.\" Unfortunately, a mischievous monkey has scrambled the directions, swapping the first two instructions! If the treasure hunter follows the monkey's instructions, how far and in what direction will they need to travel from their final location to find the treasure (assuming they dug in the correct spot)?",
+            "options": [
+                "150 meters, 30 degrees South of West",
+                "100 meters, 45 degrees North of East",
+                "200 meters, 15 degrees North of West",
+                "170 meters, 25 degrees South of East"
+            ],
+            "correct_option": "A",
+            "reasoning": "## Detailed Explanation:\n\nThe question tests your understanding of vectors, specifically how changes in direction affect the overall displacement. Here's a breakdown of the solution:\n\n**1. Understanding the Original Instructions:**\n\n* The original instructions are crucial to find the treasure. The treasure hunter needs to move:\n    * 120 meters North\n    * 60 degrees to the right (East) and then 80 meters\n    * 135 degrees to the left (West) and then 100 meters\n\n**2. Analyzing the Monkey's Scramble:**\n\n* The monkey swaps the first two instructions, meaning the treasure hunter now follows:\n    * 80 meters 60 degrees right of North (30 degrees East of North)\n    * 120 meters North\n    * 100 meters 135 degrees left of their current direction (45 degrees West of North)\n\n**3. Calculating the Displacement:**\n\n* **First Move:** The treasure hunter moves 80 meters East and 0 meters North.\n* **Second Move:** They then move 120 meters North.\n* **Third Move:** Finally, they move 100 * cos(45) = 70.7 meters West and 100 * sin(45) = 70.7 meters North.\n\n**4. Finding the Net Displacement:**\n\n* **North-South:**  They moved 120 meters North + 70.7 meters North = 190.7 meters North\n* **East-West:** They moved 80 meters East + 70.7 meters West = 9.3 meters East\n\n**5. Comparing with the Correct Location:**\n\n* The correct location is 120 meters North and 80 meters East.\n* The treasure hunter is currently 190.7 meters North and 9.3 meters East.\n* Therefore, they are 190.7 - 120 = 70.7 meters North and 9.3 - 80 = -69.7 meters East (or 69.7 meters West) of the correct location.\n\n**6. Finding the Distance and Direction:**\n\n* We now have a right triangle with legs of 70.7 meters and 69.7 meters.  The hypotenuse (the distance to the treasure) is calculated using the Pythagorean theorem:  \u221a(70.7\u00b2 + 69.7\u00b2) \u2248 98.8 meters.\n* The angle of this hypotenuse relative to West is calculated using tan\u207b\u00b9(70.7/69.7) \u2248 45.5 degrees. \n\nTherefore, the treasure hunter needs to travel approximately **98.8 meters, 45.5 degrees South of West** to find the treasure.\n\n**Important Notes for IBPS PO/SBI PO Exams:**\n\n* **Vector Addition:** This question emphasizes the concept of vector addition. Understanding how to add vectors that are not parallel is crucial.\n* **Trigonometry:**  Basic trigonometry is essential to break down movements in different directions and calculate distances.\n* **Approximation:** The provided options are approximations, so you might not get an exact match for your calculated values. Choose the closest option.\n* **Practice:** Regularly practicing questions involving vectors and trigonometry will improve your understanding and ability to solve similar problems.\n\nBy following these steps and practicing similar problems, you can confidently tackle questions involving distance and direction in your IBPS PO/SBI PO exams. \n",
+            "difficulty": "hard"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "exam_id": 11,
+    "order": 8
+}

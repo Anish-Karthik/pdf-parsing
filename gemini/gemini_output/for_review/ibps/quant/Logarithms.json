@@ -1,0 +1,20 @@
+{
+    "topic": "Quants - Logarithms",
+    "questions": [
+        {
+            "question": "You invest $500 at an annual interest rate of 3% compounded annually. Approximately how many years will it take for your investment to reach $600?",
+            "options": [
+                "5 years",
+                "7 years",
+                "9 years",
+                "11 years"
+            ],
+            "correct_option": "B",
+            "reasoning": "## Detailed Explanation:\n\nThe question asks us to determine the time it takes for an investment of $500 to grow to $600 at an annual interest rate of 3% compounded annually. This is a classic application of compound interest and logarithms, a topic frequently tested in banking exams like IBPS PO and SBI PO.\n\n**Understanding Compound Interest:**\n\nCompound interest means that the interest earned in each period is added to the principal, and the next period's interest is calculated on this new, larger principal.  The formula for compound interest is:\n\nA = P(1 + r/n)^(nt)\n\nWhere:\n\n* A = the future value of the investment/loan, including interest\n* P = the principal investment amount (the initial deposit or loan amount)\n* r = the annual interest rate (as a decimal)\n* n = the number of times that interest is compounded per year\n* t = the number of years the money is invested or borrowed for\n\n**Applying the Formula:**\n\nIn our case:\n\n* A = $600 (the desired future value)\n* P = $500 (the initial investment)\n* r = 0.03 (the annual interest rate as a decimal)\n* n = 1 (compounded annually)\n* t = the unknown number of years (what we need to find)\n\nPlugging these values into the formula, we get:\n\n$600 = $500 (1 + 0.03/1)^(1*t)\n\nSimplifying:\n\n$600 = $500 (1.03)^t\n\n**Solving for Time (t) using Logarithms:**\n\nTo isolate 't', we need to use logarithms.  Here's how:\n\n1. **Divide both sides by $500:** \n   1.2 = (1.03)^t\n\n2. **Take the logarithm (base 10) of both sides:**\n   log(1.2) = log(1.03)^t\n\n3. **Use the power rule of logarithms:** \n   log(1.2) = t * log(1.03)\n\n4. **Isolate 't' by dividing both sides by log(1.03):**\n   t = log(1.2) / log(1.03) \n\n5. **Calculate using a calculator:** \n   t \u2248 6.64 years\n\n**Choosing the Closest Option:**\n\nThe closest answer choice to 6.64 years is **B) 7 years**.\n\n**Key Points for Exam Preparation:**\n\n* **Understanding Compound Interest:** Make sure you understand the concept of compound interest and how to apply the formula.\n* **Logarithms:** Practice using logarithms to solve for variables in compound interest problems.\n* **Approximation:** Often, you won't need to find the exact answer. Knowing how to approximate and choose the closest option is crucial.\n\nBy understanding these concepts and practicing with similar problems, you'll be well-prepared for the IBPS PO and SBI PO banking exams. \n",
+            "difficulty": "easy"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "exam_id": 10,
+    "order": 18
+}

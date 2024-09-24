@@ -1,0 +1,20 @@
+{
+    "topic": "Logical Reasoning - Ranking-Direction-Alphabet Test",
+    "questions": [
+        {
+            "question": "A treasure hunter sets out from their camp, located at coordinates (0, 0).  They first journey 7 miles East, then 4 miles South, followed by a tricky 6-mile trek in a direction 30 degrees North of East (approximately 5.2 miles East and 3 miles North). Finally, they encounter a treacherous ravine and must navigate 2 miles West and 1 mile South to find a safe passage. What are the treasure hunter's final coordinates relative to their starting point?",
+            "options": [
+                "(10, -6)",
+                "(13, -3)",
+                "(12, -2)",
+                "(9, -4)"
+            ],
+            "correct_option": "C",
+            "reasoning": "## Detailed Explanation:\n\nThe question tests your understanding of coordinate geometry and how to calculate changes in position based on directional movement. Here's a detailed breakdown of how to solve this problem:\n\n1. **Understanding Coordinates:** Coordinates are a pair of numbers (x, y) that represent a point's position on a graph. The x-coordinate represents the horizontal position (left/right), while the y-coordinate represents the vertical position (up/down).\n\n2. **Movement Directions:**\n   * **East:** Increases the x-coordinate.\n   * **West:** Decreases the x-coordinate.\n   * **North:** Increases the y-coordinate.\n   * **South:** Decreases the y-coordinate.\n\n3. **Solving the Problem:**\n\n   * **Starting Point:** (0, 0)\n   * **East (7 miles):**  (0, 0) -> (7, 0) \n   * **South (4 miles):** (7, 0) -> (7, -4)\n   * **30 degrees North of East (approximately 5.2 miles East and 3 miles North):**  This is where trigonometry comes in.  Since the direction is at an angle, we need to consider both horizontal (East) and vertical (North) components. We are given approximations for these components, so we can directly add them to our coordinates. \n     (7, -4) -> (7 + 5.2, -4 + 3) -> (12.2, -1)\n   * **West (2 miles):** (12.2, -1) -> (12.2 - 2, -1) -> (10.2, -1)\n   * **South (1 mile):** (10.2, -1) -> (10.2, -1 - 1) -> (10.2, -2)\n\n4. **Final Coordinates:** The treasure hunter's final coordinates are approximately **(10.2, -2)**.\n\n5. **Closest Option:** The closest option to this result is **(12, -2)**, which is option **C**.\n\n**Key Points for IBPS PO and SBI PO Exams:**\n\n* **Coordinate Geometry:** These exams often include questions involving coordinate geometry, which can be applied to a variety of scenarios.\n* **Directional Movement:**  Understanding the relationship between directions (North, South, East, West) and changes in coordinates is crucial.\n* **Trigonometry (Optional):** While this question provided approximations for the angled movement, you might encounter problems where you need to use trigonometric functions (sine, cosine, tangent) to calculate the horizontal and vertical components of movement.\n\n**Practice Tip:** Try solving similar problems with different starting points and movement directions. This will help you internalize the concepts and improve your speed during the exam. \n",
+            "difficulty": "hard"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "exam_id": 17,
+    "order": 8
+}

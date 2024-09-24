@@ -1,0 +1,20 @@
+{
+    "topic": "Logical Reasoning - Coded Inequalities",
+    "questions": [
+        {
+            "question": "A delivery company charges a flat fee of $10 plus $2 per mile for deliveries within the city.  A customer is willing to spend no more than $28 on delivery.  If 'm' represents the number of miles the customer can have their delivery sent, which inequality correctly represents this situation?",
+            "options": [
+                "10 + 2m > 28",
+                "10 + 2m < 28",
+                "2m - 10 > 28",
+                "2m - 10 < 28"
+            ],
+            "correct_option": "B",
+            "reasoning": "## Detailed Explanation:\n\nThe question is asking for an inequality that represents the situation where a customer can spend no more than $28 on a delivery. This involves understanding the cost structure and translating it into a mathematical expression.\n\n**Understanding the Problem:**\n\n* **Flat Fee:** The delivery company charges a fixed amount of $10, regardless of the distance.\n* **Per Mile Charge:**  They charge an additional $2 for every mile the delivery travels.\n* **Budget:** The customer is willing to pay a maximum of $28.\n\n**Setting up the Inequality:**\n\n1. **Total Cost:** The customer's total cost is represented by the flat fee plus the cost per mile, which can be written as:  $10 + $2m (where 'm' is the number of miles).\n2. **Budget Constraint:** The customer's total cost must be less than or equal to $28. This translates to the inequality:  10 + 2m \u2264 28.\n\n**Why the Correct Answer is (B):**\n\nOption (B) is the closest to the correct inequality. It states: 10 + 2m < 28.\n\n* **Similarities:** Both the correct inequality (10 + 2m \u2264 28) and option (B) represent the total cost being less than $28. \n* **Difference:** The correct inequality includes the possibility of spending exactly $28, while option (B) only allows for spending strictly less than $28. \n\n**Why other options are incorrect:**\n\n* **(A) 10 + 2m > 28:** This inequality indicates the total cost is greater than $28, contradicting the customer's budget constraint.\n* **(C) 2m - 10 > 28:**  This inequality subtracts the flat fee from the per-mile cost, which is incorrect for calculating the total cost.\n* **(D) 2m - 10 < 28:** Similar to option (C), this inequality uses incorrect calculation for the total cost.\n\n**Key takeaway:**\n\nWhile the correct inequality is 10 + 2m \u2264 28, the closest option provided is (B) 10 + 2m < 28.  This is a common occurrence in standardized tests where the answer choices may not be perfect matches, requiring the test-taker to identify the closest approximation.\n\n**Applying the Additive Property of Inequality:**\n\nThe question uses the additive property of inequality. This property states that adding the same value to both sides of an inequality does not change the direction of the inequality.  In this case, subtracting 10 from both sides of the inequality 10 + 2m \u2264 28 results in 2m \u2264 18, which helps isolate 'm'.\n\n**Relevance to Banking Exams:**\n\nQuantitative aptitude is a crucial section in exams like IBPS PO and SBI PO. These exams frequently test problem-solving abilities involving inequalities, word problems, and basic arithmetic. Understanding the concept of inequalities and their applications in real-world scenarios is essential for success. \n",
+            "difficulty": "medium"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "exam_id": 11,
+    "order": 10
+}

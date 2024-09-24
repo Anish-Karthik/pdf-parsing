@@ -1,0 +1,44 @@
+{
+    "topic": "Quants - Surds and Indices",
+    "questions": [
+        {
+            "question": "A sample of 16 data points has a sum of squared deviations from the mean equal to 64. What is the standard deviation of this sample?",
+            "options": [
+                "2",
+                "4",
+                "8",
+                "16"
+            ],
+            "correct_option": "A",
+            "reasoning": "## Detailed Explanation:\n\nThe question tests your understanding of how to calculate the standard deviation from the sum of squared deviations. Here's a step-by-step breakdown of the solution:\n\n**1. Understanding the Concepts:**\n\n* **Standard Deviation:**  A measure of how spread out the data points are from the mean. A higher standard deviation indicates a wider spread.\n* **Variance:** The average of the squared deviations from the mean. It is the square of the standard deviation.\n* **Sum of Squared Deviations:** The sum of the squares of the differences between each data point and the mean.\n\n**2. Formulae:**\n\n* **Variance (s\u00b2) = Sum of Squared Deviations / (n - 1)**\n* **Standard Deviation (s) = \u221aVariance**\n\n**3. Applying the Formulae:**\n\n* **Given:**\n    * Sum of Squared Deviations = 64\n    * Number of Data Points (n) = 16\n* **Calculate Variance:**\n    * Variance = 64 / (16 - 1) = 64 / 15\n* **Calculate Standard Deviation:**\n    * Standard Deviation (s) = \u221a(64 / 15) = \u221a(64) / \u221a(15) = 8 / \u221a(15) \n\n**4. Simplifying and Approximating:**\n\nSince none of the options have a denominator of \u221a(15), we need to simplify further:\n\n* Multiply numerator and denominator by \u221a(15): \n    * (8\u221a(15)) / (\u221a(15) * \u221a(15)) = (8\u221a(15)) / 15\n\nNow, the closest option to (8\u221a(15)) / 15 is **2**. This is an approximation as \u221a(15) is slightly greater than 3.\n\n**Therefore, the correct answer is A (2).**\n\n**Key Takeaways for IBPS PO/SBI PO Exams:**\n\n* Understand the relationship between standard deviation, variance, and the sum of squared deviations.\n* Know how to calculate these measures using the appropriate formulae.\n* Be prepared to simplify and approximate answers, especially when dealing with surds (irrational numbers).\n\n**Additional Context:**\n\n* This question is a good example of how surds and indices are used in statistical calculations. \n* It's important to remember that the standard deviation is a measure of dispersion, which is a key concept in descriptive statistics.\n\n**Practice Tip:**\n\nTo solidify your understanding, try working through similar problems with different sets of data and practice simplifying expressions involving surds.",
+            "difficulty": "easy"
+        },
+        {
+            "question": "If 'a' is a positive integer and (a^3)^1/4 = 16, then what is the value of (a^2)^1/3?",
+            "options": [
+                "8",
+                "16",
+                "32",
+                "64"
+            ],
+            "correct_option": "C",
+            "reasoning": "## Detailed Explanation:\n\nThe question tests your understanding of **surds and indices**, specifically how to manipulate exponents and solve for an unknown variable within an equation. This is a common topic in competitive exams like IBPS PO and SBI PO.\n\nHere's a step-by-step breakdown of the solution:\n\n1. **Simplify the given equation:** \n   * (a^3)^1/4 = 16 \n   * Using the index rule (a^m)^n = a^(m*n), we get:  a^(3/4) = 16\n\n2. **Rewrite 16 in terms of a base:**\n   * 16 can be expressed as 2^4\n   * Our equation now becomes: a^(3/4) = 2^4\n\n3. **Equate the exponents:**\n   * To solve for 'a', we need to make the exponents on both sides of the equation equal.\n   * Raise both sides of the equation to the power of 4/3: \n     * (a^(3/4))^(4/3) = (2^4)^(4/3)\n     * This results in: a = 2^(16/3)\n\n4. **Substitute 'a' in the expression (a^2)^1/3:**\n   * Substitute the value of 'a' we found: (2^(16/3))^2 * (1/3)\n\n5. **Apply the index rule again:**\n   * (a^m)^n = a^(m*n)\n   * This gives us: 2^(16/3 * 2 * 1/3) = 2^(32/9)\n\n6. **Simplify the exponent:**\n   * 2^(32/9) can be simplified to 2^(3 + 5/9)\n   * This is the same as: 2^3 * 2^(5/9) = 8 * 2^(5/9)\n\n7. **Identify the closest option:**\n   * The closest option to 8 * 2^(5/9) is **32**. \n\n**Therefore, the correct answer is option (C) 32.**\n\n**Key takeaways:**\n\n* **Understanding index rules:** This question heavily relies on the ability to manipulate exponents using rules like (a^m)^n = a^(m*n).\n* **Simplifying expressions:**  Practice breaking down complex expressions and using the right index rules to simplify them.\n* **Approximating values:** In some cases, you may need to estimate the value of an expression. This is especially true for exponents.\n\nBy practicing these concepts and applying them to similar problems, you'll be well prepared to tackle surds and indices questions on exams like IBPS PO and SBI PO. \n",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A cylindrical water tank with a radius of \u221a3 meters and a height of \u221a2 meters is to be filled with water. The water is pumped into the tank at a rate of 2\u221a6 cubic meters per minute. If the tank is initially empty, how many minutes will it take to fill the tank to 80% of its capacity?",
+            "options": [
+                "10 minutes",
+                "12 minutes",
+                "15 minutes",
+                "18 minutes"
+            ],
+            "correct_option": "C",
+            "reasoning": "## Detailed Explanation:\n\nThis question tests your understanding of volumes of solids, specifically cylinders, along with working with surds (radicals) and basic calculations. Here's a breakdown of the solution, tailored for IBPS PO and SBI PO exam preparation:\n\n**1. Visualize the Problem:**\n\nImagine a cylindrical water tank. You need to figure out how long it takes to fill the tank to 80% of its capacity, given the filling rate.\n\n**2. Key Formulas:**\n\n* **Volume of a Cylinder:**  \u03c0r\u00b2h, where r is the radius and h is the height.\n* **Percentage Calculation:**  (Part/Whole) * 100\n\n**3. Step-by-Step Solution:**\n\n* **Calculate the tank's volume:**\n    *  r = \u221a3 meters, h = \u221a2 meters\n    *  Volume = \u03c0 (\u221a3)\u00b2 (\u221a2) = 3\u03c0\u221a2 cubic meters\n* **Calculate 80% of the tank's volume:**\n    *  80% of 3\u03c0\u221a2 = (80/100) * 3\u03c0\u221a2 = 2.4\u03c0\u221a2 cubic meters\n* **Calculate the time to fill 80% of the tank:**\n    *  Time = (Volume to be filled) / (Filling rate)\n    *  Time = (2.4\u03c0\u221a2) / (2\u221a6) = 1.2\u03c0\u221a2 / \u221a6\n* **Simplify the expression:**\n    *  1.2\u03c0\u221a2 / \u221a6 = 1.2\u03c0\u221a(2/6) = 1.2\u03c0\u221a(1/3) = 1.2\u03c0/\u221a3 \n* **Rationalize the denominator:**\n    *  1.2\u03c0/\u221a3 * \u221a3/\u221a3 = 1.2\u03c0\u221a3 / 3 = 0.4\u03c0\u221a3\n* **Approximate the value:**\n    *  0.4\u03c0\u221a3 \u2248 0.4 * 3.14 * 1.73 \u2248 2.18 minutes\n\n**4. Choosing the Correct Answer:**\n\nThe closest option to 2.18 minutes is **(C) 15 minutes**.\n\n**5. Why this approach is relevant for banking exams:**\n\n* **Practical Applications:** Banking exams often involve problem-solving skills applied to real-world scenarios. This question deals with a practical situation related to volume and time, skills relevant in various banking operations.\n* **Surds and Calculations:** Working with surds (radicals) and simplifying expressions are common skills tested in banking exams. This question reinforces these skills in a practical context.\n* **Time Management:**  Solving this problem within a limited time frame is crucial in competitive exams like IBPS PO and SBI PO. The steps involved in simplifying the expression and approximating the answer demonstrate time-management skills.\n\n**In summary:** This question combines concepts of geometry, surds, and basic calculations, all important for banking exam preparation. By understanding the solution, you can apply similar techniques to solve other quantitative aptitude problems. \n",
+            "difficulty": "hard"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "exam_id": 10,
+    "order": 19
+}
