@@ -170,78 +170,70 @@
             "difficulty": "easy"
         },
         {
-            "easy": [
-                {
-                    "question": "A cube has a side length of 5 cm. What is the volume of the cube?",
-                    "options": [
-                        "125 cm\u00b3",
-                        "150 cm\u00b3",
-                        "250 cm\u00b3",
-                        "500 cm\u00b3"
-                    ],
-                    "correct_option": "A",
-                    "reasoning": "The volume of a cube is calculated by side length cubed. In this case, 5 cm * 5 cm * 5 cm = 125 cm\u00b3."
-                },
-                {
-                    "question": "A rectangular prism has a length of 6 cm, a width of 4 cm, and a height of 3 cm. What is the surface area of the prism?",
-                    "options": [
-                        "72 cm\u00b2",
-                        "108 cm\u00b2",
-                        "144 cm\u00b2",
-                        "180 cm\u00b2"
-                    ],
-                    "correct_option": "D",
-                    "reasoning": "The surface area of a rectangular prism is calculated by 2 * (length * width + width * height + length * height). In this case, 2 * (6 cm * 4 cm + 4 cm * 3 cm + 6 cm * 3 cm) = 180 cm\u00b2."
-                },
-                {
-                    "question": "A cylinder has a radius of 3 cm and a height of 8 cm. What is the volume of the cylinder?",
-                    "options": [
-                        "72\u03c0 cm\u00b3",
-                        "96\u03c0 cm\u00b3",
-                        "144\u03c0 cm\u00b3",
-                        "225\u03c0 cm\u00b3"
-                    ],
-                    "correct_option": "B",
-                    "reasoning": "The volume of a cylinder is calculated by \u03c0 * radius\u00b2 * height. In this case, \u03c0 * (3 cm)\u00b2 * 8 cm = 96\u03c0 cm\u00b3."
-                }
+            "question": "A cube has a side length of 5 cm. What is the volume of the cube?",
+            "options": [
+                "125 cm\u00b3",
+                "150 cm\u00b3",
+                "250 cm\u00b3",
+                "500 cm\u00b3"
             ],
-            "hard": [
-                {
-                    "question": "A cone has a radius of 6 cm and a height of 8 cm. A cylinder has a radius of 5 cm and a height of 10 cm. What is the difference between the volume of the cone and the volume of the cylinder?",
-                    "options": [
-                        "100\u03c0 cm\u00b3",
-                        "150\u03c0 cm\u00b3",
-                        "200\u03c0 cm\u00b3",
-                        "250\u03c0 cm\u00b3"
-                    ],
-                    "correct_option": "C",
-                    "reasoning": "The volume of a cone is (1/3)\u03c0r\u00b2h, and the volume of a cylinder is \u03c0r\u00b2h. Calculating the volumes and subtracting: ((1/3)\u03c0 * 6\u00b2 * 8) - (\u03c0 * 5\u00b2 * 10) = 200\u03c0 cm\u00b3."
-                },
-                {
-                    "question": "A sphere has a diameter of 10 cm. What is the surface area of the sphere?",
-                    "options": [
-                        "100\u03c0 cm\u00b2",
-                        "200\u03c0 cm\u00b2",
-                        "300\u03c0 cm\u00b2",
-                        "400\u03c0 cm\u00b2"
-                    ],
-                    "correct_option": "D",
-                    "reasoning": "The surface area of a sphere is 4\u03c0r\u00b2, where r is the radius. The diameter is 10 cm, so the radius is 5 cm. Therefore, 4\u03c0 * 5\u00b2 = 400\u03c0 cm\u00b2."
-                },
-                {
-                    "question": "A rectangular prism has a length of 12 cm, a width of 8 cm, and a height of 6 cm. A cube has a side length of 7 cm. What is the difference between the volume of the prism and the volume of the cube?",
-                    "options": [
-                        "204 cm\u00b3",
-                        "288 cm\u00b3",
-                        "360 cm\u00b3",
-                        "432 cm\u00b3"
-                    ],
-                    "correct_option": "B",
-                    "reasoning": "The volume of a rectangular prism is lwh, and the volume of a cube is a\u00b3. Calculating the volumes and subtracting: (12 * 8 * 6) - (7 * 7 * 7) = 288 cm\u00b3."
-                }
+            "correct_option": "A",
+            "reasoning": "The volume of a cube is calculated by side length cubed. In this case, 5 cm * 5 cm * 5 cm = 125 cm\u00b3."
+        },
+        {
+            "question": "A rectangular prism has a length of 6 cm, a width of 4 cm, and a height of 3 cm. What is the surface area of the prism?",
+            "options": [
+                "72 cm\u00b2",
+                "108 cm\u00b2",
+                "144 cm\u00b2",
+                "180 cm\u00b2"
             ],
-            "reasoning": "## Detailed Explanation:\n\nThe provided JSON data contains multiple geometry problems, categorized as \"easy\" and \"hard,\" designed to test a student's understanding of basic geometric shapes and their properties. This type of question is frequently encountered in competitive exams like IBPS PO and SBI PO, where the focus is on logical reasoning and problem-solving skills. \n\nLet's break down the reasoning behind the correct answers for each question:\n\n**Easy Level:**\n\n1. **Cube Volume:**\n    * **Correct Answer:** 125 cm\u00b3 (Option A)\n    * **Reasoning:** The volume of a cube is calculated by cubing its side length. In this case, the side length is 5 cm, so the volume is 5 cm * 5 cm * 5 cm = 125 cm\u00b3.\n2. **Rectangular Prism Surface Area:**\n    * **Correct Answer:** 180 cm\u00b2 (Option D)\n    * **Reasoning:** The surface area of a rectangular prism is calculated by adding the areas of all six faces. This can be done with the formula 2 * (length * width + width * height + length * height). Substituting the given values: 2 * (6 cm * 4 cm + 4 cm * 3 cm + 6 cm * 3 cm) = 180 cm\u00b2.\n3. **Cylinder Volume:**\n    * **Correct Answer:** 96\u03c0 cm\u00b3 (Option B)\n    * **Reasoning:** The volume of a cylinder is calculated by multiplying the area of the base (\u03c0 * radius\u00b2) by the height. Using the given values: \u03c0 * (3 cm)\u00b2 * 8 cm = 96\u03c0 cm\u00b3.\n\n**Hard Level:**\n\n1. **Cone & Cylinder Volume Difference:**\n    * **Correct Answer:** 200\u03c0 cm\u00b3 (Option C)\n    * **Reasoning:** This question requires calculating the volume of both a cone and a cylinder and then finding the difference. The volume of a cone is (1/3)\u03c0 * radius\u00b2 * height, and the volume of a cylinder is \u03c0 * radius\u00b2 * height.  Calculating the volumes: ((1/3)\u03c0 * 6\u00b2 * 8) - (\u03c0 * 5\u00b2 * 10) = 200\u03c0 cm\u00b3.\n2. **Sphere Surface Area:**\n    * **Correct Answer:** 400\u03c0 cm\u00b2 (Option D)\n    * **Reasoning:** The surface area of a sphere is calculated using the formula 4\u03c0 * radius\u00b2.  The diameter is given as 10 cm, so the radius is 5 cm. Therefore, the surface area is 4\u03c0 * 5\u00b2 = 400\u03c0 cm\u00b2.\n3. **Prism & Cube Volume Difference:**\n    * **Correct Answer:** 288 cm\u00b3 (Option B)\n    * **Reasoning:** This question involves finding the difference between the volume of a rectangular prism and a cube. The volume of a rectangular prism is length * width * height, and the volume of a cube is side\u00b3. Calculating the volumes: (12 * 8 * 6) - (7 * 7 * 7) = 288 cm\u00b3.\n\n**Key Takeaways for IBPS PO & SBI PO Preparation:**\n\n* **Mastering Formulas:** Being familiar with the formulas for calculating volume, surface area, and other geometric properties is crucial.\n* **Problem-Solving Skills:** These questions test your ability to apply the formulas and perform basic calculations.\n* **Logical Reasoning:** Understanding the relationship between different shapes and their properties is essential. \n* **Practice is Key:**  Regular practice with similar geometry problems will improve your speed and accuracy in tackling these types of questions in competitive exams.\n\nBy focusing on these key aspects and practicing diligently, students can effectively prepare for geometry-related questions in IBPS PO and SBI PO exams. \n",
-            "difficulty": "easy"
+            "correct_option": "D",
+            "reasoning": "The surface area of a rectangular prism is calculated by 2 * (length * width + width * height + length * height). In this case, 2 * (6 cm * 4 cm + 4 cm * 3 cm + 6 cm * 3 cm) = 180 cm\u00b2."
+        },
+        {
+            "question": "A cylinder has a radius of 3 cm and a height of 8 cm. What is the volume of the cylinder?",
+            "options": [
+                "72\u03c0 cm\u00b3",
+                "96\u03c0 cm\u00b3",
+                "144\u03c0 cm\u00b3",
+                "225\u03c0 cm\u00b3"
+            ],
+            "correct_option": "B",
+            "reasoning": "The volume of a cylinder is calculated by \u03c0 * radius\u00b2 * height. In this case, \u03c0 * (3 cm)\u00b2 * 8 cm = 96\u03c0 cm\u00b3."
+        },
+        {
+            "question": "A cone has a radius of 6 cm and a height of 8 cm. A cylinder has a radius of 5 cm and a height of 10 cm. What is the difference between the volume of the cone and the volume of the cylinder?",
+            "options": [
+                "100\u03c0 cm\u00b3",
+                "150\u03c0 cm\u00b3",
+                "200\u03c0 cm\u00b3",
+                "250\u03c0 cm\u00b3"
+            ],
+            "correct_option": "C",
+            "reasoning": "The volume of a cone is (1/3)\u03c0r\u00b2h, and the volume of a cylinder is \u03c0r\u00b2h. Calculating the volumes and subtracting: ((1/3)\u03c0 * 6\u00b2 * 8) - (\u03c0 * 5\u00b2 * 10) = 200\u03c0 cm\u00b3."
+        },
+        {
+            "question": "A sphere has a diameter of 10 cm. What is the surface area of the sphere?",
+            "options": [
+                "100\u03c0 cm\u00b2",
+                "200\u03c0 cm\u00b2",
+                "300\u03c0 cm\u00b2",
+                "400\u03c0 cm\u00b2"
+            ],
+            "correct_option": "D",
+            "reasoning": "The surface area of a sphere is 4\u03c0r\u00b2, where r is the radius. The diameter is 10 cm, so the radius is 5 cm. Therefore, 4\u03c0 * 5\u00b2 = 400\u03c0 cm\u00b2."
+        },
+        {
+            "question": "A rectangular prism has a length of 12 cm, a width of 8 cm, and a height of 6 cm. A cube has a side length of 7 cm. What is the difference between the volume of the prism and the volume of the cube?",
+            "options": [
+                "204 cm\u00b3",
+                "288 cm\u00b3",
+                "360 cm\u00b3",
+                "432 cm\u00b3"
+            ],
+            "correct_option": "B",
+            "reasoning": "The volume of a rectangular prism is lwh, and the volume of a cube is a\u00b3. Calculating the volumes and subtracting: (12 * 8 * 6) - (7 * 7 * 7) = 288 cm\u00b3."
         },
         {
             "question": "Two straight lines, line AB and line CD, intersect at point E. Angle AEC measures 115 degrees.  If angle BED is the vertically opposite angle to angle AEC, what is the measure of angle BEC?",
@@ -815,7 +807,7 @@
                 "70 degrees",
                 "80 degrees"
             ],
-            "correct_option": "c) 70 degrees",
+            "correct_option": "C",
             "reasoning": "## Detailed Explanation:\n\nThe provided solution is incorrect. Here's a breakdown of the steps and where the error lies:\n\n**1. Correctly identifies the supplementary arcs:**  Arc AD and arc BC are supplementary because they add up to the full circle (360 degrees). Therefore, arc BC indeed measures 180 - 100 = 80 degrees.\n\n**2. Correctly applies the Inscribed Angle Theorem:** Angle CED is an inscribed angle intercepting arc CD. The Inscribed Angle Theorem states that the measure of an inscribed angle is half the measure of its intercepted arc. Therefore, angle CED is (100 + 80)/2 = 90 degrees.\n\n**3. Incorrectly applies the Tangent-Chord Angle Theorem:** This is where the error occurs.  Angle CAB is **not** a tangent-chord angle. It is an inscribed angle because its vertex lies on the circle and its sides are chords (AB and AC).  Therefore, the Tangent-Chord Angle Theorem doesn't apply.\n\n**4.  Correctly uses Triangle Angle Sum:** Triangle CAB has angle CAB, angle CBA (a right angle since AB is a diameter), and angle ACB. The sum of angles in a triangle is 180 degrees.  \n\n**5.  Incorrectly determines the measure of angle CAB:**  Since angle CAB is an inscribed angle intercepting arc BC, its measure is half the measure of arc BC. Therefore, angle CAB = 80/2 = 40 degrees.\n\n**Corrected Solution:**\n\n1.  **Arc Relationship:** Arc AD + Arc BC = 360 degrees. Therefore, arc BC = 360 - 100 = 260 degrees.\n\n2. **Inscribed Angle Theorem:** Angle CED intercepts arc CD. Therefore, angle CED = (100 + 80)/2 = 90 degrees.\n\n3. **Inscribed Angle Theorem:** Angle CAB intercepts arc BC. Therefore, angle CAB = 260/2 = 130 degrees.\n\n**Therefore, the measure of angle CAB is 130 degrees.**\n\n**Important Concepts for Banking Exams:**\n\n* **Central Angle:** The angle formed by two radii of a circle with its vertex at the center. Its measure is equal to the measure of its intercepted arc.\n* **Inscribed Angle:** An angle formed by two chords of a circle with its vertex on the circle. Its measure is half the measure of its intercepted arc.\n* **Tangent-Chord Angle:** An angle formed by a tangent and a chord of a circle with its vertex on the circle. Its measure is half the measure of its intercepted arc.\n\n**Tips for Solving Circle Geometry Problems:**\n\n* **Identify the type of angle:** Central, inscribed, or tangent-chord.\n* **Apply the appropriate theorem:** Central Angle Theorem, Inscribed Angle Theorem, or Tangent-Chord Angle Theorem.\n* **Remember key relationships:** Supplementary arcs, intercepted arcs, etc.\n* **Draw a diagram:** Visual representation helps to understand the problem.\n* **Practice regularly:** Solving a variety of problems will help you to gain mastery over circle geometry concepts.\n\nRemember to revise these concepts thoroughly and practice solving various problems to ace your banking exams. \n",
             "difficulty": "hard"
         },

@@ -278,18 +278,6 @@
             "difficulty": "medium"
         },
         {
-            "question": "A bank is analyzing its customer base. They observe that 60% of their customers have a savings account, 40% have a checking account, and 30% have both.  A customer is randomly selected. What is the relationship between the events 'having a savings account' and 'having a checking account'?",
-            "options": [
-                "Mutually Exclusive",
-                "Independent",
-                "Dependent",
-                "Cannot be determined from the given information"
-            ],
-            "correct_option": "C",
-            "reasoning": "## Detailed Explanation:\n\nThe correct answer is **C) Dependent**. Here's why:\n\n**Understanding the Concepts:**\n\n* **Mutually Exclusive Events:** These events cannot occur simultaneously. For example, flipping a coin cannot result in both heads and tails at the same time. \n* **Independent Events:** The occurrence of one event does not affect the probability of the other event happening. For example, rolling a die and flipping a coin are independent events; the outcome of one doesn't influence the other.\n* **Dependent Events:** The occurrence of one event *does* affect the probability of the other event happening.  \n\n**Applying the Concepts to the Bank Scenario:**\n\nIn this scenario, we are given:\n\n* **P(Savings Account) = 60%**\n* **P(Checking Account) = 40%**\n* **P(Savings Account and Checking Account) = 30%**\n\nNow, let's analyze:\n\n* **Mutually Exclusive?**  The overlap of 30% proves that customers can have both a savings account and a checking account. Therefore, these events are **not** mutually exclusive.\n\n* **Independent?** To check for independence, we need to see if the probability of having a checking account changes given that the customer already has a savings account. We can use the formula:\n\n   **P(Checking Account | Savings Account) = P(Checking Account and Savings Account) / P(Savings Account)**\n\n   Plugging in the values:\n\n   **P(Checking Account | Savings Account) = 30% / 60% = 50%**\n\n   This means that the probability of having a checking account is 50% **if the customer already has a savings account**. This is different from the overall probability of having a checking account (40%). Therefore, the events are **not independent**.\n\n* **Dependent?** Since the events are neither mutually exclusive nor independent, they must be **dependent**. The overlap in the customer base demonstrates that having a savings account influences the probability of also having a checking account.\n\n**In Summary:**\n\nThe 30% overlap between customers having both savings and checking accounts is the key to understanding the relationship. It shows that these events are not independent, as the probability of one event changes when the other event is already known. Therefore, the events are **dependent**.\n\n**Relevance to Banking Exams:**\n\nThis type of question is common in banking exams like IBPS PO and SBI PO. It tests your understanding of fundamental probability concepts which are essential for analyzing data, understanding customer behavior, and making informed decisions in the banking industry. \n",
-            "difficulty": "medium"
-        },
-        {
             "question": "A bank offers a loan to customers with a 2% default rate. If the bank approves 100 loans, what is the probability that exactly two of these loans will default?",
             "options": [
                 "0.018",
@@ -359,18 +347,6 @@
             ],
             "correct_option": "A",
             "reasoning": "## Detailed Explanation:\n\nThe question involves calculating the probability of two dependent events happening consecutively. Here's why the correct answer is A) 0.12:\n\n**Understanding Dependent Events**\n\nDependent events are events where the outcome of the first event influences the probability of the second event. In this case, buying a croissant first changes the probability of buying a cookie next because the total number of pastries and the number of cookies remaining decrease.\n\n**Calculating the Probability**\n\n1. **Probability of buying a croissant first:** Given that 20% of pastries are croissants, the probability of buying a croissant is 0.20.\n\n2. **Probability of buying a cookie after a croissant:** Since you didn't replace the croissant, the total number of pastries reduces. Now, 80% of the pastries remain (100% - 20%).  Out of this remaining 80%, 40% are muffins. Therefore, 40% of the remaining pastries are cookies (80% - 40% = 40%). This means the probability of buying a cookie after buying a croissant is 0.40 * 0.80 = 0.32.\n\n3. **Joint Probability:** To get the probability of both events happening, we multiply the individual probabilities: 0.20 * 0.32 = 0.064.\n\n**Approximating the Answer**\n\nThe calculated probability (0.064) is closest to the answer option A) 0.12, which represents 12%. This is the most accurate approximation of the actual probability of buying a croissant followed by a cookie.\n\n**Key Points for IBPS PO and SBI PO Exams:**\n\n* **Understanding the concept of dependent events** is crucial for probability questions in banking exams.\n* **Breaking down the problem into individual probabilities** and then multiplying to get the joint probability is a common approach.\n* **Approximation skills** are essential for quickly choosing the closest answer from the given options.\n\n**Additional Context:**\n\nThis question is related to the **conditional probability** concept, which is an important topic for competitive exams like IBPS PO and SBI PO.  Conditional probability refers to the probability of an event happening given that another event has already occurred. In our example, the probability of buying a cookie is conditional on the event of buying a croissant first. \n",
-            "difficulty": "medium"
-        },
-        {
-            "question": "A company is considering investing in a new project. The project has a 70% chance of success, resulting in a profit of $15 million. However, there's a 30% chance of failure, leading to a loss of $8 million. The company also has the option of investing in a more conservative project, which has a 90% chance of success, yielding a profit of $5 million, and a 10% chance of failure, resulting in a loss of $2 million. Which investment option has a higher expected value, and what is the difference in expected values between the two options?",
-            "options": [
-                "The new project has a higher expected value by $4 million",
-                "The conservative project has a higher expected value by $2 million",
-                "The new project has a higher expected value by $2 million",
-                "The conservative project has a higher expected value by $4 million"
-            ],
-            "correct_option": "C",
-            "reasoning": "## Detailed Explanation:\n\nThe question tests your understanding of **Expected Value (EV)**, a fundamental concept in probability and risk management, particularly relevant in financial decision making. It's crucial for aspiring banking professionals like IBPS PO and SBI PO candidates to grasp this concept. Here's a breakdown of why the correct answer is **C) The new project has a higher expected value by $2 million**.\n\n**Understanding Expected Value:**\n\nExpected value represents the average outcome you can anticipate from an investment or decision, considering all possible outcomes and their associated probabilities. It's calculated as follows:\n\n**EV = (Probability of Outcome 1 * Value of Outcome 1) + (Probability of Outcome 2 * Value of Outcome 2) + ...**\n\n**Applying it to the Question:**\n\n1. **New Project:**\n    * Success (70% probability): Profit of $15 million\n    * Failure (30% probability): Loss of $8 million \n    * **EV = (0.7 * $15 million) + (0.3 * -$8 million) = $7.5 million**\n\n2. **Conservative Project:**\n    * Success (90% probability): Profit of $5 million\n    * Failure (10% probability): Loss of $2 million\n    * **EV = (0.9 * $5 million) + (0.1 * -$2 million) = $4.3 million**\n\n**Conclusion:**\n\nThe new project has a higher expected value of $7.5 million compared to the conservative project's $4.3 million. The difference in expected values is $3.2 million, making option C the correct answer.\n\n**Why is Expected Value Important for Banking Professionals?**\n\n* **Investment Decisions:**  Banks constantly evaluate investment opportunities. Expected value helps them assess the potential return on investment, considering risks involved.\n* **Risk Management:**  Expected value helps banks quantify potential losses and gains, aiding in managing risk effectively.\n* **Loan Approval:** Banks use expected value concepts to assess the creditworthiness of loan applicants, considering their repayment probabilities and potential defaults.\n\n**Additional Context:**\n\n* **Risk Aversion:** This question assumes a risk-neutral investor.  In reality, people are often risk-averse, preferring lower but more certain returns.  A risk-averse investor might favor the conservative project even though its expected value is lower.\n* **Other Factors:**  Besides expected value, banks consider various factors like project duration, market conditions, and regulatory constraints when making investment decisions.\n\n**Learning Points:**\n\n* Understand the concept of Expected Value and how it's calculated.\n* Be able to apply the formula to real-world scenarios involving financial decisions.\n* Recognize the importance of expected value in investment analysis and risk management.\n\nBy mastering these concepts, you'll be well-equipped to tackle similar questions in your IBPS PO and SBI PO exams and demonstrate your understanding of financial principles crucial for a banking career.\n",
             "difficulty": "medium"
         },
         {
@@ -446,80 +422,48 @@
             "difficulty": "medium"
         },
         {
-            "easy": [
-                {
-                    "description": "Calculate the variance of the following data set: [2, 4, 6, 8, 10]",
-                    "options": [
-                        "8",
-                        "10",
-                        "12",
-                        "16"
-                    ],
-                    "correct_option": "B",
-                    "reasoning": "The variance is calculated as the average of the squared differences from the mean. In this case, the mean is 6, and the squared differences are 16, 4, 0, 4, and 16. The average of these is 10."
-                },
-                {
-                    "description": "A set of data has a mean of 50 and a standard deviation of 5. What is the range within which approximately 68% of the data points lie?",
-                    "options": [
-                        "45-55",
-                        "40-60",
-                        "35-65",
-                        "30-70"
-                    ],
-                    "correct_option": "A",
-                    "reasoning": "The empirical rule states that approximately 68% of the data falls within one standard deviation of the mean. Therefore, the range is 50 \u00b1 5, which is 45-55."
-                }
+            "description": "Calculate the variance of the following data set: [2, 4, 6, 8, 10]",
+            "options": [
+                "8",
+                "10",
+                "12",
+                "16"
             ],
-            "medium": [
-                {
-                    "description": "A company's stock prices over the past five days were: $100, $105, $110, $105, $100. What is the standard deviation of the stock prices?",
-                    "options": [
-                        "2.5",
-                        "5",
-                        "10",
-                        "25"
-                    ],
-                    "correct_option": "B",
-                    "reasoning": "Calculate the mean (104), find the deviations from the mean, square the deviations, find the average of the squared deviations (variance = 25), and then take the square root of the variance to get the standard deviation (5)."
-                },
-                {
-                    "description": "Two datasets have the same mean but different standard deviations. Which dataset has a wider spread of data points?",
-                    "options": [
-                        "The dataset with the smaller standard deviation",
-                        "The dataset with the larger standard deviation",
-                        "Both datasets have the same spread",
-                        "It's impossible to determine without more information"
-                    ],
-                    "correct_option": "B",
-                    "reasoning": "A larger standard deviation indicates a wider spread of data points around the mean. This means that the values in the dataset are more dispersed."
-                }
+            "correct_option": "B",
+            "reasoning": "The variance is calculated as the average of the squared differences from the mean. In this case, the mean is 6, and the squared differences are 16, 4, 0, 4, and 16. The average of these is 10."
+        },
+        {
+            "description": "A set of data has a mean of 50 and a standard deviation of 5. What is the range within which approximately 68% of the data points lie?",
+            "options": [
+                "45-55",
+                "40-60",
+                "35-65",
+                "30-70"
             ],
-            "hard": [
-                {
-                    "description": "A researcher is studying the lifespan of a particular type of battery. They collect data from 100 batteries and find that the mean lifespan is 500 hours with a standard deviation of 50 hours. If the researcher assumes the lifespan follows a normal distribution, approximately how many batteries are expected to have a lifespan between 400 and 600 hours?",
-                    "options": [
-                        "68",
-                        "95",
-                        "99.7",
-                        "Cannot be determined from the information provided"
-                    ],
-                    "correct_option": "B",
-                    "reasoning": "Using the empirical rule, approximately 95% of the data falls within two standard deviations of the mean. In this case, that range is 500 \u00b1 100 (400 to 600 hours)."
-                },
-                {
-                    "description": "A company produces light bulbs. They claim that the average lifespan of their bulbs is 1000 hours with a standard deviation of 100 hours. A consumer group tests a sample of 50 bulbs and finds an average lifespan of 950 hours. If the company's claim is true, what is the probability of observing an average lifespan this low or lower in a sample of 50 bulbs?",
-                    "options": [
-                        "Very high",
-                        "Moderate",
-                        "Low",
-                        "Cannot be determined from the information provided"
-                    ],
-                    "correct_option": "C",
-                    "reasoning": "This scenario involves a hypothesis test about the population mean.  The consumer group's sample mean is significantly lower than the company's claimed mean. While we don't have enough information to calculate the exact probability, it's highly unlikely to observe such a low average if the company's claim is true. Therefore, the probability is low."
-                }
+            "correct_option": "A",
+            "reasoning": "The empirical rule states that approximately 68% of the data falls within one standard deviation of the mean. Therefore, the range is 50 \u00b1 5, which is 45-55."
+        },
+        {
+            "description": "A company's stock prices over the past five days were: $100, $105, $110, $105, $100. What is the standard deviation of the stock prices?",
+            "options": [
+                "2.5",
+                "5",
+                "10",
+                "25"
             ],
-            "reasoning": "## Detailed Explanation:\n\nThis JSON data represents a set of practice questions related to **Variance and Standard Deviation**, a crucial topic for banking exams like IBPS PO and SBI PO. Understanding these concepts is vital for analyzing data and making informed decisions, which are essential skills for banking professionals.\n\nLet's break down the explanation of each question:\n\n**Easy:**\n\n* **Question 1:**  \n    * **Correct Answer:** B (10)\n    * **Explanation:** \n        * **Variance:** It measures the spread of data points around the mean.  \n        * **Calculation:** \n            1. **Find the mean:** (2+4+6+8+10)/5 = 6\n            2. **Calculate deviations from the mean:** (2-6), (4-6), (6-6), (8-6), (10-6) = -4, -2, 0, 2, 4\n            3. **Square the deviations:** 16, 4, 0, 4, 16\n            4. **Calculate the average of the squared deviations:** (16+4+0+4+16)/5 = 10\n        * **Therefore, the variance of the data set is 10.**\n\n* **Question 2:** \n    * **Correct Answer:** A (45-55)\n    * **Explanation:**\n        * **Empirical Rule:**  This rule states that for a normal distribution: \n            * Approximately 68% of the data lies within one standard deviation of the mean.\n            * Approximately 95% of the data lies within two standard deviations of the mean.\n            * Approximately 99.7% of the data lies within three standard deviations of the mean.\n        * **Applying the rule:**  The data has a mean of 50 and a standard deviation of 5.  So, 68% of the data lies within 50 \u00b1 5, which is the range 45-55.\n\n**Medium:**\n\n* **Question 1:**\n    * **Correct Answer:** B (5)\n    * **Explanation:**\n        * **Steps to calculate Standard Deviation:**\n            1. **Calculate the mean:** (100+105+110+105+100)/5 = 104\n            2. **Calculate deviations from the mean:** (100-104), (105-104), (110-104), (105-104), (100-104) = -4, 1, 6, 1, -4\n            3. **Square the deviations:** 16, 1, 36, 1, 16\n            4. **Calculate the variance (average of squared deviations):** (16+1+36+1+16)/5 = 14\n            5. **Calculate the standard deviation (square root of variance):** \u221a14 \u2248 3.74 \u2248 5 (rounded to the nearest whole number)\n        * **Therefore, the standard deviation of the stock prices is approximately 5.**\n\n* **Question 2:**\n    * **Correct Answer:** B (The dataset with the larger standard deviation)\n    * **Explanation:**\n        * **Standard Deviation and Spread:** A larger standard deviation indicates that the data points are more spread out around the mean. A smaller standard deviation implies data points are clustered closer to the mean. \n        * **Therefore, the dataset with the larger standard deviation has a wider spread of data points.**\n\n**Hard:**\n\n* **Question 1:**\n    * **Correct Answer:** B (95)\n    * **Explanation:**\n        * **Normal Distribution and Empirical Rule:** Assuming the battery lifespan follows a normal distribution, we can apply the empirical rule.  The lifespan is between 400 and 600 hours, which is two standard deviations away from the mean (500 \u00b1 100).\n        * **Applying the Rule:**  According to the empirical rule, approximately 95% of the data falls within two standard deviations of the mean.\n        * **Therefore, approximately 95 batteries are expected to have a lifespan between 400 and 600 hours.**\n\n* **Question 2:**\n    * **Correct Answer:** C (Low)\n    * **Explanation:**\n        * **Hypothesis Testing:** This question hints at a hypothesis test about the population mean (average lifespan). The consumer group's sample mean (950 hours) is significantly lower than the company's claimed mean (1000 hours).\n        * **Probability:** It's highly unlikely to observe such a low average lifespan in a sample of 50 bulbs if the company's claim about the average lifespan of 1000 hours is true.\n        * **Therefore, the probability of observing an average lifespan this low or lower is low.**\n\n**Additional Context:**\n\n* **Importance for Banking:**  These concepts are vital for banking professionals as they enable them to analyze and interpret financial data, assess risks, and make informed decisions regarding loans, investments, and other financial products.\n* **Practice:** To excel in these exams, practicing a variety of problems on Variance and Standard Deviation is crucial.  Focus on understanding the concepts and applying them in different scenarios.\n\n**Remember:**\n\n* **Mean:**  The average of a dataset.\n* **Variance:** Measures how spread out the data is around the mean.\n* **Standard Deviation:** The square root of the variance, providing a more intuitive measure of spread.\n* **Empirical Rule:**  A handy tool for understanding data distribution in a normal distribution.\n\nBy mastering these concepts and practicing diligently, you can significantly enhance your performance in the IBPS PO and SBI PO banking exams. \n",
-            "difficulty": "medium"
+            "correct_option": "B",
+            "reasoning": "Calculate the mean (104), find the deviations from the mean, square the deviations, find the average of the squared deviations (variance = 25), and then take the square root of the variance to get the standard deviation (5)."
+        },
+        {
+            "description": "A researcher is studying the lifespan of a particular type of battery. They collect data from 100 batteries and find that the mean lifespan is 500 hours with a standard deviation of 50 hours. If the researcher assumes the lifespan follows a normal distribution, approximately how many batteries are expected to have a lifespan between 400 and 600 hours?",
+            "options": [
+                "68",
+                "95",
+                "99.7",
+                "Cannot be determined from the information provided"
+            ],
+            "correct_option": "B",
+            "reasoning": "Using the empirical rule, approximately 95% of the data falls within two standard deviations of the mean. In this case, that range is 500 \u00b1 100 (400 to 600 hours)."
         },
         {
             "question": "A company has a promotional lottery where customers can win prizes based on the color of a scratch-off card they receive.  There are 5,000 cards in total, with the following distribution: 1,000 Gold cards, 2,000 Silver cards, and 2,000 Bronze cards.  A customer scratches off one card at random. What is the probability that the card is not a Silver card?",
@@ -726,18 +670,6 @@
             "difficulty": "hard"
         },
         {
-            "question": "A mutual fund manager is analyzing two investment portfolios. Portfolio A has a historical average annual return of 12% with a standard deviation of 5%. Portfolio B has an average annual return of 10% with a standard deviation of 3%. A risk-averse investor prioritizes consistency over potential high returns.  Both portfolios are considered to have similar market risk, but the investor wants to minimize the volatility of their investment. Which portfolio is a better fit for the risk-averse investor, considering both average return and consistency, and why?",
-            "options": [
-                "Portfolio A, because its higher average return outweighs its higher standard deviation.",
-                "Portfolio B, because its lower standard deviation indicates a higher degree of consistency, even though it has a lower average return.",
-                " Portfolio A, because even though its standard deviation is higher, its potential for higher returns is greater.",
-                "Both portfolios are equally suitable, as their average returns are relatively similar."
-            ],
-            "correct_option": "B",
-            "reasoning": "## Detailed Explanation:\n\nThe correct answer is **B) Portfolio B, because its lower standard deviation indicates a higher degree of consistency, even though it has a lower average return.**\n\nHere's why:\n\n* **Risk Aversion:** The question explicitly states that the investor is risk-averse. This means they prioritize minimizing potential losses and prefer a consistent return over the possibility of high gains.\n* **Standard Deviation & Volatility:** Standard deviation is a statistical measure of how spread out the data points are from the average. In the context of investments, it represents the volatility of returns. A higher standard deviation means wider fluctuations in returns \u2013 both positive and negative. A lower standard deviation implies more stable returns. \n* **Comparing the Portfolios:**  Portfolio A has a higher average return (12%) but also a much higher standard deviation (5%). This means it's likely to experience larger swings in returns, potentially leading to bigger losses in certain periods. Portfolio B, on the other hand, offers a slightly lower average return (10%) but has a significantly lower standard deviation (3%). This indicates more consistent returns, with less volatility. \n* **Investor Preference:** Since the investor is risk-averse, they will prefer Portfolio B. The consistency of returns, despite the slightly lower average, aligns better with their preference for minimizing risk and potential losses.\n\n**Key Takeaways for IBPS PO/SBI PO Exams:**\n\n* **Understanding Risk & Return:**  The core concept here is the relationship between risk and return. Higher potential returns typically come with higher risks, and vice-versa. \n* **Standard Deviation as a Measure of Risk:**  Standard deviation is a crucial tool to quantify investment risk. Lower standard deviation implies lower volatility and risk.\n* **Investor Profiles:**  Different investors have different risk appetites. Risk-averse investors prefer lower-risk options, even if they might offer slightly lower returns.\n\n**How this knowledge can be applied to similar questions:**\n\n* **Focus on the investor's risk profile:** Always look for clues about the investor's attitude towards risk \u2013 are they risk-averse, risk-neutral, or risk-seeking?\n* **Analyze standard deviation:**  Compare the standard deviations of different investment options. Lower standard deviation generally indicates less risk.\n* **Consider both return and risk:**  Don't solely focus on the average return.  Assess the potential volatility, as measured by standard deviation, to make informed decisions.\n\nBy applying these concepts, you can confidently answer similar questions related to risk and return, and portfolio analysis in your IBPS PO/SBI PO exams. \n",
-            "difficulty": "hard"
-        },
-        {
             "question": "A financial institution is assessing the risk of a loan portfolio. The portfolio consists of 100 loans, each with a 5% probability of defaulting within the next year. The defaults of individual loans are considered independent events. The institution wants to determine the probability that at least 5 loans will default within the next year. To achieve this, they use a normal approximation to the binomial distribution. The mean and standard deviation of the binomial distribution are 5 (100 x 0.05) and 2.24 (sqrt(100 x 0.05 x 0.95)), respectively.  Using the continuity correction, what is the probability of at least 5 loans defaulting, rounded to two decimal places?",
             "options": [
                 "0.37",
@@ -781,7 +713,7 @@
                 "34.13%",
                 "15.87%"
             ],
-            "correct_option": "b)",
+            "correct_option": "B",
             "reasoning": "## Detailed Explanation of the Answer:\n\nThe provided solution correctly identifies the probability of Fund A outperforming Fund B in the next year as approximately **84.13%**. However, the reasoning provided in the question itself contains a few errors in the calculation and interpretation of the probability. Let's break down the correct approach:\n\n**1. Understanding the Problem:**\n\nThe question asks us to determine the probability of Fund A's return being higher than Fund B's return in the next year. We are given the historical average annual returns and standard deviations for both funds, and we assume that the returns are normally distributed and independent.\n\n**2. Defining the Difference in Returns:**\n\nWe define a new variable Y, representing the difference in returns between Fund A and Fund B:\n  Y = X_A - X_B\n\nSince X_A and X_B are normally distributed, Y will also follow a normal distribution.  The mean and standard deviation of Y are:\n\n* \u03bc_Y = \u03bc_A - \u03bc_B = 12% - 10% = 2%\n* \u03c3_Y = \u221a(\u03c3_A^2 + \u03c3_B^2) = \u221a(4%^2 + 2%^2) = \u221a20 = 4.47%\n\n**3. Finding the Probability of Fund A Outperforming Fund B:**\n\nWe need to find P(Y > 0), which represents the probability that the difference in returns (Y) is greater than zero (meaning Fund A outperforms Fund B).\n\n**4. Standardizing the Difference in Returns:**\n\nTo use the standard normal distribution table, we standardize Y by converting it to a Z-score:\n\nZ = (Y - \u03bc_Y) / \u03c3_Y = (0 - 2%) / 4.47% = -0.45\n\n**5. Using the Standard Normal Distribution Table:**\n\nLooking up the Z-score of -0.45 in the standard normal distribution table, we find the probability of Z < -0.45 is 0.3264. This represents the area under the standard normal curve to the left of -0.45.\n\n**6. Calculating the Final Probability:**\n\nWe are interested in P(Y > 0), which is equivalent to P(Z > -0.45).  This probability is calculated as:\n\nP(Z > -0.45) = 1 - P(Z < -0.45) = 1 - 0.3264 = 0.6736\n\nTherefore, the approximate probability of Fund A outperforming Fund B in the next year is 67.36%.\n\n**7. Choosing the Closest Option:**\n\nAmong the provided options, the closest option to 67.36% is **b) 84.13%**.\n\n**Key Points for IBPS PO and SBI PO Exams:**\n\n* **Understanding Normal Distribution:**  The concept of normal distribution is crucial for understanding financial data and calculating probabilities related to investment returns.\n* **Standardization:**  Knowing how to standardize variables into Z-scores allows you to use the standard normal distribution table for calculating probabilities.\n* **Using Tables:**  Familiarity with using standard normal distribution tables is essential for solving probability-related problems.\n* **Applying Concepts:**  The ability to apply these concepts to practical financial scenarios is important for success in banking exams. \n",
             "difficulty": "hard"
         },
@@ -807,18 +739,6 @@
             ],
             "correct_option": "D",
             "reasoning": "## Detailed Explanation:\n\nThe question presents a scenario where a bank uses a credit scoring model to assess the profitability of small businesses applying for loans. The model has an accuracy of 80%, meaning it correctly identifies 80% of profitable businesses and 80% of non-profitable businesses. We are asked to calculate the probability that a business is actually profitable, given that the model predicts it to be profitable. This is a classic example of applying Bayes' Theorem, a fundamental concept in probability theory.\n\n**Understanding the Problem:**\n\n* **Prior Information:** We know the overall distribution of profitable and non-profitable businesses (60% and 40%, respectively). This is our prior knowledge.\n* **New Evidence:** The credit scoring model predicts the business to be profitable. This is our new evidence.\n* **Goal:** We want to update our belief about the business's profitability, considering both the prior information and the new evidence.\n\n**Bayes' Theorem:**\n\nBayes' Theorem is a powerful tool for updating beliefs based on new evidence. It states:\n\nP(A|B) = [P(B|A) * P(A)] / P(B)\n\nWhere:\n\n* **P(A|B):** The probability of event A happening given that event B has already happened. This is what we want to find (the probability of the business being profitable given the model's prediction).\n* **P(B|A):** The probability of event B happening given that event A has already happened (the probability of the model predicting profitable given the business is actually profitable). This is the model's accuracy, 80%.\n* **P(A):** The prior probability of event A happening (the probability of a business being profitable). This is 60%.\n* **P(B):** The probability of event B happening (the probability of the model predicting profitable). This can be calculated using the law of total probability.\n\n**Applying Bayes' Theorem to the Problem:**\n\n1. **Define Events:**\n   * **A:** The business is actually profitable.\n   * **B:** The credit scoring model predicts the business is profitable.\n\n2. **Calculate Components:**\n   * **P(B|A) = 0.8** (model accuracy for profitable businesses)\n   * **P(A) = 0.6** (prior probability of a business being profitable)\n   * **P(B):**  We need to calculate this using the law of total probability:\n      * **P(B|not A) = 0.2** (model accuracy for non-profitable businesses)\n      * **P(not A) = 0.4** (prior probability of a business not being profitable)\n      * **P(B) = P(B|A) * P(A) + P(B|not A) * P(not A) = 0.8 * 0.6 + 0.2 * 0.4 = 0.56**\n\n3. **Apply Bayes' Theorem:**\n   * **P(A|B) = (0.8 * 0.6) / 0.56 = 0.9 or 90%**\n\n**Conclusion:**\n\nThe probability that the business is actually profitable, given that the credit scoring model predicts it to be profitable, is 90%. This means that the model's prediction significantly increases the probability of the business being profitable, even though the overall proportion of profitable businesses is only 60%.\n\n**Key takeaways for IBPS PO/SBI PO preparation:**\n\n* **Understanding Bayes' Theorem:** This is a crucial concept in probability and decision making. It allows us to update our beliefs based on new evidence.\n* **Law of Total Probability:** This helps calculate the probability of an event considering all possible scenarios.\n* **Accuracy vs. Precision:**  The credit scoring model is accurate (correctly identifies 80% of businesses), but it's important to note that this doesn't mean it's perfect. There's still a 10% chance of misclassification.\n* **Contextual Interpretation:** Always consider the context of the problem. In this case, the high accuracy of the model combined with the overall distribution of profitable businesses leads to a significantly higher probability of the business being profitable after the model's prediction. \n\nBy understanding these concepts and applying them to real-world scenarios like this, you can improve your ability to analyze data and make informed decisions in banking and other financial settings. \n",
-            "difficulty": "hard"
-        },
-        {
-            "question": "A bank is considering extending a loan to a small business. The business has a 15% chance of defaulting on the loan within the first year. If the loan defaults, the bank will lose 70% of the principal amount. However, if the loan is repaid, the bank will earn a 10% annual interest rate. The bank is also considering offering a credit insurance policy to the borrower, which would cover 50% of the potential loss in case of default. The cost of the credit insurance policy is 2% of the principal amount. Using a decision tree analysis, what is the expected value of the loan to the bank, with and without the credit insurance policy?",
-            "options": [
-                "Expected value without insurance: 5.5% of principal; Expected value with insurance: 7.5% of principal",
-                "Expected value without insurance: 4.5% of principal; Expected value with insurance: 6.5% of principal",
-                "Expected value without insurance: 3.5% of principal; Expected value with insurance: 5.5% of principal",
-                "Expected value without insurance: 2.5% of principal; Expected value with insurance: 4.5% of principal"
-            ],
-            "correct_option": "C",
-            "reasoning": "## Detailed Explanation:\n\nThe correct answer is **C. Expected value without insurance: 3.5% of principal; Expected value with insurance: 5.5% of principal**.\n\nHere's a breakdown of the calculation and why this is the correct answer:\n\n**Understanding Expected Value**\n\nExpected value (EV) is a fundamental concept in probability and risk management. It represents the average outcome you can expect from a situation involving uncertainty. In this case, the bank is facing uncertainty about whether the loan will be repaid or default.  The EV helps the bank assess the potential profitability of the loan.\n\n**Decision Tree Analysis**\n\nDecision tree analysis is a visual tool used to represent different possible outcomes and their probabilities.  The tree branches out to show the different paths the decision can take, and each branch has a probability associated with it.\n\n**Calculating Expected Value for the Loan**\n\n**Without Insurance:**\n\n1. **Default Scenario:**\n    * Probability of default: 15% (0.15)\n    * Loss: 70% of the principal\n    * EV of default: 0.15 * -0.7 * principal = -0.105 * principal\n\n2. **Repayment Scenario:**\n    * Probability of repayment: 85% (0.85)\n    * Gain: 10% of the principal\n    * EV of repayment: 0.85 * 0.1 * principal = 0.085 * principal\n\n3. **Total Expected Value (without insurance):** -0.105 * principal + 0.085 * principal = -0.02 * principal. \n    * This means that for every principal amount loaned, the bank expects to lose 2%. However, the question asks for the expected value as a positive percentage, so we can express it as 3.5% of the principal.\n\n**With Insurance:**\n\n1. **Default Scenario:**\n    * Probability of default: 15% (0.15)\n    * Loss: 35% of the principal (70% - 50% insurance coverage)\n    * Cost of insurance: 2% of the principal\n    * EV of default: 0.15 * (-0.35 * principal - 0.02 * principal) = -0.0555 * principal\n\n2. **Repayment Scenario:**\n    * Probability of repayment: 85% (0.85)\n    * Gain: 10% of the principal\n    * Cost of insurance: 2% of the principal\n    * EV of repayment: 0.85 * (0.1 * principal - 0.02 * principal) = 0.068 * principal\n\n3. **Total Expected Value (with insurance):** -0.0555 * principal + 0.068 * principal = 0.0125 * principal\n    * This means the bank expects to gain 1.25% for every principal amount loaned with insurance.  Expressed as a positive percentage, it's 5.5% of the principal.\n\n**Why the Other Options Are Incorrect:**\n\n* **Options A, B, and D** all overestimate the expected value, either by not correctly accounting for the insurance costs or by miscalculating the probabilities involved.\n\n**Key Points for IBPS PO & SBI PO Exams:**\n\n* **Understanding Expected Value:** This is a fundamental concept tested in many exams. Ensure you can calculate it for various scenarios.\n* **Decision Tree Analysis:**  While not always explicitly asked about, understanding how to construct and interpret decision trees is helpful for visualizing and analyzing risks.\n* **Probability & Risk Management:** The ability to assess probability and manage risks is crucial in banking.  \n* **Practice:**  Working through similar problems with different scenarios and variations will help you build confidence and mastery. \n\nRemember, this is a simplified example.  Real-world loan evaluations involve much more complex calculations, considering factors like:\n\n*  **Risk-free rate of return:** The return the bank could earn on a risk-free investment.\n* **Default probabilities:** These are often determined using statistical models and credit scoring systems.\n* **Loan pricing:**  Banks use various pricing models to set interest rates based on the risk profile of the borrower.\n\nBy mastering these concepts and building a strong foundation in probability and risk management, you'll be well-prepared for IBPS PO & SBI PO exams. \n",
             "difficulty": "hard"
         }
     ],
