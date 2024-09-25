@@ -40,7 +40,7 @@ def seperate_json(file, directory_path):
 
     new_json_obj["questions"] = questions
       
-    write_json(new_json_obj, file, get_new_directory_path(directory_path,  "for_review"))
+    write_json(new_json_obj, file, get_new_directory_path(directory_path,  f"{copy_to}"))
 
 
 def validate_files(files, directory_path):
@@ -60,6 +60,10 @@ def recur_dir(directory_path):
     for dir in sub_dir:
         recur_dir(os.path.join(directory_path, dir))
 
+copy_from = "ibps"
+copy_to = "for_review"
 
-directory_path = "gemini/gemini_output/sbi"
+if not os.path.exists(f"gemini/gemini_output/{copy_to}/{copy_from}"):
+    os.makedirs(f"gemini/gemini_output/{copy_to}/{copy_from}")
+directory_path = f"gemini/gemini_output/{copy_from}"
 recur_dir(directory_path)
