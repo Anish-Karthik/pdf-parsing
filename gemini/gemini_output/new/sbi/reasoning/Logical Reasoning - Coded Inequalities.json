@@ -1,0 +1,942 @@
+{
+    "questions": [
+        {
+            "question": "**Statement:**\n*  P > Q\n*  R \u2264 Q\n*  S \u2265 T\n*  T < R\n\n**Question:**\nIs the statement \"P > S\" definitively true based on the given inequalities? Explain your reasoning.",
+            "difficulty": "moderate",
+            "reasoning": "To determine if 'P > S' is definitively true, we need to analyze the given inequalities and see if they lead to a direct comparison between P and S.\n\n1. **Analyzing the relationships:**\n    * We know P > Q and R \u2264 Q. This implies that P is greater than both Q and R.\n    * We also know T < R and S \u2265 T. This means that R is greater than both T and S.\n\n2. **Combining the information:**\n    *  Since P is greater than R, and R is greater than S, we can conclude that P is also greater than S.\n\n3. **Conclusion:**\n    Based on the given inequalities, the statement \"P > S\" is definitively true. The relationships between the variables form a chain that allows us to connect P and S, establishing a clear inequality between them.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Premise:**\n\n*  \"$\" means 'greater than or equal to'\n*  \"#\" means 'less than or equal to'\n*  \"&\" means 'equal to'\n\n**Question:**\n\nIf P $ Q and Q # R, then which of the following must be true?\n\na) P $ R\n\nb) P # R\n\nc) P & R\n\nd) Cannot be determined",
+            "difficulty": "medium",
+            "reasoning": "This question tests your ability to understand and apply the given symbols to deduce relationships between variables. Here's how to solve it:\n\n1. **Interpret the symbols:**\n   *  \"$\" means 'greater than or equal to'  \n   *  \"#\" means 'less than or equal to'\n   *  \"&\" means 'equal to'\n\n2. **Apply the given information:**\n   *  P $ Q means P is greater than or equal to Q.\n   *  Q # R means Q is less than or equal to R.\n\n3. **Combine the information:**\n   Since P is greater than or equal to Q, and Q is less than or equal to R, we can conclude that P must be greater than or equal to R.\n\n4. **Choose the correct answer:**\n   The only option that correctly reflects this relationship is **a) P $ R**.\n\n**Therefore, the answer is a).**",
+            "options": [
+                "a",
+                "b",
+                "c",
+                "d"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "If A > B and C < D, is it definitely true that A > C?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests your understanding of basic inequality symbols and the transitivity of inequalities. While we know A is greater than B, and C is less than D, we cannot definitively say that A is greater than C. Here's why:\n\nLet's consider a scenario:\n\n*  A = 5\n*  B = 3\n*  C = 2\n*  D = 4\n\nIn this scenario, A is indeed greater than B (5 > 3), and C is less than D (2 < 4). However, A is still greater than C (5 > 2). \n\nBut, another scenario could be:\n\n*  A = 5\n*  B = 3\n*  C = 6\n*  D = 4\n\nHere, even though the given inequalities hold (A > B and C < D), A is NOT greater than C (5 < 6).\n\nTherefore, we cannot definitively conclude that A is greater than C based on the provided information.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Statement:**  P $ Q, Q & R, R # S\n\n**Conditions:**\n* $ means \"less than or equal to\"\n* & means \"greater than\"\n* # means \"equal to\"\n\n**Question:** Is P greater than S?",
+            "difficulty": "medium",
+            "reasoning": "This question tests your ability to decode symbols representing inequalities and then apply those relationships to deduce the relationship between two specific variables.\n\n**Step 1: Translate the symbols:**\n*  P $ Q means P is less than or equal to Q.\n* Q & R means Q is greater than R.\n* R # S means R is equal to S.\n\n**Step 2: Combine the information:**\nWe know that P is less than or equal to Q, and Q is greater than R. Since R is equal to S, we can conclude that P is less than or equal to S.\n\n**Step 3: Answer the question:**\nThe question asks if P is greater than S. We know that P is less than or equal to S. Therefore, P is **not** greater than S.\n\n**In summary:**  Based on the provided information, we can confidently say that P is not greater than S.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise:**\n*  @ > # \n*  $ < % \n*  % = & \n*  ^ > & \n\n**Question:** Is # < ^ ?",
+            "difficulty": "moderate",
+            "reasoning": "To determine if # < ^, we need to establish a relationship between # and ^. Let's analyze the given inequalities:\n\n1. **@ > #:** This tells us that '@' is greater than '#'.\n2. **$ < %:** This tells us that '$' is less than '%'.\n3. **% = &:** This tells us that '%' is equal to '&'.\n4. **^ > &:** This tells us that '^' is greater than '&'.\n\nCombining these inequalities, we can infer the following:\n\n* Since '%' = '&' and '^' > '&', we can conclude that ^ > %. \n* Since $ < % and ^ > %, we can conclude that ^ > $. \n\nHowever, there's no direct relationship established between # and ^. We know # is less than @, and ^ is greater than %, but we don't know how @ and % are related. Therefore, we cannot definitively determine if # is less than ^.\n\n**Answer:** Cannot be determined.",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Maybe"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Statements:**\n\n*  # & $ \n*  $ < @ \n*  @ > % \n*  % \u2265 & \n\n**Question:**  Can we definitively determine the relationship between # and % based on the given statements? If so, what is the relationship? If not, explain why.",
+            "difficulty": "medium",
+            "reasoning": "This question tests the ability to deduce relationships between symbols based on coded inequalities. Here's how to solve it:\n\n1. **Analyze the Statements:**\n   * # & $  means # is greater than or equal to $. \n   * $ < @ means $ is less than @.\n   * @ > % means @ is greater than %.\n   * % \u2265 & means % is greater than or equal to &.\n\n2. **Combine Statements:** We can combine the second and third statements to conclude that $ < @ > %. This tells us that $ is less than %, but we don't have a direct comparison between % and #.\n\n3. **Deduction:** Although we know # \u2265 $ and % \u2265 &, we cannot directly relate # and %. There's a missing link in the chain of inequalities.\n\n**Answer:** No, we cannot definitively determine the relationship between # and %. We only know that # is greater than or equal to $ and that % is greater than or equal to &. There's no direct link between # and %.",
+            "options": [
+                "Yes, # > %",
+                "Yes, # < %",
+                "Yes, # = %",
+                "No"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Given the following coded inequalities:\n\n* P < Q\n* Q > R\n* S > R\n\nIs it definitively true that P < S? Explain your reasoning.",
+            "difficulty": "moderate",
+            "reasoning": "This question tests the understanding of the Transitive Property of Inequalities. Here's how to solve it:\n\n1. **Combine relevant inequalities:** We need to find a connection between P and S using the given inequalities.  We know P < Q and Q > R.  Applying the Transitive Property, we can conclude P < R.\n\n2. **Apply Transitive Property again:** We also know S > R. Since we have established P < R and S > R, we can apply the Transitive Property again to determine that **P < S**.\n\n**Therefore, it is definitively true that P < S.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient Information"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "In a certain code, symbols represent numbers. We know that: \n\n*  @ > # \n*  % < & \n*  & = $\n\nIs it true that @ > %?",
+            "difficulty": "medium",
+            "reasoning": "To solve this, we need to combine the information given in the code.  We know:\n\n1. @ > # \n2. % < & \n3. & = $\n\nSince & = $, we can substitute $ for & in the second relationship: % < $. Now, we can see that @ > # and % < $, but we don't have a direct comparison between @ and %. Therefore, we cannot determine if @ > % is true or not. \n\n**Therefore, the answer is Cannot be determined.**",
+            "options": [
+                "True",
+                "False",
+                "Cannot be determined",
+                "Insufficient Information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Premise:**\n* K < L\n* M > N\n* N \u2264 O\n* P \u2265 L\n\n**Question:**\nIf K < L and P \u2265 L, what is the relationship between K and P?\n\n**Answer Choices:**\n* (a) K < P\n* (b) K > P\n* (c) K \u2264 P\n* (d) K \u2265 P\n* (e) The relationship cannot be determined.",
+            "difficulty": "moderate",
+            "reasoning": "This question tests the understanding of inverse relationships in coded inequalities. Here's how to solve it:\n\n1. **Identify the common element:**  Both K and P are related to L.  K is less than L (K < L), and P is greater than or equal to L (P \u2265 L).\n2. **Deduce the inverse relationship:** Since K is less than L and P is greater than or equal to L, we can conclude that K must be less than P.\n\n**Therefore, the correct answer is (a) K < P.**\n\n**Explanation:**\nThe provided inequalities show that K is smaller than L, and P is larger than or equal to L. Since L serves as a common reference point, we can infer that K must be smaller than P.  The inverse relationship between K and P is established by their shared relationship with L.\n\n**Key Concept:** This question illustrates the principle of transitive property in inequalities. If A < B and B < C, then A < C.  We can apply this principle to understand the relationship between K and P through their common link with L.",
+            "options": [
+                "K < P",
+                "K > P",
+                "K \u2264 P",
+                "K \u2265 P"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Statement:**  X % Y, Y & Z, Z # W\n**Conditions:**\n* '%' means 'greater than or equal to'\n* '&' means 'less than'\n* '#' means 'equal to'\n**Question:** Is X greater than W?",
+            "difficulty": "moderate",
+            "reasoning": "This question requires understanding the relationships between the symbols and applying them to the given statement. Let's break it down:\n\n1. **X % Y:** This means X is greater than or equal to Y. \n2. **Y & Z:** This means Y is less than Z. \n3. **Z # W:** This means Z is equal to W. \n\nNow, combining these relationships, we can deduce the following:\n\n* Since Y is less than Z, and Z is equal to W, we know Y is also less than W. \n* Since X is greater than or equal to Y, and Y is less than W, we cannot definitively determine if X is greater than W. X could be equal to W, or it could be greater than W.\n\n**Therefore, the answer to the question is No, it is not possible to definitively determine if X is greater than W.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot determine"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Symbols:**  P, Q, R, S, T\n**Relationships:**\n* P > Q\n* Q < R\n* S > T\n* R < S\n**Conclusions:**\n* I.  P > R\n* II.  Q < S\n* III.  T < P\n**Question:** Which of the above conclusions can be validly drawn from the given relationships?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests the ability to combine and deduce new relationships from a given set of coded inequalities.  Let's break down the solution:\n\n1. **Combine Relationships:**  We need to find connections between the symbols in the conclusions and the symbols in the given relationships.\n\n* Conclusion I: P > R - We know P > Q and Q < R. Since Q is greater than R, and P is greater than Q, we can conclude that P is also greater than R.  **Therefore, Conclusion I is valid.**\n\n* Conclusion II: Q < S - We know Q < R and R < S.  This implies that Q is also less than S.  **Therefore, Conclusion II is valid.**\n\n* Conclusion III: T < P - While we know T < S and P > Q, there's no direct relationship established between T and P.  We can't directly conclude that T is less than P based on the given information. **Therefore, Conclusion III is invalid.**\n\n2. **Summary:**  The valid conclusions that can be drawn from the given relationships are:\n\n* **I.  P > R**\n* **II.  Q < S**\n\nThis question demonstrates the importance of combining information to make valid deductions.  It also highlights the difference between implied relationships and direct relationships in logical reasoning.",
+            "options": [
+                "I only",
+                "II only",
+                "I and II only",
+                "I, II, and III"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "In a certain code, 'A > B' means 'A is greater than B', 'A < B' means 'A is less than B', and 'A = B' means 'A is equal to B'.\n\nGiven:  P > Q,  Q < R, and R > S.\n\nIf P is multiplied by 4 and S is divided by 3, what is the relationship between the new values of P and S?",
+            "difficulty": "medium",
+            "reasoning": "This question tests your understanding of multiplying and dividing inequalities. Here's how to solve it:\n\n1. **Analyze the given inequalities:**\n   * P > Q:  P is greater than Q.\n   * Q < R:  Q is less than R.\n   * R > S:  R is greater than S.\n\n2. **Apply the rules of multiplication and division:**\n   * Multiplying both sides of an inequality by a positive number does not change the inequality sign.\n   * Dividing both sides of an inequality by a positive number does not change the inequality sign.\n\n3. **Apply the rules to the given inequalities:**\n   * P > Q:  4P > 4Q (multiplying both sides by 4)\n   * R > S:  R/3 > S/3 (dividing both sides by 3)\n\n4. **Combine the inequalities:**\n    Since R is greater than S, and we're dividing S by 3, the new value of S/3 will be even smaller. This means 4P will still be greater than S/3.\n\n5. **Answer:** The new value of P (4P) will be greater than the new value of S (S/3).  The relationship is 4P > S/3.",
+            "options": [
+                "4P < S/3",
+                "4P > S/3",
+                "4P = S/3",
+                "Cannot be determined"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise:**\n\n*  \"A > B\" means \"A is greater than B\".\n*  \"A < C\" means \"A is less than C\".\n*  \"A = D\" means \"A is equal to D\".\n\n**Task:**  If \"C > D\" and \"B = D\" are true, is it possible to conclude that \"A < D\" is true? ",
+            "difficulty": "medium",
+            "reasoning": "This question tests your ability to interpret coded inequalities and apply logical deduction. Let's break down the solution:\n\n1. **Given Information:**\n   *  \"C > D\" means C is greater than D.\n   *  \"B = D\" means B is equal to D.\n\n2. **Deduction:**\n   * Since B is equal to D, and C is greater than D, we know that C is also greater than B (C > B).\n\n3. **Relationship between A and D:**\n   * We know \"A < C\" (A is less than C).  Since C is greater than B (and therefore also D), we can conclude that A must also be less than D (A < D). \n\n4. **Conclusion:**\n   Yes, we can definitively conclude that \"A < D\" is true. ",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Statement:**\n\n*  \"@\" represents \"greater than\"\n*  \"#\" represents \"less than\"\n*  \"$\" represents \"equal to\"\n\n**Relationships:**\n\n*  A @ B\n*  B # C\n*  C $ D\n*  D @ E\n*  E # F\n\n**Question:**\n\nIf G # B, what can be definitively concluded about the relationship between G and E? Explain your reasoning.",
+            "difficulty": "moderate",
+            "reasoning": "**Understanding the Coded Inequalities:**\n\n*  A @ B means A is greater than B.\n*  B # C means B is less than C.\n*  C $ D means C is equal to D.\n*  D @ E means D is greater than E.\n*  E # F means E is less than F.\n*  G # B means G is less than B.\n\n**Combining the Relationships:**\n\nSince we know A @ B (A is greater than B) and G # B (G is less than B), we can infer that G is also less than A. We can represent this as G # A.\n\nWe also know that B # C (B is less than C) and C $ D (C is equal to D), implying that B is less than D (B # D).\n\nFollowing the chain of inequalities, we have D @ E (D is greater than E) and E # F (E is less than F).\n\n**Deduction:**\n\n1. We established G # A.\n2.  A @ B, B # D, and D @ E  implies that A is greater than E (A @ E).\n3. Combining G # A and A @ E, we can conclude that G is definitely less than E (G # E).\n\n**Conclusion:**\n\nWe can definitively conclude that G is less than E (G # E).",
+            "options": [
+                "G # E",
+                "G @ E",
+                "G $ E",
+                "Cannot be determined"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Statement:** In a certain coding system, symbols represent relationships between different numbers. \n\n**Inequalities:**\n*  $P < Q$ (P is less than Q)\n*  $R > S$ (R is greater than S)\n*  $Q > S$ (Q is greater than S)\n*  $T < R$ (T is less than R)\n\n**Question:**  If it is known that $P > T$, is it possible to determine whether R is greater than or less than P? Explain your reasoning.",
+            "difficulty": "medium",
+            "reasoning": "This question tests your ability to deduce relationships between variables based on given inequalities. Here's how to solve it:\n\n1. **Visualize the relationships:**  It's helpful to visualize the relationships between the variables using a simple diagram.\n\n   ```\n   R > S\n   Q > S\n   P < Q\n   T < R\n   P > T\n   ```\n\n2. **Combine the inequalities:**  We need to determine the relationship between R and P. Let's see if we can find a connection.\n\n    * We know P < Q and Q > S. This means P < S.\n    * We also know R > S and P < S. This implies that R > P.\n\n3. **Conclusion:** Yes, it is possible to determine that R is greater than P. We established this by combining the given inequalities to establish a clear relationship between R and P.\n\n**Key Points:**\n* **Transitive Property:**  If A > B and B > C, then A > C. This property was used extensively to combine the inequalities and reach a conclusion.\n* **Deductive Reasoning:**  We used the information given to logically deduce a new relationship between the variables.",
+            "options": [
+                "Yes, R is greater than P",
+                "Yes, R is less than P",
+                "No, it is not possible to determine",
+                "Yes, P and R are equal"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Statement:** In a coded language, '>' means 'less than', '<' means 'greater than', '=' means 'equal to', and '!' means 'not equal to'.\n\n**Coded Inequalities:**\n* A > B\n* C < D\n* E = F\n* B ! C\n\n**Question:** Based on the given information, can we definitively determine the order of A, B, C, D, E, and F from least to greatest?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the ability to decipher coded inequalities and determine the order of variables. Here's how to solve it:\n\n1. **Interpret the Coded Symbols:**  We need to understand the given code: '>' means 'less than', '<' means 'greater than', '=' means 'equal to', and '!' means 'not equal to'.\n\n2. **Analyze the Inequalities:**\n    * A > B:  A is less than B.\n    * C < D:  C is greater than D.\n    * E = F: E is equal to F.\n    * B ! C: B is not equal to C.\n\n3. **Combine the Information:**\n    * From A > B, we know B is larger than A.\n    * From C < D, we know D is larger than C.\n    * From E = F, we know E and F are equal.\n    * From B ! C, we know B and C are not equal but don't know which one is larger.\n\n4. **Deduce the Order:** We can only definitively determine the order of A, B, and D within their respective pairs. We cannot establish a definitive order for E, F, and the relationship between B and C.  Therefore, we can't determine a complete, definitive order for all six variables.\n\n**Therefore, the answer is No.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Partially"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of four students, A, B, C, and D, are competing in a coding competition. The following symbols represent their performance in different coding languages:\n\n* **>** means \"better than\"\n* **<** means \"worse than\"\n* **=** means \"same skill level\"\n\nThe following statements are true:\n\n* A > B in Python\n* C < D in JavaScript\n* B = D in C++\n* A = C in Java\n\nIf we know that Python is a more challenging language than JavaScript, who has the best overall coding skills, considering their performance across all languages?",
+            "difficulty": "medium",
+            "reasoning": "To determine who has the best overall coding skills, we need to analyze the information given and consider the relative difficulty of the languages:\n\n1. **Python vs. JavaScript:** Since Python is more challenging than JavaScript, being better in Python implies a higher overall skill level than being better in JavaScript. Therefore, A's proficiency in Python is a strong indicator of their overall skills.\n\n2. **Comparing A and D:** We know that A > B in Python and B = D in C++. Since Python is more challenging, this suggests that A is likely better than D overall.\n\n3. **Comparing A and C:** A = C in Java. This means they have the same skill level in Java. Since A is better than B in Python, and B = D in C++, this indicates A is likely better than D in both Python and C++. Therefore, A is likely better than C overall.\n\n4. **Comparing C and D:** C < D in JavaScript.  While this information is relevant, it doesn't significantly impact the overall ranking because Python is considered a more challenging language.\n\n**Conclusion:** Based on the information provided, A likely has the best overall coding skills because of their strong performance in Python, a more challenging language. They are likely better than both C and D, while their skill level in Java is equal to C's.\n\n**Key takeaway:** In coded inequality problems, it's crucial to understand the relative significance of different relationships based on additional information like the complexity of the skill or task being compared.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Statement:**  Five friends, represented by the letters A, B, C, D, and E, are ranked in order of their ages. The relationships between their ages are represented by the following coded inequalities:\n\n* A < B\n* C > D\n* E > C\n\n**Question:** Is B older than D?\n\n**Data Sufficiency:**\n\n* **Statement 1:**  A > D\n* **Statement 2:** E < B",
+            "difficulty": "moderate",
+            "reasoning": "This question tests the ability to combine information from coded inequalities and determine if it's sufficient to answer the question. \n\n**Analyzing the Question:**\nWe are asked if B is older than D. To answer this, we need to determine if there's a direct or indirect relationship between B and D within the provided information.\n\n**Analyzing Statement 1:**\n* Statement 1 tells us A > D. This tells us that A is older than D. However, we don't have any direct information about B's age relative to D.\n\n**Analyzing Statement 2:**\n* Statement 2 tells us that E < B. This means E is younger than B. But this doesn't provide any information about D's age in relation to B. \n\n**Combining Statements:**\n* Even combining both statements, we still don't have a direct or indirect relationship between B and D. We know A is older than D, and E is younger than B, but this doesn't tell us anything about the relative ages of B and D. \n\n**Conclusion:**\nNeither statement alone nor together provides sufficient information to determine if B is older than D. Therefore, the answer is **Neither statement alone is sufficient, and the two statements together are not sufficient.**\n",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Insufficient Information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Statement:** P > Q, R \u2264 S, Q = T, S \u2265 U, U = V\n\n**Question:** Is it possible that P < V?\n\n**Answer Choices:**\n* Yes, because P could be smaller than V if the difference between P and Q is greater than the difference between S and U.\n* No, because P is greater than Q, which is equal to T, and T is greater than or equal to V. Therefore, P must be greater than V.",
+            "difficulty": "moderate",
+            "reasoning": "The correct answer is **No, because P is greater than Q, which is equal to T, and T is greater than or equal to V. Therefore, P must be greater than V.**\n\nLet's break down the reasoning:\n\n1. **Given inequalities:**\n   * P > Q\n   * R \u2264 S\n   * Q = T\n   * S \u2265 U\n   * U = V\n\n2. **Combining inequalities:** We can combine the inequalities to establish a relationship between P and V:\n   * P > Q = T \u2265 U = V\n\n3. **Deduction:**  Since P is directly greater than Q, which is equal to T, and T is greater than or equal to V, we can conclude that P must be greater than V.\n\n**Therefore, it is not possible for P to be less than V.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Given the following coded inequalities:\n\n* P > Q\n* R < S\n* T = U\n* Q > S\n\nDetermine the correct order of the following letters from highest to lowest:\n\n* P, R, T, Q",
+            "difficulty": "moderate",
+            "reasoning": "This question assesses the ability to deduce relationships from coded inequalities and apply them to determine the order of letters. Here's how to solve it:\n\n1. **Analyze the inequalities:**\n\n    * P > Q: P is greater than Q.\n    * R < S: R is less than S.\n    * T = U: T and U are equal.\n    * Q > S: Q is greater than S.\n\n2. **Combine the information:**\n\n    * We know P > Q and Q > S, which means P > Q > S.\n    * We know R < S, so R is also less than P and Q.\n    * T and U are equal, but their relation to other letters is unknown.\n\n3. **Order the letters:**\n\n    Based on the information above, the correct order from highest to lowest is: P, Q, S, R.\n    * T and U's position cannot be definitively determined based on the given inequalities.\n\nTherefore, the correct order of the letters from highest to lowest is: **P, Q, S, R**.\n\nThis question belongs to the subtopic 'Direct Relationships in Coded Inequalities' within the larger domain of 'Logical Reasoning - Coded Inequalities'. The key concept is understanding that transitive property applies to inequalities, meaning if A > B and B > C, then A > C. The question uses this principle to establish the relative positions of the letters.",
+            "options": [
+                "P, R, T, Q",
+                "P, Q, S, R",
+                "P, Q, R, S",
+                "P, S, Q, R"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Code:**\n*  &#8804; means 'less than or equal to'\n*  &#8805; means 'greater than or equal to'\n\n**Relationships:**\n*  a &#8804; b\n*  c &#8805; d\n*  b &#8805; d\n\n**Question:**  If we add the inequalities 'a &#8804; b' and 'b &#8805; d', what can we conclude about the relationship between 'a' and 'd'?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests our understanding of adding inequalities.  Here's how to solve it:\n\n1. **Identify the common variable:** Notice that both inequalities involve 'b'.\n\n2. **Combine inequalities:** Since we are adding inequalities, we need to make sure the signs are aligned. The inequality 'b &#8805; d' can be rewritten as 'd &#8804; b'. Now we can add the two inequalities:\n    *  a &#8804; b\n    *  d &#8804; b\n\n3. **Combine the results:**  Adding these inequalities directly, we get  'a + d &#8804; 2b'. While this is true, it doesn't directly tell us the relationship between 'a' and 'd'.\n\n4. **Focus on 'a' and 'd':**  Since we're interested in 'a' and 'd', we need to rearrange the combined inequality. We can't simply cancel 'b' because we don't know its value.  However, we can deduce the following:\n    * **If 'a' is less than 'd', then 'a + d' will be less than 2b.**\n    * **If 'a' is greater than 'd', then 'a + d' will be greater than 2b.**\n    * **If 'a' is equal to 'd', then 'a + d' will be equal to 2b.**\n\n5. **Conclusion:** Therefore, we can conclude that 'a' is less than or equal to 'd' ('a &#8804; d'). This is because the combined inequality tells us that 'a + d' is less than or equal to 2b. If 'a' was greater than 'd', the sum would be greater than 2b, contradicting our combined inequality.",
+            "options": [
+                "a > d",
+                "a < d",
+                "a = d",
+                "a <= d"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "In a certain code,  'A & B' means 'A is greater than B',  'A # B' means 'A is less than or equal to B', and 'A * B' means 'A is equal to B'.  If P & Q, Q # R, and R * S, what is the maximum possible value of the expression (P - S)?\n\n",
+            "difficulty": "moderate",
+            "reasoning": "Let's break down the given information:\n\n1. **P & Q**: This means P is greater than Q.\n2. **Q # R**: This means Q is less than or equal to R.\n3. **R * S**: This means R is equal to S.\n\nSince P > Q and Q \u2264 R, we can conclude that P > R. Since R = S, we know that P > S.\n\nTo maximize (P - S), we want P to be as large as possible and S to be as small as possible. Since R = S, minimizing S means minimizing R.  However, there is no constraint on how large P can be.\n\nTherefore, the maximum possible value of (P - S) is **infinite**, as we can choose arbitrarily large values for P while keeping R and S equal and relatively small.\n\n**Key takeaway:** When dealing with inequalities, pay attention to the signs (>, <, \u2264, \u2265, =) and their implications. Sometimes, the maximum or minimum value can be unbounded depending on the relationships between variables.",
+            "options": [
+                "1",
+                "10",
+                "Infinite",
+                "Cannot be determined"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "In a certain code, '@' means 'is greater than', '#' means 'is less than', and '$' means 'is equal to'. If A @ B, B # C, and C $ D, then which of the following is true?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the ability to decode symbols and apply logical reasoning to inequalities. Here's how to solve it:\n\n1. **Translate the coded inequalities:**\n   - A @ B means A > B\n   - B # C means B < C\n   - C $ D means C = D\n\n2. **Combine the inequalities:**\n   Since A > B and B < C, we can conclude that A > C.  We also know that C = D.\n\n3. **Determine the relationship between A and D:**\n   Because A > C and C = D, we can conclude that A > D.\n\n4. **Identify the correct answer choice:**\n   The correct answer choice is the one that reflects the relationship A > D.  This is typically represented as 'A @ D' in the given code.",
+            "options": [
+                "A @ D",
+                "A # D",
+                "A $ D",
+                "D @ A"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "In a race, four runners - Alice, Bob, Charlie, and David - finished in different positions. The following symbols represent the relationships between their finishing positions:\n\n*  '#' means 'finished ahead of'\n*  '=' means 'finished in the same position as'\n*  '<' means 'finished behind'\n\nHere's what we know:\n\n*  Alice # Bob\n*  Charlie < David\n*  David = Alice\n\nIf Bob finished second, can we determine the finishing position of Charlie?",
+            "difficulty": "moderate",
+            "reasoning": "Let's analyze the given information step-by-step to deduce the finishing position of Charlie:\n\n1. **Alice # Bob:** This means Alice finished ahead of Bob. Since Bob finished second, Alice must have finished first.\n\n2. **Charlie < David:** This means Charlie finished behind David.\n\n3. **David = Alice:** This means David finished in the same position as Alice. As Alice finished first, David also finished first.\n\n4. **Combining the information:** We know that David finished first and Charlie finished behind David. This means Charlie cannot be in first place.  Furthermore, Bob is in second place, and Alice is also in first place. Therefore, Charlie must have finished either third or fourth.\n\n**Conclusion:** We can conclude that Charlie finished either third or fourth but cannot determine his exact position based on the given information.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot determine"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Coded Symbols:**\n* \"X#Y\" means \"X is greater than Y\"\n* \"X$Y\" means \"X is less than or equal to Y\"\n* \"X@Y\" means \"X is equal to Y\"\n\n**Statements:**\n* \"A#B\"\n* \"B$C\"\n* \"C@D\"\n* \"D#E\"\n\n**Question:** Which of the following must be TRUE based on the given statements and coded symbols?",
+            "difficulty": "moderate",
+            "reasoning": "**Step 1: Understand the coded symbols.**\n\nWe are given three coded symbols and their meanings:\n* \"X#Y\" means \"X is greater than Y\"\n* \"X$Y\" means \"X is less than or equal to Y\"\n* \"X@Y\" means \"X is equal to Y\"\n\n**Step 2: Analyze the statements.**\n\nWe are given four statements:\n* \"A#B\"  means \"A is greater than B\"\n* \"B$C\" means \"B is less than or equal to C\"\n* \"C@D\" means \"C is equal to D\"\n* \"D#E\" means \"D is greater than E\"\n\n**Step 3: Deduce relationships based on the statements.**\n\nFrom the statements, we can infer the following:\n* Since A is greater than B (A#B) and B is less than or equal to C (B$C), we can conclude that A is greater than C (A#C).\n* Since C is equal to D (C@D) and D is greater than E (D#E), we can conclude that C is greater than E (C#E).\n\n**Step 4: Identify the correct answer.**\n\nConsidering the deduced relationships, we can confirm that the following must be TRUE:\n* **A is greater than C (A#C)**  This is supported by our deduction in step 3.\n\n**Therefore, the correct answer is the option that represents A#C.**",
+            "options": [
+                "A$C",
+                "A#C",
+                "C#A",
+                "A@C"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of friends are comparing their scores on a recent game. The following inequalities represent the relationships between their scores:\n\n* A > B\n* C < D\n* E \u2264 F\n* G \u2265 H\n* B > F\n* D > E\n* H < C\n\nBased on these inequalities, can we definitively determine if A is greater than G? Explain your reasoning.",
+            "difficulty": "hard",
+            "reasoning": "To determine if A is greater than G, we need to establish a connection between them using the provided inequalities. Let's analyze:\n\n1. **A > B and B > F:** Combining these, we get A > F.\n2. **F \u2265 E and E \u2264 D:**  Combining these, we get F \u2265 D. But since D > E, this means F must be greater than D, and therefore F > D.\n3. **D > E and E \u2264 F:** Combining these, we get D > F. However, this contradicts our previous deduction that F > D. This implies an error in the given inequalities.\n\nSince there's a contradiction, we can't logically determine if A is greater than G. The given inequalities are inconsistent, making it impossible to establish a definitive relationship between A and G.\n\n**Key takeaway:** When working with coded inequalities, carefully analyze for inconsistencies or contradictions that might arise due to overlapping relationships. These inconsistencies indicate errors or invalid assumptions in the provided information.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A company is planning to invest in three different projects, represented by the variables X, Y, and Z. Their success is dependent on various factors, and their success can be partially represented by the following inequalities:\n\n* X > Y + Z\n* Y < Z - 2X\n* Z > 3X + Y\n\nIf the company prioritizes investing in the project with the highest potential for success, based on the given inequalities, which project should they prioritize first?",
+            "difficulty": "above moderate 5/10",
+            "reasoning": "This question involves analyzing multiple inequalities with complex relationships between the variables. To determine the project with the highest potential for success, we need to understand how the variables relate to each other in terms of their values.\n\n1. **Analyze the first inequality:** X > Y + Z. This tells us that X is greater than the sum of Y and Z. This suggests that X has a relatively high potential for success compared to Y and Z individually.\n\n2. **Analyze the second inequality:** Y < Z - 2X. This inequality implies that Y is significantly smaller than Z, even when considering twice the value of X. This strengthens the notion that Y has a lower potential for success than Z.\n\n3. **Analyze the third inequality:** Z > 3X + Y. This inequality indicates that Z is greater than three times the value of X plus the value of Y. This suggests that Z has a potentially higher success rate than both X and Y, considering the magnitude of the difference.\n\n4. **Combine the information:** Combining all three inequalities, we see that Z is consistently greater than both X and Y, even when considering multiples of X and Y in the relationships. This strongly indicates that **Project Z has the highest potential for success**.\n\nTherefore, the company should prioritize investing in Project Z first, as it consistently demonstrates a higher potential for success based on the given inequalities.",
+            "options": [
+                "X",
+                "Y",
+                "Z",
+                "None"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given the following inequalities:\n\n  *  A > B\n  *  B < C\n  *  C \u2264 D\n  *  D \u2265 E\n\n Determine if we can conclusively state that A > E. If so, explain why. If not, explain why not.",
+            "difficulty": "hard",
+            "reasoning": "While the inequalities provide a chain of relationships between A, B, C, D, and E, we cannot conclusively state that A > E. Here's why:\n\n1. **Direct Comparison:** We don't have a direct inequality comparing A and E.\n\n2. **Indirect Comparison:** The inequalities show that A is greater than B, B is less than C, and C is less than or equal to D. While this suggests a general trend of decreasing values, we cannot be certain about the relationship between A and E.\n\n3. **Example:** Consider a possible scenario where A = 10, B = 8, C = 6, D = 6, and E = 5. This scenario satisfies all given inequalities, but A is not greater than E.\n\nTherefore, based on the provided inequalities, we cannot definitively conclude that A > E.",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot determine",
+                "Insufficient information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Premise:**\n\n* P > Q\n* R \u2264 S\n* T = U\n* Q > S\n* U > P\n\n**Question:**\n\nIs it possible to determine the correct order of the variables from greatest to least? If so, state the order. If not, explain why not.",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the given inequalities and the ability to combine them logically. Here's a step-by-step approach:\n\n1. **Combine inequalities:** We can combine the first and fourth inequalities (P > Q and Q > S) to deduce that P > S.\n\n2. **Further combinations:** Combining P > S with R \u2264 S, we can conclude that P > R. \n\n3. **Utilizing T = U:** We know that U > P (from the premise) and T = U. Therefore, we can conclude that T > P.\n\n4. **Overall Order:** Combining all the deductions, we can arrange the variables in the following order from greatest to least: **T > U > P > Q > S \u2265 R.** \n\n**Therefore, the correct order is T, U, P, Q, S, and R.**",
+            "options": [
+                "Yes, T > U > P > Q > S \u2265 R",
+                "Yes, T > P > U > Q > S \u2265 R",
+                "No, insufficient information",
+                "Yes, T > U > Q > P > S \u2265 R"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "In a competition, participants are ranked based on their scores using coded symbols. The higher the score, the higher the ranking. The following inequalities represent the rankings:\n\n*  & > @\n*  @ < #\n*  # > $ \n*  $ = %\n\nIf  & < ~, is it possible to definitively determine if % > ~ ?",
+            "difficulty": "hard",
+            "reasoning": "This question tests your ability to manipulate and combine inequalities to deduce new relationships. Here's how to solve it:\n\n1. **Analyze the given information:** We know that & > @, @ < #, # > $, and $ = %. This means the ranking order from highest to lowest is & > @ > # > $ = %.\n\n2. **Combine information with the new inequality:** We are given that & < ~. This means ~ is ranked higher than &.\n\n3. **Deduce the relationship between % and ~:**  Since & is ranked higher than % (based on the original inequalities) and ~ is ranked higher than & (based on the new inequality), we can conclude that ~ is also ranked higher than %.\n\n4. **Answer:** Therefore, it is **not possible** to definitively determine if % > ~. We know the opposite is true: ~ > %.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient Information"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Given the following coded inequalities:\n\n  *  P < Q\n  *  R \u2264 S\n  *  T \u2265 U\n  *  Q \u2264 R\n  *  S \u2265 T\n\nIf P is less than Q, can we conclusively determine if U is greater than or equal to P?",
+            "difficulty": "above moderate",
+            "reasoning": "This question tests the ability to identify and apply inverse relationships within coded inequalities. To answer this, we need to analyze the given information and see if we can establish a direct or indirect link between U and P. \n\n1. **Analyze the provided inequalities:** We know that P is less than Q (P < Q), Q is less than or equal to R (Q \u2264 R), R is less than or equal to S (R \u2264 S), and S is greater than or equal to T (S \u2265 T). This chain of inequalities implies that P < Q \u2264 R \u2264 S \u2265 T. \n\n2. **Identify the inverse relationship:**  We are asked about the relationship between U and P, but the provided inequalities only link U to T (T \u2265 U). There is no direct relationship between U and P in the given inequalities.\n\n3. **Deduce the conclusion:**  Since the given inequalities only establish a relationship between U and T and there is no direct or indirect link between U and P, we cannot conclusively determine if U is greater than or equal to P. \n\nTherefore, the correct answer is **Cannot be determined**. \n\n**Key takeaway:** This question emphasizes the importance of identifying the relevant information and understanding that the absence of a direct link between variables does not automatically imply a specific relationship between them. ",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Insufficient information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "In a certain code, 'A#B' means 'A is greater than B', 'A@B' means 'A is less than B', and 'A$B' means 'A is equal to B'.  If 'P#Q', 'Q$R', and 'R@S', is it possible to determine the relationship between P and S?",
+            "difficulty": "above moderate 5/10",
+            "reasoning": "This question involves deciphering a coded inequality system and applying logical deduction to determine the relationship between two variables. Here's how to solve it:\n\n1. **Translate the Code:**\n   -  'P#Q' translates to 'P > Q' \n   -  'Q$R' translates to 'Q = R' \n   -  'R@S' translates to 'R < S' \n\n2. **Combine the Inequalities:**\n   - Since Q = R, we can substitute 'R' with 'Q' in the third inequality. This gives us 'Q < S'. \n\n3. **Deduce the Relationship:**\n   - We know P > Q and Q < S.  Since 'greater than' and 'less than' are transitive relationships, we can deduce that **P > S**. \n\nTherefore, we can definitively determine the relationship between P and S. P is greater than S.\n\n**Key Points:**\n-  The question tests your ability to translate coded symbols into mathematical relationships. \n-  Understanding the transitive nature of inequalities is crucial for solving this type of question. \n-  Combining the inequalities and deducing the relationship between P and S is the core of the solution.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Premise:**\n\n*  A # B\n*  C * D\n*  B > C \n*  D # E\n*  F @ G\n*  G > A \n*  E > F\n\n**Query:**\n\nIs it possible to determine if A is greater than F? If so, explain your reasoning. If not, explain why it's impossible to determine.",
+            "difficulty": "hard",
+            "reasoning": "This question challenges you to identify and apply logical reasoning principles within the context of coded inequalities. We need to determine if the provided information allows us to conclude whether A is greater than F. \n\nLet's break down the premises and their implications:\n\n* **A # B:** We know that A has a specific relationship with B, denoted by the symbol '#'. However, we don't know the nature of this relationship (e.g., greater than, less than, equal to).  \n* **C * D:**  Similarly, we know C has a specific relationship with D, denoted by '*'. The exact nature of this relationship is unknown. \n* **B > C:** This is the crucial piece of information as it tells us B is definitively greater than C. \n* **D # E:**  We know D has a specific relationship with E denoted by '#'.  \n* **F @ G:** We know F has a specific relationship with G denoted by '@'. \n* **G > A:** This tells us that G is definitively greater than A. \n* **E > F:**  We know E is definitively greater than F. \n\n**Analyzing the Relationships:**\n\nWhile we have a chain of inequalities (B > C, G > A, E > F), we cannot directly compare A and F. The symbols '#' and '*' represent unknown relationships. To determine if A is greater than F, we would need to know the relationships defined by '#' and '*'.  \n\n**Conclusion:**\n\nIt is impossible to determine if A is greater than F based on the provided information. We lack sufficient knowledge about the relationships represented by the symbols '#' and '*'.  \n\n**Key Takeaway:** This question highlights that drawing conclusions about coded inequalities requires understanding the meaning of each symbol and identifying valid chains of relationships that allow for comparison.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot Determine"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Given the following inequalities:\n\n* A \u2264 B\n* C \u2265 D\n* B > E\n* D \u2264 F\n\nCan we definitively determine the relationship between A and F? If so, what is the relationship? Explain your reasoning.",
+            "difficulty": "hard",
+            "reasoning": "This question requires a careful application of the Transitive Property of Inequalities and involves multiple steps. Here's how to solve it:\n\n1. **Combine relevant inequalities:** We need to find a path linking A and F through the given inequalities. Notice that A \u2264 B and B > E can be combined to give A \u2264 E (since B is greater than E, anything less than or equal to B must also be less than or equal to E).\n\n2. **Apply Transitivity again:**  We also have D \u2264 F.  While there's no direct link between E and D, we can use the inequality C \u2265 D. Since D is less than or equal to C, and C is greater than or equal to D, we can conclude that D \u2264 C.\n\n3. **Final Connection:** Now we have the following chain of inequalities: A \u2264 E, E < B, B > C, C \u2265 D, and D \u2264 F.  Since we have a sequence of 'less than or equal to' and 'greater than' relationships, we can definitively say that **A \u2264 F**.  While we don't know if A is strictly less than F, we can conclude that A cannot be greater than F.\n\n**Key takeaway:** The Transitive Property allows us to combine inequalities if they share a common variable. However, we need to be careful with the direction of the inequalities (i.e., > or <) and consider whether the inequalities can be combined to form a chain leading to the desired relationship.",
+            "options": [
+                "Yes, A < F",
+                "Yes, A > F",
+                "Yes, A \u2264 F",
+                "No, the relationship cannot be determined"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Premise:**\n\n*  \"@ > #\"\n* \"$ < &\"\n* \"# < $\"\n* \"& > %\"\n\n**Question:**  If we know that the symbol \"*\" is strictly greater than \"%\", and that \"*\" is less than \"@\". Can we definitively determine the relationship between \"#\" and \"%\"?\n\n**Answer Choices:**\n\n* A) # > %\n* B) # < %\n* C) # = %\n* D) Cannot be determined",
+            "difficulty": "hard",
+            "reasoning": "This question is challenging because it requires us to analyze the given inequalities and incorporate new information about the symbols \"*\" and \"%\". Here's how to break it down:\n\n1. **Analyzing the Given Inequalities:**\n   - We know that \"@ > #\" and \"# < $\". This implies that \"@ > $\".\n   - We also know that \"$ < &\" and \"& > %\", which leads to \"$ < %\" \n\n2. **Incorporating New Information:**\n   - We're given that \"* > %\" and \"* < @\".\n\n3. **Combining the Information:**\n   - Since \"* < @\" and \"@ > $\", we can conclude that \"* > $\".\n   - However, we have conflicting information about the relationship between \"$\" and \"%\". We know that \"$ < %\" from the original inequalities, but we also know that \"* > %\" and \"* > $\". This suggests that \"$\" could be greater than, equal to, or less than \"%\".\n\n4. **Conclusion:**\n   - The given information creates a contradiction. We cannot definitively determine the relationship between \"#\" and \"%\".\n\n**Therefore, the correct answer is D) Cannot be determined.**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Statement:**\n* X < Y\n* Z \u2265 W\n* T = U\n* V > S\n\n**Conditions:**\n* Y \u2264 W\n* S \u2264 T\n\n**Question:**\nIs it possible to determine if X < V? If so, explain why. If not, explain why not.",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the given information and the use of transitive properties to deduce relationships. Here's how to approach the solution:\n\n1. **Understanding the Conditions:**  The conditions Y \u2264 W and S \u2264 T tell us about the relative values of these variables. We can combine these conditions with the original statements to build a chain of relationships.\n\n2. **Combining Statements:**  We know X < Y, and Y \u2264 W, therefore we can conclude that X < W.  This is because if X is less than Y and Y is less than or equal to W, then X must be less than W.\n\n3. **Additional Analysis:** We also know that T = U and S \u2264 T, which leads us to conclude that S \u2264 U. Combining this with V > S, we can state that V > U.\n\n4. **Deduction:** While we can establish relationships between X, W, and U, and between V, S, and U, there is no direct link established between X and V. The given information doesn't allow us to determine if X is less than V. There could be scenarios where X is less than V, and scenarios where X is not less than V.\n\n**Conclusion:** It is **not possible** to determine if X < V based on the given information and conditions. The information provided doesn't establish a direct comparison or implied relationship between X and V.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Unknown"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of friends is comparing their ages.  They represent their ages with letters: A, B, C, D, and E.  Use the following information to determine the youngest and oldest individuals in the group.\n\n**Statements:**\n\n* A is older than B. (A > B)\n* C is younger than D, but older than B. (C < D and C > B)\n* E is the youngest of all. (E < A, E < B, E < C, E < D)\n* A is younger than D. (A < D)\n\n**Conclusions:**\n\n1.  D is the oldest.\n2.  B is the second youngest.\n3.  C is younger than A.\n\n**Question:**\n\n* Which conclusion(s) is/are definitely **valid**?\n* Which conclusion(s) is/are definitely **invalid**?\n* Which conclusion(s) is/are **uncertain**?",
+            "difficulty": "above moderate",
+            "reasoning": "Let's analyze each conclusion based on the given statements:\n\n**Conclusion 1: D is the oldest.**\n\n* **Valid:**  We know A < D and C < D. Since E is the youngest, and A and C are both older than E but younger than D, D must be the oldest.\n\n**Conclusion 2: B is the second youngest.**\n\n* **Invalid:** We know E is the youngest, but we don't have enough information to definitively say if B is the second youngest.  C could be younger than B, making B the third youngest.\n\n**Conclusion 3: C is younger than A.**\n\n* **Uncertain:** We know C is older than B and younger than D, but the statement A < D does not directly relate C and A.  Therefore, we cannot conclude whether C is younger than A. \n\n**In summary:**\n\n* **Valid Conclusion:** 1\n* **Invalid Conclusion:** 2\n* **Uncertain Conclusion:** 3",
+            "options": [
+                "1, 2, 3",
+                "1",
+                "1, 2",
+                "2, 3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Statements:**\n\n*   R \u00a9 S means R is greater than or equal to S.\n*   R \u2295 S means R is less than S.\n*   R \u25ca S means R is equal to S.\n*   A \u00a9 B\n*   B \u2295 C\n*   C \u25ca D\n*   D \u00a9 E\n*   E \u2295 F\n\n**Question:**\n\nIf the statement \"A \u2295 F\" is true, is the statement \"B \u2295 E\" also true?\n\n**Options:**\n\n*   a) True\n*   b) False\n*   c) Cannot be determined",
+            "difficulty": "hard",
+            "reasoning": "**Understanding the Code:**\n\n*   R \u00a9 S:  R is greater than or equal to S.\n*   R \u2295 S:  R is less than S.\n*   R \u25ca S:  R is equal to S.\n\n**Analyzing the Statements:**\n\n1.  A \u00a9 B:  A is greater than or equal to B.\n2.  B \u2295 C:  B is less than C.\n3.  C \u25ca D:  C is equal to D.\n4.  D \u00a9 E:  D is greater than or equal to E.\n5.  E \u2295 F:  E is less than F.\n\n**Deductions from the Statements:**\n\n* Since B is less than C (B \u2295 C) and C is equal to D (C \u25ca D), we can conclude B is less than D (B \u2295 D).\n* Since D is greater than or equal to E (D \u00a9 E) and E is less than F (E \u2295 F), we can conclude D is greater than or equal to F (D \u00a9 F).\n\n**Evaluating the Given Statements:**\n\n*   A \u2295 F:  A is less than F.  This statement is true based on the provided statements and deductions.\n*   B \u2295 E: B is less than E.\n\n**Determining the Truth Value of B \u2295 E:**\n\nWe know B is less than D (B \u2295 D) and D is greater than or equal to E (D \u00a9 E).  Therefore, it is not possible to definitively conclude that B is less than E.  While B might be less than E in some scenarios, it is also possible that B is equal to E.\n\n**Final Answer:**\n\nThe statement \"B \u2295 E\" cannot be definitively determined as true based on the given information. Therefore, the correct answer is **c) Cannot be determined**.",
+            "options": [
+                "True",
+                "False",
+                "Cannot be determined",
+                "Maybe"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given the following inequalities:\n\n* P < Q\n* R > S\n* T = U\n* Q > R\n* S > U\n\nIf it is also known that Q < V and V > T, which of the following statements MUST be true? \n\n",
+            "difficulty": "hard",
+            "reasoning": "This question requires combining multiple inequalities to arrive at a logical conclusion. Let's analyze step by step:\n\n1. **Combining inequalities:** We need to combine the given information to establish a relationship between P and T. We know that P < Q and Q < V, so we can infer that P < V.  Additionally, we know that V > T. Therefore, we can conclude that P < T.\n\n2. **Eliminating incorrect options:**  Let's examine the answer choices and eliminate those that cannot be proven true based on the given information:\n\n    * **Option A (P > T):** This is incorrect because we established P < T. \n    * **Option B (S > Q):** We don't have enough information to directly compare S and Q. We only know that S > U and Q > R. \n    * **Option C (R < T):** This cannot be confirmed or denied. We know R > S and S > U, but there's no direct comparison to T.\n    * **Option D (U < Q):** This cannot be confirmed or denied.  We know U < S and Q > R. \n\n3. **Identifying the correct option:** The only remaining option, **P < T**, is the only statement that is demonstrably true based on the combined information. \n\n**Therefore, the correct answer is **P < T**.",
+            "options": [
+                "P > T",
+                "S > Q",
+                "R < T",
+                "U < Q"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Premise:**\n*  \"A@B\" means \"A is greater than B\"\n*  \"A$B\" means \"A is less than or equal to B\"\n*  \"A#B\" means \"A is equal to B\"\n\n**Question:**\nIs W@Z true, if W$X, X#Y, and Y@Z are true?",
+            "difficulty": "hard",
+            "reasoning": "This question requires multiple steps of combining inequalities to arrive at the solution. Let's break it down:\n\n1. **Given:**\n    * W$X means W \u2264 X\n    * X#Y means X = Y\n    * Y@Z means Y > Z\n\n2. **Combining X#Y and Y@Z:**\n    Since X = Y and Y > Z, we can conclude that X > Z.\n\n3. **Combining W$X and X > Z:**\n    We know W \u2264 X and X > Z.  Therefore, we can say that W < Z or W = Z.\n\n4. **Final Conclusion:**\n    Because we have established that W < Z or W = Z, we can definitively conclude that W@Z (W > Z) is **not true**. \n\n**Explanation:**\nThe key to solving this problem lies in understanding how the different symbols relate to each other. By combining the given information step by step, we can deduce the relationship between W and Z.  It's important to remember that equality implies both greater than and less than, allowing us to build upon the initial relationships.",
+            "options and correct options": [
+                {
+                    "option": "a) Yes",
+                    "is_correct": false
+                },
+                {
+                    "option": "b) No",
+                    "is_correct": true
+                },
+                {
+                    "option": "c) Cannot be determined",
+                    "is_correct": false
+                },
+                {
+                    "option": "d) W#Z",
+                    "is_correct": false
+                }
+            ],
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Consider the following coded inequalities:\n\n*  `@ > #`\n*  `$ < %`\n*  `# * % = @ * $`\n*  `# / % = $ / @`\n\nGiven these inequalities, is `@ / %` greater than, less than, or equal to `# / $`?  Explain your reasoning and justify your answer.",
+            "difficulty": "hard",
+            "reasoning": "To solve this problem, we need to manipulate the given inequalities to isolate the expressions we're comparing (`@ / %` and `# / $`).\n\n1. **Focus on the Relationship between `@` and `#`:**\n\n   The first inequality states that `@ > #`.  This means that `@` is larger than `#`.  We can express this relationship by dividing both sides of the inequality by `#`, resulting in `@ / # > 1`.\n\n2. **Focus on the Relationship between `$` and `%`:**\n\n   The second inequality states that `$ < %`.  This means that `$` is smaller than `%`.  We can express this relationship by dividing both sides of the inequality by `%`, resulting in `$ / % < 1`.\n\n3. **Combine the Relationships:**\n\n   Now, let's combine the relationships we derived in steps 1 and 2.  We know that `@ / # > 1` and `$ / % < 1`.  Multiplying these two inequalities together, we get:\n\n   `(@ / #) * ($ / %) > 1 * 1`\n   `(@ * $) / (# * %) > 1`\n\n4. **Utilize the Given Information:**\n\n   We are given that `# * % = @ * $`. Substituting this into our inequality, we get:\n\n   `(@ * $) / (@ * $) > 1`\n\n   Simplifying, we have:\n\n   `1 > 1`\n\n   This is a contradiction, indicating that our initial assumptions about the relationship between `@ / %` and `# / $` cannot be true.  \n\n5. **Conclusion:**\n\n   Therefore, based on the given coded inequalities, **the relationship between `@ / %` and `# / $` cannot be determined.**",
+            "options": [
+                "Greater than",
+                "Less than",
+                "Equal to",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Premise:**\n* \"A & B\" means \"A is greater than B\"\n* \"C # D\" means \"C is less than or equal to D\"\n* \"E % F\" means \"E is equal to F\"\n\n**Statements:**\n* \"A & C\"\n* \"D # B\"\n* \"F % A\"\n\n**Question:** Is the statement \"C # F\" TRUE, FALSE, or CANNOT BE DETERMINED?",
+            "difficulty": "hard",
+            "reasoning": "This question tests the ability to combine multiple inequalities and deduce relationships between variables indirectly connected.  Let's break it down:\n\n1. **Understanding the Premise:**\n   * \"A & B\" means A is greater than B (A > B)\n   * \"C # D\" means C is less than or equal to D (C \u2264 D)\n   * \"E % F\" means E is equal to F (E = F)\n\n2. **Analyzing Statements:**\n   * \"A & C\":  A > C\n   * \"D # B\":  D \u2264 B\n   * \"F % A\":  F = A\n\n3. **Deduction:**\n    * We know A > C and F = A. Therefore, F > C (since F is equal to a value greater than C).\n    * We also know D \u2264 B, but this relationship doesn't directly involve C or F and doesn't help determine if C \u2264 F.\n\n4. **Conclusion:** We have established that F > C. Since a value greater than C is not necessarily less than or equal to C, we **CANNOT BE DETERMINED** if \"C # F\" is true. The relationship between C and F remains unclear, and we cannot conclude whether C is less than or equal to F. \n\n**Key Takeaway:** This question demonstrates the importance of carefully analyzing coded inequalities, understanding their implications, and using deductive reasoning to combine information. In complex scenarios, sometimes we can only establish partial relationships between variables, leaving some statements indeterminate.",
+            "options": [
+                "TRUE",
+                "FALSE",
+                "CANNOT BE DETERMINED",
+                "INSUFFICIENT INFORMATION"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Scenario:** A city's traffic management system uses coded inequalities to represent traffic flow on different routes. The codes represent the average number of vehicles per hour passing through each route. \n\n**Given Information:**\n* A > B (Route A has more traffic than Route B)\n* C < D (Route C has less traffic than Route D)\n* E \u2265 F (Route E has at least as much traffic as Route F)\n* B + D > E (The combined traffic on Routes B and D is greater than the traffic on Route E)\n* C + F = A (The combined traffic on Routes C and F equals the traffic on Route A)\n\n**Question:** If the traffic on Route B is doubled, and all other traffic flows remain constant, which of the following statements is guaranteed to be true? \n\n1. Route A will have the highest traffic flow.\n2. The combined traffic on Routes B and D will still be greater than the traffic on Route E.\n3. The traffic on Route C will be less than the traffic on Route F.\n4. The traffic on Route D will be greater than the traffic on Route E.",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis and multiple steps of deduction. Let's break down the reasoning:\n\n1. **Doubling the traffic on Route B:** This directly impacts the inequality B + D > E. Since B is doubled, the combined traffic on Routes B and D will definitely increase. \n2. **Impact on the other inequalities:**  The other inequalities remain unchanged: A > B, C < D, E \u2265 F, and C + F = A. \n3. **Analyzing the options:**\n    * **Option 1:** While Route A has more traffic than the original Route B, doubling the traffic on Route B might make Route B have more traffic than Route A. Therefore, Option 1 is not guaranteed to be true. \n    * **Option 2:** Since B + D > E and B is doubled, the combined traffic on Routes B and D will definitely remain greater than the traffic on Route E. Therefore, Option 2 is guaranteed to be true. \n    * **Option 3:** We have no information about the relationship between C and F, except that their combined traffic equals the traffic on Route A. Doubling the traffic on Route B does not directly affect this relationship. Therefore, Option 3 is not guaranteed to be true. \n    * **Option 4:** We know C < D and E \u2265 F.  Even if the combined traffic on Routes B and D increases, we cannot definitively conclude that Route D will have more traffic than Route E. Therefore, Option 4 is not guaranteed to be true. \n\n**Therefore, the correct answer is Option 2.** Doubling the traffic on Route B guarantees that the combined traffic on Routes B and D will still be greater than the traffic on Route E.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "In a certain code, the symbols \"@\", \"#\", \"$\", and \"%\" are used to represent the following relationships:\n\n* \"A @ B\" means \"A is greater than or equal to B\".\n* \"A # B\" means \"A is less than B\".\n* \"A $ B\" means \"A is equal to B\".\n* \"A % B\" means \"A is greater than B\".\n\nGiven the following relationships:\n\n* \"M @ N\"\n* \"N $ P\"\n* \"P # Q\"\n* \"Q % R\"\n\nWhich of the following statements MUST be true based on the given information?",
+            "difficulty": "hard",
+            "reasoning": "To determine the correct statement, we need to carefully analyze the given relationships and deduce additional relationships from them.\n\n1. **\"M @ N\"**: This means \"M is greater than or equal to N\".\n2. **\"N $ P\"**: This means \"N is equal to P\".\n3. **\"P # Q\"**: This means \"P is less than Q\".\n4. **\"Q % R\"**: This means \"Q is greater than R\".\n\nNow, let's combine these relationships:\n\n* Since \"N is equal to P\" and \"P is less than Q\", we can conclude that \"N is less than Q\" (N # Q).\n* Since \"Q is greater than R\", and we know that \"N is less than Q\", we can deduce that \"N is less than R\" (N # R).\n\nTherefore, the only statement that MUST be true based on the given information is **\"N # R\"** which translates to **\"N is less than R\"**.\n\n**Incorrect Options:**\n\n* **\"M % R\"**: We cannot conclude that \"M is greater than R\" based on the given information. While we know \"M is greater than or equal to N\", and \"N is less than R\", there's a possibility that M might be equal to N, making the statement false.\n* **\"Q @ P\"**: This statement is incorrect because we know that \"P is less than Q\" (P # Q).\n* **\"M $ Q\"**: We cannot conclude that \"M is equal to Q\". We only know that \"M is greater than or equal to N\", and \"N is less than Q\", which doesn't guarantee their equality.\n* **\"P @ R\"**: This statement is incorrect as we know \"P is less than Q\", and \"Q is greater than R\", leading to \"P is less than R\" (P # R).",
+            "options": [
+                "M % R",
+                "Q @ P",
+                "M $ Q",
+                "N # R"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "In this puzzle, \"A ^ B\" means \"A is greater than B\", \"A % B\" means \"A is less than or equal to B\", \"A # B\" means \"A is equal to B\", and \"A @ B\" means \"A is not equal to B\".\n\nConsider the following statements:\n\n1.  X ^ Y\n2.  Y # Z\n3.  If Z % W, then T @ U\n4.  W ^ T\n\nBased on these statements, can we conclusively determine that U % X? If so, explain why. If not, provide a counterexample that demonstrates the possibility of U ^ X.",
+            "difficulty": "hard",
+            "reasoning": "To determine if U % X, we need to analyze the given statements and deduce the relationship between U and X.\n\n* **From statement 1:** X ^ Y (X is greater than Y). \n* **From statement 2:** Y # Z (Y is equal to Z).\n\nCombining these, we know that X ^ Z (X is greater than Z).\n\n* **From statement 4:** W ^ T (W is greater than T).\n\n* **From statement 3:** If Z % W (Z is less than or equal to W), then T @ U (T is not equal to U).\n\nWe can infer the following:\n\n1.  Since X is greater than Z, and Z is less than or equal to W (based on statement 3), X must be greater than W (X ^ W).\n\n2.  Combining X ^ W with W ^ T, we can deduce that X ^ T (X is greater than T).\n\n3.  Since X ^ T and T @ U (T is not equal to U), we cannot conclusively determine the relationship between U and X.  U could be greater than X (U ^ X), or U could be less than or equal to X (U % X).\n\n**Therefore, we cannot conclusively determine that U % X.  A counterexample demonstrating the possibility of U ^ X:**\n\nLet's assume:\n\n* X = 5\n* Y = 3\n* Z = 3\n* W = 4\n* T = 2\n* U = 6\n\nThis set of values satisfies all the given statements, but U ^ X, as U (6) is greater than X (5). Therefore, we cannot definitively conclude that U % X.",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Not applicable"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Statements:**\n\n* P \u2264 Q\n* Q > R\n* S \u2265 T\n* R < S\n* T \u2264 V\n\n**Question:**\n\nIs it possible to determine the relationship between P and V? If so, what is the relationship?",
+            "difficulty": "above moderate 5/10",
+            "reasoning": "This question requires a careful analysis of the given inequalities to deduce the relationship between P and V. Here's the step-by-step reasoning:\n\n1. **Combining Inequalities:** We need to find a chain of inequalities that connects P and V.  Let's start with the inequalities involving P and V:\n    * P \u2264 Q\n    * T \u2264 V\n\n2. **Linking the Chains:** Now, we need to find links between Q and T. Observe the following:\n    * Q > R\n    * R < S\n    * S \u2265 T\n\n3. **Establishing the Connection:** Combining these inequalities, we can conclude:\n    * Q > R > S \u2265 T\n\n4. **Deriving the Final Relationship:** Since Q is greater than T, and we know P \u2264 Q and T \u2264 V, we can deduce:\n    * P \u2264 Q > T \u2264 V\n\n5. **Conclusion:**  While we cannot definitively say if P is strictly less than V (because there could be equality), we can conclude that **P \u2264 V**.\n\n**Therefore, it is possible to determine that P is less than or equal to V.**",
+            "options and correct options": {
+                "options": [
+                    "It's impossible to determine the relationship between P and V.",
+                    "P > V",
+                    "P < V",
+                    "P \u2264 V"
+                ],
+                "correct_option": "P \u2264 V"
+            },
+            "options": [
+                "Yes, P < V",
+                "Yes, P > V",
+                "No",
+                "Yes, P \u2264 V"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Statement:**\n*  @ > #\n*  # \u2264 $\n*  % \u2265 *\n*  * < &\n*  & \u2264 +\n*  + = $\n\n**Conditions:**\n*  @ = &\n\n**Question:**\nIs it possible to determine whether % > +? If yes, explain why. If not, explain why not.",
+            "difficulty": "above moderate 5/10",
+            "reasoning": "This question involves combining multiple inequalities and analyzing their relationships. Here's how to approach it step-by-step:\n\n1. **Identify the target relationship:** We need to determine if % > +. \n2. **Connect the symbols:** We need to find a path of inequalities connecting % and +.\n3. **Analyze the given information:**\n    *  We know @ = &.\n    *  From the inequalities, we can establish the following chain: @ > # \u2264 $ = + \u2264 &\n4. **Combine the chains:** Combining the information from step 3, we get the following: @ > # \u2264 $ = + \u2264 & = @\n5. **Deduction:**  Since @ = &, and we have a chain of inequalities connecting % and +, we can conclude that **% > + is not possible**.\n\n**Reasoning:** Because the chain of inequalities includes the equality symbol (=), the relationship between % and + is ambiguous. The chain indicates % is greater than or equal to + (not strictly greater than +). Therefore, we cannot definitively determine if % > +.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Indeterminate"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Symbol Definitions:**\n\n* # : \"is greater than\"\n* @ : \"is less than or equal to\"\n* % : \"is not equal to\"\n* $ : \"is greater than or equal to\"\n* ! : \"is less than\"\n\n**Statements:**\n\n* A#B\n* C@D\n* E$F\n* B!D\n* G#H\n* H$I\n* I%J\n\n**Question:**\n\nIf it is known that A is not equal to J, can we determine the relationship between C and G? If so, what is the relationship? If not, explain why.",
+            "difficulty": "hard",
+            "reasoning": "This question involves multiple symbol interpretations, conditional statements, and hidden relationships, making it challenging. Here's how to break down the solution:\n\n1. **Analyze the Statements:**\n\n   * A#B: A is greater than B.\n   * C@D: C is less than or equal to D.\n   * E$F: E is greater than or equal to F.\n   * B!D: B is less than D.\n   * G#H: G is greater than H.\n   * H$I: H is greater than or equal to I.\n   * I%J: I is not equal to J.\n\n2. **Combine Information:**\n\n   * From A#B and B!D, we infer A > B > D.\n   * From G#H and H$I, we infer G > H \u2265 I.\n\n3. **The Challenge:**\n\n   * We need to determine if we can establish a relationship between C and G, given that A \u2260 J.\n   * The information about A and J doesn't directly link to C or G.  There's no clear connection between these variables within the provided statements.\n\n4. **Deduction:**\n\n   * We can deduce that D < B and B < D, implying that D < B < A.\n   * We also know that G > H \u2265 I, but there's no way to link this to the relationship between C and D.\n\n5. **Conclusion:**\n\n   * It's impossible to determine the relationship between C and G. There are no statements or deductions that establish a connection between them. We can't infer whether C is greater than, less than, or equal to G based on the provided information.\n\n**Therefore, it is not possible to determine the relationship between C and G.**",
+            "options": [
+                "Greater Than",
+                "Less Than",
+                "Equal To",
+                "Cannot Determine"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Premise:**\n*  J > K\n*  L < M\n*  N > O\n*  P < Q\n*  K > L\n*  M > N\n*  O > P\n*  Q > R\n*  S > T\n*  U < V\n*  T > U\n*  V > W\n\n**Question:** Is the following conclusion **TRUE**, **FALSE**, or **CANNOT BE DETERMINED** from the given inequalities? \n\n**Conclusion:** R < S\n\n**Difficulty Level:** Above Moderate Difficulty (5/10)",
+            "difficulty": "hard",
+            "reasoning": "This question tests the ability to combine multiple inequalities to deduce a relationship between variables that are not directly connected. Here's how to approach the problem:\n\n1. **Identify Relevant Inequalities:** The conclusion involves variables R and S. We need to find inequalities that connect these variables to others. We have:\n    * Q > R\n    * S > T\n\n2. **Look for Intermediaries:** To connect R and S, we need a variable that appears in both inequalities. Notice that Q appears in the inequality involving R and T appears in the inequality involving S. So, we need to establish a relationship between Q and T.\n\n3. **Chain the Inequalities:** To connect Q and T, we need to create a chain of inequalities. We can do this using the following steps:\n    * Q > R (given)\n    * R < P (we can deduce this by combining O > P and P < Q)\n    * P < O (given)\n    * O < N (given)\n    * N < M (given)\n    * M < L (given)\n    * L < K (given)\n    * K < J (given)\n    * J > T (we can deduce this by combining T > U and U < V and V > W and W < J)\n\n4. **Combine to Deduce the Conclusion:** Now we can combine the inequalities to form a chain from Q to T:\n    * Q > R > P > O > N > M > L > K > J > T\n\n5. **Evaluate the Conclusion:** Based on this chain, we can conclude that Q > T. Since we know S > T, we can deduce that S > T > Q > R. Therefore, R < S. The conclusion is **TRUE**.\n\n**Key Takeaways:**\n*  When dealing with coded inequalities, focus on identifying the relevant inequalities and connecting them through intermediaries.\n*  The key to solving complex problems is breaking down the problem into smaller, more manageable steps.\n*  Pay attention to the direction of the inequality signs when chaining multiple inequalities. ",
+            "options": [
+                "TRUE",
+                "FALSE",
+                "CANNOT BE DETERMINED",
+                "INSUFFICIENT INFORMATION"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Coded Relationships:**  \"A > B\" means \"A is greater than B\", \"A < B\" means \"A is less than B\", \"A = B\" means \"A is equal to B\"\n\n**Inequality Statement:**  \"X > Y, Y < Z, Z > W, W < V, V > X\"\n\n**Question:**  If the above relationships hold true, which of the following statements is definitely true? \n\n**Answer Choices:**\nI. X > W\nII. V > Y\nIII. Z > V\nIV. Y < V",
+            "difficulty": "above moderate",
+            "reasoning": "This question tests the ability to understand and apply direct relationships in coded inequalities.  To solve it, we need to analyze the given information and use logical deduction to arrive at a definite conclusion.\n\n1. **Understanding the relationships:** The coded relationships provide the foundation for interpreting the inequality statement.  \"X > Y\" means X is greater than Y, and so on.\n\n2. **Analyzing the inequality statement:** The statement provides a chain of relationships between variables.  We can visualize it as follows:\n\n   X > Y < Z > W < V > X\n\n3. **Deriving conclusions:** By analyzing the chain, we can draw the following inferences:\n\n   * **X > W:** Since X is greater than Y, and Y is less than Z, we can conclude that X is greater than W (X > W).\n   * **V > Y:** Since V is greater than X, and X is greater than Y, we can conclude that V is greater than Y (V > Y).\n   * **Z > V:**  Although Z is greater than W, and W is less than V, we cannot definitively conclude that Z is greater than V. There might be a situation where W is slightly less than V, but Z is just slightly greater than W, making Z < V.\n   * **Y < V:**  We cannot conclude that Y is less than V.  It is possible for Y to be equal to V, making Y < V not necessarily true. \n\n4. **Identifying the correct answer:** Based on our analysis, the only statement that is definitely true is **V > Y**, which is **Answer Choice II**.  The other choices are not necessarily true based on the given information.\n\nIn summary, by carefully analyzing the given relationships and using logical deduction, we were able to identify the only statement that is definitely true based on the provided inequality statement.",
+            "options": [
+                "I",
+                "II",
+                "III",
+                "IV"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario:**  In a certain code, the symbols #, @, $, %, and ^ represent distinct numbers.  \n\n**Inequalities:** \n* # @ $ \n* $ % ^ \n* ^ # % \n\n**Question:** Can we definitively determine if # is greater than ^? If so, explain your reasoning. If not, explain why it's impossible to determine.",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful analysis of the given inequalities.  Here's how to approach it:\n\n1. **Combine Inequalities:**  We can combine the first and second inequalities to get a more comprehensive relationship: # @ $ % ^. This shows that # is greater than ^, moving left to right through the inequality. \n\n2. **Contradiction:**  However, the third inequality states ^ # %, which contradicts the combined inequality. This creates a circular relationship where there's no clear way to definitively establish whether # is greater than ^ or vice versa.  \n\n**Conclusion:**  It is impossible to definitively determine if # is greater than ^. The given inequalities create a conflicting loop, preventing us from establishing a clear hierarchy.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Impossible to determine"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Given the following statements:\n\n*  `@ > #`\n*  `% < $`\n*  `& <= #` \n*  `# = %`\n\nCan we definitively determine if `& < $` is true or false based on the given information? If so, provide the answer and a detailed explanation. If not, explain why not. ",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires careful analysis and piecing together multiple relationships. Here's how to approach it:\n\n1. **Combine Statements:** We know `# = %` and `% < $`. Therefore, we can deduce `# < $`.\n\n2. **Indirect Relationship:** We know `& <= #`. Combining this with `# < $`, we can infer that `& < $` is a possible relationship. However, we cannot definitively say it's always true.\n\n3. **Reasoning:** Since `& <= #`, it's possible that `&` and `#` are equal. If this is the case, `&` would also be less than `$`. However, there's also a possibility that `&` is strictly less than `#`. In this scenario, the relationship between `&` and `$` is not directly established by the given statements. \n\n**Conclusion:** We cannot definitively determine if `& < $` is true or false based on the provided information. While it's a possible relationship, we lack sufficient information to confirm it with certainty.\n",
+            "options and correct options": [
+                "True",
+                "False",
+                "Cannot be determined",
+                "Insufficient information to determine",
+                "Cannot be determined"
+            ],
+            "options": [
+                "True",
+                "False",
+                "Cannot determine",
+                "Possibly true"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given the following coded inequalities:\n\n* A > B\n* C < D\n* D > E\n* F > G\n* H > I\n* J < K\n* K > L\n\nIf B > I and L > G, can we definitively conclude that A is greater than G? Explain your reasoning.",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires careful analysis and combines multiple coded inequalities. Here's how to break down the reasoning:\n\n1. **Directly Related Inequalities:** We need to identify inequalities directly related to A and G. We know A > B, but no direct relationship is given for G. However, we have F > G and L > G.\n\n2. **Transitive Inference:**  We can use transitive inference to connect A and G. If B > I and H > I, then we can infer B > H.  Since we also have L > G, we can infer B > G.\n\n3. **Deduction:** Combining A > B and B > G, we can deduce that A > G. This is possible because the inequality sign remains the same when combining inequalities with transitive inference.\n\n**Therefore, yes, we can definitively conclude that A is greater than G.**",
+            "options": [
+                "No",
+                "Yes",
+                "Maybe",
+                "Insufficient Information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise:**  A < B, B > C, C \u2264 D, E \u2265 D, F < E, G \u2265 F, H < G\n**Question:**  Is the statement 'A > H' definitively true, definitively false, or cannot be determined based on the provided information?  ",
+            "difficulty": "very tricky",
+            "reasoning": "This question is considered 'very tricky' due to the multiple steps required to arrive at a conclusion. Let's break down the logic:\n\n1. **Direct Relationships:** We know A > B, B > C, E \u2265 D, F < E, G \u2265 F, and H < G. This establishes a chain of inequalities.\n\n2. **Connecting the Chain:**  We need to connect A and H through the established chain of inequalities. To do so, we need to analyze the relationships involving C and D.\n\n3. **Analyzing C and D:**  While C \u2264 D, we also have E \u2265 D. This implies that there could be scenarios where E is greater than C, or E is equal to C. In both cases, we cannot definitively conclude the relationship between A and H.\n\n4. **Example Scenario:** Consider a scenario where E = C, F = E, and G = F. In this case, A > B > C = E = F = G > H. Therefore, A would be definitively greater than H.\n\n5. **Contradictory Scenario:** Now, consider a scenario where E > C, F < E, and G < F. In this case, the relationship between A and H becomes uncertain.  It's possible that A could be greater than H, but it's also possible that A could be less than or equal to H.\n\n**Conclusion:** Since we cannot definitively conclude the relationship between A and H based on the provided information, the answer is **cannot be determined**.",
+            "options": [
+                "True",
+                "False",
+                "Cannot be determined",
+                "Insufficient information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Statement:**\nJ < K, L \u2264 M, N > O, P \u2265 Q, R = S\n\n**Conditions:**\n- If X > Y, then Z < W\n- If A \u2264 B, then C \u2265 D\n- If E > F, then G < H\n\n**Question:**\nIs it possible to determine if N > R based on the information given? If so, explain your reasoning.  If not, explain why not.",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires a careful analysis of the given information and a deeper understanding of how the conditions relate to the coded inequalities.\n\n1. **Analyzing the Statement:** We are given a set of inequalities involving coded symbols: J < K, L \u2264 M, N > O, P \u2265 Q, R = S.  \n2. **Examining Conditions:**  We need to check if any of the conditions can be applied to the given inequalities to deduce a relationship between N and R. However, there are no direct connections between any of the conditions and the symbols N and R in the statement. \n3. **Identifying Indirect Connections:**  We need to look for indirect connections. Notice that the condition 'If X > Y, then Z < W'  resembles the inequality N > O. This could potentially lead to a connection to R if we could establish a link between O and R.\n4. **Chain of Deduction:** Unfortunately, there is no information that directly relates O to R. There is no condition or inequality that links O to another symbol that then links to another, ultimately connecting to R. \n5. **Conclusion:** We cannot determine whether N > R based on the given information. The lack of direct or indirect connections prevents us from making any conclusions regarding the relationship between N and R.\n\n**Key Takeaway:** This question highlights the importance of not only identifying direct connections but also searching for potential indirect chains of relationships to reach a conclusion.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient Information"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Premise:**\n*  \"A%B\" means \"A is less than B\"\n*  \"C^D\" means \"C is greater than or equal to D\"\n\n**Statements:**\n*  R%S\n*  S^T\n*  T%U\n*  U^V\n*  V%W\n\n**Question:**  Is it possible to determine if R is less than W? Explain your reasoning.",
+            "difficulty": "very tricky",
+            "reasoning": "To determine if R is less than W, we need to analyze the given statements and their relationships. Let's break down the information:\n\n1. **R%S:** This means R is less than S.\n2. **S^T:** This means S is greater than or equal to T.\n3. **T%U:** This means T is less than U.\n4. **U^V:** This means U is greater than or equal to V.\n5. **V%W:** This means V is less than W.\n\nNow, combining these statements:\n\n*  R is less than S, and S is greater than or equal to T. Therefore, we know R is less than T (or at least equal to T).\n*  T is less than U, and U is greater than or equal to V. Thus, we can conclude that T is less than V (or at least equal to V).\n*  V is less than W.\n\nSince we've established a chain of inequalities where R is less than T, T is less than V, and V is less than W, we can definitively state that R is less than W.  **Therefore, it is possible to determine that R is less than W.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot determine"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A group of friends are comparing their heights using a coded system. The following inequalities represent their relationships:\n\n*  A > B\n*  C < D\n*  E = F\n*  G > H\n*  J < K\n*  L > M\n\nIf we know that A is taller than C and K is taller than L, can we conclude that G is taller than F? Explain your reasoning.",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires careful analysis to avoid falling into a common fallacy. While the given information establishes relationships between some pairs, it doesn't directly compare G and F. We cannot assume that G is taller than F solely because G is taller than H, and H's height is unknown relative to F. This is a fallacy of incomplete information, where we try to draw a conclusion based on insufficient data.\n\nHere's a breakdown of why the conclusion is incorrect:\n\n1. **Focus on the Relevant Information:** We need to concentrate on the relationships involving G and F. However, the provided inequalities don't contain any direct comparisons between G and F or any elements that could help us link G to F. \n\n2. **Avoid Assumptions:**  It's tempting to assume that because G is taller than H, and H might be taller than F, then G must be taller than F. This assumption is invalid as we lack information about the relationship between H and F. \n\n3. **Possible Scenarios:** Consider these scenarios:\n    *  Scenario 1: If H is taller than F (H > F), then the conclusion G > F would be correct. \n    *  Scenario 2: If H is shorter than F (H < F), then the conclusion G > F would be incorrect. \n\nSince we don't know the relationship between H and F, we cannot confidently conclude whether G is taller than F. The provided inequalities do not support this conclusion.",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Maybe"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Statement:**\n*  A # B means A is less than B.\n*  A @ B means A is greater than or equal to B.\n*  A $ B means A is equal to B.\n*  A % B means A is less than or equal to B and A is not equal to B.\n\n**Conditions:**\n* If X @ Y, then Y % Z.\n* If P $ Q, then Q # R.\n\n**Question:** If S % T and T # U, is it possible to determine if U @ V? If so, explain why. If not, explain why not.",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful analysis and deduction to understand the relationships between the elements and the inverse condition. Let's break down the steps to determine if U @ V.\n\n1. **Analyze the given information:**\n   * We know S % T, meaning S is less than or equal to T but not equal to T.\n   * We also know T # U, meaning T is less than U.\n\n2. **Apply the inverse conditions:**\n   *  Since T # U (T is less than U), and we know if X @ Y then Y % Z, we can deduce that U % V (U is less than or equal to V but not equal to V). This is because T is less than U, satisfying the 'X @ Y' condition, which leads to the inverse relationship 'Y % Z' being applied, making U % V.\n\n3. **Determine the relationship between U and V:**\n   * We have established that U % V (U is less than or equal to V but not equal to V). This means that U is definitely less than V.\n\n4. **Apply the definition of @:**\n   * Since U is less than V, we can conclude that U is not greater than or equal to V. Therefore, U @ V is not possible.\n\n**Final Answer:** It is not possible to determine if U @ V based on the given information. The information provided only establishes that U is less than V, not that it is greater than or equal to V.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Premise:**\n* If A # B, then C $ D.\n* If C @ D, then E % F.\n* If E % F, then G * H.\n* If G * H, then I ^ J.\n\n**Assumption:** A # B, and D $ C\n\n**Question:** Is it **necessarily true** that I ^ J?",
+            "difficulty": "very tricky",
+            "reasoning": "This question is designed to test your ability to analyze complex relationships between coded symbols and draw valid conclusions. It requires you to combine multiple premises and assumptions to determine the truth value of the final conclusion.\n\nLet's break down the solution step-by-step:\n\n1. **Premise:** We are given a set of conditional statements. The first statement says that if A # B, then C $ D. This means that if A is related to B through the symbol '#', then C is related to D through the symbol '$'. Similarly, the remaining statements establish a chain of relationships between symbols.\n\n2. **Assumption:** We are provided with two assumptions: A # B and D $ C. The first assumption aligns directly with the first premise, confirming that C $ D is true.\n\n3. **Applying the Premises:** Since C $ D is true, and the premise states that if C $ D, then E % F, we can conclude that E % F is also true.\n\n4. **Chain of Implications:** Following the chain of implications established by the premises, since E % F is true, and the premise states that if E % F, then G * H, we can conclude that G * H is true.  Similarly, since G * H is true and the premise states that if G * H, then I ^ J, we can conclude that I ^ J is true.\n\n5. **Conclusion:** Based on the given premises and assumptions, we can definitively conclude that I ^ J is **necessarily true**. The chain of implications established by the premises, along with the given assumptions, directly leads to the conclusion that I ^ J is true.\n\n**Therefore, the answer is 'necessarily true'.**\n\n**Key Points:**\n* The key to solving this question is to understand the logic of conditional statements and how they connect to form a chain of implications.\n* The multiple premises and assumptions require careful analysis and understanding of their relationships.\n* It is important to track the chain of implications step-by-step, ensuring that each conclusion is logically derived from the previous premises and assumptions.",
+            "options": [
+                "necessarily true",
+                "possibly true",
+                "necessarily false",
+                "possibly false"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Statement:** In a certain code, symbols represent mathematical operations. \n\n**Coded Symbols:**\n*  `&` represents multiplication \n*  `%` represents division\n*  `^` represents subtraction\n\n**Inequalities:**\n*  `P & Q > R ^ S`\n*  `T % U < V`\n*  `R ^ S > V`\n*  `Q > U`\n\n**Question:** If `P` is greater than zero and `T` is greater than zero, is `P & T` greater than `(R ^ S) % U`? ",
+            "difficulty": "very tricky",
+            "reasoning": "This question is designed to assess a student's ability to manipulate inequalities involving multiplication, division, and subtraction within a coded context. Here's a step-by-step solution:\n\n1. **Understanding the Inequalities:**\n   *  `P & Q > R ^ S` translates to `P * Q > R - S`\n   *  `T % U < V` translates to `T / U < V`\n   *  `R ^ S > V` translates to `R - S > V`\n   *  `Q > U` remains unchanged.\n\n2. **Combining Inequalities:**\n   * Since `R - S > V` and `T / U < V`, we can conclude `T / U < R - S`.\n   * We know `P * Q > R - S` and `T / U < R - S`.  Therefore, we can infer that `P * Q > T / U`.\n\n3. **Analyzing the Question:**\n   * The question asks if `P * T` (represented by `P & T`) is greater than `(R - S) / U` (represented by `(R ^ S) % U`).\n   * We know `P * Q > T / U`. Since `Q > U`, multiplying both sides of this inequality by `P` (which is positive) maintains the inequality:  `P * Q * P > P * (T / U)`.\n   * Simplifying the inequality: `P^2 * Q > P * (T / U)`.\n   * Since `P > 0`, we can divide both sides by `P` without changing the inequality: `P * Q > T / U`. \n\n4. **Final Conclusion:**\n   * We have established `P * Q > T / U`, which is equivalent to `P & Q > T % U`.  Since `Q > U`, we can conclude that `P & T` is **greater than** `(R ^ S) % U`. \n\n**Therefore, the answer is YES.**",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Maybe"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Statement:** In a certain code, each letter represents a unique number. \n\n**Code:**  J < K, L > M, N > O, P = Q, R < S, T > U, V > W, X > Y, Z < K, L > R, S > T, V < N, O > P, R < Q\n\n**Question:**  If we know that the order of L, S, and V is L > S > V, what is the correct order of the following set of letters: K, R, Q, N, T, and Y? ",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful analysis and multiple inferences from the provided code. Here's how to solve it:\n\n1. **Establish Key Relationships:** We know L > S > V.  This allows us to infer a few key relationships:\n    * L > S, meaning L > T (since S > T)\n    * L > V, meaning L > N (since V < N)\n    * S > V, meaning S > N (since V < N)\n\n2. **Deduce Order:** Let's analyze each letter in the target set:\n    * **K:** We know Z < K, but we don't have direct comparisons with other letters in the target set. \n    * **R:** We know L > R and R < Q, but we don't know the exact position of R within the target set.\n    * **Q:** We know R < Q, and from the code, we also have P = Q.  However, neither P nor Q has direct comparisons with the other letters in the target set.\n    * **N:** We know V < N and L > N. This places N between L and V in the established order.  Since L > S > V, we know N is somewhere within the range of L > N > V.\n    * **T:** We know S > T and L > T.  This places T below both L and S in the established order.\n    * **Y:** We know X > Y, but this doesn't help us with the target set.\n\n3. **Combine Information:**  We can now deduce a partial order: L > N > T > V. We also know R < Q and K and Y are not directly comparable with other letters in the target set.  Therefore, the correct order is: **L > N > T > V > R > Q > K > Y** (The position of R and Q are not precisely defined based on the available information, however, we know R is above Q). \n\n**Important Note:** This question highlights the challenges of working with coded inequalities.  While we can infer some relationships, a complete ordering of all letters is not necessarily possible due to the limitations of the provided information.",
+            "options": [
+                "L > N > T > V > R > Q > Y > K",
+                "L > N > T > V > Q > R > K > Y",
+                "L > N > T > R > V > Q > K > Y",
+                "L > N > T > V > R > Q > Y > K"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Statement:**  A > B, C < D, D \u2265 E, F \u2264 B, G > E, H < A\n\n**Question:** Is H > C? \n\n**Options:**\n* Yes\n* No",
+            "difficulty": "very tricky",
+            "reasoning": "This question tests your ability to analyze and deduce relationships from a series of coded inequalities. Here's how to break it down:\n\n1. **Identifying Key Relationships:** We need to determine if H is greater than C. To do this, we need to find a connection between H and C through the given inequalities.\n\n2. **Tracing the Connections:**  Let's follow the inequalities to link H and C:\n    *  H < A (given)\n    *  A > B (given)\n    *  F \u2264 B (given)\n    *  We have no direct relationship between F and C.\n\n3. **Finding an Indirect Connection:** While there's no direct link between F and C, we can use the other inequalities to create one:\n    *  C < D (given)\n    *  D \u2265 E (given)\n    *  G > E (given)\n\n4. **Combining Information:**  Now, let's combine these relationships to see if we can establish a connection between H and C:\n    *  H < A (given)\n    *  A > B (given) -->  Therefore, H < B\n    *  F \u2264 B (given) -->  Therefore, H < F\n    *  G > E (given)\n    *  D \u2265 E (given) --> Therefore, G > D\n    *  C < D (given) --> Therefore, G > C\n\n5. **Final Deduction:**  We have established that H < F and G > C. However, we have no direct connection between F and G.  Therefore, we cannot definitively conclude whether H is greater than C.\n\n**Answer:** No",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Statement:**\n\nX @ Y, Z % W, V = Y, W # U, T ~ Z, S = U, R # V, Q ~ X\n\n**Conditions:**\n\nIf a variable is greater than another variable, then it is also greater than any variable that is less than or equal to the second variable.\n\n**Question:**\n\nIs Q % S?",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires careful analysis of the given coded inequalities and the additional conditions.  Let's break down the solution step-by-step:\n\n1. **Analyzing the given inequalities:**\n   - X @ Y (X is greater than Y)\n   - Z % W (Z is less than W)\n   - V = Y (V is equal to Y)\n   - W # U (W is not greater than U)\n   - T ~ Z (T is not less than Z)\n   - S = U (S is equal to U)\n   - R # V (R is not greater than V)\n   - Q ~ X (Q is not less than X)\n\n2. **Applying the condition:** The condition states that if a variable is greater than another variable, then it is also greater than any variable that is less than or equal to the second variable. This means we can deduce additional inequalities from the given ones.\n\n3. **Deductions:**\n    - Since X @ Y, and V = Y, then X @ V (X is greater than V)\n    - Since W # U, and S = U, then W # S (W is not greater than S)\n\n4. **Combining deductions:** We know that X @ V and V = Y, therefore, X @ Y.  Additionally, we know that Q ~ X, so Q @ Y.  From the initial inequalities, we have Z % W.  We also know that V = Y and R # V, therefore R # Y.  Combining this information with Q @ Y, we can conclude that Q @ R.\n\n5. **Final deductions:** Since Q @ R and R # V, we can deduce that Q @ V. Since V = Y and W # S, we know that W # Y.  Therefore, Q @ W.  Combining this with Z % W, we can conclude that Q @ Z.  Finally, we know that T ~ Z, which means that Z # T. Since Q @ Z and Z # T, we can conclude that Q % T.\n\n6. **Answer:** Therefore, the final answer is YES. Q is less than T (Q % T).",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Given that A > B, C < D, and E = F, is A > C? \n\n(1) B > D \n(2) E > C",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question is tricky because it requires us to carefully analyze the relationships between multiple variables and consider how the additional information in each statement impacts the original inequalities. \n\n**Statement (1): B > D**\nThis statement, combined with the original inequality C < D, implies that B > C. However, this information alone doesn't allow us to determine whether A > C. We don't have a direct relationship between A and C. Thus, statement (1) is **insufficient**. \n\n**Statement (2): E > C**\nThis statement, combined with the original inequality E = F,  implies that F > C. However, this information doesn't tell us anything about A's relationship to C. We still lack a direct connection between A and C.  Therefore, statement (2) is also **insufficient**. \n\n**Statements (1) and (2) Together:**\nEven with both statements, we still can't definitively conclude whether A > C.  While we know B > D, and we know E > C, we have no link connecting the pairs. The original information tells us A > B, but that doesn't allow us to make a comparison between A and C. Therefore, even together, the statements are **insufficient**. \n\n**Final Answer:**  The answer is **(E) Statements (1) and (2) TOGETHER are NOT sufficient to answer the question asked.**\n\n**Explanation:** This question challenges the test taker to analyze relationships within a complex network of coded inequalities. The key is understanding that even though we have information about individual pairs (B > D and E > C), these don't directly connect to the question of whether A > C.  The question highlights the importance of recognizing the need for a direct link between the variables in question.",
+            "options": [
+                "Yes",
+                "No",
+                "Insufficient",
+                "Maybe"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Premise:**\n\n*  A & B means \"A is greater than B\"\n*  A % B means \"A is less than or equal to B\"\n*  A # B means \"A is equal to B\"\n\n**Statements:**\n\n*  P & Q\n*  R % S\n*  S # T\n*  T & U\n*  V % P\n\n**Question:**\n\nWhich of the following statements is **definitely true** based on the given information?\n\n  * A.  U & Q\n  * B.  R % V\n  * C.  S # U\n  * D.  P & T",
+            "difficulty": "very tricky",
+            "reasoning": "This question tests the ability to combine and interpret coded inequalities, demanding a chain of logical deductions. Here's how to solve it:\n\n1. **Break down the statements:**\n    * P & Q:  P is greater than Q\n    * R % S: R is less than or equal to S\n    * S # T: S is equal to T\n    * T & U: T is greater than U\n    * V % P: V is less than or equal to P\n\n2. **Identify the relationships that can be combined:**  We need to find a way to connect the elements in the question (U and Q, R and V, etc.) using the given statements.  Notice that 'T' appears in multiple statements, making it a crucial link. \n\n3. **Apply transitivity:**  Since 'T' is equal to 'S' (S # T), and 'S' is greater than or equal to 'R' (R % S), we can conclude that 'T' is greater than or equal to 'R' (T % R). Similarly, since 'T' is greater than 'U' (T & U), and 'T' is greater than or equal to 'R' (T % R), we can conclude that 'U' is less than or equal to 'R' (U % R). \n\n4. **Find the link to the question:** The statement 'V % P' tells us that 'V' is less than or equal to 'P'.  Combining this with the fact that 'P' is greater than 'Q' (P & Q), we can deduce that 'V' is less than or equal to 'Q' (V % Q). \n\n5. **Analyze the options:**\n\n    * **A.  U & Q:** This cannot be determined definitively as we only know U % R and V % Q.  We don't have a direct relationship between U and Q. \n    * **B.  R % V:** This is **definitely true**. We established earlier that U % R (U is less than or equal to R) and V % Q (V is less than or equal to Q). Since R is greater than or equal to U, and V is less than or equal to Q, and Q is less than P, which in turn is greater than R, then R is definitely greater than or equal to V. \n    * **C.  S # U:** This is incorrect.  We know that S # T and T & U, meaning S is equal to T, and T is greater than U. Therefore, S is greater than U (S & U), not equal. \n    * **D.  P & T:** This is incorrect. We know P & Q and T & U.  We do not have a direct comparison between P and T. \n\n**Therefore, the correct answer is B. R % V**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise:**\n\n*  A > B\n*  C < D\n*  E = F\n*  G > H\n*  K < L\n*  M > N\n*  O < P\n*  Q > R\n*  S < T\n*  U > V\n*  W < X\n*  Y > Z\n\n**Inferences:**\n\n1. Is A > D?\n2. Is B < C?\n3. Is E > K?\n4. Is H < M?\n5. Is N > P?\n6. Is Q > T?\n7. Is V < X?\n8. Is Y > Z?\n\n**Question:** For each inference, determine whether it is **True**, **False**, or **Cannot be Determined** based on the provided coded inequalities.",
+            "difficulty": "very tricky",
+            "reasoning": "This question tests the ability to analyze coded inequalities and make logical deductions. It involves multiple steps of reasoning and understanding the transitive property of inequalities. Here's how to approach each inference:\n\n1. **Is A > D?**\n   - We know A > B, but there's no direct relationship between A and D. We also know C < D.  Therefore, we **cannot determine** if A > D.\n\n2. **Is B < C?**\n   - We know A > B and C < D. There's no direct relationship between B and C. Thus, we **cannot determine** if B < C.\n\n3. **Is E > K?**\n   - We know E = F and K < L. There's no direct relationship between E and K. Therefore, we **cannot determine** if E > K.\n\n4. **Is H < M?**\n   - We know G > H and M > N. There's no direct relationship between H and M. Consequently, we **cannot determine** if H < M.\n\n5. **Is N > P?**\n   - We know M > N and O < P. There's no direct relationship between N and P. Therefore, we **cannot determine** if N > P.\n\n6. **Is Q > T?**\n   - We know Q > R and S < T. There's no direct relationship between Q and T.  Thus, we **cannot determine** if Q > T.\n\n7. **Is V < X?**\n   - We know U > V and W < X. There's no direct relationship between V and X. Therefore, we **cannot determine** if V < X.\n\n8. **Is Y > Z?**\n   - We are given that Y > Z.  Therefore, this statement is **True**.\n\n**Key Takeaway:**  This question emphasizes the importance of understanding the limitations of coded inequalities.  Even with a complex set of relationships, we can only draw conclusions about variables that are directly or indirectly connected.  Remember, the absence of a direct relationship doesn't automatically mean a relationship can be inferred. ",
+            "options": [
+                "Cannot be Determined",
+                "True",
+                "False",
+                "Insufficient Data"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Premise:**\n*  A@B means A is strictly greater than B.\n*  A#B means A is greater than or equal to B.\n*  A$B means A is less than or equal to B.\n*  A%B means A is less than B.\n\n**Question:** If X@Y, Y#Z, and Z$W, can we definitively determine whether X%W?",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires us to carefully analyze the relationships between variables using the given coded inequalities. Let's break it down step-by-step:\n\n1. **Understanding the Symbols:**\n   * A@B: A is strictly greater than B. This means A is larger than B, but they cannot be equal.\n   * A#B: A is greater than or equal to B. This means A can be either larger than or equal to B.\n   * A$B: A is less than or equal to B. This means A can be either smaller than or equal to B.\n   * A%B: A is less than B. This means A is smaller than B, but they cannot be equal.\n\n2. **Analyzing the Given Information:**\n   * X@Y: X is strictly greater than Y. This means X is larger than Y.\n   * Y#Z: Y is greater than or equal to Z. This means Y could be either larger than or equal to Z.\n   * Z$W: Z is less than or equal to W. This means Z could be either smaller than or equal to W.\n\n3. **Determining the Relationship between X and W:**\n   We need to determine if we can definitively say that X is less than W (X%W).  Let's consider the possible scenarios:\n      * **Scenario 1:**  If Y is strictly greater than Z (Y>Z), then X > Y > Z, and since Z is less than or equal to W, we can conclude X is greater than W (X > W).  In this scenario, X%W is **false**.\n      * **Scenario 2:**  If Y is equal to Z (Y=Z), then X > Y = Z, and since Z is less than or equal to W, we still can't definitively say whether X is less than W. It could be that X is greater than or equal to W. In this scenario, X%W is **possibly false**.\n\n**Conclusion:** We cannot definitively determine whether X%W is true or false because the relationship between Y and Z is not fixed.  There are scenarios where X%W would be false and scenarios where it could be false. Therefore, we cannot conclude whether X%W is true or false based on the given information.\n\n**Key Takeaway:** When analyzing coded inequalities, be mindful of the different symbols and their meanings.  Remember that 'greater than or equal to' and 'less than or equal to' introduce uncertainty, which can make it difficult to draw definitive conclusions about relationships between variables.",
+            "options": [
+                "True",
+                "False",
+                "Maybe True",
+                "Maybe False"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Premise:**\n\n* \"A @ B\" means \"A is greater than or equal to B\"\n* \"A # B\" means \"A is less than B\"\n* \"A $ B\" means \"A is equal to B\"\n* \"A % B\" means \"A is not equal to B\"\n* \"A & B\" means \"A is greater than B\"\n\n**Statements:**\n\n* \"J @ K\"\n* \"K # L\"\n* \"M & L\"\n* \"N $ M\"\n\n**Question:**\n\nIs it possible to determine whether \"J % N\" is true or false based on the given information? If so, is it true or false? ",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful analysis of the relationships between the symbols and a bit of logical deduction. Here's how to break it down:\n\n1. **Understanding the Symbols:**  The symbols represent inequalities and equalities with slight variations.  Note that 'greater than or equal to' and 'less than' are the key to this problem.\n\n2. **Analyzing the Statements:**\n    * \"J @ K\" means \"J is greater than or equal to K\"\n    * \"K # L\" means \"K is less than L\"\n    * \"M & L\" means \"M is greater than L\"\n    * \"N $ M\" means \"N is equal to M\"\n\n3. **Combining Information:** We can combine the statements to create a chain of relationships:\n    * J >= K (from J @ K)\n    * K < L (from K # L)\n    * M > L (from M & L)\n    * N = M (from N $ M)\n\n4. **Deduction:** Now we can use these relationships to determine the relationship between J and N. Since M is greater than L, and K is less than L, we know that M is greater than K.  Since J is greater than or equal to K,  J could be equal to or greater than K. Therefore, J could be equal to or greater than M. We know N is equal to M. Therefore, J could be equal to or greater than N. Thus, J is not necessarily not equal to N. \n\n5. **Answer:** Based on the information provided, it is **not possible** to determine whether \"J % N\" is true or false. It is possible that J is equal to N.  \n",
+            "options": [
+                "Yes, True",
+                "Yes, False",
+                "No",
+                "Not enough information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Consider a coordinate plane where the following inequalities are represented graphically:\n\n1.  x + 2y \u2264 4\n2.  -3x + y > 1\n3.  x \u2265 0\n4.  y < 2\n\nDetermine the maximum possible value of the expression '2x + y' within the region defined by the intersection of all four inequalities. Explain your reasoning and provide the coordinates of the point where this maximum value occurs.",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires understanding the concepts of graphing inequalities and finding the maximum value of an expression within a constrained region. Here's a step-by-step solution:\n\n1. **Graphing the Inequalities:**\n\n   * **x + 2y \u2264 4:**  To graph this, first, treat it as an equality (x + 2y = 4). Find two points on this line (e.g., (0, 2) and (4, 0)).  Since it's a 'less than or equal to' inequality, the line is solid, and the shaded region is below the line.\n   * **-3x + y > 1:**  Similar to the previous step, treat it as -3x + y = 1. Find two points (e.g., (0, 1) and (-1/3, 0)). The inequality is 'greater than,' so the line is dashed, and the shaded region is above the line.\n   * **x \u2265 0:** This represents all points to the right of the y-axis (including the y-axis). The line is solid.\n   * **y < 2:**  This represents all points below the horizontal line y = 2 (excluding the line). The line is dashed.\n\n2. **Identifying the Feasible Region:** The feasible region is the area where all four shaded regions overlap. This region will be a polygon.\n\n3. **Finding the Maximum Value:**  The maximum value of the expression '2x + y' will occur at one of the vertices of the feasible region. We need to determine the coordinates of these vertices.\n\n   * **Vertex 1:** Intersection of lines x + 2y = 4 and -3x + y = 1. Solve this system of equations to find the coordinates.\n   * **Vertex 2:** Intersection of lines x + 2y = 4 and y = 2. Solve this system.\n   * **Vertex 3:** Intersection of lines -3x + y = 1 and x = 0. Solve this system.\n   * **Vertex 4:** The origin (0, 0).\n\n4. **Evaluating the Expression:** Substitute the x and y coordinates of each vertex into the expression '2x + y' and calculate the value. The highest value obtained will be the maximum.\n\n**Example:** Let's say you find the coordinates of the vertices to be (1, 1.5), (0, 2), (-1/3, 0), and (0, 0).  Substitute these into the expression: \n\n* (1, 1.5): 2(1) + 1.5 = 3.5\n* (0, 2): 2(0) + 2 = 2\n* (-1/3, 0): 2(-1/3) + 0 = -2/3\n* (0, 0): 2(0) + 0 = 0\n\nThe maximum value of '2x + y' within the feasible region is 3.5, occurring at the point (1, 1.5).\n\n**Important Note:** The actual solution might involve different vertex coordinates depending on the exact shape of the feasible region. The steps outlined here illustrate the general method to solve this type of problem.",
+            "options": [
+                "3.5",
+                "2",
+                "4",
+                "1"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Premise:**\n\n*  'A > B' is represented as 'A # B'.\n*  'A \u2264 B' is represented as 'A $ B'.\n*  'A = B' is represented as 'A % B'.\n*  'A \u2265 B' is represented as 'A ^ B'.\n\n**Given:**\n*  X # Y\n*  Y $ Z\n*  Z % W\n*  W ^ V\n*  V # U\n\n**Question:**\n\nIf we subtract the inequality 'Y $ Z' from the inequality 'X # Y', what is the resulting inequality in terms of the coded symbols?",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question challenges us to understand how coded inequalities behave when added or subtracted. Here's how to solve it:\n\n1. **Translate the coded inequalities into standard mathematical inequalities:**\n    * X # Y  ->  X > Y\n    * Y $ Z  ->  Y \u2264 Z\n    * Z % W  ->  Z = W\n    * W ^ V  ->  W \u2265 V\n    * V # U  ->  V > U\n\n2. **Subtract the inequalities:**\n    Since we're subtracting 'Y \u2264 Z' from 'X > Y', we need to flip the sign of 'Y \u2264 Z' and add it to 'X > Y'. This becomes:\n    X > Y + (-Y) \u2265 (-Z)\n    Simplifying: X \u2265 -Z\n\n3. **Translate back to coded symbols:**\n    X \u2265 -Z is equivalent to X ^ (-Z), but since we need to express the result in terms of the given variables, we need to find a way to represent -Z using the available variables.\n\n4. **Analyzing relationships:**\n    * We know Z = W and W \u2265 V.  Therefore, Z \u2265 V.  Since Z = W, we can also say W \u2265 V.  \n    * Combining V > U and W \u2265 V, we can infer that W > U.\n    * As Z = W, we can conclude Z > U.\n\n5. **Final conclusion:**\n    Since we've established that Z > U, the resulting inequality after subtracting 'Y $ Z' from 'X # Y' is **X ^ U**.  \n\nTherefore, the answer is **X ^ U**.",
+            "options": [
+                "X # U",
+                "X ^ U",
+                "X $ U",
+                "X % U"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Statement:**\n\n* \"X # Y\" means \"X is greater than Y\"\n* \"X @ Y\" means \"X is less than or equal to Y\"\n* \"X $ Y\" means \"X is equal to Y\"\n\n**Conditions:**\n\n* A # B\n* C @ D\n* E $ F\n* F # A\n* B @ C\n* D $ E\n\n**Question:**\n\nCan we determine if B is greater than F? If so, explain. If not, explain why not.",
+            "difficulty": "very tricky",
+            "reasoning": "This problem requires careful analysis of the provided inequalities and their relationships. Let's break it down step by step:\n\n1. **Understanding the Symbols:**\n   - \"#\" represents \"greater than\"\n   - \"@\" represents \"less than or equal to\"\n   - \"$\" represents \"equal to\"\n\n2. **Analyzing the Conditions:**\n   - **A # B**:  A is greater than B\n   - **C @ D**: C is less than or equal to D\n   - **E $ F**:  E is equal to F\n   - **F # A**: F is greater than A\n   - **B @ C**: B is less than or equal to C\n   - **D $ E**: D is equal to E\n\n3. **Connecting the Pieces:**\n   - We know F is greater than A (F # A) and A is greater than B (A # B). This implies that F is also greater than B (F > B).\n   - We know B is less than or equal to C (B @ C) and C is less than or equal to D (C @ D). This suggests that B is less than or equal to D (B \u2264 D).\n   - We know D is equal to E (D $ E) and E is equal to F (E $ F). This means D, E, and F are all equal (D = E = F).\n\n4. **The Conclusion:**\n   - We have determined that F is greater than B (F > B) and that F is equal to D (F = D).  Since B is less than or equal to D (B \u2264 D), it is definitely not greater than F. \n\n**Therefore, we cannot determine if B is greater than F. While we know F is greater than B, we don't have enough information to compare B directly to F.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot determine"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Given:**\n\n* A $ B, B & C, C # D, D @ E, E % F, F * G\n* **Statement:** G # A\n\n**Task:**\n\n* Can we definitely conclude that G # A (G is less than A) based on the given inequalities?",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires a careful analysis of the relationships between the symbols. Let's break down the given inequalities and their implications:\n\n1. **A $ B:**  A is smaller than B.\n2. **B & C:** B is greater than C. This means that A is smaller than C (because A is smaller than B, which is greater than C).\n3. **C # D:** C is less than D.\n4. **D @ E:** D is greater than E.\n5. **E % F:** E is smaller than F.\n6. **F * G:** F is greater than G.\n\nNow, let's try to connect G and A. We know that F is greater than G (F * G), and E is smaller than F (E % F). This means that G is smaller than E (because F is greater than both G and E).\n\nHowever, we cannot definitively conclude that G is smaller than A. While we know G is smaller than E and A is smaller than C, we don't have a direct comparison between E and C. The given inequalities don't provide enough information to determine whether E is greater than, less than, or equal to C. Therefore, we cannot confidently conclude that G # A.\n\n**In summary, the statement G # A cannot be definitely concluded from the given inequalities.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Coded Inequalities:**\n\n*  X \u2264 Y\n*  Y > Z\n*  Z \u2260 W\n*  W \u2264 T\n*  T > U\n\n**Statement:** X > U\n\n**Answer:** ",
+            "difficulty": "very tricky (8/10)",
+            "reasoning": "This question tests the understanding of the Transitive Property of Inequalities and involves careful analysis of complex relationships and hidden information.\n\n**Step 1: Analyze the Coded Inequalities**\n\n*  X \u2264 Y: X is less than or equal to Y. This means X could be equal to Y, or X could be smaller than Y.\n*  Y > Z: Y is strictly greater than Z. This establishes a definite order between Y and Z.\n*  Z \u2260 W: Z is not equal to W. This means Z could be greater than W, or Z could be less than W.\n*  W \u2264 T: W is less than or equal to T. Similar to X \u2264 Y, W could be equal to T or smaller than T.\n*  T > U: T is strictly greater than U. This establishes a definite order between T and U.\n\n**Step 2: Identify the Relationship between X and U**\n\nWe need to determine whether X is definitively greater than U based on the provided inequalities. The key is to connect the chain of inequalities from X to U.\n\n* We know that X \u2264 Y and Y > Z. This means X could be less than or equal to Z (if X = Y) or X could be greater than Z (if X < Y).\n* We also know that Z \u2260 W, which implies that Z could be greater than W or less than W. Therefore, we cannot definitively establish a relationship between X and W.\n*  W \u2264 T and T > U. This means W could be less than or equal to U (if W = T) or W could be greater than U (if W < T).\n\n**Step 3: Conclude the Answer**\n\nDue to the ambiguity introduced by the '\u2260' and '\u2264' operators, we cannot definitively conclude whether X is greater than U. The provided inequalities allow for scenarios where X is less than or equal to U. Therefore, the statement X > U **cannot be determined** based on the given information.\n\n**Key Takeaway:** When dealing with inequalities, remember that the Transitive Property holds true only for strict inequalities (>, <).  When dealing with '\u2264' or '\u2265', multiple possibilities exist, and the relationship between variables may not be definitively established.",
+            "options": [
+                "True",
+                "False",
+                "Cannot be determined",
+                "Insufficient information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given the following coded inequalities, determine the maximum possible value of 'X':\n\n* X > Y\n* Y < Z\n* Z = W\n* W < V\n* V > U\n* U > T\n* T < S\n* S > R\n* R < Q\n* Q = P\n* P > O\n\nWhere all variables represent distinct positive integers.",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question tests the ability to analyze a complex chain of inequalities to identify the maximum value of a specific variable. Here's how to solve it:\n\n1. **Understanding the Chain:** The provided inequalities form a chain where each variable's relationship is defined relative to another. This chain helps us understand the relative order of values.\n\n2. **Identifying the Maximum:** Since we are looking for the maximum value of 'X', we need to find the variable that is definitively greater than 'X' in the chain. This variable would set the upper limit for 'X's possible values.\n\n3. **Tracing the Chain:**  From the given inequalities, we can trace a path starting from 'X' to find the variable that holds the highest potential value: \n\n   *  X > Y  \n   *  Y < Z \n   *  Z = W \n   *  W < V \n   *  V > U\n   *  U > T\n   *  T < S\n   *  S > R\n   *  R < Q\n   *  Q = P\n   *  P > O\n\n4. **Conclusion:** We find that 'O' is the variable that has the highest potential value compared to 'X'.  Therefore, the maximum possible value of 'X' is one less than the minimum value of 'O'. Since the variables represent distinct positive integers, the maximum possible value of 'X' is 'O - 1'.  It is impossible to determine the exact value of 'O' or the maximum value of 'X' with the given information.\n\n**Key Point:** In such complex inequality chains, focusing on identifying the variable that defines the upper bound for the target variable is crucial. Remember that the maximum value of a variable is always one less than the minimum value of the variable that is definitively greater.",
+            "options": [
+                "O - 1",
+                "O",
+                "P - 1",
+                "P"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A company is conducting a survey on customer satisfaction with their products. They assign symbols to represent different aspects of satisfaction: \n\n* **H:** High satisfaction \n* **M:** Moderate satisfaction \n* **L:** Low satisfaction\n\nThe following relationships are found in the survey data:\n\n* **Product A > Product B:** Customer satisfaction with Product A is higher than Product B.\n* **Product C < Product D:** Customer satisfaction with Product C is lower than Product D.\n* **Product B = Product E:** Customer satisfaction with Product B is the same as Product E.\n* **Product D > Product E:** Customer satisfaction with Product D is higher than Product E.\n\nBased on this information, which of the following statements **must** be true?\n\n",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful analysis of the relationships between the products. Here's how to break it down:\n\n1. **Combine Information:**  We know that Product A > Product B and Product B = Product E. Combining these, we get Product A > Product E.\n\n2. **Further Comparisons:** We also know Product D > Product E. Since Product A > Product E and Product D > Product E, we can conclude that either Product A > Product D or Product D > Product A (we don't have enough information to determine a definitive relationship between A and D). \n\n3. **Analyze Answer Choices:**  The question asks for a statement that **must** be true.  Since we cannot definitively determine the relationship between Product A and Product D, any answer choice claiming a specific relationship between them is incorrect.\n\n4. **Correct Answer:** The only remaining option is the one that doesn't make a direct comparison between A and D, which is the correct answer.\n\n**Key Learning Point:**  This question demonstrates how combining multiple pieces of information can lead to new conclusions.  It also emphasizes the importance of identifying the relationships that can and cannot be definitively determined from the given data.",
+            "options": [
+                "Product A > Product D",
+                "Product D > Product A",
+                "Product C < Product E",
+                "Product A > Product C"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Coded Inequalities",
+    "exam_id": 17,
+    "order": 2
+}

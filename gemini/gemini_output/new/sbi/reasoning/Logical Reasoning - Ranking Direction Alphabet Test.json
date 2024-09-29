@@ -1,0 +1,926 @@
+{
+    "questions": [
+        {
+            "question": "Imagine a square with the letters A, C, E, and G placed at each corner, moving clockwise starting from A. If we follow this clockwise movement, which letter would be considered the 'first' in alphabetical order, and which letter would be the 'last'?",
+            "difficulty": "moderate",
+            "reasoning": "To determine the 'first' and 'last' positions in this scenario, we need to consider both the alphabetical order and the clockwise movement. Starting from A and moving clockwise, the order becomes: A, G, E, and C.  \n\nLooking at the alphabetical order, A comes first, and C comes last. \n\nTherefore, the 'first' position is occupied by **A**, and the 'last' position is occupied by **C**.",
+            "options": [
+                "A and C",
+                "G and E",
+                "E and A",
+                "C and A"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A group of friends are lining up for a photo.  We know that:\n\n*  Sarah is standing directly to the left of Ben.\n*  Chris is standing three spots to the right of Sarah.\n*  Emily is standing two spots to the left of Chris.\n\nIf we were to arrange them in alphabetical order from left to right, who would be the third person in the line?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests our ability to deduce the relative positions of individuals based on directional clues.  Let's break it down:\n\n1. **Visualize:** Imagine a line with Sarah and Ben standing next to each other, with Sarah on the left.  \n\n2. **Chris's position:** Chris is three spots to the right of Sarah, so we can place him three spots to the right of Sarah. \n\n3. **Emily's position:** Emily is two spots to the left of Chris, so we can place her two spots to the left of Chris.\n\n4. **Alphabetical order:** Now, let's arrange them alphabetically: Ben, Chris, Emily, Sarah.  \n\n5. **Third person:**  The third person in line alphabetically is **Emily**. \n\nTherefore, Emily would be the third person in the line if they were arranged alphabetically. ",
+            "options": [
+                "Ben",
+                "Chris",
+                "Emily",
+                "Sarah"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "F is over G. H is under G. J is over H. K is under J. Which element is directly over K?",
+            "difficulty": "moderate",
+            "reasoning": "This question requires understanding the relationships between the elements based on 'over' and 'under' statements. We need to find the element that is directly above K. \n\n1. **Visualize:** It's helpful to imagine a vertical stack.  \n2. **K is under J:** This means J is directly above K. \n3. **J is over H:** J is above H. \n4. **H is under G:** G is above H. \n5. **F is over G:** F is above G. \n\nTherefore, the element directly over K is **J**.",
+            "options": [
+                "F",
+                "G",
+                "H",
+                "J"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Imagine the alphabet is moving backward, starting from the letter 'Z'. If we move 5 letters backward, then 3 letters forward, what letter will we end up on?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests your understanding of the alphabet's sequence and how moving forward or backward affects the letter. Here's how to solve it:\n\n1. **Start at 'Z' and move 5 letters backward.** Counting backward, we have Z, Y, X, W, V, U. So, after moving 5 letters backward, we reach 'U'.\n\n2. **From 'U', move 3 letters forward.** Counting forward, we have U, V, W, X.  \n\nTherefore, the final letter after performing both actions is 'X'. ",
+            "options": [
+                "U",
+                "V",
+                "W",
+                "X"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Context:** You are given a sequence of letters that follow a specific pattern.  \n\n**Instructions:** Determine the direction (left or right) in which the letters are moving based on their pattern, considering both the order and the differences between consecutive letters.  \n\n**Example:** \n* **Given:** Z, X, V, T, R  \n* **Direction:** Left (each letter is 2 letters behind the previous one in the alphabet)  \n\n**Question:**  \n* **Given:**  B, D, F, H, J, K, M, O, Q, S, U  \n* **Direction:**  ?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests your ability to analyze patterns within a sequence of letters and determine the direction of movement.  \n\nLet's break down the sequence:  \n\n* **B, D, F, H, J:**  These letters move in a pattern of +2, moving to the right in the alphabet.  \n* **J, K:**  This is a change in direction, as 'K' is only one letter ahead of 'J'.  \n* **K, M, O, Q, S, U:**  This continues a pattern of +2, moving to the right in the alphabet.  \n\nTherefore, the overall direction of the sequence is **right**.  \n\n**Key Points:**  \n\n* Pay attention to the individual differences between letters to identify the pattern.  \n* Consider changes in direction within the sequence.  \n* Focus on both the order of the letters and the pattern they follow to determine the overall direction.",
+            "options": [
+                "Left",
+                "Right",
+                "Up",
+                "Down"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Which letter is positioned between the letter that is two letters before 'J' and the letter that is three letters after 'P' in the alphabet?",
+            "difficulty": "medium",
+            "reasoning": "This question involves two steps of logical deduction within the alphabet.  First, we need to determine the letter that is two letters before 'J'. Counting backwards in the alphabet, we find that 'H' is two letters before 'J'.  Second, we need to determine the letter that is three letters after 'P'. Counting forward in the alphabet, we find that 'S' is three letters after 'P'.  Now, we need to identify the letter that is between 'H' and 'S'.  Therefore, the correct answer is 'I' because it comes directly after 'H' and before 'S' in the alphabetical order.  The key to solving this question is to break down the steps and follow the given directions carefully, including the correct order of operations in the 'Between' statement.",
+            "options": [
+                "H",
+                "I",
+                "S",
+                "T"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "If A is before B, C is after B, and D is before C, which of the following statements is true?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests your ability to understand the order of letters based on 'before' and 'after' statements. Let's break down the information given:\n\n1. **A is before B:** This means A comes earlier in the sequence than B.\n2. **C is after B:** This means C comes later in the sequence than B.\n3. **D is before C:** This means D comes earlier in the sequence than C.\n\nCombining these statements, we can deduce the following order:\n\nA - B - C - D\n\nTherefore, the true statement is: **D is before C.**\n\nThis type of question involves simple deduction based on the given relationships. You need to pay attention to the direction of the 'before' and 'after' statements and construct the order of the elements accordingly.",
+            "options": [
+                "A is before B",
+                "C is after B",
+                "D is before C",
+                "B is before A"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Scenario:** Five friends, Alice, Bob, Carol, David, and Emily, are standing in a line facing East.\n\n**Clues:**\n* Bob is standing to the left of Carol.\n* David is standing to the right of Emily.\n* Alice is not at either end of the line.\n* Carol is standing next to David.\n\n**Question:** What is the order of the friends from left to right?",
+            "difficulty": "moderate",
+            "reasoning": "This question requires combining multiple clues to deduce the order of the friends. Here's how to solve it:\n\n1. **Combine clues 1 and 2:** We know Bob is to the left of Carol, and David is to the right of Emily. This suggests a possible arrangement: Bob - Carol - David - Emily.\n\n2. **Apply clue 3:** Alice is not at either end, meaning she must be somewhere within the line. This means the arrangement is: Bob - Alice - Carol - David - Emily.\n\n3. **Combine clues 2 and 4:** Carol is standing next to David, confirming the arrangement: Bob - Alice - Carol - David - Emily.\n\nTherefore, the final order of the friends from left to right is **Bob, Alice, Carol, David, and Emily.**",
+            "options": [
+                "Bob, Carol, David, Emily, Alice",
+                "Alice, Bob, Carol, David, Emily",
+                "Bob, Alice, Carol, David, Emily",
+                "David, Carol, Alice, Bob, Emily"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given the following letters:  F, G, H, I, J\n\n1. H is to the left of J.\n2. I is two positions to the right of F.\n3. G is immediately to the left of H.\n\nWhat is the correct order of the letters from left to right?",
+            "difficulty": "moderate",
+            "reasoning": "This question requires us to analyze the directional clues and arrange the letters accordingly. Let's break it down step by step:\n\n1. **Clue 1:**  'H is to the left of J' tells us that J is to the right of H. We can represent this as:  _H J\n\n2. **Clue 2:**  'I is two positions to the right of F' means there's one letter between F and I.  We can represent this as: F _ I\n\n3. **Clue 3:**  'G is immediately to the left of H' means G is directly before H. We can combine this with Clue 1:  G H J\n\n4. **Combining Clues:** Now, notice that Clue 2 places 'I' two positions right of 'F'. Since we already know 'H J' are together, 'F' must be to the left of G. This gives us the complete sequence:  F G H J I\n\nTherefore, the final arrangement of the letters from left to right is:  F G H J I.",
+            "options": [
+                "FGHJI",
+                "FGHIJ",
+                "FJIGH",
+                "FHJIG"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "There are five elements arranged in a line: A, B, 1, 2, and 3.  \n\n* A is at least two positions to the left of 1. \n* B is at most one position to the right of 2. \n* 3 is immediately to the right of 1.\n\nWhich of the following arrangements is **NOT** possible based on the given information?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the information and analyze each arrangement:\n\n1. **A is at least two positions to the left of 1:** This means there must be at least two spaces between A and 1. \n2. **B is at most one position to the right of 2:** This means B can be either next to 2 or to its immediate left.\n3. **3 is immediately to the right of 1:** This is a direct placement, indicating they must be adjacent.\n\nNow, let's examine the possible arrangements:\n\n* **Arrangement 1: A 2 B 1 3**  -  **Valid**  (Meets all conditions)\n* **Arrangement 2: A 2 1 B 3**  -  **Valid**  (Meets all conditions)\n* **Arrangement 3: 2 A B 1 3**  - **Invalid** (Violates the condition that A is at least two positions to the left of 1)\n* **Arrangement 4: A 1 2 B 3** - **Valid** (Meets all conditions)\n\nTherefore, the arrangement **2 A B 1 3** is NOT possible based on the given information.",
+            "options": [
+                "A 2 B 1 3",
+                "A 2 1 B 3",
+                "2 A B 1 3",
+                "A 1 2 B 3"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Five friends, Alice, Ben, Chloe, David, and Emily, are standing in a line facing North. Ben is standing three positions to the right of Alice. David is standing to the immediate left of Chloe. Emily is standing two positions to the left of Ben.  What is the correct order of the friends from left to right?",
+            "difficulty": "moderate",
+            "reasoning": "This question requires us to deduce the order of the friends based on their positions relative to each other. Let's break down the clues:\n\n1. **Ben is standing three positions to the right of Alice.** This means Alice is to the left of Ben, with three positions between them. We can represent this as: ...Alice...Ben\n\n2. **David is standing to the immediate left of Chloe.** This means Chloe is to the right of David. We can represent this as: David Chloe\n\n3. **Emily is standing two positions to the left of Ben.** This means Ben is to the right of Emily, with two positions between them. We can represent this as: ...Emily...Ben\n\nNow, let's combine these pieces of information. Since Emily is to the left of Ben, and Alice is further to the left of Emily, we can deduce that the order so far is: Alice...Emily...Ben.\n\nWe also know that David is to the left of Chloe. To fit this into the existing order, the only possible arrangement is: Alice...Emily...David Chloe...Ben\n\nThis leaves us with the final order: Alice, Emily, David, Chloe, Ben.\n\nTherefore, the correct order of the friends from left to right is **Alice, Emily, David, Chloe, Ben**.",
+            "options": [
+                "Alice, Ben, Chloe, David, Emily",
+                "Alice, Emily, David, Chloe, Ben",
+                "Ben, Chloe, David, Emily, Alice",
+                "Emily, Alice, David, Chloe, Ben"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Premise: The letter 'J' is placed before the letter 'M', and the letter 'N' is placed after the letter 'P'. The letter 'P' is positioned between the letters 'L' and 'R'.\n\nQuestion: Based on the above information, which letter is placed immediately after the letter 'L' in the alphabetical arrangement?",
+            "difficulty": "medium",
+            "reasoning": "This question involves understanding the relationships between letters in alphabetical order. Let's break down the premise:\n\n1. **'J' before 'M'**: This tells us the order is J...M.  \n2. **'N' after 'P'**:  This tells us the order is ...P...N.\n3. **'P' between 'L' and 'R'**:  This tells us the order is ...LPR...\n\nCombining these pieces of information, we get the order: J...LPR...N.  Therefore, the letter immediately after 'L' is **'P'**. \n\n**Key takeaway**:  To solve these types of questions, you need to carefully analyze the comparative statements and build a mental picture of the arrangement.  Break down the premise into smaller parts and then combine those parts logically to deduce the answer.",
+            "options": [
+                "J",
+                "P",
+                "R",
+                "N"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Four students, Alice, Bob, Charlie, and David, are lined up facing north for a school photo. They are arranged according to their alphabetical order but not necessarily in the exact order. The following information is also known:\n\n* David is immediately before Charlie.\n* Alice is not at either end of the line.\n* Bob is to the right of Charlie.\n\nWhich of the following correctly represents the order of the students from left to right?",
+            "difficulty": "moderate",
+            "reasoning": "Here's how we can deduce the order:\n\n1. **Alphabetical Order:** We know the students are arranged alphabetically, but not necessarily in the exact order. This means the possible arrangements are:\n    * Alice, Bob, Charlie, David\n    * Alice, Charlie, Bob, David\n    * Bob, Alice, Charlie, David\n    * Bob, Charlie, Alice, David\n    * Charlie, Alice, Bob, David\n    * Charlie, Bob, Alice, David\n\n2. **David is immediately before Charlie:**  This eliminates any arrangement where David is not directly before Charlie.  So, the possibilities become:\n    * Alice, Bob, Charlie, David\n    * Alice, Charlie, Bob, David\n    * Bob, Charlie, Alice, David\n    * Charlie, Bob, Alice, David\n\n3. **Alice is not at either end of the line:** This removes any arrangement where Alice is the first or the last in the line. We are left with:\n    * Bob, Charlie, Alice, David\n\n4. **Bob is to the right of Charlie:** This confirms that Bob is indeed after Charlie. The only arrangement that fulfills all the conditions is:\n    * Bob, Charlie, Alice, David\n\nTherefore, the correct order of the students from left to right is Bob, Charlie, Alice, and David.",
+            "options": [
+                "Alice, Bob, Charlie, David",
+                "Alice, Charlie, Bob, David",
+                "Bob, Charlie, Alice, David",
+                "Charlie, Bob, Alice, David"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A group of four friends, Alex, Ben, Chloe, and Daniel, are lined up for a photo from left to right. Their positions are determined by the alphabetical order of their names, with the person whose name comes first alphabetically standing furthest to the left.  We know that Chloe is standing to the right of Ben. However, Daniel claims he is standing directly to the left of Alex. Which statement creates an inconsistency in the given information and why?",
+            "difficulty": "moderate",
+            "reasoning": "The statement that creates an inconsistency is \"Daniel claims he is standing directly to the left of Alex.\" Here's why:\n\n1. **Alphabetical Order:** Based on the alphabetical order of their names, the correct lineup should be: Alex, Ben, Chloe, Daniel.\n2. **Chloe's Position:** The statement \"Chloe is standing to the right of Ben\" aligns with the alphabetical order, confirming Ben's position to the left of Chloe.\n3. **Daniel's Claim:** Daniel's claim that he is standing to the left of Alex contradicts the alphabetical order. If Daniel is to the left of Alex, then Ben and Chloe would have to be placed between them, violating the established alphabetical order.\n\nTherefore, Daniel's claim creates the inconsistency because it violates the established rule of alphabetical order in the lineup.",
+            "options": [
+                "Daniel's claim that he is standing directly to the left of Alex",
+                "Chloe is standing to the right of Ben",
+                "The lineup should be Alex, Ben, Chloe, Daniel",
+                "The statement that Daniel is to the left of Alex"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Four friends, A, B, C, and D, are standing in a line facing West. B is to the immediate left of A, who is second from the right. C is to the immediate right of D, who is third from the left. If C is in the middle of the line, what is the position of C relative to West?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this question:\n\n1. **Visualize the Line:** Imagine a line of four people facing West. We need to arrange them based on the given information.\n\n2. **Position B and A:**  \"B is to the immediate left of A, who is second from the right.\" This means:\n    * A is the second person from the right side of the line.\n    * B is directly to the left of A.\n\n3. **Position D and C:** \"C is to the immediate right of D, who is third from the left.\" This means:\n    * D is the third person from the left side of the line.\n    * C is directly to the right of D.\n\n4. **Determine the Middle:** Since C is in the middle of the line, and there are four people, C must be the second person from the left and the second person from the right.\n\n5. **Position Relative to West:** Since everyone is facing West, and C is in the middle of the line, C would be directly **facing** West. \n\n**Therefore, the position of C relative to West is directly facing West.**",
+            "options": [
+                "Left",
+                "Right",
+                "Facing",
+                "Behind"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given the following rules:\n\n*  \"G is always before H, except when E is present.\" \n*  \"F is before I, except when E is present.\" \n*  \"J is after I, unless E is present, then it is before I.\" \n\n If E is present, which letter is immediately before J?",
+            "difficulty": "moderate",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Identify the Relevant Rules:** When E is present, we need to focus on the rules that specifically mention E. These are:\n    * \"G is always before H, except when E is present.\" \n    * \"F is before I, except when E is present.\" \n    * \"J is after I, unless E is present, then it is before I.\" \n\n2. **Apply the Exceptions:** Since E is present, the exceptions in these rules apply. This means:\n    * G is not necessarily before H.\n    * F is not necessarily before I.\n    * J is before I.\n\n3. **Deduce the Order:**  We now know J is before I. Since none of the rules directly specify a letter immediately before J when E is present, we can conclude that the letter immediately before J is the last letter mentioned in the rules, which is **I**. \n\nTherefore, the answer is **I**. ",
+            "options": [
+                "G",
+                "H",
+                "I",
+                "F"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Scenario:** Seven friends - Alex, Ben, Carol, David, Emily, Frank, and Grace - are seated in a line facing North. \n\n**Instructions:**\n\n* Alex is seated to the immediate right of Ben.\n* Carol is seated two positions to the left of David.\n* Emily is seated to the immediate right of Grace.\n* There are two people seated between Ben and Frank.\n* David is seated two positions to the right of Frank.\n\n**Question:** If Emily is seated at the third position from the left, who is seated at the second position from the right?",
+            "difficulty": "moderate",
+            "reasoning": "This question requires us to deduce the seating arrangement of the seven friends based on the given clues. Let's analyze the information step by step:\n\n1. **Identifying Core Relationships:**\n    *  We know Alex is to the right of Ben, and Ben is to the left of Frank (due to the two people between them). This establishes a core group: Ben - Frank - Alex.\n    *  David is two positions to the right of Frank, placing him further right in the arrangement.\n    *  Emily is to the right of Grace, forming another core group: Grace - Emily.\n\n2. **Integrating Clues:**\n    *  Since David is two positions to the right of Frank, and there are two people between Ben and Frank, we can deduce a partial arrangement: Ben - Frank - Alex - David.\n    *  Carol is two positions to the left of David, placing her further left in the arrangement.\n\n3. **Finalizing the Arrangement:**\n    *  We know Emily is seated at the third position from the left. Combining this with the information that Emily is to the right of Grace, we can infer the following arrangement: Carol - Ben - Frank - Alex - David - Grace - Emily.\n\n4. **Answering the Question:**\n    *  The question asks for the person seated at the second position from the right. Looking at the final arrangement, we see that **Alex** is seated at the second position from the right.\n\nTherefore, the answer is **Alex**.",
+            "options": [
+                "Alex",
+                "Ben",
+                "Carol",
+                "David"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Four friends, A, B, C, and D, are standing in a line facing north.  They are participating in a spelling bee.  We know the following:\n\n* Either C is immediately to the right of A, or B is immediately to the left of D.\n* Either A is at the beginning of the line, or D is at the end of the line.\n* C is not at the end of the line.\n\nIf A is at the beginning of the line, who is standing second in line?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests your ability to work with 'either-or' statements and apply them to a ranking scenario. Let's break down the logic:\n\n1. **Analyze the first statement:**  \"Either C is immediately to the right of A, or B is immediately to the left of D.\"  This means one of these two scenarios must be true, but not both.\n\n2. **Analyze the second statement:** \"Either A is at the beginning of the line, or D is at the end of the line.\"  Again, only one of these scenarios is true.\n\n3. **Analyze the third statement:** \"C is not at the end of the line.\"  This eliminates one possibility from the first statement.\n\n4. **Combine the information:** Since A is at the beginning, and C cannot be at the end, we can deduce that the first statement is false (because if it were true, C would be at the end). This means the second part of the first statement must be true:  \"B is immediately to the left of D.\"  Therefore, if A is at the beginning, the order is A - B - D - C, making **B** the person standing second in line.\n\n5. **Key takeaway:** The question relies on understanding that 'either-or' statements require one of the possibilities to be true, while the other is false. By carefully analyzing the statements and their implications, we can arrive at the correct answer.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type:** Ranking, Direction, Alphabet\n\n**Description:**  Six friends - Alice, Bob, Charlie, David, Emily, and Frank - are seated around a circular table.  They are each assigned a letter of the alphabet (A-F) in a clockwise order.  If Charlie is seated two positions to the right of Emily, and Frank is seated to the immediate left of Alice, what is the alphabetical order of the friends starting from Emily in a clockwise direction?\n\n**Difficulty:** Moderate (4/10)",
+            "difficulty": "medium",
+            "reasoning": "This question involves working with circular arrangements, alphabetical order, and directional concepts. Here's how to solve it:\n\n1. **Visualize the Circle:** Imagine a circular table with six seats. Each seat represents one of the friends.\n\n2. **Place Charlie and Emily:**  The statement 'Charlie is seated two positions to the right of Emily' means that if you start at Emily and move two positions clockwise, you reach Charlie.\n\n3. **Place Frank and Alice:** The statement 'Frank is seated to the immediate left of Alice' means they are sitting next to each other. \n\n4. **Deduce the Order:**  Since we know the relative positions of Charlie, Emily, Frank, and Alice, we can start filling in the circular arrangement.  We can also deduce the order by using the alphabet:  \n\n    *  Since Charlie is two positions to the right of Emily, and they are assigned letters from A-F, Emily must be assigned a letter before Charlie, meaning she can be either 'A' or 'B'.  \n    *  As Frank is to the left of Alice, their letters must be consecutive.  \n    *  Combining this information, we get the order starting from Emily: 'Emily, Alice, Frank, Charlie'.  \n\n5. **Complete the Arrangement:**  The remaining two friends must be Bob and David. Since we know the order is clockwise, and the letters are assigned alphabetically, we can complete the arrangement by placing 'Bob' before 'David' and 'Charlie' before 'Emily'. \n\nTherefore, the final alphabetical order starting from Emily in a clockwise direction is: **Emily, Alice, Frank, Charlie, Bob, David**.\n\n**Understanding Circular Arrangements:** When working with circular arrangements, remember that there's no beginning or end.  You can start from any point and move in a clockwise or counter-clockwise direction to understand the relative positions of elements within the arrangement.",
+            "options": [
+                "Emily, Alice, Frank, Charlie, Bob, David",
+                "Emily, Bob, David, Charlie, Alice, Frank",
+                "Alice, Frank, Charlie, Emily, David, Bob",
+                "Charlie, Emily, Bob, David, Alice, Frank"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Five letters (A, B, C, D, and E) are arranged in a row facing either North or South. Consider these statements:\n\n* Letter A is to the right of letter C.\n* Letter B faces North.\n* Letter D is to the left of letter E.\n* Letter C faces South.\n* Letter E is to the right of letter A.\n\nIf letter B is directly to the left of letter C, which letter is to the right of letter B but to the left of letter E?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests your ability to decipher and combine information to deduce a specific arrangement. Let's break down the solution:\n\n1. **Combine statements:**\n   -  \"A is to the right of C\" and \"C faces South\" tell us that A is to the right of C, and both face South.\n   -  \"D is to the left of E\" means E is to the right of D.\n   -  \"E is to the right of A\" further clarifies the order as  A -> E.\n   -  \"B faces North\" tells us B is facing North.\n\n2. **New Information:**  \"B is directly to the left of C\" means B is to the left of C and there are no letters between them.\n\n3. **Deduction:**\n   -  We know A -> E, and B is to the left of C. Since there's no space between B and C, the only way to fit this in is A -> B -> C -> E.  The letter D must be somewhere before A. \n\n4. **Final arrangement:** This leaves us with the arrangement: D -> A -> B -> C -> E.\n\n5. **Answer:** Therefore, the letter to the right of B but to the left of E is **C**. ",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "E"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "The letters A-Z are arranged in a specific order from left to right.  \n\nStatements:\n* \"G is three positions above H.\" \n* \"J is below K.\" \n* \"M is above N.\" \n\nWhat is the position of the letter \"H\" in the sequence?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests your understanding of 'above' and 'below' in relation to the order of letters. Let's break down the statements:\n\n1. **\"G is three positions above H.\"** This means that G comes before H in the sequence, and there are three letters between them.\n2. **\"J is below K.\"**  This indicates that J comes after K in the sequence.\n3. **\"M is above N.\"**  This means M comes before N.\n\nWhile we have information about G, H, J, K, M, and N, we don't have enough direct information about H to determine its exact position. However, we can reason as follows:  \n\n* Since G is three positions above H, and H is not the first letter in the sequence, there must be at least four letters before H. This eliminates the possibility of H being in the first three positions.\n* We also know that J is below K, and M is above N, but these statements don't give us any direct clues about H's position in relation to these letters.\n\nTherefore, we can conclude that H is likely in the middle part of the sequence. However, without more information, we cannot pinpoint its precise position.  \n\n**Important Note:** This question highlights that even with 'above' and 'below' statements, we might not always be able to determine the exact position of a letter. Sometimes, we can only deduce a general area within the sequence.",
+            "options": [
+                "4th",
+                "7th",
+                "Cannot be determined",
+                "10th"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Imagine a row of letters arranged alphabetically from A to Z. If the letter 'M' is positioned immediately to the right of 'L', and the letter 'S' is positioned three places to the left of 'T', what letter is positioned immediately to the left of 'R'?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests your understanding of relative positions within an alphabetical sequence. Here's how to break it down:\n\n1. **Visualize the Alphabet:** Imagine the standard alphabet (A to Z) arranged in a row. \n\n2. **Locate 'M' and 'L':**  We know 'M' is immediately to the right of 'L'.  This confirms the standard alphabetical order. \n\n3. **Locate 'S' and 'T':** We're told 'S' is three places to the left of 'T'.  This means they are also in standard alphabetical order. \n\n4. **Find the Letter Left of 'R':** The question asks for the letter to the left of 'R'. Since we're working with the standard alphabet, the letter immediately to the left of 'R' is 'Q'.\n\n**Therefore, the answer is 'Q'.**",
+            "options": [
+                "Q",
+                "P",
+                "S",
+                "N"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine the letters A, B, C, D, E, and F are arranged in a specific order. We know that 'E is next to F'.  If we also know that 'C is next to D', which letter must be next to B?",
+            "difficulty": "moderate",
+            "reasoning": "This question tests your ability to understand and apply directional relationships within an alphabet sequence. Here's how to solve it:\n\n1. **Visualize the Sequence:** Imagine the letters A through F arranged in a line. Since we know 'E is next to F', they must be together. This could be 'EF' or 'FE'.\n\n2. **Apply the Second Statement:**  We also know 'C is next to D'. This means 'CD' or 'DC' must be together in the sequence.\n\n3. **Deduce the Relationship:**  To determine which letter is next to B, consider the possible arrangements.  Since 'C' is next to 'D', 'B' can only be next to 'A'.  If 'B' were next to 'C' or 'F', it would create a contradiction with the given statements.\n\n**Therefore, the letter A must be next to B.**",
+            "options": [
+                "A",
+                "C",
+                "D",
+                "F"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Premise: \n* \"K is before N.\" \n* \"J is not after L.\" \n\nQuestion: Which of the following represents the correct order of letters J and K?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of 'Not' statements within alphabetical ordering and directional reasoning. Let's break down the logic:\n\n1. **Premise 1:** \"K is before N\" - This establishes a clear direction in the alphabet. K comes earlier than N. \n2. **Premise 2:** \"J is not after L.\" - This statement is crucial. It means J can be before L, or J and L could be in the same position. However, J cannot be after L. \n\n3. **Combining Premises:** We can combine the information. Since J is not after L, and we know K comes before N, the possible positions for J and K could be: \n    a) J - K - L - N (J before K, both before L and N) \n    b) J - L - K - N (J before L, but K still before N)\n    c) K - J - L - N (K before J, both before L and N)\n\n4. **Identifying the Correct Order:**  In all three possible arrangements, J is always before K. Therefore, the correct order of letters J and K is J - K. \n\n**Important Note:** The question only asks for the order of J and K, not their position relative to L and N.  Focusing on the relevant information is key to solving these types of problems. ",
+            "options": [
+                "J - K",
+                "K - J",
+                "J - L",
+                "K - N"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Eight letters, starting with 'A', are arranged in reverse alphabetical order.  'G' is directly adjacent to 'F', and 'C' is three positions away from 'B'. What letter is immediately to the left of 'D'?",
+            "difficulty": "moderate",
+            "reasoning": "Let's break down the problem step-by-step to determine the correct answer:\n\n1. **Reverse Alphabetical Order:** We know the letters are arranged in reverse alphabetical order, meaning 'Z' would come first, followed by 'Y', then 'X', and so on.\n\n2. **'G' and 'F':**  Since 'G' is adjacent to 'F' in reverse alphabetical order, they must be next to each other.  This means the sequence could look like this: ...G F...\n\n3. **'C' and 'B':**  Knowing 'C' is three positions away from 'B' in reverse alphabetical order, they can't be directly adjacent.  The sequence might look like this: ...C...B... or ...B...C...\n\n4. **'D' and its Position:** The question asks for the letter to the left of 'D'. We know 'G' and 'F' are adjacent, and 'C' is a few positions away from 'B'.  Therefore, 'D' must be somewhere between 'G' and 'C'.  Given the reverse alphabetical order, the sequence would be ...G F E D C... \n\n5. **Answer:**  Since 'D' is to the right of 'E' in this arrangement, the letter immediately to the left of 'D' is **'E'**. ",
+            "options": [
+                "E",
+                "F",
+                "G",
+                "H"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Given the standard alphabet, if 'N' is placed immediately before 'Q', 'F' is placed four positions after 'B', and 'S' is placed three positions before 'V', then which letter is placed six positions after 'J'?",
+            "difficulty": "above moderate",
+            "reasoning": "This question involves understanding multiple conditions and then applying them to determine the correct position of a letter within the alphabet. Here's how to solve it step-by-step:\n\n1. **Visualize the Alphabet:** Imagine the standard alphabet sequence to help you visualize the positions. \n\n2. **Apply the Conditions:**\n    * **'N' is placed immediately before 'Q':** This means 'Q' is placed directly after 'N'. \n    * **'F' is placed four positions after 'B':**  This means 'F' is placed at the fourth position after 'B' (B, C, D, E, F). \n    * **'S' is placed three positions before 'V':** This means 'S' is placed at the third position before 'V' (V, U, T, S).\n\n3. **Determine the Target Position:**  We need to find the letter six positions after 'J'. Count six positions forward from 'J': K, L, M, N, O, P.\n\n4. **Answer:**  The letter six positions after 'J' is **'P'**. \n\n**Key Takeaway:**  This problem emphasizes understanding the concept of relative positioning within an ordered sequence (the alphabet) and applying multiple conditions to determine the correct answer.",
+            "options": [
+                "P",
+                "Q",
+                "R",
+                "O"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine a square with the letters A, B, C, and D positioned at its corners, starting from the top left corner and moving clockwise.  Now, apply these conditions:\n\n1.  Move the letter A to the position directly opposite its current position.\n2.  Swap the positions of the letters B and C.\n3. Rotate the square 90 degrees clockwise.\n\nWhich letter occupies the **first** position (top left corner) and which letter occupies the **last** position (bottom right corner) in the final arrangement?",
+            "difficulty": "hard",
+            "reasoning": "This question requires visualizing the square's rotation and applying the conditions sequentially. Here's a step-by-step solution:\n\n1. **Initial Arrangement:**\n   - Top Left: A\n   - Top Right: B\n   - Bottom Right: C\n   - Bottom Left: D\n\n2. **Condition 1:** Move A to the opposite position.\n   - Top Left: D\n   - Top Right: B\n   - Bottom Right: C\n   - Bottom Left: A\n\n3. **Condition 2:** Swap B and C.\n   - Top Left: D\n   - Top Right: C\n   - Bottom Right: B\n   - Bottom Left: A\n\n4. **Condition 3:** Rotate the square 90 degrees clockwise.\n   - Top Left: **B**\n   - Top Right: **D**\n   - Bottom Right: **A**\n   - Bottom Left: **C**\n\nTherefore, the letter **B** occupies the **first** position and the letter **A** occupies the **last** position in the final arrangement.",
+            "options": [
+                "B, A",
+                "A, C",
+                "D, B",
+                "C, D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Given: \"M is above both P and Q, but below R. The *pair* N and O is positioned below Q.  T is below M.\"  \n\nTask: Arrange the letters M, P, Q, R, N, O, and T from top to bottom.",
+            "difficulty": "above moderate 5/10",
+            "reasoning": "This question requires careful analysis of the provided statements and understanding the phrase \"pair\" as a key clue. \n\n1. **Break down the statements:**\n   - \"M is above both P and Q\" means M is at the top, followed by P and Q below it. \n   - \"M is below R\" places R above M. \n   - \"The *pair* N and O is positioned below Q\" indicates that N and O are together and below Q. \n   - \"T is below M\" places T below M.  \n\n2. **Combine the information:**\n   - We now have the following order: R, M, P, Q, N, O, T. \n\n3. **The hidden clue:**\n   - The phrase \"pair\" tells us that N and O always stay together. \n   -  Since the pair is below Q, they must be placed together in the order: R, M, P, Q, N, O, T. \n\nTherefore, the correct order from top to bottom is: R, M, P, Q, N, O, T.",
+            "options": [
+                "R, M, P, Q, N, O, T",
+                "R, M, Q, P, N, O, T",
+                "T, M, Q, P, N, O, R",
+                "R, M, N, O, P, Q, T"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A series of letters is formed by starting with 'A' and moving left, adding letters while alternating between skipping one letter and skipping two letters. The sequence begins as follows:  A Z Y W U. If the sequence continues according to this pattern, what is the position of the letter 'H' in the series?",
+            "difficulty": "above moderate",
+            "reasoning": "This question tests your ability to understand and apply a directional pattern in the alphabet.  Here's how to solve it:\n\n1. **Identify the pattern:** The sequence moves left, alternating between skipping one letter and skipping two letters.\n2. **Continue the pattern:**  Following the pattern, the next letters would be T, R, N, L, and so on.\n3. **Count the positions:** Starting with 'A' as position 1, count leftwards. 'Z' is position 2, 'Y' is position 3, 'W' is position 4, 'U' is position 5, 'T' is position 6, 'R' is position 7, 'N' is position 8, 'L' is position 9, and 'H' is position 10.\n\nTherefore, the letter 'H' is in position 10 of the sequence.",
+            "options": [
+                "10",
+                "12",
+                "15",
+                "8"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Six letters - A, B, C, D, E, and F - are initially arranged in a straight line facing east. They undergo a series of movements according to the following rules:\n\n1.  If a letter is an even number (A, C, E) in the alphabet, it moves three positions to the right. \n2. If a letter is an odd number (B, D, F) in the alphabet, it moves one position to the left. \n3. Any letter that moves beyond the original line's edge 'wraps around' to the opposite end.\n\nAfter these movements, what is the final position of the letter 'D'?  ",
+            "difficulty": "hard",
+            "reasoning": "This question involves multiple steps and a bit of visualization. Let's break it down:\n\n1. **Initial Position:**  A B C D E F\n\n2. **Even Letters (A, C, E) Move 3 Positions Right:**\n   * A moves to the 4th position (wraps around)\n   * C moves to the 6th position (wraps around)\n   * E moves to the 1st position (wraps around)\n\n3. **Odd Letters (B, D, F) Move 1 Position Left:**\n   * B moves to the 1st position\n   * D moves to the 3rd position\n   * F moves to the 5th position\n\n4. **Final Arrangement:**  B E A D F C\n\n**Therefore, the final position of letter 'D' is the 4th position.**\n\n**Key Concepts:**\n\n* **Relative Movement:**  Letters move based on their original positions, not the changing arrangement.\n* **Wrapping Around:**  Letters that reach the end of the line re-enter from the opposite side.",
+            "options": [
+                "1st",
+                "2nd",
+                "3rd",
+                "4th"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A group of five friends, Amelia, Brian, Chloe, David, and Emily, are taking turns painting a mural. They follow a specific pattern, with the first person to paint being the fastest. The painting process starts with Amelia and continues alphabetically.  Here are the rules:\n\n* Each friend paints one section of the mural.\n* Each section takes a different amount of time to paint, but each friend maintains their own pace throughout the project.\n* Brian finishes painting before Emily but after Chloe.\n* David finishes painting before Amelia.\n\nConsidering these rules, if Chloe paints the third section, who paints the fifth and final section? ",
+            "difficulty": "hard",
+            "reasoning": "This question tests the ability to analyze time-based relationships within an alphabetical order framework.  Here's the step-by-step solution:\n\n1. **Understanding the Alphabetical Order:** The painting order is based on the alphabetical order of their names: Amelia, Brian, Chloe, David, and Emily.\n\n2. **Fastest Painter:** The person who paints first (Amelia) is the fastest.  This means Amelia finishes before anyone else.\n\n3. **Analyzing the Rules:**\n    *  Brian finishes before Emily but after Chloe: This means the order of these three is Chloe, Brian, then Emily.\n    *  David finishes before Amelia: This places David before Amelia in the painting order.\n\n4. **Chloe Paints Third:** We're given that Chloe paints the third section.\n\n5. **Deduction:** Since Chloe paints the third section and Brian paints after Chloe, Brian must paint the fourth section.  This leaves Emily to paint the fifth and final section.\n\n6. **Final Answer:** Emily paints the fifth and final section of the mural. ",
+            "options": [
+                "Amelia",
+                "Brian",
+                "Chloe",
+                "Emily"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Given the following statements, determine the correct order of the letters from left to right: \n\n*  X is to the left of both Z and Y. \n*  V is to the right of Y, but to the left of W. \n*  W is to the left of T, but to the right of Z. \n*  T is to the right of Y.\n\nWhich of the following accurately represents the order of the letters?\n",
+            "difficulty": "above moderate 5/10",
+            "reasoning": "This question tests the ability to interpret comparative statements about letter positions and deduce the correct order. Here's how to break down the information:\n\n1. **Start with the most definitive statements:**\n   * \"X is to the left of both Z and Y\" tells us the order is XZY.\n   * \"T is to the right of Y\" adds T to the right of Y, giving us XZY...T.\n\n2. **Piece together the remaining statements:**\n   * \"V is to the right of Y, but to the left of W\" places V between Y and W, giving us XZYVWT.\n   * \"W is to the left of T, but to the right of Z\" confirms the placement of W, ensuring the order is XZYVWT.\n\nTherefore, the correct order is XZYVWT.\n\n**Key Takeaway:** By systematically analyzing the provided statements and identifying the most direct relationships, we can gradually construct the correct order. This strategy involves looking for overlapping information and using logical deduction to piece together the complete sequence.\n",
+            "options": [
+                "XZYVWT",
+                "XYZVWT",
+                "XZWTVY",
+                "XVZWY"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Given the sequence: A Up, B Right, C Down, D Left, E Up, F Right, G Down, H Left, I Up, J Right, K Down.  Identify the letters that satisfy both of the following conditions:\n\n1. The letter is located to the right of the starting position.\n2. The letter moves in an upward direction.\n\n**Note:**  Letters moving in opposite directions (e.g., Up and Down, Left and Right) are considered equidistant.",
+            "difficulty": "hard",
+            "reasoning": "To solve this question, we need to analyze the given sequence and identify the letters that meet both specified conditions:\n\n1. **Right of the Starting Position:** We consider the starting point as the initial position of the sequence. Therefore, letters moving right or equidistant (left) from the starting position satisfy this condition. \n2. **Upward Direction:** We need to identify the letters moving in an upward direction.\n\nLet's analyze the sequence:\n\n* **A Up:**  Moves up, equidistant from the starting position (satisfies both conditions). \n* **B Right:**  Moves right, equidistant from the starting position (satisfies both conditions). \n* **C Down:**  Moves down, equidistant from the starting position (does not satisfy the upward direction condition). \n* **D Left:**  Moves left, equidistant from the starting position (does not satisfy the right of the starting position condition). \n* **E Up:**  Moves up, equidistant from the starting position (satisfies both conditions). \n* **F Right:**  Moves right, equidistant from the starting position (satisfies both conditions). \n* **G Down:**  Moves down, equidistant from the starting position (does not satisfy the upward direction condition). \n* **H Left:**  Moves left, equidistant from the starting position (does not satisfy the right of the starting position condition). \n* **I Up:**  Moves up, equidistant from the starting position (satisfies both conditions). \n* **J Right:**  Moves right, equidistant from the starting position (satisfies both conditions). \n* **K Down:**  Moves down, equidistant from the starting position (does not satisfy the upward direction condition).\n\nTherefore, the letters that satisfy both conditions are **A, B, E, F, I, and J**.",
+            "options": [
+                "A, B, E, F, I, and J",
+                "A, B, C, D, E, F, G, H, I, J, K",
+                "A, B, D, F, H, J",
+                "A, C, E, G, I, K"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Seven students, Alex, Ben, Chloe, Daniel, Emily, Fiona, and George, are lined up facing east for a school photo. Daniel is three positions to the left of Ben. Emily is two positions to the right of Fiona, who is directly in front of Alex. Chloe is positioned between Daniel and Emily. If George is standing at the very back of the line, who is standing directly in front of him?",
+            "difficulty": "above moderate 5/10",
+            "reasoning": "This question requires careful analysis of the directional clues to determine the final arrangement of the students. Let's break down the information provided:\n\n1. **Daniel is three positions to the left of Ben.**  This means Ben is to the right of Daniel, with three students in between.\n2. **Emily is two positions to the right of Fiona.** This places Fiona to the left of Emily, with two students in between.\n3. **Fiona is directly in front of Alex.** This establishes a direct relationship between Fiona and Alex, with Alex being positioned behind Fiona.\n4. **Chloe is positioned between Daniel and Emily.** This places Chloe directly between the two, forming a continuous sequence of students.\n5. **George is standing at the very back of the line.** This means George is at the furthest right position in the line.\n\nNow, let's combine these clues to determine the final arrangement. Since Daniel is three positions to the left of Ben, and Chloe is between them, we have the sequence: Daniel, Chloe,  _ , _ , Ben.  Furthermore, Emily is two positions to the right of Fiona, and Chloe is between them, giving us: Fiona, _ , Chloe, Emily.  Adding Fiona and Alex's relationship, we have: Fiona, Alex, Chloe, Emily. Now, considering George is at the back, and the provided sequence, the arrangement becomes: Daniel, Chloe, Fiona, Alex, Emily, Ben, George. Therefore, **Alex is directly in front of George**.",
+            "options": [
+                "Ben",
+                "Chloe",
+                "Alex",
+                "Fiona"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "In a sequence of letters arranged from left to right, F is between B and H, but not immediately next to either.  D is between A and F, and C is between H and J. What is the position of E in the sequence if it is between B and C?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the 'between' statements to deduce the sequence.  Let's break it down step by step:\n\n1. **Initial Placement:** We know F is between B and H, but not directly next to either. This gives us a partial sequence: B _ F _ H.\n\n2. **Adding D:** D is between A and F, meaning A must be to the left of D and F. This extends our sequence to: A D F _ H.\n\n3. **Adding C:** C is between H and J, placing J to the right of H and C. Our sequence now becomes: A D F _ H C J\n\n4. **Placing E:**  E is between B and C.  Since F is between B and H, and C is between H and J, we know that B is to the left of F, and C is to the right of H.  Therefore, E must be positioned to the right of F and to the left of H: A D F E H C J\n\n5. **Final Sequence:** The complete sequence is A D F E H C J, and therefore E is in the **5th position** from the left.\n\n**Key Point:**  The question emphasizes 'between' but not 'immediately between'.  This means letters can have other letters between them, making the sequence less straightforward.",
+            "options": [
+                "1st",
+                "3rd",
+                "5th",
+                "7th"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Consider a stack of letters arranged vertically. The following statements describe their relative positions:\n\n* K is directly over P, which is immediately over N.\n* L is under S, which is directly over R.\n* T is under Q, but above H.\n* M is under L, but above F.\n* J is directly over E, which is under B.\n\nIf the stack is arranged from bottom to top, which letter is directly above Q?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the 'over' and 'under' statements to establish the correct order of the letters. Here's how to solve it:\n\n1. **Start with the most direct relationships:**\n   * K is directly over P, which is immediately over N. This gives us the partial sequence: ...N-P-K...\n   * J is directly over E, which is under B. This gives us the partial sequence: ...E-J-B...\n\n2. **Combine related statements:**\n   * L is under S, which is directly over R. Combining with 'M is under L, but above F,' we get: ...F-M-L-S-R...\n   * T is under Q, but above H. This gives us: ...H-T-Q...\n\n3. **Integrate the sequences:** The key is to find connections between the sequences. We know 'L is under S,' and 'M is under L,' so we can connect these segments: ...F-M-L-S-R-Q...\n\n4. **Deduce the final order:** We now have most of the sequence figured out. The only remaining pieces are 'N-P-K' and 'E-J-B'. Since 'J is over E,' and 'E is under B,' we can place them above the existing sequence. Additionally, 'K is over P, which is immediately over N,'  meaning 'N-P-K' must be at the very top. This gives us the complete sequence from bottom to top:\n\n...F-M-L-S-R-Q-H-T-B-J-E-N-P-K...\n\n5. **Answer the question:** Based on the complete sequence, the letter directly above Q is **H**.  ",
+            "options": [
+                "H",
+                "T",
+                "S",
+                "R"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A group of seven friends, each representing a different letter of the alphabet, are standing in a line facing forward. They are arranged according to their alphabetical order, but not necessarily in ascending order. Consider these statements: \n\n*  'G' is two letters away from 'B'.\n*  'E' is directly between 'C' and 'F'.\n*  'A' is not at either end of the line.\n*  'D' is three letters away from 'A'.\n\nWhat is the order of the letters 'A', 'B', 'C', and 'D' from left to right?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful deduction and analysis of the 'Next to' statements. Here's how to break down the solution:\n\n1. **'G' is two letters away from 'B'.** This statement implies two possible scenarios: \n    * Scenario 1:  ...B G ...  \n    * Scenario 2:  ...G B ... \n\n2. **'E' is directly between 'C' and 'F'.** This statement fixes the order of 'C', 'E', and 'F' as ...C E F...\n\n3. **'A' is not at either end of the line.** This statement eliminates the possibility of 'A' being the first or last letter in the line.\n\n4. **'D' is three letters away from 'A'.** This statement provides the most crucial clue. Combining it with the previous statements, we can analyze the scenarios:\n    * **Scenario 1 (B G ...):**  If 'D' is three letters away from 'A', it could be either ...D A B G ... or ...A D B G... However, 'A' cannot be at the end, so this scenario is invalid.\n    * **Scenario 2 (G B ...):**  If 'D' is three letters away from 'A', it must be ...G B D A... . Since 'A' cannot be at the end, the sequence must be ...C E F G B D A...\n\n5. Now, we can confirm the order of 'A', 'B', 'C', and 'D' based on the complete arrangement: **C E F G B D A**. \n\nTherefore, the order of 'A', 'B', 'C', and 'D' from left to right is **C, B, D, A**.",
+            "options": [
+                "C, D, B, A",
+                "C, B, D, A",
+                "A, D, B, C",
+                "B, C, A, D"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario:**\n* If A is before B, then C is after D.\n* If E is before F, then G is after H.\n* If I is before J, then K is after L.\n\n**Given Information:**\n* B is immediately before C.\n* F is immediately before G.\n* J is immediately before K.\n\n**Question:**\nIf A is before B, what can be concluded about the relative positions of L and M?",
+            "difficulty": "hard",
+            "reasoning": "This question involves applying a series of 'If-Then' statements and combining them with given information. Here's the breakdown:\n\n1. **Applying the First Statement:**\n   - We know 'If A is before B, then C is after D.'\n   - The given information tells us 'B is immediately before C.'\n   - Therefore, we can conclude that 'A is before D'.\n\n2. **Applying the Second Statement:**\n   - We know 'If E is before F, then G is after H.'\n   - The given information tells us 'F is immediately before G.'\n   - Therefore, we can conclude that 'E is before H'.\n\n3. **Applying the Third Statement:**\n   - We know 'If I is before J, then K is after L.'\n   - The given information tells us 'J is immediately before K.'\n   - Therefore, we can conclude that 'I is before L'.\n\n4. **Combining the Information:**\n   - Since 'A is before D' and 'I is before L', we can say that 'A, I, L, D' form a sequence where the letters are arranged in order from left to right.\n\n5. **Final Deduction:**\n   - The question asks about the relative positions of 'L' and 'M'.  Since we haven't been given any information about 'M', we cannot conclude anything about its position relative to 'L'.\n\n**Therefore, the answer is that we cannot conclude anything about the relative positions of L and M.**",
+            "options": [
+                "L is before M",
+                "M is before L",
+                "L is after M",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Seven students (A, B, C, D, E, F, and G) are lined up for a school photo.  They are lined up alphabetically from left to right.  \n\n*  C is to the right of G. \n*  A is to the left of F.\n*  E is 3 positions to the right of B.\n*  Except for D, everyone else is standing next to someone with a name beginning with a vowel.\n\nWho is standing in the second position from the left?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the 'except' statement and the positional clues provided. Here's how to break it down:\n\n1. **Alphabetical Order:** The students are lined up alphabetically from left to right. This means the order will be A, B, C, D, E, F, and G.\n\n2. **Positional Clues:** \n* C is to the right of G: This means G must be before C in the line. The line now looks like: ...G, C...\n* A is to the left of F:  The line looks like: ...A, F...\n* E is 3 positions to the right of B:  This tells us B must be before E with three students between them. The line looks like:  ...B, __, __, __, E...\n\n3. **'Except' Statement:**  The key to solving this lies in the 'except' statement. It says everyone *except* D is standing next to someone with a name starting with a vowel. This means D is not standing next to someone with a vowel. \n\n4. **Putting it Together:**  Combining the 'except' statement with the positional clues, let's analyze the possible positions of D: \n* **D cannot be at either end of the line**: If D were at the end, it would have to be next to someone with a vowel.  \n* **D cannot be next to B or E:**  D cannot be next to either B or E because their names don't start with vowels. \n* **D cannot be next to A:** Since A is to the left of F, if D were next to A, it would be next to F, which starts with a vowel. \n\n5. **The Solution:**  The only possible position for D is next to C. This places D in the second position from the left. The final order is:  G, D, C, A, F, B, E. \n\nTherefore, the student standing in the second position from the left is **D**.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Eight friends (A, B, C, D, E, F, G, H) are standing in a line facing either North or South. Use the following clues to determine the direction that person E faces:\n\n1.  B is to the left of D and faces the same direction as F. \n2.  C is immediately to the right of H, who is at the far right end of the line. \n3.  A is third from the left and faces the opposite direction of G. \n4.  E is to the left of G and faces the same direction as D. \n5.  F is not at either end of the line and faces North.",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the clues and step-by-step deduction to arrive at the correct answer. Let's break down the reasoning:\n\n1. **Clue 2:**  H is at the far right end of the line and C is immediately to his right. This means the arrangement is ...H C.  \n2. **Clue 5:**  F is not at either end of the line and faces North. This means the arrangement is ...H C F...  \n3. **Clue 1:**  B is to the left of D and faces the same direction as F (North). The arrangement becomes ...H C F B D... \n4. **Clue 4:**  E is to the left of G and faces the same direction as D (South). We can add E and G to the arrangement: ...H C F B D E G...\n5. **Clue 3:** A is third from the left and faces the opposite direction of G (North). This confirms the final arrangement: A H C F B D E G. \n\nTherefore, E faces **South**.\n\n**Key Points:**\n* The clues are interdependent, meaning you need to understand one clue to deduce the next.\n* The arrangement of the friends is built step-by-step using the provided clues.\n* Carefully analyzing the positions and directions of the friends is essential to arrive at the correct answer.",
+            "options": [
+                "North",
+                "South",
+                "East",
+                "West"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Seven friends (A, B, C, D, E, F, and G) are sitting in a row facing north.  \n\n**Statements:**\n\n*  A is immediately before B. \n*  C is immediately after D. \n*  E is immediately before F. \n*  G is not at the end of the row and has two people sitting between G and C.\n*  There are two people sitting between A and F. \n\n**Question:**  If B is not sitting at either end of the row, who is sitting in the second position from the right end of the row?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful deduction from the given statements. Let's break it down:\n\n1. **Combining Statements:**\n    *  \"A is immediately before B\" and \"There are two people sitting between A and F\" tell us that the order must be either '... A B ... F ...' or '... F ... A B ...'.\n    *  \"E is immediately before F\" further confirms the arrangement as '... A B ... E F ...'. \n    *  \"C is immediately after D\" tells us they are together: '... D C ...'. \n    *  \"G is not at the end of the row and has two people sitting between G and C\" indicates the arrangement is '... G ... C ...'.\n\n2. **Placement of B:**\n    *  We are told B is not at either end. Considering the possible orders from Step 1, the only arrangement that fits is '... D C G A B E F ...'.\n\n3. **Finding the Second from the Right:**\n    *  In the arrangement '... D C G A B E F ...', the second position from the right is occupied by **E**.\n\nTherefore, **E** is sitting in the second position from the right end of the row.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "E"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Eight letters (A, B, C, D, E, F, G, and H) are arranged in a clockwise circular pattern. Consider the following constraints: \n\n* Letter C is three positions to the right of letter A.\n* Letter F is immediately to the left of letter D.\n* Letter G is two positions to the left of letter B.\n* Letter H is not adjacent to letter E.\n\nIf letter D is two positions to the right of letter H, determine the letter directly to the right of letter E. ",
+            "difficulty": "above moderate 5/10",
+            "reasoning": "This question involves understanding the relationships between adjacent positions in a circular arrangement. Here's how we can solve it step-by-step:\n\n1. **Visualize:** Imagine a circle with eight slots, one for each letter.\n\n2. **Place C and A:**  Since C is three positions to the right of A, we can start by placing them in the circle, keeping three slots between them.  \n\n3. **Place F and D:**  F is immediately to the left of D, so we can place them together, remembering that the arrangement is circular. \n\n4. **Place G and B:** G is two positions to the left of B. Since we already placed C and A, we can deduce where G and B must be.\n\n5. **Place H:** H is not adjacent to E. We also know D is two positions to the right of H. We can now place H and D, ensuring they are not next to E. \n\n6. **Find E:** By placing all other letters based on the constraints, we can deduce where E must be. Finally, the letter directly to the right of E is the answer. \n\nThis process involves applying logical reasoning and understanding spatial relationships in a circular arrangement. The key is to carefully consider the constraints and systematically place each letter based on those rules. By following these steps, you can arrive at the correct answer.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "G"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Six individuals, named Alex, Brian, Charles, David, Emily, and Fiona, are arranged in a line facing north. They are then instructed to rotate 180 degrees clockwise.  Next, they are asked to take a step forward, with Alex taking one step, Brian taking two steps, Charles taking three steps, and so on. Finally, they are instructed to move their position in the line based on their alphabetical order, with the person whose name starts with 'A' standing at the front of the line, 'B' second, and so on.  If David ends up standing at the back of the line, what is the original position of Fiona in the line?  ",
+            "difficulty": "hard",
+            "reasoning": "This question involves multiple steps and requires careful analysis to identify contradictions and inconsistencies.\n\n1. **Initial Facing:** The individuals initially face north. This information is crucial for understanding the impact of the 180-degree clockwise rotation.\n\n2. **Rotation:** Rotating 180 degrees clockwise means they now face south. This is important because it determines the direction they will face when taking steps forward.\n\n3. **Stepping Forward:** The number of steps taken by each individual is based on their position in the line. This step is crucial for determining their final position before the alphabetical re-arrangement.\n\n4. **Alphabetical Re-Arrangement:** The final arrangement is based on alphabetical order.  This is the key to identifying the contradiction.\n\n5. **David at the Back:** The information that David ends up at the back of the line is the contradiction that helps us solve for Fiona's initial position.\n\n**Working Backwards**\n\n* **Alphabetical Order:** David is the fourth person in the alphabetical order (A, B, C, D, E, F). Since he's at the back, this means the alphabetical arrangement is reversed, and Fiona (F) must have been at the front of the line before the rearrangement.\n\n* **Stepping Forward:**  To be at the front after the steps, Fiona must have taken the fewest steps, meaning she was initially in the front of the line.\n\n* **Rotation:** Since Fiona was facing south after the rotation and didn't move back due to her initial position, her original position was facing north, just like all the others.\n\n**Therefore, Fiona's original position in the line was at the front.**",
+            "options": [
+                "First",
+                "Second",
+                "Third",
+                "Fourth"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Scenario:** Five individuals - A, B, C, D, and E - are lined up, facing North. \n\n**Clues:**\n* A is directly in front of C, but not at the very front of the line.\n* B is immediately before D.\n* E is two positions behind B.\n* There is at least one person between A and E.\n\n**Question:** If D is in the third position from the front, who is standing in the second position from the back?",
+            "difficulty": "above moderate 5/10",
+            "reasoning": "This question tests your ability to deduce the order of individuals based on 'before' and 'after' statements. Let's break down the clues:\n\n1. **\"A is directly in front of C, but not at the very front of the line.\"**  This means A and C are consecutive in the line, and neither is the first person. \n2. **\"B is immediately before D.\"** This means B and D are consecutive, with B being in front of D.\n3. **\"E is two positions behind B.\"** This means there are two people between E and B.\n4. **\"There is at least one person between A and E.\"** This confirms that A and E are not adjacent, and at least one person is between them.\n\nNow, let's use these clues and the information about D being in the third position:\n\n* **D is third from the front:** This means there are two people in front of D.  Since B is immediately before D, B must be in the second position, and A must be in the first position. \n* **E is two positions behind B:** Since B is in the second position, E must be in the fourth position.\n* **A is in front of C:** This means C must be in the fifth and last position. \n\nTherefore, with D in the third position and C in the fifth, **B is standing in the second position from the back.** \n\n**Key takeaway:** It's crucial to build the line step-by-step, carefully applying each clue and cross-referencing to ensure consistency. Avoid jumping to conclusions and ensure that each step logically follows from the previous information.",
+            "options": [
+                "A",
+                "C",
+                "D",
+                "E"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Six friends, Alice, Bob, Charlie, David, Emily, and Fiona, are standing in a line facing forward. They are arranged in order of their height, with the tallest person at the back of the line and the shortest person at the front. If Charlie is not the third tallest, and Emily is not the second shortest, then who is standing in the middle of the line?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the 'not' statements and their impact on the initial arrangement. \n\n1. **Initial Arrangement:**  We know the friends are lined up in order of height, tallest at the back, shortest at the front.\n\n2. **First 'Not' Statement:** 'If Charlie is not the third tallest,' means Charlie could be either taller or shorter than the third tallest person. He could be the tallest, second tallest, fourth tallest, fifth tallest, or the shortest.\n\n3. **Second 'Not' Statement:** 'If Emily is not the second shortest,' implies Emily could be the shortest, the third shortest, the fourth shortest, the fifth shortest, or the tallest.\n\n4. **Deduction:**  Since we need to find the middle person, we need to figure out who is in positions 3 and 4.  Neither Charlie nor Emily can be in positions 3 or 4 because of the 'not' statements. This leaves us with Alice, Bob, David, and Fiona.\n\n5. **Final Conclusion:**  Since there are only four people left to fill the six positions, and Charlie and Emily are excluded from positions 3 and 4, it means the middle position (position 3) must be filled by one of the remaining four people: Alice, Bob, David, or Fiona.  Therefore, the answer is **any of the remaining four friends: Alice, Bob, David, or Fiona**.",
+            "options": [
+                "Alice",
+                "Bob",
+                "David",
+                "Fiona"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Consider the standard alphabet (A to Z).  Starting from 'A', every 5th letter is selected, creating a new sequence.  If we move 'forward' through this sequence, how many positions ahead is the letter 'S' relative to the letter 'K'?",
+            "difficulty": "hard",
+            "reasoning": "This question involves understanding the concept of relative positions within a sequence that is formed by a specific rule.  Let's break down the steps:\n\n1. **Identifying the ranked sequence:** Starting from 'A', every 5th letter in the alphabet is selected. This creates the sequence: A, F, K, P, U, Z.\n\n2. **Determining positions:** In this sequence, 'K' occupies the 3rd position, while 'S' is not present. Since 'S' is not present in this ranked sequence, we need to consider its position in the original alphabet. In the original alphabet, 'S' is the 19th letter.\n\n3. **Relative position:** To determine how many positions ahead 'S' is relative to 'K', we need to consider their positions in the ranked sequence. 'K' is in the 3rd position. To find the position of 'S' in the ranked sequence, we need to identify the next 5th letter after 'P' (which is 'U') and then the next 5th letter after 'U' (which is 'Z'). Since 'S' comes before 'U', it's not part of the ranked sequence and therefore has no position relative to 'K' within this ranked sequence.  Therefore, we cannot calculate a relative position. \n\n**Final Answer:**  There is no position for 'S' relative to 'K' within the ranked sequence.  \n\n**Key Learning:** This question highlights the importance of carefully identifying the sequence based on the given rule and understanding the concept of relative position within that specific sequence, not just in the original alphabet.",
+            "options": [
+                "11",
+                "4",
+                "Not Applicable",
+                "16"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A group of five friends are auditioning for a play.  They're being ranked based on their performance, but with a unique twist.  They are first assessed based on their order of appearance in the alphabet.  The person whose last name appears *earliest* in the alphabet is ranked highest, and they are also given a special 'middle' position.  This means they are placed in the exact middle of the overall ranking.  Then, the remaining friends are ranked based on their performance, with the best performer being ranked highest.  \n\nHere are the names of the friends:\n\n1.  **Benjamin**\n2.  **Ava**\n3.  **Chloe**\n4.  **David**\n5.  **Emily**\n\nIf Ava performs better than Chloe, Chloe performs better than Emily, and David performs better than Benjamin, who ends up in the third position overall?  ",
+            "difficulty": "hard",
+            "reasoning": "This question challenges you to understand and apply two ranking criteria and how they interact. Here's a step-by-step solution:\n\n1. **Alphabet Ranking:** First, we need to rank the friends based on their last names in alphabetical order:\n    * **Ava** (A)\n    * **Benjamin** (B)\n    * **Chloe** (C)\n    * **David** (D)\n    * **Emily** (E)\n\n2. **Middle Position:**  Ava, with the last name that appears earliest in the alphabet, gets the middle position. This means the current ranking looks like:\n    *  _ \n    *  _ \n    * **Ava**\n    *  _ \n    *  _ \n\n3. **Performance Ranking:** Now, we need to incorporate the performance ranking information:\n    * Ava performs better than Chloe, so Ava stays in the middle, and Chloe takes the spot below her:\n        *  _ \n        *  _ \n        *  **Ava**\n        * **Chloe**\n        *  _ \n    * Chloe performs better than Emily, placing Emily below Chloe:\n        *  _ \n        *  _ \n        *  **Ava**\n        * **Chloe**\n        * **Emily** \n    * David performs better than Benjamin, so David takes the spot above Ava, and Benjamin is left in the last position:\n        * **David**\n        *  _ \n        *  **Ava**\n        * **Chloe**\n        * **Emily**\n        * **Benjamin**\n\n4. **Final Ranking:** The final ranking, with the middle position correctly assigned, is:\n    * **David** (Second position)\n    * **Ava** (Third position)\n    * **Chloe** (Fourth position)\n    * **Emily** (Fifth position)\n    * **Benjamin** (First position)\n\nTherefore, the person in the third position overall is **Ava**. ",
+            "options": [
+                "David",
+                "Chloe",
+                "Benjamin",
+                "Ava"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Eight friends, A, B, C, D, E, F, G, and H, are sitting in a circle facing the center.  \n\n* A is sitting three positions to the left of B. \n* C is sitting directly opposite H. \n* E is the third person to the right of D. \n* F is sitting between B and G, and is the youngest in the group. \n* The oldest person is sitting two positions to the right of the person who is sitting two positions to the right of A. \n\nIf the friends are arranged in order of age clockwise, starting with the oldest, who is sitting to the immediate right of the youngest person?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the provided clues and visualization of the circular arrangement. Here's a step-by-step solution:\n\n1. **Visualize the Circle:** Imagine an empty circle representing the arrangement of friends.\n\n2. **Place A and B:**  A is three positions to the left of B. Start by placing these two individuals on the circle.  \n\n3. **Place C and H:** C is directly opposite H.  Place these two individuals on the circle, ensuring they are opposite each other.\n\n4. **Place E and D:** E is the third person to the right of D. Place these two individuals, keeping in mind E is three positions to the right of D.\n\n5. **Place F, B, and G:** F is sitting between B and G. Since A is already three positions to the left of B, and F is between B and G,  F is to the right of B and G is to the right of F. Place these three individuals.\n\n6. **Identify the Oldest Person:** The oldest person is sitting two positions to the right of the person who is sitting two positions to the right of A.  Starting from A, move two positions to the right, then another two positions to the right. This places the oldest person in the circle.\n\n7. **Arrange in Order of Age:** We know F is the youngest. Now, place the individuals in order of age, starting with the oldest, moving clockwise.\n\n8. **Find the Person to the Right of F:**  Based on the arrangement in order of age, the person to the immediate right of F is **G**.\n\n**Therefore, the answer is G.**\n\nThis problem demonstrates the importance of breaking down complex information into smaller, manageable steps. By carefully considering each clue and visualizing the arrangement, we can solve for the final answer.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "G"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Seven friends (A, B, C, D, E, F, and G) are standing in a line facing the same direction, arranged from left to right. \n\n* At least four friends are standing between A and B. \n* At most three friends are standing between C and D. \n* E is standing to the immediate right of F. \n* At least two friends are standing to the right of G. \n\nWhat is the maximum number of friends that could be standing between B and C?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the 'at least' and 'at most' statements to determine the maximum possible distance between B and C.\n\n1. **Understanding the Statements:**\n   * 'At least four friends are standing between A and B' means there could be four or more friends between them. \n   * 'At most three friends are standing between C and D' means there could be three, two, one, or zero friends between them. \n   * 'E is standing to the immediate right of F' implies they are adjacent and their order is fixed. \n   * 'At least two friends are standing to the right of G' means there could be two or more friends to the right of G.\n\n2. **Analyzing the Constraints:**\n   * The first statement limits the possible positions of A and B. They must be far apart to accommodate at least four friends between them. \n   * The second statement sets an upper limit on the distance between C and D. \n   * The third statement fixes the positions of E and F, ensuring they are next to each other. \n   * The fourth statement places G near the right end of the line, with at least two friends after it.\n\n3. **Finding the Maximum Distance between B and C:**\n   * To maximize the distance between B and C, we need to place G as far to the right as possible. \n   * Since there are at least two friends to the right of G, the rightmost position for G would be the fifth position from the right. \n   * Now, to maximize the distance between B and C, we can position A in the first position and B in the second position, satisfying the first statement. \n   * With E and F being adjacent, we can place them in the third and fourth positions from the right (to accommodate the 'at least two friends' condition for G). \n   * This leaves the sixth position from the right for C and the seventh for D, satisfying the second statement.\n\n4. **The Solution:**\n   Following this arrangement, we have A-B-F-E-G-C-D.  Therefore, the maximum number of friends that could be standing between B and C is **three** (F, E, and G).",
+            "options": [
+                "Two",
+                "Three",
+                "Four",
+                "Five"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Seven aspiring chefs are competing in a culinary competition judged on three criteria: creativity, technique, and presentation. We know the following about their rankings:\n\n* **Creativity:**  Aisha scores higher than both Ben and Carlos.  David scores lower than both Ben and Carlos.\n* **Technique:**  Emily scores higher than both Fiona and  Greg. Fiona scores higher than Greg.\n* **Presentation:**  Ben scores higher than both Carlos and David. Greg scores higher than Aisha.\n\n**Either-Or Statement:**  Either Fiona scores higher than Aisha in presentation, or Aisha scores higher than Fiona in technique.\n\n**Question:** Based on the information provided, which chef ranks highest in the overall competition, assuming the scores from each criteria are combined to determine the overall ranking?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the 'either-or' statement and its implications on the overall rankings. Let's break it down step by step:\n\n1. **Analyzing the 'Either-Or' Statement:** The statement tells us that one of the following must be true:\n    * **Fiona scores higher than Aisha in presentation:** This means Aisha cannot be ranked higher than Fiona overall, as Fiona would have a higher score in one category.\n    * **Aisha scores higher than Fiona in technique:** This means Fiona cannot be ranked higher than Aisha overall, as Aisha would have a higher score in one category.\n\n2. **Eliminating Possibilities:** Since both possibilities in the 'either-or' statement prevent Fiona from being ranked higher than Aisha overall, we can eliminate Fiona as a potential candidate for the highest overall ranking.\n\n3. **Identifying Potential Candidates:** Now we need to consider the remaining chefs and analyze their potential for the highest overall ranking:\n    * **Aisha:**  Aisha has a strong lead in creativity but is hindered by a lower score in presentation. However, the 'either-or' statement eliminates the possibility of Fiona outranking her overall.\n    * **Ben:**  Ben has a strong lead in presentation but has a lower score in creativity and technique.\n    * **Carlos:** Carlos has a low score in both creativity and presentation.\n    * **David:** David has a low score in both creativity and technique.\n    * **Emily:** Emily has a strong lead in technique but is lower in creativity and presentation.\n    * **Greg:** Greg has a lower score in technique and creativity.\n\n4. **Deduction:** Based on the analysis above, the most likely candidate for the highest overall ranking is **Aisha**.  Even though she has a lower score in presentation, the 'either-or' statement guarantees that Fiona cannot outrank her overall, and her strong lead in creativity makes her the most likely candidate for the top spot.\n\n5. **Final Conclusion:** Therefore, based on the information provided, the chef most likely to rank highest in the overall competition is **Aisha**.  This conclusion is based on the logical deduction made possible by the 'either-or' statement and the analysis of the provided ranking information.",
+            "options": [
+                "Aisha",
+                "Ben",
+                "Emily",
+                "Fiona"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Scenario: Seven letters are arranged in a line from left to right: A, B, C, D, E, F, G. \n\nStatements:\n*  \"F is over C.\" \n*  \"D is under B.\" \n*  \"E is over G.\" \n*  \"A is under F.\"\n\nQuestion: Which letter is directly to the left of C?",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful analysis of the statements to determine the relative positions of the letters. Here's how to break it down:\n\n1. **Visualize the line:** Imagine the letters arranged in a line from left to right.\n2. **Combine statements:**  Combine the statements that mention C: \"F is over C\" and \"A is under F.\" This tells us that F is directly above C, and A is directly below F.  \n3. **Deduce the order:** This sequence tells us that the order is F, C, A.  \n4. **Consider other statements:** The statements \"D is under B\" and \"E is over G\" are not directly related to the position of C and don't influence the immediate left of C.\n5. **Final answer:**  Since F is directly above C, the letter directly to the left of C is **F.**\n\nThis question is tricky because it requires you to piece together information from multiple statements and avoid being misled by the irrelevant statements.",
+            "options": [
+                "A",
+                "B",
+                "G",
+                "F"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Four friends, named Alice, Bob, Carol, and David, are lined up in alphabetical order from left to right. Each friend holds a different colored ball: blue, green, red, and yellow.  Consider the following statements:\n\n1. Alice is not holding the blue ball.\n2. Bob is holding the green ball.\n3. The person holding the red ball is standing to the right of the person holding the blue ball.\n4. Carol is not holding the yellow ball.\n\nWhich statement is contradicted by the given information?",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "Here's how we can break down the contradictions:\n\n* **Statement 1:** Alice is not holding the blue ball. This statement is consistent with the given information, as it doesn't contradict any other statement.\n* **Statement 2:** Bob is holding the green ball. This statement is consistent with the given information, as it doesn't contradict any other statement.\n* **Statement 3:** The person holding the red ball is standing to the right of the person holding the blue ball. This statement is consistent with the given information, as it doesn't contradict any other statement.\n* **Statement 4:** Carol is not holding the yellow ball. This statement is contradicted by the given information.  If Carol is not holding the yellow ball, and Alice is not holding the blue ball, then Bob must be holding the yellow ball (since Bob already holds the green ball). This contradicts statement 2, which states Bob is holding the green ball.\n\n**Therefore, statement 4 is the one that is contradicted by the given information.**",
+            "options": [
+                "Statement 1",
+                "Statement 2",
+                "Statement 3",
+                "Statement 4"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Four friends (A, B, C, and D) are seated around a circular table facing the center.  D is to the right of A, and C is to the left of B.  If B is not seated next to D, who is seated to the immediate right of C?",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question involves a circular arrangement with multiple 'And' statements, leading to complex spatial reasoning. Here's how to solve it:\n\n1. **Visualize:** Imagine a circular table with four seats. The direction 'right' and 'left' are determined from each person's perspective as they face the center.\n\n2. **First Statement:** 'D is to the right of A' means that if you are sitting in A's position, D will be to your right.\n\n3. **Second Statement:** 'C is to the left of B' means that if you are sitting in B's position, C will be to your left.\n\n4. **Third Statement:** 'B is not seated next to D' rules out two possible arrangements where B and D are adjacent.\n\n5. **Deduction:**  Since we know D is to the right of A, and C is to the left of B, the only possible arrangement that satisfies all conditions is:\n\n-  C is to the right of A, and B is to the right of C.\n\n6. **Answer:** Therefore, **A** is seated to the immediate right of C. ",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Statement: If the alphabet is arranged in reverse order, with 'Z' being the first letter and 'A' being the last letter, and 'R' is placed 12 letters to the right of 'K', what is the position of 'H' relative to 'R'?",
+            "difficulty": "very tricky",
+            "reasoning": "This question tests your ability to visualize the alphabet in reverse order and understand relative positioning within that reversed sequence.  Let's break it down step-by-step:\n\n1. **Reverse Alphabet:** Imagine the alphabet arranged backward, with 'Z' at the beginning and 'A' at the end.\n\n2. **'R' and 'K' Positioning:** Since 'R' is placed 12 letters to the right of 'K', and we are working with the reversed alphabet, this means 'K' is 12 letters to the left of 'R'.\n\n3. **Finding 'H':** To determine the position of 'H' relative to 'R', we need to consider its position in the reversed alphabet. Since 'H' comes before 'R' in the standard alphabet, it would be located to the right of 'R' in the reversed alphabet.\n\n4. **Relative Position:**  Therefore, the position of 'H' relative to 'R' is that 'H' is to the **right** of 'R' in the reversed alphabet.\n\n**Key Takeaway:** Remember that 'left' and 'right' directions are flipped when the alphabet is reversed.  Think about the order of the letters in the reversed sequence to understand the relative positions correctly.",
+            "options": [
+                "Left",
+                "Right",
+                "12 letters to the left",
+                "12 letters to the right"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "The letters A, B, C, D, and E are arranged from left to right.  D is not immediately to the left of E.  C is not immediately to the left of B.  If A is immediately to the left of D, where is B in the final arrangement?",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful analysis of the 'Not' statements and their impact on the initial arrangement. Here's how to break it down:\n\n1. **Initial Arrangement:** We start with A, B, C, D, and E arranged from left to right.\n\n2. **Condition 1: D is not immediately to the left of E:**  This eliminates the possibility of DE being together. \n\n3. **Condition 2: C is not immediately to the left of B:** This eliminates the possibility of CB being together. \n\n4. **Condition 3: A is immediately to the left of D:**  This gives us the sequence AD.  \n\n5. **Deduction:** Now, consider the remaining letters: B and E. Since DE and CB cannot be together, and AD is fixed, the only possible arrangement to satisfy all conditions is **BADEC**.  Therefore, B is immediately to the left of A in the final arrangement.\n\n**Key Points:** \n\n* Understanding 'Not' statements is crucial. They indicate what is *not* true, which helps eliminate possibilities.\n* The order of the 'Not' statements can influence the deductions. In this case, we cannot immediately place E due to Condition 1, but its position becomes clear after applying Condition 3.\n* Visualizing the arrangements helps in eliminating incorrect possibilities. ",
+            "options": [
+                "Immediately to the left of A",
+                "Immediately to the right of A",
+                "Immediately to the left of D",
+                "Immediately to the right of D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**[Question Type]:** Rank the following words alphabetically, starting with the word \"cat\", and then considering only the words that contain the letter \"e\", followed by the words that contain the letter \"a\", and finally the words that contain neither \"e\" nor \"a\". \n\n**Example:** \n\ncat, bear, elephant, dog, zebra, fox, ant, lion, tiger, monkey",
+            "difficulty": "very tricky",
+            "reasoning": "This question tests the ability to solve for multiple rankings. Here's how to solve it step-by-step:\n\n1. **Starting Point:** We begin with the word \"cat\" as our first ranked word. \n\n2. **First Ranking Criteria:**  Next, we need to rank the words containing the letter \"e\" alphabetically.  The words that fit this criteria are:\n\n    * elephant \n    * zebra\n    *  monkey\n\n    Ranking these alphabetically gives us: \n\n    * elephant \n    * monkey \n    * zebra\n\n3. **Second Ranking Criteria:** Now, we rank the words containing the letter \"a\" alphabetically:\n\n    * bear\n    * cat\n    * ant\n    * lion\n    * tiger \n    *  zebra\n\n    Applying the alphabetical order, we get:\n\n    * ant\n    * bear\n    * cat\n    * lion\n    * tiger\n    * zebra \n\n4. **Final Ranking Criteria:** Lastly, we need to rank the remaining words that contain neither \"e\" nor \"a\" alphabetically.  The words that fit this criteria are:\n\n    * dog\n    * fox\n\n    Alphabetically, this gives us: \n\n    * dog\n    * fox \n\n5. **Final Ranking:** Combining all the ranked words, we get the final order:\n\n    1. cat \n    2. elephant \n    3. monkey \n    4. zebra \n    5. ant\n    6. bear\n    7. lion\n    8. tiger\n    9. dog\n    10. fox",
+            "options": [
+                "10",
+                "9",
+                "8",
+                "7"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "G, H, I, J, K, L, M are arranged in a single line facing the same direction. \n\n1.  I is three positions to the right of H.\n2. K is immediately to the left of L. \n3.  J is to the right of G. \n4. Except for M, all the characters are arranged in reverse alphabetical order from left to right.\n\nIf H is at the second position from the left, what is the position of L?",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful analysis of the 'except' statement and understanding the implications of reverse alphabetical order.  Here's how to break down the logic:\n\n1. **Reverse Alphabetical Order:**  Statement 4 tells us that most characters are arranged in reverse alphabetical order from left to right, with M being the exception. This means we need to consider the order: L, K, J, I, H, G...  (Note that G is not in its expected position, which will be important later.)\n\n2. **Placement of I and H:**  Statement 1 states I is three positions to the right of H.  Since H is at the second position from the left, I must be at the fifth position.  We can now update our arrangement:  L, K, J, I, H, G...\n\n3. **Placement of K and L:** Statement 2 says K is immediately to the left of L.  We know I is at the fifth position, H at the second, and L is to the right of K.  Therefore, K must be at the third position, and L at the fourth position. Our arrangement becomes: L, K, J, I, H, G...\n\n4. **Final Arrangement:** The 'except' statement tells us that M is the exception to the reverse alphabetical order. Since G is not in its expected position, we can conclude that G must be at the first position and M at the sixth position. This gives us the complete arrangement: G, H, K, L, I, M.\n\n5. **Answer:** Since L is at the fourth position from the left, the answer is 4.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Consider these statements:\n\n* Either A is before B, or C is after D.\n* If E is before F, then G is after H.\n* Either G is before I, or J is after K.\n* If L is before M, then N is after O.\n*  If P is before Q, then R is after S.\n\nIf A is before B, and E is before F, and P is before Q, what can we definitively conclude about the relative positions of I and K?",
+            "difficulty": "very tricky",
+            "reasoning": "This question tests your ability to work with 'either-or' statements and chain together logical deductions. Let's break it down step by step:\n\n1. **Focus on the relevant statements:**  We're given that A is before B, E is before F, and P is before Q. We need to figure out what this tells us about I and K.\n\n2. **Analyze the 'either-or' statements:**\n    *  \"Either A is before B, or C is after D.\"  Since A is before B, the first part of this statement is true, so we can ignore the second part (C is after D).\n    * \"Either G is before I, or J is after K.\"  We don't have any direct information about G, I, J, or K yet. \n\n3. **Chain together implications:**\n    * \"If E is before F, then G is after H.\"  Since E is before F, we know G is after H.\n    * \"If L is before M, then N is after O.\"  We have no information about L or M, so this statement is irrelevant.\n    * \"If P is before Q, then R is after S.\"  Since P is before Q, we know R is after S.  \n\n4. **Return to the unresolved 'either-or':** We still need to figure out the relationship between I and K. Since we know G is after H, and the statement \"Either G is before I, or J is after K\" must be true, the only way to satisfy this is if **J is after K.** \n\n**Therefore, we can conclude that J is after K.**",
+            "options": [
+                "I is before K",
+                "J is before K",
+                "J is after K",
+                "We cannot determine the relative positions of I and K"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "The alphabet is ranked in a way that alternates between forward and reverse order, starting with forward. For example: A, B, C, D, E, Z, Y, X, W, V, U, T, S, R, Q, P, O, N, M, L, K, J, I, H, G, F.  If 'P is between N and S', and 'R is between X and Q', then is 'G' closer to 'F' or 'H'? ",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires careful analysis of the complex ranking system.  The 'Between' statements provide clues about the relative positions of certain letters, but the alternating forward and reverse order adds a layer of complexity. Let's break down the solution:\n\n1. **Understand the Ranking:** The alphabet is ranked in a repeating pattern of forward then reverse order. This means the ranking progresses as follows: \n\n   * A, B, C, D, E (Forward)\n   * Z, Y, X, W, V (Reverse)\n   * U, T, S, R, Q (Forward)\n   * P, O, N, M, L (Reverse)\n   * K, J, I, H, G (Forward)\n   * F (Reverse)\n\n2. **Analyze the 'Between' Statements:**\n\n   * 'P is between N and S':  In the reverse order section, 'P' comes before 'N' and 'S'. This confirms the pattern is correct.\n   * 'R is between X and Q':  'R' is indeed between 'X' and 'Q' in the forward order section.\n\n3. **Determine the Position of 'G':**  Following the pattern, 'G' falls within the forward order section and comes before 'H' and after 'F'.\n\n4. **Conclusion:**  Since 'G' comes before 'H' and after 'F' in the forward order section, 'G' is closer to 'F' than 'H'.\n\nTherefore, the final answer is 'G is closer to F'.  ",
+            "options": [
+                "H",
+                "F",
+                "They are the same distance",
+                "Cannot be determined"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise:**\n\n* \"X is after W\"\n* \"V is before Z\"\n* \"Y is after U\"\n* \"T is before V\"\n* \"W is before U\"\n\n**Question:**\n\n* **Where is the letter 'Z' in the sequence?**",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires carefully piecing together the information to deduce the relative positions of the letters. Here's how to solve it step-by-step:\n\n1. **Combine Clues:** We need to combine the clues to create a larger order.  Let's start with \"W is before U\" and \"Y is after U.\"  This gives us: W - U - Y.\n\n2. **Extend the Sequence:**  Add \"X is after W\" to the sequence: W - U - Y - X.\n\n3. **Another Segment:**  Now, add \"T is before V\" and \"V is before Z\": T - V - Z.\n\n4. **Connect the Pieces:**  We still need to connect the segments. Since \"V is before Z\", and we already know \"U is before Y\", we can place \"V\" before \"U\" in our existing sequence.  This gives us: T - V - W - U - Y - X.  \n\n5. **Final Placement:**  Finally, we know \"Z\" is after \"V\". Therefore, the final order is: **T - V - W - U - Y - X - Z**.  This means **'Z' is the 7th letter in the sequence.**\n\n**Key Takeaway:** When working with 'Before' and 'After' statements, start by identifying key pairs that directly connect. Then, build upon those connections to deduce the larger sequence.",
+            "options": [
+                "1st",
+                "5th",
+                "7th",
+                "10th"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Premise:**  A - North, B - East, C - South, D - West, E - North-East, F - South-East, G - South-West, H - North-West\n\n**Rule:**  1. If the letter's direction is a cardinal direction (North, East, South, West), move it two positions in that direction.  \n2. If the letter's direction is a diagonal direction (North-East, South-East, South-West, North-West), move it one position in the direction specified.  \n3. After each move, rotate the letter's direction by 45 degrees clockwise.\n\n**Action:**  What is the final position and direction of letter 'E' after applying the rule three times?",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires a careful understanding of the rule and its application.  Here's a breakdown of the steps to solve it:\n\n**Step 1: Initial Position and Direction**\n* E - North-East\n\n**Step 2: Applying the rule for the first time**\n* Move E one position in the North-East direction.\n* Rotate the direction 45 degrees clockwise:  E - East\n\n**Step 3: Applying the rule for the second time**\n* Move E two positions in the East direction.\n* Rotate the direction 45 degrees clockwise: E - South-East\n\n**Step 4: Applying the rule for the third time**\n* Move E one position in the South-East direction.\n* Rotate the direction 45 degrees clockwise: E - South\n\n**Final Position and Direction:**  E is located two positions South of its starting position, with a direction of South.\n\n**Key Points:**\n* The rule's complexity stems from its multi-step nature and the rotation of direction after each move.\n* The combination of cardinal and diagonal directions adds to the difficulty.\n* Students need to track the letter's position and direction meticulously throughout the rule applications.",
+            "options": [
+                "South, South",
+                "Two positions South, South",
+                "South, North-East",
+                "Two positions South, North-East"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Five individuals \u2013 Alice, Ben, Charles, David, and Emily \u2013 are scheduled to give presentations in a seminar.  \n\n*  Alice presents immediately before Ben, but not necessarily first. \n*  Charles' presentation is scheduled to occur sometime before David's, but not necessarily immediately before. \n*  Emily presents either before or after Charles, but not in between Charles and David.\n\nIf we were to rearrange their presentation order to alphabetical order by name, how many individuals would have to switch their positions from the original schedule?  \n\n",
+            "difficulty": "very tricky",
+            "reasoning": "This question tests your ability to analyze time-based relationships and apply them to a hypothetical rearrangement. Here's how to approach it step-by-step:\n\n1. **Analyze the given relationships:**\n   - Alice presents before Ben (A then B). \n   - Charles presents before David (C then D).\n   - Emily's presentation is either before or after Charles, but not in between Charles and David.  This means Emily can be before Charles (E then C then D), after Charles (C then D then E), or at the beginning (E then A then B then C then D). \n\n2. **Identify the order for alphabetical rearrangement:**\n   - The alphabetical order would be Alice (A), Ben (B), Charles (C), David (D), and Emily (E). \n\n3. **Compare original relationships with alphabetical order:**\n   - Alice and Ben must remain together in the alphabetical order, so their positions are unaffected. \n   - Charles and David must remain together in the alphabetical order, so their positions are also unaffected. \n   - Emily's position, however, is entirely dependent on her initial placement relative to Charles and David. There are three possibilities based on the original arrangement:\n      -  **Scenario 1:** If Emily presents before Charles (E then C then D), she needs to move to the last position. \n      -  **Scenario 2:** If Emily presents after Charles (C then D then E), she needs to move to the last position. \n      -  **Scenario 3:** If Emily presents first (E then A then B then C then D), she needs to move to the last position. \n\n4. **Deduce the answer:**\n   - Since Emily's position must change in all possible scenarios, only Emily would have to switch her position.  \n\nTherefore, the correct answer is **1** individual would have to switch positions.",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Seven individuals (A, B, C, D, E, F, and G) are standing in a line facing east.  \n\n1.  C is three positions to the left of E. \n2.  F is immediately to the right of B. \n3.  A is two positions to the right of D.  \n4.  G moves one position to the right. \n5.  D moves two positions to the left.  \n6.  B moves one position to the right.  \n\nIf, after all these movements, E is in the fourth position from the left, what is the final position of F? ",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful consideration of each movement and how it affects the positions of all individuals in the line. Here's a step-by-step breakdown:\n\n1. **Initial Setup:** We start with a line of seven individuals facing east. We can represent their initial positions with an empty line: _ _ _ _ _ _ _  \n\n2. **Applying Clue 1:** 'C is three positions to the left of E' means we can place them in this order: _ _ _ C E _ _ \n\n3. **Applying Clue 2:** 'F is immediately to the right of B' means we can add them to the line: _ _ B F C E _ _ \n\n4. **Applying Clue 3:** 'A is two positions to the right of D' means we can add them to the line: _ D A B F C E _ \n\n5. **Applying Clue 4:** 'G moves one position to the right' means we need to consider the initial position of G. Since we haven't received any information regarding G, we can assume G is at the rightmost position and after the movement it becomes:  _ D A B F C E G \n\n6. **Applying Clue 5:** 'D moves two positions to the left' means D moves from its initial position to the left: D A B F C E G _ \n\n7. **Applying Clue 6:** 'B moves one position to the right' means B moves to the right: D A B F C E G _  \n\n8. **Final Position of E:** Now, we are given that E is in the fourth position from the left. Considering this, we can arrange the individuals in the line: D A B E F C G _ \n\n9. **Final Position of F:** Therefore, after all movements, **F is in the fifth position from the left.**\n\n**Important Note:** The given information states that E is in the fourth position from the left after all the movements, so we can deduce the exact position of each individual, including F.",
+            "options": [
+                "First",
+                "Second",
+                "Fourth",
+                "Fifth"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Scenario:** A series of letters is arranged according to a set of rules.  \n\n**Action:** Determine the 'First' and 'Last' letters in the arrangement.\n\n**Criteria:**\n\n1. **Rule 1:** The letters 'A', 'B', and 'C' always appear consecutively within the arrangement, but not necessarily in that order.  \n2. **Rule 2:** The letters 'X', 'Y', and 'Z' are placed at the beginning, middle, and end of the arrangement, respectively, in a fixed order, regardless of the position of the letters 'A', 'B', and 'C'.\n3. **Rule 3:** If the letter 'D' appears in the arrangement, it is always placed immediately after the letter 'Z'.\n4. **Rule 4:** The letter 'E' cannot appear before the letter 'F'.  \n5. **Rule 5:** Letters 'F', 'G', and 'H' are always placed in the middle of the arrangement, but the order of placement is determined by alphabetical order.\n\n**Hint:** Consider all possible arrangements given these rules and the alphabetical order of the letters.",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires careful analysis of the rules and their interactions. Let's break it down step by step:\n\n1. **Rule 2:**  'X', 'Y', and 'Z' are fixed in the arrangement, with 'Z' at the end. Therefore, the 'Last' letter is always 'Z'.\n2. **Rule 3:** 'D' always follows 'Z', making it the second to last letter in the arrangement.\n3. **Rule 5:**  'F', 'G', and 'H' are in the middle of the arrangement, with 'F' coming before 'G', and 'G' before 'H' due to alphabetical order. \n4. **Rule 4:** 'E' cannot be before 'F', meaning it's placed after 'F', 'G', and 'H' within the middle section. \n5. **Rule 1:**  'A', 'B', and 'C' are always together but can be in any order within the arrangement. They must be placed before the middle section, as 'Z' and 'D' are fixed at the end.\n\nCombining these rules, the arrangement must look like this:\n\n'X', 'Y', 'A', 'B', 'C', 'F', 'G', 'H', 'E', 'Z', 'D'\n\nTherefore, the 'First' letter is always 'X'.\n\n**Answer:** The 'First' letter is 'X' and the 'Last' letter is 'Z'.",
+            "options": [
+                "X and Z",
+                "A and Z",
+                "X and D",
+                "B and Z"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Scenario:**  Eight friends are sitting around a circular table, facing the center. They are playing a game where they pass a token clockwise. \n\n**Task:** Determine the position of 'H' relative to 'A', given the following information:\n* 'C' is three positions to the right of 'A'.\n* 'E' is two positions to the left of 'C'.\n* 'G' is directly opposite 'B'.\n* 'F' is sitting to the immediate right of 'D'.\n* 'H' is sitting two positions to the right of 'F'.\n\n**Constraints:** \n* All friends are sitting in a clockwise direction.\n* No two friends can sit in the same position.\n\n**Example:** If 'X' is three positions to the right of 'Y', then 'Y' would be three positions to the left of 'X'.",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful consideration of the circular arrangement and the relative positions of the friends. Here's how to solve it:\n\n1. **Visualize:** Imagine a circular table with eight spots. Start by placing 'A' in any position. \n2. **Place 'C':**  'C' is three positions to the right of 'A'. Move clockwise from 'A' and place 'C' in the third spot.\n3. **Place 'E':** 'E' is two positions to the left of 'C'. Move counter-clockwise from 'C' and place 'E' in the second spot.\n4. **Place 'G' and 'B':**  'G' is directly opposite 'B'. Since we don't know the position of either, we can't place them yet. We'll come back to this later.\n5. **Place 'F' and 'D':** 'F' is sitting to the immediate right of 'D'. Since we don't know the position of either, we can't place them yet. We'll come back to this later.\n6. **Place 'H':** 'H' is sitting two positions to the right of 'F'. We still don't know the position of 'F', so we can't place 'H' yet.\n7. **Connecting the dots:**  Now, we need to analyze the relationships between the friends to figure out the remaining positions.  \n    * We know 'G' is opposite 'B'. Since we have eight spots, there are only two possibilities for this.  \n    * The only way to place 'F' and 'D' while adhering to the rule that 'F' is to the right of 'D' is to place them in the two remaining spots between 'A' and 'C'.\n    * Now, we can place 'H' two positions to the right of 'F'.\n\n8. **Final Solution:** By carefully working through the relationships and placing the friends in the correct positions, we can determine that 'H' is three positions to the right of 'A'. ",
+            "options": [
+                "Three positions to the left",
+                "Three positions to the right",
+                "Two positions to the left",
+                "Two positions to the right"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Seven letters (A, B, C, D, E, F, G) are arranged in a specific order from left to right. Analyze the following statements and determine the position of letter G in the arrangement:\n\n1.  B is not immediately to the left of F.\n2.  If D is to the right of E, then C is to the left of A.\n3.  It is not true that both C and E are to the left of F.\n4.  Either B is to the left of A, or F is to the left of G.\n\nGiven these statements, where does G lie in the arrangement?",
+            "difficulty": "very tricky",
+            "reasoning": "This question is designed to be very tricky, relying on complex logical deductions and potential contradictions within the statements. Let's break down each statement to understand their implications:\n\n1. **\"B is not immediately to the left of F.\"**  This statement doesn't give us a direct order, but it eliminates the possibility of B being directly before F.\n\n2. **\"If D is to the right of E, then C is to the left of A.\"** This is a conditional statement. It means that if D is to the right of E, then we know C is before A. However, it doesn't tell us anything about the relative positions of C and E, or D and A.  We can't definitively say D is right of E, nor can we say C is left of A. It is also possible that the condition is false, meaning D is not to the right of E, and therefore, we cannot deduce anything about the positions of C and A.\n\n3. **\"It is not true that both C and E are to the left of F.\"** This statement is a double negative, which is often used to make questions tricky. It implies that either C is not to the left of F, or E is not to the left of F, or both. This statement tells us at least one of C or E must be to the right of F.\n\n4. **\"Either B is to the left of A, or F is to the left of G.\"** This is an inclusive 'or' statement, meaning one or both conditions could be true. This statement is also difficult because it relates two seemingly unrelated pairs of letters: B and A, and F and G.\n\n**Synthesizing the Statements:**\n\nThe key to solving this is to combine the information from all the statements. We know that either C or E is right of F (statement 3). We also know that either B is left of A or F is left of G (statement 4). Since B is not immediately left of F (statement 1), it's likely that B is to the left of A, satisfying one part of statement 4. This leaves us with the most likely scenario where F is to the left of G (the other part of statement 4). \n\n**Final Deduction:**\n\nBased on the statements and logical reasoning, we can conclude that G is at the rightmost end of the arrangement, as it is the only letter that could be to the right of F (given the statements and the fact that F is likely not at the rightmost end). \n\n**Therefore, the correct answer is that G is at the rightmost end of the arrangement.**",
+            "option and correct options": {
+                "options": [
+                    "G is directly to the right of F",
+                    "G is somewhere between E and F",
+                    "G is at the leftmost end of the arrangement",
+                    "G is at the rightmost end of the arrangement"
+                ],
+                "correct_option": "G is at the rightmost end of the arrangement"
+            },
+            "options": [
+                "Leftmost",
+                "Second from right",
+                "Rightmost",
+                "Third from left"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Nine friends, A, B, C, D, E, F, G, H, and I, are lined up in a row facing east.  They are all wearing different colored hats.  Use the following statements to determine who is wearing the green hat.\n\n* B is immediately before E.\n* D is immediately after A.\n* The person wearing the green hat is immediately before F.\n* G is immediately before C.\n* H is not at either end of the line.\n* I is immediately after C.\n* The person wearing the red hat is immediately after G.\n* The person wearing the blue hat is not at the beginning of the line.\n*  The person wearing the yellow hat is not immediately after A.\n* The person wearing the orange hat is not immediately after B.\n* The person wearing the purple hat is immediately before H.\n* The person wearing the black hat is immediately after D.",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires careful analysis of the 'immediately before/after' statements to determine the correct order of the friends and deduce who is wearing the green hat. Here's how to approach it:\n\n1. **Combine Statements:** Start by combining statements that directly relate to each other. For example, we know B is immediately before E and D is immediately after A. This gives us a partial sequence:  ... A D ... B E ...\n\n2. **Utilize Negative Statements:** Negative statements provide valuable information. We know H is not at either end, meaning there are friends before and after H. We also know the person wearing the blue hat isn't at the beginning, implying there's at least one person before them.\n\n3. **Deduce the Green Hat:**  The statement 'The person wearing the green hat is immediately before F' is crucial. Combining it with 'I is immediately after C' and 'G is immediately before C', we can deduce a portion of the sequence:  ... G C I F ...  This is because the person wearing the green hat must be before F, and since I is after C and G is before C, they must fit in this sequence. \n\n4. **Place the remaining friends:** Now we can place the remaining friends based on the remaining statements. The statement 'The person wearing the purple hat is immediately before H' means that H is somewhere after the person wearing the purple hat. Combining this with 'H is not at either end', we can conclude the purple hat is not at the beginning of the line and H is somewhere in the middle of the line. \n\n5. **Complete the Sequence:** We know 'The person wearing the black hat is immediately after D', and combining this with 'D is immediately after A', we get  ... A D (Black Hat) ....  We can then incorporate this into our growing sequence: ... G C I F ... A D (Black Hat) ...\n\n6. **Finalize the Order:**  By carefully placing the remaining friends and considering the negative statements (the yellow hat isn't immediately after A and the orange hat isn't immediately after B), we can determine the final sequence: \n**B (Green Hat) G C I F A D (Black Hat) E (Purple Hat) H (Blue Hat) (Orange Hat) (Yellow Hat)**\n\n**Therefore, the person wearing the green hat is B.**\n\n**Key Takeaways:**\n\n* **Break it Down:**  Divide the problem into smaller chunks by combining related statements.\n* **Negative Information is Valuable:** Use negative statements to deduce possibilities and limitations.\n* **Visual Representation:** Drawing a simple diagram to visualize the positions of the friends can be helpful.\n* **Patience and Careful Analysis:**  This question requires a methodical approach and careful analysis of each statement to avoid errors.",
+            "options": [
+                "A",
+                "C",
+                "F",
+                "H"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A group of letters, G, H, J, K, L, M, and N are arranged in a sequence. Determine the position and direction of 'J' relative to 'N' based on these clues:\n\n1. 'M' is directly after 'K' and two places before 'G'.\n2. 'L' is four places before 'H' and directly after 'N'.\n3. 'G' is three places before 'J' and directly before 'H'.",
+            "difficulty": "very tricky",
+            "reasoning": "This question tests your ability to combine multiple clues and deduce the direction of the sequence. Here's how to solve it:\n\n1. **Combine Clues 1 and 3:** We know 'M' is after 'K' and before 'G', while 'G' is before 'J'. This establishes the partial sequence: K, M, G, J.\n\n2. **Combine Clue 2 with the partial sequence:** 'L' is four places before 'H' and after 'N'. We also know 'G' is before 'H'. This creates the sequence: N, L, H, G, J.\n\n3. **Complete the Sequence:** Since 'M' is two places before 'G', we can complete the sequence as: N, L, H, G, M, K, J.\n\n4. **Determine the Position and Direction of 'J' relative to 'N':**  'J' is six places after 'N' and the sequence is proceeding forward (from left to right).\n\nTherefore, the position and direction of 'J' relative to 'N' is **six places after and forward**.",
+            "options": [
+                "Six places before, backward",
+                "Six places after, forward",
+                "Four places after, forward",
+                "Four places before, backward"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Five letters - A, B, C, D, and E - are arranged in a line from left to right.  \n\n**Statements:**\n* C is to the right of B. \n* A is not next to E.\n* D is not next to B.\n* E is not at either end.\n\n**Question:** What is the position of letter A in the final arrangement?",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires careful analysis of the statements to deduce the correct arrangement. Here's how to approach it step-by-step:\n\n1. **Statement 1:** 'C is to the right of B' means that B and C are together, and the order is B then C.\n\n2. **Statement 2:** 'A is not next to E' means that A and E cannot be directly next to each other. This implies they are separated by at least one other letter. \n\n3. **Statement 3:** 'D is not next to B' provides additional constraints for the arrangement.  Since we know B and C are together, D cannot be directly next to B, and also cannot be directly next to C.  \n\n4. **Statement 4:** 'E is not at either end' eliminates E from being the first or last letter in the arrangement.  \n\nNow, let's combine these clues to determine the position of A:\n\n* Since E cannot be at either end, and A is not next to E,  E cannot be the second letter either.  \n*  Given that D is not next to B or C, and considering that E cannot be the second letter, the only possibility is that E is the fourth letter. \n\nTherefore, the arrangement is:  **A B C E D** \n\nBased on this final arrangement, the position of letter A is **first**.",
+            "option and correct options": {
+                "options": [
+                    "Second",
+                    "Third",
+                    "Fourth",
+                    "Fifth"
+                ],
+                "correct_option": "First"
+            },
+            "options": [
+                "First",
+                "Second",
+                "Third",
+                "Fourth"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "In a specific alphabet ranking system, letters are ranked from bottom to top.  \n\n* If W is above X, then Y is below Z. \n*  V is below X. \n* T is above Z. \n\nWhat is the correct order of the letters W, X, Y, Z, V, and T from bottom to top in this ranking system?",
+            "difficulty": "very tricky 8/10",
+            "reasoning": "This question requires careful interpretation of the 'above' and 'below' statements, considering the reverse ranking system from bottom to top.  Let's break down the statements to deduce the order:\n\n1. **\"If W is above X, then Y is below Z\"**  This implies that W is higher than X, and Y is lower than Z. Since the ranking is from bottom to top, we can infer that Z is above Y, and X is above W.\n2. **\"V is below X\"** This means X is above V in the ranking system.\n3. **\"T is above Z\"** This means Z is below T in the ranking system.\n\nNow, combining all the information, we get the following order from bottom to top:\n\n1. **V** (lowest)\n2. **W**\n3. **X**\n4. **Y**\n5. **Z**\n6. **T** (highest)\n\nTherefore, the correct order of the letters from bottom to top is V, W, X, Y, Z, T.",
+            "options": [
+                "V, W, X, Y, Z, T",
+                "T, Z, Y, X, W, V",
+                "W, X, V, Z, Y, T",
+                "Z, Y, X, W, V, T"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Seven individuals, A, B, C, D, E, F, and G, are standing in a single line facing North. They are all wearing different colored shirts. The following clues are provided about their positions and shirt colors:\n\n1. C is standing immediately to the right of D.\n2. E is standing three positions to the left of B.\n3. The person wearing the blue shirt is standing three positions to the right of the person wearing the red shirt.\n4. F is standing two positions to the right of the person wearing the yellow shirt.\n5. G is standing to the immediate left of the person wearing the green shirt.\n6. A is not at either end of the line.\n7. The person wearing the purple shirt is standing in the fourth position from the left.\n\nWhich individual is wearing the red shirt?",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful deduction and analysis of multiple clues. Here's a step-by-step solution:\n\n1. **Combine Clues 1 and 2:**  We know C is to the right of D and E is three positions to the left of B. This suggests a partial arrangement:  ...E...B...C...D...\n\n2. **Analyze Clue 3:** The person with the blue shirt is three positions to the right of the person with the red shirt. This means they cannot be at the ends of the line.  Consider the partial arrangement from step 1. If the blue shirt is three positions right of the red shirt, the red shirt must be at the beginning of the line (or at least in the first three positions), and the blue shirt in the fourth or later. \n\n3. **Apply Clue 4:** F is two positions to the right of the person wearing the yellow shirt. This further suggests a possible pattern: ...F...Yellow...\n\n4. **Integrate Clue 5:** G is immediately to the left of the person wearing the green shirt.  We can tentatively place them in the arrangement: ...G...Green...\n\n5. **Utilize Clue 6:** A is not at either end of the line.  Let's consider all the possible positions for A, keeping in mind the previous deductions:\n   * **If A is in the second position:** It would violate Clue 3 (blue shirt three positions to the right of red shirt).\n   * **If A is in the third position:** It would violate Clue 4 (F two positions to the right of yellow shirt).\n   * **If A is in the fifth position:** It would violate Clue 2 (E three positions to the left of B).\n   * **If A is in the sixth position:** It would violate Clue 5 (G immediately left of green shirt).\n   * **Therefore, A must be in the fourth position.**\n\n6. **Deduce from Clue 7:** The purple shirt is in the fourth position from the left. This means A is wearing the purple shirt.\n\n7. **Final Arrangement:** Combining all the clues and deductions, we arrive at the following arrangement:\n\nRed...E...B...A(Purple)...C...D...F...Yellow...G...Green\n\n**Therefore, the individual wearing the red shirt is standing at the beginning of the line.**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Nine students are lined up for a photo, ordered alphabetically by their first names from left to right.  The students are named Alice, Ben, Chloe, David, Emily, Fiona, George, Harry, and Isaac.  \n\nWe know the following:\n\n* Ben is immediately to the right of Alice.\n* Chloe is three positions to the left of David.\n* Fiona is directly between Emily and George.\n* Harry is two positions to the left of Isaac.\n\nIf Alice is in the third position, what position is Emily in?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the clues and their impact on the alphabetical arrangement. Let's break it down:\n\n1. **Alice's Position:** Alice is in the third position. Since the line is ordered alphabetically, this means anyone whose name comes before Alice's alphabetically must be in positions 1 and 2. \n\n2. **Ben's Position:** Ben is immediately to the right of Alice, meaning he must be in the fourth position.\n\n3. **Chloe and David's Positions:** Chloe is three positions to the left of David. This is where it gets tricky, as we don't know their exact positions yet.  However, we can deduce that they must be somewhere in the first half of the line, as Alice is already in the third position, and David is to the right of Chloe.\n\n4. **Fiona's Position:** Fiona is directly between Emily and George. This tells us Emily and George are adjacent, and Fiona is in between them. \n\n5. **Harry and Isaac's Positions:** Harry is two positions to the left of Isaac.  This means Isaac must be in the right side of the line. \n\n6. **Combining the Clues:**  Now, let's see how all the clues fit together. Since Fiona is between Emily and George, they must be in positions 5 and 6 (as Alice and Ben occupy 3 and 4). This also means Chloe and David must be in positions 1 and 2, as we know they are before Alice. Since Harry is two positions to the left of Isaac, Isaac must be in the 9th position, leaving Harry in the 7th position. This gives us the following arrangement:\n\n1. Chloe\n2. David\n3. Alice\n4. Ben\n5. Emily\n6. George\n7. Harry\n8. Fiona\n9. Isaac\n\n**Therefore, Emily is in the 5th position.**",
+            "options": [
+                "1st",
+                "3rd",
+                "5th",
+                "7th"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Four friends, Alice, Bob, Charles, and David, are lined up facing east.  They are initially arranged alphabetically from left to right.  \n\nHere's how they move: \n* If a friend's name starts with a letter that appears earlier in the alphabet than the person to their right, they move one position to the right. \n* If a friend's name starts with a letter that appears later in the alphabet than the person to their right, they move two positions to the left. \n\nAfter these movements, who is standing in the third position from the left?",
+            "difficulty": "very tricky",
+            "reasoning": "This question requires careful tracking of each friend's movements based on the given rules.  Here's the step-by-step breakdown:\n\n1. **Initial Arrangement:**  Alice, Bob, Charles, David (from left to right)\n\n2. **Alice's Move:** Alice's name starts earlier in the alphabet than Bob's, so she moves one position to the right: Bob, Alice, Charles, David\n\n3. **Bob's Move:** Bob's name starts later in the alphabet than Alice's, so he moves two positions to the left: Alice, Bob, Charles, David\n\n4. **Charles's Move:** Charles's name starts later in the alphabet than Bob's, so he moves two positions to the left: Bob, Charles, Alice, David\n\n5. **David's Move:** David's name starts later in the alphabet than Alice's, so he moves two positions to the left: Charles, David, Alice, Bob\n\nTherefore, after all the movements, **David** is standing in the third position from the left.",
+            "options": [
+                "Alice",
+                "Bob",
+                "Charles",
+                "David"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Imagine a line with letters positioned according to these directions:  A North, B East, C South, D West, E North, F South, G East, H West, I North.  Letters move in their specified directions, but with a twist: if two letters collide, the alphabetically 'lower' letter moves 'left', and the 'higher' letter moves 'right'  on the line.  Where does letter 'I' end up after all letters have moved?",
+            "difficulty": "very tricky",
+            "reasoning": "This question is indeed very tricky, requiring careful step-by-step reasoning. Here's how to solve it:\n\n1. **Initial Placement:** We start with the following initial arrangement:\n\n    * A North\n    * B East\n    * C South\n    * D West\n    * E North\n    * F South\n    * G East\n    * H West\n    * I North\n\n2. **First Movement:**  A, E, and I all move North. They collide, leading to this arrangement:\n\n    * A (leftmost)\n    * E (middle)\n    * I (rightmost)\n    * B East\n    * C South\n    * D West\n    * F South\n    * G East\n    * H West\n\n3. **Second Movement:** B and G both move East. This leads to a collision with I, with I moving right and G moving left:\n\n    * A\n    * E\n    * I\n    * B (leftmost)\n    * G (middle)\n    * C South\n    * D West\n    * F South\n    * H West\n\n4. **Third Movement:** C, F, and H all move towards the center. C moves South, F moves South, and H moves West. This leads to the following arrangement:\n\n    * A\n    * E\n    * I\n    * B\n    * G\n    * C (leftmost)\n    * F (middle)\n    * H (rightmost)\n    * D West\n\n5. **Final Movement:** D moves West. Since it's the only remaining letter, it doesn't cause any collisions and simply lands to the left of the other letters:\n\n    * A\n    * E\n    * I\n    * B\n    * G\n    * C\n    * F\n    * H\n    * D\n\nTherefore, after all movements, letter 'I' ends up in the **third position from the left**.\n\n**Key Points:**\n\n* **Middle Positions:** The challenge in this question lies in understanding how collisions between multiple letters affect the final position of the letters, especially when they are moving towards 'middle' positions. \n* **Alphabetical Ordering:** The collision rule is based on the alphabetical order of the letters, so you need to pay close attention to which letter is 'higher' and which is 'lower'.\n* **Step-by-Step Reasoning:** It's crucial to break down the movement process into steps and consider each collision's effect on the arrangement to avoid errors and ensure accuracy.",
+            "options": [
+                "First",
+                "Second",
+                "Third",
+                "Fourth"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A group of letters are arranged along a straight line from West to East. Consider the following statements:\n\n1. At least 7 letters are positioned between 'G' and 'S'.\n2. There are at most 4 letters between 'K' and 'Z'.\n3. 'P' is positioned somewhere before 'R'.\n\nWhat is the maximum possible position of 'X' on the line, assuming 'X' is positioned somewhere after 'S'?",
+            "difficulty": "very tricky",
+            "reasoning": "To find the maximum possible position of 'X', we need to maximize the space between 'S' and 'X' while adhering to the given statements.\n\n**Statement 1:**  At least 7 letters between 'G' and 'S'. This tells us that 'S' cannot be too close to 'G'.  We can maximize the space between them by placing 'G' as far West as possible and 'S' as far East as possible while still having 7 letters between them.\n\n**Statement 2:** At most 4 letters between 'K' and 'Z'. This limits the maximum space between these two letters. We can maximize the space between 'S' and 'X' by placing 'Z' close to 'S'.\n\n**Statement 3:** 'P' is positioned before 'R'. This statement doesn't directly affect the maximum position of 'X', but it helps us understand that the letters are not necessarily in alphabetical order.\n\n**Maximizing the Space:**\n\n1. Place 'G' at the furthest West position possible. This leaves space for 7 letters between 'G' and 'S'.\n2. Place 'S' at the furthest East position possible, but keep in mind that 'Z' must be positioned within 4 letters of 'K'.  \n3. Place 'Z' as close to 'S' as possible to maximize the space between 'S' and 'X'.\n4. Since 'X' is positioned after 'S', it's possible to place 'X' at the furthest East position while still maintaining the constraint of 'Z' being within 4 letters of 'K'.\n\n**Therefore, the maximum possible position of 'X' would be at the very edge of the line on the East side.**\n\n**It's important to note:** We cannot definitively determine the exact position of 'X' as the information provided allows for some flexibility.  The key is to focus on maximizing the space between 'S' and 'X' within the constraints of the statements.",
+            "options": [
+                "East",
+                "West",
+                "Middle",
+                "Unknown"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Ranking Direction Alphabet Test",
+    "exam_id": 17,
+    "order": 2
+}

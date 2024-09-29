@@ -1,6 +1,7 @@
 from threading import Thread
 import time
 import json
+import traceback
 
 from commonQuizPrompt import *
 
@@ -11,7 +12,7 @@ def get_response_delayed_prompt(prompt, delay=1):
         raw_response = model.generate_content([prompt])
         return raw_response.text
     except Exception as error:
-        print(error)
+        print(traceback.format_exc())
         if "ResourceExhausted" in str(error):
             return get_response_delayed_prompt(prompt, delay * 2)
         else:
@@ -43,9 +44,13 @@ def get_quiz_json_prompt(topic, question_prompt, subtopic, skills, difficulty):
         {skills}
         </skills>
 
+        <question>
         difficulty level: '{difficulty}' and creatively make the question '{difficulty}'.
         higher difficulty questions should mean the questions are more verbose.
         it should take the test takers more time to solve if the difficulty is high.
+
+        Verify that the question is logically and mathematically correct
+        </question>
 
         <reasoning>
             The question belongs to the subtopic '{subtopic}' about <topic>'{topic}'</topic>.
@@ -69,6 +74,21 @@ def get_quiz_json_prompt(topic, question_prompt, subtopic, skills, difficulty):
         }}
     """
 
+def get_pro_reasoning(question):
+    return model_pro.generate_content(
+        f"""
+        <question>
+        {question["question"]}
+        </question>
+
+        Solve the above question step by step reviewing each step is correct and valid.
+        Each step should be explained in detail and step by step and is very important.
+
+        verify the mathematical calulations and every logical reasoning is correct.
+          
+        """
+    ).text
+
 
 def add_options_to_json(question):
     return get_response_delayed_prompt(
@@ -77,7 +97,7 @@ def add_options_to_json(question):
         <question>
         {question["question"]}
         <reasoning>
-        {question["reasoning"]}
+        {question["superior_reasoning"]}
         </reasoning>
 
         Identify the correct option from the reasoning and create 4 options and a correct option.
@@ -126,6 +146,9 @@ def get_valid_quiz_json_recursive(topic, subtopic, difficulty, cnt=0):
     try:
         quiz_json_response_without_options = get_response_delayed_prompt(quiz_json_prompt)
         quiz_json = json_parse(quiz_json_response_without_options)
+        reasoning_response = get_pro_reasoning(quiz_json)
+        reasoning_json = json_parse(reasoning_response)
+        quiz_json["superior_reasoning"] = reasoning_json["superior_reasoning"]
         quiz_json_response = add_options_to_json(quiz_json)
         options_json = json_parse(quiz_json_response)
         quiz_json["options"] = options_json["options"]
@@ -141,6 +164,8 @@ def get_valid_quiz_json_recursive(topic, subtopic, difficulty, cnt=0):
             return {}
         print(f"no. of recursive calls: {cnt}")
         print(f"question error: {error}")
+        traceback.print_exc()
+        
         time.sleep(1)
         return get_valid_quiz_json_recursive(topic, subtopic, difficulty, cnt + 1)
 
@@ -184,11 +209,13 @@ def get_valid_topics(topic):
 
 
 difficulties = ["moderate 4/10", "above moderate 5/10", "very tricky 8/10"]
-
+model_pro = generativeai.GenerativeModel(
+    model_name="gemini-1.0-pro"
+)
 
 topics = [
     "Logical Reasoning - Alphanumeric Series",
-    "Logical Reasoning - Ranking/Direction/Alphabet Test",
+    "Logical Reasoning - Ranking Direction Alphabet Test",
     "Logical Reasoning - Data Sufficiency",
     "Logical Reasoning - Coded Inequalities",
     "Logical Reasoning - Seating Arrangement",
@@ -202,27 +229,73 @@ topics = [
     "Logical Reasoning - Dice",
     "Logical Reasoning - Cube and Cuboid",
     "Logical Reasoning - Truth Tables",
-    "Logical Reasoning - Ranking-Direction-Alphabet Test",
+        # "Logical Reasoning - Ranking-Direction-Alphabet Test",
 ]
-for topic in topics:
-    topics_json = get_valid_topics(f"{topic}")
-    print(topics_json)
-    questions = []
+# for order,topic in enumerate(topics):
+#     topics_json = get_valid_topics(f"{topic}")
+#     print(topics_json)
+questions = []
 
-    for difficulty in difficulties:
-        threads = []
-        for sub_topic in topics_json:
-            thread = Thread(target=get_valid_quiz_json_recursive, args=(f"{topic}", sub_topic["subtopic"], difficulty))
+#     for difficulty in difficulties:
+#         threads = []
+#         for sub_topic in topics_json:
+#             thread = Thread(target=get_valid_quiz_json_recursive, args=(f"{topic}", sub_topic["subtopic"], difficulty))
+#             threads.append(thread)
+#             thread.start()
+#         for thread in threads:
+#             thread.join()
+#     quiz = {}
+#     quiz["questions"] = questions
+#     quiz["title"] = "Logical Reasoning"
+#     quiz["topic"] = f"{topic}"
+#     quiz["exam_id"] = 17
+#     quiz["order"] = order
+
+#     with open(f'gemini_output/new/sbi/reasoning/{topic}.json', 'w') as json_file:
+#         json.dump(quiz, json_file, indent=4)
+
+def get_pro_questions(quiz_json, cnt=0):
+    try:
+        reasoning_response = get_pro_reasoning(quiz_json)
+        print(reasoning_response)
+        quiz_json["superior_reasoning"] = reasoning_response
+        quiz_json_response = add_options_to_json(quiz_json)
+        options_json = json_parse(quiz_json_response)
+        quiz_json["options"] = options_json["options"]
+        quiz_json["correct_option"] = options_json["correct_option"]
+
+        if not valid_quiz_json(quiz_json):
+            raise ValueError("quizJson is not valid")
+
+        if quiz_json != {}:
+            questions.append(quiz_json)
+    except Exception as error:
+        if cnt > 2:
+            return {}
+        print(f"no. of recursive calls: {cnt}")
+        print(f"question error: {error}")
+        print(traceback.format_exc())
+        time.sleep(1)
+        return get_pro_questions(question, cnt + 1)
+
+
+
+path = "/Users/pranav/GitHub/pdf-parsing/gemini/gemini_output/new/sbi/reasoning/Logical Reasoning - Alphanumeric Series.json"
+
+with open(path, 'r') as json_file:
+    data = json.load(json_file)
+    for data_questions_batch in split_into_batches(data["questions"], 10):
+        for question in data_questions_batch:
+            threads = []
+            thread = Thread(target=get_pro_questions, args=(question))  
             threads.append(thread)
             thread.start()
-        for thread in threads:
-            thread.join()
-    quiz = {}
-    quiz["questions"] = questions
-    quiz["title"] = "Logical Reasoning"
-    quiz["topic"] = f"{topic}"
-    quiz["exam_id"] = 17
-    quiz["order"] = 2
+            for thread in threads:
+                thread.join()
 
-    with open(f'gemini_output/new/sbi/reasoning/{topic}.json', 'w') as json_file:
-        json.dump(quiz, json_file, indent=4)
+    data["questions"] = questions
+
+with open(path, 'w') as json_file:
+    json.dump(data, json_file, indent=4)
+
+        
