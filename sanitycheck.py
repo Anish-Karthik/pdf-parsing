@@ -76,6 +76,9 @@ topics_list = topics = [
 ]
 
 
+difficulties = ["easy", "medium", "hard"]
+
+
 def read_json(filename):
     with open(filename) as f:
         return json.load(f)
@@ -130,6 +133,8 @@ def sanity_check(filename):
 
         if 'difficulty' not in qn:
             print(truncate(qn["question"]) + " Difficulty missing")
+        elif qn["difficulty"] not in difficulties:
+            print(truncate(qn["question"]) + " Wrong Difficulty")
 
     write_json(data, filename)
 
@@ -142,5 +147,5 @@ def find_json_files(directory):
 
 
 # Example usage:
-directory_path = "gemini/gemini_output/sbi/reasoning"
+directory_path = "gemini/gemini_output/new/sbi/reasoning"
 json_files = find_json_files(directory_path)
