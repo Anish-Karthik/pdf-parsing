@@ -141,8 +141,8 @@ def json_parse(text):
 
 def valid_quiz_json(quiz_json):
     return all([
-        isinstance(quiz_json.get("question"), str),
         quiz_json.get("question"),
+        isinstance(quiz_json.get("question"), str),
         quiz_json.get("difficulty"),
         quiz_json.get("reasoning"),
         "options" in quiz_json and len(quiz_json["options"]) == 4,
@@ -150,14 +150,38 @@ def valid_quiz_json(quiz_json):
     ])
 
 
+def json_to_markdown(json_obj, indent_level=0):
+    markdown = ""
+    indent = "  " * indent_level  # 2 spaces per indent level
+
+    if isinstance(json_obj, dict):
+        for key, value in json_obj.items():
+            markdown += f"{indent}**{key}**: "
+            if isinstance(value, (dict, list)):
+                markdown += "\n" + json_to_markdown(value, indent_level + 1)
+            else:
+                markdown += f"{value}\n"
+    elif isinstance(json_obj, list):
+        for item in json_obj:
+            markdown += f"{indent}- "
+            if isinstance(item, (dict, list)):
+                markdown += "\n" + json_to_markdown(item, indent_level + 1)
+            else:
+                markdown += f"{item}\n"
+    else:
+        markdown += f"{json_obj}\n"
+    
+    return str(markdown) 
+
+
 def get_valid_quiz_json_recursive(topic, subtopic, difficulty, difficulty_value, cnt=0):
     skills = ""
     question_prompt = get_question_prompt(topic, subtopic, difficulty)
     quiz_json_prompt = get_quiz_json_prompt(topic, question_prompt, subtopic, skills, difficulty)
+    option_map = {"0": "A", "1": "B", "2": "C", "3": "D"}
 
     try:
         question_json_response_without_options = get_pro_response(quiz_json_prompt)
-        print(question_json_response_without_options)
         question_json = json_parse(question_json_response_without_options)
 
         question_json_response = add_options_to_json(question_json)
@@ -165,6 +189,17 @@ def get_valid_quiz_json_recursive(topic, subtopic, difficulty, difficulty_value,
         question_json["difficulty"] = difficulty_value
         question_json["options"] = options_json["options"]
         question_json["correct_option"] = options_json["correct_option"]
+        
+        if not isinstance(question_json["question"], str):
+            question_json["question"] = json_to_markdown(question_json["question"])
+
+        if not isinstance(question_json["reasoning"], str):
+            question_json["reasoning"] = json_to_markdown(question_json["reasoning"])
+
+        if not question_json["correct_option"] in ["A", "B", "C", "D"]:
+            for ind,option in enumerate(question_json["options"]):
+                if question_json["correct_option"] in option:
+                    question_json["correct_option"] = option_map[str(ind)]
 
         if not valid_quiz_json(question_json):
             print(question_json)
@@ -177,6 +212,11 @@ def get_valid_quiz_json_recursive(topic, subtopic, difficulty, difficulty_value,
             return {}
         print(f"no. of recursive calls: {cnt}")
         print(f"question error: {error}")
+        error_question_json = {
+            "question": question_json_response_without_options,
+            "option": question_json_response,
+        }
+        error_questions.append(error_question_json)
         traceback.print_exc()
 
         time.sleep(1)
@@ -235,27 +275,28 @@ model_pro = generativeai.GenerativeModel(
 
 topics = [
     # "Logical Reasoning - Alphanumeric Series",
-    "Logical Reasoning - Ranking Direction Alphabet Test",
-    "Logical Reasoning - Data Sufficiency",
-    "Logical Reasoning - Coded Inequalities",
-    "Logical Reasoning - Seating Arrangement",
-    "Logical Reasoning - Puzzle",
-    "Logical Reasoning - Syllogism",
+    # "Logical Reasoning - Ranking Direction Alphabet Test",
+    # "Logical Reasoning - Data Sufficiency",
+    # "Logical Reasoning - Coded Inequalities",
+    # "Logical Reasoning - Seating Arrangement",
+    # "Logical Reasoning - Puzzle",
+    # "Logical Reasoning - Syllogism",
     # "Logical Reasoning - Clocks",
-    "Logical Reasoning - Blood Relations",
-    "Logical Reasoning - Input-Output",
+    # "Logical Reasoning - Blood Relations",
+    # "Logical Reasoning - Input-Output",
     "Logical Reasoning - Coding-Decoding",
     "Logical Reasoning - Calendars",
     "Logical Reasoning - Dice",
     "Logical Reasoning - Cube and Cuboid",
     "Logical Reasoning - Truth Tables",
-    "Logical Reasoning - Ranking-Direction-Alphabet Test",
+    # "Logical Reasoning - Ranking-Direction-Alphabet Test",
 ]
 
 for order, topic in enumerate(topics):
     topics_json = get_valid_topics(f"{topic}")
     print(topics_json)
     questions = []
+    error_questions = []
 
     for difficulty, difficulty_value in difficulties.items():
         threads = []
@@ -275,6 +316,9 @@ for order, topic in enumerate(topics):
     with open(f'gemini_output/new/sbi/reasoning/{topic}.json', 'w') as json_file:
         json.dump(quiz, json_file, indent=4)
 
+    quiz["questions"] = error_questions
+    with open(f'gemini_output/error/sbi/reasoning/{topic}.json', 'w') as json_file:
+        json.dump(quiz, json_file, indent=4)
 
 # def get_pro_questions(quiz_json, cnt=0):
 #     try:

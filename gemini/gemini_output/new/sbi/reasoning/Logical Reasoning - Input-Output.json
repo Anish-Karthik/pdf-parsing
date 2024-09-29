@@ -1,0 +1,621 @@
+{
+    "questions": [
+        {
+            "question": "Consider the following code where symbols represent numbers:\n\n* '+' represents addition.\n* '-' represents subtraction.\n* '*' represents multiplication.\n* '/' represents division.\n\nIf '\u0394' represents '5', '\u25a1' represents '3', and '\u25cb' represents '2', what would be the value of the following expression?\n\n'\u0394 * \u25a1 - \u25cb'",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the expression step-by-step:\n\n1. **'\u0394 * \u25a1 - \u25cb'**: Substitute the symbols with their corresponding numerical values.\n2. **'5 * 3 - 2'**:  Perform the multiplication operation first.\n3. **'15 - 2'**: Finally, subtract 2 from 15.\n\nTherefore, the value of the expression '\u0394 * \u25a1 - \u25cb' is **13**.",
+            "options": [
+                "10",
+                "13",
+                "15",
+                "20"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**input**: 4 -> 17,\n7 -> 50,\n11 -> 122\n**output**: 16 -> ?\n",
+            "difficulty": "medium",
+            "reasoning": "The pattern is: (Input)^2 + 1 = Output \nLet's break it down step-by-step:\n\n* For input 4: 4^2 + 1 = 16 + 1 = 17\n* For input 7: 7^2 + 1 = 49 + 1 = 50\n* For input 11: 11^2 + 1 = 121 + 1 = 122\n\nTherefore, for input 16:\n* 16^2 + 1 = 256 + 1 = 257\n\nSo, the output for 16 is 257.",
+            "options": [
+                "256",
+                "257",
+                "260",
+                "258"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A machine takes two positive whole numbers as input. It then performs the following operations:\n\n1. **Multiply** the first number by 3.\n2. **Square** the second number.\n3. **Add** the results from steps 1 and 2.\n4. **Divide** the sum by 2. \n\nIf the input numbers are 4 and 5, what is the final output of the machine?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Working with Multiple Inputs' subtopic because it requires applying a series of operations to two separate input values. Here's a step-by-step solution:\n\n1. **Multiply the first number by 3:** 4 * 3 = 12\n2. **Square the second number:** 5 * 5 = 25\n3. **Add the results from steps 1 and 2:** 12 + 25 = 37\n4. **Divide the sum by 2:** 37 / 2 = 18.5\n\nTherefore, the final output of the machine is 18.5.",
+            "options": [
+                "18.5",
+                "19",
+                "37",
+                "74"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Input**: ZXV, TSR, PON, LKJ\n**Output**: ZYW, TVU, PQS, LMN\n**Question**: What is the output for the input: FGH?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Letter and Alphabet Manipulation' subtopic of 'Logical Reasoning - Input-Output'. Here's how we arrive at the answer: \n\n**1. Pattern Identification:**\n* Each input consists of three consecutive letters in reverse alphabetical order.\n* The output transforms the input by shifting the first and third letters one position forward in the alphabet while keeping the middle letter unchanged.\n\n**2. Applying the Pattern:**\n* Input: FGH \n* First letter 'F' shifted one position forward becomes 'G'.\n* Middle letter 'G' remains unchanged. \n* Third letter 'H' shifted one position forward becomes 'I'.\n\n**3. Solution:**\nTherefore, the output for the input 'FGH' is 'GIH'.",
+            "options": [
+                "GIH",
+                "FIH",
+                "FGI",
+                "GHI"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**input**: The input is a flow chart with a starting number. The flowchart has three processes represented by different shapes:\n\n* **Circle:**  Multiply the number by 2.\n* **Square:** Add 3 to the number. \n* **Triangle:** Divide the number by 3. \n\nThe order of the shapes represents the order of operations.\n**output**: The output is the final number after the input number goes through all the processes in the flowchart.\n**question**: If the input number is 6, and the flowchart follows the order: Circle -> Square -> Triangle, what is the output number?\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to understand and follow the logic of an input-output flowchart. Here's how to solve it step-by-step:\n\n1. **Circle (Multiply by 2):** The input number is 6. Multiplying by 2, we get 6 * 2 = 12.\n\n2. **Square (Add 3):** The number from the previous step is 12. Adding 3, we get 12 + 3 = 15.\n\n3. **Triangle (Divide by 3):** The number from the previous step is 15. Dividing by 3, we get 15 / 3 = 5.\n\nTherefore, the output number is 5.",
+            "options": [
+                "12",
+                "15",
+                "5",
+                "10"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Imagine a machine that processes colored shapes. It follows a specific rule: \n\n**Input:** A shape (Circle, Square, Triangle) and its color (Red, Blue, Green).\n**Output:** The machine outputs \"YES\" if the shape is a Circle AND Blue, OR if the shape is a Triangle AND NOT Green. Otherwise, it outputs \"NO\".\n\nFor example:\n* Input: Circle, Blue  -> Output: YES\n* Input: Square, Red -> Output: NO\n* Input: Triangle, Red -> Output: YES\n\n**What would the machine output for the following input?**\n\nInput: Triangle, Green",
+            "difficulty": "medium",
+            "reasoning": "This question tests the student's understanding of logical operators AND, OR, and NOT in a practical scenario. Here's how to solve it:\n\n1. **Identify the rules:**\n    * Rule 1: Circle AND Blue = YES\n    * Rule 2: Triangle AND NOT Green = YES\n    * If neither rule applies, the output is NO.\n\n2. **Apply the rules to the input:** \n    * The input is Triangle, Green. \n    * Rule 1 doesn't apply (not a blue circle).\n    * Rule 2 doesn't apply (it's a triangle, but it IS green).\n\n3. **Determine the output:**\n    * Since neither rule applies, the output is **NO**.",
+            "options": [
+                "YES",
+                "NO",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Input**: \n  **Table**: \n    - \n      **A**: 12\n      **B**: 4\n      **C**: 3\n      **Output**: 1\n    - \n      **A**: 15\n      **B**: 5\n      **C**: 2\n      **Output**: 2\n    - \n      **A**: 24\n      **B**: 6\n      **C**: 2\n      **Output**: 3\n**Output**: ?\n**Instructions**: Determine the logical relationship between the values in columns A, B, and C with their corresponding Output. Apply this relationship to the following set to find the missing Output:\nA = 36, B = 9, C = 2\n",
+            "difficulty": "medium",
+            "reasoning": "The relationship between the input and output values is: Output = (A / B) - C. \n\nLet's break down each row in the table to verify:\n\n**Row 1:**\n* A = 12, B = 4, C = 3\n* Output = (12 / 4) - 3 = 3 - 3 = 1\n\n**Row 2:**\n* A = 15, B = 5, C = 2\n* Output = (15 / 5) - 2 = 3 - 2 = 2\n\n**Row 3:**\n* A = 24, B = 6, C = 2\n* Output = (24 / 6) - 2 = 4 - 2 = 3\n\nNow, let's apply the rule to the final set to calculate the missing Output:\n\n* A = 36, B = 9, C = 2\n* Output = (36 / 9) - 2 = 4 - 2 = 2\n\nTherefore, the missing Output is 2.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A robot is placed on a grid, initially facing North. It receives the following commands, with each command causing a specific movement:\n\n* **F:** Move one unit forward in the current direction.\n* **B:** Move one unit backward (opposite the current direction).\n* **L:** Turn 90 degrees left.\n* **R:** Turn 90 degrees right.\n\n**Input:** The robot receives the following sequence of commands: **F, R, F, L, B, L, F, R, R** \n\n**Question:** If the robot starts at coordinates (0,0), what are its final coordinates after executing the command sequence?",
+            "difficulty": "medium",
+            "reasoning": "Here's a step-by-step breakdown of the robot's movements:\n\n1. **F (0,0) -> (0,1):** Robot moves one unit North to (0,1).\n2. **R (0,1):** Robot turns right, now facing East.\n3. **F (0,1) -> (1,1):** Robot moves one unit East to (1,1).\n4. **L (1,1):** Robot turns left, now facing North.\n5. **B (1,1) -> (1,0):** Robot moves one unit South to (1,0).\n6. **L (1,0):** Robot turns left, now facing West.\n7. **F (1,0) -> (0,0):** Robot moves one unit West to (0,0).\n8. **R (0,0):** Robot turns right, now facing North.\n9. **R (0,0):** Robot turns right again, now facing East.\n\nTherefore, the robot's final coordinates are **(0, 0)**.",
+            "options": [
+                "(1, 1)",
+                "(0, 1)",
+                "(0, 0)",
+                "(1, 0)"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Input**: A string of letters representing the seating arrangement around a circular table.  Capital letters (A, B, C...) represent people facing the center of the table, while lowercase letters (a, b, c...) represent people facing outwards from the table.\n**Output**: The number of people whose right-hand neighbor is facing the opposite direction.\n**Example**: Input: 'AaBbCc'. Output: 6 (Everyone's right-hand neighbor is facing the opposite direction).\n**Question**: What is the output for the input string 'AbCdefgHI'?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Dealing with Complex Arrangements' as it requires visualizing and analyzing a circular arrangement with an added layer of complexity due to the facing direction. \n\nLet's break down the solution:\n\n1. **Visualize:** Imagine a circular table with people sitting around it. The letters in the input string represent their seating order, and the case (uppercase or lowercase) indicates their facing direction.\n\n2. **Identify Pairs:**  Go through the string, identifying pairs where one person faces inwards and the other outwards. In 'AbCdefgHI', these pairs are: Ab, bC, de, ef, gH, and HI.\n\n3. **Circular Arrangement:** Remember that this is a circular arrangement, so the last person ('I') is considered the left-hand neighbor of the first person ('A').  Since 'I' is uppercase (facing inwards) and 'A' is lowercase (facing outwards), they form a valid pair.\n\n4. **Count the Pairs:**  We identified 6 pairs in step 2 and 1 pair in step 3, totaling 7 pairs.\n\nTherefore, the output for the input 'AbCdefgHI' is 7.",
+            "options": [
+                "3",
+                "5",
+                "6",
+                "7"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**scenario**: A special machine uses a matrix-based system to process numerical inputs.  The machine takes a 2x2 input matrix and multiplies it by its internal processing matrix. The result is then presented as a new 2x2 output matrix.\n**input**: Input Matrix:\n[ 3  1 ]\n[ 0  2 ]\n\nProcessing Matrix:\n[ 0  1 ]\n[ 2  1 ]\n**output**: Output Matrix:\n[ 2  4 ]\n[ 4  2 ]\n**question**: Given the following input matrix and the same processing matrix, what is the output matrix?\n\nInput Matrix:\n[ 1  4 ]\n[ 2  1 ]\n\nProcessing Matrix:\n[ 0  1 ]\n[ 2  1 ]\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Analyzing Input-Output Tables and Matrices' subtopic within Logical Reasoning - Input-Output. Here's how to solve it:\n\n**Understanding Matrix Multiplication**\n\nTo multiply two matrices, you multiply the rows of the first matrix by the columns of the second matrix. Let's break it down for our example:\n\n1. **First Row, First Column of Output Matrix:**\n   - Multiply the elements of the first row of the input matrix (1, 4) by the corresponding elements of the first column of the processing matrix (0, 2): \n      (1 * 0) + (4 * 2) = 8\n\n2. **First Row, Second Column of Output Matrix:**\n   - Multiply the elements of the first row of the input matrix (1, 4) by the corresponding elements of the second column of the processing matrix (1, 1):\n       (1 * 1) + (4 * 1) = 5\n\n3. **Second Row, First Column of Output Matrix:**\n   - Multiply the elements of the second row of the input matrix (2, 1) by the corresponding elements of the first column of the processing matrix (0, 2):\n       (2 * 0) + (1 * 2) = 2\n\n4. **Second Row, Second Column of Output Matrix:**\n    - Multiply the elements of the second row of the input matrix (2, 1) by the corresponding elements of the second column of the processing matrix (1, 1):\n       (2 * 1) + (1 * 1) = 3\n\n**Result:**\n\nTherefore, the output matrix is:\n\n[ 8  5 ]\n[ 2  3 ]",
+            "options": [
+                "[ 8  5 ]\n[ 2  3 ]",
+                "[ 2  4 ]\n[ 4  2 ]",
+                "[ 5  8 ]\n[ 3  2 ]",
+                "[ 1  4 ]\n[ 2  1 ]"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**description**: **Input:** A three-letter word.\n**Output:** A number, calculated based on the positions of the letters in the alphabet.\n\n**Example:**\nInput: CAT\nOutput: 28\n\n**Rule:**  ?\n**examples**: \n  - \n    **input**: CAT\n    **output**: 28\n",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Identifying the Rule and Applying it' about 'Logical Reasoning - Input-Output'. Here's how to solve it:\n\n1. **Analyze the Example:** We need to find how 'CAT' results in 28 using the positions of letters in the alphabet.\n2. **Assign Numerical Values:**\n   * C = 3 (as it's the 3rd letter)\n   * A = 1\n   * T = 20\n3. **Test Operations:** Try different operations to see if we can get 28 using 3, 1, and 20.  Adding them directly (3+1+20) gives us 24.  Let's try something else.\n4. **Identify the Pattern:** Notice that if we multiply the first two numbers (3 x 1 = 3) and then add the third number (3 + 20), we get 23. We are close to 28. What if we add the positions of the first and last letters (3+20=23) and then multiply it by the position of the middle letter (23*1 = 23)? This does not work either. The rule must involve some other combination of arithmetic operations. \n5. **Refine the Rule:**  What if we square the position of the middle letter (1 x 1 = 1) and then add the product of the positions of the first and third letters (3 x 20 = 60)? 1 + 60 = 61.  We are closer. Let's try squaring the position of the first letter (3*3=9), adding the position of the second letter (9+1=10) and finally multiplying by the position of the third letter (10 * 20 = 200). This does not work.  What if we multiply the positions of the first and third letters (3 x 20 = 60),  divide this number by 2 (60/2=30) and subtract the position of the second letter (30-1=29)?  We are very close! Perhaps we need to adjust the divisor slightly. Let's try dividing by 2.1 instead of 2 (60/2.1 = 28.57). This is very close to 28. It is possible that the rule involves rounding the result to the nearest whole number.\n6. **Verify the Rule:** The rule seems to be: (Position of First Letter x Position of Third Letter) / 2.1 -  Position of Second Letter = Output. Round the output to the nearest whole number. \n",
+            "options": [
+                "Multiply the positions of the first and third letters, divide by 2, and subtract the position of the second letter.",
+                "Add the positions of the first, second, and third letters.",
+                "Multiply the positions of the first and third letters, divide by 2.1, and subtract the position of the second letter.",
+                "Square the position of the first letter, add the position of the second letter, and then multiply by the position of the third letter."
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**input**: A robotic arm sorts colored blocks on a conveyor belt.  It follows these rules:\n\n1. **Red Block:** Move one space forward.\n2. **Blue Block:** Move two spaces forward.\n3. **Green Block:**  Return to starting position.\n\nYou observe the robot arm process this sequence: Red - Blue - Green - Red.  The arm ends up **three spaces** from the starting position.\n**output**: Three spaces forward from the starting position.\n**missing_step**: One rule is missing to explain the robot's final position. What could this missing rule be?\n**question**: Which additional rule, applied to one of the existing colors, would explain the robot's final position three spaces forward?\n",
+            "difficulty": "medium",
+            "reasoning": "Let's analyze the robot's movement step-by-step:\n\n1. **Red Block:** Move one space forward. (Position: 1 space forward)\n2. **Blue Block:** Move two spaces forward. (Position: 3 spaces forward)\n3. **Green Block:** Return to the starting position. (Position: 0 spaces forward)\n4. **Red Block:** Move one space forward. (Position: 1 space forward)\n\nTo reach the final position of three spaces forward, the robot needs to move two more spaces ahead from its position after the last Red block. Therefore, a possible missing rule could be:\n\n**Red Block: If the robot has already moved once because of a red block, then move two spaces forward.**\n\nWith this added rule, the last Red block would make the robot move two spaces forward (because it already moved once forward due to a red block), resulting in a final position three spaces from the start.",
+            "options": [
+                "Move one space backward",
+                "Move two spaces forward",
+                "Stay in the same position",
+                "Move three spaces forward"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A machine takes a series of inputs in the form of letters and performs a set of operations on them. The operations are as follows:\n\n**Input:** A, B, C, D\n\n**Step 1:**  Reverse the order of the letters.\n**Step 2:**  Replace the second and third letters with their numerical positions in the English alphabet.\n**Step 3:**  Add the numerical values from Step 2.\n\n**If the input is D, A, B, C, what is the final output?**",
+            "difficulty": 1,
+            "reasoning": "Let's break down the solution step-by-step:\n\n**Step 1: Reverse the order of the letters.**\n\nInput: D, A, B, C\nOutput: C, B, A, D\n\n**Step 2: Replace the second and third letters with their numerical positions in the English alphabet.**\n\n* B is the 2nd letter of the alphabet.\n* A is the 1st letter of the alphabet.\n\nC, B, A, D becomes C, 2, 1, D\n\n**Step 3: Add the numerical values from Step 2.**\n\n2 + 1 = 3\n\n**Final Output: 3**",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**input**: A string of letters representing consecutive directional movements (e.g., 'NNESW').\n**output**: A single letter representing the final direction faced ('N', 'S', 'E', or 'W') after executing all movements in the input string, starting from North.\n**rule**: Each letter in the input string represents a movement of one unit in that direction: \n'N' - North, 'S' - South, 'E' - East, 'W' - West.\n",
+            "difficulty": "medium",
+            "reasoning": "Let's take an example input string: 'NNESW'.\n\n1. **Start:** Initially facing North ('N').\n2. **'N':** Move one unit North. Still facing North.\n3. **'N':** Move one unit North. Still facing North.\n4. **'E':** Move one unit East. Now facing East.\n5. **'S':** Move one unit South. Still facing East.\n6. **'W':** Move one unit West. Back to facing North. \n\nTherefore, the final direction faced after executing 'NNESW' is **North ('N')**.",
+            "options": [
+                "South",
+                "East",
+                "West",
+                "North"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**title**: Broken Vending Machine\n**instructions**: Imagine a vending machine where each button press corresponds to a specific action. Due to a malfunction, the machine skips a step in its sequence. Can you identify the missing step?\n**input**: 1. Insert Coin\n2. Select Item Code\n3. ___ \n4. Dispense Item\n**output**: Collect Change (if any)\n**question**: What is the missing step in the vending machine's sequence?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Finding the Missing Step or Element' subtopic because it presents a logical sequence with a missing component. The vending machine scenario provides a relatable context. \n\nThe correct sequence of operations for a vending machine is:\n1. Insert Coin\n2. Select Item Code\n3. **Process Payment**\n4. Dispense Item\n5. Collect Change (if any)\n\nThe missing step is **Process Payment**.  This is essential as the machine needs to confirm payment before releasing the item. The difficulty level is 'medium' as it requires understanding the basic functionality of a common device and identifying a logical omission.",
+            "options": [
+                "Insert Coin",
+                "Collect Change",
+                "Process Payment",
+                "Dispense Item"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Input:**\n\n\"FLOWER\", \"GARDEN\", \"BLOOM\"\n\n**Output:**\n\n\"REWOLF\", \"NEDRAG\", \"MOOLB\"\n\n**Task:** Determine the rule applied to transform the input words into the output words.",
+            "difficulty": "medium",
+            "reasoning": "The rule used to transform the input words into the output words is as follows:\n\n1. **Reverse the order of letters in each word.** \n\nLet's verify this rule with each example:\n\n* **FLOWER** reversed becomes **REWOLF**.\n* **GARDEN** reversed becomes **NEDRAG**.\n* **BLOOM** reversed becomes **MOOLB**.\n\nTherefore, the rule consistently transforms the input words into the output words.",
+            "options": [
+                "Reverse",
+                "Replace",
+                "Remove",
+                "Add"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**input**: Imagine a square grid of lights, 4 rows by 4 columns. Each light can be either ON or OFF.  You are given the following rules to change the state of the lights:\n\n1. **TOGGLE:** Selecting any single light will toggle its state (ON becomes OFF, OFF becomes ON).\n2. **SWAP:** Selecting any 2x2 square within the grid will swap the states of the lights in the top left and bottom right corners of that square.\n\n**Starting Configuration:** All lights are OFF.\n\n**Target Configuration:**  The lights in the top row need to be ON, while all other lights remain OFF.\n\n**output**: The minimum number of actions (TOGGLE or SWAP) required to achieve the Target Configuration from the Starting Configuration.\n**question**: What is the minimum number of actions needed to achieve the Target Configuration?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Dealing with Complex Arrangements' as it requires visualizing and manipulating a grid of elements following specific rules. Here's a step-by-step solution:\n\n1. **Analyze the Rules:**\n    - TOGGLE affects a single light.\n    - SWAP affects two lights, always in opposite corners of a 2x2 square.\n\n2. **Strategic Approach:**\n    - Notice that using only TOGGLE to turn on the top row would require 4 actions. \n    -  However, we can optimize this using SWAP.\n\n3. **Optimal Solution:**\n    - **Step 1:** Perform SWAP on the top left 2x2 square. This turns ON the top left and bottom right lights of that square.\n    - **Step 2:** Perform SWAP on the top right 2x2 square. This turns ON the top right light and turns OFF the previously lit bottom right light.\n\n4. **Result:** We have achieved the Target Configuration (top row ON, rest OFF) in just **2 actions**.\n\nTherefore, the minimum number of actions required is 2. ",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Input**: A string of three binary digits (0 or 1).\n**Output**: A single binary digit (0 or 1).\n**Logical Rule**: The output is 1 if and only if the first AND third input digits are different, OR the second digit is a 1.\n**Example**: Input: 100, Output: 1\n",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes both AND and OR logical connectives, requiring the test-taker to consider multiple conditions. \n\nLet's break down the example: Input: 100\n\n* **Condition 1: First AND third digits different?** Yes, 1 is different from 0. \n* **Condition 2: Second digit is 1?** No, the second digit is 0.\n\nSince at least one condition (Condition 1) is true, the output is 1. The 'OR' connective means only one of the conditions needs to be true for a 1 output. \n\nThis question tests the ability to apply multiple logical connectives to a problem and deduce the correct output based on the given rule.",
+            "options": [
+                "AND",
+                "OR",
+                "XOR",
+                "NOT"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**description**: This flowchart processes a 2-digit number. It squares the first digit and subtracts the second digit from the result. This final value is then multiplied by 2 to produce the output.\n**example**: Input: 37, Output: 10  ((3*3)-7 = 2, 2 * 2 = 4)\n**question**: What is the output for the input 64?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Understanding Input-Output Flowcharts' subtopic within the broader topic of 'Logical Reasoning - Input-Output'. Here's how to solve it:\n\n1. **Isolate the digits:** The input is 64.  The first digit is '6' and the second digit is '4'.\n\n2. **Square the first digit:** 6 * 6 = 36\n\n3. **Subtract the second digit:** 36 - 4 = 32\n\n4. **Multiply by 2:** 32 * 2 = 64\n\nTherefore, the output for the input 64 is 64. Each step follows the flowchart's logic, and the mathematical calculations are accurate.",
+            "options": [
+                "32",
+                "64",
+                "128",
+                "10"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Input:** CAT (ZBY) DOG\n**Output:** FDW (YXC) HQI\n**Question:** What is the output for the input: APE (WVR) MAN?",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Letter and Alphabet Manipulation' about 'Logical Reasoning - Input-Output'. \n\nHere's how the rule works:\n\n* **Step 1: Letter Shift:** Each letter in the input word is shifted forward three places in the alphabet. \n    * CAT becomes DFU\n    * DOG becomes GQI\n* **Step 2: Reverse Alphabet Mapping (Parentheses):** The letters within the parentheses are mapped to their corresponding positions in the reversed alphabet (Z=A, Y=B, X=C, etc.).\n    * ZBY becomes ABC\n    * WVR becomes XYZ\n* **Step 3: Combine:** The results from Step 1 and Step 2 are combined to form the output.\n    * DFU + ABC = FDW\n    * GQI = HQI\n\nApplying the rule to the new input 'APE (WVR) MAN':\n\n1. **Letter Shift:**\n   * APE becomes DSH\n   * MAN becomes PDQ\n2. **Reverse Alphabet Mapping:**\n   * WVR becomes XYZ\n3. **Combine:**\n   * DSH + XYZ =  HSZ\n   * PDQ = PDQ\n\nTherefore, the output for the input 'APE (WVR) MAN' is **HSZ (XYZ) PDQ**.",
+            "options": [
+                "HSZ (XYZ) PDQ",
+                "DFW (ABC) HQI",
+                "DSH (XYZ) PDQ",
+                "HSZ (WVR) PDQ"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Input:** 5, 16, 38, 79, ?\n\n**Rule:** The pattern follows the rule: (Input * 2) + (Previous Output Number's Units Digit) = Output. \nNote: For the first number, the 'Previous Output Number' is considered 0.\n\n**Challenge:** What number should replace the question mark?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the pattern step-by-step:\n\n1. **First Number (5):**\n   - (5 * 2) + (0) = 10 \n\n2. **Second Number (16):**\n   - (16 * 2) + (0) = 32. Since the units digit of the previous output (10) is 0, we add 0.\n\n3. **Third Number (38):**\n   - (38 * 2) + (2) = 78. We add 2 because the units digit of the previous output (32) is 2.\n\n4. **Fourth Number (79):**\n   - (79 * 2) + (8) = 166. We add 8 because the units digit of the previous output (78) is 8.\n\n5. **Fifth Number (?):**\n   - (166 * 2) + (6) = 338. We add 6 because the units digit of the previous output (166) is 6.\n\nTherefore, the missing number is 338.",
+            "options": [
+                "166",
+                "338",
+                "340",
+                "332"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**question_description**: What is the output of the following input: '7, 12, 9, 15'?\n**statement_1**: Every odd-positioned number in the input sequence is doubled, and every even-positioned number is halved.\n**statement_2**: The output is the sum of the second-largest and second-smallest numbers in the input sequence after processing.\n**answer_choices**: \n  - Statement 1 ALONE is sufficient.\n  - Statement 2 ALONE is sufficient.\n  - BOTH statements TOGETHER are sufficient.\n  - NEITHER statement ALONE is sufficient, BUT BOTH TOGETHER are sufficient.\n  - NEITHER statement ALONE is sufficient, and BOTH TOGETHER are NOT sufficient.\n",
+            "difficulty": "medium",
+            "reasoning": "Here's the breakdown of why the correct answer is **BOTH statements TOGETHER are sufficient:**\n\n**Statement 1 ALONE is NOT sufficient:**\n* While it tells us how to process each number in the sequence (doubling odds, halving evens), it doesn't define what the final output should be.\n* Applying Statement 1, we'd get: '14, 6, 18, 7.5'. We still don't know how to get a single output value. \n\n**Statement 2 ALONE is NOT sufficient:**\n* It defines the output as the sum of the second-largest and second-smallest numbers *after processing*. However, we don't know how the numbers are processed.\n\n**BOTH statements TOGETHER are sufficient:**\n1. **Process using Statement 1:** '7, 12, 9, 15' becomes '14, 6, 18, 7.5'\n2. **Apply Statement 2:**\n    * Second-largest number after processing: 14\n    * Second-smallest number after processing: 7.5\n    * Sum: 14 + 7.5 = 21.5\n\n**Therefore, we need both statements to determine the output is 21.5.**",
+            "answer": "BOTH statements TOGETHER are sufficient.",
+            "options": [
+                "Statement 1 ALONE is sufficient.",
+                "Statement 2 ALONE is sufficient.",
+                "NEITHER statement ALONE is sufficient, BUT BOTH TOGETHER are sufficient.",
+                "NEITHER statement ALONE is sufficient, and BOTH TOGETHER are NOT sufficient."
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**input_output**: \n  - \n    **input**: 2x + 5 = 15\n    **output**: 5\n  - \n    **input**: 3x - 8 = 1\n    **output**: 3\n**question**: What is the output (value of 'x') for the following equation: 4x + 2 = 18?\n",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Mathematical Operations and Equations' about 'Logical Reasoning - Input-Output'.\n\nEach input represents a simple linear equation. The output is the solution to that equation (the value of 'x').\n\nHere's how to solve the given question:\n\n1. **Isolate the 'x' term:**\n   - Subtract 2 from both sides of the equation: \n     4x + 2 - 2 = 18 - 2\n     4x = 16 \n\n2. **Solve for 'x':**\n   - Divide both sides of the equation by 4:\n     4x / 4 = 16 / 4\n     x = 4\n\nTherefore, the output for the equation 4x + 2 = 18 is **4**.",
+            "options": [
+                "1",
+                "3",
+                "4",
+                "5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Input**: Two words, each containing only the letters A, B, or C.\n**Output**: A single word containing only the letters A, B, or C.\n**Task**: Determine the rule that generates the output word based on the two input words. Then, apply this rule to find the output for the input pair: \"CAB\", \"ABC\".\n**Example**: * Input: \"AAB\", \"BCA\" -> Output: \"BBA\"\n* Input: \"CAB\", \"AAC\" -> Output: \"CBC\"\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Working with Multiple Inputs' as it requires analyzing two separate inputs to generate the output.  Let's break down the example to understand the rule:\n\n**Example Breakdown:**\n\n* **Input 1:** \"AAB\"\n* **Input 2:** \"BCA\"\n* **Output:**  \"BBA\"\n\n**Observation:**\n\nNotice how the output word seems to be formed by selecting the 'dominant' letter at each position from the two input words. 'Dominant' in this case refers to the letter that appears more times in the corresponding position across the two input words. \n\nLet's test this observation:\n\n* **Position 1:** 'A' appears twice in Input 1, 'B' appears once in Input 2. Hence, 'A' is dominant, and the first letter of the output is 'A'.\n* **Position 2:** 'A' appears twice in Input 1, 'C' appears once in Input 2. Hence, 'A' is dominant, and the second letter of the output is 'A'.\n* **Position 3:** 'B' appears once in Input 1, 'A' appears once in Input 2. Both have equal occurrences. In this case, the letter from Input 2 takes precedence, making 'A' the dominant letter, and the third letter of the output is 'A'.\n\nApplying this rule to the second example also holds true.\n\n**Solving the given problem:**\n\n* **Input 1:** \"CAB\"\n* **Input 2:** \"ABC\"\n\n* **Position 1:** 'C' and 'A' appear once each. 'A' from Input 2 takes precedence, so the first letter of the output is 'A'.\n* **Position 2:** 'A' and 'B' appear once each. 'B' from Input 2 takes precedence, so the second letter of the output is 'B'.\n* **Position 3:** 'B' and 'C' appear once each. 'C' from Input 2 takes precedence, so the third letter of the output is 'C'. \n\n**Therefore, the output for the input pair \"CAB\", \"ABC\" is \"ABC\".**",
+            "options": [
+                "AAB",
+                "ABC",
+                "CBA",
+                "CAB"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: Imagine a machine that takes words as input and applies a set of rules to generate an output word.  The rules are based on the position of letters in the English alphabet (A=1, B=2, C=3, ... Z=26).\n**example**: Here are some examples:\n\n* Input:  CAT  -> Output:  DCW  (Each letter shifted forward by its alphabetical position: C + 3 = F, A + 1 = B, T + 20 = W)\n* Input:  DOG  -> Output:  EJS (Each letter shifted forward by its alphabetical position: D + 4 = H, O + 15 = J, G + 7 = S ) \n**question**: What would the output be if the input word is 'BIRD'?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Identifying the Rule and Applying it' subtopic of Logical Reasoning - Input-Output. Here's how to solve it:\n\n1. **Identify the Rule:** The machine shifts each letter forward in the alphabet by a value equal to the letter's position in the alphabet.\n\n2. **Apply the Rule to 'BIRD':**\n    * B (2nd letter) + 2 = D\n    * I (9th letter) + 9 = R\n    * R (18th letter) + 18 = 36 (Since 36 is greater than 26, we subtract 26 to loop back around the alphabet: 36 - 26 = 10, which corresponds to J)\n    * D (4th letter) + 4 = H\n\n3. **Combine the Results:** The output word is DRJH.",
+            "options": [
+                "DRJH",
+                "ESJT",
+                "CQJG",
+                "DTIH"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**description**: The following symbols represent a coded message. Study the input-output pattern and answer the question below.\n\n**Input:**\n\n* ! @ # $ % ^ & *\n* & ^ % $ # @ ! *\n* $ # @ ! & ^ %\n\n**Output:**\n\n* * ! @ # $ % ^ &\n* * & ^ % $ # @ !\n* * $ # @ ! & ^ %\n\n**Question:** What is the output for the following input?\n\n* ^ % $ # @ ! *\n* ! @ # $ % ^ & *\n* % ^ & * ! @ # $\n \n**input**: \n  - ^ % $ # @ ! *\n  - ! @ # $ % ^ & *\n  - % ^ & * ! @ # $\n",
+            "difficulty": 1,
+            "reasoning": "This question falls under the 'Coding and Decoding using Symbols' subtopic of Logical Reasoning - Input-Output. Here's how to decode the pattern:\n\n1. **Observe:** Notice that the output retains all the symbols from the input but in a modified order.\n2. **Identify the change:** The last symbol of each line in the input becomes the first symbol of the corresponding line in the output. The remaining symbols are shifted one position to the right.\n3. **Apply the rule:** Apply this rule to the given input to find the output. \n\n**Solution:**\n\n* Input Line 1: ^ % $ # @ ! *\n* Output Line 1: * ^ % $ # @ !\n\n* Input Line 2: ! @ # $ % ^ & *\n* Output Line 2: * ! @ # $ % ^ &\n\n* Input Line 3: % ^ & * ! @ # $\n* Output Line 3: $ % ^ & * ! @ # \n\nTherefore, the correct output is:\n\n* * ^ % $ # @ !\n* * ! @ # $ % ^ &\n* $ % ^ & * ! @ #",
+            "options": [
+                "* ^ % $ # @ !",
+                "* ! @ # $ % ^ &",
+                "$ % ^ & * ! @ #",
+                "* % ^ & * ! @ # $"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Input:**  \u0394, \u25a1, \u2606, \u25cb,  \u0394\u0394, \u25a1\u25a1, \u2606\u2606\n\n**Output:** 1, 1, 1, 1, 2, 2, 2\n\n**Question:** What is the output for the input  '\u25cb\u25cb\u25cb'? ",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Finding the Missing Step or Element' subtopic within 'Logical Reasoning - Input-Output'.  The pattern relies on recognizing the repetition of symbols:\n\n* **Single Symbol:** Each unique symbol (\u0394, \u25a1, \u2606, \u25cb) has an initial output of '1'.\n* **Double Symbol:** When a symbol is repeated immediately ('\u0394\u0394', '\u25a1\u25a1', '\u2606\u2606'), the output becomes '2'.\n\nTherefore, to determine the output for '\u25cb\u25cb\u25cb', we observe three consecutive circles. Following the established pattern, the output would be '3' to reflect the triple repetition.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**input**: Each input consists of a mathematical equation with a single unknown variable represented by 'x'. The equation will involve a combination of addition, subtraction, multiplication, and division.\n**output**: The output is the value of 'x' that satisfies the given equation.\n**question**: Find the value of 'x' in the following equation:\n\n2x + 5 = 3(x - 4)\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Mathematical Operations and Equations' as it directly involves solving an equation using algebraic manipulations. \n\nHere's how to solve the equation step-by-step:\n\n1. **Distribute on the right side:**\n   2x + 5 = 3x - 12 \n\n2. **Subtract 2x from both sides:**\n   5 = x - 12\n\n3. **Add 12 to both sides:**\n   17 = x\n\nTherefore, the value of 'x' that satisfies the equation is 17.",
+            "options": [
+                "17",
+                "3x - 12",
+                "5",
+                "x - 12"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Input**: A string of characters consisting of only 'A', 'B', and 'C'.\n**Output**: A sequence of numbers, where each number represents the frequency of a corresponding character in the input string.\n**Logic**: The output sequence will always have three numbers. The first number represents the frequency of 'A', the second represents the frequency of 'B', and the third represents the frequency of 'C' in the input string.\n**Question**: Given the input string 'ABCCAB', what is the corresponding output sequence?\n",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Coding and Decoding using Symbols' about 'Logical Reasoning - Input-Output'.\n\nHere's how we can decode the output sequence:\n\n1. **Count the frequency of 'A':** The input string 'ABCCAB' has 'A' appearing twice.\n2. **Count the frequency of 'B':** The input string 'ABCCAB' has 'B' appearing twice.\n3. **Count the frequency of 'C':** The input string 'ABCCAB' has 'C' appearing twice.\n\nTherefore, the output sequence is 222. Each number in the sequence represents the frequency of the corresponding character ('A', 'B', and 'C') in the input string.",
+            "options": [
+                "111",
+                "222",
+                "333",
+                "444"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A factory uses a system of three machines (A, B, and C) to process raw materials into finished products.  The output of each machine becomes the input for the next, following a specific pattern. Below is a table showing the output of each machine after processing a certain quantity of raw materials.\n**input**: \n  **type**: table\n  **data**: \n    **Machine**: \n      - A\n      - B\n      - C\n    **Output (units)**: \n      - 12\n      - 36\n      - 9\n**question**: If machine A receives 20 units of raw material, what will be the final output from machine C?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Analyzing Input-Output Tables and Matrices' as it requires identifying the pattern in the table to predict future output. Here's the step-by-step solution:\n\n1. **Identify the pattern:** Observe the relationship between the output of each machine. We can see that:\n    - Machine B outputs 3 times the input it receives from Machine A (36 / 12 = 3)\n    - Machine C outputs 1/4th the input it receives from Machine B (9 / 36 = 1/4)\n\n2. **Apply the pattern to the new input:**\n    - Machine A receives 20 units.\n    - Machine B will output 3 times that amount: 20 * 3 = 60 units\n    - Machine C will output 1/4th of Machine B's output: 60 / 4 = 15 units\n\nTherefore, the final output from machine C will be 15 units when machine A receives 20 units of raw material.",
+            "options": [
+                "12 units",
+                "36 units",
+                "15 units",
+                "60 units"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**1. Input:**: Two words, separated by a comma.\n**2. Output:**: A single word formed by combining the two input words, but with the letters of the second word reversed.\n**Example Input:**: TIME, STAR\n**Example Output:**: TIMERATS\n**3. Question:**: What is the output for the input: DOOR, BELL?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Word Formation and Rearrangement' subtopic as it requires manipulating and combining words in a specific way. Here's how to solve the example:\n\n1. **Input:** DOOR, BELL\n2. **Reverse the second word:** LLEB\n3. **Combine the first word and the reversed second word:** DOORLLEB\n\nTherefore, the correct output for the input 'DOOR, BELL' is 'DOORLLEB'.  The medium difficulty stems from requiring both word reversal and combination, making it slightly more challenging than a simple concatenation task.",
+            "options": [
+                "DOORLLEB",
+                "DOORELB",
+                "BELLDOOR",
+                "DOORBALE"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**description**: **Input:** A string of characters containing only the letters 'A', 'B', and 'C'.\n**Output:** A single letter, either 'A', 'B', or 'C'.\n**Logic:** The output letter is determined by the following rules:\n* If the input string contains at least one 'A' AND at least one 'B', the output is 'C'.\n* If the input string contains at least one 'A' OR at least one 'C' but NOT both, the output is 'B'.\n* If neither of the above conditions is met, the output is 'A'.\n**Example:** Input: \"BAC\"; Output: 'C'.\n**examples**: \n  - \n    **input**: BAC\n    **output**: C\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses a student's understanding of logical connectives 'AND', 'OR', and 'NOT' through a slightly more complex application than simple truth tables. Here's how the example is solved:\n\n1. **Analyze the input:** The input string \"BAC\" contains 'A', 'B', and 'C'.\n2. **Apply the first rule:** The string contains both 'A' AND 'B', so the output should be 'C'.\n3. **Verify other rules:** The other rules are irrelevant in this case since the first rule is satisfied.\n4. **Confirm the output:** The output is indeed 'C', as determined by the logic.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "AND"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Imagine a robot on a 5x5 grid. The robot starts at position (1,1), facing North.  It understands the following commands:\n\n* **F(n):** Move forward 'n' spaces in the direction it's facing.\n* **R:** Turn 90 degrees to the right.\n* **L:** Turn 90 degrees to the left.\n\nIf the robot receives the command sequence: **F(2), R, F(3), L, F(1)**, what will be its final position (x,y) and facing direction?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the robot's movements:\n\n1. **F(2):** Moves 2 spaces North from (1,1) to (1,3).\n2. **R:** Turns right, now facing East.\n3. **F(3):** Moves 3 spaces East from (1,3) to (4,3).\n4. **L:** Turns left, now facing North again.\n5. **F(1):** Moves 1 space North from (4,3) to (4,4).\n\nTherefore, the robot's final position is **(4,4)**, facing **North**.",
+            "options": [
+                "A) (4,4), East",
+                "B) (4,4), North",
+                "C) (3,4), North",
+                "D) (1,1), North"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Observe the following input-output sequence and determine the missing output:\n\nInput: 5, 11, 23, 47, ?\nOutput: 2, 5, 11, 23, ?\n\nWhat is the missing output?",
+            "difficulty": "medium",
+            "reasoning": "This sequence involves a combination of multiplication and subtraction. Here's how it works:\n\n1. **Start with the input:** 5.\n2. **Multiply by 2:** 5 * 2 = 10\n3. **Subtract 8:** 10 - 8 = 2 (This is the first output)\n4. **Take the next input:** 11\n5. **Multiply by 2:** 11 * 2 = 22\n6. **Subtract 8:** 22 - 8 = 14\n7. **However, notice the output is not 14, but 5.**  The pattern is to take the **previous output** and add it to the result of the subtraction: 14 + 2 = 16, then subtract 11 (the previous input) to get 5.\n\nLet's apply this pattern to find the missing output:\n\n1. **Input:** 47\n2. **Multiply by 2:** 47 * 2 = 94\n3. **Subtract 8:** 94 - 8 = 86\n4. **Add the previous output (23):** 86 + 23 = 109\n5. **Subtract the previous input (23):** 109 - 23 = **86**\n\nTherefore, the missing output is 86.",
+            "options": [
+                "14",
+                "86",
+                "94",
+                "109"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**input**: You are provided with three input sets (A, B, and C) each containing five unique single-digit numbers (0-9).  \n\n**Example:** \n* Input Set A: {2, 4, 6, 8, 0}\n* Input Set B: {1, 3, 5, 7, 9}\n* Input Set C: {3, 1, 4, 5, 9}\n\n**output**: A single output number is generated based on the following operations:\n1. **Summation:** Calculate the sum of the numbers in each input set (SumA, SumB, SumC).\n2. **Multiplication:** Multiply the three sums obtained in step 1.\n3. **Units Digit Extraction:** The output is the units digit of the product calculated in step 2.\n\n**Example:**\n* SumA = 20\n* SumB = 25\n* SumC = 22\n* Product = 20 * 25 * 22 = 11000\n* Output = 0 \n**question**: Given the following input sets, determine the output number:\n\n* Input Set A: {7, 3, 1, 8, 2}\n* Input Set B: {9, 4, 5, 2, 6}\n* Input Set C: {8, 3, 0, 7, 5} \n",
+            "difficulty": "medium",
+            "reasoning": "**1. Summation:**\n* SumA = 7 + 3 + 1 + 8 + 2 = 21\n* SumB = 9 + 4 + 5 + 2 + 6 = 26\n* SumC = 8 + 3 + 0 + 7 + 5 = 23\n\n**2. Multiplication:**\n* Product = 21 * 26 * 23 = 12458 \n\n**3. Units Digit Extraction:**\n* The units digit of 12458 is 8.\n\nTherefore, the output number is 8.",
+            "options": [
+                "1",
+                "2",
+                "6",
+                "8"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**input**:  | Input 1 | Input 2 | Input 3 |\n|---|---|---|\n| 4 | 7 | 2 |\n| 9 | 3 | 5 |\n| 6 | 2 | 8 |\n**output**: | Output |\n|---|\n| 18 |\n| 32 |\n| 26 |\n**question**: What is the rule that governs the transformation from the input to the output?\n**options**: \n  **A**: Multiply Input 1 by Input 3, then add Input 2.\n  **B**: Add all three inputs, then multiply by 2.\n  **C**: Subtract Input 2 from the sum of Input 1 and Input 3.\n  **D**: Square Input 2, then add the product of Input 1 and Input 3.\n",
+            "difficulty": "medium",
+            "reasoning": "The correct rule is **A: Multiply Input 1 by Input 3, then add Input 2.** Here's why:\n\n* **Let's test the rule with the first set of inputs:**\n    * Input 1 (4) * Input 3 (2) = 8\n    * 8 + Input 2 (7) = 15\n\n* **Let's test the rule with the second set of inputs:**\n    * Input 1 (9) * Input 3 (5) = 45\n    * 45 + Input 2 (3) = 48\n\n* **Let's test the rule with the third set of inputs:**\n    * Input 1 (6) * Input 3 (8) = 48\n    * 48 + Input 2 (2) = 50\n\nAs demonstrated, this rule consistently produces the correct output for each set of inputs. The other options fail to produce the correct output for all input sets.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**input**: Consider the following flowchart:\n\n[Flowchart Image]\n\nThe flowchart represents a series of operations performed on an input value. The operations are as follows:\n\n1.  **Start:** The input value enters the flowchart.\n2.  **Multiply by 4:** The input value is multiplied by 4.\n3.  **Add 6:** The result from step 2 is increased by 6.\n4.  **Check if Odd:** The result from step 3 is checked if it's odd or even.\n5.  **If Odd, Add 7:** If the result from step 4 is odd, 7 is added to it.\n6.  **If Even, Subtract 2:** If the result from step 4 is even, 2 is subtracted from it. \n7.  **Output:** The final result is the output.\n\n**Question:** If the input value is 5, what will be the output value after processing the flowchart?\n**options**: \n  - 29\n  - 27\n  - 33\n  - 25\n**correct_option**: 29\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Input Processing:**\n   - The input value is 5.\n\n**2. Multiply by 4:**\n   - 5 * 4 = 20\n\n**3. Add 6:**\n   - 20 + 6 = 26\n\n**4. Check if Odd:**\n   - 26 is an even number.\n\n**5. If Even, Subtract 2:**\n   - 26 - 2 = 24\n\n**6. Output:**\n   - The final output value is **24**.\n\nTherefore, the correct answer is **24**.",
+            "options": [
+                "29",
+                "27",
+                "33",
+                "25"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Input**: A 3x3 grid containing the numbers 1 through 9 arranged in a random order.\n**Output**: The number of pairs of adjacent cells (horizontally or vertically, not diagonally) where the difference between the numbers is greater than 2.\n**Question**: Given a 3x3 grid filled with numbers 1 to 9 in random order, determine the total number of adjacent cell pairs (horizontal or vertical only) where the difference between the numbers is greater than 2. \n**Example**: Consider the following grid:\n\n1 3 5\n8 2 6\n7 4 9\n\nIn this grid, the pairs with a difference greater than 2 are (1,8), (3,8), (5,8), (8,2), (8,4), (2,7), (6,9), (7,9). Therefore, the output is 8.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Dealing with Complex Arrangements' as it requires analyzing the arrangement of numbers in a grid and identifying specific pairs based on given conditions.\n\nHere's a step-by-step solution process:\n1. **Define 'adjacent':** The problem specifies adjacency as horizontal or vertical pairs, excluding diagonal pairs.\n2. **Establish the condition:** We need to find pairs with a numerical difference strictly greater than 2.\n3. **Systematic Analysis:** Start from the top left corner of the grid and compare each cell with its right and bottom neighbors (if they exist). For example, in the given example grid, cell '1' is compared with '3' (right) and '8' (bottom). \n4. **Counting Pairs:**  For each comparison, check if the difference is greater than 2. If yes, increment the pair count. Continue this process for all cells, avoiding double-counting pairs.\n\nApplying this logic to the example grid results in the 8 pairs listed in the question, confirming the output is correct.",
+            "options": [
+                "Dealing with Logic",
+                "Dealing with Simple Arrangements",
+                "Dealing with Complex Arrangements",
+                "Dealing with Mathematical Operations"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Consider the following input-output pairs based on a specific rule:\n\nInput: CAT\nOutput:  HZG\n\nInput: DOG\nOutput: WTM\n\nWhat is the output for the following input: BIRD?",
+            "difficulty": 1,
+            "reasoning": "The rule has two parts applied sequentially:\n\n**1. Reverse Alphabet Position:**  Each letter in the input is replaced with the letter that holds the opposite position in the alphabet.\n* C (3rd) becomes X (24th), A (1st) becomes Z (26th), T (20th) becomes G (7th) --> XZG\n* D (4th) becomes W (23rd), O (15th) becomes L (12th), G (7th) becomes T (20th) --> WLT\n\n**2. Shift Forward Three Positions:** Each letter from step 1 is then shifted forward three positions in the alphabet. \n* XZG becomes AZG --> HZG\n* WLT becomes WTM\n\nApplying this rule to the input 'BIRD':\n1. Reverse Alphabet Position: BIRD becomes YVML\n2. Shift Forward Three Positions: YVML becomes BIRD\n\nTherefore, the output for the input 'BIRD' is 'BIRD'.",
+            "options": [
+                "BIRD",
+                "YZNP",
+                "ELQK",
+                "FOMR"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**input**: \n  - 4 \u2192 17\n  - 7 \u2192 50\n  - 11 \u2192 122\n  - 16 \u2192 257\n**output**: 22 \u2192 ?\n",
+            "difficulty": "hard",
+            "reasoning": "The pattern involves a combination of squaring the input number and adding 1. Here's the breakdown:\n\n* **4 \u2192 17:**  (4 * 4) + 1 = 17\n* **7 \u2192 50:**  (7 * 7) + 1 = 50\n* **11 \u2192 122:** (11 * 11) + 1 = 122\n* **16 \u2192 257:** (16 * 16) + 1 = 257\n\nApplying the same rule to the input '22':\n\n* **22 \u2192 ?:** (22 * 22) + 1 = 485\n\nTherefore, the output for '22' is 485.",
+            "options": [
+                "484",
+                "485",
+                "486",
+                "487"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Input:** \nCAT \nDOG \nHOME\n\n**Output:**\nEN\nGP\nJQ\n\n**What is the output for the following input?**\n BIRD",
+            "difficulty": "hard",
+            "reasoning": "This question involves a multi-step letter manipulation rule, making it tricky to decipher. The rule can be broken down as follows:\n\n1. **Pairwise Letter Shifting:** Consider each word in the input. Take the first two letters as a pair (e.g., 'CA' in 'CAT') and shift each letter forward in the alphabet by its position within the pair. 'C' is in position 1, so it shifts forward one place to 'D'. 'A' is in position 2, so it shifts forward two places to 'C'. This gives us 'DC'. Repeat this for the second pair of letters in the word ('AT' becomes 'CU').\n\n2. **Concatenation:**  Combine the results of each pair shift. For 'CAT', we get 'DC' + 'CU' = 'DCCU'.\n\n3. **First and Last Letters:** Finally, take only the first and last letters of the concatenated string. For 'DCCU', this gives us 'DU'.\n\n**Applying the rule to the input 'BIRD':**\n\n1. **'BI' becomes 'CJ'** ('B' shifts one position, 'I' shifts two positions)\n2. **'RD' becomes 'SE'** ('R' shifts one position, 'D' shifts two positions)\n3. **Concatenation:** 'CJ' + 'SE' = 'CJSE'\n4. **First and Last Letters:** 'CJSE' results in the output 'CE'.\n\nTherefore, the correct output for the input 'BIRD' is 'CE'.",
+            "options": [
+                "CE",
+                "BE",
+                "CD",
+                "DE"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Input:**\n\n* INTROSPECTIVE\n* BUTTERFLY\n* WATERMELON\n\n**Output:**\n\n* T\n* Y\n* N\n\n**Question:** What transformation rule, applied to the input words, produces the corresponding output letters?",
+            "difficulty": "hard",
+            "reasoning": "The transformation rule involves multiple steps:\n\n1. **Word Length:** Determine the length of each input word.\n    * INTROSPECTIVE: 13 letters\n    * BUTTERFLY: 9 letters\n    * WATERMELON: 10 letters \n\n2. **Prime Factorization:** Find the prime factorization of each word length.\n    * 13 = 13 (Prime)\n    * 9 = 3 x 3 \n    * 10 = 2 x 5\n\n3. **Second Prime (or Last Prime):**  Identify the second smallest prime factor from each factorization. If the number itself is prime or has only one prime factor, consider that as the 'second' prime. \n    * 13: Second prime is **13**. \n    * 9:  Second prime is **3**.\n    * 10: Second prime is **5**.\n\n4. **Letter Indexing:**  Use the 'second prime' as an index (starting from 1) to select a letter from the corresponding input word. \n    * INTROSPECTIVE: The 13th letter is **T**. \n    * BUTTERFLY: The 3rd letter is **T**.\n    * WATERMELON: The 5th letter is **R**.\n\nTherefore, the output letters are derived by a complex process of word length calculation, prime factorization, identifying the second smallest prime factor, and using that prime as an index to extract a letter from the original word.",
+            "options": [
+                "Second letter",
+                "First prime factor",
+                "Second prime factor",
+                "Word length"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Symbol Sets:**\n\n* **Set A:** ! @ # $ % \n* **Set B:**  \u2605 \u2726 \u272a \u2618 \u2729\n\n**Rules:**\n\n1. **Conversion:** Each symbol in Set A corresponds to a symbol in Set B based on their positions in the sequence (e.g., ! corresponds to \u2605, @ corresponds to \u2726, etc.).\n2. **Rotation:**  Convert the input (from Set A) to Set B. Then, rotate the symbols in the Set B sequence to the right by a value equal to the number of unique symbols in the input.\n3. **Mirroring:** If the input contains an odd number of symbols, mirror the rotated sequence (reverse the order).\n\n**Example:** \n\nInput: #%$@  \nOutput: \u2729\u2618\u272a\n\n1. **Conversion:**  #$%@  converts to \u272a\u2618\u2729\u2726\n2. **Rotation:** There are 4 unique symbols, so rotate right by 4: \u2726\u272a\u2618\u2729 \n3. **Mirroring:** The input has 4 symbols (even), so no mirroring.\n\n**Question:** What is the output for the input  %@!% ?",
+            "difficulty": "hard",
+            "reasoning": "**1. Conversion:**\n\n* %@!% converts to \u2729\u2726\u2605\u2729  according to the position-based conversion rule. \n\n**2. Rotation:**\n\n* The input %@!% has 3 unique symbols (!, @, %).\n* Rotate the converted sequence (\u2729\u2726\u2605\u2729) three positions to the right: \u2729\u2729\u2726\u2605 \n\n**3. Mirroring:**\n\n* The input has an odd number of symbols (5).\n* Mirror the rotated sequence (\u2729\u2729\u2726\u2605):  \u2605\u2726\u2729\u2729\n\nTherefore, the final output for the input %@!% is **\u2605\u2726\u2729\u2729**.",
+            "options": [
+                "\u2726\u2605\u2729\u2729",
+                "\u2729\u2729\u2726\u2605",
+                "\u2605\u2726\u2729\u2729",
+                "\u2729\u2726\u2605\u2729"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: Imagine a peculiar machine with a three-stage processing system for numerical inputs. This machine operates under some unusual rules:\n**rules**: \n  - **Stage 1: The Fractalizer:**  The input number is divided by 2. If the result is a whole number, the process proceeds to Stage 2. If not, the machine takes the decimal portion of the result, multiplies it by the original input number, and sends that value to Stage 2.\n  - **Stage 2: The Oscillator:**  This stage calculates the difference between the input it received and the next highest whole number. This difference is then multiplied by 3 and sent to Stage 3.\n  - **Stage 3: The Resolver:** In the final stage, if the number received is greater than 1, it is subtracted from 2 and that becomes the output. If the number received is less than or equal to 1, it is added to 2, and that becomes the output.\n**input**: 10\n**question**: Given the input of 10, what is the final output generated by this three-stage machine?\n",
+            "difficulty": "hard",
+            "reasoning": "Let's break down how the machine processes the input of 10 step-by-step:\n\n**Stage 1: The Fractalizer**\n* 10 divided by 2 equals 5. \n* Since 5 is a whole number, we proceed directly to Stage 2 with the value 5.\n\n**Stage 2: The Oscillator**\n* The next highest whole number after 5 is 6. The difference between 5 and 6 is 1.\n* 1 multiplied by 3 equals 3. This value (3) is sent to Stage 3. \n\n**Stage 3: The Resolver**\n* Since 3 is greater than 1, we subtract it from 2:  2 - 3 = -1\n* Therefore, -1 is the final output of the machine.\n\n**Therefore, the correct answer is -1.**",
+            "options": [
+                "3",
+                "2",
+                "-1",
+                "1"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Input:** A string of characters consisting of uppercase letters (A-Z) and digits (0-9). \n**Output:** A single-digit number. \n**Rule:** The output is determined through the following steps: \n1. Count the number of vowels in the input string. \n2.  Count the number of odd digits in the input string.\n3. Multiply the vowel count from Step 1 by 3. \n4. Add the odd digit count from Step 2 to the result of Step 3. \n5. If the sum from Step 4 is a single digit, that is the output. If it's a two-digit number, add the two digits together to get the single-digit output. \n**Question:**\nStatement 1: The input string contains three vowels. \nStatement 2: The input string is 'A3EB7'. \nIs either statement alone sufficient to determine the output number?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Data Sufficiency and Deduction' subtopic of 'Logical Reasoning - Input-Output'. Here's why: \n\n**Let's analyze the statements:**\n\n* **Statement 1:** Tells us there are three vowels. Applying Step 1 and 3 of the rule, we get 3 vowels * 3 = 9. However, we don't know the number of odd digits, so we can't determine the final output. Insufficient.\n* **Statement 2:** Provides the complete input string 'A3EB7'. Let's apply the rule: \n    * Step 1: Vowels = 2 (A, E) \n    * Step 2: Odd Digits = 2 (3, 7) \n    * Step 3: 2 (vowels) * 3 = 6 \n    * Step 4: 6 + 2 (odd digits) = 8\n    * Step 5: Output is 8.\n   Therefore, Statement 2 alone is sufficient. \n\n**Correct Answer:** Statement 2 alone is sufficient, but Statement 1 alone is not sufficient to determine the output number.",
+            "options": [
+                "Statement 1 alone is sufficient.",
+                "Statement 2 alone is sufficient.",
+                "Both statements together are sufficient.",
+                "Neither statement alone is sufficient."
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine you have three special machines, each with a unique function. \n\n**Machine A:** This machine takes a number as input, squares it (multiplies it by itself), and then adds the original input number to the result.\n\n**Machine B:** This machine takes a number as input, divides it by 3, and then subtracts 2 from the result.\n\n**Machine C:** This machine takes two numbers as input, multiplies the first number by 2, then subtracts the second number from the product.\n\n**Here's the challenge:** You input the number '4' into Machine A. The output from Machine A becomes the input for Machine B.  The output from Machine B is then used as the first input number for Machine C.  The second input number for Machine C is '5'. What is the final output of Machine C?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**Step 1: Machine A** \n* Input: 4\n* Calculation: (4 * 4) + 4 = 16 + 4 = 20\n* Output: 20\n\n**Step 2: Machine B**\n* Input: 20 (output from Machine A)\n* Calculation: 20 / 3 - 2 = 6.666... - 2 = 4.666... (rounded to three decimal places) \n* Output: 4.666...\n\n**Step 3: Machine C**\n* Input 1: 4.666... (output from Machine B)\n* Input 2: 5\n* Calculation: (4.666... * 2) - 5 = 9.333... - 5 = 4.333... (rounded to three decimal places) \n* Output: 4.333...\n\nTherefore, the final output of Machine C is **4.333...**",
+            "options": [
+                "4.333",
+                "5.333",
+                "3.333",
+                "6.333"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Consider three input sets: A, B, and C. Each set contains three positive integers.  The output is calculated through a series of steps:\n\n1. **Summation:** Calculate the sum of the integers in each input set (SA, SB, SC).\n2. **Prime Check:** Determine the smallest prime number greater than each sum (PA, PB, PC).\n3. **Multiplication:** Multiply the prime numbers obtained in step 2 (PA * PB * PC).\n4. **Output:** The final output is the remainder when the product from step 3 is divided by the sum of all nine input integers.\n\n**Example:**\n\nA: {2, 4, 6}, B: {1, 3, 5}, C: {7, 8, 9}\nSA = 12, SB = 9, SC = 24\nPA = 13, PB = 11, PC = 29\nOutput = (13 * 11 * 29) % 48 = 11\n\n**Question:**  Given the following input sets, find the output.\n\nA: {8, 12, 16}, B: {5, 7, 9}, C: {3, 6, 9}",
+            "difficulty": "hard",
+            "reasoning": "**1. Summation:**\n   - SA = 8 + 12 + 16 = 36\n   - SB = 5 + 7 + 9 = 21\n   - SC = 3 + 6 + 9 = 18\n\n**2. Prime Check:**\n   - The smallest prime number greater than 36 is 37 (PA).\n   - The smallest prime number greater than 21 is 23 (PB).\n   - The smallest prime number greater than 18 is 19 (PC).\n\n**3. Multiplication:**\n   - PA * PB * PC = 37 * 23 * 19 = 16217\n\n**4. Output:**\n   - The sum of all nine input integers is 8 + 12 + 16 + 5 + 7 + 9 + 3 + 6 + 9 = 75\n   - The remainder when 16217 is divided by 75 is 67 (16217 % 75 = 67).\n\nTherefore, the output for the given input sets is 67.",
+            "options": [
+                "11",
+                "67",
+                "75",
+                "16217"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A secret organization communicates using a series of coded messages. Each message consists of a sequence of symbols, and each symbol represents a step in a larger instruction. Your task is to decipher the final step in their latest message.\n\nHere's the decoded sequence so far:\n\n1. **Symbol: Triangle**  -  Action: Rotate 90 degrees clockwise.\n2. **Symbol: Square**  - Action: Move 2 spaces forward.\n3. **Symbol: Circle** - Action: Reflect across the vertical axis.\n4. **Symbol: Star** - Action: Move 1 space backward.\n5. **Symbol: Triangle** - Action: Rotate 90 degrees clockwise.\n6. **Symbol: Square** - Action: Move 2 spaces forward.\n7. **Symbol: Circle** - Action: Reflect across the vertical axis.\n8. **Symbol: Star** - Action: Move 1 space backward.\n**9. Symbol: Pentagon** - Action: ?\n\nBased on the pattern established, what action does the Pentagon symbol most likely represent?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under 'Finding the Missing Step or Element' as it requires identifying a missing step in a pattern.  The trickiness stems from the complex sequence and the need to deduce the pattern's rule.\n\nHere's how we can break down the solution:\n\n* **Identify the Repeating Unit:** The sequence isn't a simple repetition of all symbols. Notice that Triangle-Square-Circle-Star repeats itself.\n* **Focus on the Repetition:** This suggests the Pentagon is the start of a new cycle or a variation on the existing pattern.\n* **Analyze Movement:**  The repeating unit results in a net movement of one space forward (2 spaces forward, 1 space back) and a net rotation of 180 degrees.\n* **Deduce the Pentagon's Action:** To maintain the pattern's logic, the Pentagon should also contribute to this net movement and rotation.  Therefore, a likely action for the Pentagon could be 'Rotate 180 degrees'  OR  'Move 1 space forward'.\n\n**Important:** Without further information, it's impossible to definitively determine the Pentagon's action.  This ambiguity, combined with the need for intricate pattern recognition, makes the question challenging.",
+            "options": [
+                "Rotate 180 degrees",
+                "Move 1 space forward",
+                "Move 2 spaces forward",
+                "Reflect across the horizontal axis"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Input**: You will be given a starting position on a compass (North, East, South, West) and a series of directional shifts. Each directional shift is represented by a number followed by a letter: \n\n- The number indicates the number of 90-degree turns to make. \n- The letter indicates the direction of each turn: 'R' for Right, 'L' for Left.\n\nFor example, '2R' means make two 90-degree turns to the right, which is equivalent to a 180-degree turn.\n**Output**: Determine your final facing direction (North, East, South, West) after applying all the directional shifts starting from your given initial position.\n**Example**: Input: \nInitial Position: East\nDirectional Shifts: 1L, 2R, 3L \n\nOutput: South\n\nExplanation:\n1. Start facing East.\n2. '1L': Turn 90 degrees Left, now facing North. \n3. '2R': Turn 180 degrees Right (two 90-degree turns), now facing South.\n4. '3L': Turn 270 degrees Left (three 90-degree turns), ending up facing South.\n**Question**: Input:\nInitial Position: West\nDirectional Shifts: 3R, 2L, 1R, 2R\n",
+            "difficulty": "hard",
+            "reasoning": "This question falls under 'Directional Shifts and Movements' as it requires understanding and applying rotations and changes in direction based on a given set of instructions.\n\nHere's a step-by-step solution:\n\n1. **Start facing West.**\n2. **'3R':** Turn 270 degrees Right (three 90-degree turns). This brings you facing South.\n3. **'2L':** Turn 180 degrees Left (two 90-degree turns). You are now facing North. \n4. **'1R':** Turn 90 degrees Right.  You are now facing East.\n5. **'2R':** Turn 180 degrees Right (two 90-degree turns). Your final facing direction is **West**.\n\nTherefore, the correct output is West.",
+            "options": [
+                "North",
+                "East",
+                "South",
+                "West"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Input:**\n\n* A3Z5 --> 1B2Y4\n* E7B9 --> 5F6A8\n* I1D3 --> 9J0C2\n\n**Output:**\n\n* 1B2Y4 --> Y4B21 \n* 5F6A8 --> A8F65\n* 9J0C2 --> C2J09\n\n**Question:**\n\n* What is the rule applied to transform the input into the output?\n* Apply the rule to the following input:  O5H7 ",
+            "difficulty": "hard",
+            "reasoning": "This problem involves multiple rules applied in sequence:\n\n**1. Number Transformation:** Each number in the input is replaced with the difference between that number and 10. \n    * Example: In the first input 'A3Z5', 3 becomes (10-3) = 7, 5 becomes (10-5) = 5.\n\n**2. Letter Transformation:**  Each letter in the input is replaced with its corresponding letter in the reverse alphabet (A becomes Z, B becomes Y, etc.).\n    * Example: In the first input 'A3Z5', 'A' becomes 'Z', 'Z' becomes 'A'.\n\n**3. Reversal:** The entire transformed string is then reversed.\n    * Example: Applying the number and letter transformations to 'A3Z5' gives us 'Z7A5'.  Reversing this gives us the first output: '5A7Z'.\n\n**Applying the rule to 'O5H7':**\n\n1. **Number Transformation:** 5 becomes (10-5) = 5, and 7 becomes (10-7) = 3.\n2. **Letter Transformation:** 'O' becomes 'L', and 'H' becomes 'S'.\n3. **Reversal:** Combining the transformations and reversing gives us: '3SL5'.\n\nTherefore, the correct output for the input 'O5H7' is '3SL5'.",
+            "options": [
+                "Subtract each number from 10, reverse the alphabet for letters, and reverse the entire string.",
+                "Reverse the alphabet for letters, subtract each number from 10, and reverse the entire string.",
+                "Reverse the alphabet for letters, add 10 to each number, and reverse the entire string.",
+                "Subtract each number from 10, reverse the entire string, and reverse the alphabet for letters."
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**input**: A sequence of binary digits (0s and 1s) representing a series of actions, where '1' represents 'perform the action' and '0' represents 'skip the action'.\n**operation**: The sequence is divided into groups of three digits. For each group, apply the following rules to determine the output (also a binary digit):\n\n* **Rule 1:** If the first and third digits are the same AND the second digit is '1', the output is '1'. \n* **Rule 2:** If the first and second digits are different OR the third digit is '0', the output is '0'. \n* **Rule 3:** If neither Rule 1 nor Rule 2 applies, apply a NOT operation to the second digit to determine the output.\n**output**: A new sequence of binary digits, with each digit representing the outcome of applying the rules to the corresponding group of three digits in the input sequence.\n**example**: \n  **input**: 110011101000\n  **output**: 10101\n",
+            "difficulty": "hard",
+            "reasoning": "This question is classified as 'tricky' (9/10) due to its multi-layered logical structure requiring careful parsing and application of the rules:\n\n* **Multiple Rules and Conditions:** The presence of three rules with overlapping conditions (AND, OR, digit comparisons) significantly increases the complexity. The solver must correctly identify which rule applies in each case.\n* **Nested Logic:** Rule 3 introduces a nested logic where the output depends on the failure of both Rule 1 and Rule 2, further adding to the challenge.\n* **NOT Operation within a Rule:** Applying the NOT operation only in Rule 3 introduces another layer of complexity, demanding close attention to the conditions.\n* **Length and Pattern Recognition:** The example input sequence is relatively long, requiring the solver to maintain focus and accuracy while applying the rules repeatedly. Additionally, there's no easily discernible pattern, forcing a thorough evaluation for each group of three digits.\n\nLet's break down the example to illustrate the reasoning:\n\n**Input:** 110 011 101 000\n\n* **110:** Rule 2 applies (first and second digits differ), output is '0'.\n* **011:** Rule 1 applies (first and third digits are same, second is '1'), output is '1'.\n* **101:** Neither Rule 1 nor 2 applies, so apply NOT to the second digit ('0' becomes '1'), output is '1'.\n* **000:** Rule 2 applies (third digit is '0'), output is '0'.\n\n**Therefore, the output is: 0110**\n\nThis question effectively evaluates the test-taker's ability to decipher complex logical instructions, apply multiple rules with overlapping conditions, and maintain accuracy throughout a multi-step process, justifying its 'tricky' difficulty rating.",
+            "options": [
+                "9",
+                "8",
+                "10",
+                "7"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Input-Output",
+    "exam_id": 17,
+    "order": 1
+}

@@ -1,0 +1,12 @@
+{
+    "questions": [
+        {
+            "question": "```json\n{\n  \"question\": \"A group of friends are playing a board game.  To win, a player must roll doubles with two six-sided dice (both dice showing the same number).  Sarah is about to roll.  Do we have enough information to determine if Sarah will win on her next roll?\\n\\nStatement 1: Sarah needs a 5 or higher on at least one die to land on a bonus space.\\n\\nStatement 2: This is Sarah's third turn.\",\n  \"difficulty\": \"easy\",\n  \"reasoning\": \"Here's the breakdown:\\n\\n* **Understanding Data Sufficiency:** We need to determine if the statements provide enough information to answer the question definitively, not whether they guarantee Sarah will win.\\n\\n* **Analyzing the Question:** We need to know if Sarah will roll doubles. \\n\\n* **Statement 1:**  This statement is irrelevant. It tells us about a bonus space, not about the probability of rolling doubles.\\n\\n* **Statement 2:**  This statement is also irrelevant. Knowing it's Sarah's third turn doesn't tell us anything about her dice roll.\\n\\n**Conclusion:** Neither statement provides information about the probability of Sarah rolling doubles. Therefore, the answer is (E).\\n\\n**Options:**\\n(A) Statement 1 alone is sufficient but statement 2 alone is not sufficient.\\n(B) Statement 2 alone is sufficient but statement 1 alone is not sufficient.\\n(C) Both statements together are sufficient, but neither statement alone is sufficient.\\n(D) Each statement alone is sufficient.\\n**(E) Statements 1 and 2 together are not sufficient.**\"\n}\n``` \n",
+            "option": "```json\n{\n    \"options\": [\n        \"A\",\n        \"B\",\n        \"C\",\n        \"D\",\n        \"E\"\n    ],\n    \"correct_option\": \"E\"\n}\n```\n\nThe reasoning clearly states that **neither** statement provides sufficient information to determine if Sarah will roll doubles, leading to the conclusion that the answer is (E). The options provided reflect the standard format for Data Sufficiency questions. \n"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Puzzle",
+    "exam_id": 17,
+    "order": 2
+}
