@@ -109,6 +109,7 @@ def json_parse(text):
 
 def valid_quiz_json(quiz_json):
     return all([
+        isinstance(quiz_json.get("question"), str),
         quiz_json.get("question"),
         quiz_json.get("difficulty"),
         quiz_json.get("reasoning"),
@@ -133,7 +134,8 @@ def get_valid_quiz_json_recursive(topic, subtopic, difficulty, cnt=0):
         if not valid_quiz_json(quiz_json):
             raise ValueError("quizJson is not valid")
 
-        questions.append(quiz_json)
+        if quiz_json != {}:
+            questions.append(quiz_json)
     except Exception as error:
         if cnt > 2:
             return {}
@@ -181,26 +183,46 @@ def get_valid_topics(topic):
         return get_valid_topics(topic)
 
 
-difficulties = ["easy", "medium", "hard"]
-topics_json = get_valid_topics("Logical Reasoning - Clocks")
-print(topics_json)
-questions = []
+difficulties = ["moderate 4/10", "above moderate 5/10", "very tricky 8/10"]
 
-for difficulty in difficulties:
-    threads = []
-    for topic in topics_json:
-        thread = Thread(target=get_valid_quiz_json_recursive, args=("Logical Reasoning - Clocks", topic["subtopic"], difficulty))
-        threads.append(thread)
-        thread.start()
-    for thread in threads:
-        thread.join()
 
-quiz = {}
-quiz["questions"] = questions
-quiz["title"] = "Logical Reasoning"
-quiz["topic"] = "Logical Reasoning - Clocks"
-quiz["exam_id"] = 17
-quiz["order"] = 2
+topics = [
+    "Logical Reasoning - Alphanumeric Series",
+    "Logical Reasoning - Ranking/Direction/Alphabet Test",
+    "Logical Reasoning - Data Sufficiency",
+    "Logical Reasoning - Coded Inequalities",
+    "Logical Reasoning - Seating Arrangement",
+    "Logical Reasoning - Puzzle",
+    "Logical Reasoning - Syllogism",
+    "Logical Reasoning - Clocks",
+    "Logical Reasoning - Blood Relations",
+    "Logical Reasoning - Input-Output",
+    "Logical Reasoning - Coding-Decoding",
+    "Logical Reasoning - Calendars",
+    "Logical Reasoning - Dice",
+    "Logical Reasoning - Cube and Cuboid",
+    "Logical Reasoning - Truth Tables",
+    "Logical Reasoning - Ranking-Direction-Alphabet Test",
+]
+for topic in topics:
+    topics_json = get_valid_topics(f"{topic}")
+    print(topics_json)
+    questions = []
 
-with open('gemini_output/new/sbi/reasoning/Clocks.json', 'w') as json_file:
-    json.dump(quiz, json_file, indent=4)
+    for difficulty in difficulties:
+        threads = []
+        for sub_topic in topics_json:
+            thread = Thread(target=get_valid_quiz_json_recursive, args=(f"{topic}", sub_topic["subtopic"], difficulty))
+            threads.append(thread)
+            thread.start()
+        for thread in threads:
+            thread.join()
+    quiz = {}
+    quiz["questions"] = questions
+    quiz["title"] = "Logical Reasoning"
+    quiz["topic"] = f"{topic}"
+    quiz["exam_id"] = 17
+    quiz["order"] = 2
+
+    with open(f'gemini_output/new/sbi/reasoning/{topic}.json', 'w') as json_file:
+        json.dump(quiz, json_file, indent=4)
