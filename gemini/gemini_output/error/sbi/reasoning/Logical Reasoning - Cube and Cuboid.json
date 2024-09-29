@@ -1,0 +1,12 @@
+{
+    "questions": [
+        {
+            "question": "```json\n{\n  \"question\": {\n    \"scenario\": \"Two standard six-sided dice are rolled. The first die lands with the number 3 facing up. The second die lands in a position where the sum of the numbers on its visible faces equals 10.\",\n    \"question\": \"What number is facing up on the second die?\"\n  },\n  \"difficulty\": \"medium\",\n  \"reasoning\": \"Here's how to solve this problem:\\n\\n**1. Possible Combinations for the Second Die:**\\n\\n* Since the sum of the visible faces on the second die is 10, let's consider the possible combinations of numbers on a standard die that could add up to 10.  Remember, only three faces are visible at any given time. \\n* The possible combinations are: {1, 4, 5} and {2, 3, 5}.\\n\\n**2. Opposite Faces:**\\n\\n* On a standard die, opposite faces always add up to 7.\\n* This means the following pairs are opposite each other: \\n    * 1 and 6\\n    * 2 and 5\\n    * 3 and 4\\n\\n**3.  Eliminating Possibilities:**\\n\\n* Notice that the combination {1, 4, 5} includes both a number and its opposite (4 and 3). This combination cannot be visible on the second die because opposite faces cannot be seen simultaneously.\\n\\n**4. Identifying the Top Face:**\\n\\n* The only valid combination for the second die is {2, 3, 5}. Since 2 and 5 are opposite, the number facing up must be **3**.\"\n}\n``` \n",
+            "option": "```json\n{\n    \"options\": [\n        \"1\",\n        \"2\",\n        \"3\",\n        \"5\"\n    ],\n    \"correct_option\": \"C\"\n}\n```\n\n**Explanation:**\n\nThe reasoning states that the only possible combination of faces for the second die is {2, 3, 5}.  Since opposite faces cannot be seen simultaneously, and 2 and 5 are opposite, the number facing up on the second die must be **3**. \n\nTherefore, the correct option is \"C\", which represents the number 3. \n"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Cube and Cuboid",
+    "exam_id": 17,
+    "order": 3
+}
