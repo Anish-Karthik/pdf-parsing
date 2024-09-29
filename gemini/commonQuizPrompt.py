@@ -341,5 +341,5 @@ model = generativeai.GenerativeModel(
 
 
 # sample_questions = input("Enter sample questions: ")
-for topic in topics:
-    get_quiz_json(topic)
+# for topic in topics:
+#     get_quiz_json(topic)

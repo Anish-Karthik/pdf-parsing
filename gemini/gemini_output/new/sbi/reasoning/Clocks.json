@@ -1,0 +1,884 @@
+{
+    "questions": [
+        {
+            "question": "If it is currently 10:00 AM and you wait for 4 hours, what time will it be?",
+            "difficulty": "easy",
+            "reasoning": "This question tests basic addition within a 12-hour clock.  \n\n* **Start with the current time:** 10:00 AM\n* **Add the given hours:** 10:00 AM + 4 hours = 14:00 \n* **Adjust for the 12-hour clock:** Since 14 is greater than 12, we subtract 12 to get 2:00 PM. \n* **Therefore, it will be 2:00 PM after waiting for 4 hours.**",
+            "options": [
+                "10:00 PM",
+                "14:00 PM",
+                "2:00 PM",
+                "4:00 PM"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two snails, Shelly and Speedy, are racing on a clock face. Shelly starts at the 12 and moves at a speed of 1 number per minute. Speedy starts at the 3 and moves at a speed of 2 numbers per minute. If they both move clockwise, how many minutes will it take Speedy to overtake Shelly?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Understand the relative speed:** Speedy is moving 1 number faster than Shelly every minute (2 numbers per minute - 1 number per minute = 1 number per minute). \n\n2. **Calculate the distance:**  Speedy needs to cover a distance of 3 numbers (from 3 to 12) to overtake Shelly.\n\n3. **Time to overtake:** Since Speedy gains 1 number every minute, it will take him 3 minutes to cover the 3 number distance and overtake Shelly.\n\n**Therefore, it will take Speedy 3 minutes to overtake Shelly.**",
+            "options": [
+                "1 minute",
+                "2 minutes",
+                "3 minutes",
+                "4 minutes"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A digital clock shows 10:35:48. What will the time be 1 minute and 10 seconds later?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Seconds:**  Start by adding 10 seconds to the current seconds: 48 + 10 = 58 seconds. \n\n2. **Minutes:** Since we added 10 seconds, the seconds digit is now 58.  There are 60 seconds in a minute, so we need to carry over 1 minute (58 - 60 = -2, carry over -2 / 60 = -1/30, which is approximately 0).  Add the carryover minute to the current minutes: 35 + 1 = 36 minutes.\n\n3. **Hours:** The minutes haven't changed, so the hours remain the same at 10.\n\nTherefore, the time 1 minute and 10 seconds later will be 10:36:58.",
+            "options": [
+                "10:35:58",
+                "10:36:48",
+                "10:37:08",
+                "10:36:58"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Two clocks, A and B, are set to 12:00 PM. Clock A runs 5 minutes fast every hour, while clock B runs 2 minutes slow every hour. After 4 hours, what will be the time difference between clock A and clock B? ",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Clock A:**\n   - Clock A gains 5 minutes every hour.\n   - Over 4 hours, it gains 5 minutes/hour * 4 hours = 20 minutes.\n   - So, clock A will show 12:00 PM + 20 minutes = 12:20 PM\n\n2. **Clock B:**\n   - Clock B loses 2 minutes every hour.\n   - Over 4 hours, it loses 2 minutes/hour * 4 hours = 8 minutes.\n   - So, clock B will show 12:00 PM - 8 minutes = 11:52 PM\n\n3. **Time Difference:**\n   - The difference between the two clocks is 12:20 PM - 11:52 PM = 28 minutes.\n\n**Therefore, the time difference between clock A and clock B after 4 hours will be 28 minutes.**",
+            "options": [
+                "18 minutes",
+                "22 minutes",
+                "28 minutes",
+                "32 minutes"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A train departs at 10:00 AM and travels at a consistent speed of 80 kilometers per hour. If the train arrives at its destination at 11:00 AM, how far did it travel?",
+            "difficulty": "easy",
+            "reasoning": "This question involves a simple calculation of distance based on speed and time. Here's how to solve it:\n\n1. **Find the travel time:** The train travels from 10:00 AM to 11:00 AM, which is a total of 1 hour.\n\n2. **Apply the formula:** Distance = Speed x Time. \n\n3. **Calculate the distance:** Distance = 80 kilometers/hour x 1 hour = 80 kilometers.\n\nTherefore, the train traveled a distance of 80 kilometers.",
+            "options": [
+                "10 kilometers",
+                "80 kilometers",
+                "100 kilometers",
+                "160 kilometers"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clock is placed on a table in the afternoon sun.  The clock's short hand is pointing directly at the number 1.  The long hand is pointing directly at the number 12.  What direction is the shadow of the short hand pointing? ",
+            "difficulty": "easy",
+            "reasoning": "The sun is positioned in the sky such that it casts shadows in a direction opposite to its position.  Since it's afternoon, the sun is in the western sky, casting shadows towards the east.  The short hand is pointing at the number 1, which is to the right of the clock.  Therefore, the shadow of the short hand will be cast to the left of the clock, pointing in the direction of the number 11.  \n",
+            "options": [
+                "East",
+                "West",
+                "North",
+                "South"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A movie starts at 7:00 PM and lasts for 2 hours. What time does the movie end?",
+            "difficulty": "easy",
+            "reasoning": "To find the end time, we need to add the movie's duration to the starting time. Since the movie lasts for 2 hours, we add 2 hours to 7:00 PM. Adding 1 hour to 7:00 PM gives us 8:00 PM, and adding another hour gives us 9:00 PM. Therefore, the movie ends at 9:00 PM.",
+            "options": [
+                "8:00 PM",
+                "9:00 PM",
+                "7:00 PM",
+                "10:00 PM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clock shows the following times: 1:05, 2:10, 3:15. What time will the clock show next?",
+            "difficulty": "easy",
+            "reasoning": "This question tests the understanding of clock combinations and recognizing patterns.  The times given are increasing in a specific pattern: the hour increases by one, and the minutes increase by five.  \n\n To find the next time, we continue the pattern:  \n * The hour increases to 4. \n * The minutes increase to 20.\n\n Therefore, the clock will show 4:20 next.",
+            "options": [
+                "4:05",
+                "3:20",
+                "4:20",
+                "5:00"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Sarah is baking a cake and needs to set a timer for 3:00 PM.  When the timer goes off, she notices the hour and minute hand are pointing in opposite directions. What is the angle between the hour and minute hand at 3:00 PM?",
+            "difficulty": "easy",
+            "reasoning": "At 3:00 PM, the hour hand points directly at the '3' and the minute hand points directly at the '12'.  Since a clock is a circle with 360 degrees, and there are 12 numbers on the clock face, each number represents 30 degrees (360 degrees / 12 numbers = 30 degrees per number). The hour hand is at the '3' and the minute hand is at the '12', meaning there are 3 numbers between them.  Therefore, the angle between the hands is 90 degrees (3 numbers * 30 degrees per number = 90 degrees).",
+            "options": [
+                "180 degrees",
+                "90 degrees",
+                "60 degrees",
+                "45 degrees"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine a standard analog clock reflecting in a mirror. If the clock shows 3:00, what time would it appear to be in the reflection?",
+            "difficulty": "easy",
+            "reasoning": "When a clock is reflected in a mirror, the image appears flipped horizontally. This means the hour hand and the minute hand will appear to be on the opposite sides of the clock face. Since the original time is 3:00, the reflected image would show the hour hand pointing at 9 and the minute hand pointing at 12. Therefore, the time in the reflection would appear to be 9:00. \n\nHere's a breakdown:\n\n1. **Understanding Mirror Reflections:** A mirror image flips the object horizontally. \n2. **Clock Hands:** The hour and minute hands of a clock are positioned relative to each other on the clock face. \n3. **Time in Reflection:** Since the mirror image flips the clock horizontally, the positions of the hands appear swapped. The hour hand at 3 in the original clock appears at 9 in the reflection. \n4. **Final Time:** As the minute hand remains at 12, the reflected time appears as 9:00.",
+            "options": [
+                "3:00",
+                "6:00",
+                "9:00",
+                "12:00"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Title:** Clock Sequence - Simple Increment\n\n**Instructions:** Observe the following sequence of times displayed on a clock. Determine the missing time.\n\n**Sequence:** 3:00, 3:15, 3:30, ___, 4:00\n\n**Difficulty Level:** Easy",
+            "difficulty": "easy",
+            "reasoning": "This is a simple clock sequence where the time increments by 15 minutes each step.  \n\n1. **Identify the Pattern:** The minutes are increasing by 15 (00, 15, 30, 45, 00). \n2. **Apply the Pattern:** Since the last time in the sequence is 3:30, the next time in the sequence would be 3:30 + 15 minutes, which is 3:45.  \n\nTherefore, the missing time in the sequence is 3:45.",
+            "options": [
+                "3:00",
+                "3:45",
+                "4:15",
+                "4:30"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clock is showing 10:00 AM. If the minute hand moves clockwise for 20 minutes, what time will the clock show?",
+            "difficulty": "easy",
+            "reasoning": "The minute hand moving clockwise for 20 minutes means it will move 20 minutes ahead from its current position. Since the minute hand is currently pointing at the 12, moving it 20 minutes clockwise will make it point at the 4. This means the clock will show 10:20 AM.  \n\n **Here's how we can think about it:**\n\n * **Clockwise movement:**  The minute hand moves in a clockwise direction, the same direction as the hands of a clock move.\n * **Minutes on a clock:** There are 60 minutes in an hour, and each number on the clock represents 5 minutes (60 minutes / 12 numbers = 5 minutes per number).\n * **Calculating the movement:** The minute hand moves 20 minutes clockwise, which means it will move four numbers ahead (20 minutes / 5 minutes per number = 4 numbers).",
+            "options": [
+                "10:00 AM",
+                "10:20 AM",
+                "10:40 AM",
+                "11:00 AM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Sarah has two clocks, one that runs a little faster and one that runs a little slower than normal. She sets both clocks to 12:00 PM. After a few hours, she notices that the faster clock shows 3:15 PM, while the slower clock shows 2:45 PM.  Which clock is closer to the actual time?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this: \n\n* **Understanding the Problem:** The question asks us to determine which clock is closer to the real time, even though both are running incorrectly.  The faster clock is ahead of the actual time, and the slower clock is behind. \n\n* **Finding the Middle Ground:**  The actual time should be somewhere between the two clock readings. Since the faster clock is at 3:15 PM and the slower clock is at 2:45 PM, the actual time is likely closer to the slower clock because 3:15 PM is too far ahead.\n\n* **Conclusion:** The slower clock is closer to the actual time.  \n\n* **Key Point:**  In situations where there are two clocks with differing speeds, the actual time is closer to the clock that has a smaller deviation from the expected time.",
+            "options": [
+                "Faster",
+                "Slower",
+                "3:15 PM",
+                "2:45 PM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Sarah starts her homework at 4:30 pm and finishes it at 5:15 pm. How long did it take her to complete her homework?",
+            "difficulty": "easy",
+            "reasoning": "To find the time taken, we need to calculate the difference between the start and end times. \n\n* **Start time:** 4:30 pm\n* **End time:** 5:15 pm\n\nWe can see that the hour changes from 4 to 5, meaning 1 hour has passed. Now, we need to look at the minutes. The difference between 30 minutes (start time) and 15 minutes (end time) is 15 minutes.\n\nTherefore, Sarah took **1 hour and 15 minutes** to complete her homework.",
+            "options": [
+                "45 minutes",
+                "1 hour",
+                "1 hour and 15 minutes",
+                "1 hour and 30 minutes"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Sarah is planning a video call with her friend in Tokyo. Sarah lives in New York City, where it is currently 10:00 AM. Tokyo is 14 hours ahead of New York City. What time should Sarah schedule the call for her friend in Tokyo to make sure they can chat during their lunch break, which is typically from 12:00 PM to 1:00 PM in Tokyo?",
+            "difficulty": "easy",
+            "reasoning": "To find the correct time for Sarah to call, we need to calculate Tokyo's time when it is 10:00 AM in New York City. Since Tokyo is 14 hours ahead, we add 14 hours to 10:00 AM: \n\n10:00 AM + 14 hours = 12:00 AM (midnight) in Tokyo.\n\nHowever, Sarah wants to call during her friend's lunch break, which is from 12:00 PM to 1:00 PM in Tokyo. Therefore, Sarah should schedule the call for 12:00 PM New York time (which is 12:00 AM in Tokyo) to ensure she can chat with her friend during their lunch break.\n\nHere is the breakdown:\n\n- New York City time: 10:00 AM\n- Time difference: Tokyo is 14 hours ahead\n- Tokyo time: 10:00 AM + 14 hours = 12:00 AM (midnight)\n- Tokyo lunch break: 12:00 PM to 1:00 PM\n- Sarah's call time: 12:00 PM New York time",
+            "options": [
+                "10:00 AM",
+                "12:00 PM",
+                "1:00 PM",
+                "12:00 AM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A movie starts playing at 8 AM. What is the movie's starting time in 24-hour format?",
+            "difficulty": "easy",
+            "reasoning": "To convert from 12-hour format to 24-hour format, we follow these steps:\n\n1. **AM times:**  Simply keep the hours as they are, adding a '0' in front if the hour is single-digit. For example, 8 AM becomes 08:00 in 24-hour format.\n2. **PM times:** Add 12 to the hour. For example, 5 PM becomes 17:00 in 24-hour format.\n\nSince 8 AM is in the morning, we keep the hour as it is.  Therefore, 8 AM in 24-hour format is 08:00.",
+            "options": [
+                "08:00",
+                "8:00",
+                "8 AM",
+                "20:00"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A movie started at 7:15 pm and ended at 9:45 pm. How long was the movie?",
+            "difficulty": "easy",
+            "reasoning": "To find the duration of the movie, we need to calculate the time difference between the start and end times. \n\n1. **Hours:** The movie ended 2 hours later than it started (9:45 pm - 7:15 pm = 2 hours).\n\n2. **Minutes:** The movie ended 30 minutes later than it started (45 minutes - 15 minutes = 30 minutes).\n\nTherefore, the movie was 2 hours and 30 minutes long.",
+            "options": [
+                "1 hour 30 minutes",
+                "2 hours",
+                "2 hours 30 minutes",
+                "3 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "It's January 1st, 2024, and the clock shows 10:00 AM. If a clock loses 2 minutes every hour, what date and time will it show after 24 hours?",
+            "difficulty": "easy",
+            "reasoning": "This question tests the basic understanding of time and clock operations. Since the clock loses 2 minutes every hour, over 24 hours it will lose a total of 2 minutes/hour * 24 hours = 48 minutes.  \n\nTherefore, after 24 hours, the clock will show 9:12 AM on January 2nd, 2024. \n\nHere's why:  \n\n1. **Calculating the Time Loss:** The clock loses 2 minutes every hour, so over 24 hours it will lose a total of 48 minutes (2 minutes/hour * 24 hours = 48 minutes). \n\n2. **Subtracting the Time Loss:** Since the clock is losing time, we subtract the 48 minutes from the initial time. 10:00 AM minus 48 minutes equals 9:12 AM.  \n\n3. **Date Increment:** Since 24 hours have passed, the date advances from January 1st to January 2nd. \n\nTherefore, after 24 hours, the clock will show 9:12 AM on January 2nd, 2024.",
+            "options": [
+                "January 1st, 10:00 AM",
+                "January 2nd, 9:12 AM",
+                "January 1st, 9:12 AM",
+                "January 2nd, 10:00 AM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clock shows the time as 10:30. If the minute hand moves 180 degrees, what will the new time be?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Understanding the Movement:** The minute hand completes a full circle (360 degrees) in 60 minutes. Therefore, moving 180 degrees means the minute hand has moved half that distance, which takes 30 minutes.\n\n2. **Calculating the New Time:** Since the initial time is 10:30, moving the minute hand 30 minutes forward will result in a new time of 11:00. \n\n**Therefore, the new time will be 11:00.**",
+            "options": [
+                "10:00",
+                "11:00",
+                "10:30",
+                "11:30"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "It's 9:00 AM. Your friend is looking at a clock and asks you what angle the hour and minute hand form. What do you tell them?",
+            "difficulty": "easy",
+            "reasoning": "At 9:00 AM, the hour hand points directly at the 9, and the minute hand points directly at the 12. This forms a straight line, making the angle between them 180 degrees.  Remember, a straight line always has an angle of 180 degrees.",
+            "options": [
+                "90 degrees",
+                "180 degrees",
+                "45 degrees",
+                "360 degrees"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery opens at 7:00 AM and closes at 5:00 PM. How many hours is the bakery open each day?",
+            "difficulty": "easy",
+            "reasoning": "To find out how many hours the bakery is open, we need to calculate the difference between the closing time and the opening time. \n\n* **Opening Time:** 7:00 AM\n* **Closing Time:** 5:00 PM\n\nSince there are 12 hours on a clock face, we can think of 5:00 PM as 17:00 in a 24-hour format.\n\n* **Difference:** 17:00 - 7:00 = 10 hours\n\nTherefore, the bakery is open for 10 hours each day.",
+            "options": [
+                "10 hours",
+                "12 hours",
+                "8 hours",
+                "9 hours"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "What time is it on the clock if the hour hand is pointing directly at the 10 and the minute hand is pointing at the 12?",
+            "difficulty": "easy",
+            "reasoning": "When the minute hand is pointing at the 12, it indicates the hour.  Since the hour hand is pointing directly at the 10, the time is 10:00.  \n\n Analog clocks are divided into 12 hours, and each number represents an hour. The minute hand makes a full circle every hour, and when it points at the 12, it indicates the start of the hour.  Therefore, when the hour hand is pointing at a specific number and the minute hand is at the 12, it signifies that time. In this case, since the hour hand is at the 10 and the minute hand is at the 12, the time is 10:00.",
+            "options": [
+                "10:00",
+                "10:12",
+                "11:00",
+                "12:00"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A clock is running 5 minutes fast. The hour hand points to the number 8, and the minute hand is at the number 12.  What is the actual time?",
+            "difficulty": "easy",
+            "reasoning": "Since the clock is running 5 minutes fast, we need to subtract 5 minutes from the time shown on the clock. The clock shows 8:00.  Subtracting 5 minutes from 8:00 gives us 7:55. Therefore, the actual time is 7:55.",
+            "options": [
+                "8:00",
+                "7:55",
+                "8:05",
+                "7:00"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery opens at 7:00 AM and closes at 6:00 PM.  The bakery has a special offer on its pastries every day from 10:30 AM to 12:30 PM.  How many hours each day are the pastries on special offer?",
+            "difficulty": "medium",
+            "reasoning": "To figure out the duration of the pastry special, we need to calculate the elapsed time between 10:30 AM and 12:30 PM. \n\nHere's how to solve it:\n\n1. **Identify the starting and ending times:**\n   * Starting time: 10:30 AM\n   * Ending time: 12:30 PM\n\n2. **Calculate the difference in hours:**\n   * The difference in hours is 2 (from 10:00 AM to 12:00 PM).\n\n3. **Calculate the difference in minutes:**\n   * The difference in minutes is 0 (both times have the same minutes, 30). \n\nTherefore, the pastry special lasts for **2 hours** each day.",
+            "options": [
+                "1 hour",
+                "2 hours",
+                "3 hours",
+                "4 hours"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clock displays the time as 07:50.  This clock is being viewed through a mirror. What time is displayed on the mirror image of the clock?",
+            "difficulty": "medium",
+            "reasoning": "To solve this, we need to understand how a mirror flips the image of a clock. The mirror image of a clock will reverse the positions of the numbers and hands. Here's a breakdown:\n\n1. **Number Reversal:**  In a mirror, the numbers on a clock will appear reversed. So, 7 will look like 1, and 5 will look like 2. \n2. **Hand Reversal:** The hour and minute hands also reverse their positions. If the hour hand is pointing towards the 7, in the mirror, it will appear pointing towards the 1. Similarly, the minute hand pointing to the 10 in the actual clock will appear pointing to the 4 in the mirror image. \n\nTherefore, the mirror image of the clock will show the time as **01:20**.  \n\n**Key Takeaway:** Understanding the mirror image concept is crucial.  The mirror flips the image horizontally, making it seem like the numbers and hands have been reversed.",
+            "options": [
+                "01:20",
+                "07:50",
+                "02:10",
+                "08:50"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A clock strikes 10 times at 10:00 AM. If it takes 2 seconds between each strike, how many seconds will it take for the clock to strike 6 times at 6:00 PM?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Calculate the time between strikes:** There are 9 intervals between 10 strikes (think of it like spaces between the strikes). Since each interval is 2 seconds, the total time for 10 strikes is 9 intervals * 2 seconds/interval = 18 seconds.\n\n2. **Calculate the time for 6 strikes:**  There are 5 intervals between 6 strikes. Using the same logic, it will take 5 intervals * 2 seconds/interval = 10 seconds.\n\n**Therefore, the clock will take 10 seconds to strike 6 times at 6:00 PM.**",
+            "options": [
+                "18 seconds",
+                "10 seconds",
+                "9 seconds",
+                "6 seconds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A train leaves the station at 10:00 AM. The minute hand on the station clock is pointing directly at the 12 when the train departs.  It takes the train exactly 30 minutes to reach its first stop. When the train arrives at the first stop, what number is the minute hand on the station clock pointing to?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Understanding Clock Movement:** The minute hand on a clock completes a full circle (360 degrees) in 60 minutes. This means it moves 6 degrees every minute (360 degrees / 60 minutes = 6 degrees/minute).\n\n2. **Time Elapsed:** The train takes 30 minutes to reach the first stop.\n\n3. **Minute Hand Movement:** In 30 minutes, the minute hand will move 180 degrees (30 minutes * 6 degrees/minute = 180 degrees).\n\n4. **Clock Position:** Since the minute hand starts at the 12, moving 180 degrees will place it at the 6 on the clock.\n\n**Therefore, the minute hand will be pointing at the number 6 when the train arrives at the first stop.**",
+            "options": [
+                "1",
+                "3",
+                "5",
+                "6"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A clock's hour hand is currently pointing at the number 10. The minute hand is pointing at the number 12. If the minute hand is moved 180 degrees counterclockwise, what will be the new position of the hour hand?",
+            "difficulty": "medium",
+            "reasoning": "This question requires us to understand how the movement of the minute hand affects the hour hand on a clock. Here's the step-by-step solution:\n\n1. **Minute Hand Movement:** Moving the minute hand 180 degrees counterclockwise means it will now point at the number 6. This is equivalent to moving the minute hand forward 30 minutes.\n\n2. **Hour Hand Movement:** The hour hand moves 360 degrees in 12 hours, meaning it moves 30 degrees every hour. Since the minute hand has moved 30 minutes, the hour hand will also move 30/60 = 1/2 of its hourly movement.  So, the hour hand will move 1/2 * 30 = 15 degrees.\n\n3. **New Position of Hour Hand:** Since the hour hand was initially pointing at 10, moving it 15 degrees clockwise will place it midway between the 10 and the 11.\n\nTherefore, the hour hand will be pointing at the midpoint between the numbers 10 and 11 after the minute hand's rotation.",
+            "options": [
+                "10",
+                "11",
+                "Midpoint between 10 and 11",
+                "Midpoint between 9 and 10"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "It is currently 10:00 AM on June 1st. A clock is running normally, but it is also set 2 minutes fast. If the clock was set to the correct time yesterday at 6:00 PM, what is the actual date and time now?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Calculate the time difference:** The clock is 2 minutes fast, and it has been running for 16 hours (from 6:00 PM yesterday to 10:00 AM today). So, the total time difference is 2 minutes/hour * 16 hours = 32 minutes.\n\n2. **Adjust the clock time:** Since the clock is fast, subtract the time difference from the clock's time: 10:00 AM - 32 minutes = 9:28 AM.\n\n3. **Determine the actual date:** Because the time difference is less than an hour, the actual date remains the same, which is June 1st.\n\nTherefore, the actual date and time now are **June 1st, 9:28 AM**.",
+            "options": [
+                "June 1st, 10:00 AM",
+                "June 1st, 9:58 AM",
+                "June 1st, 9:28 AM",
+                "June 2nd, 9:28 AM"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A clock displays the following times in sequence: 12:00, 1:05, 2:10, 3:15. What time will the clock display next?",
+            "difficulty": "medium",
+            "reasoning": "This sequence follows a pattern where the hour hand increases by one, and the minute hand increases by five minutes for each subsequent time.  \n\n1. **Identify the pattern:**  Notice that the hour hand increases by one hour (12 to 1, 1 to 2, 2 to 3). The minute hand also increases by five minutes each time (00 to 05, 05 to 10, 10 to 15). \n\n2. **Apply the pattern:**  Continuing this pattern, the next time would be: \n   - **Hour hand:** Increase the hour by one (3 to 4). \n   - **Minute hand:** Increase the minutes by five (15 to 20). \n\n3. **The answer:** Therefore, the clock will display **4:20** next.",
+            "options": [
+                "3:20",
+                "4:15",
+                "4:20",
+                "5:25"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "It is 7:38. What is the angle between the hour and minute hand at this time?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Hour Hand Position:** At 7:38, the hour hand is a little past the 7. Since there are 12 hours on a clock, each hour mark represents 360/12 = 30 degrees.  The hour hand has moved 7 hours * 30 degrees/hour = 210 degrees from the 12. Additionally, it has moved 38/60 of the distance between the 7 and the 8, which is another (38/60) * 30 degrees = 19 degrees. So, the total angle of the hour hand is 210 + 19 = 229 degrees.\n\n2. **Minute Hand Position:** At 7:38, the minute hand points directly at the 38, which is 38/60 of the way around the clock. This corresponds to (38/60) * 360 degrees = 228 degrees.\n\n3. **Angle Difference:** The difference between the hour and minute hand positions is 229 degrees - 228 degrees = 1 degree.\n\nTherefore, the angle between the hour and minute hand at 7:38 is 1 degree.",
+            "options": [
+                "229 degrees",
+                "228 degrees",
+                "1 degree",
+                "30 degrees"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bakery opens at 7:00 AM and closes 10 hours and 15 minutes later. If a customer arrives at 1:45 PM, how long will they have to wait until the bakery closes?",
+            "difficulty": "medium",
+            "reasoning": "To solve this, we need to first determine the bakery's closing time. Adding 10 hours to 7:00 AM gives us 5:00 PM. Then we add the remaining 15 minutes to get 5:15 PM as the closing time.  \n\nNext, we need to find the time difference between 1:45 PM and 5:15 PM. \n\nFrom 1:45 PM to 5:00 PM, there are 3 hours and 15 minutes.  Adding the remaining 15 minutes to reach 5:15 PM, the total waiting time is 3 hours and 30 minutes. \n\nTherefore, the customer will have to wait **3 hours and 30 minutes** until the bakery closes.",
+            "options": [
+                "3 hours",
+                "3 hours and 30 minutes",
+                "4 hours",
+                "4 hours and 15 minutes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine a standard clock with an hour hand and a minute hand. The hour hand is initially pointing at 3 o'clock. The minute hand moves 45 minutes counterclockwise, then the hour hand moves 15 minutes clockwise. What is the final position of the hour hand after these movements?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step by step:\n\n1. **Initial Position:** The hour hand starts at 3 o'clock.\n\n2. **Minute Hand Movement:** The minute hand moving 45 minutes counterclockwise is equivalent to moving 45 minutes clockwise, as it completes a full circle every 60 minutes. So, the minute hand essentially moves 45 minutes clockwise.\n\n3. **Hour Hand Movement:** The hour hand moves 15 minutes clockwise. This means it moves 1/4 of the distance between two numbers on the clock.  \n\n4. **Combined Effect:** Since the hour hand moved 15 minutes clockwise, it will now be pointing at the middle point between 3 and 4. \n\nTherefore, the final position of the hour hand is **between 3 and 4 o'clock.**",
+            "options": [
+                "3 o'clock",
+                "4 o'clock",
+                "Between 3 and 4 o'clock",
+                "Between 2 and 3 o'clock"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A clockmaker is trying to fix a broken clock. He notices the hour hand is stuck pointing at the 7, while the minute hand is moving freely.  \n\n**Clues:**\n1.  The minute hand is at an angle of 120 degrees from the hour hand. \n2. The minute hand has already passed the 12 on the clock face.\n\n**Question:** What is the exact time displayed on the clock?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this puzzle:\n\n1. **Visualize the Clock:** Imagine a clock face with the hour hand stuck at the 7.  Since the minute hand is at a 120-degree angle from the hour hand, it's somewhere between the 3 and the 4 on the clock face.\n\n2. **Consider the Clue:** The second clue tells us the minute hand has already passed the 12. This means we are looking for a time after the hour.  \n\n3. **Calculate the Minute Hand Position:**  A full circle on a clock is 360 degrees, and there are 60 minutes. Therefore, each minute mark represents 6 degrees (360/60 = 6).  A 120-degree angle is equal to 20 minutes (120/6 = 20). Since the minute hand has already passed the 12, the minute hand must be pointing at the 20-minute mark on the clock face.\n\n4. **Determine the Time:** With the hour hand stuck at the 7 and the minute hand at the 20-minute mark, the time displayed on the clock is **7:20**.",
+            "options": [
+                "7:10",
+                "7:20",
+                "7:30",
+                "7:40"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clock shows a time between 8:00 and 9:00. The minute hand is exactly at the number 6. What is the exact position of the hour hand? Explain your reasoning.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Understanding Clock Relationships:**  A clock face is divided into 12 hours, and each hour mark represents 5 minutes. The minute hand moves 360 degrees in 60 minutes, meaning it moves 6 degrees per minute. The hour hand moves 360 degrees in 12 hours (or 30 degrees per hour). \n\n2. **Analyzing the Information:** Since the minute hand is at the number 6, it's pointing at 30 minutes past the hour. This means the hour hand has moved past the 8 and is a fraction of the way towards the 9.\n\n3. **Calculating the Hour Hand Position:**  Since the hour hand moves 30 degrees per hour, in 30 minutes (half an hour), it moves 15 degrees.  Therefore, the hour hand is halfway between the 8 and the 9.\n\n4. **Answer:** The hour hand is exactly halfway between the 8 and the 9 on the clock face.",
+            "options": [
+                "Between 8 and 9",
+                "At the 8",
+                "At the 9",
+                "Halfway between 8 and 9"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Three clocks, Clock A, Clock B, and Clock C, are synchronized at 12:00 PM. Clock A runs 10 seconds faster per hour, Clock B runs 5 seconds slower per hour, and Clock C runs at the correct time.  If Clock B shows 6:00 PM, what time will Clock A display?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Calculate the total time difference:**\n   * Clock B runs 5 seconds slower per hour, and it's 6 hours past 12:00 PM. So, Clock B is behind by 6 hours * 5 seconds/hour = 30 seconds.\n\n2. **Determine the actual time:**\n   * Since Clock B is 30 seconds behind, the actual time is 6:00 PM + 30 seconds = 6:00:30 PM.\n\n3. **Calculate Clock A's time:**\n   * Clock A runs 10 seconds faster per hour, and it's 6 hours past 12:00 PM. So, Clock A is ahead by 6 hours * 10 seconds/hour = 60 seconds.\n   * Add this to the actual time: 6:00:30 PM + 60 seconds = 6:01:30 PM.\n\nTherefore, Clock A will display **6:01:30 PM** when Clock B shows 6:00 PM.",
+            "options": [
+                "6:01:30 PM",
+                "6:00:30 PM",
+                "5:59:30 PM",
+                "6:02:30 PM"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A baker starts making bread at 8:00 AM. It takes 2 hours and 15 minutes to prepare the dough, 45 minutes to bake, and another 30 minutes to cool down.  The baker wants to sell the bread before noon.  How much time does the baker have to get the bread to the market after it cools down?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Total baking time:**\n   - Dough preparation: 2 hours and 15 minutes = 135 minutes\n   - Baking: 45 minutes\n   - Cooling: 30 minutes\n   - Total time: 135 + 45 + 30 = 210 minutes\n\n2. **Convert total time to hours:**\n   - 210 minutes / 60 minutes per hour = 3.5 hours\n\n3. **Calculate the time the bread is ready:**\n   - The baker starts at 8:00 AM\n   - Add the total baking time: 8:00 AM + 3.5 hours = 11:30 AM\n\n4. **Calculate the remaining time before noon:**\n   - Noon is 12:00 PM\n   - The bread is ready at 11:30 AM\n   - Remaining time: 12:00 PM - 11:30 AM = 30 minutes\n\n**Therefore, the baker has 30 minutes to get the bread to the market after it cools down.**",
+            "options": [
+                "2 hours and 15 minutes",
+                "30 minutes",
+                "45 minutes",
+                "1 hour and 30 minutes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Four friends, Alex, Ben, Chloe, and David, are planning to meet at 3:00 PM. Alex's clock is 10 minutes fast, Ben's clock is 5 minutes slow, Chloe's clock is 2 minutes fast, and David's clock is accurate. They all set their alarms to go off at 3:00 PM according to their own clocks. Who will be the first to hear their alarm go off?",
+            "difficulty": "medium",
+            "reasoning": "To determine who hears the alarm first, we need to figure out the actual time each person's alarm will go off based on their clock's accuracy. Here's a step-by-step breakdown:\n\n1. **Alex's Clock:** His clock is 10 minutes fast, so his alarm will go off at 2:50 PM according to the actual time. \n2. **Ben's Clock:** His clock is 5 minutes slow, so his alarm will go off at 3:05 PM according to the actual time. \n3. **Chloe's Clock:** Her clock is 2 minutes fast, so her alarm will go off at 2:58 PM according to the actual time. \n4. **David's Clock:** His clock is accurate, so his alarm will go off at 3:00 PM according to the actual time.\n\nTherefore, **Chloe** will be the first to hear her alarm go off, as her alarm will go off at 2:58 PM, while everyone else's alarms go off later.",
+            "options": [
+                "Alex",
+                "Ben",
+                "Chloe",
+                "David"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A digital clock displays the time as 10:58:32.  The clock is running 2 seconds faster than a standard clock. If you set a timer on this clock for 1 minute and 30 seconds, what time will the clock display when the timer goes off? ",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Calculate the total time in seconds:** 1 minute and 30 seconds is equal to 60 seconds + 30 seconds = 90 seconds.\n\n2. **Account for the clock's speed:** The clock runs 2 seconds fast every standard second. So, for 90 seconds, it will be ahead by 90 seconds * 2 seconds/second = 180 seconds.\n\n3. **Convert the extra time to minutes and seconds:** 180 seconds is equal to 3 minutes.\n\n4. **Add the extra time to the starting time:** 10:58:32 + 3 minutes = 11:01:32.\n\n5. **Adjust for the clock's faster speed:**  Since the clock is running fast, it will display 11:01:32 + 180 seconds = 11:04:32 when the timer goes off. \n\n**Therefore, the clock will display 11:04:32 when the timer goes off.**",
+            "options": [
+                "11:01:32",
+                "11:03:32",
+                "11:04:32",
+                "11:05:32"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A flight departs from New York at 10:45 AM and arrives in London at 5:30 PM, local time. London time is 5 hours ahead of New York time. What is the flight's arrival time in London in 24-hour format?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Convert the departure time to 24-hour format:** 10:45 AM becomes 10:45.\n\n2. **Calculate the flight duration in New York time:**  The flight arrives at 5:30 PM, which is 17:30 in 24-hour format. Subtracting the departure time, we get 17:30 - 10:45 = 6 hours and 45 minutes.\n\n3. **Adjust for the time difference:** London is 5 hours ahead of New York, so add 5 hours to the flight duration: 6 hours 45 minutes + 5 hours = 11 hours 45 minutes.\n\n4. **Add the adjusted duration to the departure time in London:** Since the departure time in New York was 10:45, and the flight takes 11 hours and 45 minutes to arrive in London, we add: 10:45 + 11:45 = 22:30\n\nTherefore, the flight arrives in London at **22:30** in 24-hour format.",
+            "options": [
+                "17:30",
+                "22:30",
+                "11:45",
+                "12:30"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker starts baking a cake at 9:30 AM. The recipe states that the cake needs to bake for 45 minutes. After baking, the cake needs to cool for 1 hour and 15 minutes before it's ready to be frosted. What time will the cake be ready to be frosted?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Calculate the baking time:** The cake bakes for 45 minutes, so it will be done at 9:30 AM + 45 minutes = 10:15 AM.\n\n2. **Calculate the cooling time:** The cake needs to cool for 1 hour and 15 minutes, which is the same as 75 minutes. Add this to the baking completion time: 10:15 AM + 75 minutes = 11:30 AM.\n\n3. **Final answer:** The cake will be ready to be frosted at 11:30 AM.",
+            "options": [
+                "10:15 AM",
+                "10:45 AM",
+                "11:30 AM",
+                "12:00 PM"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A flight from Tokyo, Japan to Los Angeles, California departs at 10:00 AM local time in Tokyo. The flight duration is 10 hours and 30 minutes. If Tokyo is 16 hours ahead of Los Angeles, what is the local time in Los Angeles when the flight arrives?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Calculate the arrival time in Tokyo:**\n   - Flight departure time: 10:00 AM\n   - Flight duration: 10 hours 30 minutes\n   - Arrival time in Tokyo: 10:00 AM + 10 hours 30 minutes = 8:30 PM\n\n2. **Convert Tokyo time to Los Angeles time:**\n   - Time difference: Tokyo is 16 hours ahead of Los Angeles.\n   - Subtract the time difference from the Tokyo arrival time: 8:30 PM - 16 hours = 4:30 AM\n\n**Therefore, the flight arrives in Los Angeles at 4:30 AM local time.**\n\n**Understanding Time Zones:**\n\nTime zones are regions of the Earth that share the same standard time.  Since the Earth rotates on its axis, different locations experience sunrise and sunset at different times. Time zones help to synchronize time within a region.  \n\n**Key Concepts:**\n\n- **Time Difference:** The difference in time between two time zones.  A positive difference means the first time zone is ahead of the second time zone.  A negative difference means the first time zone is behind the second time zone.\n- **Standard Time:** The official time used in a specific time zone.\n- **Daylight Saving Time:** A system where clocks are adjusted forward by one hour during summer months to maximize daylight hours.",
+            "options": [
+                "10:30 AM",
+                "4:30 PM",
+                "4:30 AM",
+                "8:30 AM"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A train leaves New York at 10:00 AM and travels at a constant speed of 60 miles per hour.  A second train leaves Chicago at 11:00 AM, traveling at 75 miles per hour on a parallel track.  Both trains are headed in the same direction.  If the first train's clock is running 5 minutes slow every hour, what time will the second train's clock show when it catches up to the first train?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Time Difference:** The first train has a one-hour head start.  However, its clock is running slow, so it will actually take longer than one hour for the second train to catch up.\n\n2. **Relative Speed:** Since the trains are moving in the same direction, we need to consider their relative speed. The second train is 15 miles per hour faster than the first train (75 mph - 60 mph = 15 mph). \n\n3. **Distance to Catch Up:** To figure out how long it takes the second train to catch up, we need to calculate the distance the first train covers in that one-hour head start.  Distance = Speed x Time.  The first train travels 60 miles in that hour (60 mph x 1 hour = 60 miles).\n\n4. **Time to Catch Up:** Now we know the second train needs to cover 60 miles to catch up. We can use the formula Time = Distance / Speed. The second train will take 4 hours to cover that distance (60 miles / 15 mph = 4 hours).\n\n5. **Clock Time:** The second train leaves at 11:00 AM and takes 4 hours to catch up. However, we need to account for the first train's slow clock. Since it loses 5 minutes every hour, over 4 hours, it will have lost 20 minutes (5 minutes/hour x 4 hours = 20 minutes).  Therefore, the second train's clock will show 3:20 PM when it catches up to the first train (11:00 AM + 4 hours + 20 minutes = 3:20 PM).",
+            "options": [
+                "3:00 PM",
+                "3:20 PM",
+                "4:00 PM",
+                "4:20 PM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two clocks, Clock A and Clock B, are synchronized at 12:00 PM. Clock A runs at a normal speed, while Clock B runs 10% faster.  What time will Clock A display when Clock B shows 1:30 PM?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Understand the Speed Difference:** Clock B is running 10% faster than Clock A. This means for every 100 seconds that pass on Clock A, 110 seconds pass on Clock B.\n\n2. **Calculate Time Passed on Clock B:** Clock B shows 1:30 PM, which is 1.5 hours after 12:00 PM.  Since there are 3600 seconds in an hour, 1.5 hours is equivalent to 1.5 * 3600 = 5400 seconds.\n\n3. **Calculate Time Passed on Clock A:**  Because Clock B runs 10% faster, we need to find the equivalent time on Clock A. We can set up a proportion: \n\n 100 seconds (Clock A) : 110 seconds (Clock B)\n   x seconds (Clock A) : 5400 seconds (Clock B) \n\n Solving for x, we get: x = (100 * 5400) / 110 = 4909.09 seconds\n\n4. **Convert Time Passed on Clock A to Hours and Minutes:**  4909.09 seconds is equal to 1 hour and 21 minutes and 49 seconds (approximately). \n\n5. **Add Time to the Initial Time:** Since Clock A started at 12:00 PM,  adding 1 hour and 21 minutes and 49 seconds gives us 1:21:49 PM. \n\n**Therefore, Clock A will display approximately 1:21:49 PM when Clock B shows 1:30 PM.**",
+            "options": [
+                "1:10:00 PM",
+                "1:21:49 PM",
+                "1:30:00 PM",
+                "1:45:00 PM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A sundial casts a shadow that points directly at the 12 on the clock face.  A nearby grandfather clock also displays the time.  However, its hour hand is pointing directly at the 4, while the minute hand points at the 9. Assuming the sundial accurately reflects the true time,  what time is it?  Why is there a discrepancy between the sundial and the grandfather clock?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Understanding the Sundial:** A sundial works by the position of the sun.  The shadow cast by the sundial's gnomon (the pointed part) indicates the true time.  In this case, the shadow pointing at 12 means it is midday, or 12:00 PM.\n\n2. **The Grandfather Clock's Issue:** The grandfather clock shows 4:45 PM, which is clearly different from the sundial's time. The discrepancy arises because grandfather clocks use hands to display time, and these hands can be affected by mechanical errors or the need for adjustments.\n\n3. **Possible Explanations:**  There are a few reasons why the grandfather clock is off:\n    * **The clock hasn't been wound recently:**  Mechanical clocks need to be wound regularly.  A clock that hasn't been wound might be running slow.\n    * **The clock is malfunctioning:** There might be a problem with the clock's internal mechanism, causing it to display the wrong time.\n    * **The clock hasn't been adjusted for Daylight Saving Time:** If the clock hasn't been adjusted, it could be an hour off.  This is particularly relevant if Daylight Saving Time is in effect.\n\n**Therefore, the time is 12:00 PM, as indicated by the sundial, and the grandfather clock is showing an incorrect time.**",
+            "options": [
+                "12:00 AM",
+                "4:45 PM",
+                "1:00 PM",
+                "12:00 PM"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A train travels around a circular track that follows the shape of a clock face. The track is 120 meters long. At 1:45 PM, the train is at the 3 on the clock face. How many meters does the train travel to reach the 9 on the clock face?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Understanding Clock Angles:** A clock face is divided into 12 sections, with each section representing 30 degrees (360 degrees / 12 sections = 30 degrees/section). \n\n2. **Calculating the Distance:** The distance between the 3 and the 9 on the clock face represents 6 sections (3 to 6, 6 to 9).  Therefore, the train needs to travel 180 degrees (6 sections * 30 degrees/section). \n\n3. **Proportional Distance:** Since the train travels the entire 120-meter track in 360 degrees, we can set up a proportion to find the distance traveled in 180 degrees:\n\n   360 degrees / 120 meters = 180 degrees / x meters\n\n4. **Solving for x:**  Cross-multiplying and simplifying, we get:\n\n   360x = 21600\n   x = 21600 / 360\n   x = 60 meters\n\nTherefore, the train travels **60 meters** to reach the 9 on the clock face.",
+            "options": [
+                "30 meters",
+                "60 meters",
+                "90 meters",
+                "120 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "At what time(s) between 7:00 PM and 8:00 PM will the hour and minute hands form a 180 degree angle?",
+            "difficulty": "medium",
+            "reasoning": "To solve this, we need to understand how the hour and minute hands move on a clock. \n\n* **Hour Hand:** The hour hand moves 360 degrees in 12 hours, meaning it moves 30 degrees per hour (360/12 = 30).  It also moves 0.5 degrees per minute (30/60 = 0.5). \n* **Minute Hand:** The minute hand moves 360 degrees in 60 minutes, meaning it moves 6 degrees per minute (360/60 = 6).\n\nNow, let's analyze the scenario. For the hands to form a 180-degree angle, the minute hand needs to be directly opposite the hour hand.  \n\n**Step 1:  Analyze the starting position.** At 7:00 PM, the hour hand is pointing directly at the '7', and the minute hand is at the '12'. The angle between them is 150 degrees (7 hours * 30 degrees/hour). \n\n**Step 2: Determine the relative speed.** The minute hand moves faster than the hour hand. The difference in their speeds is 5.5 degrees per minute (6 degrees/minute - 0.5 degrees/minute). \n\n**Step 3: Calculate the time.** To form a 180-degree angle, the minute hand needs to move an additional 30 degrees (180 degrees - 150 degrees).  This will take approximately 5 minutes and 27 seconds (30 degrees / 5.5 degrees/minute = 5.45 minutes \u2248 5 minutes 27 seconds). \n\n**Step 4:  Final answer.** Therefore, the hour and minute hands will form a 180-degree angle at approximately 7:05:27 PM. \n\n**Note:** It's important to remember that the hour hand is also moving during this time, but its movement is relatively slow compared to the minute hand.  We can approximate the time accurately enough by focusing on the minute hand's movement. \n\n",
+            "options": [
+                "7:05:27 PM",
+                "7:10:00 PM",
+                "7:15:00 PM",
+                "7:20:00 PM"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "At what time between 5:00 and 6:00 are the hour and minute hands exactly 120 degrees apart?",
+            "difficulty": "medium",
+            "reasoning": "This question requires us to consider the relative movement of both the hour and minute hands. Here's how to approach it:\n\n1. **Understanding Clock Angles:**\n   - A clock face is divided into 12 hours, making a full circle of 360 degrees.  Therefore, each hour mark represents 30 degrees (360/12 = 30).\n   - The minute hand moves 360 degrees in 60 minutes, meaning it moves 6 degrees per minute (360/60 = 6).\n   - The hour hand moves 360 degrees in 12 hours, meaning it moves 30 degrees per hour (360/12 = 30) or 0.5 degrees per minute (30/60 = 0.5).\n\n2. **Setting up the Equation:**\n   - Let 'x' be the number of minutes past 5:00.\n   - The minute hand will be at 6x degrees (6 degrees per minute * x minutes).\n   - The hour hand will be at 150 + 0.5x degrees (150 degrees for the initial 5 hours + 0.5 degrees per minute * x minutes).\n   - We want the difference between these angles to be 120 degrees.\n   - Therefore, our equation is: |150 + 0.5x - 6x| = 120\n\n3. **Solving for x:**\n   -  We have two possibilities, either 150 + 0.5x - 6x = 120 or 150 + 0.5x - 6x = -120.\n   - Solving the first equation: -5.5x = -30 => x = 5.45 (approximately)\n   - Solving the second equation: -5.5x = -270 => x = 49.09 (approximately)\n   - Since we are looking for a time between 5:00 and 6:00, the valid solution is x = 5.45 minutes.\n\n4. **The Answer:**\n   -  Therefore, the hour and minute hands are 120 degrees apart at approximately **5:05 and 27 seconds**.",
+            "options": [
+                "5:05:00",
+                "5:05:27",
+                "5:10:00",
+                "5:15:00"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "What is the angle between the hour and minute hand at 9:42?",
+            "difficulty": "hard",
+            "reasoning": "This question is designed to be challenging because it involves a time that is not a direct multiple of 5 minutes. Here's how to solve it:\n\n1. **Minute Hand Position:** At 42 minutes, the minute hand points directly at the 8.  Since each number on the clock represents 30 degrees (360 degrees / 12 hours), the minute hand is at 8 * 30 = 240 degrees.\n\n2. **Hour Hand Position:**  At 9:42, the hour hand has moved past the 9 and is 42/60 of the way towards the 10.  Here's how to calculate its precise position:\n    * Each hour mark represents 30 degrees (360 degrees / 12 hours).\n    * The hour hand has moved 9 full hours, so it's at 9 * 30 = 270 degrees.\n    * It has also moved 42/60 of the way between the 9 and 10, which is (42/60) * 30 = 21 degrees.\n    * Therefore, the hour hand is at 270 + 21 = 291 degrees.\n\n3. **Difference:** The difference between the hour and minute hand positions is 291 degrees - 240 degrees = 51 degrees.\n\n**Therefore, the angle between the hour and minute hand at 9:42 is 51 degrees.**",
+            "options": [
+                "51 degrees",
+                "42 degrees",
+                "60 degrees",
+                "30 degrees"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Two clocks, A and B, are synchronized at 12:00 PM. Clock A runs 5 seconds faster every minute, while clock B runs 10 seconds slower every minute. If clock A shows 3:00 PM, what time will clock B show?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Calculate the time difference:**\n   - Clock A is 5 seconds faster per minute, meaning in 3 hours (180 minutes), it gains 5 seconds/minute * 180 minutes = 900 seconds.\n   - 900 seconds is equal to 15 minutes.\n\n2. **Determine the actual time:**\n   - Since clock A is 15 minutes ahead of the actual time, the actual time is 3:00 PM - 15 minutes = 2:45 PM.\n\n3. **Calculate the time on clock B:**\n   - Clock B is 10 seconds slower per minute, meaning in 3 hours (180 minutes), it loses 10 seconds/minute * 180 minutes = 1800 seconds.\n   - 1800 seconds is equal to 30 minutes.\n   - Since clock B is 30 minutes behind the actual time, it will show 2:45 PM - 30 minutes = **2:15 PM**.\n\nTherefore, clock B will show 2:15 PM when clock A shows 3:00 PM.",
+            "options": [
+                "2:00 PM",
+                "2:15 PM",
+                "2:30 PM",
+                "2:45 PM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A train leaves Station A at 10:45 AM and travels for 27 hours and 35 minutes.  If the train arrives at Station B on the same day, what time does it arrive? \n\n**Note:** The train travels for 27 hours and 35 minutes *within the same day*.",
+            "difficulty": "hard",
+            "reasoning": "This problem involves adding a time interval that exceeds 12 hours. To solve it, we need to break down the time interval into smaller chunks and manage the carryover from hours to minutes. \n\n**Step 1:**  Add the hours first. 10:45 AM + 27 hours = 10:45 PM (adding 12 hours takes us to 10:45 PM, then adding another 15 hours gets us to 1:45 AM the next day). \n\n**Step 2:** Now, add the minutes.  1:45 AM + 35 minutes = 2:20 AM. \n\nTherefore, the train arrives at Station B at 2:20 AM. \n\n**Key Concept:** Clock arithmetic involves understanding how time cycles. A 12-hour clock resets at 12:00 AM (midnight), and a 24-hour clock resets at 00:00 (midnight). When adding time intervals, we need to consider the carryover from hours to minutes and from minutes to hours to ensure we arrive at the correct time.",
+            "options": [
+                "1:45 AM",
+                "2:20 AM",
+                "11:20 PM",
+                "10:20 PM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Three clocks, A, B, and C, are located in different cities. Clock A is 2 hours ahead of Clock B, and Clock B is 30 minutes ahead of Clock C. A plane departs from City A at 11:00 AM according to Clock A's time, traveling at a constant speed of 500 miles per hour towards City C. The distance between City A and City C is 2,500 miles.  What time will the plane arrive at City C according to Clock C's time?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this challenging clock problem:\n\n1. **Calculate the total time difference:**\n   * Clock A is 2 hours ahead of Clock B, and Clock B is 30 minutes (0.5 hours) ahead of Clock C. \n   * The total time difference between Clock A and Clock C is 2 hours + 0.5 hours = 2.5 hours.\n\n2. **Calculate the flight time:**\n   * Distance = 2,500 miles\n   * Speed = 500 miles per hour\n   * Time = Distance / Speed = 2,500 miles / 500 miles per hour = 5 hours\n\n3. **Adjust for the time difference:**\n   * The plane departs at 11:00 AM according to Clock A.\n   * Since Clock C is 2.5 hours behind Clock A, we need to subtract 2.5 hours from the flight time to determine the arrival time according to Clock C.\n   * Arrival time at City C according to Clock A: 11:00 AM + 5 hours = 4:00 PM\n   * Arrival time at City C according to Clock C: 4:00 PM - 2.5 hours = 1:30 PM\n\nTherefore, the plane will arrive at City C at 1:30 PM according to Clock C's time.",
+            "options": [
+                "11:00 AM",
+                "1:30 PM",
+                "4:00 PM",
+                "5:30 PM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine an analog clock with an unusual timekeeping system. It has 24 hours on its face, but instead of being divided into 12 hours, it is divided into 8 equal sections.  The hour hand moves forward in increments of 3 hours.  If the second hand is pointing at the 12, and the hour hand is currently at the 6th marking, how many minutes will have passed when the hour hand next reaches the 7th marking?",
+            "difficulty": "hard",
+            "reasoning": "This question requires us to understand the non-standard clock system and the movement of the hour hand. \n\nSince the clock face is divided into 8 sections, each section represents 3 hours (24 hours / 8 sections = 3 hours per section). The hour hand moves forward by 3 hours every time it jumps to the next marking. \n\nThe hour hand is currently at the 6th marking. To reach the 7th marking, it needs to move forward by 3 hours. \n\nHowever, the clock doesn't have minutes marked, and the hour hand only moves in 3-hour increments.  Therefore, to figure out how many minutes have passed, we need to think about the proportion of time represented by each section. \n\nSince each section is 3 hours, and there are 60 minutes in an hour, each section represents 180 minutes (3 hours * 60 minutes/hour).  \n\nTherefore, the hour hand will take 180 minutes to move from the 6th marking to the 7th marking.",
+            "options": [
+                "180 minutes",
+                "30 minutes",
+                "3 hours",
+                "60 minutes"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A clock is placed on a table in a room with a single window. The sun is shining through the window, casting a shadow of the clock on the opposite wall.  The shadow of the minute hand is 15 degrees behind the shadow of the hour hand. The shadow of the hour hand is 30 degrees long, and the shadow of the minute hand is 45 degrees long. What time is it?",
+            "difficulty": "hard",
+            "reasoning": "This problem requires us to think about the geometry of the clock and its shadow, as well as the relationship between the hour and minute hands. Here's how to solve it:\n\n1. **Understanding Clock Geometry:**  A standard clock face is a circle divided into 12 hours, which means each hour mark represents 30 degrees (360 degrees / 12 hours = 30 degrees/hour). The minute hand moves 360 degrees in 60 minutes, meaning it moves 6 degrees every minute (360 degrees / 60 minutes = 6 degrees/minute).\n\n2. **Shadow Length and Angle:**  The length of the shadows of the hour and minute hands is important because it tells us the angle of the sun relative to the clock. The longer the shadow, the lower the sun in the sky.  Since the shadow of the hour hand is shorter than the shadow of the minute hand, we know the sun is higher in the sky when the hour hand is pointing at the time. The angle between the shadows is a result of the relative positions of the hour and minute hands.\n\n3. **Relating Shadow Angle to Time:**  The fact that the minute hand's shadow is 15 degrees behind the hour hand's shadow means that the minute hand is 15 degrees ahead of the hour hand in terms of their positions on the clock face. We need to figure out what time this corresponds to.\n\n4. **Finding the Time:** Let's break down the problem:\n   * The hour hand is 30 degrees ahead of the 12, as its shadow is 30 degrees long. This places the hour hand between the 1 and the 2.  \n   * The minute hand is 15 degrees ahead of the hour hand, which means it's 45 degrees ahead of the 12 (30 + 15 = 45). This translates to the minute hand pointing at the 9.\n\nTherefore, the time is **1:45**.",
+            "options": [
+                "1:15",
+                "1:45",
+                "2:15",
+                "2:45"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A flight departs from London at 10:35 AM local time and arrives in Tokyo at 7:15 PM the same day.  The flight time is 12 hours and 30 minutes. If the time difference between London and Tokyo is +9 hours, what is the local time of arrival in Tokyo in 24-hour format?",
+            "difficulty": "hard",
+            "reasoning": "This question involves multiple steps to arrive at the correct answer. Here's the breakdown:\n\n1. **Calculate the flight arrival time in London:**\n   - The flight departs at 10:35 AM and takes 12 hours and 30 minutes.\n   - Adding 12 hours to 10:35 AM gives us 10:35 PM.\n   - Adding an additional 30 minutes gives us 11:05 PM.\n   - Therefore, the flight arrives in London at 11:05 PM.\n\n2. **Adjust the London arrival time for the time difference:**\n   - Tokyo is 9 hours ahead of London. \n   - To find the arrival time in Tokyo, add 9 hours to the London arrival time (11:05 PM).\n   - 11:05 PM + 9 hours = 8:05 AM the next day.\n\n3. **Convert the Tokyo arrival time to 24-hour format:**\n   - 8:05 AM in 24-hour format is 08:05.\n\nTherefore, the local time of arrival in Tokyo is **08:05**.",
+            "options": [
+                "19:15",
+                "08:05",
+                "17:15",
+                "20:05"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clock has two hour hands, one that moves normally and another that moves twice as fast. If both hour hands start aligned at 12:00 AM, what is the angle between the two hands at 3:15 PM?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Normal Hour Hand:** At 3:15 PM, the normal hour hand will have moved past the 3 by a quarter of the distance between the 3 and the 4.  Since there are 12 hours on a clock face, each hour mark represents 30 degrees (360 degrees / 12 hours = 30 degrees/hour). A quarter of this distance is 7.5 degrees (30 degrees / 4 = 7.5 degrees). Therefore, the normal hour hand is at 97.5 degrees from the 12 (3 * 30 degrees + 7.5 degrees = 97.5 degrees).\n\n2. **Fast Hour Hand:** The fast hour hand moves twice as fast as the normal hour hand. So, in the same time that the normal hour hand moves 97.5 degrees, the fast hour hand will have moved 195 degrees (97.5 degrees * 2 = 195 degrees).\n\n3. **Angle Calculation:** To find the angle between the two hands, subtract the smaller angle from the larger angle. In this case, the angle between the hands is 97.5 degrees (195 degrees - 97.5 degrees = 97.5 degrees).\n\nTherefore, the angle between the two hour hands at 3:15 PM is **97.5 degrees**.",
+            "options": [
+                "195 degrees",
+                "97.5 degrees",
+                "7.5 degrees",
+                "30 degrees"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A train departs from Station A at 8:15 AM and arrives at Station B at 10:45 AM. The train then waits at Station B for 30 minutes before departing for Station C. If the journey from Station B to Station C takes 2 hours and 15 minutes, at what time does the train arrive at Station C?",
+            "difficulty": "hard",
+            "reasoning": "This question involves calculating elapsed time across multiple stages of the journey. Here's the breakdown:\n\n1. **Time spent traveling from Station A to Station B:**\n   - Departure time from Station A: 8:15 AM\n   - Arrival time at Station B: 10:45 AM\n   - Elapsed time: 2 hours and 30 minutes (10:45 AM - 8:15 AM = 2 hours and 30 minutes)\n\n2. **Time spent waiting at Station B:**\n   - Wait time: 30 minutes\n\n3. **Time spent traveling from Station B to Station C:**\n   - Journey time: 2 hours and 15 minutes\n\n4. **Calculating the total time:**\n   - Total time = Time (A to B) + Wait time (Station B) + Time (B to C)\n   - Total time = 2 hours 30 minutes + 30 minutes + 2 hours 15 minutes\n   - Total time = 5 hours 15 minutes\n\n5. **Arrival time at Station C:**\n   - Departure time from Station B: 10:45 AM (Arrival time + wait time)\n   - Add the total travel time (5 hours 15 minutes) to the departure time:\n   - 10:45 AM + 5 hours 15 minutes = 4:00 PM\n\nTherefore, the train arrives at Station C at 4:00 PM.",
+            "options": [
+                "12:00 PM",
+                "3:00 PM",
+                "4:00 PM",
+                "5:15 PM"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A clock is set to the correct time on January 1st, but it loses 10 seconds every hour.  On February 1st, the clock shows 10:00 am. What is the actual time?  Assume a non-leap year.",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Calculate the total time lost:**\n   * January has 31 days.  There are 24 hours in a day, so there are 31 * 24 = 744 hours in January.\n   * The clock loses 10 seconds per hour, meaning it loses 744 * 10 = 7440 seconds in January.\n   * Convert seconds to minutes: 7440 seconds / 60 seconds/minute = 124 minutes\n   * Convert minutes to hours: 124 minutes / 60 minutes/hour = 2 hours and 4 minutes\n\n2. **Determine the actual time:**\n   * The clock shows 10:00 am on February 1st, but it's actually 2 hours and 4 minutes behind.\n   * Therefore, the actual time is 10:00 am + 2 hours and 4 minutes = **12:04 pm**. \n\n**Key Points:**\n\n* This problem involves understanding how time is measured and how it's affected by discrepancies in a clock's accuracy.\n* Pay attention to units (seconds, minutes, hours) and make sure to convert them correctly.\n* Remember that a non-leap year has 31 days in January.\n\n**Additional Context:**\n\nClock problems with dates often involve calculating the total time elapsed over a specific period, taking into account any discrepancies in the clock's accuracy. These problems challenge your ability to work with different units of time and apply logical reasoning to determine the actual time.",
+            "options": [
+                "10:10 am",
+                "12:04 pm",
+                "11:56 am",
+                "12:10 pm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clock shows 3:15. If you see this clock reflected in a mirror, what time would the reflection appear to show? Assume the clock is a standard analog clock with Roman numerals.",
+            "difficulty": "hard",
+            "reasoning": "This question tests your understanding of how a mirror image affects a clock's appearance. Here's how to solve it:\n\n1. **Understanding Mirror Images:** A mirror reverses the image horizontally. So, the left side of the clock becomes the right, and vice versa.\n\n2. **Clock Face and Numerals:**  A standard clock face with Roman numerals is arranged as follows:\n\n  *  XII (12) at the top\n  *  III (3) at the right\n  *  IX (9) at the left\n\n3. **Mirror Reflection:** When reflected, the positions of the numerals change:\n\n  *  XII (12) remains at the top (not affected by horizontal reversal).\n  *  III (3) moves to the left.\n  *  IX (9) moves to the right.\n\n4. **Hour Hand:** The hour hand points to the number 3 in the original clock. In the reflection, it appears to point to the number 9 (since the right side becomes the left).\n\n5. **Minute Hand:** The minute hand points to the number 3 on the original clock (15 minutes past the hour).  In the reflection, it still appears to point to the number 3. The minute hand's position relative to the hour hand won't change.\n\n6. **Final Answer:**  The mirror image of the clock will show 9:15.",
+            "options": [
+                "9:15",
+                "3:15",
+                "6:15",
+                "12:15"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Three clocks, A, B, and C, are initially synchronized at 12:00 PM. Clock A's minute hand moves clockwise at a speed of 5 minutes per minute. Clock B's hour hand moves counterclockwise at a speed of 1 minute per hour. Clock C's second hand moves clockwise at a speed of 10 seconds per second. After 24 hours, what will be the difference between the time displayed on Clock A and Clock B? ",
+            "difficulty": "hard",
+            "reasoning": "This question involves multiple clocks moving at different speeds and directions. Here's how to solve it step-by-step:\n\n**1. Analyzing Clock A:**\n* Clock A's minute hand moves 5 minutes every actual minute. This means it will complete 60 full rotations in 12 minutes (60 minutes / 5 minutes per minute). Since there are 60 minutes in an hour, Clock A will complete 5 full rotations of its minute hand every hour (60 minutes / 12 minutes per rotation). \n* Over 24 hours, Clock A will complete 120 full rotations of its minute hand (24 hours * 5 rotations per hour). Since a full rotation of the minute hand represents 1 hour, Clock A will effectively display 12:00 PM after 24 hours.\n\n**2. Analyzing Clock B:**\n* Clock B's hour hand moves counterclockwise at 1 minute per hour. This means it will move 24 minutes in 24 hours. Since there are 60 minutes in an hour, this represents 24/60 = 2/5 of a full rotation.  \n* Clock B will be 2/5 of the way around the clock face counterclockwise from its starting point of 12:00 PM.  \n* To figure out the exact time, we can calculate how many minutes this represents: (2/5) * 60 minutes = 24 minutes. This means Clock B will display 11:36 AM after 24 hours.\n\n**3. Calculating the Difference:**\n* The difference between the time displayed on Clock A (12:00 PM) and Clock B (11:36 AM) is 24 minutes. \n\n**Therefore, the difference in time between Clock A and Clock B after 24 hours will be 24 minutes.**",
+            "options": [
+                "12 minutes",
+                "24 minutes",
+                "36 minutes",
+                "48 minutes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Three clocks, A, B, and C, are initially synchronized at 12:00 PM. Clock A gains 3 minutes every hour, Clock B loses 2 minutes every hour, and Clock C runs at a constant rate. If Clock A shows 4:00 PM and Clock B shows 3:30 PM, what time will Clock C show?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this challenging clock problem:\n\n1. **Analyze the Speed Differences:**\n   - Clock A gains 3 minutes every hour, meaning it runs 3 minutes faster than a standard clock.\n   - Clock B loses 2 minutes every hour, meaning it runs 2 minutes slower than a standard clock.\n   - Clock C runs at a constant rate, meaning it runs at the same speed as a standard clock.\n\n2. **Calculate Time Elapsed for Clocks A and B:**\n   - Clock A shows 4:00 PM, which is 4 hours ahead of the starting time (12:00 PM). However, it's running fast, so it's actually been running for less than 4 hours.\n   - Clock B shows 3:30 PM, which is 3.5 hours ahead of the starting time. But it's running slow, so it's actually been running for more than 3.5 hours.\n\n3. **Determine the Actual Time Elapsed for Clocks A and B:**\n   - Clock A: Since it gains 3 minutes every hour, it has gained a total of 3 minutes/hour * 4 hours = 12 minutes. To find the actual time elapsed, subtract these 12 minutes from the displayed time: 4:00 PM - 12 minutes = 3:48 PM.\n   - Clock B: Since it loses 2 minutes every hour, it has lost a total of 2 minutes/hour * 3.5 hours = 7 minutes. To find the actual time elapsed, add these 7 minutes to the displayed time: 3:30 PM + 7 minutes = 3:37 PM.\n\n4. **Find the Average Actual Time Elapsed:**\n   - The actual time elapsed for Clock A is 3:48 PM, and for Clock B is 3:37 PM. The average of these two times is (3:48 PM + 3:37 PM) / 2 = 3:42:30 PM.\n\n5. **Clock C's Time:**\n   - Since Clock C runs at a constant rate, the time it shows will be the average of the actual times elapsed by Clocks A and B. Therefore, Clock C will show **3:42:30 PM**.\n\n**Therefore, the correct answer is 3:42:30 PM.**",
+            "options": [
+                "3:42 PM",
+                "3:48 PM",
+                "3:37 PM",
+                "3:42:30 PM"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A clock strikes 4:20 PM.  The hour hand moves at a constant rate, while the minute hand moves at a speed of 360 degrees per hour. What time will it be when the angle between the hour hand and the minute hand reaches 180 degrees for the *first* time after 4:20 PM?",
+            "difficulty": "hard",
+            "reasoning": "This question requires us to understand the relative speeds of the hour and minute hands and their relationship to forming a 180-degree angle. Here's how to solve it step-by-step:\n\n1. **Understanding the Relative Speed:** The hour hand moves 360 degrees in 12 hours, meaning it moves 30 degrees per hour (360/12 = 30). The minute hand moves 360 degrees per hour.  This means the minute hand moves 6 degrees per minute (360/60 = 6). The relative speed of the minute hand to the hour hand is 6 - 0.5 = 5.5 degrees per minute (0.5 degrees per minute is the hour hand's speed).\n\n2. **Initial Position:** At 4:20 PM, the hour hand is 2/3 of the way between the 4 and the 5, and the minute hand is pointing directly at the 4. The angle between them is approximately 40 degrees.\n\n3. **The 180-degree Angle:** For the hands to be 180 degrees apart, the minute hand needs to gain 140 degrees (180 - 40 = 140).  \n\n4. **Calculating Time:** Since the minute hand gains 5.5 degrees per minute, it will take approximately 25.45 minutes to gain 140 degrees (140 / 5.5 = 25.45).  \n\n5. **Final Time:** Adding 25.45 minutes to 4:20 PM, the time will be approximately **4:45:27 PM**. \n\n**Therefore, the time when the hour and minute hands form a 180-degree angle for the first time after 4:20 PM is approximately 4:45:27 PM.**",
+            "options": [
+                "4:44:27 PM",
+                "4:45:00 PM",
+                "4:45:27 PM",
+                "4:46:27 PM"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A peculiar clock operates with the minute hand moving twice as fast as the hour hand. At a certain point, the hour hand is directly over the 12, and the minute hand is pointing directly at the 3.  Assuming the clock is running normally, what is a possible time this clock could be showing?",
+            "difficulty": "hard",
+            "reasoning": "This is a tricky problem because the clock's hands move at different speeds. Here's how to approach it:\n\n1. **Understanding the Unusual Relationship:** Normally, the minute hand moves 12 times faster than the hour hand. In this case, the minute hand moves only twice as fast. This means that for every two spaces the minute hand moves, the hour hand moves one space.\n\n2. **Visualizing the Position:**  The minute hand is at the 3, which represents 15 minutes past the hour. Since the minute hand moves twice as fast as the hour hand, the hour hand should have moved half that distance \u2013 7.5 minutes. \n\n3. **Determining Possible Times:**  If the hour hand is directly over the 12, it indicates that the time is a whole hour. Since the hour hand has moved 7.5 minutes past the hour,  the possible time could be **12:07.5**. However, clocks don't display half-minutes. Therefore, the possible time could be a little before or a little after 12:08.\n\n4. **The Correct Time:**  The minute hand moves twice as fast as the hour hand, so it would move more quickly than usual.  Therefore, the possible time would be slightly *before* 12:08, because the minute hand would have moved a bit past the 3 before the hour hand reached the 12.\n\n**In conclusion**, a possible time this clock could be showing is **slightly before 12:08**. ",
+            "options": [
+                "12:07",
+                "12:08",
+                "12:09",
+                "12:10"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A grandfather clock chimes once at 1:00 AM, twice at 2:00 AM, and so on. However, this clock is running 15 seconds fast every hour. If it chimes 10 times at 10:00 AM according to its own time, what was the actual time 2 hours and 37 minutes ago, to the nearest minute?",
+            "difficulty": "hard",
+            "reasoning": "This problem requires several steps to solve. We need to account for the clock's fast running, the chiming pattern, and the time difference. Here's the breakdown:\n\n1. **Calculate the total time the clock is fast:**\n   - The clock runs 15 seconds fast per hour, so in 9 hours (from 1:00 AM to 10:00 AM), it's fast by 9 hours * 15 seconds/hour = 135 seconds.\n   - Convert this to minutes: 135 seconds / 60 seconds/minute = 2.25 minutes.\n\n2. **Determine the actual time the clock chimed 10 times:**\n   - The clock shows 10:00 AM, but it's 2.25 minutes fast.  Therefore, the actual time is 9:57:45 AM.\n\n3. **Calculate the actual time 2 hours and 37 minutes ago:**\n   -  Subtract 2 hours from 9:57:45 AM: This gives us 7:57:45 AM.\n   -  Then subtract 37 minutes: 7:57:45 AM - 37 minutes = 7:20:45 AM.\n\n4. **Round to the nearest minute:**\n   - The actual time 2 hours and 37 minutes ago was approximately **7:21 AM**.\n\n**Key Concepts:**\n\n* **Time Calculation:** The problem involves manipulating hours, minutes, and seconds to calculate the time difference accurately.\n* **Clock Discrepancy:** Understanding how a clock's speed affects the actual time is crucial.\n* **Pattern Recognition:** Recognizing the pattern of the chimes helps determine the actual time based on the number of chimes.",
+            "options": [
+                "7:21 AM",
+                "7:18 AM",
+                "7:24 AM",
+                "7:15 AM"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A clock shows the time as 10:27:45. If the hour hand moves 1/3rd of the distance between two consecutive numbers on the clock face during each minute, what is the angle between the minute hand and the hour hand at that precise moment?",
+            "difficulty": "hard",
+            "reasoning": "This is a tricky question, combining non-standard time and the movement of both hands. Here's how to solve it step by step: \n\n1. **Minute Hand Position:**  The minute hand points directly at the 54 (representing 27 minutes past the hour). \n\n2. **Hour Hand Position:**  At 10:00, the hour hand points directly at the 10.  Since it's 27 minutes and 45 seconds past 10:00, the hour hand has moved a fraction of the distance between the 10 and the 11.  We need to calculate this movement. \n\n* Each hour mark on the clock represents 360 degrees / 12 = 30 degrees. \n* The hour hand moves 30 degrees in 60 minutes. So, in 1 minute, it moves 0.5 degrees (30/60). \n*  In 27 minutes and 45 seconds (27.75 minutes), the hour hand has moved 0.5 * 27.75 = 13.875 degrees. \n* The hour hand is now 13.875 degrees past the 10. \n\n3. **Calculating the Angle:** \n* The angle between the 10 and the 54 is 5 spaces, which is 5 * 30 degrees = 150 degrees. \n* However, the hour hand is not at the 10, it's 13.875 degrees past it. \n* The angle between the minute and hour hands is therefore 150 degrees - 13.875 degrees = 136.125 degrees.\n\n**Therefore, the angle between the minute hand and the hour hand is 136.125 degrees.**\n\nThis question is a good example of how to apply the principles of clock angle calculations, considering the movement of both hands and non-standard times.",
+            "options": [
+                "136.125 degrees",
+                "150 degrees",
+                "13.875 degrees",
+                "163.875 degrees"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Five clocks (A, B, C, D, and E) are synchronized to a central clock.  Each clock runs at a different rate.  Clock A is 15 minutes ahead of the central clock, Clock B is 10 minutes behind the central clock, and Clock C is 25 minutes ahead of the central clock. Clock D runs 3 minutes faster per hour than the central clock, and Clock E runs 4 minutes slower per hour than the central clock. If the central clock shows 11:00 AM, what time does Clock E show?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to break down the problem and find the time on Clock E:\n\n1. **Understand the Time Differences:**\n   * Clock A is 15 minutes ahead of the central clock.\n   * Clock B is 10 minutes behind the central clock.\n   * Clock C is 25 minutes ahead of the central clock.\n   * Clock D gains 3 minutes every hour compared to the central clock.\n   * Clock E loses 4 minutes every hour compared to the central clock.\n\n2. **Focus on Clock E:** We need to determine the time on Clock E when the central clock shows 11:00 AM. Since Clock E runs slower, it will show a time earlier than 11:00 AM.\n\n3. **Calculate the Time Difference for Clock E:**\n   * Clock E loses 4 minutes every hour.  Since it's 11:00 AM, Clock E has been running for 11 hours.  \n   * Therefore, Clock E has lost a total of 11 hours * 4 minutes/hour = 44 minutes.\n\n4. **Subtract the Lost Time from the Central Clock Time:**\n   * The central clock shows 11:00 AM.\n   * Subtract the 44 minutes lost by Clock E: 11:00 AM - 44 minutes = 10:16 AM.\n\n**Therefore, Clock E shows 10:16 AM.**",
+            "options": [
+                "10:44 AM",
+                "10:16 AM",
+                "11:44 AM",
+                "11:16 AM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Three friends, Alex, Ben, and Carol, are trying to figure out the actual time. Alex's clock is 20 minutes fast, Ben's clock is 15 minutes slow, and Carol's clock shows 5:10 PM.  If Alex's clock shows 5:45 PM and Ben's clock shows 4:45 PM, what is the actual time?",
+            "difficulty": "hard",
+            "reasoning": "This puzzle requires us to analyze the discrepancies between each clock and the actual time. Here's how to solve it step-by-step:\n\n1. **Analyze Alex's clock:** Alex's clock is 20 minutes fast, meaning it's showing a time 20 minutes ahead of the actual time.  If Alex's clock shows 5:45 PM, the actual time is 20 minutes earlier, which is **5:25 PM**. \n\n2. **Analyze Ben's clock:** Ben's clock is 15 minutes slow, meaning it's showing a time 15 minutes behind the actual time. If Ben's clock shows 4:45 PM, the actual time is 15 minutes later, which is **5:00 PM**. \n\n3. **Compare the actual times from Alex and Ben:** We found that the actual time based on Alex's clock is 5:25 PM, and the actual time based on Ben's clock is 5:00 PM. This inconsistency tells us there's a discrepancy between their clocks. To resolve this, we need to look at Carol's clock. \n\n4. **Consider Carol's clock:** Carol's clock shows 5:10 PM. This time falls within the range of the actual times we calculated from Alex and Ben's clocks. However, it doesn't match either of them exactly. This implies that Carol's clock might be slightly off. Since it's closer to Ben's actual time, we can assume Carol's clock is slightly fast (by about 10 minutes). \n\n5. **Determine the actual time:**  Based on the above analysis, the most likely actual time is **5:00 PM**. While Alex's clock is fast, Ben's clock being slow and Carol's clock being slightly fast leads us to believe the actual time is closer to 5:00 PM. \n\nTherefore, the actual time is 5:00 PM.",
+            "options": [
+                "5:25 PM",
+                "5:00 PM",
+                "5:10 PM",
+                "4:45 PM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Three clocks, A, B, and C, are initially synchronized at 12:00 PM. Clock A gains 3 minutes every hour, clock B loses 2 minutes every hour, and clock C gains 1 minute every 30 minutes. After 24 hours, what is the time difference between the fastest and slowest clock?  Consider that the clocks are analog and use 12-hour format.",
+            "difficulty": "hard",
+            "reasoning": "This problem requires us to carefully track the time changes for each clock over the entire 24-hour period. Here's a step-by-step breakdown:\n\n**1. Calculate the total time gained or lost by each clock:**\n\n* **Clock A:** Gains 3 minutes every hour, so in 24 hours, it gains 3 minutes/hour * 24 hours = 72 minutes. This is equal to 1 hour and 12 minutes.\n* **Clock B:** Loses 2 minutes every hour, so in 24 hours, it loses 2 minutes/hour * 24 hours = 48 minutes.\n* **Clock C:** Gains 1 minute every 30 minutes, which means it gains 2 minutes every hour. Over 24 hours, it gains 2 minutes/hour * 24 hours = 48 minutes.\n\n**2. Determine the fastest and slowest clocks:**\n\n* **Fastest:** Clock A gains the most time, making it the fastest.\n* **Slowest:** Clock B loses time, making it the slowest.\n\n**3. Calculate the time difference:**\n\n* **Clock A (fastest):** After 24 hours, it will show 1:12 PM (12:00 PM + 1 hour 12 minutes)\n* **Clock B (slowest):** After 24 hours, it will show 10:12 AM (12:00 PM - 48 minutes)\n* **Difference:** The difference between the two clocks is 1:12 PM - 10:12 AM = **3 hours**\n\n**Therefore, the time difference between the fastest and slowest clock after 24 hours is 3 hours.**\n\n**Important Note:**  The clocks are analog and use 12-hour format. This means that after 12:00 PM, the time cycles back to 1:00 PM. We need to keep this in mind when calculating the final time for each clock.",
+            "options": [
+                "1 hour 12 minutes",
+                "3 hours",
+                "48 minutes",
+                "72 minutes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clockmaker is setting up a grandfather clock. He notices that the minute hand moves 1.5 degrees every second instead of the usual 6 degrees per minute.  He starts the clock at 12:00 pm, and the clock face shows 3:15 pm.  What is the actual time? ",
+            "difficulty": "hard",
+            "reasoning": "This question is challenging because it involves an unconventional clock movement. Here's how to solve it step-by-step:\n\n1. **Understanding the Problem:** The grandfather clock's minute hand moves at a slower rate than a normal clock. This means the time displayed on the clock is slower than the actual time.\n\n2. **Calculating the Time Difference:** A normal clock's minute hand moves 360 degrees in 60 minutes, or 6 degrees per minute. This clock moves 1.5 degrees per second, which translates to 90 degrees per minute (1.5 degrees/second * 60 seconds/minute).  \n\n3. **Finding the Time Ratio:** The ratio of the clock's speed to a normal clock's speed is 90 degrees/minute : 6 degrees/minute = 15:1. This means the grandfather clock runs 15 times slower than a normal clock.\n\n4. **Determining the Actual Time:** The clock face shows 3:15 pm. Since the clock runs 15 times slower, the actual time is 15 times faster. To find the actual time, divide the time shown on the clock by 15: 3 hours 15 minutes / 15 = 13 minutes.  \n\n5. **Adding the Time Difference to the Starting Time:** The actual time is 13 minutes past the starting time of 12:00 pm.  Therefore, the actual time is 12:13 pm.  \n\n**Key Concept:** The question requires understanding the relationship between clock hand movement and time.  The slower movement of the minute hand directly affects the perceived time on the clock.  By comparing the movement of the clock's hand to a normal clock, we can calculate the actual time.  ",
+            "options": [
+                "1:15 pm",
+                "12:13 pm",
+                "3:15 pm",
+                "1:45 pm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A business meeting is scheduled in London (GMT) at 10:00 AM.  A colleague in New York City (EST) needs to join the meeting, but they have a previous commitment that ends at 11:00 AM EST. They need to travel from New York City to London, taking 6 hours of flight time. What is the latest time the colleague can depart from New York City to arrive in London in time for the meeting, considering the time difference and travel time?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Time Difference:** London is 5 hours ahead of New York City (GMT is 5 hours ahead of EST). This means that 10:00 AM in London is 5:00 AM in New York City.\n\n2. **Arrival Time in London:**  To be on time for the 10:00 AM meeting in London, the colleague needs to arrive in London by 10:00 AM local time.\n\n3. **Departure Time from New York City:** Since the flight takes 6 hours, the colleague needs to depart from New York City 6 hours before 10:00 AM London time, which is 4:00 AM London time.\n\n4. **Departure Time in New York City:**  Converting 4:00 AM London time to New York City time, we subtract 5 hours (the time difference), resulting in 11:00 PM the previous day in New York City.\n\n5. **Latest Departure Time:** The colleague has a commitment that ends at 11:00 AM EST.  Therefore, the latest time they can depart from New York City is **11:00 AM EST**. \n\n**Explanation:**\n\nThe colleague needs to be in London by 10:00 AM GMT, and with a 6-hour flight, they must leave New York 6 hours earlier. Since London is 5 hours ahead of New York, this means they need to leave New York at 11:00 PM EST the day before the meeting. However, they have a commitment until 11:00 AM EST, so they can't leave until that time. Therefore, 11:00 AM EST is the latest they can leave New York to arrive in London on time for the meeting.",
+            "options": [
+                "11:00 PM EST",
+                "11:00 AM EST",
+                "4:00 AM EST",
+                "5:00 AM EST"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clock is set to 12:00 pm. The minute hand moves forward by 1 minute, then the hour hand moves forward by 1 minute, then the minute hand moves forward by 2 minutes, then the hour hand moves forward by 2 minutes, and so on.  This pattern continues with the minute hand moving 1 minute more than the previous move, followed by the hour hand moving 1 minute more than the previous move. What time will the clock show after the hour hand has moved forward by a total of 10 minutes?",
+            "difficulty": "hard",
+            "reasoning": "This question is designed to test your understanding of the relative speeds of the hour and minute hand on a clock and your ability to track a complex pattern. Here's how to break down the solution:\n\n1. **Understanding the Pattern:** The minute hand moves in increments of 1, 2, 3, 4... while the hour hand moves in increments of 1, 2, 3, 4...  It's important to note that the hour hand moves *much* slower than the minute hand. \n\n2. **Tracking the Hour Hand:** Since we want to know the time when the hour hand moves a total of 10 minutes, let's track its movement:\n    * Move 1: +1 minute (Total: 1 minute)\n    * Move 2: +2 minutes (Total: 3 minutes)\n    * Move 3: +3 minutes (Total: 6 minutes)\n    * Move 4: +4 minutes (Total: 10 minutes)\n\n3. **Finding the Corresponding Minute Hand Movement:** Notice that the hour hand's 10th minute movement occurs after the minute hand has moved a total of 1+2+3+4 = 10 minutes.\n\n4. **Calculating the Time:** Since the clock started at 12:00 pm,  adding 10 minutes to the minute hand means the time is now 12:10 pm.  \n\n**Therefore, the clock will show 12:10 pm after the hour hand has moved forward by a total of 10 minutes.**",
+            "options": [
+                "12:05 pm",
+                "12:10 pm",
+                "1:00 pm",
+                "12:15 pm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A train departs from Station A at 10:15 AM and travels at a constant speed of 60 miles per hour. It arrives at Station B at 12:45 PM. Along the way, it stops for a 15-minute break at a station C. Station C is located 3/5 of the total distance between Station A and Station B.  A second train leaves Station B at 11:00 AM and travels at 75 miles per hour towards Station A.  What is the exact time both trains pass each other?  ",
+            "difficulty": "hard",
+            "reasoning": "To solve this, we need to determine a few key points:\n\n1. **Distance and Time:**  The first train travels for 2 hours and 15 minutes (145 minutes) from Station A to Station B, with a 15-minute stop at Station C. This means its actual travel time is 130 minutes (145 - 15).\n\n2. **Distance to Station C:** The distance between Station A and Station C is 3/5 of the total distance between Station A and Station B.\n\n3. **Combined Travel Time:** The second train leaves Station B at 11:00 AM, while the first train departs Station A at 10:15 AM, meaning they have a 45-minute time difference in their departure times.\n\n4. **Relative Speed:** Since the trains are traveling towards each other, their speeds are added together.  The combined speed is 60 mph + 75 mph = 135 mph.\n\n**Calculations:**\n\n* **Calculate the distance from Station A to Station C:**  Let's assume the total distance between Station A and Station B is 'D'. The distance from Station A to Station C is (3/5) * D.\n\n* **Calculate the distance traveled by the first train before reaching Station C:** The first train travels for 130 minutes, which is equal to 130/60 = 2.17 hours.\n\n* **Find the distance traveled by the first train before reaching Station C:**  Distance = Speed x Time.  The distance traveled by the first train is 60 mph * 2.17 hours = 130.2 miles.\n\n* **Determine if the first train reaches Station C before the second train departs Station B:**  Since the first train reaches Station C before the second train departs Station B, they will pass each other before the second train reaches Station C.\n\n* **Calculate the remaining distance for the first train to travel to Station C:**  The remaining distance is (3/5)D - 130.2 miles.\n\n* **Calculate the time taken for the first train to cover the remaining distance:**  Time = Distance / Speed.  The time taken is ((3/5)D - 130.2 miles) / 60 mph.\n\n* **Calculate the time taken for the second train to cover the same distance:**  Time = Distance / Speed.  The time taken is ((3/5)D - 130.2 miles) / 75 mph.\n\n* **Find the time at which the trains meet:** The trains will meet when the sum of the time taken by the first train to cover the remaining distance and the 45-minute head start of the second train is equal to the time taken by the second train to cover the same distance.\n\n ((3/5)D - 130.2 miles) / 60 mph + 45 minutes = ((3/5)D - 130.2 miles) / 75 mph.\n\n* **Solve for D (total distance between Station A and Station B):**\n\n After solving the above equation, we find the total distance (D) is approximately 225 miles.\n\n* **Calculate the time taken by the second train to reach the point where the trains meet:**  Time = Distance / Speed.  The time taken is ((3/5) * 225 miles - 130.2 miles) / 75 mph = 0.83 hours.\n\n* **Calculate the time at which the trains meet:**  The second train leaves Station B at 11:00 AM, and it takes 0.83 hours (approximately 50 minutes) for the trains to meet. Therefore, they will meet at 11:50 AM.  \n\n**Final Answer: The trains will pass each other at 11:50 AM.**",
+            "options": [
+                "11:00 AM",
+                "11:30 AM",
+                "11:50 AM",
+                "12:00 PM"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A digital clock is currently displaying 08:45. If the clock continues to run, what is the next time it will display where the sum of the hours digits is equal to the sum of the minutes digits?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the clock's time progression and digit relationships. Here's how to solve it:\n\n1. **Understanding the Condition:** The question asks for the next time when the sum of the hours digits equals the sum of the minutes digits.  \n\n2. **Analyzing the Current Time:** The clock displays 08:45. The sum of the hour digits (0 + 8) is 8. The sum of the minutes digits (4 + 5) is 9.\n\n3. **Clock Progression:**  We need to consider how the clock advances. The minutes will change faster than the hours.\n\n4. **Finding the Next Matching Sum:**  As the minutes change, the sum of the minutes digits will increase. We need to find a time where the sum of the minutes digits matches the sum of the hour digits (8).  The minutes digits need to add up to 8.\n\n5. **Trial and Error (with Logic):** We can try a few combinations:\n    * 09:00 - The sum of the minutes digits is 0. Not a match.\n    * 09:10 - The sum of the minutes digits is 1. Not a match.\n    * 09:20 - The sum of the minutes digits is 2. Not a match.\n    * 09:30 - The sum of the minutes digits is 3. Not a match.\n    * 09:40 - The sum of the minutes digits is 4. Not a match.\n    * 09:50 - The sum of the minutes digits is 5. Not a match.\n    * 10:00 - The sum of the minutes digits is 0. Not a match.\n    * 10:10 - The sum of the minutes digits is 1. Not a match.\n    * 10:20 - The sum of the minutes digits is 2. Not a match.\n    * 10:30 - The sum of the minutes digits is 3. Not a match.\n    * 10:40 - The sum of the minutes digits is 4. Not a match.\n    * **10:50 - The sum of the minutes digits is 5. Not a match, but it is 7, and the sum of the hour digits is 1.**\n    * **11:00 - The sum of the minutes digits is 0. We can get a sum of 8, but we need to look at the hour digits.**\n    * 11:10 - The sum of the minutes digits is 1. Not a match.\n    * 11:20 - The sum of the minutes digits is 2. Not a match.\n    * 11:30 - The sum of the minutes digits is 3. Not a match.\n    * 11:40 - The sum of the minutes digits is 4. Not a match.\n    * 11:50 - The sum of the minutes digits is 5. Not a match.\n    * **12:00 - The sum of the minutes digits is 0, and the sum of the hour digits is 2. **\n    * 12:10 - The sum of the minutes digits is 1. Not a match.\n    * 12:20 - The sum of the minutes digits is 2. Not a match.\n    * 12:30 - The sum of the minutes digits is 3. Not a match.\n    * 12:40 - The sum of the minutes digits is 4. Not a match.\n    * 12:50 - The sum of the minutes digits is 5. Not a match.\n    * 13:00 - The sum of the minutes digits is 0. Not a match.\n    * 13:10 - The sum of the minutes digits is 1. Not a match.\n    * 13:20 - The sum of the minutes digits is 2. Not a match.\n    * 13:30 - The sum of the minutes digits is 3. Not a match.\n    * 13:40 - The sum of the minutes digits is 4. Not a match.\n    * 13:50 - The sum of the minutes digits is 5. Not a match.\n    * 14:00 - The sum of the minutes digits is 0. Not a match.\n    * 14:10 - The sum of the minutes digits is 1. Not a match.\n    * 14:20 - The sum of the minutes digits is 2. Not a match.\n    * 14:30 - The sum of the minutes digits is 3. Not a match.\n    * 14:40 - The sum of the minutes digits is 4. Not a match.\n    * 14:50 - The sum of the minutes digits is 5. Not a match.\n    * 15:00 - The sum of the minutes digits is 0. Not a match.\n    * 15:10 - The sum of the minutes digits is 1. Not a match.\n    * 15:20 - The sum of the minutes digits is 2. Not a match.\n    * 15:30 - The sum of the minutes digits is 3. Not a match.\n    * 15:40 - The sum of the minutes digits is 4. Not a match.\n    * 15:50 - The sum of the minutes digits is 5. Not a match.\n    * 16:00 - The sum of the minutes digits is 0. Not a match.\n    * 16:10 - The sum of the minutes digits is 1. Not a match.\n    * 16:20 - The sum of the minutes digits is 2. Not a match.\n    * 16:30 - The sum of the minutes digits is 3. Not a match.\n    * 16:40 - The sum of the minutes digits is 4. Not a match.\n    * 16:50 - The sum of the minutes digits is 5. Not a match.\n    * **17:00 - The sum of the minutes digits is 0, and the sum of the hour digits is 8. We have a match!** \n\n6. **Answer:** The next time the digital clock will display where the sum of the hours digits is equal to the sum of the minutes digits is 17:00. \n",
+            "options": [
+                "10:50",
+                "11:00",
+                "12:00",
+                "17:00"
+            ],
+            "correct_option": "D"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Clocks",
+    "exam_id": 17,
+    "order": 2
+}
