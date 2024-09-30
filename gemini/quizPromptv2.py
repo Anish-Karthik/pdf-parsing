@@ -267,11 +267,11 @@ def get_valid_topics(topic):
 
 
 difficulties = {
-    "medium 5/10": "easy",
+    "easy 5/10": "easy",
+    "easy 6/10": "medium",
     "medium 5/10": "medium",
     "medium 6/10": "medium",
-    "medium 7/10": "medium",
-    "tricky 9/10": "hard"
+    "tricky 8/10": "hard"
 }
 model_pro = generativeai.GenerativeModel(
     model_name="gemini-1.5-pro"
@@ -281,13 +281,13 @@ topics = [
     # "Quants - Number Systems",
     # "Quants - Simplification and Approximation",
     # "Quants - Data Interpretation",
-    "Quants - Quadratic Equations",
+    # "Quants - Quadratic Equations",
     # "Quants - Profit and Loss",
     # "Quants - Simple Interest and Compound Interest",
     # "Quants - Time and Work",
     # "Quants - Time, Distance, and Speed",
     # "Quants - Mensuration",
-    # "Quants - Average",
+    "Quants - Average",
     # "Quants - Ratio and Proportion",
     # "Quants - Partnership",
     # "Quants - Mixtures and Alligations",
