@@ -1,18 +1,6 @@
 {
     "questions": [
         {
-            "question": "**title**: Roman Numeral Shift\n**image**: https://i.imgur.com/9W87Bpb.png\n**instructions**: The Roman numeral 'VII' represents the number 7. By moving just one matchstick, can you change this to a different Roman numeral? What number does it represent?\n**difficulty**: Medium (5/10)\n",
-            "difficulty": "medium",
-            "reasoning": "**Understanding the Problem:**\n\nWe start with the Roman numeral 'VII' which is 5 + 1 + 1 = 7.\n\n**Analyzing the Arrangement:**\n\nLooking at the matchsticks, we need to find a way to form a different valid Roman numeral by moving only one.\n\n**The Solution:**\n\n1. **Identify the movable matchstick:** The most obvious candidate is the middle matchstick forming the 'V'.\n2. **Experiment with movements:** Moving the matchstick to the left side creates the Roman numeral 'XI' which represents 11.\n\n**Verification:** 'XI' is a valid Roman numeral and represents the number 11, making this the correct solution.",
-            "options": [
-                "8",
-                "10",
-                "11",
-                "12"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "Imagine a standard six-sided die with faces numbered 1 to 6. This die is special: the sum of the numbers on opposite faces always adds up to 7.  If you roll the die and see the number 3 facing up, what number is on the face directly opposite the '3' face?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve this:\n\n* **Understanding the Rule:** The key is that opposite sides of a standard die always sum to 7.\n* **Finding the Opposite:** Since the '3' is facing up, its opposite face must hold the number that, when added to 3, equals 7.\n* **Calculation:** 7 - 3 = 4\n\n**Therefore, the number on the face directly opposite the '3' is 4.**",
@@ -21,18 +9,6 @@
                 "2",
                 "4",
                 "5"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "A group of archaeologists discovered a series of ancient tablets inscribed with a numerical code. They believe the code follows a specific input-output pattern. Can you help them decipher it?\n\n**Input:** 5, 12, 21, 32\n\n**Output:** 10, 24, 42, 64\n\nWhat is the output for the input value of 18?",
-            "difficulty": "medium",
-            "reasoning": "The relationship between the input and output values is not immediately obvious. Let's analyze the pattern:\n\n* **5 to 10:** The output is double the input (5 * 2 = 10).\n* **12 to 24:**  The output is also double the input (12 * 2 = 24).\n* **21 to 42:** The pattern holds true (21 * 2 = 42).\n* **32 to 64:**  Again, the output is double the input (32 * 2 = 64).\n\nTherefore, the rule for this code is to multiply the input by 2 to obtain the output. \n\nApplying this rule to the input value of 18:\n\n18 * 2 = 36\n\n**Therefore, the output for the input value of 18 is 36.**",
-            "options": [
-                "28",
-                "32",
-                "36",
-                "40"
             ],
             "correct_option": "C"
         },
@@ -49,18 +25,6 @@
             "correct_option": "B"
         },
         {
-            "question": "In a certain code language, \"BREAK\" is written as \"2 18 5 1 11\". How would \"CHAIR\" be written in that code language? ",
-            "difficulty": "medium",
-            "reasoning": "The code is derived by assigning each letter of the alphabet a numerical value based on its position, but in reverse order. \n\nHere's how it works:\n\n* Z = 1\n* Y = 2\n* X = 3\n* ...\n* C = 24\n* B = 25\n* A = 26\n\nApplying this to the word \"BREAK\":\n\n* B = 25\n* R = 18\n* E = 5\n* A = 26 \n* K = 11\n\nTherefore, \"BREAK\" is coded as \"25 18 5 26 11\".\n\nNow, let's encode \"CHAIR\":\n\n* C = 24\n* H = 19\n* A = 26\n* I = 9\n* R = 18\n\nTherefore, \"CHAIR\" would be coded as \"24 19 26 9 18\". ",
-            "options": [
-                "24 19 26 9 18",
-                "18 19 26 9 24",
-                "25 18 5 26 11",
-                "24 9 18 19 26"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "**scenario**: J and K are brothers. L is the sister of K. M is the father of J. N is the mother of L and O is the husband of N.\n**question**: What is the relationship of O to M?\n",
             "difficulty": "medium",
             "reasoning": "Let's break down the relationships step-by-step:\n\n1. **J and K are brothers:** This means they share the same parents.\n2. **L is the sister of K:** This means L is also a child of J and K's parents. \n3. **M is the father of J:**  We now know M is the father of J, K, and L.\n4. **N is the mother of L:** This confirms N is the mother of J, K, and L.\n5. **O is the husband of N:** This means O is married to the mother of J, K, and L.\n\nTherefore, O is the **husband** of M's wife, making O and M **husbands-in-law**.",
@@ -71,18 +35,6 @@
                 "Son"
             ],
             "correct_option": "C"
-        },
-        {
-            "question": "**context**: Seven colorful houses stand on a street, each painted a different color of the rainbow: Red, Orange, Yellow, Green, Blue, Indigo, and Violet. They are not in rainbow order, and their order is a mystery we aim to solve.\n**information**: \n  - The Indigo house is three houses away from the Violet house.\n  - The Red house is immediately next to the Orange house.\n  - The Green house is to the right of the Yellow house, but not immediately next to it.\n  - The Blue house is not at either end of the street.\n  - Neither the Violet house nor the Indigo house is at an end of the street.\n**question**: Based on these clues, determine the position of the Yellow house from the leftmost end of the street.\n",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the clues and deduce the order:\n\n**1. Combining Clues:**\n   - \"The Indigo house is three houses away from the Violet house.\" tells us there are two houses between them.\n   - \"Neither the Violet house nor the Indigo house is at an end of the street.\" implies they are somewhere in the middle.\n\n**2. Possible Arrangements:** Considering the above, we have a few possible arrangements for Violet (V) and Indigo (I), keeping two spaces between them: \n   -  _ _ V I _ _ _\n   -  _ _ I V _ _ _\n\n**3. Placing Red and Orange:** \"The Red house is immediately next to the Orange house\" limits their positions. They can be placed together at either end of the existing arrangement or in the middle.\n\n**4. Integrating Green and Yellow:** \"The Green house is to the right of the Yellow house, but not immediately next to it\" means there's at least one house between Green (G) and Yellow (Y). This information is crucial for determining the final order.\n\n**5. Placing Blue:** The clue \"The Blue house is not at either end of the street\" eliminates two potential spots for it. \n\n**6. Final Deduction:** By carefully trying to fit the Red/Orange (R/O) and Green/Yellow (G/Y) pairs into the possible arrangements, considering the restrictions on Blue (B), we arrive at the only logical order:\n\n_ V R O B I G Y\n\n**7. Answer:** The Yellow house is the 7th position from the leftmost end of the street. ",
-            "options": [
-                "1st",
-                "3rd",
-                "5th",
-                "7th"
-            ],
-            "correct_option": "D"
         },
         {
             "question": "Six friends - Alice, Bob, Carol, David, Emily, and Frank - are sitting around a circular table, facing inwards.  Alice sits opposite Carol, who is two seats to the right of David. Emily sits to David's immediate left. Who sits to Frank's right?",
@@ -97,18 +49,6 @@
             "correct_option": "D"
         },
         {
-            "question": "**scenario**: Four friends - Amelia, Blake, Chloe, and David - are each gifted writers, specializing in one specific genre: Fantasy, Mystery, Sci-Fi, or Romance. Each friend also has a distinct preference for their writing instrument: Fountain Pen, Typewriter, Laptop, or Tablet.\n**objective**: Determine each friend's preferred writing genre and writing instrument, based on the following statements:\n**information**: \n  - The Mystery writer dislikes technology and prefers a more traditional writing experience.\n  - Amelia loves futuristic settings and often uses her Tablet for drafting.\n  - Blake finds inspiration in cafes, quickly typing away on his Laptop.\n  - Neither the Romance nor the Sci-Fi writer uses a Typewriter.\n  - Chloe is passionate about historical romances and finds inspiration in the past.\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how we can deduce the answers:\n\n**1. Identifying the Mystery Writer:**\n   -  \"The Mystery writer dislikes technology and prefers a more traditional writing experience.\" This tells us the Mystery writer uses a Fountain Pen.\n\n**2. Identifying Amelia's Genre and Instrument:**\n   - \"Amelia loves futuristic settings and often uses her Tablet for drafting.\" This identifies Amelia as the Sci-Fi writer who uses a Tablet.\n\n**3. Identifying Blake's Instrument and Genre:**\n   - \"Blake finds inspiration in cafes, quickly typing away on his Laptop.\" This identifies Blake as the Laptop user. \n   - Since neither the Romance nor Sci-Fi writer uses a Typewriter, and the Mystery writer uses a Fountain Pen, Blake must be the Fantasy writer.\n\n**4. Identifying Chloe's Genre and Instrument:** \n   -  \"Chloe is passionate about historical romances and finds inspiration in the past.\" This identifies Chloe as the Romance writer.\n   -  The only instrument left is the Typewriter, making Chloe the Romance writer who uses a Typewriter. \n\n**5. Identifying David's Genre and Instrument:**\n   - By process of elimination, David must be the Mystery writer who uses a Fountain Pen.\n\n**Final Answer:**\n   - Amelia: Sci-Fi (Tablet)\n   - Blake: Fantasy (Laptop)\n   - Chloe: Romance (Typewriter)\n   - David: Mystery (Fountain Pen)",
-            "options": [
-                "Fountain Pen",
-                "Tablet",
-                "Typewriter",
-                "Laptop"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "John is navigating a maze. He walks 10 steps North, turns East and walks 5 steps. Then, he turns South and walks 15 steps. After that, he walks 10 steps West. Finally, he turns North and walks 5 steps. In which direction is John facing now, and how far is he from his starting point?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Visualize the Movements:**\n   Imagine a compass with North at the top. Trace John's movements:\n   * 10 steps North\n   * 5 steps East\n   * 15 steps South \n   * 10 steps West\n   * 5 steps North\n\n**2. Calculate Net Movement in Each Direction:**\n   * **North-South:** He walks 10 steps North + 5 steps North = 15 steps North. He also walks 15 steps South. This means his net movement in the North-South direction is 0.\n   * **East-West:** He walks 5 steps East and 10 steps West. This means his net movement is 5 steps West (10 - 5 = 5).\n\n**3. Determine Final Position and Direction:**\n   * Since his net movement in the North-South direction is 0, he ends up at the same vertical level as his starting point.\n   * He has moved 5 steps West from his starting point.\n   * His last movement was 5 steps North, so he is facing **North**.\n\n**4. Distance from Starting Point:**\n   * John is **5 steps** West of his starting point.",
@@ -119,18 +59,6 @@
                 "East, 10 steps"
             ],
             "correct_option": "B"
-        },
-        {
-            "question": "**Title**: Element Arrangement\n**Instructions**: You are presented with a grid containing nine squares. Each square will be filled with one of the following elements: Fire, Water, Earth. \n\nThe grid must be filled following these rules:\n* Each element must appear three times.\n* No element can be placed in squares that share a side or corner with the same element. \n\nCan you devise a possible arrangement for the elements in the grid?\n**Difficulty Level**: Medium 5/10\n**Example**: While not a 3x3 grid, consider this arrangement with two of each element. Notice how no two of the same elements touch on the sides or corners: \n\n X O X \nO X O \n X O X \n",
-            "difficulty": "medium",
-            "reasoning": "This question falls under the 'Grouping & Categorization' subtopic as it requires the test taker to logically group and arrange elements based on given constraints. \n\nHere's a step-by-step solution:\n\n1. **Visualize the Grid:** Imagine a 3x3 grid. The rule 'no elements sharing a side or corner' is key, making it a spatial reasoning puzzle as well. \n2. **Strategic Placement:** Start with one element, say Fire (F). Place it in a corner. Due to the rule, the squares beside and diagonal to it CANNOT be Fire:\n\n  F - -\n  - - -\n  - - -\n\n3. **Continue Placement:** Now place the other two 'F's. The only way to do so without touching is in the opposite corner and an edge, creating a diagonal pattern:\n\n  F - F\n  - - -\n  F - -\n\n4. **Introduce Other Elements:** Now place the Water (W) elements. They can't touch each other OR the 'F's. This limits placement, leading to a pattern like:\n\n  F W F\n  W - W\n  F W F\n\n5. **Final Placement:**  The remaining spaces must be Earth (E). This arrangement fulfills all rules:\n\n  F W F\n  W E W\n  F W F\n\nEach step involves logical deduction based on the rules, making it a 'medium' difficulty. The visual/spatial element adds complexity.",
-            "options": [
-                "Grouping & Categorization",
-                "Logical Reasoning",
-                "Spatial Reasoning",
-                "Pattern Recognition"
-            ],
-            "correct_option": "A"
         },
         {
             "question": "In a certain code language, words are coded using a combination of letter shifts and reversals. \n\n**Example:**\n* CAT is coded as EDU\n* DOG is coded as GPI\n\n**Task:** Decode the word \"FISH\" using the same code.",
@@ -145,18 +73,6 @@
             "correct_option": "A"
         },
         {
-            "question": "**scenario**: A small gathering includes Thomas, his wife Mary, their son Peter, Peter's wife Jennifer, and Thomas's brother William.\n**relationships**: Thomas and William are both only children. Peter is younger than Jennifer.\n**question**: What is the relationship between Mary and William?\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the solution:\n\n1. **Identify the key individuals:** Mary and William.\n2. **Establish direct connections:**  We know Mary is married to Thomas, and Thomas is the brother of William.\n3. **Determine the indirect relationship:** Since Mary is married to Thomas, who is William's brother, Mary is William's **sister-in-law**.\n\nTherefore, the relationship between Mary and William is that of sister-in-law.",
-            "options": [
-                "Sister",
-                "Aunt",
-                "Sister-in-law",
-                "Cousin"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**Prompt:** You are given 12 matchsticks arranged to form a rectangle with two internal lines forming a '\u7530' shape.\n\n**Goal:** Move only three matchsticks to create two squares. \n\n**Constraints:** Matchsticks must be moved, not removed or added.",
             "difficulty": "medium",
             "reasoning": "**Initial Setup:** Visualize or draw the '\u7530' shape formed with 12 matchsticks.\n\n**Understanding the Goal:** We need to manipulate this shape to form two squares by moving only three matchsticks. \n\n**Solution:**\n1. **Identify Potential Squares:**  Focus on the existing structure.  Notice that we can form squares by concentrating on the corners of the '\u7530' shape.\n2. **Strategic Moves:**\n    * Move the top matchstick from the middle horizontal line to the top left corner, forming one small square. \n    * Move the bottom matchstick from the middle horizontal line to the bottom right corner, forming another small square.\n    * Move the right matchstick from the top horizontal line to connect the right side of the two squares you have formed.\n\n**Verification:** We have successfully created two squares by moving only three matchsticks. All constraints are met.",
@@ -165,18 +81,6 @@
                 "Four",
                 "Two",
                 "One"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "**title**: The Hiking Trail\n**scenario**: A hiker is planning a trek through a forest. He wants to visit three landmarks: a waterfall, a cave, and a viewpoint.  He has gathered the following information:\n**information**: \n  - The waterfall is located 3 km directly east of the viewpoint.\n  - The cave is situated 4 km south of the waterfall.\n  - The hiker's starting point is 5 km west of the viewpoint.\n**question**: If the hiker wants to visit the viewpoint first, then the waterfall, and finally the cave, what is the total distance he will have to hike?\n",
-            "difficulty": "medium",
-            "reasoning": "Let's visualize the hiker's path on a map:\n\n1. **Starting point to Viewpoint:** The hiker begins 5 km west of the viewpoint and needs to travel east to reach it. This leg of the journey is **5 km**.\n\n2. **Viewpoint to Waterfall:** The waterfall is 3 km east of the viewpoint, so the hiker continues east for another **3 km**.\n\n3. **Waterfall to Cave:** The cave is 4 km south of the waterfall. The hiker changes direction and travels south for **4 km**.\n\n**Total Distance:** To find the total distance, add the distances of each leg: 5 km + 3 km + 4 km = **12 km**\n\nTherefore, the hiker will cover a total of 12 km on his trek.",
-            "options": [
-                "10 km",
-                "15 km",
-                "12 km",
-                "8 km"
             ],
             "correct_option": "C"
         },
@@ -193,18 +97,6 @@
             "correct_option": "C"
         },
         {
-            "question": "A broken antique clock has only an hour hand.  It's notoriously inaccurate, gaining exactly 7 minutes every real hour.  You carefully set the clock to display 2:00 AM. What will the clock display 24 real hours later?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem:\n\n**1. Calculate the total time gained:**\n\n* The clock gains 7 minutes every real hour.\n* Over 24 hours, it will gain 7 minutes/hour * 24 hours = 168 minutes\n\n**2. Convert minutes to hours:**\n\n* There are 60 minutes in an hour.\n* The clock gains 168 minutes / 60 minutes/hour = 2.8 hours\n\n**3. Add the gained time to the initial time:**\n\n* The clock initially showed 2:00 AM.\n* Add the gained time: 2:00 AM + 2.8 hours = 4:48 AM \n\n**Therefore, the broken clock will display 4:48 AM after 24 real hours.**",
-            "options": [
-                "2:00 AM",
-                "4:48 AM",
-                "5:00 AM",
-                "6:00 AM"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "**scenario**: Imagine you have three standard six-sided dice (numbered 1-6). You roll all three dice at the same time.\n**question**: What is the probability that the sum of the numbers rolled on the three dice will be exactly 10?\n",
             "difficulty": "medium",
             "reasoning": "This problem involves probability and combinations. Here's how we can solve it:\n\n**1. Possible Combinations:**\n   - First, we need to figure out how many different ways we can get a sum of 10 using three dice. Here are some examples:\n      - 1 + 4 + 5\n      - 2 + 3 + 5\n      - 2 + 4 + 4\n      - 6 + 3 + 1\n   -  We need to list out all the possible combinations (keeping in mind that order matters \u2013 1, 2, 5 is different from 5, 2, 1).\n\n**2. Total Possible Outcomes:**\n   - Each die has 6 sides. Since we're rolling three dice, the total number of possible outcomes is 6 * 6 * 6 = 216.\n\n**3. Calculate the Probability:**\n   - Divide the number of successful combinations (where the sum is 10) by the total number of possible outcomes.  \n   - Let's say there are 27 successful combinations (you'll need to list them out to find the exact number). \n   - The probability would be 27 / 216, which can be simplified. \n\n**Important:**  The actual calculation of the number of successful combinations can be a bit tedious. There are techniques to help with this, but they delve into more advanced combinatorics. For a medium difficulty question, listing out the possibilities might be the most straightforward approach.",
@@ -213,18 +105,6 @@
                 "1/6",
                 "1/4",
                 "27/216"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "**statement**: Four friends, Alice, Bob, Charlie, and David, are having a discussion. They each make a statement:\n\n* Alice: \"If Charlie is telling the truth, then so is Bob.\" \n* Bob: \"David is lying.\" \n* Charlie: \"Alice is lying.\" \n* David: \"Bob is lying.\"\n\nAssuming only one person is telling the truth, \n**question**: who is it?\n",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the statements and look for contradictions to find the truth-teller:\n\n1. **Assume Alice is telling the truth.** This means if Charlie is truthful, so is Bob. However, Charlie and Bob contradict each other, meaning Alice can't be telling the truth.\n\n2. **Assume Bob is telling the truth.** This means David is lying. If David is lying, then Bob is telling the truth, and this could be possible. \n\n3. **Assume Charlie is telling the truth.** This means Alice is lying.  If Alice is lying, her statement about Bob and Charlie becomes irrelevant. This could be possible.\n\n4. **Assume David is telling the truth.** This means Bob is lying. If Bob is lying, then David is telling the truth, and this could also be possible.\n\nWe are left with two possibilities: either Bob is telling the truth, or David is. Notice that Bob and David's statements directly contradict each other. Since only ONE person can be truthful, the other three MUST be lying. **Therefore, the person telling the truth is either Bob or David.** We don't have enough information to determine definitively who it is between these two.",
-            "options": [
-                "Alice",
-                "Bob",
-                "Charlie",
-                "It's impossible to determine definitively."
             ],
             "correct_option": "D"
         },
@@ -241,18 +121,6 @@
             "correct_option": "B"
         },
         {
-            "question": "There are five houses, each painted a different color, inhabited by people of different nationalities, with different pets, favorite drinks, and favorite fruits.  No two houses share any of these characteristics.\n\n**Clues:**\n\n1. The Brit lives in the red house.\n2. The Swede keeps dogs as pets.\n3. The Dane drinks tea.\n4. The green house is on the left of the white house, and they are directly next to each other.\n5. The green house's owner drinks coffee.\n6. The person who eats pears owns a bird.\n7. The owner of the yellow house eats apples.\n8. The man living in the center house drinks milk.\n9. The Norwegian lives in the first house.\n10. The man who eats oranges lives next to the man with the fox.\n11. The man who eats watermelon lives next to the man with the horse.\n12. The man who eats grapes drinks beer.\n13. The German eats pineapple.\n14. The Norwegian lives next to the blue house.\n\n**Question:** Who owns the fish?",
-            "difficulty": "medium",
-            "reasoning": "This is a classic logic grid puzzle, often referred to as an Einstein Riddle. These puzzles are best solved by creating a grid to track the information.  Here's how you might break down the solution:\n\n**1. Setting up the Grid:**\n\nCreate a grid with the following columns:\n* House Number (1-5)\n* Color \n* Nationality\n* Pet\n* Drink\n* Fruit\n\n**2. Filling the Grid:**\n\nBegin by filling in the grid using the direct clues:\n\n| House | Color  | Nationality | Pet  | Drink   | Fruit      |\n|-------|--------|-------------|------|---------|------------|\n| 1     | Yellow | Norwegian   |      | Milk    | Apples     |\n| 2     | Blue   |             |      |         |            |\n| 3     | Red    | Brit        |      |         |            |\n| 4     | Green  |             |      | Coffee  |            |\n| 5     | White  |             |      |         |            |\n\n* Clue 8 tells us the center house (house #3) drinks milk.\n* Clue 9 tells us the Norwegian is in the first house.\n* Clue 14 tells us the house next to the Norwegian (house #2) is blue.\n* Clue 1 tells us the Brit lives in the red house.\n* Clue 7 tells us the owner of the yellow house eats apples.\n\n**3. Deducing from Connections:**\n\nNow use the remaining clues to deduce relationships and fill in more of the grid. For example:\n\n* Clue 4 tells us the green house is immediately to the left of the white house, placing them in houses #4 and #5.\n* Clue 5 tells us the owner of the green house drinks coffee. \n\nContinue this process of deduction using clues like the ones about the pets and fruits. The grid will slowly fill up, ultimately revealing who owns the fish by process of elimination.\n\n**Note:**  The complete solution to this puzzle is lengthy and involves many steps of deduction. The purpose of this reasoning is to illustrate the process, not to solve the entire puzzle.  \n",
-            "options": [
-                "Norwegian",
-                "Swede",
-                "Dane",
-                "German"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "**title**: The Cupcake Contest\n**scenario**: Six bakers (Ashley, Brandon, Carlos, Daniel, Emily, and Fiona) competed in a cupcake baking contest. Each baker presented their cupcakes to the judges in a specific order.  The judges then ranked the cupcakes from 1st to 6th place, with 1st being the best.\n**constraints**: \n  - Fiona presented her cupcakes before Carlos but after Emily.\n  - Brandon's cupcakes were ranked higher than Daniel's, but lower than Ashley's.\n  - The cupcakes that came in 2nd place were presented sometime after Daniel's.\n  - Emily's cupcakes didn't win any of the top three places.\n**question**: If Ashley's cupcakes came in 4th place, in what order did the bakers present their cupcakes to the judges?\n",
             "difficulty": "medium",
             "reasoning": "Let's break down the clues and work through the order of presentations:\n\n**1. Combining Clues:**\n   - We know Ashley's cupcakes came in 4th. \n   - We also know Brandon's cupcakes were ranked lower than Ashley's, meaning Brandon's must be 5th or 6th.\n   - Similarly, Daniel's cupcakes were ranked lower than Brandon's, so Daniel's must be 6th.\n\n**2.  Placement of Fiona, Carlos, and Emily:**\n   - We know Fiona presented before Carlos but after Emily:  ... Emily ... Fiona ... Carlos ...\n\n**3.  Placement of Daniel and the 2nd Place Cupcakes:**\n   -  The 2nd place cupcakes were presented sometime after Daniel. Since Daniel is last, the order must end with: ... Daniel ... 2nd place ...\n\n**4.  Placement of Ashley and Brandon:**\n   - Brandon's cupcakes were ranked lower than Ashley's (who came in 4th).  Since the 2nd place presentation is after Daniel, Ashley and Brandon must go before them: ... Ashley ... Brandon ... Daniel ... 2nd place ...\n\n**5. Final Deductions:**\n   - We know Emily's cupcakes weren't in the top three. Since Ashley is 4th, and the placements before hers are still unknown, Emily must be 5th or 6th.  However, we already established that Brandon is either 5th or 6th. Therefore, Emily must be 6th, and Brandon is 5th.\n   - This also means that Fiona must be 2nd (as it's the only remaining spot before Carlos).\n\n**Solution:**\n   The only possible order that satisfies all the constraints is: Emily, Fiona, Carlos, Ashley, Brandon, Daniel. \n",
@@ -263,18 +131,6 @@
                 "Ashley, Brandon, Daniel, Emily, Fiona, Carlos"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "John and Emily are cousins. John's father, Robert, has a sister named Clara. Clara is married to David, and they have a daughter named Fiona. Emily is Fiona's only sibling.  What is the relationship between Robert and Emily?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve the relationship: \n\n1. **Identify the key individuals:** We need to determine the relationship between Robert and Emily.\n\n2. **Understand the given information:** \n    - John and Emily are cousins.\n    - Robert is John's father.\n    - Clara is Robert's sister.\n    - David is Clara's husband.\n    - Fiona is David and Clara's daughter.\n    - Emily is Fiona's only sibling.\n\n3. **Connect the relationships:**\n    - Since Emily is Fiona's only sibling and Fiona is David and Clara's daughter, Emily is also David and Clara's daughter. \n    - Clara is Robert's sister, making David Robert's brother-in-law.\n    - As Emily is David's daughter, she is Robert's niece.\n\nTherefore, Robert is Emily's **uncle**.",
-            "options": [
-                "Brother",
-                "Father",
-                "Uncle",
-                "Cousin"
-            ],
-            "correct_option": "C"
         },
         {
             "question": "**text**: A farmer wants to divide his sheep pen into four equal-sized sections. He currently has six squares made of matchsticks, as shown. Can you move just three matchsticks to achieve this goal?  Where are the matchsticks moved from and to?\n**image**: https://i.imgur.com/TPDD13z.png\n",
@@ -289,18 +145,6 @@
             "correct_option": "D"
         },
         {
-            "question": "Imagine a standard six-sided die. It is painted red on three sides, blue on two sides, and yellow on one side.  Two such dice are thrown. What is the probability that the sum of the numbers rolled is even, given that at least one of the dice lands with a blue face up?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Define the Events:**\n\n* **A:** The sum of the numbers rolled is even.\n* **B:** At least one die lands with a blue face up.\n\n**2. Calculate the Probabilities:**\n\n* **P(B):**  The probability of at least one blue face up is easier to calculate by finding the probability of its complement (no blue faces) and subtracting from 1.\n    * Probability of the first die NOT landing blue: 2/3\n    * Probability of the second die NOT landing blue: 2/3\n    * Probability of both dice NOT landing blue: (2/3) * (2/3) = 4/9\n    * Therefore, P(B) = 1 - (4/9) = 5/9 \n\n* **P(A and B):** The probability of both events happening (even sum AND at least one blue face).  We can think about the combinations:\n    * Blue - Blue: Can have even or odd sum.\n    * Blue - Red: Can have even or odd sum. \n    * Blue - Yellow: Can have even or odd sum. \n\nSince the color doesn't directly dictate even or odd sums in any combination, we can simply calculate the probability of getting an even sum regardless of color, which is 1/2 (as there are 3 even and 3 odd numbers on a standard die).\n\n* **P(A | B):** This is the probability of event A (even sum) happening GIVEN that event B (at least one blue face) has already occurred.  We use the formula:\n\n    *  P(A | B) = P(A and B) / P(B)\n    *  P(A | B) = (1/2) / (5/9) = 9/10\n\n**Therefore, the probability of the sum being even given that at least one die lands on blue is 9/10.** ",
-            "options": [
-                "1/2",
-                "4/9",
-                "9/10",
-                "5/9"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**Context**: A group of spies uses a code based on a keyword to send secret messages. The keyword helps shift the letters in the alphabet to create the code.\n**Encoding/Decoding Rule**: 1. Write the keyword, followed by the remaining letters of the alphabet, omitting any duplicate letters. \n2. Number the letters of this rearranged alphabet from 1 to 26.\n3. Replace each letter in your message with the corresponding number from the rearranged alphabet.\n**Example**: Keyword: \"KING\" \n Message: \"MEET\"\n\n1. Rearranged alphabet: KINGABCDF... \n2. Numbered alphabet: K=1, I=2, N=3, G=4, A=5, B=6, C=7, D=8...\n3. Encoded message: \"197722\"\n**Question**: The spies use the keyword \"BIRD\". Decode the following message: \"2515 112215\" \n",
             "difficulty": "medium",
             "reasoning": "1. **Rearranged Alphabet:** Following the rule, we write the keyword 'BIRD' and fill in the remaining alphabet, skipping duplicates: 'BIRDAECFGHJKLMNOPQRSTUVWXZ'.\n2. **Numbered Alphabet:** We assign numbers to each letter: B=1, I=2, R=3, D=4, A=5, E=6, C=7... and so on.\n3. **Decoding:** \n    - '2515' translates to 'YOUA' based on our numbered alphabet (Y=25, O=15, U=15, A=5).\n    - '112215' translates to 'BBIIOU' (B=1, I=2, O=15, U=15).\n4. **Combining the Decoded Parts:** Putting both parts together, we get 'YOUA BBIIOU'.\n5. **Interpreting the Result:** By looking at the decoded message, we can see that the spaces are misplaced. Rearranging the words, we get the final decoded message: **'YOU ARE GOOD'.",
@@ -311,18 +155,6 @@
                 "YOU ARE GREAT"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "**Title**: The Librarian's Dilemma\n**Scenario**: A librarian is organizing a new collection of 20 books.  These books fall into four genres: Mystery, Fantasy, Science Fiction, and Biography.  Due to limited shelf space, the librarian can only create four distinct sections on the shelf.\n**Rules**: \n  - Each book must be placed in a section dedicated to a single genre.\n  - At least three books must belong to each genre.\n  - No two sections can contain the same number of books.\n**Question**: What is the maximum number of books the librarian can place in the largest section while still adhering to the rules?\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how we can solve this puzzle: \n\n**1. Minimum Distribution:**\n   * Since each genre needs at least 3 books, that's 3 books/genre * 4 genres = 12 books already allocated.\n\n**2. Remaining Books:**\n   * We started with 20 books and have used 12, leaving us with 20 - 12 = 8 books to distribute.\n\n**3. Maximizing the Largest Section:**\n   * To maximize one section, we need to minimize the others while still following the rules.\n   * We can't have sections with the same number of books, so the remaining sections must hold a minimum of 4, 5, and 6 books (in addition to the initial 3 in each).\n\n**4. Calculation:**\n   * This means the largest section can have a maximum of 20 (total books) - 4 - 5 - 6 = 5 books.\n\n**Therefore, the librarian can place a maximum of 5 books in the largest section.**",
-            "options": [
-                "3",
-                "4",
-                "5",
-                "6"
-            ],
-            "correct_option": "C"
         },
         {
             "question": "Seven books on different subjects, Physics, Chemistry, Biology, Mathematics, History, Geography, and English are arranged on a shelf from left to right.\n\nClues:\n* The Mathematics book is exactly in the middle.\n* The Physics book is third to the left of the Biology book.\n* Neither the History book nor the English book is at the ends.\n* The Chemistry book is an immediate neighbor of the History book.\n\nQuestion: If the English book is to the right of the Mathematics book, what is the position of the History book from the left end?",
@@ -337,18 +169,6 @@
             "correct_option": "C"
         },
         {
-            "question": "**Title**: The Case of the Stolen Jewels\n**Description**: Lady Amethyst's prized diamond necklace has been stolen from her manor. The inspector has narrowed down the suspects to four individuals: the Butler, the Maid, the Gardener, and the Chef. Each suspect was in a different room of the manor at the time of the theft, and each claims to have been engaged in a specific activity. Use the clues below to deduce who stole the necklace and which room they were in: \n\n**Clues:** \n1. The Butler claims to have been polishing the silver in the Dining Room, but the inspector notes the silver hasn't been polished in weeks. \n2. The Maid, who claims to have been dusting the Library, has a smudge of what appears to be silver polish on her apron. \n3. The Gardener was indeed tending to the roses in the Greenhouse, as evidenced by the fresh soil under his fingernails, but he also has a cut on his hand consistent with the thorns on the rose bushes. \n4. The Chef was preparing dinner in the Kitchen, but there's a distinct lack of noise or activity coming from that room, and a faint scent of roses lingers in the air. \n5. The thief left muddy footprints near the window in the Library, and a single white rose, missing its thorns, was found on the floor near the Lady's jewelry box. \n\n**Your task is to identify the thief, the room where the theft took place, and explain your reasoning.**\n**Difficulty Level**: 7/10\n",
-            "difficulty": "medium",
-            "reasoning": "Here's the step-by-step reasoning to solve the puzzle: \n\n**1. Analyzing the Clues:**\n   * **Clue 1:** This clue casts doubt on the Butler's alibi. He's clearly lying about polishing the silver. \n   * **Clue 2:** The silver polish on the Maid's apron contradicts her story of dusting the Library. This makes her a prime suspect. \n   * **Clue 3:** This clue confirms the Gardener was in the Greenhouse but also reveals he could have obtained a cut consistent with the thorns on the roses. \n   * **Clue 4:**  This clue suggests the Chef may not be telling the truth about preparing dinner. The scent of roses is suspicious. \n   * **Clue 5:** This is crucial evidence. The muddy footprints in the Library and the rose (missing thorns) strongly suggest the thief was in the Library and had recently been near the roses. \n\n**2. Connecting the Clues:**\n   * We know from Clue 5 the theft likely occurred in the **Library** due to the footprints and the rose. \n   * The Maid (Clue 2) was in the Library and had silver polish on her, which could have easily transferred onto her apron while planting the rose from the Greenhouse. \n   * The rose missing its thorns (Clue 5) connects to the Gardener (Clue 3) who had a cut on his hand from the rose thorns. It's plausible he gave the rose to the Maid. \n\n**3. Deduction:**\n   * The most logical conclusion is that the **Maid** stole the necklace. She was in the **Library** (proven by footprints), had a motive (planting the rose to divert suspicion), and her alibi is weak (silver polish). \n   * It's possible the Gardener was an accomplice, providing the rose, but there's not enough evidence to definitively incriminate him. \n\n**Therefore, the answer is the Maid stole the necklace from the Library.** ",
-            "options": [
-                "Butler",
-                "Maid",
-                "Gardener",
-                "Chef"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "**questionType**: Circular & Spatial Reasoning\n**difficultyLevel**: Medium (7/10)\n**context**: Six colorful houses stand in a circle on Harmony Lane, each owned by a musician with a distinct preference for their morning beverage.\n**puzzleDescription**: 1. The houses are numbered 1 through 6, clockwise. \n2. The musician who prefers Espresso lives in house number 3.\n3. The houses are painted Blue, Green, Orange, Red, Yellow, and Purple.\n4. The Green house is immediately to the right of the Blue house.\n5. The musician in the Yellow house drinks Tea and lives directly across from the violinist.\n6. The pianist lives two houses to the right of the drummer, who drinks only Water.\n7. The flutist lives in an odd-numbered house.\n8. The Orange house is not house number 1.\n9. The guitarist lives directly to the left of the person who drinks Milk.\n10.  Nobody drinks Coffee.\n**question**: What color is the house of the musician who lives directly across from the Tea drinker, and what beverage does that musician prefer?\n",
             "difficulty": "medium",
             "reasoning": "Let's break down the clues step by step:\n\n**1. House Numbering & Initial Placement:**\n   - We have houses numbered 1 through 6 clockwise.\n   - We know Espresso is in house #3.\n\n**2. Using Direct Relationships:**\n   - Green house is immediately to the right (clockwise) of the Blue house.\n   - Yellow house (Tea drinker) is directly across from the violinist.\n   - Guitarist is immediately to the left of the Milk drinker.\n\n**3. Placing the Drummer and Pianist:**\n   - The drummer drinks only Water. \n   - The pianist lives two houses to the right of the drummer.  We need to test possibilities to fit them in the circle without contradicting other clues.\n\n**4.  Flutist and Odd Numbers:**\n   - The flutist lives in an odd-numbered house.  This limits the possibilities for the flutist's placement.\n\n**5.  Orange House Exclusion:**\n   - The Orange house is not house number 1. \n\n**6.  Deductions and Placement:**\n   - By carefully combining the clues and eliminating possibilities, we can deduce the positions of each musician and their preferred drink. \n   - For example, we can determine the placement of the Milk drinker and guitarist relative to each other, and then see how that fits within the circle using the remaining clues.\n\n**7. Identifying the Solution:**\n   - Through careful deduction, we find that the musician living directly across from the Tea drinker resides in the **Purple** house and enjoys **Milk**. \n",
@@ -359,18 +179,6 @@
                 "Yellow, Coffee"
             ],
             "correct_option": "B"
-        },
-        {
-            "question": "A treasure hunter is following a map to find buried treasure. Starting at the old oak tree, the instructions are:\n\n1. Walk 30 paces north.\n2. Turn east and walk 15 paces.\n3. Walk 10 paces south.\n4. Turn west and walk 25 paces.\n5. Finally, walk 5 paces north.\n\n**Question:** In relation to the oak tree, in which direction and how many paces is the treasure buried?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Visualize the movements:**\n   Imagine a compass with North at the top.  Each instruction represents a leg of the treasure hunter's journey.\n\n**2. Break down the movements:**\n   * **North 30 paces:** The hunter starts by moving 30 paces up from the oak tree.\n   * **East 15 paces:**  From this point, they turn right (facing East) and walk 15 paces.\n   * **South 10 paces:**  Next, they turn around to face South and walk 10 paces (partially retracing their steps). \n   * **West 25 paces:** Now facing West, the hunter walks 25 paces. This is longer than the 15 paces they walked East earlier.\n   * **North 5 paces:** Finally, they turn and walk 5 paces North. \n\n**3. Calculate the net movement:**\n   * **North-South:** The hunter walked 30 paces North and 10 paces South, resulting in a net movement of 20 paces North (30 - 10 = 20).\n   * **East-West:** They walked 15 paces East and 25 paces West, resulting in a net movement of 10 paces West (25 - 15 = 10).\n\n**4. Determine the final location:**\n   The treasure is buried 20 paces North and 10 paces West of the oak tree. \n",
-            "options": [
-                "10 paces West and 20 paces South",
-                "10 paces East and 20 paces North",
-                "10 paces West and 20 paces North",
-                "10 paces East and 20 paces South"
-            ],
-            "correct_option": "C"
         },
         {
             "question": "**title**: Symbol Sudoku\n**difficulty_level**: Medium (7/10)\n**scenario**: Consider a 4x4 grid, much like a Sudoku board. Each row and each column must contain the following symbols exactly once: @, #, $, &.\n**question**: Using the clues below, determine the missing symbols in the grid:\n\n|  @ |  # |    |    |\n|----|----|----|----|\n|    |  $ |  & |    |\n|----|----|----|----|\n|    |    |  @ |  # |\n|----|----|----|----|\n|  & |    |    |    |\n**answer_choices**: \n  - A)  |  $ |  & |  @ |\n|----|----|----|----|\n|  # |  @ |  $ |  & |\n|----|----|----|----|\n|  & |  $ |  @ |  # |\n|----|----|----|----|\n|  @ |  # |  & |  $ |\n  - B)  |  $ |  & |  # |\n|----|----|----|----|\n|  # |  @ |  $ |  & |\n|----|----|----|----|\n|  & |  $ |  @ |  # |\n|----|----|----|----|\n|  @ |  # |  & |  $ |\n  - C)  |  $ |  & |  @ |\n|----|----|----|----|\n|  # |  @ |  $ |  & |\n|----|----|----|----|\n|  & |  # |  @ |  $ |\n|----|----|----|----|\n|  @ |  $ |  & |  # |\n  - D)  |  # |  & |  @ |\n|----|----|----|----|\n|  $ |  @ |  # |  & |\n|----|----|----|----|\n|  & |  $ |  @ |  # |\n|----|----|----|----|\n|  @ |  # |  & |  $ |\n",
@@ -385,18 +193,6 @@
             "correct_option": "C"
         },
         {
-            "question": "Six colleagues - Aisha, Ben, Carlos, David, Emily, and Fatima - are sitting around a circular table for a meeting. They are all facing the center of the table. Fatima is sitting directly opposite Ben. Carlos is sitting to the immediate right of Aisha. David is not sitting next to Fatima, and there is one person between David and Emily. If Emily is sitting to the right of Fatima, who is sitting to the immediate left of Ben?",
-            "difficulty": "medium",
-            "reasoning": "By carefully analyzing the clues and using a process of elimination, we can determine the correct seating arrangement.  This level of logical deduction is appropriate for a medium-difficulty puzzle.",
-            "options": [
-                "Aisha",
-                "Carlos",
-                "David",
-                "Emily"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "A mystical machine follows a peculiar pattern to transform its input into an output. Decode the pattern and determine the final output of the machine.\n\n**Input:** 7\n\n**Step 1:** Square the input number. \n**Step 2:** If the result of Step 1 is even, divide it by 4; otherwise, multiply it by 3. \n**Step 3:** Subtract 11 from the result of Step 2.\n**Step 4:** If the result of Step 3 is positive, multiply it by 2; otherwise, square it.\n\n**What is the final output of the machine?**",
             "difficulty": "hard",
             "reasoning": "Let's break down the solution step-by-step:\n\n**Input:** 7\n\n**Step 1:** 7 * 7 = 49\n**Step 2:** Since 49 is odd, we multiply by 3: 49 * 3 = 147\n**Step 3:** 147 - 11 = 136\n**Step 4:** Since 136 is positive, we multiply by 2: 136 * 2 = 272\n\n**Therefore, the final output of the machine is 272.**",
@@ -409,18 +205,6 @@
             "correct_option": "B"
         },
         {
-            "question": "Seven musicians - Aaron, Beatrice, Charles, Diana, Ethan, Fiona, and Gregory - are auditioning for a prestigious orchestra. They are to perform one after the other, according to the following conditions:\n\n1. Beatrice cannot play immediately before or after Ethan.\n2. Fiona must play second, and Gregory must play last.\n3. Charles must play immediately before or after Diana, but he cannot play before Fiona.\n4. Aaron prefers to play earlier rather than later, but he refuses to play first if Beatrice is playing third.\n\nIn what position must Diana play?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the clues and use them to deduce the order:\n\n**1. Fixed Positions:**\n   - Fiona plays second (F _ _ _ _ _ _) \n   - Gregory plays last (_ _ _ _ _ _ G)\n\n**2. Beatrice and Ethan:**\n   - Beatrice cannot be in positions 1 or 3, and Ethan cannot be in positions 1, 3, or 7 (due to clue 1 and the fixed positions). \n\n**3. Charles and Diana:**\n   - They must play consecutively, and since Charles can't be before Fiona, they must be in positions 5 and 6 (in some order).\n   - This gives us: (F _ _ _ C D G) or (F _ _ _ D C G)\n\n**4. Aaron's Preference:**\n   - Aaron prefers to play earlier. If Beatrice is in position 3, Aaron wouldn't play first. This eliminates the possibility of Beatrice being in position 3.\n\n**5. Deduction:**\n   - Since Beatrice cannot be in positions 1, 2, 3, or 7, she must be in position 4. \n   - This means Ethan must be in position 1, as it's the only remaining position that satisfies clue 1.\n   - This leaves Aaron for position 3.\n\n**6. Final Arrangement:**\n   - Considering Aaron's preference and the remaining possibilities, the final arrangement is: (E F A B D C G)\n\n**Therefore, Diana must play sixth.**",
-            "options": [
-                "First",
-                "Second",
-                "Fifth",
-                "Sixth"
-            ],
-            "correct_option": "D"
-        },
-        {
             "question": "**puzzle_setup**: Nine matches are arranged to depict a cow facing to the left, with its head formed by a triangle.  It should have a body, four legs, and a tail.\n**objective**: Move only two matches to make the cow face the right.\n**constraints**: You can move only two matches and no overlapping is allowed.\n**difficulty_level**: Tricky 9/10\n",
             "difficulty": "hard",
             "reasoning": "This puzzle relies on spatial reasoning and a bit of out-of-the-box thinking. Here's how to solve it:\n\n1. **Identify the Key Elements:** The cow's head (the triangle) is the part that needs to change orientation. The rest of the body can remain relatively static.\n\n2. **Focus on the Head:** The cow's head is likely formed by three matches.  To change its direction, you'll need to move the base match of the triangle and one of the side matches.\n\n3. **Visualize the Solution:** Imagine moving the base match of the triangle to the other side to form the new base of the head. Now, take one of the side matches of the original triangle and use it to form the new top of the head, connecting to the other end of the moved base match.\n\n**Why this is challenging:** Most people try to rotate the entire cow, which isn't possible with just two moves. The key is realizing that only the head's orientation needs to change.",
@@ -429,18 +213,6 @@
                 "Three",
                 "Two",
                 "Four"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Imagine a family portrait with seven individuals: Alice, Beatrice, Charles, Daniel, Emily, Fiona, and George. They are arranged in three rows representing three generations.  \n\n* Alice is in the back row and is the mother of only two children: Beatrice and Fiona.  \n* Beatrice is married to Charles, and they have one son, Daniel.  \n* Emily is in the front row and is the only granddaughter of a man in the picture. \n* George is not in the same row as his father. \n\nWho is George's father?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the information step-by-step: \n\n1. **Alice's Children:** We know Alice has two children, Beatrice and Fiona. \n\n2. **Daniel's Parents:** Beatrice and Charles are Daniel's parents.\n\n3. **Emily's Grandfather:** Emily is the only granddaughter, and since Alice has only two children, her grandfather must be either Charles or Daniel (we'll come back to this).\n\n4. **George's Father:** George is not in the same row as his father. This tells us a few things: \n    * George cannot be Alice's husband (in the back row with her). \n    * George cannot be Charles' son (in the same row as Charles).\n\n5. **Putting it Together:** Since Emily is the ONLY granddaughter, and George cannot be Charles' son, then George MUST be Fiona's son. This makes Daniel the only possible grandfather, and therefore, Charles is George's father. \n\n**Therefore, the answer is Charles.**",
-            "options": [
-                "Alice",
-                "Beatrice",
-                "Charles",
-                "Daniel"
             ],
             "correct_option": "C"
         },
@@ -457,18 +229,6 @@
             "correct_option": "B"
         },
         {
-            "question": "**Scenario**: Imagine a standard six-sided die (numbered 1 to 6) that has been painted unusually. Instead of the numbers, each face displays a color. Here's what we know:\n**Puzzle**: Using the clues provided, can you determine which color is on the face opposite to the face showing yellow?\n**Clues**: \n  - The die is rolled, and the visible colors are red, blue, and yellow.\n  - The die is rolled again. This time, the visible colors are green, white, and yellow.\n  - When the die rests with red facing up, blue is always visible on one of the adjacent sides.\n**Question**: What color is on the face opposite to the face showing yellow?\n",
-            "difficulty": "hard",
-            "reasoning": "Here's how we can solve this puzzle: \n\n**Step 1: Analyzing the First Two Clues**\n\n- The first two rolls show us that red, blue, green, white, and yellow are all unique faces on the die.\n- Since a standard die has six faces, this leaves one color unaccounted for. \n- More importantly, we know that yellow is shared between both rolls, indicating it must be adjacent (touching) to the other four colors. \n\n**Step 2: Visualizing with Nets**\n\n-  Imagine unfolding the cube into a 2D net.  Since yellow is adjacent to the other four colors, a possible arrangement is to place yellow in the center of the net and the other colors around it. \n\n**Step 3: Incorporating the Third Clue**\n\n- The third clue is crucial: When red is facing up, blue is adjacent. This means that on our net, red and blue must be beside each other.\n\n**Step 4: Deducing the Opposite Face**\n\n- Given our deductions, the only possible arrangement leaves the face opposite yellow undetermined. This means the missing sixth color MUST be opposite yellow.\n\n**Therefore, we cannot definitively say what color is opposite yellow without knowing the sixth color on the die.**",
-            "options": [
-                "Red",
-                "Blue",
-                "Green",
-                "Cannot be determined"
-            ],
-            "correct_option": "D"
-        },
-        {
             "question": "Six colorful houses are arranged in a circle, each facing the center. The houses are painted Red, Blue, Green, Yellow, Orange, and Purple, but not necessarily in that order. Use the following clues to determine the arrangement of the houses:\n\n1. The Green house is directly opposite the house that sits two spaces clockwise from the Red house.\n2. The Blue house is located three spaces counter-clockwise from the Yellow house.\n3. The Orange house sits directly to the right of the Purple house, which is not adjacent to the Yellow house.\n\nStarting from the Red house and moving clockwise, list the order of the houses.",
             "difficulty": "hard",
             "reasoning": "Here's how to solve this puzzle step-by-step:\n\n**1. Visualize the Setup:**\nImagine a circle with six spaces representing the houses. It's helpful to sketch this out.\n\n**2. Connect Clues 1 & 2:**\n* **Clue 1:**  Tells us there's a two-space gap between the Red house and the house opposite Green. Let's mark these possibilities on our sketch. \n* **Clue 2:** Tells us there's a three-space gap between the Yellow and Blue houses. Mark these possibilities as well. \n\n**3.  Integrate Clue 3:**\n* **Clue 3a:**  Orange is immediately to the right of Purple. This limits placement options significantly. \n* **Clue 3b:** Purple cannot be next to Yellow. This further restricts the possibilities.\n\n**4. Deduce through Overlap:** \nBy now, you'll see certain positions on your sketch are more constrained than others.  Start testing potential placements of the Orange/Purple pair. Since they are linked, placing them helps determine the positions of other houses based on the previous clues. \n\n**5.  The Solution:**\nWork through the possibilities, eliminating those that lead to contradictions. The correct order, starting from Red and going clockwise, is:\n\n**Red - Yellow - Green - Purple - Orange - Blue**\n\n**Explanation of the Logic:**\n* The placement of Red and Green, following clue 1, is key.  \n* Once you correctly position Orange and Purple (using clue 3 to eliminate incorrect placements), the remaining houses fall into place based on clues 1 and 2.",
@@ -481,18 +241,6 @@
             "correct_option": "B"
         },
         {
-            "question": "**context**: A group of archaeologists discovered an ancient artifact containing a coded message. They determined the code works as follows:\n**example**: Every three-letter sequence represents a single letter. The encoding is based on the position of letters in a 3x3 grid, read row by row:\n\n1 2 3\nA B C\nD E F\n\nSo, 'ABC' represents 'A', 'DEF' represents 'D', 'ABE' represents 'B', and so on.\n**puzzle**: Decode the message to find the missing word:  'BDC  ?  CFE  EAD'.\n\nHint:  Think about how the position of a letter within its three-letter sequence affects its representation in the grid.\n**question**: What is the missing three-letter sequence that represents the missing word?\n",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the code:\n\n* **Grid Representation:** Each three-letter sequence corresponds to a position on the 3x3 grid.\n* **Positional Significance:** The position of a letter within the three-letter sequence matters. For example, 'ABC' and 'BAC' represent different grid positions and hence, different letters.\n\n**Decoding the Message:**\n\n1. **BDC:**  'B' is in the second position, 'D' in the first, and 'C' in the third. This corresponds to the grid position '213', which represents the letter 'E'.\n\n2. **CFE:** 'C' is in the first position, 'F' in the third, and 'E' in the second. This corresponds to the grid position '132', which represents the letter 'H'.\n\n3. **EAD:**  'E' is in the first position, 'A' in the second, and 'D' in the third.  This corresponds to the grid position '123', which represents the letter 'A'.\n\n**Finding the Missing Sequence:**\n\n* We have 'E' and 'H' so far, needing the letter to complete the word 'THE'.\n* 'T' is in the third row, second column of our grid. \n* The sequence representing 'T' would be 'FCE' ('F' being in the first position, 'C' in the second, and 'E' in the third to correspond with '321' on the grid).\n\nTherefore, the missing three-letter sequence is 'FCE'.",
-            "options": [
-                "CAF",
-                "FCA",
-                "FCE",
-                "EFC"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**Title**: The Enigmatic Exhibition\n**Scenario**: A renowned art collector is showcasing his prized possessions in an exclusive exhibition. He has divided his gallery into four themed rooms: Renaissance, Baroque, Impressionist, and Modern.  Each room displays exactly five artworks: two paintings, two sculptures, and one tapestry. Here's what you know about the collection: \n\n* No two rooms share the same combination of artwork types (e.g., if one room has two paintings by male artists, no other room can). \n* Each artwork is by an artist of a different nationality: Italian, French, Dutch, Spanish, or German. \n* In the Renaissance room, both paintings are by Italian artists, and there is a sculpture by a Dutch artist.\n* The Baroque room features a French tapestry.\n* The Impressionist room contains no German art. \n* The Modern room showcases a Spanish painting and a German sculpture. \n* There are more French artworks spread across the gallery than artworks of any other nationality. \n**Question**: Can you determine the nationality of the artist who created the tapestry in the Modern room, and provide the complete arrangement of artwork types and nationalities for each room?\n**Difficulty Level**: 9/10\n",
             "difficulty": "hard",
             "reasoning": "This puzzle requires a multi-layered deduction process using the given clues and the constraint of unique artwork type combinations. Here's a step-by-step solution:\n\n**Step 1: Renaissance Room**\n* We know: Two Italian paintings, one Dutch sculpture. \n* Since combinations can't repeat, the remaining two artworks must be a sculpture and a tapestry, and neither can be Italian or Dutch. \n* Possibilities: (a) Spanish sculpture, German tapestry (b) German sculpture, Spanish tapestry \n\n**Step 2: Baroque Room** \n* We know: French tapestry. \n* To maintain unique combinations, the remaining artworks must include one French piece (either painting or sculpture) and three non-French pieces. \n\n**Step 3: Impressionist Room**\n* We know: No German art. \n* To be unique and considering previous deductions, this room likely has a heavy concentration of either Spanish or Dutch art. \n\n**Step 4: Modern Room** \n* We know: Spanish painting, German sculpture. \n\n**Step 5: Consolidating Information**\n* The high number of French artworks across the gallery, combined with the Baroque room's limitations, suggests the Baroque room must have at least one French painting and one French sculpture. This ensures a higher count of French art compared to other nationalities.\n* This deduction eliminates the possibility of a French tapestry in the Modern room. \n*  Returning to the Renaissance Room possibilities, if the Renaissance room has a German tapestry, it forces the Modern room tapestry to be Spanish. However, this would mean the Impressionist room has no Spanish or Dutch tapestry, making its combination impossible given previous deductions.  \n* Therefore, the Renaissance room MUST have a Spanish sculpture and a German tapestry. This leaves the Modern room tapestry to be Dutch. \n\n**Step 6: Final Arrangement**\n\n* **Renaissance:** Italian Painting, Italian Painting, Dutch Sculpture, Spanish Sculpture, German Tapestry\n* **Baroque:**  French Tapestry, French Painting, French Sculpture, (Non-French Painting/Sculpture), (Non-French Painting/Sculpture)\n* **Impressionist:** This room's arrangement can be deduced based on the remaining nationalities and artwork types, ensuring no repetition of combinations.\n* **Modern:** Spanish Painting, German Sculpture, Dutch Tapestry, (Non-Spanish/German/Dutch Painting), (Non-Spanish/German/Dutch Sculpture)\n\n**Answer:** The artist of the tapestry in the Modern room is Dutch. The complete arrangement of each room is outlined above. ",
@@ -503,18 +251,6 @@
                 "Dutch"
             ],
             "correct_option": "D"
-        },
-        {
-            "question": "**title**: The Shadowy Estate\n**description**: A renowned art collector is found murdered in his locked study, a single gunshot wound marring his masterpiece collection. There are four suspects: the bitter rival collector, the disgruntled heir, the cunning art thief, and the mysterious newcomer. Each suspect was in a different room of the estate when the gunshot was heard: the grand gallery, the conservatory, the library, and the drawing-room. Use the following clues to deduce the murderer, the room they were in, and the missing masterpiece they stole:\n\n1. The rival collector was not in the grand gallery nor the conservatory.\n2. The disgruntled heir was not in the library, and the art thief wasn't in the drawing-room.\n3. The stolen masterpiece was not taken from the room where the gunshot was heard.\n4. The conservatory housed a priceless sculpture, while the drawing-room displayed an ancient tapestry.\n5. The library contained only historical manuscripts, and the grand gallery held a collection of Impressionist paintings.\n\nWho committed the crime, where were they, and what did they steal?\n**difficulty**: tricky 9/10\n",
-            "difficulty": "hard",
-            "reasoning": "This puzzle utilizes classic logic deduction elements found in Einstein Riddles and similar puzzles. Here's how we can break down the solution:\n\n**1. Setting up the Grid:**\n   It's helpful to visualize the information with a grid:\n\n   | Suspect               | Grand Gallery | Conservatory | Library | Drawing-Room | Masterpiece Stolen |\n   |----------------------|---------------|-------------|---------|-------------|--------------------| \n   | Rival Collector       |               |             |         |             |                    |\n   | Disgruntled Heir     |               |             |         |             |                    |\n   | Cunning Art Thief   |               |             |         |             |                    |\n   | Mysterious Newcomer |               |             |         |             |                    |\n\n**2. Inputting Initial Clues:**\n   * Clue 1:  Rival Collector is NOT in the Grand Gallery or Conservatory. (Mark these with 'X')\n   * Clue 2: Disgruntled Heir is NOT in the Library, Art Thief is NOT in the Drawing-Room (Mark with 'X') \n\n   | Suspect               | Grand Gallery | Conservatory | Library | Drawing-Room | Masterpiece Stolen |\n   |----------------------|---------------|-------------|---------|-------------|--------------------| \n   | Rival Collector       |       X       |      X      |         |             |                    |\n   | Disgruntled Heir     |               |             |    X    |             |                    |\n   | Cunning Art Thief   |               |             |         |      X      |                    |\n   | Mysterious Newcomer |               |             |         |             |                    |\n\n**3. Deducing from Combined Clues:**\n   * Since only one person can be in each room, and the Rival Collector isn't in the Grand Gallery or Conservatory, they must be in either the Library or Drawing-Room.\n   * Similarly, the Disgruntled Heir must be in either the Grand Gallery or Conservatory, and the Art Thief in either the Grand Gallery or Library.\n\n**4. Utilizing Item Clues:**\n   * Clue 3 & 5:  The gunshot wasn't in the Library (only manuscripts), meaning the stolen item IS NOT a manuscript. \n   * Clue 4 & 5: Since the Disgruntled Heir can only be in the Grand Gallery or Conservatory, and the stolen item isn't the sculpture or tapestry, they must have stolen an Impressionist Painting from the Grand Gallery. This also means the Disgruntled Heir is the murderer.\n\n**5. Final Deductions:**\n   * Knowing the Disgruntled Heir was in the Grand Gallery, we can deduce the Art Thief was in the Library (as they couldn't be in the Drawing-Room) and stole nothing.\n   * The Rival Collector must then be in the Drawing-Room and stole the tapestry.\n   * This leaves the Mysterious Newcomer in the Conservatory, stealing the sculpture.\n\n**Solution:**\n\n* **Murderer:** The Disgruntled Heir\n* **Location:** The Grand Gallery\n* **Stolen Masterpiece:** An Impressionist Painting \n",
-            "options": [
-                "Rival Collector, Drawing-Room, Tapestry",
-                "Disgruntled Heir, Grand Gallery, Impressionist Painting",
-                "Mysterious Newcomer, Conservatory, Sculpture",
-                "Cunning Art Thief, Library, Manuscript"
-            ],
-            "correct_option": "B"
         }
     ],
     "title": "Logical Reasoning",

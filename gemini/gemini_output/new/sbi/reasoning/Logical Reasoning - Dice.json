@@ -1,18 +1,6 @@
 {
     "questions": [
         {
-            "question": "Imagine a board game where you need to roll a specific number to win.  You can choose to roll either a standard six-sided die or a ten-sided die.  To win, you need to roll the highest possible number on whichever die you choose.  Which die gives you a better chance of winning?",
-            "difficulty": "medium",
-            "reasoning": "This question tests your understanding of the properties of standard dice. Here's how to solve it:\n\n* **Six-sided die:** The highest possible roll is a 6.\n* **Ten-sided die:** The highest possible roll is a 10. \n\nSince the goal is to roll the highest number, the ten-sided die gives you a better chance of winning. It has more possible outcomes, including higher numbers than the six-sided die.",
-            "options": [
-                "Six-sided die",
-                "Ten-sided die",
-                "Both are equal",
-                "Impossible to determine"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "**scenario**: Imagine a standard six-sided die. You are looking directly at the face with '3' pips on it. \n**question**: What number of pips are on the face directly opposite to the '3' face?\n",
             "difficulty": "medium",
             "reasoning": "This question tests the spatial reasoning skills related to dice. Here's how to solve it:\n\n* **Understanding Opposites:**  In a standard six-sided die, opposite faces always add up to 7.\n* **Finding the Opposite:** Since we're looking for the opposite of the '3' face, we simply subtract 3 from 7 (7 - 3 = 4).\n* **The Answer:** The face opposite the '3' face has **4** pips. ",
@@ -23,18 +11,6 @@
                 "6"
             ],
             "correct_option": "B"
-        },
-        {
-            "question": "**visual_representation**: Imagine a standard six-sided die placed in front of a mirror. The die shows the number 3 facing upwards.\n**question**: What number will be visible on the top face of the die's reflection in the mirror?\n**answer_options**: \n  - A) 6\n  - B) 4\n  - C) 3\n  - D) It's impossible to tell.\n",
-            "difficulty": "medium",
-            "reasoning": "This question tests a student's understanding of how mirrors reflect objects and their spatial reasoning abilities in the context of dice. Here's why the correct answer is **C) 3** and how to arrive at it: \n\n* **Mirrors and Reflection:** A mirror image reverses an object along the axis perpendicular to the mirror's surface.  \n* **Dice Orientation:**  Since the real die has the number 3 facing upwards, its mirror image will also show 3 on the top face. The reflection doesn't change the orientation of the face itself, only its position relative to the mirror. \n\nTherefore, the number visible on the top face of the reflected die will be the same as the real die, which is 3.",
-            "options": [
-                "6",
-                "4",
-                "3",
-                "Impossible"
-            ],
-            "correct_option": "C"
         },
         {
             "question": "**questionType**: Matching Faces\n**context**: Imagine you have two identical standard dice.  The first die is unfolded to show its net. The second die is rolled, and the face showing the number '4' is placed directly on top of the '1' face on the unfolded net.\n**instruction**: After folding the net around the second die, which number on the folded die would be opposite the face showing '3'?\n",
@@ -49,18 +25,6 @@
             "correct_option": "D"
         },
         {
-            "question": "Imagine a standard six-sided die where each face is painted a different color: 1 (Red), 2 (Green), 3 (Blue), 4 (Yellow), 5 (Orange), 6 (Purple). The die is positioned with the Green face facing up and the Red face facing you.  \n\nPerform the following rotations on the die:\n\n1. Rotate 90 degrees clockwise about its vertical axis. \n2. Rotate 180 degrees about the axis facing you. \n3. Rotate 90 degrees counter-clockwise about its vertical axis.\n\nWhat color is facing upwards after these rotations?",
-            "difficulty": "medium",
-            "reasoning": "Here's a step-by-step solution to the problem:\n\n**Initial State:**\n* Green (2) is facing up.\n* Red (1) is facing you.\n\n**Rotation 1: 90 degrees clockwise about its vertical axis**\n* This rotation brings the Red (1) face to the top, and the Green (2) face rotates to the side.\n\n**Rotation 2: 180 degrees about the axis facing you**\n* This rotation keeps the Red (1) face on the top but flips the die so that the opposite side (Purple (6)) is now facing you. \n\n**Rotation 3: 90 degrees counter-clockwise about its vertical axis**\n* This rotation brings the face that was to your right (which was originally facing the back) to the top. Since the die was flipped in Rotation 2, the face now on top is the one opposite Green (2), which is Blue (3). \n\n**Therefore, the Blue (3) face is facing upwards after the rotations.**",
-            "options": [
-                "Red",
-                "Green",
-                "Blue",
-                "Purple"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**scenario**: You are given three standard six-sided dice. Two of them are red, and one is blue.\n**constraints**: All three dice are rolled. The two red dice must show a different number from each other. The total sum of all three dice is 12.\n**question**: What is the highest possible value shown on the blue die?\n",
             "difficulty": "medium",
             "reasoning": "Here's how to solve the puzzle:\n\n1. **Maximize the Red Dice:** To get the highest possible value on the blue die, we need to minimize the sum of the two red dice while still adhering to the constraints.\n2. **Smallest Difference:** The smallest possible difference between the two red dice is 1 (e.g., one die shows a 3, and the other shows a 4).\n3. **Minimize the Sum:** To minimize the sum, let's assume the red dice show a 3 and a 4. This totals 7. \n4. **Calculate the Blue Die:**  Since the total sum of all three dice is 12, and the red dice sum to 7, the blue die must show a 5 (12 - 7 = 5). \n\nTherefore, the highest possible value shown on the blue die is 5.",
@@ -71,18 +35,6 @@
                 "6"
             ],
             "correct_option": "C"
-        },
-        {
-            "question": "Imagine a standard six-sided die. You roll the die, and three of its faces are visible to you.  You can see the numbers 2, 4, and 6. Knowing that opposite faces of a standard die always add up to 7, can you determine which number is on the face opposite the '2'?  What are the possible combinations for the remaining two hidden faces?",
-            "difficulty": "medium",
-            "reasoning": "Here's how we solve this:\n\n**1. Opposite Faces Principle:**\n   - Standard dice are designed so that the sum of the numbers on opposite faces always equals 7.\n\n**2. Finding the Opposite of '2':**\n   - Since the opposite faces must add up to 7, the face opposite the '2' must be the '5' (2 + 5 = 7).\n\n**3. Identifying the Remaining Hidden Faces:**\n   - We know three faces are visible: 2, 4, and 6.\n   - We've determined the face opposite the '2' is a '5'.\n   - This leaves us with two hidden faces and two missing numbers: 1 and 3.\n\n**4. Possible Combinations:**\n   - Since we don't have enough information to know the exact arrangement of the remaining faces, there are two possible combinations for the hidden faces:\n      - **Possibility 1:** One hidden face is '1', and the other is '3'.\n      - **Possibility 2:** One hidden face is '3', and the other is '1'.\n\n**Therefore, while we can definitively say that '5' is opposite '2', we cannot determine the exact arrangement of the '1' and '3' on the remaining hidden faces.**",
-            "options": [
-                "1 and 3",
-                "2 and 5",
-                "3 and 6",
-                "4 and 5"
-            ],
-            "correct_option": "A"
         },
         {
             "question": "Imagine a standard six-sided die where the sum of opposite faces always equals 7.  Initially, the number 1 is facing up, the number 3 is facing you, and the number 2 is on the right face. The die is then rotated 90 degrees clockwise around its vertical axis, then 90 degrees forward away from you, and finally 90 degrees clockwise around its vertical axis again. What number will be facing you?",
@@ -97,18 +49,6 @@
             "correct_option": "A"
         },
         {
-            "question": "Two standard six-sided dice are rolled. You are told the following: \n\n* The sum of the two dice is odd. \n* At least one of the dice shows a prime number (a prime number is a number greater than 1 that is only divisible by 1 and itself). \n\n**Question:** What is the probability that both dice show prime numbers?",
-            "difficulty": "medium",
-            "reasoning": "Here's how we can solve this problem step-by-step:\n\n**1. Understand the Basics**\n* There are 6 possible outcomes for each die, resulting in 36 possible combinations (6 sides * 6 sides = 36). \n* Prime numbers on a standard die are 2, 3, and 5. \n\n**2. Break Down the Given Information**\n* **Sum is Odd:**  To get an odd sum, one die must show an even number, and the other must show an odd number.\n* **At Least One Prime:** This means we could have one or two prime numbers showing. \n\n**3.  Find Favorable Outcomes**\nWe need combinations where both dice show prime numbers AND meet the given conditions. Let's list them: \n* (2, 3) \n* (2, 5)\n* (3, 2)\n* (5, 2)\n\n**4. Calculate the Probability**\n* **Favorable Outcomes:** 4 (as listed above)\n* **Total Possible Outcomes:** 36 (all possible dice combinations)\n* **Probability:** (Favorable Outcomes) / (Total Possible Outcomes) = 4/36 = 1/9 \n\n**Therefore, the probability that both dice show prime numbers, given the provided conditions, is 1/9.**",
-            "options": [
-                "1/18",
-                "1/6",
-                "1/9",
-                "1/3"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**description**: Three standard six-sided dice are stacked vertically. You can see the top three faces. The top die shows a '2', the middle die shows a '5', and the bottom die shows a '6'. You know that opposite faces of a standard die always add up to 7.\n**question**: What is the sum of the numbers on the bottom face of the top die, the top face of the middle die, and the bottom face of the bottom die?\n",
             "difficulty": "medium",
             "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Opposite Faces:**  Recall that opposite sides of a standard die add up to 7.\n\n2. **Top Die:** Since the top face of the top die shows a '2', its bottom face must show a '5' (2 + 5 = 7).\n\n3. **Middle Die:**  The middle die shows a '5' on its visible face, so its hidden opposite face must show a '2' (5 + 2 = 7).\n\n4. **Bottom Die:** The bottom die shows a '6', meaning its hidden opposite face must show a '1' (6 + 1 = 7).\n\n5. **Calculation:** Now, we add the values of the relevant hidden faces:\n   - Bottom face of the top die: 5\n   - Top face of the middle die: 2\n   - Bottom face of the bottom die: 1\n\n   Total sum: 5 + 2 + 1 = 8\n\nTherefore, the sum of the numbers on the specified faces is 8.",
@@ -119,18 +59,6 @@
                 "12"
             ],
             "correct_option": "C"
-        },
-        {
-            "question": "Two standard six-sided dice are rolled. The following sequence represents the sum of the dice rolls: 5, 8, 4, 7, 10,  What is the most likely sum of the next roll?",
-            "difficulty": "medium",
-            "reasoning": "While there might seem to be a pattern, dice rolls are random.  There's no guarantee the next roll will follow any perceived sequence.  Therefore, we need to look at the probabilities of each sum on a single roll of two dice.\n\nHere's a breakdown:\n\n* **2:** (1, 1) - 1 combination\n* **3:** (1, 2), (2, 1) - 2 combinations\n* **4:** (1, 3), (2, 2), (3, 1) - 3 combinations\n* **5:** (1, 4), (2, 3), (3, 2), (4, 1) - 4 combinations\n* **6:** (1, 5), (2, 4), (3, 3), (4, 2), (5, 1) - 5 combinations\n* **7:** (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1) - 6 combinations\n* **8:** (2, 6), (3, 5), (4, 4), (5, 3), (6, 2) - 5 combinations\n* **9:** (3, 6), (4, 5), (5, 4), (6, 3) - 4 combinations\n* **10:** (4, 6), (5, 5), (6, 4) - 3 combinations\n* **11:** (5, 6), (6, 5) - 2 combinations\n* **12:** (6, 6) - 1 combination\n\n**7 has the highest number of combinations, making it the most likely sum on any given roll.**",
-            "options": [
-                "4",
-                "7",
-                "11",
-                "14"
-            ],
-            "correct_option": "B"
         },
         {
             "question": "**Question Type**: Probability Calculation\n**Scenario**: You have three six-sided dice: one standard die, one die with faces numbered 2, 2, 4, 4, 6, 6, and one die with faces numbered 1, 1, 3, 3, 5, 5. \n**Question**: What is the probability of rolling a sum of 9 when you roll all three dice?\n**Difficulty**: Medium 5/10\n",
@@ -145,18 +73,6 @@
             "correct_option": "B"
         },
         {
-            "question": "Imagine a standard six-sided die resting on a table. You are standing directly in front of it and can see three faces.  The face directly facing you shows a 3. Looking to the right, you see a 5, and looking to the left, you see a 1.  What number is on the face opposite the 3?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem:\n\n* **Understanding Dice Orientation:** Standard six-sided dice are designed so that opposite sides always add up to 7.\n* **Identifying the Pairs:**\n    * We know 1 and 6 are a pair.\n    * We know 2 and 5 are a pair.\n    * We know 3 and 4 are a pair.\n* **Finding the Opposite:** Since the 3 is visible, its opposite face must be the **4**.\n",
-            "options": [
-                "1",
-                "2",
-                "4",
-                "5"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "A standard six-sided die is rolled several times. The results of the rolls are recorded below. Can you determine the next roll in this sequence?\n\n2, 5, 3, 6, 4, ?",
             "difficulty": "medium",
             "reasoning": "This sequence follows a pattern of +3, -2. \n\n* 2 + 3 = 5\n* 5 - 2 = 3\n* 3 + 3 = 6\n* 6 - 2 = 4\n\nTo continue the pattern, the next step is to add 3 to the last roll of 4.\n\n* 4 + 3 = 7\n\nSince a standard die only has 6 sides, we need to adjust for exceeding the maximum.  We can do this by subtracting 6 from the result:\n\n* 7 - 6 = 1\n\nTherefore, the next roll in the sequence is 1.",
@@ -165,18 +81,6 @@
                 "4",
                 "6",
                 "1"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "Imagine a standard die rolling across a game board. During its journey, you catch glimpses of its faces. You observe that when the '3' is face up, the '1' is facing you. Later, you see the '5' face up, and the '2' is facing you.  Now, the die lands with the '4' facing up. What number is directly opposite the '4'? ",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve the problem: \n\n**1. Visualize the Relationships:**\n   -  It's helpful to picture the die in your mind. Remember, opposite sides always add up to 7 on a standard die.\n\n**2.  Use the Given Information:** \n   - We know '3' and '1' are opposite each other. \n   - We also know '5' and '2' are opposite each other.\n\n**3. Deduce the Remaining Pair:** \n   -  The only numbers left are '4' and '6'.  Since opposite sides add up to 7, the '6' must be opposite the '4'.\n\n**Therefore, the number opposite the '4' is '6'.** ",
-            "options": [
-                "1",
-                "2",
-                "5",
-                "6"
             ],
             "correct_option": "D"
         },
@@ -193,18 +97,6 @@
             "correct_option": "A"
         },
         {
-            "question": "Imagine a standard six-sided die where the face opposite the '1' is the '6', opposite the '2' is the '5', and opposite the '3' is the '4'.  \n\nYou are shown this die with the '3' facing up and the '2' facing you.  If you roll the die one space to the right (so the face with the '2' is now down), what number will be facing you?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this step-by-step: \n\n1. **Visualize the Starting Position:** Imagine the die in your mind. The '3' is on top, the '2' is facing you. Based on standard die arrangement, the '5' would be on the bottom, the '1' would be opposite you on the back, the '4' would be on the left, and the '6' would be on the right. \n\n2. **Execute the Rotation:**  We are rolling the die one space to the right, meaning the face with the '6' will end up facing you. \n\n3. **Determine the Answer:** The number facing you after the rotation is **6**. ",
-            "options": [
-                "1",
-                "4",
-                "5",
-                "6"
-            ],
-            "correct_option": "D"
-        },
-        {
             "question": "**Scenario:** In a board game factory, a quality inspector needs to ensure that the six-sided dice are fair. To do this, they use a simple simulation.\n\n**Information:** The inspector programs a machine to roll a die 60 times. They record the number of times each face value appears.\n\n**Question:** In a fair die, approximately how many times should each face value appear in this simulation?\n",
             "difficulty": "medium",
             "reasoning": "**Reasoning:**\n\n* **Probability of a single face:** A fair six-sided die has 6 equal faces. Therefore, the probability of rolling any specific face (like a '3') is 1/6.\n* **Expected frequency:**  In 60 rolls, we'd expect each face to appear roughly the same number of times. Since the probability of each face is 1/6, and we're rolling 60 times, the expected frequency is (1/6) * 60 = 10 times.\n\n**Therefore, in a fair die, each face value should appear approximately 10 times in 60 rolls.**\n\n**Important Note:** This is a probability-based simulation.  While we *expect* each face to appear 10 times, random chance means the actual results might slightly vary. The inspector is looking for a relatively even distribution of results, not absolute perfection.",
@@ -217,18 +109,6 @@
             "correct_option": "B"
         },
         {
-            "question": "Two standard six-sided dice are placed on a table. One die shows a '4' facing up. The other die is positioned so that its reflection in a nearby mirror also appears to show a '4' facing up.  What number is on the face of the second die that is touching the table?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem:\n\n**1. Understanding Reflections:** Mirror images reverse an object along the line of symmetry. If you hold a real die with '4' facing you in a mirror, the reflection will also show a '4'. However, the orientation of other numbers on the die will be flipped.\n\n**2. Dice Orientation:**  Standard dice are designed so that opposite faces always add up to 7.  This means that the face opposite the '4' is a '3'.\n\n**3.  The Reflected Die:** Since the reflection shows a '4', and we know reflections flip the image, the real die must be oriented with the '4' facing the mirror. \n\n**4. The Hidden Face:** If the '4' is facing the mirror, the face touching the table is the opposite face. As we established earlier, the opposite face of a '4' is a '3'.\n\n**Therefore, the number on the face of the second die touching the table is 3.**",
-            "options": [
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**Scenario:** Imagine an eight-sided die where each face is numbered 1 through 8. The odd-numbered faces are painted blue, and the even-numbered faces are painted red.  \n**Rotation:** The die undergoes the following rotations: \n 1. It is rotated 90 degrees clockwise around an axis passing through the center of faces 1 and 8. \n 2. It is then rotated 180 degrees around a horizontal axis passing through the center of faces 3 and 6. \n**Question:** If the die initially had the blue face numbered '3' facing upwards, what color is facing upwards after the rotations?",
             "difficulty": "medium",
             "reasoning": "Here's how we can solve this problem step-by-step: \n\n**Step 1: Visualizing the Initial State**\nImagine the die with face '3' (blue) facing upwards. Since it's an eight-sided die, you'll need to visualize the positions of the other faces. \n\n**Step 2: First Rotation**\nA 90-degree clockwise rotation around the axis passing through faces 1 and 8 would essentially move the top face (blue '3') to the position where face '2' was originally.  \n\n**Step 3: Second Rotation**\nNow, a 180-degree rotation around a horizontal axis through faces 3 and 6 flips the die. Since the previous rotation placed a blue face in the position of face '2', this 180-degree flip will bring a red face (originally opposite face '2') to the top. \n\n**Conclusion:** After both rotations, a red face will be facing upwards.",
@@ -237,18 +117,6 @@
                 "Red",
                 "Green",
                 "Yellow"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "**context**: You have two dice, one standard six-sided die (d6) and one ten-sided die (d10). \n**question**: What is the probability of rolling a combined total higher than 12 when rolling both dice together?\n**difficulty**: medium 6/10\n",
-            "difficulty": "medium",
-            "reasoning": "This question falls under the topic 'Types of Dice: Standard, non-standard, and their properties' as it requires understanding the properties of a d6 and a d10 to calculate probabilities. Here's how to solve it: \n\n**1.  Determine the possible outcomes:**\n    * The d6 can roll values from 1 to 6.\n    * The d10 can roll values from 1 to 10. \n\n**2.  Calculate successful outcomes:**  To get a sum higher than 12, we need to consider the combinations where this is possible:\n    *  d6 = 3, d10 = 10\n    *  d6 = 4, d10 = 9 or 10\n    *  d6 = 5, d10 = 8, 9, or 10\n    *  d6 = 6, d10 = 7, 8, 9, or 10\n\n    This gives us a total of 10 successful outcomes.\n\n**3.  Calculate total possible outcomes:**\n    * The total number of combinations when rolling two dice is found by multiplying the number of sides on each die: 6 sides * 10 sides = 60 total possible outcomes. \n\n**4.  Calculate the probability:**\n    * Probability = (Successful Outcomes) / (Total Possible Outcomes)\n    * Probability = 10 / 60 = 1/6\n\nTherefore, the probability of rolling a combined total higher than 12 with a d6 and a d10 is 1/6.",
-            "options": [
-                "1/3",
-                "1/6",
-                "1/2",
-                "1/4"
             ],
             "correct_option": "B"
         },
@@ -265,18 +133,6 @@
             "correct_option": "D"
         },
         {
-            "question": "**scenario**: Four standard six-sided dice are arranged in a row. Each die represents a digit in a four-digit number. The dice are placed such that some faces are visible and some are hidden.\n**visibleFaces**: \n  **Die 1 (Thousands digit):**: \n    - 2\n    - 4\n    - 5\n  **Die 2 (Hundreds digit):**: \n    - 1\n    - 3\n    - 6\n  **Die 3 (Tens digit):**: \n    - 2\n    - 3\n    - 5\n  **Die 4 (Units digit):**: \n    - 1\n    - 4\n    - 6\n**hiddenFaces**: Each die has three hidden faces.\n**question**: What is the probability that the hidden faces form a four-digit number divisible by 3? Consider all possible combinations of hidden faces.\n",
-            "difficulty": "medium",
-            "reasoning": "To determine the probability, we need to analyze the possible sums of the hidden faces and apply the divisibility rule of 3.\n\n**1. Possible Sums of Visible Faces:**\n   - Die 1: 2 + 4 + 5 = 11\n   - Die 2: 1 + 3 + 6 = 10\n   - Die 3: 2 + 3 + 5 = 10\n   - Die 4: 1 + 4 + 6 = 11\n\n**2.  Possible Sums of Hidden Faces:**\n   - Each die has hidden faces that sum to 21 - (sum of visible faces).\n   - Die 1: 21 - 11 = 10\n   - Die 2: 21 - 10 = 11\n   - Die 3: 21 - 10 = 11\n   - Die 4: 21 - 11 = 10\n\n**3.  Divisibility Rule of 3:**\n   - A number is divisible by 3 if the sum of its digits is divisible by 3.\n\n**4.  Analyzing Combinations:**\n    We need to find combinations of the possible hidden sums (10, 11, 11, 10) that, when added to the visible sums, result in a number divisible by 3.  Let's examine a few examples:\n    - **Case 1:** Visible sum = 11 + 10 + 10 + 11 = 42. To be divisible by 3, the hidden sum must also be divisible by 3.  The only combination possible here is if all hidden sums are 10 (10 + 10 + 10 + 10 = 40, and 42 + 40 is divisible by 3). \n    - **Case 2:** Visible sum = 11 + 11 + 10 + 11 = 43.  No combination of hidden sums (10 or 11) can be added to 43 to make it divisible by 3.\n\n**5. Calculating Probability:**\n   -  We would need to systematically go through all possible combinations of visible and hidden sums to find how many result in a sum divisible by 3.\n   - The probability is then the number of successful combinations divided by the total number of possible combinations. Due to the complexity and time required for calculation, we won't be listing all combinations here. ",
-            "options": [
-                "1/216",
-                "1/1296",
-                "1/648",
-                "1/27"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "**context**: Imagine a standard six-sided die has been unfolded into its net as shown below.\n**prompt**: If you were to fold this net back into a cube, which number would be on the face opposite the one marked '4'?\n**visual_aid**: https://i.imgur.com/bTqKhlz.png\n**difficulty**: medium\n",
             "difficulty": "medium",
             "reasoning": "Here's how to solve this problem:\n\n1. **Visualize the Folding:** Imagine folding the net along the lines to form the cube. \n2. **Identify Opposite Pairs:** When you mentally fold the net, you'll see that:\n    * The '1' face and the '4' face would be opposite each other.\n    * The '2' face and the '5' face would be opposite each other.\n    * The '3' face and the '6' face would be opposite each other.\n3. **Determine the Answer:** Since the question asks for the number opposite the '4', the answer is '1'.",
@@ -287,18 +143,6 @@
                 "6"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "You roll three standard six-sided dice. What is the probability that the product of the three numbers rolled is an odd number?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem:\n\n**Understanding the Condition**\n\nFor the product of three numbers to be odd, all three numbers must be odd. If even a single number is even, the product will be even.\n\n**Probability of Rolling Odd with One Die**\n\n* There are 3 odd numbers (1, 3, 5) on a standard die. \n* There are 6 total possible outcomes.\n* The probability of rolling an odd number on a single die is 3/6 = 1/2.\n\n**Probability of Rolling Three Odds in a Row**\n\n* Since each roll is independent (one roll doesn't affect the next), we multiply the probabilities together.\n* The probability of rolling an odd number three times in a row is (1/2) * (1/2) * (1/2) = 1/8.\n\n**Therefore, the probability of the product of the three dice being odd is 1/8.**",
-            "options": [
-                "1/6",
-                "1/4",
-                "1/8",
-                "3/8"
-            ],
-            "correct_option": "C"
         },
         {
             "question": "A standard six-sided die is rolled multiple times. The values of the rolls are recorded, forming a sequence. The following rules govern this sequence:\n\n1. After each even number rolled, the next number in the sequence will always be odd.\n2. After each odd number rolled, the next number in the sequence will be the difference between the current odd number and 6.\n\nIf the first roll is a 3, what is the sum of the first five numbers in the sequence?",
@@ -313,18 +157,6 @@
             "correct_option": "B"
         },
         {
-            "question": "**scenario**: You have two dice: a standard six-sided die (d6) and a ten-sided die (d10).\n**information**: \n  - You roll both dice simultaneously.\n  - The sum of the numbers rolled is odd.\n  - The product of the numbers rolled is a multiple of 5.\n**question**: What is the highest possible value for the number rolled on the d6?\n",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the clues to find the solution:\n\n* **Clue 1: The sum of the numbers rolled is odd.** This tells us one die must show an odd number and the other an even number.\n* **Clue 2: The product of the numbers rolled is a multiple of 5.** This means at least one of the dice must show a 5 or a 10 (as these are the only multiples of 5 within the possible results).\n\nNow let's consider the d6. To maximize the value on the d6, we want to see if it can be the die showing the multiple of 5:\n\n* **Can the d6 show a 5?** Yes, this is possible. If the d6 shows a 5, to fulfill Clue 1, the d10 would need to land on an even number (2, 4, 6, 8, or 10).\n\nTherefore, the highest possible value for the number rolled on the d6 is 5. \n",
-            "options": [
-                "3",
-                "4",
-                "5",
-                "6"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "Imagine a standard six-sided die.  The face with the number '1' is facing up, the '2' is facing you, and the '3' is on its right side. \n\nPerform the following rotations on the die: \n\n1. Rotate the die 90 degrees clockwise around its vertical axis (the axis passing through the '1' and the hidden '6'). \n2. Rotate the die 90 degrees forward, using the edge between the '2' and the new top face as the axis of rotation.\n\nAfter these rotations, what number is facing you?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve the problem step-by-step:\n\n**Initial State:**\n* **Top:** 1\n* **Facing You:** 2\n* **Right:** 3\n\n**Rotation 1: 90 degrees clockwise around the vertical axis**\n* The vertical axis remains unchanged (1 and hidden 6).\n* The '3' on the right side moves to face you.\n* The '2' facing you moves to the left side.\n\n**State after Rotation 1:**\n* **Top:** 1\n* **Facing You:** 3\n* **Left:** 2\n\n**Rotation 2: 90 degrees forward using the edge between the '2' and the top face as the axis**\n* The '2' on the left and the '1' on top remain stationary.\n* The face hidden behind the '1' (the '6') rotates to face you.\n\n**Final State:**\n* **Top:** 1\n* **Facing You:** 6\n* **Left:** 2\n\nTherefore, the number **6** is facing you after the rotations.",
@@ -337,18 +169,6 @@
             "correct_option": "D"
         },
         {
-            "question": "Imagine a standard six-sided die with its faces painted in a unique pattern: \n\n* **Yellow:** Top \n* **Orange:** Bottom \n* **Green:** Front \n* **Blue:** Back \n* **Red:** Right \n* **Purple:** Left \n\nStarting with the Yellow face on top, the die is carefully rotated as follows: \n\n1. **90 degrees clockwise** when viewed from above (looking down onto the Yellow face).\n2. **Flipped forward** so the face previously facing you is now on the bottom.\n3. **Rotated 180 degrees** while keeping the face that's now on the bottom in that same position. \n\nAfter these rotations, what color is the face directly opposite the Red face?",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the rotations step-by-step to track the color changes:\n\n**Initial State:**\n* Top: Yellow\n* Bottom: Orange\n* Front: Green\n* Back: Blue\n* Right: Red\n* Left: Purple\n\n**Rotation 1: 90 degrees clockwise (viewed from above):**\n* Top: Yellow\n* Bottom: Orange\n* Front: Red\n* Back: Purple\n* Right: Blue\n* Left: Green \n\n**Rotation 2: Flipped forward:**\n* Top: Orange\n* Bottom: Yellow\n* Front: Purple\n* Back: Red\n* Right: Blue\n* Left: Green\n\n**Rotation 3: 180 degrees (bottom stays fixed):**\n* Top: Yellow\n* Bottom: Orange\n* Front: Blue \n* Back: Green\n* Right: Purple\n* Left: Red\n\nIn the final position, the **Green** face is opposite the Red face.",
-            "options": [
-                "Yellow",
-                "Green",
-                "Orange",
-                "Blue"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "Imagine three standard six-sided dice stacked vertically. You can see the following numbers on the visible faces: \n\n* **Top Die:** 5 \n* **Middle Die (Side):** 3 \n* **Bottom Die (Side):** 2 \n\nWhat is the sum of the numbers hidden on the bottom face of each die?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve this problem:\n\n**Understanding Dice Logic**\n* A standard die has faces numbered 1 to 6. \n* Opposite faces of a die always add up to 7. \n\n**Step-by-Step Deduction**\n\n1. **Bottom Die:** Since a side of the bottom die shows a 2, the hidden bottom face must be a 5 (2 + 5 = 7). \n\n2. **Middle Die:** We don't have information about the top or bottom face of the middle die. We cannot determine the hidden bottom face value. \n\n3. **Top Die:**  The top face of the top die is a 5. Therefore, the hidden bottom face must be a 2 (5 + 2 = 7). \n\n**Calculation**\n\nWe can only determine the hidden bottom face values for the top and bottom dice.  \n\n* Top Die: 2\n* Bottom Die: 5\n\nThe sum of these hidden values is 2 + 5 = 7.\n\n**Important Note:**  We cannot assume the middle die's hidden value without more information.  This makes the question challenging but solvable with the information provided. ",
@@ -357,18 +177,6 @@
                 "9",
                 "12",
                 "Cannot be determined"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**scenario**: Three standard six-sided dice are stacked in a tower. You can see all the faces of the top and bottom dice. The middle die is hidden, except for the top face.\n**visible faces**: \n  **Top Die**: 3, 5\n  **Middle Die (Top Only)**: 1\n  **Bottom Die**: 2, 6\n**question**: Considering the visible numbers, what are the possible numbers that could be on the BOTTOM face of the middle die?\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the reasoning for this problem: \n\n**1. Understanding Dice Restrictions:**\n   * Standard six-sided dice have opposite sides that sum to 7 (1-6, 2-5, 3-4).\n\n**2. Analyzing Visible Faces:**\n   * **Top Die (3, 5):**  We know the other sides of this die must include 1, 2, 4, and 6. However, this information isn't directly relevant to the middle die.\n   * **Middle Die (Top Only: 1):**  The bottom face of this die MUST be a 6 (since opposite sides add to 7).\n   * **Bottom Die (2, 6):** We know the other sides of this die must include 1, 3, 4, and 5. Again, this isn't directly helpful for the middle die.\n\n**3. Deducing the Middle Die's Bottom:**\n   * Since the middle die has a '1' on top, its bottom face MUST be a '6'. There's no other possibility.\n\n**Therefore, there is only one possible number on the bottom of the middle die, and that number is 6.**",
-            "options": [
-                "1",
-                "2",
-                "4",
-                "5"
             ],
             "correct_option": "A"
         },
@@ -385,18 +193,6 @@
             "correct_option": "A"
         },
         {
-            "question": "**Scenario:** You have two standard six-sided dice. One die has its faces numbered 1 through 6 as usual. The other die has the following faces: 1, 2, 2, 3, 3, 3.\n\n**Rules:** You roll both dice simultaneously. \n\n**Question:** What is the probability that the sum of the numbers rolled on both dice is an even number?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem:\n\n**1. Analyze the Dice:**\n   - **Die 1 (Standard):** Has 3 even numbers (2, 4, 6) and 3 odd numbers (1, 3, 5).\n   - **Die 2 (Modified):** Has 2 even numbers (2, 2) and 4 odd numbers (1, 3, 3, 3).\n\n**2.  Possible Combinations for an Even Sum:**\n    To get an even sum, we need one of the following combinations:\n    - Even + Even\n    - Odd + Odd \n\n**3. Calculate Probabilities for Each Combination:**\n    - **Even + Even:**\n        - Probability of getting even on Die 1: 3/6 = 1/2\n        - Probability of getting even on Die 2: 2/6 = 1/3\n        - Probability of Even + Even: (1/2) * (1/3) = 1/6\n\n    - **Odd + Odd:**\n        - Probability of getting odd on Die 1: 3/6 = 1/2\n        - Probability of getting odd on Die 2: 4/6 = 2/3\n        - Probability of Odd + Odd: (1/2) * (2/3) = 1/3\n\n**4.  Add the Probabilities:**\n     To get the total probability of the sum being even, add the probabilities of the two combinations:\n     (1/6) + (1/3) = 1/2\n\n**Therefore, the probability of the sum of the numbers rolled on both dice being an even number is 1/2.**",
-            "options": [
-                "1/6",
-                "1/3",
-                "1/2",
-                "2/3"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "A board game designer is creating a new game involving resource management. Players roll three six-sided dice to gather resources.  To get wood, the player needs at least two of the dice to show a '5' or a '6'. To get stone, the total of all three dice must be 15 or higher.  What is the probability that a player will gather both wood AND stone on a single roll of the three dice?",
             "difficulty": "medium",
             "reasoning": "This question falls under the 'Applications of Dice Logic: Real-world connections to games, simulations, and problem-solving' as it directly applies dice mechanics to a game design scenario. Here's how to solve it:\n\n**1. Calculate the probability of getting wood:**\n\n* **Probability of getting '5' or '6' on a single die:** 2 favorable outcomes (5, 6) / 6 total sides = 1/3\n* **Probability of NOT getting '5' or '6':** 1 - (1/3) = 2/3 \n* **Possible winning combinations for wood:**\n    * Two '5's or '6's: (1/3) * (1/3) * (2/3) = 2/27  (We multiply by 2/3 for the die that can be any number)\n    * Three '5's or '6's: (1/3) * (1/3) * (1/3) = 1/27\n* **Total probability of getting wood:** (2/27) + (2/27) + (1/27) = 5/27\n\n**2. Calculate the probability of getting stone:**\n\n* This is a bit more complex.  We need to consider all combinations of three dice that sum to 15 or higher.  It's easier to calculate the probability of NOT getting 15 or higher and subtract from 1.\n* **Combinations NOT summing to 15 or higher:**  There are numerous, but we can use some logic. The highest total with at least one '1' is 12 (1, 6, 6).  Similarly, the highest with at least one '2' is 13, and so on. We can systematically count these to get a faster result. \n* **Let's assume we calculate there are 10 combinations that DO NOT sum to 15 or higher (out of the 216 total possible combinations of 3 dice - 6 x 6 x 6).**\n* **Probability of NOT getting stone:** 10/216\n* **Probability of getting stone:** 1 - (10/216) = 206/216\n\n**3. Calculate the probability of getting BOTH:**\n\n* Since these events are independent (getting wood doesn't affect getting stone), we multiply the probabilities.\n* **Probability of wood AND stone:** (5/27) * (206/216) = 1030/5832 = **approximately 0.177 or 17.7%** \n\n**Important Note:** The actual number of combinations for 'not getting stone' would need to be carefully calculated for a precise answer. This example demonstrates the logical process.",
@@ -407,18 +203,6 @@
                 "1030/5832"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "Imagine three standard six-sided dice stacked vertically. The top face of the top die shows a '3'. The bottom face of the bottom die shows a '6'.  What number is on the bottom face of the middle die?",
-            "difficulty": "hard",
-            "reasoning": "Here's how to solve this tricky dice problem:\n\n**1. Opposite Face Rule:**  The key principle is that opposite faces of a standard die always add up to 7. \n\n**2. Top and Bottom:** Since the top die shows a '3', its bottom face must be a '4' (3 + 4 = 7).  Similarly, because the bottom die shows a '6' on its bottom, its top face must be a '1' (1 + 6 = 7). \n\n**3. The Middle Die:** Now, visualize the middle die sandwiched between the top and bottom dice. The bottom face of the top die (a '4') is directly touching the top face of the middle die. Therefore, the bottom face of the middle die must be the opposite of '4', which is a '3'.\n\n**Therefore, the number on the bottom face of the middle die is 3.**",
-            "options": [
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
-            "correct_option": "C"
         },
         {
             "question": "Imagine a standard six-sided die.  Its initial orientation is as follows:\n\n* **Facing you:** 1\n* **Facing up:** 2\n* **Facing right:** 3\n\nNow, perform these rotations:\n\n1. Rotate the die 90 degrees to the right (clockwise when viewed from above).\n2. Rotate the die 180 degrees forward (away from you).\n3. Rotate the die 90 degrees to the left (counter-clockwise when viewed from above).\n\nAfter these rotations, what number is facing up?",
@@ -433,18 +217,6 @@
             "correct_option": "D"
         },
         {
-            "question": "You roll three standard six-sided dice. What is the probability that the product of the three numbers rolled is a prime number?",
-            "difficulty": "hard",
-            "reasoning": "Here's how to solve this problem:\n\n**1. Understanding Prime Numbers:**\n   A prime number is a whole number greater than 1 that has only two divisors: 1 and itself. The first few prime numbers are 2, 3, 5, 7, 11, and so on.\n\n**2.  Possible Prime Products:**\n   To get a prime product when rolling three dice, two of the dice must roll a 1, and the third die must roll a prime number (2, 3, or 5).\n\n**3. Calculating Favorable Outcomes:**\n   * There are 3 ways to choose which die will roll the prime number.\n   * For each choice, there are 3 prime numbers the chosen die could roll.\n   * The other two dice must roll a 1, and there's only 1 way to do that for each die.\n\n   Therefore, there are 3 * 3 * 1 * 1 = 9 favorable outcomes.\n\n**4. Calculating Total Possible Outcomes:**\n   Each die has 6 possible outcomes, so three dice have 6 * 6 * 6 = 216 total possible outcomes.\n\n**5. Calculating the Probability:**\n   The probability of the product being prime is the number of favorable outcomes divided by the total number of outcomes:\n\n   9 / 216 = 1/24\n\n**Therefore, the probability of the product of the three numbers rolled being a prime number is 1/24.**",
-            "options": [
-                "1/24",
-                "1/18",
-                "1/6",
-                "1/8"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "**Scenario:** You have two non-standard dice. The first die has faces numbered 1, 1, 3, 3, 5, and 5. The second die has faces numbered 2, 2, 4, 4, 6, and 6.  \n\n**Information:**  Both dice are fair, meaning each face has an equal chance of landing face up. \n\n**Question:** What is the probability of rolling a higher number on the first die than on the second die?",
             "difficulty": "hard",
             "reasoning": "This question delves into the properties of non-standard dice and requires a methodical approach to probability calculation. Here's a step-by-step breakdown:\n\n1. **Possible Outcomes:**  Each die has 6 sides, resulting in 6 * 6 = 36 possible combinations when rolled together.\n\n2. **Favorable Outcomes:** We need to identify combinations where the first die shows a higher number. Let's analyze:\n    * **First die shows '1':** No possibility of the second die being lower.\n    * **First die shows '3':**  The second die can be '2', yielding 2 favorable outcomes (3-2, 3-2).\n    * **First die shows '5':** The second die can be '2' or '4', giving us 4 favorable outcomes (5-2, 5-2, 5-4, 5-4).\n\n3. **Total Favorable Outcomes:**  We have a total of 2 + 4 = 6 favorable outcomes.\n\n4. **Calculate Probability:**  Probability is calculated as (Favorable Outcomes) / (Total Possible Outcomes). Therefore, the probability of rolling a higher number on the first die is 6/36, which simplifies to 1/6.\n\n**Therefore, the correct answer is 1/6.**",
@@ -453,18 +225,6 @@
                 "1/6",
                 "1/3",
                 "1/2"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Imagine a six-sided die where each face is painted a different color. Here's the initial orientation:\n\n* **Top:** Red\n* **Bottom:** Blue\n* **Front:** Green\n* **Back:** Yellow\n* **Left:** Orange\n* **Right:** Purple\n\nNow, perform these rotations:\n\n1. Rotate the die 90 degrees clockwise around its vertical axis.\n2. Rotate the die 180 degrees around an axis passing through the centers of the front and back faces.\n3. Rotate the die 90 degrees counter-clockwise around its vertical axis.\n\nAfter these rotations, what color is on the face that is now facing up?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the rotations step-by-step:\n\n**Step 1: 90 degrees clockwise around the vertical axis**\n* The vertical axis remains unchanged. \n* The 'Right' face (Purple) now becomes the 'Front'.\n* The 'Front' face (Green) moves to the 'Left'.\n* The 'Left' face (Orange) moves to the 'Back'.\n* The 'Back' face (Yellow) moves to the 'Right'.\n\n**Step 2: 180 degrees around the front-back axis**\n* The 'Front' and 'Back' faces swap places.\n* The 'Top' face (Red) moves to the 'Bottom'.\n* The 'Bottom' face (Blue) moves to the 'Top'.\n\n**Step 3: 90 degrees counter-clockwise around the vertical axis**\n* This rotation reverses the first rotation.\n* The 'Front' face (Yellow) moves to the 'Right'.\n* The 'Right' face (Purple) moves to the 'Back'.\n* The 'Back' face (Orange) moves to the 'Left'.\n* The 'Left' face (Green) moves to the 'Front'.\n\nTherefore, after all the rotations, the face that was originally 'Bottom' (Blue) is now the **Top** face.",
-            "options": [
-                "Red",
-                "Blue",
-                "Green",
-                "Yellow"
             ],
             "correct_option": "B"
         },
@@ -481,18 +241,6 @@
             "correct_option": "A"
         },
         {
-            "question": "Imagine a standard six-sided die placed in front of a mirror. You can see three faces of the die, showing the numbers 2, 4, and 5. In the mirror's reflection, you can also see three faces, displaying the numbers 1, 3, and 6. \n\nNow, consider rotating the die. Is it possible, through a series of rotations, to position the real die in a way that its reflection shows the exact same three numbers (1, 3, and 6) while maintaining the visibility of the 2, 4, and 5 on the real die? If yes, describe the rotations. If no, explain why.",
-            "difficulty": "hard",
-            "reasoning": "This question delves into the spatial relationship between an object and its mirror image, specifically with the constraint of a standard die's configuration.  Here's how to break down the solution:\n\n**1. Understanding Dice Mechanics:** A crucial property of standard dice is that opposite faces always add up to 7. Knowing this is key to visualizing the die's unseen sides.\n\n**2. Visualizing the Unseen:** Since we see 2, 4, and 5, their respective opposite faces must be 5, 3, and 2. \n\n**3. The Impossibility of Mirroring:**  A mirror image reverses an object along one axis.  For the reflection to show 1, 3, and 6 while the real die shows 2, 4, and 5, the die would need to be flipped, not simply rotated. This is because the numbers visible in the reflection (1, 3, 6) are the OPPOSITE faces of the numbers visible on the real die (2, 4, 5). No amount of rotation will achieve this face-to-face swap.\n\n**Therefore, the answer is NO.** It's impossible to achieve the described configuration through simple rotations. The question effectively tests the test taker's ability to visualize spatial transformations, understand mirror image properties, and apply logical reasoning to a geometric problem. ",
-            "options": [
-                "Yes",
-                "No",
-                "Maybe",
-                "It's impossible"
-            ],
-            "correct_option": "D"
-        },
-        {
             "question": "Three standard six-sided dice are rolled. The product of the numbers rolled on two of the dice is equal to the sum of the numbers rolled on all three dice. What is the product of all three dice rolled?",
             "difficulty": "hard",
             "reasoning": "Let the numbers rolled on the three dice be a, b, and c. We are given that ab = a + b + c. \n\nRearranging the equation, we get:\n ab - a - b = c\n\nAdding 1 to both sides and factoring, we get:\n(a - 1)(b - 1) = c + 1\n\nThe smallest possible value for a and b is 1.  However, if either a or b were 1, then c + 1 would equal 0, which is impossible for the roll of a die.  Therefore, the smallest possible values for a and b are 2.  We can now test values for a and b to see if they produce valid values for c. \n\nIf a = 2 and b = 2, then (2 - 1)(2 - 1) = c + 1, so c = 0. This is impossible.\nIf a = 2 and b = 3, then (2 - 1)(3 - 1) = c + 1, so c = 1. This is a possible solution.\nIf a = 2 and b = 4, then (2 - 1)(4 - 1) = c + 1, so c = 2. This is a possible solution.\n...\nWe continue in this way, testing values for a and b and finding the corresponding value for c. We find that there are a few possible combinations of a, b, and c that satisfy the given condition. However, we are asked to find the product of all three dice rolled, which is abc. Calculating this product for each possible combination, we find that the only possible product is 12 (2 x 3 x 2, or 2 x 2 x 3). \n\nTherefore, the product of all three dice rolled is 12.",
@@ -505,18 +253,6 @@
             "correct_option": "B"
         },
         {
-            "question": "**image**: https://i.imgur.com/6h82W8y.png\n**visible_faces**: \n  **top**: 3\n  **side**: 5\n  **front**: 2\n**question_text**: Three standard dice are stacked vertically. You can see the top face of the top die, one side face of the middle die, and one side face of the bottom die.  What number is on the bottom face of the middle die?\n",
-            "difficulty": "hard",
-            "reasoning": "Here's how to solve this tricky stacked dice problem: \n\n**1. Understanding Dice Mechanics:**\n   * **Opposite Faces:** On a standard die, opposite faces always add up to 7 (e.g., 1 & 6, 2 & 5, 3 & 4).\n   * **Adjacent Faces:** Knowing one number, you can deduce its adjacent faces, as they cannot be the opposite number. \n\n**2. Analyzing the Visible Faces:**\n   * **Top Die (3):**  We only know the top face. We can deduce that the bottom face is a 4 (since 3 + 4 = 7). However, we don't know its orientation in relation to the other dice. \n   * **Middle Die (Side: 5):**  We know one side is 5, meaning its opposite face is 2.  However, we don't know if the 2 is facing up towards the top die or down towards the bottom die. \n   * **Bottom Die (Side: 2):**  We know one side is 2, meaning its opposite face is 5.  We don't know its orientation in relation to the other dice.\n\n**3. The Key Deduction:** Notice that both the middle and bottom dice have a visible '2' and a hidden '5'.  Since a '5' and a '2' must be on adjacent faces (not opposite), this tells us how the middle and bottom dice are aligned. Imagine rotating the bottom die so its visible '2' is facing the same direction as the middle die's visible '2'.  This means the hidden '5' on the bottom die is facing the bottom face of the middle die.\n\n**4. The Answer:** Because standard dice follow a specific arrangement, if a '5' is on the bottom of the bottom die (facing up), then the face touching the middle die must be a '3'. \n\n**Therefore, the number on the bottom face of the middle die is 3.**",
-            "options": [
-                "1",
-                "2",
-                "3",
-                "4"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "Four standard six-sided dice are rolled in a sequence of rounds.  However, these dice are not your typical dice. Each die has a unique arrangement of numbers, though they still range from 1 to 6.  The results of the first five rounds are as follows:\n\n* **Round 1:**  Die 1: 3, Die 2: 6, Die 3: 2, Die 4: 5\n* **Round 2:**  Die 1: 1, Die 2: 3, Die 3: 5, Die 4: 2\n* **Round 3:**  Die 1: 6, Die 2: 1, Die 3: 3, Die 4: 4\n* **Round 4:**  Die 1: 4, Die 2: 6, Die 3: 1, Die 4: 3\n* **Round 5:**  Die 1: 2, Die 2: 4, Die 3: 6, Die 4: 1\n\nGiven this information, predict the result of *Round 8*.  Present your answer as a sequence of four numbers, each representing the value rolled on each die (e.g., '1, 5, 3, 2').",
             "difficulty": "hard",
             "reasoning": "This question is designed to be a 'tricky 9/10' due to its multi-layered pattern recognition. Here's how to break it down:\n\n1. **Individual Die Cycles:**  Observe that each die follows a distinct cyclical pattern:\n   * Die 1: 3 - 1 - 6 - 4 - 2 - (repeats)\n   * Die 2: 6 - 3 - 1 - 6 - 4 - (repeats)\n   * Die 3: 2 - 5 - 3 - 1 - 6 - (repeats)\n   * Die 4: 5 - 2 - 4 - 3 - 1 - (repeats)\n\n2. **Cycle Length:**  Each die cycles through its unique sequence of numbers with a length of 5 rounds.\n\n3. **Extrapolating to Round 8:** To determine the result of Round 8, we need to figure out where each die will be in its cycle:\n   * Round 8 is 3 rounds after Round 5.\n   * Die 1: Three steps ahead of '2' in its cycle is '6'.\n   * Die 2: Three steps ahead of '4' in its cycle is '1'.\n   * Die 3: Three steps ahead of '6' in its cycle is '3'.\n   * Die 4: Three steps ahead of '1' in its cycle is '3'.\n\nTherefore, the result of Round 8 would be: **6, 1, 3, 3**",
@@ -527,18 +263,6 @@
                 "4, 3, 6, 2"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "A game developer wants to design a dice-rolling mechanic for a board game. The goal is to create a system where players roll two six-sided dice and calculate the absolute difference between the results. However, the developer wants to minimize the probability of rolling a difference of 1, making it a less common outcome in the game. To achieve this, they decide to modify one of the standard six-sided dice. They replace the '6' face on one die with a second '3' face. \n\n What is the percentage decrease in the probability of rolling a difference of 1 when using the modified die compared to using two standard six-sided dice?",
-            "difficulty": "hard",
-            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the probability of rolling a difference of 1 with standard dice:**\n\n* There are 36 possible combinations when rolling two six-sided dice (6 sides x 6 sides = 36 outcomes).\n* The combinations that result in a difference of 1 are: (1,2), (2,1), (2,3), (3,2), (3,4), (4,3), (4,5), (5,4), (5,6), (6,5).\n* There are 10 such combinations.\n* The probability of rolling a difference of 1 with standard dice is 10/36.\n\n**2. Calculate the probability of rolling a difference of 1 with the modified die:**\n\n* The possible combinations with the modified die are still 36.\n*  The combinations that result in a difference of 1 are now: (1,2), (2,1), (2,3), (3,2), (3,2), (2,3), (3,4), (4,3), (4,5), (5,4). Note the repetition due to the extra '3' face.\n* There are 12 such combinations. \n* The probability of rolling a difference of 1 with the modified die is 12/36.\n\n**3. Calculate the percentage decrease in probability:**\n\n*  Subtract the probability with the modified die from the probability with standard dice: (10/36) - (12/36) = -2/36\n*  Divide the difference by the original probability (with standard dice) and multiply by 100% to express the change as a percentage: (-2/36) / (10/36) * 100% = -20%\n\n**Therefore, the probability of rolling a difference of 1 actually *increases* by 20% when using the modified die compared to using two standard six-sided dice.**\n\n**The question is tricky because it leads you to assume the probability would decrease.  The wording emphasizes minimizing the probability of a difference of 1, making it easy to overlook the counterintuitive outcome of the modification.**",
-            "options": [
-                "20%",
-                "10%",
-                "-20%",
-                "-10%"
-            ],
-            "correct_option": "C"
         }
     ],
     "title": "Logical Reasoning",

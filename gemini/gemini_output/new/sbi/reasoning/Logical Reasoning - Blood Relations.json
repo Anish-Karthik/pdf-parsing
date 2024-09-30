@@ -1,88 +1,256 @@
 {
     "questions": [
         {
-            "question": "John is looking at a picture of a family gathering. He points to a woman and says, \"This woman's mother's husband is my father's brother.\"  Later, John mentions that he has only one uncle. Who is the woman in the picture to John?",
+            "question": "D is the brother of E. E is the daughter of F. F is the husband of G. What is the relationship of G to D?",
             "difficulty": "medium",
-            "reasoning": "Here's how to solve the relationship: \n\n* **John's father's brother** means John's uncle.\n* Since John has only one uncle, the woman's mother's husband **must be** that same uncle.\n* This means the woman's mother is married to John's uncle.\n* Therefore, the woman is John's **cousin**.",
+            "reasoning": "Here's how to break down the relationships:\n\n* **D is the brother of E:** This means D and E are siblings.\n* **E is the daughter of F:** This establishes a parent-child relationship.\n* **F is the husband of G:** This means F and G are married.\n\nNow, since E is F's daughter, and F and G are married, G is E's mother.  Since D and E are siblings, G is also D's mother. \n",
             "options": [
-                "Aunt",
                 "Sister",
+                "Mother",
+                "Aunt",
+                "Grandmother"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A is the uncle of B, who is the daughter of C. D is the brother-in-law of C and the father of E. What is the relationship between E and B?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **A is the uncle of B:** This means A is either the brother of B's father or the brother of B's mother.\n2. **B is the daughter of C:** This establishes C as B's parent.\n3. **D is the brother-in-law of C:** This means D is married to C's sibling. Since B is C's daughter, D is either married to B's aunt or B's uncle.\n4. **D is the father of E:** This establishes E as D's child.\n\nPutting it all together:\n* C is B's parent.\n* D is married to C's sibling, making D's children B's cousins.\n* E is D's child, therefore E is B's **cousin**.\n",
+            "options": [
+                "Brother",
+                "Uncle",
                 "Cousin",
-                "Mother"
+                "Nephew"
             ],
             "correct_option": "C"
         },
         {
-            "question": "**scenario**: Imagine a family gathering. Sarah is introducing her husband, Mark, to her family. She points out her brother-in-law, Thomas, and mentions that Thomas is married to her sister, Jessica.\n**question**: What is the relationship between Mark and Thomas?\n",
+            "question": "A family is gathered in a park for a picnic.  The grandmother is seated facing East. Her son is sitting to her South, while her daughter is sitting to her North. The daughter's son is playing to the West of his mother, and the son's daughter is playing directly South of her father.  \n\nWho is sitting to the South-East of the grandmother?",
             "difficulty": "medium",
-            "reasoning": "Here's how to break down the relationships:\n\n1. **Sarah and Jessica are sisters.** This is stated directly.\n2. **Thomas is married to Jessica.** This means Thomas is Sarah's brother-in-law.\n3. **Mark is married to Sarah.** Since Thomas is Sarah's brother-in-law, he is also Mark's brother-in-law. \n\n**Therefore, Mark and Thomas are brothers-in-law.**",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Visualize:** Imagine the grandmother at the center of a compass. \n2. **Place the family:** Her son is South, daughter is North. \n3. **Next generation:** Daughter's son is West of the daughter, so he's North-West of the grandmother. \n4. **Final placement:**  The son's daughter is South of her father (who is NW of the grandmother), placing her roughly West of the grandmother. \n5. **Find South-East:** Since no one is directly South-East of the grandmother, the answer is **'No one'** as no family member occupies that position.  ",
             "options": [
-                "Brothers",
-                "Brothers-in-law",
-                "Uncles",
-                "Cousins"
+                "Daughter",
+                "Grandson",
+                "Granddaughter",
+                "No one"
             ],
-            "correct_option": "B"
+            "correct_option": "D"
         },
         {
-            "question": "Aarav is married to Bina. They have a daughter, Chitra. Bina's brother, Deepak, is married to Ela, and they have a son, Faiz. What is the relationship between Chitra and Faiz?",
+            "question": "A is the grandfather of B, who is the niece of C. D is the father of C and the only son of E. If F is the mother-in-law of E, what is the relationship between F and A?",
             "difficulty": "medium",
-            "reasoning": "Here's how to break down the relationships:\n\n* **Aarav and Bina are married.** This makes them Chitra's parents.\n* **Deepak is Bina's brother.**  This makes Deepak Chitra's uncle.\n* **Deepak is married to Ela**, making Ela Chitra's aunt.\n* **Deepak and Ela have a son named Faiz.** This makes Faiz Chitra's cousin. \n\n**Therefore, Chitra and Faiz are cousins.**",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n* **A is the grandfather of B:** This means B is either A's son's child or daughter's child.\n* **B is the niece of C:**  This tells us that B and C are cousins, meaning they share a grandparent (A).\n* **D is the father of C and the only son of E:** This confirms that C is A's grandchild through their son, E. \n* **F is the mother-in-law of E:**  This means F is the mother of E's spouse. \n\n**Since E is A's son, and F is the mother of E's spouse, F is A's spouse's mother.**\n\n**Therefore, F is the mother-in-law of A.**\n",
+            "options": [
+                "Mother",
+                "Sister-in-law",
+                "Mother-in-law",
+                "Aunt"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**statement**: A is B's uncle. C is B's aunt. D is C's father. E is D's mother.\n**question**: What is the relationship between A and E?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the solution:\n\n1. **Understanding 'Uncle' and 'Aunt':**\n   - An uncle is the brother of one's parent.\n   - An aunt is the sister of one's parent.\n\n2. **Connecting the Pieces:**\n   - A is B's uncle, so A is a sibling of B's parent.\n   - C is B's aunt, so C is also a sibling of B's parent.\n   - This means A and C are siblings.\n\n3. **Tracing the Lineage:**\n   - D is C's father, and E is D's mother.\n   - This makes E the mother of C, and therefore, the mother of A as well (since A and C are siblings).\n\n**Conclusion:** A is the child of E, making E A's **mother**.",
+            "options": [
+                "Sister",
+                "Brother",
+                "Mother",
+                "Father"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Maya has two children, Arjun and Riya. Arjun is married to Leena, and they have a daughter named Anya. Riya is married to Vikram. Vikram has a brother, Raj, who is single.  What is the **maximum** number of people that could be in this family, considering the information given and assuming no one is deceased?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to determine the maximum number of people in the family:\n\n* **Core Family:** Maya, Arjun, Riya, Leena, Anya make up 5 people. \n* **Vikram's Connection:** Vikram is married to Riya, adding 1 more person, totaling 6. \n* **Raj's Connection:** The question states Raj is Vikram's brother, not Vikram and Riya's brother. This means Raj is not directly related to Riya and therefore not required to be part of their family unit. \n* **Maximum Possibility:**  The question asks for the MAXIMUM number of people.  Therefore, we can assume Raj *could* be living with Vikram and Riya, adding 1 more person. \n\n**Therefore, the maximum number of people in the family is 7.**",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: Below is a family tree diagram for the Sharma family:\n**diagram**: https://i.imgur.com/0lNqZzn.png\n**relationship_clues**: \n  - A circle represents a female.\n  - A square represents a male.\n  - A single line connecting shapes represents marriage.\n  - A double line connecting shapes represents siblings.\n  - Lines descending from a shape represent parent-child relationships.\n**question**: What is the relationship between Priya and Amit?\n",
+            "difficulty": "medium",
+            "reasoning": "1. **Identify Priya and Amit:** Locate Priya and Amit on the family tree diagram. \n2. **Trace the lineage:** Follow the lines connecting Priya and Amit. We see Priya is the daughter of the woman who is a sibling of Amit's father.\n3. **Determine the relationship:**  This means Priya's father and Amit's father are siblings. Therefore, Priya and Amit are **cousins**.",
             "options": [
                 "Siblings",
                 "Cousins",
-                "Aunt and Nephew",
-                "Unrelated"
+                "Aunt-Nephew",
+                "Uncle-Niece"
             ],
             "correct_option": "B"
         },
         {
-            "question": "G is the father of H.  H is the only son of I.  J is the daughter of I. What is the relationship of J to G?",
+            "question": "**scenario**: John is the son of Robert. Emily is the sister of John. Daniel is the father of Michael. Michael is the only brother of Emily.\n**question**: What is the relationship between Robert and Daniel?\n",
             "difficulty": "medium",
-            "reasoning": "Here's how to solve the relationship: \n\n* **G is the father of H:** This means H is either the son or daughter of G.\n* **H is the only son of I:** This confirms H is male and I has only one son.\n* **J is the daughter of I:**  This tells us I also has a daughter.\n* **Since G is the father of I's only son (H), and J is I's daughter, J is the daughter of G.**\n\n**Therefore, J is the daughter of G.**",
+            "reasoning": "Here's how to solve the relationship:\n\n1. **John is the son of Robert:** This establishes a father-son relationship between Robert and John.\n\n2. **Emily is the sister of John:** This means John and Emily are siblings, sharing the same parents.\n\n3. **Daniel is the father of Michael:** This establishes a father-son relationship between Daniel and Michael.\n\n4. **Michael is the only brother of Emily:**  This is a crucial piece of information. Since Emily is John's sister, and Michael is her *only* brother, it means Michael and John are the same person.\n\n5. **Connecting the dots:** We know Robert is John's father and Daniel is Michael's father. Since Michael and John are the same person, Robert and Daniel must be the same person as well. \n\nTherefore, Robert and Daniel are the same individual.",
+            "options": [
+                "Father-Son",
+                "Brothers",
+                "Uncle-Nephew",
+                "The same person"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "John and Mary are a married couple. John's sister, Susan, has a daughter named Amelia. Amelia is married to David, and they have a son named Ethan. Mary's brother, Thomas, has a daughter named Chloe, who is adopted.  What is the relationship between Ethan and Chloe?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the relationships to determine how Ethan and Chloe are related:\n\n* **Identifying the common link:** The key is to find how Ethan and Chloe are connected through their parents. We see that Ethan is related to John through his mother (Amelia) and aunt (Susan).  Chloe is related to Mary through her father (Thomas). Since John and Mary are married, this becomes our common link.\n\n* **Tracing the lineage:**\n    * Ethan is John's grandnephew (sister's granddaughter's son). \n    * Chloe is Mary's niece (brother's daughter). \n\n* **Determining the final relationship:** Because John and Mary are married, their extended family becomes connected. This makes Ethan and Chloe related by marriage, specifically, **Ethan is Chloe's grandnephew-in-law (or Chloe is Ethan's grandaunt-in-law).**  Even though Chloe is adopted, her legal relationship with Thomas places her within this family structure.\n\n**Important Note:**  Blood relation questions often hinge on understanding legal and social family constructs. Adoption, in this case, means Chloe is fully considered Thomas's daughter for relationship purposes.",
+            "options": [
+                "Grandfather",
+                "Grandnephew-in-law",
+                "Cousin",
+                "Uncle"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "In a close-knit community, there reside four friends: Emily, a talented painter; Noah, a skilled carpenter; Sophia, a dedicated teacher; and Oliver, a passionate writer.  Emily's brother is married to Noah's sister, and Sophia is Oliver's only niece. How is Oliver related to Emily?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **Emily's brother and Noah's sister are married:** This means Emily's brother is Noah's brother-in-law, and Noah's sister is Emily's sister-in-law.\n\n2. **Sophia is Oliver's only niece:** A niece is the daughter of one's sibling. This means Sophia's father or mother must be Oliver's sibling.\n\n3. **Connecting the information:**  Since Emily and Noah are connected through their siblings' marriage, and Sophia is Oliver's niece, the connection must be through either Emily or Noah.\n\n4. **Oliver cannot be Noah's brother:** If Oliver were Noah's brother, Sophia would be Noah's niece, not his only niece, as he would also have Emily's brother's children as nieces or nephews.\n\n5. **Oliver must be Emily's brother:** This leaves only one possibility \u2013 Oliver must be Emily's brother for Sophia to be his only niece. \n\nTherefore, Oliver is Emily's **brother**.",
+            "options": [
+                "Brother-in-law",
+                "Uncle",
+                "Cousin",
+                "Brother"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**statement**: Michael is married to the only daughter of John, who is the father-in-law of Sophia's husband. Robert is Sophia's son.\n**question**: How is Michael related to Robert?\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **John is the father-in-law of Sophia's husband:** This means Sophia's husband is married to John's daughter.\n2. **Michael is married to the only daughter of John:** This tells us Michael is married to the same woman as Sophia's husband. \n3. **Therefore, Michael is Sophia's husband.**\n4. **Robert is Sophia's son:** Since Michael is Sophia's husband, Michael is Robert's father.\n\n**Therefore, Michael is Robert's father.**",
+            "options": [
+                "Brother",
+                "Father",
+                "Uncle",
+                "Son"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: The Patel family tree is shown below.  The diagram shows the relationships between family members across two generations.\n**diagram**: https://i.imgur.com/0C2N25i.png\n**question**: What is the relationship between Priya and Samir?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to determine the relationship between Priya and Samir:\n\n1. **Identify Priya and Samir on the diagram.**  Priya is on the bottom row, and Samir is on the top row.\n2. **Determine the connection.** Priya's father is Mahesh.  Mahesh's brother is Samir.\n3. **State the relationship.**  Since Mahesh and Samir are brothers, Priya is Samir's **niece**.\n\nTherefore, the correct answer is **niece**.",
             "options": [
                 "Sister",
+                "Niece",
                 "Daughter",
-                "Mother",
                 "Aunt"
             ],
             "correct_option": "B"
         },
         {
-            "question": "Study the family tree diagram provided. If Alan is the son of Barry,  Barry is the brother of Charles, and Charles is the father of Diana, what is the relationship between Alan and Diana?",
+            "question": "**statement**: P is the son-in-law of Q. R is the brother of P's wife. S is the mother of R.\n**question**: How is Q related to S?\n",
             "difficulty": "medium",
-            "reasoning": "Here's how to break down the solution:\n\n* **Step 1: Establish the connection between Barry and Charles.**  We are told Barry is the brother of Charles.\n* **Step 2:  Establish the connection between Charles and Diana.** We are told Charles is the father of Diana.\n* **Step 3: Combine the information.** Since Barry is Charles' brother, and Charles is Diana's father, this makes Barry Diana's uncle.\n* **Step 4:  Establish Alan's relationship.** Alan is Barry's son, and we've determined Barry is Diana's uncle. Therefore, Alan is Diana's cousin. \n\n**Final Answer:** Alan is Diana's cousin.",
+            "reasoning": "Here's the step-by-step solution:\n\n1. **P is the son-in-law of Q:** This means P is married to Q's daughter.\n2. **R is the brother of P's wife:** This makes R also the child of Q.\n3. **S is the mother of R:** Since R is the child of Q, S must be Q's wife.\n\nTherefore, Q is the **husband** of S.",
             "options": [
-                "Brother",
-                "Uncle",
-                "Cousin",
-                "Son"
+                "Father",
+                "Father-in-law",
+                "Husband",
+                "Brother-in-law"
             ],
             "correct_option": "C"
         },
         {
-            "question": "A is the uncle of B, who is the brother of C. D is the sister of C and the daughter of E. What is the relationship between A and E?",
+            "question": "**statement**: E is the father of F. G is the spouse of E. H is the sibling of F.\n**question**: How is H related to G?\n",
             "difficulty": "medium",
-            "reasoning": "Here's how to solve the relationship: \n\n1. **Identify the key connection:** We need to determine the relationship between A and E. They are not directly linked in the information given.\n\n2. **Use the indirect links:**\n    * A is the uncle of B, which means A is the brother of B's parent. \n    * B is the brother of C, so they share the same parents.\n    * D is the sister of C, meaning D also shares the same parents as B and C.\n    * D is the daughter of E, making E the parent of B, C, and D.\n\n3. **Establish the final relationship:** Since A is the brother of B's parent and E is the parent of B, A and E are **siblings**.\n",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **E is the father of F:** This means F is either the son or daughter of E.\n2. **G is the spouse of E:** This means G is married to E.  Therefore, G is either the mother or father of F.\n3. **H is the sibling of F:** This means H and F share the same parents, E and G.\n\nSince G is a parent of F, and H and F are siblings, **H is the child of G.** ",
             "options": [
-                "Father",
-                "Brother",
+                "Parent",
+                "Sibling",
+                "Child",
+                "Spouse"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A woman introduces a man as, \"His wife's father is the only son of my father\". How is the woman related to the man?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n* **\"Only son of my father\"** - This means the woman is referring to herself or her brother. \n* **\"His wife's father...\"** - This means the man is married and the blank needs to be filled with a relation of the father-in-law to the woman.\n* **\"...is the only son of my father\"** -  Since the father-in-law is either the woman herself or her brother, and the father-in-law is male, he must be her brother.\n\n**Therefore, the woman is the sister of the man's wife, making her the man's **sister-in-law**.**",
+            "options": [
+                "Sister-in-law",
                 "Aunt",
+                "Mother",
+                "Cousin"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**statement**: A is the father of B, who is the brother of C. D is the mother of E, who is the sister of C.\n**question**: What is the relationship between A and D?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the relationships to find the answer:\n\n* **A is the father of B:** This establishes a parent-child relationship.\n* **B is the brother of C:**  B and C are siblings.\n* **D is the mother of E:** This establishes another parent-child relationship.\n* **E is the sister of C:** E and C are siblings.\n\n**Deduction:**\nSince B and C are siblings, and E is also a sibling of C, it implies that B, C, and E are all siblings. As A is the father of B and D is the mother of E, A and D are the **parents** of these siblings.\n\n**Therefore, A is the husband of D (and vice versa).**",
+            "options": [
+                "Siblings",
+                "Parents",
+                "Husband and Wife",
+                "Unrelated"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "John is Emily's paternal grandfather.  Olivia is Emily's mother. Sophia is Olivia's sister. What is Sophia's relationship to John?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the relationships to solve the problem:\n\n* **John is Emily's paternal grandfather:** This means John is the father of Emily's father.\n* **Olivia is Emily's mother:** This tells us the relationship on the other side of Emily's family tree. \n* **Sophia is Olivia's sister:**  This means Sophia and Olivia share the same parents.\n\n**Putting it together:**\nSince John is Olivia's father (because he's the father of Olivia's husband), and Sophia is Olivia's sister, Sophia is John's **daughter**. ",
+            "options": [
+                "Niece",
+                "Daughter",
+                "Sister-in-law",
                 "Cousin"
             ],
             "correct_option": "B"
         },
         {
-            "question": "**statement**: J is the brother of K. L is the mother of K. M is the father of J. N is the sister of M. Assume that no one is married more than once.\n**question**: What is the relationship between N and L?\n",
+            "question": "A is the father of B. C is the brother of A. D is the mother of C. E is the son of D. What is the relationship between E and B?",
             "difficulty": "medium",
-            "reasoning": "Here's how to solve the relationship:\n\n* **J is the brother of K:** This means J and K are siblings.\n* **L is the mother of K:**  This confirms L is also the mother of J (as they are siblings).\n* **M is the father of J:** This confirms M is the father of both J and K.\n* **N is the sister of M:** This means N and M are siblings.\n* **Assumption:** No one is married more than once. This tells us that L and M are the biological parents of J and K, and there are no step-parents involved.\n\n**Therefore, N is the sister of L's husband (M). This makes N the sister-in-law of L.**",
+            "reasoning": "Here's how to break down the relationships step-by-step:\n\n1. **A is the father of B:** This establishes a parent-child relationship.\n2. **C is the brother of A:** C and A are siblings.\n3. **D is the mother of C:**  D is also the mother of A since A and C are siblings.\n4. **E is the son of D:** E is the child of D. \n\n**Therefore:**\n* Since D is the mother of both A and C, and E is the son of D, this makes E the brother of both A and C.\n* Because A is the father of B, and E is A's brother, E is the **uncle** of B. ",
             "options": [
-                "Sister",
-                "Sister-in-law",
-                "Aunt",
-                "Mother"
+                "Uncle",
+                "Father",
+                "Brother",
+                "Cousin"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**relationship_statement**: G is the grandfather of H, who is the brother of I. I is the mother of J, who is the sister of K.\n**question**: How is G related to K?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the relationships to determine how G is related to K:\n\n* **G is the grandfather of H:** This means H is either G's son's son or G's daughter's son.\n* **H is the brother of I:** This tells us H and I are siblings, sharing the same parents. \n* **I is the mother of J:**  I is female, and J is her child.\n* **J is the sister of K:** J and K are siblings, sharing the same mother (I).\n\n**Tracing the lineage back to G:**\nSince H and I are siblings, and H's grandfather is G, then I's grandfather is also G. Since I is K's mother, this makes G the **great-grandfather** of K. ",
+            "options": [
+                "Grandfather",
+                "Great-grandfather",
+                "Uncle",
+                "Father"
             ],
             "correct_option": "B"
+        },
+        {
+            "question": "A woman introduces a man saying, \"His father is the only son of my grandfather who had only two children, a son and a daughter.\" How is the woman related to the man?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n* **\"My grandfather had only two children, a son and a daughter\":** This tells us the woman's parent has one brother.\n* **\"His father is the only son of my grandfather\":** This means the man's father is the woman's uncle (her parent's brother).\n* **Conclusion:** Since the man's father is the woman's uncle, the woman is the man's **cousin**. ",
+            "options": [
+                "Sister",
+                "Aunt",
+                "Cousin",
+                "Mother"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "X is the father of Y. Z is the brother of Y. W is the spouse of X. What is the relationship between W and Z?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the relationship:\n\n* **X is the father of Y:** This means Y is either the son or daughter of X.\n* **Z is the brother of Y:**  This means Z and Y share the same parents.\n* **W is the spouse of X:** This means W is married to X, making W either the mother or father of Y (and therefore Z).\n\n**Therefore, W is either the mother or father of Z.  To represent both possibilities, the most accurate relationship is 'Parent'.**",
+            "options": [
+                "Sibling",
+                "Aunt/Uncle",
+                "Parent",
+                "Grandparent"
+            ],
+            "correct_option": "C"
         },
         {
             "question": "John is married to Susan. They have two children, Michael and Emily. Susan's brother, Robert, is married to Mary. They have a daughter named Olivia. Michael marries Olivia.  What is the relationship between John and Mary?",
@@ -97,90 +265,6 @@
             "correct_option": "D"
         },
         {
-            "question": "**scenario**: A family consists of a great-grandmother, her two daughters, and their spouses. Each daughter has two children: one daughter and one son. The great-grandmother's oldest grandson is named Ethan. One of the granddaughters, Fiona, is a skilled artist.  Fiona's brother, George, is a talented musician.\n**question**: What is the relationship between Ethan and George?\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how we can determine the relationship between Ethan and George:\n\n1. **Identifying key individuals:** We need to find the connection between Ethan (the great-grandmother's oldest grandson) and George (Fiona's brother, who is a talented musician).\n\n2. **Tracing the lineage:**\n    * We know that the great-grandmother has two daughters, and each daughter has one son. \n    * Ethan is the oldest grandson, meaning he is the son of the great-grandmother's oldest daughter.\n    * Fiona and George are siblings, and since George is a grandson, Fiona is also a granddaughter of the great-grandmother.\n    * Since there are only two daughters and two grandsons, and Ethan is the older of the grandsons, George must be the son of the great-grandmother's younger daughter.\n\n3. **Establishing the relationship:**  Ethan is the son of one daughter, and George is the son of the other daughter. This makes Ethan and George **cousins**.\n\nTherefore, the answer is that Ethan and George are cousins.",
-            "options": [
-                "Brothers",
-                "Uncles",
-                "Cousins",
-                "Grandfather and Grandson"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "**Question Type**: Who is...? \n**Statement**: Suresh is the father of Ramesh. Uma is the mother of Priyanka, who is married to Ramesh.  Tarun is the brother of Suresh and the father of Anjali.\n**Difficulty**: Medium 5/10\n",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the family relations step-by-step:\n\n1. **Suresh is the father of Ramesh:** This establishes a direct father-son relationship.\n\n2. **Uma is the mother of Priyanka, who is married to Ramesh:** This tells us about three relationships:\n    - Uma is Priyanka's mother.\n    - Priyanka is married to Ramesh.\n\n3. **Tarun is the brother of Suresh and the father of Anjali:** This reveals:\n    - Tarun and Suresh are brothers.\n    - Tarun is Anjali's father.\n\n**Question:** Who is the husband of Priyanka?\n\n**Answer:** Ramesh\n\n**Explanation:** The question asks to identify Priyanka's husband, and we can see that \"Priyanka is married to Ramesh.\"",
-            "options": [
-                "Suresh",
-                "Tarun",
-                "Ramesh",
-                "Anjali"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "If 'P $ Q' means 'P is the mother of Q', 'P @ Q' means 'P is the brother of Q', and 'P # Q' means 'P is the daughter of Q', then which of the following expressions indicates 'R is the aunt of T'?",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the relationships and symbols:\n\n* **P $ Q:** P is the mother of Q\n* **P @ Q:** P is the brother of Q\n* **P # Q:** P is the daughter of Q\n\nWe need to find the expression for 'R is the aunt of T'.  An aunt is either the sister of one's father or the sister of one's mother. Let's consider both possibilities:\n\n**Possibility 1: R is the sister of T's father**\n\n1. **T's father:**  We don't have a direct symbol for 'father'. However, if we know someone is the mother of T's father, we can deduce that person is T's grandmother.  Let's assume 'X' is T's father, so we need an expression showing someone is the mother of X.  We can represent this as 'Y $ X' (Y is the mother of X). \n2. **R is the sister of X:** This can be represented as 'R @ X'.\n\nCombining both pieces, we get 'Y $ X @ R' which translates to 'Y is the mother of X, and X is the brother of R'. This establishes R as the aunt of T.\n\n**Possibility 2: R is the sister of T's mother**\n\n1. **T's Mother:** Let's say 'Z' is T's mother. This isn't directly given, but we know if someone is the daughter of T's mother, that person is T's sibling. We'll use this later. \n2. **R is the sister of Z:** This can be represented as 'R @ Z'.\n3. **T's Sibling:** Now, we need to link Z to T. We can use the 'daughter' symbol: 'T # Z' (T is the daughter of Z).\n\nCombining, we get 'T # Z @ R' which means 'T is the daughter of Z, and Z is the brother of R'.  However, this means R is T's uncle, not aunt. So, this possibility is incorrect.\n\n**Therefore, the correct expression indicating 'R is the aunt of T' is 'Y $ X @ R'.**",
-            "options": [
-                "Y $ X @ R",
-                "T # Z @ R",
-                "R $ T @ Y",
-                "R @ T $ X"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Three couples are sitting in a straight line facing north. Each couple has one child.  \n\n**Family Relationships:**\n- Arvind is sitting to the immediate right of his wife, Bina. \n- Charles is the father of Emily and is sitting third to the left of Bina. \n- Farhan is sitting second to the right of his brother, Charles. \n- Diya, the daughter of Bina, is sitting second to the left of her mother. \n- Gina, the only sister of Emily, is sitting to the immediate right of her father. \n- Harish is sitting second to the right of his son, Ishan. \n- Ishan is the son of Jaya. \n\n**Question:** Who is sitting between Harish and Charles?",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the seating arrangement step-by-step:\n\n1. **Start with couples:** We know Arvind and Bina are a couple, and Arvind is immediately to Bina's right. Let's represent them as (AB) for now.\n\n2. **Place Charles and family:** Charles is Emily's father and three spaces left of Bina. We also know Gina is Emily's sister and to Charles's immediate right. This gives us: (GCE)---(AB)\n\n3. **Position Farhan:** Farhan is two spaces right of Charles: (GCE)-F-(AB)\n\n4. **Place Diya:** Diya is Bina's daughter and two spaces to her left: D-(GCE)-F-(AB)\n\n5. **Identify Jaya and Ishan:** We know Harish sits two spaces right of his son, Ishan, and Ishan is Jaya's son. This means Harish and Jaya are a couple.  Since there's only one space left between Farhan and Arvind, and we need to fit (HJI) in, they must go in that order: D-(GCE)-FHJI(AB)\n\n6. **Final arrangement:**  We have successfully placed all individuals: D-(GCE)-FHJI(AB).  \n\n**Therefore, Farhan and his son Ishan are sitting between Harish and Charles.**",
-            "options": [
-                "Farhan",
-                "Ishan",
-                "Charles",
-                "Jaya"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**type**: assertion-reasoning\n**scenario**: John and Emily are siblings. John's son, David, considers Emily's daughter, Sophia, to be his cousin.\n**assertion**: David is correct; Sophia is his cousin.\n**reason**: Cousins are the children of siblings.\n",
-            "difficulty": 1,
-            "reasoning": "Here's a breakdown of the reasoning:\n\n**Step 1: Analyze the family structure.**\n- We know John and Emily are siblings. This means they share at least one parent.\n- David is John's son.\n- Sophia is Emily's daughter.\n\n**Step 2: Apply the definition of a cousin.**\n- Cousins are the children of siblings. This means that for David and Sophia to be cousins, their parents (John and Emily) must be siblings.\n\n**Step 3: Evaluate the assertion and reason.**\n- **Assertion:** \"David is correct; Sophia is his cousin.\" This statement is TRUE based on the family relationships described.\n- **Reason:** \"Cousins are the children of siblings.\" This statement is also TRUE and accurately explains why David and Sophia are cousins.\n\n**Therefore, the correct answer is (a) Both assertion and reason are true, and the reason is the correct explanation of the assertion.**",
-            "options": [
-                "(a) Both assertion and reason are true, and the reason is the correct explanation of the assertion.",
-                "(b) Both assertion and reason are true, but the reason is not the correct explanation of the assertion.",
-                "(c) The assertion is true, but the reason is false.",
-                "(d) The assertion is false, but the reason is true."
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "John's father is the only brother of Mary's mother. What is the relationship between John and Mary?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the relationship:\n\n1. **John's father and Mary's mother are siblings:**  John's father is the brother of Mary's mother.\n\n2. **Shared Grandparents:** This means John's father and Mary's mother share the same parents.\n\n3. **Cousins:**  Since they share grandparents but are not siblings themselves, John and Mary are cousins.\n\nTherefore, John is Mary's **cousin**.",
-            "options": [
-                "Sibling",
-                "Aunt/Uncle",
-                "Cousin",
-                "Grandparent"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "John's grandfather, William, had two sons: David and Edward. David is the father of Mary and Sarah. Edward married Susan and they had a daughter named Emily. What is the relationship between Sarah and Emily?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the relationships:\n\n* **Generation 1:** William (Grandfather)\n* **Generation 2:** David & Edward (Sons of William)\n* **Generation 3:** Mary & Sarah (Daughters of David), Emily (Daughter of Edward)\n\nSince David and Edward are brothers, their children (Mary, Sarah & Emily) are cousins. \n\n**Therefore, Sarah and Emily are cousins.**",
-            "options": [
-                "Sisters",
-                "Aunt and Niece",
-                "Cousins",
-                "Mother and Daughter"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**statement**: The family tree diagram depicts three generations. 'A' and 'B' are a married couple. They have two children, 'C' and 'D'. 'C' is married to 'E', and they have a son 'F'. 'D' is married to 'G', and they have two children, 'H' and 'I'.\n**question**: What is the relationship between 'F' and 'H'?\n",
             "difficulty": "medium",
             "reasoning": "Here's how to determine the relationship:\n\n1. **Identify the common ancestors:** 'F' and 'H' share the same grandparents, 'A' and 'B'.\n\n2. **Determine the lineage:**\n    * 'F' is the child of 'C', who is a child of 'A' and 'B'.\n    * 'H' is the child of 'D', who is also a child of 'A' and 'B'.\n\n3. **Establish the relationship:** Since 'C' and 'D' are siblings, their children ('F' and 'H') are **cousins**.",
@@ -189,90 +273,6 @@
                 "Uncles",
                 "Cousins",
                 "Grandfather"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "John's father is the only son of Mary. Emily is the daughter of John's father's brother. What is the relationship between Mary and Emily?",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **John's father is the only son of Mary:** This means Mary has only one son, and that son is John's father.\n\n2. **Emily is the daughter of John's father's brother:** This tells us that Emily's father is the brother of John's father. \n\n3. **Therefore, Emily's father and John's father are siblings.**\n\n4. **Since John's father is Mary's son, both Emily's father and John's father are Mary's sons.**\n\n5. **This makes Emily and John cousins, and Mary their grandmother.**\n\n**Therefore, Mary is Emily's grandmother.**",
-            "options": [
-                "Sister",
-                "Mother",
-                "Grandmother",
-                "Aunt"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "**Assertion:** If P is the daughter of Q, and R is the brother of P, then Q is the father of R. \n**Reason:** Q is the father of R because R is the brother of P and P is the daughter of Q.",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the assertion and reason:\n\n**Assertion:** \"If P is the daughter of Q, and R is the brother of P, then Q is the father of R.\"\nThis assertion is not always true. While Q could be the father of both P and R, it's also possible that Q is their mother. The information given doesn't confirm Q's gender.\n\n**Reason:** \"Q is the father of R because R is the brother of P and P is the daughter of Q.\"\nThis reason is flawed because it makes an assumption based on traditional family structures. It assumes that if P is the daughter, then Q must be the father. \n\n**Therefore, the correct answer is (c) Assertion is true, but the reason is false.**\n\nThis question is designed to be a 6/10 difficulty because it requires careful consideration of the information provided. It highlights a common logical fallacy of assuming information not explicitly stated.",
-            "options": [
-                "Assertion is false, reason is true",
-                "Assertion is true, reason is true",
-                "Assertion is true, reason is false",
-                "Assertion is false, reason is false"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "If P + Q means P is the brother of Q, P - Q means P is the mother of Q, and P x Q means P is the husband of Q, then which of the following represents R being the uncle of S?",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the codes and what it means to be an 'uncle':\n\n* **P + Q (P is the brother of Q):**  This tells us about a sibling relationship.\n* **P - Q (P is the mother of Q):** This tells us about a parent-child relationship.\n* **P x Q (P is the husband of Q):** This tells us about a spousal relationship.\n\n**To be an uncle, R needs to be either:**\n   1.  The brother of S's father, OR\n   2. The brother of S's mother's husband.\n\nLet's translate these possibilities into our code:\n\n* **Possibility 1:** \n   * R + (Father of S) ...  and (Father of S) - S\n   * Combining, we get: **R + (X - S)**  where X is the unknown father\n\n* **Possibility 2:**\n   * R + (Mother of S's Husband)... and (Mother of S's Husband) x (Husband of S) ... and (Husband of S) - S\n   * Combining, we get:  **R + (Y x Z) - S** where Y is the unknown mother and Z is the unknown husband.\n\n**Therefore, the correct representation of R being the uncle of S could be either R + (X - S) or R + (Y x Z) - S.** Since the question asks for 'any' representation, either of these is acceptable, and the options should reflect that.",
-            "options": [
-                "R + (X - S)",
-                "R + (Y x Z) - S",
-                "R - (X + S)",
-                "R x (Y - S)"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**Scenario**: Anika and Rohan are cousins. Anika's father, Sunil, has a brother named Vijay. Vijay's only child is a daughter named Riya. \n**Question**: What is the relationship between Rohan and Riya?\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the relationship:\n\n1. **Identifying the common ancestor:**  Sunil and Vijay are brothers. This makes them the common ancestors for Rohan and Riya.\n\n2. **Tracing Rohan's lineage:** We know Rohan is Anika's cousin, and Anika is Sunil's daughter. Therefore, Rohan is Sunil's nephew (as the son of Sunil's sibling).\n\n3. **Tracing Riya's lineage:** Riya is the daughter of Vijay, who is Sunil's brother. This makes Riya Sunil's niece.\n\n4. **Establishing the final relationship:** Since Rohan is Sunil's nephew and Riya is Sunil's niece, they are **cousins**. ",
-            "options": [
-                "Siblings",
-                "Aunt",
-                "Cousins",
-                "Unrelated"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "E is the brother of F, who is the daughter of G. H is the son of G's brother.  A is the mother of E and has only one sister. What is the relationship between A and H?",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **E is the brother of F**: This means E and F are siblings.\n2. **F is the daughter of G**:  This means G is the parent of both E and F.\n3. **H is the son of G's brother**: This means H is G's nephew and E & F's cousin.\n4. **A is the mother of E and has only one sister**: This confirms A is G's wife (since E and F are G's children) and they have only two children (E & F).\n\nTherefore, A is the wife of H's uncle, making her H's **aunt by marriage**.\n\n**Options:**\n\n a) Mother\nb) Aunt\nc) Sister-in-law\n**d) Aunt by marriage**\n\nThe correct answer is **d) Aunt by marriage**.",
-            "options": [
-                "Mother",
-                "Aunt",
-                "Sister-in-law",
-                "Aunt by marriage"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "**scenario**: Aarav and Riya are a married couple. Aarav's sister, Kiara, is married to Rohan.  Rohan's brother, Vikram, is married to Sonia. Sonia's sister, Neha, is married.\n**question**: What is the relationship between Neha's husband and Kiara?\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the relationships to find the answer:\n\n1. **Aarav & Riya:** They are a married couple, forming the central point of our connection.\n2. **Kiara:** She is Aarav's sister, making her Riya's sister-in-law.\n3. **Rohan:** He is married to Kiara.\n4. **Vikram:** He is Rohan's brother, meaning he is also Kiara's brother-in-law. \n5. **Sonia:** She is married to Vikram.\n6. **Neha:** She is Sonia's sister, making her also a sister-in-law to Vikram. Since Vikram is Kiara's brother-in-law, Neha is also a brother-in-law to Kiara through marriage. \n7. **Neha's husband:**  Since Neha is Kiara's brother-in-law through a chain of marriages, her husband is also considered a brother-in-law to Kiara.\n\n**Therefore, Neha's husband and Kiara are brothers-in-law.**",
-            "options": [
-                "Brother",
-                "Brother-in-law",
-                "Cousin",
-                "Uncle"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Imagine a family reunion.  Sarah brings her young son, Thomas, to meet his great-grandfather, Edward.  Thomas' grandfather, Michael, is also present.  It is known that Michael is Edward's son.  What is the relationship between Sarah and Michael?",
-            "difficulty": "medium",
-            "reasoning": "Here's how we can solve this step-by-step:\n\n1. **Identify the key individuals:** We are focusing on Sarah, Thomas, Michael, and Edward.\n\n2. **Establish the direct lineage:** We know:\n    - Edward is Thomas' great-grandfather.\n    - Michael is Thomas' grandfather.\n    - Michael is Edward's son. \n\n3. **Determine the missing link:** To find Sarah's relationship to Michael, we need to recognize that:\n    - Thomas is one generation below Michael (grandson).\n    - Sarah is one generation above Thomas (mother).\n\n4. **Connect the generations:** Since Sarah is one generation above Thomas, and Thomas is one generation below Michael, Sarah must be in the same generation as Michael. \n\n5. **Consider marital relationships:**  The most likely relationship between individuals in the same generation within a family structure is that of spouses.\n\n**Therefore, Sarah is likely Michael's wife.**",
-            "options": [
-                "Sister",
-                "Daughter",
-                "Wife",
-                "Mother"
             ],
             "correct_option": "C"
         },
@@ -290,90 +290,6 @@
             "correct_option": "D"
         },
         {
-            "question": "The Patel family has a rich history.  Aarav is the son of Mahesh.  Leena is Mahesh's mother.  Vijay is Leena's father.  What is Aarav's relationship to Vijay?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the solution:\n\n1. **Identify the key individuals:** We need to determine the relationship between Aarav and Vijay.\n\n2. **Trace the lineage:** \n    * Aarav is the son of Mahesh.\n    * Mahesh is the son of Leena. \n    * Leena is the daughter of Vijay.\n\n3. **Determine the connection:**  Following the lineage, we see Aarav is two generations younger than Vijay. Aarav's father (Mahesh) is the grandson of Vijay.  Therefore, Aarav is the **great-grandson** of Vijay. ",
-            "options": [
-                "Son",
-                "Grandson",
-                "Great-grandson",
-                "Great-great-grandson"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "**question_description**: An old woman introduces a young boy with the words, \"His mother is the only daughter of my only son.\" How is the boy related to the old woman?\n**answer_choices**: \n  - (A) Son\n  - (B) Grandson\n  - (C) Great Grandson\n  - (D) Nephew\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the relationship:\n\n* **\"My only son\":** This tells us the old woman has one son.\n* **\"The only daughter of my only son\":** This means the son had only one daughter. This daughter is the mother of the boy.\n* **Therefore:** The boy is the old woman's son's daughter's son, making him her **Great Grandson**.\n\n**Correct Answer:** (C)",
-            "correct_option": "C",
-            "options": [
-                "Son",
-                "Grandson",
-                "Great Grandson",
-                "Nephew"
-            ]
-        },
-        {
-            "question": "Examine the family tree provided. Assuming all marriages are between non-blood relatives, who is the brother-in-law of George's father's niece's only son?",
-            "difficulty": "medium",
-            "reasoning": "Here's the step-by-step solution:\n\n1. **Start with George:** We need to identify George's father's niece. This implies finding George's father's sibling (brother or sister) who has a daughter.\n\n2. **George's Father's Niece:** Once you've identified George's father's sibling and their daughter, that daughter is George's father's niece.\n\n3. **Niece's Only Son:**  Locate the son of the niece you identified in the previous step.\n\n4. **Brother-in-law:** The brother-in-law of this son could be the husband of his sister (if he has one) or the brother of his spouse.  You'll need to analyze the family tree to determine which applies.\n\n**Important Note:** Without the actual family tree diagram, a specific answer cannot be provided.  The reasoning above guides you through the logical steps needed to solve the question based on a provided diagram.",
-            "options": [
-                "Alice",
-                "Bob",
-                "Charlie",
-                "David"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**family_description**: G and H are married and have two children, I and J.  K is the brother of G.  L and M are the children of K. N is the sister of L.\n**question**: What is the relationship between I and N?\n",
-            "difficulty": "medium",
-            "reasoning": "1. **Identify the common ancestor:**  G and K are siblings, making them the common ancestors of I and N. \n2. **Determine the lineage:**\n    * I is the child of G (one generation down from the common ancestor). \n    * N is the grandchild of K (two generations down from the common ancestor). \n3. **Establish the collateral relationship:** Since I and N are two generations apart from their common ancestors, they are first cousins once removed. Because I's lineage is closer to the common ancestor, I is N's first cousin once removed, and N is I's first cousin once removed (not second cousins, as that would imply being in the same generation).",
-            "options": [
-                "Second Cousins",
-                "First Cousins",
-                "First Cousins Once Removed",
-                "Second Cousins Once Removed"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Imagine a family gathering where Sarah introduces her husband, Tom, to her cousin, Emily. Emily then introduces Tom to her mother, Alice.  It turns out that Alice and Sarah's father, David, were once married but are now divorced.  What is the relationship between Tom and David?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the solution:\n\n* **Identifying key individuals:** We need to determine the relationship between Tom and David.\n* **Understanding spousal relationships:**  The key here is that Alice, Emily's mother, was once married to David, Sarah's father. This makes them Emily and Sarah's parents.\n* **Divorce and its implications:** While Alice and David are now divorced, their previous marriage still makes them Emily and Sarah's parents.\n* **Tracing the connection:** Tom is Sarah's husband, making him David's former son-in-law.\n\n**Therefore, Tom was once David's son-in-law through his marriage to Sarah.**",
-            "options": [
-                "Son",
-                "Brother-in-law",
-                "Father-in-law",
-                "Former Son-in-law"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "John is facing East and walks 10 steps forward. He then turns right and walks 5 steps. After that, he turns left and walks 3 steps. Finally, he turns 180 degrees in his place. What direction is John facing now?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down John's movements:\n\n1. **Initially facing East:** John starts by facing East.\n2. **Walks 10 steps forward:** This doesn't change his facing direction, he's still facing East.\n3. **Turns right, walks 5 steps:** Turning right from East makes him face South. He walks 5 steps in the South direction.\n4. **Turns left, walks 3 steps:**  Turning left from South makes him face East again. He walks 3 steps East.\n5. **Turns 180 degrees:** A 180-degree turn reverses his direction. Since he was facing East, he's now facing **West**.\n\nTherefore, the correct answer is **West**.",
-            "options": [
-                "East",
-                "South",
-                "West",
-                "North"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Eleanor is the grandmother of Henry.  Fiona is the sister of Henry's mother.  George, Fiona's only brother, is unmarried and has a daughter named Hazel.  What is the relationship between Hazel and Eleanor?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to break down the relationships to find the answer:\n\n* **Eleanor & Henry:** Eleanor is Henry's grandmother (two generations above).\n* **Fiona & Henry's mother:** Fiona is the sister of Henry's mother, making her Henry's aunt.\n* **George & Henry's mother:** George is Fiona's brother, so he's also an aunt/uncle to Henry.\n* **George & Hazel:** George is Hazel's father.\n\n**Putting it together:** Since George is Henry's aunt/uncle and Hazel's father, Hazel is one generation below Henry.  Since Eleanor is two generations above Henry, Hazel is three generations below Eleanor, making Eleanor Hazel's **great-grandmother**.",
-            "options": [
-                "Aunt",
-                "Sister",
-                "Great-grandmother",
-                "Grandmother"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**statement**: John and Mary are married. John's brother, Tom, is married to Susan. Susan's sister, Emily, is married to Robert. Robert and Mary's son, David, is getting married.\n**question**: What is Emily's relationship to David's father?\n",
             "difficulty": "medium",
             "reasoning": "Here's how to break down the relationships to find the answer:\n\n* **John & Mary:** They are a married couple, and David is their son.\n* **Tom & Susan:** Tom is John's brother, making Susan John's sister-in-law (and Mary's as well). \n* **Emily & Robert:** Emily is Susan's sister, so Emily is also an in-law to John and Mary. Since Robert is married to Emily, he's also an in-law to John and Mary.\n* **David & Robert:** David is the son of Robert and Mary. This makes Robert David's father.\n\n**Conclusion:** Since Emily is married to Robert, and Robert is David's father, Emily is David's father's wife, making her David's **stepmother**.",
@@ -382,90 +298,6 @@
                 "Aunt",
                 "Stepmother",
                 "Mother-in-law"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Alice is celebrating her 50th birthday today. Her son, Ben, is exactly half her age. Ben's daughter, Clara, just turned five years old. Clara's great-grandmother, Emily, is still alive and kicking. If Emily was 25 years old when Alice's mother, Fiona, was born, what is the age difference between Emily and Clara?",
-            "difficulty": "medium",
-            "reasoning": "Here's how we can solve this problem step-by-step:\n\n1. **Ben's age:** Ben is half Alice's age, so he is 50 / 2 = 25 years old.\n\n2. **Age difference between Ben and Clara:** Ben is 25 years old and Clara is 5, so Ben is 25 - 5 = 20 years older than Clara.\n\n3. **Fiona's age when Alice was born:** Since Ben is 25 years younger than Alice, Fiona was also 25 years younger when Alice was born. \n\n4. **Emily's age when Alice was born:** Emily was 25 years old when Fiona was born, and Fiona was 25 when Alice was born, so Emily was 25 + 25 = 50 years old when Alice was born.\n\n5. **Emily's current age:** Alice is currently 50 years old, and Emily was 50 when Alice was born, so Emily is currently 50 + 50 = 100 years old.\n\n6. **Age difference between Emily and Clara:** Emily is 100 years old and Clara is 5, making their age difference 100 - 5 = 95 years.\n\nTherefore, the age difference between Emily and Clara is 95 years.",
-            "options": [
-                "90 years",
-                "100 years",
-                "95 years",
-                "105 years"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "**type**: assertion-reasoning\n**scenario**: John and Emily are married. John's brother, David, is married to Susan. Susan's sister, Mary, has a son named Alex.  Emily's mother has a brother named Robert, who has a daughter named Chloe.\n**assertion**: Alex and Chloe are second cousins.\n**reason**: Their mothers (Susan and Chloe) are cousins.\n",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the relationships and the concept of second cousins:\n\n**Relationships:**\n* **John & David:** Brothers\n* **David & Susan:** Married\n* **Susan & Mary:** Sisters\n* **Mary & Alex:** Mother & Son\n* **Emily & Emily's mother:** Mother & Daughter\n* **Emily's mother & Robert:** Siblings\n* **Robert & Chloe:** Father & Daughter\n\n**Second Cousins:** Second cousins share a great-grandparent, but not a grandparent. \n\n**Analyzing the Assertion and Reason:**\n\n* **Assertion: Alex and Chloe are second cousins.**  This is TRUE.  Here's why:\n    * John and David are brothers, so their children are cousins.\n    * Susan (David's wife) and Mary are sisters, making their children also cousins.\n    * Therefore, Alex (Mary's son) is a cousin to David's children. Since John's children and David's children are already cousins, Alex is also a cousin to John's children.\n    * Since John is married to Emily, Alex is a cousin to Emily's children.\n    * Emily's mother and Robert are siblings, making their children cousins.\n    * Chloe is Robert's daughter, so she is a cousin to Emily's children.\n    * Since Alex and Chloe are both cousins to Emily's hypothetical children, they are second cousins to each other.\n\n* **Reason: Their mothers (Susan and Chloe) are cousins.** This is FALSE. Susan and Chloe are not cousins.  Susan is married to David (John's brother) and Chloe is the daughter of Robert (Emily's mother's brother). There is no direct blood or marital connection between them. \n\n**Conclusion:**\nThe assertion is true, but the reason is false.",
-            "options": [
-                "True",
-                "False",
-                "Neither",
-                "Both"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**scenario**: Consider the following relationships represented symbolically:\n\n* `M` denotes Male, `F` denotes Female\n* `->` represents \"is parent of\"\n* `+` represents \"spouse\"\n* `#` represents \"sibling\"\n\nRelationships:\n\n`A(M) -> B(F) + C(M) # D(F) -> E(M)`\n**question**: What is the relationship of E to A?\n",
-            "difficulty": 1,
-            "reasoning": "Let's break down the relationships step-by-step:\n\n1. `A(M) -> B(F)`: A is the father of B.\n2. `B(F) + C(M)`: B is married to C. Since B is A's daughter, C is A's son-in-law.\n3. `C(M) # D(F)`: C is the brother of D.  Since C is A's son-in-law, D is A's daughter-in-law's sister.\n4. `D(F) -> E(M)`: D is the mother of E.  \n\nSince D is A's daughter-in-law's sister, and D is E's mother, E is A's **son-in-law's nephew** or **son-in-law's niece**. We cannot definitively determine E's gender from the information given.",
-            "options": [
-                "Son",
-                "Daughter",
-                "Nephew/Niece",
-                "Grandson"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "**statement**: Imagine a family reunion where generations intertwine.  Aarav is introducing his family. He says, 'This is my wife, Bina. Her brother, Chirag, is married to Diya.  Diya and I have a common cousin, Emily. Emily's father and my father are brothers.'\n**relationships**: \n  - Aarav is married to Bina.\n  - Chirag is Bina's brother.\n  - Chirag is married to Diya.\n  - Emily is Diya and Aarav's cousin.\n  - Emily's father and Aarav's father are brothers.\n**question**: What is the relationship between Bina and Emily?\n",
-            "difficulty": "hard",
-            "reasoning": "Here's how to break down the relationships to solve this question:\n\n1. **Aarav and Chirag:** Since Chirag is Bina's brother and Bina is married to Aarav, Aarav and Chirag are brothers-in-law.\n2. **Aarav and Emily:**  Aarav's father and Emily's father are brothers, making Aarav and Emily cousins.\n3. **Bina and Emily:**  Because Aarav and Emily are cousins, and Aarav is married to Bina, Bina and Emily are also cousins-in-law.\n\nTherefore, the correct answer is that Bina and Emily are cousins-in-law.",
-            "options": [
-                "Sisters",
-                "Aunts",
-                "Cousins-in-law",
-                "Sisters-in-law"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Examine the family tree diagram provided below. This diagram depicts the intricate relationships within the Hemsworth family across three generations. Pay close attention to the connections between individuals, including instances of marriage, adoption, and blended families. Now, consider John and Elizabeth. What is the relationship between John and Elizabeth?",
-            "difficulty": "hard",
-            "reasoning": "To determine the relationship between John and Elizabeth, follow these steps:\n\n1. **Identify John and Elizabeth:** Locate John and Elizabeth on the family tree diagram.\n2. **Trace the Lineage:** Trace John's lineage upwards. We see that John's father is David.\n3. **Identify Common Ancestor:** Continue tracing upwards. We find that David and Elizabeth share a common ancestor - Robert. Robert is David's father and Elizabeth's grandfather.\n4. **Determine the Relationship:** Since David and Elizabeth are children of siblings (Robert's children), they are cousins. John is one generation below David. Therefore, John is Elizabeth's first cousin once removed. \n\n**Therefore, the correct answer is First Cousin Once Removed.**",
-            "options": [
-                "First Cousin",
-                "Second Cousin",
-                "First Cousin Once Removed",
-                "Second Cousin Once Removed"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Jonathan is the son of Amelia.  Margaret is the mother of William.  William is married to Eleanor, and their daughter, Sophia, is the niece of Christopher.  Christopher is Amelia's brother. What is the relationship between Jonathan and Margaret?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **Jonathan is the son of Amelia:** This establishes a parent-child relationship.\n2. **Christopher is Amelia's brother:** This makes Christopher Jonathan's uncle.\n3. **Sophia is the niece of Christopher:**  Since Christopher is Jonathan's uncle, Sophia must be Jonathan's cousin.\n4. **Sophia is the daughter of Eleanor and William:** This establishes Eleanor and William as Jonathan's aunt and uncle, respectively, since their daughter is his cousin.\n5. **Margaret is the mother of William:**  Since William is Jonathan's uncle, Margaret must be a generation above him.\n\nTherefore, Margaret is Jonathan's **great-aunt**. ",
-            "options": [
-                "Grandmother",
-                "Aunt",
-                "Great-Aunt",
-                "Cousin"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Amelia is currently married to David. David's brother, Charles, was previously married to Fiona, but they divorced several years ago. Fiona has since remarried to Gregory.  Amelia has a sister named Harriet, who is married to Ian. Ian's brother, John, is married to Fiona's sister, Katherine.  What is the relationship between David and Gregory?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the relationships step-by-step:\n\n* **David and Charles are brothers.**\n* **Charles was married to Fiona, making Fiona David's ex-sister-in-law.** \n* **Fiona is now married to Gregory, making Gregory David's ex-sister-in-law's husband.**\n\nThere is no direct blood or legal relationship term in standard usage for an ex-sister-in-law's husband. The relationship is established through a chain of past and present marriages. \n\nTherefore, the most accurate answer is that there is no specific relationship name for David and Gregory. The question is designed to be tricky by establishing a complex web of connections that lead to a relationship without a common label.",
-            "options": [
-                "Brother-in-law",
-                "Step-brother",
-                "No relationship",
-                "Cousin"
             ],
             "correct_option": "C"
         },
@@ -482,90 +314,6 @@
             "correct_option": "B"
         },
         {
-            "question": "John and Mary are cousins. John's mother, Elizabeth, has a brother named William. William has a daughter named Alice, and Alice has a son named Peter.  What is the relationship between Peter and Mary?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **John and Mary are cousins:** This means they share a set of grandparents.\n2. **Elizabeth is John's mother:** This establishes John's lineage through Elizabeth.\n3. **William is Elizabeth's brother:** This makes William an uncle to John and also means William shares the same grandparents with Elizabeth.\n4. **Alice is William's daughter:** Alice is therefore John's first cousin once removed (child of his parent's first cousin).\n5. **Peter is Alice's son:** This makes Peter one generation removed from John, and two generations removed from the common ancestors John shares with Mary.\n\n**Therefore, Peter is Mary's second cousin once removed.**  They share the same great-grandparents.\n\n* **Second cousins** share great-grandparents but not grandparents.\n* **\"Once removed\"** indicates a difference of one generation. Since Peter is one generation younger than Alice, who is Mary's second cousin, he is Mary's second cousin *once removed*.",
-            "options": [
-                "First cousin",
-                "Second cousin",
-                "First cousin once removed",
-                "Second cousin once removed"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "Imagine a family gathering where G is pointing at a photograph.  G says, 'This man's father is my father's only son-in-law.' Then, someone mentions that H, who is present at the gathering, is not related to the man in the photograph. What is the relationship between G and the man in the photograph?",
-            "difficulty": "hard",
-            "reasoning": "Here's how to break down this tricky blood relation problem:\n\n* **Understanding the Clues:**\n    *  \"This man's father is my father's only son-in-law\": This tells us that the man in the photograph has a father, and this father is married to G's father's only daughter. \n    * Since G's father has only one daughter, and that daughter is married to the man's father, it means G's sister is the man's mother.\n\n* **The Importance of the Negation:**\n    * \"H is not related to the man in the photograph\": This statement is crucial. It eliminates potential relationships H could have had with the man, simplifying our deductions. Although this information might seem irrelevant, it helps us focus solely on G's connection to the man. \n\n* **Putting it Together:** \n    * We know G's sister is the mother of the man in the photograph.\n    * Therefore, G is the uncle (or aunt, depending on G's gender) of the man in the picture.\n\n**Final Answer:** G is either the uncle or aunt of the man in the photograph.",
-            "options": [
-                "Brother",
-                "Uncle",
-                "Cousin",
-                "Father"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Robert's brother, David, married Eleanor's sister, Fiona. Eleanor has a son named George. David and Fiona adopted a daughter named Hannah.  What is the relationship between Hannah and George?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the relationships step-by-step:\n\n* **Robert & David:** They are brothers.\n* **David & Fiona:** They are husband and wife.\n* **Fiona & Eleanor:**  They are sisters.\n* **Eleanor & George:** Eleanor is George's mother.\n* **David & Fiona & Hannah:** David and Fiona are Hannah's adoptive parents. \n\nNow let's analyze how Hannah and George are related:\n\n* David is George's uncle (since he's Eleanor's brother, and Eleanor is George's mother).\n* Fiona, being David's wife, is also George's aunt.\n* Since David and Fiona are Hannah's adoptive parents, this makes Hannah and George **first cousins once removed**. \n\n**Explanation of \"Once Removed\":**  The term \"removed\" signifies that the individuals are from different generations within the family tree. In this scenario, Hannah is a generation below George (George is in the same generation as Hannah's parents).  The \"once\" indicates a one-generation difference. ",
-            "options": [
-                "First cousins",
-                "Second cousins",
-                "First cousins once removed",
-                "Uncle/Niece"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "In a traditional family gathering, relationships are represented by unique symbols: '#' denotes a son, '!' denotes a daughter, '+' signifies a spouse, and '%' indicates a sibling.  Given the following information: \n\n A # B + C ! D % E # F, and knowing that B and F are of the same generation,  \n\nWhat is the relationship between A and E?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the relationships step-by-step:\n\n* **A # B:** A is the son of B. \n* **B + C:** B is married to C.\n* **C ! D:** C is the daughter of D. \n* **D % E:** D is a sibling of E.\n* **E # F:** E is the son of F.\n\n We are also given that B and F are of the same generation. Let's analyze:\n\n1.  **B and C are a couple.**  Since C is the daughter of D, B is a generation below D. \n2. **D and E are siblings.** They belong to the same generation.\n3. **E is the son of F.**  This makes F and D of the same generation.\n4. **B and F are of the same generation (given).**\n\nTherefore, A is two generations below E (A's parent B is one generation below E's parent F).  This means E is A's great-uncle or great-aunt.  However, we lack information to determine E's gender. \n\n**Therefore, the relationship between A and E cannot be definitively determined from the given information.**",
-            "options": [
-                "Great-uncle",
-                "Great-aunt",
-                "Uncle",
-                "Aunt"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Imagine a family reunion with three generations present. The eldest, a woman named Eleanor, is a proud great-grandmother. Eleanor has a son named Henry.  At the reunion, there's a young boy named Oliver who is pointing at a picture of Henry and excitedly telling everyone, \"That's my dad's dad!\"  If Oliver's mother is named Susan, what relation is Susan to Eleanor?",
-            "difficulty": "hard",
-            "reasoning": "Here's how to break down the relationships to solve this:\n\n* **Oliver's statement:**  Oliver says the man in the picture (Henry) is \"his dad's dad.\" This means Henry is Oliver's paternal grandfather.\n* **Connecting to Eleanor:** We know Henry is Eleanor's son.  Since Henry is Oliver's grandfather, this makes Eleanor Oliver's great-grandmother (which the problem already stated).\n* **Susan's role:** The question tells us Susan is Oliver's mother.  Since Oliver's father is Henry's son, this means Susan is married to Henry's son. \n* **Final connection:** If Susan is married to Henry's son, and Henry is Eleanor's son, then Susan is married to Eleanor's grandson. This makes Susan Eleanor's **granddaughter-in-law**. ",
-            "options": [
-                "Daughter",
-                "Granddaughter",
-                "Granddaughter-in-law",
-                "Sister"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "J is the nephew of K, who is the sister-in-law of L. L is the daughter-in-law of M, who has only two children, one son and one daughter. N is the paternal grandfather of J and is married to O.  If P is the sister of L and has no children, what is the relationship between P and J's father?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **Starting with M:** M has a son and a daughter. L is M's daughter-in-law, meaning L is married to M's son.\n\n2. **K and L's connection:** K is the sister-in-law of L. Since L is married to M's son, K must be married to M's daughter, making K the daughter-in-law of M.\n\n3. **J and N:** J is the nephew of K and N is J's paternal grandfather. This tells us that K is J's aunt from his father's side and N is the father of J's father.\n\n4. **O's relation:** N is married to O, making O the paternal grandmother of J and the mother of J's father. \n\n5. **P's position:** P is the sister of L. Since L is married to M's son, P is also the daughter of M. \n\n6. **Connecting P and J's father:**  We know P is the daughter of M and J's father is the son of M. Therefore, P and J's father are siblings. \n\n**Final Answer:** P is the aunt of J's father.",
-            "options": [
-                "Sister",
-                "Daughter",
-                "Aunt",
-                "Mother"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The Kapoor family is known for its long lineage and intertwined relationships.  The eldest of the family, Vijay, had three children from his first marriage: Arun, Bela, and Chandra.  After his first wife's passing, Vijay married Lata, who had a daughter, Divya, from a previous relationship. Vijay and Lata then adopted a son, Ekansh.  Years later, Arun married Mala and had two sons, Farhan and Girish. Bela married Sanjay and had a daughter, Hema. Chandra remained unmarried. Interestingly, Divya is only 5 years younger than Bela.  Farhan is 10 years younger than Hema, who is 7 years younger than Ekansh.  If Girish is 12 years old, how many years older is Vijay than his oldest great-grandchild?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down this complex family tree step-by-step:\n\n**1. Age Deductions:**\n    * We know Girish is 12 years old.\n    * Farhan is 10 years younger than Hema, so Farhan is 10 + 12 = 22 years old.\n    * Hema is 7 years younger than Ekansh, making Ekansh 22 + 7 = 29 years old.\n\n**2.  Finding Vijay's Oldest Great-Grandchild:**\n    * The oldest great-grandchild could be either Farhan (Arun's son) or Hema (Bela's daughter). \n    * Since Farhan is 22 and Hema is 22 + 10 = 32 years old, Hema is the oldest great-grandchild.\n\n**3.  Relative Age Differences:**\n    * Divya is only 5 years younger than Bela, and we need to determine Bela's age to understand the age difference between Vijay and Hema.\n    * Unfortunately, we don't have enough information to pinpoint Bela's exact age. \n\n**4.  Missing Information:** \n    * The question cannot be definitively answered with the provided information. We need either Bela's age or the age difference between Vijay and Bela to determine the age difference between Vijay and his oldest great-grandchild.\n\n**Conclusion:**\n    * While we can deduce the ages of several family members, the missing information regarding Bela's age makes it impossible to determine the exact age difference between Vijay and his oldest great-grandchild.",
-            "options": [
-                "Cannot be determined",
-                "67 years",
-                "52 years",
-                "45 years"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "Six family members - A, B, C, D, E, and F - are standing in a straight line facing north. They are from three generations of the same family and have three different professions - Doctor, Engineer, and Teacher, with each profession represented by two members.  \n\nConsider the following information: \n\n* B is the only son of the Doctor and is standing to the immediate right of his father. \n* The Teacher is married to the Doctor's sister and they are standing at the extreme ends of the line. \n* F is the sister-in-law of the Engineer and is standing second to the right of D. \n* The two Engineers are standing next to each other. \n* A, an Engineer, is to the immediate left of his mother. \n* C is not an Engineer and is standing between A and E.\n\nIf E is a Doctor, then who is standing fourth to the left of E's child?",
             "difficulty": "hard",
             "reasoning": "Let's break down the information step-by-step:\n\n**1. Family Tree and Professions:**\n\n* B is the son of a Doctor. Let's assume B's father is X. So, X is a Doctor.\n* The Teacher is married to the Doctor's sister. This means the Teacher is X's brother-in-law. \n* F is the sister-in-law of the Engineer. Since the Teacher is male, F must be married to the other Engineer. \n* A is an Engineer and is to the left of his mother. This implies A's mother is an Engineer too.\n* Since there are two of each profession, and we already have two Engineers (A and A's mother), C and E must be Doctors. \n\n**2. Positioning:**\n\n* B is to the immediate right of his father (X). \n* The Teacher and his wife (Doctor's sister) are at the extreme ends.\n* F is second to the right of D.\n* The two Engineers are together.\n* C is between A and E.\n\n**3. Combining the Clues:**\n\n* Since the Teacher and his wife are at the ends, and B is with his father (X, the Doctor), they must be in the middle. The arrangement could be _T BX _ _ or _ _ XB T_\n*  We know A, an Engineer, is with his mother (also an Engineer).  They must be together in the remaining slots. This gives us  _T BXA _ or _ _ AXB T_\n*  C is between A and E, and E is a Doctor. This means E must be B's father (X) as both are Doctors. The arrangement becomes _T BEAC _ or _ _ CAEB T_\n*  F is second to the right of D, and F is married to an Engineer. This means D must be in the first slot, and F in the third slot to satisfy the condition. The final arrangement becomes DBEACF.\n\n**4. Answering the Question:**\n\n* We need to find who is fourth to the left of E's child. \n* E's child is B.\n* Counting four positions to the left of B, we reach D.\n\nTherefore, D is standing fourth to the left of E's child. ",
@@ -578,16 +326,100 @@
             "correct_option": "D"
         },
         {
-            "question": "An old photograph sits upon Amelia's mantlepiece. In the photo are six people:  Arthur, Beatrice, Charles, Daniel, Eleanor, and a young girl. The girl is Amelia's grandmother, but no one knows for sure who her other relatives are.  After years of speculation, the family discovers the following: \n\n*  Arthur is the brother-in-law of Daniel, who is the only son of Eleanor. \n*  Beatrice is the sister of Charles, but neither are blood-related to Daniel. \n*  Eleanor has only one daughter, and Charles is her only son-in-law.\n\nWho is the young girl in the picture in relation to Amelia?",
-            "difficulty": 1,
-            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **Daniel is Eleanor's only son:** This tells us they are mother and son.\n2. **Arthur is Daniel's brother-in-law:** This means Arthur is married to Daniel's sister. \n3. **Charles is Eleanor's only son-in-law:** Since Daniel is Eleanor's son, her only son-in-law must be married to her daughter. Therefore, Charles is married to Daniel's sister. \n4. **Arthur is married to Daniel's sister, and Charles is also married to Daniel's sister:** This means Arthur and Charles are the same person. \n5. **Beatrice is Charles' sister:** Since Charles is Arthur, Beatrice is also Arthur's sister. \n6. **Neither Beatrice nor Charles is blood-related to Daniel:** This confirms that their connection is through marriage, solidifying our deductions about the couples. \n7. **The young girl is Amelia's grandmother:**  Since Eleanor has only one daughter, and that daughter is married to Charles/Arthur, the young girl must be their daughter. \n\n**Therefore, the girl in the picture is Amelia's great-aunt.**",
+            "question": "Gabriel is the son of Daniel. Hannah is the mother of Isabella. Elijah is the brother of Hannah.  Daniel is married to Olivia, who is the sister of Elijah. What is the relationship between Gabriel and Isabella?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **Gabriel is the son of Daniel:** This establishes a father-son relationship.\n2. **Hannah is the mother of Isabella:** This establishes a mother-daughter relationship.\n3. **Elijah is the brother of Hannah:** This makes Elijah the uncle of Isabella.\n4. **Daniel is married to Olivia, who is the sister of Elijah:** This links Daniel and Elijah as brothers-in-law. Since Elijah is Isabella's uncle, Daniel is also her uncle by marriage.\n5. **Therefore, as Daniel is Isabella's uncle and Gabriel is Daniel's son, Gabriel is Isabella's cousin.**\n\n**Final Answer:** Gabriel is Isabella's cousin.",
             "options": [
-                "Great-aunt",
+                "Brother",
+                "Uncle",
+                "Cousin",
+                "Nephew"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "John's father, Robert, has a sister named Emily. Emily married a man named Thomas, who has a brother, David. David is the father of a young girl named Lily.  What is the relationship between Lily and John?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to break down the relationships to solve the problem:\n\n* **Robert and Emily are siblings:**  This means they share the same parents.\n* **Emily and Thomas are married:** They are Lily's grandparents.\n* **Thomas and David are brothers:**  This means they share the same parents.\n* **David is Lily's father:** This establishes Lily's lineage.\n\nNow, tracing back from Lily to John:\n\n* **Lily is the daughter of David.**\n* **David is the brother of Thomas.**\n* **Thomas is the husband of Emily.**\n* **Emily is the sister of Robert.**\n* **Robert is the father of John.**\n\nTherefore, Lily is John's **second cousin** because their fathers (David and Robert) are cousins.",
+            "options": [
+                "Sister",
                 "Aunt",
-                "Mother",
-                "Grandmother"
+                "Second cousin",
+                "Daughter"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "John, while looking at a photo, said, \"The father of the woman in this picture is the only son of my father.  My wife and I have been married for 20 years, and our only child, Thomas, just turned 18.\"  What is the relationship between John and the woman in the picture?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the information step-by-step:\n\n* **\"The father of the woman in this picture is the only son of my father.\"**:  This tells us that the woman's father is John himself (as John is the only son of his father). \n* **\"My wife and I have been married for 20 years, and our only child, Thomas, just turned 18.\"**: This information is irrelevant to the core relationship. It's there to mislead you. \n\n**Therefore, John is the father of the woman in the picture.**",
+            "options": [
+                "Brother",
+                "Uncle",
+                "Father",
+                "Cousin"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**premise**: Jonathan is the son of Emily's aunt's husband. Olivia is the daughter of Daniel, whose mother is the only sister of Jonathan's father. \n**question**: What is the relationship between Olivia and Jonathan?\n**difficulty**: 9/10\n",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **Jonathan's side:**\n    * Emily's aunt is married to Jonathan's father (since Jonathan is the son of Emily's aunt's husband).\n\n2. **Olivia's side:**\n    * Daniel's mother is Olivia's grandmother (since Olivia is Daniel's daughter).\n    * This grandmother is also the only sister of Jonathan's father.\n\n3. **Connecting the dots:**\n    * Jonathan's father and Olivia's grandmother are siblings.\n    * This makes Daniel and Jonathan's father cousins.\n    * Therefore, Olivia (daughter of Daniel) and Jonathan are **second cousins**.\n\n**Therefore, the correct answer is that Olivia and Jonathan are second cousins.**",
+            "options": [
+                "Siblings",
+                "First cousins",
+                "Second cousins",
+                "Aunt and Nephew"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Robert and Emily are cousins. Robert's father, David, is the only brother of Emily's mother, Susan. Susan's husband, Thomas, has a sister named Alice. Alice is the mother of two children, James and Olivia.  What is the relationship between James and David?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to break down the relationships:\n\n1. **Robert and Emily are cousins:** This means their parents are siblings.\n2. **David is Emily's uncle:** Since David is the brother of Emily's mother (Susan), he's Emily's uncle. \n3. **Thomas is Emily's father:**  We're told Susan is Emily's mother, and Thomas is Susan's husband.\n4. **Alice is Emily's aunt:** Thomas is Emily's father, and Alice is Thomas's sister. \n5. **James and Olivia are Emily's cousins:** Alice is Emily's aunt, making her children (James and Olivia) Emily's cousins.\n6. **James and David are cousins-once-removed:** Since James is Emily's cousin and David is Emily's uncle, James and David are cousins-once-removed (one generation apart on the family tree).\n\n**Therefore, James is David's cousin-once-removed.**",
+            "options": [
+                "Uncle",
+                "Brother",
+                "Cousin",
+                "Cousin-once-removed"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Jonathan is the son of Michael, who is the only brother of Patricia. Amelia is the daughter of Patricia and is married to David, who is the father of Emily. How is Emily related to Jonathan?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **Michael & Patricia:** Michael is Patricia's only brother, making them siblings.\n2. **Jonathan & Patricia:** Jonathan is Michael's son, which makes Patricia his aunt.\n3. **Amelia & Jonathan:** Amelia is Patricia's daughter, making her Jonathan's cousin.\n4. **David & Jonathan:**  David is married to Amelia, so he is Jonathan's cousin-in-law.\n5. **Emily & David:** Emily is David's daughter.\n6. **Emily & Jonathan:** Since David is Jonathan's cousin-in-law, Emily is Jonathan's **second cousin** (one generation removed).\n\nTherefore, Emily is Jonathan's second cousin.",
+            "options": [
+                "Niece",
+                "Cousin",
+                "Daughter-in-law",
+                "Second Cousin"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Imagine a family gathering with Anika, Beatrice, Charles, David, Eleanor, and Felix.  Anika is married to David's father, who is the only son of Charles.  Beatrice is the sister of David and the daughter of Eleanor. Felix is the brother of Anika.  What relation is Felix to Eleanor?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the relationships step-by-step:\n\n1. **David's father is the only son of Charles:** This means Charles is David's grandfather (father of his father).\n\n2. **Anika is married to David's father:** This makes Anika David's mother.\n\n3. **Beatrice is the sister of David:**  So, Beatrice and David share the same parents.\n\n4. **Beatrice is the daughter of Eleanor:** This confirms Eleanor is the mother of both Beatrice and David.\n\n5. **Felix is the brother of Anika:** This means Felix and Anika share the same parents.\n\n**Now, let's connect Felix to Eleanor:**\n\n* We know Anika is David's mother and Felix is Anika's brother.\n* We also know David's mother is Eleanor.\n\n**Therefore, Felix is the brother of David's mother, making him Eleanor's SON.**",
+            "options": [
+                "Son",
+                "Brother",
+                "Father",
+                "Uncle"
             ],
             "correct_option": "A"
+        },
+        {
+            "question": "Consider a family tree diagram spanning four generations.  The diagram details the following: \n\n* James is the paternal grandfather of Sarah. \n* Emily is the maternal grandmother of Michael. \n* Michael and Sarah are cousins. \n* Olivia is the sister of James and the maternal aunt of David. \n* David is the brother-in-law of Emily. \n\nWhat is the relationship between David and Michael?",
+            "difficulty": "hard",
+            "reasoning": "Here's how we can break down the relationships to determine the connection between David and Michael:\n\n1. **Establishing Key Connections:**\n    * James (grandfather of Sarah) is the brother of Olivia (maternal aunt of David). This makes David and Sarah cousins. \n    * David is the brother-in-law of Emily, and Emily is the maternal grandmother of Michael. This means David is married to the mother of Michael's parent.\n\n2. **Tracing the Lineage:**\n    * Since David is married to the mother of Michael's parent, this makes David either Michael's uncle (if married to Michael's mother) or Michael's aunt's husband (if married to Michael's father's sister).\n\n3. **Combining the Information:**\n    * We know David and Sarah are cousins. \n    * We also know David is either Michael's uncle or aunt's husband.\n    * For these two statements to be simultaneously true, David must be Michael's uncle, as being the spouse of Michael's aunt's husband would make them unrelated by blood.\n\n**Therefore, David is the uncle of Michael.**",
+            "options": [
+                "Brother",
+                "Cousin",
+                "Uncle",
+                "Father"
+            ],
+            "correct_option": "C"
         }
     ],
     "title": "Logical Reasoning",

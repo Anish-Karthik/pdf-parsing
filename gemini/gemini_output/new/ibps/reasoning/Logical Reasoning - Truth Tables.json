@@ -1,0 +1,224 @@
+{
+    "questions": [
+        {
+            "question": "**Premise 1:** (A \u2192 B) \u2227 \u00acC\n**Premise 2:** C \u2228 (\u00acB \u2227 A)\n\n**Question:** Do these premises form a contradiction? If so, explain why. If not, provide a truth table scenario where both premises are true.",
+            "difficulty": "medium",
+            "reasoning": "Let's analyze the premises using a truth table to determine if they present a contradiction.\n\n| A | B | C | A \u2192 B | \u00acC | (A \u2192 B) \u2227 \u00acC | \u00acB | \u00acB \u2227 A | C \u2228 (\u00acB \u2227 A) | \n|---|---|---|---|---|---|---|---|---| \n| T | T | T | T | F | F | F | F | T |\n| T | T | F | T | T | T | F | F | F |\n| T | F | T | F | F | F | T | T | T |\n| T | F | F | F | T | F | T | T | T |\n| F | T | T | T | F | F | F | F | T |\n| F | T | F | T | T | T | F | F | F |\n| F | F | T | T | F | F | T | F | T |\n| F | F | F | T | T | T | T | F | F |\n\n**Analysis:**\n\nA contradiction occurs when both premises cannot be true simultaneously. Looking at our truth table, we can see that there's no scenario where both (A \u2192 B) \u2227 \u00acC and C \u2228 (\u00acB \u2227 A) are simultaneously true.\n\n**Explanation:** \n\n- When C is true, Premise 2 is always true, but Premise 1 is always false (because of \u00acC). \n- When C is false, for Premise 1 to be true, A \u2192 B must be true.  However, if A is true and B is false while C is false, Premise 2 becomes true, creating a conflict.\n\n**Conclusion:**\n\nTherefore, the premises form a contradiction.",
+            "options": [
+                "No",
+                "Yes",
+                "False",
+                "True"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**premise**: Consider the statement: 'It is not the case that both the train is delayed and the bus is on time.'\n**instruction**: Apply De Morgan's Law to rewrite this statement in a logically equivalent form and then construct a truth table for the original statement to verify the equivalence.\n**example**: \n  **statement**: It is not true that (A and B)\n  **De Morgan's Law**: (Not A) or (Not B)\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Applying De Morgan's Law:**\n\n* Our original statement has the form 'Not (A and B)' where:\n    * A: 'The train is delayed'\n    * B: 'The bus is on time'\n* De Morgan's Law tells us 'Not (A and B)' is equivalent to '(Not A) or (Not B)'.\n* Applying this, our rewritten statement is: 'The train is not delayed or the bus is not on time.'\n\n**2. Constructing the Truth Table:**\n\nWe need to consider all possible truth values for A (train delayed) and B (bus on time). \n\n| A (Train Delayed) | B (Bus On Time) | A and B | Not (A and B) | Not A | Not B | (Not A) or (Not B) |\n|---|---|---|---|---|---|---| \n| True | True | True | **False** | False | False | **False** |\n| True | False | False | **True** | False | True | **True** |\n| False | True | False | **True** | True | False | **True** |\n| False | False | False | **True** | True | True | **True** |\n\n**3. Verifying Equivalence:**\n\nThe columns for 'Not (A and B)' and '(Not A) or (Not B)' are identical. This confirms that our application of De Morgan's Law produced a logically equivalent statement. ",
+            "options": [
+                "False",
+                "True",
+                "Not Applicable",
+                "None"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**argument**: No birds are mammals. Some mammals are pets. Therefore, some pets are not birds.\n**task**: Construct a truth table for the given argument. Determine if the argument is valid or invalid, and clearly explain your reasoning.\n**difficulty**: Medium 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Truth Tables for Syllogistic Arguments' as it requires understanding and application of truth table construction specifically for syllogistic arguments, a fundamental concept within 'Logical Reasoning - Truth Tables'.\n\nHere's a breakdown of the solution:\n\n1. **Define Propositions:**\n    * Let 'B' represent 'being a bird'.\n    * Let 'M' represent 'being a mammal'.\n    * Let 'P' represent 'being a pet'.\n\n2. **Symbolic Form:**\n    * Premise 1: No birds are mammals:  ~B -> M \n    * Premise 2: Some mammals are pets:  M & P\n    * Conclusion: Some pets are not birds: P & ~B\n\n3. **Truth Table Construction:**\n\n| B | M | P | ~B | ~B -> M | M & P | P & ~B |\n|---|---|---|----|---------|-------|--------|\n| T | T | T | F  | T       | T     | F      |\n| T | T | F | F  | T       | F     | F      |\n| T | F | T | F  | T       | F     | F      |\n| T | F | F | F  | T       | F     | F      |\n| F | T | T | T  | T       | T     | T      |\n| F | T | F | T  | T       | F     | F      |\n| F | F | T | T  | F       | F     | T      |\n| F | F | F | T  | F       | F     | F      |\n\n4. **Validity Analysis:**\n   * An argument is valid if and only if whenever all premises are true, the conclusion is also true.  In the truth table, we look for rows where both premises (~B -> M and M & P) are true. This occurs in the 5th row. \n   * In the 5th row,  the conclusion (P & ~B) is also true. \n   * **Therefore, the argument is valid.** \n\n**Reasoning Summary:**\nThe truth table demonstrates that there is no scenario where both premises are true and the conclusion is false.  This confirms the argument's validity - the conclusion logically follows from the premises.",
+            "options": [
+                "Invalid",
+                "Valid",
+                "Indeterminate",
+                "Contradictory"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Analyze the truth table below and determine the logically equivalent statement to the given expression: ~(p \u2192 q) \u2227 r\n\n| p | q | r | ~(p \u2192 q) \u2227 r |\n|---|---|---|----------------|\n| T | T | T | F |\n| T | T | F | F |\n| T | F | T | T |\n| T | F | F | F |\n| F | T | T | F |\n| F | T | F | F |\n| F | F | T | F |\n| F | F | F | F |\n\nWhich of the following options is logically equivalent to the expression represented in the truth table?\n\n a) (p \u2227 \u00acq) \u2227 r\n b) \u00ac(p \u2192 q) \u2192 r \n c) (p \u2192 q) \u2228 r\n d) \u00acp \u2227 q \u2227 r ",
+            "difficulty": "medium",
+            "reasoning": "The truth table shows that the statement ~(p \u2192 q) \u2227 r is true only when 'p' is true, 'q' is false, and 'r' is true. Let's break down why this is the case and how it leads us to the correct answer.\n\n1. **Understanding the original expression:**\n   - (p \u2192 q): This is an implication, meaning 'if p, then q'. It's only false when 'p' is true and 'q' is false.\n   - ~(p \u2192 q): The negation flips the truth value. It's true when 'p' is true and 'q' is false.\n   -  ... \u2227 r:  For the entire expression to be true, this conjunction requires 'r' to be true as well.\n\n2. **Analyzing the options:**\n   - a) (p \u2227 \u00acq) \u2227 r: This option precisely matches the truth table's condition for truth: 'p' true, 'q' false, and 'r' true. \n   - b) \u00ac(p \u2192 q) \u2192 r: This introduces another implication, changing the logic. It won't always align with the original truth table.\n   - c) (p \u2192 q) \u2228 r:  This disjunction is true in more cases than the original expression, as it's true even if only 'r' is true.\n   - d) \u00acp \u2227 q \u2227 r: This requires 'p' to be false, which contradicts the truth table.\n\n**Therefore, the correct answer is (a) (p \u2227 \u00acq) \u2227 r.  This option captures the exact conditions (p true, q false, r true) under which the original expression, ~(p \u2192 q) \u2227 r, is true.**",
+            "options": [
+                "a)",
+                "b)",
+                "c)",
+                "d)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**statement**: [(P \u2228 \u00acQ) \u2227 (R \u2192 Q)] \u2194 \u00ac(P \u2227 S)\n**instructions**: Construct a truth table for the following expression: [(P \u2228 \u00acQ) \u2227 (R \u2192 Q)] \u2194 \u00ac(P \u2227 S)\n**difficulty**: 6\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Truth Tables for Complex Logical Expressions' subtopic within 'Logical Reasoning - Truth Tables'. It involves understanding various logical operators (OR, AND, NOT, implication) and their application in a larger expression.  The nested structure and length of the expression contribute to its medium difficulty.\n\nHere's how to solve it step-by-step:\n\n1. **Identify variables:**  We have four propositional variables: P, Q, R, and S.\n\n2. **Create the table structure:** With four variables, we need 2\u2074 = 16 rows in our truth table to cover all possible truth value combinations.\n\n3. **Break down the expression:** Solve it in parts to maintain clarity. Create separate columns for:\n    *  \u00acQ\n    *  (P \u2228 \u00acQ)\n    *  (R \u2192 Q)\n    *  [(P \u2228 \u00acQ) \u2227 (R \u2192 Q)] \n    *  (P \u2227 S)\n    *  \u00ac(P \u2227 S)\n    *  [(P \u2228 \u00acQ) \u2227 (R \u2192 Q)] \u2194 \u00ac(P \u2227 S) \n\n4. **Populate the table:**  For each row (representing a unique combination of truth values for P, Q, R, S), evaluate the expression by applying the operator rules in each sub-expression until you reach the final result in the last column.\n\n**Example for a single row (Let's say P = True, Q = False, R = True, S = False):**\n\n* \u00acQ = \u00ac(False) = True\n* (P \u2228 \u00acQ) = (True \u2228 True) = True\n* (R \u2192 Q) = (True \u2192 False) = False\n* [(P \u2228 \u00acQ) \u2227 (R \u2192 Q)] = (True \u2227 False) = False\n* (P \u2227 S) = (True \u2227 False) = False\n* \u00ac(P \u2227 S) = \u00ac(False) = True\n* [(P \u2228 \u00acQ) \u2227 (R \u2192 Q)] \u2194 \u00ac(P \u2227 S) = (False \u2194 True) = False \n\nRepeat this for all 16 rows to complete the truth table.  \n\nVerifying the mathematical and logical correctness involves ensuring that:\n* You apply the truth table rules for each operator accurately.\n* The order of operations (parentheses, negation, conjunction, disjunction, implication, equivalence) is followed.",
+            "options": [
+                "16",
+                "4",
+                "8",
+                "12"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine you're designing a security system with two sensors (Sensor A and Sensor B) and an alarm. The alarm should trigger if either: (1) both sensors are activated, or (2) Sensor A is activated, and Sensor B is deactivated.  \n\nLet 'p' represent 'Sensor A is activated' and 'q' represent 'Sensor B is activated'.  \n\nWhich of the following logical statements accurately represents the condition for the alarm to trigger? \n\n Construct a truth table to determine the correct statement. \n\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Using Truth Tables to Prove Logical Theorems' as it requires constructing a truth table to analyze a logical statement representing a real-world scenario. \n\nHere's how to solve it:\n\n1. **Define the propositions:**\n    * p: Sensor A is activated\n    * q: Sensor B is activated\n\n2. **Translate the conditions into logical statements:**\n    * Condition 1: Both sensors activated: p AND q, represented as (p \u2227 q)\n    * Condition 2: Sensor A activated, Sensor B deactivated: p AND (NOT q), represented as (p \u2227 \u00acq)\n\n3. **Combine the conditions with OR (since the alarm triggers if *either* condition is met):**\n    *  (p \u2227 q) OR (p \u2227 \u00acq) \n\n4. **Construct the truth table:**\n\n| p | q | \u00acq | (p \u2227 q) | (p \u2227 \u00acq) | (p \u2227 q) \u2228 (p \u2227 \u00acq) |\n|---|---|---|---|---|---| \n| T | T | F | T     | F       | T                   |\n| T | F | T | F     | T       | T                   |\n| F | T | F | F     | F       | F                   |\n| F | F | T | F     | F       | F                   |\n\n5. **Analyze the truth table:** The alarm triggers (statement is true) in the cases where either both sensors are activated, or Sensor A is activated while Sensor B is deactivated.\n\nTherefore, the correct logical statement representing the alarm trigger condition is **(p \u2227 q) \u2228 (p \u2227 \u00acq)**. ",
+            "options": [
+                "  p \u2227 q",
+                "  p \u2228 q",
+                "  (p \u2227 q) \u2228 (p \u2227 \u00acq)",
+                "  (p \u2228 q) \u2227 (\u00acp \u2228 \u00acq)"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Imagine you are designing a simple search engine for a library database. Users can search for books using two keywords: 'Fiction' (F) and 'Available' (A). The search engine should return a book if it matches at least one of the keywords. \n\nConstruct a truth table representing the search engine's logic. Which of the following combinations of keywords would result in the search engine returning books?",
+            "difficulty": "medium",
+            "reasoning": "This question checks the understanding of applying truth tables to represent simple search logic in Computer Science, specifically information retrieval. Here's how we can solve it:\n\n1. **Identifying Propositions:** We have two propositions:\n    * F: Book is Fiction \n    * A: Book is Available\n\n2. **Defining the Logic:** The search engine uses the OR logic. It returns a book if it's Fiction OR Available.\n\n3. **Constructing the Truth Table:**\n\n| F | A | F OR A |\n|---|---|--------|\n| T | T |   T    |\n| T | F |   T    |\n| F | T |   T    |\n| F | F |   F    |\n\n4. **Analyzing the Truth Table:** The truth table shows that the search engine returns books (F OR A is True) in all cases except when the book is neither Fiction nor Available (F=False, A=False). \n\nTherefore, the search engine would return books for these combinations:\n* Fiction = True, Available = True\n* Fiction = True, Available = False\n* Fiction = False, Available = True",
+            "options": [
+                "All except Fiction = False, Available = False",
+                "Fiction = True, Available = True only",
+                "Fiction = True, Available = False only",
+                "Fiction = False, Available = True only"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Premise 1**: If online education is effective, then students perform well in exams.\n**Premise 2**: Students are not performing well in exams.\n**Conclusion**: Therefore, online education is not effective.\n**Question**: Is the argument valid?\n**Instructions**: Construct a truth table to determine the validity of the argument.\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question assesses the understanding of **Modus Tollens**, a valid argument form, within the context of truth tables.\n\n**1. Define Propositions:**\n\n* **P:** Online education is effective.\n* **Q:** Students perform well in exams.\n\n**2. Symbolic Representation:**\n\n* Premise 1: P \u2192 Q\n* Premise 2: \u00acQ\n* Conclusion: \u00acP\n\n**3. Construct the Truth Table:**\n\n| P | Q | P \u2192 Q | \u00acQ | \u00acP |\n|---|---|---|---|---|\n| T | T | T | F | F |\n| T | F | F | T | F |\n| F | T | T | F | T |\n| F | F | T | T | T |\n\n**4. Analyze the Truth Table:**\n\n*  We need to look for rows where both premises (P \u2192 Q and \u00acQ) are true.\n*  We find this situation in the last row where P is False and Q is False. \n*  Crucially, in this row, the conclusion (\u00acP) is also True.\n\n**5. Determine Validity:**\n\n* An argument is valid if, whenever all the premises are true, the conclusion is also true.\n* Since the conclusion is true in the row where both premises are true, the argument is **valid**.\n\n**Therefore, the argument presented is a valid example of Modus Tollens. Even though the premises might not be universally true, the *structure* of the argument ensures logical validity.**",
+            "options": [
+                "Invalid",
+                "Valid",
+                "Maybe",
+                "Unsure"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Complete the following truth table for the logical expression (A AND (NOT B)) OR C:\n\n| A | B | C | (A AND (NOT B)) OR C |\n|---|---|---|---| \n| T | T | T | ? |\n| T | T | F | ? |\n| T | F | T | ? |\n| T | F | F | ? |\n| F | T | T | ? |\n| F | T | F | ? |\n| F | F | T | ? |\n| F | F | F | ? |\n\nSelect the correct output sequence from the options below to replace the '?' marks:\n\na) T F T T T F T F\nb) T F T F T F T F\nc) T T T F T F T F\nd) T F T T F F T T",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to:\n\n* **Understand Truth Tables:**  Interpret the structure and meaning of a truth table.\n* **Apply Logical Operators:** Correctly apply the AND, OR, and NOT operators according to their truth table definitions.\n* **Evaluate Complex Expressions:** Break down a complex logical expression into smaller parts and evaluate them step-by-step.\n\n**Step-by-step Solution:**\n\n1. **Focus on the inner parenthesis (NOT B):**  For each row, if B is True, NOT B is False; if B is False, NOT B is True.\n\n2. **Next, calculate (A AND (NOT B)):** For each row, this is True only if both A and (NOT B) are True.\n\n3. **Finally, calculate (A AND (NOT B)) OR C:** For each row, this is True if either (A AND (NOT B)) is True or C is True.\n\nFollowing these steps, the completed truth table looks like this:\n\n| A | B | C | (A AND (NOT B)) OR C |\n|---|---|---|---| \n| T | T | T | **T** |\n| T | T | F | **F** |\n| T | F | T | **T** |\n| T | F | F | **T** |\n| F | T | T | **T** |\n| F | T | F | **F** |\n| F | F | T | **T** |\n| F | F | F | **F** |\n\nTherefore, the correct answer is **(d) T F T T F F T F**.",
+            "options": [
+                "T F T T T F T F",
+                "T F T F T F T F",
+                "T T T F T F T F",
+                "T F T T F F T T"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Determine if the following two logical statements are logically equivalent using truth tables:\n\nStatement 1:  (p \u2192 \u00acq) \u2227 (q \u2228 r)\n\nStatement 2:  \u00ac(p \u2227 q) \u2192 (q \u2228 r)",
+            "difficulty": "medium",
+            "reasoning": "**1. Construct the Truth Tables:**\n\nFirst, we need to construct truth tables for both statements. Since we have three variables (p, q, r), each truth table will have 2\u00b3 = 8 rows to represent all possible combinations of truth values.\n\n**Truth Table for Statement 1: (p \u2192 \u00acq) \u2227 (q \u2228 r)**\n\n| p | q | r | \u00acq | p \u2192 \u00acq | q \u2228 r | (p \u2192 \u00acq) \u2227 (q \u2228 r) |\n|---|---|---|---|---|---|---|\n| T | T | T | F | F | T | F |\n| T | T | F | F | F | T | F |\n| T | F | T | T | T | T | T |\n| T | F | F | T | T | F | F |\n| F | T | T | F | T | T | T |\n| F | T | F | F | T | T | T |\n| F | F | T | T | T | T | T |\n| F | F | F | T | T | F | F |\n\n**Truth Table for Statement 2: \u00ac(p \u2227 q) \u2192 (q \u2228 r)**\n\n| p | q | r | p \u2227 q | \u00ac(p \u2227 q) | q \u2228 r | \u00ac(p \u2227 q) \u2192 (q \u2228 r) |\n|---|---|---|---|---|---|---|\n| T | T | T | T | F | T | T |\n| T | T | F | T | F | T | T |\n| T | F | T | F | T | T | T |\n| T | F | F | F | T | F | F |\n| F | T | T | F | T | T | T |\n| F | T | F | F | T | T | T |\n| F | F | T | F | T | T | T |\n| F | F | F | F | T | F | F |\n\n**2. Compare the Final Columns:**\n\nNow, compare the final column of each truth table, which represents the truth values of the entire statement for all possible truth value combinations of p, q, and r.\n\nNotice that the final columns in both truth tables are **not identical**. For example, when p is true, q is false, and r is false, Statement 1 evaluates to false, while Statement 2 evaluates to true.\n\n**3. Conclusion:**\n\nSince the final columns of the truth tables are not identical, **Statement 1 and Statement 2 are not logically equivalent**.",
+            "options": [
+                "True",
+                "False",
+                "Equivalent",
+                "Not Equivalent"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A logician constructs a truth table for the following statement: \"If a creature is a unicorn, then it has a horn. Therefore, if a creature is not a unicorn, then it does not have a horn.\"  What limitation of truth tables does this example highlight?",
+            "difficulty": "medium",
+            "reasoning": "This question addresses the limitation of truth tables in handling the nuances of logical arguments, specifically the fallacy of denying the antecedent. Let's break it down: \n\n**1. Understanding the Argument:** \nThe argument structure is: If P, then Q. Therefore, if not P, then not Q.  This is a classic fallacy\u2014just because something isn't a unicorn doesn't mean it can't have a horn (think rhinos!). \n\n**2. Truth Table Perspective:**\nA truth table would only assess whether the conclusion is true based on the premises *within the given truth values*. It wouldn't capture the fallacy in the argument's structure itself. A truth table might show the conclusion as true in some cases, misleadingly suggesting the argument is valid. \n\n**3. The Limitation:** \nThis example highlights that truth tables are tools for analyzing the *truth values* of propositions and compound statements, not for assessing the *validity* of an argument's logical structure.  While they can help identify some invalid arguments, they can't capture all forms of logical fallacies. \n",
+            "options": [
+                "Truth tables cannot identify all logical fallacies.",
+                "Truth tables only assess truth values, not argument validity.",
+                "Truth tables can be misleading when dealing with fallacies.",
+                "Truth tables cannot handle conditional statements."
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A programmer is working on a piece of code where two conditions, represented by variables 'P' and 'Q', determine the output.\n**statement**: The code is designed such that 'P is TRUE if and only if Q is FALSE.'\n**task**: Construct a truth table for the given statement. Based on your truth table, is it possible for both P and Q to be TRUE at the same time?\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Biconditional:**\n\nThe statement 'P is TRUE if and only if Q is FALSE' uses the biconditional operator. This means P is true when Q is false, AND P is false when Q is true. They are logically equivalent.\n\n**2. Constructing the Truth Table:**\n\nWe begin by listing all possible combinations of truth values for P and Q:\n\n| P | Q | P \u2194 (\u00acQ) |\n|---|---|-----------|\n| T | T |     F     |\n| T | F |     T     |\n| F | T |     T     |\n| F | F |     F     |\n\n* In the first row, if P and Q are both true, the statement 'P is TRUE if and only if Q is FALSE' is FALSE. \n* In the second row, if P is true and Q is false, the statement holds TRUE. \n* In the third row, if P is false and Q is true, the statement holds TRUE (because it works both ways). \n* In the fourth row, if P and Q are both false, the statement is FALSE.\n\n**3. Answering the Question:**\n\nLooking at the truth table, we can see that there is NO scenario where both P and Q are TRUE simultaneously. The only time the statement holds true is when one is true and the other is false. Therefore, it is not possible for both P and Q to be TRUE at the same time according to the given code design.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Unsure"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**statement**: A magician declares, \"If I wave my wand, then a dove will appear from my hat.\"  Consider the truthfulness of his statement in different scenarios.\n**truthTable**: |  P (Magician waves wand) | Q (Dove appears from hat) | P \u2192 Q | \n|---|---|---| \n| T | T |  **?** | \n| T | F |  **?** | \n| F | T | **?**  | \n| F | F | **?**  |\n**question**: Complete the truth table to demonstrate your understanding of conditional statements. For each combination of the magician waving his wand (P) and a dove appearing (Q), determine if the magician's original statement holds true.\n",
+            "difficulty": "medium",
+            "reasoning": "This question dives into the heart of conditional statements, focusing on a scenario designed to be relatable yet requiring careful consideration of truth values.  Let's break down the logic step-by-step:\n\n**1. Understanding Implication (P \u2192 Q):**  A conditional statement (P \u2192 Q) is only false when the hypothesis (P) is true and the conclusion (Q) is false. In all other cases, the conditional statement is considered true.\n\n**2. Analyzing the Scenarios:**\n    * **P (True) & Q (True):** The magician waves his wand, and a dove appears. This aligns perfectly with his statement, making the implication **true**.\n    * **P (True) & Q (False):** The magician waves his wand, but no dove appears! This directly contradicts his claim, making the implication **false**.\n    * **P (False) & Q (True):** The magician doesn't wave his wand, yet a dove mysteriously appears. This scenario doesn't disprove his statement.  Since he didn't make a claim about what happens when he *doesn't* wave the wand, the implication is still considered **true**.\n    * **P (False) & Q (False):** The magician doesn't wave his wand, and no dove appears.  Again, this doesn't contradict his original statement, so the implication remains **true**.\n\n**3. Completed Truth Table:**\n|  P (Magician waves wand) | Q (Dove appears from hat) | P \u2192 Q |\n|---|---|---|\n| T | T |  T |\n| T | F |  F |\n| F | T |  T |\n| F | F |  T |",
+            "options": [
+                "F",
+                "T",
+                "F, T, T, F",
+                "T, F, T, T"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Two aspiring game developers, Alice and Bob, are working on a logic puzzle for their new game. They need to ensure a specific event in the game is triggered based on a set of conditions. They've come up with the following logical statements to represent when the event should occur:\n\n**Statement 1:** The event is triggered if either the player has collected all the keys (K) or defeated the final boss (B), but the treasure chest has not been opened (T).\n\n**Statement 2:**  The event is triggered if the treasure chest has not been opened (T) and either the player has collected all the keys (K) or defeated the final boss (B).\n\n Determine if these two statements are logically equivalent by constructing and comparing their truth tables. ",
+            "difficulty": "medium",
+            "reasoning": "Let's break down how to solve this problem step-by-step:\n\n**1. Symbolic Representation:**\n\n*  We'll use the following symbols to represent the propositions:\n    * K: The player has collected all the keys.\n    * B: The player has defeated the final boss.\n    * T: The treasure chest has been opened.\n\n* Now, let's translate the statements into symbolic logic:\n    * **Statement 1:** (K \u2228 B) \u2227 \u00acT \n    * **Statement 2:** \u00acT \u2227 (K \u2228 B)\n\n**2. Constructing the Truth Tables:**\n\n* We have three propositions (K, B, T), so our truth table will have 2\u00b3 = 8 rows.\n\n| K | B | T | K \u2228 B | \u00acT | (K \u2228 B) \u2227 \u00acT | \u00acT \u2227 (K \u2228 B) |\n|---|---|---|---|---|---|---|\n| T | T | T | T | F | F | F |\n| T | T | F | T | T | T | T |\n| T | F | T | T | F | F | F |\n| T | F | F | T | T | T | T |\n| F | T | T | T | F | F | F |\n| F | T | F | T | T | T | T |\n| F | F | T | F | F | F | F |\n| F | F | F | F | T | F | F |\n\n**3. Analyzing the Truth Tables:**\n\n*  We constructed the truth tables for both statements, carefully evaluating the connectives (\u2228 for 'or', \u2227 for 'and', and \u00ac for 'not').\n*  **Crucially, notice that the final columns for both Statement 1 and Statement 2 are identical.**  This means the truth values of each statement are the same for every possible combination of truth values for K, B, and T.\n\n**4. Conclusion:**\n\n* Since the truth tables for Statement 1 and Statement 2 are identical, we can conclude that the two statements are **logically equivalent.** In the context of the game, this means Alice and Bob's logic is sound \u2013 either statement will trigger the event under the same exact conditions.",
+            "options": [
+                "Not equivalent",
+                "Equivalent",
+                "Partially equivalent",
+                "Inconclusive"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine you are designing a security system for a vault that uses three sensors (A, B, and C) for added protection. The vault should only unlock (represented by output 'U' being TRUE) when specific conditions are met due to security concerns. These conditions are represented in the following logical statement:\n\n(A AND (B XOR C)) OR ((NOT A) AND B AND C)\n\nConstruct a truth table for this statement. Based on this table, determine and explain:\n\n1.  In how many scenarios will the vault unlock?\n2.  What specific sensor combinations, when TRUE, will lead to the vault unlocking?\n\nThis question assesses your ability to apply truth tables to a real-world scenario within computer science, specifically security system design.",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question tackles the practical application of truth tables in computer science, particularly in designing a security system with specific logic. Here's a step-by-step breakdown:\n\n1. **Understanding the Problem:** We have a vault with three sensors (A, B, C) and a logical condition determining when the vault unlocks (U). The goal is to analyze this condition using a truth table.\n\n2. **Building the Truth Table:**\n\n   | A | B | C | B XOR C | A AND (B XOR C) | (NOT A) | (NOT A) AND B AND C | U | \n   |---|---|---|---|---|---|---|---| \n   | T | T | T | F | F | F | F | F |\n   | T | T | F | T | T | F | F | T |\n   | T | F | T | T | T | F | F | T |\n   | T | F | F | F | F | F | F | F |\n   | F | T | T | F | F | T | T | T |\n   | F | T | F | T | F | T | F | F |\n   | F | F | T | T | F | T | F | F |\n   | F | F | F | F | F | T | F | F |\n\n   * We list all possible combinations of truth values for A, B, and C.\n   * We break down the complex statement into smaller parts (B XOR C, A AND (B XOR C), etc.) and calculate their truth values based on A, B, and C.\n   * Finally, we combine the truth values of the smaller parts according to the main statement to find the truth value of U for each scenario.\n\n3. **Analyzing the Truth Table:**\n\n   * **Scenarios where the vault unlocks (U is TRUE):** We have three such scenarios in our truth table (rows 2, 3, and 5).\n   * **Sensor combinations leading to unlocking:**\n      * A = True, B = True, C = False\n      * A = True, B = False, C = True\n      * A = False, B = True, C = True\n\n**Therefore, the vault unlocks under three specific sensor combinations, highlighting the practical use of truth tables in designing secure systems.**",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Difficulty:** Medium (7/10)\n\n**Theorem:**  The distributive law states that  'P and (Q or R)' is logically equivalent to '(P and Q) or (P and R)'.\n\n**Instructions:**  Select the truth table(s) that correctly demonstrate the logical equivalence of 'P and (Q or R)' and '(P and Q) or (P and R)'.\n\n**(A)**\n| P | Q | R | Q or R | P and (Q or R) |\n|---|---|---|---|---|\n| T | T | T | T | T |\n| T | T | F | T | T |\n| T | F | T | T | T |\n| T | F | F | F | F |\n| F | T | T | T | F |\n| F | T | F | T | F |\n| F | F | T | T | F |\n| F | F | F | F | F |\n\n**(B)**\n| P | Q | R | P and Q | P and R | (P and Q) or (P and R) |\n|---|---|---|---|---|---| \n| T | T | T | T | T | T |\n| T | T | F | T | F | T |\n| T | F | T | F | T | T |\n| T | F | F | F | F | F |\n| F | T | T | F | F | F |\n| F | T | F | F | F | F |\n| F | F | T | F | F | F |\n| F | F | F | F | F | F |\n\n**(C)**\n| P | Q | R | Q and R | P or (Q and R) |\n|---|---|---|---|---|\n| T | T | T | T | T |\n| T | T | F | F | T |\n| T | F | T | F | T |\n| T | F | F | F | T |\n| F | T | T | T | T |\n| F | T | F | F | F |\n| F | F | T | F | F |\n| F | F | F | F | F |\n\n**(D)**\n| P | Q | R |  (P or Q) and R | P and (Q or R) |\n|---|---|---|---|---|\n| T | T | T | T | T |\n| T | T | F | F | T |\n| T | F | T | T | T |\n| T | F | F | F | F |\n| F | T | T | T | F |\n| F | T | F | F | F |\n| F | F | T | F | F |\n| F | F | F | F | F |",
+            "difficulty": "medium",
+            "reasoning": "**Correct Answer:** (B)\n\n**Explanation:**\n\n1. **Understanding the Distributive Law:** The distributive law in logic states that applying 'and' over an 'or' statement is equivalent to applying 'and' to each individual component within the 'or' statement and then combining the results with 'or'.\n\n2. **Breaking Down the Theorem:** We need to prove that 'P and (Q or R)' is equivalent to '(P and Q) or (P and R)'. This means both expressions should have the same truth values for all possible combinations of truth values for P, Q, and R.\n\n3. **Analyzing the Truth Tables:**\n    - **Table (A):**  This table calculates 'P and (Q or R)' but doesn't calculate '(P and Q) or (P and R)', so we can't compare.\n    - **Table (B):** This table correctly calculates both 'P and (Q or R)' and '(P and Q) or (P and R)'. Notice that the final columns for both expressions are identical, proving the equivalence.\n    - **Table (C):** This table incorrectly calculates 'P or (Q and R)' instead of '(P and Q) or (P and R)'.\n    - **Table (D):** This table incorrectly calculates '(P or Q) and R' instead of '(P and Q) or (P and R)'.\n\n**Therefore, only Table (B) accurately demonstrates the logical equivalence stated by the distributive law.**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Consider the following complex logical expression:\n\n(P \u2194 \u00acQ) \u2192 ((\u00acP \u2227 R) \u2228 (Q XOR \u00acR))\n\nImagine you are constructing a truth table for this expression.  What is the truth value of the entire expression in the row where P is false, Q is true, and R is false? Explain your reasoning by breaking down the evaluation of the expression step-by-step.",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this complex logical expression step-by-step to determine its truth value when P is false (F), Q is true (T), and R is false (F).\n\n1. **Substitute the values:**\n   (F \u2194 \u00acT) \u2192 ((\u00acF \u2227 F) \u2228 (T XOR \u00acF))\n\n2. **Evaluate negations (\u00ac):**\n   (F \u2194 F) \u2192 ((T \u2227 F) \u2228 (T XOR T))\n\n3. **Evaluate within parentheses, starting from the innermost:**\n   *  (T \u2227 F) = F (AND is true only when both operands are true)\n   *  (T XOR T) = F (XOR is true only when exactly one operand is true)\n   This gives us:\n   (F \u2194 F) \u2192 (F \u2228 F)\n\n4. **Continue evaluating within parentheses:**\n   * (F \u2194 F) = T (Biconditional (\u2194) is true when both operands have the same truth value)\n   * (F \u2228 F) = F (OR is false only when both operands are false)\n   This leads to:\n   T \u2192 F\n\n5. **Final Evaluation:**\n   T \u2192 F = F (An implication (\u2192) is false only when the antecedent is true and the consequent is false)\n\nTherefore, the truth value of the entire expression when P is false, Q is true, and R is false is **False**.",
+            "options": [
+                "True",
+                "False",
+                "Unknown",
+                "Undefined"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "In a specific computer network protocol, a packet is deemed valid if it meets the following conditions, represented by logical variables:\n\n* **P:** The packet header contains a valid source address.\n* **Q:** The packet length does not exceed the maximum allowed.\n* **R:** The checksum verification for data integrity is successful.\n\nThe protocol's validity check can be expressed with the following logical statement: (P XOR Q) \u2192 (R \u2227 P).  Which of the following statements about this protocol's packet validation logic is TRUE?\n\nA) A packet with an invalid source address (P = False) will always be deemed invalid, regardless of other factors.\nB) A packet exceeding the maximum allowed length (Q = False) will always be deemed invalid, regardless of other factors.\nC) If the checksum verification fails (R = False), the packet is always deemed invalid.\nD) This protocol allows for a scenario where a packet with both a valid source address and a successful checksum verification (P = True, R = True) can still be deemed invalid.",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the question and the provided logical statement to arrive at the correct answer. \n\n**Understanding the Statement:**\n\nThe statement (P XOR Q) \u2192 (R \u2227 P) governs whether a packet is valid.  Here's a breakdown:\n\n* **XOR (Exclusive OR):**  P XOR Q is True if and only if *exactly one* of P or Q is True.\n* **\u2192 (Implication):**  A statement of the form A \u2192 B is only False when A is True and B is False. Otherwise, it's True.\n* **\u2227 (AND):** R \u2227 P is True if and only if *both* R and P are True.\n\n**Analyzing the Options:**\n\n* **A)  Incorrect.** If P = False and Q = True, then (P XOR Q) is True. If R is also True, then (R \u2227 P) is False.  This makes the entire statement False (True \u2192 False), meaning the packet *could* be valid.\n* **B) Incorrect.**  Similar to option A, if Q = False and P = True,  the packet *could* be valid depending on the value of R.\n* **C) Correct.** If R = False, then (R \u2227 P) *must* be False, regardless of the value of P. This makes the entire statement False whenever R is False because the right side of the implication cannot be True.\n* **D) Incorrect.** If P = True and R = True, then (R \u2227 P) is True. The implication (P XOR Q) \u2192 (R \u2227 P) will always be True in this case, regardless of the value of Q, meaning the packet will be valid.\n\n**Key Takeaway:**\n\nThis question is tricky because it blends a complex logical statement with a real-world scenario. Students need to carefully dissect the meaning of the XOR and implication operators to understand the conditions under which a packet would be deemed invalid. Option C is the only scenario that *always* leads to an invalid packet.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Truth Tables",
+    "exam_id": 11,
+    "order": 4
+}

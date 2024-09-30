@@ -1,0 +1,284 @@
+{
+    "questions": [
+        {
+            "question": "**Premise:**\n* P < Q\n* Q > R\n* S = R\n* T > P\n\n**Relationship:** Is it possible that T < S?\n\n**Question:**  Determine whether the relationship between T and S is possible based on the given information. Choose the correct answer:\n* a) Yes\n* b) No\n* c) Cannot be determined",
+            "difficulty": "medium",
+            "reasoning": "**1. Combining Direct Information:**\n   * We know P < Q and Q > R. This tells us P is less than Q, and Q is greater than R. We can represent this as: P < Q > R\n   * We also know S = R, meaning S has the same value as R.\n\n**2.  Implied Relationship:**\n   * Since P < Q > R and S = R, we can imply that P < Q > S.  This means P is less than both Q and S.\n\n**3. Analyzing T:**\n   * We are given T > P, meaning T is greater than P.\n   * **However**, we have no direct or indirect relationship established between T and either Q or S. \n\n**4. Conclusion:** While we know T is greater than P, we cannot determine whether T is greater than, less than, or equal to S. The relationship between T and S remains unclear based on the given information.\n\n**Therefore, the correct answer is (c) Cannot be determined.**",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Equal"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**premise**: \n  - A > B\n  - C = D\n  - B < E\n  - D < A\n**question**: Which of the following deductions is definitely valid based on the given information?\n**options**: \n  - E > A\n  - C < B\n  - E > D\n  - A > E\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Combining Inequalities:**\n\n* We know A > B and B < E. However, we *cannot* definitively conclude E > A or A > E. The relationship between A and E is unclear.\n* We know C = D and D < A.  Therefore, we can conclude C < A by substitution.\n\n**2. Analyzing Options:**\n\n* **Option 1 (E > A):**  Incorrect.  We cannot definitively establish this relationship.\n* **Option 2 (C < B):** Incorrect. We don't have enough information to compare C and B directly.\n* **Option 3 (E > D):** Correct. Since D < A and A > B, and B < E, we can conclude E > D. \n* **Option 4 (A > E):** Incorrect. We cannot definitively establish this relationship.\n\n**Therefore, the only valid deduction is E > D.**",
+            "correct_option": "C",
+            "options": [
+                "E > A",
+                "C < B",
+                "E > D",
+                "A > E"
+            ]
+        },
+        {
+            "question": "**Premise:**\n\n* & means \u201cgreater than or equal to\u201d\n* % means \u201cless than\u201d\n* @ means \u201cequal to\u201d\n* # means \u201cless than or equal to\u201d\n\nA & B\nB # C\nC % D\nD @ E\n\n**Question:**\n\nWhich of the following relationships CANNOT be determined based on the given information?\n\n**Answer Choices:**\n\n(a) B % D \n(b) A # E\n(c) C @ A \n(d) D % A",
+            "difficulty": "medium",
+            "reasoning": "**Decoding the Symbols:**\n\n* A & B: A is greater than or equal to B\n* B # C: B is less than or equal to C\n* C % D: C is less than D\n* D @ E: D is equal to E\n\n**Analyzing the Relationships:**\n\n* We can combine some of these inequalities: Since B \u2264 C and C < D, then B < D (answer choice 'a' is TRUE, so we can eliminate it).  \n* Similarly, since D = E and C < D, then C < E. \n* We know A \u2265 B, but we don't know B's relationship to C (other than B \u2264 C). Therefore, we **cannot definitively determine** the relationship between A and C or between A and D or between A and E (we cannot determine if A is greater than, less than, or equal to any of them). \n\n**Correct Answer:**\n\nThe relationships that CANNOT be determined are C @ A (choice 'c'), D % A (choice 'd'), and A # E (choice 'b'). Any of these would be acceptable as correct answers, highlighting the importance of careful question construction in multiple choice assessments.  ",
+            "options": [
+                "B % D",
+                "A # E",
+                "C @ A",
+                "D % A"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Premise:**\n\n* **X \u00a7 Y** means \"X is not greater than Y\"\n* **X \u00a5 Y** means \"X is not less than Y\"\n* **X % Y** means \"X is neither greater than nor equal to Y\"\n\nGiven that **A \u00a7 B, B \u00a5 C, and C % D**, which of the following is **TRUE**?\n\nA. B % D\nB. A % C \nC. D \u00a5 A\nD. C \u00a7 A",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the given information step-by-step:\n\n* **A \u00a7 B:**  A is not greater than B (This means A could be less than B or equal to B).\n* **B \u00a5 C:** B is not less than C (This means B could be greater than C or equal to C).\n* **C % D:** C is neither greater than nor equal to D (This means C must be less than D).\n\nNow let's analyze the options:\n\n* **A. B % D:** We know B \u2265 C and C < D.  We cannot definitively say B is less than D. This could be true or false.\n* **B. A % C:**  We know A \u2264 B and B \u2265 C.  We cannot definitively say A is less than C. This could be true or false.\n* **C. D \u00a5 A:** We know C < D. Since A \u2264 B and B \u2265 C, it's possible for D to be greater than A.  This statement holds true.\n* **D. C \u00a7 A:** We know A \u2264 B and B \u2265 C. We cannot definitively say that C is not greater than A. This could be true or false.\n\n**Therefore, the correct answer is (C) D \u00a5 A.**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Let '!' represent 'OR' and '@' represent 'AND'. \nGiven the statement: \"Either A > 5 @ B < 10, ! A <= 5\", which of the following must be true?",
+            "difficulty": "medium",
+            "reasoning": "This question tests your understanding of 'Either-Or' cases and how to interpret them with coded logical operators. Here's how we break it down:\n\n**1. Understanding the Code:**\n   - '!' means 'OR'\n   - '@' means 'AND'\n\n**2. Breaking Down the Statement:**\n   The statement can be split into two parts:\n     - Part 1: \"A > 5 @ B < 10\"  (A is greater than 5 AND B is less than 10)\n     - Part 2: \"A <= 5\" (A is less than or equal to 5)\n\n**3. Applying 'Either-Or':**\n   The statement says \"Either Part 1 OR Part 2\" is true. This means:\n     - **Possibility 1:** Part 1 is true, Part 2 could be true or false.\n     - **Possibility 2:** Part 2 is true, Part 1 could be true or false.\n     - **It cannot be the case that both parts are false.**\n\n**4. Determining What Must Be True:** \n   - We cannot guarantee A > 5 and B < 10 are always true (Part 1) because Part 2 could be true instead.\n   - However, if Part 2 (A <= 5) is false, then Part 1 (A > 5 @ B < 10) MUST be true to satisfy the 'Either-Or' condition.\n\n**Therefore, the statement that must be true is:  If A > 5 is false, then B < 10 must be true.**",
+            "options": [
+                "A > 5 is always true",
+                "B < 10 is always true",
+                "If A > 5 is false, then B < 10 must be true",
+                "If B < 10 is false, then A > 5 must be true"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Coded Statements:** \n\n* P $ Q means P is greater than Q\n* P @ Q means P is less than Q\n* P # Q means P is greater than or equal to Q\n* P & Q means P is less than or equal to Q\n\n**Given Information:**\n\nA $ B & C\nD @ C\n\n**Deductions:**\n\n* B $ D\n* A # D\n* C $ A\n\n**Question:** Which of the above deductions is definitely false?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Code:**\n\n* $ signifies '>'\n* @ signifies '<'\n* # signifies '>='\n* & signifies '<='\n\n**Applying the Code to the Given Information:**\n\n* A $ B & C  translates to  A > B \u2264 C \n* D @ C translates to D < C\n\n**Analyzing the Deductions:**\n\n* **B $ D (B > D):**  We know B \u2264 C and D < C.  While both B and D are smaller than C, we don't have a direct relationship between B and D. B could be greater than, less than, or equal to D.  Therefore, this deduction is not definitely true.\n* **A # D (A \u2265 D):** We know A > B and D < C. We also know B \u2264 C.  Therefore, it's possible for A to be greater than D, but it's also possible for them to be equal or for D to be greater. This deduction is not definitely true. \n* **C $ A (C > A):** We know A > B and B \u2264 C. This means A must be less than or equal to C, making C > A impossible. **This deduction is definitely false.** \n\n**Correct Answer:**\nThe deduction 'C $ A' is definitely false.",
+            "options": [
+                "B $ D",
+                "A # D",
+                "C $ A",
+                "None of the above"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Four friends, Alex, Blake, Chris, and Daniel, are comparing their heights. We know the following: \n\n* Alex's height + Blake's height = Chris's height \n* Daniel is taller than Alex. \n* Blake is taller than Alex. \n\n**Question:** Can you determine if Daniel is taller than Chris?\n\n**Answer Choices:**\n(A) Yes\n(B) No\n(C) Cannot be determined ",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the information: \n\n1. **A + B = C:**  This tells us Chris is the tallest among Alex, Blake, and himself. \n2. **D > A:**  Daniel is taller than Alex. \n3. **B > A:** Blake is taller than Alex.\n\n**Key Insight:** While we know Daniel and Blake are both taller than Alex, we have no direct comparison between Daniel and Chris, nor any information to link their heights.  \n\n**Therefore, we cannot definitively say whether Daniel is taller than Chris or not.**\n\n**Correct Answer: (C) Cannot be determined**",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Possibly"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Premise:**\n\n* P < Q\n* S > R\n* Q < R\n\n**Statements:**\n\n1. Is P > S?\n2. Is S < P?\n\n**Task:** Determine which of the above statements is/are definitely true based only on the given premises.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Approaching Reverse Coded Inequalities' subtopic as it requires manipulating the given inequalities to draw conclusions. \n\nLet's analyze the statements by combining the given inequalities:\n\n* **Combining P < Q and Q < R, we get P < Q < R.**\n* **Since S > R and P < R, we can infer that S > R > P.**\n\nNow, let's evaluate the statements:\n\n1. **Is P > S?**  Incorrect. We established S > R > P, meaning P is smaller than S. \n2. **Is S < P?** Incorrect.  As explained above, S is greater than P, not smaller.\n\n**Therefore, neither statement is definitely true based on the given premises.**",
+            "options": [
+                "1",
+                "2",
+                "Both",
+                "Neither"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**statement**: Four problem-solving strategies - P, Q, R, and S - are ranked in order of effectiveness, with the most effective strategy listed first.  The following relationships describe their rankings.\n**conditions**: \n  - P > Q\n  - R < S\n  - S < P\n**question**: Can we definitively determine whether strategy Q is more effective than strategy R?\n",
+            "difficulty": "medium",
+            "reasoning": "We are given the following information about the effectiveness of problem-solving strategies P, Q, R, and S:\n\n* **P > Q:** Strategy P is more effective than strategy Q.\n* **R < S:** Strategy R is less effective than strategy S.\n* **S < P:** Strategy S is less effective than strategy P.\n\nCombining these inequalities, we can establish a partial order of effectiveness:\n\nP > S > R and P > Q\n\nNotice that we don't have a direct relationship established between Q and R. It's possible that Q is more effective than R, or vice versa. We simply don't have enough information to determine a definitive relationship between the two based on the given conditions. \n\n**Therefore, we cannot definitively determine whether strategy Q is more effective than strategy R.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Introduction**: In a specific coding system designed for mathematicians, different symbols represent various mathematical relationships. Familiarize yourself with the code below to answer the question that follows.\n**Code Table**: \n  **Symbol**: \n    - *\n    - ^\n    - ~\n    - <\n    - >\n  **Meaning**: \n    - Addition\n    - Subtraction\n    - Multiplication\n    - Less Than\n    - Greater Than\n**Statements**: \n  - P * Q ^ R\n  - S < Q\n  - R > P\n**Question**: Which of the following relationships can be definitively established based on the provided statements and the code table?\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the statements using the provided code table:\n\n* **P * Q ^ R:** This translates to P + Q - R. \n* **S < Q:**  This translates to S is Less Than Q.\n* **R > P:** This translates to R is Greater Than P.\n\nLet's analyze to see what relationships we can establish:\n\n1. **Combining statements 1 and 3:** Since R > P, if we substitute R in the first statement with a value greater than P, the overall result of (P + Q - R) becomes uncertain. We cannot definitively say if it would be greater than, less than, or equal to any other variable.\n\n2. **Analyzing statement 2:** We only know S is Less Than Q. We have no information about S's relationship to P or R.\n\n**Therefore, we cannot definitively establish any relationship between P, Q, R, and S that would hold true in all scenarios.**",
+            "options": [
+                "P < S",
+                "Q > R",
+                "S * R > P",
+                "R < Q"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "If it is true that either P > Q or Q = R, but not both, which of the following must be true?\n\n(A) If P > Q, then R \u2260 Q.\n(B) If P \u2264 Q, then R = Q.\n(C) If R \u2260 Q, then P > Q.\n(D) If R = Q, then P \u2264 Q.",
+            "difficulty": "medium",
+            "reasoning": "This question dives into 'Either-Or Cases and their Interpretation' within coded inequalities. Here's how to break down the solution:\n\n**Understanding the Given Information:** \n\n*  We are told **exactly one** of the following is true: \n    * P > Q \n    * Q = R \n\n**Analyzing the Options:**\n\n* **(A) If P > Q, then R \u2260 Q.**  This is **TRUE** because the given information states only one of the two conditions can be true. If P > Q is true, Q = R must be false, meaning R \u2260 Q.\n\n* **(B) If P \u2264 Q, then R = Q.** This is also **TRUE**. If P > Q is false, then the 'either-or' condition forces Q = R to be true.\n\n* **(C) If R \u2260 Q, then P > Q.**  **TRUE**. This is the reverse of the reasoning for option (A). If Q = R is false, then P > Q must be true.\n\n* **(D) If R = Q, then P \u2264 Q.** **TRUE**.  This mirrors the logic of option (B). If Q = R is true, then P > Q must be false, meaning P \u2264 Q.\n\n**Key Takeaway:** In 'either-or' scenarios, proving one part false automatically makes the other part true. This question tested the ability to apply this logic to coded inequalities.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine a town where people only use three types of transportation: bikes (B), cars (C), and trains (T).  You are told: \n(1) More people use cars than trains:  C > T \n(2) At least as many people use bikes as cars: B \u2265 C. \n\nWhat can you conclude about the number of people using bikes compared to those using trains? Can you be certain that more people use bikes than trains? Why or why not?",
+            "difficulty": "medium",
+            "reasoning": "This question addresses the 'Recognizing Assumptions and Ambiguities' topic within coded inequalities. Here's how to break it down:\n\n**Step 1: Combining the Inequalities**\n* We know C > T (more cars than trains) and B \u2265 C (at least as many bikes as cars).\n\n**Step 2: Identifying Potential Assumptions**\n* It's tempting to assume that because B \u2265 C and C > T, then B > T must also be true. This seems intuitive \u2013 if there are more bikes than cars, and more cars than trains, there *should* be more bikes than trains.\n\n**Step 3: Recognizing the Ambiguity** \n*  The key is the  'at least as many' in B \u2265 C.  This means the number of bikes could be EQUAL to the number of cars.  \n    * If B = C, and C > T, we only know that the number of bikes is greater than or equal to the number of trains (B \u2265 T).\n\n**Conclusion:**\n You cannot be certain that *more* people use bikes than trains. While it's possible, the information given doesn't rule out the possibility that the number of bike riders and train riders is the same.",
+            "options": [
+                "Yes, more people use bikes than trains.",
+                "No, it's possible the number of bike riders and train riders is the same.",
+                "It's impossible to determine without more information.",
+                "Yes, more people use bikes than trains because B \u2265 C and C > T."
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of friends are comparing their heights using coded inequalities:\n\n*  A > B:  Alex is taller than Bob\n*  C \u2265 D:  Charlie is at least as tall as David\n*  D > E: David is taller than Emily\n\nIs it definitely true that Alex is taller than Emily (A > E)?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the reasoning:\n\n* **We know:** A > B,  C \u2265 D,  D > E\n* **We want to find:**  Is A > E definitely true?\n\nLet's try to link the inequalities to reach a conclusion about A and E:\n\n1. **A > B:** This tells us about Alex and Bob, but nothing about Emily.\n2. **C \u2265 D and D > E:** This tells us that both Charlie and David are taller than Emily. However, we have no direct comparison between Bob's height and Charlie's or David's height.\n\n**Conclusion:**  We cannot definitively say whether Alex (A) is taller than Emily (E). While we know Alex is taller than Bob, we don't have enough information to compare Alex's height with Emily's. Therefore, the statement is **not definitely true**.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Let's use the following symbols to represent relationships: \n\n* '>' means 'is taller than' \n* '<' means 'is shorter than' \n* '=' means 'is the same height as' \n* '@' means 'is at least as tall as'  \n\nWe know the following about the heights of four people: Alex, Ben, Chris, and David.  \n\n* Alex @ Ben\n* Chris < David\n* Ben = David\n\n Which of the following MUST be true?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the information step-by-step:\n\n* **Alex @ Ben:** Alex is at least as tall as Ben. This means Alex could be taller than or the same height as Ben.\n* **Chris < David:** Chris is shorter than David.\n* **Ben = David:** Ben and David are the same height.\n\nNow, we want to figure out what MUST be true. Since Ben and David are the same height, and we know Chris is shorter than David, then Chris must also be shorter than Ben.  Further, since Alex is at least as tall as Ben, then Alex must also be taller than Chris. \n\nTherefore, the statement that MUST be true is **Alex > Chris** (Alex is taller than Chris). ",
+            "options": [
+                "Alex < Chris",
+                "Alex > Chris",
+                "Chris @ Alex",
+                "David < Ben"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise:**\n\n* @ represents 'greater than'\n* # represents 'less than'\n* $ represents 'greater than or equal to'\n* & represents 'less than or equal to'\n* * represents 'equal to'\n\nA @ B\nC # D\nD & E\nB $ F\nF * A\n\n**Question:**\n\nWhich of the following statements is **true** based on the given information?\n\n(A) C @ E \n(B) D @ A\n(C) F # C\n(D) Cannot be determined",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the given information step-by-step:\n\n* **A @ B:** A is greater than B.\n* **C # D:** C is less than D.\n* **D & E:** D is less than or equal to E.\n* **B $ F:** B is greater than or equal to F.\n* **F * A:** F is equal to A. \n\nNow let's evaluate each option:\n\n* **(A) C @ E:**  We know C < D and D \u2264 E.  Therefore, C could be less than E, or they could be equal. This statement is not definitively true.\n* **(B) D @ A:** We know D \u2264 E and F = A. Since we don't know the relationship between E and F (or A), we can't determine if D is greater than A. This statement is not definitively true.\n* **(C) F # C:** We know F = A and A > B. We also know B \u2265 F. Since F is both equal to and greater than or equal to B, we know F = B. Therefore, we can say A > F and A > B. Additionally, we know C < D and D \u2264 E. There is no way to definitively say that F is less than C. This statement is not definitively true.\n* **(D) Cannot be determined:**  Since we cannot definitively prove any of the other statements true, the correct answer is 'Cannot be determined'.\n",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Premise:**\n\n* ' * ' means 'greater than or equal to'\n* ' @ ' means 'less than'\n* ' # ' means 'not equal to'\n* ' $ ' means 'equal to' \n\n**Conditions:**\n\n* P * Q\n* Q @ R\n* S $ R\n\n**Question:** Which of the following conclusions can be drawn with certainty? \n\nI. P @ S \nII. P # S\nIII.  It is impossible to determine a definite relationship between P and S. \n\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Code:**\n\n* ' * ' means 'greater than or equal to'\n* ' @ ' means 'less than'\n* ' # ' means 'not equal to'\n* ' $ ' means 'equal to' \n\n**2. Translating the Conditions:**\n\n* P * Q :  P is greater than or equal to Q\n* Q @ R : Q is less than R\n* S $ R : S is equal to R\n\n**3.  Combining the Information:**\n\n* Since Q is less than R, and S is equal to R, we know Q is less than S.\n* We know P is greater than or equal to Q. \n\n**4. Analyzing the Conclusions:**\n\n* I. P @ S (P is less than S): We cannot definitively conclude this. P could be greater than S, or equal to S (and thus equal to Q).\n* II. P # S (P is not equal to S):  We cannot definitively conclude this.  P could be equal to S if P is equal to Q.\n* III. It is impossible to determine a definite relationship between P and S: **This is the correct answer.**  There are multiple scenarios that fit the given conditions. \n\n**Therefore, the only conclusion we can draw with certainty is that it's impossible to determine a definite relationship between P and S.**",
+            "options": [
+                "I",
+                "II",
+                "III",
+                "I and II"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Imagine you are tasked with organizing a bookshelf with spaces for seven books, numbered 1 to 7 from left to right.  You need to place books A, B, C, D, E, F, and G according to the following rules:\n\n* Book C must be placed in space 3.\n* Book B cannot be placed immediately to the right of book A.\n* Book G must be placed two spaces to the left of book D.\n* Book F cannot be placed in space 7.\n\nWhich of the following placements is possible? \n\n(A) EFBGDCA \n(B) AGBEFCD\n(C) FAGBDCE\n(D) AEBFCGD\n(E) GBCAFED",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Strategies for Efficient Problem Solving' as it requires using logic and deduction to systematically eliminate possibilities and arrive at the correct arrangement. \n\nHere's how to solve it step-by-step:\n\n1. **Start with the most restrictive clues:**  \n    * \"Book C must be placed in space 3\" and \"Book F cannot be placed in space 7\" are the most restrictive. Place those on a hypothetical bookshelf.\n    *  _ _ C _ _ _ _\n    *  _ _ C _ _ _ F \n\n2. **Incorporate the next clue:** \"Book G must be placed two spaces to the left of book D.\"  Knowing F cannot be in space 7, there's only one place for G and D.\n    *  G _ C _ D F _\n\n3. **Consider remaining clues and options:** \"Book B cannot be placed immediately to the right of book A\" limits placement options significantly. Now, examine the answer choices:\n\n    * **(A) EFBGDCA:** Violates the rule about B and A.\n    * **(B) AGBEFCD:**  Fits all the rules!\n    * **(C) FAGBDCE:** Violates the rule about F's placement.\n    * **(D) AEBFCGD:** Violates the rule about B and A.\n    * **(E) GBCAFED:** Violates the rule about F's placement.\n\n**Therefore, the correct answer is (B).**",
+            "options": [
+                "A",
+                "C",
+                "D",
+                "E"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**premise**: P @ Q means P is not less than Q. \nQ # R means Q is not greater than R. \nR $ S means R is less than S.\n**question**: If P @ Q, Q # R and R $ S, then which of the following is definitely true?\n**answer_choices**: \n  - P @ S\n  - Q # S\n  - P @ R\n  - Cannot be determined\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the given information and analyze each statement:\n\n**1. Understanding the Code:**\n   * P @ Q: P \u2265 Q (P is greater than or equal to Q)\n   * Q # R: Q \u2264 R (Q is less than or equal to R)\n   * R $ S: R < S (R is less than S)\n\n**2. Combining the Information:**\n   We have: P \u2265 Q,  Q \u2264 R, and R < S\n\n**3. Analyzing the Answer Choices:**\n   * **P @ S:** We cannot definitively say P is greater than or equal to S.  While P \u2265 Q and Q might be less than or equal to R, there's a possibility R is significantly smaller than S, making P < S. \n   * **Q # S:**  We cannot definitively say Q is less than or equal to S. It's possible Q \u2264 R and R < S,  but the difference between R and S could make Q > S.\n   * **P @ R:** We cannot definitively say if P \u2265 R. While P \u2265 Q, we don't know the exact relationship between Q and R. Q could be equal to R or significantly smaller. \n   * **Cannot be determined:** This is the **correct** answer. We cannot definitively confirm any of the given relationships between P, Q, R, and S beyond what was initially provided. \n\n**Therefore, the relationships provided do not allow us to definitively conclude any of the given answer choices except that the relationships cannot be determined.**",
+            "options": [
+                "P @ S",
+                "Q # S",
+                "P @ R",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Five friends - Alice, Bob, Carol, David, and Emily - participated in a coding competition. Their scores are ranked using the following information (where '>' represents 'scored higher than' and '=' represents 'scored equal to'):\n\n* Bob > Carol > David\n* Emily = Alice > David\n* Carol > Alice\n\nCan it be determined with certainty that Bob scored higher than Emily?  Choose from: True, False, Cannot be Determined.",
+            "difficulty": "hard",
+            "reasoning": "Here's a step-by-step analysis:\n\n1. **Combine the information:**\n   -  We know Bob > Carol and Carol > Alice, so Bob > Carol > Alice > David. \n   - We also know Emily = Alice > David.\n\n2. **Analyze the relationship between Bob and Emily:**\n   - We've established that both Bob and Emily scored higher than David. \n   - However, we have no direct comparison between Bob and Emily, nor can we definitively place Emily within the sequence Bob > Carol > Alice. \n\n3. **Consider possibilities:**\n   -  It's possible that Bob > Emily, Emily > Bob, or even Bob = Emily. The given information doesn't rule out any of these possibilities.\n\n**Therefore, the answer is 'Cannot be Determined'.** While we know the relative rankings of most participants, we lack the information to definitively compare Bob's score to Emily's.",
+            "options": [
+                "True",
+                "False",
+                "Cannot be Determined",
+                "Not enough information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**premise**: Consider the following coded inequalities:\n**codes**: \n  - P * Q means P is greater than Q.\n  - P @ Q means P is less than Q.\n  - P $ Q means P is greater than or equal to Q.\n  - P # Q means P is less than or equal to Q.\n  - P % Q means P is equal to Q.\n**statements**: \n  - A * B\n  - B $ C\n  - D @ C\n  - E % D\n**inference**: Is B # E?\n**task**: Can the inference be definitively concluded from the given information?\n",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the given information step-by-step:\n\n1. **A * B:** This translates to A > B.\n2. **B $ C:** This translates to B >= C.\n3. **D @ C:** This translates to D < C.\n4. **E % D:** This translates to E = D.\n\nNow let's analyze the inference:\n\n**B # E:** This translates to B <= E.\n\nWe need to determine if we can definitively conclude that B <= E from the given statements.  Here's how we can approach it:\n\n* Combining statements 3 and 4 (D < C and E = D), we get E < C.\n* Combining this with statement 2 (B >= C), we get B >= C > E. \n\nThis means B is greater than or equal to a value (C) that is strictly greater than E. Therefore, B cannot be less than or equal to E.\n\n**Therefore, the inference 'B # E' cannot be definitively concluded from the given information.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "If P * Q means P is greater than Q, P @ Q means P is less than Q, P $ Q means P is greater than or equal to Q, and P # Q means P is less than or equal to Q, then answer the following question:\n\nGiven the following statements:\nA * B # C\nC $ D @ E\nE * F\n\nIs the following inequality true or false?\nB @ F",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the coded inequalities and analyze the relationships step-by-step:\n\n1. **A * B # C**: This translates to A > B and B \u2264 C. Combining these, we understand that A is greater than B, and B is less than or equal to C.\n\n2. **C $ D @ E**: This translates to C \u2265 D and D < E.  We see that C is greater than or equal to D, while D is strictly less than E.\n\n3. **E * F**: This simply means E is greater than F (E > F).\n\nNow let's analyze the target inequality: **B @ F** (B < F)\n\nWe need to find a connection between B and F through the given statements. Let's trace the relationships:\n\n* We know B \u2264 C from the first statement.\n* From the second statement, C \u2265 D. Combining this with B \u2264 C, we can infer that B \u2264 D (as C acts as a bridge between B and D).\n* Further, we know D < E from the second statement.\n* Finally, E > F from the third statement.\n\nChaining these deductions: B \u2264 D < E > F\n\nFrom this chain, we can definitively say that B is less than E (B < E), and E is greater than F (E > F). However, we cannot directly compare B and F.  B could be less than, equal to, or even greater than F. \n\nTherefore, we cannot definitively say whether B @ F (B < F) is true or false based on the given information.",
+            "options": [
+                "True",
+                "False",
+                "Cannot be determined",
+                "Insufficient information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "## A Matter of Perspective: Analyzing Statements for Assumptions\n\n**Scenario:**  A group of friends are discussing a new movie. Each friend expresses an opinion, but their statements are laced with assumptions. Your task is to analyze these statements and identify the underlying assumptions.\n\n**Statements:**\n\n*  \"The movie was good, but it would have been better if it had focused more on the action scenes.\"\n\n*  \"I heard the book was amazing, so the movie must be a letdown.\"\n\n* \"Anyone who enjoys romantic comedies will absolutely love this film.\"\n\n**Question:** Choose ONE of the statements above and identify the key assumption being made. Explain how this assumption might be flawed or inaccurate. How could the statement be rephrased to be less reliant on assumptions and more objective?",
+            "difficulty": "hard",
+            "reasoning": "This question tackles the core of 'Recognizing Assumptions and Ambiguities'. It presents a common real-life scenario \u2013 subjective opinions \u2013 and requires the test-taker to dissect them. \n\n**Here's a breakdown of the analysis:**\n\n* **Statement 1:** This assumes that a greater focus on action inherently improves a movie. This is subjective. Some viewers might prefer character development or a strong plot over constant action.\n\n* **Statement 2:** This assumes that book adaptations are always inferior to the source material. While this is sometimes true, there are exceptions. A film might excel in areas the book couldn't (visuals, pacing, etc.).\n\n* **Statement 3:**  This assumes that all fans of a genre are homogenous in their tastes. Just because someone enjoys some romantic comedies doesn't mean they'll automatically love *every* film in that genre.\n\n**Re-phrasing:**\n\nLet's take Statement 2 as an example. A less assumptive version could be: \"I've heard great things about the book, so I'm going in with high expectations. It'll be interesting to see how the movie interprets the story.\"\n\n**Why this is 'tricky 9/10':**\n\n* **Subtlety:** The assumptions aren't glaringly obvious, requiring careful reading.\n* **No Single Answer:** Each statement has multiple layers of assumptions that could be unpacked. \n* **Application:** The question goes beyond identification, asking for rephrasing, which demonstrates a deeper understanding of objectivity.",
+            "options": [
+                "Recognizing Assumptions and Ambiguities",
+                "Evaluating Arguments",
+                "Interpreting Information",
+                "Identifying Bias"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Consider the following symbolic representations:\n\n*  '#' placed before a letter signifies a negation of the statement represented by that letter.\n*  '&' connecting two letters signifies that both statements represented by those letters are true.\n* '|' connecting two letters signifies that at least one of the statements represented by those letters is true.\n\nFor example, if 'P' represents the statement 'It is raining' and 'Q' represents the statement 'It is cold', then '#P' represents 'It is not raining', 'P & Q' represents 'It is raining and it is cold', and 'P | Q' represents 'It is raining or it is cold, or both'.\n\nGiven the statements:\n\nA: The sky is blue.\nB: Birds can fly.\nC: Fish can breathe underwater.\n\nWhich of the following symbolic representations accurately conveys the statement 'It is not true that both the sky is not blue and birds cannot fly'?\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the statement step-by-step:\n\n1. **'The sky is not blue'**: This is the negation of statement A, represented as #A.\n2. **'Birds cannot fly'**: This is the negation of statement B, represented as #B.\n3. **'Both the sky is not blue and birds cannot fly'**: This signifies both #A and #B are true, represented as #A & #B.\n4. **'It is not true that both the sky is not blue and birds cannot fly'**: This negates the entire statement from step 3, resulting in #(#A & #B).\n\nTherefore, the correct symbolic representation is **#(#A & #B)**, which demonstrates a complex understanding of negations and conjunctions in symbolic logic.",
+            "options": [
+                "A & B",
+                "#(A & B)",
+                "#A & #B",
+                "#(#A & #B)"
+            ],
+            "correct_option": "D"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Coded Inequalities",
+    "exam_id": 11,
+    "order": 0
+}

@@ -1,18 +1,6 @@
 {
     "questions": [
         {
-            "question": "Space explorers have discovered a new planet and are trying to decipher messages from its inhabitants. They've figured out that the aliens replace entire words with symbols. Here's what they've learned so far:\n\n| Symbol | Word       |\n|--------|------------|\n| \u2299      | Atmosphere |\n| \u25b3      | Habitable  |\n| \u25a1      | Discover   |\n| \u2606      | Planet     |\n\nThe explorers receive a new message:  \u2606 \u25b3 \u25a1 \u2299. \n\nWhat is the message the aliens are sending?",
-            "difficulty": "medium",
-            "reasoning": "This question falls under the 'Word-Based Coding: Replacing entire words with codes' subtopic because the aliens are communicating by substituting symbols for entire words. \n\nTo decode the message, we simply need to replace each symbol with its corresponding word from the table:\n\n* \u2606  = Planet\n* \u25b3 = Habitable\n* \u25a1 = Discover\n* \u2299 = Atmosphere\n\nTherefore, the decoded message is: **Planet Habitable Discover Atmosphere** which can be understood as **Planet Habitable, Discover Atmosphere.** ",
-            "options": [
-                "Planet Habitable, Discover Atmosphere",
-                "Planet, Habitable, Discover, Atmosphere",
-                "Atmosphere Discover Habitable Planet",
-                "Planet Habitable Discover"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "**instructions**: In the following code, each letter is represented by a unique symbol. Decode the message and write the correct word.\n**coded_message**: +^%@$\n**key**: \n  **T**: +\n  **R**: @\n  **E**: %\n",
             "difficulty": "medium",
             "reasoning": "Let's break down the coded message using the provided key:\n\n* '+' represents 'T'\n* '@' represents 'R'\n* '%' represents 'E'\n\nThis gives us 'T..ER.'.  \n\nNow we need to figure out the missing letters.  Considering common English words, and given the placement of 'TER', the word 'WATER' fits the pattern. \n\nTherefore, assuming 'W' is represented by '^' and 'A' is represented by '$', the decoded word is WATER.",
@@ -23,18 +11,6 @@
                 "NORTH"
             ],
             "correct_option": "C"
-        },
-        {
-            "question": "**statement**: A secret message has been encoded using a keyword cipher. The keyword is 'LOGIC' and it determines the shifting pattern for the alphabet. Here's how it works:\n**code**: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z\nL M N O P Q R S T U V W X Y Z A B C D E F G H I J K\n**instructions**: Using the keyword cipher, decode the following message: 'YAWFH'\n**question**: What does the decoded message spell?\n",
-            "difficulty": "medium",
-            "reasoning": "The keyword 'LOGIC' is first written out, followed by the remaining letters of the alphabet in order. Notice that the letters 'L', 'O', 'G', 'I', and 'C' only appear once in the code. To decode 'YAWFH', we find each letter in the bottom row of the code and replace it with the corresponding letter above it:\n\n* YAWFH\n* THINK\n\nTherefore, the decoded message is 'THINK'.",
-            "options": [
-                "THINK",
-                "YAWFH",
-                "LOGIC",
-                "CODE"
-            ],
-            "correct_option": "A"
         },
         {
             "question": "Instructions: Decode the word below using the code provided.\n\nCoding: \nVowel values = Vowel's position in the alphabet x 2\nConsonant values = Consonant's reverse position in the alphabet (Z=1, Y=2...)\n\nA=2 \nB=25\nC=24\nD=23\nE=10\nF=21\nG=20\nH=19\nI=18\nJ=17\nK=16\nL=15\n\nM=14\nN=13\n\nO=20\n\nP=11\nQ=10\nR=9\nS=8\nT=7\nU=22\nV=5\nW=4\nX=3\nY=2\nZ=1\n\nQuestion: Decode the word 'HOUSE'.\n",
@@ -49,18 +25,6 @@
             "correct_option": "A"
         },
         {
-            "question": "In a certain code, the first half of the word is shifted forward in the alphabet, while the second half is shifted backward in the alphabet, both by a position equal to the position of the letter in the word. For example, the first letter is shifted by one position, the second letter by two positions, and so on. Using this code, 'MUSIC' is coded as 'NVTJD'. What is the code for 'FLOWER'?",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the coding process for 'FLOWER': \n\n**1. 'FLOW' (First Half):**\n   - 'F': Shifted forward by 1 position becomes 'G'.\n   - 'L': Shifted forward by 2 positions becomes 'N'.\n   - 'O': Shifted forward by 3 positions becomes 'R'.\n   - 'W': Shifted forward by 4 positions becomes 'A' (loops back to the beginning of the alphabet).\n\n**2. 'ER' (Second Half):**\n   - 'E': Shifted backward by 5 positions becomes 'Z' (loops back from the end of the alphabet).\n   - 'R': Shifted backward by 6 positions becomes 'L' (loops back from the end of the alphabet).\n\nTherefore, combining the coded parts, 'FLOWER' is coded as 'GNRAZL'.",
-            "options": [
-                "GNRAZL",
-                "GMRBZK",
-                "GNSAZL",
-                "GNRABL"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "If the word 'DECODE' is written as 'EFGDHQ' using a specific coding pattern, how would you decode the word 'LOGIC' based on the same pattern?",
             "difficulty": "medium",
             "reasoning": "This question falls under the 'Building Logical Reasoning Skills for Decoding' subtopic because it requires identifying and applying a pattern to decode a word. \n\nHere's how we can solve it:\n\n1. **Analyze the pattern:** Observe the relationship between the original word 'DECODE' and the coded word 'EFGDHQ'. \n2. **Identify the shift:** Each letter in 'DECODE' is shifted two letters forward in the alphabet to get the corresponding letter in 'EFGDHQ' (D becomes E, E becomes F, C becomes G, and so on).\n3. **Apply the pattern:**  Apply the same pattern to the word 'LOGIC':\n    * L + 2 letters = N\n    * O + 2 letters = Q\n    * G + 2 letters = I\n    * I + 2 letters = K\n    * C + 2 letters = E\n4. **Decoded word:** Therefore, 'LOGIC' would be coded as 'NQIK",
@@ -69,18 +33,6 @@
                 "NQIK",
                 "OPKJL",
                 "RMILJ"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "If 'APPLE' is coded as 'ZKKOV' and 'BANANA' is coded as 'OZMZMZ', how would you code the word 'ORANGE'? ",
-            "difficulty": "medium",
-            "reasoning": "This coding-decoding question involves the concept of reverse alphabetical coding with a twist. \n\n**Step 1: Reverse Alphabetical Substitution:** Notice that each letter in the original word is replaced by the letter at the opposite end of the alphabet.\n* A is replaced with Z\n* B is replaced with Y\n* P is replaced with K, and so on.\n\n**Step 2: Identifying the Twist:** Observe that the repeated letters in 'BANANA' ('A' and 'N') are also coded with repeated letters ('Z' and 'M'). This indicates that the code considers the repetition of letters.\n\n**Step 3: Applying the Logic to 'ORANGE':**\n* O is replaced with L\n* R is replaced with I\n* A is replaced with Z\n* N is replaced with M\n* G is replaced with T\n* E is replaced with V\n\nTherefore, 'ORANGE' would be coded as 'LIZMTV'.",
-            "options": [
-                "LIZMTV",
-                "MJAOSN",
-                "KZHLSF",
-                "SLHVMT"
             ],
             "correct_option": "B"
         },
@@ -97,18 +49,6 @@
             "correct_option": "A"
         },
         {
-            "question": "**Context**: Chinese spies during World War II used a clever coding system based on common Chinese radicals to send secret messages. \n**Encoding/Decoding Rule**: Each radical in a Chinese character is replaced with a corresponding number based on its position in a predefined list. For example, the radical '\u56d7' (meaning 'enclosure') might be represented by the number 3,  '\u624c' (meaning 'hand') by 7, and so on. This creates a string of numbers for each character.\n**Example**: The character '\u56fd' (meaning 'country'), which combines the radicals '\u56d7' and '\u7389' (meaning 'jade'), could be encoded as '39' if '\u7389' corresponds to the number 9 in our list.\n**Question**: Using the following partial radical list and their corresponding code numbers, decode this message: '15 82 76'.\n\n Radical | Code \n------- | -------- \n \u4e00  | 1 \n\u4e28 | 2\n \u4e36| 5\n \u53e3 | 8\n \u624c | 7\n \u5fc3 | 6\n\n**Difficulty Level**: Medium 5/10\n",
-            "difficulty": "medium",
-            "reasoning": "This question tests a student's ability to apply a given coding rule in a novel context. While the concept of substitution is straightforward, using Chinese radicals adds a layer of complexity.  Here's how to solve it:\n\n1. **Break down the message:** The message '15 82 76' consists of three two-digit codes.\n2. **Decode each code:** Using the provided table:\n    * 15 translates to '\u4e00' and '\u4e36'  \n    * 82 translates to '\u53e3' and '\u4e28'\n    * 76 translates to '\u624c' and '\u5fc3'\n3. **Combine the radicals:** Look up Chinese characters that are formed using the decoded radicals. The correct combinations are '\u767d' (white), '\u7533' (stretch), and '\u6301' (hold).\n4. **Form the final answer:** The decoded message is '\u767d\u7533\u6301'. ",
-            "options": [
-                "\u767d\u7533\u6301",
-                "\u767d\u7533\u767d",
-                "\u7533\u6301\u767d",
-                "\u767d\u6301\u7533"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "**scenario**: Spies communicate using a coded language that combines multiple techniques to ensure secrecy.\n**coding_rule**: 1. Write down the numerical position of each letter (A=1, B=2, ... Z=26).\n2. For vowels (A, E, I, O, U), add 5 to the numerical value.\n3. For consonants, subtract 2 from the numerical value.\n4. Convert the final values back to their corresponding letters.\n**example**: \n  **original_message**: HELLO\n  **coded_message**: JGNnq\n**question**: Decode the following message: \"Tznm\"\n",
             "difficulty": "medium",
             "reasoning": "Let's decode the message \"Tznm\" step-by-step:\n\n**1. Convert letters to numerical positions:**\n   * T = 20\n   * z = 26\n   * n = 14\n   * m = 13\n\n**2. Apply vowel/consonant rules:**\n   * T (consonant) = 20 - 2 = 18\n   * z (consonant) = 26 - 2 = 24\n   * n (consonant) = 14 - 2 = 12\n   * m (consonant) = 13 - 2 = 11\n\n**3. Convert numerical values back to letters:**\n   * 18 = R\n   * 24 = X\n   * 12 = L\n   * 11 = K\n\nTherefore, the decoded message is \"RXLK\".",
@@ -121,18 +61,6 @@
             "correct_option": "A"
         },
         {
-            "question": "Imagine you are learning a new coding language.  You've written a program, but it's not working as intended.  You've identified three potential errors in your code: \n\n**Error A:**  A syntax error in line 15. \n**Error B:**  A logical error in the function 'calculateTotal'.\n**Error C:**  A missing closing bracket on line 28. \n\nYou decide to use a debugging strategy where you fix one error at a time and test the code after each fix.  You start by fixing Error B, then Error C, and finally Error A. After fixing each error, the code still doesn't work as expected. \n\nWhat does this outcome tell you about the relationship between the errors, and what should your next step be in the debugging process?",
-            "difficulty": "medium",
-            "reasoning": "This question delves into the process of analyzing mistakes during coding, specifically debugging. Here's a breakdown of the reasoning:\n\n* **Understanding the Error Types:** The question presents three common types of coding errors: \n    * **Syntax Errors:** These are like grammatical errors in language, preventing the code from running at all.\n    * **Logical Errors:** The code runs, but produces unexpected results due to flawed logic in the program's instructions. \n    * **Syntax Errors (cont.):**  The missing bracket also falls under syntax errors, as it disrupts the code's structure.\n\n* **Analyzing the Outcome:** The crucial point is that even after fixing all the identified errors, the code still doesn't function correctly. This implies one or more of the following:\n    * **Hidden Errors:** There might be other undiscovered errors in the code.\n    * **Interconnected Errors:** The original errors might have masked other errors, which only surfaced after the initial fixes.\n    * **Error Cascading:** Fixing one error might have unintentionally introduced new errors.\n\n* **Next Steps:** Given these possibilities, the next logical steps in the debugging process should involve:\n    * **Thorough Code Review:**  Re-examine the entire code for any overlooked errors, paying attention to the areas surrounding the initial fixes.\n    * **Testing in Isolation:**  Isolate different sections of the code to identify if the problem is localized to a specific function or module. \n    * **Using a Debugger:** Employing a debugging tool can help step through the code line-by-line, observing variable values and program flow to pinpoint the exact location of the issue. \n\nIn essence, this question challenges students to think critically about the debugging process, understand that errors are not always independent, and encourages a systematic approach to identifying and resolving coding issues.",
-            "options": [
-                "The errors are independent",
-                "The errors are interdependent",
-                "There might be another error",
-                "The errors are cascading"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**Instructions:**  You are given a coded message representing tips for time management during coding-decoding exams. Each number corresponds to a letter of the alphabet (A=1, B=2, etc.). However, there's a twist! To decode the message, you need to subtract the position of each number in the code from the number itself. For example, if the first number in the code is '5', you would subtract '1' (its position) resulting in '4', which translates to 'D'.\n\n**Example:** 5-1 = 4 = D\n\n**Question:** Decode the following message to reveal the time management tip:\n\n 16-19-22-8-16-12-1-14-7-5-14-20  \n\n**Time Limit:** 60 seconds\n\n**Answer Choices:**\n\n* a)  PLAN YOUR TIME\n* b)  READ CAREFULLY\n* c)  STAY FOCUSED\n* d)  WORK QUICKLY ",
             "difficulty": "medium",
             "reasoning": "Here's how we decode the message step-by-step:\n\n* **16-1:** 16 - 1 = 15 = O \n* **19-2:** 19 - 2 = 17 = Q\n* **22-3:** 22 - 3 = 19 = S\n* **8-4:** 8 - 4 = 4 = D\n* **16-5:** 16 - 5 = 11 = K\n* **12-6:** 12 - 6 = 6 = F\n* **1-7:** 1 - 7 = -6 (Since we wrap around, -6 from 'A' is 'U') = U\n* **14-8:** 14 - 8 = 6 = F\n* **7-9:** 7 - 9 = -2 (Wrapping around, -2 from 'A' is 'Y') = Y\n* **5-10:** 5 - 10 = -5 (Wrapping around, -5 from 'A' is 'V') = V\n* **14-11:** 14 - 11 = 3 = C\n* **20-12:** 20 - 12 = 8 = H\n\nTherefore, the decoded message is **OSDKFU FYVCH**, which, when unscrambled, reveals the time management tip: **STAY FOCUSED**.",
@@ -141,18 +69,6 @@
                 "READ CAREFULLY",
                 "STAY FOCUSED",
                 "WORK QUICKLY"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "**Encoding Rule:** Each letter is represented by a numerical code based on the following steps:\n\n1. Find the alphabetical position of the letter.\n2. Square the alphabetical position.\n3. If the alphabetical position is odd, add 2 to the result from step 2. If it's even, subtract 2.\n\n**Example:**\n\n*   C = 3rd position\n*   3 * 3 = 9\n*   9 + 2 = 11 (Since 3 is odd)\n*   So, C is encoded as 11\n\n**Question:** Decode the following sequence and find the hidden word:\n\n23, 123, 10, 322",
-            "difficulty": "medium",
-            "reasoning": "Let's decode each number step-by-step:\n\n**23:**\n1.  To find what number, when squared, is close to 23, we know 4 * 4 = 16 and 5 * 5 = 25. So the base number must be 5.\n2.  5 * 5 = 25\n3.  Since 5 is odd, we must have added 2 in the encoding (25 - 2 = 23)\n4.  The 5th letter of the alphabet is E.\n\n**123:**\n1.  We know 11 * 11 = 121 and 12 * 12 = 144. Since 123 is closer to 121, the base number must be 11.\n2.  11 * 11 = 121\n3.  Since 11 is odd, 2 was added (121 + 2 = 123)\n4.  The 11th letter of the alphabet is K\n\n**10:**\n1.  3 * 3 = 9 and 4 * 4 = 16, so the base number must be 3.\n2.  3 * 3 = 9\n3.  Since 3 is odd, 2 was added (9 + 2 = 11). However, the encoded number is 10, not 11, meaning this letter is INCORRECTLY encoded.\n4.  The 3rd letter of the alphabet is C.\n\n**322:**\n1. 18 * 18 = 324, making 18 the likely base number.\n2. 18 * 18 = 324\n3. Since 18 is even, we subtract 2 (324 - 2 = 322)\n4. The 18th letter of the alphabet is R\n\n**Therefore, the decoded word is 'EK?R'. The letter 'C' was incorrectly encoded.**",
-            "options": [
-                "EKR",
-                "EKCR",
-                "EK?R",
-                "ECR"
             ],
             "correct_option": "C"
         },
@@ -169,18 +85,6 @@
             "difficulty": "medium"
         },
         {
-            "question": "A secret code uses symbols to represent letters of the alphabet. The vowels (A, E, I, O, U) are represented by symbols: * # @ ? +.  Consonants are represented by the symbol immediately following the vowel that comes before them in the alphabet. For example, 'B' is represented by # because it follows 'A' which is represented by *. Decode the following message:\n\n +^?% ",
-            "difficulty": "medium",
-            "reasoning": "Here's how to decode the message:\n\n1. **Identify the vowels and their symbols:**\n    * A = *\n    * E = #\n    * I = @\n    * O = ?\n    * U = +\n\n2. **Decode the consonants based on the rule:**\n    * '+' represents 'U', so '^' represents 'V'.\n    * '?' represents 'O', so '%' represents 'P'.\n\n3. **Substitute the symbols with their corresponding letters:**\n    * +^?%  =  UVP\n\nTherefore, the decoded message is **UVP**.",
-            "options": [
-                "UVW",
-                "UVP",
-                "VOP",
-                "UPW"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "If 'WATER' is coded as '23120518', and 'AIR' is coded as '1918', how is 'FIRE' coded?",
             "difficulty": "medium",
             "reasoning": "This code represents each letter with its corresponding position in the alphabet. \n\n* W is the 23rd letter of the alphabet.\n* A is the 1st letter.\n* T is the 20th letter.\n* E is the 5th letter.\n* R is the 18th letter.\n\nTherefore, 'WATER' is coded as '23120518'. Following the same logic:\n\n* F is the 6th letter.\n* I is the 9th letter.\n* R is the 18th letter.\n* E is the 5th letter. \n\nSo, 'FIRE' would be coded as '69185'. ",
@@ -189,18 +93,6 @@
                 "96185",
                 "69158",
                 "18695"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**Code:**\n\n* KING -> RING\n* QUEEN -> UEENN\n* BISHOP -> ISHOP\n* KNIGHT -> NIGHT\n\n**Target:** ROOK\n\n**Question:** Decode the target element \"ROOK\" using the same logic applied to the code provided.",
-            "difficulty": "medium",
-            "reasoning": "**Subtopic:** Shifting (Circular and Linear)\n\n**Explanation:**\n\nThe code is generated by shifting the first letter of the word to the end of the word. Applying this rule to \"ROOK\":\n\n1. **ROOK** becomes **OOKR**. \n\nTherefore, the correct decoding of \"ROOK\" is **OOKR**.",
-            "options": [
-                "OOKR",
-                "RKOOU",
-                "ROOK",
-                "KOOR"
             ],
             "correct_option": "A"
         },
@@ -217,18 +109,6 @@
             "correct_option": "B"
         },
         {
-            "question": "**instructions**: Each word in the coded message is replaced by a word representing its opposite meaning. Decode the message below.\n**example**: \"Happy\" becomes \"Sad\"\n**code**: \"Open Empty Cold Stop\"\n**answer_options**: \n  - a) Close Full Warm Begin\n  - b) Close Full Hot Go\n  - c) Shut Empty Cold Begin\n  - d) Close Empty Warm Go\n",
-            "difficulty": "medium",
-            "reasoning": "This question falls under 'Word-Based Coding' as it involves replacing entire words with their antonyms. Here's a step-by-step solution: \n\n1. **'Open'** is the opposite of **'Close'.** \n2. **'Empty'** has a few potential opposites, but considering the context, **'Full'** fits best. \n3. **'Cold'** is the opposite of **'Warm'.**\n4. **'Stop'** has several antonyms, but **'Go'** or **'Begin'** are the most suitable choices. \n\nTherefore, the correct decoded message is **'Close Full Warm Go' (Option b).**",
-            "options": [
-                "a) Close Full Cold Begin",
-                "b) Close Full Hot Go",
-                "c) Shut Empty Cold Begin",
-                "d) Close Empty Warm Go"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "**Instructions**: The following message has been encoded using a two-step process: \n1. **Word Shifting:** Each word is shifted three places forward in an alphabetical list (e.g., 'apple' becomes 'dwwrq'). \n2. **Number Replacement:** Each letter is then replaced by its corresponding position in the alphabet (a=1, b=2, ... z=26). \nDecode the message using the provided example and these combined techniques.\n**Example**: 'code' is encoded as '7 18 4 7'\n**Question**: Decode the message: '11 18 21 16  23 18 21  8 2  5'\n",
             "difficulty": "medium",
             "reasoning": "**Step 1: Decode the Number Replacement:** \n- '11 18 21 16  23 18 21  8 2  5' translates to 'k r u p  w r u  h b  e' \n\n**Step 2: Decode the Word Shifting:** \n- Shift each word three places back in the alphabet: \n    - 'k r u p'  -> 'h o s n' \n    - 'w r u'  -> 't o s' \n    - 'h b e' -> 'e y a'\n\n**Solution:** The decoded message is 'hosn tos eya'.",
@@ -237,18 +117,6 @@
                 "hons tos eya",
                 "hosn tos eya",
                 "hosn tos eya"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Imagine a group of friends use a coded language where they replace vowels with specific symbols: \nA = *, E = #, I = +, O = -, U = %. \n\nDecode this message and find out what they are planning:\n\n'W# *R# G-+NG T- TH# -%T--R%'",
-            "difficulty": "medium",
-            "reasoning": "This question falls under the subtopic of 'Building Logical Reasoning Skills for Decoding' within the broader topic of 'Logical Reasoning - Coding-Decoding'. It tests skills like pattern recognition, symbol substitution, and logical deduction.\n\nHere's how to decode the message step-by-step:\n\n1. **Identify the code:** The question clearly states that vowels are replaced with symbols. \n2. **Apply the substitutions:**  Replace each symbol in the message with its corresponding vowel according to the code. \n    *  'W#' becomes 'WE' \n    *  ' *R#' becomes ' ARE'\n    *  'G-+' becomes 'GOI'\n    *  'T-' becomes 'TO'\n    *  'TH#' becomes 'THE'\n    *  '-%T--R%' becomes 'OUTDOOR'  \n3. **Combine the decoded parts:** Combining all the decoded parts, we get: 'WE ARE GOING TO THE OUTDOOR'.\n\nTherefore, the friends are planning to go outdoors.",
-            "options": [
-                "Building Logical Reasoning Skills for Decoding",
-                "Logical Reasoning - Coding-Decoding",
-                "Pattern Recognition",
-                "Symbol Substitution"
             ],
             "correct_option": "A"
         },
@@ -265,18 +133,6 @@
             "correct_option": "B"
         },
         {
-            "question": "**Instructions:** Decode the following sequence using the provided coding scheme.\n\n**Coding Scheme:**  Each letter in the sequence is shifted forward by 4 positions (A->E, B->F, C->G, etc.). However, if a letter is in the second half of the alphabet (N-Z), it is shifted backward by 3 positions (N->K, O->L, P->M, etc.).\n\n**Encoded Sequence:**  LTIQGSY\n\n**Answer:**  ______",
-            "difficulty": "medium",
-            "reasoning": "**Step 1: Analyze the Coding Scheme:**\nThe code involves two rules:\n* **Rule 1:** Letters in the first half of the alphabet (A-M) are shifted forward by 4 positions.\n* **Rule 2:** Letters in the second half of the alphabet (N-Z) are shifted backward by 3 positions.\n\n**Step 2: Apply the Rules to the Encoded Sequence:**\nLet's decode the message letter by letter:\n\n* **L:** L is in the first half, so we shift forward 4 positions (L -> P).\n* **T:** T is in the second half, so we shift backward 3 positions (T -> Q).\n* **I:** I is in the first half, so we shift forward 4 positions (I -> M).\n* **Q:** Q is in the second half, so we shift backward 3 positions (Q -> N).\n* **G:** G is in the first half, so we shift forward 4 positions (G -> K).\n* **S:** S is in the second half, so we shift backward 3 positions (S -> P).\n* **Y:** Y is in the second half, so we shift backward 3 positions (Y -> V).\n\n**Step 3: Combine the Decoded Letters:**\nCombining the decoded letters gives us: **PQMNKPV**\n\nTherefore, the decoded message is **PQMNKPV**.",
-            "options": [
-                "PQMNKPV",
-                "LMNKSVP",
-                "PMNKQPV",
-                "PQMNKVP"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "**Coded Message 1:**  CAT =  @#$ \n **Decoded Message 1:** DOG\n\n**Decode the following message:**\n\n **Coded Message 2:** #$@",
             "difficulty": "medium",
             "reasoning": "This question uses symbol substitution with a twist, requiring both working backward and trial-and-error. Here's how to solve it:\n\n1. **Analyze the relationship:** Notice that the decoded word (DOG) is not a direct letter-for-symbol substitution of the coded word (CAT). This suggests a pattern or shift is involved. \n\n2. **Trial-and-Error with Pattern Recognition:** Consider the alphabetical order of the letters.  'D' comes after 'C', 'O' after 'A', and 'G' after 'T'. This suggests a pattern of shifting forward in the alphabet. \n\n3. **Apply the Pattern:**  If each symbol represents a letter shifted forward by one position from the corresponding letter in 'CAT', we can decode '#$@':\n    * '#' corresponds to 'D' shifted forward, which is 'E'.\n    * '$' corresponds to 'O' shifted forward, which is 'P'.\n    * '@' corresponds to 'G' shifted forward, which is 'H'.\n\n4. **Solution:** The decoded message is 'EPH'. ",
@@ -287,18 +143,6 @@
                 "CAT"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "**scenario**: A group of archaeologists discovered an ancient Chinese scroll. The writing on the scroll is believed to be a coded message.  \n**encoding_key**: The code uses a fixed key where each Chinese character is represented by a number based on its position in a specific sequence. The sequence is:  \u5929 (ti\u0101n), \u5730 (d\u00ec), \u4eba (r\u00e9n), \u4f60 (n\u01d0),  \u597d (h\u01ceo). For example, \u5929 (ti\u0101n) is represented by 1, \u5730 (d\u00ec) by 2, and so on.\n**encoded_message**: 3 1 5 2 4\n**task**: Decode the message to reveal the hidden message on the scroll.\n",
-            "difficulty": "medium",
-            "reasoning": "This question falls under the category of 'Chinese Coding: Using a fixed key for encoding and decoding messages' within the broader topic of 'Logical Reasoning - Coding-Decoding'.\n\nHere's how we decode the message:\n\n1. **Understanding the Key:** The key tells us that each number represents a specific Chinese character based on its position in the sequence: \u5929 (ti\u0101n), \u5730 (d\u00ec), \u4eba (r\u00e9n), \u4f60 (n\u01d0),  \u597d (h\u01ceo).\n\n2. **Decoding the Message:**\n    * 3 translates to \u4eba (r\u00e9n)\n    * 1 translates to \u5929 (ti\u0101n)\n    * 5 translates to \u597d (h\u01ceo)\n    * 2 translates to \u5730 (d\u00ec)\n    * 4 translates to \u4f60 (n\u01d0)\n\n3. **The Decoded Message:** The decoded message is \u4eba\u5929\u597d\u597d\u5730 (r\u00e9n ti\u0101n h\u01ceo h\u01ceo de), which translates to 'Everything is good' in English.",
-            "options": [
-                "Everything is good",
-                "\u5929\u4eba\u597d\u5730",
-                "Good",
-                "\u4eba\u5929\u597d\u597d\u5730"
-            ],
-            "correct_option": "D"
         },
         {
             "question": "**context**: A group of archaeologists discovered an ancient artifact inscribed with a series of numbers. They suspect it's a coded message and have figured out a part of the code:\n**code**: Every letter is assigned a numerical value based on its position in the alphabet, but in reverse order:\n\nZ - 1\nY - 2\nX - 3\n...\nA - 26\n**task**: Using this code, decipher the following sequence found on the artifact and reveal the hidden message: \n\n'18 16 7 9 14 21 19'\n",
@@ -313,18 +157,6 @@
             "correct_option": "A"
         },
         {
-            "question": "You have 60 minutes to solve a set of coding-decoding questions. You estimate that questions of type A take 5 minutes each, type B take 8 minutes each, and type C take 12 minutes each.  There are 3 questions of type A, 2 of type B, and 1 of type C.  \n\n**Code:** The code represents the optimal order to solve these questions to maximize the number of questions answered correctly within the time limit, assuming all questions are of equal value. \n\n**Example:** 'AABB' represents solving both type A questions first, then both type B questions. \n\n**Question:** Decode this sequence for the optimal order: 'ABACB'.",
-            "difficulty": "medium",
-            "reasoning": "This question assesses time management skills within a coding-decoding format. Here's how to solve it: \n\n**1. Calculate Total Time Per Question Type:**\n    * Type A: 3 questions * 5 minutes/question = 15 minutes\n    * Type B: 2 questions * 8 minutes/question = 16 minutes\n    * Type C: 1 question * 12 minutes/question = 12 minutes\n\n**2. Analyze the Provided Code (ABACB):**\n    * This sequence suggests solving questions in this order: A, B, A, C, B. \n\n**3.  Check if 'ABACB' is Optimal:**\n    *  This sequence prioritizes shorter questions, leaving the longest (Type C) towards the end. This isn't ideal for maximizing completed questions within the time limit.\n\n**4. Determine the Optimal Order:**\n    * To maximize completed questions, prioritize the quickest questions first. A logical order would be to complete all type A, then type B, then type C (AABBCC).\n\n**5. Encode the Optimal Order:**\n    *  Following the example, the optimal order 'AABBCC' is the correct answer.  \n\n**Therefore, the code 'ABACB' does not represent the optimal order for maximizing correctly answered questions within the time limit.**",
-            "options": [
-                "ABACB",
-                "AABBCC",
-                "ACABB",
-                "CBABA"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "**Context:** A group of spies uses a number-based code to send secret messages. \n\n**Coding Rule:** To encode a word, follow these steps for each letter: \n1. Assign a numerical value to each letter (A=1, B=2, C=3,... Z=26). \n2. Square the numerical value. \n3.  Divide the result by the letter's position in the alphabet. \n4. Finally, sum up the results for all letters in the word.  \n\n**Example:** The word \"BAD\" would be encoded as: \n* B (2nd letter): (2^2) / 2 = 2\n* A (1st letter): (1^2) / 1 = 1\n* D (4th letter): (4^2) / 4 = 4\n* Total: 2 + 1 + 4 = 7 \n\n**Question:**  What word is represented by the code number 38? ",
             "difficulty": "medium",
             "reasoning": "**Reasoning:**\n\nLet's break down the code and work backward to find the word:\n\n* **Target Code:** 38\n\nWe need to find a combination of three letters whose encoded values sum up to 38.  Let's try a few possibilities, remembering to reverse the encoding steps:\n\n* **Assume the first letter is E (5th letter):**\n    *  Reverse of dividing by the letter's position is multiplying:  X * 5 = Y  (where Y should be a perfect square)\n    *  The only perfect square divisible by 5 within a reasonable range is 25 (5 * 5 = 25)\n    * Reverse of squaring is the square root: \u221a25 = 5\n    * So, the first letter could be E. \n\n* **Remaining Code: 38 - 25 = 13**\n\nNow we need to find two letters that add up to 13 after encoding. Let's continue our trial-and-error:\n\n* **Assume the second letter is A (1st Letter):**\n    * (1^2) / 1 = 1\n\n* **Remaining Code: 13 - 1 = 12**\n\n* **Find the third letter that results in 12 after encoding.**  Thinking of perfect squares, 144 (12 * 12) is divisible by a letter's position (12th letter, L). \n    * (12^2) / 12 = 12\n\n**Therefore, the word is \"EAL\".** ",
@@ -333,18 +165,6 @@
                 "FAG",
                 "BAD",
                 "EAR"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "A time management guru uses a unique code to represent different time management techniques. He assigns each technique a number based on its order in a specific sequence he follows.  \n\nFor example:  \n\n* Prioritize = 12 \n* Delegate = 34 \n* Time Blocking = 56\n* Break down tasks = 78 \n\nThe code follows a pattern based on the order he recommends implementing these techniques. If he wants to represent the sequence of techniques for a particular day as \"Delegate, Break down tasks, Prioritize, Time Blocking,\" what would be the numerical code he uses?",
-            "difficulty": "medium",
-            "reasoning": "The code represents the order of time management techniques: \n\n1. **Prioritize = 12** \n2. **Delegate = 34**\n3. **Time Blocking = 56**\n4. **Break down tasks = 78** \n\nThe question asks for the code for the sequence: Delegate, Break down tasks, Prioritize, Time Blocking. So the code would be 34781256 representing the order of techniques as numbers.",
-            "options": [
-                "34781256",
-                "12345678",
-                "78123456",
-                "56347812"
             ],
             "correct_option": "A"
         },
@@ -361,18 +181,6 @@
             "correct_option": "A"
         },
         {
-            "question": "A secret code is formed by shifting each letter in a word two positions backward in the alphabet (C becomes A, D becomes B, and so on). What is the code word for 'GAME'? ",
-            "difficulty": "medium",
-            "reasoning": "The question involves the concept of backward letter shifting in alphabetical order, which falls under 'Forward and Reverse Sequencing.'\n\nHere's how to decode the word 'GAME':\n\n* **G:** Shifting 'G' two positions back in the alphabet gives us 'E'. \n* **A:** Shifting 'A' two positions back requires wrapping around the alphabet. So 'A' becomes 'Y'.\n* **M:** Shifting 'M' two positions back gives us 'K'.\n* **E:** Shifting 'E' two positions back gives us 'C'.\n\nTherefore, the code word for 'GAME' is 'EYKC'.",
-            "options": [
-                "EYKC",
-                "FBLD",
-                "GCME",
-                "DKZB"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "In a specific code language, each letter is assigned a numerical value based on the following pattern: A=2, B=4, C=6, and so on. However, every vowel's assigned value is increased by 3 after applying the initial pattern. For instance, E=10 (initially 5, then +5 for being a vowel).  \n\nUsing this code, decode the following message and find the sum of all the numerical values: \n\n'BLUE' ",
             "difficulty": "medium",
             "reasoning": "Here's how to decode the message 'BLUE' and find the sum:\n\n* **B:**  B = 4 (following the initial pattern)\n* **L:** L = 24 (following the initial pattern)\n* **U:** U = 21 (initially 18, then +3 for being a vowel) \n* **E:** E = 10 (initially 5, then +5 for being a vowel)\n\nTherefore, the numerical representation of 'BLUE' is 4 24 21 10.\n\nFinally, summing all the numerical values: 4 + 24 + 21 + 10 = **59**",
@@ -381,18 +189,6 @@
                 "59",
                 "61",
                 "63"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "A secret agent sends messages encoded with a number-shifting code. The code works by shifting each letter a certain number of places down the alphabet, wrapping back to the beginning if necessary. For example, with a shift of 3, 'A' becomes 'D', 'B' becomes 'E', and 'Z' becomes 'C'. \n\nYou intercepted a coded word and its corresponding decoded letter. Can you crack the code and decode the rest of the message?\n\n* Coded Word:  'LQGO'\n* Decoded Letter: The second letter decodes to 'O' \n\nWhat is the decoded word?\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how we can solve this puzzle using a combination of working backwards and trial-and-error:\n\n1. **Identify the shift:** We know 'Q' decodes to 'O'.  Counting backward from 'Q' to 'O' in the alphabet, we find a shift of 8 (Q-P-O-N-M-L-K-J-I-H-G-F-E-D-C-B-A-Z-Y-X-W-V-U-T-S-R-Q-P-O). \n\n2. **Apply the shift to the other letters:**\n    * 'L' shifted back 8 places becomes 'D' (L-K-J-I-H-G-F-E-D).\n    * 'G' shifted back 8 places becomes 'Y' (G-F-E-D-C-B-A-Z-Y).\n    * 'O' shifted back 8 places becomes 'G' (O-N-M-L-K-J-I-H-G).\n\n3. **Form the decoded word:** By combining the decoded letters, the coded word 'LQGO' translates to 'DOGY'.\n\nTherefore, the decoded word is DOGY.",
-            "options": [
-                "CAT",
-                "DOGY",
-                "FROG",
-                "PIG"
             ],
             "correct_option": "B"
         },
@@ -409,18 +205,6 @@
             "correct_option": "A"
         },
         {
-            "question": "Imagine you are trying to crack a code used by a group of scientists studying bird migration patterns.  They use a system where each digit from 1 to 9 represents a specific action a bird takes during its journey. \n\n**Instructions:**\nYour goal is to decipher the code and understand the sequence of actions represented by the code.\n\n**Example:**\n- 3521 might mean 'Fly South, Rest, Eat, Fly North'.\n\n**Challenge:**\nYou observe a bird performing this sequence: 'Fly North, Eat, Fly South, Rest, Fly South'.  If the code for 'Fly South, Rest' is '71', what is the code for the entire observed sequence?\n\n**Difficulty:** Medium 7/10",
-            "difficulty": "medium",
-            "reasoning": "This question blends coding-decoding with the concept of learning from mistakes. It's challenging because it doesn't provide a direct one-to-one mapping like a simple substitution cipher. Instead, students need to:\n\n1. **Analyze the Example:** Understand that each digit represents a distinct action. \n2. **Apply Logic to the Challenge:** Break down the observed sequence ('Fly North, Eat, Fly South, Rest, Fly South') and use the given code snippet ('Fly South, Rest' = '71') to deduce the code for individual actions.\n3. **Synthesize the Complete Code:**  Piece together the individual action codes to form the code for the entire observed sequence.\n\nLet's break it down:\n- We know 'Fly South, Rest' is '71'.\n- The observed sequence has 'Fly South' twice, suggesting '7' likely represents 'Fly South'.\n- This means '1' likely represents 'Rest'.\n- The challenge now is to figure out the codes for 'Fly North' and 'Eat' by analyzing the full sequence and comparing it to the '71' snippet.\n\n**Without the actual code mapping for 'Fly North' and 'Eat', it's impossible to provide a definitive numerical answer. The strength of the question lies in the logical deduction process.**\n\nTo complete this question, you'd need to provide a full action-to-digit mapping, allowing students to arrive at the correct numerical code for the observed bird behavior.",
-            "options": [
-                "71717",
-                "71357",
-                "35717",
-                "71352"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "**description**: This code uses a combination of letter-to-number substitution and a mathematical operation. First, each letter is replaced with its corresponding position in the alphabet (A=1, B=2,... Z=26). Then, the position value of each letter is multiplied by 2, and finally, all the results are added together to get the final coded value.\n**example**: 'BAD' becomes (2 * 2) + (1 * 2) + (4 * 2) = 4 + 2 + 8 = 14.\n**question**: What is the code for the word 'GREEN'?\n",
             "difficulty": "medium",
             "reasoning": "Let's break down the solution step-by-step:\n\n1. **Letter to Number Conversion:**\n   - G = 7th letter\n   - R = 18th letter\n   - E = 5th letter\n   - E = 5th letter\n   - N = 14th letter\n\n2. **Applying the Mathematical Operation:**\n   - G: 7 * 2 = 14\n   - R: 18 * 2 = 36\n   - E: 5 * 2 = 10\n   - E: 5 * 2 = 10\n   - N: 14 * 2 = 28\n\n3. **Adding the Results:**\n   14 + 36 + 10 + 10 + 28 = 98\n\nTherefore, the code for 'GREEN' is 98.",
@@ -433,18 +217,6 @@
             "correct_option": "B"
         },
         {
-            "question": "**scenario**: A secret message was encoded using a combination of a Caesar cipher and a rail fence cipher. The Caesar cipher shifts each letter three places down the alphabet (e.g., A becomes D, B becomes E, etc.), and the rail fence cipher arranges the letters in a zigzag pattern with two rails before reading them off row by row.\n**code**: KHOSDFNDUERPDWKH\n**question**: What is the original message?\n",
-            "difficulty": "medium",
-            "reasoning": "**1. Decoding the Rail Fence Cipher:**\n\n   - Since the rail fence cipher uses two rails, we can visualize the encoded message arranged in a zigzag pattern like this:\n\n     ```\n     K . O . D . U . P . W .\n     . H . S . F . N . E . R . D . K . H\n     ```\n\n   - Reading the letters row by row, we get: KODUPWHSFDNERDKH\n\n**2. Decoding the Caesar Cipher:**\n\n   - Each letter in the output from step 1 was shifted three places down the alphabet. To decode it, we shift each letter *backwards* three places:\n\n     ```\n     K -> G\n     O -> L\n     D -> A\n     U -> R\n     P -> M\n     W -> T\n     H -> E\n     S -> P\n     F -> C\n     N -> K\n     E -> B\n     R -> O\n     D -> A\n     K -> G\n     H -> E\n     ```\n\n   - This gives us the final decoded message: **GLARMTEPCBOAGAE**\n\n**Therefore, the original message is 'GLARMTEPCBOAGAE'.**  It is likely a meaningless word, as is common in basic cipher examples, but the process demonstrates the decoding steps.",
-            "options": [
-                "GLARMTEPCBOAGAE",
-                "KHOSDFNDUERPDWKH",
-                "KODUPWHSFDNERDKH",
-                "GLARMTEPCBOAGAE"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "A group of archaeologists discovered an ancient Chinese scroll. To decode the messages hidden within, they need to decipher the script using a specific key. \n \n **Encoding Key:** Each Chinese character in the message represents a number based on its stroke count. The number then corresponds to a letter in the English alphabet (A=1, B=2, C=3...Z=26). For example, the character '\u4e00' (one stroke) represents 'A', '\u4e8c' (two strokes) represents 'B', and so on. \n\n **Encoded Message:**  \u4e09 \u5341\u4e94 \u4e8c \u5341\u4e00  \n\n **Question:** What is the secret message hidden in the scroll?",
             "difficulty": "medium",
             "reasoning": "Let's break down the decoding process step-by-step: \n\n 1. **Character Analysis:** Analyze each Chinese character in the encoded message and count their strokes. \n   * '\u4e09' has 3 strokes. \n   * '\u5341' has 2 strokes.\n   * '\u4e94' has 4 strokes.\n   * '\u4e8c' has 2 strokes. \n   * '\u5341' has 2 strokes.\n   * '\u4e00' has 1 stroke. \n\n2. **Number Conversion:** Convert the stroke counts into their corresponding numerical values. \n   * 3  2  4  2  2  1\n\n3. **Alphabetical Mapping:** Map each number to its corresponding letter in the English alphabet using the key (A=1, B=2, C=3...Z=26). \n   * 3 = C \n   * 2 = B\n   * 4 = D\n   * 2 = B\n   * 2 = B\n   * 1 = A \n\n4. **Decoded Message:** Combine the decoded letters to reveal the hidden message. \n   * C B D B B A \n\n Therefore, the secret message hidden in the scroll is **'CBDBBA'**.",
@@ -453,18 +225,6 @@
                 "ACDBBA",
                 "CDBBBA",
                 "CBDDBA"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**Question Type:** Mixed Coding (Letter-Number Substitution)\n\n**Difficulty:** 7/10\n\n**Context:** A group of archaeologists have discovered an ancient artifact containing a coded message. They believe it holds the key to finding a lost temple. \n\n**Instructions:** To decipher the message, you must first crack the coding system. The message uses a combination of letter-to-number and number-to-letter substitution. \n\n**Example:**\nThe word \"TEMPLE\" is coded as \"4-5-13-16-12-5\". Notice that each letter is replaced by its corresponding position in the alphabet (A=1, B=2,... Z=26).\n\nHowever, there's a twist! The numbers in the final code are then shifted according to a pattern: +3, -2, +1 (repeating). So, '4' becomes '7' (4+3), '5' becomes '3' (5-2), '13' becomes '14' (13+1), and so on. \n\n**Question:**  Using this system, decode the following message and find the name of the lost temple: \"19-8-1-20-18-1-7-4\". \n",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the solution step-by-step:\n\n**1. Convert the numbers to their corresponding letters:**\n\n* 19 = S\n* 8 = H\n* 1 = A\n* 20 = T\n* 18 = R\n* 1 = A\n* 7 = G\n* 4 = D\n\nThis gives us: \"SHATRAGD\"\n\n**2. Apply the number shifting pattern (+3, -2, +1):**\n\n* S (19) + 3 = V (22)\n* H (8) - 2 = F (6)\n* A (1) + 1 = B (2)\n* T (20) + 3 = W (23)\n* R (18) - 2 = P (16)\n* A (1) + 1 = B (2)\n* G (7) + 3 = J (10)\n* D (4) - 2 = B (2)\n\n**3. Final Decoded Message:**\n\nCombining the shifted letters, we get \"VFBWPBJB\". This likely represents the name of the lost temple, perhaps with some spelling variations common to ancient languages. ",
-            "options": [
-                "VFBWPBJB",
-                "SHATRAGD",
-                "TEMPLE",
-                "19-8-1-20-18-1-7-4"
             ],
             "correct_option": "A"
         },
@@ -481,18 +241,6 @@
             "correct_option": "C"
         },
         {
-            "question": "**Encoding Rule:** Each letter in the input word is replaced with a two-digit code. The first digit of the code represents the letter's position in the alphabet (A=1, B=2,...Z=26). The second digit is calculated by subtracting the letter's alphabetical position from 27 (A=26, B=25,...Z=1).\n\n**Input:**  CODE \n\n**Output:** 032415040522\n\n**Question:**  What is the encoded output for the input \"LOGIC\"?",
-            "difficulty": "medium",
-            "reasoning": "This question falls under the subtopic of 'Building Logical Reasoning Skills for Decoding' within the broader topic of 'Logical Reasoning - Coding-Decoding'. It requires understanding a two-step encoding rule and applying it consistently.\n\nHere's the step-by-step solution:\n\n**1. Encoding 'L':** \n    - L is the 12th letter of the alphabet, so the first digit is 12.\n    - 27 - 12 = 15, so the second digit is 15.\n    - 'L' is encoded as '1215'.\n\n**2. Encoding 'O':**\n    - O is the 15th letter of the alphabet, so the first digit is 15.\n    - 27 - 15 = 12, so the second digit is 12.\n    - 'O' is encoded as '1512'.\n\n**3. Encoding 'G':**\n    - G is the 7th letter of the alphabet, so the first digit is 07.\n    - 27 - 7 = 20, so the second digit is 20.\n    - 'G' is encoded as '0720'.\n\n**4. Encoding 'I':**\n    - I is the 9th letter of the alphabet, so the first digit is 09.\n    - 27 - 9 = 18, so the second digit is 18.\n    - 'I' is encoded as '0918'.\n\n**5. Encoding 'C':**\n    - C is the 3rd letter of the alphabet, so the first digit is 03.\n    - 27 - 3 = 24, so the second digit is 24.\n    - 'C' is encoded as '0324'.\n\nTherefore, the complete encoded output for \"LOGIC\" is **12151512072009180324**.",
-            "options": [
-                "12151512072009180324",
-                "03241512072009181215",
-                "07201512032409181215",
-                "12150720091803241512"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "Decode the word \"FJSJQU\", given the following rules:\n\n1.  **First Rule:** Every odd-positioned letter is shifted three positions forward in the alphabet.\n2.  **Second Rule:** Every even-positioned letter is shifted two positions backward in the alphabet.\n\nWhat is the decoded word?",
             "difficulty": "hard",
             "reasoning": "Let's decode the word \"FJSJQU\" step-by-step using the given rules:\n\n**1.  Odd-Positioned Letters (Rule 1):**\n\n*   'F' is in the 1st position. Shifting three positions forward: F -> G -> H -> I\n*   'S' is in the 3rd position. Shifting three positions forward: S -> T -> U -> V\n*   'J' is in the 5th position. Shifting three positions forward: J -> K -> L -> M\n\n**2. Even-Positioned Letters (Rule 2):**\n\n*   'J' is in the 2nd position. Shifting two positions backward: J -> I -> H\n*   'S' is in the 4th position. Shifting two positions backward: S -> R -> Q\n*   'Q' is in the 6th position. Shifting two positions backward: Q -> P -> O\n\n**3. Combining the Results:**\n\nBy combining the shifted letters, we get: \"IHVQMO\"\n\nTherefore, the decoded word is IHVQMO.",
@@ -503,18 +251,6 @@
                 "IHVRQO"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "A group of astronauts on a mission to a distant planet discover a coded message left behind by a previous civilization. The message is written in a form of mathematical symbols, each representing a different element of the planet's ecosystem.\n\n**Code:**  The following symbols are found on a stone tablet:\n\n* \u2295 = 6\n* \u2298 = 4\n* \u2297 = 2 \n* \u22a0 = 8\n\n**Question:** The message \"\u2298 \u2295 \u2297 \u22a0\" is encoded using a specific mathematical formula. If the first symbol represents the \"numerator\", and the remaining symbols represent the \"denominator\", the formula used to decode the message is: ((symbol1 * symbol2) - symbol3) / symbol4. What is the decoded value of the message? ",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the solution step-by-step:\n\n1. **Identify the values:**\n   * \u2298 = 4 (numerator)\n   * \u2295 = 6\n   * \u2297 = 2\n   * \u22a0 = 8 \n\n2. **Apply the formula:** ((symbol1 * symbol2) - symbol3) / symbol4\n   * Substitute the values: ((4 * 6) - 2) / 8\n\n3. **Calculate:**\n   * (24 - 2) / 8\n   * 22 / 8\n   * 2.75\n\nTherefore, the decoded value of the message is 2.75.",
-            "options": [
-                "1.5",
-                "2.75",
-                "3.5",
-                "4.25"
-            ],
-            "correct_option": "B"
         },
         {
             "question": "A secret society utilizes a complex cipher to encode its messages. They replace vowels with symbols based on their position in the word and consonants with their corresponding numerical position in the alphabet (A=1, B=2,...Z=26).  However, there's a twist.  The numerical values of consonants are first modified using the following rules, applied in order:\n\n1. If the original numerical value is odd, subtract 1.\n2. If the modified value is greater than 13, divide by 2.\n\nHere's a sample of their code:\n\n*  % = First Vowel\n*  @ = Second Vowel (and so on)\n\nDecipher the following message and determine the keyword:\n\n13  @  7  #  13  %  4\n\nWhat is the keyword?\n\n A) LOCK\n B) LAKE\n C) HATE\n D) MAKE ",
@@ -529,18 +265,6 @@
             "correct_option": "B"
         },
         {
-            "question": "A secret agent sends a coded message that reads: '73XU51L9'.  He reveals that this code uses a combination of working backwards and trial-and-error. He gives you the following clues:\n\n1. The code represents a five-letter English word.\n2. Each number corresponds to the position of its corresponding letter in the alphabet reversed (Z=1, Y=2,...A=26).\n3. The entire code is reversed before deciphering.\n\nWhat is the five-letter word?",
-            "difficulty": "hard",
-            "reasoning": "This question falls under 'Decoding Strategies: Working Backwards and Trial-and-Error' as it requires applying both techniques. \n\nHere's how to solve it step-by-step:\n\n1. **Reverse the code:** The clue tells us the entire code is reversed. Thus, '73XU51L9' becomes '9L15UX37'.\n\n2. **Decode the numbers:** Each number represents a letter's position in the reversed alphabet. Let's decode:\n    * 9 = R (27-9 = 18th letter from the end)\n    * L = L (Remains unchanged as it's a letter)\n    * 1 = Y (27-1 = 26th letter from the end)\n    * 5 = V (27-5 = 22nd letter from the end)\n    * U = U (Remains unchanged)\n    * X = X (Remains unchanged)\n    * 3 = W (27-3 = 24th letter from the end)\n    * 7 = T (27-7 = 20th letter from the end)\n\n3. **Form the word:** Combining the decoded letters, we get 'RYVWULTX'.\n\n4. **Trial-and-Error:** The decoded sequence isn't a recognizable word. Here, trial-and-error is needed. Rearranging the letters, we find that they spell 'TRULYWVX'. Applying the reverse logic again, we get the intended five-letter word: 'XVWYR'.\n\nTherefore, the answer is 'XVWYR'.",
-            "options": [
-                "RYVWULTX",
-                "TRULYWVX",
-                "XVWYR",
-                "None of the above"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "**context**: A researcher developed a code to categorize common errors in problem-solving. He uses a combination of letters and numbers, where each letter represents a specific error type, and the number signifies the error's frequency within a given problem set.\n**coding/decoding rule**: The code follows this pattern: Letter (Position of letter in alphabet - 1) Frequency. For instance, 'C23' translates to 'Conceptual error, occurring twice (3 - 1 = 2)  in the problem set.' However, if the calculated frequency is greater than 4, the code represents the  frequency  divided by 4. For example 'D512' means 'Deductive error, occurring 3  (12/4=3) times in the problem set.' \n**input**: A174\n**question**: Given the code 'A174,' decipher the error type and its frequency within the problem set.\n",
             "difficulty": "hard",
             "reasoning": "Let's break down the code 'A174' step-by-step using the provided rule:\n\n1. **Letter:** 'A' represents the error type. According to the rule, each letter corresponds to a specific error, so 'A' likely signifies a particular category.\n\n2. **Position Calculation:** The rule states that we need to subtract 1 from the letter's position in the alphabet. Since 'A' is the first letter, its position is 1. Subtracting 1, we get 1 - 1 = 0.\n\n3. **Frequency:** The remaining digits, '174,' represent the frequency. However, since the calculated value (0) is less than 4, we don't divide.  Therefore, '174' directly represents the error frequency.\n\n4. **Decoding the Error:**  While the question doesn't specify the error categories, we can conclude that 'A' represents an error type that occurred 174 times in the problem set. \n\nTherefore, the decoded message is: An error, categorized as 'A', occurred 174 times in the problem set.",
@@ -551,18 +275,6 @@
                 "174 errors"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "An ancient Chinese manuscript describes a secret code used by scholars to communicate sensitive information. The code utilizes a unique character substitution method based on the order of strokes in written Chinese characters.\n\n**Encoding Method:**\n\n1. Each character in the message is converted to its corresponding stroke count. For example, \u4e00 (one stroke) becomes 1, \u4e8c (two strokes) becomes 2, and so on.\n2. The resulting number sequence is then grouped into pairs.\n3. Each pair is then converted to a new pair using the following key:\n   - If both numbers in the pair are odd, swap their positions.\n   - If both numbers in the pair are even, add 1 to the first number and subtract 1 from the second number.\n   - If one number is odd and the other is even, leave the pair unchanged.\n4. Finally, each number in the new pairs is converted back to its corresponding Chinese character based on stroke count.\n\n**Encoded Message:**  \u4e03\u4e94 \u4e8c\u4e09 \u4e00\u56db \u4e09\u4e00\n\n**Question:** Decode the message hidden within the ancient Chinese script.",
-            "difficulty": "hard",
-            "reasoning": "Let's decode the message step-by-step:\n\n**1. Convert Characters to Stroke Counts:**\n   - \u4e03 (seven strokes) = 7\n   - \u4e94 (four strokes) = 4\n   - \u4e8c (two strokes) = 2\n   - \u4e09 (three strokes) = 3\n   - \u4e00 (one stroke) = 1\n   - \u56db (five strokes) = 5\n\n   This gives us the number sequence: 74 23 15 31\n\n**2. Group Numbers into Pairs:**\n   - (7, 4) (2, 3) (1, 5) (3, 1)\n\n**3. Apply the Encoding Key to Each Pair:**\n   - (7, 4): One odd, one even - pair remains unchanged (7, 4)\n   - (2, 3): One even, one odd - pair remains unchanged (2, 3)\n   - (1, 5): Both odd - swap positions (5, 1)\n   - (3, 1): Both odd - swap positions (1, 3)\n\n   This gives us the new sequence: 74 23 51 13\n\n**4. Convert Numbers Back to Characters:**\n   - 7 = \u4e03\n   - 4 = \u4e94\n   - 2 = \u4e8c\n   - 3 = \u4e09\n   - 5 = \u4e94\n   - 1 = \u4e00\n\n   The decoded message is: \u4e03\u4e94 \u4e8c\u4e09 \u4e94\u4e00 \u4e00\u4e09",
-            "options": [
-                "\u4e03\u4e94\u4e8c\u4e09\u4e94\u4e00\u5341\u4e09",
-                "\u4e94\u4e00\u5341\u4e09\u4e03\u4e94\u4e8c\u4e09",
-                "\u4e03\u4e94\u4e8c\u4e09\u4e94\u4e00\u5341\u4e00",
-                "\u4e03\u4e94\u4e8c\u4e09\u4e94\u4e00\u4e09"
-            ],
-            "correct_option": "D"
         },
         {
             "question": "**Instructions:** This code uses a symbol substitution method with a twist. Each letter is represented by two symbols, but the order of the symbols within the pair can change.  Use the table below to decode the message. \n\n| Letter | Symbols |  \n|---|---| \n| A |  & ,  ? | \n| B |  + ,  # | \n| C |  = ,  @ | \n| D |  ! ,  ~ |  \n| E |  % ,  $ |\n\n**Question:** Decode the following message, remembering the symbol order within a pair can be reversed:   ?#@$~  ",
@@ -577,18 +289,6 @@
             "correct_option": "D"
         },
         {
-            "question": "A cryptic message uses a numerical cipher to represent words. However, this cipher doesn't simply assign numbers to letters in alphabetical order.  Instead, it utilizes a two-tiered system:\n\n**Tier 1: Base Value**\n* Each letter is assigned a base numerical value based on its position in the alphabet (A=1, B=2, C=3,... Z=26).\n\n**Tier 2: Modifier**\n* If a letter's base value is odd, it's modified by adding the value of the next vowel in the alphabet (wrapping around from Z to A if necessary).\n* If a letter's base value is even, it's modified by subtracting the value of the previous vowel in the alphabet (again, wrapping around from A to Z if needed).\n\n**Example:**\nThe code for 'BEAR' is 29, 5, 42, 39\n* B = 2 (even base value) - 1 (previous vowel 'A' = 1) = 1\n* E = 5 (odd base value) + 9 (next vowel 'I' = 9) = 14 \n* A = 1 (odd base value) + 5 (next vowel 'E' = 5) = 6\n* R = 18 (even base value) - 21 (previous vowel 'U' = 21) = -3\n\nFinally, each modified value is multiplied by 2 to get the final code:\n1 x 2 = 2, 14 x 2 = 28, 6 x 2 = 12, -3 x 2 = -6 --> 2, 28, 12, -6\n\n**Question:** Using this cipher, what is the numerical code for the word 'WOLF'? ",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the solution step-by-step:\n\n**1. 'W':**\n    * Base value: W = 23 (odd)\n    * Modifier: Next vowel is 'U' = 21. Add this to the base value: 23 + 21 = 44\n    * Final code: 44 x 2 = 88\n\n**2. 'O':**\n    * Base value: O = 15 (odd)\n    * Modifier: Next vowel is 'U' = 21. Add this to the base value: 15 + 21 = 36\n    * Final code: 36 x 2 = 72\n\n**3. 'L':** \n    * Base value: L = 12 (even)\n    * Modifier: Previous vowel is 'O' = 15. Subtract this from the base value: 12 - 15 = -3\n    * Final code: -3 x 2 = -6\n\n**4. 'F':**\n    * Base value: F = 6 (even)\n    * Modifier: Previous vowel is 'E' = 5. Subtract this from the base value: 6 - 5 = 1\n    * Final code: 1 x 2 = 2\n\nTherefore, the numerical code for 'WOLF' is **88, 72, -6, 2**.",
-            "options": [
-                "88, 72, -6, 2",
-                "86, 74, -6, 2",
-                "88, 74, -6, 2",
-                "88, 72, -6, 4"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "**introduction**: An ancient script uses a unique word-based code to record historical events.  Each symbol represents an entire word, and the same word might be represented by different symbols within the same text.\n**coded_message**: \u2756 \u25b3 \u25cf \u2605 \u25ce  \u2605 \u2299 \u25b3 \u2606  \u2726 \u25c8 \u25b3 \u25ce  \u2605 \u2299 \u2756\n**key**: \n  **\u2605**: the\n  **\u25b3**: of\n  **\u2299**: king\n  **\u25ce**: victory\n**question**: Which of the following symbol pairs represents the same word in the coded message?\n",
             "difficulty": "hard",
             "reasoning": "This question falls under the 'Word-Based Coding: Replacing entire words with codes' subtopic of Logical Reasoning - Coding-Decoding. Here's how to solve it:\n\n1. **Analyze the key and message:**  We are given four words and their corresponding symbols. Notice that the message repeats some symbols (\u2605, \u25b3, \u2299, \u25ce) while others appear only once.\n\n2. **Focus on repetition:** Since the same word can be represented by different symbols, look for patterns where the *same sequence of symbols* is repeated.\n\n3. **Identify the pattern:** The sequence \"\u2605 \u2299\" appears twice in the message: \n    *  \"\u2605 \u2299 \u25b3 \u2606\"\n    *  \"\u2605 \u2299 \u2756\"\n\n4. **Deduce the word:** We know \"\u2605\" is \"the\" and \"\u2299\" is \"king\".  Therefore,  \"\u2605 \u2299\" represents \"the king\".\n\n5. **Find the matching symbols:** Now we need to find another symbol pair representing \"the king\". Observe that in both instances,  \"\u2605 \u2299\" is followed by \"\u25b3\".  This suggests \"\u25b3\" acts as a separator or a word like \"of\" (as per the key).\n\n6. **Conclude the answer:**  Looking at the beginning of the message, we see the sequence  \"\u2756 \u25b3\".  Since \"\u25b3\" likely separates words, \"\u2756\" is likely another symbol for \"the king\".\n\n**Therefore, the symbol pair \"\u2756 \u25b3\" represents the same word (\"the king\") as the pair \"\u2605 \u2299\".** ",
@@ -601,18 +301,6 @@
             "correct_option": "B"
         },
         {
-            "question": "A secret message needs to be sent using a two-tier coding system. In the first tier, a keyword-based cipher is used.  The keyword is \"GOLD\". The remaining letters of the alphabet are written in order after the keyword, without repeating any letters already in the keyword. This forms our new substitution alphabet. \n\nFor the second tier, a numerical pattern is applied. Starting with the first letter of the encoded message, each letter's numerical position in the alphabet (A=1, B=2,...Z=26) is added to the numerical position of the letter preceding it. However, there's a catch! The very first letter of the message retains its original numerical value. Each calculation then determines the numerical value for the subsequent letter in the coded message. \n\nFor example, if we want to encode the word \"CAT\":\n\n1. Applying the first tier (keyword cipher), \"CAT\" becomes \"GEX\".\n2. Applying the second tier:\n    * 'G' remains as 7 (its position in the alphabet).\n    * 'E' (5th position) + 'G' (7th position) = 12, which corresponds to 'L'.\n    * 'X' (24th position) + 'E' (5th position) = 29. Since 29 exceeds 26, we subtract 26, resulting in 3, which corresponds to 'C'.\n\nTherefore, \"CAT\" is encoded as \"7LC\".\n\nUsing this two-tier system, decode the following message:\n\n\"18L20\"",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the decoding process step-by-step:\n\n**Step 1: Deciphering the Numerical Pattern (Second Tier)**\n\n* We start with \"18L20\". The first number, '18', directly translates back to the 18th letter of the alphabet, which is 'R'.\n* To decode 'L' (12th position), we subtract the numerical value of the preceding letter, 'R' (18th position): 12 - 18 = -6.  Since we get a negative result, we add 26 (total letters in the alphabet): -6 + 26 = 20, which corresponds to 'T'.\n* To decode '20', we follow the same process: 20 ('T') - 12 ('L') = 8, corresponding to 'H'.\n\nSo far, we have \"RTH\".\n\n**Step 2:  Decoding the Keyword Cipher (First Tier)**\n\n* Remembering our keyword \"GOLD\", we need to align our standard alphabet with the shifted one:\n\nStandard: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z\nKeyword:  G O L D A B C E F H I J K M N P Q R S T U V W X Y Z\n\n* Now we decode \"RTH\" by finding its corresponding letters in the standard alphabet based on the keyword cipher:\n    * 'R' in the keyword alphabet corresponds to 'N' in the standard alphabet.\n    * 'T' in the keyword alphabet corresponds to 'O' in the standard alphabet.\n    * 'H' in the keyword alphabet corresponds to 'W' in the standard alphabet.\n\n**Therefore, the decoded message is \"NOW\".**",
-            "options": [
-                "NOW",
-                "NOWN",
-                "ROW",
-                "NONE"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "An ancient civilization, known for its intricate cryptography, used a complex code to protect its secrets. This code revolved around the concept of 'star rotations'. Imagine a 5-pointed star, with each point representing a letter.  \n\n**Example:** \n\n* A message starting with 'SKY' would be encoded by first rotating the star clockwise until 'S' aligns with the top point.\n* The next letter 'K' is then encoded by noting its position relative to 'S' on the rotated star. \n* This process continues for each letter in the message.\n\n**To make things trickier:** \n\n* Vowels (A, E, I, O, U) trigger a counter-clockwise star rotation *before* the letter itself is encoded based on its position relative to the previous letter. \n\n**Question:**  Given the starting position of the star with 'A' at the top,  decode the following message fragment:  'LJDNOV'. What are the first and last letters of the decoded fragment? ",
             "difficulty": "hard",
             "reasoning": "This question utilizes a multi-layered coding system, demanding spatial reasoning and pattern recognition. Let's break down the decoding process step-by-step: \n\n1. **'L' decoded:** Starting with 'A' at the top, the star needs to rotate clockwise to bring 'L' to the top. There are no vowels before 'L', so this is the only action.  \n2. **'J' decoded:** 'J's position relative to 'L' on the now rotated star determines its encoded form.  \n3. **'D' decoded:**  Again, no vowels, so we simply determine 'D's position relative to 'J' on the star (which was already rotated to position 'L' at the top). \n4. **'N' decoded:**  Same process as above, find 'N's relative position to 'D'.\n5. **'O' decoded:** Here's the tricky part! 'O' is a vowel. This means we first rotate the star *counter-clockwise* from its current position.  Then we encode 'O' based on its position relative to 'N' on this newly rotated star. \n6. **'V' decoded:**  Determine 'V's position relative to 'O' on the star (which was rotated counter-clockwise in the previous step). \n\nBy meticulously tracking each rotation and the relative positions of letters, we can decode the entire fragment. The complexity arises from the constant star rotations and the conditional counter-clockwise rotations triggered by vowels.",
@@ -623,18 +311,6 @@
                 "L and O"
             ],
             "correct_option": "B"
-        },
-        {
-            "question": "An ancient scroll, rumored to hold the location of a hidden treasure, was recently discovered. The scroll appears to contain a message encrypted using a combination of substitution and transposition ciphers. Here's what we've deciphered so far:\n\n**1. Substitution Cipher:** The original message was encoded using a keyword-based substitution cipher. The keyword is 'TREASURE', mapped in alphabetical order to the letters A-Z, skipping letters already used in the keyword.  This means 'T' replaces 'A', 'R' replaces 'B', 'E' replaces 'C', etc. \n\n**2. Transposition Cipher:** After applying the substitution cipher, the message was then transposed using a columnar transposition cipher.  We believe the number of columns used is a prime number less than 10. Unfortunately, the exact order of the columns remains unknown.\n\nHere's the encoded message from the scroll:\n\n`LZOJVI  EOJKHZ  SOXKVH  WRJVO`\n\nGiven the complexity of the ciphers, the research team needs your expertise. Can you decode the message and reveal the secrets of the ancient scroll?",
-            "difficulty": "hard",
-            "reasoning": "This question presents a challenging multi-layered decryption process that requires a good understanding of both substitution and transposition ciphers. Here's a step-by-step breakdown of the solution:\n\n**Step 1: Understanding the Keyword Cipher**\n\nThe keyword 'TREASURE' is used to create a substitution alphabet.  We map the unique letters of the keyword to the beginning of the alphabet (A-Z), skipping any letters already present in the keyword. This results in the following substitution table:\n\n```\nPlaintext:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z\nCiphertext: T R E A S U B C D F G H I J K L M N O P Q V W X Y Z\n```\n\n**Step 2: Decrypting the Substitution Cipher**\n\nUsing the table above, we can begin to decrypt the message. For example, 'L' in the ciphertext would decode to 'H' in the plaintext. Decrypting the entire message using this table gives us:\n\n`HOGLCO COEFRE AWAJHR VDEOC`\n\n**Step 3: Identifying the Columnar Transposition**\n\nThe partially decrypted message is still jumbled due to the columnar transposition.  We know the number of columns is a prime number less than 10. This leaves us with the possibilities of 2, 3, 5, or 7 columns. \n\n**Step 4: Testing Columnar Transpositions**\n\nWe need to try arranging the partially decrypted message into columns using each of the possible prime numbers. By carefully examining the arrangements, we can look for patterns or recognizable words that might emerge.\n\nAfter several attempts, we find that arranging the message into 7 columns yields a coherent message:\n\n```\nH O G L C O C\nO E F R E A W\nA J H R V D E\nO C\n```\n\n**Step 5: Reading the Transposed Message**\n\nReading down the columns, we get the final decrypted message:\n\n`HOARD THE TREASURE AHEAD`\n\nTherefore, the scroll reveals the message 'HOARD THE TREASURE AHEAD'. This solution is validated by carefully following each step of the decryption process, ensuring each logical and mathematical operation is sound.",
-            "options": [
-                "2",
-                "3",
-                "5",
-                "7"
-            ],
-            "correct_option": "D"
         }
     ],
     "title": "Logical Reasoning",

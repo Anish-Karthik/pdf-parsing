@@ -1,18 +1,6 @@
 {
     "questions": [
         {
-            "question": "Jenny wants to build a staircase shape with cubes for her toy bear. The staircase will have 3 steps. The bottom step needs 3 cubes, the middle step needs 2 cubes, and the top step needs 1 cube.  Jenny only wants to use the exact number of cubes needed to build the staircase. How many cubes should Jenny use?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve the problem:\n\n* **Step 1: Visualize the staircase.** Imagine a small staircase with 3 steps. The bottom step is the widest, and each step going up is smaller. \n* **Step 2: Calculate the cubes for each step.**  We are told how many cubes each step needs: \n    * Bottom step: 3 cubes\n    * Middle step: 2 cubes\n    * Top step: 1 cube\n* **Step 3: Add up the cubes from each step.** 3 + 2 + 1 = 6 cubes\n\n**Therefore, Jenny should use 6 cubes to build her staircase.**",
-            "options": [
-                "5",
-                "7",
-                "6",
-                "4"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "Imagine a large wooden block shaped like a cuboid, measuring 12 cm long, 8 cm wide, and 6 cm high. A carpenter wants to cut this block into the largest possible identical cubes, wasting no wood in the process.  \n\n**Question:** What is the length of one side of the largest possible cube the carpenter can cut?",
             "difficulty": "medium",
             "reasoning": "To find the largest possible identical cubes, we need to find the greatest common factor (GCF) of the cuboid's dimensions (12 cm, 8 cm, and 6 cm). \n\nHere's how to find the GCF: \n\n1. **Factor each dimension:**\n   * 12: 1, 2, 3, **4**, 6, 12\n   * 8: 1, 2, **4**, 8\n   * 6: 1, 2, 3, **6**\n\n2. **Identify the greatest common factor:** The largest number that divides into all three dimensions is **2**.\n\nTherefore, the largest possible cube the carpenter can cut has sides of **2 cm** each.",
@@ -21,18 +9,6 @@
                 "2 cm",
                 "3 cm",
                 "4 cm"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Imagine a large cube formed by 27 smaller cubes (3x3x3). Now, picture removing a single smaller cube from the very center of the large cube. How many smaller cubes are completely hidden within the structure and cannot be seen from any angle?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve the problem:\n\n1. **Visualize the Structure:** Imagine the 3x3x3 cube. The center cube is the one that has a cube on all its sides (top, bottom, left, right, front, and back).\n\n2. **Identify the Hidden Cube:** When we remove the center cube, only one cube becomes completely hidden \u2013 the cube that was directly behind the center cube. All other cubes are either visible or at least partially exposed.\n\n3. **Final Answer:** Therefore, there is only **1** cube hidden within the structure. ",
-            "options": [
-                "0",
-                "1",
-                "6",
-                "7"
             ],
             "correct_option": "B"
         },
@@ -49,18 +25,6 @@
             "correct_option": "B"
         },
         {
-            "question": "A wooden cube is painted red on two opposite faces, blue on one pair of opposite faces, and green on the remaining two faces.  This cube is then cut into 27 smaller identical cubes. How many of the smaller cubes have at least one face painted red?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Cube:**\nImagine a 3x3x3 cube. Two opposite faces are red, two others are blue, and the last two are green.\n\n**2. Identify the Red Faces:**\nSince two opposite faces are red, any smaller cube coming from those faces will have at least one red face.\n\n**3. Count the Cubes with Red:**\n* Each red face of the larger cube is a 3x3 square.\n* This means there are 9 smaller cubes on each red face.\n* Since there are two red faces, there are 9 * 2 = 18 smaller cubes with at least one red face.\n\n**Therefore, 18 of the smaller cubes will have at least one face painted red.**",
-            "options": [
-                "9",
-                "12",
-                "18",
-                "27"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "Imagine a baker preparing a giant block of fudge for a town festival. He shapes the fudge into a perfect cube and then coats it entirely with a layer of white chocolate. To divide the fudge treat among the townspeople, he carefully cuts the large cube into 27 smaller, identical cubes. How many of these smaller fudge cubes will have exactly two sides coated in white chocolate?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Cube:**\nImagine the larger cube. The smaller cubes with exactly two painted faces are the ones along the edges of the original cube, excluding the corner pieces (which have three painted faces).\n\n**2. Count the Edges:**\nA cube has 12 edges.\n\n**3. Cubes per Edge:**\nSince the original cube is cut into 27 smaller cubes (3x3x3), each edge has 3 smaller cubes.  Subtract the two corner cubes, leaving only one cube per edge with exactly two painted faces. \n\n**4. Total Cubes:**\nWith 12 edges and 1 cube per edge having exactly two painted faces, there are a total of 12 x 1 = **12** smaller fudge cubes with exactly two sides coated in white chocolate.",
@@ -71,18 +35,6 @@
                 "36"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "A large solid cube is painted blue on all sides. Then, it is cut into 64 smaller identical cubes. How many of the smaller cubes will have exactly two sides painted blue?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Visualize the Cube:**\nImagine a large cube painted blue on all its faces. When you cut this into 64 smaller identical cubes, there will be 4 smaller cubes along each edge of the large cube (since 4 x 4 x 4 = 64).\n\n**2. Identify the Types of Smaller Cubes:**\n* **Corner Cubes:** These have three blue faces (8 total).\n* **Edge Cubes:** These have two blue faces and are found along the edges of the large cube (excluding corner cubes).\n* **Face Cubes:** These have one blue face and are located in the center of each face of the large cube.\n* **Inner Cubes:** These have no blue paint and are located in the very center of the original large cube.\n\n**3. Calculate Edge Cubes:**\n* Each edge of the large cube has 4 smaller cubes. \n* Removing the two corner cubes from each edge leaves 2 edge cubes per edge.\n* A cube has 12 edges.\n* Therefore, there are 12 edges * 2 edge cubes/edge = 24 cubes with exactly two blue faces.\n\n**Therefore, the answer is 24.**",
-            "options": [
-                "12",
-                "24",
-                "36",
-                "48"
-            ],
-            "correct_option": "B"
         },
         {
             "question": "Imagine a standard six-sided die.  You are told the following: \n\n* The numbers on opposite faces always add up to 7.\n* If you roll the die from the face with 3 dots to the face with 2 dots, the top face will now show 1 dot. \n\nWhat number is on the face opposite the face with 6 dots?",
@@ -97,18 +49,6 @@
             "correct_option": "A"
         },
         {
-            "question": "A furniture company needs to pack rectangular boxes (each measuring 2m x 1m x 1m) into a larger cubical container for shipping. What is the minimum volume of the container required to fit 12 of these boxes without any space left over?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve the problem:\n\n**1. Visualize the arrangement:** Imagine arranging the rectangular boxes to form a larger cube. You can fit 2 boxes side-by-side along the length (2m x 2 = 4m), 2 boxes deep (1m x 2 = 2m), and 3 boxes high (1m x 3 = 3m) to accommodate all 12 boxes.\n\n**2. Calculate the dimensions of the cube:** This arrangement results in a larger cube with dimensions of 4m x 2m x 3m.\n\n**3. Calculate the volume of the cube:** The volume of a cube is calculated by side x side x side. Therefore, the minimum volume of the container required is 4m x 2m x 3m = 24 cubic meters.\n\nTherefore, the minimum volume of the container required to fit all 12 boxes without any space left over is 24 cubic meters.",
-            "options": [
-                "12 cubic meters",
-                "24 cubic meters",
-                "36 cubic meters",
-                "48 cubic meters"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "A rectangular box measures 6 units in length, 4 units in width, and 3 units in height.  If you want to fill this box completely using only smaller cubes, what is the side length of the largest possible cube that you can use?",
             "difficulty": "medium",
             "reasoning": "This question falls under the 'Maximum Number of Cubes/Cuboids in a Given Shape' subtopic because it requires finding the largest possible cube that fits perfectly within a given shape.  Here's how to solve it:\n\n**1.  Finding the Greatest Common Factor (GCD):**\n   * To find the largest cube that fits perfectly, we need the largest number that divides evenly into the length, width, and height of the box. This number is the Greatest Common Factor (GCD). \n   * The factors of 6 are 1, 2, 3, and 6.\n   * The factors of 4 are 1, 2, and 4. \n   * The factors of 3 are 1 and 3. \n   * The greatest common factor (GCD) of 6, 4, and 3 is **1**.\n\n**2. Determining the Cube's Side Length:**\n   *  The GCD, 1, represents the largest possible side length of a cube that can perfectly fill the box. \n\n**Therefore, the largest possible cube has a side length of 1 unit.**",
@@ -119,18 +59,6 @@
                 "1 unit"
             ],
             "correct_option": "D"
-        },
-        {
-            "question": "Imagine a wooden cube with each face painted a different color: red, blue, green, yellow, orange, and purple. You start at the center of the red face and want to reach the center of the yellow face.  Here's the catch: you can only move by tracing a path along the edges of the cube. Additionally, you cannot pass through the same vertex twice. What is the minimum number of edges you need to traverse to reach your destination?",
-            "difficulty": "medium",
-            "reasoning": "This problem requires visualizing the cube and strategizing the shortest path. Here's a step-by-step solution:\n\n1. **Visualize:** Imagine the cube in your mind.  Since we need to find the shortest path, it's helpful to 'unfold' the cube to see the faces more clearly. \n\n2. **Possible Paths:** There are multiple ways to reach the yellow face from the red face. One approach is to move across one edge to reach an adjacent face, then across another edge to reach the yellow face. This would require traversing two edges.\n\n3. **Vertex Constraint:** However, the rule about not passing through the same vertex twice complicates things. If we follow the initial approach, we'll inevitably revisit a vertex when trying to reach the center of the yellow face.\n\n4. **Optimal Solution:** The key is to visualize a path that takes us to the yellow face without revisiting a vertex.  We can achieve this by moving across two edges to reach the opposite edge of the yellow face. From there, we only need to move across one more edge to reach the center of the yellow face.\n\n5. **Minimum Edges:** Therefore, the minimum number of edges you need to traverse is **three**.",
-            "options": [
-                "Two",
-                "Four",
-                "Three",
-                "Five"
-            ],
-            "correct_option": "C"
         },
         {
             "question": "**question_description**: Which of the following nets can be folded into a cube?\n\n[Image of Net A]\n\n[Image of Net B]\n\n[Image of Net C]\n\n[Image of Net D]\n**multiple_choice_options**: \n  **A**: Net A\n  **B**: Net B\n  **C**: Net C\n  **D**: Net D\n**visual_representations**: \n  - \n    **net_identifier**: Net A\n    **image_url**: [Image of a net with an arrangement of six squares that cannot form a cube]\n  - \n    **net_identifier**: Net B\n    **image_url**: [Image of a net with an arrangement of six squares that can form a cube - **This is the correct net**]\n  - \n    **net_identifier**: Net C\n    **image_url**: [Image of a net with an arrangement of six squares that cannot form a cube]\n  - \n    **net_identifier**: Net D\n    **image_url**: [Image of a net with an arrangement of six squares that cannot form a cube]\n",
@@ -145,19 +73,6 @@
             "correct_option": "B"
         },
         {
-            "question": "**visual**: \n  - \n    **view**: front\n    **image**: https://i.imgur.com/8g62W8G.png\n  - \n    **view**: side\n    **image**: https://i.imgur.com/fMxv2YL.png\n  - \n    **view**: top\n    **image**: https://i.imgur.com/qH6v33j.png\n**text**: The images show the front, side, and top view of a structure built with identical cubes. How many cubes were used to build this structure?\n",
-            "difficulty": "medium",
-            "reasoning": "To solve this, we need to analyze each view and deduce the number of cubes in each layer: \n\n**1. Analyze the Top View:** \n   - The top view shows a 2x2 arrangement, meaning there are at least 4 cubes in the structure. \n\n**2. Analyze the Front and Side Views:**\n   - The front view shows two levels of cubes. \n   - The side view confirms there are two levels. This indicates that some of the top view's 2x2 arrangement has cubes stacked on top of each other.\n\n**3. Combine the Information:**\n   - Both the front and side view show a single cube in a corner that doesn't overlap with others. This means there are actually three layers:\n      - The base layer (visible in the top view)\n      - A middle layer with one cube\n      - A top layer with one cube\n\n**4. Total Cubes:**\n   - Base Layer: 4 cubes\n   - Middle Layer: 1 cube\n   - Top Layer: 1 cube\n   - **Total: 6 cubes**",
-            "options": [
-                "4",
-                "5",
-                "7",
-                "8"
-            ],
-            "correct": "6",
-            "correct_option": "C"
-        },
-        {
             "question": "A baker needs to cover a cake with frosting. The cake is in the shape of a rectangular cuboid with a length of 30 cm, a width of 20 cm, and a height of 5 cm. He also wants to put a layer of frosting on the bottom of the cake. What is the total area in square centimeters that the baker needs to cover with frosting?",
             "difficulty": "medium",
             "reasoning": "This question assesses the student's ability to calculate the surface area of a cuboid with a slight twist. The student needs to understand that frosting needs to be applied to all sides **including** the bottom. \n\nHere's how to solve it:\n\n1. **Calculate the area of the top (which is the same as the bottom):**\n   Area of top = length * width = 30 cm * 20 cm = 600 sq cm\n\n2. **Calculate the area of the front and back:**\n   Area of front = height * width = 5 cm * 20 cm = 100 sq cm\n   Area of back = Area of front = 100 sq cm\n\n3. **Calculate the area of the two sides:**\n   Area of one side = length * height = 30 cm * 5 cm = 150 sq cm\n   Area of other side = Area of one side = 150 sq cm\n\n4. **Add all the areas together to find the total surface area:**\n   Total surface area = Area of top + Area of bottom + Area of front + Area of back + Area of one side + Area of other side \n   Total surface area = 600 sq cm + 600 sq cm + 100 sq cm + 100 sq cm + 150 sq cm + 150 sq cm = 1700 sq cm\n\nTherefore, the baker needs to cover **1700 square centimeters** with frosting.",
@@ -170,18 +85,6 @@
             "correct_option": "B"
         },
         {
-            "question": "Imagine a standard six-sided die. When the die is rolled and the number 3 is facing up, we know the number 4 is facing down. Using this information, if the number 2 is facing up, what number would be facing down?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem:\n\n* **Understanding Opposite Faces:** In a standard six-sided die, opposite faces always add up to 7.\n* **Applying the Rule:** Since 3 and 4 are opposites (3 + 4 = 7), we can use this logic to find the opposite of 2. \n* **Finding the Opposite of 2:**  Since 2 + 5 = 7, the number 5 would be facing down when the number 2 is facing up.",
-            "options": [
-                "1",
-                "4",
-                "5",
-                "6"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "Imagine a large cube made up of 64 smaller, identical cubes.  If you were to paint all the faces of the large cube red, how many of the smaller cubes would have exactly two faces painted red?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Visualize the Cube:**\nImagine a large cube formed by 64 smaller cubes (4 small cubes along each edge of the large cube). \n\n**2. Identify Edge Cubes:**\nThe smaller cubes with exactly two red faces are the ones located along the edges of the large cube, excluding the corner cubes (as corner cubes have three red faces).\n\n**3. Calculate Edge Cubes:**\nA cube has 12 edges.  Each edge of the large cube has 4 smaller cubes, but we need to subtract the 2 corner cubes from each edge.  So, each edge has 4 - 2 = 2 cubes with exactly two red faces.\n\n**4. Total Cubes with Two Red Faces:**\nSince there are 12 edges and each edge has 2 cubes with exactly two red faces, there are a total of 12 * 2 = 24 smaller cubes with exactly two red faces.\n\n**Therefore, the answer is 24.**",
@@ -190,18 +93,6 @@
                 "24",
                 "36",
                 "48"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Imagine a wooden cube painted blue on all sides. This cube is then cut into 27 smaller, identical cubes.  How many of the smaller cubes have exactly two blue faces?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Cuts:**\n   Imagine the larger cube being cut into three equal layers horizontally. Then, visualize it being cut into thirds vertically, and finally, into thirds from front to back. This creates the 27 smaller cubes.\n\n**2. Identify the Types of Smaller Cubes:**\n   * **Corner Cubes:** Have three blue faces (from the original cube's corners).\n   * **Edge Cubes:** Have two blue faces (from the original cube's edges).\n   * **Face Cubes:** Have one blue face (from the original cube's faces).\n   * **Inner Cubes:** Have no blue faces (from the interior of the original cube).\n\n**3. Focus on Edge Cubes:**\n   We only want to count the cubes with exactly two blue faces, which are the edge cubes.\n\n**4. Count the Edge Cubes:**\n   * Each edge of the original cube has three smaller cubes (since it was cut into thirds).\n   * A cube has 12 edges.\n   * However, each edge cube is shared by two edges. \n   * Therefore, there are (12 edges * 3 cubes per edge) / 2 = **18 cubes with exactly two blue faces**.\n\n**Therefore, the answer is 18.**",
-            "options": [
-                "12",
-                "18",
-                "24",
-                "36"
             ],
             "correct_option": "B"
         },
@@ -218,18 +109,6 @@
             "correct_option": "D"
         },
         {
-            "question": "A furniture company needs to pack rectangular coffee tables, each measuring 1.5m x 0.8m x 0.4m, into cubic shipping containers. What is the smallest possible volume of a single shipping container that can fully enclose one coffee table without any part of the table touching the sides of the container?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve the problem:\n\n**1. Understanding the Problem:**\n\nThe coffee table needs to fit *inside* the cubic container with some space on all sides. Therefore, we need to find the smallest cube whose side length is greater than each of the table's dimensions.\n\n**2. Finding the Limiting Dimension:**\n\nThe longest side of the coffee table is 1.5m. This is the limiting dimension for the cube's side length.\n\n**3. Calculating the Cube's Volume:**\n\nSince the cube's side length must be greater than 1.5m, the smallest possible cube has a side length of 2m (to ensure the table doesn't touch the sides).\n\n* Volume of a cube = side * side * side\n* Volume = 2m * 2m * 2m = 8 cubic meters\n\n**Therefore, the smallest possible volume of the shipping container is 8 cubic meters.**",
-            "options": [
-                "1.5 cubic meters",
-                "4 cubic meters",
-                "6 cubic meters",
-                "8 cubic meters"
-            ],
-            "correct_option": "D"
-        },
-        {
             "question": "A wooden cube with a side length of 10 cm is to be painted on all faces. After painting, the cube is cut into smaller cubes, each with a side length of 2 cm.  How many of these smaller cubes will have exactly two faces painted?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Problem:**\n\nImagine a large cube painted on all sides. When you cut this into smaller cubes, the smaller cubes at the corners will have three painted faces, those on the edges (excluding the corners) will have two painted faces, those in the center of each face will have one painted face, and those in the very center of the original cube will have no painted faces.\n\n**2. Focus on the Edges:**\n\nWe only want the cubes with two painted faces, which are found along the edges of the original cube.  Each edge of the original cube has 10 cm / 2 cm = 5 smaller cubes.\n\n**3. Account for Corner Cubes:**\n\nA cube has 12 edges, but we need to subtract the corner cubes because they have three painted faces.  Each edge has 5 cubes, and after removing the two corner cubes, we are left with 5 - 2 = 3 cubes with exactly two painted faces per edge.\n\n**4. Calculate Total Cubes:**\n\nSince there are 12 edges and each edge has 3 cubes with two painted faces, there are a total of 12 * 3 = 36 smaller cubes with exactly two painted faces.\n\n**Therefore, the answer is 36.**",
@@ -240,18 +119,6 @@
                 "48"
             ],
             "correct_option": "C"
-        },
-        {
-            "question": "A cuboid with dimensions 5 cm x 4 cm x 3 cm is painted blue on all its faces. It is then cut into smaller cubes of side length 1 cm.  How many of the smaller cubes have exactly one blue face?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Visualize the Problem:**\n\nImagine the cuboid. The smaller cubes with exactly one blue face are the ones found on the *inner faces* of the cuboid, excluding edges and corners.\n\n**2. Calculate Inner Face Dimensions:**\n\n* **Top/Bottom Face:**  Inner length = 3 cm (5 cm - 2 cm), Inner width = 2 cm (4 cm - 2 cm)\n* **Front/Back Face:** Inner length = 3 cm (5 cm - 2 cm), Inner height = 1 cm (3 cm - 2 cm)\n* **Left/Right Face:** Inner width = 2 cm (4 cm - 2 cm), Inner height = 1 cm (3 cm - 2 cm)\n\n**3. Calculate Cubes per Inner Face:**\n\n* **Top/Bottom:** 3 cm x 2 cm = 6 cubes per face\n* **Front/Back:** 3 cm x 1 cm = 3 cubes per face\n* **Left/Right:** 2 cm x 1 cm = 2 cubes per face\n\n**4. Calculate Total Cubes:**\n\n* (6 cubes/face x 2 faces) + (3 cubes/face x 2 faces) + (2 cubes/face x 2 faces) = 12 + 6 + 4 = 22 cubes\n\n**Therefore, there are 22 smaller cubes with exactly one blue face.**",
-            "options": [
-                "12",
-                "22",
-                "24",
-                "36"
-            ],
-            "correct_option": "B"
         },
         {
             "question": "A wooden crate with internal dimensions of 48 cm x 36 cm x 30 cm needs to be filled with the maximum number of identical cube-shaped boxes. What is the largest possible side length of each box so that the crate is completely filled with no space left over?",
@@ -266,18 +133,6 @@
             "correct_option": "B"
         },
         {
-            "question": "Imagine a large rectangular cake, 12 inches long, 8 inches wide, and 6 inches high. You need to cut this cake into smaller, perfectly cubical pieces for a party.  You want to minimize wasted cake by making the largest possible cubes. What is the total number of cubical cake pieces you can get?",
-            "difficulty": "medium",
-            "reasoning": "To find the largest possible cubes, we need to find the greatest common factor (GCD) of the cake's dimensions (12, 8, and 6). \n\n* The factors of 12 are: 1, 2, 3, 4, 6, and 12.\n* The factors of 8 are: 1, 2, 4, and 8.\n* The factors of 6 are: 1, 2, 3, and 6.\n\nThe greatest common factor of 12, 8, and 6 is 2.  Therefore, the largest possible cube has a side length of 2 inches.\n\nNow, let's see how many cubes fit along each dimension:\n\n* Length: 12 inches / 2 inches/cube = 6 cubes\n* Width: 8 inches / 2 inches/cube = 4 cubes\n* Height: 6 inches / 2 inches/cube = 3 cubes\n\nFinally, multiply the number of cubes in each dimension to find the total number of cubes:\n\n6 cubes * 4 cubes * 3 cubes = 72 cubes\n\nTherefore, you can get 72 cubical cake pieces.",
-            "options": [
-                "12",
-                "24",
-                "48",
-                "72"
-            ],
-            "correct_option": "D"
-        },
-        {
             "question": "Imagine a large cube formed by carefully stacking smaller, identical cubes. You can see exactly 50 of these smaller cubes on the surface of the large cube.  What is the minimum number of smaller cubes that could be completely hidden inside the large cube?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Structure:**\n   *  Since we see 50 cubes on the surface, and we want to minimize the total number of cubes, we should imagine a structure that's as close to a solid cube as possible.\n\n**2. Consider a Solid Cube:**\n   * A solid cube with 5 cubes along each edge would have 5 * 5 * 5 = 125 total cubes.\n   * This solid cube would have 5 * 5 = 25 cubes visible on each of its 6 faces. \n\n**3. Adjust for Visible Cubes:** \n   * We only see 50 visible cubes, which is less than the 150 (25 cubes per face * 6 faces) a solid 5x5x5 cube would have.\n   * This means our large cube must be hollow in the center to reduce the number of visible cubes.\n\n**4. Calculate Hidden Cubes:**\n   * To find the minimum number of hidden cubes, let's assume our large cube is a 5x5x5 cube with a single smaller cube removed from its core.\n   * This would leave us with 125 (total cubes) - 1 (removed cube) = 124 cubes. \n   * This structure would still have a significant number of hidden cubes while reducing the number of visible cubes.\n\n**Therefore, the minimum number of smaller cubes completely hidden inside the large cube is at least 124.**",
@@ -286,18 +141,6 @@
                 "150",
                 "100",
                 "50"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Imagine a wooden cube with sides of length 4 units.  You place a beetle on the front face, 1 unit from the top edge and 2 units from the left edge.  The beetle walks a path described as follows:\n\n1.  Crawls 2 units directly right.\n2.  Turns and crawls 3 units down.\n3.  Turns and crawls 1 unit to the left. \n4.  Turns and crawls 1 unit forward (away from you).\n5.  Finally, turns and crawls 2 units up. \n\nWhere does the beetle end up in relation to its starting point on the cube's surface?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Visualize:** Imagine the beetle's starting position. It helps to sketch a simple cube to keep track. \n2. **Step 1 & 2:** The beetle moves 2 units right and 3 units down. This places it 1 unit from the right edge and 1 unit from the bottom edge of the front face.\n3. **Step 3:**  Moving 1 unit left keeps the beetle on the same face but positions it at the bottom right corner of the front face.\n4. **Step 4:**  Crawling 1 unit forward means the beetle moves from the front face to the bottom face of the cube.\n5. **Step 5:** Crawling 2 units up means the beetle moves up the right side of the cube. Since the cube has sides of 4 and it already moved one unit up (onto this face), it ends up 1 unit from the top edge of the right face.\n\n**Final Position:** The beetle ends up on the right face of the cube, 1 unit from the top edge and 1 unit from the back edge (since it was 1 unit from the right edge on the front face before moving to the right face). This is also 3 units to the right and 1 unit below its starting point. ",
-            "options": [
-                "Top left corner of the right face",
-                "Bottom right corner of the right face",
-                "Center of the right face",
-                "1 unit from the top and 2 units from the back edge of the right face"
             ],
             "correct_option": "A"
         },
@@ -314,18 +157,6 @@
             "correct_option": "C"
         },
         {
-            "question": "A large cube is formed by assembling 27 smaller, identical cubes. Each face of the large cube is then painted green. After the paint dries, the large cube is disassembled back into the original 27 smaller cubes. How many of the smaller cubes have exactly two faces painted green?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Cube:** Imagine a 3x3x3 cube.  The smaller cubes with exactly two painted faces are the ones located along the edges of the large cube (excluding the corner cubes). \n\n**2. Count the Edges:** A cube has 12 edges. \n\n**3. Cubes per Edge:**  Each edge of the large cube has 3 smaller cubes. The corner cubes have three painted faces, leaving only the middle cube on each edge with exactly two painted faces. \n\n**4. Calculate:** Since there are 12 edges and each edge has 1 cube with two painted faces, there are a total of 12 * 1 = **12** smaller cubes with exactly two green faces.",
-            "options": [
-                "1",
-                "6",
-                "12",
-                "24"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "A furniture company is designing a new bookshelf unit using identical cubic compartments. The bookshelf will be 5 compartments wide, 3 compartments high, and 2 compartments deep.  The company wants to use a special type of wood that is only available in planks with a volume of 12,000 cubic centimeters each.  If each compartment needs to have a volume of 8,000 cubic centimeters, what is the minimum number of wooden planks the company needs to purchase to build one bookshelf?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the total number of compartments:**\n   * The bookshelf has 5 compartments wide * 3 compartments high * 2 compartments deep = 30 compartments.\n\n**2. Calculate the total volume needed for the compartments:**\n   * 30 compartments * 8,000 cubic centimeters/compartment = 240,000 cubic centimeters\n\n**3. Determine the number of planks required:**\n   * 240,000 cubic centimeters / 12,000 cubic centimeters/plank = 20 planks\n\n**Therefore, the company needs to purchase a minimum of 20 wooden planks to build one bookshelf.**",
@@ -334,18 +165,6 @@
                 "15",
                 "20",
                 "25"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "A sculptor receives a large rectangular block of marble with dimensions 240 cm x 120 cm x 90 cm.  She plans to carve this marble into a series of identical smaller rectangular prisms, each with dimensions 15 cm x 10 cm x 6 cm. What is the maximum number of these smaller prisms the sculptor can create from the original block of marble?",
-            "difficulty": "medium",
-            "reasoning": "To find the maximum number of smaller prisms, we need to determine how many times the smaller prism's dimensions fit into the larger block's dimensions.\n\n**1. Calculate the fitting along each dimension:**\n    * Length: 240 cm (block) / 15 cm (prism) = 16 prisms\n    * Width: 120 cm (block) / 10 cm (prism) = 12 prisms\n    * Height: 90 cm (block) / 6 cm (prism) = 15 prisms\n\n**2. Multiply the number of fits in each dimension:**\n    * 16 prisms * 12 prisms * 15 prisms = 2880 prisms\n\n**Therefore, the sculptor can create a maximum of 2880 smaller prisms from the original block of marble.**",
-            "options": [
-                "288",
-                "1440",
-                "2880",
-                "5760"
             ],
             "correct_option": "C"
         },
@@ -362,18 +181,6 @@
             "correct_option": "C"
         },
         {
-            "question": "**visual_data**: \n  **front**: Imagine a standard 3x3 grid, like a tic-tac-toe board.\n  **side**: You see a vertical stack of 3 squares, one on top of the other.\n  **top**: You see a horizontal row of 3 squares, side by side.\n**text**: This represents a cube formed by smaller unit cubes. Now, imagine we paint the entire outer surface of this cube red. The question is: how many of the original, smaller unit cubes will have EXACTLY two sides painted red?\n",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Visualize the Cube:** The front, side, and top views tell us it's a 3x3x3 cube.\n\n2. **Identify the 'Two-Sided' Cubes:**  Focus on the edges of the cube, excluding the corner cubes. Only the cubes along the edges (but not the corners) will have exactly two sides exposed.\n\n3. **Calculate:**\n    * Each edge of the cube has 3 unit cubes.\n    * A cube has 12 edges.\n    * However, each corner cube belongs to 3 edges, and we've counted them thrice. So, on each edge, we only have 1 cube (3 total cubes on an edge - 2 corner cubes = 1 cube) that fits our criteria.\n    * Total 'two-sided' cubes: 12 edges * 1 cube/edge = 12 cubes\n\nTherefore, 12 of the smaller cubes will have exactly two sides painted red.",
-            "options": [
-                "12",
-                "16",
-                "24",
-                "8"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "A solid wooden cube, measuring 5 cm on each edge, is painted blue on all its faces. It's then sliced into smaller 1 cm cubes.  Imagine you carefully separate all these smaller cubes. How many of the smaller cubes will have exactly one blue face?",
             "difficulty": "medium",
             "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Problem:**\n\nImagine the larger cube.  The smaller cubes with exactly one blue face will be found in the center of each face of the original cube. \n\n**2. Focus on One Face:**\n\n* Each face of the original cube is 5 cm x 5 cm.\n* After cutting, a single face is made up of 25 smaller squares (5 x 5).\n* The center of this face forms a square of 3 cm x 3 cm, which would be 9 smaller squares (3 x 3).\n\n**3.  Account for All Faces:**\n\n* The original cube has 6 faces.\n* Each face has 9 cubes with one blue face.\n* Therefore, there are 6 faces * 9 cubes/face = 54 cubes with one blue face.\n\n**Therefore, the answer is 54.**",
@@ -382,18 +189,6 @@
                 "36",
                 "54",
                 "60"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "A solid wooden cuboid, measuring 10 cm in length, 8 cm in width, and 6 cm in height, is painted green on all its faces. It is then cut into smaller identical cubes, each with sides of 2 cm.  How many of the smaller cubes will have exactly two faces painted green?",
-            "difficulty": "medium",
-            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Visualize the Problem:**\nImagine the larger cuboid and how it's cut into smaller cubes. The smaller cubes with exactly two painted faces will be those along the edges of the original cuboid (excluding the corner cubes).\n\n**2. Calculate Edge Cubes:**\n* The cuboid has 12 edges.\n* **Lengthwise edges:** Two edges of 8 smaller cubes each (10 cm / 2 cm per cube = 5 cubes along each length, but we remove the two corner cubes). \n* **Widthwise edges:** Two edges of 6 smaller cubes each (8 cm / 2 cm per cube = 4 cubes along each width, but we remove the two corner cubes).\n* **Heightwise edges:**  Two edges of 4 smaller cubes each (6 cm / 2 cm per cube = 3 cubes along each height, but we remove the two corner cubes).\n\n**3. Total Cubes with Two Painted Faces:**\n* Total edge cubes = (2 * 8) + (2 * 6) + (2 * 4) = 16 + 12 + 8 = 36 \n\n**Therefore, there are 36 smaller cubes with exactly two green faces.**",
-            "options": [
-                "16",
-                "24",
-                "36",
-                "48"
             ],
             "correct_option": "C"
         },
@@ -410,18 +205,6 @@
             "correct_option": "C"
         },
         {
-            "question": "Imagine a standard six-sided die (cube) where opposite faces add up to 7. You place the die with the '1' facing you and '2' facing upwards. You then roll the die in a specific pattern: right (90 degrees), forward (away from you), left (90 degrees), back (towards you). You repeat this exact four-move pattern a total of three times. After completing all twelve rolls, what number will be facing you?",
-            "difficulty": "medium",
-            "reasoning": "Here's the step-by-step solution:\n\n1. **Initial Orientation:** The die starts with '1' facing you and '2' facing up.\n\n2. **First Pattern Repetition:**\n    * **Right roll:** '3' faces you, '2' remains up.\n    * **Forward roll:** '2' faces you, '5' is now up.\n    * **Left roll:** '1' faces you, '5' remains up.\n    * **Back roll:** '5' faces you, '1' is now up. \n\n3. **Second Pattern Repetition:** Notice that after one full pattern (four rolls), the die has effectively rotated 90 degrees around the vertical axis (the '2'-'5' axis remains vertical). This pattern will continue.\n\n4. **Third Pattern Repetition:** After the second repetition, the '4' will be facing you, and after the third, the die will have completed a full rotation around the '2'-'5' axis, returning to the original orientation with the '1' facing you.\n\n5. **Final Answer:** Therefore, after twelve rolls, the number **1** will be facing you. ",
-            "options": [
-                "2",
-                "3",
-                "4",
-                "5"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "**scenario**: Imagine a wooden cube painted with distinct colors on each face: \n\n* **Top:** Yellow\n* **Bottom:** Orange\n* **Front:** Green\n* **Back:** Blue\n* **Left:** Red\n* **Right:** Purple\n\n This cube rests on a table in front of you.\n**action**: Perform the following rotations on the cube:\n\n1. Rotate the cube 90 degrees clockwise, keeping your perspective from the front the same (as if you're turning a steering wheel to the right).\n2. Now, tilt the cube forward, rotating it 90 degrees on its axis so the face previously touching the table is now facing you.\n**question**: After these rotations, what color is the top face of the cube?\n",
             "difficulty": "medium",
             "reasoning": "Here's how to solve the rotation step-by-step:\n\n**Step 1: Initial State**\n* The cube starts with Yellow on top, Orange on the bottom, and Green facing you.\n\n**Step 2: First Rotation (90 degrees clockwise)**\n* Imagine turning a steering wheel clockwise. The Purple face would now be facing you, with Red on the right and Blue on the left. \n* The Yellow top would have moved to the right side, and the Orange bottom to the left. \n\n**Step 3: Second Rotation (Tilting forward 90 degrees)**\n* Now, the Purple face that was facing you is pushed down, becoming the new bottom. \n* The face that was previously touching the table (Green) is now facing you. \n* Since Yellow moved to the right in the first rotation, and the entire cube was tilted, **Yellow is now the top face**.\n\nTherefore, the correct answer is **Yellow**.",
@@ -434,18 +217,6 @@
             "correct_option": "D"
         },
         {
-            "question": "Imagine a large cuboid formed by perfectly stacking together 12 identical smaller cubes.  If you were to paint all the faces of this larger cuboid blue, how many of the smaller cubes would have exactly four blue faces?",
-            "difficulty": "medium",
-            "reasoning": "This question targets the 'Basic Concepts: Cubes vs. Cuboids - Identifying Faces, Edges, and Vertices' subtopic within 'Logical Reasoning - Cube and Cuboid'. It tests a student's spatial reasoning and ability to visualize the composition of a cuboid from smaller cubes. Here's a breakdown of the solution:\n\n1. **Visualize:** Imagine the larger cuboid. Since it's formed by 12 cubes, it could have dimensions like 1x2x6, 1x3x4, or 2x2x3.\n\n2. **Identify Key Positions:** The smaller cubes with *exactly* four blue faces are those located along the edges of the larger cuboid, excluding the corner cubes (which have three blue faces).\n\n3. **Consider Different Arrangements:**  Let's analyze one possible arrangement of the 12 cubes, a 2x2x3 cuboid:\n    *  It has 8 corner cubes (3 blue faces each). \n    *  Along its edges, excluding corners, it has 4 more cubes (4 blue faces each).\n\n4. **Generalize:**  No matter how you arrange the 12 cubes to form a cuboid, the number of cubes with exactly four blue faces will remain consistent. This is because the number of edges (and therefore the number of non-corner edge cubes) in a cuboid is determined by its structure, not the specific arrangement of its building blocks.\n\n**Therefore, there will always be 4 smaller cubes with exactly four blue faces.**",
-            "options": [
-                "0",
-                "2",
-                "4",
-                "6"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "A wooden cube with a side length of 12 cm is painted red on all faces. It is then cut into smaller cubes, each with a side length of 3 cm.  How many of the smaller cubes will have exactly one red face?",
             "difficulty": "medium",
             "reasoning": "**1. Visualize the Problem:**\n\nImagine the larger cube.  The smaller cubes with only one red face will be those in the center of each original face of the larger cube (not the edges or corners).\n\n**2. Calculate Cubes per Face:**\n\n* Each face of the big cube is 12 cm x 12 cm.\n* Each small cube has a side of 3 cm, so you can fit 12/3 = 4 small cubes along each edge of a face.\n* Therefore, each face of the big cube contains 4 x 4 = 16 smaller cubes.\n\n**3.  Identify Cubes with One Red Face:**\n\n*  Out of the 16 smaller cubes on a face, the inner 2 x 2 square will have only one red face.\n* This means there are 4 smaller cubes per face with one red face.\n\n**4. Calculate Total Cubes:**\n\n* Since there are 6 faces on the large cube, there are 6 faces * 4 cubes/face = 24 smaller cubes with exactly one red face. \n\n**Therefore, the answer is 24.**",
@@ -454,18 +225,6 @@
                 "16",
                 "32",
                 "64"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Imagine you have a square piece of paper divided into six smaller squares, like a tic-tac-toe board, but all the squares are the same color. You then draw a thick line segment separating the top row of squares from the middle row.  Which of the following arrangements of this paper, when folded along the lines, could NOT represent a possible net of a cube? \n\n A) The line segment is on the bottom edge of the paper. \n\n B) The line segment is on the right edge of the paper. \n\n C) The line segment is in the middle of the paper, dividing the top two rows from the bottom row. \n\n D) The line segment is one square away from the top edge of the paper.",
-            "difficulty": "medium",
-            "reasoning": "To solve this, we need to visualize folding each option and consider the rules of cube nets: \n\n* **Rule 1:** A cube net must have six squares. This is true for all our options. \n\n* **Rule 2:** When folded, no squares should overlap.  \n\n* **Rule 3:** At least one side must be able to fold to form the 'opposite' face of the cube without being blocked. \n\nLet's analyze each option: \n\nA) Folding this along the lines would create a shape resembling a 'U' that could be folded into a cube. \n\nB) Similar to option A, this arrangement can also be folded into a cube. \n\nC) This arrangement, when folded, would cause the top row of squares to collide and overlap with the bottom row, violating Rule 2.  \n\nD) This is also a valid net; you can visualize folding the 'flaps' formed by the top row to create a cube. \n\n**Therefore, the correct answer is (C).** Only option C cannot be folded into a cube due to overlapping squares.",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
             ],
             "correct_option": "C"
         },
@@ -482,18 +241,6 @@
             "correct_option": "B"
         },
         {
-            "question": "Imagine a standard six-sided die. The numbers on opposite faces of this die always add up to 7. You roll the die, and it lands with the number 3 facing up. You then rotate the die one face at a time, moving it across the table.  First, you rotate it so the face with 2 is showing. Next, you rotate it so the face with 1 is showing. What number is now facing the ceiling?",
-            "difficulty": 1,
-            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Visualize the Die:** Imagine a standard die. Remember that opposite sides always add up to 7. This means:\n   * 1 is opposite 6\n   * 2 is opposite 5\n   * 3 is opposite 4\n\n**2. Starting Point:** The die starts with 3 facing up, meaning 4 is face down.\n\n**3. First Rotation:** You rotate the die to show 2.  There are a couple of positions this could be in, but it doesn't affect the final answer.\n\n**4. Second Rotation:** You rotate the die to show 1.  Since 1 is opposite 6, the 6 MUST now be face down on the table. \n\n**5. Final Position:** If 6 is face down, then its opposite, the number **1**, must be facing the ceiling.\n",
-            "options": [
-                "2",
-                "3",
-                "4",
-                "6"
-            ],
-            "correct_option": "D"
-        },
-        {
             "question": "**scenario**: Imagine a large cube formed by perfectly fitting together 64 smaller, identical cubes.  This large cube is then dipped into a bucket of blue paint and allowed to dry.\n**question**: After the paint dries, the large cube is completely disassembled back into the original 64 smaller cubes. How many of these smaller cubes will have exactly three faces painted blue?\n**difficulty**: tricky 9/10\n",
             "difficulty": "hard",
             "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Cube:**\n* Imagine the larger cube made up of 64 smaller cubes (this is a 4x4x4 cube).\n\n**2. Identify Corner Cubes:**\n* The smaller cubes with exactly three blue faces are the ones located at the corners of the large cube.\n\n**3. Count the Corners:**\n*  A cube has 8 corners.\n\n**4. The Answer:**\n* Therefore, there are **8** smaller cubes with exactly three blue faces. \n\n**Why other options are incorrect:**\n* Cubes on the edges (but not corners) of the large cube will have two blue faces. \n* Cubes in the center of each face of the large cube will have one blue face. \n* Cubes in the very interior of the large cube will have no blue faces. ",
@@ -504,18 +251,6 @@
                 "12"
             ],
             "correct_option": "C"
-        },
-        {
-            "question": "A rectangular box has internal dimensions of 12 cm in length, 8 cm in width, and 6 cm in height. What is the maximum number of identical cuboids, each measuring 4 cm x 2 cm x 1 cm, that can fit completely inside the box without any part protruding?",
-            "difficulty": "hard",
-            "reasoning": "To solve this, we need to determine the maximum number of cuboids that can fit along each dimension of the box:\n\n**Length:** The box is 12 cm long and each cuboid is 4 cm long, so a maximum of 12 / 4 = 3 cuboids can fit along the length.\n\n**Width:** The box is 8 cm wide and each cuboid is 2 cm wide, so a maximum of 8 / 2 = 4 cuboids can fit along the width.\n\n**Height:** The box is 6 cm high and each cuboid is 1 cm high, so a maximum of 6 / 1 = 6 cuboids can fit along the height.\n\nTo find the total number of cuboids that can fit, we multiply the maximum number that fit in each dimension: 3 x 4 x 6 = 72\n\nTherefore, a maximum of 72 cuboids can fit inside the box.",
-            "options": [
-                "36",
-                "48",
-                "64",
-                "72"
-            ],
-            "correct_option": "D"
         },
         {
             "question": "Imagine a solid wooden cube painted red on all sides. It's then cut into 27 smaller, identical cubes. These smaller cubes can only be moved by rotating an entire face of the original larger cube (like turning a page of a book).  You are allowed to perform this rotation any number of times. \n\nWhat is the maximum number of sides of a single smaller cube that can be left completely unpainted that you can achieve through these rotations?",
@@ -530,18 +265,6 @@
             "correct_option": "C"
         },
         {
-            "question": "A large cube is formed by gluing together 64 smaller, identical cubes.  The large cube is then dipped in paint. After the paint dries, the large cube is disassembled back into the 64 smaller cubes. How many of the smaller cubes have exactly one side painted?",
-            "difficulty": "hard",
-            "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Cube:** Imagine a 4x4x4 cube made up of 64 smaller cubes (since 4 * 4 * 4 = 64).\n\n**2. Identify the Types of Smaller Cubes:** When you dip the large cube in paint, you'll have smaller cubes with different numbers of painted sides:\n    * **Corner Cubes:** These have 3 painted sides.\n    * **Edge Cubes:** These have 2 painted sides. \n    * **Face Cubes:** These have 1 painted side.\n    * **Inner Cubes:** These have 0 painted sides.\n\n**3. Focus on the Cubes with One Painted Side:**  These are the 'face' cubes.  Each face of the large cube has some of these. \n\n**4. Calculate the Number of 'Face' Cubes:**\n    * Each face of the large cube has a 2x2 square of 'face' cubes in the center (since the edge cubes are excluded).\n    * A cube has 6 faces.\n    * Therefore, there are 6 faces * 4 'face' cubes per face = 24 cubes with exactly one painted side.\n\n**Therefore, the answer is 24.**",
-            "options": [
-                "12",
-                "24",
-                "36",
-                "48"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "A large solid cube is painted blue on exactly three adjacent faces and then painted orange on the remaining faces. This cube is then cut into 27 identical smaller cubes. How many of the smaller cubes have at least one face painted blue and at least one face painted orange?",
             "difficulty": "hard",
             "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Cube**\n\nImagine a cube where three sides that meet at a corner are painted blue, and the other three sides are painted orange.  \n\n**2. Identify the Types of Smaller Cubes**\n\nWhen the large cube is cut, you'll end up with these types of smaller cubes:\n\n* **Type 1: Three colors (Blue, Orange, and Unpainted)** These are the corner cubes where the blue and orange faces meet. There will be **2** of these (one for each 'end' of the corner where the colors meet).\n* **Type 2: Two colors (Blue and Orange)** These are the edge cubes along the edges where blue and orange faces meet. There will be **3** of these on each of the three edges where the colors meet, totaling **9** cubes. \n* **Type 3: One color (Blue or Orange)** These are the cubes in the center of each colored face and along the edges of each colored face. We don't need to calculate these.\n* **Type 4: No color** The cube in the very center of the original large cube will have no paint.\n\n**3. Calculate the Total**\n\nAdd the number of cubes with both blue and orange paint:\n\n2 (Type 1) + 9 (Type 2) = **11**\n\n**Therefore, 11 of the smaller cubes will have at least one face painted blue and at least one face painted orange.**",
@@ -552,18 +275,6 @@
                 "27"
             ],
             "correct_option": "C"
-        },
-        {
-            "question": "**context**: Imagine a wooden cube painted blue on exactly three of its faces.  These blue faces do *not* all share a common corner.\n**action**: The cube is rolled, always rotating around an edge and never being lifted, until a different face is on top. This is done a total of four times.\n**question**: What is the maximum number of times a blue face could have been on top during this process (including the initial and final positions)?\n",
-            "difficulty": "hard",
-            "reasoning": "The question belongs to the subtopic 'Spatial Reasoning: Visualizing Rotations and Movements' about 'Logical Reasoning - Cube and Cuboid'.\n\nHere's how to solve the problem:\n\n1. **Visualize the Cube:** Picture a standard die.  The arrangement of blue faces that *doesn't* involve a corner being all blue could be like having three adjacent faces painted blue (think of it wrapping around the die). \n\n2. **Strategic Rotations:** If we were to roll this cube four times, aiming to maximize how many times a blue face is up, we'd ideally want to keep it within those three blue faces as much as possible.\n\n3. **Maximum Count:**  It's possible to rotate the cube such that a blue face is up, then roll it to another blue face, and so on.  Since we start and end with a blue face up, and we have four rolls in between, the maximum number of times a blue face could be up is **all six times**. \n\nTherefore, the correct answer is 6.",
-            "options": [
-                "3",
-                "4",
-                "5",
-                "6"
-            ],
-            "correct_option": "D"
         },
         {
             "question": "**scenario**: Imagine a standard six-sided die placed inside a closed box with a glass bottom. You can see the die from below.\n**information**: You carefully tilt the box forward, then to the right, and finally backward.  During these movements, you observe the following numbers on the bottom face of the die (in order): 2, 1, 6.\n**question**: What number is on the face opposite the number 3 on this die?\n",
@@ -578,18 +289,6 @@
             "correct_option": "C"
         },
         {
-            "question": "A sculptor wants to create a large, hollow cube as part of an art installation.  She plans to construct it using smaller, identical solid concrete cubes. The outer dimensions of the large cube will be 4 meters wide, 4 meters long, and 4 meters high. To give the illusion of a hollow interior, she will leave a 2 meter by 2 meter by 2 meter empty space in the exact center of the large cube. What is the absolute minimum number of smaller concrete cubes the sculptor will need to complete her installation?",
-            "difficulty": "hard",
-            "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Structure:**\nImagine a large cube made up of smaller cubes.  Now picture a smaller cube removed from the center of the larger one, creating the hollow space.\n\n**2. Calculate the Outer Volume:**\n* The large cube has a volume of 4 meters * 4 meters * 4 meters = 64 cubic meters.\n\n**3. Calculate the Inner (Empty) Volume:**\n* The hollow center has a volume of 2 meters * 2 meters * 2 meters = 8 cubic meters.\n\n**4. Calculate the Volume of the Concrete:**\n* Subtract the empty space from the total volume: 64 cubic meters - 8 cubic meters = 56 cubic meters.\n\n**5. Determine the Smallest Usable Cube:**\n* Since the hollow space has edges of 2 meters, the sculptor needs to use concrete cubes with side lengths smaller than 2 meters to build around this space. The largest possible size for the small cubes is 1 meter by 1 meter by 1 meter (1 cubic meter).\n\n**6. Calculate the Number of Concrete Cubes:**\n* To fill the 56 cubic meter volume with 1 cubic meter cubes, the sculptor needs 56 / 1 = 56 concrete cubes.\n\n**Therefore, the sculptor needs a minimum of 56 concrete cubes to build her installation.**",
-            "options": [
-                "56",
-                "64",
-                "8",
-                "16"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "A large solid cube with edges measuring 12 cm is painted green on all its faces. This cube is then meticulously cut into a combination of smaller cubes with edges measuring 2 cm and even smaller cubes with edges measuring 1 cm.  What is the total number of smaller cubes, taking into account both sizes, that have exactly three faces painted green?",
             "difficulty": "hard",
             "reasoning": "Let's break down this problem step-by-step:\n\n**1. Visualizing the Dissection:**\n\n   Imagine the large cube being cut. The 2 cm cubes are like bigger chunks, while the 1 cm cubes fill in the gaps.\n\n**2. Identifying the Key Cube Types:**\n\n   * **Corner Cubes (3 green faces):**  These are formed only from the corners of the original large cube.\n   * **Edge Cubes (2 green faces):** These come from the edges of the original cube, excluding the corner cubes. \n   * **Face Cubes (1 green face):**  These come from the faces of the original cube, excluding the edge and corner cubes.\n   * **Inner Cubes (0 green faces):** These are entirely inside the original cube and have no painted faces.\n\n**3. Focusing on Corner Cubes (3 green faces):**\n\n   * A cube, regardless of its size, has 8 corners. \n   * Since only the corner cubes of the original large cube will have 3 green faces, we will have **8 cubes** with exactly three green faces.\n\n**Therefore, the total number of smaller cubes with exactly three green faces is 8.**",
@@ -598,18 +297,6 @@
                 "16",
                 "8",
                 "24"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "A wooden cuboid has dimensions 6 cm x 8 cm x 10 cm.  A carpenter first cuts the cuboid into smaller cubes, each with a side length of 2 cm. Then, he takes some of these smaller cubes and glues them together to form a new, solid cube with the largest possible volume. Finally, he paints all six faces of this new cube red. How many of the original 2 cm cubes have exactly one red face?",
-            "difficulty": "hard",
-            "reasoning": "Let's break down the solution step-by-step:\n\n**Step 1: Calculate the total number of smaller cubes.**\n* The original cuboid has a volume of 6 cm * 8 cm * 10 cm = 480 cm\u00b3. \n* Each smaller cube has a volume of 2 cm * 2 cm * 2 cm = 8 cm\u00b3.\n* The carpenter creates 480 cm\u00b3 / 8 cm\u00b3/cube = 60 smaller cubes.\n\n**Step 2: Determine the dimensions of the largest possible new cube.**\n* To maximize the volume of the new cube, we need to find the largest cube that can be formed by arranging the smaller cubes. \n* The largest common factor of 6, 8, and 10 (the dimensions of the original cuboid, which dictate how many 2 cm cubes we have along each edge) is 2.\n* This means the largest possible new cube will have sides of length 2 * 2 cm = 4 cm.\n\n**Step 3: Visualize the cubes with one red face.**\n* Imagine the larger 4 cm cube. The only smaller cubes with exactly one red face are the ones in the center of each face of the larger cube (not the edges or corners).\n\n**Step 4: Calculate the number of cubes with one red face per face.**\n* Each face of the 4 cm cube is 4 cm / 2 cm/cube = 2 cubes long.\n* The center section of each face (excluding the edges) is then 2 - 2 = 0 cubes long (and 0 cubes wide).\n\n**Step 5: Calculate the total number of cubes with one red face.**\n* Since there are 6 faces on a cube and each face has *0* cubes with one red face, there are a total of 6 * 0 = **0** cubes with exactly one red face.\n\nTherefore, **0** of the original 2 cm cubes have exactly one red face.",
-            "options": [
-                "12",
-                "24",
-                "0",
-                "60"
             ],
             "correct_option": "C"
         },
@@ -626,18 +313,6 @@
             "correct_option": "C"
         },
         {
-            "question": "**questionType**: Count the hidden cubes\n**questionDescription**: Imagine a large cube formed by assembling 27 smaller, identical cubes.  You are given three views of this large cube: Front, Side, and Top. However, some of the smaller cubes are hidden from view in these projections.  Your task is to determine the MAXIMUM possible number of smaller cubes that could be completely hidden within the larger cube, considering these three views.\n**frontView**: A 3x3 grid representing the front face of the large cube.\n**sideView**: A 3x3 grid representing the side face of the large cube.\n**topView**: A 3x3 grid representing the top face of the large cube.\n",
-            "difficulty": "hard",
-            "reasoning": "This problem is designed to be tricky because it plays on our perception of 2D representations of 3D objects. Here's how we can break down the solution:\n\n**1. Visualizing the 'Empty' Space:**\n   - Imagine the large cube as having a hollow interior.  \n   - Your goal is to figure out how many smaller cubes could fit inside that hollow space, completely out of sight from any of the three views (front, side, top).\n\n**2. Working from the Inside Out:**\n   - The key is to start with the most inward, hidden part of the cube.  \n   - The very center of the large cube is invisible from all three views. This means one small cube can definitely be hidden.\n\n**3. Expanding the Hidden Volume:**\n   - Now, consider the layer of cubes surrounding that central hidden cube.\n   - You'll find that you can strategically 'remove' more small cubes from this layer while still keeping them hidden from all three views.\n\n**4. Careful Counting:**\n   - Systematically work your way outwards, being careful not to remove any cubes that would become visible in any of the three given projections. \n\n**5. The Maximum Count:**\n   - By carefully considering the spatial relationships, you'll discover that the MAXIMUM number of smaller cubes that can be hidden is **7**. \n\n**Why This is Tricky:**\n   - It's easy to underestimate the amount of 'empty' space within the large cube when looking at the 2D views.\n   - The question requires a high level of spatial reasoning and the ability to mentally 'deconstruct' the cube to analyze its hidden parts. ",
-            "options": [
-                "3",
-                "5",
-                "7",
-                "9"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "A chocolate manufacturer wants to package their new spherical chocolates efficiently. Each chocolate has a diameter of 3 cm.  They are considering two types of boxes:\n\n**Box A:** A cubical box with an edge length of 6 cm.\n**Box B:** A rectangular cuboid box with dimensions 7 cm x 6 cm x 5 cm.\n\nThey want to minimize wasted space while ensuring the chocolates don't get squashed.  What is the MAXIMUM number of chocolates they can fit in the MORE efficient box type, considering that chocolates cannot be cut or deformed?",
             "difficulty": "hard",
             "reasoning": "This question requires a multi-step approach combining volume calculations, spatial reasoning, and optimization:\n\n**1. Chocolate Volume:**\n   - The radius of each chocolate is 3 cm / 2 = 1.5 cm\n   - Volume of a sphere = (4/3) * \u03c0 * r\u00b3 = (4/3) * \u03c0 * (1.5 cm)\u00b3 \u2248 14.14 cm\u00b3\n\n**2. Box Volumes:**\n   - Box A Volume = edge\u00b3 = 6 cm * 6 cm * 6 cm = 216 cm\u00b3\n   - Box B Volume = length * width * height = 7 cm * 6 cm * 5 cm = 210 cm\u00b3\n\n**3. Spatial Reasoning - Fitting:**\n   - **Box A:** While you might think you can fit 216 cm\u00b3 / 14.14 cm\u00b3 \u2248 15 chocolates in Box A, the spherical shape limits how closely they pack. You can practically fit only one per corner, totaling 8 chocolates.\n   - **Box B:**  The irregular shape allows for more efficient placement. You need to mentally visualize how the spheres might fit, leaving minimal gaps. This is where the 'tricky' part comes in.\n\n**4. Optimization:**\n   - Through careful arrangement in Box B, it's possible to fit a row of 4 chocolates (7 cm width), stacked in two layers with some careful positioning within the 5 cm height. This allows for 4 * 2 = 8 chocolates.\n\n**5. Conclusion:**\n   - Surprisingly, BOTH boxes have the same maximum capacity when considering practical sphere packing. Therefore, the manufacturer can choose either box, as the maximum number of chocolates they can fit is 8.\n",
@@ -648,18 +323,6 @@
                 "12"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "**Context**: You are given six squares, labeled A, B, C, D, E, and F, which represent the faces of a cube when folded. Adjacent squares share a side on the cube.\n**Task**: Determine the only possible arrangement of squares surrounding square 'A' if the following conditions must be met when the net is folded into a cube:\n\n* Square 'B' cannot share an edge with square 'F'.\n* Square 'D' must be opposite square 'C'.\n* Square 'E' and square 'C' must share an edge.\n**Stimulus**: None (test taker must visualize based on instructions)\n**Options**: \n  - B-C-A-E-D-F\n  - C-E-A-B-F-D\n  - F-B-A-C-E-D\n  - D-F-A-B-E-C\n",
-            "difficulty": "hard",
-            "reasoning": "This question utilizes a tricky net representation, relying solely on spatial reasoning and the relationships between the squares. Here's a step-by-step solution:\n\n1. **Visualize:** Imagine square 'A' as the base of your cube net.\n\n2. **Apply Restrictions:**\n    *  'D' opposite 'C' means they cannot be adjacent to 'A' or each other in the net.\n    * 'E' and 'C' sharing an edge means they MUST be beside each other in the net.\n    * 'B' not sharing an edge with 'F' limits their potential positions.\n\n3. **Trial and Error:** Systematically test placements, remembering a cube net has six squares and must fold into a 3D shape.  Consider these deductions:\n     * Since 'D' can't be near 'C', and 'C' is next to 'E',  neither 'D' nor 'C' can be directly next to 'A'.\n     * This leaves 'B', 'E', and 'F' as potential neighbors of 'A'. Knowing 'B' and 'F' can't touch significantly narrows down possibilities. \n\n4. **Solution:** Only one arrangement satisfies all conditions: **'F-B-A-C-E-D'.** Let's verify:\n    *  'B' and 'F' are not adjacent.\n    *  Folding mentally, 'D' and 'C' end up on opposite faces.\n    *  'E' and 'C' share an edge.\n\nTherefore, the correct answer is **C) F-B-A-C-E-D**",
-            "options": [
-                "B-C-A-E-D-F",
-                "C-E-A-B-F-D",
-                "F-B-A-C-E-D",
-                "D-F-A-B-E-C"
-            ],
-            "correct_option": "C"
         }
     ],
     "title": "Logical Reasoning",

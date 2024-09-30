@@ -1,0 +1,248 @@
+{
+    "questions": [
+        {
+            "question": "**Premise 1:** If it rains, then the ground gets wet.\n**Premise 2:** The ground is wet.\n**Question:** Is it true that it rained?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of conditional statements and the fallacy of affirming the consequent. Here's why the answer is **False**:\n\n* **Understanding Conditional Statements:** Premise 1 states that rain is a *sufficient* condition for the ground to get wet. This means if it rains, the ground will definitely get wet. However, it doesn't mean it's the *only* way the ground can get wet.\n* **Fallacy of Affirming the Consequent:** Premise 2 states the consequent (the ground is wet) is true. We cannot automatically conclude the antecedent (it rained) is also true. There could be other reasons for the ground to be wet, such as sprinklers, a spilled drink, etc.\n\n**Therefore, we cannot logically conclude that it rained based on the given premises.**",
+            "options": [
+                "True",
+                "False",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Premise 1: No birds are mammals. \nPremise 2: All penguins are birds. \nConclusion: Therefore, no penguins are mammals. \nQuestion: Does the conclusion follow logically from the premises? (Yes/No)",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the 'Rules of Syllogisms: Identifying Valid and Invalid Arguments'. Here's how to determine the answer:\n\n**1. Visualize the relationships:**\n   * Imagine a circle representing 'birds'. \n   * Now, imagine a separate circle representing 'mammals'. Since 'No birds are mammals', these circles should not overlap.\n   *  Finally, imagine a circle representing 'penguins' entirely within the 'birds' circle (because 'All penguins are birds').\n\n**2. Analyze the conclusion:**\n   * The conclusion states 'Therefore, no penguins are mammals'. Our visualization shows the 'penguins' circle existing entirely within the 'birds' circle, which itself does not overlap with the 'mammals' circle. This means no penguins can be mammals.\n\n**3. Determine validity:**\n   * Since our visualization, based on the premises, supports the conclusion, the argument is logically valid. \n\n**Answer: Yes**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Undecided"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**description**: Determine if the following Sorites argument is valid and select the correct conclusion:\n**premises**: \n  - All gemstones are valuable.\n  - Some valuable things are rare.\n  - All rare things are sought after.\n  - Some sought-after things are displayed in museums.\n**conclusion_options**: \n  - Therefore, some gemstones are displayed in museums.\n  - Therefore, all gemstones are rare.\n  - Therefore, some valuable things are displayed in museums.\n  - Therefore, all rare things are valuable.\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses a student's ability to evaluate the validity of a Sorites argument, a chain of syllogisms. Here's a breakdown:\n\n**Step 1: Analyze the Premises** \nThe premises link together categories and attributes:\n    * Gemstones \u2192 Valuable\n    * Valuable (some) \u2192 Rare\n    * Rare \u2192 Sought after\n    * Sought after (some) \u2192 Displayed in museums \n\n**Step 2: Identify the Target Conclusion**\nWe need to find a conclusion that logically follows from these linked premises.\n\n**Step 3: Evaluate Each Option**\n* **Option 1: Incorrect.** While there's a chain linking gemstones to things displayed in museums, the word \"some\" in the premises breaks the chain for a definitive conclusion like this.\n* **Option 2: Incorrect.**  The premises only state that *some* valuable things are rare, not all.\n* **Option 3: Correct.** This follows the chain of logic established in the premises. If some valuable things are rare, and all rare things are sought after, and some sought-after things are displayed in museums, then logically, some valuable things must be displayed in museums. \n* **Option 4: Incorrect.** This reverses the logic of the premises.  \n\n**Therefore, the correct conclusion is: Therefore, some valuable things are displayed in museums.**",
+            "options": [
+                "Therefore, some gemstones are displayed in museums.",
+                "Therefore, all gemstones are rare.",
+                "Therefore, some valuable things are displayed in museums.",
+                "Therefore, all rare things are valuable."
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**premise_1**: All dogs are mammals.\n**premise_2**: Some mammals are not pets.\n**question**: Which of the following conclusions can be validly drawn from the above premises?\n**options**: \n  **A**: Some dogs are not pets.\n  **B**: All dogs are pets.\n  **C**: No dogs are pets.\n  **D**: Some pets are not mammals.\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Visualize with Venn Diagrams:**\n\n* Draw a large circle representing 'mammals'.\n* Inside it, draw a smaller circle representing 'dogs'. This visually shows 'All dogs are mammals'.\n* Now, partially overlap another circle representing 'pets' with the 'mammals' circle, but make sure a portion of the 'mammals' circle remains outside the 'pets' circle. This shows 'Some mammals are not pets'.\n\n**2. Analyze the Overlap (or Lack Thereof):**\n\n* Notice that the 'dogs' circle *could* fall entirely within the overlapping section of 'mammals' and 'pets'.  This means we *cannot* definitively say 'Some dogs are not pets'.\n* The same visualization shows us that options B and C are also incorrect. We don't have enough information to conclude 'All dogs are pets' or 'No dogs are pets'.\n\n**3. Identify the Valid Conclusion:**\n\n* The diagram clearly shows that since some mammals are outside the 'pets' circle, there must be 'Some pets that are not mammals'.\n\n**Therefore, the correct answer is (D).**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Premise 1:** No reptiles are insects. \n**Premise 2:** Some insects are found in rainforests. \n\n**Question:**  Does the following conclusion logically follow from the premises: \"Some things found in rainforests are not reptiles\"?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Structure:**\n\n* **Premise 1** establishes a separation between the categories 'reptiles' and 'insects'. There is no overlap between these groups. \n* **Premise 2** introduces a third category, 'things found in rainforests', and states that some insects belong to this category.\n* **The Conclusion** attempts to draw a relationship between 'things found in rainforests' and 'reptiles'.\n\n**Logical Analysis:**\n\n1. **Visual Representation:**  It can be helpful to visualize this with a Venn Diagram. Draw two separate circles, one for 'reptiles' and one for 'insects'. Since Premise 2 tells us some insects are in rainforests, you would create a partially overlapping circle for 'things found in rainforests' that intersects with the 'insects' circle.\n\n2. **Identifying the Gap:** The crucial point is that the premises provide no information about the relationship between 'reptiles' and 'things found in rainforests'. While it's true that some insects are in both categories, this doesn't automatically mean that anything in the rainforest cannot be a reptile. \n\n3. **Validity:**  A valid conclusion must be fully supported by the information presented in the premises. Since the premises don't establish any connection between reptiles and things found in rainforests, the conclusion is **not valid**.\n\n**Key Takeaway:** This question tests the understanding of syllogistic reasoning, specifically the ability to identify when a conclusion goes beyond the information provided in the premises, even if the conclusion might seem plausible in a general sense.",
+            "options": [
+                "Yes",
+                "No",
+                "No",
+                "No"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise 1**: All artists are creative individuals.\n**Premise 2**: Some musicians are creative individuals.\n**Conclusion**: Therefore, some musicians are artists.\n**Question**: Is the conclusion valid based on the given premises? Explain your reasoning.\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests understanding of the 'undistributed middle' fallacy. Here's why the conclusion is invalid: \n\n* **The middle term ('creative individuals') is not distributed in either premise.**  While Premise 1 states ALL artists are creative individuals, it doesn't say ALL creative individuals are artists.  Premise 2 only says SOME musicians are creative individuals, leaving open the possibility that other creative individuals are not musicians.\n* **Imagine a Venn Diagram:** You could have a large circle for 'creative individuals'.  'Artists' might be a smaller circle entirely inside it.  'Musicians' would be another circle that overlaps with 'creative individuals', but it doesn't have to overlap with the 'artists' circle.\n* **The fallacy:** The argument assumes a connection between musicians and artists simply because they share the characteristic of being creative.  However, there's no guarantee that this overlap exists based on the premises. \n\n**Therefore, the conclusion is invalid due to the fallacy of the undistributed middle.**",
+            "options": [
+                "Valid",
+                "Invalid",
+                "Uncertain",
+                "Partially Valid"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Premise 1: All arguments with a valid structure and true premises are sound arguments. \nPremise 2: This argument about cats being mammals does not have a valid structure. \nConclusion: Therefore, this argument about cats being mammals is not a sound argument.\n\nIs the conclusion of this syllogism logically valid?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the reasoning:\n\n* **Understanding the Concepts:**\n    * A **sound argument** is one that is both **valid** (its structure is logically correct) and has **true premises** (the starting statements are true).\n\n* **Analyzing the Premises:**\n    * **Premise 1** establishes the definition of a sound argument. \n    * **Premise 2** tells us a specific argument about cats lacks a valid structure.\n\n* **Evaluating the Conclusion:**\n    * The conclusion states that the argument about cats is not sound. While this might be true (we don't have enough information to know if the premises about cats are actually true), the **conclusion is valid** based solely on the structure of the syllogism. Since a sound argument *must* have a valid structure, and this argument lacks one, it cannot be sound.\n\n**Key Point:**  Even if the conclusion itself might be true in reality, the question asks if it's *logically* valid based on the premises given. In this case, it is.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Premise 1**: If it rains heavily, then the park will be closed.\n**Premise 2**: The park is not closed.\n**Question**: Based on the premises, what can be validly concluded?\n",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes a conditional syllogism structure, challenging the test taker to understand the relationship between a conditional statement (Premise 1) and a statement about the consequent of that conditional statement (Premise 2). \n\n**Let's break down the reasoning:**\n\n* **Premise 1:** Establishes a conditional relationship \u2013 If [A: it rains heavily], then [B: the park will be closed]. \n* **Premise 2:** Provides information about the consequent (B) \u2013 The park is NOT closed. \n* **Conclusion:** To draw a valid conclusion, we need to use the concept of *modus tollens*. Modus tollens states that if a conditional statement (If A then B) is true, and the consequent (B) is false, then the antecedent (A) must also be false.\n\n**Applying Modus Tollens:**\n\n1. We know 'If it rains heavily, then the park will be closed' is true (Premise 1).\n2. We know 'The park is closed' is false (Premise 2). \n3. Therefore, we can validly conclude that 'It did not rain heavily' must also be true. \n\n**Important Note:** This question assesses the ability to apply the principle of modus tollens, a key concept in understanding if-then relationships and a common element of medium-difficulty conditional syllogism problems.",
+            "options": [
+                "It rained heavily.",
+                "It might have rained lightly.",
+                "It did not rain heavily.",
+                "We cannot determine if it rained."
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Enthymeme:** Some people who love to read are excellent writers. Therefore, some librarians are excellent writers.  \n\n**Question:** Which missing premise makes the above argument logically valid?",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to identify the missing link in an enthymeme, requiring an understanding of how premises connect to form a valid syllogism. Here's a step-by-step breakdown:\n\n**1. Analyze the given statements:**\n    * **Premise:** Some people who love to read are excellent writers.\n    * **Conclusion:** Therefore, some librarians are excellent writers.\n\n**2. Identify the missing connection:** The argument attempts to link 'librarians' with 'excellent writers' through the common element of 'people who love to read'.\n\n**3.  Determine the necessary premise:**  To bridge the gap, we need a premise that connects 'librarians' to 'people who love to read'.\n\n**4. Evaluate the options (which would be provided in the actual question):**\n    * **(a) All librarians love to read.** This premise directly connects librarians to the characteristic of loving to read, making the entire argument valid.\n    * **(b) Some excellent writers are librarians.** This statement reverses the desired connection and doesn't logically complete the argument.\n    * **(c) All excellent writers love to read.** This statement focuses on excellent writers, not establishing the necessary link with librarians. \n    * **(d) Some people who love to read are not librarians.** This statement weakens the intended connection and doesn't support the conclusion.\n\n**Correct Answer:** (a) All librarians love to read. \n\n**Explanation:** By adding this premise, we create a valid syllogism:\n\n   * **Premise 1:** Some people who love to read are excellent writers.\n   * **Premise 2:** All librarians love to read.\n   * **Conclusion:** Therefore, some librarians are excellent writers. ",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**premise_1**: All chefs wear hats.\n**premise_2**: Some people who wear hats are bakers.\n**conclusion**: Therefore, some chefs are bakers.\n**question**: Is the conclusion of this argument logically sound?\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the test taker's ability to analyze arguments for logical consistency and soundness within the framework of syllogisms.  \n\n**Here's a breakdown of the reasoning:**\n\n* **Premise 1:** Establishes that wearing a hat is a universal characteristic of chefs. \n* **Premise 2:** Introduces a separate group, bakers, some of whom also wear hats. This premise links bakers and hat-wearers but doesn't directly link them to chefs. \n* **Conclusion:**  Erroneously assumes that because some bakers wear hats and all chefs wear hats, there must be overlap between chefs and bakers. \n\n**Why the conclusion is not logically sound:**\n\nThe argument commits the fallacy of the undistributed middle term. The term 'wear hats' appears in both premises but doesn't refer to all members of the group 'hat wearers.'  It's possible that the chefs and bakers who wear hats are entirely separate subsets within the larger group of hat-wearers.  \n\n**Example:** Imagine all chefs wear white hats, and some bakers wear blue hats. Both groups wear hats, but there's no overlap making the conclusion false.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise 1:** Some fruits are sweet. \n**Premise 2:** All sweet things are delicious. \n**Conclusion:** Therefore, all fruits are delicious. \n\nIs the conclusion valid? Explain your reasoning.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the reasoning:\n\n**1. Visual Representation:**\n   * Imagine a circle representing 'fruits'.\n   * Imagine a circle representing 'sweet things', where this circle partially overlaps with the 'fruits' circle (because *some* fruits are sweet).\n   * Imagine a larger circle representing 'delicious things', fully encompassing the 'sweet things' circle (because *all* sweet things are delicious).\n\n**2. Analyzing the Conclusion:**\n   * The conclusion states that *all* fruits are delicious. This would mean the entire 'fruits' circle must fall within the 'delicious things' circle.\n   * However, our visualization shows that only the overlapping portion of 'fruits' and 'sweet things' falls within 'delicious things'. There could be fruits that are not sweet, and therefore, not necessarily delicious.\n\n**3. Conclusion:**\n   * The conclusion is **invalid**.  While the premises tell us that some fruits are delicious (those that are sweet), it doesn't logically follow that *all* fruits are delicious.  ",
+            "options": [
+                "Valid",
+                "Invalid",
+                "Uncertain",
+                "Not enough information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise 1:** No gemstones that are easily scratched are diamonds.\n**Premise 2:** Some rubies are easily scratched.\n**Conclusion:** Therefore, some rubies are not diamonds.\n\n**Question:** Is the conclusion valid based on the premises?\n\n**Answer Options:**\n(a) Yes\n(b) No\n(c) Cannot be determined ",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic 'Logical Reasoning - Syllogism' and the subtopic 'Practice with Diverse Syllogism Examples: From Basic to Advanced' because it presents a classical syllogism with a combination of affirmative and negative statements, requiring a careful analysis of the relationships between the categories (gemstones, diamonds, rubies, easily scratched). \n\nHere's a step-by-step analysis to determine the validity of the conclusion:\n\n**1. Visualize the Premises:**\n* Imagine a circle representing 'diamonds.' Premise 1 tells us that anything 'easily scratched' falls *outside* this circle.\n* Imagine another circle representing 'rubies.' Premise 2 tells us that *some* rubies overlap with the category of things that are 'easily scratched.'\n\n**2.  Relate the Premises to the Conclusion:**\n* The conclusion states that 'some rubies are not diamonds.'  Since we know some rubies are 'easily scratched,' and 'easily scratched' things cannot be diamonds, the conclusion logically follows.\n\n**3.  Correct Answer:**\nThe correct answer is **(a) Yes**. The conclusion is validly derived from the premises. ",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Maybe"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Premise 1: All mammals are warm-blooded.\nPremise 2: No reptiles are warm-blooded.\nConclusion: Therefore, some mammals are not reptiles.\n\nIs the conclusion of this syllogism valid?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the reasoning to determine if the conclusion is valid:\n\n**1. Understand the Structure:**\nThis syllogism follows a classic categorical syllogism structure with three parts:\n   * Major Premise (Premise 1): A general statement about a category (mammals).\n   * Minor Premise (Premise 2): A statement relating another category (reptiles) to the first.\n   * Conclusion: A statement drawing a relationship between the two categories based on the premises.\n\n**2. Visualize with Venn Diagrams:**\nA helpful tool for syllogisms is a Venn diagram:\n   * Draw a circle representing 'mammals' and entirely enclose it within a larger circle representing 'warm-blooded' (since all mammals are warm-blooded).\n   * Draw a separate circle representing 'reptiles' completely outside the 'warm-blooded' circle (since no reptiles are warm-blooded).\n\n**3. Analyze the Logic:**\n   * The Venn diagram clearly shows that mammals and reptiles belong to distinct groups with no overlap.\n   * While the conclusion states 'some mammals are not reptiles,' the Venn diagram demonstrates a stronger relationship: *no* mammals are reptiles. \n\n**4. Determine Validity:**\n   *  Even though the conclusion is phrased less definitively than what the premises dictate, it is still logically *valid*.  The stronger statement ('no mammals are reptiles') implies the weaker statement ('some mammals are not reptiles').\n\n**Key Takeaway:** A syllogism can be valid even if the conclusion doesn't capture the full extent of the relationship implied by the premises. What matters is that the conclusion logically follows from the information given.",
+            "options": [
+                "Invalid",
+                "Valid",
+                "Undeterminable",
+                "Maybe"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Premise 1**: People who are good at critical thinking are often skeptical of claims without evidence.\n**Premise 2**: Some journalists are very skeptical of claims without evidence.\n**Conclusion**: Therefore, some journalists are good at critical thinking.\n**Question**: Is the conclusion logically valid? If so, is the argument sound? Explain your reasoning.\n",
+            "difficulty": "medium",
+            "reasoning": "This question delves into 'Analyzing Arguments for Logical Consistency and Soundness' within the broader topic of 'Logical Reasoning - Syllogism'. Here's a breakdown:\n\n**Logical Validity:** The conclusion is **not** logically valid. While the premises establish a commonality between some journalists and those good at critical thinking (skepticism), it doesn't necessarily follow that one group belongs to the other.  The structure resembles a Venn diagram fallacy - we can have two overlapping groups without one being wholly contained within the other.\n\n**Soundness:** Since the argument isn't logically valid, soundness doesn't apply.  However, it's worth noting both premises are generally considered true in the real world, which might mislead someone into assuming validity.",
+            "options": [
+                "No, No",
+                "Yes, No",
+                "No, Yes",
+                "Yes, Yes"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Consider the following argument:\n\n**Premise 1:** Some online courses offer university credits.\n**Premise 2:** All courses that offer university credits require a final exam.\n**Conclusion:** Therefore, some online courses require a final exam.\n\n**Question:**  Express the above argument in standard syllogistic form (using terms like 'All S are P', 'No S are P', 'Some S are P', 'Some S are not P') and determine if the conclusion logically follows from the premises.",
+            "difficulty": "medium",
+            "reasoning": "## Solution:\n\n**1. Identify the categories and assign letters:**\n\n* Online courses (S)\n* Courses that offer university credits (M)\n* Courses that require a final exam (P)\n\n**2. Translate the premises into standard syllogistic form:**\n\n* **Premise 1:** Some S are M (Some online courses are courses that offer university credits).\n* **Premise 2:** All M are P (All courses that offer university credits are courses that require a final exam).\n\n**3. Express the conclusion in standard syllogistic form:**\n\n* **Conclusion:**  Some S are P (Some online courses require a final exam).\n\n**4. Determine the validity of the syllogism:**\n\nThis argument follows the form:\n\nPremise 1: Some S are M\nPremise 2: All M are P\nConclusion: Some S are P\n\nThis is a **valid** syllogistic form. The conclusion logically follows from the premises.  Since all courses that offer university credits require a final exam, and some online courses fall into that category, then logically some online courses require a final exam. ",
+            "options": [
+                "Invalid",
+                "Valid",
+                "Indeterminable",
+                "Ambiguous"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**premise_1**: Some people who enjoy classical music are also skilled chess players.\n**premise_2**: No skilled chess players are afraid of public speaking.\n**question**: Using a Venn diagram, determine which of the following conclusions is valid: \n(a) Some people who enjoy classical music are not afraid of public speaking. \n(b) All people who enjoy classical music are skilled chess players. \n(c) Some people who are afraid of public speaking enjoy classical music. \n(d) No conclusion can be drawn about the relationship between enjoying classical music and being afraid of public speaking.\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Represent the premises with Venn Diagrams:**\n\n   * **Premise 1:** Draw two overlapping circles, one representing 'people who enjoy classical music' and the other 'skilled chess players'. The overlapping section represents 'people who enjoy classical music AND are skilled chess players'. \n   * **Premise 2:** Draw a separate circle for 'people afraid of public speaking'. This circle should NOT overlap with the 'skilled chess players' circle, representing that 'no skilled chess players are afraid of public speaking'.\n\n**2. Analyze the relationship:** Notice that the 'enjoy classical music' circle and the 'afraid of public speaking' circle could potentially overlap, but we don't have enough information to confirm this based on the premises. \n\n**3. Evaluate the options:**\n\n   * **(a) Some people who enjoy classical music are not afraid of public speaking.**  This is **CORRECT**. Because the 'skilled chess players' circle doesn't overlap with the 'afraid of public speaking' circle, the portion of the 'enjoy classical music' circle that overlaps with 'skilled chess players' represents people who enjoy classical music but are NOT afraid of public speaking.\n   * **(b) All people who enjoy classical music are skilled chess players.** This is incorrect. The Venn diagram shows the possibility of people enjoying classical music without being skilled chess players.\n   * **(c) Some people who are afraid of public speaking enjoy classical music.** This might be true, but we can't confirm it from the given premises. The Venn diagram shows a potential overlap, but we lack information to definitively say some 'afraid of public speaking' people are also in the 'enjoy classical music' circle. \n   * **(d) No conclusion can be drawn...** This is incorrect. We can conclude option (a) based on the relationships illustrated in the Venn diagram. \n\n**Therefore, the correct answer is (a).**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A well-known food critic wrote the following in her weekly column:\n**enthymeme**: \"This new restaurant uses only the freshest ingredients, so their dishes are guaranteed to be delicious.\"\n**question**: What premise is missing from the food critic's argument?\n",
+            "difficulty": "hard",
+            "reasoning": "This question fits the 'Enthymemes: Identifying and Completing Arguments with Missing Premises or Conclusions' topic because it presents an incomplete argument (an enthymeme) and asks the test taker to identify the missing premise. It is designed to be 'tricky 9/10' because:\n\n1. **It hides the argument structure within a realistic scenario**: The test taker must first recognize that the critic's statement is an argument, not just an observation.\n2. **It plays on a common assumption:**  People often associate fresh ingredients with delicious food, making it easy to overlook the missing logical link. \n3. **The missing premise itself is not complex, but identifying it requires careful analysis:** The test taker needs to understand that the argument jumps from 'fresh ingredients' to 'delicious dishes' without explicitly stating why this connection holds true. \n\n**Step-by-step Solution:**\n\n1. **Identify the conclusion:** The conclusion is \"their dishes are guaranteed to be delicious.\"\n2. **Identify the stated premise:** The stated premise is \"This new restaurant uses only the freshest ingredients.\"\n3. **Determine the missing premise:** The argument needs a premise linking 'fresh ingredients' to 'delicious dishes.' The missing premise is something like: \"Dishes made with the freshest ingredients are always delicious.\" \n\n**Therefore, the missing premise is that dishes made with fresh ingredients are inherently delicious.** This premise is assumed by the critic but not explicitly stated, making the argument an enthymeme.",
+            "options": [
+                "Some people prefer dishes made with fresh ingredients.",
+                "The restaurant's chefs are highly skilled.",
+                "Restaurants that use fresh ingredients charge higher prices.",
+                "Dishes made with fresh ingredients are always delicious."
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Premise 1: All cakes designed for competitive baking shows are visually stunning desserts. \nPremise 2: Some visually stunning desserts are too beautiful to eat. \nPremise 3: No dessert that is too beautiful to eat is ever actually consumed. \nConclusion: Does it follow that some cakes designed for competitive baking shows are never actually consumed?",
+            "difficulty": "hard",
+            "reasoning": "This question is tricky due to its use of three premises and the complex relationships between the groups involved. Here's a step-by-step breakdown:\n\n**1. Visualizing the Relationships:**\n* Imagine a circle representing 'cakes designed for competitive baking shows.'\n* A larger circle encompassing it represents 'visually stunning desserts.'\n* Another circle overlaps partially with 'visually stunning desserts,' representing 'desserts too beautiful to eat.'\n* A final circle, separate from the others, represents 'desserts actually consumed.'\n\n**2. Applying the Quantifiers:**\n* **Premise 1 (All):**  The entire 'cakes for shows' circle sits **inside** the 'visually stunning desserts' circle.\n* **Premise 2 (Some):** There's an **overlap** between 'visually stunning desserts' and 'too beautiful to eat.'\n* **Premise 3 (No):** The 'too beautiful to eat' circle and the 'desserts actually consumed' circle are **completely separate**.\n\n**3. Deducing the Conclusion:**\n* Because some 'visually stunning desserts' are 'too beautiful to eat' (Premise 2), and **all** 'cakes for shows' are 'visually stunning' (Premise 1), there's a potential overlap between 'cakes for shows' and 'too beautiful to eat.'\n* Since 'too beautiful to eat' desserts are **never** consumed (Premise 3), this overlap means **some** 'cakes for shows' might fall into the category of 'never consumed.'\n\n**Therefore, the conclusion is TRUE. It does follow that some cakes designed for competitive baking shows are never actually consumed.**",
+            "options": [
+                "False",
+                "Maybe",
+                "True",
+                "Unknown"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Consider the following strategies for approaching syllogism questions, each represented by a letter:  \n\nA:  Diagramming (Venn Diagrams) \nB:  Rules of Syllogisms \nC:  Mental Visualization \nD:  Converting to Propositional Logic \n\nNow, consider these statements about these strategies, each assigned a Roman numeral: \n\nI: Some students find strategy 'A' helpful, while others find it confusing. \nII: Strategy 'B' provides a formal method but can be time-consuming. \nIII:  If a student finds both 'C' and 'D' difficult, they should focus on mastering either 'A' or 'B'.\n\nWhich of the following conclusions can be validly drawn from the above statements about approaching syllogism questions?",
+            "difficulty": "hard",
+            "reasoning": "This question is designed to be tricky by combining meta-information about syllogism strategies with a syllogistic structure itself. Here's a breakdown:\n\n* **The Trick:** The statements mimic a syllogism by discussing categories of strategies ('A', 'B', etc.) and their characteristics. However, the question aims to test your understanding of applying these strategies, not solving a direct syllogism within the statements themselves.\n* **Analysis:**\n    * **Statement I:** Presents a general observation about strategy 'A' but doesn't offer a definitive advantage or disadvantage.\n    * **Statement II:**  Highlights a potential drawback (time-consumption) of strategy 'B'.\n    * **Statement III:**  Sets up a conditional relationship. If a student struggles with 'C' and 'D', THEN they should prioritize 'A' or 'B'. \n* **Valid Conclusion:**  The key is to recognize that none of the statements provide enough information to definitively favor one strategy over another for all students.  The most valid conclusions would acknowledge the conditional nature of the statements or focus on the limitations presented.\n\n**Therefore, the question tests the ability to:**\n\n1. **Differentiate between object-level and meta-level reasoning:**  You're analyzing statements *about* strategies, not a syllogism embedded within them.\n2. **Handle conditional statements:** Statement III is crucial but doesn't lead to a universally applicable conclusion.\n3. **Avoid unwarranted assumptions:**  You cannot assume any strategy is inherently superior based on the given information.",
+            "options": [
+                "Strategy 'A' is the most effective for all students.",
+                "Students should avoid using strategy 'C' and 'D' if they find them difficult.",
+                "Strategy 'B' is the only reliable approach to syllogism questions.",
+                "Some students may find strategy 'A' helpful while others may prefer strategy 'B'."
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "## The Case of the Disgruntled Detective\n\n**Premise 1:** All detectives are highly observant individuals.\n**Premise 2:** Some disgruntled employees are not highly observant individuals.\n**Conclusion:** Therefore, some disgruntled employees are not detectives.\n\n**Question:** Is the conclusion validly derived from the premises? If not, what fallacy does the argument commit?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this syllogism to determine its validity:\n\n**1. Visual Representation:**\n\n   It's helpful to visualize the relationships using Venn diagrams (or circles). \n\n   * Draw a large circle representing 'highly observant individuals.'\n   * Inside this circle, draw a smaller circle representing 'detectives' (as all detectives are highly observant).\n   * Draw another circle, partially overlapping the 'highly observant individuals' circle, representing 'disgruntled employees.' The overlapping section represents disgruntled employees who are also highly observant. The non-overlapping section represents disgruntled employees who are NOT highly observant. \n\n**2. Analyzing the Premises:**\n\n   * **Premise 1:**  Confirms that the 'detectives' circle sits entirely within the 'highly observant' circle. \n   * **Premise 2:**  Tells us that some 'disgruntled employees' fall *outside* the 'highly observant individuals' circle. \n\n**3. Identifying the Fallacy:**\n\n   The conclusion states that *some* disgruntled employees are not detectives. While this *might* be true based on our diagram, the premises do *not* guarantee it.  \n\n   * **The Fallacy:** This argument commits the fallacy of **Illicit Major**. The term 'highly observant individuals' (the major term) is distributed in the conclusion (referring to *all* highly observant individuals) but not in the major premise (Premise 1), where it only refers to *some* highly observant individuals (those who are detectives). \n\n**In essence, the argument makes an unwarranted leap by assuming that because some disgruntled employees lack a characteristic of *some* highly observant individuals, they must therefore lack a characteristic of *all* highly observant individuals, including detectives. **\n",
+            "options": [
+                "Yes",
+                "No",
+                "Illicit Minor",
+                "Affirming the Consequent"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Syllogism",
+    "exam_id": 11,
+    "order": 3
+}

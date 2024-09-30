@@ -282,13 +282,13 @@ topics = [
     # "Logical Reasoning - Puzzle",
     # "Logical Reasoning - Syllogism",
     # "Logical Reasoning - Clocks",
-    # "Logical Reasoning - Blood Relations",
+    "Logical Reasoning - Blood Relations",
     # "Logical Reasoning - Input-Output",
-    "Logical Reasoning - Coding-Decoding",
-    "Logical Reasoning - Calendars",
-    "Logical Reasoning - Dice",
-    "Logical Reasoning - Cube and Cuboid",
-    "Logical Reasoning - Truth Tables",
+    # "Logical Reasoning - Coding-Decoding",
+    # "Logical Reasoning - Calendars",
+    # "Logical Reasoning - Dice",
+    # "Logical Reasoning - Cube and Cuboid",
+    # "Logical Reasoning - Truth Tables",
     # "Logical Reasoning - Ranking-Direction-Alphabet Test",
 ]
 
@@ -313,7 +313,7 @@ for order, topic in enumerate(topics):
     quiz["exam_id"] = 17
     quiz["order"] = order
 
-    with open(f'gemini_output/new/sbi/reasoning/{topic}.json', 'w') as json_file:
+    with open(f'gemini_output/new/sbi/{topic}.json', 'w') as json_file:
         json.dump(quiz, json_file, indent=4)
 
     quiz["questions"] = error_questions

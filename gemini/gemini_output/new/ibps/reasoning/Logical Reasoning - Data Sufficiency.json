@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "A sequence follows the pattern: 2, 4, 8, 16, ___.  What is the next number in the sequence?",
+            "difficulty": "medium",
+            "reasoning": "This sequence is a geometric sequence, where each number is found by multiplying the previous number by a constant factor, called the common ratio.  In this case, the common ratio is 2 (each number is twice the previous one).  Therefore, the next number in the sequence is 16 * 2 = 32.\n\nTo identify patterns in sequences, look for:\n\n* **Arithmetic sequences:** Each number is found by adding a constant difference to the previous number.\n* **Geometric sequences:** Each number is found by multiplying the previous number by a constant factor.\n* **Fibonacci sequences:** Each number is the sum of the two preceding numbers.\n\nOnce you identify the pattern, you can easily calculate the next term or any other term in the sequence.",
+            "options": [
+                "18",
+                "24",
+                "32",
+                "40"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bakery offers a variety of pastries, including croissants, muffins, and cookies. Each day, they bake a certain number of each type of pastry, but the exact number varies. To determine if the bakery made more croissants than cookies on a given day, which of the following pieces of information is sufficient? \n\n(A) The total number of pastries baked that day.\n(B) The number of muffins baked that day.\n(C) The number of croissants baked that day.\n(D) The difference between the number of croissants and muffins baked that day.",
+            "difficulty": "easy",
+            "reasoning": "To determine if the bakery made more croissants than cookies, we need information that directly compares the number of croissants to the number of cookies.  Let's analyze each option:\n\n(A) The total number of pastries baked that day - This information is insufficient because it doesn't tell us how many croissants or cookies were baked individually.\n(B) The number of muffins baked that day - This information is also insufficient because it doesn't provide any information about the number of croissants or cookies.\n(C) The number of croissants baked that day - This information is sufficient. If we know the number of croissants baked, and we know the total number of pastries (from some other source), we can subtract the number of croissants and muffins from the total to get the number of cookies.  Then we can compare the number of croissants and cookies to determine if there were more croissants.\n(D) The difference between the number of croissants and muffins baked that day - This information is insufficient because it doesn't tell us anything about the number of cookies.\n\nTherefore, only option (C) is sufficient to determine if the bakery made more croissants than cookies on a given day.",
+            "options": [
+                "Total number of pastries",
+                "Number of muffins",
+                "Number of croissants",
+                "Difference between croissants and muffins"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A group of friends went to a restaurant for dinner. They ordered pizzas and decided to split the bill equally. Is it possible to determine the cost of each pizza? \n\nStatement (1): The total bill for the pizzas was $45.\nStatement (2): There were 5 friends and they each paid $9.",
+            "difficulty": "medium",
+            "reasoning": "This question tests the ability to analyze the relationship between the total bill, number of people, and individual contributions. \n\n* **Statement (1) ALONE is NOT sufficient:** Knowing the total bill ($45) doesn't tell us how many pizzas were ordered or the individual cost of each pizza.\n\n* **Statement (2) ALONE is SUFFICIENT:**  Since there were 5 friends who each paid $9, the total bill was 5 * $9 = $45.  Knowing the total bill and the number of friends allows us to calculate the cost of the pizzas, even if we don't know how many pizzas were ordered. \n\n* **Therefore, the correct answer is (B).**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A rectangular garden has a perimeter of 40 meters. Is the area of the garden greater than 50 square meters? \n\nStatement 1: The length of the garden is 12 meters.\nStatement 2: The width of the garden is 8 meters.",
+            "difficulty": "easy",
+            "reasoning": "This question tests our ability to determine if the provided statements are sufficient to answer the question about the area of the garden.  Let's analyze each statement:\n\n**Statement 1: The length of the garden is 12 meters.**\n\nIf the length is 12 meters and the perimeter is 40 meters, we can use the formula for the perimeter of a rectangle (Perimeter = 2 * (Length + Width)) to find the width: \n\n40 = 2 * (12 + Width)\n20 = 12 + Width\nWidth = 8 meters\n\nNow we can calculate the area: Area = Length * Width = 12 * 8 = 96 square meters. Since 96 is greater than 50, we can definitively say that the area is greater than 50 square meters.\n\n**Statement 2: The width of the garden is 8 meters.**\n\nIf the width is 8 meters and the perimeter is 40 meters, we can use the same formula to find the length: \n\n40 = 2 * (Length + 8)\n20 = Length + 8\nLength = 12 meters\n\nAgain, we can calculate the area: Area = Length * Width = 12 * 8 = 96 square meters.  We arrive at the same conclusion \u2013 the area is greater than 50 square meters.\n\n**Conclusion:** Both statements alone provide sufficient information to determine that the area of the garden is greater than 50 square meters.  Therefore, the answer is **Either statement alone is sufficient.**",
+            "options": [
+                "Either statement alone is sufficient",
+                "Statement 1 alone is sufficient",
+                "Statement 2 alone is sufficient",
+                "Both statements together are sufficient"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A politician claims that a new law will reduce crime rates because it was successful in another country. This argument commits which fallacy? \n\n**A.** Ad hominem \n**B.** Appeal to authority \n**C.**  False dilemma \n**D.**  Hasty generalization",
+            "difficulty": "medium",
+            "reasoning": "The correct answer is **D. Hasty generalization**. Here's why:\n\n* **Hasty generalization** occurs when a conclusion is drawn from a sample that is too small or not representative of the whole population.  In this case, the politician is assuming that the law's success in one country guarantees its success in another, without considering potential differences in factors like culture, social structures, or existing crime rates.\n\nLet's look at why the other options are incorrect:\n\n* **Ad hominem** attacks the person making the argument instead of the argument itself. \n* **Appeal to authority** relies on an expert's opinion without providing sufficient evidence or reasoning.\n* **False dilemma** presents only two options when other possibilities exist.  \n\n**Key Takeaway:**  Be cautious of arguments that draw broad conclusions from limited evidence. Always consider if the evidence presented is representative and sufficient to justify the claim.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A survey of 100 people found that 60 people own a car, 40 people own a motorcycle, and 20 people own both. How many people own either a car or a motorcycle?",
+            "difficulty": "easy",
+            "reasoning": "This problem involves the concept of overlapping sets and can be solved using the principle of inclusion-exclusion. Here's how:\n\n1. **Understanding the problem:** We need to find the total number of people who own at least one of the two vehicles (car or motorcycle). \n\n2. **Inclusion-Exclusion Principle:**  The principle states that to find the total number of elements in the union of two sets, we add the number of elements in each set and then subtract the number of elements in their intersection (to avoid counting them twice).  In this case:\n\n* **Total = Car Owners + Motorcycle Owners - Owners of both**\n\n3. **Applying the formula:**\n\n* Total = 60 + 40 - 20 = 80\n\n**Therefore, 80 people own either a car or a motorcycle.**",
+            "options": [
+                "60",
+                "40",
+                "80",
+                "20"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two painters, Alex and Ben, can paint a house together in 12 hours. Alex can paint the house alone in 20 hours. How many hours would it take Ben to paint the house alone?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Understand the Concept:** This problem involves the concept of work rate.  We can think of each painter's work rate as the fraction of the house they can paint in one hour.\n\n2. **Set up the Equations:**\n   * Let 'x' be the number of hours Ben takes to paint the house alone.\n   * Alex's work rate: 1/20 (house per hour)\n   * Ben's work rate: 1/x (house per hour)\n   * Together, their work rate: 1/12 (house per hour)\n\n3. **Combine Work Rates:** The combined work rate is the sum of individual work rates:\n   1/20 + 1/x = 1/12\n\n4. **Solve for x:**\n   * Find a common denominator (60x):\n     3x + 60 = 5x\n   * Simplify: 60 = 2x\n   * Isolate x: x = 30\n\n**Therefore, it would take Ben 30 hours to paint the house alone.**",
+            "options": [
+                "12 hours",
+                "20 hours",
+                "30 hours",
+                "40 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Is the sum of two integers, x and y, greater than 10? \n\nStatement 1: x > 5 \nStatement 2: y > 5",
+            "difficulty": "medium",
+            "reasoning": "This question tests whether the provided information is sufficient to determine if the sum of x and y is greater than 10.  Let's analyze each statement:\n\n* **Statement 1:**  x > 5  tells us that x is greater than 5. This is not enough to determine if x + y is greater than 10 because y could be any value, even negative. For example, if x = 6 and y = -7, then x + y = -1, which is not greater than 10.\n\n* **Statement 2:** y > 5  tells us that y is greater than 5. This is also not enough to determine if x + y is greater than 10 because x could be any value, even negative. For example, if x = -8 and y = 6, then x + y = -2, which is not greater than 10.\n\n* **Combining Statements 1 and 2:**  We know x > 5 and y > 5.  Since both x and y are greater than 5, their sum (x + y) must be greater than 10. For example, if x = 6 and y = 6, then x + y = 12, which is greater than 10. This holds true for any values of x and y that satisfy the given conditions.\n\nTherefore, **both statements together are sufficient** to answer the question. Combining the information from both statements gives us a definite answer about the sum being greater than 10.  ",
+            "options": [
+                "Yes",
+                "No",
+                "Insufficient",
+                "Maybe"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A square pyramid has a square base with side length 's' and a height of 'h'.  The apex of the pyramid is directly above the center of the square base.  \n\n **Statements:**\n\n  * **A:** The volume of the pyramid is 12 cubic units. \n  * **B:** The slant height of the pyramid (the length of a segment from the apex to the midpoint of a side of the base) is 5 units. \n\n **Question:** Can the length of the side of the square base ('s') be determined from the given information?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the ability to work with geometric formulas and manipulate them to solve for a specific unknown.  Here's how to analyze each statement:\n\n* **Statement A:** The volume of a pyramid is (1/3) * (area of base) * height. We know the volume (12 cubic units) and the height 'h'.  We can set up the equation:\n\n  12 = (1/3) * (s\u00b2) * h \n\n  However, we have two unknowns ('s' and 'h') in this equation, making it impossible to solve for 's' alone.\n\n* **Statement B:**  The slant height, the base length 's', and the height 'h' form a right triangle where the slant height is the hypotenuse.  We know the slant height is 5 units.  We can use the Pythagorean theorem, but we still need to know either the base length ('s') or the height ('h') to solve for the other.\n\n* **Statements A and B Together:** By combining the information from both statements, we can create a system of two equations with two unknowns.  The equation from Statement A gives us a relationship between 's' and 'h', and the Pythagorean theorem (from statement B) provides another relationship.  With two equations and two unknowns, we can solve for 's'.\n\nTherefore, **both statements together are sufficient** to determine the length of the side of the square base ('s').",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient Information"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A positive integer is divisible by 6 if and only if it is divisible by both 2 and 3. Is the integer N divisible by 6? \n\n(1) N is divisible by 2.\n(2) N is divisible by 3.",
+            "difficulty": "medium",
+            "reasoning": "This question tests your understanding of divisibility rules and data sufficiency.  Here's how to break it down:\n\n**Understanding the Problem:**\nThe question asks if an integer 'N' is divisible by 6.  We are given two statements and need to determine if either statement alone, or both statements together, are sufficient to answer the question.\n\n**Divisibility Rules:**\n* **Divisibility by 2:** An integer is divisible by 2 if its last digit is even.\n* **Divisibility by 3:** An integer is divisible by 3 if the sum of its digits is divisible by 3.\n* **Divisibility by 6:** An integer is divisible by 6 if it is divisible by both 2 and 3.\n\n**Analyzing the Statements:**\n* **Statement (1): N is divisible by 2.**  This statement alone is **not sufficient** to determine if N is divisible by 6. We know N is even, but it might not be divisible by 3 (e.g., 8 is divisible by 2 but not by 6).\n* **Statement (2): N is divisible by 3.** This statement alone is **not sufficient** to determine if N is divisible by 6. We know the sum of N's digits is divisible by 3, but N might not be even (e.g., 9 is divisible by 3 but not by 6).\n* **Statements (1) and (2) together:**  If N is divisible by both 2 and 3, it satisfies the divisibility rule for 6. Therefore, **statements (1) and (2) together are sufficient** to determine that N is divisible by 6.\n\n**Answer:** The correct answer is **(C) Both statements together are sufficient.**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A group of 50 students were surveyed about their favorite subjects: Math, Science, and English. 25 students liked Math, 20 liked Science, and 15 liked English. 10 students liked both Math and Science, 5 liked both Math and English, and 3 liked all three subjects. How many students liked only Science?",
+            "difficulty": "medium",
+            "reasoning": "This question uses a Venn Diagram to represent the relationships between the sets of students who like each subject. We can break down the problem by starting with the total number of students who like all three subjects (3) and working our way outwards. \n\n1. **All three subjects:** We know 3 students like all three subjects, so we mark that in the center of our Venn Diagram.\n2. **Math and Science:** 10 students like both Math and Science, but 3 of them are already accounted for in the 'all three' section. So, 10 - 3 = 7 students like only Math and Science. We add this number to our diagram.\n3. **Math and English:**  5 students like both Math and English, but 3 of them are already accounted for. So, 5 - 3 = 2 students like only Math and English. We add this number to our diagram.\n4. **Science and English:**  We don't have any information about the number of students who like only Science and English, so we'll leave that blank for now.\n5. **Math only:** 25 students like Math, but we've already accounted for 7 + 2 + 3 = 12 students. So, 25 - 12 = 13 students like only Math. We add this number to our diagram.\n6. **Science only:** 20 students like Science, and we've already accounted for 7 + 3 = 10 students. So, 20 - 10 = 10 students like only Science. We add this number to our diagram.\n7. **English only:** 15 students like English, and we've already accounted for 2 + 3 = 5 students. So, 15 - 5 = 10 students like only English. We add this number to our diagram.\n8. **Total:**  Now we can calculate the total number of students who like at least one subject: 13 + 7 + 2 + 10 + 10 + 3 = 45.  We are given that 50 students were surveyed, so 50 - 45 = 5 students liked none of the subjects.\n\nTherefore, **10 students liked only Science.**",
+            "options": [
+                "10",
+                "15",
+                "7",
+                "20"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A company is planning to hire new employees. They have two options: hiring 10 experienced employees or 20 trainees. The experienced employees can complete a project in 10 days, while the trainees can complete the same project in 20 days. If the company wants to complete the project in 12 days, how many experienced employees should they hire, assuming the trainees can work independently?",
+            "difficulty": "medium",
+            "reasoning": "This question involves applying logic and deductive reasoning to solve a work-rate problem. Here's how we can break it down:\n\n**Understanding the Concepts:**\n\n* **Work Rate:** The amount of work done per unit of time. For example, an experienced employee completes 1/10th of the project in a day.\n* **Combined Work Rate:** When multiple people work together, their work rates add up.\n\n**Setting up the Problem:**\n\nLet:\n*  'x' be the number of experienced employees hired.\n\n* **Work Rate of Experienced Employees:**  x/10 (since each experienced employee completes 1/10th of the project per day)\n* **Work Rate of Trainees:** (20 - x)/20 (since the remaining employees are trainees)\n\n**Solving for 'x':**\n\n* **Combined Work Rate:**  (x/10) + ((20 - x)/20) = 1/12 (since the project needs to be completed in 12 days)\n* **Simplifying the Equation:**  (2x + 20 - x) / 20 = 1/12\n* **Further Simplification:** (x + 20) / 20 = 1/12\n* **Cross-Multiplication:** 12x + 240 = 20\n* **Solving for 'x':** 12x = -220 => x = -18.33\n\n**Interpreting the Solution:**\n\nThe negative result indicates that it's not possible to complete the project in 12 days with only experienced employees and trainees. The company would need to either hire more experienced employees or extend the deadline. Therefore, there is no solution to this problem.\n\n**Key Takeaway:**\n\nWhen dealing with work-rate problems, it's crucial to understand the relationship between the work rate, the time taken, and the total amount of work. Sometimes, the problem might have no solution due to constraints in the given information.",
+            "options": [
+                "0",
+                "10",
+                "20",
+                "None"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A store sells two types of coffee beans: Colombian and Brazilian. Colombian beans cost $12 per pound, and Brazilian beans cost $10 per pound. A customer wants to buy a blend of 5 pounds of coffee beans that costs $11 per pound. How many pounds of Colombian beans should the customer buy?",
+            "difficulty": "medium",
+            "reasoning": "Let's solve this problem step-by-step:\n\n1. **Define Variables:**\n   * Let 'x' represent the number of pounds of Colombian beans.\n   * Since the customer wants to buy a total of 5 pounds, the number of pounds of Brazilian beans will be (5 - x).\n\n2. **Set up the Equation:**\n   The total cost of the blend is the sum of the cost of Colombian beans and the cost of Brazilian beans. We can express this as an equation:\n   $12x + $10(5 - x) = $11 * 5\n\n3. **Solve for x:**\n   * Expand the equation: $12x + $50 - $10x = $55\n   * Combine like terms: $2x + $50 = $55\n   * Subtract $50 from both sides: $2x = $5\n   * Divide both sides by $2: x = 2.5\n\nTherefore, the customer should buy **2.5 pounds** of Colombian beans.",
+            "options": [
+                "3 pounds",
+                "2.5 pounds",
+                "1.5 pounds",
+                "2 pounds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A company is considering launching a new product. The marketing team has conducted a market research survey, the results of which indicate a strong potential demand for the product. However, the company's finance department is hesitant, citing concerns about the potential cost of production and the need for significant investment in marketing. The marketing team insists that the demand is high enough to justify the investment.  \n\n**Statement 1:** The company has a strong track record of successfully launching new products. \n\n**Statement 2:**  The company's competitors are already producing similar products that are selling well.  \n\nWhich of the statements, if true, would be most relevant in determining whether the company should proceed with launching the new product?",
+            "difficulty": "medium",
+            "reasoning": "The most relevant statement is **Statement 2: The company's competitors are already producing similar products that are selling well.** Here's why:\n\n* **Relevance to the core issue:** The company's primary concern is whether the demand justifies the cost and investment.  Statement 2 directly addresses this by indicating that there is an existing market for the product, suggesting that the demand might be substantial enough to warrant the investment. This provides valuable information about the potential success of the product in the market.\n\n* **Statement 1's lack of relevance:**  While a strong track record is generally positive, it doesn't directly address the specific concerns about this new product's cost and market potential.  It's a general indicator of the company's capabilities but doesn't provide information about the specific product under consideration.\n\n**In summary:** Statement 2 offers the most relevant information because it provides evidence about the existing demand for the product type in the market, which is directly relevant to the company's decision-making process. This statement addresses the core concern of whether the demand is substantial enough to justify the investment.",
+            "options": [
+                "Statement 1",
+                "Statement 2",
+                "Neither statement",
+                "Both statements"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A company is considering launching a new product. The CEO argues that the product is likely to be successful because it is innovative and meets a market need. However, the marketing director argues that the product is unlikely to be successful because similar products have failed in the past.  \n\nQuestion: Is the CEO's argument that the new product is likely to be successful a valid argument? \n\nStatement 1: The company has a strong track record of successful product launches. \n\nStatement 2: The previous failures of similar products were due to poor marketing strategies, which the company plans to avoid.",
+            "difficulty": "medium",
+            "reasoning": "This question tests the ability to identify the fallacy of \"Appeal to Past Failures.\" This fallacy occurs when someone argues that a future event will likely fail because similar events in the past have failed. While past failures can be a source of information, they do not guarantee future failure, especially if the circumstances are different.  \n\n* **Statement 1:** This statement alone is insufficient to determine the validity of the CEO's argument. While a strong track record might suggest the company is good at launching products, it doesn't directly address the specific arguments about innovation and market need.  \n\n* **Statement 2:** This statement is sufficient to determine the validity of the CEO's argument. It directly addresses the marketing director's claim about past failures by explaining that the failures were due to avoidable factors. If the company can avoid these past mistakes, then the previous failures do not necessarily predict the future success of this product.  \n\n**In summary:** Statement 2 provides a valid counter-argument to the fallacy presented by the marketing director, making the CEO's argument potentially valid. **Therefore, Statement 2 alone is sufficient to answer the question.**",
+            "options": [
+                "Insufficient",
+                "Sufficient",
+                "Both Necessary",
+                "Neither Sufficient"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of students are planning a fundraiser to buy new equipment for their school's robotics club.  They need to raise a certain amount of money, and they are considering selling either cookies or raffle tickets. \n\n**Question:**  Will they be able to raise enough money for the new equipment? \n\n**Statement 1:**  If they sell cookies, they will earn $2 for every dozen cookies sold. \n\n**Statement 2:**  If they sell raffle tickets, they will earn $5 for every ticket sold. \n\n",
+            "difficulty": "hard",
+            "reasoning": "This question requires the test taker to understand that the question is not about whether they can raise money, but whether they can raise *enough* money.  This requires additional information about the target amount. Neither statement alone is sufficient because we don't know the total amount needed for the equipment. We need to know the number of cookies or tickets they plan to sell to determine if either statement is sufficient.\n\n**In summary:**\n\n* **Statement 1:** We need to know how many dozens of cookies they plan to sell to calculate the total earnings.\n* **Statement 2:** We need to know how many raffle tickets they plan to sell to calculate the total earnings. \n\nTherefore, neither statement alone is sufficient to answer the question. \n\n**To make the question sufficient:** The statements would need to provide information about the total number of cookies or tickets they plan to sell, or the total cost of the equipment they are trying to buy. For example, we could add: \"The equipment costs $100.\" or \"They plan to sell 100 dozen cookies.\"  ",
+            "options": [
+                "Insufficient",
+                "Yes",
+                "No",
+                "Maybe"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A survey of 100 people found that 60 people like apples, 45 people like oranges, and 25 people like both apples and oranges. How many people like **neither** apples nor oranges?",
+            "difficulty": "medium",
+            "reasoning": "This problem requires understanding the concepts of sets and Venn diagrams. We can solve this by using a Venn diagram to represent the information:\n\n1. **Draw two overlapping circles:** One for apples and one for oranges.\n2. **The overlapping region:** Represents the people who like both apples and oranges.  Fill this region with 25.\n3. **Calculate the people who like only apples:**  60 (total who like apples) - 25 (who like both) = 35.  Write this in the apple circle, outside the overlap.\n4. **Calculate the people who like only oranges:** 45 (total who like oranges) - 25 (who like both) = 20.  Write this in the orange circle, outside the overlap.\n5. **Total inside the circles:** 35 + 25 + 20 = 80\n6. **People who like neither:** 100 (total people) - 80 (people who like at least one fruit) = 20\n\nTherefore, **20 people like neither apples nor oranges.**",
+            "options": [
+                "15",
+                "20",
+                "25",
+                "30"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A company offers two types of insurance plans: Plan A and Plan B. Plan A covers medical expenses up to $10,000, while Plan B covers expenses up to $20,000.  A customer can purchase only one plan.  A study showed that 70% of customers who chose Plan A ended up using less than $5,000 in medical expenses, while 50% of customers who chose Plan B used less than $10,000.  A customer is considering both plans and has a high probability of incurring medical expenses between $8,000 and $12,000.  Which plan should the customer choose based on the information provided? \n\n  **Note:** This question tests your ability to analyze conditional statements and apply logical reasoning to make a decision based on the given information.  ",
+            "difficulty": "hard",
+            "reasoning": "This is a classic example of applying logical reasoning to a decision-making scenario.  Here's how to break down the problem and arrive at the answer:\n\n1. **Identify the Key Factors:** The customer's primary concern is likely minimizing their out-of-pocket expenses. They anticipate spending between $8,000 and $12,000 in medical expenses. \n\n2. **Analyze Plan A:** Plan A only covers up to $10,000.  While 70% of Plan A customers used less than $5,000, the customer in this scenario is likely to exceed that limit. They'd be responsible for any expenses above $10,000.\n\n3. **Analyze Plan B:** Plan B covers up to $20,000.  This coverage would fully cover the customer's anticipated expenses, even if they incur the maximum $12,000.  Although 50% of Plan B customers used less than $10,000, the customer's anticipated expenses are within the Plan B coverage.\n\n4. **Conclusion:** Based on the information provided, Plan B is the better choice for this customer. It provides a higher coverage limit that ensures the customer won't be responsible for any out-of-pocket expenses if they incur medical costs within their anticipated range.\n\n**Important Note:** This analysis is based on the provided information and assumptions. Real-world decisions involve more factors, such as premium costs for each plan, the customer's overall financial situation, and potential deductibles. This example primarily focuses on logical deduction using conditional statements.",
+            "options": [
+                "Plan A",
+                "Plan B",
+                "Neither",
+                "Insufficient information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of friends is planning a trip. They want to decide whether to go to the beach or the mountains.  They agree to base their decision on the weather forecast for the weekend. The following information is known:  \n\n* If it rains, they will go to the mountains.\n* If it is sunny, they will go to the beach.\n* If it is cloudy, they will go to the mountains if it is cooler than 65 degrees Fahrenheit and to the beach if it is warmer than 65 degrees Fahrenheit.  \n\nThe question stem is:  \n\n\"If it is cloudy and the temperature is 70 degrees Fahrenheit, where will the friends go?\"\n\nWhat is the core issue that the question stem is trying to determine?",
+            "difficulty": "hard",
+            "reasoning": "The core issue being determined by the question stem is the **decision-making process** based on the specific weather conditions.  The question stem presents a scenario where it is cloudy and the temperature is 70 degrees Fahrenheit. This falls under the 'cloudy' category of the decision-making rules.  The question asks where the friends will go, which requires determining whether the temperature is warmer or cooler than 65 degrees Fahrenheit, the threshold for deciding between the beach and the mountains under cloudy conditions.  In essence, the question stem is testing the application of the provided decision-making rules to a specific weather scenario,  requiring the test taker to understand and apply the rules to reach a conclusion.\n\n**Key Points:**\n\n* The question stem focuses on a specific weather scenario (cloudy, 70 degrees Fahrenheit).  \n* The decision-making rules provide guidance on choosing between the beach and the mountains based on different weather conditions.  \n* The question stem requires applying the decision-making rules to the given weather scenario to determine the final destination.  \n\n**Understanding the Question Stem:**\n\nThe question stem isn't simply asking for a yes/no answer.  It's asking for the friends' destination, which involves applying the decision-making rules to the given weather information.  This makes the question more complex and requires a deeper understanding of the underlying logic. ",
+            "options": [
+                "Weather forecast",
+                "Temperature",
+                "Decision-making process",
+                "Friend's preferences"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A group of friends are planning a trip. They must decide on a destination and the mode of transportation. The group is considering three destinations:  New York, Los Angeles, and London. They also have three transportation options: airplane, train, and car.  \n\n**Statement (1):** If they choose New York, they will not travel by car. \n\n**Statement (2):** If they choose Los Angeles, they will travel by airplane. \n\n**Question:** Can the group determine the mode of transportation they will use based on the information provided?",
+            "difficulty": "hard",
+            "reasoning": "This question tests the ability to apply logical reasoning and deductive reasoning in a scenario with multiple variables.  \n\nLet's analyze the statements: \n\n* **Statement (1):**  If they choose New York, they will not travel by car. This tells us that if they are going to New York, they must choose either the train or the airplane. However, it doesn't tell us what they'll do if they choose Los Angeles or London. \n* **Statement (2):** If they choose Los Angeles, they will travel by airplane. This provides a definitive mode of transportation for one destination.  \n\nCombining the statements, we can deduce the following: \n\n* If they choose New York, they will travel by either train or airplane. \n* If they choose Los Angeles, they will travel by airplane. \n* If they choose London, they could travel by car, train, or airplane.  \n\n**Therefore, neither statement alone is sufficient to determine the mode of transportation. However, BOTH statements TOGETHER are sufficient because they provide the information for two destinations, and the third destination's travel mode is open to any of the options.**  \n\n**Final Answer:** Both statements together are sufficient to answer the question, but neither statement alone is sufficient.",
+            "options": [
+                "Neither statement alone is sufficient",
+                "Statement 1 alone is sufficient",
+                "Statement 2 alone is sufficient",
+                "Both statements together are sufficient"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A farmer has 100 acres of land. He wants to plant corn and soybeans, but he needs to plant at least 20 acres of soybeans to meet a contract. He also needs to plant at least 10 acres of corn to maintain a good crop rotation. If he can plant corn at a cost of $50 per acre and soybeans at a cost of $60 per acre, what is the minimum cost to plant his entire 100 acres, given that he wants to minimize his total cost?",
+            "difficulty": "hard",
+            "reasoning": "This is a linear programming problem where we need to minimize cost subject to constraints on the acreage planted. Here's how to solve it:\n\n**1. Define Variables:**\n* Let 'x' represent the number of acres of corn.\n* Let 'y' represent the number of acres of soybeans.\n\n**2. Formulate the Objective Function:**\n* We want to minimize the cost, which is represented by the equation:  Cost = 50x + 60y\n\n**3. Formulate the Constraints:**\n* **Total acreage:** x + y \u2264 100 (He can't plant more than 100 acres)\n* **Soybean contract:** y \u2265 20 (At least 20 acres of soybeans)\n* **Crop rotation:** x \u2265 10 (At least 10 acres of corn)\n* **Non-negative constraints:** x \u2265 0 and y \u2265 0 (You can't plant negative acres)\n\n**4. Graph the Constraints:**\n* Plot the lines corresponding to the equations.  The feasible region (where all constraints are satisfied) will be a polygon. \n* Find the vertices of this polygon, as the minimum cost will occur at one of these vertices.\n\n**5. Evaluate the Objective Function at Each Vertex:**\n* Calculate the cost (50x + 60y) at each vertex of the feasible region.\n* The vertex that yields the lowest cost is the optimal solution.\n\n**Solution:**\n\n1. The feasible region is bounded by the lines x + y = 100, y = 20, x = 10, x = 0, and y = 0.\n2. The vertices of the feasible region are: (10, 20), (10, 90), (80, 20), and (0, 20).\n3. Evaluating the cost at each vertex:\n   * (10, 20): Cost = 50(10) + 60(20) = $1700\n   * (10, 90): Cost = 50(10) + 60(90) = $5900\n   * (80, 20): Cost = 50(80) + 60(20) = $5200\n   * (0, 20): Cost = 50(0) + 60(20) = $1200\n\n**Conclusion:** The minimum cost to plant the entire 100 acres is $1200, which occurs when the farmer plants 0 acres of corn and 20 acres of soybeans.",
+            "options": [
+                "$1700",
+                "$5900",
+                "$5200",
+                "$1200"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A company produces two types of widgets, A and B. Widget A costs $10 to produce and sells for $20. Widget B costs $15 to produce and sells for $30.  If the company produces x widgets of type A and y widgets of type B, what is the company's profit for the month? \n\n**(1)**  The company sold a total of 500 widgets last month.\n**(2)**  The company's revenue for the month was $10,000.",
+            "difficulty": "medium",
+            "reasoning": "This question tests your ability to set up equations and solve for an unknown value using given information. Here's how to break down the problem:\n\n**Understanding the Problem:**\n\n* **Goal:** We need to determine the company's profit for the month.\n* **Profit Formula:** Profit = Revenue - Cost\n* **Revenue:** Revenue is the total amount of money earned from selling widgets.\n* **Cost:** Cost is the total amount of money spent on producing widgets.\n\n**Analyzing the Statements:**\n\n**(1)** The company sold a total of 500 widgets last month.  This statement alone is insufficient to determine the profit.  We don't know how many of each type of widget were sold, so we can't calculate the revenue or cost.\n\n**(2)** The company's revenue for the month was $10,000.  This statement alone is also insufficient to determine the profit.  We don't know the cost of production, so we can't calculate the profit.\n\n**Combining the Statements:**\n\nCombining both statements, we have the following information:\n\n* Total widgets sold: 500\n* Total revenue: $10,000\n\nLet's set up equations:\n\n* Let 'x' represent the number of widgets of type A.\n* Let 'y' represent the number of widgets of type B.\n\nWe know: \n* x + y = 500 (Total widgets)\n* 20x + 30y = 10,000 (Total revenue)\n\nNow we have a system of two equations with two unknowns.  This system can be solved to find the values of x and y. Once we know x and y, we can calculate the total cost of production: \n* Cost = (10 * x) + (15 * y)\n\nFinally, we can calculate the profit:\n* Profit = 10,000 - [(10 * x) + (15 * y)]\n\n**Answer:**\n\nBoth statements together are sufficient to determine the company's profit.  Therefore, the correct answer is **(C)**. ",
+            "options": [
+                "Insufficient",
+                "Statement 1 only",
+                "Statement 2 only",
+                "Both statements together"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A group of friends are planning a road trip. They decide to share the total cost of gas equally.  The total cost of gas depends on the distance travelled and the average fuel efficiency of the car. Let 'D' represent the distance travelled in miles, 'F' represent the average fuel efficiency in miles per gallon, and 'G' represent the price of gas per gallon.  Is the cost of gas per person greater than $50? \n\nStatement (A): The distance traveled is 600 miles and the car gets 30 miles per gallon. \nStatement (B): The price of gas is $4 per gallon and the total cost of gas is $240. \n",
+            "difficulty": "medium",
+            "reasoning": "This question tests your ability to work with variables, relationships, and apply logical reasoning to determine sufficiency. Let's break down the problem:\n\n1. **Understanding the Variables:**\n   - **D:** Distance traveled (miles)\n   - **F:** Fuel efficiency (miles per gallon)\n   - **G:** Price of gas per gallon\n   - **C:** Total cost of gas\n   - **N:** Number of friends\n\n2. **The Goal:** We need to determine if the cost of gas per person (C/N) is greater than $50.\n\n3. **Analyzing the Statements:**\n   - **Statement (A):** Provides values for D (600 miles) and F (30 miles per gallon). However, it doesn't give us information about the price of gas (G) or the number of friends (N).  Therefore, we can't calculate the cost of gas per person. \n   - **Statement (B):** Provides values for G ($4 per gallon) and C ($240). However, we don't know the distance traveled (D) or the number of friends (N). This information is insufficient to determine the cost per person.\n\n4. **Combining Statements (A) and (B):**  We can combine the information from both statements. From statement (A), we know D = 600 miles and F = 30 miles per gallon.  From statement (B), we know G = $4 per gallon and C = $240.  We can calculate the total gas used: 600 miles / 30 miles/gallon = 20 gallons. Since the total cost of gas is $240, and gas costs $4 per gallon, we know that 20 gallons were used ($240 / $4 = 20). However, we still don't know the number of friends (N) to calculate the cost per person.\n\n**Conclusion:** Neither statement alone is sufficient to determine if the cost of gas per person is greater than $50. We need to know the number of friends (N) to calculate the cost per person. **Therefore, the correct answer is (E).**",
+            "options": [
+                "Yes",
+                "No",
+                "Insufficient",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A rectangular garden is to be enclosed by a fence. The gardener knows that the length of the garden is 10 feet longer than the width. If the perimeter of the garden is 100 feet, what is the area of the garden in square feet?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Define Variables:**\n   - Let 'w' represent the width of the garden.\n   - Let 'l' represent the length of the garden, which is w + 10.\n\n2. **Use the Perimeter Information:**\n   - The perimeter of a rectangle is calculated as: Perimeter = 2 * (length + width)\n   - We know the perimeter is 100 feet, so: 100 = 2 * (l + w)\n\n3. **Substitute and Solve for Width:**\n   - Substitute 'l' with 'w + 10': 100 = 2 * ((w + 10) + w)\n   - Simplify: 100 = 2 * (2w + 10)\n   - Further simplification: 100 = 4w + 20\n   - Solve for 'w': 80 = 4w  => w = 20 feet\n\n4. **Calculate Length:**\n   -  l = w + 10 = 20 + 10 = 30 feet\n\n5. **Calculate Area:**\n   - The area of a rectangle is calculated as: Area = length * width\n   - Area = 30 * 20 = 600 square feet\n\n**Therefore, the area of the garden is 600 square feet.**",
+            "options": [
+                "500 square feet",
+                "600 square feet",
+                "700 square feet",
+                "800 square feet"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A company is considering launching a new product.  The marketing team has determined that the product will be successful if and only if it meets two conditions: (1) the product has a unique selling proposition (USP) that differentiates it from competitors, and (2) the target market is large enough to justify the production costs.  The research and development team has concluded that the product does have a unique selling proposition.  However, the marketing team is still unsure about the size of the target market.  \n\nWhich of the following statements is TRUE about the company's decision to launch the product?  \n\n(A) The company should launch the product because it has a unique selling proposition. \n(B) The company should not launch the product because they are unsure about the size of the target market. \n(C) The company should launch the product if and only if the target market is large enough to justify the production costs. \n(D) The company should not launch the product because they need to know both the size of the target market and whether it has a unique selling proposition. ",
+            "difficulty": "hard",
+            "reasoning": "This question tests your understanding of necessary and sufficient conditions. The statement \"The product will be successful if and only if it meets two conditions\" means that both conditions are necessary and sufficient for success.  \n\nLet's break down the conditions:\n\n* **Condition 1: Unique Selling Proposition (USP)** - This is a necessary condition for success. If the product does not have a USP, it cannot be successful. \n* **Condition 2: Large Target Market** - This is also a necessary condition for success.  If the target market is not large enough, the product cannot be successful. \n\nSince the R&D team has concluded that the product does have a USP, condition 1 is met. However, the marketing team is unsure about condition 2 (size of the target market).  \n\nTherefore, the company should only launch the product if they are confident that the target market is large enough. This is because the target market size is a necessary condition for success. \n\nThe correct answer is **(C) The company should launch the product if and only if the target market is large enough to justify the production costs.**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bakery is selling a special offer: buy three croissants and get one free.  Sarah wants to buy 15 croissants.  How many sets of three croissants does she need to purchase to get all 15 croissants, taking advantage of the free croissant offer?",
+            "difficulty": "medium",
+            "reasoning": "This question tests your understanding of how to solve a word problem involving a discount.  Here's how to break it down:\n\n1. **Identify the Offer:** The offer is 'buy three get one free'. This means for every three croissants Sarah buys, she gets one free.\n\n2. **Calculate Sets Needed:** Sarah wants 15 croissants.  Since each set consists of 3 croissants purchased and 1 free, she effectively gets 4 croissants per set.\n\n3. **Divide to Find Sets:** Divide the total desired croissants (15) by the number of croissants per set (4): 15 / 4 = 3.75\n\n4. **Round Up:** Since Sarah can't buy parts of a set, round up 3.75 to the nearest whole number: 4\n\n**Therefore, Sarah needs to purchase 4 sets of three croissants to get all 15 croissants.**",
+            "options": [
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A pie chart shows the distribution of a company's annual budget across five departments: Sales, Marketing, Research & Development (R&D), Operations, and Administration. The chart reveals that Sales has the largest share of the budget. \n\n**Statement 1:**  The combined budget allocation for Sales and Marketing is less than the combined allocation for R&D and Operations.\n\n**Statement 2:**  The budget allocated to Administration is 10% of the total budget.\n\n**Question:** Is the budget allocated to Sales greater than the combined budget allocated to Marketing and R&D?",
+            "difficulty": "hard",
+            "reasoning": "This question is designed to be tricky because it misdirects the test taker by focusing on specific budget allocations while the key lies in understanding the overall relationships. \n\n**Let's break down the statements:**\n\n* **Statement 1:** This statement provides information about the relative sizes of the budget allocations for four departments. However, it doesn't directly tell us whether Sales' budget is larger than the combined budget of Marketing and R&D. We can't conclude anything definitively from this statement alone. \n\n* **Statement 2:** This statement gives us the percentage of the budget allocated to Administration. While this is useful information, it doesn't provide any comparison between Sales' budget and the combined budget of Marketing and R&D. It's irrelevant to the question.\n\n**Combining the Statements:** Even when considered together, the statements don't offer enough information to answer the question. Statement 1 compares the combined budgets of different department pairs, but it doesn't directly address the relationship between Sales' budget and the combined budget of Marketing and R&D. Statement 2 provides a percentage allocation for Administration, but this information is not relevant to the question. \n\n**Conclusion:** Neither statement alone, nor both statements together, are sufficient to determine whether the budget allocated to Sales is greater than the combined budget allocated to Marketing and R&D. **Therefore, the answer is (E) - Neither statement alone is sufficient, and both statements together are not sufficient.**",
+            "options": [
+                "Yes",
+                "No",
+                "Insufficient information",
+                "Cannot be determined"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A group of friends are planning a trip. They need to decide on a destination, accommodation, and activities. They have narrowed down the destinations to either the mountains or the beach. They also need to choose between a hotel or a rented cabin for accommodation. For activities, they can choose hiking, swimming, or sightseeing.  \n\nIf they choose the mountains, they will definitely go hiking. If they choose the beach, they will definitely go swimming. They will only go sightseeing if they stay in a hotel.  \n\nThey decide to go hiking. Which of the following must be true?",
+            "difficulty": "hard",
+            "reasoning": "This question tests your ability to apply logic and deductive reasoning to solve a scenario. Here's how we can break down the information to arrive at the correct answer:\n\n1. **Key Information:**\n   - Mountains = Hiking\n   - Beach = Swimming\n   - Sightseeing = Hotel\n\n2. **Deduction:** Since they have decided to go hiking, we can conclude that they must have chosen the mountains as their destination. This eliminates the possibility of them choosing the beach.\n\n3. **Further Deduction:** We don't have enough information to determine if they chose a hotel or a cabin. While sightseeing is only possible with a hotel, they might still choose a hotel for other reasons (convenience, amenities, etc.).\n\n4. **Therefore, the only thing we can definitively conclude is that they chose the mountains as their destination.**\n\n**The question is designed to be tricky by introducing unnecessary details about accommodation and sightseeing. The key is to focus on the direct relationship between hiking and the mountains.**",
+            "options": [
+                "They chose the beach.",
+                "They chose a cabin.",
+                "They chose the mountains.",
+                "They chose sightseeing."
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A group of four friends, Alex, Brian, Carol, and David, are planning to go to a movie. Each friend has a preference for who they want to sit next to in the theater. \n\n**Question:** Can all four friends sit together in a row, fulfilling everyone's seating preferences?\n\n**Statement 1:** Alex wants to sit next to Brian.\n\n**Statement 2:** Carol wants to sit next to David, but only if Alex is not sitting next to Brian.",
+            "difficulty": "hard",
+            "reasoning": "This question tests your ability to understand conditional statements and how they interact within a larger logical puzzle.  Let's analyze each statement:\n\n**Statement 1:** Alex wants to sit next to Brian. This statement alone doesn't give us enough information to determine if all four friends can sit together while fulfilling everyone's preferences. There are still many possible seating arrangements that satisfy this condition.\n\n**Statement 2:** Carol wants to sit next to David, but only if Alex is not sitting next to Brian. This statement is crucial because it introduces a new constraint that significantly impacts the possible seating arrangements.\n\n**Combining the Statements:**  If Alex is sitting next to Brian (as per Statement 1), then Carol's preference cannot be satisfied.  This means that Alex and Brian *must* sit separately for all four friends to be seated together while fulfilling their preferences. However, we don't know if there's a seating arrangement that satisfies this condition and the remaining preferences.\n\n**Conclusion:** Neither statement alone is sufficient to answer the question. The information given is incomplete to determine if all four friends can sit together while fulfilling everyone's preferences.\n\n**Why this is a 'hard' Question:** The tricky aspect lies in the fact that Statement 2 initially appears to provide a way to accommodate all preferences. However, the conditional element within Statement 2 (only if Alex is not sitting next to Brian) creates a hidden constraint that eliminates many seemingly possible seating arrangements. This forces you to think critically and analyze the information very carefully.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient Information"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Statement:** A sequence of letters follows a specific pattern: A, D, G, J, M, ...\n\n**Question:** What is the 10th letter in the sequence?\n\n**Statement 1:** The difference between consecutive letters in the sequence increases by 1 each time, counting alphabetically. \n\n**Statement 2:**  The 8th letter in the sequence is R.",
+            "difficulty": "hard",
+            "reasoning": "This question tests your ability to identify patterns and sequences within a series of letters.  It requires a careful understanding of the pattern and how it changes with each consecutive letter. \n\nLet's break down the pattern and how to solve this question:\n\n* **Analyzing the Pattern:** The sequence starts with A and jumps ahead by 3 letters to reach D (A, B, C, **D**). The next jump is 3 letters forward again to reach G (D, E, F, **G**).  Each subsequent jump increases by one letter. To reach J, it's 4 letters forward (G, H, I, **J**), then 5 letters forward to M (J, K, L, M, **M**).  \n\n* **Statement 1:** This statement gives us the rule for the pattern - the difference between consecutive letters increases by 1 each time. This means that the pattern is consistent and we can use it to determine the next letters in the sequence. \n\n* **Statement 2:** This statement provides the 8th letter in the sequence as R. This information is useful as we already know the pattern. We can use the pattern to confirm that R is the 8th letter and also to deduce the following letters in the sequence. \n\n**Solving the Question:**\n\n1. **Statement 1** alone is sufficient to answer the question. We know the pattern is consistent and the jumps increase by one each time.  We can continue this pattern to find the 10th letter.\n\n* The 6th letter is P (M, N, O, **P**) - 6 letters forward from M. \n* The 7th letter is T (P, Q, R, S, **T**) - 7 letters forward from P. \n* The 8th letter is **R** (T, U, V, **R**) - 8 letters forward from T. \n* The 9th letter is **X** (R, S, **X**) - 9 letters forward from R. \n* The 10th letter is **A** (X, Y, **A**) - 10 letters forward from X.\n\n2. **Statement 2** alone is also sufficient to answer the question. By knowing the 8th letter is R, we can apply the pattern to calculate the subsequent letters (including the 10th letter).  We can continue the pattern as above (adding 1 letter to each jump) to reach the 10th letter, which is A.\n\n**Therefore, either statement alone is sufficient to answer the question.**\n\n",
+            "options": [
+                "A",
+                "B",
+                "X",
+                "R"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A bakery sells three types of cookies: chocolate chip, oatmeal raisin, and peanut butter. The bakery always makes at least one of each type of cookie every day.  On a given day, is the number of peanut butter cookies sold greater than the number of oatmeal raisin cookies sold? \n\n(1) The bakery sold 20% more chocolate chip cookies than oatmeal raisin cookies that day. \n\n(2)  The total number of peanut butter cookies sold that day was less than the total number of oatmeal raisin cookies and chocolate chip cookies sold combined.",
+            "difficulty": "hard",
+            "reasoning": "This question requires combining the information from both statements to determine sufficiency. Here's how to break it down:\n\n**Statement (1):** This statement alone is insufficient to determine if more peanut butter cookies were sold than oatmeal raisin cookies. We only know the relationship between chocolate chip and oatmeal raisin cookies. There's no information about peanut butter cookies.\n\n**Statement (2):** This statement also alone is insufficient to answer the question. We know the total peanut butter cookies sold are less than the combined sales of the other two types, but we don't know the individual amounts of oatmeal raisin and chocolate chip cookies sold.  \n\n**Combining Statements:** When we combine the statements, we gain crucial information. We know from statement (1) that the bakery sold more chocolate chip cookies than oatmeal raisin cookies. Statement (2) tells us that the peanut butter cookie sales are less than the combined sales of the other two types. This means that the peanut butter cookie sales must be less than the combined sales of the two types of cookies, AND the peanut butter cookie sales must be less than the number of chocolate chip cookies alone (since chocolate chip cookies were sold more than oatmeal raisin cookies).  Therefore, peanut butter cookies must have been sold less than oatmeal raisin cookies. \n\n**Conclusion:**  Combining statements (1) and (2) provides sufficient information to conclude that the number of peanut butter cookies sold was **not** greater than the number of oatmeal raisin cookies sold.  \n\n**Answer:**  The statements together are **sufficient** to answer the question.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of friends is planning a road trip.  They are considering two different routes, Route A and Route B.  Route A is 50 miles longer than Route B, but it has a speed limit of 70 mph, while Route B has a speed limit of 55 mph.  Can they complete the trip in 5 hours or less if they choose Route A?",
+            "difficulty": "hard",
+            "reasoning": "This question tests your understanding of data sufficiency in a practical scenario involving speed, distance, and time.  Here's how to break it down:\n\n**Understanding the Problem:**\n\nWe need to determine if they can complete Route A in 5 hours or less. To do this, we need to know the distance of Route A.  We are given information about the relative lengths of the routes and the speed limits, but we need to consider if this information is sufficient to determine the distance of Route A.\n\n**Analyzing the Statements:**\n\n* **Statement 1:**  Route A is 50 miles longer than Route B. This statement alone is insufficient. We don't know the actual distance of either route, so we can't calculate the travel time on Route A.\n\n* **Statement 2:** Route B has a speed limit of 55 mph.  This statement alone is insufficient. We don't know the length of Route B, so we can't calculate the travel time on Route A.\n\n**Combining the Statements:**\n\nEven when we combine both statements, we still don't have enough information to determine the distance of Route A.  While we know the speed limit on both routes and the relative lengths, we need an actual distance for either Route A or Route B to calculate the travel time on Route A.\n\n**Conclusion:**\n\nNeither statement alone, nor both statements together, are sufficient to determine if they can complete the trip in 5 hours or less if they choose Route A.\n\n**Answer:**  The answer is **(E) Neither statement alone is sufficient, and the two statements together are not sufficient.**",
+            "options": [
+                "Yes",
+                "No",
+                "Insufficient Data",
+                "Maybe"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A train travels from City A to City B at a constant speed. If the train increases its speed by 20%, it will arrive at City B 1 hour earlier than usual. On the other hand, if the train decreases its speed by 25%, it will arrive 2 hours later than usual. What is the original time taken by the train to travel from City A to City B?",
+            "difficulty": "hard",
+            "reasoning": "This problem involves understanding the relationship between time, rate, and distance, along with some algebraic manipulation. Here's how to solve it:\n\nLet's break down the problem:\n\n* **Original Speed:** Let the original speed of the train be 'x' km/h.\n* **Original Time:** Let the original time taken to travel from City A to City B be 't' hours.\n* **Distance:** The distance between City A and City B remains constant, let it be 'd' km.\n\n**Using the formula:**  Distance = Speed \u00d7 Time (d = x \u00d7 t)\n\n**Scenario 1: Speed Increased by 20%**\n* New Speed: 1.2x km/h\n* New Time: t - 1 hours\n* Distance: d = (1.2x) \u00d7 (t - 1) \n\n**Scenario 2: Speed Decreased by 25%**\n* New Speed: 0.75x km/h\n* New Time: t + 2 hours\n* Distance: d = (0.75x) \u00d7 (t + 2)\n\n**Equating the Distances**\nSince the distance is constant, we can equate the distance expressions from Scenario 1 and Scenario 2:\n\n(1.2x) \u00d7 (t - 1) = (0.75x) \u00d7 (t + 2)\n\n**Solving for t**\n1. Simplify the equation: 1.2t - 1.2 = 0.75t + 1.5\n2. Combine like terms: 0.45t = 2.7\n3. Solve for t: t = 6 hours\n\n**Therefore, the original time taken by the train to travel from City A to City B is 6 hours.**\n\n**Key Points:**\n* Understanding the relationship between speed, time, and distance is crucial for solving problems involving motion.\n* Use variables to represent unknown quantities and set up equations based on the given information.\n* Algebraic manipulation is often required to solve for the desired variable.",
+            "options": [
+                "4 hours",
+                "5 hours",
+                "6 hours",
+                "7 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A recent study found that people who eat a lot of red meat are more likely to develop heart disease.  The study concluded that red meat consumption causes heart disease.  However, the study did not control for other factors that might contribute to heart disease, such as smoking, lack of exercise, or family history.  Which of the following is the most likely explanation for the study's findings? ",
+            "difficulty": "hard",
+            "reasoning": "This question tests your ability to identify the **fallacy of correlation-causation**, which occurs when assuming that because two things happen together, one must cause the other.  The study's findings only demonstrate a **correlation** between red meat consumption and heart disease; they do not prove **causation**. \n\nHere's why: \n\n* **Confounding Variables:**  There could be other factors, like those mentioned in the question (smoking, lack of exercise, family history), that are actually responsible for the increased risk of heart disease in the study's participants.  These factors might be more strongly associated with red meat consumption, or they could be independent factors altogether. \n\n* **Reverse Causation:** It's also possible that heart disease could be causing people to eat less red meat, rather than the other way around. \n\n**Example:** Imagine a study that finds a correlation between ice cream sales and crime rates.  It's likely that both are influenced by a third factor -  warm weather.  When it's hot, people eat more ice cream and there's more outdoor activity, leading to a higher chance of crime. \n\n**Key Takeaway:** To establish causation, a study needs to **control for potential confounding variables** and **consider the possibility of reverse causation**.  The study in question did not do this, making its conclusion flawed. ",
+            "options": [
+                "The study did not consider confounding variables.",
+                "The study did not control for other factors that might contribute to heart disease.",
+                "The study did not establish causation between red meat consumption and heart disease.",
+                "The study did not consider reverse causation."
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery makes two types of cakes, chocolate and vanilla.  70% of the cakes made are chocolate, and the rest are vanilla.  If the bakery makes 420 chocolate cakes in a week, how many vanilla cakes does it make in a week, and what is the ratio of chocolate to vanilla cakes made?",
+            "difficulty": "hard",
+            "reasoning": "This problem involves understanding percentages and ratios. Here's how to solve it:\n\n1. **Finding the number of vanilla cakes:**\n   - If 70% of the cakes are chocolate, then 100% - 70% = 30% of the cakes are vanilla.\n   - We know 420 chocolate cakes represent 70% of the total cakes.  To find the number of vanilla cakes, we can set up a proportion:\n     (70 cakes / 100% ) = (420 chocolate cakes / x%)\n     - Solving for x, we get x = 600%  This means 420 chocolate cakes represent 600% of the vanilla cakes.\n     - Since we know 30% of the cakes are vanilla, we can calculate the number of vanilla cakes by dividing the total number of cakes (600%) by 30%:\n       (600% / 30%) * 1 vanilla cake = 20 vanilla cakes\n\n2. **Finding the ratio of chocolate to vanilla:**\n   - The ratio of chocolate cakes to vanilla cakes is 420 : 20.  We can simplify this ratio by dividing both sides by 20:\n      420 : 20 = 21 : 1\n\n**Therefore, the bakery makes 20 vanilla cakes in a week, and the ratio of chocolate to vanilla cakes is 21:1.**",
+            "options": [
+                "120 vanilla cakes",
+                "20 vanilla cakes",
+                "21:1",
+                "1:21"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A positive integer, N, is divisible by 3, 5, and 7. What is the smallest possible value of N? \n\n **Note:** This question requires you to find the Least Common Multiple (LCM) of 3, 5, and 7.",
+            "difficulty": "medium",
+            "reasoning": "To find the smallest possible value of N, we need to find the least common multiple (LCM) of 3, 5, and 7. Here's how to do it:\n\n1. **Prime Factorization:** Find the prime factorization of each number:\n   - 3 = 3\n   - 5 = 5\n   - 7 = 7\n\n2. **LCM:** To find the LCM, take the highest power of each prime factor that appears in any of the numbers:\n   - LCM (3, 5, 7) = 3 x 5 x 7 = 105\n\nTherefore, the smallest possible value of N is **105**.\n\n**Explanation:** The LCM represents the smallest number that is divisible by all the given numbers. In this case, 105 is the smallest number that is divisible by 3, 5, and 7.",
+            "options": [
+                "15",
+                "21",
+                "35",
+                "105"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A company produces two types of widgets, A and B. The cost of producing a widget of type A is represented by the expression |2x - 5| dollars, where x is the number of units produced. The cost of producing a widget of type B is represented by the expression |x + 3| dollars. If the company produces 10 units of type A and 5 units of type B, what is the total cost of production, in dollars?",
+            "difficulty": "medium",
+            "reasoning": "To find the total cost of production, we need to calculate the cost of producing each type of widget and then add them together.\n\n1. **Cost of producing type A widgets:**\n   - Substitute x = 10 into the expression |2x - 5|:\n     |2(10) - 5| = |20 - 5| = |15| = 15 dollars per widget\n   - Since the company produces 10 units of type A, the total cost for type A is 10 * $15 = $150.\n\n2. **Cost of producing type B widgets:**\n   - Substitute x = 5 into the expression |x + 3|:\n     |5 + 3| = |8| = 8 dollars per widget\n   - Since the company produces 5 units of type B, the total cost for type B is 5 * $8 = $40.\n\n3. **Total Cost:**\n   - The total cost of production is the sum of the costs for type A and type B: $150 + $40 = $190.\n\nTherefore, the total cost of production is **$190**.",
+            "options": [
+                "$100",
+                "$190",
+                "$200",
+                "$250"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A certain number, when expressed in base 7, is a three-digit number. If the digits are reversed, the resulting number is 1013 greater than the original number. If the middle digit of the original number is 4, what is the sum of the digits of the original number in base 7?",
+            "difficulty": "hard",
+            "reasoning": "Let the original number in base 7 be represented as abc, where a, b, and c are the digits.  The problem states that b = 4.  We can express the original number and the reversed number in base 10:\n\n* Original number (base 10): a * 7^2 + 4 * 7^1 + c * 7^0 = 49a + 28 + c\n* Reversed number (base 10): c * 7^2 + 4 * 7^1 + a * 7^0 = 49c + 28 + a\n\nThe problem states that the reversed number is 1013 greater than the original number, so we can set up an equation:\n\n49c + 28 + a = 49a + 28 + c + 1013\n\nSimplifying the equation, we get:\n\n48c - 48a = 1013\n\nDividing both sides by 48, we get:\n\nc - a = 21\n\nSince a and c are digits in base 7, they must be between 0 and 6. The only solution that satisfies the equation c - a = 21 is if c = 6 and a = -15. However, a cannot be negative. Therefore, there is no solution to this problem. It is impossible for the reversed number to be 1013 greater than the original number if the middle digit is 4.",
+            "options": [
+                "15",
+                "11",
+                "13",
+                "There is no solution"
+            ],
+            "correct_option": "D"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Data Sufficiency",
+    "exam_id": 11,
+    "order": 2
+}

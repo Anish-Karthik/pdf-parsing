@@ -1,0 +1,308 @@
+{
+    "questions": [
+        {
+            "question": "This year, February had 29 days and started on a Wednesday. Amelia started reading a book on February 10th and finished it exactly three weeks later.  What day of the week did Amelia finish reading her book?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Weeks and Days:** We know Amelia read for exactly three weeks, which is 3 weeks * 7 days/week = 21 days.\n\n2. **Finding the Finish Date:** Amelia started reading on February 10th and read for 21 days, so she finished on February 10th + 21 days = March 2nd.\n\n3. **Day of the Week Calculation:**  \n    * February started on a Wednesday.\n    * March 1st is exactly 4 weeks after February 1st, so it will also be a Wednesday. \n    * Therefore, March 2nd is a Thursday. \n\n**Therefore, Amelia finished reading her book on a Thursday.**",
+            "options": [
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "This year, June 1st falls on a Friday. Sarah plans to start a 30-day fitness challenge on the first Sunday after June 10th. What date will Sarah begin her fitness challenge?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Find the first Sunday after June 10th:**\n    * June 10th is 9 days after June 1st (10 - 1 = 9).\n    * Since June 1st is a Friday, we count forward 9 days: Saturday, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. \n    * This means June 10th is a Saturday.\n    * Therefore, the first Sunday after June 10th is June 11th.\n\n2. **Determine the date Sarah starts her challenge:**\n    * Sarah starts her challenge on the first Sunday after June 10th, which is June 11th.\n\n**Therefore, Sarah will begin her fitness challenge on June 11th.**",
+            "options": [
+                "June 10th",
+                "June 12th",
+                "June 11th",
+                "June 9th"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "If March 10th falls on a Saturday in a particular year, what day of the week will August 10th of the same year fall on?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Days Remaining in March:**\n   * March has 31 days.\n   * Days remaining after March 10th: 31 - 10 = 21 days\n\n**2. Days in Each Month Until August:**\n   * April: 30 days\n   * May: 31 days\n   * June: 30 days\n   * July: 31 days\n\n**3. Total Days Until August 10th:**\n   * 21 (March) + 30 (April) + 31 (May) + 30 (June) + 31 (July) + 10 (August) = 153 days\n\n**4. Days of the Week Calculation:**\n   * Divide the total number of days (153) by 7 (days in a week): 153 / 7 = 21 remainder 6\n   * The remainder of 6 means that August 10th falls 6 days after Saturday.\n\n**5. Determine the Day:**\n   * Counting 6 days from Saturday, we get Friday.\n\n**Therefore, August 10th will fall on a Friday.**",
+            "options": [
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**scenario**: A bakery receives a large order of flour every second Friday of the month.\n**condition**: Due to a holiday, the next flour delivery after April 10th will be delayed by a week.\n**question**: What is the original date the flour delivery was scheduled for?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how we can solve this problem:\n\n1. **Understand the pattern:** The bakery gets flour every second Friday.\n2. **April 10th context:** We need to figure out where April 10th falls in relation to the second Friday of April.\n3. **Working Backwards:** Since the delivery is delayed *after* April 10th, the second Friday must fall *before* April 10th. \n4. **Calendar Check:**  We can deduce that the second Friday of April falls a few days before April 10th. To confirm, let's assume April 1st was a Friday. Counting, the second Friday would be on April 8th.\n5. **Original Delivery Date:**  Therefore, the original delivery date was scheduled for **April 8th**.",
+            "options": [
+                "April 10th",
+                "April 15th",
+                "April 8th",
+                "April 1st"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A marketing team is planning a product launch campaign. The product launch date is set for Thursday, November 9th. They want to publish a press release two business days prior to the launch, allowing ample time for media outreach.\n**question**: Considering weekends (Saturday and Sunday) are non-business days, what day of the week should the team aim to publish the press release?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Identify the launch date:** The product launch is on Thursday, November 9th.\n\n2. **Count back business days:** We need to count back two business days from the launch date.\n\n3. **Exclude weekends:** Weekends (Saturday and Sunday) are non-business days.\n\n4. **Calculate the press release date:**\n   * One business day before Thursday, November 9th is Wednesday, November 8th.\n   * Two business days before Thursday, November 9th is Tuesday, November 7th. \n\nTherefore, the team should aim to publish the press release on **Tuesday**. ",
+            "options": [
+                "Thursday",
+                "Wednesday",
+                "Tuesday",
+                "Monday"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "An international company organizes a week-long virtual conference, starting on Monday and ending on Friday. However, due to attendees being located in different time zones, each day's sessions need to be repeated three times: morning, afternoon, and evening sessions, to accommodate all time zones.  \n\nYou are tasked with developing an algorithm to generate a schedule for the conference. Your program should take the start date (Monday's date) as input and output the full schedule, including the day, session (morning, afternoon, evening), and the corresponding date for each session.\n\nFor example, if the conference starts on October 26th, 2023, the output for Tuesday would include: \n\n* Tuesday - Morning Session - October 27th, 2023\n* Tuesday - Afternoon Session - October 27th, 2023\n* Tuesday - Evening Session - October 27th, 2023\n\nYour algorithm should generate this detailed schedule for the entire week (Monday to Friday).",
+            "difficulty": "medium",
+            "reasoning": "This problem blends calendar manipulation with basic algorithmic thinking. Here's a step-by-step solution approach:\n\n1. **Input:** Obtain the starting date of the conference (e.g., \"2023-10-26\").\n\n2. **Looping through Days:** Utilize a loop to iterate through each day of the conference week, starting from Monday and ending on Friday.\n\n3. **Session Iteration:** For each day, use a nested loop to iterate through the three sessions: morning, afternoon, and evening.\n\n4. **Date Calculation:** Inside the loops, calculate the date for each session. Since all sessions on a given day fall on the same date, this calculation would only need to be performed once for each day.\n\n5. **Output Formatting:** Format the output to clearly display the day, session, and the corresponding date. \n\nThis approach combines calendar logic (handling dates and days of the week) with algorithmic thinking (looping and data organization) to generate a comprehensive conference schedule.",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "It is February 2024. What is the date of the third Friday of the month?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Leap Year:** First, recognize that 2024 is a leap year, meaning February has 29 days.\n\n**2. First Friday:**  Since February 1st, 2024 falls on a Thursday, the first Friday would be February 2nd.\n\n**3. Calculation:** To find the third Friday, add 14 days (two weeks) to the date of the first Friday:\n\n   February 2nd + 14 days = February 16th \n\n**Therefore, the third Friday of February 2024 is February 16th.**",
+            "options": [
+                "February 10th",
+                "February 16th",
+                "February 23rd",
+                "February 9th"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Emily is planning a surprise birthday party for her friend, Liam.  She knows that Liam's birthday is exactly three weeks after the first Friday of October. If October 1st falls on a Wednesday, on what date will Liam's party be?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the puzzle:\n\n1. **Find the first Friday:** Since October 1st is a Wednesday, the first Friday of October falls on October 3rd (Wednesday + 2 days = Friday).\n\n2. **Calculate three weeks:** Three weeks is equal to 21 days (3 weeks * 7 days/week = 21 days).\n\n3. **Determine Liam's birthday date:** Count 21 days from October 3rd. This brings us to October 24th (October 3rd + 21 days = October 24th). \n\nTherefore, Liam's birthday party will be on **October 24th**.",
+            "options": [
+                "October 3rd",
+                "October 17th",
+                "October 24th",
+                "November 7th"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "The year 2100 is approaching, and with it, the turn of the century.  Some people believe this means 2100 will be a leap year. Are they correct?  Explain your reasoning based on the rules for leap years within a century.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to determine if the year 2100 is a leap year:\n\n* **General Rule:** A leap year occurs every 4 years, meaning years divisible by 4 are generally leap years.\n* **Century Year Exception:** However, for century years (those ending in 00), an additional rule applies. A century year is a leap year only if it is divisible by 400.\n\n**Applying the Rules to 2100:**\n\n1. **Divisible by 4?** Yes, 2100 is divisible by 4.\n2. **Century Year?** Yes, 2100 ends in 00, making it a century year.\n3. **Divisible by 400?** No, 2100 is not divisible by 400.\n\n**Conclusion:** While 2100 is divisible by 4, the century year exception takes precedence. Because 2100 is not divisible by 400, it is **not** a leap year.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "It depends"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A project manager based in Chicago (CST) needs to schedule three online meetings with team members in different time zones: London (GMT), Tokyo (JST), and Sydney (AEST). Considering the following: \n\n- **Meeting 1:** Requires participants from all locations. \n- **Meeting 2:** Only involves Chicago and London teams. \n- **Meeting 3:** Only involves Chicago and Sydney teams. \n\n**Time Zone Information:** \n- Chicago (CST) is GMT-6 \n- London (GMT) \n- Tokyo (JST) is GMT+9 \n- Sydney (AEST) is GMT+10 \n\n**Meeting Duration:** All meetings are 1 hour long.\n\n**Working Hours:** All teams work from 9 AM to 5 PM local time. \n\nWhat is the earliest possible time in Chicago (CST) that the project manager can schedule Meeting 1 to accommodate all participants within their respective working hours?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Convert all times to GMT for easier comparison:** \n    - Chicago: 9 AM - 5 PM CST is equivalent to 3 PM - 11 PM GMT.\n    - London: 9 AM - 5 PM GMT\n    - Tokyo: 9 AM - 5 PM JST is equivalent to 12 AM - 8 AM GMT. \n    - Sydney: 9 AM - 5 PM AEST is equivalent to 11 PM - 7 AM GMT. \n\n**2.  Identify the overlapping working hours for all locations:** \n    - The only overlapping time for all four locations is between 3 PM - 5 PM GMT (Chicago's working hours). \n\n**3. Convert the overlapping GMT time back to CST:** \n    - 3 PM GMT is 9 AM CST. \n    - 5 PM GMT is 11 AM CST. \n\n**Therefore, the earliest possible time in Chicago for Meeting 1 is 9:00 AM CST.** ",
+            "options": [
+                "11:00 AM",
+                "10:00 AM",
+                "9:00 AM",
+                "8:00 AM"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: Every 28 years, the days of the week repeat for any given date, assuming no intervening leap years occur outside the usual cycle. This is because 28 is the least common multiple of 7 (days in a week) and 4 (years in a leap year cycle).  However, the year 1900 was surprisingly NOT a leap year.\n**question**: Given that March 3rd, 1898 was a Wednesday, and knowing the exception about the year 1900, what day of the week will March 3rd, 1926 be?\n**answerChoices**: \n  - Sunday\n  - Monday\n  - Tuesday\n  - Wednesday\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Calculate the time difference:**  There are 28 years between 1898 and 1926.\n\n2. **Account for the leap year exception:** Since 1900 was not a leap year, we are short one leap day within the 28-year cycle. This means the days of the week will be shifted back by one day.\n\n3. **Determine the day of the week:** If March 3rd, 1898 was a Wednesday, and we shift back one day due to the missing leap year, then March 3rd, 1926 would be a **Tuesday**.\n\n**Therefore, the correct answer is (c) Tuesday.**",
+            "options": [
+                "Sunday",
+                "Monday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "You are building a meeting scheduler application. You are given a list of attendees' weekly schedules and need to find the earliest available time slot of a specified duration that works for all attendees. \n\n**Input:** \n- `schedules`: A list of dictionaries. Each dictionary represents an attendee's schedule and contains key-value pairs where the key is the day of the week (Monday-Sunday) and the value is a list of tuples representing available time slots in 24-hour format (e.g., `[(9, 11), (14, 16)]` means available from 9 am to 11 am and 2 pm to 4 pm).\n- `duration`: An integer representing the required meeting duration in minutes.\n\n**Output:**\n- A dictionary containing the earliest available time slot that fits all attendees and the meeting duration, or `None` if no suitable slot is found. The output dictionary should be in the format: `{'day': 'Monday', 'start_time': 10, 'end_time': 11}` \n\n**Example:**\n\n```python\nschedules = [\n    {'Monday': [(9, 17)], 'Tuesday': [(10, 12), (14, 16)], 'Wednesday': [(9, 11)]},\n    {'Monday': [(10, 12), (14, 18)], 'Tuesday': [(10, 12)], 'Thursday': [(11, 16)]},\n    {'Monday': [(9, 10), (11, 18)], 'Tuesday': [(11, 15)], 'Wednesday': [(10, 17)]}\n]\nduration = 60\n\noutput = {'day': 'Monday', 'start_time': 11, 'end_time': 12}\n```",
+            "difficulty": "medium",
+            "reasoning": "This problem dives into the practical application of calendar manipulation by simulating a scenario of finding a common meeting time. It requires iterating through each day and time slot, checking if the slot fits within each attendee's schedule and if it meets the required duration.  The logic involves comparing intervals and handling various edge cases, making it moderately complex. \n\nHere's a step-by-step solution:\n1. **Iterate through the days of the week.**\n2. **For each day, find the intersection of available time slots across all attendees.** This requires comparing the start and end times of each attendee's available slots. \n3. **Within the intersected time slots, find the first slot that meets the required duration.** \n4. **If a suitable slot is found, return the day, start time, and end time.**\n5. **If no suitable slot is found after checking all days, return `None`.**\n\nThe example provided showcases a scenario where attendees have overlapping availability on Monday between 11:00 am and 12:00 pm, satisfying the 60-minute duration requirement. Therefore, the output correctly identifies this time slot.",
+            "options": [
+                "Easy",
+                "Hard",
+                "Medium",
+                "Very Hard"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: Every year, a town hosts a three-day summer festival. The festival always ends on the first Sunday of August. This year, August 1st falls on a Wednesday.\n**Missing Information**: What day of the week does the summer festival begin?\n**Question**: Using the information provided, determine the starting day of the summer festival.\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Determine the day of the week for the last day of the festival:**\n\n   - We know the festival ends on the first Sunday of August.\n   - We are told August 1st is a Wednesday.\n\n**2. Count backward to find the first day:**\n\n   - If August 1st is Wednesday, then the first Sunday of August is August 5th.\n   - Counting back three days (since the festival is three days long):\n      - Saturday (August 4th)\n      - Friday (August 3rd)\n      - Thursday (August 2nd) \n\n**Therefore, the festival begins on Thursday, August 2nd.**",
+            "options": [
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A time traveler from the year 2300 arrives in our present time.  They mention that their year of origin, 2300, was not a leap year.  Knowing that the Gregorian calendar repeats its cycle every 400 years, can you definitively determine whether the year 1900 was a leap year or not? Explain your reasoning.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to determine if the year 1900 was a leap year: \n\n* **Understanding Century Leap Year Rules:**  A century year (ending in 00) is a leap year only if it is divisible by 400.  \n* **Applying the Logic:** Since the Gregorian calendar repeats every 400 years, the year 2300 will have the same leap year status as the year 1900 (2300 - 400 = 1900). \n* **The Traveler's Statement:** The time traveler stated that 2300 was NOT a leap year.  \n* **Conclusion:** Because 2300 and 1900 share the same leap year status, and 2300 is not a leap year, we can definitively conclude that the year 1900 was also NOT a leap year.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A team project meeting was scheduled on the last Friday of a certain month. Due to unforeseen circumstances, the meeting had to be rescheduled to five days prior to the initially planned date.  If the rescheduled meeting took place on the 19th, what month was the meeting originally scheduled in?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Determine the original meeting date:** Since the meeting was moved five days earlier, the original date was the 19th + 5 days = 24th of the month.\n\n2. **Identify the day of the week:** We know the 24th was a Friday because the meeting was initially planned for the last Friday of the month.\n\n3. **Reverse calendar logic:** To find the last Friday of the month, we need to consider that a date seven days after a Friday will also be a Friday.  Therefore, the 31st of the month (24th + 7 days) was also a Friday. \n\n4. **Confirm the month:** Since the 31st is the last day of some months, we can conclude that the meeting was originally scheduled for a month that ends on the 31st. \n\n**Therefore, the meeting was originally scheduled in a month that ends on the 31st.**",
+            "options": [
+                "January",
+                "February",
+                "March",
+                "October"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "This year, June 1st falls on a Friday.  A team plans to start a project exactly 10 weeks after this date. If they want to have their first progress meeting on a Monday following the project start date, on what date will the meeting take place?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate the project start date:**\n* 10 weeks after June 1st is June 1st + (10 weeks * 7 days/week) = August 10th.\n\n**2. Determine the day of the week for August 10th:**\n* June 1st is a Friday.\n* July 6th will be a Friday as well (June 1st + 30 days in June + 5 days to reach the next Friday).\n* July 13th, July 20th, July 27th, and August 3rd will also be Fridays.\n* Therefore, August 10th falls on a Friday.\n\n**3.  Find the date of the first Monday after August 10th:**\n* Since August 10th is a Friday, the following Monday will be August 13th.\n\n**Therefore, the team's first progress meeting will be on August 13th.**",
+            "options": [
+                "August 6th",
+                "August 8th",
+                "August 12th",
+                "August 13th"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "If March 15th of a certain leap year falls on a Friday, what day of the week will August 1st of the same year fall on? ",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this step-by-step:\n\n**1. Days Remaining in March:**\n* March has 31 days.\n* From March 15th to March 31st, there are 31 - 15 = 16 days remaining.\n\n**2. Days in April, May, June, and July:**\n* April: 30 days\n* May: 31 days\n* June: 30 days\n* July: 31 days\n\n**3. Total Days from March 15th to July 31st:**\n* Total days = 16 (March) + 30 (April) + 31 (May) + 30 (June) + 31 (July) = 138 days\n\n**4. Finding the Day of the Week:**\n* Divide the total days (138) by 7 (days in a week): 138 / 7 = 19 remainder 5\n* A remainder of 5 means that July 31st falls 5 days after Friday.\n* Counting 5 days after Friday, we get Wednesday.\n\n**5. August 1st:**\n* August 1st is just one day after July 31st (Wednesday).\n\n**Therefore, August 1st of that leap year falls on a Thursday.**",
+            "options": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "The Mayan civilization, renowned for its intricate calendar system, utilized a combination of cycles to track time. One such cycle was the Tzolkin, a sacred calendar of 260 days formed by combining 20 day-names with 13 day-numbers. Imagine a Mayan inscription stating that a significant ritual took place on the day 1 Imix.  Knowing that the Tzolkin cycle does not align directly with solar years, how many days would pass in the Gregorian calendar before the same calendar date, 1 Imix, would occur again in the Tzolkin cycle?",
+            "difficulty": "medium",
+            "reasoning": "The question focuses on the cyclical nature of the Mayan Tzolkin calendar, a concept central to 'Calendar Concepts in History and Culture.'\n\nThe challenge lies in understanding that the Tzolkin calendar has a 260-day cycle independent of the solar year. Therefore, finding when the same calendar date recurs involves determining the least common multiple (LCM) of the Tzolkin cycle (260 days) and the Gregorian calendar (365 days).\n\nHowever, the question specifically asks for the number of days within the Tzolkin cycle itself before 1 Imix reoccurs.  This is simply a matter of recognizing the cyclical nature of the Tzolkin. Since it has 260 unique day combinations, the same date will occur again after a full cycle.\n\nTherefore, the answer is 260 days. ",
+            "options": [
+                "365 days",
+                "520 days",
+                "260 days",
+                "180 days"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "## The Recurring Meeting\n\nYou are tasked with developing an algorithm for scheduling a recurring meeting. The meeting should occur on the same day of the week, every 'N' weeks, starting from a given date. \n\n**Input:**\n* **start_year:** The year of the first meeting (e.g., 2024)\n* **start_month:** The month of the first meeting (1-12)\n* **start_day:** The day of the month of the first meeting (1-31)\n* **day_of_week:** The target day of the week (0 for Sunday, 1 for Monday, ..., 6 for Saturday)\n* **frequency:** The meeting recurs every 'N' weeks\n\n**Output:**\n* A function **find_next_meeting_date(start_year, start_month, start_day, day_of_week, frequency)** that returns a list [year, month, day] representing the date of the *next* meeting, considering the given frequency and starting date.\n\n**Example:**\n* **Input:**  start_year = 2023, start_month = 11, start_day = 8, day_of_week = 3, frequency = 2  (November 8th, 2023 is a Wednesday)\n* **Output:** [2023, 11, 22] (The next Wednesday that is 2 weeks after November 8th)\n\n**Note:** You cannot use built-in calendar libraries or functions that directly calculate dates based on week numbers. You must implement the logic for day/week/month traversal yourself. Consider leap years in your calculations.",
+            "difficulty": "medium",
+            "reasoning": "This problem requires a good understanding of calendar logic and modular arithmetic to handle day-of-week calculations and leap years.\n\n**Here's a step-by-step solution approach:**\n\n1. **Days to Target Day:** Calculate the number of days to advance from the starting date to reach the first occurrence of the target 'day_of_week'. \n2. **Add Weeks:** Calculate the total number of days to advance by multiplying the 'frequency' (number of weeks) by 7 (days in a week). \n3. **New Date Calculation:** Starting from the initial target day, add the total number of days calculated in step 2.  \n4. **Handle Month/Year Rollover:** Carefully adjust the month and year as you advance through the days, considering the variable number of days in each month and leap years.\n\n**Leap Year Logic:**\nA year is a leap year if:\n* It is divisible by 4\n* But NOT divisible by 100, UNLESS it is also divisible by 400.\n\n**Example Breakdown:**\n\n1. **Input:** start_year = 2023, start_month = 11, start_day = 8, day_of_week = 3, frequency = 2 \n2. **Days to Target Day:**  Since November 8th, 2023 is already a Wednesday (day_of_week = 3), we don't need to advance any days initially.\n3. **Add Weeks:** 2 weeks * 7 days/week = 14 days\n4. **New Date Calculation:**\n    * November 8th + 14 days = November 22nd\n\nTherefore, the output is **[2023, 11, 22]**.",
+            "options": [
+                "7",
+                "30",
+                "28",
+                "14"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**question_type**: Multiple Choice\n**question_description**: A group of history enthusiasts plans an event every leap year to celebrate significant historical events. They are currently planning for their next event, claiming it will be in the year 2100.  Is their claim correct?\n**options**: \n  **A**: Yes, because 2100 is divisible by 4.\n  **B**: Yes, because 2100 is divisible by 100.\n  **C**: No, because 2100 is not divisible by 400.\n  **D**: No, because century years are never leap years.\n",
+            "difficulty": "hard",
+            "reasoning": "Here's the breakdown of why the answer is **C) No, because 2100 is not divisible by 400:**\n\n* **Leap Year Rules:** Most years divisible by 4 are leap years. However, century years (years ending in '00') have an additional rule.\n* **Century Year Rule:**  A century year is a leap year ONLY if it is divisible by 400.\n* **Applying the Rule to 2100:** 2100 is divisible by 4, but it is not divisible by 400. Therefore, it is not a leap year.\n\n**Why the other options are incorrect:**\n\n* **A) Yes, because 2100 is divisible by 4.** While true, this rule alone doesn't apply to century years. \n* **B) Yes, because 2100 is divisible by 100.**  Being divisible by 100 just identifies it as a century year, it doesn't automatically make it a leap year.\n* **D) No, because century years are never leap years.** This is too absolute.  Some century years are leap years (e.g., 2000), but only if they follow the divisibility by 400 rule. ",
+            "correct_option": "B",
+            "options": [
+                "Yes",
+                "No",
+                "Yes",
+                "No"
+            ]
+        },
+        {
+            "question": "Amelia is planning a surprise party for her friend, Benjamin. Benjamin's birthday is on March 6th, which falls on a Friday in a particular year. Amelia wants to host the party exactly 50 days after Benjamin's birthday, but she also wants to make sure it doesn't fall during Lent, which starts 46 days before Easter Sunday.  Given that Easter Sunday in that year is on April 4th, on what day of the week will Amelia host the party?",
+            "difficulty": "hard",
+            "reasoning": "Here's how we can solve this step-by-step:\n\n**1. Calculate the party date:**\n* Benjamin's birthday is on March 6th. \n* Amelia wants to host the party 50 days later.\n* Adding 50 days to March 6th, we reach April 25th.\n\n**2. Determine the day of the week for April 25th:**\n* March has 31 days.\n* From March 6th to March 31st, there are 25 days (31-6 = 25).\n*  Remaining days to reach 50 days for the party: 50 - 25 = 25 days in April.\n*  So, we need to find the day of the week that falls 25 days after March 31st, which is the same as 25 days after April 1st.\n*  Since April has 30 days, 25 days after April 1st is April 26th.\n\n**3. Check if April 26th falls during Lent:**\n* Easter Sunday is on April 4th.\n* Lent starts 46 days before Easter.\n* Therefore, Lent starts 46 days before April 4th, which means it includes April 26th.\n\n**4. Adjust the party date to avoid Lent:**\n* Since Amelia wants to avoid Lent, she needs to host the party before April 26th.\n* She should aim for the Sunday before April 26th to avoid any conflict with Lent.\n\n**5. Determine the day of the week for the adjusted party date:**\n*  The Sunday before April 26th is April 25th.\n\n**Therefore, Amelia will host the party on a Sunday.**",
+            "options": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A global organization is hosting a virtual conference across multiple time zones. The opening ceremony is scheduled for 09:00 AM UTC on March 8th. The ceremony will be live-streamed and must be viewed at exactly 8:00 PM local time by attendees in a specific city.  \n\nThis city observes Daylight Saving Time, and will transition to DST on March 15th at 02:00 AM local time by advancing the clock forward by one hour.\n\nConsidering the information provided, what is the exact time difference, accounting for Daylight Saving Time, between UTC and the city's local time, that the organizers need to factor in to ensure the attendees can watch the opening ceremony live at their desired 8:00 PM local time?",
+            "difficulty": "hard",
+            "reasoning": "Here's how we can solve this problem:\n\n1. **Initial Time Difference:** The conference starts at 09:00 AM UTC and needs to be viewed at 8:00 PM in the specific city. This indicates an initial time difference of 11 hours (because 9:00 AM to 9:00 PM is 12 hours, minus 1 hour is 11 hours). \n\n2. **Daylight Saving Impact:** However, there's a catch. The city transitions to DST on March 15th, which is after March 8th. This means that on March 8th, the city is still observing standard time.\n\n3. **Standard Time Difference:** Since the city hasn't transitioned to DST yet, the actual time difference remains at 11 hours during the opening ceremony.\n\nTherefore, the organizers need to consider an 11-hour time difference to ensure the attendees can watch the opening ceremony live at 8:00 PM their time.",
+            "options": [
+                "10 hours",
+                "11 hours",
+                "12 hours",
+                "13 hours"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "In the year 2024, February has 29 days and the 14th of February falls on a Wednesday. Given that August in the same year has 31 days, what day of the week will the 10th of September, 2024, fall on?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Days from February 14th to the end of February:**\n   - February has 29 days.\n   - Days remaining after February 14th: 29 - 14 = 15 days\n\n**2. Days from March 1st to August 31st:**\n   - March: 31 days\n   - April: 30 days\n   - May: 31 days\n   - June: 30 days\n   - July: 31 days\n   - August: 31 days\n   - Total days: 31 + 30 + 31 + 30 + 31 + 31 = 184 days\n\n**3. Total Days from February 14th to August 31st:**\n   - 15 days (remaining in Feb) + 184 days (March to Aug) = 199 days\n\n**4. Days from August 31st to September 10th:**\n    - 10 days\n\n**5. Total Days from February 14th to September 10th:**\n    - 199 days + 10 days = 209 days\n\n**6. Finding the Day of the Week:**\n   - Divide the total number of days (209) by 7 (days in a week): 209 / 7 = 29 remainder 6\n   - The remainder of 6 means that September 10th falls 6 days after Wednesday.\n\n**7.  Counting Forward:**\n   - Counting 6 days from Wednesday: Thursday, Friday, Saturday, Sunday, Monday, Tuesday.\n\n**Therefore, September 10th, 2024, will fall on a Tuesday.**",
+            "options": [
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine you travel back in time to January 1st, 1801.  You then journey forward in time, visiting January 1st of each successive year. Your journey ends on January 1st, 2100. How many times will January 1st fall on a Friday during your journey?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to break down this complex problem:\n\n**1. Leap Years:**\n* A normal year has 365 days (52 weeks + 1 day).\n* A leap year has 366 days (52 weeks + 2 days).\n* This extra day in a leap year shifts the day of the week for subsequent years.\n* Years divisible by 4 are leap years, EXCEPT for century years (e.g., 1900, 2100) UNLESS they are divisible by 400 (e.g., 2000).\n\n**2. The Pattern:**\n* Each normal year, the day of the week for January 1st shifts forward by one day.\n* Each leap year, the day of the week for January 1st shifts forward by two days.\n* A cycle of days repeats every 7 days and a cycle of leap years mostly repeats every 4 years.\n\n**3. Calculation:**\n* **Years in the Journey:** 2100 - 1801 + 1 = 300 years\n* **Leap Years:**  There are 75 leap years in 300 years (300 / 4), BUT we need to account for the century years:\n    * 1900 is NOT a leap year (divisible by 100, not by 400)\n    * 2000 IS a leap year (divisible by 400)\n    * So, there are 74 leap years in the journey (75 -1 + 1).\n* **Normal Years:** 300 years - 74 leap years = 226 normal years.\n\n**4. Day Shifts:**\n* **Normal Year Shifts:** 226 years * 1 day shift/year = 226 day shifts\n* **Leap Year Shifts:** 74 years * 2 day shifts/year = 148 day shifts\n* **Total Shifts:** 226 + 148 = 374 day shifts\n\n**5. Finding the Fridays:**\n* **Days in a Week:** 7 days\n* **Number of Full Cycles:** 374 day shifts / 7 days/cycle = 53 full cycles (remainder 3)\n* **Important:** The remainder of 3 means that after all the full cycles, January 1st has shifted forward 3 days from its starting day in 1801.\n* **We don't know** what day of the week January 1st, 1801, fell on.  However, since each full cycle includes all days of the week, only the remainder matters. This remainder of 3 means there will be three extra Fridays over the course of the journey.\n\n**Therefore, January 1st will fall on a Friday a total of 53 + 3 = 56 times during the journey.** ",
+            "options": [
+                "53",
+                "56",
+                "74",
+                "148"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Knowing that the year 1900 was NOT a leap year, and the first day of March 1900 was a Thursday, what day of the week will the first day of March 2300 be?",
+            "difficulty": "hard",
+            "reasoning": "This question dives into the 400-year calendar cycle and the oddities of leap years. Here's how to break it down:\n\n**1. Ordinary Years vs. Leap Years:**\n   - An ordinary year has 365 days, which is exactly 52 weeks and 1 day.\n   - A leap year has 366 days (52 weeks and 2 days) due to the addition of February 29th.\n\n**2. Day Shift:**\n   - Each ordinary year shifts the day of the week forward by 1. (e.g., If January 1st is a Monday, the next year it will be a Tuesday.)\n   - Leap years shift the day of the week forward by 2.\n\n**3. The 400-Year Cycle:**\n   - A regular century year (e.g., 1700, 1800, 1900) is NOT a leap year unless it's divisible by 400. Thus, the year 2000 was a leap year, but 1900 was not.\n\n**Calculations:**\n\n* **Years between:**  2300 - 1900 = 400 years\n* **Leap Years:** In 400 years, there are 97 leap years (every 4 years except for the three century years not divisible by 400). \n* **Ordinary Years:**  400 total years - 97 leap years = 303 ordinary years\n* **Total Day Shift:** (303 ordinary years * 1 day shift) + (97 leap years * 2-day shift) = 497 days\n* **Days in a Week:** 497 days / 7 days/week = 71 weeks with no remainder\n\n**Conclusion:**\nSince there's no remainder after dividing the total day shift by 7, the day of the week will be the same. Because March 1st, 1900, was a Thursday, March 1st, 2300, will also be a **Thursday**.",
+            "options": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Friday"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Calendars",
+    "exam_id": 11,
+    "order": 1
+}

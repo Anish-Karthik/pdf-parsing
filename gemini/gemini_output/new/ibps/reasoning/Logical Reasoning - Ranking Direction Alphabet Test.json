@@ -1,0 +1,369 @@
+{
+    "questions": [
+        {
+            "question": "A whimsical wizard is rearranging the ingredients for his latest potion in reverse alphabetical order. Help him organize these magical components:  Feather of Phoenix,  Eye of Newt,  Dragon Scale,  Wing of Bat,  Unicorn Tear. What is the correct order from LAST to FIRST?",
+            "difficulty": "medium",
+            "reasoning": "To solve this, we need to arrange the ingredients starting with the letter that comes last in the alphabet and moving towards the beginning:\n\n1. **W**ing of Bat comes last as 'W' is furthest down the alphabet.\n2. **U**nicorn Tear comes before 'Wing of Bat' because 'U' is before 'W'.\n3.  **P**hoenix Feather comes before 'Unicorn Tear' ('P' comes before 'U').\n4. **E**ye of Newt comes before 'Phoenix Feather' ('E' comes before 'P').\n5. **D**ragon Scale comes before 'Eye of Newt' ('D' comes before 'E').\n\nTherefore, the final order is: Wing of Bat, Unicorn Tear, Phoenix Feather, Eye of Newt, Dragon Scale.",
+            "options": [
+                "Wing of Bat, Unicorn Tear, Phoenix Feather, Eye of Newt, Dragon Scale",
+                "Dragon Scale, Eye of Newt, Phoenix Feather, Unicorn Tear, Wing of Bat",
+                "Unicorn Tear, Wing of Bat, Dragon Scale, Eye of Newt, Phoenix Feather",
+                "Phoenix Feather, Dragon Scale, Eye of Newt, Unicorn Tear, Wing of Bat"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine the English alphabet laid out in a straight line. You are starting at the letter 'P'. First, you move six letters to the left. Then, you move eight letters to the right. Finally, you move three letters to the left again. What letter do you end up at?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Start at 'P'.**\n2. **Move six letters left:** Moving left on the alphabet means going towards 'A'. Six letters left from 'P' lands you on 'J'. \n3. **Move eight letters right:** Moving right on the alphabet means going towards 'Z'. Eight letters right from 'J' takes you to 'R'.\n4. **Move three letters left:**  Three letters left from 'R' brings you to 'O'.\n\nTherefore, the final answer is 'O'.",
+            "options": [
+                "O",
+                "N",
+                "S",
+                "Q"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: Imagine you have a bookshelf where you want to arrange books alphabetically by title, but with a twist.\n**task**: If books are traditionally placed on a shelf reading left to right, how would you arrange the following book titles alphabetically if you had to place them RIGHT TO LEFT instead?: 'Maze', 'Ocean', 'Galaxy', 'Forest'.\n**example**: Normally, 'Forest' would come first alphabetically. However, since we're placing books right to left, it would go LAST on the shelf.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Alphabetical Order and Ranking' subtopic because it requires arranging words based on their alphabetical order, but with a directional change that adds complexity. Here's how to solve it:\n\n1. **Standard Alphabetical Order:** First, determine the standard alphabetical order of the titles:\n   - Forest\n   - Galaxy\n   - Maze\n   - Ocean\n\n2. **Reverse the Order:** Since we're placing books right to left, reverse the entire order:\n   - Ocean\n   - Maze\n   - Galaxy\n   - Forest\n\nTherefore, to have the books in alphabetical order when read right to left, you would place them on the shelf in this sequence: Ocean, Maze, Galaxy, Forest.",
+            "options": [
+                "Ocean",
+                "Forest",
+                "Galaxy",
+                "Maze"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A family is gathered for a reunion. The elders, Grandfather (G) and Grandmother (GM) are seated facing east. Their son (S) and daughter (D) are sitting opposite them, facing west. S's wife (W) is to his right and D's husband (H) is to her left.  The grandchildren, a boy (B) and a girl (Gi), are playing, with B to the immediate south of his mother and Gi to the immediate north of her father.  \n\nWho is sitting to the immediate right of Grandmother?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the seating arrangement:\n\n1. **Visualize:** Imagine G and GM facing you (east). This means everyone opposite them faces west.\n\n2. **Place S and D:** S and D are opposite G and GM, facing west.\n\n3. **Place W and H:** W is to S's right (and since S faces west, W is to our left). Similarly, H is to D's left (and to our right).\n\n4. **Place B and Gi:** B is south of his mother (W) and Gi is north of her father (H).\n\n**Final Arrangement (from our perspective, facing East):**\n\nGi\nH - D\nGM - G\nS - W\nB\n\n**Therefore, the Daughter (D) is sitting to the immediate right of Grandmother (GM).**",
+            "options": [
+                "Grandfather",
+                "Son",
+                "Daughter",
+                "Husband"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: Five friends - Priya, Queen, Rohan, Sanya, and Tanmay - are sitting around a circular table facing inwards. Priya is sitting second to the right of Sanya. Queen is sitting to the immediate left of Priya. Rohan is sitting second to the left of Tanmay. Tanmay is not sitting next to Sanya.\n**instructions**: Determine the order in which the friends are sitting, starting from Priya and moving clockwise around the table.\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how we can solve this puzzle:\n\n**1. Visualize the Setup:** Imagine a circular table with five spots. Since directions are given from someone's perspective, it's crucial to maintain a consistent viewpoint.\n\n**2. Establish Key Relationships:**\n   - Priya is second to the right of Sanya.\n   - Queen is to Priya's immediate left.\n   - Rohan is second to the left of Tanmay.\n   - Tanmay is not next to Sanya.\n\n**3. Deduce Positions:**\n   - **Place Priya and Sanya:** Start by placing Sanya anywhere on the table. Then, count two spots clockwise to place Priya. \n   - **Place Queen:** Queen sits to Priya's immediate left, so place her accordingly.\n   - **Place Tanmay and Rohan:** We know Tanmay isn't next to Sanya. Since most spots are taken, try placing Tanmay two spots clockwise from Sanya. This lets us place Rohan second to Tanmay's left, satisfying all conditions.\n\n**4. Final Arrangement (Clockwise from Priya):** Priya - Queen - Rohan - Tanmay - Sanya",
+            "options": [
+                "Priya - Queen - Rohan - Tanmay - Sanya",
+                "Priya - Tanmay - Queen - Sanya - Rohan",
+                "Priya - Queen - Tanmay - Rohan - Sanya",
+                "Priya - Rohan - Queen - Sanya - Tanmay"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**instructions**: Use the following codes to navigate the alphabet grid:\n\n*  > = Move 1 position to the right\n*  < = Move 1 position to the left\n*  + = Move 2 positions down\n*  ^ = Move 2 positions up\n\n**Alphabet Grid:**\n\n```\nA B C D E F G H I J K L M\nN O P Q R S T U V W X Y Z\n```\n\n**Starting Point:**  Letter \"F\"\n\n**Question:** What is the final position on the alphabet grid after following these instructions: >>>>+<++^<<\n**difficulty**: medium\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the code and apply each instruction step-by-step:\n\n1. **>>>>**:  Starting at 'F', move four positions to the right (F -> G -> H -> I -> J).\n2. **+**: Move two positions down from 'J' (J -> V).\n3. **<**: Move one position to the left from 'V' (V -> U).\n4. **+**: Move two positions down from 'U' (U -> Y).\n5. **+**: Move two positions down from 'Y'. Since we are at the bottom row, we wrap around to the top, landing on 'A'. \n6. **^**: Move two positions up from 'A'.  Since we are at the top row, we wrap around to the bottom, landing on 'Y'.\n7. **<<**: Move two positions to the left from 'Y' (Y -> X -> W).\n\nTherefore, the final position on the grid is **W**.",
+            "options": [
+                "U",
+                "W",
+                "Y",
+                "X"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "| Team | Matches Played | Won | Lost | Tied | Points |\n|---|---|---|---|---|---| \n| A | 10 | 6 | 3 | 1 | 19 |\n| B | 10 | 5 | 4 | 1 | 16 |\n| C | 10 | 4 | 5 | 1 | 13 |\n| D | 10 | 3 | 6 | 1 | 10 |\n| E | 10 | 2 | 7 | 1 | 7 |\n\nBased on the table above, which team is ranked third in terms of points?",
+            "difficulty": "medium",
+            "reasoning": "The question requires identifying and ranking teams based on points from a table.\n\n1. **Identify the relevant data:**  We need to focus on the 'Points' column to determine the rankings.\n2. **Sort by Points:** Ordering the teams from highest to lowest points:\n    - A - 19 Points\n    - B - 16 Points\n    - C - 13 Points\n    - D - 10 Points\n    - E - 7 Points\n3. **Identify the third-ranked team:**  From the sorted list, team **C** is in third place with 13 points.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: Six students (P, Q, R, S, T, and U) are sitting in a row facing the teacher's desk at the front of the classroom.\n**clues**: \n  - R is two seats to the left of S.\n  - U is two seats to the right of Q.\n  - P is immediately to the right of T.\n  - Q is somewhere to the left of R.\n**question**: If T is sitting in the leftmost seat, who is sitting in the rightmost seat?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the puzzle step-by-step:\n\n**1. Start with the most definitive clues:**\n\n* **\"T is sitting in the leftmost seat\"**:  This gives us our starting point:\n   T _ _ _ _ _\n\n* **\"P is immediately to the right of T\"**: We can place P:\n   T P _ _ _ _\n\n**2.  Incorporate other clues:**\n\n* **\"R is two seats to the left of S\"**:  Since we don't know where S is yet, let's hold off on this clue.\n\n* **\"U is two seats to the right of Q\"**:  Similarly, we'll hold off on this one until we know Q's position. \n\n* **\"Q is somewhere to the left of R\"**: This is a crucial clue! Now we have a sequence: Q ... R.  Let's combine this with what we already know:\n\n   T P Q _ R _\n\n**3. Complete the arrangement:**\n\n* We can now use the clue  **\"R is two seats to the left of S\"** to place S:\n    T P Q _ R S\n\n* Finally, **\"U is two seats to the right of Q\"** lets us place U:\n    T P Q U R S\n\n**Therefore, S is sitting in the rightmost seat.**",
+            "options": [
+                "P",
+                "Q",
+                "R",
+                "S"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Six contestants - Zara, William, Victor, Uma, Xavier, and Yolanda - are participating in a spelling bee.  They are eliminated one by one.  The order of elimination is determined in reverse alphabetical order based on their first names. Who is the fourth person to be eliminated from the spelling bee?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n1. **Reverse Alphabetical Order:** We need to arrange the contestants' names starting with the letter that comes last in the alphabet and moving towards the beginning.\n\n2. **Ordering:**\n   - Yolanda (Y)\n   - Xavier (X)\n   - William (W)\n   - Victor (V)\n   - Uma (U)\n   - Zara (Z)\n\n3. **Fourth Elimination:**  The fourth person to be eliminated would be the fourth name on our list.\n\n4. **Answer:** Victor is the fourth person to be eliminated from the spelling bee. ",
+            "options": [
+                "Zara",
+                "Victor",
+                "William",
+                "Xavier"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "The following sequence follows a specific rule. Identify the pattern and rank the elements from the lowest to highest based on the established order: \n K7, E11, H4, B14, D8 ",
+            "difficulty": "medium",
+            "reasoning": "The sequence alternates between letters and numbers.  Here's how the pattern works and how to rank the elements:\n\n**Pattern:**\n* **Letters:** The letters follow a pattern related to their position in the alphabet. They alternate moving forward three positions (B to E to H to K) and then backward four positions (K to H to E to B).\n* **Numbers:** The numbers alternate between adding 3 (4 + 3 = 7, 7 + 3 = 11) and subtracting 7 (11 - 7 = 4, 14 - 7 = 7).\n\n**Ranking (lowest to highest):**\n1. **B14:**  Comes first based on the letter sequence (B, E, H, K) and has the highest number within that sequence. \n2. **E11:** Follows B in the letter sequence and has the next highest number.\n3. **H4:** Follows E in the letter sequence.\n4. **D8:**  Comes before K in the letter sequence and has a lower number.\n5. **K7:**  Comes last in the letter sequence.",
+            "options": [
+                "B14, E11, H4, D8, K7",
+                "K7, D8, H4, E11, B14",
+                "B14, E11, H4, K7, D8",
+                "K7, H4, E11, B14, D8"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Question Description**: Imagine you have a scrambled list of five-letter words.  These words need to be unscrambled and put in reverse alphabetical order.\n**Instructions**: Your task is to rearrange the letters within each word so that it forms a valid five-letter English word.  Then, order the resulting words reverse alphabetically, beginning with the letter closest to 'Z' and moving towards 'A'.\n**Example**: If given the scrambled words: 'ORCDP', 'YALLID', 'TSEAT', you would unscramble them to: 'CROPD', 'DAILY', 'TEASE'.  Then, arrange them in reverse alphabetical order: 'TEASE', 'DAILY', 'CROPD'.\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests both vocabulary and alphabetical reasoning skills. Here's a breakdown:\n\n1. **Unscrambling:**  The test taker needs to deduce the correct five-letter words from the scrambled letters ('ORCDP' becomes 'CROPD', etc.). This requires vocabulary knowledge.\n\n2. **Reverse Alphabetical Order:**  The twist is to arrange the unscrambled words in reverse alphabetical order, starting with the letter closest to 'Z'. This requires careful attention to the alphabet and a different approach to typical alphabetical ordering.\n\n**Example Walkthrough:**\n\n* **Scrambled Words:** 'ORCDP', 'YALLID', 'TSEAT'\n* **Unscrambled Words:** 'CROPD', 'DAILY', 'TEASE'\n* **Reverse Alphabetical Order:**  'TEASE' (T comes after D and C), 'DAILY', 'CROPD'",
+            "options": [
+                "Vocabulary",
+                "Alphabetical",
+                "Logical",
+                "Mathematical"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Seven friends, P, Q, R, S, T, U, and V, are sitting in a straight line facing north. \n\n1. S is sitting fourth to the right of T. \n2. U is not sitting at any of the extreme ends of the line. \n3. Q is sitting between P and U. \n4. There are exactly two people sitting between R and V. \n5. R is not an immediate neighbor of P. \n\nWho is sitting at the extreme right end of the line?",
+            "difficulty": "medium",
+            "reasoning": "Let's analyze the information and deduce the seating arrangement step-by-step: \n\n**Step 1:** From statements 1 and 2, we can infer two possible scenarios:\n\n**Scenario 1:** _T _ _ _ S _ _\n\n**Scenario 2:** _ _ _ T _ _ S\n\n**Step 2:** Statement 3 states Q is between P and U. Considering the possibilities from Step 1, we can further refine the scenarios:\n\n**Scenario 1a:** _ T  Q U P S _ _\n\n**Scenario 1b:** _ T P Q U S _ _ \n\n**Scenario 2a:** _ _ Q U P T _ S\n\n**Scenario 2b:** _ _ P Q U T _ S \n\n**Step 3:** Statement 4 mentions two people between R and V. This eliminates Scenarios 1a and 2b, leaving us with:\n\n**Scenario 1b:** _ T P Q U S R V\n\n**Scenario 2a:** V R _ Q U P T _ S\n\n**Step 4:** Statement 5 clarifies that R is not an immediate neighbor of P. This eliminates Scenario 2a, confirming Scenario 1b as the correct arrangement:\n\n**Final Arrangement:**  _ T P Q U S R V\n\nTherefore, **V** is sitting at the extreme right end of the line.",
+            "options": [
+                "T",
+                "P",
+                "V",
+                "U"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Instructions**: Imagine you are taking a timed test. You need to prioritize tasks based on their estimated completion time to manage your time effectively. Arrange the following tasks in the order you would complete them, starting with the task you would tackle first.\n**Scenario**: You have one hour remaining in a test. You estimate the following tasks will take the following amounts of time:\n**List of Elements**: \n  **A**: Review 20 multiple-choice questions - 15 minutes\n  **B**: Complete 1 long-form essay question - 30 minutes\n  **C**: Solve 5 mathematical word problems - 25 minutes\n  **D**: Proofread and edit 1 short-answer response - 5 minutes\n**Constraints**: You want to complete as many questions as possible within the time limit. Consider the time required for each task and the potential points earned.\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses a student's ability to apply logical reasoning to a time management scenario. Here's a breakdown of the solution: \n\n**1. Prioritize Quick Wins:**  The task with the shortest completion time is 'D: Proofread and edit 1 short-answer response \u2013 5 minutes.' Completing this first ensures quick points and frees up time for other tasks.\n\n**2. Balance Time and Points:** Next, consider tasks that offer a good balance between points and time. 'A: Review 20 multiple-choice questions \u2013 15 minutes' is a good choice, as it allows you to potentially answer many questions relatively quickly.\n\n**3. Tackle Longer Tasks:** With the shorter tasks out of the way, you can dedicate focused time to the longer ones. 'C: Solve 5 mathematical word problems \u2013 25 minutes' is a logical next step, leaving the longest task for last.\n\n**4. Final Push:** Lastly, 'B: Complete 1 long-form essay question \u2013 30 minutes' should be tackled. Although it requires the most time, completing it last ensures you maximize the remaining time.\n\n**Therefore, the logical order to complete the tasks is D, A, C, B.**",
+            "options": [
+                "D, B, A, C",
+                "D, A, C, B",
+                "A, D, C, B",
+                "C, B, A, D"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Five companies - A, B, C, D, and E - are ranked in a table based on their annual profits, with the highest profit at the top and the lowest at the bottom. \n\n| Rank | Company | Profit (in millions) |\n|---|---|---| \n| 1 |  | 50  |\n| 2 | B |  |\n| 3 |  | 35 |\n| 4 | D |  |\n| 5 |  | 15 |\n\nYou are given the following information:\n1. Company C's profit is exactly halfway between the profits of Company B and Company E.\n2. Company D's profit is 10 million less than Company B's profit.\n\nWhat is the rank of Company C in terms of annual profit?",
+            "difficulty": "medium",
+            "reasoning": "Let's analyze the given information step-by-step:\n\n**Step 1: Find Company C's profit.**\n* We know Company E's profit is 15 million (lowest rank).\n* We also know Company C's profit is exactly halfway between Company B and E. This means Company C's profit is the average of Company B's profit and 15 million. \n\n**Step 2: Set up an equation to represent the relationship between Company B and D's profits.**\n* Let 'x' represent Company B's profit.\n* Company D's profit is 10 million less than Company B's, so Company D's profit is 'x - 10'.\n\n**Step 3:  Use the table and clues to determine possible values.**\n* We know the highest profit is 50 million. \n* Company B cannot have a profit of 50 million (because then D would have 40 million, and C would be in a higher rank than possible).\n* If Company B had a profit of 40 million, Company D would have 30 million, and Company C would have 22.5 million ((40 + 15) / 2). This arrangement fits within the table's structure.\n\n**Step 4: Determine Company C's rank.**\n* With a profit of 22.5 million, Company C would be ranked 4th.\n\nTherefore, the rank of Company C in terms of annual profit is 4.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Five friends - A, B, C, D, and E - are participating in a treasure hunt. They are given a map with the following instructions, all starting from a central point:\n\n* A walks 5 steps north, then turns right and walks 3 steps.\n* B walks 3 steps east, then turns left and walks 5 steps.\n* C walks 2 steps south, then turns west and walks 6 steps.\n* D walks 4 steps west, then turns north and walks 7 steps.\n* E walks 6 steps east, then turns south and walks 2 steps.\n\nIf all friends turn to face north, who is standing furthest to the west?",
+            "difficulty": "medium",
+            "reasoning": "Here's how we can solve this puzzle step-by-step:\n\n**1. Visualize the Directions:** Imagine a compass with North at the top, South at the bottom, East to the right, and West to the left.\n\n**2. Track Each Person's Movement:**\n   * **A:** 5 steps North (+5N), then 3 steps East (+3E). Final position: 5N, 3E\n   * **B:** 3 steps East (+3E), then 5 steps North (+5N). Final position: 5N, 3E \n   * **C:** 2 steps South (-2S), then 6 steps West (-6W). Final position: -2S, -6W \n   * **D:** 4 steps West (-4W), then 7 steps North (+7N). Final position: 7N, -4W\n   * **E:** 6 steps East (+6E), then 2 steps South (-2S). Final position: -2S, 6E\n\n**3. Determine West-Most Position:**  We need to focus on the West-East axis (represented by positive East values and negative West values).\n    * C is furthest West at -6W.\n    * D is also West at -4W.\n    * A, B, and E are all in the East.\n\n**4. Final Answer:**  C is standing furthest to the west.\n\n**Therefore, the correct answer is C.**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A secret message is being transmitted using a code where letters and numbers are intertwined in a pattern.\n**sequence**: K2, M5, O8, Q11, ?\n**question**: What is the next element in this sequence?\n",
+            "difficulty": "medium",
+            "reasoning": "This sequence has two interwoven patterns: \n\n**1. Letter Pattern:** The letters are progressing in alphabetical order, skipping one letter each time (K, _M_, _O_, _Q_...).\n\n**2. Number Pattern:** The numbers are increasing by 3 with each element (2, 5, 8, 11...). \n\nTherefore, the next letter would be 'S' (skipping 'R') and the next number would be 14 (11 + 3). \n\nThe next element in the sequence is **S14**.",
+            "options": [
+                "S14",
+                "R13",
+                "T17",
+                "S11"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Arrange the following groups of letters in ascending alphabetical order, but change direction from ascending to descending once you reach the letter 'M':\n\n* FGH\n* LMN\n* ABC\n* RST\n* OPQ",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the question step-by-step:\n\n1. **Identify the Turning Point:** The question instructs us to switch directions from ascending (A-Z) to descending (Z-A) at the letter 'M'.\n\n2. **Arrange Ascending to 'M':**  Following alphabetical order, we arrange the groups starting with letters before 'M':\n    * ABC\n    * FGH\n    * LMN \n\n3. **Arrange Descending After 'M':** Now, we arrange the remaining groups in descending order because we've passed 'M':\n    * RST\n    * OPQ\n\n4. **Combine the Sequences:** Putting both parts together, the final arrangement is:\n    * ABC\n    * FGH\n    * LMN\n    * RST\n    * OPQ",
+            "options": [
+                "OPQ",
+                "RST",
+                "LMN",
+                "FGH"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Six letters (F, G, H, I, J, K) need to be arranged in a sequence following these conditions:\n\n* The letter 'I' must occupy the fourth position.\n* 'G' must come before 'F' in the sequence.\n* There must be exactly two letters between 'K' and 'J', with 'J' appearing earlier than 'K'. \n* 'H' cannot be the last letter. \n\nWhich of the following sequences fulfills all the given conditions?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n1. **'I' is fixed:** We know 'I' is in the 4th position: _ _ _ I _ _\n\n2. **Placing 'J' and 'K':**  'J' comes before 'K' with two letters between them. Considering the remaining slots and the restriction on 'H' not being last, we get this:  _ J _ I K _ \n\n3. **Positioning 'G' and 'F':** 'G' comes before 'F'. The only remaining slots force 'G' to be first and 'F' to be last: G J _ I K F\n\n4. **Final Placement:** The only letter left, 'H', fills the remaining slot: G J H I K F\n\nTherefore, the correct order is G J H I K F.",
+            "options": [
+                "G J H I K F",
+                "G J K I H F",
+                "F G H I K J",
+                "H J G I K F"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: A squirrel is hiding nuts for winter. It starts at point \"F\" on the alphabet grid.  The squirrel first scurries 4 steps South, then 2 steps West, then 3 steps North, and finally 1 step East.\n**instructions**: Rank the following points in the order the squirrel would have passed them during its journey, starting with the point closest to its starting position:\n**points**: \n  - E\n  - G\n  - B\n  - C\n**grid**: A B C D E F G H I J K L M\nN O P Q R S T U V W X Y Z\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n1. **Starting Point:** The squirrel begins at point \"F\".\n\n2. **Move 1 (4 steps South):** Moving 4 steps down from \"F\" takes the squirrel to \"U\".\n\n3. **Move 2 (2 steps West):** From \"U\", moving 2 steps to the left (West) takes the squirrel to \"S\".\n\n4. **Move 3 (3 steps North):**  Moving 3 steps up from \"S\" takes the squirrel to \"P\".\n\n5. **Move 4 (1 step East):** Finally, moving 1 step to the right (East) from \"P\" brings the squirrel to \"Q\".\n\n6. **Points Passed:** The squirrel passed near these points in this order: G, E, B, C. \n\n7. **Final Answer:** Therefore, the correct ranking of the points is G, E, B, C.",
+            "options": [
+                "G, E, B, C",
+                "B, E, G, C",
+                "C, B, E, G",
+                "G, C, E, B"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Five friends - Alex, Ben, Charlie, David, and Ethan - are standing in a line, but not necessarily in that order.  \n\nHere are some clues about their positions:\n\n* Charlie is standing somewhere before David in the line.\n* Neither Charlie nor David are at the very front or back of the line.\n* Alex is standing somewhere after Ethan.\n* Ethan is not directly next to Charlie. \n\nIf you were to write out the order of the friends from front to back, who would be standing in the middle position?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the clues to determine the middle position:\n\n**1. Combining Clues:**\n   * We know Charlie is ahead of David, but neither is at an extreme end. This means there must be at least one person before Charlie and one person after David.\n   * Alex comes after Ethan, but they aren't next to Charlie. \n\n**2. Possible Scenarios:** Let's represent the order possibilities with the friends' initials:\n   *  _ C _ D _  (Charlie before David, spaces indicate possible positions for others)\n   *  _ _ C D _ (Charlie before David, more spaces for others)\n\n**3.  Placing Alex and Ethan:** Since Alex is after Ethan, and Ethan can't be next to Charlie, the second scenario becomes more likely. Let's try fitting them in:\n   * E _ C D _ (Ethan before Alex, not next to Charlie)\n   * _ E C D _ (Ethan before Alex, not next to Charlie) \n\n**4. Finding the Middle:** In both possible scenarios, the middle (3rd) position is occupied by **Charlie**. \n\n**5.  Final Check:** We can fill in the remaining spots, but it's not necessary to answer the question. The key was determining Charlie's fixed middle position based on the given constraints.",
+            "options": [
+                "Alex",
+                "Ben",
+                "David",
+                "Ethan"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: Eight colleagues - P, Q, R, S, T, U, V, and W - are seated around a circular table for a meeting. They are evenly spaced and not necessarily facing the center.\n**directional_cues**: \n  - R sits third to the right of U.\n  - Only two people sit between Q and W.\n  - T is an immediate neighbor of neither U nor W.\n  - S sits second to the left of P.\n  - V does not sit next to S.\n**question**: If P is considered the reference point and faces North, who among the following sits to the immediate right of Q?\n",
+            "difficulty": "medium",
+            "reasoning": "Let's solve this step-by-step:\n\n**1. Visualize the Setup:** Imagine a circular table with eight spots. Since P is our reference point facing North, we can use directions (North, East, South, West) for easier visualization.\n\n**2. Integrate Clues:**\n   * **Clue 1: R sits third to the right of U.**  Let's place U tentatively. Then count three spots to the right to place R. \n   * **Clue 2: Only two people sit between Q and W.**  There are two possibilities for placing Q and W, keeping two spots between them. Let's mark them as possibility 1 and possibility 2.\n   * **Clue 3: T is an immediate neighbor of neither U nor W.** This clue helps us eliminate certain positions for T in both possibilities.\n   * **Clue 4: S sits second to the left of P.** We can directly place S using P's position. \n   * **Clue 5: V does not sit next to S.** This eliminates a few more spots for V, narrowing down the possibilities.\n\n**3. Combine Possibilities:** By combining the information from all clues and analyzing both possibilities, we can finalize the seating arrangement. One of the possibilities will be ruled out due to contradictions.\n\n**4. Determine Q's Right:** Once the arrangement is clear, locate Q and determine who sits to their immediate right.\n\n**Final Answer:** Due to the nature of circular arrangements and the multiple possibilities that arise during the deduction process, the final answer can only be determined by carefully working through each clue and eliminating contradictions.  The provided information is sufficient to arrive at a single, unambiguous arrangement, and from there, the person to Q's right can be identified.",
+            "options": [
+                "R",
+                "T",
+                "V",
+                "W"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: You are preparing for a standardized test with multiple sections on different subjects.  You want to allocate your time effectively to maximize your overall score.\n**Ranking Criteria**: You have 60 minutes remaining and these sections left:\n\n* **Math:**  20 questions\n* **Reading:** 15 questions, but each passage takes longer to read\n* **Science:** 25 short-answer questions \n\nRank these sections from the one you should focus on FIRST to the one you should focus on LAST based on these time management priorities:\n\n1. **Highest Quantity:** The section with the most questions should be addressed earliest.\n2. **Time Per Question:** Consider the estimated time needed per question within each section.\n3. **Strategic Value:**  All sections are equally weighted in scoring.\n**Example**: If the Reading section only had 5 questions left, it might be prioritized over Math despite having fewer questions because the time per question is much higher.\n**Question**: Based on the information given, in what order should you address the remaining sections to optimize your time and potential score?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the ranking to determine the optimal section order:\n\n1. **Quantity Analysis:**\n   * Science has the most questions (25), followed by Math (20), then Reading (15).\n\n2. **Time Per Question Consideration:**\n   * Reading is explicitly stated to have a longer time per question due to passage reading.\n   * Math questions are generally assumed to take longer than short-answer Science questions. \n\n3. **Strategic Value:**\n   * Since all sections have equal scoring weight, we prioritize purely on quantity and time.\n\n**Logical Ranking:**\n\n1. **Science:**  Highest quantity of questions and likely the shortest time per question.\n2. **Math:**  Second highest quantity, and while time per question is longer than Science, it's likely less than Reading.\n3. **Reading:**  Fewest questions and the longest time investment per question makes this the lowest priority. \n\nTherefore, the optimal order to tackle the sections is **Science, then Math, then Reading.**",
+            "options": [
+                "Science, Reading, Math",
+                "Reading, Science, Math",
+                "Science, Math, Reading",
+                "Math, Science, Reading"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Six friends - Fiona, George, Harry, Iris, Jake, and Katie - are seated around a circular table facing inwards.  \n\nFiona is sitting two seats to the right of Harry. \nGeorge is sitting opposite Iris. \nJake is not sitting next to George. \nKatie is to the immediate right of Jake. \n\nIf Harry is facing North, who is sitting to George's immediate left?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the puzzle step-by-step:\n\n1. **Visualize:** Imagine a circular table with six seats. Since Harry is facing North, we can assign the other directions accordingly.\n\n2. **Fiona and Harry:** Fiona is two seats to the right of Harry. If Harry is facing North, two seats to his right would be South-East. So, Fiona is at the South-East position.\n\n3. **George and Iris:** George is opposite Iris. Since we don't have their exact positions yet, keep this information in mind.\n\n4. **Jake and George:** Jake is not sitting next to George. This gives us a crucial hint to place them later.\n\n5. **Katie and Jake:** Katie is to the immediate right of Jake. This means wherever Jake is, Katie is immediately to his right.\n\n6. **Placing the Pieces:**\n    * We know Harry (North) and Fiona (South-East).\n    * Since George and Iris are opposite, the only remaining positions for them are South-West and North-East. \n    * Now, Jake cannot be next to George. Considering the remaining spots, Jake can only be at West, with Katie on his right at North-West.\n    * This leaves Iris at South-West and George at North-East.\n\n7. **Final Solution:** With everyone placed, we can determine that Fiona is sitting to George's immediate left.\n\n**Final arrangement clockwise from North:** Harry, Katie, Jake, Iris, Fiona, George.",
+            "options": [
+                "Fiona",
+                "Harry",
+                "Iris",
+                "Katie"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The esteemed Professor Abernathy, renowned for his unconventional teaching methods, has devised a unique challenge for his linguistics students. He presents them with a list of archaic English words, each representing a distinct shade of the color blue: **Azure, Cerulean, Indigo, and Cyan**.  He then tasks his students with identifying the order in which these words would appear if listed **in reverse alphabetical order**, starting with the letter that comes last in the alphabet and moving towards the beginning.  Which sequence below correctly reflects the Professor's challenge?",
+            "difficulty": "hard",
+            "reasoning": "Here's how we can solve Professor Abernathy's challenge:\n\n1. **Identify the Key Words:**  The words we need to arrange are Azure, Cerulean, Indigo, and Cyan.\n\n2. **Reverse Alphabetical Order:** Remember, we are not arranging these words in the typical A to Z order, but rather from Z to A.\n\n3. **Compare Starting Letters:** \n    * **I**ndigo comes first as 'I' is furthest down the alphabet. \n    * Next is **C**erulean and **C**yan. Since both start with 'C', we move to the second letter.\n    * **C**erulean comes before **C**yan because 'e' comes before 'y' in the alphabet. \n    * **A**zure, starting with 'A', comes last.\n\n4. **The Solution:**  The correct reverse alphabetical order is Indigo, Cerulean, Cyan, Azure.",
+            "options": [
+                "Indigo, Cerulean, Cyan, Azure",
+                "Cyan, Cerulean, Indigo, Azure",
+                "Azure, Cyan, Cerulean, Indigo",
+                "Indigo, Cyan, Cerulean, Azure"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Five students, Emily, Felix, Grace, Henry, and Ivy, are practicing their problem-solving skills for an upcoming exam. They each aim to solve a set of logic puzzles within a specific timeframe, aiming for both speed and accuracy.  They've recorded their estimated times to complete the set: \n\n* Emily thinks she can finish in a time that is alphabetically later than Grace's estimated time. \n* Felix believes he can finish in a time alphabetically earlier than both Henry and Ivy, but his estimated time is alphabetically later than Grace's.\n*  Henry's estimated completion time is alphabetically earlier than Ivy's.\n\nIf they all work at their predicted paces and prioritize accuracy, who is most likely to finish LAST based on the alphabetical order of their estimated completion times?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the clues to determine the order of completion times based on alphabetical order:\n\n1. **Emily (E) finishes later than Grace (G):** This means G comes before E alphabetically (G...E).\n\n2. **Felix (F) finishes earlier than Henry (H) and Ivy (I), but later than Grace (G):** This places F between G and H, and I comes after H (G...F...H...I). \n\n3. **Henry (H) finishes earlier than Ivy (I):** This confirms the H...I order. \n\nCombining the deductions, the full alphabetical order of estimated completion times is: Grace, Felix, Henry, Ivy, Emily.  \n\nSince they are prioritizing accuracy, the alphabetical order of their times likely reflects their finishing order. Therefore, **Emily** is most likely to finish LAST. ",
+            "options": [
+                "Emily",
+                "Felix",
+                "Grace",
+                "Henry"
+            ],
+            "correct": "Emily",
+            "correct_option": "A"
+        },
+        {
+            "question": "David's house faces West. He walks 10 meters North from his house and then turns right. After walking 5 meters, he turns left and walks for another 8 meters. He then turns right and walks 10 meters more. Finally, he turns left and walks 15 meters to reach his uncle, George's, house. George's son, Alan, is standing 2 meters West of George.  If George walks 7 meters East from his house and then turns right, how far and in which direction will he be from David?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down David's movements step-by-step:\n\n1. **Starts facing West, walks 10 meters North:** He is now 10 meters North of his starting point.\n2. **Turns right, walks 5 meters East:** He is now 10 meters North and 5 meters East of his starting point.\n3. **Turns left, walks 8 meters North:** He is now 18 meters North and 5 meters East of his starting point.\n4. **Turns right, walks 10 meters East:** He is now 18 meters North and 15 meters East of his starting point.\n5. **Turns left, walks 15 meters North:** He is now 33 meters North and 15 meters East of his starting point, which is George's house.\n\nNow, Alan is 2 meters West of George, so Alan is at 33 meters North and 13 meters East of David's house.\n\nNext, George walks 7 meters East from his house (33 meters North and 15 meters East) and then turns right (South). This puts him at 33 meters North and 22 meters East of David's house.\n\nFinally, to determine the distance and direction from David to George, we use the Pythagorean theorem to calculate the distance:\n\n* Distance = \u221a((22 - 0)^2 + (33 - 0)^2 ) = \u221a(484 + 1089) = \u221a1573 = **approximately 39.66 meters**.\n\nSince George is located North and East of David, the direction is Northeast.\n\n**Therefore, George will be approximately 39.66 meters Northeast of David.**",
+            "options": [
+                "39.66 meters Northeast",
+                "40 meters Southeast",
+                "39.66 meters Northwest",
+                "40 meters Southwest"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Six friends - Fiona, George, Hannah, Ian, Jessica, and Kevin - are seated around a circular table facing inwards. They are ranked 1 through 6 based on their ages, with 1 being the youngest and 6 being the oldest.  Use the following clues to determine the seating arrangement and answer the question: \n\n* Fiona, the third oldest, sits to the immediate right of the oldest person. \n* Jessica is neither the oldest nor the youngest. \n* The second youngest person sits two spaces to the left of Fiona. \n* Ian sits opposite the second oldest person. \n* Kevin is younger than Hannah. \n\n**Question:** If we list the people starting from Fiona's position and moving clockwise, what is the order of their age rankings?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the clues and deduce the seating arrangement step-by-step:\n\n**1. Initial Deductions:**\n   * We know Fiona is the 3rd oldest and the oldest person sits to her left.\n   * Jessica is neither the oldest nor the youngest, eliminating two possibilities for her age ranking.\n\n**2. Placing Kevin and Hannah:**\n   * We know Kevin is younger than Hannah. Since there are only two age ranking slots left to fill (1st and 2nd youngest), Kevin must be the youngest and Hannah the second youngest.\n   * The clue stating the second youngest person sits two spaces to Fiona's left allows us to place Hannah.\n\n**3. Placing Ian and the Second Oldest:**\n   * We know Ian sits opposite the second oldest person. Since Hannah is the second youngest, and Fiona is older than her, Fiona must be the second oldest, and Ian sits opposite her. \n\n**4. Placing the Oldest and Jessica:** \n   * The oldest person sits to Fiona's left, leaving only one spot for them. \n   * Jessica must occupy the remaining seat. We can deduce her age ranking since all others are determined. \n\n**5. Final Arrangement (Clockwise from Fiona):**\n   * Fiona (3rd)\n   * Oldest\n   * Jessica (4th)\n   * Kevin (1st) \n   * Ian (5th)\n   * Hannah (2nd) \n\n**Answer:** The order of their age rankings, starting from Fiona and moving clockwise, is 3-6-4-1-5-2. ",
+            "options": [
+                "3-6-4-1-5-2",
+                "6-3-4-1-5-2",
+                "3-4-6-1-5-2",
+                "3-6-4-5-1-2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Consider the following alpha-numeric sequence:\n\nK7L5M3N1O9P7\n\nRank the letters in the sequence based on the following rule:\n\n1.  Assign a prime number value to each letter based on its reverse alphabetical position (A=2, B=3, C=5, D=7, E=11, and so on). \n2.  Sum the prime value of the letter with the number immediately following it in the sequence.\n3.  Rank the letters from lowest combined value to highest combined value. \n\nFor instance, in the sequence 'A2B4', A=41 (reverse position 23, prime value 23 + 2), and B=37 (reverse position 24, prime value 7 + 4).\n\nChoose the answer that correctly ranks the letters in the sequence K7L5M3N1O9P7 from lowest to highest combined value.",
+            "difficulty": "hard",
+            "reasoning": "Here's the step-by-step solution:\n\n1. **Calculate Prime Values:** Determine each letter's prime value based on its reverse alphabetical position:\n\n* K = 11th position, 11th prime = 31\n* L = 12th position, 12th prime = 37\n* M = 13th position, 13th prime = 41\n* N = 14th position, 14th prime = 43\n* O = 15th position, 15th prime = 47 \n* P = 16th position, 16th prime = 53\n\n2. **Calculate Combined Values:** Add the prime value of each letter to its corresponding number in the sequence:\n\n* K: 31 + 7 = 38\n* L: 37 + 5 = 42\n* M: 41 + 3 = 44\n* N: 43 + 1 = 44\n* O: 47 + 9 = 56\n* P: 53 + 7 = 60\n\n3. **Rank from Lowest to Highest:** Order the letters based on their combined values:\n\n* K (38), L (42), N (44), M (44), O (56), P (60)\n\nTherefore, the correct ranking of the letters from lowest to highest combined value is KLNMOP.",
+            "options": [
+                "KLNOPM",
+                "KLMNOP",
+                "KLNMOP",
+                "KNMLPO"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: Six students - Priya, Queen, Rohan, Sanya, Tarun, and Urvi - are sitting around a hexagonal table, each facing one side. They are playing a game with the following rules:\n\n* **Round 1:** Everyone shifts two places to their right.\n* **Round 2:** Everyone shifts one place to their left.\n* **Round 3:**  Everyone shifts three places to their right.\n\nInitially, Priya is facing North. After each round, the direction they face changes based on their movement.\n**instructions**: Determine the net change in position (in terms of the number of sides of the hexagon) and the final facing direction of each student after 3 rounds.  Use '+' for clockwise and '-' for anti-clockwise shifts. For directions, use N for North, E for East, W for West, and S for South. \n\nFor example, if Rohan ends up facing West and is one position clockwise from his starting point, write 'Rohan: +1, W'. \n**example**: Let's say Urvi is initially facing East. After Round 1, she moves two places right and faces South-West.  In Round 2, she moves one place left, now facing South. Finally, after three places right in Round 3, she ends up facing North-West, which is two positions clockwise from her starting point. So the answer would be 'Urvi: +2, NW'.\n",
+            "difficulty": "hard",
+            "reasoning": "Let's analyze the movement and direction change for each student step-by-step:\n\n**1. Priya:**\n   * Initial Direction: N\n   * Round 1 (+2): S (Shifts two places right from North)\n   * Round 2 (-1): SW (Shifts one place left from South)\n   * Round 3 (+3): NW (Shifts three places right from South-West)\n   * Net Change: +2 (Two positions clockwise from the starting point)\n   * Final Direction: NW\n\n**2. Queen:**\n   * Initial Direction: Assuming Queen is one position clockwise from Priya, her initial direction would be NE.\n   * Round 1 (+2): W (Shifts two places right from North-East)\n   * Round 2 (-1): NW (Shifts one place left from West)\n   * Round 3 (+3): S (Shifts three places right from North-West)\n   * Net Change: +1 (One position clockwise from the starting point)\n   * Final Direction: S\n\n**3. Rohan:**\n   * Initial Direction: Assuming Rohan is two positions clockwise from Priya, his initial direction would be E.\n   * Round 1 (+2): SW (Shifts two places right from East)\n   * Round 2 (-1): S (Shifts one place left from South-West)\n   * Round 3 (+3): NW (Shifts three places right from South)\n   * Net Change: 0 (At the original position)\n   * Final Direction: NW\n\n**4. Sanya:**\n   * Initial Direction: Assuming Sanya is three positions clockwise from Priya, her initial direction would be SE.\n   * Round 1 (+2): N (Shifts two places right from South-East)\n   * Round 2 (-1): NW (Shifts one place left from North)\n   * Round 3 (+3): S (Shifts three places right from North-West)\n   * Net Change: -1 (One position anti-clockwise from the starting point)\n   * Final Direction: S\n\n**5. Tarun:**\n   * Initial Direction: Assuming Tarun is four positions clockwise from Priya, his initial direction would be S.\n   * Round 1 (+2): NW (Shifts two places right from South)\n   * Round 2 (-1): N (Shifts one place left from North-West)\n   * Round 3 (+3): SE (Shifts three places right from North)\n   * Net Change: -2 (Two positions anti-clockwise from the starting point)\n   * Final Direction: SE\n\n**6. Urvi:**\n   * Initial Direction: Assuming Urvi is five positions clockwise from Priya, her initial direction would be SW.\n   * Round 1 (+2): NE (Shifts two places right from South-West)\n   * Round 2 (-1): E (Shifts one place left from North-East)\n   * Round 3 (+3): SW (Shifts three places right from East)\n   * Net Change: 0 (At the original position)\n   * Final Direction: SW\n\nTherefore, the final answer is: Priya: +2, NW; Queen: +1, S; Rohan: 0, NW; Sanya: -1, S; Tarun: -2, SE; Urvi: 0, SW",
+            "options": [
+                "Priya: +1, NW; Queen: +2, S; Rohan: 0, NW; Sanya: -2, S; Tarun: -1, SE; Urvi: 0, SW",
+                "Priya: +2, NW; Queen: +1, S; Rohan: 0, NW; Sanya: -1, S; Tarun: -2, SE; Urvi: 0, SW",
+                "Priya: +2, NW; Queen: +1, S; Rohan: 0, NW; Sanya: -1, S; Tarun: -2, SW; Urvi: 0, SE",
+                "Priya: +2, NW; Queen: +1, S; Rohan: 0, NW; Sanya: -1, S; Tarun: -2, SE; Urvi: 0, SW"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Seven musicians, playing instruments A, B, C, D, E, F, and G, are lined up on a stage facing the audience.\n\nDirectional Clues:\n* Instrument E is immediately to the right of instrument B.\n* Instrument C is two positions to the left of instrument F.\n* There are exactly three instruments between instruments G and D.\n* Instrument A is to the left of instrument D, but not necessarily immediately to its left.\n* Instrument F is not at either end of the line.\n\nQuestion: If instrument G is the second instrument from the right, what is the fourth instrument from the left?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the clues and deduce the positions step-by-step:\n\n**1. Combining Clues:** \n   * We know G is second from the right, and there are three instruments between G and D. This means D must be the fifth instrument from the right, making it the third instrument from the left. \n\n**2. Placing F:**\n   * We know F is not at either end. \n   * C is two positions to the left of F, and since D is already in the third position, F must be in the sixth position. \n\n**3. Positioning C:**\n   * As C is two positions to the left of F, C must occupy the fourth position. \n\n**4.  Placing A and B:**\n   * A is to the left of D but not necessarily immediately to its left. The only remaining spot for A is the first position. \n\n**5. Completing the arrangement:**\n   * Only two spots remain. Since E is immediately to the right of B, they must occupy the seventh and sixth positions, respectively.\n\n**Final Arrangement (Left to Right):** A - D - C - F - G - E - B \n\n**Therefore, the fourth instrument from the left is F.**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "F"
+            ],
+            "correct_option": "D"
+        }
+    ],
+    "title": "Logical Reasoning",
+    "topic": "Logical Reasoning - Ranking Direction Alphabet Test",
+    "exam_id": 11,
+    "order": 0
+}

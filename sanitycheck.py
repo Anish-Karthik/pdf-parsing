@@ -130,6 +130,8 @@ def sanity_check(filename):
 
         if 'difficulty' not in qn:
             print(truncate(qn["question"]) + " Difficulty missing")
+        elif qn["difficulty"] not in ["easy","medium","hard"]:
+            print(truncate(qn["question"]) + " Difficulty is invalid")
 
     write_json(data, filename)
 
@@ -142,5 +144,5 @@ def find_json_files(directory):
 
 
 # Example usage:
-directory_path = "gemini/gemini_output/new/sbi/reasoning/"
+directory_path = "gemini/gemini_output/new/ibps/reasoning/"
 json_files = find_json_files(directory_path)
