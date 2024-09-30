@@ -1,0 +1,465 @@
+{
+    "questions": [
+        {
+            "question": "Alex has 6 bags with 3 apples in each bag. His friend gives him 4 more apples. How many apples does Alex have now?",
+            "difficulty": "easy",
+            "reasoning": "This question utilizes the BODMAS/PEMDAS rule, focusing on multiplication and addition. Here's how to solve it:\n\n1. **Multiplication:** Alex starts with 6 bags * 3 apples/bag = 18 apples.\n2. **Addition:** His friend gives him 4 more apples, so he has 18 + 4 = 22 apples.\n\nTherefore, Alex has a total of 22 apples.",
+            "options": [
+                "18 apples",
+                "22 apples",
+                "26 apples",
+                "30 apples"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker needs approximately 250 grams of flour for each loaf of bread. He wants to bake 7 loaves.  Using rounding, estimate how much flour the baker needs.",
+            "difficulty": "easy",
+            "reasoning": "This question falls under 'Approximation Techniques: Rounding, Truncation, and Estimation' as it requires rounding to estimate the total flour needed.\n\nHere's how to solve it:\n\n1. **Round the amount of flour per loaf:** 250 grams is already a rounded number.\n2. **Multiply the rounded amount by the number of loaves:** 250 grams/loaf * 7 loaves = 1750 grams \n3. **The estimated amount of flour needed is 1750 grams.**",
+            "options": [
+                "1500 grams",
+                "1750 grams",
+                "2000 grams",
+                "2500 grams"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A tailor needs 3.8 meters of fabric to make a dress. He wants to make 7 dresses. Approximately how much fabric does he need in total, rounded to the nearest meter?",
+            "difficulty": "easy",
+            "reasoning": "## Reasoning:\n\n1. **Calculate the approximate fabric needed:** Round 3.8 meters to 4 meters. \n2. **Multiply to find the total:** 4 meters/dress * 7 dresses = 28 meters\n\nTherefore, the tailor needs approximately **28 meters** of fabric. ",
+            "options": [
+                "24 meters",
+                "26 meters",
+                "28 meters",
+                "30 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Sarah buys 5 notebooks for $2.50 each and 3 pens for $1.20 each.  Approximately how much will she spend in total?",
+            "difficulty": "easy",
+            "reasoning": "This question tests basic arithmetic operations and approximation skills. Here's how to solve it:\n\n**1. Calculate the cost of the notebooks:**\n   * 5 notebooks * $2.50/notebook = $12.50\n\n**2. Calculate the cost of the pens:**\n   * 3 pens * $1.20/pen = $3.60\n\n**3.  Estimate the total cost:**\n   *  $12.50 is a bit more than $12, and $3.60 is a bit more than $3.50\n   *  So, the total cost will be a bit more than $12 + $3.50 = $15.50\n\n**Therefore, Sarah will spend approximately $15.50 in total.**",
+            "options": [
+                "$16.00",
+                "$15.50",
+                "$14.50",
+                "$17.00"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Sarah needs 2/8 of a cup of sugar for her cookie recipe. How can this fraction be simplified?",
+            "difficulty": "easy",
+            "reasoning": "The question falls under the topic 'Fractions and Decimals: Conversion, Simplification, and Operations' and specifically focuses on 'Simplification' within the broader context of 'Quants - Simplification and Approximation'. \n\nTo simplify the fraction 2/8, we find the greatest common divisor (GCD) of the numerator (2) and the denominator (8). The GCD of 2 and 8 is 2. \n\nWe then divide both the numerator and denominator by the GCD:\n\n* Numerator: 2 / 2 = 1\n* Denominator: 8 / 2 = 4\n\nTherefore, the simplified form of 2/8 is 1/4.",
+            "options": [
+                "1/2",
+                "1/4",
+                "2/4",
+                "3/8"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**problem**: John buys 5 apples for $2.50 and wants to know the price per apple.\n**question**: Represent the situation as a linear equation where 'x' is the price of one apple and then solve for 'x'.\n**difficulty**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Linear Equations: Solving for Variables, Simplification, and Word Problems' topic as it requires setting up a simple linear equation to represent a real-world scenario and solving for the unknown variable.\n\nHere's how to solve it:\n\n1. **Set up the equation:** Since John buys 5 apples for $2.50, we can represent this as 5x = $2.50, where 'x' is the price of one apple.\n\n2. **Solve for 'x':** To isolate 'x', divide both sides of the equation by 5:\n(5x)/5 = $2.50/5\n\nx = $0.50\n\nTherefore, the price of one apple is $0.50.",
+            "options": [
+                "$0.50",
+                "$1.25",
+                "$2.00",
+                "$2.50"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Problem Statement**: A gardener is estimating the amount of fertilizer needed for a rectangular flower bed.\n**Data**: Length: 4.25 meters, Width: 2.7 meters\n**Question**: If the gardener needs approximately 0.1 kilograms of fertilizer per square meter, what is the approximate amount of fertilizer needed for the entire flower bed, expressed to the correct number of significant figures?\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the area of the flower bed:**\n\n   Area = Length x Width\n   Area = 4.25 meters * 2.7 meters\n   Area = 11.475 square meters\n\n**2. Apply significant figures to the area:**\n\n   The least number of significant figures in the given measurements (4.25 meters and 2.7 meters) is two. Therefore, the area should be rounded to two significant figures.\n   Area \u2248 11 square meters\n\n**3. Calculate the approximate amount of fertilizer:**\n\n   Fertilizer needed = Area * Fertilizer per square meter\n   Fertilizer needed \u2248 11 square meters * 0.1 kilograms/square meter\n   Fertilizer needed \u2248 1.1 kilograms\n\n**4. Apply significant figures to the final answer:**\n\n   Since the fertilizer application rate (0.1 kilograms/square meter) has only one significant figure, the final answer should also have one significant figure.\n\n**Final Answer:** The gardener needs approximately **1 kilogram** of fertilizer.",
+            "options": [
+                "11.475 kg",
+                "11 kg",
+                "1.1 kg",
+                "1 kg"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Question**: A baker uses the expression \\(2x + 5\\) to represent the number of eggs needed to bake \\(x\\) cakes. Today, the baker needs to bake twice the usual number of cakes plus an additional 3 cakes for a special order.  Write a simplified expression representing the total number of eggs needed today.\n**Expression**: Not applicable (word problem)\n**Instructions**: Write the expression in its simplest form.\n**Difficulty**: 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Doubling the Cakes:**\n\n* The baker usually bakes *x* cakes and uses *2x + 5* eggs.\n* For double the cakes, the baker needs double the eggs: 2 * (*2x + 5*) = *4x + 10* eggs\n\n**2. Adding Eggs for the Special Order:**\n\n* Each cake needs *2x + 5* eggs, and the special order is for 3 cakes.\n* The special order requires: 3 * (*2x + 5*) = *6x + 15* eggs\n\n**3. Total Eggs:**\n\n* Add the eggs for the doubled usual amount and the special order:\n  (4x + 10) + (6x + 15)\n* Combine like terms: 4x + 6x + 10 + 15 = *10x + 25* eggs\n\n**Therefore, the simplified expression representing the total number of eggs needed is 10x + 25.**",
+            "options": [
+                "10x + 25",
+                "4x + 10",
+                "6x + 15",
+                "2x + 8"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A painter needs to cover a rectangular wall with paint. The wall is 10 meters long and 3 meters high.  If a can of paint covers 5 square meters, how many cans of paint will the painter need?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the area of the wall:**\n\n   * Area = length x height\n   * Area = 10 meters x 3 meters\n   * Area = 30 square meters\n\n**2. Calculate the number of paint cans needed:**\n\n   * Cans needed = Total area / Area covered per can\n   * Cans needed = 30 square meters / 5 square meters/can\n   * Cans needed = 6 cans\n\n**Therefore, the painter will need 6 cans of paint to cover the entire wall.**",
+            "options": [
+                "10 cans",
+                "30 cans",
+                "6 cans",
+                "5 cans"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Difficulty Level**: Easy 6/10\n**Question Type**: Calculation\n**Prompt**: What is the result of 5 + 12 / 4 - 2 x 3?\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the order of operations (PEMDAS/BODMAS):\n\n1. **Division:** 12 / 4 = 3\n2. **Multiplication:** 2 x 3 = 6\n3. **Addition:** 5 + 3 = 8\n4. **Subtraction:** 8 - 6 = 2\n\nTherefore, the result of the expression 5 + 12 / 4 - 2 x 3 is **2**.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A tailor needs 124.7 cm of ribbon to complete a dress. He decides to approximate this amount to 125 cm. What is the absolute error in the tailor's approximation?",
+            "difficulty": "medium",
+            "reasoning": "The absolute error is the difference between the actual value and the approximated value. It tells us how far off the approximation is without considering the direction.\n\nHere's how to calculate it:\n\n1. **Identify the actual value:** The actual amount of ribbon needed is 124.7 cm.\n2. **Identify the approximated value:** The tailor approximated the amount to 125 cm.\n3. **Calculate the absolute error:** \n   Absolute Error = |Actual Value - Approximated Value|\n   Absolute Error = |124.7 cm - 125 cm|\n   Absolute Error = |-0.3 cm|\n   Absolute Error = 0.3 cm\n\nTherefore, the absolute error in the tailor's approximation is **0.3 cm**.",
+            "options": [
+                "0.3 cm",
+                "124.7 cm",
+                "125 cm",
+                "0.3 m"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Emily is trying to solve a math puzzle: (18 \u00f7 3 + 4) \u00d7 (2^2 - 2).  She needs to simplify it using BODMAS/PEMDAS. Can you help her find the answer?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'BODMAS/PEMDAS Rule: Understanding and Application in Simplification' subtopic within 'Quants - Simplification and Approximation'.  Let's break it down step-by-step using BODMAS:\n\n1. **Brackets/Parentheses First:**\n    * (18 \u00f7 3 + 4) = (6 + 4) = 10\n    * (2^2 - 2) = (4 - 2) = 2\n\n2. **Exponents (Orders) Next:** \n    * We already calculated 2^2 within the parentheses in the previous step.\n\n3. **Division and Multiplication (From Left to Right):**\n    * Now the expression is 10 \u00d7 2 = 20\n\n4. **Addition and Subtraction (From Left to Right):**\n    * Not needed in this simplified expression.\n\nTherefore, the answer is 20.",
+            "options": [
+                "10",
+                "12",
+                "20",
+                "24"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A carpenter needs to cut a wooden plank that is 3.75 meters long into pieces that are each 5/8 of a meter long.  What is the maximum number of complete pieces the carpenter can cut, and how much wood will be left over (in meters)?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Convert the fraction to a decimal:** 5/8 is equivalent to 0.625 meters.\n\n2. **Divide the plank length by the piece length:** 3.75 meters / 0.625 meters/piece = 6 pieces. This tells us the carpenter can cut 6 complete pieces.\n\n3. **Calculate the total length of the cut pieces:** 6 pieces * 0.625 meters/piece = 3.75 meters.\n\n4. **Determine the leftover wood:** Since the total length of the cut pieces equals the original plank length, there is **no wood leftover**.\n\n**Therefore, the carpenter can cut 6 complete pieces with no wood leftover.**",
+            "options": [
+                "5 pieces, 0.125 meters",
+                "6 pieces, 0.125 meters",
+                "6 pieces, 0 meters",
+                "7 pieces, 0.125 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: The following pie chart shows the distribution of favorite ice cream flavors among 200 students.\n**chart**: \n  **type**: pie\n  **data**: \n    **Chocolate**: 80\n    **Vanilla**: 40\n    **Strawberry**: 50\n    **Mint Chocolate Chip**: 30\n**stem**: Approximately what percentage of students prefer either Vanilla or Strawberry ice cream?\n",
+            "difficulty": "medium",
+            "reasoning": "1. **Find the combined number of students:** 40 (Vanilla) + 50 (Strawberry) = 90 students prefer either Vanilla or Strawberry.\n2. **Calculate the percentage:** (90 students / 200 total students) * 100% = 45%\n\nTherefore, approximately 45% of students prefer either Vanilla or Strawberry ice cream.",
+            "options": [
+                "45%",
+                "30%",
+                "50%",
+                "25%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "John is trying to calculate the perimeter of a rectangular garden. He knows one side is 'x + 5' meters long and the other side is '3x - 2' meters long. Can you help him write a simplified expression representing the total perimeter of his garden?",
+            "difficulty": "medium",
+            "reasoning": "The perimeter of a rectangle is found by adding up the lengths of all its sides.  \n\nHere's how to solve it step-by-step:\n\n1. **Perimeter Formula:**  Perimeter of a rectangle = 2 * (length + width)\n\n2. **Substitute:** In this case, the length is (x + 5) and the width is (3x - 2). Substituting these values into the formula:\n   Perimeter = 2 * [(x + 5) + (3x - 2)]\n\n3. **Simplify inside the brackets:** Combine like terms within the parentheses:\n   Perimeter = 2 * (4x + 3)\n\n4. **Distribute:** Multiply the 2 outside the parentheses by each term inside the parentheses:\n   Perimeter = 8x + 6 \n\nTherefore, the simplified expression representing the perimeter of John's garden is 8x + 6.",
+            "options": [
+                "7x + 3",
+                "8x + 6",
+                "10x + 1",
+                "4x + 3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Sarah wants to bake a cake. The recipe requires 2 1/4 cups of flour, but she only has a measuring cup with markings in decimals. How many cups of flour, represented as a decimal, does Sarah need?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n* **Understanding Mixed Numbers:** The number 2 1/4 is a mixed number, meaning it has a whole number part (2) and a fractional part (1/4).\n* **Converting the Fraction to a Decimal:**  Divide the numerator (1) by the denominator (4): 1 \u00f7 4 = 0.25\n* **Combining Whole and Decimal Parts:** Add the decimal representation of the fraction (0.25) to the whole number (2): 2 + 0.25 = 2.25\n\nTherefore, Sarah needs 2.25 cups of flour.",
+            "options": [
+                "2.5 cups",
+                "2.25 cups",
+                "2.75 cups",
+                "2 cups"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A spice mix is made using turmeric and chili powder in the ratio 5:3. If a chef wants to make 240 grams of this spice mix, how many grams of chili powder will be needed?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Ratio:**\n   The ratio 5:3 means that for every 5 parts of turmeric, there are 3 parts of chili powder in the mix.\n\n**2. Calculate the Total Parts:**\n   The total ratio parts are 5 + 3 = 8\n\n**3. Determine the Value of One Part:**\n   Since the total mix is 240 grams, one part is equal to 240 grams / 8 parts = 30 grams/part\n\n**4. Calculate the Chili Powder Amount:**\n   As chili powder represents 3 parts in the ratio, the chef needs 3 parts * 30 grams/part = 90 grams of chili powder.\n\n**Therefore, the chef needs 90 grams of chili powder to make 240 grams of the spice mix.**",
+            "options": [
+                "120 grams",
+                "90 grams",
+                "60 grams",
+                "150 grams"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A physics student is measuring the acceleration due to gravity using a pendulum experiment. After conducting multiple trials, the student calculates an average acceleration of 9.7 m/s\u00b2. The accepted value for the acceleration due to gravity in the student's location is 9.81 m/s\u00b2. What is the percentage error in the student's measurement?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Approximation Errors: Absolute, Relative, and Percentage Errors' subtopic of 'Quants - Simplification and Approximation'.\n\nHere's how to solve it step-by-step:\n\n1. **Calculate the Absolute Error:**\n   Absolute Error = |Approximate Value - Actual Value|\n   Absolute Error = |9.7 m/s\u00b2 - 9.81 m/s\u00b2| = 0.11 m/s\u00b2\n\n2. **Calculate the Percentage Error:**\n   Percentage Error = (|Absolute Error| / |Actual Value|) * 100%\n   Percentage Error = (0.11 m/s\u00b2 / 9.81 m/s\u00b2) * 100% \u2248 1.12%\n\nTherefore, the percentage error in the student's measurement is approximately 1.12%. ",
+            "options": [
+                "1.12%",
+                "0.11%",
+                "9.7%",
+                "9.81%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: The following pie chart illustrates the distribution of expenses for a software company in the last financial year.\n**data**: \n  **chart_type**: pie\n  **data**: \n    **Salaries**: 40\n    **Research & Development**: 25\n    **Marketing**: 15\n    **Infrastructure**: 10\n    **Other Expenses**: 10\n**question**: If the company's total expenses were approximately $5.2 million, estimate the combined expenditure on Salaries and Research & Development.\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Calculate the combined percentage:** Salaries (40%) + Research & Development (25%) = 65%\n\n2. **Approximate the total expenses:** $5.2 million is a bit difficult to calculate directly, so let's round it to $5 million for easier calculation.\n\n3. **Calculate the combined expenditure:** 65% of $5 million is (65/100) * $5,000,000 = $3,250,000\n\nTherefore, the estimated combined expenditure on Salaries and Research & Development is approximately **$3.25 million**.",
+            "options": [
+                "$3.25 million",
+                "$2.6 million",
+                "$4.2 million",
+                "$1.3 million"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A city planner is estimating the population density of a new development. The projected population is 23,500 people, and the area of the development is 1.85 square kilometers.  What is the approximate population density, rounded to the appropriate number of significant figures?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand Significant Figures:**\n   - The population (23,500) has 3 significant figures.\n   - The area (1.85) has 3 significant figures. \n\n**2. Perform the Calculation:**\n   - Population Density = Population / Area \n   - Population Density = 23,500 people / 1.85 square kilometers\n   - Population Density \u2248 12697.297 people/square kilometer\n\n**3. Round Based on Significant Figures:**\n   - Since both the population and area have 3 significant figures, our answer should also have 3 significant figures.\n   - Round 12697.297 to 12700 people/square kilometer. \n\n**Therefore, the approximate population density is 12700 people/square kilometer.**",
+            "options": [
+                "12700 people/square kilometer",
+                "12697 people/square kilometer",
+                "12700 people",
+                "13000 people/square kilometer"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Simplify the following expression and choose the closest approximation:\n \\begin{equation*}  \\frac{(2.1)^3 + \\sqrt[3]{8.027} - (1.99)^2}{(\\sqrt{4.1} - \\sqrt{3.9}) \\times \\sqrt[3]{63.7}} \\end{equation*}",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to simplify and approximate expressions involving powers and roots. Here's a step-by-step solution:\n\n**1. Approximation:**\n* Approximate the numbers within the expression to make calculations easier:\n    * (2.1)\u00b3 \u2248 2\u00b3 = 8\n    * \u221a[3]{8.027} \u2248 \u221a[3]{8} = 2\n    * (1.99)\u00b2 \u2248 2\u00b2 = 4\n    * \u221a4.1 \u2248 \u221a4 = 2\n    * \u221a3.9 \u2248 \u221a4 = 2\n    * \u221a[3]{63.7} \u2248 \u221a[3]{64} = 4\n\n**2. Substitution:**\n* Substitute the approximated values back into the expression:\n    * (8 + 2 - 4) / ((2 - 2) \u00d7 4)\n\n**3. Simplification:**\n* Simplify the expression:\n    * 6 / (0 \u00d7 4)\n\n**4. Result:**\n* Since the denominator becomes zero, the expression is undefined. \n\nTherefore, the simplified expression is undefined due to division by zero.",
+            "options": [
+                "0",
+                "1",
+                "6",
+                "Undefined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A construction company needs to transport 23,850 bricks to a building site. They can rent trucks with a maximum capacity of either 2,500 bricks or 3,700 bricks.  To minimize costs, the company wants to use the fewest trucks possible.\n**problem**: Using estimation, what is the minimum number of trucks the company needs to transport all the bricks in a single trip?\n**answer_choices**: \n  - 7\n  - 8\n  - 9\n  - 10\n  - 11\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem using estimation:\n\n1. **Round the number of bricks:** Round 23,850 bricks to 24,000 bricks for easier calculation.\n\n2. **Estimate truck capacities:**\n   * Round 2,500 brick truck capacity to 2,000 bricks.\n   * Round 3,700 brick truck capacity to 4,000 bricks. \n\n3. **Consider both truck sizes:**\n   * If using only 2,000-brick trucks: 24,000 bricks / 2,000 bricks/truck = 12 trucks \n   * If using only 4,000-brick trucks: 24,000 bricks / 4,000 bricks/truck = 6 trucks\n\n4. **Choose the minimum:** The company needs fewer trucks using the larger capacity (4,000-brick) trucks.\n\n5. **Adjust for rounding:** Since we rounded down both the number of bricks and the truck capacity, it's possible we might need one extra truck to accommodate the actual numbers. Therefore, the safest estimate is to add one truck to the initial calculation: 6 trucks + 1 truck = 7 trucks. \n\n**Correct Answer:** 7",
+            "options": [
+                "8",
+                "9",
+                "10",
+                "11"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A local bakery sells cookies for $2 each, brownies for $1.50 each, and muffins for $3 each. Sarah buys 5 cookies, 3 brownies, and 2 muffins.  She pays with a $20 bill.  \n\nTo calculate how much change Sarah should receive, consider this expression: \n\n20 - [(5 * 2) + (3 * 1.50) + (2 * 3)] \n\nApproximate Sarah's change to the nearest dollar.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the umbrella of 'Basic Arithmetic Operations: Order, Properties, and Speed Calculation Techniques' as it requires understanding and applying the order of operations (PEMDAS/BODMAS), performing multiple arithmetic calculations, and using approximation to simplify the final answer.\n\nHere's a step-by-step solution:\n\n1. **Calculate the cost of the cookies:** 5 cookies * $2/cookie = $10\n2. **Calculate the cost of the brownies:** 3 brownies * $1.50/brownie = $4.50\n3. **Calculate the cost of the muffins:** 2 muffins * $3/muffin = $6\n4. **Calculate the total cost:** $10 + $4.50 + $6 = $20.50\n5. **Calculate the change:** $20 - $20.50 = -$0.50 \n6. **Approximate the change:** Since Sarah doesn't receive money back, and we're approximating to the nearest dollar, her change is approximately **$0**.\n\nTherefore, the correct answer is **$0**.",
+            "options": [
+                "$1",
+                "$2",
+                "$3",
+                "$4"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A tailor needs to cut a ribbon into three pieces. The first piece needs to be 1/3 of the total length, and the second piece needs to be 0.4 times the length of the first piece. If the ribbon is 21 inches long, what is the length of the third piece in inches?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the length of the first piece:**\n   - The first piece is 1/3 of the total length (21 inches).\n   - (1/3) * 21 inches = 7 inches\n\n**2. Calculate the length of the second piece:**\n   - The second piece is 0.4 times the length of the first piece (7 inches).\n   - 0.4 * 7 inches = 2.8 inches\n\n**3. Calculate the combined length of the first and second pieces:**\n   - 7 inches + 2.8 inches = 9.8 inches\n\n**4. Calculate the length of the third piece:**\n   - Subtract the combined length of the first and second pieces from the total length.\n   - 21 inches - 9.8 inches = 11.2 inches\n\n**Therefore, the length of the third piece is 11.2 inches.**",
+            "options": [
+                "7 inches",
+                "2.8 inches",
+                "9.8 inches",
+                "11.2 inches"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A local farmer wants to divide his land equally among his three children. He has 784.5 square meters of farmland. Due to some rocky terrain, 15.25 square meters of the land is unusable for farming.  Approximately how much land, in square meters, will each child receive?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Quants - Simplification and Approximation' and specifically tests 'Basic Arithmetic Operations: Order, Properties and Speed Calculation Techniques'. Here's how to solve it:\n\n**1. Calculate the Usable Land:**\n   - Start by subtracting the unusable land from the total land: 784.5 sq meters - 15.25 sq meters = 769.25 sq meters \n\n**2. Divide the Usable Land:**\n   - Divide the total usable land by the number of children: 769.25 sq meters / 3 children = 256.4166667 sq meters per child\n\n**3. Approximate the Answer:**\n   - The question asks for an approximate answer, so round the result to the nearest whole number: Approximately 256 sq meters per child.\n\n**Therefore, each child will receive approximately 256 square meters of farmland.**",
+            "options": [
+                "257 sq meters",
+                "256 sq meters",
+                "255 sq meters",
+                "258 sq meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A microscopic organism doubles in size every 24 hours. If we start with a single organism that has a volume of 2 cubic micrometers, approximately what will its volume be in cubic micrometers after 192 hours?  Express your answer as a whole number.",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's understanding of powers of two and their ability to apply this knowledge to a biological context. Here's how to solve it:\n\n1. **Calculate the number of doubling periods:** Since the organism doubles in size every 24 hours, in 192 hours it will have gone through 192 hours / 24 hours/doubling = 8 doubling periods.\n\n2. **Calculate the final volume:** The organism starts with a volume of 2 cubic micrometers. With each doubling, its volume increases by a factor of 2. Therefore, after 8 doublings, the final volume will be:\n\n   2 cubic micrometers * 2^8 = 2 * 256 = 512 cubic micrometers\n\nTherefore, the approximate volume of the organism after 192 hours is 512 cubic micrometers.",
+            "options": [
+                "128",
+                "256",
+                "512",
+                "1024"
+            ],
+            "correct": "512",
+            "correct_option": "C"
+        },
+        {
+            "question": "A marathon runner covers a distance of 42.195 kilometers. A sports commentator, for simplicity, rounds the distance to 42.2 kilometers.  \n\nCalculate the following errors introduced by this rounding: \n\n* **Absolute Error:** What is the absolute difference between the actual distance and the rounded distance? \n* **Relative Error:** Calculate the relative error and express it as a fraction of the actual distance. \n* **Percentage Error:** What is the percentage error in representing the marathon distance using the rounded figure?",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning: \n\n**1.  Calculating Absolute Error:**\n\n* Actual distance = 42.195 kilometers\n* Rounded distance = 42.2 kilometers\n\n* Absolute error = |Actual distance - Rounded distance|\n* Absolute error = |42.195 km - 42.2 km| = 0.005 km \n\n**2. Calculating Relative Error:**\n\n* Relative error = (Absolute error) / (Actual distance) \n* Relative error = (0.005 km) / (42.195 km) = 1.185 x 10^-4 (approximately) \n\n**3. Calculating Percentage Error:**\n\n* Percentage error = (Relative error) * 100%\n* Percentage error = (1.185 x 10^-4) * 100% = 0.01185%\n\n**Therefore:**\n* The absolute error is **0.005 km**.\n* The relative error is approximately **1.185 x 10^-4**.\n* The percentage error is approximately **0.01185%**.",
+            "options": [
+                "0.005 km",
+                "1.185 x 10^-4",
+                "0.01185%",
+                "42.2 km"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A painter needs to cover a rectangular wall with a special paint that is only sold in cylindrical cans. The wall is 8 meters long and 3 meters high. Each paint can has a diameter of 10 centimeters and a height of 25 centimeters.  If 1 liter of paint covers 5 square meters, approximately how many cans of paint will the painter need to buy?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate the area of the wall:**\n\n* Area = length x height\n* Area = 8 meters x 3 meters\n* Area = 24 square meters\n\n**2. Calculate the volume of one paint can:**\n\n* First, convert the diameter and height of the can to meters:\n    * Diameter = 10 cm = 0.1 meters\n    * Radius = Diameter / 2 = 0.05 meters\n    * Height = 25 cm = 0.25 meters\n* Volume of a cylinder = \u03c0 * radius\u00b2 * height\n* Volume \u2248 3.14 * (0.05 meters)\u00b2 * 0.25 meters\n* Volume \u2248 0.00196 cubic meters \n* Since 1 cubic meter is equal to 1000 liters, the can holds approximately 1.96 liters of paint.\n\n**3. Calculate the total liters of paint needed:**\n\n* Liters needed = Area / Coverage per liter\n* Liters needed = 24 square meters / 5 square meters/liter\n* Liters needed = 4.8 liters\n\n**4. Determine the number of cans:**\n\n* Cans needed = Total liters needed / Liters per can\n* Cans needed \u2248 4.8 liters / 1.96 liters/can\n* Cans needed \u2248 2.45 cans\n\n**5. Round up to the nearest whole can:**\n\n* Since you can't buy parts of a can, the painter needs to buy **3 cans** of paint.\n\n**Therefore, the correct answer is that the painter needs to buy approximately 3 cans of paint.**",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: An engineer is designing a circular component for a high-pressure system.  The component must have a diameter of 12.85 cm to withstand the operational pressure. To minimize material waste and production costs, the engineer wants to use a pre-cut metal sheet with a standard diameter. The available standard diameters are given with varying precision:\n**task**: Determine the most appropriate standard diameter the engineer should select, considering the importance of significant figures in engineering applications and minimizing material waste. Explain your reasoning, including an analysis of significant figures and rounding.\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the solution and address the significant figures aspect:\n\n**1. Understanding Significant Figures:** \n   - Significant figures represent the precision of a measurement. \n   - In engineering, using the correct number of significant figures is crucial to ensure accuracy and reliability.\n\n**2. Analyzing the Given Diameter:**\n   - The required diameter, 12.85 cm, has four significant figures. This indicates a high level of precision is needed.\n\n**3. Considering Standard Diameters:**\n   - The question should provide a list of standard diameters.  Let's assume these are the options:\n      - (a) 12.8 cm\n      - (b) 12.9 cm \n      - (c) 12.85 cm\n      - (d) 12.850 cm\n\n**4.  Selecting the Most Appropriate Diameter:**\n   - Option (c) - 12.85 cm - is the most appropriate. It has the same number of significant figures (four) as the required diameter, indicating the same level of precision.\n\n**5.  Reasoning for Choosing (c):**\n    - **Accuracy:** Using 12.85 cm ensures the component's diameter is within the required tolerance.\n    - **Material Waste:** Selecting a diameter with more significant figures (like 12.850 cm) would imply a higher level of precision than necessary, potentially leading to unnecessary material waste during production. \n    - **Engineering Standard:** Often, engineering designs and material specifications adhere to standard sizes. Choosing a standard size like 12.85 cm simplifies the manufacturing process.\n\n**Therefore, the engineer should choose the standard diameter of 12.85 cm to maintain the required precision while minimizing material waste.**",
+            "options": [
+                "12.8 cm",
+                "12.9 cm",
+                "12.85 cm",
+                "12.850 cm"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Simplify the following expression and express the result in factored form:\n\n (2x\u00b2 - 5x - 3) / (4x\u00b2 - 9)  * (6x\u00b2 + 7x - 3) / (x\u00b2 - 2x - 3)",
+            "difficulty": "medium",
+            "reasoning": "This question involves simplifying a complex algebraic expression by factoring quadratic expressions and canceling common factors. It tests the following skills:\n\n* **Factoring Quadratic Expressions:** The student needs to be able to factor quadratic expressions like (2x\u00b2 - 5x - 3) into (2x + 1)(x - 3).\n* **Simplifying Rational Expressions:** After factoring, the student must simplify the expression by canceling out common factors in the numerator and denominator.\n* **Expressing in Factored Form:** The final answer should be presented in its simplest factored form.\n\n**Step-by-step Solution:**\n\n1. **Factor all quadratic expressions:**\n\n   (2x\u00b2 - 5x - 3) = (2x + 1)(x - 3)\n   (4x\u00b2 - 9) = (2x + 3)(2x - 3)\n   (6x\u00b2 + 7x - 3) = (3x - 1)(2x + 3)\n   (x\u00b2 - 2x - 3) = (x - 3)(x + 1)\n\n2. **Substitute the factored expressions back into the original expression:**\n\n   [(2x + 1)(x - 3) / (2x + 3)(2x - 3)] * [(3x - 1)(2x + 3) / (x - 3)(x + 1)]\n\n3. **Cancel out common factors:**\n\n   Notice that (x - 3) and (2x + 3) appear in both the numerator and denominator. We can cancel them out:\n\n   [(2x + 1) / (2x - 3)] * [(3x - 1) / (x + 1)]\n\n4. **Express the simplified expression:**\n\n    (2x + 1)(3x - 1) / (2x - 3)(x + 1) \n\nTherefore, the simplified expression in factored form is (2x + 1)(3x - 1) / (2x - 3)(x + 1).",
+            "options": [
+                "Factoring",
+                "Simplifying",
+                "Algebraic Manipulation",
+                "Polynomial Operations"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The value of a positive number 'x' is multiplied by itself, then the result is cubed. This entire operation is performed twice more, first squaring the result, then finally taking its fifth root. If the final result obtained is  x^k, what is the value of k?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the problem step-by-step:\n\n1. **Initial Operation:** x * x = x^2\n2. **Cubing the Result:** (x^2)^3 = x^6\n3. **First Repetition:** \n   * Squaring: (x^6)^2 = x^12\n   * Fifth Root: (x^12)^(1/5) = x^(12/5)\n4. **Second Repetition:**\n   * Squaring: (x^(12/5))^2 = x^(24/5)\n   * Fifth Root: (x^(24/5))^(1/5) = x^(24/25)\n\nTherefore, the final result is x^(24/25), and k = 24/25.",
+            "options": [
+                "12/5",
+                "24/25",
+                "12",
+                "24/5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Simplify the following expression, approximating the final answer to the nearest whole number:\n\n \u221a[{(18.5 + 2.5) \u00f7 4}\u00b2  + (16 \u00f7 2.5)\u00b3 - 10\u00b2]",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'BODMAS/PEMDAS Rule: Understanding and Application in Simplification' subtopic within 'Quants - Simplification and Approximation'. It's designed to be 'tricky 8/10' due to nested parentheses, exponents, decimals, and the requirement for approximation, demanding careful BODMAS/PEMDAS application and calculation accuracy. Here's a step-by-step solution:\n\n1. **Innermost Parentheses:** \n   * (18.5 + 2.5) = 21\n   * (16 \u00f7 2.5) = 6.4 \n\n2. **Exponents:**\n   * 21 \u00f7 4 = 5.25 then 5.25\u00b2 = 27.5625 (approx.)\n   * 6.4\u00b3 = 262.144 (approx.)\n   * 10\u00b2 = 100\n\n3. **Square Root:**\n   * 27.5625 + 262.144 - 100 = 189.7065 then \u221a189.7065 = 13.77 (approx.)\n\n4. **Approximation:**\n   * Rounding 13.77 to the nearest whole number gives us 14.\n\nTherefore, the simplified and approximated answer is 14.",
+            "options": [
+                "Quants - Simplification and Approximation",
+                "BODMAS/PEMDAS Rule: Understanding and Application in Simplification",
+                "Algebraic Manipulation",
+                "Number Theory"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A construction company is building a new highway. They are using a special concrete mix that requires a specific ratio of cement, sand, and gravel. The ratio for the mix is 2:3:5 respectively. \n\nDue to unforeseen circumstances, the supplier can only deliver a total of 120 tons of materials today, and the delivery truck can only carry a maximum of 2.5 tons per trip. To maintain the required concrete mix ratio, approximately how many total trips will the truck need to make to deliver all three materials today?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Determine the proportion of each material:**\n\n   * The ratio 2:3:5 represents a total of 2 + 3 + 5 = 10 parts.\n   * Cement proportion: 2/10 = 0.2\n   * Sand proportion: 3/10 = 0.3\n   * Gravel proportion: 5/10 = 0.5\n\n**2. Calculate the tonnage for each material:**\n\n   * Cement: 120 tons * 0.2 = 24 tons\n   * Sand: 120 tons * 0.3 = 36 tons\n   * Gravel: 120 tons * 0.5 = 60 tons\n\n**3. Calculate the number of trips for each material:**\n\n   * Cement trips: 24 tons / 2.5 tons/trip = 9.6 trips\n   * Sand trips: 36 tons / 2.5 tons/trip = 14.4 trips\n   * Gravel trips: 60 tons / 2.5 tons/trip = 24 trips \n\n**4. Calculate the total number of trips:**\n\n   * Total trips: 9.6 + 14.4 + 24 = 48 trips\n\n**Therefore, the truck will need to make approximately 48 trips to deliver all the materials while maintaining the required concrete mix ratio.**",
+            "options": [
+                "40 trips",
+                "48 trips",
+                "50 trips",
+                "56 trips"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A chemist is preparing a solution by dissolving a specific mass of sodium chloride (NaCl) in distilled water.  The chemist weighs out 2.54 g of NaCl on a balance with a precision of \u00b10.01 g. They then use a volumetric flask with a capacity of 500.0 mL and a tolerance of \u00b10.5 mL to prepare the solution.  What is the maximum possible concentration of the NaCl solution, expressed in grams per liter (g/L), considering the uncertainties in both the mass and volume measurements?",
+            "difficulty": "hard",
+            "reasoning": "This question tests a deep understanding of significant figures and their implications in a practical scenario. Here's a step-by-step solution: \n\n**1. Calculate the maximum mass of NaCl:**\n   - The balance has a precision of \u00b10.01 g, meaning the actual mass could be as high as 2.54 g + 0.01 g = 2.55 g\n\n**2. Calculate the minimum volume of the solution:**\n   - The volumetric flask has a tolerance of \u00b10.5 mL, so the minimum volume could be 500.0 mL - 0.5 mL = 499.5 mL. Convert this to liters: 499.5 mL / 1000 mL/L = 0.4995 L \n\n**3. Calculate the maximum concentration:**\n   - Concentration (g/L) = Mass (g) / Volume (L)\n   - Maximum concentration = 2.55 g / 0.4995 L = 5.1051 g/L\n\n**4. Apply significant figures:**\n   - The mass measurement (2.55 g) has three significant figures.\n   - The volume measurement (0.4995 L) has four significant figures. \n   - When dividing, the result should have the same number of significant figures as the measurement with the fewest. Therefore, the final answer should have three significant figures.\n\n**5. Round the answer:**\n   - Round the calculated concentration (5.1051 g/L) to three significant figures: **5.11 g/L**\n\nTherefore, the maximum possible concentration of the NaCl solution, considering the uncertainties in both measurements, is 5.11 g/L.",
+            "options": [
+                "5.10 g/L",
+                "5.11 g/L",
+                "5.12 g/L",
+                "5.13 g/L"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A high-frequency trading algorithm needs to process market data and execute trades within milliseconds. To simplify calculations and minimize processing time, the algorithm uses the following approximation: \n\nFor any number 'x' where 0.95 \u2264 x < 1.05, the algorithm approximates x\u00b2 as (2x - 1).  \n\nIf the algorithm needs to calculate 1.023 * 1.023 * 0.987 * 0.975, what is the difference between the actual result and the result obtained using the algorithm's approximation (rounded to five decimal places)?",
+            "difficulty": "hard",
+            "reasoning": "This question dives into the heart of approximation techniques used in high-speed scenarios like algorithmic trading. Here's a step-by-step breakdown:\n\n**1. Understanding the Approximation:**\nThe algorithm simplifies the square of a number (x) close to 1 using the formula (2x - 1). This works because, for numbers near 1, the difference between the square and the number itself is relatively small.\n\n**2. Applying the Approximation:**\n* 1.023\u00b2 is approximated as (2 * 1.023 - 1) = 1.046\n* 0.987\u00b2 is approximated as (2 * 0.987 - 1) = 0.974\n* 0.975\u00b2 is approximated as (2 * 0.975 - 1) = 0.950 \n\n**3. Calculating the Approximated Result:**\nThe algorithm's approximation of the calculation is 1.046 * 0.974 * 0.950 \u2248 0.969178\n\n**4. Calculating the Actual Result:**\nThe actual result of 1.023 * 1.023 * 0.987 * 0.975 \u2248 0.969367\n\n**5. Finding the Difference:**\nThe difference between the actual result and the approximated result is 0.969367 - 0.969178 = 0.000189, which rounds to 0.00019 (five decimal places).\n\n**Therefore, the difference between the actual result and the approximation is 0.00019.**",
+            "options": [
+                "0.00018",
+                "0.00021",
+                "0.00019",
+                "0.00017"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A craftsman is crafting a decorative fence using identical wooden planks.  He finds that if he arranges the planks with a space of 5cm between each plank, he needs 14 planks to cover the desired length. However, if he increases the space between the planks to 7cm, he only needs 10 planks.  What is the total length, in centimeters, that the craftsman needs to cover?",
+            "difficulty": "hard",
+            "reasoning": "Let 'x' be the length of each plank and 'y' be the total length to cover.  \n\nFrom the problem, we can set up two equations:\n\n**Equation 1:**  y = 14x + 13 * 5  (14 planks and 13 spaces of 5cm each)\n**Equation 2:**  y = 10x + 9 * 7   (10 planks and 9 spaces of 7cm each)\n\nSince 'y' represents the same total length in both equations, we can set them equal to each other:\n\n14x + 65 = 10x + 63\n\nSimplifying the equation:\n\n4x = -2\n\nx = -0.5\n\nA negative length for a plank is not physically possible. This indicates an error in our initial assumption.  The error lies in assuming the number of spaces is one less than the number of planks.  The number of spaces *could* be one less, but the problem doesn't explicitly state that the fence *starts and ends* with a plank.  \n\nLet's revise our equations to account for a potential extra space at the beginning or end:\n\n**Equation 1:** y = 14x + 5n  (where 'n' is the number of spaces)\n**Equation 2:** y = 10x + 7n\n\nWe know from the problem that the difference in the number of spaces between the two scenarios is 4 (13 spaces - 9 spaces = 4 spaces).  Therefore, the difference in length due to the spaces alone must be 28cm (4 spaces * 7cm/space = 28cm).\n\nThis 28cm difference corresponds to the difference in length covered by the planks in the two scenarios (14x - 10x = 4x).  Therefore:\n\n4x = 28cm\nx = 7cm (The length of each plank)\n\nNow, we can substitute the value of 'x' back into either Equation 1 or Equation 2 to find 'y'. Let's use Equation 1:\n\ny = 14 * 7 + 13 * 5\ny = 98 + 65\ny = 163cm\n\nTherefore, the total length the craftsman needs to cover is 163cm. ",
+            "options": [
+                "163 cm",
+                "140 cm",
+                "154 cm",
+                "175 cm"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "You're organizing a large charity event expecting around 2,850 attendees.  You want to provide each guest with a small gift bag containing a few items. The gift bags themselves come in packs of 25, and each bag costs $1.15. You've found a supplier selling packs of 12 assorted pens for $4.99, packs of 10 keychains for $3.75, and packs of 15 small notepads for $2.60. To streamline packing, you decide to provide one of each item per gift bag. Approximately, what is the minimum total cost you'll incur for the gift bags and the items to fill them?",
+            "difficulty": "medium",
+            "reasoning": "This question requires breaking down the problem into smaller steps and using approximation to handle the large numbers:\n\n**1. Calculate the number of gift bags needed:**\n   - 2,850 attendees / 25 gift bags/pack \u2248 114 packs of gift bags\n\n**2. Calculate the cost of gift bags:**\n   - 114 packs * $1.15/pack \u2248 $131 (We can approximate this since the exact number of packs isn't crucial)\n\n**3. Calculate the number of packs needed for each item type:**\n   - Pens: 114 packs (gift bags) / 12 pens/pack \u2248 9.5 \u2248 10 packs (Round up since you can't buy fractions of packs)\n   - Keychains: 114 packs / 10 keychains/pack \u2248 11.4 \u2248 12 packs\n   - Notepads: 114 packs / 15 notepads/pack \u2248 7.6 \u2248 8 packs\n\n**4. Calculate the cost of each item type:**\n   - Pens: 10 packs * $4.99/pack \u2248 $50 \n   - Keychains: 12 packs * $3.75/pack \u2248 $45\n   - Notepads: 8 packs * $2.60/pack \u2248 $21\n\n**5. Calculate the total cost:**\n   - $131 (gift bags) + $50 (pens) + $45 (keychains) + $21 (notepads) \u2248 $247\n\nTherefore, the approximate minimum total cost is $247. The trickiness comes from the multiple steps, the need for rounding up to purchase whole packs, and the potential for accumulating errors if not approximating strategically.",
+            "options": [
+                "$250",
+                "$230",
+                "$260",
+                "$240"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A large retail chain with 1,287 stores nationwide wants to estimate its total annual energy consumption. Based on a sample study, they found the average store consumes approximately 23,540 kilowatt-hours (kWh) per year. However, due to variations in store size and location, they know the standard deviation of energy consumption per store is a hefty 6,890 kWh.  To account for this variability, the company wants to use a conservative estimation technique. Instead of rounding to the nearest thousand or hundred for both average consumption and the number of stores, they decide to truncate these figures to the preceding thousand before calculating the estimated total energy consumption. What is the approximate total annual energy consumption in kilowatt-hours (kWh) based on their truncation method?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n1. **Truncate the average energy consumption:** Truncate 23,540 kWh to the preceding thousand, which gives us 23,000 kWh.\n\n2. **Truncate the number of stores:** Truncate 1,287 stores to the preceding thousand, which gives us 1,000 stores.\n\n3. **Calculate the estimated total energy consumption:** Multiply the truncated average energy consumption by the truncated number of stores: 23,000 kWh/store * 1,000 stores = 23,000,000 kWh.\n\nTherefore, the approximate total annual energy consumption based on the company's truncation method is 23,000,000 kWh.",
+            "options": [
+                "23,540,000 kWh",
+                "23,000,000 kWh",
+                "22,000,000 kWh",
+                "24,000,000 kWh"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Simplification and Approximation",
+    "exam_id": 10,
+    "order": 1
+}

@@ -1,0 +1,453 @@
+{
+    "questions": [
+        {
+            "question": "A baker needs to add 25% more flour to his bread recipe. If he normally uses 400 grams of flour, approximately how many grams of flour will he need in total?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n* **Calculate the increase:** 25% of 400 grams is (25/100) * 400 = 100 grams.\n* **Add the increase to the original amount:** 400 grams + 100 grams = 500 grams.\n\nTherefore, the baker will need approximately 500 grams of flour in total.",
+            "options": [
+                "425 grams",
+                "450 grams",
+                "500 grams",
+                "550 grams"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter needs to mix 2 parts blue paint with 3 parts yellow paint to create a specific shade of green. If they want to make 10 liters of this green paint, how many liters of yellow paint will they need?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Ratio:** The ratio 2:3 means that for every 2 liters of blue paint, the painter needs 3 liters of yellow paint. This makes a total of 2 + 3 = 5 parts in the mixture.\n\n**2. Determine the Value of One Part:** Since the painter wants to make 10 liters of green paint, and the mixture has 5 parts, one part is equal to 10 liters / 5 parts = 2 liters/part.\n\n**3. Calculate the Amount of Yellow Paint:**  As the ratio of yellow paint is 3 parts, the painter needs 3 parts * 2 liters/part = 6 liters of yellow paint.\n\n**Therefore, the painter will need 6 liters of yellow paint to make 10 liters of the desired green paint.**",
+            "options": [
+                "2 liters",
+                "4 liters",
+                "6 liters",
+                "8 liters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "You are hosting a party and expect around 25 friends to attend. You want to have enough snacks, so you figure each friend will eat about 10 small snacks. You plan to buy bags of chips, with each bag containing approximately 20 chips.  About how many bags of chips do you need to buy to have enough for everyone?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n* **Estimate the total chips needed:** 25 friends * 10 chips/friend = 250 chips\n* **Calculate the number of bags:** 250 chips / 20 chips/bag = 12.5 bags\n* **Round up to the nearest whole bag:** Since you can't buy half a bag, you'll need to buy 13 bags of chips.\n\nTherefore, you need to buy approximately 13 bags of chips to have enough for all your friends.",
+            "options": [
+                "10",
+                "12",
+                "13",
+                "15"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A financial analyst needs to convert a company's quarterly earnings from US dollars to Euros. If the current exchange rate is $1.18 USD/EUR and the company's earnings are $2,350,000 USD, approximately how many Euros (\u20ac) is this?",
+            "difficulty": "easy",
+            "reasoning": "To solve this, we'll use unit conversion:\n\n1. **Identify the conversion factor:** We're given 1.18 USD/EUR. \n2. **Set up the conversion:** We want to cancel out USD and be left with EUR. So, we'll divide the USD amount by the conversion factor:\n   \n   \u20ac = $2,350,000 USD / (1.18 USD/EUR)\n\n3. **Calculate:** Performing the division, we get:\n\n   \u20ac \u2248 1,991,525.42 \n\nTherefore, the company's earnings are approximately \u20ac1,991,525.42.",
+            "options": [
+                "1,991,525.42 EUR",
+                "2,779,000 EUR",
+                "1,180,000 EUR",
+                "2,350,000 EUR"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: Imagine you are shrinking a square garden for your miniature dollhouse. The original garden had a side length of 16 inches. You've decided to shrink it so each side is now only \u221a4 inches long.\n**Problem**: What is the area of the miniature garden compared to the original garden?\n**Instructions**: Express your answer as a simplified fraction.\n",
+            "difficulty": "easy",
+            "reasoning": "1. **Calculate the area of the original garden:**\n   * Area = side * side = 16 inches * 16 inches = 256 square inches\n\n2. **Calculate the area of the miniature garden:**\n   * \u221a4 = 2 inches (Simplifying the square root)\n   * Area = side * side = 2 inches * 2 inches = 4 square inches\n\n3. **Compare the areas:**\n   * The miniature garden's area (4 square inches) is 1/64 the size of the original garden's area (256 square inches). This is found by dividing the miniature garden's area by the original garden's area: 4/256 = 1/64",
+            "options": [
+                "1/16",
+                "1/64",
+                "1/4",
+                "1/2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: The chart below shows the number of apples sold by a farmer each day at a market.\n**Data**: \n  **chart_type**: Line Graph\n  **x_axis**: \n    - Monday\n    - Tuesday\n    - Wednesday\n    - Thursday\n    - Friday\n  **y_axis**: \n    - 45\n    - 55\n    - 60\n    - 50\n    - 70\n**Question**: About how many apples did the farmer sell in total from Monday to Friday?\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under 'Data Interpretation: Approximations from Graphs, Charts, and Tables' and tests the skill of 'Quants - Simplification and Approximation' as it requires reading data from a chart and approximating the sum.\n\nHere's a step-by-step solution:\n1. **Approximate each day's sales:**\n    - Monday:  ~45\n    - Tuesday: ~55\n    - Wednesday: ~60\n    - Thursday: ~50\n    - Friday: ~70\n2. **Add the approximations:** 45 + 55 + 60 + 50 + 70 = 280\n\nTherefore, the farmer sold approximately 280 apples from Monday to Friday.",
+            "options": [
+                "250",
+                "300",
+                "350",
+                "400"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Difficulty**: Easy (Difficulty Level: 5/10)\n**Question**: In the 2022 CAT Exam, 30% of the questions in the Quants section were based on Arithmetic.  If the total number of questions in the Quants section was 34, approximately how many questions were based on Arithmetic?\n**Options**: \n  **a**: 8\n  **b**: 9\n  **c**: 10\n  **d**: 12\n**Correct Answer**: c\n",
+            "difficulty": "medium",
+            "reasoning": "This question aligns with the 'Practice with Previous Year Questions and Mock Tests' theme by referencing a hypothetical CAT Exam scenario. It tests a student's ability to:\n\n1. **Understand percentages:**  30% represents 30 out of every 100.\n2. **Apply percentages to real-world situations:** Calculate what portion of the 34 questions the 30% represents.\n3. **Approximate:**  The question asks for an approximate answer, making it easier to calculate mentally.\n\n**Step-by-Step Solution:**\n\n1. **Calculate 10% of the total questions:** 10% of 34 is approximately 3.4\n2. **Multiply to find 30%:** Since 30% is three times larger than 10%, multiply the previous result by 3: 3.4 x 3 = 10.2\n3. **Approximate:** 10.2 is closest to 10.\n\n**Therefore, the approximate number of Arithmetic questions is 10, making option (c) the correct answer.**",
+            "options": [
+                "8",
+                "9",
+                "10",
+                "12"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Difficulty Level**: Easy (6/10)\n**Question Type**: Multiple Choice\n**Topic**: Significant Figures\n**Context**: A student measures the mass of a chemical sample as 3.54 grams. \n**Question**: How many significant figures are in this measurement?\n",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Significant Figures: Rules, Rounding, and Importance in Approximations' about 'Quants - Simplification and Approximation'.\n\nHere's how to determine the number of significant figures:\n\n* **Rule:** All non-zero digits are always significant.\n\n* **Application:** In the measurement '3.54 grams', all three digits (3, 5, and 4) are non-zero.\n\n* **Therefore:** The measurement has **three** significant figures.",
+            "options": [
+                "One",
+                "Two",
+                "Three",
+                "Four"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: You are planning a road trip from New York City to Chicago. The total distance is approximately 800 miles.\n**Task**: You want to estimate how many hours it will take to drive, assuming an average speed of 60 miles per hour. Round the distance to the nearest hundred miles and the speed to the nearest ten miles per hour before performing the calculation. \n**Answer Format**: Provide the estimated driving time in hours.\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n1. **Round the distance:** Round 800 miles to the nearest hundred, which is 800 miles.\n2. **Round the speed:** Round 60 miles per hour to the nearest ten, which is 60 miles per hour.\n3. **Estimate driving time:** Divide the rounded distance by the rounded speed: 800 miles / 60 miles/hour = 13.33 hours.\n\nTherefore, the estimated driving time is approximately 13.33 hours.",
+            "options": [
+                "13 hours",
+                "14 hours",
+                "12 hours",
+                "15 hours"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Simplify the expression and estimate its value: (5.02)^2 + (2.99)^3 ",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Powers and Roots: Simplification, Properties, and Calculation Techniques' topic as it requires simplifying an expression involving powers and approximating the result. \n\nHere's how to solve it:\n\n1. **Approximation:** Since the question asks for an estimation, round the numbers to the nearest whole number: 5.02 \u2248 5 and 2.99 \u2248 3.\n\n2. **Calculation:** Substitute the approximated values into the expression: (5)^2 + (3)^3\n\n3. **Simplification:** Calculate the powers: 25 + 27\n\n4. **Result:** Add the numbers: 25 + 27 = 52\n\nTherefore, the approximate value of the expression (5.02)^2 + (2.99)^3 is 52.",
+            "options": [
+                "50",
+                "52",
+                "55",
+                "60"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery uses a ratio of 5:3 for the amount of flour to sugar in its cookie recipe. If a baker wants to use 10 cups of flour, how many cups of sugar will he need?",
+            "difficulty": "medium",
+            "reasoning": "The ratio of flour to sugar is 5:3. This means for every 5 cups of flour, the baker needs 3 cups of sugar. \n\nSince the baker wants to use 10 cups of flour, we need to find out how many times the original ratio of 5 cups of flour fits into 10 cups. That's simple: 10 cups / 5 cups = 2.  \n\nSince we're scaling the flour up by a factor of 2, we also need to scale the sugar by the same factor. That means the baker needs 3 cups * 2 = 6 cups of sugar. \n\nTherefore, the baker needs 6 cups of sugar.",
+            "options": [
+                "3 cups",
+                "5 cups",
+                "6 cups",
+                "10 cups"
+            ],
+            "correct": "6 cups",
+            "correct_option": "C"
+        },
+        {
+            "question": "Sarah is baking cookies and needs 2.5 times the amount of flour stated in her recipe. The recipe calls for 1.75 cups of flour.  \n\nWhat equation represents the total amount of flour Sarah needs?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Linear Equations: Solving for Variables, Simplification, and Word Problems' subtopic within 'Quants - Simplification and Approximation'. It's categorized as 'easy' because it involves setting up a simple linear equation based on a word problem, without requiring complex simplification or approximation.\n\nHere's how to solve it:\n\n* **Let 'x' represent the total amount of flour Sarah needs.**\n* **The problem states that x is 2.5 times the recipe's flour amount, which is 1.75 cups.** \n* **This translates to the equation: x = 2.5 * 1.75**\n\nTherefore, the equation representing the total amount of flour Sarah needs is x = 2.5 * 1.75",
+            "options": [
+                "x = 4.375",
+                "x = 1.75 + 2.5",
+                "x = 2.5 * 1.75",
+                "x = 1.75 / 2.5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A baker needs to reduce the sugar content of his cookie recipe by 20%. The recipe currently calls for 4/5 of a cup of sugar.  To approximate the new amount, what fraction of a cup of sugar should he use, expressing the answer in simplest form?",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to work with both fractions and percentages in a real-world context. Here's a step-by-step solution:\n\n1. **Convert the fraction to a percentage:**  4/5 is equivalent to 80/100, which is 80%.\n\n2. **Calculate the sugar reduction:** 20% of 80% is (20/100) * 80 = 16%.\n\n3. **Determine the new sugar percentage:** The baker needs to use 80% - 16% = 64% of the original amount of sugar.\n\n4. **Convert the percentage back to a fraction:** 64% is equivalent to 64/100. Simplifying this fraction, we get 16/25.\n\nTherefore, the baker should use approximately **16/25** of a cup of sugar.",
+            "options": [
+                "1/2",
+                "3/5",
+                "16/25",
+                "2/3"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A student appeared for 5 mock tests and scored 180, 150, 165, 190, and 175.  What is the approximate average score of the student across all the tests?",
+            "difficulty": "medium",
+            "reasoning": "The question falls under 'Practice with Previous Year Questions and Mock Tests' as it simulates a scenario a student might encounter. It involves 'Quants - Simplification and Approximation' as we need to calculate the average score, which we can do through approximation.\n\nHere's how to solve it:\n1. **Round the scores:** Round each score to the nearest ten for easier calculation. \n   * 180 stays as 180\n   * 150 stays as 150\n   * 165 becomes 170\n   * 190 stays as 190\n   * 175 becomes 180\n2. **Sum the rounded scores:** 180 + 150 + 170 + 190 + 180 = 870\n3. **Divide by the number of tests:** 870 / 5 = 174\n\nTherefore, the approximate average score of the student is 174.",
+            "options": [
+                "170",
+                "172",
+                "174",
+                "176"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: You are participating in a charity walkathon. The total route is 26.2 miles. You want to set up refreshment stops approximately every 3.5 miles along the route, including the finish line.  You'll need volunteers and supplies at each stop.\n**question**: Using simplification and approximation, estimate how many refreshment stops you will need for the charity walkathon.\n**difficulty**: easy\n",
+            "reasoning": "This question falls under the 'Real-World Applications: Using Simplification and Approximation in Practical Scenarios' topic because it presents a practical scenario where estimation is needed. \n\nHere's how to solve it:\n\n1. **Simplify:** Round the walkathon distance (26.2 miles) to 26 miles and the distance between stops (3.5 miles) to 3 miles for easier calculation. \n2. **Divide:** Divide the total distance by the distance between stops: 26 miles / 3 miles/stop \u2248 8.66 stops. \n3. **Round Up:** Since you can't have a fraction of a stop, round 8.66 up to 9. You'll need a whole stop at the finish line, even if the last leg is slightly shorter than 3 miles.\n\nTherefore, you would need approximately 9 refreshment stops for the walkathon.",
+            "options": [
+                "6",
+                "7",
+                "8",
+                "10"
+            ],
+            "correct_option": "D",
+            "difficulty": "medium"
+        },
+        {
+            "question": "What is the simplified value of the expression: 18 \u00f7 (5 - 2) + 4 \u00d7 3 - 8 ?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'BODMAS/PEMDAS Rule: Understanding and Application in Simplification' subtopic. Here's how to solve it step-by-step:\n\n1. **Parentheses/Brackets First (B/P):** Solve the expression inside the parentheses: (5 - 2) = 3.\n\n2. **Exponents/Orders (O/E):**  There are no exponents in this expression. \n\n3. **Division and Multiplication (D & M) From Left to Right:**\n   *  18 \u00f7 3 = 6\n   *  4 \u00d7 3 = 12\n\n4. **Addition and Subtraction (A & S) From Left to Right:**\n   * 6 + 12 - 8 = 10\n\nTherefore, the simplified value of the expression is 10.",
+            "options": [
+                "18",
+                "10",
+                "22",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A fruit vendor sells 1/3 of his apples in the morning and 25% of the remaining apples in the afternoon.  If he started with 150 apples, approximately how many apples does he have left at the end of the day?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**Step 1: Calculate the number of apples sold in the morning.**\n* The vendor sells 1/3 * 150 apples = 50 apples in the morning.\n\n**Step 2: Calculate the number of apples remaining after the morning sales.**\n* The vendor has 150 apples - 50 apples = 100 apples left.\n\n**Step 3: Calculate the number of apples sold in the afternoon.**\n* The vendor sells 25% * 100 apples = 25 apples in the afternoon.\n\n**Step 4: Calculate the number of apples remaining at the end of the day.**\n* The vendor has 100 apples - 25 apples = 75 apples left.\n\n**Therefore, the vendor has approximately 75 apples left at the end of the day.**",
+            "options": [
+                "100 apples",
+                "50 apples",
+                "75 apples",
+                "25 apples"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A water tank has a volume of 5 cubic meters. Water flows out of the tank at a rate of 5 liters per minute.\n**problem**: Approximately how many hours will it take for the tank to be completely empty?\n**answer_choices**: \n  - 16.7 hours\n  - 100 hours\n  - 10 hours\n  - 60 hours\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Unit Conversion:**\n* We need to convert cubic meters to liters: 1 cubic meter = 1000 liters. \n* Therefore, the tank has a volume of 5 cubic meters * 1000 liters/cubic meter = 5000 liters.\n\n**2. Calculate Time in Minutes:**\n* Divide the total volume by the outflow rate: 5000 liters / 5 liters/minute = 1000 minutes\n\n**3. Convert Minutes to Hours:**\n* Divide the time in minutes by 60: 1000 minutes / 60 minutes/hour \u2248 16.7 hours\n\n**Therefore, the correct answer is (a) 16.7 hours.**",
+            "options": [
+                "16.7 hours",
+                "100 hours",
+                "10 hours",
+                "60 hours"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: You are organizing a charity event and need to order snacks for 237 attendees.  You find a bulk deal where a box of granola bars contains approximately 12 bars and costs $15. To simplify your calculations and budget efficiently, you want to estimate the cost per person for granola bars.\n**Question**: Using approximation, what is the estimated cost per person for granola bars if you want to provide one bar per attendee?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem using simplification and approximation:\n\n* **Approximate the number of attendees:** Round 237 to 240 attendees.\n* **Calculate the number of boxes needed:** Divide the number of attendees by the number of bars per box: 240 attendees / 12 bars/box \u2248 20 boxes.\n* **Calculate the total cost:** Multiply the number of boxes by the cost per box: 20 boxes * $15/box = $300.\n* **Estimate the cost per person:** Divide the total cost by the number of attendees: $300 / 240 attendees = $1.25 per person.\n\nTherefore, the estimated cost per person for granola bars is approximately $1.25.",
+            "options": [
+                "$1.25",
+                "$1.00",
+                "$1.50",
+                "$2.00"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A student analyzed a set of previous year CAT exam papers and found that 22.22% of the quant questions were from Arithmetic, 33.33% were from Algebra, and 16.67% were from Geometry. The remaining questions were from 'Modern Math'. If the total number of quant questions across those years was 360, approximately how many questions were from 'Modern Math'? ",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the combined percentage of Arithmetic, Algebra, and Geometry:** \n\n   22.22% + 33.33% + 16.67% = 72.22%\n\n**2. Calculate the percentage of 'Modern Math' questions:**\n\n   100% - 72.22% = 27.78%\n\n**3. Approximate the percentage of 'Modern Math' questions to a convenient value:**\n\n   27.78% is approximately 28%\n\n**4. Calculate the approximate number of 'Modern Math' questions:**\n\n   28% of 360 = (28/100) * 360 = 100.8 \n\n**5. Approximate the final answer to the nearest whole number:**\n\n   100.8 is approximately equal to **101**\n\nTherefore, approximately **101** questions were from 'Modern Math'. ",
+            "options": [
+                "101",
+                "102",
+                "100",
+                "99"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A craftsman charges a flat fee of $50 for a house call, plus an hourly rate for his work. For a 3-hour job, he charged a total of $170.  If his hourly rate is represented by 'x', which equation correctly models this situation and what is the value of 'x'?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Linear Equations: Solving for Variables, Simplification, and Word Problems' as it requires setting up a linear equation to represent a real-world scenario and then solving for the unknown variable ('x').\n\nHere's how to solve the problem step-by-step:\n\n**1. Define the variable:**\n   Let 'x' represent the craftsman's hourly rate.\n\n**2. Set up the equation:**\n   The total cost consists of the flat fee plus the hourly rate multiplied by the number of hours:\n   Total cost = Flat fee + (Hourly rate * Number of hours)\n   In this case:\n   $170 = $50 + (x * 3)\n\n**3. Solve for 'x':**\n   a. Subtract $50 from both sides: \n      $120 = 3x\n   b. Divide both sides by 3:\n      $40 = x\n\nTherefore, the correct equation is $170 = $50 + (x * 3) and the craftsman's hourly rate ('x') is $40.",
+            "options": [
+                "$50 + 3x = $170",
+                "$170 = $50 + 3x",
+                "$170 = $50x + 3",
+                "$120 = x + 3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Simplify the following expression and then approximate its value to the nearest hundredth when \\(x = 2.1\\):\n\n \\[ \\frac{3x^2 - 5x + 2}{x^2 - 4} - \\frac{2x}{x+2} \\]",
+            "difficulty": "medium",
+            "reasoning": "**1. Simplification:**\n\n* **Factorization:** Notice that the denominator of the first term is a difference of squares: \\(x^2 - 4 = (x+2)(x-2)\\)\n* **Finding a Common Denominator:**  The least common denominator for all terms is \\((x+2)(x-2)\\).\n* **Combining Fractions:**\n   \\[ \\frac{3x^2 - 5x + 2}{(x+2)(x-2)} - \\frac{2x(x-2)}{(x+2)(x-2)} = \\frac{3x^2 - 5x + 2 - 2x^2 + 4x}{(x+2)(x-2)}\\]\n* **Simplifying:**\n   \\[ \\frac{x^2 -x + 2}{(x+2)(x-2)} \\]\n\n**2. Approximation:**\n\n* **Substitute:** Substitute \\(x = 2.1\\) into the simplified expression:\n   \\[ \\frac{(2.1)^2 - (2.1) + 2}{(2.1 + 2)(2.1 - 2)} \\]\n* **Calculate:**\n   \\[ \\frac{4.41 - 2.1 + 2}{(4.1)(0.1)} \u2248 \\frac{4.31}{0.41} \u2248 10.51 \\]\n\nTherefore, the simplified expression is \\( \\frac{x^2 -x + 2}{(x+2)(x-2)} \\) and its approximate value when \\(x = 2.1\\) is **10.51** to the nearest hundredth.",
+            "options": [
+                "10.51",
+                "10.5",
+                "4.31",
+                "0.41"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Simplify the following expression using the BODMAS/PEMDAS rule:\n\n\u221b(81 \u00f7 (3 x 3 + 6)) + (\u221a16 - 2)\u00b2",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'BODMAS/PEMDAS Rule: Understanding and Application in Simplification' subtopic of 'Quants - Simplification and Approximation'. Here's a step-by-step solution:\n\n**1. Innermost Parentheses:**\n   * 3 x 3 + 6 = 9 + 6 = 15\n\n**2. Brackets/Parentheses:**\n   * 81 \u00f7 15 = 5.4\n\n**3. Exponents/Orders:**\n   * \u221b5.4 \u2248 1.75 (approximating the cube root)\n   * \u221a16 = 4\n   * (4 - 2)\u00b2 = 2\u00b2 = 4\n\n**4. Addition:**\n   * 1.75 + 4 = 5.75\n\nTherefore, the simplified expression is approximately 5.75.",
+            "options": [
+                "5.75",
+                "5.5",
+                "6.25",
+                "6.75"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: You're organizing a team building event and need to order pizzas. You estimate about 35 colleagues will attend. Assuming each person eats approximately 3 slices on average and a large pizza has 12 slices, how many pizzas should you order to ensure everyone has enough?\n**question**: What is the minimum number of pizzas you need to order?\n**answer_choices**: \n  - 7\n  - 8\n  - 9\n  - 10\n  - 11\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how we can solve this using simplification and approximation:\n\n* **Approximate the number of attendees:** Round the number of colleagues to 40 for easier calculation.\n* **Calculate total slices needed:** 40 people * 3 slices/person = 120 slices\n* **Determine pizzas needed:** 120 slices / 12 slices/pizza = 10 pizzas\n\n**Therefore, you should order at least 10 pizzas to ensure everyone has enough.**\n\n**Correct Answer:** 10",
+            "options": [
+                "7",
+                "8",
+                "9",
+                "11"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A construction crew is mixing concrete for a building foundation. The ideal ratio for the mixture is 2 parts cement to 3 parts sand to 4 parts gravel.  If the crew needs a total of 36 cubic yards of concrete mix, approximately how many cubic yards of sand will they need?",
+            "difficulty": "medium",
+            "reasoning": "**1. Determine the total parts in the ratio:**\n   - Add the parts of the ratio: 2 + 3 + 4 = 9 parts\n\n**2. Calculate the size of one part:**\n   - Divide the total concrete needed by the total parts in the ratio: 36 cubic yards / 9 parts = 4 cubic yards per part\n\n**3. Determine the amount of sand:**\n   - Since sand represents 3 parts of the ratio, multiply the size of one part by 3: 4 cubic yards/part * 3 parts = 12 cubic yards of sand\n\n**Therefore, the crew will need approximately 12 cubic yards of sand.**",
+            "options": [
+                "12 cubic yards",
+                "16 cubic yards",
+                "24 cubic yards",
+                "36 cubic yards"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A farmer wants to build a fence around his rectangular field. He knows the length of the field is 3 times its width, minus 25 meters. He also knows the perimeter of the field is 410 meters.\n\nWrite an equation that represents the perimeter of the field in terms of its width (let 'w' represent the width). Then, solve the equation to find the width of the field.  Approximate your answer to the nearest tenth of a meter.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Linear Equations: Solving for Variables, Simplification, and Word Problems' as it requires setting up a linear equation based on a word problem, simplifying the equation, and then solving for the unknown variable.\n\nHere's how to solve the problem step-by-step:\n\n1. **Define variables:**\n    * Let 'w' represent the width of the field.\n    * The length is 3 times the width minus 25 meters, so length = 3w - 25\n\n2. **Formulate the equation:**\n    * Perimeter of a rectangle = 2 * (length + width)\n    * We are given the perimeter is 410 meters.\n    * So, the equation is: 410 = 2 * (3w - 25 + w)\n\n3. **Simplify and solve the equation:**\n    * 410 = 2 * (4w - 25)\n    * 410 = 8w - 50\n    * 460 = 8w\n    * w = 57.5 meters \n\nTherefore, the width of the field is approximately 57.5 meters.",
+            "options": [
+                "Linear Equations: Solving for Variables, Simplification, and Word Problems",
+                "Quadratic Equations: Factoring and Solving",
+                "Systems of Equations: Substitution and Elimination",
+                "Geometry: Area and Perimeter of Rectangles"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "In the 2022 CAT exam, a simplification question involved calculating the value of a complex expression with nested fractions and exponents. To test your preparation, let's tackle a similar challenge.  \n\n**Problem Statement:** Simplify the following expression and round it to the nearest integer:\n\n [(2.54)\u00b2 + (1.29)\u00b3 - (0.87)\u2074] / \u221a(4.05) \n\n**Options:** \n\na) 3 \nb) 4 \nc) 5 \nd) 6",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Practice with Previous Year Questions and Mock Tests' category as it mimics the style and complexity of a past CAT exam problem, testing a student's ability to handle simplification and approximation within a time constraint. \n\nHere's a step-by-step solution:\n\n1. **Address Exponents:**\n   - (2.54)\u00b2 \u2248 6.45 (Since 2.5\u00b2 = 6.25, we know the answer will be slightly higher)\n   - (1.29)\u00b3 \u2248 2 (Since 1.3\u00b3 = 2.197, the answer is close to 2) \n   - (0.87)\u2074 \u2248 0.6 (Approximating 0.9\u2074 = 0.6561) \n\n2. **Simplify within Brackets:**\n   - [6.45 + 2 - 0.6] \u2248 7.85\n\n3. **Approximate Square Root:**\n   - \u221a(4.05) \u2248 2 (Since \u221a4 = 2)\n\n4. **Final Calculation:**\n   - 7.85 / 2 \u2248 3.93\n\n5. **Round to Nearest Integer:**\n   - 3.93 rounds to **4**\n\n**Therefore, the correct option is (b) 4.**",
+            "options": [
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A construction company needs to estimate the total cost of concrete for a rectangular foundation. The foundation is measured to be approximately 24.7 meters long, 12.3 meters wide, and 0.5 meters deep. The cost of concrete is $125 per cubic meter.  To simplify calculations, the company wants to use rounding to estimate the cost. \n\nUsing rounding to the nearest whole number for all dimensions and the cost per cubic meter, estimate the total cost of the concrete. What is the difference between the estimated cost and the cost if you calculated with the exact provided values?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Round the values:**\n   * Length: 24.7 meters rounds to 25 meters\n   * Width: 12.3 meters rounds to 12 meters\n   * Depth: 0.5 meters rounds to 1 meter\n   * Cost per cubic meter: $125 remains as $125 \n\n**2. Calculate the estimated volume:**\n   * Volume = Length x Width x Depth\n   * Volume \u2248 25 meters * 12 meters * 1 meter \u2248 300 cubic meters\n\n**3. Calculate the estimated cost:**\n   * Estimated cost \u2248 Volume x Cost per cubic meter\n   * Estimated cost \u2248 300 cubic meters * $125/cubic meter \u2248 $37,500\n\n**4. Calculate the exact cost:**\n   * Exact Volume = 24.7 meters * 12.3 meters * 0.5 meters = 152.055 cubic meters\n   * Exact Cost = 152.055 cubic meters * $125/cubic meter = $19,006.875\n\n**5. Calculate the difference:**\n   * Difference = Estimated Cost - Exact Cost\n   * Difference = $37,500 - $19,006.875 = $18,493.125\n\n**Therefore, the difference between the estimated cost and the exact cost is approximately $18,493.13.** ",
+            "options": [
+                "$18,493.13",
+                "$19,006.88",
+                "$37,500",
+                "$300"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: A clothing store is having a sale where all shirts are 30% off.  Mark wants to buy two shirts. One originally costs $28 and the other originally costs $32.\n**Question**: Approximately, how much will Mark save in total by buying the shirts on sale?\n**Answer Choices**: \n  - A) $15\n  - B) $18\n  - C) $20\n  - D) $22\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the discount on each shirt:**\n\n   * Shirt 1 discount: $28 * 0.30 = $8.40 (approximately $8)\n   * Shirt 2 discount: $32 * 0.30 = $9.60 (approximately $10)\n\n**2. Calculate the total discount:**\n\n   * Total savings: $8 + $10 = $18\n\n**Therefore, the correct answer is (B) $18.**\n\n**Reasoning for Difficulty Level:**\n\n* This question involves calculating percentages of two separate items and then adding them together. This requires a bit more calculation than a simple single-item percentage discount.\n* The problem encourages approximation.  Rounding the discounts to the nearest dollar makes the calculation easier and reflects a practical approach to real-life shopping scenarios.\n* The distractors are designed to catch common errors, such as calculating only one discount or miscalculating the approximate values.",
+            "options": [
+                "$15",
+                "$18",
+                "$20",
+                "$22"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: The following line graph shows the approximate number of visitors to a national park each month in 2022.\n**data**: [[Image of a line graph with months on the x-axis (Jan-Dec) and visitors (in thousands) on the y-axis.  Data points should show some fluctuation throughout the year, with peaks likely in summer months.]]\n**question**: Based on the graph, estimate the total number of visitors to the park during the period from May to September of 2022.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Data Interpretation: Approximations from Graphs, Charts, and Tables' and tests the ability to: \n\n* **Extract data from a line graph:** Students need to read the visitor count for each month from May to September from the graph.\n* **Approximate values:**  The graph may not provide exact numbers, requiring students to estimate based on the position of the data points on the y-axis.\n* **Perform calculations:** Students need to add the approximate visitor counts for the five months to find the total. \n\n**Step-by-Step Solution:**\n1. **Identify data points:** Locate the data points on the graph corresponding to May, June, July, August, and September. \n2. **Estimate values:** For each month, approximate the number of visitors based on the data point's position on the y-axis. For example, if the June data point is slightly above a marker for 6,000 visitors, you might estimate June's visitor count to be around 6,200.\n3. **Sum the estimates:** Add the estimated visitor counts for all five months to calculate the approximate total visitors from May to September.\n\n**Verification:** Since this question involves estimation, there won't be one single 'correct' answer. The key is to ensure your initial estimations from the graph are reasonable and that your calculation of the total is mathematically sound.",
+            "options": [
+                "Data Interpretation: Approximations from Graphs, Charts, and Tables",
+                "Data Interpretation: Analyzing Trends and Patterns",
+                "Data Interpretation: Comparing and Contrasting Data",
+                "Data Interpretation: Reading and Understanding Data"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A student is analyzing previous year's mock test papers.  She notices a pattern in a recurring question type. The question always presents a complex fraction with multiple decimals and asks for its simplified value.  Realizing this pattern, she devises a strategy.  Instead of directly calculating, she focuses on approximating each term to its nearest whole number or simple fraction (like 1/2). This lets her quickly estimate the overall fraction's value.  \n\nUsing this strategy, what is the simplified value of the following expression, which she believes represents the 'trickiest' variation of this recurring question type?\n\n(4.98 * 6.03 * 2.02) / (1.97 * 3.01 * 0.51)",
+            "difficulty": "hard",
+            "reasoning": "This question tests a student's ability to combine pattern recognition with approximation techniques, a crucial skill for efficiently tackling quantitative aptitude exams. Here's how to solve it:\n\n1. **Approximate each term:**\n    * 4.98 \u2248 5\n    * 6.03 \u2248 6\n    * 2.02 \u2248 2\n    * 1.97 \u2248 2\n    * 3.01 \u2248 3\n    * 0.51 \u2248 1/2\n\n2. **Substitute the approximations into the expression:**\n    (5 * 6 * 2) / (2 * 3 * 1/2)\n\n3. **Simplify:**\n    (60) / (3) = 20\n\nTherefore, the simplified value of the expression is 20.",
+            "options": [
+                "10",
+                "15",
+                "20",
+                "25"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A tailor needs to cut a piece of fabric that is exactly 2 5/8 inches long. He has a measuring tape marked in decimals with increments of 1/16 inch.  \n\nTo what decimal marking on his tape should the tailor line up the fabric edge to make the cut as precise as possible?",
+            "difficulty": "hard",
+            "reasoning": "This question combines fractions, decimals, and unit conversions, demanding multiple steps to reach the solution:\n\n**1. Convert the mixed number to a fraction:**\n   2 5/8 = (2 x 8 + 5)/8 = 21/8\n\n**2. Convert the fraction to a decimal:**\n   21/8 = 2.625 inches\n\n**3. Determine the decimal equivalent of each 1/16 inch increment on the tape:**\n   1/16 = 0.0625 inches\n\n**4. Divide the desired length (2.625 inches) by the increment size (0.0625 inches) to find the number of increments:**\n   2.625 / 0.0625 = 42 increments \n\n**Therefore, the tailor should line up the fabric edge with the 42nd marking on his tape after the 2-inch mark to achieve the most precise cut.**\n\n**Options:**\n* (A) 2.60 inches\n* (B) 2.62 inches\n* (C) 2.625 inches \n* (D) 2.63 inches \n\n**Correct Option:** (C) 2.625 inches",
+            "options": [
+                "2.60 inches",
+                "2.62 inches",
+                "2.625 inches",
+                "2.63 inches"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given that  *x* = 1.75 and *y* = -0.5, simplify and approximate the following expression to the nearest hundredth:\n\n ((3x\u00b2 - 2xy + y\u00b2) / (x - y))  -  (x + 2y)(2x - y) ",
+            "difficulty": "hard",
+            "reasoning": "**1. Substitute the values:**\n\n   Begin by substituting the given values of *x* and *y* into the expression:\n\n   ((3(1.75)\u00b2 - 2(1.75)(-0.5) + (-0.5)\u00b2) / (1.75 - (-0.5)))  -  (1.75 + 2(-0.5))(2(1.75) - (-0.5))\n\n**2. Simplify within the parentheses:**\n\n   * First term numerator: 3(3.0625) + 1.75 + 0.25 = 11.4375\n   * First term denominator: 1.75 + 0.5 = 2.25\n   * Second term, first parenthesis: 1.75 - 1 = 0.75\n   * Second term, second parenthesis: 3.5 + 0.5 = 4\n\n   Now the expression looks like this:\n\n   (11.4375 / 2.25) - (0.75)(4)\n\n**3. Perform the remaining calculations:**\n\n   * Division: 11.4375 / 2.25 = 5.0833...\n   * Multiplication: 0.75 * 4 = 3\n   * Subtraction: 5.0833... - 3 = 2.0833...\n\n**4. Approximate to the nearest hundredth:**\n\n    Rounding 2.0833... to the nearest hundredth gives us **2.08**\n\n**Therefore, the simplified and approximated value of the expression is 2.08.**",
+            "options": [
+                "1.75",
+                "2.08",
+                "3.00",
+                "5.08"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "The graph below shows the revenue generated by a software company from different product lines over four quarters. \n\n[Insert a line graph with four distinct lines representing revenue from four different product lines (A, B, C, and D) across four quarters.  Ensure the lines fluctuate, cross each other, and don't follow a simple pattern. Add labels and units for clarity]\n\nThe company wants to invest in marketing for two product lines in the next quarter, focusing on those that have shown the highest combined average quarterly growth rate over the past year. Based on approximate figures, which two product lines should the company choose?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under 'Data Interpretation: Approximations from Graphs, Charts, and Tables' and tests the ability to extract, approximate, and compare data from a graph to make a decision. \n\nHere's how to solve it:\n\n1. **Identify Key Information:** We need to find the average quarterly growth rate for each product line. This requires comparing revenue from Q1 to Q4 for each product. \n\n2. **Approximate Changes:** Instead of calculating exact growth percentages, approximate the revenue change for each product line from Q1 to Q4. For instance:\n    * Product A: Starts low, ends slightly higher (approximate increase of maybe 10-15%).\n    * Product B: Starts high, dips in Q2, recovers slightly, but ends lower than Q1 (approximate decrease). \n    * Product C: Shows consistent growth throughout the year (could be a significant percentage increase \u2013 maybe 20-30% or more). \n    * Product D: Fluctuates but ends up slightly higher than it began (a small increase, perhaps 5-10%). \n\n3. **Focus on Growth Rate:**  Remember, we need the *average quarterly* growth rate. Even if a product had a large total increase but was inconsistent, its average might be lower than a product with steady, smaller growth. \n\n4. **Compare and Decide:** Based on our approximations:\n    * Product C seems to have the highest average growth rate.\n    * Product A likely has the second-highest average growth rate. \n\n5. **Final Answer:**  The company should invest in marketing for Product C and Product A. ",
+            "options": [
+                "A and B",
+                "B and D",
+                "A and C",
+                "C and D"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A cargo ship is transporting rectangular containers, each with a volume of 250 cubic meters. The containers are stacked 8 high and 12 wide on the ship's deck. The ship needs to pass under a bridge with a clearance of 35 feet.  Given that 1 meter is approximately 3.28 feet,  what is the maximum allowable length of each container (in meters) for the ship to pass safely under the bridge?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Convert Clearance to Meters:**\n* The bridge clearance is 35 feet. \n* We need to convert this to meters: 35 feet / 3.28 feet/meter \u2248 10.67 meters.\n\n**2. Calculate Total Stack Height in Meters:**\n* The containers are stacked 8 high.\n* Assuming each container has a uniform height, the total stack height is 8 containers * container height (which we'll call 'h') = 8h meters\n\n**3. Determine Maximum Allowable Container Height:**\n* To pass under the bridge, the total stack height (8h meters) must be less than the clearance (10.67 meters).\n* Therefore, 8h < 10.67 meters\n* Solving for h, we get: h < 10.67 meters / 8 \u2248 1.33 meters\n\n**4. Calculate Maximum Allowable Container Length:**\n* We know the container volume (250 cubic meters) and the maximum height (1.33 meters).\n* We can use the formula for the volume of a rectangular prism: Volume = length * width * height\n* Plugging in the values: 250 cubic meters = length * 12 meters * 1.33 meters\n* Simplifying: 250 cubic meters \u2248 15.96 meters * length\n* Solving for the length: length \u2248 250 cubic meters / 15.96 meters \u2248 15.67 meters\n\n**Therefore, the maximum allowable length of each container for the ship to pass safely under the bridge is approximately 15.67 meters.**",
+            "options": [
+                "10.67 meters",
+                "1.33 meters",
+                "15.67 meters",
+                "250 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A textile factory experiences three consecutive changes in its production output. First, output increases by 12.5%. Then, due to machinery malfunction, output decreases by 16%. Finally, after repairs, output recovers by an additional 6/15 of the output after the malfunction.  To maintain a consistent production record, the factory wants to express the overall change in output as a single percentage compared to the original output. What is this percentage change?",
+            "difficulty": "medium",
+            "reasoning": "Let's assume the initial output was 100 units.\n\n**Step 1: Increase of 12.5%**\n* Increase = (12.5/100) * 100 = 12.5 units\n* Output after increase = 100 + 12.5 = 112.5 units\n\n**Step 2: Decrease of 16%** \n* Decrease = (16/100) * 112.5 = 18 units\n* Output after decrease = 112.5 - 18 = 94.5 units\n\n**Step 3: Increase of (6/15) of the output after the malfunction**\n* Increase = (6/15) * 94.5 = 37.8 units\n* Output after final increase = 94.5 + 37.8 = 132.3 units\n\n**Step 4: Calculate the overall percentage change**\n* Overall change = 132.3 - 100 = 32.3 units\n* Percentage change = (32.3/100) * 100 = 32.3%\n\nTherefore, the overall change in output is an increase of 32.3% compared to the original output.",
+            "options": [
+                "32.3%",
+                "12.5%",
+                "16%",
+                "6/15%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A physicist is working with a complex formula to calculate the energy of a particle.  The formula involves the value of pi (\u03c0). To simplify the calculation, the physicist decides to approximate pi as 3.14 instead of its actual value.\n**question**: If the actual energy of the particle is 31.4159 joules, what is the relative error introduced in the calculation by using the approximated value of pi?\n**answer_options**: \n  - 0.005%\n  - 0.05%\n  - 0.5%\n  - 5%\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the solution:\n\n**1. Understand Relative Error:**\n\nRelative error measures the difference between an approximate value and a true value, relative to the true value. It's calculated as:\n\n*Relative Error = (|Approximate Value - True Value| / |True Value|) * 100%*\n\n**2. Identify the Values:**\n\n* True Value: 31.4159 joules (energy calculated with the actual value of pi)\n* Approximate Value:  We need to calculate this. Since the physicist is simplifying a formula using pi \u2248 3.14,  assume the formula directly involves multiplying by pi. Therefore, the approximate energy would be proportionally different. \n\n**3.  Estimate the Approximate Value:**\n\n* If the energy was directly proportional to pi, using 3.14 instead of pi would result in an energy of approximately 31.4 joules (since 3.14 is a bit less than pi). \n\n**4. Calculate the Relative Error:**\n\n* Relative Error \u2248 (|31.4 - 31.4159| / |31.4159|) * 100%\n* Relative Error \u2248 (0.0159 / 31.4159) * 100%\n* Relative Error \u2248 0.0005 * 100%\n* Relative Error \u2248 0.05%\n\n**Therefore, the relative error introduced by approximating pi as 3.14 is approximately 0.05%.**\n\n**Correct Answer Option:** 0.05%",
+            "options": [
+                "0.005%",
+                "0.05%",
+                "0.5%",
+                "5%"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Simplification and Approximation",
+    "exam_id": 18,
+    "order": 1
+}

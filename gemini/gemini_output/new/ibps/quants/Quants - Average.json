@@ -1,0 +1,465 @@
+{
+    "questions": [
+        {
+            "question": "A group of 5 friends played a basketball arcade game.  Their scores were: 110, 125, 95, 115, and 130. What was their average score?",
+            "difficulty": "easy",
+            "reasoning": "This question tests the basic understanding of calculating an average. Here's how to solve it:\n\n**1. Sum of the scores:**\n   110 + 125 + 95 + 115 + 130 = 575\n\n**2. Divide the sum by the number of scores:**\n   575 / 5 = 115\n\n**Therefore, the average score of the friends is 115.**",
+            "options": [
+                "110",
+                "115",
+                "120",
+                "125"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Difficulty Level**: Easy 5/10\n**Question Type**: Find the average\n**Context**: A cricket team scored the following runs in a 5-over match: 6, 8, 4, 10, 2. \n**Data**: None\n**Question**: What is the average score of the team per over?\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Basic Definition and Formula of Average' as it requires a simple calculation of the average using the given data.\n\nHere's how to solve it:\n\n**1. Sum of all scores:** 6 + 8 + 4 + 10 + 2 = 30\n\n**2. Number of overs:** 5\n\n**3. Average score per over:** Total runs / Number of overs = 30 / 5 = 6 runs per over.\n\nTherefore, the average score of the team per over is 6.",
+            "options": [
+                "8 runs per over",
+                "6 runs per over",
+                "10 runs per over",
+                "4 runs per over"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A car travels at a speed of 40 km/h for 2 hours and then at a speed of 60 km/h for another 2 hours. What is the average speed of the car for the entire journey?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**Step 1: Calculate the distance traveled at each speed.**\n* Distance traveled at 40 km/h = Speed x Time = 40 km/h * 2 h = 80 km\n* Distance traveled at 60 km/h = Speed x Time = 60 km/h * 2 h = 120 km\n\n**Step 2:  Calculate the total distance traveled.**\n* Total distance = 80 km + 120 km = 200 km\n\n**Step 3: Calculate the total time taken.**\n* Total time = 2 hours + 2 hours = 4 hours\n\n**Step 4: Calculate the average speed.**\n* Average speed = Total distance / Total time\n* Average speed = 200 km / 4 hours = 50 km/h\n\n**Therefore, the average speed of the car for the entire journey is 50 km/h.**",
+            "options": [
+                "40 km/h",
+                "60 km/h",
+                "50 km/h",
+                "100 km/h"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A cricket team needs to select a new batsman for their upcoming tournament. The team coach wants to ensure that the new batsman helps maintain their average run rate.\n**Data**: The team has played 4 matches so far, scoring an average of 250 runs per match. In the next and final match, the team needs to achieve a total average score of 260 runs.\n**Missing Value**: How many runs must the team score in the fifth (final) match to achieve their target average of 260 runs?\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Total runs needed:**\n\n* To have an average of 260 runs over 5 matches, the team needs a total of 260 runs/match * 5 matches = 1300 runs.\n\n**2. Total runs scored so far:**\n\n* Over the first 4 matches, they scored an average of 250 runs/match * 4 matches = 1000 runs.\n\n**3. Runs needed in the fifth match:**\n\n* To reach their target of 1300 runs, they need to score 1300 runs - 1000 runs = 300 runs in the fifth match.",
+            "options": [
+                "250 runs",
+                "300 runs",
+                "1000 runs",
+                "1300 runs"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: The chart below shows the average daily temperature in degrees Celsius for a city over a week.\n**data**: \n  **type**: line\n  **labels**: \n    - Mon\n    - Tue\n    - Wed\n    - Thu\n    - Fri\n    - Sat\n    - Sun\n  **values**: \n    - 20\n    - 22\n    - 25\n    - 23\n    - 21\n    - 24\n    - 26\n**question**: What was the average temperature for the week?\n**difficulty**: easy 5/10\n",
+            "reasoning": "This question falls under 'Data Interpretation using Averages (Charts and Graphs)' as it requires interpreting a line chart representing average daily temperatures. \n\nTo find the average temperature for the week, we sum the daily temperatures and divide by the number of days: \n\n(20 + 22 + 25 + 23 + 21 + 24 + 26) / 7 = 155 / 7 = 22.14\n\nTherefore, the average temperature for the week is 22.14 degrees Celsius.",
+            "options": [
+                "20.5 degrees Celsius",
+                "21 degrees Celsius",
+                "23 degrees Celsius",
+                "24 degrees Celsius"
+            ],
+            "correct_option": "C",
+            "difficulty": "easy"
+        },
+        {
+            "question": "**Question Type**: Calculation\n**Difficulty Level**: Easy (5/10)\n**Topic**: Weighted Average and Its Applications\n**Context**: A student scored 80% on a midterm exam worth 40% of the total grade and 90% on a final exam worth 60% of the total grade.\n**Question**: What is the student's weighted average grade for the course?\n**Answer Choices**: \n  - 84%\n  - 85%\n  - 86%\n  - 87%\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the topic 'Quants - Average' and specifically tests the application of weighted averages. Here's how to solve it:\n\n**Step 1: Calculate the weighted score for the midterm exam.**\nMultiply the midterm score by its weight: 80% * 40% = 32%\n\n**Step 2: Calculate the weighted score for the final exam.**\nMultiply the final exam score by its weight: 90% * 60% = 54%\n\n**Step 3: Add the weighted scores to find the overall weighted average.**\n32% + 54% = 86%\n\nTherefore, the student's weighted average grade for the course is **86%**. This demonstrates a straightforward application of weighted averages where each component's contribution to the final average is determined by its respective weight.",
+            "options": [
+                "84%",
+                "85%",
+                "87%",
+                "88%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**question_type**: Interpretation\n**difficulty_level**: 5/10\n**context**: A group of 5 friends track their weekly exercise time (in hours):\n\n| Friend | Hours Exercised |\n|---|---| \n| John | 4 |\n| Emily | 3 |\n| Sarah | 3.5 |\n| Michael | 4.5 |\n| Jessica | 4 |\n**question**: The friends calculate the average exercise time to see their typical weekly commitment.  What does this average represent in terms of their exercise habits?\n**answer**: The average represents the total hours exercised by the group divided by the number of friends.  It gives a sense of the 'typical' weekly exercise time for a person in this group.\n",
+            "difficulty": "easy",
+            "reasoning": "This question focuses on the interpretation of the average.  Here's a step-by-step explanation:\n\n1. **Understanding the Context:** The context presents a relatable scenario of friends tracking their exercise time.\n\n2. **Calculating the Average:** While the question doesn't explicitly ask for the calculation, understanding the average's value is helpful:\n    * Total hours: 4 + 3 + 3.5 + 4.5 + 4 = 19 hours\n    * Average: 19 hours / 5 friends = 3.8 hours/friend\n\n3. **Interpreting the Average:** The average of 3.8 hours/week represents a central value of their weekly exercise. It doesn't mean everyone exercises exactly 3.8 hours, but it gives a general idea of their typical commitment as a group.\n\n**Options:**\n\nA) The exact amount of time each friend exercises.\nB) The most frequent exercise time among the friends.\n**C) A representative value of the typical weekly exercise time for the group.**\nD) The difference between the highest and lowest exercise times.",
+            "options": [
+                "Exact time",
+                "Most frequent time",
+                "Typical time",
+                "Difference between highest and lowest"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**topic**: Average Rate of Change and Slope\n**difficulty**: Easy - 5/10\n**context**: A bakery tracks how many cookies they sell each hour.  In the first hour, they sell 20 cookies. In the second hour, they sell 35 cookies.\n**question**: What is the average rate of change in cookies sold per hour between the first and second hour?\n",
+            "difficulty": "medium",
+            "reasoning": "This question fits under the 'Average Rate of Change and Its Relationship to Slope' topic because it asks for the average change in one variable (cookies sold) with respect to another (time). Here's how to solve it:\n\n**1. Understand Average Rate of Change:** The average rate of change is how much one quantity changes on average, relative to the change in another quantity.  It's like finding the slope of a line.\n\n**2. Identify the Changes:**\n* **Change in cookies sold:** 35 cookies - 20 cookies = 15 cookies\n* **Change in time:** 2 hours - 1 hour = 1 hour\n\n**3. Calculate the Average Rate of Change:**\n(Change in cookies sold) / (Change in time) = 15 cookies / 1 hour = 15 cookies/hour\n\n**Therefore, the average rate of change in cookies sold per hour is 15.**",
+            "options": [
+                "10 cookies/hour",
+                "15 cookies/hour",
+                "20 cookies/hour",
+                "35 cookies/hour"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A student scores 80% in their midterm exam which has a weight of 40% on their final grade. They score 90% in their final exam which has a weight of 60%. What is their weighted average score for the course?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to calculate the weighted average score:\n\n**1. Calculate the weighted score of the midterm exam:**\n   - Multiply the midterm score by its weight: 80% * 40% = 32%\n\n**2. Calculate the weighted score of the final exam:**\n   - Multiply the final exam score by its weight: 90% * 60% = 54%\n\n**3. Add the weighted scores to find the overall weighted average:**\n    - 32% + 54% = 86%\n\n**Therefore, the student's weighted average score for the course is 86%.**",
+            "options": [
+                "72%",
+                "86%",
+                "90%",
+                "60%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A food truck owner tracked the number of sandwiches they sold each day for a week: Monday (18), Tuesday (23), Wednesday (15), Thursday (21), Friday (32), Saturday (38), Sunday (35). What was the average number of sandwiches sold per day?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Real-world Applications and Word Problems Involving Averages' topic as it uses the concept of averages in a relatable, real-world scenario of a food truck. \n\nTo find the average, we follow these steps:\n\n1. **Calculate the total number of sandwiches sold:** 18 + 23 + 15 + 21 + 32 + 38 + 35 = 182 sandwiches\n\n2. **Divide the total by the number of days:** 182 sandwiches / 7 days = 26 sandwiches per day\n\nTherefore, the average number of sandwiches sold per day is 26.",
+            "options": [
+                "24",
+                "26",
+                "28",
+                "30"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A gardener planted three trees. The trees grew 5 cm, 10 cm, and 25 cm, respectively, in one year. What is the geometric mean growth of the trees?",
+            "difficulty": "medium",
+            "reasoning": "This question belongs to the subtopic 'Geometric Mean and Its Applications' within the broader topic of 'Quants - Average'. It tests the basic understanding of how to calculate the geometric mean of a set of values.\n\nHere's how to solve the question:\n\n**1. Understanding Geometric Mean:**\nThe geometric mean is calculated by multiplying all the values in a dataset and then taking the nth root, where 'n' is the number of values.\n\n**2. Applying the Formula:**\nIn this case, we have three values (5, 10, 25). Therefore, the geometric mean would be:\n\nGeometric Mean = (5 * 10 * 25)^(1/3)\nGeometric Mean = (1250)^(1/3)\nGeometric Mean = 10.80 cm (approximately)\n\n**Therefore, the geometric mean growth of the trees is approximately 10.80 cm.**",
+            "options": [
+                "10.80 cm",
+                "12.5 cm",
+                "15 cm",
+                "20 cm"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Question Type**: Calculation\n**Context**: A group of 5 friends has an average height of 160 cm. A new friend joins the group, and the average height increases to 162 cm.\n**Data**: None\n**Question**: What is the height of the new friend?\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Total height of the initial group:**\n\n   Since the average height of the 5 friends is 160 cm, their total height is 5 friends * 160 cm/friend = 800 cm. \n\n**2. Total height after the new friend joins:**\n\n   The average height of the 6 friends becomes 162 cm, so their total height is 6 friends * 162 cm/friend = 972 cm. \n\n**3. Height of the new friend:**\n\n   The height of the new friend is the difference between the total heights: 972 cm - 800 cm = 172 cm.\n\n**Therefore, the height of the new friend is 172 cm.**",
+            "options": [
+                "172 cm",
+                "162 cm",
+                "152 cm",
+                "800 cm"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: The bar graph shows the number of books sold by a bookstore each day over a week.\n**graph**: \n  **Monday**: 20\n  **Tuesday**: 25\n  **Wednesday**: 15\n  **Thursday**: 30\n  **Friday**: 35\n  **Saturday**: 40\n  **Sunday**: 25\n**question**: What is the average number of books sold per day from Monday to Friday?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Data Interpretation using Averages (Charts and Graphs)' as it requires interpreting data from a bar graph and calculating the average. \n\nHere's how to solve it:\n1. **Find the total books sold from Monday to Friday:** 20 + 25 + 15 + 30 + 35 = 125 books\n2. **Divide the total by the number of days:** 125 books / 5 days = 25 books/day\n\nTherefore, the average number of books sold from Monday to Friday is 25.",
+            "options": [
+                "20",
+                "25",
+                "30",
+                "35"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Difficulty Level**: Easy 6/10\n**Question Type**: Calculation\n**Context**: A cyclist travels uphill for 10 km at a speed of 10 km/h and then travels downhill for the same distance at a speed of 30 km/h. \n**Question**: What is the average speed of the cyclist for the entire journey?\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of harmonic mean in the context of average speeds.  Here's why the harmonic mean is appropriate and how to solve it:\n\n**Why Harmonic Mean?**\n\nThe harmonic mean is used to calculate the average of rates (in this case, speed) when the distances traveled at each rate are equal. Since the cyclist travels the same distance uphill and downhill, we use the harmonic mean.\n\n**Solution:**\n\n1. **Formula:** The harmonic mean (H) of two numbers (a and b) is calculated as: H = 2ab / (a + b)\n\n2. **Applying the formula:**\n   * a = 10 km/h (uphill speed)\n   * b = 30 km/h (downhill speed)\n   * H = (2 * 10 * 30) / (10 + 30)\n   * H = 600 / 40\n   * H = 15 km/h\n\n**Therefore, the average speed of the cyclist for the entire journey is 15 km/h.**",
+            "options": [
+                "15 km/h",
+                "20 km/h",
+                "25 km/h",
+                "30 km/h"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A bakery tracks its cookie production throughout the day. They notice that they bake 120 cookies in the first 2 hours of operation.\n**data**: Cookies baked: 120, Time: 2 hours\n**question**: What is the bakery's average cookie production rate per hour, and how does this relate to the slope of a line representing the total cookies baked over time?\n",
+            "difficulty": "medium",
+            "reasoning": "This question fits the 'Average Rate of Change and Its Relationship to Slope' topic as it requires calculating the average rate of cookie production (cookies baked per hour) and understanding how this relates to the slope of a linear representation. Here's how to solve it:\n\n1. **Calculate the average rate of change:**\n   - Average rate = (Total cookies baked) / (Total time)\n   - Average rate = 120 cookies / 2 hours = 60 cookies/hour\n\n2. **Relationship to slope:**\n   - The average rate of change represents the slope of a line on a graph where the x-axis is time (hours) and the y-axis is the total number of cookies baked.\n   - In this case, the slope would be 60, meaning that for every hour that passes, the total number of cookies baked increases by 60.\n\nTherefore, the bakery's average cookie production rate is 60 cookies per hour, and this value represents the slope of a line depicting the total cookies baked over time.",
+            "options": [
+                "30 cookies/hour",
+                "60 cookies/hour",
+                "120 cookies/hour",
+                "240 cookies/hour"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "What is the average of all the odd numbers between 10 and 30?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Concept:**\n\nThe average of consecutive numbers in an arithmetic series is equal to the average of the first and last number.\n\n**Applying the Concept:**\n\n1. **Identify the first and last number:** The first odd number after 10 is 11, and the last odd number before 30 is 29.\n\n2. **Calculate the average:** The average of 11 and 29 is (11+29)/2 = 40/2 = 20\n\n**Therefore, the average of all odd numbers between 10 and 30 is 20.**",
+            "options": [
+                "15",
+                "20",
+                "25",
+                "30"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A local farmer collected eggs from his chickens over a week. He collected 24 eggs on Monday, 20 eggs on Tuesday, 28 eggs on Wednesday, 25 eggs on Thursday, 22 eggs on Friday, 30 eggs on Saturday, and 26 eggs on Sunday. What is the average number of eggs the farmer collected per day?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Real-world Applications and Word Problems Involving Averages' topic as it involves calculating the average number of eggs collected per day over a week. \n\nHere's how to solve the problem step-by-step:\n\n1. **Calculate the total number of eggs collected:** 24 + 20 + 28 + 25 + 22 + 30 + 26 = 175 eggs\n\n2. **Divide the total number of eggs by the number of days:** 175 eggs / 7 days = 25 eggs/day\n\nTherefore, the average number of eggs the farmer collected per day is 25.",
+            "options": [
+                "20",
+                "24",
+                "25",
+                "30"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A local bakery is analyzing their daily sales of croissants over a week.\n**Task**: Calculate the average number of croissants sold per day from Monday to Friday.\n**Data**: The bakery sold the following number of croissants each day:\n- Monday: 35\n- Tuesday: 42\n- Wednesday: 38\n- Thursday: 40\n- Friday: 45\n**Question**: What is the average number of croissants sold per day from Monday to Friday?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Basic Definition and Formula of Average' subtopic because it requires calculating the average of a set of values. Here's how to solve it:\n\n**Step 1: Sum the values**\nAdd the number of croissants sold each day from Monday to Friday.\n35 + 42 + 38 + 40 + 45 = 200\n\n**Step 2: Divide the sum by the number of values**\nDivide the total number of croissants sold (200) by the number of days (5).\n200 / 5 = 40\n\nTherefore, the average number of croissants sold per day from Monday to Friday is 40.",
+            "options": [
+                "35",
+                "42",
+                "40",
+                "45"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A food truck owner recorded the number of sandwiches sold each day for a week:\n**data**: Monday: 23, Tuesday: 18, Wednesday: 27, Thursday: 31, Friday: 42, Saturday: 58, Sunday: 49\n**question**: What is the average number of sandwiches sold per day from Wednesday to Sunday?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Calculating Average of a Set of Numbers' subtopic within 'Quants - Average' because it requires calculating the average of a specific set of values. \n\nHere's how to solve it:\n\n1. **Identify the relevant data:** We need the sandwich sales from Wednesday to Sunday: 27, 31, 42, 58, 49.\n2. **Sum the values:** 27 + 31 + 42 + 58 + 49 = 207 \n3. **Divide by the number of values:** 207 / 5 = 41.4\n\nTherefore, the average number of sandwiches sold per day from Wednesday to Sunday is 41.4.",
+            "options": [
+                "35.7",
+                "41.4",
+                "49",
+                "58"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A delivery driver needs to complete a 150 km route.  They drive the first 50 km at an average speed of 60 km/h. To make up for lost time, they increase their speed to 100 km/h for the remaining distance. What is their average speed for the entire trip?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the time for the first leg:**\n\n* Time = Distance / Speed\n* Time = 50 km / 60 km/h = 5/6 hours (or 50 minutes)\n\n**2. Calculate the time for the second leg:**\n\n* Time = Distance / Speed\n* Time = 100 km / 100 km/h = 1 hour\n\n**3. Calculate the total time for the trip:**\n\n* Total Time = Time (leg 1) + Time (leg 2)\n* Total Time = 5/6 hours + 1 hour = 11/6 hours\n\n**4. Calculate the total distance of the trip:**\n\n* Total Distance = 150 km (given)\n\n**5. Calculate the average speed:**\n\n* Average Speed = Total Distance / Total Time\n* Average Speed = 150 km / (11/6) hours \n* Average Speed = (150 * 6) / 11 km/h\n* Average Speed = 81.82 km/h (approximately)\n\nTherefore, the driver's average speed for the entire trip is approximately 81.82 km/h. ",
+            "options": [
+                "65 km/h",
+                "75 km/h",
+                "81.82 km/h",
+                "90 km/h"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A hot new tech startup, \"InnovateNow\", observes the following growth in its user base over the first quarter of the year:\n**data**: \n  **Month**: \n    - January\n    - February\n    - March\n  **Users (in thousands)**: \n    - 25\n    - 40\n    - 65\n**question**: What is the average rate of change in InnovateNow's user base per month from January to March?\n**answer_choices**: \n  - 10,000 users/month\n  - 13,333 users/month\n  - 20,000 users/month\n  - 40,000 users/month\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the understanding of average rate of change in a real-world context. Here's how to solve it:\n\n**1. Identify the relevant data points:**\n   * We need the user base in January (25,000) and March (65,000).\n\n**2. Calculate the total change:**\n   *  Change in users = 65,000 - 25,000 = 40,000 users\n\n**3. Calculate the change in time:**\n   *  Change in time = 2 months (from January to March)\n\n**4. Calculate the average rate of change:**\n   *  Average rate of change = (Change in users) / (Change in time) \n   *  Average rate of change = 40,000 users / 2 months = 20,000 users/month\n\n**Therefore, the correct answer is (C) 20,000 users/month.**",
+            "options": [
+                "10,000 users/month",
+                "13,333 users/month",
+                "20,000 users/month",
+                "40,000 users/month"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A farmer mixes two types of rice. The first type costs $12 per kilogram, and the second type costs $18 per kilogram. He wants to create a 50-kilogram mixture with an average price of $15 per kilogram. How many kilograms of the first type of rice should he use?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Concept of Weighted Averages**\n\nThis problem involves weighted averages. Since we're mixing different quantities of rice at different prices, the final price per kilogram of the mixture will depend on the proportion of each type used.\n\n**2. Set up an Equation**\n\nLet 'x' be the number of kilograms of the first type of rice. Since the total mixture is 50 kilograms, the amount of the second type of rice will be (50 - x) kilograms.\n\nWe can set up an equation based on the total cost:\n\n   (Price of type 1 * Quantity of type 1) + (Price of type 2 * Quantity of type 2) = (Desired average price * Total quantity)\n\n   ($12 * x) + ($18 * (50 - x)) = ($15 * 50)\n\n**3. Solve for x**\n\nNow, solve the equation for 'x':\n\n   12x + 900 - 18x = 750\n   -6x = -150\n   x = 25\n\n**Answer:** The farmer should use 25 kilograms of the first type of rice. \n\n**Verification:**\n\n* Cost of 25 kg of the first type: 25 kg * $12/kg = $300\n* Cost of 25 kg of the second type: 25 kg * $18/kg = $450\n* Total cost: $300 + $450 = $750\n* Average price: $750 / 50 kg = $15/kg",
+            "options": [
+                "25 kg",
+                "30 kg",
+                "10 kg",
+                "40 kg"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A financial analyst wants to smooth out the volatility of a company's stock price to identify any underlying trends. They decide to use a 3-day simple moving average (SMA) for this purpose.\n**data**: The closing prices of the stock for the last 5 days are:\n\n| Day | Closing Price ($) |\n|---|---| \n| 1 | 50 |\n| 2 | 52 |\n| 3 | 55 |\n| 4 | 53 |\n| 5 | 56 |\n**task**: Calculate the 3-day SMA for days 3, 4, and 5. What is the trend indicated by the moving average?\n**difficulty**: medium 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Applications of Average in Finance (e.g., Moving Averages)' subtopic as it directly tests the understanding and application of moving averages in a financial context. Here's how to solve it:\n\n**Step 1: Calculate the 3-day SMA for Day 3**\n* Sum the closing prices of days 1, 2, and 3: $50 + $52 + $55 = $157\n* Divide the sum by 3: $157 / 3 = $52.33\n\n**Step 2: Calculate the 3-day SMA for Day 4**\n* Sum the closing prices of days 2, 3, and 4: $52 + $55 + $53 = $160\n* Divide the sum by 3: $160 / 3 = $53.33\n\n**Step 3: Calculate the 3-day SMA for Day 5**\n* Sum the closing prices of days 3, 4, and 5: $55 + $53 + $56 = $164\n* Divide the sum by 3: $164 / 3 = $54.67\n\n**Step 4: Interpret the trend**\nThe 3-day SMA is increasing from Day 3 to Day 5 ($52.33 to $53.33 to $54.67). This indicates an upward trend in the stock price, even though there was a slight dip on Day 4.\n\nTherefore, the correct answer is that the 3-day SMA for days 3, 4, and 5 are $52.33, $53.33, and $54.67 respectively, indicating an upward trend.",
+            "options": [
+                "Downward",
+                "Steady",
+                "Upward",
+                "No trend"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Over a week, Sarah tracked her daily study time for an upcoming exam. She studied for 180 minutes on Monday, 150 minutes on Tuesday, 200 minutes on Wednesday, 120 minutes on Thursday, and took a break from studying on Friday. To reach her goal of averaging 150 minutes of study time per day over the entire week, how many minutes does Sarah need to study over the weekend (Saturday and Sunday combined)?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the total study time Sarah needs:**\n\n* She wants to average 150 minutes per day over 7 days, so she needs a total of 150 minutes/day * 7 days = 1050 minutes.\n\n**2. Calculate her total study time so far:**\n\n* Total study time from Monday to Thursday: 180 minutes + 150 minutes + 200 minutes + 120 minutes = 650 minutes\n\n**3. Determine how much more time she needs:**\n\n* Subtract her current study time from her desired total study time: 1050 minutes - 650 minutes = 400 minutes\n\n**Therefore, Sarah needs to study for a total of 400 minutes over the weekend to reach her goal.**",
+            "options": [
+                "150 minutes",
+                "250 minutes",
+                "400 minutes",
+                "650 minutes"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A marketing team is analyzing the performance of their online ad campaigns. They are missing data for the average click-through rate (CTR) for the month of June.\n**question**: The team knows that their target CTR for June was 2.5%, and they exceeded this target by an average of 0.3% across the 30 days of the month.  If there were 10,000 ad impressions in June, calculate the total number of clicks they received during that month.\n**data**: \n  **Target CTR**: 2.5%\n  **Average CTR Exceeding Target**: 0.3%\n  **Number of Days in June**: 30\n  **Total Ad Impressions**: 10,000\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the actual average CTR:**\n\n   * Start with the target CTR: 2.5%\n   * Add the amount they exceeded the target by: 2.5% + 0.3% = 2.8%\n\n**2. Calculate the total number of clicks:**\n\n   * Convert the actual average CTR to a decimal: 2.8% = 0.028\n   * Multiply the total ad impressions by the actual average CTR: 10,000 x 0.028 = 280 clicks\n\n**Therefore, the marketing team received a total of 280 clicks in June.**",
+            "options": [
+                "250 clicks",
+                "280 clicks",
+                "300 clicks",
+                "350 clicks"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A mobile phone manufacturer released a new model and tracked its sales over the first quarter (13 weeks). In the first 6 weeks, the average sales were 5200 units per week.  Over the entire 13 weeks of the quarter, the average sales were 6300 units per week.\n**Question**: What was the average number of phones sold per week during the last 7 weeks of the quarter?\n**Data**: 6 weeks average: 5200 units/week, 13 weeks average: 6300 units/week\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question requires understanding how averages are affected by different sample sizes. Here's how to solve it:\n\n**1. Total Sales in First 6 Weeks:**\n   * 6 weeks * 5200 units/week = 31,200 units\n\n**2. Total Sales in 13 Weeks:**\n   * 13 weeks * 6300 units/week = 81,900 units\n\n**3. Total Sales in Last 7 Weeks:**\n   * 81,900 units - 31,200 units = 50,700 units\n\n**4. Average Sales in Last 7 Weeks:**\n   * 50,700 units / 7 weeks = 7242.86 units/week (approximately)\n\n**Therefore, the average number of phones sold per week during the last 7 weeks of the quarter was approximately 7243 units.**",
+            "options": [
+                "5200 units/week",
+                "6300 units/week",
+                "7243 units/week",
+                "8190 units/week"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Five students are preparing for a math competition. They take three practice tests and their scores are as follows:\n\n* **Student 1:** 80, 85, 90\n* **Student 2:** 75, 80, 85\n* **Student 3:** 90, 95, 100\n* **Student 4:** 85, 90, 95\n* **Student 5:** 80, 80, 80\n\nTo qualify for the competition, the average score of the top three students must be at least 90. Will this group of students qualify for the competition based on their practice test scores?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to determine if the students qualify:\n\n**1. Calculate the average score for each student:**\n   * Student 1: (80 + 85 + 90) / 3 = 85\n   * Student 2: (75 + 80 + 85) / 3 = 80\n   * Student 3: (90 + 95 + 100) / 3 = 95\n   * Student 4: (85 + 90 + 95) / 3 = 90\n   * Student 5: (80 + 80 + 80) / 3 = 80\n\n**2. Identify the top three average scores:**\n   * Student 3: 95\n   * Student 4: 90\n   * Student 1: 85\n\n**3. Calculate the average of the top three scores:**\n   (95 + 90 + 85) / 3 = 90\n\n**Conclusion:** The average score of the top three students is 90, which meets the minimum requirement to qualify for the competition. Therefore, the group will qualify.",
+            "options": [
+                "No",
+                "Yes",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: An investor decides to invest equal amounts of money in two different stocks. Stock A has an expected return of 15%, and Stock B has an expected return of 25%.\n**problem_statement**: What is the average expected return on the investor's portfolio considering the equal investment strategy?  Explain why the harmonic mean, rather than the arithmetic mean, is the appropriate measure in this case.\n**data**: \n  **Stock A Return**: 15%\n  **Stock B Return**: 25%\n**expected_answer**: An explanation of why the harmonic mean is appropriate and a numerical value representing the average expected return on the portfolio in percentage.\n",
+            "difficulty": "medium",
+            "reasoning": "This question goes beyond a simple calculation and requires the student to reason about why the harmonic mean is suitable for averaging rates in this context. Here's a breakdown:\n\n**Why Harmonic Mean?**\n\n* **Equal Investment:** The problem specifies 'equal amounts of money.'  This implies that the average return should reflect the return on each dollar invested, not just the average of the two return rates.\n* **Impact on Overall Return:** If one stock performs poorly (low return), it impacts the overall return more significantly than if it were simply an average of the two rates. The harmonic mean accounts for this sensitivity.\n\n**Solution:**\n\n1. **Formula:** The harmonic mean (H) of two numbers (x, y) is calculated as: H = 2 / (1/x + 1/y) \n\n2. **Apply to Returns:**\n   * x = 1.15 (1 + 15% return on Stock A) \n   * y = 1.25 (1 + 25% return on Stock B)\n\n3. **Calculation:**\n   * H = 2 / (1/1.15 + 1/1.25) \u2248 1.1974\n\n4. **Average Return:**\n   *  (1.1974 - 1) * 100% \u2248 19.74%\n\n**Therefore, the average expected return on the portfolio is approximately 19.74%.**",
+            "options": [
+                "17.5%",
+                "19.74%",
+                "20%",
+                "22.5%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A hot air balloon ascends into the sky. Its altitude is recorded at various times as shown in the table:\n\n| Time (minutes) | Altitude (meters) |\n|---|---|\n| 0 | 50 |\n| 2 | 100 |\n| 5 | 200 |\n| 8 | 350 |\n\nWhat is the average rate of change in the balloon's altitude between 2 minutes and 8 minutes? How does this value relate to the slope of the line segment connecting the points (2, 100) and (8, 350) on a graph representing the balloon's altitude over time?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the average rate of change:**\n\n   The average rate of change is calculated using the formula:\n\n   (change in altitude) / (change in time) = (final altitude - initial altitude) / (final time - initial time)\n\n   * Final altitude = 350 meters\n   * Initial altitude = 100 meters\n   * Final time = 8 minutes\n   * Initial time = 2 minutes\n\n   Plugging these values into the formula, we get:\n\n   (350 - 100) meters / (8 - 2) minutes = 250 meters / 6 minutes = 41.67 meters/minute (approximately)\n\n**2. Relationship to slope:**\n\n   The average rate of change we just calculated (41.67 meters/minute) represents the slope of the line segment connecting the points (2, 100) and (8, 350) on a graph of altitude versus time. This is because the slope of a line represents the change in the vertical coordinate (altitude) for every unit change in the horizontal coordinate (time). In this case, the average rate of change tells us that, on average, the balloon's altitude increased by 41.67 meters every minute between minutes 2 and 8.\n\n**Therefore, the average rate of change of the balloon's altitude between 2 minutes and 8 minutes is 41.67 meters/minute, and this value represents the slope of the line segment connecting the corresponding data points on a graph.**",
+            "options": [
+                "35 meters/minute",
+                "41.67 meters/minute",
+                "50 meters/minute",
+                "62.5 meters/minute"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: A hedge fund uses a 10-day moving average trading strategy to make decisions on a particular stock.  Below are the closing prices for the past 12 days:\n**Data**: [15.20, 15.35, 15.50, 15.45, 15.60, 15.75, 15.80, 15.90, 16.00, 15.95, 16.10, 16.05]\n**Question**: According to this strategy, should the hedge fund consider buying or selling the stock on day 13 based on the relationship between the day 12 price and the 10-day moving average?\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses understanding of moving averages in a financial context. It requires calculating the 10-day moving average for day 12 and then comparing it to the day 12 price. Here's how to solve it:\n\n**1. Calculate the 10-day moving average for day 12:**\n   - Sum the closing prices from day 3 to day 12: 15.50 + 15.45 + 15.60 + 15.75 + 15.80 + 15.90 + 16.00 + 15.95 + 16.10 + 16.05 = 158.10\n   - Divide the sum by 10: 158.10 / 10 = 15.81\n\n**2. Compare the 10-day MA to the day 12 price:**\n   - The 10-day MA is 15.81, and the day 12 closing price is 16.05.\n   - Since the day 12 price is *above* the moving average, the strategy would likely signal a 'buy' for day 13.\n\n**Therefore, the hedge fund would likely consider buying the stock on day 13.**\n",
+            "options": [
+                "Buy",
+                "Sell",
+                "Hold",
+                "Not enough information"
+            ],
+            "correct": "Buy, because the day 12 price is above the 10-day moving average.",
+            "correct_option": "A"
+        },
+        {
+            "question": "A chemist has two solutions of a certain acid. Solution A is 30% acid and solution B is 80% acid. The chemist wants to create 50 liters of a new solution that is 62% acid.  To achieve this, she adds some amount of solution A to a container, then adds some amount of solution B to the same container to reach her desired concentration and volume. How many liters of solution A did she use?",
+            "difficulty": "hard",
+            "reasoning": "This is a combined mixtures and averages problem that requires setting up a system of equations to represent the given information. Here's how to solve it:\n\n**Let:**\n*  'x' = liters of solution A \n*  'y' = liters of solution B\n\n**Set up the equations:**\n\n* **Equation 1 (Total Volume):** x + y = 50 \n* **Equation 2 (Total Acid):** 0.30x + 0.80y = 0.62 * 50  (The amount of acid from solution A plus the amount from solution B must equal the total acid in the final solution)\n\n**Solve for 'x' (liters of solution A):**\n\n1. **Solve for 'y' in Equation 1:**\n   y = 50 - x\n\n2. **Substitute this value of 'y' into Equation 2:** \n   0.30x + 0.80(50 - x) = 31\n\n3. **Simplify and solve for 'x':**\n   0.30x + 40 - 0.80x = 31\n   -0.50x = -9\n   x = 18\n\n**Answer:** The chemist used **18 liters** of solution A. ",
+            "options": [
+                "18 liters",
+                "20 liters",
+                "25 liters",
+                "30 liters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A wildlife photographer is tracking the weight fluctuations of a rehabilitating eagle. The eagle needs to maintain a consistent average weight over a week for release back into the wild. The ideal average weight for the week should be 4.5 kg.\n\nOver the first six days of the week, the eagle's weights were recorded as follows:\n\n* Day 1: 4.3 kg\n* Day 2: 4.6 kg\n* Day 3: 4.4 kg\n* Day 4: 4.8 kg\n* Day 5: 4.2 kg \n* Day 6: x kg\n\nOn Day 7, the eagle is weighed again.  To the photographer's surprise, the eagle's weight on Day 7 is exactly the same as its weight on Day 6 (represented by 'x'). What must the eagle's weight be on both Day 6 and Day 7 to ensure the weekly average weight is exactly 4.5 kg? ",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve the problem:\n\n**1.  Set up the average equation:**\n\nThe average weight is the total weight divided by the number of days. We want the average to be 4.5 kg over 7 days. Let 'x' represent the eagle's weight on Day 6 and Day 7. The equation is:\n\n(4.3 + 4.6 + 4.4 + 4.8 + 4.2 + x + x) / 7 = 4.5\n\n**2. Simplify the equation:**\n\nCombine the known weights: \n(22.3 + 2x) / 7 = 4.5\n\n**3.  Solve for x:**\n\n* Multiply both sides by 7: 22.3 + 2x = 31.5\n* Subtract 22.3 from both sides: 2x = 9.2\n* Divide both sides by 2: x = 4.6\n\n**Therefore, the eagle's weight on both Day 6 and Day 7 must be 4.6 kg to achieve the desired weekly average of 4.5 kg.**",
+            "options": [
+                "4.2 kg",
+                "4.4 kg",
+                "4.6 kg",
+                "4.8 kg"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A swimmer crosses a river 200 meters wide, with a current flowing at a speed of 2 m/s. On the first trip, the swimmer heads directly across the river (perpendicular to the current) and takes 50 seconds to reach the other side. On the return trip, the swimmer again heads directly across the river.  What is the swimmer's average speed over the entire journey (both ways)?",
+            "difficulty": "hard",
+            "reasoning": "This question is designed to be tricky because it involves a two-part journey where the simple average speed is incorrect. Here's why and how to solve it:\n\n**Understanding the Problem**\n\n* **Outbound Trip:** The swimmer fights against the current. Their actual speed is less than what it seems because the current slows them down.\n* **Return Trip:** The swimmer is aided by the current. Their actual speed is faster than it seems because the current pushes them along.\n\n**Why Harmonic Mean?**\n\nThe harmonic mean is used to find the average of rates.  In this case, the 'rates' are the speeds over equal distances.  \n\n**Solution**\n\n1. **Calculate the swimmer's speed in still water:**\n   * Since it takes 50 seconds to cover 200 meters, the swimmer's speed across the river (perpendicular to the current) is 200 meters / 50 seconds = 4 m/s.\n\n2. **Calculate the swimmer's speed against the current (outbound):**\n   * Let the swimmer's speed against the current be 'x' m/s. \n   * Using the Pythagorean theorem (considering the speeds as vectors): x\u00b2 = 4\u00b2 + 2\u00b2 => x = \u221a20 m/s\n\n3. **Calculate the swimmer's speed with the current (return):**\n   * Let the swimmer's speed with the current be 'y' m/s. \n   * Using the Pythagorean theorem: y\u00b2 = 4\u00b2 + 2\u00b2 => y = \u221a20 m/s \n\n4. **Calculate the average speed using the harmonic mean:**\n   * Average speed = 2 / [(1/\u221a20) + (1/\u221a20)] \n   * Average speed = 2\u221a20 / 2 = \u221a20 \u2248 4.47 m/s \n\n**Therefore, the swimmer's average speed over the entire journey is approximately 4.47 m/s.**",
+            "options": [
+                "4.47 m/s",
+                "4 m/s",
+                "8 m/s",
+                "2.24 m/s"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A teacher writes a sequence of 21 consecutive multiples of 7 on the blackboard.  She then erases the middle number and calculates the average of the remaining 20 numbers.  Finally, she erases one more number from the sequence. The average of the remaining 19 numbers is now 3 less than the average she calculated before.  What is the value of the last number erased?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**Understanding the Concepts**\n\n* **Arithmetic Series:**  A sequence of consecutive multiples of a number forms an arithmetic series (the difference between consecutive terms is constant).\n* **Average of an Arithmetic Series:** The average of an arithmetic series is equal to the average of the first and last term.  It's also equal to the middle term if there are an odd number of terms.\n\n**Solving the Problem**\n\n1. **The Middle Number:**  Since we have 21 consecutive multiples of 7, the middle number (the 11th number) is the average of the entire sequence.  Let's call this middle number 'M'.\n\n2. **Average after First Erasure:** After erasing 'M', we have 20 numbers.  The sum of these 20 numbers has decreased by 'M'.  Since the average is the sum divided by the number of terms, the new average is (Sum - M)/20.\n\n3. **Second Erasure's Impact:** Erasing another number reduces the sum and changes the average. The problem states that the average drops by 3.  Let the last erased number be 'X'.  This means:\n\n    (Sum - M - X)/19  = (Sum - M)/20 - 3\n\n4. **Simplifying and Solving for X:**\n    * Multiply both sides of the equation by 19*20 to get rid of the denominators.\n    * Expand and simplify the equation.\n    * You'll eventually arrive at an equation where you can solve for X in terms of M.\n\n5. **Relationship between X and M:** You'll find that X = M - 114.  This means the last number erased is 114 less than the original middle number.\n\n6. **Finding the Last Number:** Since the sequence consists of multiples of 7, and the middle number 'M' is a multiple of 7, the last number erased (X) must also be a multiple of 7.  The only multiple of 7 that is 114 less than another multiple of 7 is **-105** (because -105 + 114 = 9, which is a multiple of 7).\n\n**Therefore, the value of the last number erased is -105.**",
+            "options": [
+                "-105",
+                "-102",
+                "-108",
+                "105"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A farmer wants to combine three different types of fertilizer to achieve a specific nitrogen concentration for his crops. He has access to the following fertilizers and their respective nitrogen concentrations (by weight):\n\n* Fertilizer A: 20% nitrogen, available in 50 kg bags\n* Fertilizer B: 30% nitrogen, available in 40 kg bags \n* Fertilizer C: 15% nitrogen, available in 25 kg bags\n\nThe farmer needs a total of 100 kg of fertilizer with a weighted average nitrogen concentration of 22%.  He wants to use all of his existing supply of Fertilizer A (50 kg). \n\nDetermine the weight of Fertilizer B and Fertilizer C the farmer needs to mix with Fertilizer A to achieve his desired fertilizer blend. ",
+            "difficulty": "hard",
+            "reasoning": "This question tests a student's ability to apply the concept of weighted average in a practical scenario requiring multiple steps and calculations. \n\n**1. Calculate Nitrogen Contribution from Fertilizer A:**\n\n* Fertilizer A weight = 50 kg\n* Fertilizer A nitrogen concentration = 20%\n* Nitrogen contribution from A = 50 kg * 0.20 = 10 kg\n\n**2.  Determine Required Nitrogen from B and C:**\n\n* Total fertilizer needed = 100 kg\n* Required nitrogen concentration = 22%\n* Total nitrogen needed = 100 kg * 0.22 = 22 kg\n* Nitrogen needed from B and C = 22 kg - 10 kg = 12 kg\n\n**3. Set Up a System of Equations:**\n\nLet...\n*  'x' be the weight of Fertilizer B\n* 'y' be the weight of Fertilizer C\n\nWe have two unknowns and need two equations:\n\n* Equation 1 (Total Weight): x + y = 50 kg (Since the total weight of B and C must be 50 kg to reach 100 kg)\n* Equation 2 (Nitrogen Contribution): 0.30x + 0.15y = 12 kg  (The weighted average nitrogen contribution from B and C must equal 12 kg)\n\n**4. Solve the System of Equations:**\n\nOne way to solve is through substitution:\n\n* Solve Equation 1 for x:  x = 50 - y\n* Substitute this value of x into Equation 2: 0.30(50 - y) + 0.15y = 12\n* Simplify and solve for y: 15 - 0.3y + 0.15y = 12  =>  -0.15y = -3  => y = 20 kg\n* Substitute the value of y back into Equation 1 to find x: x + 20 = 50 => x = 30 kg\n\n**Answer:** The farmer needs 30 kg of Fertilizer B and 20 kg of Fertilizer C. ",
+            "options": [
+                "20 kg",
+                "30 kg",
+                "40 kg",
+                "50 kg"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The following stacked bar graph shows the revenue (in thousands of dollars) generated by a company from its three product lines (A, B, and C) over four consecutive years. \n\n[Insert a stacked bar graph with the following data:]\n\n| Year | Product A | Product B | Product C | \n|---|---|---|---| \n| 2018 | 40  | 30  | 35  | \n| 2019 | 45  | 35  | 40  | \n| 2020 | 50  | 40  | 50  | \n| 2021 | 60  | 45  | 65  | \n\nWhat was the average annual growth rate of the company's total revenue from Product B over the period from 2019 to 2021?",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful analysis of the stacked bar graph and involves calculating the average growth rate over a specific period. Here's a step-by-step solution:\n\n**1. Calculate the revenue from Product B for each relevant year:**\n   * 2019: $35,000\n   * 2020: $40,000\n   * 2021: $45,000\n\n**2. Calculate the growth rate from 2019 to 2020:**\n   * Growth = [(Revenue in 2020 - Revenue in 2019) / Revenue in 2019] * 100%\n   * Growth = [($40,000 - $35,000) / $35,000] * 100% = 14.29%\n\n**3. Calculate the growth rate from 2020 to 2021:**\n   * Growth = [(Revenue in 2021 - Revenue in 2020) / Revenue in 2020] * 100%\n   * Growth = [($45,000 - $40,000) / $40,000] * 100% = 12.5%\n\n**4. Calculate the average annual growth rate:**\n   * Average growth rate = (Growth rate from 2019 to 2020 + Growth rate from 2020 to 2021) / 2\n   * Average growth rate = (14.29% + 12.5%) / 2 = 13.395%\n\n**Therefore, the average annual growth rate of the company's total revenue from Product B over the period from 2019 to 2021 is approximately 13.4%.**",
+            "options": [
+                "12.5%",
+                "13.4%",
+                "14.3%",
+                "15.0%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A quantitative analyst is evaluating the performance of a portfolio over the past six years. The annual returns of the portfolio are known to follow a geometric sequence.  The analyst remembers that the return was 5% in the third year and 10% in the fifth year. To impress their manager with a quick analysis, the analyst wants to calculate the geometric mean return of the portfolio over these six years. Can you determine this geometric mean return without knowing the returns for all six years? ",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of geometric sequences and their relationship with the geometric mean. Here's how to solve it:\n\n**Understanding the Concepts**\n\n* **Geometric Sequence:** A sequence where each term is found by multiplying the previous term by a constant factor, called the common ratio.\n* **Geometric Mean:** The central tendency of a set of numbers in a geometric sequence. For a sequence with 'n' terms, the geometric mean is the nth root of the product of all the terms.\n\n**Solution**\n\n1. **Finding the Common Ratio:** Since the returns follow a geometric sequence, the ratio between consecutive years' returns is constant. We can find this common ratio (r) using the information about the 3rd and 5th-year returns:\n\n    * 3rd year return: a*r^2 = 0.05  (where 'a' is the first-year return)\n    * 5th year return: a*r^4 = 0.10\n\n    * Dividing the second equation by the first: (a*r^4) / (a*r^2) = 0.10 / 0.05\n    * Simplifying: r^2 = 2\n    * Therefore: r = sqrt(2)\n\n2. **Geometric Mean without All Terms:** The beauty of the geometric mean is that we don't need all the terms in a geometric sequence to calculate it if we know the common ratio and the number of terms. The geometric mean in this case is:\n\n    * GM = (a * a*r * a*r^2 * a*r^3 * a*r^4 * a*r^5)^(1/6)\n    * This simplifies to: GM = a*r^2.5  \n\n3. **Utilizing Known Information:** We know a*r^2 = 0.05 (from the 3rd-year return).  Therefore:\n\n    * GM = 0.05 * r^0.5 = 0.05 * sqrt(sqrt(2)) \u2248 0.0707 \n\n**Therefore, the geometric mean return of the portfolio over the six years is approximately 7.07%.**",
+            "options": [
+                "5.00%",
+                "6.25%",
+                "7.07%",
+                "8.75%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A mobile gaming company released a new game three weeks ago. In the first week, the game had an average of 10,000 downloads per day.  In the second week, a popular streamer showcased the game, leading to an average of 50,000 downloads per day.  However, the hype died down in the third week, and the game averaged 15,000 downloads per day. What was the average number of daily downloads for the game over the entire three-week period?",
+            "difficulty": "medium",
+            "reasoning": "This question requires a good understanding of weighted averages. Here's how to solve it:\n\n**1. Calculate total downloads for each week:**\n    * Week 1: 10,000 downloads/day * 7 days = 70,000 downloads\n    * Week 2: 50,000 downloads/day * 7 days = 350,000 downloads\n    * Week 3: 15,000 downloads/day * 7 days = 105,000 downloads\n\n**2. Calculate the total number of downloads:**\n    * Total downloads: 70,000 + 350,000 + 105,000 = 525,000 downloads\n\n**3.  Calculate the average daily downloads over three weeks:**\n    * Average downloads/day: 525,000 downloads / 21 days = 25,000 downloads/day\n\n**Therefore, the average number of daily downloads for the game over the three weeks is 25,000.**",
+            "options": [
+                "10,000",
+                "50,000",
+                "25,000",
+                "15,000"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Average",
+    "exam_id": 10,
+    "order": 0
+}

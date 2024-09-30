@@ -1,0 +1,459 @@
+{
+    "questions": [
+        {
+            "question": "Jenny can paint a fence in 6 hours. Her friend, Mark, can paint the same fence in 4 hours. If they work together, how long will it take them to paint the fence?",
+            "difficulty": "easy",
+            "reasoning": "**Solution:**\n\n1. **Find individual rates:**\n    * Jenny's rate: 1 fence / 6 hours = 1/6 of the fence per hour\n    * Mark's rate: 1 fence / 4 hours = 1/4 of the fence per hour\n\n2. **Calculate combined rate:**\n    * Combined rate: (1/6) + (1/4) = 5/12 of the fence per hour \n\n3. **Find the total time:**\n    * Time = Job / Rate \n    * Time = 1 fence / (5/12 fence per hour) = 12/5 hours = 2.4 hours\n\n**Therefore, it will take Jenny and Mark 2.4 hours to paint the fence together.**",
+            "options": [
+                "4.8 hours",
+                "2.4 hours",
+                "3 hours",
+                "6 hours"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Alice can bake a cake in 2 hours, and Bob can bake the same cake in 3 hours. If they work together, how long will it take them to bake the cake?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Find the individual rates:**\n   * Alice's rate: 1 cake / 2 hours = 1/2 cake per hour\n   * Bob's rate: 1 cake / 3 hours = 1/3 cake per hour\n\n**2. Combine the rates:**\n   * Combined rate: (1/2) + (1/3) = 5/6 cake per hour \n\n**3. Calculate the combined time:**\n   * Time = Job / Rate\n   * Time = 1 cake / (5/6 cake per hour) = 6/5 hours = 1.2 hours\n\n**Therefore, it will take them 1.2 hours to bake the cake together.**",
+            "options": [
+                "1 hour",
+                "1.2 hours",
+                "2.5 hours",
+                "5 hours"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker can frost a cake in 10 minutes. He starts frosting a cake at 2:00 PM and works for 5 minutes. What fraction of the cake is still left unfrosted?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Determine the work done:**\n\n* The baker frosts the entire cake in 10 minutes. This means he frosts 1/10 of the cake per minute.\n* In 5 minutes, he would have frosted 5 * (1/10) = 1/2 of the cake.\n\n**2. Determine the work remaining:**\n\n* If 1/2 of the cake is frosted, then 1 - 1/2 = 1/2 of the cake is left unfrosted.\n\n**Therefore, 1/2 of the cake is still left unfrosted.** ",
+            "options": [
+                "1/4",
+                "1/3",
+                "1/2",
+                "3/4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**difficulty_level**: Easy (5/10)\n**context**: John can paint a fence in 6 hours. \n**question**: What fraction of the fence can John paint in 2 hours? \n**answer_choices**: \n  - a) 1/2\n  - b) 1/3\n  - c) 1/4\n  - d) 1/6\n",
+            "difficulty": "easy",
+            "reasoning": "**explanation**: This question tests the basic understanding of work rate and its relation to time. Here's how to solve it:\n\n**1. Understand Work Rate:**\n\n* John's work rate is the amount of work he completes per unit of time. Since he paints the whole fence (1 unit of work) in 6 hours, his work rate is 1/6 of the fence per hour. \n\n**2. Calculate Work Done:**\n\n* To find out how much work John completes in 2 hours, we multiply his work rate by the time:\n\n   (1/6 fence/hour) * 2 hours = 1/3 of the fence\n\n**Therefore, John can paint 1/3 of the fence in 2 hours.**\n**correct_option**: b\n",
+            "options": [
+                "1/2",
+                "1/3",
+                "1/4",
+                "1/6"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A construction team needs to build a wall.  Experienced bricklayer, Bob, could build the entire wall by himself in 6 days.  His apprentice, Charlie, is still learning and would take 12 days to build the same wall alone.  If Bob and Charlie work together, they can finish the wall in 4 days.  What fraction of the wall does Bob complete after working for just one day?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Determine Bob's work rate:**\n\n* Bob completes the wall in 6 days, so his work rate is 1/6 of the wall per day.\n\n**2. Calculate the fraction of the wall Bob builds in one day:**\n\n* Since his work rate is 1/6 of the wall per day, Bob completes **1/6** of the wall in one day.\n\nTherefore, the answer is **1/6**.",
+            "options": [
+                "1/12",
+                "1/4",
+                "1/3",
+                "1/6"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Imagine a hot air balloon being inflated. A powerful pump can fully inflate the balloon in 4 hours. However, there's a small tear that deflates the balloon, and if left alone, would empty a fully inflated balloon in 8 hours.  If the pump is turned on while the tear is still present, how long will it take to fully inflate the balloon?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Determine individual rates:**\n   - The pump inflates at a rate of 1/4 of the balloon per hour.\n   - The tear deflates at a rate of 1/8 of the balloon per hour.\n\n2. **Calculate the combined rate:**\n   - The effective inflation rate is the pump's rate minus the tear's rate: (1/4) - (1/8) = 1/8 of the balloon per hour.\n\n3. **Find the total time:**\n   - Since the combined rate is 1/8 of the balloon per hour, it will take 8 hours to fully inflate the balloon.\n\nTherefore, it will take **8 hours** to fully inflate the balloon with both the pump and the tear active.",
+            "options": [
+                "6 hours",
+                "7 hours",
+                "9 hours",
+                "12 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two pipes, A and B, can fill a tank individually in 12 hours and 18 hours respectively. Pipe A is opened first, and after 4 hours, pipe B is also opened.  Find the shortest time in which the tank can be filled completely.",
+            "difficulty": "easy",
+            "reasoning": "## Reasoning:\nThis problem involves finding the shortest time to fill a tank using two pipes. Here's a step-by-step solution:\n\n**1. Calculate the work done by Pipe A in the first 4 hours:**\n\n* Pipe A fills the tank in 12 hours, so in 1 hour, it fills 1/12 of the tank.\n* In 4 hours, Pipe A would have filled (1/12) * 4 = 1/3 of the tank.\n\n**2. Calculate the remaining part of the tank:**\n\n* Since 1/3 of the tank is filled, the remaining part is 1 - (1/3) = 2/3 of the tank.\n\n**3. Calculate the combined work rate of Pipe A and Pipe B:**\n\n* Pipe B fills the tank in 18 hours, meaning it fills 1/18 of the tank in 1 hour.\n* Together, Pipe A and Pipe B fill (1/12) + (1/18) = 5/36 of the tank in 1 hour.\n\n**4. Calculate the time taken to fill the remaining tank:**\n\n* Let 't' be the time taken to fill the remaining 2/3 of the tank.\n* Using the work-time relationship, we get (5/36) * t = 2/3\n* Solving for 't', we get t = (2/3) * (36/5) = 4.8 hours\n\n**5. Calculate the total time taken:**\n\n* The total time taken to fill the tank is 4 hours (Pipe A alone) + 4.8 hours (Pipe A and B together) = 8.8 hours\n\nTherefore, the shortest time in which the tank can be filled completely is **8.8 hours**.",
+            "options": [
+                "12 hours",
+                "18 hours",
+                "8.8 hours",
+                "10 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A baker can frost 1/3 of a cake in 10 minutes.\n**work_completion**: \n**question**: How long will it take him to frost the entire cake?\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Relationship:**\n\n   * The baker frosts 1/3 of the cake in 10 minutes. This means he frosts a portion of the cake in a given time.\n\n**2.  Find the Time for the Whole Cake:**\n\n   * Since the whole cake is 3 times larger than 1/3 of the cake, it will take 3 times longer to frost.\n   * Time to frost the entire cake = 10 minutes * 3 = 30 minutes\n\n**Therefore, it will take the baker 30 minutes to frost the entire cake.**",
+            "options": [
+                "10 minutes",
+                "20 minutes",
+                "30 minutes",
+                "40 minutes"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Difficulty Level**: Easy 6/10\n**Question Type**: Word Problem\n**Scenario**: A painter can paint a fence in 6 hours. \n**Question**: How much of the fence can he paint in 2 hours?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understand the Relationship:**\n\n* **Work:** Painting the entire fence represents one complete job (1 unit of work).\n* **Time:** The painter takes 6 hours to complete this job.\n* **Rate:**  The painter's rate is the amount of work done per unit of time.  \n\n**2. Calculate the Painter's Rate:**\n\n* Rate = Work / Time\n* Rate = 1 / 6 (He completes 1/6th of the fence per hour)\n\n**3. Calculate Work Done in 2 Hours:**\n\n* Work = Rate * Time\n* Work = (1/6) * 2 \n* Work = 1/3 \n\n**Answer:** The painter can paint 1/3 of the fence in 2 hours.",
+            "options": [
+                "1/2",
+                "1/3",
+                "2/3",
+                "1/6"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Difficulty**: Easy 6/10\n**Question Type**: Work Left/Completed\n**Scenario**: A baker needs to decorate 100 cupcakes for a party. He can decorate 12 cupcakes in an hour. He gets started in the morning and decorates for 3 hours. \n**Question**: How many cupcakes are left to be decorated after 3 hours?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Work Left or Completed After a Certain Time' category within 'Quants - Time and Work'. Here's how to solve it:\n\n**Step 1: Calculate the work completed.**\n\n* The baker decorates 12 cupcakes per hour.\n* In 3 hours, he decorates 12 * 3 = 36 cupcakes.\n\n**Step 2: Calculate the work remaining.**\n\n* He needed to decorate 100 cupcakes.\n* After 3 hours, he has 100 - 36 = 64 cupcakes left to decorate. \n\n**Therefore, there are 64 cupcakes left to be decorated after 3 hours.**",
+            "options": [
+                "36",
+                "64",
+                "100",
+                "136"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A large water tank at a construction site needs to be filled. Pipe A, when turned on alone, can fill the entire tank in 6 hours. Due to a change in plans, a second pipe, Pipe B, is also used. Pipe B can fill the same tank in 9 hours on its own. If both Pipe A and Pipe B are opened simultaneously, how long will it take to fill the tank completely?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the individual rates:**\n\n* Pipe A fills 1/6 of the tank per hour.\n* Pipe B fills 1/9 of the tank per hour.\n\n**2. Find the combined rate:**\n\n* When both pipes are open, they fill (1/6 + 1/9) = 5/18 of the tank per hour.\n\n**3. Calculate the time taken:**\n\n* To find the time taken to fill the entire tank, divide 1 (representing the full tank) by the combined rate: 1 / (5/18) = 18/5 hours = 3.6 hours\n\n**Therefore, it will take 3.6 hours to fill the tank when both pipes are open simultaneously.**",
+            "options": [
+                "6 hours",
+                "9 hours",
+                "3.6 hours",
+                "5.4 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: Two teams, Team Alpha and Team Beta, are tasked with assembling identical gadgets. Team Alpha, known for its efficiency, can assemble 40 gadgets in an hour.  Team Beta can assemble 30 gadgets in the same amount of time.\n**task**: If both teams work together, how many gadgets can they assemble in exactly 36 minutes?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Calculate individual work rates:**\n\n* Team Alpha assembles 40 gadgets in 60 minutes, so their rate is 40/60 = 2/3 of a gadget per minute.\n* Team Beta assembles 30 gadgets in 60 minutes, so their rate is 30/60 = 1/2 of a gadget per minute.\n\n**2. Calculate the combined work rate:**\n\n* Combined rate = Team Alpha's rate + Team Beta's rate = 2/3 + 1/2 = 7/6 gadgets per minute.\n\n**3. Calculate the total gadgets assembled in 36 minutes:**\n\n* Total gadgets = Combined rate * Time = (7/6 gadgets/minute) * 36 minutes = 42 gadgets. \n\n**Therefore, both teams working together can assemble 42 gadgets in 36 minutes.**",
+            "options": [
+                "36 gadgets",
+                "42 gadgets",
+                "70 gadgets",
+                "60 gadgets"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Alice and Bob are tasked with painting a fence. Alice, working alone, can paint the entire fence in 8 hours, while Bob takes 12 hours to do the same job. If they decide to work alternately, starting with Alice, how long will it take them to paint the entire fence?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Determine individual work rates:**\n\n   - Alice paints the entire fence in 8 hours, so her work rate is 1/8 of the fence per hour.\n   - Bob paints the entire fence in 12 hours, so his work rate is 1/12 of the fence per hour.\n\n**2. Calculate their combined work in the first two hours:**\n\n   - In the first hour, Alice paints 1/8 of the fence.\n   - In the second hour, Bob paints 1/12 of the fence.\n   - Together, in the first two hours, they paint (1/8) + (1/12) = 5/24 of the fence.\n\n**3. Determine the number of two-hour cycles:**\n\n   - They complete 5/24 of the fence every two hours.\n   - To paint the entire fence (which is represented as 1), they need 24/5 of these two-hour cycles.\n\n**4. Calculate the total time:**\n\n   - One cycle takes 2 hours.\n   - They need 24/5 cycles, so the total time is (24/5) * 2 = 9.6 hours.\n\n**Therefore, it will take Alice and Bob 9.6 hours to paint the entire fence working alternately.**",
+            "options": [
+                "8 hours",
+                "10 hours",
+                "9.6 hours",
+                "12 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A construction team of 15 workers can build a small house in 24 days. However, due to unforeseen circumstances, 3 workers had to leave the project after 8 days.  To ensure the project is completed on time, how many additional workers need to be hired immediately?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate the total work:**\n\n* The work done by one worker in one day is considered one 'man-day'.\n* The total work involved in building the house is 15 workers * 24 days = 360 man-days.\n\n**2. Calculate work done in the first 8 days:**\n\n* In the first 8 days, the team completed 15 workers * 8 days = 120 man-days of work.\n\n**3. Calculate remaining work:**\n\n* The remaining work is 360 man-days - 120 man-days = 240 man-days.\n\n**4. Calculate workdays left:**\n\n* The project needs to be completed on time, meaning there are 24 days - 8 days = 16 days left.\n\n**5. Calculate workers needed after some leave:**\n\n* With 3 fewer workers, there are now 15 workers - 3 workers = 12 workers.\n\n**6. Calculate how many workers are needed to complete the remaining work in the remaining time:**\n\n* Let 'x' be the total number of workers needed to complete the remaining work on time.\n* The remaining work (240 man-days) should be completed by the available workers in the remaining time (16 days): 12 workers * 16 days + x * 16 days = 240 man-days \n* This simplifies to: 192 + 16x = 240\n* Solving for x: 16x = 48, therefore x = 3\n\n**Answer:**  They need to hire 3 additional workers to complete the project on time. ",
+            "options": [
+                "10",
+                "5",
+                "3",
+                "2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Description**: Ram and Shyam are assigned to paint a fence. Ram, working alone, can paint the entire fence in 6 hours. They need to finish the fence in a hurry and decide to work together. To achieve this, they divide the work in such a way that they both finish painting their respective portions simultaneously, minimizing the total time taken.  \n**Details**: \n  **Ram's work rate**: Paints the entire fence in 6 hours\n  **Objective**: Minimize the total time taken to paint the fence by working simultaneously on different portions.\n**Question**: If Shyam is twice as efficient as Ram, how long will it take them to paint the fence together?\n**Difficulty Level**: Easy (6/10)\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**1. Determine Shyam's work rate:**\n\n* Since Shyam is twice as efficient as Ram, he can paint the fence twice as fast.\n* Ram takes 6 hours, so Shyam would take half the time: 6 hours / 2 = 3 hours.\n\n**2. Calculate their combined work rate:**\n\n* **Understanding work rates:** Work rate is the amount of work done per unit of time. We can represent it as a fraction of the task completed in an hour. \n* Ram's work rate: 1/6 (He completes 1/6th of the fence per hour).\n* Shyam's work rate: 1/3 (He completes 1/3rd of the fence per hour).\n* **Combined work rate:** (1/6) + (1/3) = 1/2 (Together, they complete half the fence per hour).\n\n**3. Determine the time taken to complete the task together:**\n\n* Since their combined work rate is 1/2 (half the fence per hour), they will take 2 hours to paint the entire fence.\n\n**Therefore, it will take Ram and Shyam 2 hours to paint the fence together.**\n\n**Verification:**\n\n* The logic aligns with the concept of work and time: more efficient workers complete tasks faster.\n* The calculations of individual and combined work rates are accurate.\n* The final answer, 2 hours, logically follows from the combined work rate.",
+            "options and correct options": {
+                "A": "1 hour",
+                "B": "2 hours",
+                "C": "3 hours",
+                "D": "4 hours",
+                "Correct Option": "B"
+            },
+            "options": [
+                "1 hour",
+                "2 hours",
+                "3 hours",
+                "4 hours"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: A construction team is tasked with building a small bridge. The team, working at a constant pace, completes 2/5 of the bridge in 12 days.\n**Task**: If the team needs to finish the entire bridge in 25 days, what fraction of the bridge must they complete in the remaining time?\n**Difficulty Level**: Medium 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the work rate:**\n\n* The team completes 2/5 of the bridge in 12 days, so their daily work rate is (2/5) / 12 = 1/30 of the bridge per day.\n\n**2. Calculate the work completed in 25 days:**\n\n* In 25 days, the team would complete 25 days * (1/30 bridge/day) = 5/6 of the bridge.\n\n**3. Calculate the remaining work:**\n\n* To complete the entire bridge, they need to finish 1 - (5/6) = 1/6 of the bridge in the remaining time.\n\n**Therefore, the team must complete 1/6 of the bridge in the remaining time.**",
+            "options": [
+                "1/5",
+                "1/6",
+                "5/6",
+                "2/5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A team of construction workers is building a wall. They can build the entire wall in 10 hours. However, due to weather conditions, the wall erodes at a rate that would destroy the entire wall in 20 hours if no construction was taking place. If the workers continue building while the wall erodes, how long will it take them to complete the wall?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Determine the work rates:**\n\n* **Construction team:** They build 1/10 of the wall per hour (1 wall / 10 hours). \n* **Erosion:** It destroys 1/20 of the wall per hour (1 wall / 20 hours).\n\n**2. Calculate the combined work rate:**\n\n* Since erosion works against construction, we subtract the erosion rate from the construction rate: (1/10) - (1/20) = 1/20 of the wall built per hour.\n\n**3. Determine the time to complete the wall:**\n\n* With a combined rate of 1/20 of the wall built per hour, it will take 20 hours to complete the entire wall (1 wall / (1/20) wall/hour = 20 hours).\n\n**Therefore, it will take the construction workers 20 hours to build the wall while factoring in the erosion.** ",
+            "options": [
+                "10 hours",
+                "15 hours",
+                "20 hours",
+                "25 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A team of 8 experienced software developers can complete a project in 12 days.  To speed things up, the company decides to add a team of 4 junior developers who are, individually, half as efficient as the experienced developers.  How many days will it take both teams working together to complete the project?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate the work rate of an experienced developer:**\n\n* If 8 experienced developers complete the project in 12 days, one experienced developer would take 8 times as long. \n* Time for one experienced developer = 8 developers * 12 days = 96 days\n* This means an experienced developer completes 1/96 of the project per day. \n\n**2. Calculate the work rate of a junior developer:**\n\n* Junior developers are half as efficient as experienced developers.\n* Work rate of a junior developer = (1/96) / 2 = 1/192 of the project per day\n\n**3. Calculate the combined work rate of both teams:**\n\n* Total experienced developer work rate per day = 8 developers * (1/96) = 1/12\n* Total junior developer work rate per day = 4 developers * (1/192) = 1/48\n* Combined work rate = (1/12) + (1/48) = 5/48 of the project per day\n\n**4. Calculate the total time to complete the project:**\n\n* If they complete 5/48 of the project each day, find the reciprocal to determine the total days.\n* Total time = 48/5 days = 9.6 days\n\n**Therefore, it will take both teams working together 9.6 days to complete the project.**",
+            "options": [
+                "12 days",
+                "9.6 days",
+                "19.2 days",
+                "48 days"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A construction company is tasked with building a small bridge. Their initial assessment determined that a team of 15 workers could complete the project in 40 days. However, due to unforeseen circumstances, only 10 workers are available to start the project. After 20 days, the company manages to allocate an additional 8 workers to the project.  How many days in total will it take to build the bridge?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Man-Days Concept and Calculations' subtopic within 'Quants - Time and Work'. It tests a student's ability to: \n\n* **Understand the inverse relationship between workforce and time in work problems.**\n* **Calculate and apply the concept of 'man-days' to determine total work.**\n* **Analyze and solve problems involving changes in workforce midway through a task.**\n\nHere's a step-by-step solution:\n\n**1. Calculate the total work:**\n\n* The project requires 15 workers * 40 days = 600 man-days of work. \n\n**2. Calculate work done in the first 20 days:**\n\n* With 10 workers, the work done in 20 days is 10 workers * 20 days = 200 man-days. \n\n**3. Calculate remaining work:**\n\n* The remaining work is 600 man-days - 200 man-days = 400 man-days.\n\n**4. Calculate the work rate with the increased workforce:**\n\n* After adding 8 workers, the total workforce becomes 10 workers + 8 workers = 18 workers.\n\n**5. Calculate the time to complete the remaining work:**\n\n* Time = Remaining work / Work rate = 400 man-days / 18 workers = 22.22 days (approximately)\n\n**6. Calculate the total time taken:**\n\n* Total time = Initial 20 days + 22.22 days = 42.22 days \n\nTherefore, it will take approximately 42.22 days to build the bridge.",
+            "options": [
+                "40 days",
+                "42.22 days",
+                "45 days",
+                "50 days"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A large reservoir is fitted with three pipes - A, B, and C. Pipe A can fill the reservoir in 10 hours. Pipe B can fill it in 15 hours, but pipe C is designed to empty the reservoir and can do so completely in 20 hours.\n**givenInformation**: Pipe A fills in 10 hours, Pipe B fills in 15 hours, and Pipe C empties in 20 hours.\n**question**: If all three pipes are left open simultaneously, how long will it take for the reservoir to be filled completely?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Problems Involving Pipes and Cisterns' subtopic of 'Quants - Time and Work'. It involves calculating the combined work rate of pipes working together, some filling and others emptying. \n\nHere's how to solve it:\n\n1. **Calculate individual rates:**\n   * Pipe A's filling rate = 1/10 (Reservoir filled per hour)\n   * Pipe B's filling rate = 1/15 (Reservoir filled per hour)\n   * Pipe C's emptying rate = 1/20 (Reservoir emptied per hour)\n\n2. **Calculate the net filling rate:**\n   * Combined filling rate of A and B = 1/10 + 1/15 = 1/6\n   * Net filling rate (considering pipe C) = 1/6 - 1/20 = 7/60\n\n3. **Calculate the time taken to fill the reservoir:**\n   * Time = Total work / Rate \n   * Time = 1 / (7/60) = 60/7 hours = 8 hours and 34 minutes (approximately)\n\nTherefore, it will take approximately 8 hours and 34 minutes to fill the reservoir if all three pipes are open simultaneously. ",
+            "options": [
+                "7 hours",
+                "8 hours",
+                "9 hours",
+                "10 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: A team of analysts needs to process a large dataset for a marketing campaign. The dataset is divided into three parts: Data Cleaning, Data Analysis, and Report Generation. Two senior analysts, Alice and Bob, and a junior analyst, Charlie, are assigned to the task.\n**data**: \n  **type**: table\n  **data**: \n    - \n      **Task**: Data Cleaning\n      **Alice (hours)**: 10\n      **Bob (hours)**: 8\n      **Charlie (hours)**: 15\n    - \n      **Task**: Data Analysis\n      **Alice (hours)**: 6\n      **Bob (hours)**: 9\n      **Charlie (hours)**: 12\n    - \n      **Task**: Report Generation\n      **Alice (hours)**: 5\n      **Bob (hours)**: 4\n      **Charlie (hours)**: 8\n**question**: If Alice and Bob work together on Data Cleaning, then Alice moves on to Data Analysis while Bob starts Report Generation simultaneously, and finally, Charlie takes over Data Analysis from Alice and completes the remaining work, how many hours will it take to complete the entire project?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**Step 1: Calculate the combined work rate for Data Cleaning.**\n\n* Alice's rate: 1/10 of the task per hour\n* Bob's rate: 1/8 of the task per hour\n* Combined rate: (1/10) + (1/8) = 9/40 of the task per hour\n\n**Step 2: Calculate the time taken by Alice and Bob for Data Cleaning.**\n\n* Time = Work / Rate = 1 / (9/40) = 40/9 hours\n\n**Step 3: Calculate the time Alice spends on Data Analysis before Charlie takes over.**\n\n* Alice's work rate for Data Analysis: 1/6 of the task per hour\n* Time spent by Alice on Data Analysis: (40/9) / 6 = 20/27 hours\n\n**Step 4: Calculate the remaining work on Data Analysis after Alice.**\n\n* Work done by Alice: (20/27) * (1/6) = 10/81 of the task\n* Remaining work: 1 - (10/81) = 71/81 of the task\n\n**Step 5: Calculate the time taken by Charlie to complete the remaining Data Analysis.**\n\n* Charlie's work rate for Data Analysis: 1/12 of the task per hour\n* Time taken by Charlie: (71/81) / (1/12) = 284/27 hours\n\n**Step 6: Calculate the time taken by Bob to complete Report Generation.**\n\n* Bob's work rate for Report Generation: 1/4 of the task per hour\n* Time taken by Bob: 1 / (1/4) = 4 hours\n\n**Step 7: Calculate the total time taken to complete the project.**\n\n* Total time = Time for Data Cleaning + Max(Time for Data Analysis, Time for Report Generation)\n* Total time = (40/9) + Max((20/27 + 284/27), 4) = (40/9) + 4 = 76/9 hours\n\nTherefore, it will take **76/9 hours** to complete the entire project.",
+            "options": [
+                "8.44 hours",
+                "12.33 hours",
+                "9.23 hours",
+                "7.96 hours"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A project requires building a website and a mobile app. Team A, responsible for the website, can complete it in 20 days. Team B, handling the app, can finish it in 30 days. However, both tasks share a dependency on a design phase that takes 5 days.  After the design phase, both teams can work simultaneously. What is the total project duration (in days)?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Identify the critical path:** The critical path is the longest sequence of dependent tasks, which determines the minimum project duration. In this case, it's Design -> (Website & App development).\n\n2. **Calculate the work rates:**\n   * Team A's website development rate: 1/20 (completes 1/20th of the website per day)\n   * Team B's app development rate: 1/30 (completes 1/30th of the app per day)\n\n3. **Account for the shared dependency:**\n   * Both teams can start their individual tasks only after the 5-day design phase.\n\n4. **Calculate the time for parallel tasks:**\n   * Since Team B takes longer for app development, we need to find how long Team A takes to complete the remaining website work after the design phase.\n\n5. **Calculate the remaining work for Team A:**\n   * Let's say after the design phase, Team A takes 'x' more days to finish the website. So, they would have worked for a total of (5 + x) days.\n   * Work done by Team A in (5 + x) days = (5 + x) * (1/20) = 1 (representing the complete website)\n   * Solving for x:  5 + x = 20 => x = 15 days.\n\n6. **Determine the total project duration:**\n   * Design phase: 5 days\n   * Website development (parallel with app development): 15 days\n   * Total project duration = 5 + 15 = 20 days\n\nTherefore, the total project duration is 20 days.",
+            "options": [
+                "25 days",
+                "30 days",
+                "20 days",
+                "15 days"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A construction team needs to clear a plot of land for a new building.  A bulldozer can clear the land in 10 days working alone, while an excavator can clear the same land in 6 days working alone.  If the construction team uses both the bulldozer and the excavator simultaneously, how long will it take to clear the entire plot of land?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Determine the work rate of each machine:**\n\n* **Bulldozer:** Completes 1/10 of the job per day. \n* **Excavator:** Completes 1/6 of the job per day.\n\n**2. Calculate the combined work rate:**\n\n* Add the individual work rates: (1/10) + (1/6) = 8/30 = 4/15 of the job per day.\n\n**3. Determine the time to complete the job together:**\n\n* Divide the total work (1 job) by the combined work rate: 1 / (4/15) = 15/4 days = 3.75 days.\n\n**Therefore, it will take 3.75 days for the bulldozer and excavator to clear the land working together.**",
+            "options": [
+                "10 days",
+                "6 days",
+                "3.75 days",
+                "5 days"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Liam and Sophia are tasked with stuffing envelopes for a marketing campaign. Liam can stuff 150 envelopes per hour, but he takes a 10-minute break every hour. Sophia, on the other hand, can stuff 120 envelopes per hour and works consistently without breaks. If they need to stuff 1800 envelopes, how long will it take them working together?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate Liam's effective work rate:**\n\n* Liam works for 50 minutes every hour (60 minutes - 10 minutes break).\n* His hourly rate needs to be adjusted to reflect this: (50 minutes / 60 minutes) * 150 envelopes/hour = 125 envelopes/hour\n\n**2. Calculate their combined work rate:**\n\n* Liam's rate: 125 envelopes/hour\n* Sophia's rate: 120 envelopes/hour\n* Combined rate: 125 + 120 = 245 envelopes/hour\n\n**3. Calculate the time taken to complete the task:**\n\n* Total envelopes: 1800\n* Combined work rate: 245 envelopes/hour\n* Time = Total work / Work rate = 1800 envelopes / 245 envelopes/hour = 7.35 hours\n\n**Therefore, it will take Liam and Sophia approximately 7.35 hours to stuff 1800 envelopes together.**",
+            "options": [
+                "7.35 hours",
+                "8 hours",
+                "6.5 hours",
+                "9 hours"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A swimming pool can be filled by an inlet pipe in 10 hours. However, a leak in the pool's drainage system drains water at a rate that can empty half the full pool in 20 hours. If the pool is initially empty and both the inlet pipe and the leak are operational, how long will it take to fill three-quarters of the pool?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Negative Work Concept (e.g., Leakage)' within the broader topic of 'Quants - Time and Work'. Here's how to solve it:\n\n**1. Determine individual rates:**\n\n* **Inlet Pipe:** Fills the entire pool in 10 hours, so its filling rate is 1/10 of the pool per hour.\n* **Leak:** Empties half the pool in 20 hours, meaning it empties the full pool in 40 hours. Its draining rate is 1/40 of the pool per hour.\n\n**2. Calculate the combined rate:**\n\n* Since the leak works against the inlet pipe, we subtract the leak's rate from the inlet pipe's rate: (1/10) - (1/40) = 3/40 of the pool per hour.\n\n**3.  Determine the time to fill three-quarters:**\n\n* Let 'x' be the time taken to fill three-quarters (3/4) of the pool.\n* Using the combined rate, we set up the equation: (3/40) * x = 3/4\n* Solving for 'x', we get x = (3/4) * (40/3) = 10 hours.\n\n**Therefore, it will take 10 hours to fill three-quarters of the pool.**",
+            "options": [
+                "10 hours",
+                "20 hours",
+                "30 hours",
+                "40 hours"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A team of 4 skilled workers can complete a construction project in 15 days. They start working, but after 6 days, due to unforeseen circumstances, 2 workers have to leave the project.  How many additional days will it take the remaining workers to complete the project?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the work done in the first 6 days:**\n\n* In one day, the team of 4 can complete 1/15 of the project.\n* In 6 days, they would have completed (1/15) * 6 = 2/5 of the project.\n\n**2. Calculate the work remaining:**\n\n* Work remaining = 1 - (2/5) = 3/5 of the project\n\n**3. Calculate the work rate of the remaining workers:**\n\n* Initially, 4 workers were working. Now, only 2 workers remain.\n* Since the number of workers is halved, the work rate is also halved.\n\n**4. Calculate the time taken by the remaining workers to complete the remaining work:**\n\n* Let's assume the remaining work can be completed by the 2 workers in 'x' days.\n* In 'x' days, the 2 workers will complete (3/5) of the project.\n* We know that 4 workers would take 15 days to complete the whole project.\n* Therefore, 2 workers would take twice as long: 15 days * 2 = 30 days\n* This means the 2 workers complete 1/30 of the project per day.\n* Setting up the equation: (1/30) * x = 3/5\n* Solving for 'x': x = (3/5) * 30 = 18 days\n\n**Answer:** It will take the remaining workers an additional 18 days to complete the project. ",
+            "options": [
+                "12 days",
+                "18 days",
+                "24 days",
+                "30 days"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A farmer needs to plow a field. He has two oxen, Balu and Vijay, who can plow the entire field in 12 days and 18 days respectively.\n**information**: They decide to work alternately on the field, with Balu plowing on the first day, Vijay on the second, and so on.\n**question**: How many days will it take them to plow the entire field working in this alternate pattern?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Find the LCM of individual work times:**\n\n   The LCM of 12 and 18 is 36. This represents the total 'work' of plowing the field, as it's divisible by both oxen's individual work rates.\n\n**2. Calculate the work done in 2 days:**\n\n   * Balu plows 1/12 of the field in a day.\n   * Vijay plows 1/18 of the field in a day.\n   * Together, in two days, they plow (1/12) + (1/18) = 5/36 of the field.\n\n**3. Determine the number of 2-day cycles:**\n\n   * Since they complete 5/36 of the work every two days, they will complete 35/36 of the work in 7 cycles (7 x 5/36 = 35/36). This takes 14 days (7 cycles x 2 days/cycle). \n\n**4. Account for the final day:**\n\n   * On the 15th day, it's Balu's turn, and he can plow 1/12 of the field in a day. Since 1/36 of the field is left, he will finish the work on the 15th day.\n\n**Therefore, it will take them 15 days to plow the entire field working alternately.**",
+            "options": [
+                "12 days",
+                "18 days",
+                "15 days",
+                "24 days"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A team of 4 experienced bakers can frost and decorate 120 cupcakes in 2 hours.  A new baker has joined the team, and they want to assess their speed.  The full team of 5 bakers now works together to frost and decorate 225 cupcakes. If the new baker works at a constant rate, how long did it take the team of 5 to complete the 225 cupcakes?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the work rate of the experienced team:**\n\n   * The team of 4 completes 120 cupcakes / 2 hours = 60 cupcakes per hour.\n\n**2.  Calculate cupcakes frosted by the experienced team in the new scenario:**\n\n   * Let 't' represent the time (in hours) it took the team of 5 to complete the task. \n   * In that time, the experienced 4 bakers would have frosted 60 cupcakes/hour * 't' hours = 60t cupcakes. \n\n**3. Determine the cupcakes frosted by the new baker:** \n\n   * The new baker frosted 225 cupcakes (total) - 60t cupcakes (by the experienced team) = 225 - 60t cupcakes.\n\n**4.  Express the new baker's work rate:**\n\n   * The new baker's work rate is (225 - 60t cupcakes) / 't' hours\n\n**5.  Assume all bakers work at the same rate:**\n\n   * Since we're aiming for a medium difficulty, let's assume the new baker integrates seamlessly and works at the same rate as the experienced bakers (this is not stated explicitly, but it simplifies the problem). \n   * This means the new baker also frosts at a rate of 60 cupcakes / 5 bakers = 12 cupcakes per hour.\n\n**6. Set up an equation and solve for 't':**\n\n   * We know the new baker frosted 225 - 60t cupcakes at a rate of 12 cupcakes per hour:  \n     (225 - 60t) / t = 12\n   * Multiply both sides by 't':  225 - 60t = 12t\n   * Add 60t to both sides: 225 = 72t\n   * Divide both sides by 72: t = 3.125 hours\n\n**Answer:** It took the team of 5 bakers 3.125 hours to frost and decorate the 225 cupcakes.",
+            "options": [
+                "2.5 hours",
+                "3.125 hours",
+                "3.75 hours",
+                "4 hours"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: The following table shows the number of units produced by five different machines in a factory over a period of six months.\n\n| Machine | January | February | March | April | May | June |\n|---|---|---|---|---|---|---|\n| A | 1200 | 1300 | 1250 | 1350 | 1400 | 1300 |\n| B | 1100 | 1200 | 1150 | 1250 | 1300 | 1200 |\n| C | 1000 | 1100 | 1050 | 1150 | 1200 | 1100 |\n| D | 900 | 1000 | 950 | 1050 | 1100 | 1000 |\n| E | 800 | 900 | 850 | 950 | 1000 | 900 |\n\nA new machine F is introduced in July. It is observed that machine F produces 10% more units than machine C in July.  If the total production target for July is 6500 units, how many units should the remaining machines (A, B, D, and E) produce collectively?\n**Question**: Calculate the combined number of units machines A, B, D, and E need to produce in July to meet the production target.\n",
+            "difficulty": "medium",
+            "reasoning": "Here's a step-by-step solution:\n\n1. **Calculate Machine C's July Production:**\n   - Machine C's average production over the past six months is (1000+1100+1050+1150+1200+1100)/6 = 1100 units.\n   - Machine F produces 10% more than Machine C, so F produces 1100 * 0.10 = 110 units extra.\n   - Machine F's total production in July is 1100 + 110 = 1210 units.\n\n2. **Calculate the Remaining Production Target:**\n   - The total production target for July is 6500 units.\n   - Subtract Machine F's production: 6500 - 1210 = 5290 units.\n\n**Therefore, machines A, B, D, and E need to produce a combined total of 5290 units in July to meet the production target.**",
+            "options": [
+                "5290 units",
+                "4800 units",
+                "6500 units",
+                "5000 units"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: A construction company is building a new bridge. They have two teams, Team A and Team B, each specialized in different parts of the construction. Team A can complete their part of the bridge in 15 days, while Team B can complete their part in 20 days.\n**question**: To minimize the construction time, the company plans to have both teams work initially but then let Team A finish alone. If Team A needs a 5-day head start for their final stage, how many days should both teams work together before Team A takes over?\n**data**: \n  **Team A completion time**: 15 days\n  **Team B completion time**: 20 days\n  **Team A head start**: 5 days\n**difficulty_level**: Medium 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate individual work rates:**\n   - Team A's work rate: 1/15 of the job per day\n   - Team B's work rate: 1/20 of the job per day\n\n**2. Define 'x' as the number of days both teams work together.**\n\n**3. Set up the equation:**\n   - Work done by Team A in 'x' days: (x/15)\n   - Work done by Team B in 'x' days: (x/20)\n   - Work done by Team A in the final 5 days: (5/15) = (1/3)\n\n**4. The total work must equal 1 (the whole job):**\n   (x/15) + (x/20) + (1/3) = 1\n\n**5. Solve for 'x':**\n   - Find a common denominator (60): (4x/60) + (3x/60) + (20/60) = 1\n   - Combine terms: (7x + 20)/60 = 1\n   - Multiply both sides by 60: 7x + 20 = 60\n   - Subtract 20 from both sides: 7x = 40\n   - Divide both sides by 7: x = 5.71 days (approximately)\n\n**Therefore, both teams should work together for approximately 5.71 days before Team A takes over.**",
+            "options": [
+                "10 days",
+                "5.71 days",
+                "15 days",
+                "20 days"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A construction company needs to clear a site for a new building. They have three bulldozers: a large one, a medium one, and a small one.  Working alone, the large bulldozer can clear the site in 6 hours, the medium bulldozer in 8 hours, and the small bulldozer in 12 hours. \n\nHere's the challenge: The company wants to utilize the bulldozers for maximum efficiency. They plan to start with all three bulldozers working together. However, due to safety regulations, only two bulldozers can operate simultaneously after the first 3 hours.  \n\nWhat is the MINIMUM amount of time it will take to clear the entire site, adhering to the safety regulations?",
+            "difficulty": "hard",
+            "reasoning": "This problem is tricky because it involves multiple work rates and a change in those rates midway through the task. Here's how to solve it: \n\n**Step 1: Calculate the work rates of each bulldozer.** \n* Large bulldozer: Clears 1/6 of the site per hour. \n* Medium bulldozer: Clears 1/8 of the site per hour. \n* Small bulldozer: Clears 1/12 of the site per hour.\n\n**Step 2: Calculate the combined work rate of all three bulldozers.**\n* Combined rate = 1/6 + 1/8 + 1/12 = 3/8 of the site per hour.\n\n**Step 3: Determine how much work is completed in the first 3 hours.**\n* Work completed = (3/8 site/hour) * 3 hours = 9/8 of the site. This means they actually clear the entire site in the first 3 hours!\n\n**Step 4: Since the site is already cleared after 3 hours, the question of which two bulldozers to use after that point is irrelevant. The minimum time is already achieved.**\n\n**Final Answer:** The minimum time to clear the site is 3 hours. ",
+            "options": [
+                "6 hours",
+                "8 hours",
+                "12 hours",
+                "3 hours"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A construction project has two major phases: Building the structure and Finishing the interiors. Team Alpha can build the structure in 20 days, while Team Beta can complete the interiors in 30 days. However, both teams can't work simultaneously. Team Alpha starts the project, but after 5 days, a quarter of the already completed structure is damaged due to unforeseen circumstances.  Team Alpha then resumes work and completes the remaining structure. Finally, Team Beta finishes the interiors. How many days did it take to complete the entire project?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Time and Work Applications in Projects and Deadlines' subtopic within 'Quants - Time and Work'. It's tricky due to the introduction of a setback mid-project, requiring careful calculation of the work lost and adjustments to the completion time.\n\nHere's a step-by-step solution:\n\n1. **Initial Progress:** Team Alpha works for 5 days, completing 5/20 = 1/4 of the structure.\n\n2. **Damage Setback:** 1/4 * 1/4 = 1/16 of the structure is damaged, leaving 1/4 - 1/16 = 3/16 completed.\n\n3. **Remaining Structure:** Team Alpha needs to build 1 - 3/16 = 13/16 of the structure.\n\n4. **Time to Complete Structure:** Since Team Alpha builds the structure in 20 days, they'll take (13/16) * 20 = 16.25 days to complete the remaining portion.\n\n5. **Total Time for Structure:** The total time spent on the structure is 5 days (initial) + 16.25 days (remaining) = 21.25 days.\n\n6. **Time for Interiors:** Team Beta takes 30 days to finish the interiors.\n\n7. **Total Project Time:** The total time for the project is 21.25 days (structure) + 30 days (interiors) = 51.25 days.\n\nTherefore, it took 51.25 days to complete the entire project.",
+            "options": [
+                "51.25 days",
+                "46.25 days",
+                "56.25 days",
+                "61.25 days"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A construction project requires three types of tasks: excavation, foundation laying, and framing.  The table below shows the time (in days) each team takes to complete each task: \n\n| Team | Excavation | Foundation | Framing |\n|---|---|---|---| \n| A | 10 | 15 | 12 |\n| B | 12 | 18 | 10 |\n| C | 15 | 16 | 14 |\n\nTeams work on the tasks sequentially, meaning only one task can be done at a time.  For example, Team A can only start on the foundation after completing the excavation. The project needs to be finished as quickly as possible. \n**question**: What is the minimum number of days required to complete all three tasks, assuming you can strategically assign the tasks to the teams to minimize the total project time?\n**difficulty**: tricky 8/10\n",
+            "difficulty": "hard",
+            "reasoning": "This is a 'tricky 8/10' difficulty problem because it requires careful analysis of the table data and strategic thinking to determine the optimal assignment of tasks to teams.  Here's how to solve it: \n\n**1. Analyze the Table:**\n   * Look for the task each team completes fastest.  For example, Team A is fastest at excavation (10 days), Team B is fastest at framing (10 days), and Team C is relatively fast at foundation work (16 days). \n\n**2. Strategize Task Assignment:**\n   * To minimize the total project time, we want to assign tasks based on each team's strengths while minimizing any potential delays between tasks.\n   * **Optimal Assignment:** \n      * Team A: Excavation (10 days) \n      * Team B: Framing (10 days) \n      * Team C: Foundation (16 days) \n\n**3.  Calculate Total Time:** \n   * Notice that excavation (Team A) and framing (Team B) can happen simultaneously since they are independent tasks.\n   * The foundation work (Team C) can begin as soon as excavation is complete. \n   * Total time = Maximum time for parallel tasks + Time for foundation = Max(10 days, 10 days)  + 16 days = 26 days. \n\n**Therefore, the minimum number of days required to complete the project is 26.**",
+            "options": [
+                "22 days",
+                "28 days",
+                "30 days",
+                "26 days"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A cistern has three pipes: A, B, and C. Pipes A and B are inlet pipes, while pipe C is an outlet pipe. Pipe A can fill the cistern alone in 4 hours, and pipe B can fill it alone in 6 hours. Pipe C can empty the full cistern in 8 hours if pipes A and B are closed. \n\nInitially, pipes A and B are opened for 1 hour. Then, pipe C is also opened. After half an hour, pipe B is closed. How much more time will it take for the cistern to be filled completely after pipe B is closed?",
+            "difficulty": "hard",
+            "reasoning": "Here's a step-by-step solution and explanation:\n\n**1. Calculate the individual rates of each pipe:**\n\n* Pipe A's filling rate = 1/4 of the cistern per hour\n* Pipe B's filling rate = 1/6 of the cistern per hour\n* Pipe C's emptying rate = 1/8 of the cistern per hour\n\n**2. Calculate the combined filling rate of pipes A and B:**\n\n* Combined filling rate (A + B) = 1/4 + 1/6 = 5/12 of the cistern per hour \n\n**3. Calculate the amount of cistern filled in the first hour:**\n\n* In the first hour, only A and B are open, so they fill 5/12 of the cistern. \n\n**4. Calculate the net filling rate when all three pipes are open:**\n\n* Net filling rate (A + B - C) = 1/4 + 1/6 - 1/8 = 7/24 of the cistern per hour\n\n**5. Calculate the amount of cistern filled in the next half hour:**\n\n* In the next half hour, all three pipes are open, so they fill (7/24) * (1/2) = 7/48 of the cistern.\n\n**6. Calculate the total amount of cistern filled before closing pipe B:**\n\n* Total filled = (5/12) + (7/48) = 27/48 of the cistern \n\n**7. Calculate the remaining portion of the cistern to be filled:**\n\n* Remaining portion = 1 - (27/48) = 21/48 of the cistern\n\n**8. Calculate the filling rate with only pipe A open:**\n\n* Only pipe A is now filling the cistern at a rate of 1/4 of the cistern per hour. \n\n**9. Calculate the time taken by pipe A to fill the remaining portion:**\n\n* Time = (Remaining portion) / (Filling rate of A) = (21/48) / (1/4) = 21/12 hours = 1.75 hours\n\n**Therefore, it will take an additional 1.75 hours to fill the cistern completely after pipe B is closed.**",
+            "options": [
+                "1.75 hours",
+                "2 hours",
+                "1.5 hours",
+                "2.5 hours"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A construction firm has two teams of workers, Team Alpha and Team Beta, specialized in laying concrete. Team Alpha, working alone, can lay 150 cubic meters of concrete in 6 hours. Team Beta, working alone, can lay the same amount of concrete but takes 25% longer than Team Alpha. \n\nFor a new project, the firm decides to employ a mixed approach: Team Alpha works alone for the first 4.5 hours laying the foundation. Then, both teams collaborate to lay the remaining concrete, working with an efficiency that's 10% less effective than if they were simply combining their individual maximum outputs.  \n\nHow long does it take to lay 150 cubic meters of concrete using this mixed approach?",
+            "difficulty": "hard",
+            "reasoning": "Here's how we can solve this problem step-by-step:\n\n**1. Calculate Team Beta's individual work rate:**\n\n* Team Alpha lays 150 cubic meters in 6 hours, meaning their rate is 150/6 = 25 cubic meters per hour.\n* Team Beta takes 25% longer, so they take 6 hours * 0.25 = 1.5 hours extra.\n* Team Beta's total time is 6 hours + 1.5 hours = 7.5 hours.\n* Team Beta's work rate is 150 cubic meters / 7.5 hours = 20 cubic meters per hour.\n\n**2. Calculate the work done by Team Alpha in the first 4.5 hours:**\n\n* Team Alpha's rate is 25 cubic meters per hour.\n* In 4.5 hours, they lay 25 cubic meters/hour * 4.5 hours = 112.5 cubic meters. \n\n**3. Calculate the remaining concrete to be laid:**\n\n* Total concrete is 150 cubic meters, and Team Alpha laid 112.5 cubic meters.\n* Remaining concrete is 150 cubic meters - 112.5 cubic meters = 37.5 cubic meters.\n\n**4. Calculate the combined theoretical work rate of both teams:**\n\n* Team Alpha's rate is 25 cubic meters/hour, and Team Beta's is 20 cubic meters/hour.\n* Their combined theoretical rate is 25 + 20 = 45 cubic meters per hour.\n\n**5. Calculate the actual combined work rate (with the 10% reduction):**\n\n* The combined rate is reduced by 10%, meaning they work at 90% efficiency.\n* Their actual combined rate is 45 cubic meters/hour * 0.90 = 40.5 cubic meters per hour.\n\n**6. Calculate the time taken to lay the remaining concrete:**\n\n* They need to lay 37.5 cubic meters of concrete.\n* At a rate of 40.5 cubic meters/hour, it will take 37.5 cubic meters / 40.5 cubic meters/hour = 0.926 hours (approximately).\n\n**7.  Calculate the total time for the mixed approach:**\n\n* Team Alpha worked alone for 4.5 hours.\n* Then, both teams worked together for 0.926 hours.\n* The total time is 4.5 hours + 0.926 hours = 5.426 hours (approximately).\n\n**Therefore, it takes approximately 5.426 hours to lay 150 cubic meters of concrete using this mixed approach.**",
+            "options": [
+                "5.426 hours",
+                "6.426 hours",
+                "7.426 hours",
+                "4.426 hours"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Three bakers, Alice, Bob, and Charlie, are working together to bake a large batch of cookies for a school fundraiser.  Alice can bake the entire batch by herself in 6 hours. Bob, being a bit slower, would take 8 hours to bake the same amount alone. Charlie is new and still learning, so it would take him 12 hours to bake the whole batch on his own. \n\nThe bakers decide to divide the work as follows: Alice will bake for the first hour, then Bob will take over for the next two hours. Finally, Charlie will bake for the remaining time until the batch is finished.  If they start baking at 8:00 am, at what time will the cookie batch be ready?",
+            "difficulty": "medium",
+            "reasoning": "Here's how we can break down the solution:\n\n**1. Determine individual baking rates:**\n\n* Alice: Bakes 1/6 of the batch per hour\n* Bob: Bakes 1/8 of the batch per hour\n* Charlie: Bakes 1/12 of the batch per hour\n\n**2. Calculate the work done in the first three hours:**\n\n* Alice (1 hour): 1/6 of the batch\n* Bob (2 hours): (1/8) * 2 = 1/4 of the batch\n\n* Total work done in 3 hours: (1/6) + (1/4) = 5/12 of the batch\n\n**3. Calculate the remaining work:**\n\n* Remaining work: 1 - (5/12) = 7/12 of the batch\n\n**4. Calculate the time Charlie needs to finish the batch:**\n\n* Charlie's work rate: 1/12 of the batch per hour\n* Time = (Remaining work) / (Charlie's rate) = (7/12) / (1/12) = 7 hours\n\n**5. Determine the finishing time:**\n\n* They start at 8:00 am\n* The first three hours take them to 11:00 am\n* Charlie bakes for another 7 hours, finishing at 6:00 pm\n\n**Therefore, the cookie batch will be ready at 6:00 pm.**",
+            "options": [
+                "11:00 am",
+                "1:00 pm",
+                "4:00 pm",
+                "6:00 pm"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A team of robots is programmed to assemble a spaceship. Initially, 10 robots start working together, and they are programmed to complete the spaceship in 60 days. However, due to a system malfunction, after every 10 days, one robot shuts down permanently.  If the robots continue working at the same individual pace, how many days will it actually take for the spaceship to be fully assembled?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate the work done in the first 10 days:**\n\n* Let's assume the total work required to build the spaceship is 600 units (You can choose any unit, this just makes calculations easier). \n* With 10 robots working, they complete 60 units of work each day (600 units / 60 days = 10 units/day).\n* In the first 10 days, they complete 100 units of work (10 units/day * 10 days = 100 units). \n\n**2. Calculate work done in subsequent periods:**\n\n* **Days 11-20:** Now 9 robots are left. They will complete 90 units of work in these 10 days (9 robots * 10 units/robot/day = 90 units).\n* **Days 21-30:** 8 robots are left. They will complete 80 units of work.\n* **Days 31-40:** 7 robots are left. They will complete 70 units of work.\n* **Days 41-50:** 6 robots are left. They will complete 60 units of work.\n* **Days 51-60:** 5 robots are left. They will complete 50 units of work.\n\n**3. Find the total work done and remaining work:**\n\n* Total work done in these 60 days: 100 + 90 + 80 + 70 + 60 + 50 = 450 units\n* Remaining work: 600 units (total) - 450 units (completed) = 150 units\n\n**4. Calculate the time to complete the remaining work:**\n\n* Now only 4 robots are left. \n* They complete 40 units of work every 10 days (4 robots * 10 units/robot/day = 40 units/10 days).\n* To complete 150 units, they will take 37.5 days (150 units / 40 units/10 days * 10 days = 37.5 days). \n\n**5. Calculate the total time:**\n\n* Total time taken: 60 days (initial) + 37.5 days (remaining) = 97.5 days\n\n**Therefore, it will take 97.5 days to fully assemble the spaceship.** ",
+            "options": [
+                "60 days",
+                "77.5 days",
+                "97.5 days",
+                "120 days"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Time and Work",
+    "exam_id": 18,
+    "order": 5
+}

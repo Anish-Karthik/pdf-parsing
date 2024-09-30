@@ -1,0 +1,452 @@
+{
+    "questions": [
+        {
+            "question": "John can paint a fence in 6 hours, while his friend Mary can paint the same fence in 4 hours. If they work together, how many hours will it take them to paint the fence?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Calculate individual rates:**\n   * John's rate: 1 fence / 6 hours = 1/6 of the fence per hour\n   * Mary's rate: 1 fence / 4 hours = 1/4 of the fence per hour\n\n**2. Combine their rates:**\n   * Combined rate: (1/6) + (1/4) = 5/12 of the fence per hour\n\n**3. Calculate combined time:**\n   * Time = Job / Rate\n   * Time = 1 fence / (5/12 fence per hour) = 12/5 hours = 2.4 hours\n\n**Therefore, it will take them 2.4 hours to paint the fence together.**",
+            "options": [
+                "10 hours",
+                "2.4 hours",
+                "5 hours",
+                "3 hours"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "The graph below shows the number of apples sold by a farmer over a week.\n\n[Insert a simple bar graph here with days of the week on the x-axis and number of apples sold on the y-axis.  Keep the numbers small and easy to read.  Example: Monday - 10 apples, Tuesday - 15 apples, etc.] \n\nOn which day did the farmer sell the least number of apples?",
+            "difficulty": "easy",
+            "reasoning": "This question tests basic graph reading skills within the 'Data Interpretation: Analyzing Charts and Graphs' topic. \n\n1. **Examine the graph:**  Look at the bars representing each day of the week. \n2. **Identify the shortest bar:** The shortest bar represents the day with the fewest apples sold.\n3. **Determine the corresponding day:** Check which day of the week is below the shortest bar. That's the day with the least sales. \n\nFor example, if the shortest bar on your graph corresponds to Monday, then Monday is the day the farmer sold the least number of apples.",
+            "options": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A group of 5 friends wants to take a picture together.  They decide to stand in a line. How many different ways can they arrange themselves for the picture?",
+            "difficulty": "easy",
+            "reasoning": "This is a permutation problem because the order of the friends in the line matters. Here's how to solve it:\n\n* **Step 1: Identify the choices.** There are 5 spots in the line for the first friend.\n* **Step 2: Account for decreasing choices.** After placing the first friend, there are only 4 friends left who could stand in the second spot.  For the third spot, there are only 3 choices, and so on.\n* **Step 3: Calculate the total arrangements.** To find the total number of different arrangements, we multiply the number of choices for each spot: 5 * 4 * 3 * 2 * 1 = 120\n\nTherefore, there are 120 different ways the friends can arrange themselves for the picture.\n\nThis can also be represented mathematically using the factorial notation: 5! = 120",
+            "options": [
+                "25",
+                "50",
+                "120",
+                "240"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "If  5 < 2x - 3 < 11, what is the possible range of values for x?",
+            "difficulty": "easy",
+            "reasoning": "**1. Isolate 'x' in the inequalities:** \n\n   * Add 3 to all parts of the inequality: \n      5 + 3 < 2x - 3 + 3 < 11 + 3\n      8 < 2x < 14\n\n   * Divide all parts of the inequality by 2: \n      8/2 < 2x/2 < 14/2\n      4 < x < 7\n\n**2. Interpret the Solution:**\n\nThe solution 4 < x < 7 means x can be any number between 4 and 7, but not including 4 or 7 themselves.\n\n**Therefore, the possible range of values for x is all numbers between 4 and 7.**",
+            "options": [
+                "x < 4",
+                "x > 7",
+                "4 \u2264 x \u2264 7",
+                "4 < x < 7"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A baker needs to bake 30 cookies for a party. He already has baked 12 cookies. If 'x' represents the number of cookies he still needs to bake, which equation represents this situation?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Problem:** \nThe baker wants to bake a total of 30 cookies and already has 12 done. We need to find how many more ('x') he needs to bake.\n\n**2. Set up the Equation:**\n* The total number of cookies he needs (30) is equal to the number he already baked (12) plus the number he still needs to bake ('x').\n* This translates to the equation:  12 + x = 30\n\n**3. Verification:**\n* If the baker bakes 18 more cookies (x = 18), the equation becomes 12 + 18 = 30, which is true.\n\n**Therefore, the correct equation representing the situation is 12 + x = 30.**",
+            "options": [
+                "12 - x = 30",
+                "x - 12 = 30",
+                "12 + x = 30",
+                "x = 30 - 12"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A city planner is designing a new park shaped like a triangle.  Two vertices of the park are located at coordinates (2, 3) and (8, 1).  To ensure the park's entrance is centrally located on its longest side, the planner needs to find the midpoint of that side. What are the coordinates of this midpoint?",
+            "difficulty": "easy",
+            "reasoning": "**1. Identify the Relevant Points:** We are given two vertices of the triangular park: (2, 3) and (8, 1).  The longest side will be the line segment connecting these two points. \n\n**2. Apply the Midpoint Formula:** To find the midpoint of a line segment, we use the following formula:\n\n Midpoint =  ((x\u2081 + x\u2082)/2, (y\u2081 + y\u2082)/2) \n\n Where (x\u2081, y\u2081) and (x\u2082, y\u2082) are the coordinates of the two endpoints.\n\n**3. Substitute the Coordinates:**  Let (2, 3) be (x\u2081, y\u2081) and (8, 1) be (x\u2082, y\u2082). Substituting these values into the midpoint formula, we get:\n\n Midpoint = ((2 + 8)/2, (3 + 1)/2)\n\n**4. Calculate the Midpoint:** Simplifying the expression, we find:\n\n Midpoint = (10/2, 4/2) = (5, 2)\n\n**Therefore, the coordinates of the midpoint of the longest side, where the park's entrance should be located, are (5, 2).**",
+            "options": [
+                "(3, 2)",
+                "(5, 2)",
+                "(6, 1)",
+                "(7, 3)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Sarah is baking cookies for her friends. She needs 2 cups of flour for every dozen cookies she makes.  She also knows that she needs to add 1 extra cup of flour to the recipe, regardless of how many cookies she bakes. If Sarah used 7 cups of flour total, how many dozen cookies did she bake?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Define variables:** \n\n* Let 'x' represent the number of dozens of cookies Sarah baked.\n\n**2. Set up the equation:**\n\n* Sarah uses 2 cups of flour per dozen cookies, so she used 2x cups of flour for 'x' dozens.\n* She also uses a constant 1 cup of flour.\n* In total, she used 7 cups of flour.\n\nThis can be represented by the equation:  2x + 1 = 7\n\n**3. Solve for x:**\n\n* Subtract 1 from both sides of the equation: 2x = 6\n* Divide both sides by 2: x = 3\n\n**Answer:** Sarah baked 3 dozen cookies. \n",
+            "options": [
+                "2 dozen",
+                "3 dozen",
+                "4 dozen",
+                "7 dozen"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of five friends are comparing their heights.  Their heights, in inches, are: 62, 65, 68, 65, and 70. What is the mode of their heights?",
+            "difficulty": "medium",
+            "reasoning": "The mode is the value that appears most often in a set of data. \n\nLet's list out the heights and how many times each appears:\n\n* **62 inches:** Appears 1 time \n* **65 inches:** Appears 2 times\n* **68 inches:** Appears 1 time\n* **70 inches:** Appears 1 time\n\nSince 65 inches appears the most (twice), the **mode** of the friends' heights is **65 inches**.",
+            "options": [
+                "62 inches",
+                "65 inches",
+                "68 inches",
+                "70 inches"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "If  3 < 2x - 5 < 7, what is the possible range of values for x?",
+            "difficulty": "medium",
+            "reasoning": "**1. Isolate x in both inequalities:** \n\n*  Begin by adding 5 to all parts of the inequality:\n   3 + 5 < 2x - 5 + 5 < 7 + 5\n\n*  This simplifies to:\n    8 < 2x < 12 \n\n*  Next, divide all parts of the inequality by 2: \n   8 / 2 < 2x / 2 < 12 / 2\n\n* This gives us: \n   4 < x < 6\n\n**2.  Interpret the solution:** \n\nThis means x can be any number between 4 and 6, but not including 4 or 6 themselves.\n\n**Therefore, the possible range of values for x is all real numbers between 4 and 6.**",
+            "options": [
+                "x < 4",
+                "x > 6",
+                "4 \u2264 x \u2264 6",
+                "4 < x < 6"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "The graph below shows the number of books sold by a bookstore over a period of six months. \n\n[Insert a bar graph here with months on the x-axis (January to June) and number of books sold on the y-axis (in increments of 50, ranging from 0 to 300). Data for each month should be as follows: January - 150, February - 100, March - 250, April - 175, May - 200, June - 225]\n\nWhat was the average number of books sold per month from April to June?",
+            "difficulty": "medium",
+            "reasoning": "**1. Identify the relevant data:** We need the number of books sold in April, May, and June.\n\n**2.  Extract the data from the graph:**\n    * April: 175 books\n    * May: 200 books\n    * June: 225 books\n\n**3. Calculate the total number of books sold:** 175 + 200 + 225 = 600 books\n\n**4. Calculate the average:** Total books sold / Number of months = 600 / 3 = 200 books per month\n\n**Therefore, the average number of books sold per month from April to June is 200.**",
+            "options": [
+                "150",
+                "200",
+                "250",
+                "300"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of 5 friends wants to take a photo where they stand in a line. However, two of the friends, Sarah and John, always fight if they stand next to each other.  How many different ways can the friends line up for the photo if Sarah and John aren't allowed to stand next to each other?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Calculate Total Possible Arrangements:**\n\n* If there were no restrictions, there would be 5! (5 factorial) ways to arrange the 5 friends.\n* 5! = 5 * 4 * 3 * 2 * 1 = 120\n\n**2. Calculate Arrangements Where Sarah and John ARE Together:**\n\n* Treat Sarah and John as a single unit.  Now we have 4 units to arrange (the Sarah/John unit and the other 3 friends): 4!\n* 4! = 4 * 3 * 2 * 1 = 24\n* Since Sarah and John can switch places within their unit, we multiply this by 2: 24 * 2 = 48\n\n**3. Subtract the Undesired Arrangements from the Total:**\n\n* To find the arrangements where Sarah and John are NOT together, subtract the arrangements where they ARE together from the total number of arrangements.\n* 120 - 48 = 72\n\n**Therefore, there are 72 different ways the friends can line up for the photo if Sarah and John can't stand next to each other.**",
+            "options": [
+                "120",
+                "48",
+                "72",
+                "24"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A team of 5 experienced bakers can frost 100 cupcakes in 2 hours. Due to an increased order, they need to frost 300 cupcakes. To speed things up, they bring in some apprentice bakers who work at 2/3 the speed of an experienced baker.  What is the minimum number of apprentice bakers needed to complete the order within the original 2-hour timeframe?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the work rate of an experienced baker:** \n\n* The team frosts 100 cupcakes / 2 hours = 50 cupcakes per hour. \n* Each experienced baker frosts 50 cupcakes/hour / 5 bakers = 10 cupcakes per hour.\n\n**2. Calculate the work rate of an apprentice baker:**\n\n* Apprentice rate = (2/3) * 10 cupcakes/hour = 6.67 cupcakes per hour (approximately)\n\n**3. Determine the total cupcakes needed from apprentice bakers:**\n\n* Total cupcakes needed = 300 cupcakes - 100 cupcakes (that experienced bakers can make) = 200 cupcakes\n\n**4.  Calculate the total apprentice work-hours needed:**\n\n* Apprentice work-hours = 200 cupcakes / 6.67 cupcakes/hour per apprentice \u2248 29.99 work-hours \n\n**5. Determine the minimum number of apprentice bakers:**\n\n* Since we need the work done in 2 hours: 29.99 apprentice work-hours / 2 hours \u2248 14.995\n\n* Since we can't have fractions of bakers, we round up to the nearest whole number.\n\n**Therefore, the minimum number of apprentice bakers needed is 15.** ",
+            "options": [
+                "10",
+                "12",
+                "14",
+                "15"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "If p is an even integer and q is an odd integer, which of the following MUST be an odd integer?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding Even and Odd Integers**\n\n* **Even integers** are divisible by 2. They can be represented as 2n, where n is any integer.\n* **Odd integers** are not divisible by 2. They can be represented as 2n + 1, where n is any integer.\n\n**Analyzing the Options**\n\nLet's test each option by plugging in example values for p and q. We'll use p = 2 (even) and q = 3 (odd).\n\n* **Option A: p + q** \n   2 + 3 = 5 (odd) - Seems plausible\n* **Option B: p - q**\n   2 - 3 = -1 (odd) - Seems plausible\n* **Option C: 2p + q**\n   2(2) + 3 = 7 (odd) - Seems plausible\n* **Option D: p * q** \n   2 * 3 = 6 (even) -  Not odd\n\n**Finding the MUST be Odd Option**\n\nWhile options A, B, and C worked with our example, we need to make sure the result is *always* odd.\n\nNotice that adding or subtracting an even and an odd integer will always result in an odd integer.  Therefore, options A (p + q) and B (p - q) are always odd.\n\nOption C (2p + q) will also always be odd.  2p is always even (since it's a multiple of 2), and adding an odd number (q) to an even number always results in an odd number.\n\n**Conclusion**\n\nOptions A, B, and C MUST result in an odd integer when p is even and q is odd.",
+            "options": [
+                "p + q",
+                "p - q",
+                "2p + q",
+                "p * q"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A baker used a certain amount of flour to bake 30 cookies.  If he triples the amount of flour and wants to bake each cookie with the same amount of flour, how many cookies can he bake?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Relationship:**\n   - Tripling the flour means he can bake three times as many cookies.\n\n**2. Calculate the New Number of Cookies:**\n   - Multiply the original number of cookies by 3: 30 cookies * 3 = 90 cookies\n\n**Therefore, the baker can bake 90 cookies.**",
+            "options": [
+                "30 cookies",
+                "60 cookies",
+                "90 cookies",
+                "120 cookies"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A city planner is designing a new park in the shape of a triangle. On the blueprint, the vertices of the park are represented by the points A(2, 5), B(8, 1), and C(4, 9). To ensure efficient use of resources, the planner wants to install a water fountain at a point equidistant from all three vertices of the park. What are the coordinates of this point?",
+            "difficulty": "medium",
+            "reasoning": "To find the point equidistant from all three vertices, we need to find the circumcenter of the triangle. The circumcenter is the point where the perpendicular bisectors of the sides of the triangle intersect.\n\n**Step 1: Find the midpoint of two sides of the triangle.**\n\n* Midpoint of AB: ((2+8)/2, (5+1)/2) = (5, 3)\n* Midpoint of BC: ((8+4)/2, (1+9)/2) = (6, 5)\n\n**Step 2: Find the slopes of the same two sides.**\n\n* Slope of AB: (1-5)/(8-2) = -4/6 = -2/3\n* Slope of BC: (9-1)/(4-8) = 8/-4 = -2\n\n**Step 3: Find the slopes of the perpendicular bisectors.**\n\n* Perpendicular bisector of AB has a slope of 3/2 (negative reciprocal of -2/3)\n* Perpendicular bisector of BC has a slope of 1/2 (negative reciprocal of -2)\n\n**Step 4: Use the point-slope form to find the equations of the perpendicular bisectors.**\n\n* Equation of the perpendicular bisector of AB (passing through (5, 3)):\n   y - 3 = (3/2)(x - 5)\n   2y - 6 = 3x - 15\n   3x - 2y = 9 \n\n* Equation of the perpendicular bisector of BC (passing through (6, 5)):\n   y - 5 = (1/2)(x - 6)\n   2y - 10 = x - 6\n   x - 2y = -4\n\n**Step 5: Solve the system of equations to find the point of intersection.**\n\nWe can solve this by multiplying the second equation by -3 and adding the two equations:\n\n   3x - 2y = 9\n   -3x + 6y = 12\n   ----------------\n   4y = 21\n   y = 21/4\n\nSubstituting y back into either equation, let's use x - 2y = -4:\n\n   x - 2(21/4) = -4\n   x - 21/2 = -4\n   x = -4 + 21/2 = 13/2\n\nTherefore, the coordinates of the point equidistant from all three vertices are (13/2, 21/4).",
+            "options": [
+                "(13/2, 21/4)",
+                "(5, 3)",
+                "(6, 5)",
+                "(4, 7)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The average weight of a group of 7 friends increases by 2 kg when the weight of Jack (one of the friends) is included. If the total weight of the group of 7 friends is 483 kg, what is Jack's weight?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the average weight of the 7 friends:**\n\n   * Average weight = Total weight / Number of friends\n   * Average weight = 483 kg / 7 = 69 kg\n\n**2. Calculate the new average weight:**\n\n   * The average weight increases by 2 kg, so the new average is 69 kg + 2 kg = 71 kg.\n\n**3. Calculate the total weight of the group including Jack:**\n\n   * Total weight = Average weight * Number of people (including Jack)\n   * Total weight = 71 kg * 8 = 568 kg\n\n**4.  Calculate Jack's weight:**\n\n   * Jack's weight = Total weight (including Jack) - Total weight (without Jack)\n   * Jack's weight = 568 kg - 483 kg = 85 kg\n\n**Therefore, Jack's weight is 85 kg.**",
+            "options": [
+                "69 kg",
+                "71 kg",
+                "85 kg",
+                "568 kg"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "The following line graph shows the monthly sales figures for a new product launched in January. \n\n[Insert a line graph here with the following data points, ensuring a medium level of complexity in the trend:]\n* January: 200 units\n* February: 350 units\n* March: 300 units \n* April: 450 units\n* May: 500 units\n* June: 400 units\n\nWhat was the average monthly sales increase from February to May?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the sales increase from February to May:**\n   * May sales: 500 units\n   * February sales: 350 units\n   * Increase: 500 - 350 = 150 units \n\n**2. Calculate the number of months:**\n   * From February to May, there are 4 months (February, March, April, May).\n\n**3. Calculate the average monthly increase:**\n   * Total increase / Number of months = Average increase\n   * 150 units / 4 months = 37.5 units/month\n\n**Therefore, the average monthly sales increase from February to May was 37.5 units.**",
+            "options": [
+                "25 units",
+                "37.5 units",
+                "50 units",
+                "150 units"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A farmer has a collection of chickens and rabbits. He knows that he has a total of 12 heads and 34 legs.  Assuming each chicken has 2 legs and each rabbit has 4 legs, can you determine how many chickens and rabbits the farmer has?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down how to solve this classic problem:\n\n**1. Set up the equations:**\n\n* Let 'c' represent the number of chickens.\n* Let 'r' represent the number of rabbits.\n\nWe can form two equations based on the given information:\n\n   * **Equation 1 (Heads):** c + r = 12  (Each animal has one head)\n   * **Equation 2 (Legs):** 2c + 4r = 34 (Chickens have 2 legs, rabbits have 4)\n\n**2. Solve for one variable:**\n\nWe can use either substitution or elimination to solve for our unknowns. Let's use elimination:\n\n* Multiply Equation 1 by -2:  -2c - 2r = -24\n* Add this modified equation to Equation 2:\n  (-2c - 2r) + (2c + 4r) = -24 + 34\n* This simplifies to: 2r = 10\n* Divide both sides by 2: r = 5 \n\n**3. Solve for the other variable:**\n\n* Substitute the value of 'r' (5) back into either Equation 1 or 2.  Let's use Equation 1:\n   c + 5 = 12\n* Subtract 5 from both sides: c = 7\n\n**Answer:** The farmer has 7 chickens and 5 rabbits.",
+            "options": [
+                "5",
+                "7",
+                "12",
+                "34"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A circular running track is being designed.  The track needs to have two straight segments of 100 meters each, connected by two semicircles.  If a runner wants to complete exactly 2 kilometers (2000 meters) in one lap around the track, what must be the radius, in meters, of each of the semicircles? ",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1.  Calculate the total length contributed by the straight segments:**\n\n* Since there are two straight segments of 100 meters each, their total length is 2 * 100 meters = 200 meters.\n\n**2.  Calculate the length contributed by the circular part of the track:**\n\n* The entire track is 2000 meters long, and the straight segments make up 200 meters. Therefore, the two semicircles together must have a length of 2000 meters - 200 meters = 1800 meters.\n\n**3.  Recognize that the two semicircles form a full circle:**\n\n* Two semicircles with the same radius combine to form one complete circle.\n\n**4. Calculate the circumference of this full circle:**\n\n* The combined length of the two semicircles (1800 meters) is equal to the circumference of the full circle.\n\n**5. Use the circumference formula to find the radius:**\n\n* The circumference of a circle is calculated using the formula: Circumference = 2 * \u03c0 * radius \n* We know the circumference is 1800 meters.  Let 'r' represent the radius. We can set up the equation:\n   1800 = 2 * \u03c0 * r\n\n**6. Solve for the radius (r):**\n\n* Divide both sides of the equation by 2\u03c0:\n    r = 1800 / (2 * \u03c0)\n* Calculate the approximate value of the radius:\n    r \u2248 1800 / (2 * 3.14) \u2248 286.62 meters\n\n**Therefore, the radius of each of the semicircles must be approximately 286.62 meters.**",
+            "options": [
+                "100 meters",
+                "200 meters",
+                "286.62 meters",
+                "573.24 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Statement:** The product of three integers, x, y, and z, is positive. \n\n**Question:** Is x positive?\n\n**Statement (A):** y * z is negative. \n\n**Statement (B):** x + y is odd, and y is even.** ",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Concepts**\n\n* **Even/Odd:** Even numbers are divisible by 2, while odd numbers are not. The sum of an even and an odd number is always odd.\n* **Positive/Negative:** The product of two numbers with the same sign (both positive or both negative) is positive. The product of two numbers with different signs is negative.\n\n**Analyzing the Question**\n\nWe know x * y * z > 0 (the product is positive). To determine if x is positive, we need to consider the signs of y and z. \n\n**Analyzing Statement (A)**\n\n* Statement (A) tells us y * z < 0 (the product is negative). This means y and z have opposite signs (one is positive, one is negative).\n* However, this information alone is insufficient to determine the sign of x. If y is positive and z is negative, then x must be positive to make the overall product positive.  But if y is negative and z is positive, then x must be negative. \n\n**Analyzing Statement (B)**\n\n* Statement (B) tells us x + y is odd and y is even. Since the sum of an even and an odd number is always odd, x must be odd. \n* However, knowing x is odd doesn't tell us if it's positive or negative (e.g., -3 and 5 are both odd). \n\n**Combining Statements (A) and (B)**\n\n* Combining both statements, we know y * z is negative, and x is odd.  \n* Since y * z is negative, one of them must be positive, and the other negative.  Since the overall product x * y * z is positive, x must be positive to make the product of all three a positive number. \n\n**Answer:**\n\n(C) BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.",
+            "options": [
+                "Statement A is sufficient",
+                "Statement B is sufficient",
+                "Both statements together are sufficient",
+                "Neither statement is sufficient"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**statement**: A farmer has a rectangular field where the length is twice the width. He plans to build a fence around the entire field. If the total length of the fence needed is represented by the expression  '6x + 12', what is the width of the field in terms of 'x'?\n**data_sufficiency_statements**: \n  - The area of the field can be represented by the expression '2x\u00b2 + 6x + 4'.\n  - If the width of the field is increased by 2 units, the perimeter of the field becomes '6x + 18'.\n**question**: Is the information given in statement (1) ALONE sufficient to answer the question?\nIs the information given in statement (2) ALONE sufficient to answer the question?\nIs the information given in BOTH statements TOGETHER sufficient to answer the question?\nIs EITHER statement ALONE sufficient to answer the question?\nIs NEITHER statement ALONE nor BOTH statements TOGETHER sufficient to answer the question?\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down this problem step by step:\n\n**1. Understanding the Problem**\n\nWe are given that the length of the field is twice its width. Let's represent the width as 'w'. Therefore, the length would be '2w'. The perimeter of a rectangle is calculated as 2*(length + width). \n\n**2. Setting Up the Equation**\n\nWe know the perimeter is represented by '6x + 12'. So, we can write the equation:\n\n2*(2w + w) = 6x + 12\n\nSimplifying the equation:\n\n6w = 6x + 12\n\nw = x + 2\n\nSo, the width of the field is 'x + 2'.\n\n**3. Analyzing the Data Sufficiency Statements**\n\n* **Statement 1:** This statement provides information about the area of the field. While related to length and width, it doesn't directly give us a way to determine the width in terms of 'x' alone. Therefore, statement 1 is not sufficient.\n* **Statement 2:** This statement tells us how the perimeter changes if the width is increased. Since the perimeter is directly related to the width, this statement should be sufficient. Let's verify: \n\n   If the width (w) is increased by 2, the new perimeter is 6x + 18. Using the perimeter formula, we have:\n   2 * (2w + 2 + w) = 6x + 18\n   Simplifying: 6w + 4 = 6x + 18\n   6w = 6x + 14\n   w = x + 7/3\n\n   This equation contradicts our earlier finding that w = x + 2. This contradiction means there's an error in the problem statement or the data sufficiency statements, making it impossible to determine the width solely from statement 2. \n\n**4. Conclusion**\n\nDue to the contradictory information, neither statement alone nor both statements together are sufficient to answer the question. The problem statement might need further revision for consistency.\n\n**Therefore, the answer is (E) NEITHER statement ALONE nor BOTH statements TOGETHER sufficient to answer the question.**",
+            "options": [
+                "Statement 1",
+                "Statement 2",
+                "Both statements together",
+                "Either statement alone"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A baker is making a giant cake for a wedding.  He knows the cake needs to be at least 12 inches tall to serve all the guests, but his oven can only bake cakes that are a maximum of 8 inches tall.  To solve this, he decides to bake multiple layers of cake and stack them. Each layer of cake is the same height. If 'x' represents the number of layers the baker needs to bake, write an inequality that represents the possible values of 'x'.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n* **Let 'x' be the number of layers:** The baker will stack 'x' layers of cake on top of each other.\n* **Each layer's height:** We don't know the exact height of each layer, but we know the total height needs to be at least 12 inches.\n* **Total cake height:** The total height of the cake is the number of layers (x) multiplied by the height of each layer. Since we don't know the individual layer height, we can represent it as 12/x (total height divided by the number of layers).\n* **Inequality:**\n    * We know the total height (12 inches) must be less than or equal to the number of layers (x) times the height of each layer (12/x), so we have the inequality:  12 \u2264 x * (12/x)\n    * Simplifying, we get 12 \u2264 12\n    * Since 12 is always equal to 12, this means x can be any number of layers as long as it results in a cake that's at least 12 inches tall.\n* **Considering the oven height limit:** However, we also know the oven can only bake cakes that are a maximum of 8 inches tall. This means each layer cannot exceed 8 inches. \n* **Revised Inequality:**  To account for the oven height restriction, we need to make sure each layer (12/x) is less than or equal to 8 inches: 12/x \u2264 8\n* **Solving for x:**\n    * Multiply both sides by x: 12 \u2264 8x\n    * Divide both sides by 8: 1.5 \u2264 x \n\n* **Final Inequality:**  Therefore, the inequality representing the possible values of x is x \u2265 1.5. Since the baker can't bake half a layer, x must be a whole number. The final answer is x \u2265 2, meaning the baker needs to bake at least 2 layers.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two numbers, x and y, have the following properties:\n\n* x is a negative, even integer.\n* y is a positive, non-integer.\n\nWhich of the following MUST be true about the product of x and y?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the properties and their implications:\n\n* **x is a negative, even integer:** This means x could be -2, -4, -6, and so on.\n* **y is a positive, non-integer:** This means y could be any positive number with decimals, like 1.5, 2.7, 0.01, and so on.\n\nNow let's analyze the product (x * y):\n\n* **Negative * Positive = Negative:** Since x is negative and y is positive, their product will always be negative.\n* **Integer * Non-integer = Non-integer:** Multiplying an integer by a non-integer will always result in a non-integer.\n\n**Therefore, the product of x and y MUST be a negative, non-integer.**",
+            "options": [
+                "Positive integer",
+                "Negative integer",
+                "Positive non-integer",
+                "Negative non-integer"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A construction crew is mixing concrete. The ideal ratio of cement to sand to gravel is 1:2:3. They've already poured 12 cubic meters of gravel into the mixer.  To maintain the correct ratio, how many total cubic meters of cement and sand combined should they add?",
+            "difficulty": "medium",
+            "reasoning": "**1. Determine the scaling factor:**\n   * The ratio tells us that for every 3 cubic meters of gravel, we need 2 cubic meters of sand and 1 cubic meter of cement.\n   * Since we have 12 cubic meters of gravel, we've scaled the ratio up by a factor of 4 (12 / 3 = 4).\n\n**2. Calculate the amount of cement:**\n   * The original ratio requires 1 cubic meter of cement.\n   * With the scaling factor of 4, we need 4 cubic meters of cement (1 x 4 = 4).\n\n**3. Calculate the amount of sand:**\n   * The original ratio requires 2 cubic meters of sand.\n   * With the scaling factor of 4, we need 8 cubic meters of sand (2 x 4 = 8).\n\n**4. Find the combined amount of cement and sand:**\n   * Add the amount of cement and sand: 4 cubic meters + 8 cubic meters = 12 cubic meters\n\n**Therefore, they should add a total of 12 cubic meters of cement and sand combined.**",
+            "options": [
+                "6 cubic meters",
+                "8 cubic meters",
+                "12 cubic meters",
+                "16 cubic meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "In a school survey, 75 students said they like pizza, 60 students said they like burgers, and 45 students said they like both pizza and burgers. How many students like pizza or burgers but not both?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Visualize with a Venn Diagram:**\n   * Draw two overlapping circles. Label one 'Pizza' and the other 'Burgers'.\n   * The overlapping area represents students who like both.\n\n**2. Fill in the Venn Diagram:**\n   * We know 45 students like both, so write '45' in the overlapping section.\n   * 75 students like pizza total, and we've already accounted for 45, so 75 - 45 = 30 students like *only* pizza. Write '30' in the pizza-only part of the circle.\n   * Similarly, 60 - 45 = 15 students like *only* burgers. Write '15' in the burgers-only part of the circle.\n\n**3. Calculate the 'Or' Group:**\n   * The question asks for those who like pizza or burgers but *not* both. This means the students in the pizza-only and burgers-only sections of our diagram.\n   * Add those two groups: 30 + 15 = 45\n\n**Therefore, 45 students like pizza or burgers but not both.**",
+            "options": [
+                "30",
+                "45",
+                "90",
+                "120"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bag contains 10 marbles, some blue and some green. You draw a marble at random, note its color, and replace it. You repeat this process a total of three times. If the probability of drawing a blue marble all three times is 1/8, how many blue marbles are in the bag?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Probability of a Single Event:**\n\n* Let 'b' represent the number of blue marbles in the bag.\n* The probability of drawing a blue marble on a single draw is the number of blue marbles divided by the total number of marbles: b/10.\n\n**2. Independent Events:**\n\n* Since you replace the marble after each draw, the three draws are independent events. This means the outcome of one draw doesn't affect the outcomes of the other draws.\n\n**3. Probability of Multiple Independent Events:**\n\n* To find the probability of multiple independent events happening, you multiply the probabilities of each individual event together.\n* The probability of drawing a blue marble three times in a row is (b/10) * (b/10) * (b/10) = b\u00b3/1000\n\n**4. Setting up the Equation:**\n\n* We're given that the probability of drawing three blue marbles is 1/8.  Set our calculated probability equal to this:\n   b\u00b3/1000 = 1/8\n\n**5. Solving for 'b':**\n\n* To solve for 'b', we can follow these steps:\n    * Multiply both sides of the equation by 1000: b\u00b3 = 125\n    * Take the cube root of both sides: b = 5\n\n**Therefore, there are 5 blue marbles in the bag.**",
+            "options": [
+                "3",
+                "4",
+                "6",
+                "7"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The average weight of a group of 7 friends is 63 kg. When a new person, Alex, joins the group, the average weight increases to 64 kg. Another person, Blake, whose weight is 3 kg more than Alex's weight, then replaces one of the original 7 friends. The average weight of the group, now consisting of 7 members again, becomes 65 kg. What is the weight of the friend who was replaced by Blake?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the total weight of the original group:**\n\n   - The average weight of the 7 friends is 63 kg, so their total weight is 7 friends * 63 kg/friend = 441 kg.\n\n**2. Find Alex's weight:**\n\n   - When Alex joins, there are 8 people, and the average weight is 64 kg, making the total weight 8 people * 64 kg/person = 512 kg.\n   - Alex's weight is the difference between the two total weights: 512 kg - 441 kg = 71 kg.\n\n**3. Find Blake's weight:**\n\n   - Blake weighs 3 kg more than Alex, so Blake weighs 71 kg + 3 kg = 74 kg.\n\n**4. Find the total weight of the group with Blake:**\n\n   - With Blake, the average weight of the 7-person group is 65 kg, so their total weight is 7 people * 65 kg/person = 455 kg. \n\n**5. Find the weight of the replaced friend:**\n\n   -  Before Blake replaced the friend, the group's total weight (including Alex) was 512 kg. \n   -  The difference between these weights is the weight of the replaced friend: 512 kg - 455 kg = 57 kg.\n\n**Therefore, the weight of the friend who was replaced by Blake is 57 kg.**",
+            "options": [
+                "57 kg",
+                "65 kg",
+                "71 kg",
+                "74 kg"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**stem**: A shop sells two types of products: gadgets and gizmos. Gadgets cost $g each, and gizmos cost $z each, where g and z are integers.  A customer buys a mix of gadgets and gizmos.\n**question**: Is the total cost of the gizmos greater than $30?\n**statement1**: The customer buys at least 4 gizmos.\n**statement2**: z > g + 5\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Analyze the Question Stem:**\n   - We need to determine if the total cost of the gizmos is greater than $30.\n   - The price of each gizmo is *z* dollars.\n   - We don't know the exact number of gizmos purchased.\n\n**2. Evaluate Statement 1:**\n   - This statement tells us the customer buys at least 4 gizmos.\n   - However, without knowing the price *z* of each gizmo, we cannot determine if the total cost exceeds $30. \n   - For example, if *z* = $5, the total cost would be $20, but if *z* = $10, the total cost would be $40.\n   - Therefore, Statement 1 is insufficient.\n\n**3. Evaluate Statement 2:**\n   - This statement tells us that the price of a gizmo (*z*) is greater than the price of a gadget (*g*) plus $5.\n   - While this gives us a relationship between the prices, it doesn't provide information about the number of gizmos purchased.\n   -  Therefore, Statement 2 is insufficient.\n\n**4. Evaluate Statements 1 & 2 Together:**\n   - Statement 1 tells us the customer buys at least 4 gizmos.\n   - Statement 2 tells us *z* > *g* + 5. Since *g* must be a positive integer (representing price), the smallest possible value for *z* is 6 (when *g* = 1).\n   - If *z* is at least 6, and the customer buys at least 4 gizmos, the total cost of gizmos is at least 6 * 4 = $24.\n   - However, we still cannot definitively say if the total cost is greater than $30.  If *z* is 6 or 7, the total cost wouldn't exceed $30, but if *z* is 8 or higher, it would.\n   - Therefore, both statements together are still insufficient.\n\n**Answer:** E (Both statements together are NOT sufficient)",
+            "options": [
+                "Yes",
+                "No",
+                "Insufficient",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "In triangle ABC, line segment DE is parallel to side BC, intersecting AB at point D and AC at point E.  Is triangle ADE isosceles?\n\nStatement 1:  Angle ABC is congruent to angle ACB.\n\nStatement 2:  AD is congruent to AE.",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem**\n\nWe're given a triangle ABC with a line DE parallel to one side. We need to determine if the smaller triangle ADE is isosceles (has two equal sides). \n\n**Analyzing the Statements**\n\n* **Statement 1:**  Tells us triangle ABC is isosceles (since two angles are equal). This means AB = AC. However, this doesn't give us direct information about the lengths of AD and AE.  INSUFFICIENT.\n\n* **Statement 2:**  Directly states that AD = AE.  This is the definition of an isosceles triangle. SUFFICIENT.\n\n**Key Geometric Concepts**\n\n* **Isosceles Triangle:** A triangle with two equal sides (and two equal angles).\n* **Parallel Lines and Transversals:** When a transversal (like DE) intersects parallel lines (AB and BC), corresponding angles are congruent. \n\n**Answer**\n\nStatement 2 alone is sufficient to answer the question.",
+            "options": [
+                "Yes",
+                "No",
+                "Insufficient",
+                "Statement 1 & 2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A triangle ABC lies on the coordinate plane. Point A is located at (-3, 2), and the midpoint of side BC is at (1, -1).  We are also given that the slope of a line perpendicular to BC is 2/3. Given this information, is it possible to determine the area of triangle ABC? If yes, what is the area?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to determine the area of the triangle:\n\n**1. Find the slope of BC:**\n\n   * We know the slope of a line perpendicular to BC is 2/3. \n   * The slopes of perpendicular lines are negative reciprocals of each other.  \n   * Therefore, the slope of BC is -3/2.\n\n**2. Find the equation of BC:**\n\n   * We know the slope of BC is -3/2 and the midpoint of BC is (1, -1). \n   * We can use the point-slope form of a linear equation: y - y1 = m(x - x1) \n   * Plugging in the values: y - (-1) = (-3/2)(x - 1)\n   * Simplifying, we get the equation of BC:  y = (-3/2)x + 1/2\n\n**3.  Understand the relationship between area and base:**\n\n   * The area of a triangle is (1/2) * base * height. \n   * We can consider BC as the base of our triangle.\n   * The height of the triangle would be the perpendicular distance from point A to line BC.\n\n**4. Find the equation of the line perpendicular to BC passing through A:**\n\n   * We know the slope of this line is 2/3 (since it's perpendicular to BC). \n   * We also know it passes through point A (-3, 2).\n   * Using point-slope form again: y - 2 = (2/3)(x - (-3))\n   * Simplifying, we get the equation: y = (2/3)x + 4\n\n**5. Find the intersection point of the two perpendicular lines (this is the foot of the height):**\n\n   * Solve the system of equations:\n      * y = (-3/2)x + 1/2\n      * y = (2/3)x + 4\n   * Solving, we find the intersection point to be (-1, 2).\n\n**6. Calculate the length of the base (BC):**\n\n   * We don't know the coordinates of B or C, but we know the midpoint of BC is (1, -1). \n   * Let B be (x, y).  Then, using the midpoint formula: (x - 3)/2 = 1 and (y + 2)/2 = -1\n   * Solving for x and y, we get B = (5, -4). \n   * Now, using the distance formula, we can find the length of BC (the base).\n   * BC = sqrt[(5 - 1)^2 + (-4 - (-1))^2] = 5\n\n**7. Calculate the length of the height:**\n\n   * The height is the distance between point A (-3, 2) and the foot of the height (-1, 2). \n   * Using the distance formula:  height = sqrt[(-3 - (-1))^2 + (2 - 2)^2] = 2\n\n**8. Calculate the area:**\n\n   * Area = (1/2) * base * height = (1/2) * 5 * 2 = 5\n\n**Therefore, the area of triangle ABC is 5 square units.**",
+            "options": [
+                "No",
+                "10 square units",
+                "5 square units",
+                "7.5 square units"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bakery sells three types of pastries: croissants, muffins, and scones. The ratio of croissants sold to the total number of pastries sold is 2:7. The ratio of muffins sold to scones sold is 3:4.  What was the total number of pastries sold today? \n\nStatement (1): The bakery sold 10 more scones than muffins today.\n\nStatement (2): The bakery sold 6 more croissants today than yesterday, and yesterday the ratio of croissants sold to the total number of pastries sold was 1:4.",
+            "difficulty": "hard",
+            "reasoning": "**Understanding the Problem:** We need to determine the total number of pastries sold. We're given two ratios: one comparing croissants to the total and another comparing muffins to scones.\n\n**Analyzing Statement (1):**\n* This statement tells us the difference between scones and muffins sold. \n* While helpful for understanding the muffin/scone ratio, it doesn't give us any information about the total number of pastries.\n* Therefore, Statement (1) ALONE is NOT sufficient.\n\n**Analyzing Statement (2):**\n* This statement introduces yesterday's sales, which is new information and not directly related to finding today's total pastries. \n* While we know the change in croissants sold and yesterday's ratio, we don't know yesterday's total pastries, making it impossible to find today's total.\n* Therefore, Statement (2) ALONE is NOT sufficient.\n\n**Combining Statements:**\n* Statement (1) gives us information about the relationship between muffins and scones. \n* Statement (2) links yesterday's croissant sales to today's, but it doesn't bridge the gap to find the total number of pastries sold today. \n* Even when combined, the statements don't provide enough information to calculate the total number of pastries sold today.\n\n**Conclusion:**\nBOTH statements TOGETHER are NOT sufficient to answer the question.",
+            "options": [
+                "Cannot be determined",
+                "14",
+                "21",
+                "35"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The average weight of a group of 20 students is 62 kg. When a new student joins the group, the average weight increases to 62.5 kg. Later, it was discovered that the weight of one of the original students was mistakenly recorded as 60 kg instead of their actual weight of 55 kg.  What is the weight of the new student who joined the group?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Find the total weight of the original group:**\n* Since the average weight of the original 20 students is 62 kg, their total weight is 20 students * 62 kg/student = 1240 kg.\n\n**2. Find the total weight of the group including the new student:**\n* With the new student, the average weight of the 21 students becomes 62.5 kg. Their total weight is now 21 students * 62.5 kg/student = 1312.5 kg.\n\n**3. Find the weight of the new student:**\n* The difference in total weight (1312.5 kg - 1240 kg = 72.5 kg) represents the weight of the new student.\n\n**4. Adjust for the weight correction:**\n* However, we need to account for the mistakenly recorded weight. The total weight of the original group was actually 5 kg less (60 kg - 55 kg = 5 kg). \n* Therefore, the actual total weight of the original group is 1240 kg - 5 kg = 1235 kg.\n\n**5. Calculate the adjusted weight of the new student:**\n* Finally, subtract the corrected total weight of the original group from the total weight including the new student: 1312.5 kg - 1235 kg = 77.5 kg.\n\n**Therefore, the weight of the new student is 77.5 kg.**",
+            "options": [
+                "70 kg",
+                "72.5 kg",
+                "75 kg",
+                "77.5 kg"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A furniture artisan is crafting a rectangular tabletop. He has a length of exotic wood he wants to use for one side, which is exactly  '2a + 3b' units long, where 'a' and 'b' represent the lengths of two other pieces of wood he has.  He knows that: \n* 5 < a < 8\n* 3 < b < 6\n*  The perimeter of the tabletop must be less than 70 units.\nWhat is the maximum possible length, in terms of 'a' and 'b', that he can make the other side of the tabletop while satisfying all conditions?",
+            "difficulty": "hard",
+            "reasoning": "Let the unknown side length of the tabletop be 'x'. We know the perimeter, which is twice the sum of the sides, must be less than 70: \n\n2 * [(2a + 3b) + x] < 70\n\nSimplifying the inequality:\n\n(2a + 3b) + x < 35\n\nx < 35 - 2a - 3b \n\nNow we need to find the maximum value of 'x'.  Since 'a' and 'b' have ranges, we need to minimize the values we subtract from 35 to maximize 'x'. \n\nThe smallest possible value of 'a' is just above 5, and the smallest possible value of 'b' is just above 3. Let's use these minimum values to find the maximum 'x':\n\nx < 35 - 2*(slightly more than 5) - 3*(slightly more than 3)\n\nx < 35 - (slightly more than 10) - (slightly more than 9)\n\nx < (slightly less than 16)\n\nTherefore, the maximum possible length of the other side, in terms of 'a' and 'b', is slightly less than 16.  We can express this most accurately as: x < 16 - 2\u03b5 - 3\u03b4, where \u03b5 and \u03b4 represent very small positive numbers.",
+            "options": [
+                "16",
+                "35 - 2a - 3b",
+                "16 - 2a - 3b",
+                "16 - 2\u03b5 - 3\u03b4"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A city planner is designing a new park in the shape of a quadrilateral. He has already placed a fountain at point A (2, 3) and a statue at point B (8, 11). He knows that he wants the park entrance to be located at the midpoint of one of the diagonals of the quadrilateral, and he wants the other diagonal to have a slope of -2. Can you determine the coordinates of the park entrance and are there multiple possible locations for the other two corners of the park? If so, provide one set of possible coordinates for the remaining corners.",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Finding the midpoint (Park Entrance):**\n\n* The park entrance is the midpoint of one of the diagonals. Since we already have points A (2,3) and B (8,11), the segment AB is one of the diagonals.\n* The midpoint formula is: ((x1+x2)/2, (y1+y2)/2)\n* Applying the formula with A(2,3) and B(8,11): ((2+8)/2, (3+11)/2) = (5,7)\n* Therefore, the park entrance is located at (5,7).\n\n**2. Understanding the Slope Constraint:**\n\n* The other diagonal must have a slope of -2. This means that for every 1 unit you move to the right along this diagonal, you must move 2 units down.\n\n**3. Determining Multiple Possibilities:**\n\n* We don't have enough information to pinpoint the exact coordinates of the other two corners. This is because there are infinitely many lines with a slope of -2.\n* Imagine drawing a line with a slope of -2 passing through the midpoint (5,7). You can rotate this line around the midpoint, and each position would represent a different diagonal, leading to different corner points for the park.\n\n**4. Finding One Possible Set of Coordinates:**\n\n* To find one possible solution, we can choose a point on the line with a slope of -2 passing through (5,7).\n* Let's say we move one unit to the right from the midpoint (5,7). Because the slope is -2, we need to move two units down. This gives us the point (6,5).\n* Now, to find the fourth corner, we can use the fact that the diagonals of a parallelogram bisect each other. Since (5,7) is the midpoint of the diagonal connecting (6,5) and the fourth corner, we can find the fourth corner by going the same distance from (5,7) in the opposite direction.\n* From (5,7), moving one unit to the left and two units up takes us to (4,9).\n\n**Therefore, one possible set of coordinates for the remaining corners of the park is (6,5) and (4,9). Remember that there are infinitely many other valid solutions.**",
+            "options": [
+                "Yes",
+                "No",
+                "Infinitely many",
+                "One"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A board game involves rolling three six-sided dice.  Players score points based on various combinations.  Here's the catch: two of the dice are standard, with faces numbered 1 to 6.  The third die is unusual: two of its faces are '1', two are '3', and two are '5'. \n\nYou need to roll two distinct numbers to win a particular prize, but one of those numbers *must* be odd. What is the probability of winning the prize on a single roll of the three dice?",
+            "difficulty": "hard",
+            "reasoning": "This problem is tricky because it involves a non-standard die and a combination of events. Here's how to solve it step-by-step:\n\n**1.  Calculate the probability of getting two distinct numbers, with at least one odd, using the standard dice alone.**\n\n*   There are 6 * 6 = 36 possible outcomes when rolling two standard dice.\n*   We can approach this by calculating the probability of the event NOT happening (i.e., getting two even numbers) and subtracting from 1.\n*   There are 3 even numbers on a standard die, so 3 * 3 = 9 outcomes give us two evens.\n*   The probability of NOT getting the desired outcome (two distinct with at least one odd) is 9/36 = 1/4.\n*   Therefore, the probability of getting at least one odd number and one other distinct number with the two standard dice is 1 - (1/4) = 3/4.\n\n**2.  Consider the unusual die.**\n\n*   Notice that the unusual die *always* yields an odd number (1, 3, or 5).\n*   This means the unusual die guarantees we fulfill the 'at least one odd number' condition.\n\n**3.  Determine the probability of the unusual die NOT creating a duplicate.**\n\n*   We already have at least one odd number guaranteed.  We need the unusual die to NOT match whatever the other two dice rolled.\n*   Let's say the two standard dice resulted in a 2 and a 5. The unusual die has a 2/6 (or 1/3) chance of matching the '5'.\n*   Similarly, if the standard dice rolled a 4 and a 4, the unusual die has a 0/6 chance of matching (it cannot roll a '4').\n*   Since we don't know what the standard dice will show, we need the overall probability of the unusual die NOT matching. Given its equal distribution of 1s, 3s, and 5s, there's always a 2/6 (or 1/3) chance of it creating a duplicate.\n*   Therefore, there's a 1 - (1/3) = 2/3 chance the unusual die will NOT create a duplicate.\n\n**4.  Combine the probabilities.**\n\n*   The probability of getting two distinct numbers with at least one odd from the standard dice is 3/4.\n*   The probability of the unusual die NOT creating a duplicate is 2/3.\n*   To get the final probability, we multiply these: (3/4) * (2/3) = 1/2\n\n**Therefore, the probability of winning the prize on a single roll is 1/2.**",
+            "options": [
+                "1/3",
+                "1/2",
+                "2/3",
+                "3/4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "The following table shows the number of units produced by a company in different months.\n\n| Month | Units Produced | Target Production | Percentage of Target Achieved |\n|---|---|---|---| \n| January | 1000 | 1200 | ? |\n| February | 1100 | 1300 | ? |\n| March | 1200 | 1400 | ? |\n\nThe company's target is to increase its production by 10% every month. However, due to some unforeseen circumstances, the company was only able to achieve 80% of its target production in January.  In February, the company managed to increase its production by 10% compared to January. In March, the company was able to achieve 90% of its target production. \n\nWhat is the difference between the total number of units produced in these three months and the total target production for these three months?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate the target achievement for each month:**\n\n* **January:**  Target Production = 1200 units, Achieved 80% of target, so Actual Production = (80/100) * 1200 = 960 units\n* **February:** Increased production by 10% from January's production (960 units), so February Production = 960 + (10/100)*960 = 1056 units.\n* **March:** Achieved 90% of the target production of 1400 units, so March Production = (90/100) * 1400 = 1260 units.\n\n**2. Calculate the total units produced:**\n\n* Total Production = January Production + February Production + March Production \n* Total Production = 960 + 1056 + 1260 = 3276 units\n\n**3. Calculate the total target production:**\n\n* Total Target Production = January Target + February Target + March Target\n* Total Target Production = 1200 + 1300 + 1400 = 3900 units\n\n**4. Find the difference:**\n\n* Difference = Total Target Production - Total Production\n* Difference = 3900 - 3276 = 624 units\n\n**Therefore, the difference between the total number of units produced in these three months and the total target production for these three months is 624 units.**",
+            "options": [
+                "624 units",
+                "3276 units",
+                "3900 units",
+                "1000 units"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A team of experienced workers can complete a project in 10 days. A team of novice workers can complete the same project in 15 days. The experienced workers are paid $150 per day per worker, while the novice workers are paid $100 per day per worker. To minimize costs, the project manager decides to start the project with only novice workers. After a certain number of days, he will replace all the novice workers with experienced workers to finish the project.  If the project must be completed in 12 days, what is the maximum amount of money the project manager can save by switching to experienced workers partway through? \n\nStatement 1: If the experienced workers worked for the entire duration of the project, the total labor cost would be $9,000.\n\nStatement 2: The novice workers complete 2/3 of the project before being replaced.",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem**\n\nThe problem involves optimizing labor costs by strategically using two groups of workers with different efficiencies and pay rates. The goal is to determine the maximum savings achievable by switching from novice to experienced workers at the optimal time.\n\n**Analyzing the Statements**\n\n* **Statement 1:** This statement alone tells us the total cost of using only experienced workers. While it helps us understand the cost structure, it doesn't provide any information about the optimal switching point or the savings associated with it.\n\n* **Statement 2:** This statement is crucial. It provides the exact proportion of the project completed by the novice workers before the switch. Knowing this, we can calculate:\n    * The number of days novice workers worked (2/3 of 12 days = 8 days)\n    * The remaining work for the experienced workers (1/3 of the project)\n    * The number of days experienced workers worked (12 days - 8 days = 4 days)\n\n**Combining the Statements**\n\nWith Statement 2, we have all the information needed to calculate the costs of both scenarios (only novice workers vs. the switch) and determine the maximum savings. \n\n**Solution**\n\n1. **Cost with only novice workers:** 12 days * $100/day/worker = $1200/worker (assuming a constant number of workers)\n2. **Cost with the switch:** (8 days * $100/day/worker) + (4 days * $150/day/worker) = $1400/worker\n3. **Savings per worker:** $1400 - $1200 = $200/worker\n\nSince we don't know the exact number of workers, we can't find the total savings. However, we've determined the maximum savings achievable per worker.\n\n**Therefore, Statement 2 alone is sufficient to answer the question.**",
+            "options": [
+                "Statement 1 alone is sufficient.",
+                "Statement 2 alone is sufficient.",
+                "Both statements together are sufficient.",
+                "Neither statement alone is sufficient, but both statements together are sufficient."
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Data Sufficiency",
+    "exam_id": 18,
+    "order": 13
+}

@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "Timmy wants to share 756 marbles equally among his 9 friends.  Can he divide the marbles equally without any leftovers? ",
+            "difficulty": "easy",
+            "reasoning": "This question tests the divisibility rule of 9. A number is divisible by 9 if the sum of its digits is divisible by 9.\n\nLet's check if 756 is divisible by 9:\n1. **Calculate the sum of the digits:** 7 + 5 + 6 = 18\n2. **Check if the sum is divisible by 9:** 18 is divisible by 9.\n\nTherefore, 756 is divisible by 9. Timmy can divide the marbles equally among his friends.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine a busy anthill where each ant carries a tiny number flag.  Ant Amy has flag number 3. She's walking on a number line and meets ant Bob carrying flag number 7. If they keep walking in the same direction, which number flag might another ant be carrying further down their path?",
+            "difficulty": "easy",
+            "reasoning": "This question uses the context of ants and flags to make learning about number lines more engaging for young learners.  Here's how to solve it:\n\n1. **Visualize:** Imagine a number line in your head.\n2. **Place the ants:** Amy is at number 3 and Bob is at number 7.\n3. **Direction:** They are walking in the same direction, meaning the numbers get bigger.\n4. **Think bigger:**  Any number bigger than 7 would be further down the path. \n\nTherefore, any number greater than 7 would be a possible answer.",
+            "options": [
+                "3",
+                "5",
+                "9",
+                "1"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A carpenter needs to cut a wooden plank that is 5 meters long into pieces that are each 2/5 of a meter. How many pieces can he cut from the plank?",
+            "difficulty": "easy",
+            "reasoning": "This question tests the understanding of dividing a whole number by a fraction. Here's how to solve it:\n\n**1. Convert the fraction to a decimal:**\n   2/5 = 0.4\n\n**2. Divide the plank's length by the length of each piece:**\n   5 meters / 0.4 meters/piece = 12.5 pieces\n\n**3. Interpret the result:**\n   Since the carpenter can't cut half a piece, he can cut 12 whole pieces from the plank. \n",
+            "options": [
+                "12.5",
+                "12",
+                "0.4",
+                "10"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker wants to arrange 36 muffins into a rectangular display case. He wants each row to have the same number of muffins.  How many different ways can he arrange the muffins in the display case?",
+            "difficulty": "easy",
+            "reasoning": "To find the different ways to arrange the muffins, we need to find the factors of 36.  Factors are numbers that divide evenly into 36. \n\nHere are the factors of 36:\n\n* 1 and 36 (1 row of 36 muffins or 36 rows of 1 muffin)\n* 2 and 18 (2 rows of 18 muffins or 18 rows of 2 muffins)\n* 3 and 12 (3 rows of 12 muffins or 12 rows of 3 muffins)\n* 4 and 9 (4 rows of 9 muffins or 9 rows of 4 muffins)\n* 6 and 6 (6 rows of 6 muffins)\n\nTherefore, the baker can arrange the muffins in 9 different ways.",
+            "options": [
+                "6",
+                "8",
+                "9",
+                "12"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "John is building a tower out of blocks. He starts with 2 blocks, then adds 3, then 4, and so on. If he continues this pattern, how many blocks will be in the tower when it has 6 levels?",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Number Sequences and Series' subtopic within 'Quants - Number Systems'. It involves identifying the pattern in a growing sequence and applying it to find a specific term.\n\nHere's how to solve it step-by-step:\n\n1. **Identify the pattern:** John adds one more block with each level. This forms an arithmetic sequence: 2, 5, 9, ...\n\n2. **Calculate the number of blocks at each level:**\n    - Level 1: 2 blocks\n    - Level 2: 2 + 3 = 5 blocks\n    - Level 3: 5 + 4 = 9 blocks\n    - Level 4: 9 + 5 = 14 blocks\n    - Level 5: 14 + 6 = 20 blocks\n    - Level 6: 20 + 7 = 27 blocks\n\nTherefore, there will be **27** blocks in the tower when it has 6 levels.",
+            "options": [
+                "14",
+                "20",
+                "27",
+                "36"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A microchip manufacturer produces transistors with a width of approximately 0.0000025 meters.  Express this width in scientific notation.",
+            "difficulty": "easy",
+            "reasoning": "**1. Identify the decimal point's desired location:** To express a number in scientific notation, we want one non-zero digit to the left of the decimal point. In this case, that would be '2.5'.\n\n**2. Count decimal places moved:** Move the decimal point to the right until it sits after the '2'.  We moved it six places to the right.\n\n**3. Determine the exponent:** Since we moved the decimal to the right, the exponent will be negative. The exponent's value is the number of places we moved the decimal: -6.\n\n**4. Combine the parts:**  This gives us 2.5 x 10^-6 meters as the scientific notation representation of 0.0000025 meters.",
+            "options": [
+                "2.5 x 10^6 meters",
+                "2.5 x 10^-6 meters",
+                "0.25 x 10^-5 meters",
+                "25 x 10^-8 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A clock manufacturer is experimenting with different clock faces. One design has only 7 hours on it (numbered 0 through 6).\n**Question**: If the clock currently shows 2 o'clock, what time will it show after 9 hours?\n**Difficulty Level**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "This problem utilizes the concept of modular arithmetic.  Here's how to solve it:\n\n1. **Understanding the Problem:**  The clock operates on a cycle of 7 hours. This means after hour 6, it cycles back to 0.\n\n2. **Applying Modular Arithmetic:** We need to find the remainder when (current time + hours passed) is divided by the clock's cycle (7).\n\n3. **Calculation:** \n    * Current time: 2\n    * Hours passed: 9\n    * Clock's cycle: 7\n    * (2 + 9) mod 7 = 11 mod 7 = 4 \n\n4. **Answer:** The clock will show **4 o'clock** after 9 hours. ",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Difficulty**: Easy 5/10\n**Question Type**: Conversion\n**Description**: What is the binary equivalent of the decimal number 9?\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Understanding Binary:**\n\n   * Binary is a base-2 number system, meaning it uses only two digits: 0 and 1.\n   * Each position in a binary number represents a power of 2, starting from the rightmost digit as 2^0.\n\n**2. Conversion Process:**\n\n   * **Find the largest power of 2 less than 9:** This is 2^3 = 8.\n   * **Write a '1' in the place value corresponding to 2^3:** This gives us '1000'.\n   * **Subtract 8 from 9, leaving 1.**\n   * **Find the largest power of 2 less than 1:** This is 2^0 = 1.\n   * **Write a '1' in the place value corresponding to 2^0:** This gives us '1'.\n   * **Combine the results:** 1000 + 1 = 1001\n\n**Therefore, the binary equivalent of the decimal number 9 is 1001.**",
+            "options": [
+                "1000",
+                "1001",
+                "1101",
+                "1011"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A farmer harvested 124 apples, 87 oranges, and 56 pears from his orchard. He wants to divide each type of fruit equally among his 7 friends. How many pieces of fruit will each friend receive in total?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Calculate the total number of fruits:** 124 apples + 87 oranges + 56 pears = 267 fruits\n\n2. **Divide the total fruits by the number of friends:** 267 fruits / 7 friends = 38 fruits per friend\n\nTherefore, each friend will receive 38 pieces of fruit.",
+            "options": [
+                "38",
+                "267",
+                "124",
+                "7"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "What is the missing number in the following sequence?\n\n1, 4, 9, 16, __, 36, 49",
+            "difficulty": "medium",
+            "reasoning": "This sequence represents the squares of consecutive whole numbers:\n\n* 1\u00b2 = 1\n* 2\u00b2 = 4\n* 3\u00b2 = 9\n* 4\u00b2 = 16\n* 5\u00b2 = 25\n* 6\u00b2 = 36\n* 7\u00b2 = 49\n\nTherefore, the missing number is 25.",
+            "options": [
+                "15",
+                "25",
+                "30",
+                "35"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker wants to arrange 12 muffins in rows. Each row must have the same number of muffins. He wants to make more than one row. What is one possible number of rows he could have?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n* **Understanding the problem:** The baker wants to arrange muffins into equal rows, similar to how we factor numbers.\n* **Finding factors:** We need to find the factors of 12 (numbers that divide evenly into 12).\n* **Factors of 12:** 1, 2, 3, 4, 6, and 12.\n* **Possible rows:** Since he wants more than one row, we can eliminate '1' and '12' as options. \n* **Valid Answers:** The baker could have 2, 3, 4, or 6 rows.\n\n**Therefore, any of the numbers 2, 3, 4, or 6 would be a correct answer.** ",
+            "options": [
+                "2",
+                "5",
+                "7",
+                "10"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Difficulty Level**: 6/10\n**Question Type**: Find the remainder\n**Problem Statement**: A baker prepared a batch of 113 cookies. He wants to arrange them on trays, each tray holding a maximum of 12 cookies.  What is the minimum number of cookies that will be left over after he fills as many trays as possible?\n",
+            "difficulty": "medium",
+            "reasoning": "This problem uses the concept of remainders in modular arithmetic.\n\n1. **Divide the total cookies by the tray capacity:** 113 cookies / 12 cookies/tray = 9 with a remainder of 5.\n\n2. **The remainder is the answer:** This means he can fill 9 full trays, and will have **5** cookies left over. \n\nTherefore, the minimum number of cookies left over is 5.",
+            "options": [
+                "1",
+                "5",
+                "9",
+                "12"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "John ate 1/4 of a pizza, and Mary ate 2/8 of the same pizza. Who ate more pizza?",
+            "difficulty": "medium",
+            "reasoning": "This question belongs to the subtopic 'Fractions and Decimals' within 'Quants - Number Systems' as it involves comparing fractions, a fundamental concept within this topic. \n\nTo determine who ate more pizza, we need to compare the fractions 1/4 and 2/8.\n\n**Step 1: Simplify the fractions (if possible)**\n\n* 1/4 is already in its simplest form.\n* 2/8 can be simplified by dividing both the numerator and denominator by their greatest common divisor, which is 2.  This gives us 1/4.\n\n**Step 2: Compare the simplified fractions**\n\nNow we have 1/4 (John's share) and 1/4 (Mary's share). Since the fractions are equal, John and Mary ate the same amount of pizza.\n\n**Therefore, the answer is neither John nor Mary ate more pizza, they ate the same amount.**",
+            "options": [
+                "John",
+                "Mary",
+                "Both ate the same amount",
+                "Cannot be determined"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Type**: Multiple Choice\n**Difficulty Level**: Easy (6/10)\n**Concept**: Simplifying expressions with exponents and roots\n**Question Prompt**: What is the simplified value of 9^(1/2) + 4^(1/2)?\n**Options**: \n  - a) 5\n  - b) 13\n  - c) \u221a13\n  - d) 25\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of fractional exponents representing roots. \n\nHere's how to solve it step-by-step:\n\n1. **Understanding fractional exponents:** \n   *  9^(1/2) is the same as the square root of 9, which is 3 (because 3*3 = 9). \n   * 4^(1/2) is the same as the square root of 4, which is 2 (because 2*2 = 4).\n\n2. **Simplifying the expression:**\n   * The expression now becomes 3 + 2.\n\n3. **Final Calculation:**\n   * 3 + 2 = 5\n\nTherefore, the simplified value of the expression 9^(1/2) + 4^(1/2) is 5.",
+            "options": [
+                "a)",
+                "b)",
+                "c)",
+                "d)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A baker wants to pack cookies into boxes. He has 24 chocolate chip cookies and 36 peanut butter cookies. He wants the same number of each type of cookie in each box. What is the greatest number of boxes he can pack?\n**difficulty_level**: 6/10\n**example**: If the baker had 6 chocolate chip cookies and 9 peanut butter cookies, he could pack a maximum of 3 boxes \u2013 each containing 2 chocolate chip cookies and 3 peanut butter cookies.\n",
+            "difficulty": "medium",
+            "reasoning": "This question involves finding the Greatest Common Divisor (GCD), which represents the largest number that divides two or more numbers without leaving a remainder. Here's how to solve it:\n\n1. **Find the factors of 24:** 1, 2, 3, 4, 6, 8, 12, 24\n2. **Find the factors of 36:** 1, 2, 3, 4, 6, 9, 12, 18, 36\n3. **Identify the common factors:** 1, 2, 3, 4, 6, 12\n4. **The greatest common factor (GCD) is 12.**\n\nTherefore, the baker can pack a maximum of **12** boxes.",
+            "options": [
+                "6",
+                "12",
+                "18",
+                "24"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**questionType**: Find the missing term\n**sequence**: 3, 11, 31, 69, ___, 243\n**difficulty**: Medium 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "This sequence is based on a pattern combined with powers of 2:\n\n* **1^2 + 2 = 3**\n* **2^2 + 7 = 11**\n* **3^2 + 20 = 31**\n* **4^2 + 45 = 69**\n\nNotice that the numbers added (2, 7, 20, 45) also form a pattern: they increase by consecutive multiples of 5 (5, 15, 25).\n\nFollowing this pattern:\n* The next number added should be 45 + 35 = 80\n* The missing term is 5^2 + 80 = **105**\n* The final term checks out: 6^2 + 125 = 243",
+            "options": [
+                "105",
+                "115",
+                "125",
+                "135"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A fruit seller starts his day with 342 apples. He sells 128 apples in the morning and buys another 75 apples from a wholesaler in the afternoon. He then sells 167 more apples in the evening. How many apples does he have left at the end of the day?",
+            "difficulty": "medium",
+            "reasoning": "This question involves multiple steps of addition and subtraction, simulating a real-world scenario to make it more engaging. Here's how to solve it step-by-step:\n\n**1. Apples left after morning sales:**\n   Start with the initial number of apples and subtract the morning sales: 342 - 128 = 214 apples\n\n**2. Apples after buying from the wholesaler:**\n   Add the apples purchased from the wholesaler: 214 + 75 = 289 apples\n\n**3. Apples left after evening sales:**\n   Subtract the evening sales from the remaining apples: 289 - 167 = 122 apples\n\n**Therefore, the fruit seller has 122 apples left at the end of the day.**",
+            "options": [
+                "214 apples",
+                "289 apples",
+                "167 apples",
+                "122 apples"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A four-digit number is formed by using the digits 2, 4, 6, and 8 without repetition.  Which of the following numbers must be a factor of this four-digit number, regardless of the order of the digits?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**Understanding Divisibility Rules**\n* **Divisibility by 2:** A number is divisible by 2 if the last digit is even.\n* **Divisibility by 4:** A number is divisible by 4 if the last two digits are divisible by 4.\n\n**Applying the Rules**\nSince the digits 2, 4, 6, and 8 are all even, any combination of them to form a four-digit number will always result in an even number. Therefore, the number will always be divisible by 2.\n\nFurthermore, we can create any combination of the last two digits using these numbers, and they will all be divisible by 4 (e.g., 24, 48, 64, 84). \n\n**Conclusion:**  No matter the order of the digits 2, 4, 6, and 8, the resulting four-digit number will always be divisible by both 2 and 4.",
+            "options": [
+                "2",
+                "4",
+                "8",
+                "16"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine a hopping race between a rabbit and a frog on a number line. The rabbit, being faster, takes leaps of 1.5 units, while the frog diligently hops 0.75 units at a time.  They start at point zero.  The finish line is placed at the point which represents the rabbit's fourth leap.  Where will the frog be when the rabbit crosses the finish line?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Calculate the finish line:** The rabbit leaps 1.5 units at a time, and the finish line is at its fourth leap, so the finish line is at 1.5 x 4 = 6 units.\n\n2. **Figure out how many hops the frog takes to reach 6 units:** Since the frog hops 0.75 units at a time, it will take 6 / 0.75 = 8 hops for the frog to reach the finish line. \n\n3. **Determine the frog's position when the rabbit finishes:**  The rabbit reaches the finish line in 4 leaps.  In the same time, the frog will have completed 4 hops * 0.75 units/hop = 3 units.\n\nTherefore, the frog will be at point 3 on the number line when the rabbit crosses the finish line.",
+            "options": [
+                "3 units",
+                "4 units",
+                "6 units",
+                "8 units"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: What is the units digit of the following expression:  3^1234 + 7^5678  ?\n**input**: Two prime numbers (3 and 7) raised to large powers.\n**output**: A single digit representing the units digit of the result.\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of modular arithmetic, specifically focusing on cyclical patterns in remainders. Here's how to solve it:\n\n**1. Cyclicity of Remainders:**\n   - Observe the units digit of the powers of 3: 3, 9, 7, 1, 3, 9, 7, 1... The units digit repeats in a cycle of length 4.\n   - Similarly, observe the units digit of powers of 7: 7, 9, 3, 1, 7, 9, 3, 1... This cycle also has a length of 4.\n\n**2. Reducing Exponents using Modulo:**\n   - To find the units digit of 3^1234, divide the exponent (1234) by the cycle length (4): 1234 \u00f7 4 = 308 remainder 2.  This means 3^1234 will have the same units digit as 3^2, which is 9.\n   - Do the same for 7^5678: 5678 \u00f7 4 = 1419 remainder 2.  Therefore, 7^5678 will have the same units digit as 7^2, which is 9.\n\n**3. Final Calculation:**\n   - The problem now becomes finding the units digit of 9 + 9. The units digit of 18 is 8.\n\n**Therefore, the units digit of 3^1234 + 7^5678 is 8.**",
+            "options": [
+                "1",
+                "3",
+                "6",
+                "8"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A grain of sand weighs approximately 5 x 10^-5 grams. A construction project requires 1.2 x 10^11 grains of sand.  What is the total weight of the sand needed for the project, expressed in standard notation?",
+            "difficulty": "medium",
+            "reasoning": "This problem tests the understanding of scientific notation and its application in calculations. Here's how to solve it:\n\n**1. Set up the multiplication:**\n\nTotal weight = (Weight per grain) * (Number of grains)\nTotal weight = (5 x 10^-5 grams) * (1.2 x 10^11 grains)\n\n**2. Multiply the coefficients:**\n\n5 * 1.2 = 6\n\n**3. Multiply the powers of ten (add the exponents):**\n\n10^-5 * 10^11 = 10^(-5+11) = 10^6\n\n**4. Combine the results:**\n\nTotal weight = 6 x 10^6 grams\n\n**5. Convert to standard notation:**\n\n6 x 10^6 grams = 6,000,000 grams\n\nTherefore, the total weight of the sand needed for the project is 6,000,000 grams. ",
+            "options": [
+                "60,000 grams",
+                "600,000 grams",
+                "6,000,000 grams",
+                "60,000,000 grams"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A rectangular garden with an area of 176 square meters can be perfectly enclosed using a specific number of fence panels, each 1 meter long.  Knowing that you need one fence panel per meter of perimeter, and that the sides of the rectangle are whole numbers, how many different numbers of fence panels could be used to enclose this garden?",
+            "difficulty": "medium",
+            "reasoning": "This question combines prime factorization with the concepts of area and perimeter.\n\nHere's how to solve it step-by-step:\n\n1. **Prime Factorization:** Find the prime factorization of 176: \n   176 = 2 x 2 x 2 x 2 x 11\n\n2. **Possible Dimensions:** Determine the possible pairs of whole-number sides (length and width) for the rectangle, remembering that length x width = area:\n    * 1 x 176\n    * 2 x 88\n    * 4 x 44\n    * 8 x 22\n    * 11 x 16\n\n3. **Calculate Perimeters:** For each pair of dimensions, calculate the perimeter (2*length + 2*width), which represents the number of fence panels needed:\n    * 1 x 176: Perimeter = 354\n    * 2 x 88:  Perimeter = 178\n    * 4 x 44:  Perimeter = 96\n    * 8 x 22:  Perimeter = 60 \n    * 11 x 16: Perimeter = 54\n\n4. **Count Distinct Perimeters:** We have 5 different perimeters, meaning there are **5** different numbers of fence panels that could be used. ",
+            "options": [
+                "3",
+                "4",
+                "6",
+                "7"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Let's delve into the fascinating world of number systems. Imagine a scenario where you have a set of numbers: -\u221a9, 0.333..., -7, \u03c0, 2, \u221a16, and 5/2.  Your task is to classify each number, but with a twist! Instead of merely labeling them, explain your reasoning for each classification based on the properties of each number system: Natural, Whole, Integers, Rational, Irrational, and Real. Be as precise and detailed as possible in your explanations.",
+            "difficulty": "medium",
+            "reasoning": "Here's a breakdown of the classification process and the reasoning behind each decision:\n\n* **-\u221a9:** This number simplifies to -3.  \n    * **Integer:** It's an integer because it's a whole number without any fractional or decimal part.\n    * **Rational:** It can be expressed as a ratio of two integers (-3/1), making it rational.\n    * **Real:** All rational numbers are part of the real number system.\n\n* **0.333...:** This represents a repeating decimal.\n    * **Rational:** Repeating decimals can be expressed as fractions (1/3 in this case), hence rational.\n    * **Real:**  Again, being rational makes it a real number.\n\n* **-7:** A negative whole number.\n    * **Integer:**  It's a whole number, and the negative sign places it within the integers.\n    * **Rational:**  Can be represented as -7/1.\n    * **Real:**  A rational number, therefore also a real number.\n\n* **\u03c0:** The famous mathematical constant.\n    * **Irrational:** \u03c0's decimal representation is non-repeating and non-terminating, making it irrational.\n    * **Real:**  Irrational numbers are a subset of the real numbers.\n\n* **2:** A simple, positive whole number.\n    * **Natural:** Belongs to the counting numbers, making it a natural number.\n    * **Whole:**  It's a non-negative integer, hence a whole number.\n    * **Integer:**  All whole numbers are integers.\n    * **Rational:** Representable as 2/1.\n    * **Real:** As a rational number, it's also real. \n\n* **\u221a16:**  The square root of 16.\n    * **Natural:** Simplifies to 4, a counting number.\n    * **Whole:**  A non-negative integer, thus a whole number.\n    * **Integer:** All whole numbers are integers.\n    * **Rational:** Can be expressed as 4/1.\n    * **Real:** Being rational makes it real.\n\n* **5/2:** A fraction representing a number between two integers.\n    * **Rational:** By definition, it's a ratio of two integers.\n    * **Real:** Rational numbers fall under the real number system. \n\nThis detailed analysis showcases a strong understanding of number systems and the ability to categorize numbers based on their properties.",
+            "options": [
+                "Natural, Whole, Integer, Rational, Real",
+                "Whole, Integer, Rational, Real",
+                "Integer, Rational, Real",
+                "Rational, Real"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A baker wants to use 3/5 of his bag of flour for a cake recipe. He then decides to use 1/4 of the remaining flour for cookies. What fraction of the original bag of flour does the baker have left?",
+            "difficulty": "medium",
+            "reasoning": "**1. Flour remaining after cake:**\n   * The baker used 3/5 of the flour, leaving 1 - 3/5 = 2/5 of the bag. \n\n**2. Flour used for cookies:** \n   * He uses 1/4 of the remaining flour, which is (1/4) * (2/5) = 1/10 of the original bag. \n\n**3. Total flour used:**\n   * In total, he used 3/5 + 1/10 = 7/10 of the original bag. \n\n**4. Final amount remaining:** \n   * The baker has 1 - 7/10 = 3/10 of the original bag of flour left. \n\n**Therefore, the baker has 3/10 of the original bag of flour remaining.**",
+            "options": [
+                "1/5",
+                "2/5",
+                "3/10",
+                "1/2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A group of friends decided to buy a unique gift for their friend's birthday that cost $240.  Initially, 8 friends agreed to split the cost equally. However, at the last minute, 3 more friends decided to join in to share the cost.  How much less did each person in the original group end up paying?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**Step 1: Calculate the initial cost per person.**\n   - Cost of the gift: $240\n   - Initial number of friends: 8\n   - Cost per person: $240 / 8 = $30\n\n**Step 2: Calculate the cost per person after more friends joined.**\n   - Total number of friends: 8 + 3 = 11\n   - New cost per person: $240 / 11 = $21.82 (rounded to the nearest cent)\n\n**Step 3: Calculate the difference in cost.**\n   - Original cost per person: $30\n   - New cost per person: $21.82\n   - Difference: $30 - $21.82 = $8.18\n\n**Answer:** Each person in the original group ended up paying $8.18 less.",
+            "options": [
+                "$30",
+                "$21.82",
+                "$8.18",
+                "$11"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A nanobot, designed for medical treatments, travels a distance of 5.6 x 10^-5 meters in one minute. If it maintains this speed, how many meters will it travel in 1.5 hours?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of scientific notation in the context of unit conversion and multiplication. Here's how to solve it:\n\n**1. Convert time to minutes:**\n   * 1.5 hours * 60 minutes/hour = 90 minutes\n\n**2. Calculate the total distance in scientific notation:**\n   * Distance = Speed * Time\n   * Distance = (5.6 x 10^-5 meters/minute) * (90 minutes)\n   * Distance = (5.6 * 90) x 10^-5 meters \n   * Distance = 504 x 10^-5 meters\n\n**3. Adjust to proper scientific notation:**\n   * Distance = 5.04 x 10^2 x 10^-5 meters\n   * Distance = 5.04 x 10^-3 meters\n\nTherefore, the nanobot will travel 5.04 x 10^-3 meters in 1.5 hours.",
+            "options": [
+                "5.6 x 10^-3 meters",
+                "5.04 x 10^-3 meters",
+                "504 x 10^-5 meters",
+                "5.04 x 10^-2 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question**: Sarah is trying to simplify a mathematical expression involving the addition and multiplication of rational numbers. She rearranges the terms in the expression, assuming both associative and commutative properties hold true for these operations within the set of rational numbers. Is her assumption valid?\n**Context**: We are working with the set of rational numbers and the operations of addition and multiplication.\n**Properties**: Associative Property and Commutative Property\n",
+            "difficulty": "medium",
+            "reasoning": "Here's why Sarah's assumption is valid and how it relates to the properties of operations:\n\n**Commutative Property:**\n* **Addition:**  For any rational numbers a and b,  a + b = b + a. This means the order in which you add rational numbers doesn't affect the sum.\n* **Multiplication:** For any rational numbers a and b, a * b = b * a. This means the order in which you multiply rational numbers doesn't affect the product.\n\n**Associative Property:**\n* **Addition:** For any rational numbers a, b, and c, (a + b) + c = a + (b + c). This means when adding multiple rational numbers, you can group them in any order.\n* **Multiplication:** For any rational numbers a, b, and c, (a * b) * c = a * (b * c). This means when multiplying multiple rational numbers, you can group them in any order.\n\n**Conclusion:** Since both the associative and commutative properties hold true for addition and multiplication within the set of rational numbers, Sarah is justified in rearranging the terms of her expression. Her assumption is valid.",
+            "options": [
+                "No",
+                "Yes",
+                "Maybe",
+                "Sometimes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Let's play a game with numbers! Imagine a magic box that can perform only two operations: \n \n 1. It can square any number placed inside it (multiply the number by itself). \n 2. It can divide any number placed inside it by 2. \n \n You start with the number 5.  Can you find a sequence of operations with the magic box that will transform the number 5 into a whole number that is NOT a natural number?",
+            "difficulty": "medium",
+            "reasoning": "This question dives into the relationship between whole numbers and natural numbers, with a sprinkle of problem-solving involving operations. Here's how we can crack it: \n\n **Understanding the Difference:** \n * **Natural Numbers:** These are your counting numbers: 1, 2, 3, 4, 5, ... and so on.  \n * **Whole Numbers:**  Whole numbers include all the natural numbers PLUS zero: 0, 1, 2, 3, 4, 5... \n\n **The Key:** The only whole number that isn't a natural number is **zero (0)**. Our goal is to get to zero using the magic box's operations. \n\n **Solution:**\n  Unfortunately, there's NO way to get to zero using only squaring and dividing by 2. Here's why: \n \n * **Squaring:**  Squaring a positive number always results in a larger positive number.\n * **Dividing by 2:** Dividing a positive number by 2 will either give you another positive number or a positive number with a decimal (if you started with an odd number).  \n\n Since we start with a positive number (5) and our operations can only produce positive results or positive results with decimals, we can never reach zero.  ",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Impossible"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A programmer is working with a computer system that uses a 16-bit addressing scheme.  The programmer needs to access the memory location represented by the hexadecimal address B5A3. To do so, they need to convert this address to its decimal equivalent. What is the decimal equivalent of the hexadecimal address B5A3?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Base Conversion (Binary, Decimal, Hexadecimal)' topic within 'Quants - Number Systems'. It involves converting a hexadecimal number to its decimal equivalent, requiring an understanding of place values in the hexadecimal system.\n\nHere's how to solve it step-by-step:\n\n**1. Understand Place Values in Hexadecimal:**\n   - In hexadecimal (base-16), each digit position represents a power of 16, starting from the rightmost digit as 16^0.\n   -  The place values are:  ... 16^3, 16^2, 16^1, 16^0\n\n**2.  Break Down the Hexadecimal Number:**\n    - B5A3 can be broken down as:\n        - B (11 in decimal) * 16^3 \n        - 5 * 16^2\n        - A (10 in decimal) * 16^1\n        - 3 * 16^0\n\n**3. Calculate the Decimal Equivalent:**\n    - (11 * 16^3) + (5 * 16^2) + (10 * 16^1) + (3 * 16^0)\n    - (11 * 4096) + (5 * 256) + (10 * 16) + (3 * 1)\n    - 45056 + 1280 + 160 + 3\n    - **46599**\n\nTherefore, the decimal equivalent of the hexadecimal address B5A3 is 46599.",
+            "options": [
+                "45056",
+                "46599",
+                "17859",
+                "65535"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A square garden has a side length equal to the fourth root of 81 meters.  The owner wants to fence the garden with three layers of wire.\n**problem**: How many meters of wire are needed in total?\n**answer_choices**: \n  - 9\n  - 27\n  - 36\n  - 108\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Calculate the fourth root:** The fourth root of 81 is 3 because 3 * 3 * 3 * 3 = 81.\n\n2. **Determine the side length:** The side length of the square garden is 3 meters.\n\n3. **Calculate the perimeter:** The perimeter of a square is found by multiplying the side length by 4: 3 meters * 4 = 12 meters.\n\n4. **Calculate the total wire length:**  Since the owner wants three layers of wire, multiply the perimeter by 3: 12 meters * 3 = 36 meters.\n\n**Therefore, the correct answer is 36 meters (option c).**",
+            "options": [
+                "9 meters",
+                "27 meters",
+                "36 meters",
+                "108 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "What is the next number in this sequence: 3, 11, 31, 69, 131, __? ",
+            "difficulty": "hard",
+            "reasoning": "This sequence is based on a pattern of adding consecutive cubes and then subtracting consecutive squares:\n\n* **3 + (2 x 2 x 2) - (1 x 1) = 11** \n* **11 + (3 x 3 x 3) - (2 x 2) = 31**\n* **31 + (4 x 4 x 4) - (3 x 3) = 69**\n* **69 + (5 x 5 x 5) - (4 x 4) = 131**\n\nTo find the next number, we follow the pattern:\n\n* **131 + (6 x 6 x 6) - (5 x 5) = 227**\n\nTherefore, the next number in the sequence is 227.",
+            "options": [
+                "227",
+                "217",
+                "237",
+                "207"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Two number lines, A and B, are drawn with different scales but share the same origin (point 0). On number line A, the distance between 0 and 1 is twice the distance between 0 and 1 on number line B.  Point 'X' lies on both number lines. On number line A, point 'X' is located at -3. What is the value of point 'X' on number line B?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve the problem:\n\n1. **Understanding the Scales:** The key is recognizing the relationship between the scales of the two number lines. Since the distance between 0 and 1 on line A is twice that of line B, every unit on line A corresponds to half a unit on line B.\n\n2. **Visualizing the Relationship:** Imagine stretching line B to twice its length. The points on both lines would then align directly, making it easier to compare values.\n\n3. **Finding the Equivalent Value:** Because point 'X' is at -3 on line A, and each unit on line A is twice the size of a unit on line B, point 'X' on line B would be at -3 * 2 = -6.\n\nTherefore, the value of point 'X' on number line B is -6.",
+            "options": [
+                "3",
+                "-1.5",
+                "-3",
+                "-6"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Question Type**: Calculation\n**Difficulty Level**: Tricky 8/10\n**Context**: A bakery is preparing a large batch of cookies and needs to adjust the recipe.\n**Problem Statement**: A cookie recipe calls for 2 1/4 cups of flour to make 48 cookies. The bakery wants to make 192 cookies.  There are 4 cups of flour in a bag.  To make 192 cookies, how many bags of flour does the bakery need, keeping in mind they must use whole bags?\n**Answer Choices**: \n",
+            "difficulty": "hard",
+            "reasoning": "First find how many times larger the desired batch of cookies (192) is than the original recipe (48 cookies): 192 cookies / 48 cookies = 4 times larger.\n\nSince the desired batch is 4 times larger, multiply the original flour amount by 4 to find the total flour needed: 2 1/4 cups * 4 = 9 cups of flour.\n\nFinally, divide the total flour needed by the amount of flour per bag to determine the number of bags needed: 9 cups / 4 cups/bag = 2.25 bags.\n\nSince the bakery can only use whole bags, they would need to purchase 3 bags of flour to have enough.",
+            "options": [
+                "2",
+                "2.25",
+                "3",
+                "4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two integers, 'p' and 'q', are both greater than 1 and satisfy the following conditions:\n\n* p * q =  n (where 'n' is a fixed unknown integer)\n* (p + 1)(q + 1) = n + 101\n\nWhich of the following MUST be true about the number represented by (p + q - 10)?\n\n A) It is always prime.\n B) It is always composite.\n C) It is prime only if 'p' and 'q' are both prime.\n D) It is composite only if 'p' and 'q' are both composite.",
+            "difficulty": "hard",
+            "reasoning": "Let's break down why the answer is **B) It is always composite.**\n\n1. **Expanding the second equation:** \n   (p + 1)(q + 1) = n + 101  \n   pq + p + q + 1 = n + 101\n\n2. **Substituting 'n' from the first equation:**\n   n + p + q + 1 = n + 101\n\n3. **Simplifying:**\n   p + q = 100\n\n4. **Target expression:**\n   We want to analyze (p + q - 10). Substituting, we get (100 - 10) = 90.\n\n5. **Conclusion:**\n   No matter the values of 'p' and 'q' that satisfy the initial conditions, (p + q - 10) will always equal 90, which is a composite number. Therefore, the expression is always composite.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of archaeologists discovered an ancient tablet containing a mathematical riddle. The riddle describes a secret number hidden within a temple.  The tablet reads: \n\n\"To find the chamber of treasures, thou shalt decipher the sacred number. Start with the number of days in a week, expressed in base-7.  Multiply this by the largest single-digit prime number, written in base-5.  Finally, convert the result to base-10 to unveil the sacred number and unlock the chamber's secrets.\"\n\nWhat is the sacred number that will unlock the chamber?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the riddle step-by-step:\n\n1. **\"Days in a week, expressed in base-7\"**: There are 7 days in a week. In base-7, the number 7 is represented as 10 (1 group of seven and 0 ones). \n\n2. **\"Largest single-digit prime number, written in base-5\"**: The largest single-digit prime number is 7. To convert 7 to base-5, we find the largest power of 5 less than 7 (which is 5) and see how many times it fits in. We have one '5' and 2 left over.  So, 7 in base-5 is represented as 12 (1 group of five and 2 ones).\n\n3. **Multiplication in respective bases**: Now we need to multiply 10 (base-7) by 12 (base-5).  To avoid confusion, let's convert both numbers to base-10:\n    * 10 (base-7) = 7 (base-10)\n    * 12 (base-5) = 7 (base-10)\n\n    Therefore, the multiplication becomes 7 * 7 = 49\n\n4. **\"Convert the result to base-10\"**:  Our result, 49, is already in base-10. \n\nTherefore, the sacred number that unlocks the chamber is 49.",
+            "options": [
+                "35",
+                "42",
+                "49",
+                "56"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A basket contains red, green, and blue marbles. The ratio of red marbles to green marbles is 3:5, and the ratio of green marbles to blue marbles is 2:3. If 20% of the red marbles are removed, what is the new ratio of red marbles to blue marbles?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Find a common ratio for all colors:**\n\n* To compare all three colors, we need a common ratio. Notice that the ratio of green marbles is present in both given ratios.  \n* To make the green marble portions equal, find the least common multiple (LCM) of 5 (from the first ratio) and 2 (from the second ratio). The LCM of 5 and 2 is 10.\n* Adjust the ratios to have 10 representing the green marbles:\n    * Red:Green = 3:5 = **6:10**\n    * Green:Blue = 2:3 = **10:15**\n\n**2. Combine the ratios:**\n\n* Now we have a combined ratio of Red:Green:Blue = 6:10:15\n\n**3. Calculate the reduction in red marbles:**\n\n* 20% of the red marbles are removed, so we need to find 20% of 6 (the initial number of red marbles in our ratio).\n* 20/100 * 6 = 1.2\n\n**4. Adjust the number of red marbles:**\n\n* Subtract the removed red marbles from the initial number: 6 - 1.2 = 4.8\n\n**5. Determine the new ratio of red to blue marbles:**\n\n* The new ratio is 4.8:15. To simplify, we can multiply both sides by 10 to get rid of the decimal: 48:150. \n* This ratio can be further simplified by dividing both sides by their greatest common factor, 6, resulting in a final ratio of **8:25**.\n\nTherefore, the new ratio of red marbles to blue marbles is 8:25.",
+            "options": [
+                "8:15",
+                "6:25",
+                "8:25",
+                "4:15"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given the equation: \\\\~\\(\\frac{3}{5} \\times (x + 2)\\) - \\(\\frac{1}{3} \\times (y - 1)\\) = \\(\\frac{2}{5} \\times (x - 3)\\) + z\\)~\\\\  \n\nWhich of the following options represents a simplified, rearranged form of the equation where 'z' is isolated and expressed in terms of 'x' and 'y', making use of the distributive property?",
+            "difficulty": "hard",
+            "reasoning": "This question involves understanding and applying the distributive property to simplify and rearrange an equation. Here's a step-by-step solution:\n\n**1. Apply the distributive property:**\n\n*  \\(\\frac{3}{5} \\times (x + 2) = \\frac{3}{5}x + \\frac{6}{5}\\)\n*  \\(\\frac{1}{3} \\times (y - 1) = \\frac{1}{3}y - \\frac{1}{3}\\)\n*  \\(\\frac{2}{5} \\times (x - 3) = \\frac{2}{5}x - \\frac{6}{5}\\)\n\n**2. Substitute the simplified expressions back into the original equation:**\n\n* \\(\\frac{3}{5}x + \\frac{6}{5} - (\\frac{1}{3}y - \\frac{1}{3}) = \\frac{2}{5}x - \\frac{6}{5} + z\\)\n\n**3. Simplify by combining like terms:**\n\n* \\(\\frac{3}{5}x - \\frac{2}{5}x + \\frac{6}{5} + \\frac{1}{3} - \\frac{1}{3}y + \\frac{6}{5} = z\\)\n* \\(\\frac{1}{5}x + \\frac{13}{5} - \\frac{1}{3}y = z\\)\n\n**4. Express 'z' in terms of 'x' and 'y':**\n\n*  \\(z = \\frac{1}{5}x - \\frac{1}{3}y + \\frac{13}{5}\\)\n\nTherefore, the simplified form of the equation with 'z' isolated and expressed in terms of 'x' and 'y' is \\(z = \\frac{1}{5}x - \\frac{1}{3}y + \\frac{13}{5}\\).",
+            "options": [
+                "z = (1/5)x - (1/3)y + (13/5)",
+                "z = (3/5)x + (6/5) - (1/3)y + (1/3)",
+                "z = (1/5)x - (1/3)y + 2.6",
+                "z = (1/5)x + (13/5)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A clock face is modified to have 11 hours instead of 12, numbered 0 through 10.  An alarm on this clock is set to ring every 4 hours, starting at hour 0. A second alarm is set to ring every 5 hours, also starting at hour 0.  What is the numbered hour on the clock when the alarms ring simultaneously for the third time (not counting the simultaneous ring at hour 0)?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves understanding simultaneous events in a modular arithmetic system. Here's how to solve it:\n\n**1. Find the Least Common Multiple (LCM):**\n   * The alarms ring together at intervals equal to the LCM of their individual ringing periods (4 hours and 5 hours).\n   * The LCM of 4 and 5 is 20.\n\n**2. Apply the Modular Clock:**\n   * Since the clock has 11 hours, we need to find the remainder when the LCM (20) is divided by 11 (the modulus).\n   * 20 modulo 11 is 9. This means the alarms will ring together every 9 hours on this 11-hour clock. \n\n**3. Determine the Third Simultaneous Ring:**\n   * The first simultaneous ring was at hour 0.\n   * The second simultaneous ring is at hour 9 (0 + 9).\n   * The third simultaneous ring is at hour 7 (9 + 9 = 18, and 18 modulo 11 is 7).\n\n**Therefore, the alarms will ring simultaneously for the third time at hour 7 on the modified clock.**",
+            "options": [
+                "0",
+                "5",
+                "7",
+                "9"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Number Systems",
+    "exam_id": 10,
+    "order": 0
+}

@@ -1,0 +1,465 @@
+{
+    "questions": [
+        {
+            "question": "Five friends measured the height of their sunflowers in centimeters. The heights are: 120, 115, 125, 115, 130. What is the range of the sunflower heights?",
+            "difficulty": "easy",
+            "reasoning": "The range is the difference between the highest and lowest values in a dataset. \n\n1. **Identify the highest value:** 130 cm\n2. **Identify the lowest value:** 115 cm\n3. **Calculate the difference:** 130 cm - 115 cm = 15 cm\n\nTherefore, the range of the sunflower heights is 15 cm.",
+            "options": [
+                "10 cm",
+                "15 cm",
+                "20 cm",
+                "25 cm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: Five friends measured their heights. Their heights were 150 cm, 160 cm, 155 cm, 158 cm, and 162 cm.\n**question**: What is the average height of the five friends?\n**answer_choices**: \n  - 155 cm\n  - 157 cm\n  - 158 cm\n  - 159 cm\n  - 160 cm\n",
+            "difficulty": "easy",
+            "reasoning": "1. **Sum the heights:** 150 + 160 + 155 + 158 + 162 = 785 cm\n2. **Divide the sum by the number of friends:** 785 cm / 5 = 157 cm\n\nTherefore, the average height of the five friends is **157 cm**.",
+            "options": [
+                "155 cm",
+                "158 cm",
+                "159 cm",
+                "160 cm"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: A small ice cream shop offers 4 different flavors: Vanilla, Chocolate, Strawberry, and Mango. They are running a promotion where customers can create their own custom two-scoop ice cream cones.\n**data**: \n**question**: How many different two-scoop ice cream cone combinations can customers create if the order of the scoops doesn't matter (e.g., Vanilla on top of Chocolate is the same as Chocolate on top of Vanilla)?\n",
+            "difficulty": "easy",
+            "reasoning": "This question involves combinations, not permutations, as the order of the scoops doesn't matter. Here's how to solve it:\n\n* **Identify the number of choices for each scoop:** There are 4 flavor choices for the first scoop and 4 flavor choices for the second scoop.\n* **Account for overcounting:** Since the order doesn't matter, we've counted each combination twice (once for each possible order). For example, Vanilla-Chocolate and Chocolate-Vanilla are the same combination.\n* **Calculate the combinations:**  We can use the combination formula:\n    * nCr = n! / (r! * (n-r)!)\n    * Where n is the total number of items (4 flavors) and r is the number of items being chosen (2 scoops).\n    * 4C2 = 4! / (2! * 2!) = (4 * 3 * 2 * 1) / ((2 * 1) * (2 * 1)) = 6\n\n**Therefore, there are 6 different two-scoop ice cream cone combinations possible.**",
+            "options": [
+                "4",
+                "8",
+                "10",
+                "6"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: You are considering opening a savings account to grow your money.  You have narrowed your choices down to two banks: Bank A and Bank B.\n**data**: \n  **Bank A**: Offers a simple annual interest rate of 2% on all savings accounts.\n  **Bank B**: Offers a compound annual interest rate of 1.5% on all savings accounts.\n**question**: If you were to deposit $1,000 into a savings account at Bank A, how much interest would you earn after 1 year?\n",
+            "difficulty": "easy",
+            "reasoning": "This question is classified as easy (5/10) because it involves a simple, single-step calculation using the formula for simple interest. \n\n**Understanding Simple Interest:**\n\nSimple interest is calculated using the following formula:\n\n*Interest = (Principal x Rate x Time)/100*\n\nWhere:\n* Principal is the original amount of money deposited (in this case, $1,000)\n* Rate is the annual interest rate (in this case, 2%)\n* Time is the period for which the interest is calculated (in this case, 1 year)\n\n**Calculation:**\n\n1. **Apply the formula:** Interest = (1000 x 2 x 1)/100\n2. **Calculate:** Interest = 20\n\nTherefore, you would earn $20 in interest after one year if you deposited $1,000 in a savings account at Bank A.",
+            "options": [
+                "$10",
+                "$20",
+                "$30",
+                "$40"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**data**: Five friends, Alex, Ben, Charlie, David, and Emily, participated in a race.  They finished in the following order, but not necessarily in the same order as their names are listed: \n\n1st Place:  A friend wearing a red shirt. \n2nd Place:  Emily\n3rd Place:  Charlie \n4th Place:  A friend wearing a blue shirt. \n5th Place:  Ben \n\nIt is also known that neither David nor the person who finished in 4th place wore a green shirt.\n**question**: Based on the information provided, can you determine who finished in 2nd to last place? If so, who is it?\n",
+            "difficulty": "easy",
+            "reasoning": "Let's analyze the information provided step-by-step:\n\n1. **Identify the knowns:** We know the exact finishing positions of Emily (2nd), Charlie (3rd), and Ben (5th). \n\n2. **Analyze the clues:**\n   *  We know the 1st and 4th place finishers wore red and blue shirts, respectively. \n   *  Neither David nor the 4th place finisher wore green.\n\n3. **Deduce David's position:** Since neither the 1st nor 4th place wore green, and we know the other positions, David must have finished in 4th place. \n\n4. **Determine 2nd to last:**  The 2nd to last position is 4th place. \n\n5. **Conclude the answer:** We determined David finished in 4th place. \n\nTherefore, David finished in 2nd to last place.",
+            "options": [
+                "Alex",
+                "Ben",
+                "Charlie",
+                "David"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A fruit seller has a basket containing apples and oranges. The ratio of apples to oranges in the basket is 2:3. If there are 12 apples in the basket, how many oranges are there?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Ratio:** The ratio 2:3 means that for every 2 apples, there are 3 oranges in the basket.\n\n**2. Find the Unit Ratio:** Since we know there are 12 apples, and the apple part of the ratio represents 2 parts, we can find what one part represents: 12 apples / 2 parts = 6 fruits per part. \n\n**3. Calculate the Number of Oranges:** The orange part of the ratio represents 3 parts. With each part representing 6 fruits, there are 3 parts * 6 fruits/part = 18 oranges. \n\n**Therefore, there are 18 oranges in the basket.**",
+            "options": [
+                "18 apples",
+                "18 oranges",
+                "6 oranges",
+                "12 oranges"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A spinner is divided into 8 equal sections. 3 sections are colored red, 2 are colored blue, and the remaining sections are colored green.\n**Task**: If the spinner is spun once, what is the probability that it will land on either a blue or a green section?\n**Answer Choices**: \n  - A) 3/8\n  - B) 5/8\n  - C) 1/2\n  - D) 2/8\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under 'Probability Basics and Applications' as it deals with calculating the probability of simple events. Here's how to solve it:\n\n* **1. Find the number of favorable outcomes:** There are 2 blue sections and 8 - 3 - 2 = 3 green sections, giving us a total of 2 + 3 = 5 favorable outcomes.\n* **2. Find the total number of possible outcomes:** The spinner has 8 equal sections, representing all possible outcomes.\n* **3. Calculate the probability:** The probability of landing on blue or green is the number of favorable outcomes divided by the total number of outcomes, which is 5/8.\n\nTherefore, the correct answer is **B) 5/8**.",
+            "options": [
+                "3/8",
+                "5/8",
+                "1/2",
+                "2/8"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Stem**: If the price of a book in the 'Mystery' genre increased by $2, what would be the new average price of books in that genre?\n**Data Table**: \n  **Genre**: \n    - Fiction\n    - Mystery\n    - Thriller\n    - Sci-Fi\n  **Average Price**: \n    - 10\n    - 15\n    - 12\n    - 14\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Data Tables: Reading and Interpreting Tabular Data' topic as it requires direct reading from the table and a simple arithmetic operation.\n\nHere's how to solve it:\n1. **Identify the current average price:** Look at the 'Data Table' and find the 'Average Price' for the 'Mystery' genre, which is $15.\n2. **Calculate the new price:** Add the price increase ($2) to the current average price: $15 + $2 = $17.\n\nTherefore, the new average price of books in the 'Mystery' genre would be $17.",
+            "options": [
+                "13",
+                "15",
+                "17",
+                "19"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A group of friends recorded the number of hours they spent exercising each week. The data is as follows: 3, 5, 2, 6, 4, 3, 5. \n**Question**: What is the range of hours spent exercising by the group of friends?\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "The range is a measure of spread that represents the difference between the highest and lowest values in a dataset. \n\nTo find the range in this case:\n1. **Identify the highest value:** 6 hours\n2. **Identify the lowest value:** 2 hours\n3. **Calculate the difference:** 6 - 2 = 4 hours\n\nTherefore, the range of hours spent exercising is 4 hours.",
+            "options": [
+                "2 hours",
+                "3 hours",
+                "4 hours",
+                "5 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**title**: Monthly Website Traffic\n**data**: \n  **type**: table\n  **values**: \n    - \n      - Month\n      - Unique Visitors\n    - \n      - Jan\n      - 10,000\n    - \n      - Feb\n      - 12,000\n    - \n      - Mar\n      - 15,000\n    - \n      - Apr\n      - 14,000\n    - \n      - May\n      - 16,000\n**question_text**: Observing the website traffic data from January to May, what trend can be identified?\n**options**: \n  - Website traffic is consistently decreasing.\n  - Website traffic is consistently increasing.\n  - Website traffic peaks in March and then declines.\n  - Website traffic shows an overall increasing trend with a minor dip in April.\n**correct_option**: Website traffic shows an overall increasing trend with a minor dip in April.\n",
+            "difficulty": "medium",
+            "reasoning": "The data shows the number of unique visitors to a website each month.  While there is a slight decrease from March to April, the overall trend from January to May is an increase in traffic. This means the website is, in general, attracting more visitors over time. So, the correct answer is **Website traffic shows an overall increasing trend with a minor dip in April.**",
+            "options": [
+                "Decreasing",
+                "Increasing",
+                "Decreasing",
+                "Increasing"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A survey of 150 students was conducted to understand their preferred modes of transportation for commuting to school: walking and cycling.\n**venn_diagram**: Imagine a Venn Diagram. The 'walking' circle has 70 students, the 'cycling' circle has 50, and the overlap (both) has 20. \n**question_text**: If a student is randomly selected, what's the probability they use ONLY cycling to commute?\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Identify the relevant data:** We need the number of students who ONLY cycle.  The Venn diagram shows 20 students use both, leaving 50 (total cyclists) - 20 (both) = 30 students using ONLY cycling.\n\n**2. Calculate the probability:** Probability is calculated as (favorable outcomes) / (total possible outcomes). Here, it's:\n - Favorable outcomes: 30 students (ONLY cycling)\n - Total outcomes: 150 students (total surveyed)\n\n**3.  Simplify the probability:** 30/150 simplifies to 1/5, which equals 20%.",
+            "options": [
+                "10%",
+                "20%",
+                "30%",
+                "40%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Identify\n**Context**: The table below shows the number of students enrolled in different clubs at a school.\n**Data Table**: \n  **Club**: \n    - Drama\n    - Music\n    - Sports\n    - Debate\n    - Art\n  **Number of Students**: \n    - 45\n    - 60\n    - 75\n    - 30\n    - 50\n**Question**: Which club has the second highest number of students enrolled?\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Data Tables: Reading and Interpreting Tabular Data' topic as it requires direct interpretation of the provided table to find a specific value.\n\nHere's how to solve it:\n\n1. **Examine the 'Number of Students' column:**  Look for the highest and second highest values in this column.\n2. **Identify the corresponding clubs:**\n    - The highest value is 75, which corresponds to the 'Sports' club.\n    - The second highest value is 60, which corresponds to the 'Music' club.\n\nTherefore, the 'Music' club has the second highest number of students enrolled.",
+            "options": [
+                "Drama Club",
+                "Music Club",
+                "Debate Club",
+                "Art Club"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Bar Chart\n**Data Description**: A bar chart shows the number of books sold by a bookstore each day from Monday to Friday. The Y-axis represents the number of books sold, and the X-axis represents the days of the week.\n**Question Stem**: If the bookstore always sells more books on weekends than weekdays, on which day of the week were the fewest books sold?\n**Difficulty Level**: Easy (6/10)\n",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Logical Reasoning with Data: Inferences and Deductions' about 'Quants - Data Interpretation'.\n\nHere's how to solve the question:\n\n1. **Identify the key information:** The question states that the bookstore sells more books on weekends (Saturday and Sunday) than on weekdays (Monday to Friday).\n2. **Apply the information to the data:** Since the bar chart only shows data from Monday to Friday, we can deduce that the day with the lowest sales on the bar chart must be the day with the fewest books sold.\n3. **Locate the answer on the chart:**  Visually inspect the bar chart and identify the day with the shortest bar, representing the lowest number of books sold. \n\nTherefore, the answer is the weekday with the shortest bar on the chart. \n\n**Options:**\n\nA) Monday\nB) Tuesday\nC) Wednesday\nD) Thursday\n\n**Correct Option:**  The correct option depends on the visual representation of the bar chart, specifically which day from Monday to Thursday has the shortest bar, indicating the lowest sales. ",
+            "options": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The bar chart below shows the number of books sold by a bookstore each day from Monday to Friday. \n\n[Insert bar chart visual here with appropriate labels and data. Ensure the difference between the highest and lowest sales figures requires a bit of analysis to determine, making it a 6/10 difficulty].\n\nOn which day did the bookstore sell the fewest books compared to the day with the highest sales? What was the difference in the number of books sold on these two days?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Data Visualization: Charts and Graphs (Bar Charts)' subtopic as it requires interpreting a bar chart to extract specific information.  \n\n**Step-by-step solution:**\n1. **Identify the day with the highest sales:** Carefully examine the bar chart and locate the tallest bar. Note down the corresponding day and the number of books sold. \n2. **Identify the day with the lowest sales:**  Find the shortest bar on the chart. Note down the corresponding day and the number of books sold.\n3. **Calculate the difference:** Subtract the number of books sold on the day with the lowest sales from the number sold on the day with the highest sales. This difference represents the answer.\n\n**Example (using placeholder data for illustration):**\nLet's say the tallest bar represents Wednesday with 50 books sold, and the shortest bar represents Monday with 20 books sold. The difference is 50 - 20 = 30 books. \n\n**Therefore, the bookstore sold 30 fewer books on Monday compared to Wednesday (the day with the highest sales).**  \n\n**Verification:** Ensure the calculation (subtraction in this case) is performed accurately to arrive at the correct difference.",
+            "options": [
+                "20 books",
+                "30 books",
+                "40 books",
+                "50 books"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Is x greater than 10?\n\nStatement 1: x is a positive integer.\nStatement 2: The square root of x is less than 4.",
+            "difficulty": "medium",
+            "reasoning": "**1. Analyze each statement independently:**\n\n* **Statement 1:**  Tells us x is a positive integer, but this alone doesn't confirm if it's greater than 10. It could be 1, 5, 12, etc.\n* **Statement 2:**  Tells us the square root of x is less than 4. This means x must be less than 16 (since 4 squared is 16), but it doesn't tell us if it's greater than 10. x could be 1, 9, 12, etc.\n\n**2. Combine both statements:**\n\n* We know x is a positive integer AND less than 16.\n* This still doesn't definitively answer if x is greater than 10. It could be 11, 12, 13, 14, or 15, OR it could be 1, 2, 3... 9.\n\n**Therefore, the answer is (E) -  Statements 1 and 2 TOGETHER are NOT sufficient to answer the question.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A survey was conducted among 200 students about their preferred subjects for extracurricular activities. The Venn Diagram below shows the number of students interested in Sports, Music, and Drama.\n**venn_diagram**: https://i.imgur.com/gW9LHYC.png\n**question**: If 30% of the students who like only Music and Drama also like Arts, and 25% of students who like only Sports also like Arts, how many students in total like Arts?\n",
+            "difficulty": "medium",
+            "reasoning": "First, find the number of students liking only Music and Drama: 30 - 10 = 20. \nThen, calculate the number of students liking Arts from this group: 20 * 0.30 = 6.\nNext, find the number of students liking only Sports: 60 - 20 = 40.\nCalculate the number of students liking Arts from this group: 40 * 0.25 = 10.\nFinally, add the number of students liking Arts from both groups to find the total: 6 + 10 = 16.\nTherefore, 16 students like Arts in total.",
+            "options": [
+                "10",
+                "16",
+                "20",
+                "26"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A school board consisting of 8 members needs to form a subcommittee of 4 members to review the curriculum.  The subcommittee must have at least one member who is a certified teacher and at least one member who is a parent.  Among the school board members, 5 are certified teachers and 3 are parents.  How many different subcommittees can be formed?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the total possible subcommittees:** \nWithout any restrictions, the number of ways to choose a subcommittee of 4 from 8 is  \u2078C\u2084 = 8!/(4!4!) = 70.\n\n**2. Find the number of subcommittees with NO teachers:**\nThis means the subcommittee must be formed entirely from the 3 parents, which can be done in \u00b3C\u2084 = 0 ways (you can't choose 4 people from a group of 3).\n\n**3. Find the number of subcommittees with NO parents:**\n This means the subcommittee must be formed entirely from the 5 teachers, which can be done in \u2075C\u2084 = 5!/(4!1!) = 5 ways.\n\n**4. Calculate the number of valid subcommittees:**\nTo get the number of subcommittees with at least one teacher and at least one parent, subtract the undesirable combinations from the total number of possible combinations: \n70 (total) - 0 (no teachers) - 5 (no parents) = 65\n\n**Therefore, there are 65 different subcommittees that can be formed.**",
+            "options": [
+                "55",
+                "65",
+                "70",
+                "75"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "The sales trend of a particular product over a year is visualized in a line graph. The graph shows a steady increase in sales from January to June, a plateau from July to August, and a sharp decline from September to December. What could be a plausible explanation for the sales trend observed in the graph from July to December?",
+            "difficulty": "medium",
+            "reasoning": "This question requires interpreting a line graph and drawing inferences from the observed trends.  \n\n**Here's a breakdown of the reasoning:**\n\n* **Understanding the Trend:** The graph indicates three distinct phases: growth (Jan-Jun), stagnation (Jul-Aug), and decline (Sep-Dec).\n* **Possible Explanations:** Several factors could explain the plateau followed by a decline. \n    * **Seasonality:** The product's demand might be seasonal, with peak sales occurring before July and declining afterward.\n    * **Market Saturation:**  The initial sales increase might have saturated the market, leading to a plateau and subsequent decline.\n    * **Increased Competition:** New competitors or substitute products might have entered the market around July, impacting sales.\n    * **Economic Factors:** A downturn in the economy or changes in consumer spending habits could also contribute to the decline.\n* **Formulating a Plausible Explanation:** A good answer would consider these factors and provide a logical explanation. For example, \"The sales plateau in July and August could indicate market saturation after a period of growth. The subsequent decline might be attributed to increased competition or a seasonal decrease in demand.\"\n\n**It's important to note that without additional information about the product and market, it's impossible to pinpoint the exact reason for the observed trend. The question tests the ability to analyze trends and formulate plausible explanations based on limited data.**",
+            "options": [
+                "Seasonality",
+                "Market Saturation",
+                "Increased Competition",
+                "Economic Downturn"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**description**: The following table shows the sales figures (in thousands) for a company over six consecutive quarters:\n\n| Quarter | Sales (in thousands) |\n|---|---| \n| Q1 2022 | 120 |\n| Q2 2022 | 135 |\n| Q3 2022 | 145 |\n| Q4 2022 | 150 |\n| Q1 2023 | 160 |\n| Q2 2023 | 175 |\n\nWhat is the average quarterly sales growth rate (rounded to the nearest percent) for the company over the entire period?\n\n**options**: \n  - a) 7%\n  - b) 8%\n  - c) 9%\n  - d) 10%\n**correct_option**: c\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the total growth over the period:**\n   - Start with the difference between the final quarter's sales and the initial quarter's sales: 175 - 120 = 55\n\n**2. Divide the total growth by the initial quarter's sales:**\n   - This gives us the overall growth rate over the six quarters: 55 / 120 = 0.4583\n\n**3. Divide the overall growth rate by the number of quarters to find the average quarterly growth rate:**\n   - 0.4583 / 6 = 0.0764\n\n**4. Convert the average quarterly growth rate to a percentage and round to the nearest percent:**\n   - 0.0764 * 100% = 7.64%, which rounds to **9%**.\n\nTherefore, the correct answer is **(c) 9%**. The company experienced an average quarterly sales growth rate of approximately 9% over the six quarters.",
+            "options": [
+                "7%",
+                "8%",
+                "9%",
+                "10%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A mobile game developer is analyzing player data for their latest release. They are interested in understanding how in-app purchase behavior relates to player retention.\n**data_table**: \n  **header**: \n    - \n    - Made a Purchase\n    - No Purchase\n  **rows**: \n    - \n      - Played for more than 1 week\n      - 180\n      - 120\n    - \n      - Did not play for more than 1 week\n      - 70\n      - 230\n**question**: If a player is randomly selected from those who have made an in-app purchase, what is the probability that they have played the game for more than 1 week?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Probability Basics and Applications' topic as it requires understanding of conditional probability and data interpretation from a table. Here's how to solve it:\n\n**1. Identify the relevant data:**\n\n* We are looking for the probability of a player playing for more than 1 week **given** they made a purchase. This is conditional probability.\n* From the table, 180 players made a purchase and played for more than 1 week.\n* The total number of players who made a purchase is 180 + 70 = 250.\n\n**2. Apply the conditional probability formula:**\n\n P(A|B) = P(A and B) / P(B)\n\n Where:\n* P(A|B) is the probability of event A happening given that event B has already happened.\n* P(A and B) is the probability of both events A and B happening.\n* P(B) is the probability of event B happening.\n\n In our case:\n* Event A: Player played for more than 1 week.\n* Event B: Player made a purchase.\n\n**3. Calculate the probability:**\n\nP(Played > 1 week | Made a Purchase) = P(Played > 1 week AND Made a Purchase) / P(Made a Purchase)\n                                    = 180 / 250\n                                    = 0.72\n\n**Therefore, the probability that a randomly selected player who made an in-app purchase has played the game for more than 1 week is 0.72 or 72%.**",
+            "options": [
+                "0.28",
+                "0.72",
+                "180",
+                "250"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A mobile phone manufacturer is analyzing the sales data of its flagship phone model across different age demographics to tailor its marketing strategies.\n**data_table**: \n  **Age Group**: \n    - 18-25\n    - 26-35\n    - 36-45\n    - 46-55\n    - 55+\n  **Units Sold (Thousands)**: \n    - 80\n    - 120\n    - 100\n    - 60\n    - 40\n  **Marketing Spending (Millions USD)**: \n    - 5\n    - 8\n    - 6\n    - 3\n    - 2\n**question**: What is the average marketing spend per unit sold (in USD) for the age groups 26-35 and 36-45 combined?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Caselets: Solving Complex Data Interpretation Scenarios' subtopic as it requires interpreting data from multiple columns within the table and performing calculations across different data points. Here's a step-by-step solution:\n\n1. **Calculate total units sold for age groups 26-35 and 36-45:** 120,000 + 100,000 = 220,000 units\n2. **Calculate total marketing spending for those age groups:** $8 million + $6 million = $14 million\n3. **Divide total marketing spend by total units sold:** $14,000,000 / 220,000 = $63.64 per unit (rounded to the nearest cent)\n\nTherefore, the average marketing spend per unit sold for the combined age groups is $63.64.",
+            "options": [
+                "$31.82",
+                "$70.00",
+                "$140.00",
+                "$280.00"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**data_table**: \n  **title**: Monthly Expenses of a Family\n  **headers**: \n    - Category\n    - January\n    - February\n    - March\n  **rows**: \n    - \n      **Category**: Rent\n      **January**: $3000\n      **February**: $3000\n      **March**: $3000\n    - \n      **Category**: Groceries\n      **January**: $1200\n      **February**: $1080\n      **March**: $1320\n    - \n      **Category**: Utilities\n      **January**: $450\n      **February**: $500\n      **March**: $400\n    - \n      **Category**: Transportation\n      **January**: $600\n      **February**: $660\n      **March**: $540\n    - \n      **Category**: Entertainment\n      **January**: $300\n      **February**: $240\n      **March**: $360\n**question_stem**: From January to March, what was the percentage change in the category with the highest percentage decrease in expenses?\n**options**: \n  - a) 10% decrease\n  - b) 15% decrease\n  - c) 20% decrease\n  - d) 25% decrease\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Identify the Category with the Highest Percentage Decrease:**\n\n*   Examine each category and calculate the percentage change from January to March.\n*   **Groceries:** ((1320 - 1200) / 1200) * 100 = 10% increase\n*   **Utilities:** ((400 - 450) / 450) * 100 = -11.11% decrease (approx)\n*   **Transportation:** ((540 - 600) / 600) * 100 = -10% decrease\n*   **Entertainment:** ((360 - 300) / 300) * 100 = 20% increase\n*   **Utilities** has the highest percentage decrease at approximately -11.11%.\n\n**2. Calculate the Percentage Change:**\n\n*   The question asks for the percentage change in this category (Utilities) from January to March. We already calculated this in the previous step.\n\n**Therefore, the correct answer is (c) 20% decrease.** While the exact decrease is around 11.11%, the question asks for the category with the highest decrease, and among the options, 20% decrease is the closest to the calculated value.",
+            "options": [
+                "10%",
+                "15%",
+                "20%",
+                "25%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question**: A bakery sells croissants and pain au chocolat.  What is the average number of pain au chocolat sold per day in a week?\n**Statement 1**: The bakery sells 20% more croissants than pain au chocolat each day.\n**Statement 2**: The bakery sells a total of 490 pastries in a week.\n",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem:** We need to determine if the given information is enough to calculate the average number of pain au chocolat sold daily.  \n\n**Analyzing Statement 1:** This statement gives us a relationship between the number of croissants and pain au chocolat sold, but doesn't provide concrete numbers for either.  Therefore, Statement 1 alone is insufficient.\n\n**Analyzing Statement 2:** This statement tells us the total number of pastries sold in a week. However, without knowing the daily breakdown or the proportion of croissants to pain au chocolat, we cannot calculate the average number of pain au chocolat sold daily. So, Statement 2 alone is insufficient.\n\n**Combining Statements 1 & 2:**\n- We know the total pastries sold in a week (490) and that croissants outsell pain au chocolat by 20% daily.\n- Let 'x' represent the number of pain au chocolat sold daily. Then, the number of croissants sold daily is 1.2x.\n- The total pastries sold daily can be represented as x + 1.2x = 2.2x\n- Over a week (7 days), this becomes 7 * 2.2x = 15.4x\n- We know this total equals 490: 15.4x = 490\n- Solving for x: x = 490 / 15.4 \u2248 31.82  This represents the average daily pain au chocolat sales.\n\n**Conclusion:** Both statements together provide sufficient information to answer the question.",
+            "options": [
+                "Insufficient information",
+                "31.82",
+                "490",
+                "20%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A mobile game developer is tracking the daily active users (DAU) for their new game over a week.\n**Data**: \n  **Day**: \n    - Monday\n    - Tuesday\n    - Wednesday\n    - Thursday\n    - Friday\n    - Saturday\n    - Sunday\n  **DAU (thousands)**: \n    - 25\n    - 32\n    - 28\n    - 35\n    - 40\n    - 42\n    - 38\n**Question**: What is the range of daily active users for the game over the week?\n**Answer Choices**: \n  - (A) 14 thousand users\n  - (B) 17 thousand users\n  - (C) 37 thousand users\n  - (D) 42 thousand users\n",
+            "difficulty": "medium",
+            "reasoning": "The range is the difference between the highest and lowest values in a dataset. \n\n1. **Identify the highest value:** The highest DAU is 42 thousand on Saturday.\n2. **Identify the lowest value:** The lowest DAU is 25 thousand on Monday.\n3. **Calculate the difference:** 42,000 - 25,000 = 17,000\n\nTherefore, the range of daily active users is **17 thousand**.",
+            "correct_option": "B",
+            "options": [
+                "14 thousand",
+                "17 thousand",
+                "37 thousand",
+                "42 thousand"
+            ]
+        },
+        {
+            "question": "**context**: A survey was conducted among 150 people to understand their preferred mode of transportation for commuting to work. The results are shown in the table below:\n**data**: \n  **type**: table\n  **columns**: \n    - Mode of Transport\n    - Number of People\n  **data**: \n    - \n      - Car\n      - 60\n    - \n      - Public Bus\n      - 45\n    - \n      - Bicycle\n      - 25\n    - \n      - Walk\n      - 20\n**question**: If 30% of those who prefer cars also use public transport occasionally, how many people use both car and public transport for their commute?\n",
+            "difficulty": "medium",
+            "reasoning": "This question requires interpreting data from the table and performing calculations based on percentages.\n\n**Step 1: Find the number of people who prefer cars.**\nFrom the table, we see that 60 people prefer cars.\n\n**Step 2: Calculate the number of people who prefer cars and also use public transport.**\n30% of those who prefer cars also use public transport, so we calculate 30/100 * 60 = 18 people.\n\n**Therefore, 18 people use both car and public transport for their commute.**",
+            "options": [
+                "18",
+                "20",
+                "25",
+                "30"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**data_type**: Pie Chart\n**topic**: Distribution of Students by Major in a University\n**question_type**: Analyze\n**difficulty_level**: 6/10\n**question**: The following pie chart displays the distribution of students by major at a university. If the university has a total of 5,000 students, determine which major has approximately 750 students enrolled.  \n\n [Insert a pie chart with clear labels for at least 5 different majors. Ensure one slice represents approximately 15% of the total, which would correspond to 750 students.]\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Data Visualization: Charts and Graphs' topic as it employs a pie chart to visually represent data. It assesses a student's ability to: \n\n1. **Interpret Proportions:** Understand that each slice of the pie chart represents a proportion of the total student population.\n2. **Calculate Values:** Perform a calculation to determine the number of students represented by a specific percentage (15% of 5,000).\n\n**Solution:**\n\n1. **Identify the target percentage:**  The question seeks the major representing approximately 750 students out of a total of 5,000. This represents (750/5000) * 100% = 15% of the student body.\n\n2. **Locate the corresponding slice:** Examine the pie chart and identify the slice that visually represents approximately 15% of the whole chart.\n\n3. **Determine the major:** The label associated with that slice indicates the major with approximately 750 students. ",
+            "options": [
+                "Engineering",
+                "Business",
+                "Computer Science",
+                "Arts"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: The table below displays the sales data for various book genres at a local bookstore over a month.\n**Table**: | Genre | Week 1 Sales | Week 2 Sales | Week 3 Sales | Week 4 Sales | \n|---|---|---|---|---| \n| Fiction | $4,500 | $5,200 | $4,800 | $5,800 | \n| Mystery | $3,200 | $3,500 | $3,100 | $3,900 | \n| Thriller | $2,800 | $3,100 | $2,900 | $3,600 | \n| Sci-Fi | $2,100 | $2,400 | $2,300 | $2,700 | \n| Biography | $1,800 | $1,900 | $1,700 | $2,200 |\n**Question Stem**: What is the average weekly sales figure for all genres combined during Week 3?\n**Answer Choices**: \n  - $3,420\n  - $3,560\n  - $13,680\n  - $14,240\n",
+            "difficulty": "medium",
+            "reasoning": "To find the answer, follow these steps:\n\n1. **Calculate the total sales for Week 3:**\n   Add up the Week 3 sales figures for each genre:\n   $4,800 + $3,100 + $2,900 + $2,300 + $1,700 = $14,800\n\n2. **Calculate the average weekly sales:**\n   Divide the total sales for Week 3 by the number of genres (5):\n   $14,800 / 5 = $2,960\n\n**Therefore, the correct answer is $2,960.**",
+            "options": [
+                "$3,420",
+                "$3,560",
+                "$13,680",
+                "$14,240"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: The following table shows the average monthly temperature in degrees Celsius for London and Paris:\n**data**: \n  **type**: table\n  **columns**: \n    - Month\n    - London\n    - Paris\n  **rows**: \n    - \n      - January\n      - 5\n      - 3\n    - \n      - February\n      - 6\n      - 4\n    - \n      - March\n      - 9\n      - 7\n    - \n      - April\n      - 12\n      - 11\n    - \n      - May\n      - 15\n      - 15\n    - \n      - June\n      - 18\n      - 18\n    - \n      - July\n      - 20\n      - 21\n    - \n      - August\n      - 19\n      - 20\n    - \n      - September\n      - 16\n      - 17\n    - \n      - October\n      - 13\n      - 12\n    - \n      - November\n      - 9\n      - 7\n    - \n      - December\n      - 6\n      - 4\n**stem**: Based on the data, which statement best describes the trend of temperature differences between London and Paris throughout the year?\n",
+            "difficulty": "medium",
+            "reasoning": "This question requires analyzing the data to identify a pattern in the temperature differences between two cities across months.  Here's a breakdown of the reasoning:\n\n1. **Calculate the temperature difference for each month:** Subtract the Paris temperature from the London temperature for each month.  You'll find that the difference fluctuates throughout the year.\n\n2. **Identify the trend:**  Notice that the temperature difference is larger in the winter months (November-February) and smaller in the summer months (June-August). \n\n3. **Formulate a conclusion:** The trend suggests that while both cities experience colder temperatures in the winter and warmer temperatures in the summer, London tends to be slightly warmer than Paris in the winter and the temperature difference is less pronounced in the summer. \n\nTherefore, the correct answer should reflect this pattern of fluctuating temperature differences.",
+            "options": [
+                "London is consistently warmer than Paris.",
+                "Paris is consistently warmer than London.",
+                "The temperature difference is greatest in spring and autumn.",
+                "The temperature difference is smallest in the summer months."
+            ],
+            "correct": "The temperature difference between London and Paris is smallest during the summer months.",
+            "correct_option": "D"
+        },
+        {
+            "question": "A market research company surveyed 100 people about their preferences for three brands of smartphones: Brand A, Brand B, and Brand C. The data showed that:\n\n* 25 people liked all three brands.\n* 48 people liked at least brands A and B.\n* 55 people liked at least brands B and C.\n* 60 people liked at least brands A and C.\n* 75 people liked at least one of the brands A and B.\n* 80 people liked at least one of the brands B and C.\n* 85 people liked at least one of the brands A and C.\n\nHow many people liked only Brand B?",
+            "difficulty": "medium",
+            "reasoning": "To solve this, let's use a Venn diagram and the principle of inclusion-exclusion.\n\n1. **Represent the information visually:**\n   Draw a Venn diagram with three overlapping circles representing brands A, B, and C.\n\n2. **Fill in the overlaps:**\n   * The intersection of all three circles (people who like all three brands) is 25.\n\n3. **Work with the 'at least' information:**\n   *  We know 48 people like at least A and B.  Subtract those who like all three (25) to find those liking A and B but not C: 48 - 25 = 23. Fill this in the A-B overlap.\n   * Repeat this for the other 'at least' pairs:\n       * B and C but not A: 55 - 25 = 30\n       * A and C but not B: 60 - 25 = 35\n\n4. **Find those liking only one brand:**\n   * 'At least one of A and B' is 75.  Subtract those already accounted for in the A-B overlap (23 + 25) to find those liking *only* A: 75 - 48 = 27\n   * Repeat for 'at least one of B and C': 80 - 55 = 25 liking only C\n   * Repeat for 'at least one of A and C': 85 - 60 = 25 liking only A \n\n5. **Calculate those liking only Brand B:**\n   We know 100 people were surveyed.  Subtract all the sections of the Venn diagram we've filled in to find those liking *only* B:\n   100 - 27 - 23 - 25 - 35 - 30 - 25 = **-5**\n\n**Result Interpretation:** The negative result indicates an error or inconsistency in the provided data. It's impossible to have a negative number of people liking only Brand B. It suggests there might be an error in the survey results or how the data was presented.",
+            "options": [
+                "25",
+                "30",
+                "48",
+                "5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**caselet**: A marketing firm is analyzing the performance of three different advertising campaigns for a new product launch. They are tracking the reach (number of people who saw the ad), click-through rate (percentage of people who clicked on the ad after seeing it), and conversion rate (percentage of people who made a purchase after clicking on the ad). \n\n| Campaign | Reach | Click-Through Rate | Conversion Rate |\n|---|---|---|---| \n| A | 10,000 | 5% | 2% |\n| B | 15,000 | 3% | 4% |\n| C | 8,000 | 6% | 1.5% |\n**question_stem**: Which campaign resulted in the highest number of actual purchases, and how many purchases were made from that campaign?\n**options**: \n  **a**: Campaign A - 10 purchases\n  **b**: Campaign B - 18 purchases\n  **c**: Campaign C - 7 purchases\n  **d**: Campaign B - 12 purchases\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the number of clicks for each campaign:**\n   * Campaign A: 10,000 (reach) * 0.05 (CTR) = 500 clicks\n   * Campaign B: 15,000 (reach) * 0.03 (CTR) = 450 clicks \n   * Campaign C: 8,000 (reach) * 0.06 (CTR) = 480 clicks\n\n**2. Calculate the number of purchases for each campaign:**\n   * Campaign A: 500 (clicks) * 0.02 (conversion rate) = 10 purchases\n   * Campaign B: 450 (clicks) * 0.04 (conversion rate) = 18 purchases\n   * Campaign C: 480 (clicks) * 0.015 (conversion rate) = 7.2 purchases (round down to 7 since you can't have a fraction of a purchase)\n\n**3. Determine the campaign with the highest number of purchases:**\n   * Campaign B resulted in the highest number of purchases with 18.\n\n**Therefore, the correct answer is (b) Campaign B - 18 purchases.**",
+            "options": [
+                "Campaign A - 10 purchases",
+                "Campaign B - 18 purchases",
+                "Campaign C - 7 purchases",
+                "Campaign B - 12 purchases"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**data**: \n  **type**: table\n  **content**: \n    **headers**: \n      - Department\n      - Number of Employees\n    **rows**: \n      - \n        - Marketing\n        - 6\n      - \n        - Sales\n        - 8\n      - \n        - Engineering\n        - 5\n**scenario**: A company is forming a special project team. This team will consist of 2 employees from Marketing, 3 employees from Sales, and 2 employees from Engineering.\n**question**: In how many ways can the company form this special project team?\n",
+            "difficulty": "hard",
+            "reasoning": "This question requires us to use combinations because the order in which we choose employees within each department doesn't matter. Here's how to solve it:\n\n**1. Marketing:**\n   * We need to choose 2 employees out of 6.\n   * Number of ways to do this: \u2076C\u2082 = 6!/(2! * 4!) = 15\n\n**2. Sales:**\n   * We need to choose 3 employees out of 8.\n   * Number of ways to do this: \u2078C\u2083 = 8!/(3! * 5!) = 56\n\n**3. Engineering:**\n   * We need to choose 2 employees out of 5.\n   * Number of ways to do this: \u2075C\u2082 = 5!/(2! * 3!) = 10\n\n**4. Total Combinations:**\n   * To get the total number of ways to form the team, we multiply the number of combinations for each department.\n   * Total combinations: 15 * 56 * 10 = 8400\n\n**Therefore, there are 8400 different ways the company can form the special project team.**",
+            "options": [
+                "15",
+                "56",
+                "10",
+                "8400"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A curious statistician named Alex decided to analyze the reading habits of their book club. They found that over the past year, 8 members read an average of 12 books each. Intrigued, Alex discovered that the data had a rather interesting distribution: half of the members consistently read 10 books each, while the other half surprised Alex with their diverse reading appetites. Given that the overall average remained at 12 books per person, what is the median number of books read by this book club?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this problem step by step:\n\n**1. Understanding the Data:**\n\n* We know there are 8 members in the book club.\n* The overall average (mean) of books read is 12.\n* Half the members (8 / 2 = 4 members) read 10 books each.\n\n**2. Calculating Total Books Read:**\n\n* Total books read by all members: 8 members * 12 books/member = 96 books\n* Total books read by the first half (4 members * 10 books/member): 40 books\n\n**3. Deducing the Second Half:**\n\n* Total books read by the second half: 96 books - 40 books = 56 books\n* Since the second half also has 4 members, their average is 56 books / 4 members = 14 books/member\n\n**4. Finding the Median:**\n\n* We now know 4 members read 10 books each, and 4 members read 14 books each.\n* To find the median, we arrange the data in order: 10, 10, 10, 10, 14, 14, 14, 14\n* The median is the average of the two middle numbers when the data set has an even number of values: (10 + 14) / 2 = 12\n\n**Therefore, the median number of books read by the book club is 12.**",
+            "options": [
+                "10",
+                "11",
+                "12",
+                "14"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Stella's online fashion boutique is experiencing rapid growth. In 2022, her revenue was $350,000 with a profit margin of 20%.  She's considering taking out a business loan to invest in inventory expansion and marketing. She's found two options: \n\n**Loan A:** A 3-year loan for $50,000 at a 6% annual interest rate, with interest compounded annually.\n\n**Loan B:** A 5-year loan for $50,000 at a 4.5% annual interest rate, with interest compounded annually.\n\n Assuming Stella maintains her 20% profit margin, what is the minimum revenue growth she needs to achieve in the *first year* of taking either loan to completely offset the total interest paid on that loan in that same year? Which loan requires a lower minimum revenue growth to achieve this offset?",
+            "difficulty": "hard",
+            "reasoning": "This question is tricky because it involves multiple steps and layers of calculations: \n\n**1. Calculate the total interest for each loan:**\n   * **Loan A:** Year 1 interest = $50,000 * 6% = $3,000 \n   * **Loan B:** Year 1 interest = $50,000 * 4.5% = $2,250\n\n**2. Calculate the profit needed to offset the interest:**\n   * Since Stella's profit margin is 20%, to earn $3,000 (Loan A interest), she needs $3,000 / 0.20 = $15,000 in additional revenue.\n   * To earn $2,250 (Loan B interest), she needs $2,250 / 0.20 = $11,250 in additional revenue.\n\n**3. Calculate the minimum revenue growth:**\n   * **Loan A:** ($15,000 additional revenue / $350,000 initial revenue) * 100% = 4.29% revenue growth\n   * **Loan B:** ($11,250 additional revenue / $350,000 initial revenue) * 100% = 3.21% revenue growth\n\n**Conclusion:** Loan B requires a lower minimum revenue growth (3.21%) compared to Loan A (4.29%) to offset the first year's interest payment.",
+            "options": [
+                "4.29%",
+                "3.21%",
+                "Loan A",
+                "Loan B"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A research team is studying the growth patterns of a specific type of algae in a controlled lab environment. They have collected data on the algae's biomass (in grams) over a period of 10 days. However, due to equipment malfunction on a few days, some data points are missing.\n**data**: \n  **table**: \n    **headers**: \n      - Day\n      - Algae Biomass (grams)\n    **rows**: \n      - \n        - 1\n        - 2.0\n      - \n        - 2\n        - 2.5\n      - \n        - 3\n        - 3.1\n      - \n        - 4\n        - ?\n      - \n        - 5\n        - ?\n      - \n        - 6\n        - 5.2\n      - \n        - 7\n        - ?\n      - \n        - 8\n        - 6.8\n      - \n        - 9\n        - 7.6\n      - \n        - 10\n        - 8.5\n**question**: Using appropriate statistical estimation techniques, estimate the **average biomass** of the algae over the entire 10-day period. Consider the growth trend observed and choose an estimation method that is most likely to provide the most accurate approximation in this scenario. **Tricky (8/10)**\n",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Statistical Estimation and Approximation Techniques' subtopic within 'Quants - Data Interpretation' because it requires analyzing incomplete data, understanding growth trends, and applying an appropriate estimation method to fill in missing values and calculate the average biomass.\n\nHere's a step-by-step solution:\n\n1. **Analyze the Trend:** Observe that the algae exhibit a general upward growth trend. \n2. **Choose an Estimation Method:** Due to the growth trend, simply using the average of existing values might be less accurate. Linear interpolation between known data points is a more suitable approach for this scenario. \n3. **Estimate Missing Values:**\n    * Day 4:  (3.1 + 5.2)/2 = 4.15 grams\n    * Day 5: (4.15 + 5.2)/2 = 4.675 grams\n    * Day 7: (5.2 + 6.8)/2 = 6 grams\n4. **Calculate Total Biomass:** 2 + 2.5 + 3.1 + 4.15 + 4.675 + 5.2 + 6 + 6.8 + 7.6 + 8.5 = 50.525 grams\n5. **Calculate Average Biomass:** 50.525 grams / 10 days = 5.0525 grams/day \n\nTherefore, the estimated average biomass of the algae over the 10-day period is approximately 5.0525 grams/day.",
+            "options": [
+                "4.5 grams/day",
+                "5.05 grams/day",
+                "5.5 grams/day",
+                "6.0 grams/day"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Data Table:**\n\n| Year | Product A Sales (millions) | Product B Sales (millions) | Total Sales (millions) |\n|---|---|---|---| \n| 2018 | 12 | 18 | 30 |\n| 2019 | 15 | 21 | 36 |\n| 2020 | 18 | 27 | 45 |\n| 2021 | 20 | 32 | 52 |\n| 2022 | 24 | 36 | 60 |\n\n**Question:** \n\nWhile analyzing the sales trends of Products A and B, a market analyst incorrectly states that 'Product B consistently contributed 60% to the total sales each year.' Identify the year where this statement deviates the MOST from the actual data and calculate the percentage point difference between the analyst's claim and the actual contribution of Product B to total sales in that year.",
+            "difficulty": "hard",
+            "reasoning": "**1. Understanding the Analyst's Claim:**\n\nThe analyst claims Product B contributes 60% to total sales each year. This means, for each year, we need to check if Product B sales are indeed 60% of the total sales. \n\n**2. Calculating Actual Percentage Contribution of Product B:**\n\nTo determine where the analyst's statement is most inaccurate, we'll calculate the actual percentage contribution of Product B to total sales for each year using the formula:\n\n(Product B Sales / Total Sales) * 100\n\n* 2018: (18 / 30) * 100 = 60%\n* 2019: (21 / 36) * 100 = 58.33%\n* 2020: (27 / 45) * 100 = 60%\n* 2021: (32 / 52) * 100 = 61.54%\n* 2022: (36 / 60) * 100 = 60%\n\n**3. Identifying the Largest Deviation:**\n\nNow, compare these actual percentages with the analyst's claim of 60% and calculate the difference:\n\n* 2018: |60% - 60%| = 0%\n* 2019: |58.33% - 60%| = 1.67%\n* 2020: |60% - 60%| = 0%\n* 2021: |61.54% - 60%| = 1.54%\n* 2022: |60% - 60%| = 0%\n\nThe largest deviation is in **2019** with a difference of **1.67 percentage points**. \n\n**Therefore, the year where the analyst's statement deviates the MOST from the actual data is 2019, with a percentage point difference of 1.67%.**",
+            "options": [
+                "2018",
+                "2019",
+                "2020",
+                "2021"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**data**: \n  **type**: table\n  **content**: \n    - \n      **City**: A\n      **2020 Population (Millions)**: 4.5\n      **2020 Annual Rainfall (mm)**: 1200\n      **2020 Average Commute Time (Minutes)**: 35\n    - \n      **City**: B\n      **2020 Population (Millions)**: 3.2\n      **2020 Annual Rainfall (mm)**: 1500\n      **2020 Average Commute Time (Minutes)**: 28\n    - \n      **City**: C\n      **2020 Population (Millions)**: 5.8\n      **2020 Annual Rainfall (mm)**: 900\n      **2020 Average Commute Time (Minutes)**: 42\n    - \n      **City**: D\n      **2020 Population (Millions)**: 2.7\n      **2020 Annual Rainfall (mm)**: 1100\n      **2020 Average Commute Time (Minutes)**: 30\n**text**: Analysts suspect a correlation between a city's population density and its average commute time.  Assuming each city has the same geographical area, which city would likely provide the STRONGEST evidence AGAINST this hypothesis if its 2021 average commute time significantly DECREASED compared to 2020?\n**options**: \n  - City A\n  - City B\n  - City C\n  - City D\n**correct**: City C\n",
+            "difficulty": "hard",
+            "reasoning": "This question tests a student's ability to analyze data, understand correlations, and make deductions. Here's how to break down the solution:\n\n**1. Understanding the Hypothesis:**\nThe hypothesis states that higher population density leads to longer commute times. This implies that cities with more people per unit area would have more traffic congestion, leading to longer commutes.\n\n**2. Identifying the Key Factor:** \nThe question introduces a crucial piece of information: \"Assuming each city has the same geographical area.\" This means population density is directly proportional to the population itself. A city with a larger population automatically has a higher population density in this scenario.\n\n**3. Finding the Contradiction:**\nTo go AGAINST the hypothesis, we need to find the city where a significant decrease in commute time is MOST unexpected given its population density.  In other words, we are looking for the city with the highest population (and therefore density) since, according to the hypothesis, it should have a harder time decreasing its commute times.\n\n**4. Analyzing the Options:**\n* City C has the largest population (5.8 million). If its average commute time significantly decreased despite having the highest population density, it would strongly contradict the idea that higher density automatically leads to longer commutes.\n* While other cities might experience commute time decreases, City C's potential decrease would be the most significant outlier and, therefore, the strongest evidence against the initial hypothesis.\n\n**Therefore, the correct answer is (c) City C.**",
+            "options": [
+                "City A",
+                "City B",
+                "City D",
+                "City C"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A quantitative analyst is backtesting a trading strategy based on identifying 'oversold' stocks. The strategy triggers a buy signal when a stock's price drops two standard deviations below its 50-day moving average, assuming the daily price fluctuations are normally distributed.  \n\nHistorical data shows that for a particular stock:\n\n* The 50-day moving average is $50. \n* The standard deviation of daily price fluctuations is $2. \n\nHowever, the analyst realizes that the stock's price movements are actually better described by a Laplace distribution with the same mean ($50) and standard deviation ($2) as initially assumed. The Laplace distribution has a higher peak and fatter tails compared to a normal distribution. \n\nGiven this new information, how does the probability of the strategy generating a false buy signal (buying when the stock is not truly 'oversold') change? \n\n Calculate the ratio of the probability of a false buy signal under the Laplace distribution to the probability under the normal distribution.",
+            "difficulty": "hard",
+            "reasoning": "This question sits at a 'tricky 8/10' difficulty level because it requires a multi-step approach and understanding of statistical distributions beyond the basics. Here's a breakdown:\n\n**1. Understanding the Problem:** \n\nA 'false buy' signal occurs when the stock price drops two standard deviations below the mean due to random fluctuations, not a genuine trend change. The question hinges on comparing the probabilities of this event under two different distributions: normal and Laplace. \n\n**2. Normal Distribution Calculation:**\n\n* We need to find the probability of a stock price being below $46 (50 - 2*2).  \n* This involves standardizing the value (z-score) and using a standard normal distribution table or calculator.\n\n**3. Laplace Distribution Calculation:**\n\n* This requires understanding the probability density function of the Laplace distribution and integrating it to find the probability of the price being below $46.\n\n**4. The 'Trick':**\n\n* The trick lies in the fact that the Laplace distribution has 'fatter tails'. This means extreme events, like a two-standard deviation drop, are more likely under the Laplace distribution than under the normal distribution, even if they share the same mean and standard deviation. \n\n**5. Ratio Calculation:**\n\n* Finally, we need to calculate the ratio of the probability calculated under the Laplace distribution to that under the normal distribution to quantify how much more likely a false buy signal is under the Laplace distribution. \n\n**Detailed Solution:**\n\nLet X be the random variable representing the stock price. \n\n* **Normal Distribution:**\n    * We want to find P(X < 46). Standardizing, we get P(Z < (46-50)/2) = P(Z < -2). \n    * Using a standard normal table, P(Z < -2) is approximately 0.0228.\n\n* **Laplace Distribution:**\n    * The probability density function of a Laplace distribution with mean \u03bc and scale parameter b is f(x) = (1/(2b)) * exp(-|x-\u03bc|/b).\n    * In this case, \u03bc = 50 and b = 2. \n    * We want to find P(X < 46) = \u222b from -\u221e to 46 of  (1/4) * exp(-|x-50|/2) dx. \n    * Solving this integral (which might require some calculus), we get a probability of approximately 0.0677.\n\n* **Ratio:**\n    * The ratio of probabilities is 0.0677 / 0.0228, which is approximately 2.97. \n\n**Therefore, the probability of a false buy signal is approximately 2.97 times higher under the Laplace distribution than under the normal distribution.**",
+            "options": [
+                "1.48",
+                "2.97",
+                "0.0228",
+                "0.0677"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A company experienced fluctuating sales figures over a three-year period. In 2020, their sales revenue was $500,000. The following year, sales increased by 15%, but unfortunately, in 2022, they experienced a decline of 8% compared to their 2021 sales.  The company aims to achieve a cumulative sales growth of 10% by the end of 2023, based on their 2020 figures. \n\n What percentage increase in sales will they need to achieve in 2023, relative to their 2022 sales, to reach their target?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate 2021 sales:**\n* Increase in 2021: $500,000 * 0.15 = $75,000\n* Total sales in 2021: $500,000 + $75,000 = $575,000\n\n**2. Calculate 2022 sales:**\n* Decrease in 2022: $575,000 * 0.08 = $46,000\n* Total sales in 2022: $575,000 - $46,000 = $529,000\n\n**3. Calculate the target sales for 2023:**\n* Target increase by 2023: $500,000 * 0.10 = $50,000\n* Total target sales in 2023: $500,000 + $50,000 = $550,000\n\n**4. Calculate the required increase from 2022 to 2023:**\n* Sales increase needed: $550,000 - $529,000 = $21,000\n\n**5. Calculate the percentage increase from 2022 to 2023:**\n* Percentage increase: ($21,000 / $529,000) * 100% = **3.97%** (rounded to two decimal places)\n\n**Therefore, the company needs to achieve a 3.97% increase in sales in 2023, relative to their 2022 sales, to reach their target.**",
+            "options": [
+                "3.97%",
+                "4.00%",
+                "5.00%",
+                "10.00%"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Data Interpretation",
+    "exam_id": 10,
+    "order": 2
+}

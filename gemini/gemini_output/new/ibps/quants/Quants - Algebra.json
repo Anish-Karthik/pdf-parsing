@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "If log\u2081\u2080 100 = x, what is the value of x?",
+            "difficulty": "easy",
+            "reasoning": "The question asks to find the value of 'x' where log\u2081\u2080 100 = x. Let's break down the solution:\n\n**Understanding Logarithms**\n\nA logarithm is the inverse operation of exponentiation.  The expression log\u2081\u2080 100 = x can be read as 'To what power must we raise 10 to get 100?'\n\n**Solving for x**\n\nSince 10 raised to the power of 2 equals 100 (i.e., 10\u00b2 = 100), the value of x is 2.\n\n**Therefore, x = 2**",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A school club with 10 members is electing a President, Vice President, and Treasurer for the next academic year.  No student can hold more than one position.\n**problem**: How many different ways can the club elect its officers?\n**solution**: 10 * 9 * 8 = 720\n",
+            "difficulty": "easy",
+            "reasoning": "This problem involves permutations because the order in which the students are chosen matters (President, then Vice President, then Treasurer).  Here's how to solve it:\n\n* **Step 1: President:** There are 10 students eligible to be President.\n* **Step 2: Vice President:** After the President is chosen, there are only 9 students left who can be Vice President. \n* **Step 3: Treasurer:** With the President and Vice President chosen, 8 students remain who could be Treasurer. \n\nTo get the total number of different officer combinations, we multiply the possibilities at each step: 10 * 9 * 8 = 720",
+            "options": [
+                "720",
+                "10",
+                "30",
+                "100"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Question Type**: Multiple Choice\n**Difficulty**: Easy 5/10\n**Context**: Number Line Distance\n**Question**: Imagine a ladybug walking on a number line. It starts at point 3 and walks 4 units away.  Which points on the number line could the ladybug have reached?\n**Answer Choices**: \n  - a)  7 only\n  - b)  -1 only\n  - c)  7 or -1\n  - d)  -7 or 1\n",
+            "difficulty": "easy",
+            "reasoning": "This question uses the concept of distance on a number line to visually represent absolute value. Here's how to solve it:\n\n* **Understanding Absolute Value:** Absolute value represents the distance a number is from zero, regardless of direction. \n* **The Ladybug's Journey:** The ladybug walks 4 units *away* from point 3. This could mean walking 4 units to the right (3 + 4 = 7) or 4 units to the left (3 - 4 = -1). \n\n**Therefore, the correct answer is (c) 7 or -1.**",
+            "options": [
+                "a)",
+                "b)",
+                "c)",
+                "d)"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Factor the polynomial completely:  \u00a08x\u00b2 - 18",
+            "difficulty": "easy",
+            "reasoning": "This question belongs to the topic of 'Polynomials (Factoring, Operations)' within 'Quants - Algebra'. It assesses the student's ability to factor out a greatest common factor and then apply the difference of squares pattern. \n\nHere's how to solve it step-by-step:\n\n1. **Find the Greatest Common Factor (GCF):** The largest number that divides into both 8 and 18 is 2.  \n\n2. **Factor out the GCF:**  \n   8x\u00b2 - 18 = 2(4x\u00b2 - 9)\n\n3. **Factor the Difference of Squares:** The expression inside the parentheses (4x\u00b2 - 9) is in the form a\u00b2 - b\u00b2 where a = 2x and b = 3. \n   2(4x\u00b2 - 9) = 2(2x + 3)(2x - 3)\n\nTherefore, the completely factored form of the polynomial is 2(2x + 3)(2x - 3).",
+            "options": [
+                "2(2x + 3)(2x - 3)",
+                "2(4x\u00b2 - 9)",
+                "4x\u00b2 - 9",
+                "(2x + 3)(2x - 3)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A bakery is arranging cookies on a tray. The first row has 3 cookies, the second row has 5 cookies, the third row has 7 cookies, and so on. If this pattern continues, how many cookies will be in the 8th row?",
+            "difficulty": "easy",
+            "reasoning": "This problem involves an arithmetic sequence, where each term is increased by a constant difference (in this case, 2). Here's how to solve it:\n\n**1. Identify the common difference (d):** \n   The difference between consecutive terms is 2 (5 - 3 = 2, 7 - 5 = 2, and so on).\n\n**2.  Identify the first term (a):** \n   The first term in the sequence is 3.\n\n**3. Use the arithmetic sequence formula:**\n   The formula to find the nth term (an) of an arithmetic sequence is: an = a + (n - 1) * d \n\n**4. Plug in the values:** \n   We want to find the 8th term (n = 8), and we know a = 3 and d = 2. \n   a8 = 3 + (8 - 1) * 2\n   a8 = 3 + 7 * 2\n   a8 = 3 + 14\n   a8 = 17\n\n**Therefore, there will be 17 cookies in the 8th row.**",
+            "options": [
+                "15",
+                "17",
+                "19",
+                "21"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Sophia is baking a cake and needs a rectangular baking pan with a perimeter of 12 inches. Help her find the minimum possible area (in square inches) of the baking pan she can use by applying the AM-GM inequality.",
+            "difficulty": "easy",
+            "reasoning": "## Reasoning:\n\nLet the length of the rectangle be 'l' and the width be 'w'. We are given that the perimeter is 12 inches:\n\n2l + 2w = 12\n\nl + w = 6\n\nWe need to find the minimum value of the area, which is given by:\n\nA = l * w\n\nNow, we can apply AM-GM inequality on 'l' and 'w':\n\n(l + w)/2 \u2265 \u221a(l * w)\n\nSquaring both sides:\n\n(l + w)^2 / 4 \u2265 l * w\n\nSubstituting (l + w = 6):\n\n6^2 / 4 \u2265 A\n\n36 / 4 \u2265 A\n\n9 \u2265 A\n\nTherefore, the minimum possible area of the baking pan is 9 square inches. This minimum area is achieved when l = w = 3 inches, which means the rectangle is a square.\n\n## Options:\n\n1. 6\n2. 9\n3. 12\n4. 15\n\n## Correct Option:\n\n2. 9",
+            "options": [
+                "6 square inches",
+                "9 square inches",
+                "12 square inches",
+                "15 square inches"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery sells croissants and muffins. Two croissants and three muffins cost $8.50.  One croissant and one muffin cost $3.50. Find the cost of one croissant.",
+            "difficulty": "easy",
+            "reasoning": "Let's use a system of equations to represent this situation:\n\n* Let 'c' represent the cost of one croissant.\n* Let 'm' represent the cost of one muffin.\n\nWe can set up the following equations based on the given information:\n\nEquation 1: 2c + 3m = 8.50  (Two croissants and three muffins cost $8.50)\nEquation 2: c + m = 3.50     (One croissant and one muffin cost $3.50)\n\nTo solve for 'c' (the cost of one croissant), we can use the elimination method.  We can multiply Equation 2 by -2:\n\n-2 * (c + m) = -2 * 3.50\n-2c - 2m = -7.00\n\nNow we have:\n\nEquation 1: 2c + 3m = 8.50\nModified Equation 2: -2c - 2m = -7.00 \n\nAdding the two equations together, we eliminate 'c':\n\nm = 1.50\n\nNow that we know the cost of one muffin is $1.50, we can substitute this value back into either Equation 1 or Equation 2 to solve for 'c'. Let's use Equation 2:\n\nc + 1.50 = 3.50\n\nSubtracting 1.50 from both sides, we get:\n\nc = 2.00\n\nTherefore, the cost of one croissant is $2.00.",
+            "options": [
+                "$1.50",
+                "$2.00",
+                "$3.50",
+                "$8.50"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "What is the coefficient of the term  \\(x^2\\) in the binomial expansion of \\((x + 3)^3\\)?",
+            "difficulty": "easy",
+            "reasoning": "This question tests the basic application of the Binomial Theorem for finding a specific term's coefficient. Here's how to solve it:\n\n**Understanding the Binomial Theorem**\n\nThe Binomial Theorem states:\n\n\\((x + y)^n =  \\sum_{k=0}^{n} \\binom{n}{k} x^{n-k}y^k\\)\n\nWhere:\n*  \\(\\binom{n}{k}\\) is the binomial coefficient, calculated as \\(\\frac{n!}{k!(n-k)!}\\)\n\n**Applying the Theorem to the Problem**\n\n1. **Identify the values:** In our case, we have \\(x = x\\), \\(y = 3\\), and \\(n = 3\\). We want the coefficient of the \\(x^2\\) term.\n\n2. **Find the correct 'k' value:** To get \\(x^2\\) in the expansion, we need the power of 'x' to be 2.  Looking at the general term \\(x^{n-k}\\), we solve for 'k':\n   \\(3 - k = 2\\)\n   \\(k = 1\\)\n\n3. **Calculate the term using the identified 'k' value:** Now, substitute the values of \\(n\\), \\(k\\), \\(x\\), and \\(y\\) into the binomial theorem's general term:\n\n   \\(\\binom{3}{1} x^{3-1}3^1 = \\frac{3!}{1!2!}x^2 \\cdot 3 = 9x^2\\) \n\n4. **Identify the coefficient:** The coefficient of the \\(x^2\\) term is **9**.",
+            "options": [
+                "1",
+                "3",
+                "6",
+                "9"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Simplify the following rational expression: \\(\\frac{2x + 6}{x^2 + 5x + 6}\\)",
+            "difficulty": "medium",
+            "reasoning": "**1. Factor the numerator and denominator:**\n\n   *  The numerator has a greatest common factor of 2:  2(x + 3)\n   *  The denominator factors into: (x + 2)(x + 3)\n\n   This gives us: \\(\\frac{2(x + 3)}{(x + 2)(x + 3)}\\)\n\n**2. Cancel the common factor:**\n\n   * Both the numerator and denominator have a common factor of (x + 3).\n\n   Canceling this factor leaves us with: \\(\\frac{2}{x + 2}\\)\n\n**Therefore, the simplified form of the rational expression is \\(\\frac{2}{x + 2}\\).**",
+            "options": [
+                "2/(x + 2)",
+                "(2x + 6)/(x^2 + 5x + 6)",
+                "2",
+                "x + 3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Difficulty Level**: 6/10\n**Question Type**: Simplify the expression\n**Question Statement**: Simplify the following expression: (\u221a25 * x^2 * y^4) / (\u221a9 * x * y^2)\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the basic understanding of how exponents and radicals interact. Here's a step-by-step solution:\n\n**1. Simplify the square roots:**\n   \u221a25 = 5\n   \u221a9 = 3\n\n**2. Substitute the simplified square roots back into the expression:**\n   (5 * x^2 * y^4) / (3 * x * y^2)\n\n**3. Apply the rule of exponents for division (x^m / x^n = x^(m-n)):**\n   (5/3) * x^(2-1) * y^(4-2)\n\n**4. Simplify the exponents:**\n   (5/3) * x * y^2\n\nTherefore, the simplified expression is (5/3)xy^2",
+            "options": [
+                "5/3xy^2",
+                "(5/3)xy^2",
+                "5/3x^2y^2",
+                "15xy^2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker is making cupcakes for a party. She needs 12 cupcakes in total. She has already made 5 cupcakes. The baker can bake 2 cupcakes every 15 minutes. How much longer, in minutes, does the baker need to bake to reach 12 cupcakes?",
+            "difficulty": "medium",
+            "reasoning": "**1. Determine the number of cupcakes remaining:**\n\n   The baker needs to make 12 cupcakes and already has 5, so she needs to bake 12 - 5 = 7 more cupcakes.\n\n**2. Calculate the baking time per cupcake:**\n\n   The baker makes 2 cupcakes every 15 minutes, meaning each cupcake takes 15 minutes / 2 cupcakes = 7.5 minutes to bake.\n\n**3. Calculate the total remaining baking time:**\n\n   Since the baker needs to bake 7 more cupcakes, and each takes 7.5 minutes, the total remaining baking time is 7 cupcakes * 7.5 minutes/cupcake = 52.5 minutes.\n\n**Therefore, the baker needs to bake for another 52.5 minutes.**",
+            "options": [
+                "7.5 minutes",
+                "15 minutes",
+                "52.5 minutes",
+                "105 minutes"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A bakery is preparing ingredients for two types of cakes: chocolate and vanilla.  They need flour and sugar, measured in cups.\n**Question**: The matrix below shows the amount of each ingredient (in cups) required for one cake of each type:\n\n| Ingredient | Chocolate Cake | Vanilla Cake |\n|---|---|---|\n| Flour | 2 | 3 |\n| Sugar | 1 | 2 |\n\nWhat is the determinant of this ingredient matrix?\n**Answer Choices**: \n  - A) -1\n  - B) 0\n  - C) 1\n  - D) 4\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the basic understanding of calculating a 2x2 matrix determinant. Here's the breakdown:\n\n1. **Determinant Formula:** For a matrix  \n  ```\n  [ a  b ]\n  [ c  d ]\n  ``` \n  the determinant is calculated as (a*d) - (b*c).\n\n2. **Applying the Formula:** In our ingredient matrix:\n  ```\n  [ 2  3 ]\n  [ 1  2 ]\n  ```\n  * a = 2, b = 3, c = 1, and d = 2\n  * Determinant = (2*2) - (3*1) = 4 - 3 = 1\n\n**Therefore, the correct answer is (C) 1.**",
+            "options": [
+                "-1",
+                "0",
+                "1",
+                "4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: Imagine you are flipping a fair coin 7 times. Each flip is independent of the others.\n**question**: Using the Binomial Theorem, determine the coefficient of the term representing exactly 3 heads and 4 tails in the expansion of (H + T)^7, where H represents heads and T represents tails.\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question uses the context of coin flips to present a binomial expansion problem. While the scenario is relatable, the question requires understanding the connection between the binomial theorem and combinatorial probability.\n\nHere's how to solve it:\n\n1. **Binomial Theorem:** The Binomial Theorem states that for any real numbers 'a' and 'b,' and a non-negative integer 'n':\n   (a + b)^n =  \u03a3 (n choose k) * a^(n-k) * b^k, where the summation runs from k = 0 to n.\n\n2. **Relating to the problem:** In our case, a = H, b = T, and n = 7 (number of coin flips).\n\n3. **Finding the specific term:** We want the term with H^3 * T^4. This means (n-k) = 3 and k = 4.\n\n4. **Calculating the coefficient:** The coefficient of this term is given by 'n choose k', which is calculated as:\n   (n choose k) = n! / (k! * (n-k)!)\n   (7 choose 4) = 7! / (4! * 3!) = (7 * 6 * 5) / (3 * 2) = 35\n\nTherefore, the coefficient of the term representing 3 heads and 4 tails is 35.",
+            "options": [
+                "21",
+                "35",
+                "42",
+                "56"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A rectangular garden has a length that is 3 meters longer than its width. If the area of the garden is 70 square meters, what is the width of the garden?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Define Variables:**\n\n* Let 'w' represent the width of the garden.\n* Since the length is 3 meters longer than the width, the length is 'w + 3'.\n\n**2. Set Up the Equation:**\n\n* We know the area of a rectangle is length times width:  Area = length * width\n* Substitute the given area and our expressions for length and width: 70 = (w + 3) * w\n\n**3. Form the Quadratic Equation:**\n\n* Expand the equation: 70 = w\u00b2 + 3w\n* Rearrange into standard quadratic form: w\u00b2 + 3w - 70 = 0\n\n**4. Solve the Quadratic Equation:**\n\n* Factor the quadratic equation: (w + 10)(w - 7) = 0\n* Set each factor equal to zero and solve for 'w':\n    * w + 10 = 0  =>  w = -10 \n    * w - 7 = 0   =>  w = 7\n\n**5. Choose the Valid Solution:**\n\n* Since the width of a garden cannot be negative, we discard w = -10.\n* Therefore, the width of the garden is w = 7 meters.\n\n**Answer:** 7 meters",
+            "options": [
+                "10 meters",
+                "7 meters",
+                "3 meters",
+                "14 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**problemContext**: A bakery is preparing to make a batch of their famous chocolate chip cookies and oatmeal raisin cookies.  The recipe for chocolate chip cookies calls for 2 cups of flour per batch, while the oatmeal raisin cookie recipe requires 3 cups of flour per batch. The bakery wants to use a total of 15 cups of flour for this baking round.\n**systemOfEquations**: Let 'x' represent the number of batches of chocolate chip cookies and 'y' represent the number of batches of oatmeal raisin cookies.\n\nEquation 1: 2x + 3y = 15  (Total flour used)\nEquation 2: x + y = 7 (Total number of batches)\n**question**: How many batches of each type of cookie should the bakery make to use all 15 cups of flour and still make a total of 7 batches of cookies?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This problem falls under the 'Systems of Equations' category within Quants - Algebra. Here's how we can solve it:\n\n**1. Choose a Method to Solve:** We can use either substitution or elimination to solve for our two unknowns (x and y).\n\n**2. Solving by Elimination:**\n   * Multiply Equation 2 by -2:  This will allow us to eliminate 'x' when we add the equations together. \n      -2(x + y) = -2(7)  -->  -2x - 2y = -14\n   * Add the modified Equation 2 to Equation 1:\n       2x + 3y = 15\n      -2x - 2y = -14\n      ----------------\n              y = 1 \n   * Substitute the value of y (1) back into either Equation 1 or Equation 2 to solve for 'x'. Let's use Equation 2:\n      x + 1 = 7\n      x = 6\n\n**Solution:**\n* The bakery should make **6 batches of chocolate chip cookies (x = 6)**\n* The bakery should make **1 batch of oatmeal raisin cookies (y = 1)**\n\n**Verification:**\n* **Equation 1 (Flour):** (2 cups/batch * 6 batches) + (3 cups/batch * 1 batch) = 12 + 3 = 15 cups\n* **Equation 2 (Batches):** 6 batches + 1 batch = 7 batches ",
+            "options": [
+                "5 batches",
+                "6 batches",
+                "1 batch",
+                "7 batches"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A school club with 10 members needs to choose a President, Vice-President, and Treasurer.  How many different leadership teams are possible if no student can hold more than one position?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves permutations because the order in which we choose the students matters (choosing Amy, then Ben, then Carlos for President, VP, and Treasurer is different from choosing Carlos, then Ben, then Amy). Here's how to solve it:\n\n* **Step 1: Determine the number of choices for each position.**\n   - For President, we have 10 options (any of the 10 members).\n   - For Vice-President, we only have 9 options left (we can't repeat the President). \n   - For Treasurer, we have 8 options remaining.\n\n* **Step 2: Multiply the number of options for each position to find the total permutations.** \n   - Total permutations = 10 * 9 * 8 = 720\n\n**Therefore, there are 720 different leadership teams possible.**",
+            "options": [
+                "72",
+                "7200",
+                "720",
+                "72000"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A carpenter is building a rectangular bookshelf.  He wants the length of the shelf to be twice its width, plus 5 inches. If he uses a board that is 77 inches long for the two long sides, what is the maximum width (in inches) the bookshelf can be?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution:\n\n1. **Define a variable:** Let 'w' represent the width of the bookshelf in inches.\n\n2. **Express the length:** The length is twice the width plus 5 inches, so the length is (2w + 5) inches.\n\n3. **Set up an equation:** The carpenter uses the 77-inch board for both lengths, so the equation is: 2(2w + 5) = 77\n\n4. **Solve for w:**\n   * Distribute the 2: 4w + 10 = 77\n   * Subtract 10 from both sides: 4w = 67\n   * Divide both sides by 4: w = 16.75\n\nTherefore, the maximum width of the bookshelf can be 16.75 inches.",
+            "options": [
+                "16.75 inches",
+                "38.5 inches",
+                "67 inches",
+                "77 inches"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A farmer wants to build a rectangular pen for his sheep. He has 100 meters of fencing to use for three sides of the pen, as one side will be bordered by a river and won't require fencing.  Find the dimensions of the pen that will maximize the area enclosed.",
+            "difficulty": "medium",
+            "reasoning": "Let the length of the pen (parallel to the river) be 'l' meters and the width of the pen be 'w' meters. \n\nThe perimeter used for fencing is given by: l + 2w = 100\n\nSolving for 'l', we get: l = 100 - 2w\n\nThe area 'A' of the pen is given by: A = length * width = (100 - 2w) * w = 100w - 2w\u00b2\n\nThis is a quadratic equation representing a parabola that opens downwards (coefficient of w\u00b2 is negative). The maximum area occurs at the vertex of the parabola.\n\nThe x-coordinate of the vertex of the parabola  -b/2a  gives us the width 'w' that maximizes the area. In this case, a = -2 and b = 100.\n\nTherefore, w = -100 / (2 * -2) = 25 meters\n\nSubstituting this value back into the equation for 'l': l = 100 - 2(25) = 50 meters\n\nTherefore, the dimensions that maximize the area are length = 50 meters and width = 25 meters.",
+            "options": [
+                "25 meters by 50 meters",
+                "50 meters by 25 meters",
+                "100 meters by 50 meters",
+                "25 meters by 100 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A construction company is building a rectangular swimming pool. The area of the pool's base is represented by the polynomial expression:  3x\u00b2 + 14x + 8 square meters. \n**Task**: Factor the polynomial to determine the expressions that represent the possible length and width of the pool.\n**Polynomial(s)**: 3x\u00b2 + 14x + 8\n**Solution Format**: Two binomial expressions representing length and width.\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Factoring the Polynomial:**\n\n* We need to find two binomials that multiply to give us 3x\u00b2 + 14x + 8. \n* Start by considering the factors of the leading coefficient (3) and the constant term (8). \n* The factors of 3 are 1 and 3. The factors of 8 are 1, 2, 4, and 8.\n* We need to find a combination of these factors that, when multiplied and added, will result in the middle term coefficient (14).\n\n**2. Trial and Error:**\n\n* After trying different combinations, we find that (3x + 2)(x + 4) works:\n    * (3x + 2)(x + 4) = 3x\u00b2 + 12x + 2x + 8 = 3x\u00b2 + 14x + 8\n\n**3. Solution:**\n\n* Therefore, the factored form of the polynomial is (3x + 2)(x + 4).\n* This means the possible length and width of the pool could be represented by the expressions (3x + 2) meters and (x + 4) meters, respectively (or vice versa).",
+            "options": [
+                "(3x + 2) meters",
+                "(x + 4) meters",
+                "(3x + 4) meters",
+                "(x + 2) meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A craftsman is crafting wooden toys for an upcoming fair. He creates two types of toys: rocking horses and toy trains. Each rocking horse requires 3 hours of carving and 2 hours of painting. Each toy train requires 2 hours of carving and 1 hour of painting. The craftsman has 30 hours available for carving and 16 hours available for painting. \n\nLet 'x' represent the number of rocking horses and 'y' represent the number of toy trains.\n\nSystem of Equations:\n3x + 2y = 30\n2x + y = 16\n\nQuestion: How many toy trains can the craftsman make while still utilizing all of his carving and painting time?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Systems of Equations' subtopic within 'Quants - Algebra'.\n\nHere's how to solve it:\n\n**1. Choose a method to solve the system:** We can use either substitution or elimination. For this example, let's use elimination.\n\n**2. Manipulate one or both equations to eliminate a variable:** We can multiply the second equation (2x + y = 16) by -2 to eliminate 'y': \n   -4x - 2y = -32\n\n**3. Add the modified equation to the first equation:**\n   3x + 2y = 30\n   -4x - 2y = -32\n   -----------------\n   -x = -2\n\n**4. Solve for 'x':** \n   x = 2 \n\n**5. Substitute the value of 'x' back into either of the original equations to solve for 'y':** Let's use the second equation (2x + y = 16):\n   2(2) + y = 16\n   4 + y = 16\n   y = 12\n\n**Answer:** The craftsman can make 12 toy trains while still utilizing all his carving and painting time.",
+            "options": [
+                "12",
+                "2",
+                "16",
+                "30"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A square tile has a side length of  \u221a(8x^3) centimeters. A rectangular area needs to be tiled and has dimensions of \u221a(96x^5) centimeters by \u221a(24x^2) centimeters.\n**question**: How many tiles are needed to cover the rectangular area completely?\n",
+            "difficulty": "medium",
+            "reasoning": "This question combines exponents and radicals within a geometrical area problem. Here's how to solve it:\n\n**1. Find the area of a single tile:**\n\n* Area of square = side * side\n* Area of tile = \u221a(8x^3) * \u221a(8x^3) = \u221a(64x^6) = 8x^3 square centimeters\n\n**2. Find the area of the rectangular space to be tiled:**\n\n* Area of rectangle = length * width\n* Area to be tiled = \u221a(96x^5) * \u221a(24x^2) = \u221a(2304x^7) = 48x^(7/2) square centimeters \n\n**3. Divide the total area by the area of one tile:**\n\n* Number of tiles = (Total area) / (Area of one tile)\n* Number of tiles = (48x^(7/2)) / (8x^3) = 6x^(7/2 - 3) = 6x^(1/2) = 6\u221ax\n\n**Therefore, 6\u221ax tiles are needed to cover the rectangular area.**",
+            "options": [
+                "6x^2",
+                "8x\u221ax",
+                "48\u221ax",
+                "2\u221a6x"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A local bakery sells cookies for $2 each and cupcakes for $3 each.  For a bake sale, they want to make at least $50 in revenue.  Write an inequality representing the possible combinations of cookies (c) and cupcakes (p) they need to sell to reach their goal.",
+            "difficulty": "medium",
+            "reasoning": "This problem requires translating a real-world scenario into a linear inequality. Here's how to solve it:\n\n**1. Define variables:**\n* Let 'c' represent the number of cookies sold.\n* Let 'p' represent the number of cupcakes sold.\n\n**2. Set up the inequality:**\n* The revenue from cookies is 2c (price per cookie times the number of cookies).\n* The revenue from cupcakes is 3p (price per cupcake times the number of cupcakes).\n* The total revenue needs to be at least $50, so the inequality is: **2c + 3p \u2265 50** \n\n**Therefore, the inequality 2c + 3p \u2265 50 represents the possible combinations of cookies and cupcakes the bakery needs to sell to reach their goal.**",
+            "options": [
+                "2c + 3p \u2264 50",
+                "2c + 3p \u2265 50",
+                "2c + 3p < 50",
+                "2c + 3p > 50"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery is making three types of cakes: Chocolate, Vanilla, and Red Velvet. Each cake requires different amounts of flour, sugar, and eggs. The amount of each ingredient (in cups) needed for each cake is given by the following matrix: \n\n| Ingredient | Chocolate | Vanilla | Red Velvet |\n|---|---|---|---| \n| Flour | 2 | 1.5 | 2.5 |\n| Sugar | 1 | 1 | 1.2 |\n| Eggs | 3 | 2 | 2 |\n\nDue to a shortage, the bakery can only acquire ingredients in the following amounts (in cups):\n\n* Flour: 250 cups\n* Sugar: 120 cups\n* Eggs: 300 cups\n\nRepresenting the available ingredients as a column matrix and the ingredient requirement matrix as A, find the matrix that represents the maximum number of each type of cake the bakery can produce, given the ingredient constraints.  Assume the bakery only makes whole cakes.",
+            "difficulty": "medium",
+            "reasoning": "This question blends matrix representation with real-world application and requires understanding of how matrix multiplication works in the context of resource allocation.\n\nHere's how to solve it:\n\n1. **Represent the available ingredients as a column matrix:**\n\n```\nAvailable Ingredients (B) = |\n| 250 |\n| 120 |\n| 300 |\n```\n\n2. **Let X be the column matrix representing the number of each type of cake the bakery can produce:**\n\n```\nCake Production (X) = |\n| Chocolate Cakes |\n| Vanilla Cakes |\n| Red Velvet Cakes |\n```\n\n3. **Set up the matrix equation:** We want to find X such that AX <= B (the amount of ingredients used must be less than or equal to the available amount).  \n\n4. **Consider the practicality:** Since the bakery can't make fractions of cakes, we need to find the largest whole numbers for each element in X that still satisfy the inequality AX <= B.\n\nThis problem doesn't involve directly calculating the inverse of matrix A, as finding an exact solution for X is not required. Instead, it emphasizes the application of matrices to model and analyze a real-world scenario with resource constraints. The focus is on understanding the relationship between ingredient requirements, available ingredients, and production output. The 'medium' difficulty stems from the need to conceptualize and set up the problem correctly, moving beyond straightforward computation.",
+            "options": [
+                "Inverse",
+                "Multiplication",
+                "Addition",
+                "Subtraction"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A local gym offers two membership options: a standard membership for $40 per month with a $60 initiation fee, and a premium membership for $50 per month with no initiation fee. After how many months will the total cost of the standard membership be less than the total cost of the premium membership?",
+            "difficulty": "medium",
+            "reasoning": "Let 'm' represent the number of months. The equation for the total cost of the standard membership is 40m + 60, and the equation for the total cost of the premium membership is 50m. We want to find when the standard membership cost is less than the premium membership cost, so we set up the inequality: \n\n40m + 60 < 50m\n\nNow, we solve the inequality:\n\n1. Subtract 40m from both sides:  60 < 10m\n2. Divide both sides by 10: 6 < m \n\nTherefore, the total cost of the standard membership will be less than the total cost of the premium membership after 6 months.",
+            "options": [
+                "4 months",
+                "5 months",
+                "6 months",
+                "7 months"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Let matrix A = [[3, -1], [2,  4]] and matrix B = [[1, 2], [-1, 0]]. Find the determinant of the matrix resulting from the operation 2A - B.",
+            "difficulty": "medium",
+            "reasoning": "This question involves multiple matrix operations and determinant calculation, making it a medium-level difficulty problem.\n\n**Step 1: Calculate 2A**\n\nMultiply each element of matrix A by 2:\n\n2A = 2 * [[3, -1], [2, 4]] = [[6, -2], [4, 8]]\n\n**Step 2: Calculate 2A - B**\n\nSubtract each corresponding element of matrix B from matrix 2A:\n\n2A - B = [[6, -2], [4, 8]] - [[1, 2], [-1, 0]] = [[5, -4], [5, 8]]\n\n**Step 3:  Find the determinant of the resulting matrix**\n\nThe determinant of a 2x2 matrix [[a, b], [c, d]] is calculated as (ad - bc):\n\nDeterminant (2A - B) = (5 * 8) - (5 * -4) = 40 + 20 = 60\n\nTherefore, the determinant of the matrix resulting from the operation 2A - B is 60.",
+            "options": [
+                "40",
+                "60",
+                "20",
+                "80"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**question_type**: Multiple Choice\n**topic**: Quadratic Functions\n**description**: A ball is thrown vertically upward. Its height (h) in feet after time (t) in seconds is given by the function h(t) = -16t\u00b2 + 64t + 5.  What is the maximum height the ball reaches?\n**options**: \n  **A**: 69 feet\n  **B**: 64 feet\n  **C**: 5 feet\n  **D**: 16 feet\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the understanding of quadratic functions, specifically in the context of projectile motion. Here's how to solve it:\n\n**1. Understanding the Problem:**\n\n   The equation h(t) = -16t\u00b2 + 64t + 5 represents a parabola opening downwards (due to the negative coefficient of the t\u00b2 term). The maximum height of the ball corresponds to the vertex of this parabola.\n\n**2. Finding the Vertex:**\n\n   The x-coordinate (in this case, t-coordinate) of the vertex of the parabola  -b/2a, where a and b are the coefficients of the t\u00b2 and t terms, respectively. \n\n   In our equation, a = -16 and b = 64. Therefore:\n\n   t = -64 / (2 * -16) = 2 seconds\n\n   This means the ball reaches its maximum height after 2 seconds.\n\n**3. Calculating the Maximum Height:**\n\n   Substitute t = 2 seconds back into the original equation to find the maximum height:\n\n   h(2) = -16(2)\u00b2 + 64(2) + 5 = -64 + 128 + 5 = 69 feet\n\n**Therefore, the correct answer is (A) 69 feet.**",
+            "options": [
+                "69 feet",
+                "64 feet",
+                "5 feet",
+                "16 feet"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Question Type:** Simplification\n\n**Difficulty:** 6/10\n\n**Question:** Simplify the following expression, expressing the result with a single radical in its simplest form:\n\n (27x^(-3/2)y^3)^(1/3) / \u221a(x^(-2)y^6)",
+            "difficulty": "medium",
+            "reasoning": "This question involves several exponent and radical rules, making it a medium difficulty problem:\n\n* **Power of a product:** (ab)^n = a^n * b^n\n* **Power of a power:** (a^m)^n = a^(m*n)\n* **Negative exponent:** a^(-n) = 1/a^n\n* **Fractional exponent:** a^(m/n) =  n\u221a(a^m)\n* **Dividing exponents with the same base:** a^m / a^n = a^(m-n)\n\n**Solution:**\n\n1. **Simplify the numerator:**\n   *  (27x^(-3/2)y^3)^(1/3) = 27^(1/3) * (x^(-3/2))^(1/3) * (y^3)^(1/3)\n   *  = 3 * x^(-1/2) * y\n\n2. **Simplify the denominator:**\n   * \u221a(x^(-2)y^6) = (x^(-2)y^6)^(1/2)\n   * = x^(-1) * y^3\n\n3. **Combine the simplified numerator and denominator:**\n   * (3 * x^(-1/2) * y) / (x^(-1) * y^3)\n\n4. **Simplify using exponent rules:**\n   * 3 * x^(-1/2 - (-1)) * y^(1-3)\n   * 3 * x^(1/2) * y^(-2)\n\n5. **Express the result with a single radical:**\n   * 3\u221ax / y^2\n\nTherefore, the simplified expression is **3\u221ax / y^2**.",
+            "options": [
+                "3\u221ax / y^2",
+                "3\u221a(x/y^2)",
+                "\u221a(9x/y^4)",
+                "\u221a(3x/y^2)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A farmer wants to build a rectangular pen for her sheep. She has 100 meters of fencing to use for three sides of the pen, as one side will be against her barn and won't require fencing. She wants the pen to enclose the largest possible area. What quadratic inequality represents the possible widths of the pen, given that the width must be less than or equal to the length?",
+            "difficulty": "medium",
+            "reasoning": "Let:\n*  'w' represent the width of the pen.\n* 'l' represent the length of the pen.\n\nWe know:\n* l + 2w = 100 (total fencing used)\n* l >= w (length is greater than or equal to width)\n\nWe want to maximize the area, which is given by A = l * w. \n\nFirst, express the length (l) in terms of the width (w) using the fencing constraint:\n l = 100 - 2w\n\nNow, substitute this expression for 'l' into the area formula:\n A = (100 - 2w) * w\n A = 100w - 2w^2\n\nSince the area cannot be negative, and we want the maximum possible area, we set up an inequality where the area is greater than or equal to zero:\n 100w - 2w^2 >= 0\n\nThis is a quadratic inequality that represents the possible widths of the pen.  To make it easier to work with, we can divide both sides by -2 (remembering to flip the inequality sign):\n\nw^2 - 50w <= 0\n\nTherefore, the quadratic inequality representing the possible widths of the pen is w^2 - 50w <= 0. ",
+            "options": [
+                "w^2 + 50w >= 0",
+                "w^2 - 50w <= 0",
+                "2w^2 - 100w >= 0",
+                "2w^2 + 100w <= 0"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A basketball, when dropped from a height of 10 feet, bounces back to 3/5 of its previous height.  What is the total vertical distance traveled by the ball when it hits the ground for the 6th time?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the concept of geometric series within the 'Sequences and Series' topic. Here's how to solve it:\n\n**1. Understand the Pattern:** \n\n* The ball first falls 10 feet. \n* Then it bounces back to 10 * (3/5) = 6 feet and falls again 6 feet.\n* This forms a geometric series with the first term being 10 and common ratio 3/5.\n\n**2. Calculate the Total Distance for Upward and Downward Movements Separately:**\n\n* **Downward Movement:** 10 + 6 + ... (6 terms)\n    * This is a geometric series with a first term of 10, common ratio of 3/5, and 6 terms.\n    * The sum of a geometric series is a(1-r^n)/(1-r), where a is the first term, r is the common ratio, and n is the number of terms.\n    * Sum (Downward) = 10 (1 - (3/5)^6) / (1 - 3/5) = 23.056 feet\n\n* **Upward Movement:** 6 + 6*(3/5) + ... (5 terms) \n    * This is a geometric series with a first term of 6, common ratio of 3/5, and 5 terms.\n    * Sum (Upward) = 6 (1 - (3/5)^5) / (1 - 3/5) = 13.8336 feet\n\n**3. Calculate Total Vertical Distance:**\n\n* Total Distance = Downward Distance + Upward Distance\n* Total Distance = 23.056 + 13.8336 = 36.8896 feet\n\nTherefore, the total vertical distance traveled by the ball when it hits the ground for the 6th time is approximately 36.89 feet.",
+            "options": [
+                "18.44 feet",
+                "36.89 feet",
+                "23.06 feet",
+                "13.83 feet"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A school is forming a debate team of 5 students.  There are 6 eligible students in the 10th grade and 7 eligible students in the 11th grade.  The team must include at least 2 students from each grade.  How many different debate teams can be formed?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves combinations because the order in which students are chosen for the team doesn't matter. Here's how to solve it:\n\n**1. Break down the possibilities:**\n\n   * **Possibility 1: 3 students from 10th grade, 2 students from 11th grade** \n      * Combinations from 10th grade:  \u2076C\u2083 = (6*5*4)/(3*2*1) = 20\n      * Combinations from 11th grade: \u2077C\u2082 = (7*6)/(2*1) = 21\n      * Total combinations for this possibility: 20 * 21 = 420\n\n   * **Possibility 2: 2 students from 10th grade, 3 students from 11th grade** \n      * Combinations from 10th grade: \u2076C\u2082 = (6*5)/(2*1) = 15\n      * Combinations from 11th grade: \u2077C\u2083 = (7*6*5)/(3*2*1) = 35\n      * Total combinations for this possibility: 15 * 35 = 525\n\n**2. Add the combinations from each possibility:**\n\n   * Total possible debate teams: 420 + 525 = 945 \n\n**Therefore, there are 945 different debate teams that can be formed.**",
+            "options": [
+                "420",
+                "525",
+                "945",
+                "1050"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A boat travels upstream a river for 4 hours and then downstream for 3 hours, covering a total distance of 70 kilometers. The speed of the current is represented by the variable 'c' kilometers per hour. The boat's speed in still water is 5 kilometers per hour faster than twice the speed of the current.  What is the simplified expression representing the boat's upstream speed in terms of 'c'? ",
+            "difficulty": "hard",
+            "reasoning": "This question is considered tricky (8/10) because it involves multiple steps and the application of rational expressions in a real-world context:\n\n1. **Define Variables:**\n    * Let 'c' represent the speed of the current.\n    * The boat's speed in still water is '2c + 5' (twice the speed of the current plus 5 km/h).\n\n2. **Upstream and Downstream Speeds:**\n    * Upstream Speed: (2c + 5) - c  (Speed in still water minus speed of current)\n    * Downstream Speed: (2c + 5) + c (Speed in still water plus speed of current) \n\n3. **Distance Formula:**\n    * Distance = Speed x Time\n\n4. **Setting up the Equation:**\n    * Upstream Distance + Downstream Distance = Total Distance\n    * [(2c + 5) - c] * 4 + [(2c + 5) + c] * 3 = 70\n\n5. **Simplifying the Upstream Speed Expression:**\n    *  The boat's upstream speed is (2c + 5) - c, which simplifies to **c + 5**.",
+            "options": [
+                "2c + 5",
+                "c + 5",
+                "3c + 5",
+                "c - 5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A financial analyst is modeling the growth of a tech startup's user base using logarithmic functions. The analyst has determined that the user base, represented by 'U',  can be modeled by the equation: \\n log\u2082(U) = 3log\u2082(x) - log\u2082(\u221ay) + 2log\u2082(z) - 5  \\n  where 'x' represents the marketing expenditure (in thousands of dollars), 'y' represents the average user churn rate (as a decimal), and 'z' represents the number of new features released per quarter. \\n  If the company plans to spend $16,000 on marketing, expects a user churn rate of 0.04, and aims to release 8 new features in the next quarter, what will be the projected user base at the end of the quarter?",
+            "difficulty": "hard",
+            "reasoning": "This question blends logarithmic properties with a real-world application scenario, making it challenging. Here's how to solve it: \n\n**1. Substitute the given values:**\n\nWe are given:\n* x = 16 (as marketing expenditure is in thousands of dollars) \n* y = 0.04 \n* z = 8 \n\nSubstitute these values into the equation:\n\nlog\u2082(U) = 3log\u2082(16) - log\u2082(\u221a0.04) + 2log\u2082(8) - 5 \n\n**2. Simplify using logarithmic properties:**\n\n* log\u2082(16) = log\u2082(2\u2074) = 4  (Using the property: log\u2090(a\u02e3) = x)\n* log\u2082(\u221a0.04) = log\u2082(0.2) = log\u2082(2\u207b\u00b9) = -1 \n* log\u2082(8) = log\u2082(2\u00b3) = 3\n\nSubstitute these simplified values back into the equation:\n\nlog\u2082(U) = 3(4) - (-1) + 2(3) - 5\n\n**3. Solve for U:**\n\nSimplify the equation:\n\nlog\u2082(U) = 12 + 1 + 6 - 5 = 14\n\nTo solve for U, rewrite the equation in exponential form:\n\nU = 2\u00b9\u2074 = 16,384\n\n**Therefore, the projected user base at the end of the quarter is 16,384.**",
+            "options": [
+                "16,384 users",
+                "12,000 users",
+                "8,192 users",
+                "10,000 users"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A group of 12 students is participating in a treasure hunt. The students need to form 3 teams of 4 members each.  Within each team, one student must be designated as the captain.  Two of the students, Alice and Bob, refuse to be in the same team. How many different team arrangements are possible?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Deal with the restriction (Alice and Bob cannot be in the same team):**\n\n* **Consider the cases:**\n    * **Case 1:** Alice and Bob are captains of different teams.\n    * **Case 2:**  One of them is a captain, and the other is a regular team member in a different team.\n\n* **We cannot have a case** where neither Alice nor Bob is a captain because they cannot be on the same team.\n\n**2. Calculate the possibilities for each case:**\n\n* **Case 1 (Both are captains):**\n    * Choose 2 teams for Alice and Bob (order matters as they are different people):  \u00b2P\u2082 = 2!/(2-2)! = 2\n    * Choose 2 other students to be captains from the remaining 10: \u00b9\u2070C\u2082 = 10!/ (2! * 8!) = 45\n    * For the remaining 8 students, assign them to a team (they have no choice in the matter, but we need to account for the arrangements within each team): \u2078C\u2082 * \u2076C\u2082 * \u2074C\u2082 = 28 * 15 * 6 = 2520\n    * Total arrangements for Case 1: 2 * 45 * 2520 = 226,800\n\n* **Case 2 (One is a captain, the other is a regular member):**\n    * Choose who will be the captain (Alice or Bob): \u00b2C\u2081 = 2!/(1! * 1!) = 2\n    * Choose the team for the captain: \u00b3C\u2081 = 3!/(1! * 2!) = 3 \n    * Choose the team for the non-captain (only 2 options left): \u00b2C\u2081 = 2!/(1! * 1!) = 2\n    * Choose the remaining 3 members for the captain's team: \u00b9\u2070C\u2083 = 10!/(3! * 7!) = 120\n    * Choose 3 members for the non-captain's team (from the remaining 7): \u2077C\u2083 = 7!/(3! * 4!) = 35\n    * Assign the last 4 students to the remaining team: \u2074C\u2084 = 1 \n    * Total arrangements for Case 2: 2 * 3 * 2 * 120 * 35 * 1 = 50,400\n\n**3. Add the possibilities from both cases:**\n\n* Total arrangements: 226,800 (Case 1) + 50,400 (Case 2) = 277,200\n\n**Therefore, there are 277,200 different team arrangements possible.**",
+            "options": [
+                "226,800",
+                "277,200",
+                "50,400",
+                "2520"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two friends, Alice and Bob, are racing remote-controlled cars on a straight track. They start at the same point and time. Alice's car travels at a constant speed of |2x - 5| meters per second, while Bob's car travels at a constant speed of |x + 3| meters per second. After 4 seconds, the distance between their cars is 16 meters.  What are all possible values of x?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Understand the Setup**\n\n* Alice and Bob start at the same point on a straight track.\n* Alice's car's speed is represented by the absolute value expression |2x - 5| m/s.\n* Bob's car's speed is represented by the absolute value expression |x + 3| m/s.\n* After 4 seconds, they are 16 meters apart.\n\n**2.  Distance, Rate, Time**\n\n* Recall the formula: distance = rate \u00d7 time \n* Since they travel for 4 seconds, we can express the distance each travels:\n    * Alice's distance: 4|2x - 5| meters\n    * Bob's distance: 4|x + 3| meters \n\n**3.  Two Possibilities**\n\n* There are two possible scenarios for their positions:\n    * **Scenario 1:** Alice is ahead of Bob by 16 meters. \n    * **Scenario 2:** Bob is ahead of Alice by 16 meters.\n\n**4. Setting up the Equations**\n\n* **Scenario 1:** Alice is ahead\n    *  Alice's distance - Bob's distance = 16 meters\n    *  4|2x - 5| - 4|x + 3| = 16 \n\n* **Scenario 2:** Bob is ahead\n    * Bob's distance - Alice's distance = 16 meters\n    * 4|x + 3| - 4|2x - 5| = 16\n\n**5.  Solving the Equations**\n\n* We need to solve both equations by considering the different cases for the absolute value expressions.\n\n* **Let's solve Scenario 1: 4|2x - 5| - 4|x + 3| = 16**\n\n    * **Case 1:** 2x - 5 \u2265 0 and x + 3 \u2265 0 (Both expressions inside the absolute values are non-negative)\n        * This simplifies to: 4(2x - 5) - 4(x + 3) = 16\n        * Solving for x: x = 11\n\n    * **Case 2:** 2x - 5 \u2265 0 and x + 3 < 0 (First expression non-negative, second negative)\n        * This simplifies to: 4(2x - 5) + 4(x + 3) = 16\n        * Solving for x: x = 3\n\n    * **Case 3:** 2x - 5 < 0 and x + 3 \u2265 0 (First expression negative, second non-negative)\n        * This simplifies to: -4(2x - 5) - 4(x + 3) = 16\n        * Solving for x: x = -1\n\n    * **Case 4:** 2x - 5 < 0 and x + 3 < 0 (Both expressions negative)\n        * This simplifies to: -4(2x - 5) + 4(x + 3) = 16 \n        * Solving for x: x = -7\n\n* Now, you would follow a similar process to solve the equation for Scenario 2. However, notice that the equations in Scenario 1 and Scenario 2 are just rearrangements of each other. This means the solutions for x we already found will apply to both scenarios.\n\n**6. Checking the Solutions**\n\n* It's crucial to plug the found values of x back into the original equations to ensure they hold true. Some solutions might be extraneous.\n\n* After checking, you'll find that the possible values for x are -7, -1, 3, and 11.\n",
+            "options": [
+                "-7",
+                "-1",
+                "3",
+                "11"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A stockbroker observes a pattern in the daily closing price of a particular stock. The stock price follows a cyclical pattern, increasing for 3 consecutive days and then decreasing for the next 2 days. This 5-day cycle then repeats. If the stock price starts at $10 on day 1 and increases by $1 each day during the upward cycle, and decreases by $0.50 each day during the downward cycle, what will the closing price of the stock be on the 37th day?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves identifying the repeating pattern within the sequence of stock prices and then determining the price on a specific day. \n\nHere's how to solve it:\n\n1. **Identify the cycle:** The stock price cycles every 5 days (3 days up, 2 days down).\n\n2. **Determine the price at the end of a cycle:** \n    - Starting price: $10\n    - After 3 days up: $10 + $1 + $1 + $1 = $13\n    - After 2 days down: $13 - $0.50 - $0.50 = $12\n    - The price at the end of each cycle is $12.\n\n3. **Calculate the number of complete cycles before day 37:**\n    - 37 days / 5 days per cycle = 7 complete cycles with a remainder of 2 days.\n\n4. **Determine the price on day 37:** \n    - After 7 complete cycles, the price is $12.\n    - The remainder is 2 days, which represents 2 days into a new cycle.\n    - On day 38, the price will be $12 + $1 = $13 \n    - On day 37, the price will be $12 + $1 = $13\n\nTherefore, the closing price of the stock on the 37th day will be $13.",
+            "options": [
+                "$12",
+                "$13",
+                "$14",
+                "$15"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A team of engineers is designing a roller coaster. They want a particular section of the track to be modeled by a polynomial function. This function, h(x), represents the height of the roller coaster above the ground (in meters) at any given horizontal distance, x (in meters), along that section.\n\nThey've decided on the following criteria:\n\n* When x = 0, the roller coaster should be at a height of 10 meters (the starting platform). \n* The roller coaster should have a low point at x = 5 meters, with a height of 2 meters. \n* For aesthetic reasons, the roller coaster should smoothly transition through the starting platform and the low point, meaning the function and its first derivative should be continuous. \n\nGiven these constraints, the engineers have determined a polynomial of the following form best models this section of the roller coaster:\n\nh(x) = ax^3 + bx^2 + cx + d\n\nYour task is to find the values of the coefficients a, b, c, and d that satisfy all the given conditions.",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question is rated as 'hard' (8/10) due to the following factors:\n\n1. **Multiple Concepts:** It requires a strong understanding of polynomial functions, their graphs, derivatives, and the interpretation of word problems. \n2. **System of Equations:**  Solving for the coefficients (a, b, c, d) involves setting up and solving a system of four equations, which adds to the complexity.\n3. **Abstract Reasoning:**  The problem is presented in a real-world context (roller coaster design), demanding students to translate the contextual information into mathematical equations and then solve them. \n\n**Step-by-Step Solution:**\n\n1. **Condition 1: Starting Height**\n   * We know that h(0) = 10. Substituting x = 0 in the polynomial: \n      * 10 = a(0)^3 + b(0)^2 + c(0) + d\n      * Therefore, d = 10\n\n2. **Condition 2: Low Point**\n   * We know h(5) = 2. Substituting: \n      * 2 = a(5)^3 + b(5)^2 + c(5) + 10\n      * This simplifies to: 125a + 25b + 5c = -8  \n\n3. **Condition 3: Smooth Transition (Continuous Function)**\n   *  The function is already continuous because it is a polynomial. This condition is inherently satisfied. \n\n4. **Condition 4: Smooth Transition (Continuous First Derivative)**\n   *  We need to find the first derivative of h(x): h'(x) = 3ax^2 + 2bx + c\n   *  At the low point (x=5), the slope should be 0 (smooth transition), so h'(5) = 0\n      * 0 = 3a(5)^2 + 2b(5) + c\n      * This simplifies to: 75a + 10b + c = 0\n\n5. **Solving the System of Equations:**\n   * We now have three equations:\n      * 125a + 25b + 5c = -8\n      * 75a + 10b + c = 0\n      * d = 10 (from our first step) \n   * Solving this system of equations (using methods like substitution, elimination, or matrices) yields:\n      * a = 8/125\n      * b = -12/25\n      * c = 8/5 \n\n6. **The Solution:**\n   * Therefore, the polynomial function representing the roller coaster section is:\n      * h(x) = (8/125)x^3 - (12/25)x^2 + (8/5)x + 10 ",
+            "options": [
+                "Easy",
+                "Medium",
+                "Hard",
+                "Very Hard"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Let $x$, $y$, and $z$ be positive real numbers such that $x^2 + y^2 + z^2 + 2xyz = 1$. Find the maximum value of the expression $(x + y + z)(1 - xyz)$.",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis problem requires a combination of AM-GM and Cauchy-Schwarz inequality, alongside clever algebraic manipulation, making it quite challenging.\n\n**Step 1: Applying Cauchy-Schwarz**\n\nWe begin by applying Cauchy-Schwarz to the following two sets of numbers:\n\n* Set 1: $(\\sqrt{x^2 + xyz}, \\sqrt{y^2 + xyz}, \\sqrt{z^2 + xyz})$ \n* Set 2: $(1, 1, 1)$ \n\nCauchy-Schwarz inequality states: \n$(a_1b_1 + a_2b_2 + ... + a_nb_n)^2 \u2264 (a_1^2 + a_2^2 + ... + a_n^2)(b_1^2 + b_2^2 + ... + b_n^2)$\n\nApplying this, we get:\n\n$[\\sqrt{(x^2 + xyz)} + \\sqrt{(y^2 + xyz)} + \\sqrt{(z^2 + xyz)}]^2  \u2264  [(x^2 + xyz) + (y^2 + xyz) + (z^2 + xyz)](1 + 1 + 1)$\n\nSimplifying:\n\n$[\\sqrt{(x^2 + xyz)} + \\sqrt{(y^2 + xyz)} + \\sqrt{(z^2 + xyz)}]^2 \u2264 3 (x^2 + y^2 + z^2 + 3xyz)$\n\n**Step 2: Utilizing the Constraint**\n\nNotice the given constraint: $x^2 + y^2 + z^2 + 2xyz = 1$. We can manipulate this to substitute into our inequality:\n\n* $x^2 + y^2 + z^2 + 3xyz = 1 + xyz$ \n\nSubstituting, we have:\n\n$[\\sqrt{(x^2 + xyz)} + \\sqrt{(y^2 + xyz)} + \\sqrt{(z^2 + xyz)}]^2 \u2264 3 (1 + xyz)$\n\n**Step 3: Applying AM-GM**\n\nNow, let's apply AM-GM to the terms inside the square root on the left-hand side:\n\n* $\\sqrt{(x^2 + xyz)} = \\sqrt{x(x + yz)} \u2264 \\frac{x + (x + yz)}{2} = x + \\frac{yz}{2}$ \n* Similarly: \n    * $\\sqrt{(y^2 + xyz)} \u2264 y + \\frac{xz}{2}$ \n    * $\\sqrt{(z^2 + xyz)} \u2264 z + \\frac{xy}{2}$ \n\nAdding these three inequalities:\n\n$\\sqrt{(x^2 + xyz)} + \\sqrt{(y^2 + xyz)} + \\sqrt{(z^2 + xyz)} \u2264 x + y + z + \\frac{xy + xz + yz}{2}$\n\nSquaring both sides:\n\n$[\\sqrt{(x^2 + xyz)} + \\sqrt{(y^2 + xyz)} + \\sqrt{(z^2 + xyz)}]^2 \u2264 (x + y + z + \\frac{xy + xz + yz}{2})^2$\n\n**Step 4: Combining the Inequalities**\n\nWe now have two inequalities:\n\n1. $[\\sqrt{(x^2 + xyz)} + \\sqrt{(y^2 + xyz)} + \\sqrt{(z^2 + xyz)}]^2 \u2264 3 (1 + xyz)$\n2. $[\\sqrt{(x^2 + xyz)} + \\sqrt{(y^2 + xyz)} + \\sqrt{(z^2 + xyz)}]^2 \u2264 (x + y + z + \\frac{xy + xz + yz}{2})^2$\n\nCombining them, we get:\n\n$(x + y + z + \\frac{xy + xz + yz}{2})^2  \u2264 3 (1 + xyz)$\n\n**Step 5: Final Manipulation**\n\n* Expanding the left side and rearranging, we aim to get the expression $(x + y + z)(1 - xyz)$:\n\n$(x+y+z)^2 + (x+y+z)(xy+xz+yz) + \\frac{(xy+xz+yz)^2}{4} \u2264 3 + 3xyz$\n\n* Notice that we want to maximize $(x+y+z)(1-xyz)$, so let's try to isolate a similar term.  Subtracting $(x+y+z)(xy+xz+yz) + 3xyz$ from both sides:\n\n$(x+y+z)^2 - 2(x+y+z)(xy+xz+yz) + \\frac{(xy+xz+yz)^2}{4} \u2264 3 - (x+y+z)(xy+xz+yz) - 3xyz$\n\n*  The left side is a perfect square: \n\n$[ (x+y+z) - \\frac{(xy+xz+yz)}{2} ]^2 \u2264 3 - (x+y+z)(xy+xz+yz) - 3xyz$ \n\n*  Since the left side is always non-negative, the right side must also be non-negative. Therefore:\n\n$3 - (x+y+z)(xy+xz+yz) - 3xyz \u2265 0$\n\n* Rearranging:\n\n$(x+y+z)(1 - xyz) \u2264 3$\n\n**Conclusion**\n\nWe have proven that $(x+y+z)(1-xyz) \u2264 3$.  Equality occurs when $x = y = z = \\frac{1}{\\sqrt{3}}$. Therefore, the maximum value of the expression is **3**.",
+            "options": [
+                "2",
+                "1",
+                "3",
+                "\u221a3"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A team of analysts is studying the price fluctuations of three cryptocurrencies (A, B, and C) over a three-day period. The price changes (in percentage points) are represented in the following matrix:\n\n```\nPrice Change Matrix = [ 2  -1  3 ]\n                      [ 1   4 -2 ]\n                      [-3   2  5 ]\n```\n\nThe analysts want to determine a 'volatility index' for each cryptocurrency over the three days.  This index is calculated by:\n\n1. Finding the absolute value of the determinant of the Price Change Matrix.\n2. Multiplying the absolute determinant by the sum of the squares of the elements in the row corresponding to each cryptocurrency.\n\nCalculate the volatility index for cryptocurrency B.",
+            "difficulty": "medium",
+            "reasoning": "This question combines matrix operations, determinants, and a multi-step interpretation of the result to create a challenging problem.\n\n**1. Calculate the Determinant:**\n\n```\n| 2  -1  3 |\n| 1   4 -2 |\n|-3   2  5 |\n\n= 2(4*5 - (-2)*2) - (-1)(1*5 - (-2)*(-3)) + 3(1*2 - 4*(-3))\n= 2(24) + (5 - 6) + 3(14)\n= 48 - 1 + 42\n= 89\n```\n\n**2.  Absolute Value of the Determinant:**\n\nThe absolute value of the determinant is simply 89.\n\n**3.  Sum of Squares for Cryptocurrency B:**\n\nCryptocurrency B corresponds to the second row of the matrix: [1 4 -2]\n\nSum of squares = (1)^2 + (4)^2 + (-2)^2 = 1 + 16 + 4 = 21\n\n**4. Volatility Index for B:**\n\nVolatility Index (B) = 89 * 21 = 1869\n\nTherefore, the volatility index for cryptocurrency B is 1869.",
+            "options": [
+                "1869",
+                "89",
+                "21",
+                "42"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Algebra",
+    "exam_id": 10,
+    "order": 19
+}

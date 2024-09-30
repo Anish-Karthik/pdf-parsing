@@ -1,0 +1,482 @@
+{
+    "questions": [
+        {
+            "question": "A pyramid with a square base has sides of length 4 meters and a height of 5 meters. What is the volume of the pyramid?",
+            "difficulty": "easy",
+            "reasoning": "The volume of a pyramid is given by the formula (1/3) * base area * height. \n\nIn this case:\n\n* The base is a square with sides of 4 meters, so the base area is 4 * 4 = 16 square meters.\n* The height of the pyramid is 5 meters.\n\nTherefore, the volume of the pyramid is (1/3) * 16 * 5 = 80/3 cubic meters.",
+            "options": [
+                "26.67 cubic meters",
+                "80 cubic meters",
+                "40 cubic meters",
+                "64 cubic meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine a giant cylindrical cheese wheel rolling down a hill.  If a hungry mouse wants to cut a perfectly rectangular slice from the cheese wheel, at what angle should the mouse slice into the cheese?",
+            "difficulty": "easy",
+            "reasoning": "This question tests the visualization of cross-sections. Even though the scenario is playful, it gets to the heart of understanding how a plane would intersect a cylinder.  The answer relies on the fact that to get a rectangle, the plane needs to be perpendicular to the circular base of the cylinder. \n\n**Here's why:**\n\n* **Cylinder:** The cheese wheel is our cylinder.\n* **Cross-section:** The mouse's slice represents a cross-section.\n* **Rectangle:** To get a rectangular cross-section, the slicing plane must be perpendicular to the circular bases of the cylinder. \n\n**Therefore, the mouse needs to slice at a 90-degree angle to the ground (or the base of the cheese wheel).**",
+            "options": [
+                "0 degrees",
+                "45 degrees",
+                "90 degrees",
+                "180 degrees"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A painter needs to paint a rectangular wall that is 8 meters wide and 3 meters tall. He wants to buy paint cans, and each can covers 12 square meters.\n**Question**: How many paint cans does the painter need to buy to paint the entire wall?\n**Difficulty Level**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "The question belongs to the subtopic 'Conversion of Units and Applications in Real-world Problems' about 'Quants - Mensuration'.\n\nHere's how to solve the problem:\n\n**1. Calculate the area of the wall:**\n\n* Area = width x height\n* Area = 8 meters x 3 meters\n* Area = 24 square meters\n\n**2. Calculate the number of paint cans needed:**\n\n* Number of cans = Total area / Area covered per can\n* Number of cans = 24 square meters / 12 square meters/can\n* Number of cans = 2 cans\n\nTherefore, the painter needs to buy **2 cans** of paint. ",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A cylindrical water tank has a conical roof placed on top of it. The radius of the tank is 7 meters and its height is 10 meters. If the height of the conical roof is 3 meters, calculate the total volume of the structure (tank + roof). Use \u03c0 = 22/7.",
+            "difficulty": "easy",
+            "reasoning": "This question involves calculating the volume of combined solids - a cylinder and a cone. Here's how to solve it:\n\n**1. Volume of the Cylinder:** \n- Formula for the volume of a cylinder:  \u03c0r\u00b2h\n- Substituting the given values: (22/7) * 7\u00b2 * 10 = 1540 cubic meters\n\n**2. Volume of the Cone:**\n- Formula for the volume of a cone: (1/3)\u03c0r\u00b2h\n- Substituting the given values: (1/3) * (22/7) * 7\u00b2 * 3 = 154 cubic meters\n\n**3. Total Volume:**\n- Total volume = Volume of cylinder + Volume of cone\n- Total volume = 1540 + 154 = 1694 cubic meters\n\nTherefore, the total volume of the structure is 1694 cubic meters.",
+            "options": [
+                "1540 cubic meters",
+                "154 cubic meters",
+                "1694 cubic meters",
+                "1844 cubic meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A circular garden has a radius of 5 meters.\n**Given Information**: Radius = 5 meters\n**Question**: What is the area of the garden?\n",
+            "difficulty": "easy",
+            "reasoning": "This question belongs to the subtopic 'Circles: Circumference, Area, and Properties of Arcs & Sectors' about 'Quants - Mensuration'.  It tests the student's ability to recall and apply the formula for the area of a circle.\n\nHere's how to solve it:\n\n**1. Recall the Formula:**\n   The area of a circle is calculated using the formula: **Area = \u03c0 * r\u00b2**, where 'r' is the radius of the circle and '\u03c0' (pi) is a mathematical constant approximately equal to 3.14.\n\n**2. Substitute the Values:**\n   We are given the radius (r) = 5 meters. Substitute this value into the formula:\n   Area = 3.14 * (5 meters)\u00b2 \n\n**3. Calculate the Area:**\n   Area = 3.14 * 25 square meters\n   Area = 78.5 square meters\n\nTherefore, the area of the circular garden is **78.5 square meters**.",
+            "options": [
+                "78.5 meters",
+                "78.5 square meters",
+                "25 square meters",
+                "157 square meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**question_description**: A gardener is planning a triangular flower bed.  The vertices of the triangle are represented by the coordinates A(2,1), B(2,4), and C(7,1) on a grid, where each unit represents one meter.  What will be the area of the flower bed in square meters?\n**options**: \n  - 4.5\n  - 6\n  - 7.5\n  - 9\n**correct_option**: 7.5\n",
+            "difficulty": "easy",
+            "reasoning": "This question applies the concept of area calculation within a coordinate plane. Here's how to solve it:\n\n1. **Visualize the Triangle:** Imagine the points plotted on a graph. You'll see that the triangle formed is a right-angled triangle with AB as the height and AC as the base.\n\n2. **Calculate Base and Height:**\n   - Base (AC) = 7 - 2 = 5 meters\n   - Height (AB) = 4 - 1 = 3 meters\n\n3. **Apply Area Formula:** The area of a triangle is (1/2) * base * height.\n   - Area = (1/2) * 5 * 3 = 7.5 square meters\n\nTherefore, the area of the flower bed will be 7.5 square meters.",
+            "options": [
+                "4.5 square meters",
+                "6 square meters",
+                "7.5 square meters",
+                "9 square meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**question_description**: A frustum is made by slicing off the top of a cone with a plane parallel to its base. The original cone had a height of 12 cm and a base radius of 6 cm. If the frustum's top radius is 3 cm, what is the volume of the frustum? \n\nHere are the formulas for the volume of a cone and a frustum:\n\n* **Volume of a cone:** (1/3)\u03c0r\u00b2h (where r is the base radius and h is the height) \n* **Volume of a frustum of a cone:** (1/3)\u03c0h(R\u00b2 + Rr + r\u00b2) (where R is the bottom radius, r is the top radius, and h is the height of the frustum)\n\n**difficulty**: easy\n**skills**: \n  - Geometry\n  - Spatial Reasoning\n  - Volume Calculation\n  - Formula Application\n",
+            "reasoning": "**1. Visualize the Problem:** Imagine a cone with its top cut off. The bottom part is the frustum.  We need to find its volume.\n\n**2.  Find the Height of the Smaller Cone:**  Since the radii of the original cone and the top of the frustum are in a 2:1 ratio (6 cm : 3 cm), the height of the smaller cone (the part that was cut off) is half the height of the original cone. Therefore, the height of the smaller cone is 12 cm / 2 = 6 cm.\n\n**3.  Find the Height of the Frustum:** The height of the frustum is the difference between the height of the original cone and the height of the smaller cone. This is 12 cm - 6 cm = 6 cm.\n\n**4. Apply the Formula:**\n* R (bottom radius) = 6 cm\n* r (top radius) = 3 cm\n* h (height of frustum) = 6 cm\n\nSubstitute these values into the formula for the volume of a frustum:\n\nVolume = (1/3) * \u03c0 * 6 * (6\u00b2 + 6*3 + 3\u00b2)\n      = 2\u03c0 (36 + 18 + 9)\n      = 2\u03c0 * 63\n      = 126\u03c0 cm\u00b3\n\n**Therefore, the volume of the frustum is 126\u03c0 cm\u00b3.**",
+            "options": [
+                "108\u03c0 cm\u00b3",
+                "126\u03c0 cm\u00b3",
+                "189\u03c0 cm\u00b3",
+                "252\u03c0 cm\u00b3"
+            ],
+            "correct_option": "B",
+            "difficulty": "easy"
+        },
+        {
+            "question": "**Context**: A farmer wants to build a rectangular pen for his sheep using 100 meters of fencing. He wants to maximize the area of the pen.\n**Objective**: What is the maximum area (in square meters) the farmer can enclose?\n**Constraints**: The pen must be rectangular, and the farmer will use all 100 meters of fencing.\n**Question**: What are the dimensions of the pen that maximize the area, and what is the maximum area?\n",
+            "difficulty": "easy",
+            "reasoning": "This problem involves optimizing the area of a rectangle given a fixed perimeter. Here's how to solve it:\n\n**1. Define Variables**\n\n* Let the length of the rectangle be 'l' meters.\n* Let the width of the rectangle be 'w' meters.\n\n**2. Formulate Equations**\n\n* **Perimeter:** The total fencing represents the perimeter of the rectangle: 2l + 2w = 100\n* **Area:** The area of a rectangle is given by: A = l * w\n\n**3. Express Area in Terms of One Variable**\n\n* Solve the perimeter equation for one variable (let's solve for l): \n   l = 50 - w\n* Substitute this expression for 'l' into the area equation:\n   A = (50 - w) * w\n   A = 50w - w^2\n\n**4. Find the Maximum Area**\n\n* The area equation is a quadratic function (shaped like a parabola), and its graph opens downwards. The maximum point of the parabola represents the maximum area.\n* The x-coordinate of the vertex of the parabola gives us the width that maximizes the area. We can find this by using the formula: w = -b / 2a (where 'a' and 'b' are the coefficients in the quadratic equation).\n* In our area equation (A = 50w - w^2), a = -1 and b = 50. Plugging these values into the formula:\n    w = -50 / (2 * -1) = 25 meters\n\n**5. Calculate Length and Maximum Area**\n\n* Substitute the value of w back into the perimeter equation (or the equation for 'l' we derived earlier):\n   l = 50 - 25 = 25 meters\n* Calculate the maximum area:\n   A = l * w = 25 * 25 = 625 square meters\n\n**Answer:**\n\nThe dimensions that maximize the area are length = 25 meters and width = 25 meters (a square). The maximum area the farmer can enclose is 625 square meters.",
+            "options": [
+                "12.5 meters",
+                "625 square meters",
+                "25 meters x 50 meters",
+                "50 square meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A waffle cone at an ice cream shop has a radius of 3 cm and a slant height of 7 cm. What is the surface area of the cone (ignoring the opening at the top)?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of surface area of a cone. Since the problem specifies the slant height and asks for the surface area *ignoring the opening*, we only need to use the formula for the lateral surface area of a cone.\n\nHere's how to solve it:\n\n* **Formula:** The lateral surface area of a cone is given by \u03c0rs, where r is the radius and s is the slant height.\n* **Plugging in values:** We are given r = 3 cm and s = 7 cm. So, the surface area is \u03c0 * 3 cm * 7 cm = 21\u03c0 cm\u00b2.\n\nTherefore, the surface area of the waffle cone (ignoring the opening) is 21\u03c0 cm\u00b2.",
+            "options": [
+                "21\u03c0 cm\u00b2",
+                "63\u03c0 cm\u00b2",
+                "21 cm\u00b2",
+                "63 cm\u00b2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A baker needs to cover a cake with frosting. The cake is in the shape of a cube with sides measuring 10 cm each. What is the total area, in square centimeters, that the baker needs to frost?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Surface Area and Volume of Cubes and Cuboids' within 'Quants - Mensuration' as it involves calculating the surface area of a cube. \n\nHere's how to solve it:\n\n1. **Understanding Surface Area:** The surface area of a cube is the sum of the areas of all its faces. \n2. **Formula:** A cube has 6 equal square faces. The area of one face is side * side. Therefore, the total surface area of a cube is 6 * side * side.\n3. **Calculation:** In this case, the side of the cube is 10 cm. So, the surface area is 6 * 10 cm * 10 cm = 600 square centimeters.\n\nTherefore, the baker needs to frost a total area of 600 square centimeters.",
+            "options": [
+                "100",
+                "600",
+                "1000",
+                "60"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A cylindrical water tank has a diameter of 14 meters and a height of 20 meters. If the inside of the tank needs to be painted, including the base, what is the total area to be painted?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of surface area calculation for cylinders. Here's how to solve it:\n\n**1. Find the radius:**\n   - The diameter is 14 meters, so the radius is half that: 14 meters / 2 = 7 meters\n\n**2. Calculate the base area:**\n   - The base is a circle: \u03c0 * radius\u00b2 = \u03c0 * (7 meters)\u00b2 = 49\u03c0 square meters\n\n**3. Calculate the lateral surface area:**\n   - Lateral surface area of a cylinder is the circumference of the base times the height: 2\u03c0 * radius * height = 2\u03c0 * 7 meters * 20 meters = 280\u03c0 square meters\n\n**4. Calculate the total area:**\n   - Total area is the base area plus the lateral surface area: 49\u03c0 square meters + 280\u03c0 square meters = 329\u03c0 square meters\n\n**Therefore, the total area to be painted is 329\u03c0 square meters.**",
+            "options": [
+                "329\u03c0 square meters",
+                "1030.3 square meters",
+                "1256.6 square meters",
+                "1540 square meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A chocolate box is shaped like a triangular prism. Its triangular bases each have a base of 10 cm and a height of 8 cm. The box's height is 20 cm.  What is the total area of cardboard needed to make the box (excluding any overlap for flaps)?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves calculating the surface area of a triangular prism. Here's how to solve it step-by-step:\n\n**1. Visualize the Prism:** Imagine a triangular prism like a Toblerone chocolate box. It has two identical triangular bases and three rectangular faces.\n\n**2. Calculate the Area of a Triangular Base:**\n   * Formula for the area of a triangle: (1/2) * base * height\n   * Area of one triangular base: (1/2) * 10 cm * 8 cm = 40 cm\u00b2\n\n**3. Calculate the Area of the Rectangular Faces:**\n   *  Each rectangular face has a length equal to the height of the box (20 cm) and a width equal to one side of the triangular base (10 cm in this case).\n   * Area of one rectangular face: length * width = 20 cm * 10 cm = 200 cm\u00b2\n\n**4. Calculate the Total Surface Area:**\n   * Two triangular bases: 2 * 40 cm\u00b2 = 80 cm\u00b2\n   * Three rectangular faces: 3 * 200 cm\u00b2 = 600 cm\u00b2\n   * Total surface area: 80 cm\u00b2 + 600 cm\u00b2 = 680 cm\u00b2\n\n**Therefore, 680 cm\u00b2 of cardboard is needed to make the chocolate box.**",
+            "options": [
+                "680 cm",
+                "680 cm\u00b2",
+                "560 cm\u00b2",
+                "560 cm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A group of archaeologists discovered a pyramid-shaped ancient artifact. To understand its construction, they need to calculate its outer surface.\n**question**: The artifact is a square pyramid with a base side length of 5 cm and a slant height of 6 cm. What is the total surface area of this ancient artifact?\n**information**: \n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Understanding Surface Area:**\n   - The total surface area of a pyramid is the sum of the area of its base and the areas of its triangular faces.\n\n**2. Calculating the Base Area:**\n   - The base is a square with a side length of 5 cm.\n   - Area of a square = side * side = 5 cm * 5 cm = 25 sq cm\n\n**3. Calculating the Area of One Triangular Face:**\n   - Each face is an isosceles triangle with a base of 5 cm (side of the square) and a slant height of 6 cm.\n   - Area of a triangle = (1/2) * base * height = (1/2) * 5 cm * 6 cm = 15 sq cm\n\n**4. Calculating the Total Area of Triangular Faces:**\n   - The pyramid has 4 triangular faces.\n   - Total area of faces = 4 * 15 sq cm = 60 sq cm\n\n**5. Calculating the Total Surface Area:**\n   - Total Surface Area = Base Area + Total Area of Triangular Faces\n   - Total Surface Area = 25 sq cm + 60 sq cm = 85 sq cm\n\n**Therefore, the total surface area of the ancient artifact is 85 sq cm.**",
+            "options": [
+                "25 sq cm",
+                "60 sq cm",
+                "85 sq cm",
+                "110 sq cm"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A baker needs to cover a circular cake with diameter 14 inches with fondant. Fondant is sold in square sheets with side length of 25 cm. How many fondant sheets will the baker need to buy to completely cover the cake? (Use 1 inch = 2.54 cm)",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the cake's radius:**\n   - Diameter = 14 inches, so radius = 14 inches / 2 = 7 inches\n\n**2. Calculate the cake's area:**\n   - Area of a circle = \u03c0 * radius\u00b2, where \u03c0 (pi) is approximately 3.14\n   - Area = 3.14 * (7 inches)\u00b2 = 153.86 square inches\n\n**3. Convert the fondant sheet's side length to inches:**\n   - 1 inch = 2.54 cm, so 25 cm = 25 cm / 2.54 cm/inch \u2248 9.84 inches \n\n**4. Calculate the area of one fondant sheet:**\n   - Area of a square = side * side\n   - Area \u2248 9.84 inches * 9.84 inches \u2248 96.83 square inches\n\n**5. Determine the number of fondant sheets needed:**\n   - Divide the cake's area by the area of one fondant sheet:\n   - Number of sheets \u2248 153.86 square inches / 96.83 square inches \u2248 1.59 sheets\n\n**6. Round up to the nearest whole number:**\n   - Since the baker can't buy parts of a sheet, they need to buy 2 fondant sheets.\n\n**Therefore, the baker needs to buy 2 fondant sheets to completely cover the cake.**",
+            "options": [
+                "1",
+                "1.59",
+                "2",
+                "3"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A gardener is planning to fence a triangular piece of land for his exotic plants. The vertices of the triangular land on a map are represented by the coordinates A(2, 1), B(7, 1), and C(2, 6). If each unit on the map represents 1 meter, how many meters of fencing will the gardener need?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Applications of Mensuration in Coordinate Geometry' as it involves using coordinates to calculate the perimeter of a shape, which is a Mensuration concept.\n\nHere's how to solve the problem:\n\n1. **Visualize the Triangle:** Imagine a triangle with vertices at the given coordinates on a coordinate plane.\n\n2. **Calculate Side Lengths:** Use the distance formula to find the length of each side of the triangle:\n    * AB = \u221a((7-2)\u00b2 + (1-1)\u00b2) = \u221a(5\u00b2+0\u00b2) = 5 meters\n    * BC = \u221a((2-7)\u00b2 + (6-1)\u00b2) = \u221a((-5)\u00b2+5\u00b2) = \u221a50 = 5\u221a2 meters\n    * AC = \u221a((2-2)\u00b2 + (6-1)\u00b2) = \u221a(0\u00b2+5\u00b2) = 5 meters\n\n3. **Calculate Perimeter:** Add the lengths of all three sides to find the perimeter:\n    * Perimeter = AB + BC + AC = 5 + 5\u221a2 + 5 = 10 + 5\u221a2 meters\n\nTherefore, the gardener will need 10 + 5\u221a2 meters of fencing.",
+            "options": [
+                "10 meters",
+                "10 + 5\u221a2 meters",
+                "25 meters",
+                "5\u221a2 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A conical tent is being designed with a slant height of 10 meters and a base diameter of 8 meters. To minimize material usage, the designer wants to know the exact amount of fabric needed for the tent's curved surface (excluding the base). Calculate the curved surface area of the tent in square meters.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Surface Area and Volume of Cones' topic within 'Quants - Mensuration.' It's categorized as 'medium' difficulty due to these factors:\n\n1. **Partial Information:** The question provides slant height and diameter but not the radius, requiring an extra step to calculate the radius.\n2. **Targeted Formula Application:** Students need to identify and apply the specific formula for the curved surface area of a cone, which is \u03c0rl (where r is the radius and l is the slant height), not the total surface area.\n\n**Solution:**\n\n* **Step 1: Calculate the radius.**\n   Diameter = 8 meters, so Radius (r) = Diameter / 2 = 8/2 = 4 meters\n* **Step 2: Apply the curved surface area formula.**\n   Curved Surface Area = \u03c0rl = \u03c0 * 4 meters * 10 meters = 40\u03c0 square meters\n\nTherefore, the curved surface area of the conical tent is 40\u03c0 square meters.",
+            "options": [
+                "Easy",
+                "Hard",
+                "Medium",
+                "Very Hard"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A company manufactures cylindrical concrete pipes. Each pipe has an outer diameter of 1.2 meters and an inner diameter of 1 meter. If the pipe is 3 meters long, what is the volume of concrete used to make one pipe?",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the student's understanding of calculating the volume of a cylinder and applying it to a real-world scenario with a hollow cylinder. \n\nHere's how to solve the problem:\n\n**1. Find the radii:**\n   * Outer radius = Outer diameter / 2 = 1.2 m / 2 = 0.6 m\n   * Inner radius = Inner diameter / 2 = 1 m / 2 = 0.5 m\n\n**2. Calculate the cross-sectional area of the concrete:**\n   * Area of outer circle = \u03c0 * (outer radius)^2 = \u03c0 * (0.6 m)^2 = 1.131 m\u00b2\n   * Area of inner circle = \u03c0 * (inner radius)^2 = \u03c0 * (0.5 m)^2 = 0.785 m\u00b2\n   * Area of concrete (ring) = Area of outer circle - Area of inner circle = 1.131 m\u00b2 - 0.785 m\u00b2 = 0.346 m\u00b2\n\n**3. Calculate the volume of the concrete:**\n   * Volume = Area of concrete * Length of pipe = 0.346 m\u00b2 * 3 m = 1.038 m\u00b3\n\nTherefore, the volume of concrete used to make one pipe is 1.038 cubic meters.",
+            "options": [
+                "0.346 m\u00b3",
+                "1.038 m\u00b3",
+                "1.916 m\u00b3",
+                "3.000 m\u00b3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A cylindrical vase is filled halfway with water. Inside the vase, a glassblower places a beautiful, solid glass hemisphere paperweight. The paperweight sinks to the bottom, completely submerged in the water. The diameter of the cylindrical vase is 14 cm, and the water level rises by 2 cm after the paperweight is added. What is the radius of the glass hemisphere?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understand the Setup** \n\nWe have a cylinder (the vase) partially filled with water. A hemisphere (the paperweight) is submerged, causing the water level to rise. The key is realizing that the volume of water displaced (the rise) is equal to the volume of the hemisphere.\n\n**2. Calculate the Volume of Water Displaced**\n\n* The water rises 2 cm in a cylinder with a diameter of 14 cm (radius = 7 cm). \n* The volume of a cylinder is \u03c0r\u00b2h, where r is the radius and h is the height.\n* Volume of displaced water = \u03c0 * (7 cm)\u00b2 * 2 cm = 98\u03c0 cm\u00b3\n\n**3. Calculate the Radius of the Hemisphere**\n\n* The volume of a hemisphere is (2/3)\u03c0R\u00b3, where R is the radius of the hemisphere.\n* We know the volume of the hemisphere is 98\u03c0 cm\u00b3.\n* Setting the volumes equal: (2/3)\u03c0R\u00b3 = 98\u03c0 cm\u00b3\n* Simplifying: R\u00b3 = (98 * 3) / 2 = 147 cm\u00b3\n* Taking the cube root: R = \u00b3\u221a147 cm = approximately 5.28 cm\n\n**Therefore, the radius of the glass hemisphere is approximately 5.28 cm.**",
+            "options": [
+                "7 cm",
+                "14 cm",
+                "5.28 cm",
+                "2.64 cm"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter needs to cover a rectangular wall with a fresh coat of paint. The wall measures 3 meters high and 5 meters wide.  He has chosen a paint that is advertised to cover 12 square meters per liter. However, due to the wall's texture, he knows he'll need an extra 10% of paint to ensure full coverage.  Knowing that paint is sold in 1-liter cans, how many cans should the painter purchase?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate the wall's area:**\n   * Area = height x width\n   * Area = 3 meters * 5 meters\n   * Area = 15 square meters\n\n**2. Calculate the extra paint needed:**\n   * Extra paint = 10% of 15 square meters \n   * Extra paint = (10/100) * 15 square meters\n   * Extra paint = 1.5 square meters\n\n**3. Calculate the total paint required:**\n   * Total paint = Wall area + Extra paint\n   * Total paint = 15 square meters + 1.5 square meters\n   * Total paint = 16.5 square meters\n\n**4.  Calculate the number of paint cans:**\n   * Cans needed = Total paint / Coverage per can\n   * Cans needed = 16.5 square meters / 12 square meters/can\n   * Cans needed = 1.375 cans\n\n**5. Round up to the nearest whole can:**\n   * Since you can't buy a fraction of a can, the painter needs to purchase 2 cans.\n\n**Therefore, the painter should purchase 2 cans of paint.**",
+            "options": [
+                "1",
+                "1.375",
+                "2",
+                "16.5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**problem_statement**: A closed rectangular water tank is externally painted on all sides. The tank's internal dimensions are 2 meters long, 1.5 meters wide, and 1 meter deep. The metal used for making the tank has a uniform thickness of 5 cm.\n**question**: Calculate the surface area painted, in square meters.\n**difficulty**: medium\n",
+            "reasoning": "**1. Account for the metal thickness:**\n\n* Since the metal has a thickness, the external dimensions of the tank are larger than the internal ones.\n* Each side's length and width are increased by 2 times the thickness (once for each side of the wall).\n* External length = 2m + (2 * 0.05m) = 2.1m\n* External width = 1.5m + (2 * 0.05m) = 1.6m\n* External height = 1m + (2 * 0.05m) = 1.1m\n\n**2. Calculate the total surface area:**\n\n* The surface area of a cuboid is given by: 2(lw + wh + lh), where l=length, w=width, h=height\n* Total surface area = 2 * (2.1 * 1.6 + 1.6 * 1.1 + 2.1 * 1.1) m\u00b2\n* Total surface area = 2 * (3.36 + 1.76 + 2.31) m\u00b2\n* Total surface area = 2 * 7.43 m\u00b2 = 14.86 m\u00b2\n\n**Therefore, the total surface area painted is 14.86 square meters.**",
+            "options": [
+                "12.31 m\u00b2",
+                "13.5 m\u00b2",
+                "14.86 m\u00b2",
+                "15.2 m\u00b2"
+            ],
+            "correct_option": "C",
+            "difficulty": "medium"
+        },
+        {
+            "question": "**Context**: A city planner is designing a new park shaped like a quadrilateral. The park's boundaries are defined by connecting four points on a coordinate plane: A(-3, 2), B(4, 5), C(1, -4), and D(-6, -1).\n**Task**: Calculate the total area of the park.\n**Constraints/Information**: None.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Applications of Mensuration in Coordinate Geometry' as it requires using coordinate geometry to determine the area of a quadrilateral. Here's a step-by-step solution:\n\n1. **Divide the quadrilateral:** The easiest approach is to divide the quadrilateral ABCD into two triangles: triangle ABC and triangle ACD.\n\n2. **Area of a triangle using coordinates:**  The area of a triangle formed by points (x1, y1), (x2, y2), and (x3, y3) is given by:\n    Area = 1/2 * |(x1(y2-y3) + x2(y3-y1) + x3(y1-y2))|\n\n3. **Calculate the area of triangle ABC:**\n    A(-3, 2), B(4, 5), C(1, -4)\n    Area_ABC = 1/2 * |(-3(5 - (-4)) + 4((-4) - 2) + 1(2 - 5))|\n    Area_ABC = 1/2 * |-27 - 24 - 3|\n    Area_ABC = 1/2 * |-54|\n    Area_ABC = 27 square units\n\n4. **Calculate the area of triangle ACD:**\n    A(-3, 2), C(1, -4), D(-6, -1)\n    Area_ACD = 1/2 * |(-3(-4 - (-1)) + 1((-1) - 2) + (-6)(2 - (-4)))|\n    Area_ACD = 1/2 * |9 - 3 - 36|\n    Area_ACD = 1/2 * |-30|\n    Area_ACD = 15 square units\n\n5. **Total Area:**\n    Area_ABCD = Area_ABC + Area_ACD\n    Area_ABCD = 27 + 15\n    Area_ABCD = 42 square units\n\nTherefore, the total area of the park is 42 square units.",
+            "options": [
+                "32 square units",
+                "42 square units",
+                "52 square units",
+                "62 square units"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: An architect is designing a unique pyramid-shaped greenhouse. The base of the greenhouse is a rectangle measuring 8 meters by 6 meters. The apex (top point) of the pyramid is 5 meters directly above the center of the rectangular base.\n**given_information**: Rectangular base: 8 meters x 6 meters, Height: 5 meters\n**question**: What is the total surface area of glass needed to construct the greenhouse, including all four triangular faces?\n**difficulty_level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Surface Area and Volume of Pyramids' subtopic within 'Quants - Mensuration'. It involves calculating the surface area of a pyramid with a rectangular base, which requires multiple steps and understanding of Pythagorean theorem to find slant heights. \n\nHere's how to solve it:\n\n1. **Visualize:** Imagine the pyramid with its rectangular base. We need to find the area of the base and the area of the four triangular faces.\n\n2. **Base Area:** The area of the rectangular base is straightforward: length x width = 8 meters x 6 meters = 48 square meters.\n\n3. **Slant Heights:**  Each triangular face has a different slant height.  \n    * For the two faces sharing the 8-meter base edge, imagine a right triangle formed by the pyramid's height (5 meters), half the base edge (4 meters), and the slant height. Use the Pythagorean theorem: slant height = \u221a(5\u00b2 + 4\u00b2) = \u221a41 meters. \n    * For the two faces sharing the 6-meter base edge, the slant height is: \u221a(5\u00b2 + 3\u00b2) = \u221a34 meters. \n\n4. **Triangular Areas:** \n    * Area of each triangle = (1/2) * base * slant height. \n    * Two triangles have an area of (1/2) * 8 meters * \u221a41 meters = 4\u221a41 square meters each. \n    * The other two have an area of (1/2) * 6 meters * \u221a34 meters = 3\u221a34 square meters each. \n\n5. **Total Surface Area:** \n    * Total area = Base area + 2*(Area of larger triangle) + 2*(Area of smaller triangle) \n    * Total area = 48 square meters + 2*(4\u221a41 square meters) + 2*(3\u221a34 square meters) \n    * Total area \u2248 48 + 51.22 + 34.99 \u2248 134.21 square meters\n\nTherefore, approximately 134.21 square meters of glass is needed.",
+            "options": [
+                "134.21 square meters",
+                "102.44 square meters",
+                "48 square meters",
+                "118.42 square meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: A sculptor carves a perfect pyramid out of a solid cube of marble. The base of the pyramid coincides with the top face of the cube.\n**Action**: If the volume of marble removed is 64 cubic centimeters, what is the total surface area of the remaining solid?\n**Shape**: Cube, Pyramid\n**Dimensions**: Side length of the cube = unknown\n**Cross-section**: N/A\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Problem:**\n\n   We have a cube from which a pyramid has been carved out. We know the volume of the marble removed (i.e., the volume of the pyramid) and need to find the surface area of the remaining shape. \n\n**2. Finding the Side Length of the Cube:**\n\n   * The volume of a pyramid is (1/3) * base area * height. \n   * Since the pyramid's base coincides with the cube's face, the base of the pyramid is a square with sides equal to the cube's side length.  \n   * The height of the pyramid is also equal to the side length of the cube. \n   * Let 's' be the side length of the cube. \n   * Volume of pyramid = (1/3) * s\u00b2 * s = 64 cm\u00b3 \n   * s\u00b3 = 192 cm\u00b3\n   * s = \u221b192 cm = 4\u221b3 cm \n\n**3. Calculating the Surface Area of the Cube:**\n\n   * Surface area of a cube = 6s\u00b2\n   * Surface area of the cube = 6 * (4\u221b3 cm)\u00b2 = 96\u221b9 cm\u00b2\n\n**4. Calculating the Surface Area of the Pyramid's Base:**\n\n   * The base of the pyramid is a square. \n   * Area of the square = s\u00b2 = (4\u221b3 cm)\u00b2 = 16\u221b9 cm\u00b2\n\n**5. Calculating the Total Surface Area of the Remaining Solid:**\n\n   * The remaining solid has the surface area of the cube minus the area of the square base of the pyramid, plus the area of the four triangular faces of the pyramid. Since we don't know the slant height of the pyramid to calculate the area of the triangular faces, we can realize that the sum of the areas of the four triangular faces is equal to the area of the square base. This is because if we were to flatten the pyramid, its four triangular faces would perfectly cover the square base.\n   * Total surface area = Surface area of cube - Area of pyramid's base + Area of pyramid's four triangular faces\n   * Total surface area =  96\u221b9 cm\u00b2 - 16\u221b9 cm\u00b2 + 16\u221b9 cm\u00b2 = 96\u221b9 cm\u00b2\n\n**Therefore, the total surface area of the remaining solid is 96\u221b9 cm\u00b2.**",
+            "option and correct options": [
+                {
+                    "option": "64\u221a3 cm\u00b2",
+                    "correct": false
+                },
+                {
+                    "option": "96 cm\u00b2",
+                    "correct": false
+                },
+                {
+                    "option": "96\u221b9 cm\u00b2",
+                    "correct": true
+                },
+                {
+                    "option": "192\u221a2 cm\u00b2",
+                    "correct": false
+                }
+            ],
+            "options": [
+                "64\u221a3 cm\u00b2",
+                "96 cm\u00b2",
+                "96\u221b9 cm\u00b2",
+                "192\u221a2 cm\u00b2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A conical funnel used for pouring liquids has a slant height of 15 cm and a diameter of 12 cm. If the funnel needs to be coated with a protective layer on its curved surface, what is the area that needs to be covered?",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning: \n\nThis problem requires us to find the lateral surface area of the cone, which represents the curved surface area excluding the base. Here's how to solve it:\n\n**1. Find the radius:**\n   * The diameter is given as 12 cm, so the radius (r) is half the diameter: r = 12 cm / 2 = 6 cm\n\n**2. Calculate the lateral surface area:**\n   * The formula for the lateral surface area (LSA) of a cone is LSA = \u03c0 * r * l, where l is the slant height.\n   * Substitute the known values: LSA = \u03c0 * 6 cm * 15 cm \n   * Calculate: LSA \u2248 282.74 cm\u00b2\n\n**Therefore, the area that needs to be covered with the protective layer is approximately 282.74 cm\u00b2.** ",
+            "options": [
+                "113.10 cm\u00b2",
+                "282.74 cm\u00b2",
+                "376.99 cm\u00b2",
+                "452.39 cm\u00b2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A water tank is shaped like a cuboid with a length of 3 meters, a width of 2 meters, and a height of 1.5 meters. The tank needs to be lined with tiles on the inside, including the base. If each tile has a side length of 0.5 meters, how many tiles will be needed to completely line the tank?",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis problem requires us to calculate the surface area of the cuboid (water tank) and then determine how many tiles are needed to cover that area.\n\n**1. Calculate the surface area of the cuboid:**\n\n* **Two sides with length and height:** 2 * (length * height) = 2 * (3 m * 1.5 m) = 9 m\u00b2\n* **Two sides with width and height:** 2 * (width * height) = 2 * (2 m * 1.5 m) = 6 m\u00b2\n* **Base and top (both with length and width):** 2 * (length * width) = 2 * (3 m * 2 m) = 12 m\u00b2\n* **Total surface area:** 9 m\u00b2 + 6 m\u00b2 + 12 m\u00b2 = 27 m\u00b2\n\n**2. Calculate the area of one tile:**\n\n* **Area of a square:** side * side = 0.5 m * 0.5 m = 0.25 m\u00b2\n\n**3. Calculate the number of tiles needed:**\n\n* **Total tiles:** Total surface area / Area per tile = 27 m\u00b2 / 0.25 m\u00b2/tile = 108 tiles\n\nTherefore, **108 tiles** are needed to completely line the tank.",
+            "options": [
+                "100 tiles",
+                "108 tiles",
+                "112 tiles",
+                "120 tiles"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A metal trophy is designed as a hemisphere mounted on top of a cone. The base radius of the cone and the hemisphere are both 7 cm. The slant height of the cone is 10 cm.  To add durability, the trophy will be coated with a protective sealant.  If one bottle of sealant can cover 150 square centimeters, what is the minimum number of sealant bottles needed to coat the entire surface area of the trophy?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves calculating the surface areas of both a cone and a hemisphere, then combining them to find the total surface area of the trophy. Finally, we divide the total area by the coverage of one sealant bottle to determine the number of bottles needed.\n\n**1. Calculate the surface area of the cone (excluding the base):**\n   - Formula: \u03c0 * radius * slant height \n   - Surface area of cone:  \u03c0 * 7 cm * 10 cm = 70\u03c0 cm\u00b2\n\n**2. Calculate the surface area of the hemisphere:**\n   - Formula: 2 * \u03c0 * radius\u00b2\n   - Surface area of hemisphere: 2 * \u03c0 * (7 cm)\u00b2 = 98\u03c0 cm\u00b2\n\n**3. Calculate the total surface area of the trophy:**\n   - Total surface area = Surface area of cone + Surface area of hemisphere\n   - Total surface area = 70\u03c0 cm\u00b2 + 98\u03c0 cm\u00b2 = 168\u03c0 cm\u00b2\n\n**4.  Determine the number of sealant bottles:**\n   - Number of bottles = Total surface area / Coverage per bottle\n   - Number of bottles = 168\u03c0 cm\u00b2 / 150 cm\u00b2/bottle \u2248 3.52 bottles\n\n**Since we cannot use part of a bottle, we round up to the nearest whole number.**\n\n**Therefore, a minimum of 4 bottles of sealant is needed to coat the entire trophy.**",
+            "options": [
+                "3",
+                "3.52",
+                "4",
+                "168\u03c0"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A landscape architect is designing a circular park with a diameter of 200 meters.  A walking path, following the arc of a circle, is planned to cut through the park. The endpoints of the path form a 120-degree central angle within the park's circle. If the cost to pave the path is $25 per meter, what is the total cost of paving the entire walking path?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the radius:**\n   - The diameter is 200 meters, so the radius is half that: 200 meters / 2 = 100 meters\n\n**2. Calculate the circumference of the entire park:**\n   - Circumference (C) = 2 * \u03c0 * radius (r)\n   - C = 2 * \u03c0 * 100 meters \u2248 628.32 meters\n\n**3. Determine the fraction of the circumference represented by the path:**\n   - The central angle of the path is 120 degrees, and a full circle is 360 degrees.\n   - Fraction of the circle = 120 degrees / 360 degrees = 1/3\n\n**4. Calculate the length of the walking path:**\n   - Length of path = (1/3) * Circumference of the park\n   - Length of path \u2248 (1/3) * 628.32 meters \u2248 209.44 meters\n\n**5.  Calculate the total cost of paving:**\n   - Cost = Length of path * Price per meter\n   - Cost \u2248 209.44 meters * $25/meter \u2248 $5236\n\n**Therefore, the total cost of paving the walking path is approximately $5236.**",
+            "options": [
+                "$5000",
+                "$5236",
+                "$6283",
+                "$7500"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A surveyor needs to calculate the height of a radio tower. She stands 50 meters away from the base of the tower and measures the angle of elevation to the top to be 60 degrees. However, she realizes her measuring instrument is positioned 1.5 meters above the ground. What is the total height of the radio tower?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves a right triangle and trigonometry to find the height. Here's how to solve it:\n\n**1. Visualize the Problem:**\n   Imagine a right triangle where:\n    * The hypotenuse is the line of sight from the surveyor's instrument to the top of the tower.\n    * The adjacent side is the 50-meter distance from the base of the tower to the surveyor.\n    * The opposite side is the height of the tower *above* the instrument.\n\n**2. Apply Trigonometry:**\n   * We know the adjacent side (50m) and the angle (60 degrees) and need to find the opposite side.\n   * The trigonometric function that relates the opposite and adjacent sides is the tangent (tan):\n\n     `tan(angle) = opposite / adjacent`\n\n     `tan(60\u00b0) = opposite / 50m`\n\n     `opposite = 50m * tan(60\u00b0) `\n\n     `opposite \u2248 50m * 1.732`\n\n     `opposite \u2248 86.6m`\n\n**3.  Add the Instrument Height:**\n   * The calculated height (86.6m) is only the portion of the tower *above* the instrument.\n   * Add the instrument height to find the total tower height:\n\n     `Total Height = 86.6m + 1.5m = 88.1m`\n\n**Therefore, the total height of the radio tower is 88.1 meters.**",
+            "options": [
+                "86.6 meters",
+                "88.1 meters",
+                "50 meters",
+                "60 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A sculptor is working with a block of marble shaped like a square pyramid. He decides to cut off the top portion to create a smaller pyramid for another project. The original pyramid had a base side length of 12 feet and a height of 8 feet. The cut is made parallel to the base, leaving a frustum with a top base side length of 4 feet.  To cover the exposed surface of the frustum with a protective sheet, what is the total surface area the sculptor needs to cover?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves calculating the surface area of a frustum of a square pyramid. Here's a step-by-step solution:\n\n**1. Visualize the Problem:**\nImagine a square pyramid with its top cut off. The sculptor needs to cover the lateral faces (trapezoids) and the top square base of this frustum.\n\n**2. Find the Slant Heights:**\n* **Original Pyramid:** Imagine a right triangle inside the pyramid with the height of the pyramid (8 ft), half the base side length (6 ft), and the slant height as the hypotenuse. Using the Pythagorean theorem, the original slant height is \u221a(8\u00b2 + 6\u00b2) = 10 ft.\n* **Smaller Pyramid:**  The smaller pyramid has a height of 4 ft (half the height of the original since the cut is made halfway). Using similar triangles, the slant height of the smaller pyramid is 5 ft (half the slant height of the original).\n\n**3. Calculate the Area of the Trapezoids:**\n* Each trapezoidal face has bases of 12 ft and 4 ft, and a height equal to the slant height of the frustum (10 ft - 5 ft = 5 ft).\n* Area of one trapezoid: (1/2) * (sum of bases) * height = (1/2) * (12 + 4) * 5 = 40 sq ft\n* Total area of four trapezoids: 4 * 40 = 160 sq ft\n\n**4. Calculate the Area of the Top Square:**\n* The top square has a side length of 4 ft.\n* Area of the top square: side * side = 4 * 4 = 16 sq ft\n\n**5. Calculate the Total Surface Area:**\n* Total surface area of the frustum: 160 sq ft (trapezoids) + 16 sq ft (top square) = 176 sq ft\n\n**Therefore, the sculptor needs to cover 176 square feet of surface area.**",
+            "options": [
+                "176 sq ft",
+                "160 sq ft",
+                "200 sq ft",
+                "184 sq ft"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A perfume bottle is designed in the shape of a hexagonal pyramid. The length of each side of the hexagonal base is 4 cm, and the height of the pyramid is 10 cm. If the bottle is to be filled with perfume up to a height of 7 cm, what will be the volume of perfume in the bottle? (Round your answer to the nearest cubic centimeter)",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Surface Area and Volume of Pyramids' subtopic within 'Quants - Mensuration'.\n\nHere's a step-by-step solution:\n\n**1. Visualize the Problem:**\n   Imagine a hexagonal pyramid partially filled with perfume. The perfume itself forms a smaller, similar hexagonal pyramid within the bottle.\n\n**2. Key Insight:**\n   The ratio of the volumes of similar pyramids is equal to the cube of the ratio of their corresponding heights.\n\n**3. Calculate the Ratio of Heights:**\n   * Height of the full pyramid: 10 cm\n   * Height of the perfume-filled pyramid: 7 cm\n   * Ratio of heights: 7/10\n\n**4. Calculate the Volume of the Full Pyramid:**\n   * Area of a regular hexagon = (3\u221a3 * side\u00b2) / 2\n   * Area of the base = (3\u221a3 * 4\u00b2) / 2 = 24\u221a3 cm\u00b2\n   * Volume of the full pyramid = (1/3) * base area * height \n   * Volume = (1/3) * 24\u221a3 cm\u00b2 * 10 cm = 80\u221a3 cm\u00b3\n\n**5. Apply the Ratio of Volumes:**\n   * (Volume of perfume pyramid) / (Volume of full pyramid) = (7/10)\u00b3\n   * Volume of perfume pyramid = (7/10)\u00b3 * 80\u221a3 cm\u00b3 \u2248 21.95\u221a3 cm\u00b3\n\n**6. Round to the Nearest Cubic Centimeter:**\n   * Volume of perfume \u2248 38 cm\u00b3\n\n**Therefore, the volume of perfume in the bottle is approximately 38 cubic centimeters.**",
+            "options": [
+                "21 cm\u00b3",
+                "38 cm\u00b3",
+                "50 cm\u00b3",
+                "60 cm\u00b3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A water fountain is designed as an inverted frustum of a cone.  The top opening has a diameter of 2 meters, while the base where water collects has a diameter of 3 meters. The slant height of the frustum is 1.5 meters. To paint the exterior surface of this fountain (excluding the base), a special waterproof paint is used that costs $0.50 per square meter.  Calculate the cost of painting the fountain's exterior.",
+            "difficulty": "hard",
+            "reasoning": "**1. Visualize and Label:**\n\nImagine the fountain as an upside-down cone with the top cut off. \n* Top diameter = 2 meters, so top radius (r1) = 1 meter\n* Base diameter = 3 meters, so base radius (r2) = 1.5 meters\n* Slant height (l) = 1.5 meters\n\n**2.  Calculate the Lateral Surface Area:**\n\nThe lateral surface area of a frustum is the curved surface area, excluding the top and base areas.  The formula is:\n\nLateral Surface Area =  \u03c0 * l * (r1 + r2)\n\n*  \u03c0 * 1.5 * (1 + 1.5) = 3.75\u03c0 square meters\n\n**3. Calculate the Cost:**\n\n* Cost per square meter = $0.50\n* Total Cost = 3.75\u03c0 * $0.50 \u2248 $5.89 \n\n**Therefore, the cost of painting the fountain's exterior is approximately $5.89.**",
+            "options": [
+                "$5.89",
+                "$6.00",
+                "$7.50",
+                "$10.00"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A wooden cube with a side length of 10 cm is painted red on all its faces. It is then cut into smaller cubes, each with a side length of 2.5 cm.  How many of the smaller cubes will have exactly one face painted red?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Problem**\n\nImagine a large cube painted red on all sides. When you cut this into smaller cubes, the ones on the corners will have three red faces, the ones along the edges (excluding corners) will have two, the ones in the center of each face will have one, and the ones in the very center of the original cube will have no paint.\n\n**2. Calculate the Number of Smaller Cubes**\n\n* The original cube has a side length of 10 cm.\n* The smaller cubes have a side length of 2.5 cm.\n* Therefore, each side of the original cube is divided into 10 cm / 2.5 cm = 4 sections.\n* The original cube is divided into 4 x 4 x 4 = 64 smaller cubes.\n\n**3. Identify Cubes with One Red Face**\n\n* These cubes are found in the center of each face of the original cube.\n* Each face of the original cube is divided into 4 x 4 = 16 smaller squares.\n* The center four squares of each face will represent the cubes with one red face (imagine removing the outer layer of cubes).\n* Therefore, each face has 4 cubes with one red face.\n\n**4. Calculate the Total Number**\n\n* Since a cube has 6 faces, the total number of cubes with one red face is 6 faces x 4 cubes/face = 24 cubes.\n\n**Therefore, 24 of the smaller cubes will have exactly one face painted red.**",
+            "options": [
+                "16",
+                "24",
+                "36",
+                "48"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A triangular park needs a new fence. One side of the park runs along a perfectly straight road for 100 feet.  A gardener walks along the other two sides of the park, measuring their lengths to buy enough fencing material.  Starting from one corner of the road-adjacent side, he walks in a straight line for 80 feet, then makes a 90-degree turn and walks in a straight line back to the other corner of the road-adjacent side. What is the total length of fencing the gardener needs, excluding the side along the road?",
+            "difficulty": "hard",
+            "reasoning": "This problem requires visualizing the triangular park and applying the Pythagorean theorem to find the missing side length before calculating the perimeter.\n\n1. **Visualize:** The park is a right-angled triangle because the gardener makes a 90-degree turn while walking. The side along the road (100 feet) is the base of the triangle, and the other two sides are the legs.\n\n2. **Pythagorean Theorem:**  We know one leg is 80 feet and need to find the other leg (the hypotenuse of the triangle formed by the gardener's path) using the Pythagorean theorem:\n   * a\u00b2 + b\u00b2 = c\u00b2\n   * 80\u00b2 + b\u00b2 = 100\u00b2\n   * 6400 + b\u00b2 = 10000\n   * b\u00b2 = 3600\n   * b = \u221a3600 = 60 feet\n\n3. **Perimeter:** Now we know the lengths of all sides:\n   * Side 1 (along the road): 100 feet\n   * Side 2: 80 feet\n   * Side 3: 60 feet\n\n4. **Total Fencing:** Since we need the fencing for the two sides excluding the road, the total length needed is 80 feet + 60 feet = 140 feet.\n\nTherefore, the gardener needs 140 feet of fencing.",
+            "options": [
+                "100 feet",
+                "140 feet",
+                "240 feet",
+                "180 feet"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A chocolate manufacturer is experimenting with new packaging for a premium assortment. They want to create a unique prism-shaped box. The base of the prism is a right-angled triangle with sides measuring 6cm, 8cm, and 10cm. The box's height is 15cm.  \n\nTo minimize waste, the manufacturer wants to calculate the minimum amount of cardboard needed to create this box. What is the total surface area of this prism-shaped chocolate box in square centimeters?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Surface Area and Volume of Prisms' subtopic within 'Quants - Mensuration'. Here's how to solve it:\n\n**1. Identify the Shapes:** The box is composed of:\n    * Two congruent right-angled triangles (bases).\n    * Three rectangular faces (sides).\n\n**2. Calculate the Area of the Triangular Bases:**\n    * Area of a triangle = (1/2) * base * height\n    * In the right-angled triangle, the sides 6cm and 8cm are the base and height.\n    * Area of one triangle = (1/2) * 6cm * 8cm = 24 sq cm\n    * Area of two triangles = 24 sq cm * 2 = 48 sq cm\n\n**3. Calculate the Area of the Rectangular Sides:**\n    * Each side has a height of 15cm (the box's height).\n    * Side 1: Length = 6cm, Area = 6cm * 15cm = 90 sq cm\n    * Side 2: Length = 8cm, Area = 8cm * 15cm = 120 sq cm\n    * Side 3: Length = 10cm (hypotenuse), Area = 10cm * 15cm = 150 sq cm \n\n**4. Calculate the Total Surface Area:**\n    * Total Surface Area = Area of bases + Area of sides \n    * Total Surface Area = 48 sq cm + 90 sq cm + 120 sq cm + 150 sq cm = 408 sq cm\n\n**Therefore, the minimum amount of cardboard needed to create the box is 408 square centimeters.**",
+            "options": [
+                "408 sq cm",
+                "360 sq cm",
+                "500 sq cm",
+                "450 sq cm"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A cylindrical water tank with a diameter of 2 meters and a height of 4 meters needs to be painted on its exterior, including the top and bottom. However, there are two circular openings on the lateral surface of the tank for water inlet and outlet, each with a radius of 20 cm.  If one liter of paint covers 5 square meters, calculate the minimum number of liters of paint needed to completely cover the tank.",
+            "difficulty": "hard",
+            "reasoning": "**1. Calculate the surface area of the entire cylinder:** \n- Radius (r) = Diameter/2 = 2 meters / 2 = 1 meter\n- Surface Area of Cylinder = 2\u03c0r\u00b2 + 2\u03c0rh (where h = height)\n- Surface Area = 2 * \u03c0 * (1m)\u00b2 + 2 * \u03c0 * 1m * 4m\n- Surface Area = 2\u03c0 + 8\u03c0 = 10\u03c0 square meters\n\n**2. Calculate the area of each circular opening:**\n- Radius (r) = 20 cm = 0.2 meters \n- Area of one opening = \u03c0r\u00b2 = \u03c0 * (0.2m)\u00b2 = 0.04\u03c0 square meters\n\n**3. Calculate the total area of the two openings:**\n- Total opening area = 2 * 0.04\u03c0 = 0.08\u03c0 square meters\n\n**4. Calculate the surface area to be painted:**\n- Area to be painted = Total surface area - Total opening area\n- Area to be painted = 10\u03c0 - 0.08\u03c0 = 9.92\u03c0 square meters\n\n**5. Calculate the number of liters of paint needed:**\n- Liters of paint = Area to be painted / Coverage per liter\n- Liters of paint = 9.92\u03c0 square meters / 5 square meters/liter \u2248 6.23 liters\n\n**6.  Determine the minimum number of liters:**\n- Since we cannot purchase a fraction of a liter, we round up to the nearest whole number.\n- Minimum liters needed = 7 liters\n\nTherefore, the minimum number of liters of paint needed to completely cover the tank is 7.",
+            "options": [
+                "6 liters",
+                "6.23 liters",
+                "7 liters",
+                "8 liters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A sculptor is designing a monument in the shape of a right square pyramid. The monument is to be built using granite blocks for the sides and a solid gold cap for the top. The base of the pyramid has a side length of 6 meters. The slant height of each triangular face is 5 meters.  If the price of granite is $500 per square meter and the price of gold is $80,000 per cubic meter, what is the total cost of materials for the monument, excluding the base?  Hint: Assume the gold cap has negligible thickness.",
+            "difficulty": "hard",
+            "reasoning": "**1. Calculate the Pyramid's Height:**\n\n* We are given the slant height (5 meters) and the base side length (6 meters).  \n* Imagine a right triangle formed by the pyramid's height, half the base side length (3 meters), and the slant height as the hypotenuse.\n* Using the Pythagorean theorem (a\u00b2 + b\u00b2 = c\u00b2), we can find the height:\n   * height\u00b2 + 3\u00b2 = 5\u00b2\n   * height\u00b2 = 25 - 9 = 16\n   * height = \u221a16 = 4 meters\n\n**2. Calculate the Area of One Triangular Face:**\n\n* Area of a triangle = (1/2) * base * height\n* Area of one face = (1/2) * 6 meters * 4 meters = 12 square meters\n\n**3. Calculate the Total Lateral Surface Area:**\n\n* The pyramid has 4 triangular faces.\n* Total lateral surface area = 4 * 12 square meters = 48 square meters\n\n**4. Calculate the Cost of Granite:**\n\n* Cost of granite = Area * Price per square meter\n* Cost of granite = 48 square meters * $500/square meter = $24,000\n\n**5. Calculate the Volume of the Gold Cap (Pyramid):**\n\n* Volume of a pyramid = (1/3) * base area * height\n* Volume of gold cap = (1/3) * (6 meters * 6 meters) * 4 meters = 48 cubic meters\n\n**6. Calculate the Cost of Gold:**\n\n* Cost of gold = Volume * Price per cubic meter\n* Cost of gold = 48 cubic meters * $80,000/cubic meter = $3,840,000\n\n**7. Calculate the Total Cost:**\n\n* Total cost = Cost of granite + Cost of gold\n* Total cost = $24,000 + $3,840,000 = $3,864,000\n\n**Therefore, the total cost of materials for the monument, excluding the base, is $3,864,000.**",
+            "options": [
+                "$3,840,000",
+                "$3,864,000",
+                "$24,000",
+                "$48,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A skilled artisan specializes in crafting exquisite jewelry boxes. She has been commissioned to create a cylindrical box with a hemispherical lid, made entirely of polished silver. The client, known for her discerning taste, has specified that the total surface area of the box must be exactly 600\u03c0 square centimeters.  The artisan, aiming to maximize the volume of the box to accommodate a collection of precious gemstones, needs to determine the optimal dimensions for her creation. \n\nWhat should be the radius of the cylindrical base and the height of the cylindrical portion of the box to achieve the maximum possible volume, while adhering to the client's requirement for the total surface area? ",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThis problem involves optimizing the volume of a composite shape (cylinder + hemisphere) under the constraint of a fixed surface area. Here's a step-by-step solution:\n\n**1. Define Variables:**\n   * Let 'r' be the radius of the cylindrical base (and the hemisphere). \n   * Let 'h' be the height of the cylindrical portion. \n\n**2. Formulate Equations:**\n   * **Surface Area (SA):**  \n      * Cylindrical part: 2\u03c0rh + \u03c0r\u00b2 (including the circular base)\n      * Hemispherical lid: 2\u03c0r\u00b2\n      * Total SA:  2\u03c0rh + \u03c0r\u00b2 + 2\u03c0r\u00b2 = 600\u03c0\n      * Simplifying: 2rh + 3r\u00b2 = 600  \n   * **Volume (V):**\n      * Cylindrical part: \u03c0r\u00b2h\n      * Hemispherical lid: (2/3)\u03c0r\u00b3\n      * Total Volume: V = \u03c0r\u00b2h + (2/3)\u03c0r\u00b3\n\n**3. Express Volume as a Function of One Variable:**\n   * From the SA equation, solve for h: \n      * 2rh = 600 - 3r\u00b2\n      * h = (600 - 3r\u00b2) / (2r)\n   * Substitute this value of h in the volume equation:\n      * V = \u03c0r\u00b2 * [(600 - 3r\u00b2) / (2r)] + (2/3)\u03c0r\u00b3\n      * V = 300\u03c0r - (3/2)\u03c0r\u00b3 + (2/3)\u03c0r\u00b3\n      * V = 300\u03c0r - (5/6)\u03c0r\u00b3\n\n**4. Find the Critical Points:**\n   * To maximize V, find the derivative dV/dr and set it equal to 0:\n      * dV/dr = 300\u03c0 - (5/2)\u03c0r\u00b2 = 0\n      * Solve for r:\n         * (5/2)\u03c0r\u00b2 = 300\u03c0\n         * r\u00b2 = 120\n         * r = \u221a120 = 2\u221a30 cm (Since radius cannot be negative)\n\n**5. Determine the Height:**\n   * Substitute the value of r back into the equation for h:\n      * h = (600 - 3(2\u221a30)\u00b2) / (2 * 2\u221a30)\n      * h = (600 - 360) / (4\u221a30)\n      * h = 60 / \u221a30 = 2\u221a30 cm \n\n**6. Verify Maximum Volume:**\n   * Use the second derivative test to confirm that this value of r gives a maximum volume. Calculate d\u00b2V/dr\u00b2: \n      * d\u00b2V/dr\u00b2 = -5\u03c0r \n      * At r = 2\u221a30 cm, d\u00b2V/dr\u00b2 is negative, indicating a maximum point.\n\n**Solution:**\n* The radius of the cylindrical base (r) should be **2\u221a30 cm**. \n* The height of the cylindrical portion (h) should be **2\u221a30 cm** to maximize the volume of the jewelry box while maintaining the specified surface area.\n",
+            "options": [
+                "2\u221a30 cm",
+                "60 cm",
+                "4\u221a30 cm",
+                "10 cm"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A solid right circular cone has a height of 12 cm and a base radius of 5 cm. A plane cuts through the cone parallel to its base, creating a smaller cone at the top and a frustum at the bottom.  The ratio of the volume of the smaller cone to the volume of the frustum is 1:7. Determine the distance of the cutting plane from the base of the original cone.",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step by step:\n\n**1. Understanding the Problem:**\n\nWe have a cone sliced parallel to its base, resulting in a smaller, similar cone at the top and a frustum (a cone with its top sliced off) at the bottom. Our goal is to find the distance from the cut to the base of the original cone.\n\n**2. Using Similar Triangles:**\n\n* Let the height of the smaller cone be *h* cm.\n* The height of the frustum will then be (12 - *h*) cm.\n* Since the plane cuts parallel to the base, the smaller cone and the original cone are similar triangles.\n* This means their corresponding side lengths are proportional.  Let the radius of the smaller cone's base be *r* cm. We can set up a proportion:\n\n   *r*/5 = *h*/12\n\n**3. Volume Ratios:**\n\n* We're given that the volume ratio of the smaller cone to the frustum is 1:7. Let's express this mathematically.\n* Volume of a cone = (1/3)\u03c0*r\u00b2*h\n* Volume of the smaller cone = (1/3)\u03c0*r\u00b2*h\n* Volume of the original cone = (1/3)\u03c0*5\u00b2*12 = 100\u03c0 \n* Volume of the frustum = Volume of original cone - Volume of smaller cone = 100\u03c0 - (1/3)\u03c0*r\u00b2*h\n\n* Now we can set up the ratio:\n [(1/3)\u03c0*r\u00b2*h] / [100\u03c0 - (1/3)\u03c0*r\u00b2*h] = 1/7\n\n**4. Solving for h:**\n\n* Simplify the volume ratio equation:\n  *r\u00b2*h / (300 - *r\u00b2*h) = 1/7\n\n* Cross-multiply:\n  7*r\u00b2*h = 300 - *r\u00b2*h\n\n* Combine like terms:\n  8*r\u00b2*h = 300\n\n* Substitute the proportion we got from similar triangles (*r*/5 = *h*/12  or  *r* = 5*h*/12): \n  8*(5*h*/12)\u00b2 * h = 300\n\n* Simplify and solve for *h*:\n  (50/144) * h\u00b3 = 300\n  h\u00b3 = 864\n  h = \u221b864 = 9.52 cm (approximately)\n\n**5. Finding the Distance:**\n\n* The distance of the cutting plane from the base is the height of the frustum.\n* Distance = 12 cm - 9.52 cm = 2.48 cm (approximately)\n\n**Therefore, the distance of the cutting plane from the base of the original cone is approximately 2.48 cm.** ",
+            "options": [
+                "12 cm",
+                "9.52 cm",
+                "2.48 cm",
+                "5 cm"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Mensuration",
+    "exam_id": 10,
+    "order": 7
+}

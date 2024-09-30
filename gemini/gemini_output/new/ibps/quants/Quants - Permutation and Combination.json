@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "**scenario**: A coffee shop offers 3 different sizes for their beverages (small, medium, large) and 2 types of milk (dairy, oat).\n**task**: Using the fundamental principle of counting, determine how many different combinations of size and milk type are possible.\n**constraints**: None.\n",
+            "difficulty": "easy",
+            "reasoning": "This question utilizes the fundamental principle of counting. Here's how to solve it:\n\n* **Step 1:** Identify the independent choices.  You have two choices to make: the size of the drink and the type of milk.\n* **Step 2:** Determine the number of options for each choice. There are 3 size options and 2 milk options.\n* **Step 3:** Multiply the number of options for each choice. 3 sizes * 2 milk types = 6 total combinations.",
+            "options": [
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**scenario**: Four friends, Alice, Bob, Charlie, and Diana, are having dinner at a round table.\n**constraints**: They decided to switch places after the main course so that everyone gets a new view.\n**question**: How many different seating arrangements are possible?\n",
+            "difficulty": "easy",
+            "reasoning": "This problem involves circular permutation as it deals with arrangements around a circular table where only relative order matters. \n\nHere's how to solve it:\n\n**Step 1: Fix one person's position**\nIn circular permutation, we fix one person's position to avoid counting rotations as different arrangements. Let's fix Alice's position.\n\n**Step 2: Calculate the arrangements**\nNow we have three remaining spots for Bob, Charlie, and Diana. They can be arranged in 3! (3 factorial) ways.\n\n**Step 3: Calculate the factorial**\n3! = 3 * 2 * 1 = 6\n\nTherefore, there are **6** different seating arrangements possible.",
+            "options": [
+                "4",
+                "12",
+                "24",
+                "6"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "You have 4 different colored beads: red, blue, green, and yellow. You want to arrange them on a string to make a bracelet. How many different bracelet arrangements can you make?",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Permutations without Repetition' topic because we are arranging distinct objects (beads) in a specific order (on a bracelet) without using any color more than once.\n\nHere's how to solve it:\n\n* **Step 1:  Consider the first position.** You have 4 different color choices for the first bead on the bracelet.\n* **Step 2: Consider the second position.** After placing the first bead, you only have 3 colors remaining for the second position.\n* **Step 3: Consider the third position.**  You're left with 2 color choices for the third position. \n* **Step 4: Consider the fourth position.**  Only 1 color remains for the last position.\n\nTo find the total number of arrangements, you multiply the number of choices at each step: 4 * 3 * 2 * 1 = 24\n\nTherefore, there are 24 different bracelet arrangements possible.",
+            "options": [
+                "12",
+                "24",
+                "48",
+                "72"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Five friends decide to play a Secret Santa game where each person brings a gift and receives a different gift in return. How many ways can the gifts be exchanged such that no one receives the gift they brought?",
+            "difficulty": "easy",
+            "reasoning": "This problem directly relates to derangements, as we want to find the number of ways to arrange the gifts so that none of them end up in their original position (i.e., with the person who brought them).\n\nHere's how to solve it:\n\n**1. Understanding Derangements:**\n\nA derangement is a permutation of objects where none of the objects appear in their original position.  The number of derangements of 'n' objects is denoted by D(n) or !n.\n\n**2. Applying the Formula:**\n\nWhile there's a formula to calculate derangements directly, we can solve this simple case logically:\n\n* **Person 1** has 4 options for who to give their gift to (anyone but themselves). \n* **Person 2** then has 3 options left (they can't give to themselves or the person who received Person 1's gift). \n* **Person 3** will then have 2 options, and so on.\n\nThis continues until the last person has only one valid recipient left.\n\n**3. Calculation:**\n\nTherefore, the total number of derangements (ways to exchange gifts so no one gets their own) is:\n\n4 * 3 * 2 * 1 = 24\n\n**Therefore, there are 24 ways to exchange the gifts so that no one receives their own.** ",
+            "options": [
+                "24",
+                "120",
+                "5",
+                "10"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A bakery offers 8 different toppings for its cupcakes.\n**task**: A customer wants to order a cupcake with exactly 3 different toppings. However, they are allergic to peanuts and must have sprinkles on their cupcake.  How many different cupcake combinations can the customer choose from?\n**constraints**: The cupcake must have 3 toppings, include sprinkles, and exclude peanuts.\n**question**: How many different cupcake combinations fit the customer's needs?\n",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n1. **Fixed Choices:** The customer has already made two fixed topping choices: sprinkles and no peanuts. This leaves 6 remaining toppings to choose from (8 total toppings - 2 fixed toppings = 6).\n\n2. **Remaining Choice:** Since the customer wants a total of 3 toppings and has already chosen 2, they only need to choose 1 more topping from the remaining 6 options.\n\n3. **Combinations, not permutations:** The order in which the toppings are chosen doesn't matter (sprinkles, chocolate, cherry is the same as cherry, sprinkles, chocolate). Therefore, we are looking for combinations, not permutations.\n\n4. **Calculation:**  Since we're choosing 1 topping out of 6, the calculation is straightforward:\n\n   *  Number of combinations = 6C1 = 6! / (1! * (6-1)!) = 6\n\n**Therefore, there are 6 different cupcake combinations that fit the customer's needs.**",
+            "options": [
+                "12",
+                "6",
+                "28",
+                "36"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of 5 students needs to be selected from a class of 10, consisting of 6 boys and 4 girls. How many different groups can be formed if the group must include at least 2 girls?",
+            "difficulty": "easy",
+            "reasoning": "This problem can be solved using casework, as the condition \"at least 2 girls\" necessitates considering different possibilities.\n\n**Case 1: 2 Girls and 3 Boys**\n* Number of ways to choose 2 girls out of 4: \u2074C\u2082 = 6\n* Number of ways to choose 3 boys out of 6: \u2076C\u2083 = 20\n* Total combinations for this case: 6 * 20 = 120\n\n**Case 2: 3 Girls and 2 Boys**\n* Number of ways to choose 3 girls out of 4: \u2074C\u2083 = 4\n* Number of ways to choose 2 boys out of 6: \u2076C\u2082 = 15\n* Total combinations for this case: 4 * 15 = 60\n\n**Case 3: 4 Girls and 1 Boy**\n* Number of ways to choose 4 girls out of 4: \u2074C\u2084 = 1\n* Number of ways to choose 1 boy out of 6: \u2076C\u2081 = 6\n* Total combinations for this case: 1 * 6 = 6\n\n**Total Combinations**\nTo get the total number of groups that can be formed with at least 2 girls, we add the combinations from all three cases: 120 + 60 + 6 = **186**\n\nTherefore, there are 186 different groups that can be formed with the given conditions.",
+            "options": [
+                "186",
+                "120",
+                "60",
+                "6"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A generous teacher has 10 identical candies to distribute among her 4 favorite students. She wants to make sure each student gets at least one candy. How many different ways can she distribute the candies?",
+            "difficulty": "easy",
+            "reasoning": "This problem can be solved using the Stars and Bars method. Here's how it works:\n\n**1. Dealing with the Lower Bound:**\n\nSince each student must receive at least one candy, let's pre-assign one candy to each student. This leaves us with 6 candies to distribute freely among the 4 students (10 total candies - 4 pre-assigned candies = 6 candies).\n\n**2. Visualizing with Stars and Bars:**\n\nImagine the 6 remaining candies as \"stars\" (*) and 3 \"bars\" (|) that we'll use to divide the candies among the students. For example:\n\n**| * * | * | * * * **\n\nThis representation shows one possible distribution: \n* Student 1: 0 additional candies (besides the initial one)\n* Student 2: 2 additional candies \n* Student 3: 1 additional candy\n* Student 4: 3 additional candies\n\n**3. Applying Combinations:**\n\nWe have a total of 9 positions (6 stars and 3 bars). To find the number of ways to distribute the candies, we simply need to figure out how many ways we can choose 3 positions for the bars.  \n\nThis is a combination problem, and we can calculate it as follows:\n\n   \u2079C\u2083 = (9 * 8 * 7) / (3 * 2 * 1) = 84\n\n**Therefore, there are 84 different ways the teacher can distribute the candies.**",
+            "options": [
+                "10",
+                "6",
+                "84",
+                "120"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A basketball team has 12 players, but only 5 can be on the court at any given time.  Using the Binomial Theorem, determine how many different 5-player combinations can be formed from the team?",
+            "difficulty": "easy",
+            "reasoning": "This question deals with combinations, as the order of players on the court doesn't matter. Here's how to solve it:\n\n**Understanding the Problem**\n\n* We have a total of 12 players (n = 12).\n* We want to choose 5 players (k = 5).\n\n**Binomial Theorem Connection**\n\nThe Binomial Theorem helps us find coefficients in binomial expansions, which directly relate to combinations. The coefficient of the term  'x^k' in the expansion of (1 + x)^n represents the number of ways to choose 'k' items from a set of 'n'.\n\n**Applying the Formula**\n\nThe number of combinations (denoted as 'n choose k' or  nCk or  (n)\n(k))  is calculated as:\n\n nCk = n! / (k! * (n - k)!)\n\n**Calculation**\n\n1. **Find n! (12!):** 12 * 11 * 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 479,001,600\n2. **Find k! (5!):** 5 * 4 * 3 * 2 * 1 = 120\n3. **Find (n - k)! (7!):** 7 * 6 * 5 * 4 * 3 * 2 * 1 = 5,040\n4. **Calculate nCk:** 479,001,600 / (120 * 5,040) = 792\n\n**Answer:** There are 792 different 5-player combinations possible from a team of 12.",
+            "options": [
+                "120",
+                "479,001,600",
+                "792",
+                "5,040"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "You have a bag containing 10 distinct colored marbles.  You randomly draw a marble, record its color, and return it to the bag.  What is the minimum number of times you must repeat this process to guarantee that you have drawn at least one color of marble more than once?",
+            "difficulty": "medium",
+            "reasoning": "This problem can be solved using the Pigeonhole Principle.\n\n**1. Identifying the Pigeons and Pigeonholes:**\n\n* **Pigeons:** The individual times you draw a marble.\n* **Pigeonholes:** The different colors of marbles.\n\n**2. Applying the Pigeonhole Principle:**\n\n* You have 10 distinct colors (pigeonholes).\n* To guarantee you draw at least one color more than once, you need to think about the worst-case scenario: you draw each color once before repeating any color. \n* Therefore, you need to draw 11 times (10 distinct colors + 1) to guarantee a repetition.\n\n**Answer:** You must draw a marble at least **11 times** to guarantee you have drawn at least one color more than once.",
+            "options": [
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A digital lock system uses a 4-digit PIN code for security. Each digit in the PIN can be any number from 0 to 9, allowing for repetitions.\n**question**: How many unique PIN combinations are possible for this lock system?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Permutations with Repetition' subtopic because we're looking for the number of possible arrangements when elements (digits in this case) can be repeated. Here's how we solve it: \n\n* **Understanding the Problem:** We need to find how many different 4-digit PINs can be created when each digit has 10 choices (0-9). \n\n* **Applying the Formula:** Since each digit can be any of the 10 numbers, we have 10 options for the first digit, 10 for the second, 10 for the third, and 10 for the fourth.  \n\n* **Calculation:** To get the total number of combinations, we multiply the number of possibilities for each digit: 10 * 10 * 10 * 10 = 10,000\n\n* **Answer:** There are 10,000 possible PIN combinations for this lock system.",
+            "options": [
+                "1000",
+                "10000",
+                "100000",
+                "1000000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker is decorating a cake with 4 identical strawberries, 3 identical blueberries, and 2 identical raspberries. How many distinct ways can the baker arrange the fruit around the edge of the cake?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves permutations of multisets because we're arranging objects (fruits) where some are identical. Here's how to solve it:\n\n**1. Total Number of Spaces:**\n   Imagine the edge of the cake has 9 spaces for the fruit (4 strawberries + 3 blueberries + 2 raspberries = 9).\n\n**2. Permutations with All Objects Distinct:**\n   If all 9 fruits were distinct, there would be 9! (9 factorial) ways to arrange them.\n\n**3. Accounting for Identical Objects:**\n   * Since we have 4 identical strawberries, we divide by 4! (4 factorial) to avoid counting arrangements where only the strawberries are swapped as different.\n   * Similarly, we divide by 3! for the identical blueberries and 2! for the raspberries.\n\n**4. Calculation:**\n   The number of distinct arrangements is: 9! / (4! * 3! * 2!) = 362880 / (24 * 6 * 2) = 1260\n\n**Therefore, there are 1260 distinct ways to arrange the fruit around the cake.**",
+            "options": [
+                "1260",
+                "9!",
+                "362880",
+                "720"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: A student has to choose 4 subjects from 7 optional subjects being offered in a semester.\n**question**: In how many ways can the student choose his/her subjects?\n**difficulty**: 6/10\n",
+            "reasoning": "This question involves combinations without repetition because the order in which the student chooses the subjects doesn't matter. Choosing 'Math, Physics, Chemistry, Biology' is the same as choosing 'Physics, Chemistry, Biology, Math'. \n\nHere's how to solve it:\n\n* **Step 1: Identify the formula:** We need to use the combination formula:  nCr = n! / (r! * (n-r)!), where n is the total number of items and r is the number of items to choose.\n* **Step 2: Apply the formula:** In this case, n = 7 (total subjects) and r = 4 (subjects to choose). So, the calculation is 7C4 = 7! / (4! * 3!).\n* **Step 3: Calculate the factorial:** 7! = 7*6*5*4*3*2*1 = 5040, 4! = 4*3*2*1 = 24, and 3! = 3*2*1 = 6.\n* **Step 4: Solve for the combination:** 7C4 = 5040 / (24 * 6) = 35. \n\nTherefore, there are 35 ways the student can choose their subjects.",
+            "options": [
+                "28",
+                "35",
+                "42",
+                "70"
+            ],
+            "correct_option": "B",
+            "difficulty": "medium"
+        },
+        {
+            "question": "**Context**: Imagine you have 7 identical candies and you want to distribute them among 3 distinct friends.\n**Question**: How many ways can you distribute these candies such that each friend gets at least one candy?\n**Difficulty Level**: Easy - 6/10\n**Solution Type**: Numerical answer\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem using the Stars and Bars method:\n\n**1. Understanding the Problem:**\n\n   We need to divide 7 candies (stars) into 3 groups (for each friend) ensuring each friend gets at least one candy. \n\n**2. Applying Stars and Bars:**\n\n   * **Represent candies as stars:**  *******\n   * **Minimum candies:** Since each friend needs at least one candy, let's pre-allocate one to each. This leaves us with 4 candies to distribute freely: ******* --> ***|****|\n   * **Bars as dividers:** We need 2 bars to divide the remaining candies into three sections:  ***|*|***\n\n**3. Finding the Solution:**\n\n   Now, we have a total of 6 positions (4 stars and 2 bars). We need to figure out how many ways we can arrange these stars and bars.\n\n   * This is a simple combination problem: We have 6 positions and need to choose 2 positions for the bars. \n   * The number of ways to do this is \u2076C\u2082 = 6! / (2! * 4!) = 15\n\n**Therefore, there are 15 ways to distribute the candies.**",
+            "options": [
+                "7",
+                "10",
+                "15",
+                "21"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**topic**: Probability of Selecting a Group\n**context**: A team of 6 software engineers needs to be formed from a pool of 10 candidates. Among the candidates, there are 4 women and 6 men.\n**question**: What is the probability that the team will consist of exactly 3 women and 3 men?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Applications of Permutations & Combinations in Probability' as it requires calculating the probability of a specific group composition. Here's how to solve it:\n\n**1. Find the total possible teams:** \n   * We need to choose 6 engineers out of 10. This is a combination problem, and we can use the formula:  \u00b9\u2070C\u2086 = (10!)/(6! * 4!) = 210. So, there are 210 ways to form a team of 6 from 10 candidates.\n\n**2. Find the number of teams with 3 women and 3 men:**\n   * We need to choose 3 women out of 4: \u2074C\u2083 = (4!)/(3! * 1!) = 4 ways. \n   * We need to choose 3 men out of 6: \u2076C\u2083 = (6!)/(3! * 3!) = 20 ways.\n   * To get the total number of teams with 3 women and 3 men, we multiply these two: 4 * 20 = 80 ways.\n\n**3. Calculate the probability:**\n   * Probability = (Favorable outcomes) / (Total possible outcomes)\n   * Probability = 80 / 210 = 8/21\n\nTherefore, the probability of forming a team with exactly 3 women and 3 men is 8/21.",
+            "options": [
+                "1/3",
+                "8/21",
+                "1/2",
+                "3/7"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A committee of 5 students is to be formed from a group of 8 boys and 6 girls. Using Pascal's Identity, determine how many ways the committee can be formed if it must include at least 3 boys.",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem**\n\nWe need to find the number of ways to form a committee with at least 3 boys. This means we could have 3, 4, or 5 boys on the committee.\n\n**Applying Pascal's Identity**\n\nPascal's Identity states:  \n*  <sup>n</sup>C<sub>r</sub> = <sup>n-1</sup>C<sub>r-1</sub> + <sup>n-1</sup>C<sub>r</sub>\n\nWhere <sup>n</sup>C<sub>r</sub> represents the number of ways to choose 'r' items from a set of 'n' items.\n\n**Solution**\n\nInstead of directly calculating the combinations for 3, 4, and 5 boys, we can use a complementary approach with Pascal's Identity.\n\n1. **Calculate the ways to have less than 3 boys:**\n   *  2 boys: <sup>8</sup>C<sub>2</sub> * <sup>6</sup>C<sub>3</sub> = 28 * 20 = 560\n   *  1 boy:  <sup>8</sup>C<sub>1</sub> * <sup>6</sup>C<sub>4</sub> = 8 * 15 = 120\n   *  0 boys:  <sup>8</sup>C<sub>0</sub> * <sup>6</sup>C<sub>5</sub> = 1 * 6 = 6\n\n2. **Calculate the total possible committees:**\n    * <sup>14</sup>C<sub>5</sub> = 2002 \n\n3. **Subtract the undesirable combinations from the total:**\n    * 2002 - 560 - 120 - 6 = 1316\n\n**Therefore, there are 1316 ways to form the committee with at least 3 boys.**",
+            "options": [
+                "1316",
+                "2002",
+                "560",
+                "680"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A school cafeteria offers a lunch special that includes a choice of 3 different sandwiches, 2 different soups, and 4 different drinks.  A student wants to buy a sandwich, a soup, and a drink. How many different lunch combinations are possible?",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the Fundamental Principle of Counting. Here's how to solve it:\n\n* **Step 1: Sandwich Choice:** The student has 3 options for their sandwich.\n* **Step 2: Soup Choice:**  For each sandwich choice, they then have 2 options for soup.\n* **Step 3: Drink Choice:** For each sandwich and soup combination, they have 4 options for a drink. \n\nTo find the total number of combinations, we multiply the number of choices at each step: 3 sandwiches * 2 soups * 4 drinks = **24 possible lunch combinations**",
+            "options": [
+                "12",
+                "24",
+                "36",
+                "48"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A group of 8 friends are planning a road trip to visit 4 national parks, each known for its unique landscape.  They want to experience each park's beauty in a different order. How many different routes can they create to visit all four parks, ensuring they visit each park only once?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Permutations without Repetition' category because the order of the parks matters (creating a different route), and each park is visited only once. \n\nHere's how to solve it:\n\n* **Step 1: Determine the choices for each position:**\n    * For the first park to visit, they have 8 options.\n    * Once they've visited one park, they have 7 parks remaining for their second stop.\n    * For the third stop, they have 6 parks left.\n    * Finally, for their last park, they have 5 options. \n\n* **Step 2: Calculate the total permutations:**\n    * Multiply the number of choices for each position together: 8 * 7 * 6 * 5 = 1680\n\nTherefore, there are 1680 different routes they can create to visit all four parks.",
+            "options": [
+                "32",
+                "70",
+                "3360",
+                "6720"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A research team is developing a new type of encryption algorithm. They need to choose 4 out of 7 available encryption protocols to incorporate into the final design. The order in which they choose the protocols will influence the strength of the encryption.  \n\nUsing the Binomial Theorem, determine how many different ordered combinations of 4 protocols the team can create.",
+            "difficulty": "medium",
+            "reasoning": "This question combines the concepts of combinations and permutations within the framework of the Binomial Theorem. Here's how to solve it: \n\n**1. Understanding the Problem:** We need to find the number of ways to choose and arrange 4 protocols out of 7. This implies we need to use permutations (order matters) along with the concepts of the Binomial Theorem.\n\n**2. Formula Application:** The number of permutations of *n* objects taken *r* at a time is denoted by nPr = n! / (n-r)!. In our case, we need to find 7P4 (7 permutations taken 4 at a time).\n\n**3. Calculation:** \n* 7P4 = 7! / (7-4)! \n* 7P4 = 7! / 3! \n* 7P4 = 7 * 6 * 5 * 4 = 840 \n\n**4. Connecting to Binomial Theorem:** While we didn't directly use the binomial expansion formula, the underlying concept of combinations and the factorial calculations are integral to the Binomial Theorem as well. This question highlights how these concepts are interconnected.\n\n**Therefore, there are 840 different ordered combinations of 4 protocols that the research team can create.**",
+            "options": [
+                "720",
+                "120",
+                "840",
+                "210"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A mischievous librarian decides to rearrange 6 books on a shelf, ensuring none of the books end up in their original position.  In how many ways can the librarian achieve this literary derangement?",
+            "difficulty": "medium",
+            "reasoning": "This problem falls under the concept of derangements, where we need to find the number of arrangements where no element appears in its original position. Here's how to solve it:\n\n**Understanding Derangements**\n\nA derangement of n objects is denoted by !n and can be calculated using the formula:\n\n!n = n! [1 - 1/1! + 1/2! - 1/3! + ... + (-1)^n/n!]\n\n**Applying the Formula**\n\n1. **Calculate Factorial:**  6! (6 factorial) = 6 * 5 * 4 * 3 * 2 * 1 = 720\n\n2. **Apply Derangement Formula:**\n   !6 = 720 * [1 - 1/1! + 1/2! - 1/3! + 1/4! - 1/5! + 1/6!]\n   !6 = 720 * [1 - 1 + 1/2 - 1/6 + 1/24 - 1/120 + 1/720]\n   !6 = 720 * (0.368055556)\n   !6 = 265 (rounded to the nearest whole number)\n\n**Answer:** There are 265 ways the librarian can rearrange the books so that none are in their original position.",
+            "options": [
+                "120",
+                "360",
+                "720",
+                "265"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A school is forming a debate team of 3 students from a pool of 7 students: A, B, C, D, E, F, and G.  \n\n**Constraint:** Students A and B cannot both be on the team; at least one of them must be included. \n\n**Question:** How many different debate teams can be formed?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem using casework:\n\n**Case 1: Student A is on the team, but Student B is not.**\n\n* We have 1 spot filled by A. \n* We need to fill the remaining 2 spots from the pool of 5 students (C, D, E, F, G).\n* The number of ways to do this is \u2075C\u2082 (5 choose 2), which is 10.\n\n**Case 2: Student B is on the team, but Student A is not.**\n\n* This follows the same logic as Case 1. \n* We have 1 spot filled by B. \n* We need to fill the remaining 2 spots from the pool of 5 students (C, D, E, F, G).\n* The number of ways to do this is again \u2075C\u2082, which is 10.\n\n**Total Number of Teams** \nTo get the total number of possible teams, we add the possibilities from the two cases:\n\nTotal teams = 10 (Case 1) + 10 (Case 2) = 20 \n\n**Therefore, there are 20 different debate teams that can be formed.**",
+            "options": [
+                "10",
+                "15",
+                "20",
+                "30"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A pizza shop offers 6 different toppings for its pizzas: pepperoni, mushrooms, onions, sausage, olives, and green peppers.\n**question**: If a customer wants to order a pizza with exactly 3 different toppings, how many different topping combinations are possible?\n**difficulty**: Medium (5/10)\n",
+            "difficulty": "medium",
+            "reasoning": "This problem involves combinations without repetition because the order of toppings on a pizza doesn't matter, and we only care about the unique combinations. Here's how to solve it:\n\n**Understanding the Formula:**\n\nThe number of combinations of selecting 'r' items from a set of 'n' items (where order doesn't matter) is given by the binomial coefficient formula:\n\n nCr = n! / (r! * (n-r)!)\n\nWhere:\n* nCr represents the number of combinations\n* n is the total number of items\n* r is the number of items to be chosen\n* ! denotes the factorial (e.g., 5! = 5 * 4 * 3 * 2 * 1)\n\n**Applying the Formula:**\n\n1. **Identify n and r:**\n   * n = 6 (total number of toppings)\n   * r = 3 (number of toppings to choose)\n\n2. **Plug the values into the formula:**\n   * 6C3 = 6! / (3! * (6-3)!)\n\n3. **Calculate the factorials:**\n   * 6! = 6 * 5 * 4 * 3 * 2 * 1 = 720\n   * 3! = 3 * 2 * 1 = 6\n   * 3! = 3 * 2 * 1 = 6 \n\n4. **Solve the equation:**\n   * 6C3 = 720 / (6 * 6)\n   * 6C3 = 720 / 36\n   * 6C3 = 20\n\n**Therefore, there are 20 different possible topping combinations for the pizza.**",
+            "options": [
+                "18",
+                "20",
+                "30",
+                "36"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Eight colorful beads - red, blue, green, yellow, orange, purple, pink, and brown - are to be strung on a circular bracelet.  How many unique bracelets can be made if no bead can be adjacent to a bead of the same color?",
+            "difficulty": "medium",
+            "reasoning": "This problem delves into circular permutations with a constraint. Here's how to solve it:\n\n**1. Fixing a Position:**\n   Since it's a circular arrangement, we can fix one bead's position without loss of generality. Let's say we place the red bead first.\n\n**2. Adjacent Restrictions:**\n   Now, the beads next to the red bead cannot be red. We have 7 remaining color choices for the bead to the right of the red bead.\n\n**3. Continuing the Pattern:**\n   For the next position, we have 6 remaining colors (we can't repeat the previous two colors). This pattern continues, with decreasing color options for each subsequent bead.\n\n**4. Calculation:**\n   The total number of arrangements would seem like 7*6*5*4*3*2*1. However, since it's a circle, we've overcounted rotations as distinct arrangements.\n\n**5. Accounting for Overcounting:**\n   We've counted each distinct arrangement 8 times (the total number of beads). Therefore, we divide the initial calculation by 8.\n\n**Final Calculation:**\n   The number of unique arrangements is (7*6*5*4*3*2*1)/8 = 630 \n\nTherefore, there are 630 unique bracelets possible.",
+            "options": [
+                "720",
+                "5040",
+                "630",
+                "10080"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**problem_context**: A pizzeria offers 4 different toppings for their pizzas: mushrooms, pepperoni, onions, and olives. You want to order a pizza with exactly 7 toppings, and you are allowed to have repeated toppings.\n**question**: How many different pizza topping combinations are possible?\n**difficulty**: 5\n",
+            "difficulty": "medium",
+            "reasoning": "This problem involves combinations with repetition because the order of toppings on a pizza doesn't matter (mushroom-pepperoni is the same as pepperoni-mushroom), and we can have multiple toppings of the same type.\n\nHere's how to solve it using the stars and bars method:\n\n1. **Represent the toppings as stars:** Imagine 7 stars representing the 7 toppings you want on your pizza: *******\n\n2. **Use bars to separate topping types:** We need 3 bars to separate the 4 different topping types (mushrooms | pepperoni | onions | olives). The stars before the first bar represent mushrooms, the stars between the first and second bar represent pepperoni, and so on.\n\nFor example, this combination represents 2 mushrooms, 3 pepperonis, 1 onion, and 1 olive: **|***|*|*\n\n3. **Count the arrangements:** Now the problem reduces to finding the number of ways to arrange 7 stars and 3 bars. We have a total of 10 positions (7 stars + 3 bars), and we need to choose 3 positions for the bars (or equivalently, 7 positions for the stars).\n\n4. **Calculate the combinations:** The number of combinations is given by (10 choose 3) or (10 choose 7), which is calculated as:\n\n10! / (3! * 7!) = (10 * 9 * 8) / (3 * 2 * 1) = 120\n\nTherefore, there are 120 different pizza topping combinations possible.",
+            "options": [
+                "28",
+                "84",
+                "120",
+                "330"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A group of 6 friends - Alice, Bob, Charlie, David, Emily, and Fred - decide to take a photo together.\n**task**: If they stand in a straight line, how many different arrangements are possible where Alice is always in the first position and Fred is always in the last position?\n**parameters**: 6 friends, fixed positions for two friends (Alice and Fred), arrangements in a straight line.\n",
+            "difficulty": "medium",
+            "reasoning": "This problem involves permutations without repetition because the order of the friends in the line matters, and each friend can only occupy one position at a time. \n\nSince Alice and Fred have fixed positions, we only need to arrange the remaining 4 friends.  \n\n* For the second position, we have 4 choices (Bob, Charlie, David, or Emily). \n* Once the second position is filled, we have 3 choices left for the third position. \n* For the fourth position, we have 2 choices left. \n* Finally, for the fifth position, there's only 1 friend remaining. \n\nTherefore, the total number of different arrangements is 4 * 3 * 2 * 1 = 24. ",
+            "options": [
+                "12",
+                "24",
+                "36",
+                "720"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A renowned art gallery is showcasing 8 distinct paintings by a celebrated artist. The gallery curator wants to arrange these paintings in a linear fashion along a wall. However, 3 of these paintings are considered the artist's masterpieces and the curator insists that these 3 masterpieces must always be displayed consecutively. Using the Binomial Theorem, in how many ways can the curator arrange all 8 paintings while satisfying the constraint regarding the masterpieces?",
+            "difficulty": "medium",
+            "reasoning": "**1. Treat the masterpieces as a single unit:** Since the 3 masterpieces must be together, consider them as one unit for now. This leaves us with 6 units to arrange: the combined masterpiece unit and the 5 remaining individual paintings.\n\n**2. Arrange the 6 units:** These 6 units can be arranged in 6! (6 factorial) ways, which is 720.\n\n**3. Arrange the masterpieces within their unit:**  The 3 masterpieces within their unit can be arranged in 3! (3 factorial) ways, which is 6.\n\n**4. Combine the arrangements:** To get the total number of arrangements where the masterpieces are always together, multiply the arrangements of the units (step 2) by the arrangements within the masterpiece unit (step 3): 720 * 6 = 4320.\n\n**Therefore, there are 4320 ways to arrange the paintings while keeping the masterpieces together.**",
+            "options": [
+                "720",
+                "4320",
+                "10,080",
+                "20,160"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Eight colorful beads - red, orange, yellow, green, blue, indigo, violet, and black - are to be strung on a circular wire to make a bracelet.  How many distinct bracelets can be formed if no two adjacent beads can be the same color?",
+            "difficulty": "medium",
+            "reasoning": "This problem delves into circular permutations with a restriction on adjacency. Here's how to solve it:\n\n**1. Fix a Position:** \nSince it's a circular arrangement, we fix one bead's position to avoid overcounting due to rotation. Let's say we fix the red bead. \n\n**2. Adjacent Restrictions:**\nThe bead next to the red bead can be any of the remaining 7 colors.  The bead after that cannot be the same color as either the red bead or the second bead, leaving 6 choices. This pattern continues.\n\n**3.  Circular Permutation:**\nWe've essentially arranged the beads in a line with our restrictions. Now, to account for the circular nature, we treat this line as a single unit. In a circular permutation, with 'n' objects, there are (n-1)! arrangements. However, since we can flip the bracelet, we divide by 2.\n\n**Calculation:**\n* Total arrangements in a line: 7 * 6 * 5 * 4 * 3 * 2 * 1 = 7!\n* Circular arrangements: (7!)/2\n\nTherefore, there are **(7!)/2 = 2520** distinct bracelets that can be formed.",
+            "options": [
+                "1260",
+                "5040",
+                "2520",
+                "10080"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bakery is creating a special 7-cookie box for a customer. The customer has chosen 5 cookie types they like: Chocolate Chip, Oatmeal Raisin, Peanut Butter, Sugar, and Snickerdoodle. However, the customer requests that the box must include at least one Chocolate Chip cookie and at least one Sugar cookie. How many different ways can the bakery arrange the cookies in the box to fulfill the customer's request?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves combinations with restrictions.  Here's how to solve it:\n\n**1. Consider the total possible combinations without restrictions:**\n\n* Since the customer chooses 7 cookies from 5 types, with repetition allowed, each cookie selection has 5 choices.\n* Total unrestricted combinations: 5 * 5 * 5 * 5 * 5 * 5 * 5 = 5<sup>7</sup>\n\n**2. Calculate combinations where the restriction is NOT met:**\n\n* **No Chocolate Chip:**  Each cookie has 4 choices (excluding Chocolate Chip): 4<sup>7</sup> combinations.\n* **No Sugar Cookie:** Similar to above, there are 4<sup>7</sup> combinations without a Sugar cookie.\n\n**3.  Account for double-counting:**\n\n* We've double-counted combinations with NO Chocolate Chip AND NO Sugar Cookie. These have 3 cookie choices each: 3<sup>7</sup> combinations.\n\n**4.  Calculate valid combinations:**\n\n* Valid combinations = (Total unrestricted combinations) - (Combinations with No Chocolate Chip) - (Combinations with No Sugar Cookie) + (Combinations with Neither)\n* Valid combinations = 5<sup>7</sup> - 4<sup>7</sup> - 4<sup>7</sup> + 3<sup>7</sup> = 78125 - 16384 - 16384 + 2187 = **47534**\n\n**Therefore, there are 47,534 ways the bakery can arrange the cookies in the box while fulfilling the customer's request.**",
+            "options": [
+                "47,534",
+                "78,125",
+                "31,250",
+                "16,384"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Seven friends went to a hat shop and each picked out a different hat.  They all try on their new hats for a group photo.  However, just before the picture, they realize nobody is wearing their own hat!  In how many ways could the friends be wearing the wrong hats?",
+            "difficulty": "medium",
+            "reasoning": "This problem is a classic example of a derangement.  A derangement is a permutation of objects where none of the objects end up in their original position.\n\nHere's how we can solve this:\n\n**1. Total Permutations:**\n   Without any restrictions, there would be 7! (7 factorial) ways to arrange the hats among the friends. This is 7 * 6 * 5 * 4 * 3 * 2 * 1 = 5040\n\n**2.  Calculating Derangements:**\n   We can use the principle of inclusion-exclusion to find the number of derangements. Here's a breakdown:\n\n   * **Start with the total permutations:** 7! = 5040 \n   * **Subtract arrangements where at least one person has their own hat:** There are 6! ways for each person to have their own hat (fix one person with their hat, and the rest can be arranged in 6! ways). Since there are 7 friends, we subtract 7 * 6! \n   * **Add back arrangements where at least two people have their own hats:** We've over-subtracted cases where two people have their own hats. There are  \u2075C\u2082 ways to choose 2 people, and for each choice, there are 5! ways to arrange the rest. We add back \u2075C\u2082 * 5!\n   * **Continue this pattern:**  We alternate between subtracting and adding back the possibilities for 3, 4, 5, 6, and 7 people having their own hats.\n\n**Formula:**\nThe formula for derangements of n objects is:\n  D(n) = n! (1 - 1/1! + 1/2! - 1/3! + ... + (-1)^n/n!)\n\n**Calculation:**\nApplying this to our problem:\n  D(7) = 7! (1 - 1/1! + 1/2! - 1/3! + 1/4! - 1/5! + 1/6! - 1/7!)\n  D(7) = 5040 (1 - 1 + 1/2 - 1/6 + 1/24 - 1/120 + 1/720 - 1/5040)\n  D(7) = 1854\n\n**Therefore, there are 1854 ways the friends could be wearing the wrong hats.**",
+            "options": [
+                "5040",
+                "1854",
+                "7!",
+                "7 * 6!"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: A florist has 12 identical roses to arrange in 3 distinct vases.\n**Constraints**: Each vase must have at least 2 roses.\n**Question**: How many different arrangements are possible?\n",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the Stars and Bars method with a slight twist. Here's how to solve it:\n\n**1. Pre-allocate Roses:**\n\nSince each vase must have at least 2 roses, pre-allocate 2 roses to each of the 3 vases. This uses up 6 roses (2 roses/vase * 3 vases = 6 roses). \n\n**2. Remaining Roses:**\n\nWe now have 6 roses remaining (12 total roses - 6 pre-allocated roses = 6 roses). \n\n**3. Stars and Bars:**\n\n* **Stars:** The 6 remaining roses represent our 'stars'.\n* **Bars:** We need 2 'bars' to create 3 sections (representing the vases).\n\n**4. Arrangement:**\n\nWe need to arrange these 6 stars and 2 bars.  This is a classic permutation problem with repetition:\n\nTotal arrangements = (6 stars + 2 bars)! / (6 stars)! * (2 bars)! = 8! / 6!2! = 28\n\n**Therefore, there are 28 different arrangements possible.**",
+            "options": [
+                "10",
+                "28",
+                "36",
+                "84"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A school offers 7 different extracurricular activities: Art, Band, Chess, Debate, Esports, French Club, and Gardening.  To encourage participation, the school principal wants to ensure that at least one activity has at least 4 students enrolled from the same grade level (freshman, sophomore, junior, or senior). What is the minimum number of students that need to sign up for extracurricular activities to guarantee this outcome?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem using the Pigeonhole Principle:\n\n**1. Identify the Pigeonholes:**\n   * The 'pigeonholes' in this case are the different combinations of activity and grade level. Since there are 7 activities and 4 grade levels, there are 7 * 4 = 28 pigeonholes.\n\n**2. Identify the Pigeons:**\n   * The 'pigeons' are the students signing up for activities.\n\n**3. Apply the Pigeonhole Principle:**\n   * To guarantee that at least one pigeonhole (activity/grade level combination) has 4 pigeons (students), we need to consider the worst-case scenario. Imagine we fill up each pigeonhole with 3 students before any pigeonhole gets a 4th student.\n   * This would mean we have 28 pigeonholes * 3 students/pigeonhole = 84 students.\n\n**4. Find the Minimum:**\n   * To guarantee at least one activity has 4 students from the same grade level, we need to add one more student to this total. Therefore, the minimum number of students required is 84 + 1 = 85.\n\n**Therefore, the answer is 85.**",
+            "options": [
+                "84",
+                "83",
+                "86",
+                "85"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A renowned escape artist is planning their most daring feat yet. They have designed a complex escape route involving a series of 5 locked chambers. Each chamber has a unique lock mechanism requiring a specific key from a set of 7 distinct keys. To increase the challenge, the artist will discard each key immediately after using it. In how many different orders can the artist use the keys to escape all 5 chambers?",
+            "difficulty": "hard",
+            "reasoning": "This problem revolves around the Fundamental Principle of Counting and specifically deals with permutations since the order of key usage matters. Here's how we break down the solution:\n\n**Step 1: The First Chamber**\nThe escape artist has 7 different keys to choose from to unlock the first chamber.\n\n**Step 2: The Second Chamber** \nHaving used one key and discarded it, there are only 6 keys remaining for the second chamber.\n\n**Step 3: The Remaining Chambers**\nThis pattern continues for each subsequent chamber. For the third chamber, there will be 5 keys left, then 4 for the fourth, and finally 3 for the fifth.\n\n**Step 4: Applying the Fundamental Principle of Counting**\nTo find the total number of different orders, we multiply the number of choices available at each step:\n\nTotal orders = 7 * 6 * 5 * 4 * 3 = 2520\n\n**Therefore, there are 2520 different orders in which the escape artist can use the keys.**\n\nThis question is considered difficult (8/10) because it involves a scenario that might not immediately scream 'permutations' and requires a systematic application of the Fundamental Principle of Counting over multiple stages.",
+            "options": [
+                "120",
+                "720",
+                "2520",
+                "5040"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A school board consisting of 6 teachers and 4 parents needs to form a 5-person committee to review the dress code policy. To ensure diverse representation, the committee must include at least 2 teachers and at least 1 parent.  \n\nHow many different ways can the school board form this committee?\n\n**Key Concepts:** Combinations, Casework",
+            "difficulty": "hard",
+            "reasoning": "This problem is best tackled using casework, as the restriction on the committee composition introduces multiple scenarios:\n\n**Case 1: 2 Teachers, 3 Parents**\n*  Selecting 2 teachers from 6:  \u2076C\u2082 = 15 ways\n*  Selecting 3 parents from 4: \u2074C\u2083 = 4 ways\n*  Total combinations for Case 1: 15 * 4 = 60\n\n**Case 2: 3 Teachers, 2 Parents**\n*  Selecting 3 teachers from 6: \u2076C\u2083 = 20 ways\n*  Selecting 2 parents from 4: \u2074C\u2082 = 6 ways\n*  Total combinations for Case 2: 20 * 6 = 120\n\n**Case 3: 4 Teachers, 1 Parent**\n*  Selecting 4 teachers from 6: \u2076C\u2084 = 15 ways\n*  Selecting 1 parent from 4: \u2074C\u2081 = 4 ways\n*  Total combinations for Case 3: 15 * 4 = 60\n\n**Total Combinations**\nTo get the total number of valid committees, we sum the combinations from each case: 60 + 120 + 60 = 240\n\nTherefore, there are 240 different ways to form the committee.",
+            "options": [
+                "120",
+                "186",
+                "240",
+                "300"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Eight distinct beads, two of which are identical red beads, are to be strung on a circular bracelet. If rotations of the bracelet are considered the same arrangement, how many unique bracelets can be created such that the red beads are not adjacent?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Circular Permutations' subtopic because it involves arranging objects in a circle where rotations are considered identical.  The 'tricky' aspect stems from the constraint that the identical red beads cannot be adjacent. Here's a step-by-step solution:\n\n**1. Consider the Non-Red Beads:**\n\n   Since we want the red beads separated, let's first arrange the six non-red beads in a circle. In a circular permutation, we fix one object's position to avoid overcounting rotations. So, we have (6-1)! = 5! = 120 ways to arrange the non-red beads.\n\n**2. Place the Red Beads:**\n\n   Now, imagine the non-red beads creating spaces between them. We have six such spaces where we can insert the red beads. To ensure the red beads aren't adjacent, we need to choose two of these spaces. The number of ways to do this is \u2076C\u2082 (6 choose 2), which is (6*5)/(2*1) = 15.\n\n**3. Account for Red Bead Identity:**\n\n   Since the two red beads are identical, we've overcounted our arrangements.  We've treated the arrangement 'red-space-red-other beads' as different from 'red-space-red-other beads' (where 'other beads' are in the same order) when, in reality, they produce the same bracelet. Therefore, we must divide by 2! (2 factorial) to correct for this overcounting.\n\n**4. Final Calculation:**\n\n   The total number of unique bracelets is (arrangements of non-red beads) * (ways to place red beads) / (overcounting factor) = 120 * 15 / 2 = 900\n\n**Therefore, there are 900 unique bracelets possible.** ",
+            "options": [
+                "120",
+                "15",
+                "900",
+                "720"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A renowned chocolatier is creating a new assortment box containing 12 chocolates.  He has 5 different types of dark chocolates and 7 different types of milk chocolates.  He wants the assortment to have at least 4 dark chocolates and at least 4 milk chocolates, with no two chocolates of the same type. How many different assortments can he create using the binomial theorem?",
+            "difficulty": "hard",
+            "reasoning": "This question blends the binomial theorem with combinations to solve a tricky counting problem. Here's how we can break it down:\n\n**1. Understanding the Constraints:**\n\n* **At least 4 Dark and 4 Milk:** This means we could have combinations like (4 dark, 8 milk), (5 dark, 7 milk), etc.\n* **No Repetition:**  We cannot have two chocolates of the same type, meaning we'll use combinations, not permutations.\n\n**2. Applying the Binomial Theorem:**\n\nWhile the problem doesn't directly scream 'binomial theorem,' we can use it to think about the possible cases:\n\n* **Case 1: (4 Dark, 8 Milk):** \n    * We need to choose 4 dark chocolates from 5: \u2075C\u2084\n    * We need to choose 8 milk chocolates from 7: \u2077C\u2088 (this equals 0 since we can't choose 8 from 7)\n* **Case 2: (5 Dark, 7 Milk):**\n    * Choose 5 dark from 5: \u2075C\u2085\n    * Choose 7 milk from 7: \u2077C\u2087\n\n**3. Calculating the Combinations:**\n\n* **Case 1:** \u2075C\u2084 * \u2077C\u2088 = 5 * 0 = 0 \n* **Case 2:** \u2075C\u2085 * \u2077C\u2087 = 1 * 1 = 1\n\n**4. Summing the Possibilities:**\n\nSince only Case 2 is possible, there's only **1** way the chocolatier can create the assortment.",
+            "options": [
+                "12",
+                "35",
+                "70",
+                "210"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A deck of cards contains 10 cards numbered from 1 to 10.  Three cards are drawn at random from the deck without replacement.  What is the probability that the sum of the numbers on the three cards drawn is divisible by 3?",
+            "difficulty": "hard",
+            "reasoning": "This problem is classified as 'hard' due to the multiple layers of calculation involved in finding the solution.  Here's a step-by-step breakdown:\n\n**1.  Possible Successful Outcomes**\n\nTo have a sum divisible by 3, we have a few possible combinations:\n\n* **All three numbers are divisible by 3:** (3, 6, 9)\n* **One number is divisible by 3, and the other two leave remainders of 1 and 2 when divided by 3:** Examples: (1, 2, 3), (1, 5, 9), (4, 6, 8) \n\n**2.  Calculating Favorable Outcomes**\n\n* **Case 1 (All divisible by 3):**  There are 3!/(3!0!) = 1 way to choose the three cards divisible by 3.\n* **Case 2 (One divisible by 3, others with remainders):**\n    * There are 3 ways to choose the number divisible by 3 (3, 6, or 9).\n    * There are 3 ways to choose the number with a remainder of 1 (1, 4, or 7).\n    * There are 3 ways to choose the number with a remainder of 2 (2, 5, or 8).\n    * Within this case, there are 3! = 6 ways to order these three cards.\n\n    * Total combinations for Case 2: 3 * 3 * 3 * 6 = 162\n\n* **Total Favorable Outcomes:** 1 + 162 = 163\n\n**3.  Calculating Total Possible Outcomes**\n\n* The total number of ways to draw 3 cards out of 10 is 10C3 = (10*9*8)/(3*2*1) = 120\n\n**4.  Calculating the Probability**\n\n* Probability = (Favorable Outcomes) / (Total Possible Outcomes)\n* Probability = 163 / 120 \n\n**Therefore, the probability of the sum of the numbers on the three cards being divisible by 3 is 163/120.**",
+            "options": [
+                "163/120",
+                "1/3",
+                "1/4",
+                "1/2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A generous king wants to distribute 15 identical gold coins among his 4 loyal knights. He insists that each knight must receive at least 2 gold coins, but no more than 6.  How many different ways can the king distribute his gold coins?",
+            "difficulty": "hard",
+            "reasoning": "This problem is tricky because it combines combinations with repetition and additional constraints. Here's how to solve it:\n\n**1. Handle the Minimum:**\n\n* The king wants each knight to have at least 2 coins. Let's pre-assign these 8 coins (2 coins/knight * 4 knights = 8 coins).\n* This leaves us with 7 coins (15 total coins - 8 pre-assigned coins = 7 coins) to distribute.\n\n**2.  Stars and Bars with a Twist:**\n\n* Imagine the 7 remaining coins as \"stars\" (*) and 3 dividers (|) to separate the coins into 4 groups (one for each knight). \n* For example: **|***|*|*** represents 0 additional coins for the first knight, 3 for the second, 1 for the third, and 3 for the fourth.\n\n**3. Account for the Maximum:**\n\n*  We need to make sure no knight gets more than 6 coins total. Since we already gave each knight 2, this means no knight can get more than 4 *additional* coins.\n*  To account for this, we need to subtract the invalid combinations where one or more knights get more than 4 additional coins. We can use the Principle of Inclusion-Exclusion for this.\n\n**4.  Calculate Invalid Combinations:**\n\n* **Case 1: One knight gets 5 or more additional coins.**  There are 4 ways to choose which knight gets the extra coins. After giving those coins, we have 2 left to distribute among the 4 knights, which can be done in \u2076C\u2083 = 20 ways (6 items - 3 dividers = 3 spaces to arrange).\n* **Case 2: Two knights get 5 or more additional coins.**  This case is not possible with only 7 coins left to distribute.\n\n**5. Final Calculation:**\n\n* **Total combinations without the maximum constraint:**  We have 10 items (7 stars and 3 dividers) to arrange, which can be done in \u00b9\u2070C\u2083 = 120 ways.\n* **Subtract invalid combinations:** 120 - (4 * 20) = 40\n\n**Therefore, there are 40 different ways the king can distribute his gold coins.**",
+            "options": [
+                "120",
+                "84",
+                "40",
+                "16"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A school board is forming a special committee to address issues of student well-being. The committee will consist of 7 members selected from a pool of 10 teachers, 6 parents, and 4 community members. To ensure diverse perspectives, the committee must include at least 2 teachers, 2 parents, and at least 1 community member.  How many different ways can the school board form this committee?",
+            "difficulty": "medium",
+            "reasoning": "This question involves combinations without repetition because the order of selecting committee members doesn't matter. Here's how to solve it:\n\n**1.  Consider the minimum requirements:**\n\n   * The committee needs at least 2 teachers, 2 parents, and 1 community member.\n\n**2.  Calculate combinations for each possible scenario that fulfills the minimum requirement:**\n\n   * **Scenario 1: 2 Teachers, 2 Parents, 3 Community Members**\n      * Combinations of teachers: \u00b9\u2070C\u2082 = 45\n      * Combinations of parents: \u2076C\u2082 = 15\n      * Combinations of community members: \u2074C\u2083 = 4\n      * Total combinations for this scenario: 45 * 15 * 4 = 2700\n\n   * **Scenario 2: 2 Teachers, 3 Parents, 2 Community Members**\n      * Combinations of teachers: \u00b9\u2070C\u2082 = 45\n      * Combinations of parents: \u2076C\u2083 = 20\n      * Combinations of community members: \u2074C\u2082 = 6\n      * Total combinations for this scenario: 45 * 20 * 6 = 5400\n\n   * **Scenario 3: 3 Teachers, 2 Parents, 2 Community Members**\n      * Combinations of teachers: \u00b9\u2070C\u2083 = 120\n      * Combinations of parents: \u2076C\u2082 = 15\n      * Combinations of community members: \u2074C\u2082 = 6\n      * Total combinations for this scenario: 120 * 15 * 6 = 10800\n\n**3. Add up the combinations from all scenarios:**\n\n   * Total possible committees: 2700 + 5400 + 10800 = **18900**\n\n**Therefore, there are 18,900 different ways the school board can form the committee.**",
+            "options": [
+                "18900",
+                "2700",
+                "10800",
+                "5400"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A jewelry maker is creating a charm bracelet with 7 charms.  She has 3 identical silver charms, 2 identical gold charms, and wants the remaining 2 charms to be different from each other and from the rest. If she has 5 other distinct charm types to choose from, how many different charm bracelet arrangements are possible?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Address the Fixed Charms:**\n* The 3 silver charms and 2 gold charms will always occupy 5 spots on the bracelet. Since they are identical, we don't need to consider their arrangement within those 5 spots.\n\n**2. Focus on the Unique Charms:**\n* We need to choose 2 distinct charms from the 5 available options.  This is a combination problem, as the order we select them doesn't affect the final bracelet arrangement.\n\n**3. Calculate the Combinations:**\n* The number of ways to choose 2 charms out of 5 is \u2075C\u2082 = 5!/(2!3!) = 10\n\n**4. Consider the Arrangement:**\n*  Now we have 7 charms: 5 fixed (silver and gold) and 2 unique.  We need to arrange these 7 charms on the bracelet.  This seems like a simple permutation of 7!, but we need to adjust for overcounting due to the identical charms.\n\n**5. Correct for Overcounting:**\n* We divide the total permutations by the number of ways to arrange the identical silver charms (3!) and the identical gold charms (2!).\n\n**Final Calculation:**\n* The total number of different bracelet arrangements is (7!)/(3!2!) * 10 = 4200\n\n**Therefore, there are 4200 different charm bracelet arrangements possible.**",
+            "options": [
+                "4200",
+                "2100",
+                "1050",
+                "8400"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Permutation and Combination",
+    "exam_id": 10,
+    "order": 11
+}

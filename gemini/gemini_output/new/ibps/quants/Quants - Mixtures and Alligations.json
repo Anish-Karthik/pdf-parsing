@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "A baker is preparing a dough for breadsticks. He mixes olive oil and water in a ratio of 2:3 for the dough. If he uses 100 ml of olive oil, what quantity of water, in milliliters, should he use?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Ratio:** The ratio 2:3 signifies that for every 2 parts of olive oil, the baker uses 3 parts of water.\n\n**2. Determine the Scaling Factor:** Since the baker uses 100 ml of olive oil, which represents two parts of the ratio, the scaling factor for each part is 100 ml / 2 = 50 ml.\n\n**3. Calculate the Quantity of Water:**  As water constitutes 3 parts of the ratio, the total quantity of water required is 3 parts * 50 ml/part = 150 ml.\n\n**Therefore, the baker should use 150 ml of water.**",
+            "options": [
+                "100 ml",
+                "150 ml",
+                "200 ml",
+                "250 ml"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A chef is preparing a large pot of soup and wants to achieve a 50/50 ratio of broth to water.  He accidentally adds 12 quarts of broth and only 8 quarts of water.  How much water should he add to the pot to achieve the desired 50/50 ratio?",
+            "difficulty": "easy",
+            "reasoning": "**1. Determine the desired quantity of water:** Since we want a 50/50 ratio, the amount of water should equal the amount of broth, which is 12 quarts.\n\n**2. Calculate the additional water needed:**  Subtract the current amount of water (8 quarts) from the desired amount (12 quarts): 12 quarts - 8 quarts = 4 quarts\n\n**Answer:** The chef needs to add 4 more quarts of water to achieve the desired 50/50 ratio.",
+            "options": [
+                "8 quarts",
+                "12 quarts",
+                "4 quarts",
+                "20 quarts"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A container holds 40 liters of milk. 4 liters of milk is replaced with 4 liters of water. This process is repeated one more time. What is the percentage of milk in the container after these two replacements?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**Step 1: First Replacement**\n* Initially, there are 40 liters of milk. \n* After removing 4 liters, 36 liters of milk remain (40 - 4 = 36).\n* Since 4 liters of water is added, the total volume remains 40 liters.\n* The concentration of milk after the first replacement is (36/40) * 100% = 90%\n\n**Step 2: Second Replacement**\n* Now, we start with 40 liters containing 90% milk, which means there are 36 liters of milk (40 * 0.9 = 36).\n* Removing 4 liters takes away 3.6 liters of milk (4 * 0.9 = 3.6) leaving 32.4 liters of milk (36 - 3.6 = 32.4).\n* Again, the total volume remains 40 liters after adding 4 liters of water.\n* The final concentration of milk is (32.4/40) * 100% = 81%\n\n**Therefore, the percentage of milk in the container after the two replacements is 81%.**",
+            "options": [
+                "90%",
+                "81%",
+                "72%",
+                "63%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A shopkeeper wants to create a special blend of tea by mixing two different qualities of tea leaves.\n**Given Information**: The shopkeeper has 60 kg of the first quality tea leaves costing $8 per kg. He wants to mix it with a second quality tea leaves costing $10 per kg to create a blend worth $8.5 per kg.\n**Question**: How many kgs of the second quality tea leaves should the shopkeeper mix?\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Understanding the Concept of Weighted Average:**\n   The final price of the blend ($8.5 per kg) is the weighted average of the prices of the two individual tea qualities.\n\n**2.  Setting up the Alligation:**\n   *  Draw a simple diagram with the prices of the two tea qualities and the desired blend price.\n   *  Higher price ($10) on the top, lower price ($8) at the bottom, and the mixture price ($8.5) in the middle.\n\n   ```\n        $10  ------- (8.5 - 8) = 0.5\n              \\     / \n                $8.5\n              /     \\ \n        $8   ------- (10 - 8.5) = 1.5 \n   ```\n\n**3. Interpreting the Alligation Ratios:**\n   The ratio of the quantities of the two tea qualities is inversely proportional to the differences in price from the desired blend price.\n   * The ratio of the first quality tea to the second quality tea is 1.5:0.5, which simplifies to 3:1.\n\n**4. Calculating the Quantity of the Second Quality Tea:**\n   *  Since the shopkeeper has 60 kg of the first quality tea (representing 3 parts of the ratio), the second quality tea should be 1 part of the ratio.\n   *  Therefore, the shopkeeper needs 60 kg / 3 = 20 kg of the second quality tea.",
+            "options": [
+                "10 kg",
+                "20 kg",
+                "30 kg",
+                "40 kg"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A coffee shop owner wants to create a new blend of coffee by mixing two types of beans. The first type costs $8 per pound, and the second type costs $12 per pound.  If the owner wants to make a 20-pound blend that costs $10 per pound, how many pounds of the cheaper coffee beans should be used?",
+            "difficulty": "easy",
+            "reasoning": "This problem utilizes the concept of weighted averages to determine the proportion of each coffee type needed to achieve the desired price point for the blend.\n\n**Here's how to solve it:**\n\n1. **Set up a weighted average equation:** Let 'x' represent the number of pounds of the cheaper coffee beans ($8 per pound). Since the total blend is 20 pounds, the amount of the more expensive beans is (20 - x).  The equation representing the weighted average price is:\n   (8x) + (12 * (20 - x)) = 10 * 20\n\n2. **Solve for 'x':**\n   8x + 240 - 12x = 200\n   -4x = -40\n    x = 10 \n\n**Therefore, the owner should use 10 pounds of the cheaper coffee beans.**\n\n**Verification:**\n* Cost of 10 pounds of cheaper beans: 10 pounds * $8/pound = $80\n* Cost of 10 pounds of expensive beans: 10 pounds * $12/pound = $120\n* Total cost: $80 + $120 = $200\n* Average cost per pound: $200 / 20 pounds = $10/pound (as desired) \n\nThis confirms that using 10 pounds of the cheaper beans results in a blend costing $10 per pound.",
+            "options": [
+                "5 pounds",
+                "8 pounds",
+                "12 pounds",
+                "15 pounds"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter has to mix two shades of green paint: a lighter shade costing $10 per liter and a darker shade costing $15 per liter. He needs 10 liters of a custom green paint that costs $12 per liter. However, he only has 6 liters of the lighter shade left.  How much of each shade should he use to create the custom mix?",
+            "difficulty": "easy",
+            "reasoning": "This question falls under 'Advanced Problems: Mixtures with Constraints' because it involves finding the right quantities of two mixtures with different prices to achieve a target price while also adhering to a constraint on the quantity of one of the mixtures. \n\nHere's how to solve the problem: \n\n**1.  Understanding the Constraint:**\n\nThe painter only has 6 liters of the lighter shade, which is less than the total required (10 liters). This means he has to use all 6 liters of the lighter shade and supplement the remaining with the darker shade.\n\n**2.  Calculating the Required Quantity of the Darker Shade:**\n\n* Total paint needed: 10 liters\n* Lighter shade available: 6 liters\n* Darker shade needed: 10 - 6 = 4 liters\n\n**3.  Verifying the Cost:**\n\nEven though we aren't asked to find the exact proportions to achieve the $12/liter target price, it's crucial to check if it's attainable with the given constraint.\n\n* Cost of 6 liters of lighter shade: 6 liters * $10/liter = $60\n* Cost of 4 liters of darker shade: 4 liters * $15/liter = $60\n* Total cost: $60 + $60 = $120\n* Cost per liter of the mixture: $120 / 10 liters = $12/liter\n\nThis confirms that the painter can achieve the desired mix with the available quantity of the lighter shade.\n\n**Answer:** The painter should use 6 liters of the lighter shade and 4 liters of the darker shade.",
+            "options": [
+                "Advanced Problems: Mixtures",
+                "Easy Problems: Mixtures",
+                "Advanced Problems: Mixtures with Constraints",
+                "Advanced Problems: Mixtures without Constraints"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A shopkeeper wants to create a 20 kg mixture of two types of rice, one costing $8/kg and the other costing $12/kg. He wants to sell the mixture for $11/kg and make a 25% profit on the cost price. What quantity of the cheaper rice should he use in the mixture?",
+            "difficulty": "easy",
+            "reasoning": "**1. Determine the desired cost price of the mixture:**\n\n* The shopkeeper wants a 25% profit on the cost price, meaning his selling price represents 125% of the cost price.\n* Let the cost price of the mixture be represented by 'x'.\n* Therefore, 1.25x = $11/kg (selling price)\n* Solving for x, the cost price of the mixture (x) = $11/kg / 1.25 = $8.8/kg\n\n**2. Apply the alligation rule:**\n\n* Draw an alligation diagram:\n\n```\n        Cheaper Rice ($8/kg)     Costlier Rice ($12/kg) \n                             \\ / \n                          Mixture ($8.8/kg)\n                             / \\\n                    (12 - 8.8) = 3.2    (8.8 - 8) = 0.8\n\n```\n\n* The ratio of cheaper rice to costlier rice is 3.2:0.8, which simplifies to 4:1.\n\n**3. Calculate the quantity of cheaper rice:**\n\n* The ratio 4:1 means that in a 5 kg mixture, 4 kg would be the cheaper rice and 1 kg would be the costlier rice. \n* Since the shopkeeper wants to create a 20 kg mixture, he needs to multiply the ratio by 4.\n* Therefore, he should use 4 (ratio part) * 4 (scaling factor) = **16 kg** of the cheaper rice.",
+            "options": [
+                "12 kg",
+                "16 kg",
+                "18 kg",
+                "20 kg"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A street vendor prepares a refreshing lemonade by mixing two types of lemons, Type A and Type B. He buys Type A lemons at Rs. 30 per kg and Type B lemons at Rs. 40 per kg.  He mixes them in a ratio and sells the blend for Rs. 38 per kg, making a profit of 20%.  What is the ratio in which he mixes Type A and Type B lemons?",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the Cost Price of the Mixture:**\n\n   * Since the vendor makes a 20% profit, the selling price represents 120% of the cost price.\n   * Let the cost price of the mixture be 'x'.\n   * Therefore, 120% of x = Rs. 38\n   * Solving for x: (120/100) * x = 38 \n   *  x = (38 * 100) / 120 = Rs. 31.67 (approximately)\n\n**2.  Apply Alligation to find the Ratio:**\n\n   * Draw an alligation diagram:\n\n     ```\n              Type A (Rs. 30)        Type B (Rs. 40)\n                   \\                /\n                    \\              /\n                     \\            /\n                      \\          /\n                  Rs. 31.67 (Mean Price)\n                      /          \\\n                     /            \\\n                    /              \\\n                   /                \\\n             (40 - 31.67)      (31.67 - 30) \n                  8.33              1.67\n     ```\n\n   * The ratio of Type A to Type B is inversely proportional to the difference between their prices and the mean price.\n   * Therefore, the ratio of Type A : Type B = 8.33 : 1.67 \n\n**3. Simplify the Ratio:**\n\n   *  Dividing both sides by the HCF (Highest Common Factor) which is approximately 1.67, we get:\n      * Type A : Type B = 5:1\n\n**Therefore, the vendor mixes Type A and Type B lemons in the ratio of 5:1.**",
+            "options": [
+                "5:1",
+                "1:5",
+                "1:4",
+                "4:1"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A painter has 20 liters of a paint mixture that is 30% blue pigment. They add 10 liters of a thinner to the mixture, then add another 5 liters of pure blue pigment. What is the final concentration of blue pigment in the mixture?",
+            "difficulty": "medium",
+            "reasoning": "**1. Initial Blue Pigment:**\n\n* Start with the initial amount of blue pigment: 20 liters * 0.30 (30%) = 6 liters\n\n**2. Adding Thinner:**\n\n* Adding thinner doesn't change the *amount* of blue pigment, only the total volume. The total volume is now 20 liters + 10 liters = 30 liters. \n\n**3. Adding Pure Pigment:**\n\n* The painter adds 5 liters of pure blue pigment, increasing the total blue pigment to 6 liters + 5 liters = 11 liters.\n\n**4. Final Concentration:**\n\n* The final volume is 30 liters + 5 liters = 35 liters.\n* The final concentration of blue pigment is (11 liters / 35 liters) * 100% = 31.43% (approximately).\n\n**Therefore, the final concentration of blue pigment in the mixture is approximately 31.43%.**",
+            "options": [
+                "20%",
+                "30%",
+                "31.43%",
+                "40%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two types of coffee beans, Arabica and Robusta, are mixed to create a blend. On a mixture line, Arabica is placed at point A and Robusta at point B. The distance between A and B is 10 units. A new blend, called 'House Blend', is created by mixing Arabica and Robusta in the ratio 3:2 and is placed at point H on the line.  What is the distance between points A and H on the mixture line?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of how ratios translate to distances on a graphical representation of mixtures. Here's how to solve it:\n\n1. **Understand the Ratio:** The ratio 3:2 means that for every 3 units of Arabica, there are 2 units of Robusta in the House Blend. \n\n2. **Total Parts:**  The ratio represents a total of 3 + 2 = 5 parts.\n\n3. **Unit Distance:** Since the total distance between A and B is 10 units, and this represents 5 parts of the blend, each part on the line corresponds to 10/5 = 2 units. \n\n4. **Distance AH:** As the House Blend has 3 parts of Arabica, the distance between point A (pure Arabica) and point H (House Blend) would be 3 parts * 2 units/part = 6 units.\n\nTherefore, the distance between points A and H on the mixture line is 6 units.",
+            "options": [
+                "2 units",
+                "4 units",
+                "6 units",
+                "8 units"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A chef wants to create a 20 kg blend of two types of rice, one costing $8 per kg and the other costing $12 per kg. If the target price for the blend is $10 per kg, how much of the cheaper rice should be used?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Concept of Weighted Averages:**\nThis problem involves finding the right proportion of two ingredients to achieve a desired average price. This is a classic example of a weighted average problem within mixtures and alligations.\n\n**2.  Set Up the Problem Using Alligation:**\n*  **Visual Representation:** Imagine a seesaw. The cheaper rice goes on one side ($8/kg) and the more expensive rice on the other ($12/kg). The target price ($10/kg) is the fulcrum.\n* **Difference Calculation:**  Calculate the difference between the higher price and the target price, and the target price and the lower price:\n    * $12/kg - $10/kg = $2/kg\n    * $10/kg - $8/kg = $2/kg\n* **Ratio Interpretation:** These differences ($2/kg and $2/kg) represent the ratio in which the two types of rice should be mixed. In this case, the ratio is 1:1. \n\n**3.  Calculate the Quantity of Cheaper Rice:**\n* **Ratio Application:**  A 1:1 ratio means the 20 kg blend needs to be made up of equal parts of both rice types.\n* **Quantity Determination:** Therefore, the chef needs 20 kg / 2 = 10 kg of the cheaper rice.\n\n**Therefore, the chef should use 10 kg of the cheaper rice to create the desired blend.**",
+            "options": [
+                "12 kg",
+                "10 kg",
+                "8 kg",
+                "6 kg"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A tea merchant wants to create a special blend by mixing two types of tea leaves. The first type costs $8 per pound, and the second type costs $12 per pound. To make a 20-pound blend worth $10 per pound, how many pounds of the cheaper tea should the merchant use?",
+            "difficulty": "medium",
+            "reasoning": "This problem can be solved using the concept of weighted averages or alligations. Here's a step-by-step solution:\n\n**1. Visualize the Problem:**\n\n   Imagine a seesaw. We want the blend's price ($10) to balance out the prices of the two tea types ($8 and $12).  The closer the blend's price is to one of the tea types, the more of that tea type we'll need.\n\n**2.  Calculate the Price Differences:**\n\n   * Difference between the blend's price and the cheaper tea: $10 - $8 = $2\n   * Difference between the blend's price and the more expensive tea: $12 - $10 = $2\n\n**3. Determine the Ratio:**\n\n   * The ratio of the cheaper tea to the more expensive tea is the inverse of their price differences from the blend's price.\n   * Since both differences are $2, the ratio is 2:2, which simplifies to 1:1.\n\n**4.  Calculate the Amount of Cheaper Tea:**\n\n   * A 1:1 ratio means we need equal amounts of both types of tea.\n   * Since we're making a 20-pound blend, we need 20 / 2 = 10 pounds of the cheaper tea.\n\n**Therefore, the merchant should use 10 pounds of the cheaper tea.**",
+            "options": [
+                "5 pounds",
+                "10 pounds",
+                "15 pounds",
+                "20 pounds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker wants to create a chocolate milk mixture that is 10% chocolate syrup.  She has one jug of milk that is already 5% chocolate syrup and a pure chocolate syrup bottle. What percentage of the final mixture should be the 5% chocolate syrup milk?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem using the concept of alligations:\n\n**1. Visualize the problem:**\n\n   * Imagine a line where the left end represents 0% chocolate syrup (pure milk) and the right end represents 100% chocolate syrup.\n   * Mark the desired concentration (10%) somewhere on this line.\n   * Mark the concentrations of the two ingredients you have: 5% (chocolate milk) and 100% (pure syrup).\n\n   This visualization helps understand the relative proportions needed.\n\n**2.  Apply the alligation rule:**\n\n   * The difference between the desired concentration (10%) and the lower concentration (5%) tells you the proportion of the higher concentration ingredient needed. In this case, 10 - 5 = 5 parts of the 100% chocolate syrup. \n   * The difference between the higher concentration (100%) and the desired concentration (10%) tells you the proportion of the lower concentration ingredient needed.  In this case, 100 - 10 = 90 parts of the 5% chocolate milk. \n\n**3.  Calculate the percentage:**\n\n   * The ratio of 5% chocolate milk to 100% syrup needed is 90:5. \n   * The total parts in the mixture are 90 + 5 = 95\n   * To find the percentage of 5% chocolate milk in the final mixture: (90 / 95) * 100% = 94.7%\n\n**Therefore, the baker should use approximately 94.7% of the 5% chocolate syrup milk to achieve the desired 10% chocolate milk mixture.**",
+            "options": [
+                "90%",
+                "94.7%",
+                "5%",
+                "100%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A fruit seller mixes two qualities of apples, one costing Rs. 50 per kg and another costing Rs. 80 per kg. He mixes them in the ratio 3:2.  At what price per kg should he sell the mixture to make a profit of 20%?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the cost price of the mixture:**\n\n* Cost of 3 kg of the first quality apples = 3 kg * Rs. 50/kg = Rs. 150\n* Cost of 2 kg of the second quality apples = 2 kg * Rs. 80/kg = Rs. 160\n* Total cost of 5 kg of the mixture = Rs. 150 + Rs. 160 = Rs. 310\n* Cost price of the mixture per kg = Rs. 310 / 5 kg = Rs. 62/kg\n\n**2. Calculate the selling price to earn a 20% profit:**\n\n* Profit desired = 20% of Rs. 62/kg = Rs. 12.4/kg\n* Selling price per kg = Cost price per kg + Profit per kg \n* Selling price per kg = Rs. 62/kg + Rs. 12.4/kg = Rs. 74.4/kg\n\n**Therefore, the fruit seller should sell the mixture at Rs. 74.4 per kg to make a 20% profit.**",
+            "options": [
+                "Rs. 65",
+                "Rs. 70",
+                "Rs. 74.4",
+                "Rs. 78"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A shopkeeper wants to create a 20% sugar solution by mixing a 15% sugar solution with a 25% sugar solution.  He already has 10 liters of the 15% solution. To form the desired mixture, how many liters of the 25% sugar solution should he add?",
+            "difficulty": "medium",
+            "reasoning": "This problem can be solved using the alligation method which helps determine the ratio in which two or more ingredients at a given price are mixed to produce a mixture of the desired price.\n\n**1. Visualize the Alligation Diagram:** \n\n   * Draw two parallel lines representing the two solutions.\n   * On the left line, write the concentration of the weaker solution (15%).\n   * On the right line, write the concentration of the stronger solution (25%).\n   * In the middle, write the desired concentration (20%).\n\n   ```\n     25%                \n       \\             \n         20%        \n       /             \n     15%                \n   ```\n\n**2. Calculate the Differences:**\n\n   * Subtract the desired concentration (20%) from the stronger solution's concentration (25%): 25% - 20% = 5%\n   * Subtract the weaker solution's concentration (15%) from the desired concentration (20%): 20% - 15% = 5%\n\n   ```\n     25%       5      \n       \\             \n         20%        \n       /             \n     15%       5      \n   ```\n\n**3. Determine the Ratio:**\n\n   * The differences represent the ratio in which the two solutions need to be mixed. In this case, the ratio is 5:5, which simplifies to 1:1.\n\n**4. Calculate the Required Quantity:**\n\n   * The ratio of 1:1 implies that for every 1 liter of the 15% solution, we need 1 liter of the 25% solution. \n   * Since the shopkeeper already has 10 liters of the 15% solution, he needs to add **10 liters** of the 25% solution to achieve the desired 20% concentration.",
+            "options": [
+                "5 liters",
+                "15 liters",
+                "10 liters",
+                "20 liters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter has two cans of blue paint. Can A contains 2 liters of paint with a 40% pigment concentration. Can B contains 3 liters of paint with a 25% pigment concentration. If the painter mixes the contents of both cans, what will be the pigment concentration of the final mixture?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the total pigment in each can:**\n\n   * Can A: 2 liters * 0.40 = 0.8 liters of pigment\n   * Can B: 3 liters * 0.25 = 0.75 liters of pigment\n\n**2. Calculate the total volume of the mixture:**\n\n   * Total volume: 2 liters + 3 liters = 5 liters\n\n**3. Calculate the total pigment in the mixture:**\n\n   * Total pigment: 0.8 liters + 0.75 liters = 1.55 liters\n\n**4. Calculate the pigment concentration of the mixture:**\n\n   * Concentration: (Total pigment / Total volume) * 100%\n   * Concentration: (1.55 liters / 5 liters) * 100% = 31%\n\n**Therefore, the pigment concentration of the final mixture is 31%.**",
+            "options": [
+                "28%",
+                "29.5%",
+                "31%",
+                "32.5%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter wants to create a specific shade of green paint. He mixes three different shades of green paint: Emerald, Lime, and Olive. He uses 2 liters of Emerald, which has a 70% green pigment concentration, 3 liters of Lime, which has a 50% green pigment concentration, and 1 liter of Olive, which has a 90% green pigment concentration. What is the percentage concentration of green pigment in the final mixture?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Mixing More Than Two Ingredients' subtopic as it involves calculating the weighted average concentration of green pigment when three different shades are mixed.\n\nHere's how to solve it step-by-step:\n\n**1. Calculate the total green pigment in each shade:**\n   - Emerald: 2 liters * 70% = 1.4 liters of green pigment\n   - Lime: 3 liters * 50% = 1.5 liters of green pigment\n   - Olive: 1 liter * 90% = 0.9 liters of green pigment\n\n**2. Calculate the total green pigment in the final mixture:**\n   - Total green pigment: 1.4 liters + 1.5 liters + 0.9 liters = 3.8 liters\n\n**3. Calculate the total volume of the final mixture:**\n   - Total volume: 2 liters + 3 liters + 1 liter = 6 liters\n\n**4. Calculate the percentage concentration of green pigment in the final mixture:**\n   - Concentration: (3.8 liters / 6 liters) * 100% = 63.33%\n\nTherefore, the percentage concentration of green pigment in the final mixture is 63.33%.",
+            "options": [
+                "50%",
+                "63.33%",
+                "70%",
+                "90%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A coffee shop owner wants to create a new blend of coffee by mixing two types of beans. The first type costs $12 per pound and has a caffeine concentration of 1.2%. The second type costs $18 per pound and has a caffeine concentration of 0.8%.  The owner wants to make a 50-pound blend with a caffeine concentration of 1% and a cost of $15 per pound. How many pounds of each type of bean should be used in the blend?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Set up variables:**\n\n* Let  'x' represent the number of pounds of the first type of coffee bean.\n* Let 'y' represent the number of pounds of the second type of coffee bean.\n\n**2. Create equations based on the given information:**\n\n* **Equation 1 (Total weight):** x + y = 50 \n* **Equation 2 (Caffeine concentration):** 0.012x + 0.008y = 0.01 * 50 (Since the final blend has 1% caffeine concentration)\n* **Equation 3 (Total cost):** 12x + 18y = 15 * 50 (Since the final blend costs $15 per pound)\n\n**3. Solve the system of equations:**\n\nOne way to solve this is using substitution or elimination. Here's the solution using elimination:\n\n* **Multiply Equation 1 by -12:** -12x - 12y = -600\n* **Add this modified equation to Equation 3:** 6y = 150\n* **Solve for y:** y = 25\n\n* **Substitute the value of y (25) back into Equation 1:** x + 25 = 50\n* **Solve for x:** x = 25\n\n**Answer:** The owner should use 25 pounds of the first type of bean and 25 pounds of the second type of bean. ",
+            "options": [
+                "25 pounds",
+                "50 pounds",
+                "12 pounds",
+                "18 pounds"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A coffee shop owner wants to create a new blend of coffee beans by mixing three different types: Arabica, Robusta, and Excelsa. The Arabica beans cost $12 per pound, the Robusta beans cost $8 per pound, and the Excelsa beans cost $10 per pound. The owner wants to make a 50-pound blend with an average cost of $9 per pound.  If the blend must contain twice as much Arabica as Excelsa, how many pounds of Robusta beans should be used?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**1. Define Variables:**\n\n* Let 'x' represent the pounds of Excelsa beans.\n* Since Arabica is twice the amount of Excelsa, Arabica will be '2x' pounds.\n* Let 'y' represent the pounds of Robusta beans.\n\n**2. Set Up Equations:**\n\nWe have two pieces of information to form equations:\n\n* **Total weight:** x + 2x + y = 50  (The three types must add up to 50 pounds)\n* **Average cost:** (10x + 24x + 8y)/50 = 9 (The weighted average cost should be $9 per pound)\n\n**3. Simplify the Equations:**\n\n* Equation 1: 3x + y = 50\n* Equation 2: 34x + 8y = 450\n\n**4. Solve for 'y' (Robusta beans):**\n\nWe can use either substitution or elimination. Let's use elimination:\n\n* Multiply Equation 1 by -8: -24x - 8y = -400\n* Add this modified equation to Equation 2: 10x = 50\n* Solve for 'x': x = 5 pounds (Excelsa)\n\n* Substitute 'x = 5' into Equation 1: 3(5) + y = 50\n* Solve for 'y': y = 35 pounds (Robusta)\n\n**Therefore, the coffee shop owner should use 35 pounds of Robusta beans.**",
+            "options": [
+                "20 pounds",
+                "15 pounds",
+                "35 pounds",
+                "40 pounds"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A jeweler wants to create a new gold alloy by melting down three existing gold bars. The first bar weighs 200 grams and is 18-karat gold (75% pure gold). The second bar weighs 300 grams and is 14-karat gold (58.33% pure gold). He wants the final alloy to weigh 600 grams and be 20-karat gold (83.33% pure gold).  \n\nWhat must be the karat purity (percentage of pure gold) of the third gold bar he uses in this mixture to achieve his desired 20-karat final alloy?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the total amount of pure gold needed in the final alloy:** \n\n* 600 grams * 83.33% = 500 grams of pure gold\n\n**2. Calculate the amount of pure gold in the first two bars:** \n\n* Bar 1: 200 grams * 75% = 150 grams of pure gold \n* Bar 2: 300 grams * 58.33% = 175 grams of pure gold\n\n**3. Calculate the amount of pure gold needed from the third bar:**\n\n* 500 grams (total needed) - 150 grams (Bar 1) - 175 grams (Bar 2) = 175 grams of pure gold needed from Bar 3\n\n**4.  Calculate the weight of the third bar:**\n\n*  600 grams (final alloy) - 200 grams (Bar 1) - 300 grams (Bar 2) = 100 grams (Bar 3)\n\n**5. Calculate the karat purity of the third bar:**\n\n* (175 grams of pure gold / 100 grams total weight) * 100% = 175% pure gold \n\n**Result:** The third bar must be made of 175% pure gold, which is not possible as the maximum purity of gold is 100%. This indicates that the jeweler cannot achieve his desired 20-karat final alloy using the given constraints of the first two bars and the desired final weight.",
+            "options": [
+                "24-karat",
+                "18-karat",
+                "14-karat",
+                "Not possible"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Question Type**: Word Problem\n**Difficulty Level**: Medium 5/10\n**Topic**: Mixing Solutions\n**Context**: A coffee shop owner wants to create a new blend of coffee by mixing two types of beans. The Robusta beans cost $12 per pound and the Arabica beans cost $18 per pound. He wants to make a 20-pound blend that costs $15 per pound.\n**Question**: How many pounds of each type of bean should he use in the blend?\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Define Variables:**\n   * Let 'x' represent the number of pounds of Robusta beans.\n   * Since the total blend is 20 pounds, the amount of Arabica beans is (20 - x).\n\n**2. Set up the Equations:**\n   * **Equation 1 (Total Weight):** x + (20 - x) = 20  \n   * **Equation 2 (Total Cost):** 12x + 18(20 - x) = 15 * 20\n\n**3. Solve for 'x' (Robusta beans):**\n   * Simplify Equation 2: 12x + 360 - 18x = 300\n   * Combine like terms: -6x = -60\n   * Isolate 'x': x = 10 pounds of Robusta beans\n\n**4. Solve for Arabica beans:**\n   * Arabica beans = 20 - x = 20 - 10 = 10 pounds\n\n**Answer:** The coffee shop owner should use 10 pounds of Robusta beans and 10 pounds of Arabica beans to create the desired blend.\n\n**Verification:**\n* **Total weight:** 10 pounds (Robusta) + 10 pounds (Arabica) = 20 pounds (Correct)\n* **Total cost:** (10 pounds * $12/pound) + (10 pounds * $18/pound) = $120 + $180 = $300 \n* **Cost per pound:** $300 / 20 pounds = $15/pound (Correct)",
+            "options": [
+                "10 pounds of Robusta beans and 10 pounds of Arabica beans",
+                "15 pounds of Robusta beans and 5 pounds of Arabica beans",
+                "8 pounds of Robusta beans and 12 pounds of Arabica beans",
+                "5 pounds of Robusta beans and 15 pounds of Arabica beans"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: A painter wants to create a specific shade of green paint by mixing blue and yellow paint. He has two shades of blue paint: a vibrant blue priced at $10 per liter and a deep blue priced at $15 per liter. He also has a bright yellow paint priced at $8 per liter. He aims to create a mixture worth $12 per liter.\n**question**: Using a graphical representation of mixtures and alligations, determine the ratio in which he should mix the vibrant blue, deep blue, and yellow paints to achieve the desired shade of green at the target price.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Graphical Representation of Mixtures and Alligations' subtopic because it requires using a visual aid like a line or bar graph to solve for the ratios in a mixture problem.  \n\nHere's how to solve it: \n\n1. **Visual Representation:** Draw three points on a line representing the prices of the three paints: Vibrant Blue ($10), Deep Blue ($15), and Yellow ($8). Mark the target price ($12) on the line. \n\n2. **Calculate Differences:**  \n    * The difference between the target price ($12) and Vibrant Blue ($10) is $2. \n    * The difference between the target price ($12) and Deep Blue ($15) is $3. \n    * The difference between the target price ($12) and Yellow ($8) is $4.\n\n3. **Determine Ratios:** Since we have three components, we need to find two separate ratios. These ratios are represented by the differences calculated above.\n    * The ratio of (Vibrant Blue + Deep Blue) to Yellow is 4:2, which simplifies to 2:1.\n    * The ratio of Vibrant Blue to Deep Blue is 3:2.\n\n4. **Combine Ratios:** To get a single ratio for all three paints, we need a common component in both ratios we just calculated. We can achieve this by multiplying the second ratio (Vibrant Blue:Deep Blue) by 2, resulting in a ratio of 6:4.  \n\n5. **Final Ratio:** Combining the information from both ratios, we get the final ratio for mixing the paints: Vibrant Blue:Deep Blue: Yellow = 6:4:2, which can be simplified to 3:2:1. \n\nTherefore, the painter should mix the vibrant blue, deep blue, and yellow paints in the ratio of 3:2:1 to achieve the desired shade of green paint at the target price of $12 per liter.",
+            "options": [
+                "1:1:2",
+                "3:2:1",
+                "2:3:1",
+                "4:2:1"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A jeweler wishes to create a gold alloy that is 20% gold by weight. They have two existing alloys available: one that is 15% gold and another that is 25% gold.  In what ratio should the jeweler combine the two alloys to achieve the desired 20% gold content?",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the Alligation Rule to determine the mixing ratio of two alloys. Here's how to solve it:\n\n**1. Visual Representation:**\n\n   Draw a simple diagram with the desired concentration (20%) in the center. Place the concentrations of the existing alloys (15% and 25%) on either side.\n\n   ```\n       25%                  \n         \\                \n          20%              \n         /                \n       15%                 \n   ```\n\n**2. Calculate Differences:**\n\n   * Find the difference between the higher concentration alloy (25%) and the desired concentration (20%): 25% - 20% = 5%\n   * Find the difference between the desired concentration (20%) and the lower concentration alloy (15%): 20% - 15% = 5%\n\n   ```\n       25%     5   \n         \\ /     \n          20%              \n         / \\    \n       15%    5\n   ```\n\n**3. Determine the Ratio:**\n\n   The numbers obtained in step 2 (5 and 5) represent the ratio in which the two alloys should be mixed.\n\n   Therefore, the jeweler should mix the 15% gold alloy and the 25% gold alloy in a ratio of **5:5**, which simplifies to **1:1**.\n\n**In conclusion, the jeweler needs to combine equal parts of the 15% and 25% gold alloys to create an alloy with a 20% gold content.** ",
+            "options": [
+                "1:2",
+                "2:1",
+                "1:1",
+                "3:1"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A milkman has 100 liters of milk with 5% fat. He wants to sell this milk for a profit by mixing it with a certain amount of water and then selling the mixture at the same price as pure milk. If water is free and he wants to make a 20% profit, what is the ratio of milk to water in the final mixture he sells?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Understand Profit and Selling Price:**\n\n* Since the milkman wants to make a 20% profit, he wants to sell the diluted mixture for 120% of the original cost price of the pure milk.\n\n**2. Relate Profit to Quantity:**\n\n* To earn a 20% profit while keeping the selling price constant, he essentially sells 120 liters of the diluted mixture for the price of 100 liters of pure milk.\n\n**3. Determine the Water Content:**\n\n* This means he adds 20 liters of water to the 100 liters of milk (120 liters - 100 liters = 20 liters).\n\n**4. Calculate the Ratio:**\n\n* The ratio of milk to water in the final mixture is 100 liters : 20 liters, which simplifies to 5:1.\n\n**Therefore, the milkman should mix the milk and water in the ratio of 5:1 to achieve his desired profit margin.**",
+            "options": [
+                "1:1",
+                "5:1",
+                "1:5",
+                "10:1"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A container initially holds 200 liters of milk with 5% fat. 50 liters of milk is drawn out and replaced with an equal amount of 2% fat milk. This process is repeated one more time. What is the percentage of fat in the final mixture?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**Step 1: First Replacement**\n* **Fat removed:** (5/100) * 200 liters * (50/200) = 2.5 liters\n* **Fat remaining:** (5/100) * 200 liters - 2.5 liters = 7.5 liters\n* **Fat added:** (2/100) * 50 liters = 1 liter\n* **Total fat after first replacement:** 7.5 liters + 1 liter = 8.5 liters\n* **Percentage of fat after first replacement:** (8.5 liters / 200 liters) * 100% = 4.25%\n\n**Step 2: Second Replacement**\n* **Fat removed:** (4.25/100) * 200 liters * (50/200) = 2.125 liters\n* **Fat remaining:** 8.5 liters - 2.125 liters = 6.375 liters\n* **Fat added:** (2/100) * 50 liters = 1 liter\n* **Total fat after second replacement:** 6.375 liters + 1 liter = 7.375 liters\n* **Percentage of fat after second replacement:** (7.375 liters / 200 liters) * 100% = 3.6875%\n\nTherefore, the percentage of fat in the final mixture is **3.6875%**.",
+            "options": [
+                "4.25%",
+                "3.6875%",
+                "5%",
+                "2%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A chemist wants to dilute a 70% acid solution with a 30% acid solution to create a 200 ml solution of 45% acid. What volume, in milliliters, of the 70% acid solution should the chemist use?",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the alligation rule to find the ratio for mixing two solutions to achieve a target concentration. Here's how to solve it:\n\n**1. Visualize the Alligation Diagram:**\n\n   * Draw a simple diagram with the desired concentration (45%) in the middle. \n   * Place the higher concentration (70%) on the top left and the lower concentration (30%) on the bottom left.\n\n```\n      70% \n       \\ \n        45%\n       /  \\\n      30% \n```\n\n**2. Calculate the Differences:**\n\n   *  Subtract diagonally: 45% - 30% = 15%\n   *  Subtract diagonally: 70% - 45% = 25%\n\n```\n      70%    \n       \\ 15% \n        45%\n       /  25% \n      30% \n```\n\n**3. Determine the Ratio:**\n\n  * The differences represent the ratio in which the solutions should be mixed.  The ratio is 15:25, which simplifies to 3:5.\n\n**4. Calculate the Volume of the 70% Solution:**\n\n   *  The total ratio is 3 + 5 = 8 parts.\n   * Since the final solution needs to be 200 ml, each part represents 200 ml / 8 = 25 ml.\n   * The 70% solution makes up 3 parts of the ratio, so the chemist needs 3 parts * 25 ml/part = 75 ml.\n\n**Answer:** The chemist should use 75 ml of the 70% acid solution.",
+            "options": [
+                "100 ml",
+                "150 ml",
+                "75 ml",
+                "50 ml"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context/Scenario**: A shopkeeper sells a blend of two types of coffee beans: Arabica and Robusta. The Arabica beans cost $12 per pound, and the Robusta beans cost $8 per pound.\n**Question**: He wants to create a 50-pound mixture of coffee beans that costs $10.40 per pound. How many pounds of each type of bean should he use?\n**Data**: \n  **Arabica beans price**: $12/pound\n  **Robusta beans price**: $8/pound\n  **Desired mixture weight**: 50 pounds\n  **Desired mixture price**: $10.40/pound\n**Difficulty Level**: Medium 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the concept of weighted averages within the context of mixtures and alligations. Here's how to solve it:\n\n**1. Define Variables:**\n\n* Let 'x' be the number of pounds of Arabica beans.\n* Since the total mixture is 50 pounds, the amount of Robusta beans is (50 - x).\n\n**2. Set up the Equation:**\n\nThe total cost of the mixture should equal the sum of the costs of each type of bean. This can be expressed as:\n\n12x + 8(50 - x) = 10.40 * 50 \n\n**3. Solve for x:**\n\n* 12x + 400 - 8x = 520\n* 4x = 120\n* x = 30\n\n**4. Calculate the Amount of Robusta Beans:**\n\n* Robusta beans = 50 - x = 50 - 30 = 20\n\n**Answer:** The shopkeeper should use 30 pounds of Arabica beans and 20 pounds of Robusta beans.",
+            "options": [
+                "20 pounds",
+                "30 pounds",
+                "50 pounds",
+                "10 pounds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A coffee shop owner wants to create a new blend of coffee beans by mixing two varieties: Arabica beans with a quick ratio of 1.5 and Robusta beans with a quick ratio of 2.5. The owner desires a final blend with a quick ratio of 2.0.  If they have 30 kilograms of Arabica beans, how many kilograms of Robusta beans should be added?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Problem:**\n\nThe quick ratio is a measure of a company's ability to meet its short-term obligations with its most liquid assets. In this case, we are dealing with mixing coffee beans with different quick ratios to achieve a target quick ratio.\n\n**2. Setting up the Allegation Cross:**\n\nWe can use the Allegation Cross method to solve this problem.  Draw an 'X' and label as follows:\n\n* **Top:** The desired quick ratio (2.0)\n* **Left Arm:** The lower quick ratio (Arabica - 1.5)\n* **Right Arm:** The higher quick ratio (Robusta - 2.5)\n\n```\n      2.0\n    /   \\\n  1.5     2.5 \n```\n\n**3. Calculating Differences:**\n\nFind the differences between the desired ratio and each individual ratio:\n\n* **Difference with Arabica:** 2.0 - 1.5 = 0.5\n* **Difference with Robusta:** 2.5 - 2.0 = 0.5\n\nPlace these differences on the opposite side of the cross:\n\n```\n      2.0\n    /   \\\n  1.5     2.5 \n  0.5     0.5\n```\n\n**4. Determining the Ratio of Ingredients:**\n\nThe numbers on the bottom arms of the cross (0.5 and 0.5) represent the ratio in which the two types of beans should be mixed. Since the differences are equal, it means the coffee beans need to be mixed in a 1:1 ratio.\n\n**5.  Calculating the Quantity of Robusta Beans:**\n\n* We have 30 kg of Arabica beans.\n* Since the mixing ratio is 1:1, we need an equal amount of Robusta beans.\n* Therefore, we need 30 kg of Robusta beans.\n\n**Answer:** The owner should add 30 kilograms of Robusta beans to achieve the desired quick ratio of 2.0.",
+            "options": [
+                "15 kg",
+                "20 kg",
+                "30 kg",
+                "40 kg"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A mischievous shopkeeper wants to increase his profits by selling a blend of two types of tea. He has 30 kg of a lower quality tea priced at $4 per kg and wants to mix it with a higher quality tea priced at $7 per kg. He aims to sell the blend at $6 per kg and make a profit of 25%. What quantity of the higher quality tea should he mix?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the desired selling price per kg to achieve a 25% profit:**\n\n* Let the cost price of the blend be represented by 'C'.\n* Desired Selling Price (S.P.) = C + 25% of C = 1.25C\n* Since he wants to sell the blend at $6/kg, 1.25C = $6\n* Therefore, the cost price of the blend (C) = $6 / 1.25 = $4.80 per kg\n\n**2. Use the concept of alligations to determine the ratio of the mixture:**\n\n*  We represent the quantities and prices of the teas in an alligation diagram:\n\n```\n          Higher Quality Tea ($7/kg) \n                     / \\\n                    /   \\\n                   /     \\\n                  /       \\\n                 /         \\\n                /           \\\n               /             \\\n              /_______________\\\n    Lower Quality Tea ($4/kg)       Blended Tea ($4.80/kg)\n\n\n* The difference between the price of the lower quality tea and the desired blend price represents the quantity of the higher quality tea to be mixed.\n* Similarly, the difference between the desired blend price and the price of the higher quality tea represents the quantity of the lower quality tea to be mixed.\n\n* Therefore, the ratio of Lower Quality Tea : Higher Quality Tea = (7 - 4.80) : (4.80 - 4) = 2.20 : 0.80 = 11 : 4 \n\n**3. Calculate the quantity of higher quality tea:**\n\n* The ratio indicates that for every 11 kg of lower quality tea, 4 kg of higher quality tea should be added.\n* Since the shopkeeper has 30 kg of lower quality tea, he should mix (4/11) * 30 kg = 10.91 kg of higher quality tea (approximately).\n\n**Therefore, the shopkeeper should mix approximately 10.91 kg of the higher quality tea to achieve his desired profit margin.**",
+            "options": [
+                "10.91 kg",
+                "11 kg",
+                "12 kg",
+                "30 kg"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A shopkeeper wants to create a special blend of coffee by mixing two types: Arabica beans priced at $12 per pound and Robusta beans priced at $8 per pound. He aims to sell this blend at $11 per pound.  Using the principles of graphical representation of mixtures and alligations, determine the ratio in which he should mix the Arabica and Robusta beans to achieve his desired selling price.",
+            "difficulty": "medium",
+            "reasoning": "**1. Visual Representation:**\n\n   Imagine a straight line representing the price scale. Mark the prices of Arabica ($12) and Robusta ($8) on this line. The desired selling price of the blend ($11) will fall somewhere between these two points.\n\n   ```\n    Price Scale:\n\n    $8 (Robusta) ----- $11 (Blend) ----- $12 (Arabica) \n   ```\n\n**2.  Determining the Differences:**\n\n   * Calculate the price difference between the expensive coffee (Arabica) and the desired blend price: $12 - $11 = $1\n   * Calculate the price difference between the desired blend price and the cheaper coffee (Robusta): $11 - $8 = $3\n\n**3. The Ratio:**\n\n   * The ratio in which the two types of coffee should be mixed is inversely proportional to these price differences.\n   * This means the shopkeeper should mix 3 parts of Arabica beans with 1 part of Robusta beans. \n\n**Therefore, the ratio of Arabica to Robusta in the blend should be 3:1.**",
+            "options": [
+                "1:3",
+                "3:1",
+                "1:2",
+                "2:1"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: A chemist has a 40 ml solution containing 60% concentrated acid. They need to dilute this solution to 20% acid concentration by replacing a portion of the solution with pure water.\n**Action**: Determine the volume of the original solution the chemist must replace with pure water to achieve the desired 20% acid concentration.\n**Goal**: Calculate the volume of the original solution to be replaced.\n",
+            "difficulty": "hard",
+            "reasoning": "Let 'x' be the volume (in ml) of the original solution that needs to be replaced with pure water.\n\n**1. Acid in the original solution:**\n   The original solution has 60% acid, meaning it contains 0.60 * 40 ml = 24 ml of acid.\n\n**2. Acid in the final solution:**\n   The final solution needs to be 20% acid and will still have a volume of 40 ml. Therefore, the final solution needs to contain 0.20 * 40 ml = 8 ml of acid.\n\n**3. Acid removed:**\n   Since we are only adding water, the amount of acid removed from the original solution is the difference between the initial and final acid amounts: 24 ml - 8 ml = 16 ml\n\n**4.  Finding 'x':**\n   The 'x' ml of solution removed contains 60% acid. So, 0.60 * x = 16 ml\n   Solving for x: x = 16 ml / 0.60 = 26.67 ml (approximately)\n\n**Therefore, the chemist needs to replace approximately 26.67 ml of the original solution with pure water to achieve a 20% acid concentration.**",
+            "options": [
+                "20 ml",
+                "26.67 ml",
+                "30 ml",
+                "40 ml"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A mischievous baker decides to create a unique blend of flour for his bread. He mixes high-gluten flour costing $4 per kg with low-gluten flour costing $3 per kg. He already has 5 kg of high-gluten flour. To minimize costs, he wants to create a final blend that costs $3.25 per kg. He knows that using a 1:1 ratio would result in a $3.50 per kg blend. To achieve his desired cost per kg, what quantity of low-gluten flour should he add to the existing high-gluten flour?",
+            "difficulty": "hard",
+            "reasoning": "**1. Understand the Goal:** The baker wants a final blend costing $3.25/kg by mixing high-gluten ($4/kg) and low-gluten flour ($3/kg). He already has 5kg of high-gluten flour.\n\n**2.  Set up the Alligation:** Alligation helps visualize the ratios.  Place the desired price ($3.25) in the middle, the higher price ($4) on top, and the lower price ($3) at the bottom:\n\n```\n    $4.00 (High-gluten)  \n       /  \\\n      /    \\\n  $3.25     $0.75 (Difference)\n      \\    /\n       \\  /\n    $3.00 (Low-gluten)  \n          $0.25 (Difference) \n```\n\n**3. Determine the Ratio:** The differences between the component prices and the desired price give us the ratio.  The ratio of high-gluten to low-gluten flour is 0.75:0.25, which simplifies to 3:1.\n\n**4. Calculate the Quantity:**  The baker has 5kg of high-gluten flour.  Since the ratio is 3:1, he needs 1/3 the amount of low-gluten flour, which is (1/3) * 5kg = 1.67kg (approximately).\n\n**Therefore, the baker needs to add approximately 1.67 kg of low-gluten flour to his existing 5 kg of high-gluten flour to achieve a blend costing $3.25 per kg.**",
+            "options": [
+                "3 kg",
+                "1.67 kg",
+                "2 kg",
+                "5 kg"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A fruit vendor buys two types of apples: Grade A at \u20b960 per kg and Grade B at \u20b940 per kg. He mixes them in a ratio of 3:2 to create a mixed grade. He then decides to sell half of this mixed grade at a 20% profit and the remaining half at a 10% loss.  What is the overall profit or loss percentage the fruit vendor makes on the entire transaction?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Cost of the Mixed Grade:**\n* Let's assume the vendor buys 3 kg of Grade A apples and 2 kg of Grade B apples (as per the 3:2 ratio).\n* Cost of Grade A apples = 3 kg * \u20b960/kg = \u20b9180\n* Cost of Grade B apples = 2 kg * \u20b940/kg = \u20b980\n* Total cost of 5 kg mixed grade = \u20b9180 + \u20b980 = \u20b9260\n* Cost of 1 kg of mixed grade = \u20b9260 / 5 kg = \u20b952/kg\n\n**2. Selling Price for Profitable Half:**\n* Profit percentage = 20%\n* Selling price of 1 kg (with profit) = \u20b952 + (20/100)*\u20b952 = \u20b962.40/kg\n\n**3. Selling Price for Loss-Making Half:**\n* Loss percentage = 10%\n* Selling price of 1 kg (with loss) = \u20b952 - (10/100)*\u20b952 = \u20b946.80/kg\n\n**4. Overall Profit/Loss Calculation:**\n* Since he sells half at a profit and half at a loss, he effectively sells 2.5 kg at each price.\n* Total revenue from profitable half = 2.5 kg * \u20b962.40/kg = \u20b9156\n* Total revenue from loss-making half = 2.5 kg * \u20b946.80/kg = \u20b9117\n* Total revenue = \u20b9156 + \u20b9117 = \u20b9273\n* Total cost (for 5 kg) = \u20b9260 \n* Profit = \u20b9273 - \u20b9260 = \u20b913\n\n**5. Overall Profit Percentage:**\n* Profit percentage = (Profit / Total Cost) * 100\n* Profit percentage = (\u20b913 / \u20b9260) * 100 = 5%\n\n**Therefore, the fruit vendor makes an overall profit of 5% on the entire transaction.**",
+            "options": [
+                "5%",
+                "10%",
+                "20%",
+                "15%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A jewelry store owner wants to create a new gold alloy by mixing three different gold bars. The first bar weighs 2 kg and is 22-karat gold (91.67% pure). The second bar weighs 3 kg and is 18-karat gold (75% pure).  The third bar is pure gold (24-karat). The owner wants the final alloy to be 20-karat (83.33% pure). \n\nTo achieve this, he can only add a portion of the third bar (pure gold) to the mixture. What fraction of the third bar should be used to create the desired 20-karat gold alloy?",
+            "difficulty": "hard",
+            "reasoning": "This problem falls under the category of 'Tricky Alligation Problems and Shortcuts' as it involves mixing multiple substances with different purities to achieve a desired purity. \n\nHere's a step-by-step solution:\n\n**1. Calculate the pure gold content in each initial bar:**\n    * Bar 1: 2 kg * 0.9167 = 1.8334 kg of pure gold\n    * Bar 2: 3 kg * 0.75 = 2.25 kg of pure gold\n    * Bar 3: Let 'x' be the fraction of the third bar used. So, pure gold from the third bar is x * 1 kg (assuming the third bar weighs 1 kg for easier calculation)\n\n**2.  Set up an equation based on the desired purity:**\n    * Total weight of the final alloy: 2 kg + 3 kg + x kg = (5 + x) kg\n    * Total pure gold in the final alloy: 1.8334 kg + 2.25 kg + x kg = (4.0834 + x) kg\n    * Desired purity: 83.33% or 0.8333 \n\n**3. Formulate the equation:** \n    * (4.0834 + x) / (5 + x) = 0.8333\n\n**4. Solve for 'x':**\n    * 4.0834 + x = 0.8333 (5 + x)\n    * 4.0834 + x = 4.1665 + 0.8333x\n    * 0.1667x = 0.0831\n    * x \u2248 0.5\n\n**Therefore, the owner should use approximately 0.5 or 1/2 of the third bar (pure gold) to achieve the desired 20-karat gold alloy.**",
+            "options": [
+                "1/2",
+                "0.5",
+                "50%",
+                "1 kg"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A pharmaceutical lab is developing a new hand sanitizer solution. They need to create a 70% alcohol solution by mixing three different alcohol solutions they have in stock: a 60% solution, a 75% solution, and a 90% solution.  The lab has 500ml of the 60% solution and wants to use all of it.  To keep the production cost-effective, they also want to use twice as much of the 75% solution compared to the 90% solution. What volume of the 75% and 90% solutions should the lab use to create the desired 70% hand sanitizer while adhering to the given constraints?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Quants - Mixtures and Alligations' topic and specifically focuses on 'Practice Questions and Mock Tests'. It's designed to be a 'tricky 8/10' difficulty level due to the following factors:\n\n* **Multiple Solutions:** The problem involves mixing three different solutions, making the calculation more complex than using just two. \n* **Constraints:**  The requirement to use all 500ml of the 60% solution and the ratio constraint between the 75% and 90% solutions add an extra layer of difficulty.\n* **Finding Individual Volumes:** The question asks for the specific volumes of the 75% and 90% solutions, not just a ratio, requiring more steps in the solution.\n\n**Here's a step-by-step solution:**\n\n1. **Define Variables:**\n    * Let  'x' be the volume (in ml) of the 90% solution.\n    * Since the 75% solution is used twice as much as the 90% solution, its volume is '2x'.\n\n2. **Set up the Alligation Equation:**\n   The total amount of alcohol in the final solution should be equal to the sum of the alcohol amounts from each individual solution.\n\n   * Total alcohol in final solution: 0.70 * (500 + x + 2x) \n   * Alcohol from 60% solution: 0.60 * 500\n   * Alcohol from 75% solution: 0.75 * 2x\n   * Alcohol from 90% solution: 0.90 * x\n\n   The equation becomes: 0.70(500 + 3x) = (0.60 * 500) + (0.75 * 2x) + (0.90 * x)\n\n3. **Solve for x:**\n   * Expand the equation: 350 + 2.1x = 300 + 1.5x + 0.9x\n   * Simplify: 2.1x - 1.5x - 0.9x = 300 - 350\n   * Combine terms: -0.3x = -50\n   * Solve for x: x = -50 / -0.3 = 166.67 ml (approximately)\n\n4. **Calculate the volume of the 75% solution:**\n   * Volume of 75% solution = 2 * x = 2 * 166.67 ml = 333.34 ml (approximately)\n\n**Therefore, the lab should use approximately 166.67 ml of the 90% solution and 333.34 ml of the 75% solution to create the desired hand sanitizer.**",
+            "options": [
+                "333.34 ml",
+                "166.67 ml",
+                "500 ml",
+                "700 ml"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A jeweler is crafting a unique gold alloy for a special order. He has three gold bars with different purities: a 20% gold bar, a 50% gold bar, and a 90% gold bar.  He needs to create 100 grams of a 62% gold alloy.  \n\n**Constraints:**\n* Due to the rarity of the 90% gold bar, the jeweler can use no more than 25 grams of it. \n* To maintain the alloy's workability, at least 30 grams of the 20% gold bar must be used. \n\nWhat is the maximum possible amount of the 50% gold bar the jeweler can use in this mixture while still meeting all requirements?",
+            "difficulty": "hard",
+            "reasoning": "This problem falls under the 'Advanced Problems: Mixtures with Constraints' subtopic of 'Quants - Mixtures and Alligations' because it involves mixing different concentrations of gold to achieve a target concentration while adhering to specific usage limitations.  Here's how to solve it:\n\n**1. Define Variables:**\n* Let 'x' represent the amount (in grams) of the 50% gold bar used.\n* Since we need to maximize 'x', we'll aim to use the minimum amounts of the 20% and 90% bars. \n\n**2.  Set up Equations Based on Constraints:**\n* **Minimum 20% Gold:** 30 grams (given)\n* **Maximum 90% Gold:** 25 grams (given)\n* **Total Weight:** 30 (20% gold) + x (50% gold) + 25 (90% gold) = 100 grams\n\n**3. Solve for 'x' in the Total Weight Equation:**\n* 55 + x = 100\n* x = 45 grams \n\n**4. Check if 45 grams of the 50% bar satisfies the target gold concentration:**\n* Total gold from the 20% bar: 30 grams * 0.20 = 6 grams\n* Total gold from the 50% bar: 45 grams * 0.50 = 22.5 grams\n* Total gold from the 90% bar: 25 grams * 0.90 = 22.5 grams\n* Total gold in the mixture: 6 + 22.5 + 22.5 = 51 grams\n* Gold concentration of the mixture: (51 grams / 100 grams) * 100% = 51%\n\n**5. Adjust the Amounts to Achieve 62% Gold Concentration:**\n* The current mixture has too little gold (51%).  Since we want to maximize the 50% gold bar usage, we'll reduce the amount of the 20% gold bar (which has the lowest gold content).\n* Each gram of 20% gold bar replaced with a gram of 50% gold bar increases the overall gold content by 30% (50% - 20%).\n* We need to increase the gold content by 11% (62% target - 51% current).\n* To achieve an 11% increase, we need to replace (11% / 30% per gram) = 0.3667 grams of the 20% bar for each 1% increase needed. \n* Therefore, we need to replace a total of 0.3667 grams/percent * 11 percent = 4.03 grams of the 20% bar. \n\n**6. Recalculate the Amount of the 50% Gold Bar:**\n* Since we are reducing the 20% bar by approximately 4 grams, the amount of the 50% bar can increase by the same amount to maintain the total weight of 100 grams. \n* The maximum amount of the 50% gold bar the jeweler can use is approximately 45 grams + 4 grams = 49 grams. \n\n**Important Note:**  We made a slight rounding adjustment to the grams of the 20% bar replaced (4.03 grams rounded to 4 grams) to maintain clarity. In a real-world scenario, the jeweler would likely make extremely precise measurements to achieve the exact 62% gold concentration. ",
+            "options": [
+                "45 grams",
+                "48 grams",
+                "49 grams",
+                "50 grams"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: A jeweler specializes in crafting unique gold alloys for his high-end clients. He receives an order for a custom ring made from a specific gold alloy with a target purity of 15 karats.\n**information**: The jeweler has the following gold alloys in stock:\n\n* **Alloy A:** 20 grams of 18-karat gold\n* **Alloy B:** 30 grams of 12-karat gold\n* **Pure Gold:** An unlimited supply of 24-karat gold\n\n**Note:** Karat (K) is a measure of gold purity, with 24K being pure gold. For example, 18K gold contains 18 parts gold out of 24 parts total (75% gold).\n**question**: To fulfill the client's request and minimize waste, what is the minimum amount of pure gold (in grams) the jeweler needs to add to his existing stock of Alloy A and Alloy B to create the desired 15-karat gold alloy?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's a step-by-step solution:\n\n**1. Calculate the gold content in each existing alloy:**\n\n* **Alloy A:** 20 grams * (18K / 24K) = 15 grams of pure gold\n* **Alloy B:** 30 grams * (12K / 24K) = 15 grams of pure gold\n\n**2. Calculate the total gold content in the initial mixture:**\n\n* Total gold: 15 grams (Alloy A) + 15 grams (Alloy B) = 30 grams\n\n**3. Set up an equation to determine the amount of pure gold needed:**\n\nLet 'x' be the amount of pure gold needed.\n\n* Total gold in the final alloy: 30 grams + x grams\n* Total weight of the final alloy: 20 grams + 30 grams + x grams = 50 grams + x grams\n* Desired karat of the final alloy: 15K\n\n**Equation:** (30 + x) / (50 + x) = 15 / 24\n\n**4. Solve for 'x':**\n\n* Cross-multiply: 24(30 + x) = 15(50 + x)\n* Simplify: 720 + 24x = 750 + 15x\n* Combine like terms: 9x = 30\n* Isolate 'x': x = 30 / 9 = 3.33 grams (rounded to two decimal places)\n\n**Therefore, the jeweler needs to add a minimum of 3.33 grams of pure gold to his existing stock to create the desired 15-karat gold alloy.**",
+            "options": [
+                "10.00 grams",
+                "5.00 grams",
+                "3.33 grams",
+                "1.00 grams"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A chemist needs to create a 40% saline solution. They have three solutions available: a 10% saline solution, a 30% saline solution, and a 50% saline solution.  If they want to use twice as much of the 30% solution as the 10% solution, what ratio should they use for all three solutions to achieve the desired concentration?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem using the Allegation Cross Method:\n\n**1. Visualize the Problem:**\n\n* Draw a horizontal line and mark the desired concentration (40%) in the center.\n* Place the concentrations of the available solutions (10%, 30%, and 50%) on the left side of the line, each on a separate row.\n\n**2. Calculate the Differences:**\n\n* For each available solution, find the absolute difference between its concentration and the desired concentration, and place it on the opposite side of the line.\n    * |10% - 40%| = 30%\n    * |30% - 40%| = 10%\n    * |50% - 40%| = 10%\n\n**3.  Incorporate the Ratio:**\n\n* The problem states we need twice as much of the 30% solution as the 10% solution.  Represent this as a ratio of 1:2 for the 10% and 30% solutions, respectively.\n\n**4. Adjust for the Ratio:**\n\n* Since we're using twice as much of the 30% solution, multiply its corresponding difference (10%) by 2: 10% * 2 = 20%\n\n**5.  Determine the Final Ratio:**\n\n* The numbers on the right side of the line now represent the ratio of each solution needed:\n    * 10% solution: 30 parts\n    * 30% solution: 20 parts\n    * 50% solution: 10 parts\n\n**6. Simplify the Ratio:**\n\n* The ratio 30:20:10 can be simplified to 3:2:1\n\n**Therefore, the chemist should mix the solutions in the ratio of 3:2:1 (10% : 30% : 50%) to achieve the desired 40% saline solution.**",
+            "options": [
+                "1:2:1",
+                "3:2:1",
+                "1:1:2",
+                "2:1:1"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Mixtures and Alligations",
+    "exam_id": 10,
+    "order": 10
+}

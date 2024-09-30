@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "A point P lies in 3D space such that its x-coordinate is -3, its y-coordinate is 5, and its z-coordinate is 2. What are the coordinates of point P?",
+            "difficulty": "easy",
+            "reasoning": "The question directly provides the x, y, and z coordinates of point P. In 3D coordinate geometry, a point's location is represented as (x, y, z). Therefore, point P is located at (-3, 5, 2).",
+            "options": [
+                "(-3, 2, 5)",
+                "(-3, 5, 2)",
+                "(3, 5, 2)",
+                "(2, 5, -3)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A cat is hiding from a playful puppy at point C (-2, 1) on a grid.  The puppy is napping at point D (4, -2). What is the midpoint of the line segment connecting these points, representing the halfway point between the cat and the puppy?",
+            "difficulty": "easy",
+            "reasoning": "This question uses the midpoint formula in a simple scenario. To find the midpoint, we use the formula: ((x1 + x2)/2, (y1 + y2)/2). \n\nStep 1: Identify the x and y coordinates of points C and D.\n      * C: x1 = -2, y1 = 1\n      * D: x2 = 4, y2 = -2 \n\nStep 2:  Plug these values into the midpoint formula:\n      * ((-2 + 4)/2, (1 + (-2))/2)\n\nStep 3: Simplify the equation:\n      * (2/2, -1/2)\n\nStep 4:  Calculate the final coordinates:\n      * (1, -0.5)\n\nTherefore, the midpoint of the line segment connecting the cat and the puppy is (1, -0.5).",
+            "options": [
+                "(1, -1)",
+                "(1, -0.5)",
+                "(3, -1)",
+                "(-1, 1)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A farmer wants to fence a rectangular piece of land using the minimum amount of fencing. Two opposite corners of the land are located at coordinates (2, 3) and (8, 7).\n**question**: What is the minimum length of fencing the farmer needs?\n**difficulty**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "This question deals with finding the perimeter of a rectangle given two opposite corners. It's classified as 'easy' because it involves a direct application of the distance formula and the perimeter formula.\n\n**1. Find the length and width:**\n    - Using the distance formula, we can find the length and width of the rectangle.\n    - Length = \u221a((8-2)^2 + (7-3)^2) = \u221a(6^2 + 4^2) = \u221a52 = 2\u221a13\n    - Width =  \u221a((8-2)^2 + (3-3)^2) = \u221a(6^2 + 0^2) = \u221a36 = 6\n\n**2. Calculate the perimeter:**\n    - Perimeter of a rectangle = 2(Length + Width)\n    - Perimeter = 2 (2\u221a13 + 6) = 12 + 4\u221a13\n\nTherefore, the minimum length of fencing the farmer needs is 12 + 4\u221a13 units.",
+            "options": [
+                "12 units",
+                "12 + 4\u221a13 units",
+                "4\u221a13 units",
+                "24 units"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A farmer plants apple trees in a straight line. He notices that the 3rd tree is 6 meters from the starting point of the line, and the 7th tree is 14 meters from the starting point. Assuming he continues planting at the same rate, how far from the starting point will the 10th tree be?",
+            "difficulty": "easy",
+            "reasoning": "This problem can be solved by recognizing the linear relationship between the tree number and the distance from the starting point.  \n\n**1. Find the difference:**  \nNotice that between the 3rd and 7th tree (a difference of 4 trees), the distance increases by 8 meters (14 meters - 6 meters = 8 meters). \n\n**2. Determine the planting rate:**\nThis means for every tree planted, the distance increases by 2 meters (8 meters / 4 trees = 2 meters/tree).  \n\n**3. Calculate the distance of the 10th tree:**\nSince the 7th tree is 14 meters away, and we're planting 3 more trees (10 - 7 = 3), the total distance will increase by 6 meters (3 trees * 2 meters/tree = 6 meters).  \n\n**4. Final Calculation:**\nTherefore, the 10th tree will be 20 meters from the starting point (14 meters + 6 meters = 20 meters).",
+            "options": [
+                "17 meters",
+                "18 meters",
+                "19 meters",
+                "21 meters"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A city planner is designing a circular park. For simplicity, they're using a coordinate plane where each unit represents 100 meters. The center of the park is located at (-2, 1) on their grid. They want the park's edge to pass through the point (1, 4). What is the radius of the planned park in meters?",
+            "difficulty": "easy",
+            "reasoning": "The problem provides us with the center of the circle and a point on the circle. The radius is simply the distance between these two points.  We can use the distance formula to find this distance.\n\n**1. Recall the Distance Formula:**\n\nThe distance between two points (x1, y1) and (x2, y2) is: \u221a[(x2 - x1)\u00b2 + (y2 - y1)\u00b2]\n\n**2. Apply the Formula:**\n\n* Center of the circle (x1, y1) = (-2, 1)\n* Point on the circle (x2, y2) = (1, 4)\n\nSubstitute the values into the distance formula:\n\u221a[(1 - (-2))\u00b2 + (4 - 1)\u00b2] \n\n**3. Simplify:**\n\n\u221a[(3)\u00b2 + (3)\u00b2] = \u221a(9 + 9) = \u221a18 = 3\u221a2\n\n**4. Convert to Meters:**\n\nSince each unit represents 100 meters, the radius of the park is 3\u221a2 * 100 meters = 300\u221a2 meters.\n\nTherefore, the radius of the planned park is 300\u221a2 meters.",
+            "options": [
+                "300\u221a2 meters",
+                "3\u221a2 meters",
+                "424.26 meters",
+                "100\u221a2 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A local bakery sells cupcakes for $2 each and cookies for $1 each. They need to make at least $10 from their sales today.\n**visual_representation**: Imagine a graph with the x-axis representing the number of cupcakes sold and the y-axis representing the number of cookies sold.  Two points are already plotted for you: (0, 10) and (5, 0).\n**question**: Which inequality represents the number of cupcakes (x) and cookies (y) the bakery needs to sell to reach their goal?\n",
+            "difficulty": "easy",
+            "reasoning": "The problem describes a situation where the bakery needs to make *at least* $10, implying an inequality. Here's how to represent this situation mathematically:\n\n* **Define variables:**\n    * Let 'x' represent the number of cupcakes sold.\n    * Let 'y' represent the number of cookies sold.\n* **Formulate the inequality:**\n    * The income from cupcakes is 2x (price per cupcake multiplied by the number sold).\n    * The income from cookies is 1y (or simply y).\n    * The total income needs to be greater than or equal to $10:  2x + y >= 10\n\n**Let's verify with the plotted points:**\n* **Point (0, 10):** 2(0) + 10 = 10 which satisfies the inequality (10 >= 10)\n* **Point (5, 0):** 2(5) + 0 = 10 which also satisfies the inequality (10 >= 10)\n\nTherefore, the inequality 2x + y >= 10 correctly represents the bakery's sales goal.",
+            "options": [
+                "2x + y < 10",
+                "x + 2y <= 10",
+                "2x + y >= 10",
+                "x + y > 10"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bakery sells croissants for $2 each and pain au chocolat for $3 each. A customer wants to buy a mix of these pastries and spends exactly $12. \n\nLet 'x' represent the number of croissants and 'y' represent the number of pain au chocolat. \n\n1. Write a system of linear equations that represents the given information.\n2. Solve the system of equations graphically by plotting the lines representing the equations.\n3. Solve the system of equations algebraically using either substitution or elimination.\n4. Compare the solutions obtained by both methods. \n5. Interpret the solution in the context of the problem.",
+            "difficulty": "easy",
+            "reasoning": "**1. Formulating the Equations:**\n\n* **Equation 1 (Cost):** The cost of 'x' croissants at $2 each plus the cost of 'y' pain au chocolat at $3 each equals the total spent, $12.  This can be written as: 2x + 3y = 12 \n\n* **Equation 2 (Contextual):** While not explicitly stated, it's implied the customer buys a whole number of pastries. This means x \u2265 0 and y \u2265 0, as you can't buy negative pastries.\n\n**2. Graphical Solution:**\n\n* **Finding Intercepts:**  To plot each line, find the x and y intercepts:\n    * **Equation 1:** When x = 0, y = 4 (y-intercept). When y = 0, x = 6 (x-intercept). \n    * **Equation 2:** We'll focus on the positive quadrant since x and y are non-negative.\n\n* **Plotting:** Plot the intercepts for each equation on a coordinate plane. Draw a line through each pair of intercepts. The point where the lines intersect is the graphical solution.\n\n* **Graphical Solution:** The lines intersect at the point (3, 2). This means the customer buys 3 croissants and 2 pain au chocolat.\n\n**3. Algebraic Solution (Substitution):**\n\n* **Solve for x in Equation 1:** 2x = 12 - 3y  =>  x = 6 - (3/2)y\n* **Substitute** this value of x into Equation 2: 2(6 - (3/2)y) + 3y = 12\n* **Simplify and Solve for y:** 12 - 3y + 3y = 12 => 0 = 0 (This means y can be any value that satisfies the original equation. However, we're interested in the solution that intersects with the other line).\n* **Substitute y = 2** (from the graphical solution) back into either equation. Using Equation 1: 2x + 3(2) = 12 => 2x = 6 => x = 3\n\n* **Algebraic Solution:** (x = 3, y = 2)\n\n**4. Comparison:** Both the graphical and algebraic methods yield the same solution: (3, 2).\n\n**5. Interpretation:** The solution (3, 2) means the customer can buy 3 croissants and 2 pain au chocolat to spend exactly $12.",
+            "options": [
+                "4 croissants",
+                "3 croissants and 2 pain au chocolat",
+                "2 pain au chocolat",
+                "5 croissants"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A parabola is defined by the equation (x + 3)^2 = 12(y - 1). Determine the coordinates of its focus and the equation of its directrix.",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Standard Form:**\n\n   The given equation is in the standard form for a parabola opening upwards: (x - h)^2 = 4p(y - k), where (h, k) is the vertex and 'p' is the distance between the vertex and the focus (and also the distance between the vertex and the directrix).\n\n**2. Identifying Vertex and 'p':**\n\n   Comparing the given equation with the standard form, we get:\n   * h = -3\n   * k = 1\n   * 4p = 12, which gives us p = 3\n\n   Therefore, the vertex of the parabola is (-3, 1).\n\n**3. Finding the Focus:**\n\n   Since the parabola opens upwards, the focus is 'p' units above the vertex. So, the focus is at (-3, 1 + 3) = (-3, 4).\n\n**4. Finding the Directrix:**\n\n   The directrix is a horizontal line 'p' units below the vertex. Hence, the equation of the directrix is y = 1 - 3, which simplifies to y = -2.\n\n**Therefore, the focus of the parabola is at (-3, 4) and the equation of its directrix is y = -2.**",
+            "options": [
+                "(-3, 1)",
+                "(-3, 4)",
+                "y = -2",
+                "y = 4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A point P(3, 2) is translated 2 units to the right and 3 units up. What are the coordinates of the image P'?",
+            "difficulty": "medium",
+            "reasoning": "To translate a point to the right, we add the horizontal translation to the x-coordinate. To translate a point up, we add the vertical translation to the y-coordinate.\n\n* **Horizontal translation:** 2 units to the right means we add 2 to the x-coordinate of P(3,2): 3 + 2 = 5\n* **Vertical translation:** 3 units up means we add 3 to the y-coordinate of P(3,2): 2 + 3 = 5\n\nTherefore, the image of point P(3, 2) after the translation is P'(5, 5).",
+            "options": [
+                "(1, -1)",
+                "(5, 5)",
+                "(1, 5)",
+                "(5, -1)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A coffee shop sells two sizes of coffee, small and large. A small coffee costs $3, and a large coffee costs $4. On a particular day, the coffee shop made a total of $240 from selling a combination of small and large coffees.  If 'x' represents the number of small coffees sold and 'y' represents the number of large coffees sold, write an equation that represents the total earnings for that day.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Linear Equations in Two Variables' because it involves representing a real-world scenario with an equation where two variables ('x' and 'y') have a linear relationship.\n\nHere's how to form the equation:\n\n* **Revenue from small coffees:** The shop earns $3 for each small coffee, so the revenue from 'x' small coffees is 3x.\n* **Revenue from large coffees:** Similarly, the revenue from 'y' large coffees is 4y.\n* **Total Revenue:** The total revenue is the sum of the revenue from small and large coffees, which is given as $240.\n\nTherefore, the equation representing the total earnings is: **3x + 4y = 240**",
+            "options": [
+                "Linear Equations in One Variable",
+                "Quadratic Equations",
+                "Systems of Equations",
+                "Exponents and Radicals"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A mobile phone plan costs $20 per month plus $0.10 per minute of talk time.  Which of the following graphs correctly represents the relationship between the total monthly cost (y-axis) and the number of talk minutes (x-axis)?\n\n[Insert four distinct graphs here, each with labeled axes.  Make sure one graph correctly represents the equation y = 0.10x + 20]",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Graphing Linear Equations and Inequalities' within Coordinate Geometry. It's easy (6/10) because it involves a straightforward linear equation (y = mx + b) without complex manipulations.\n\nHere's how to determine the correct graph:\n\n1. **Identify the slope (m):** The cost increases by $0.10 per minute, so the slope (rate of change) is 0.10. \n2. **Identify the y-intercept (b):** The fixed monthly cost is $20, representing the cost when talk time is 0 minutes. This is the y-intercept. \n\nTherefore, the correct graph should display a line that:\n* Crosses the y-axis at $20 (the y-intercept). \n* Has a positive slope, slanting upwards as talk minutes (x) and cost (y) both increase.  The slope shouldn't be steep as 0.10 is a relatively small value.",
+            "options": [
+                "Graph A",
+                "Graph B",
+                "Graph C",
+                "Graph D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Difficulty Level**: Easy (6/10)\n**Question Type**: Multiple Choice\n**Concept**: Circles: Standard Equation\n**Question Description**: A circle on a coordinate plane has its center at the point (-3, 5).  If the circle passes through the point (-1, 7), what is the radius of the circle?\n**Example**: None\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Recall the distance formula:**\n\nThe radius of the circle is the distance between the center (-3, 5) and any point on the circle, in this case, (-1, 7).  We can use the distance formula to find this distance.\n\nDistance = \u221a[(x\u2082 - x\u2081)\u00b2 + (y\u2082 - y\u2081)\u00b2]\n\n**2. Apply the distance formula:**\n\nLet (-3, 5) be (x\u2081, y\u2081) and (-1, 7) be (x\u2082, y\u2082).\n\nDistance = \u221a[(-1 - (-3))\u00b2 + (7 - 5)\u00b2]\nDistance = \u221a[(2)\u00b2 + (2)\u00b2]\nDistance = \u221a(4 + 4)\nDistance = \u221a8\n\n**3. Simplify the radical:**\n\n\u221a8 can be simplified to 2\u221a2 \n\n**Therefore, the radius of the circle is 2\u221a2.**",
+            "options": [
+                "\u221a2",
+                "2",
+                "2\u221a2",
+                "4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Type**: Calculation\n**Context**: A farmer wants to fence a rectangular piece of land along a straight river. He has 100 meters of fencing available and plans to use the river as one side of the rectangle, thus only needing to fence the other three sides. \n**Question**: What are the dimensions (length and width) of the rectangle that will maximize the area of the enclosed land?\n**Answer Choices**: \n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "Let the width of the rectangle be 'w' meters.\nSince the farmer uses the river as one side, the length of the rectangle, opposite the river, will be (100 - 2w) meters (because he has 100 meters of fencing and uses '2w' for the two widths).\n\nThe area 'A' of a rectangle is given by length * width:\n\nA = (100 - 2w) * w = 100w - 2w\u00b2\n\nTo find the maximum area, we need to find the maximum point of this quadratic equation. The graph of this equation is a parabola opening downwards, and its maximum point is at its vertex.\n\nThe x-coordinate of the vertex of the parabola -b/2a gives us the width that maximizes the area. In our equation, a = -2 and b = 100.\n\nTherefore, the width that maximizes the area is:\nw = -100 / (2 * -2) = 25 meters\n\nNow, we can find the length:\nLength = 100 - 2w = 100 - 2(25) = 50 meters\n\nTherefore, the dimensions that maximize the area are 25 meters by 50 meters.",
+            "options": [
+                "25 meters by 50 meters",
+                "50 meters by 25 meters",
+                "30 meters by 40 meters",
+                "40 meters by 30 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A hyperbola has vertices at (4, 0) and (-4, 0), and foci at (5, 0) and (-5, 0). What is the standard equation of this hyperbola?",
+            "difficulty": "medium",
+            "reasoning": "This question is easy because it directly provides the key information needed to determine the standard equation of a hyperbola. Here's how to solve it:\n\n**1. Identify the center:**\n\nThe center of the hyperbola is the midpoint of the segment connecting the two vertices. In this case, the center is (0, 0).\n\n**2. Determine the value of 'a':**\n\nThe distance from the center to each vertex is 'a'. Since the vertices are 4 units away from the center, a = 4.\n\n**3. Determine the value of 'c':**\n\nThe distance from the center to each focus is 'c'. Since the foci are 5 units away from the center, c = 5.\n\n**4. Calculate the value of 'b':**\n\nWe can use the relationship  c\u00b2 = a\u00b2 + b\u00b2  to find 'b'.  Substituting the values we have:\n\n5\u00b2 = 4\u00b2 + b\u00b2\n25 = 16 + b\u00b2\nb\u00b2 = 9\nb = 3\n\n**5. Write the standard equation:**\n\nSince the vertices and foci lie on the horizontal axis, the standard equation is of the form:\n\n(x - h)\u00b2/a\u00b2 - (y - k)\u00b2/b\u00b2 = 1\n\nWhere (h, k) is the center of the hyperbola. Substituting the values, we get:\n\n(x - 0)\u00b2/4\u00b2 - (y - 0)\u00b2/3\u00b2 = 1\n\nx\u00b2/16 - y\u00b2/9 = 1\n\nTherefore, the standard equation of the hyperbola is x\u00b2/16 - y\u00b2/9 = 1.",
+            "options": [
+                "x\u00b2/16 + y\u00b2/9 = 1",
+                "x\u00b2/9 - y\u00b2/16 = 1",
+                "x\u00b2/16 - y\u00b2/9 = 1",
+                "y\u00b2/16 - x\u00b2/9 = 1"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A point in the Cartesian plane is located at (-3, -3). If you were to express this same point using polar coordinates (r, \u03b8), where \u03b8 is measured in radians counter-clockwise from the positive x-axis, what would be the value of r?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding Polar Coordinates**\n\nPolar coordinates (r, \u03b8) represent a point's location in a plane based on its distance from the origin (r) and the angle (\u03b8) formed with the positive x-axis.\n\n**Finding 'r'**\n\n1. **Visualize:** Imagine a right triangle formed with the point (-3, -3), the origin (0, 0), and the x-axis. \n2. **Pythagorean Theorem:** The distance 'r' is the hypotenuse of this triangle. We can use the Pythagorean theorem:  r\u00b2 = x\u00b2 + y\u00b2\n3. **Substitute:** r\u00b2 = (-3)\u00b2 + (-3)\u00b2 = 9 + 9 = 18\n4. **Solve for 'r':** r = \u221a18 = 3\u221a2\n\n**Therefore, the value of 'r' is 3\u221a2.**",
+            "options": [
+                "3",
+                "-3",
+                "3\u221a2",
+                "6"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A triangle is formed by points A, B, and C in the coordinate plane.  Point D is the midpoint of side BC.\n\nGiven Information: A = (1, 2), B = (4, 5), C = (7, 1)\n\nQuestion: Find the vector representing the directed line segment AD.",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the midpoint D of BC:**\n\n   The midpoint of a line segment is found by averaging the x-coordinates and averaging the y-coordinates of the endpoints.\n\n   D = ((Bx + Cx)/2, (By + Cy)/2) = ((4 + 7)/2, (5 + 1)/2) = (11/2, 3)\n\n**2.  Find the vector AD:**\n\n   A vector representing a directed line segment is found by subtracting the initial point's coordinates from the terminal point's coordinates. \n\n   AD = (Dx - Ax, Dy - Ay) = (11/2 - 1, 3 - 2) = (9/2, 1)\n\n**Therefore, the vector representing the directed line segment AD is (9/2, 1).**",
+            "options": [
+                "(9, 2)",
+                "(9/2, 1)",
+                "(11/2, 3)",
+                "(4.5, 1)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A kite, anchored to the ground, is initially flying with its corners at points A(2, 5), B(5, 6), C(7, 5), and D(5, 2).  A sudden gust of wind pushes the kite, translating it 3 units to the left and then reflecting it across the x-axis. What are the coordinates of point C after these transformations?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Transformations in the Coordinate Plane: Translations, Reflections, Rotations' topic within 'Quants - Coordinate Geometry'. It involves understanding both translation and reflection of a figure on a coordinate plane.\n\nHere's how to solve it step-by-step:\n\n1. **Translation:** The kite is translated 3 units to the left. This means we subtract 3 from each x-coordinate. \n    * C(7, 5) becomes C'(7 - 3, 5) = C'(4, 5) \n\n2. **Reflection:** Next, the kite is reflected across the x-axis. This means we change the sign of the y-coordinate.\n    * C'(4, 5) becomes C''(4, -5)\n\nTherefore, the final coordinates of point C after the transformations are (4, -5).",
+            "options": [
+                "(1, -5)",
+                "(4, 5)",
+                "(4, -5)",
+                "(7, -5)"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A parabolic archway is being constructed for a new city park. The archway is symmetrical and has a width of 12 meters at its base. The highest point of the archway is 4 meters above the ground. If the vertex of the parabola representing the archway is placed at the origin of a coordinate system, find the equation of the directrix.",
+            "difficulty": "medium",
+            "reasoning": "**1. Visualize the Problem:**\n\nImagine a parabola opening downwards, representing the archway. Its vertex is at (0,0), the origin. The base width being 12 meters means it intersects the x-axis at points (-6, 0) and (6, 0). The highest point being 4 meters above ground means the focus is at (0, -4).\n\n**2. Recall Key Concepts:**\n\n* **Standard Equation:** Since the parabola opens downwards and has its vertex at the origin, its standard equation is of the form  x\u00b2 = -4ay, where 'a' is the distance between the vertex and focus (and also between vertex and directrix).\n* **Focus and Directrix:** For this parabola, the focus is (0, -a) and the directrix is the horizontal line y = a.\n\n**3. Determine 'a':**\n\nWe know the focus is (0, -4). Comparing this with (0, -a), we get a = 4.\n\n**4. Find the Equation of the Directrix:**\n\nThe directrix is the line y = a. Substituting the value of 'a', we get the equation of the directrix as **y = 4**.",
+            "options": [
+                "y = -4",
+                "y = 0",
+                "y = 4",
+                "x = 4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A solar system features a planet with an elliptical orbit around its sun. The major axis of this orbit is known to be 140 million kilometers. Astronomers observing the planet determine that the distance between the foci of its elliptical path is 100 million kilometers.\n\nWhat is the length of the minor axis of this planet's orbit?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Problem**\n\nWe're given information about a planet's elliptical orbit: the length of the major axis and the distance between the foci. Our goal is to find the length of the minor axis.\n\n**2. Key Relationships**\n\n* The major axis (2a) is the longest diameter of the ellipse.\n* The distance between the foci (2c) is related to the major and minor axes by the equation:  c\u00b2 = a\u00b2 - b\u00b2, where 'b' is half the length of the minor axis. \n\n**3. Applying the Information**\n\n* We know 2a = 140 million km, so a = 70 million km.\n* We know 2c = 100 million km, so c = 50 million km.\n\n**4. Solving for the Minor Axis**\n\n* Substitute the values of 'a' and 'c' into the equation: 50\u00b2 = 70\u00b2 - b\u00b2\n* Simplify: 2500 = 4900 - b\u00b2\n* Solve for b\u00b2: b\u00b2 = 4900 - 2500 = 2400\n* Find b: b = \u221a2400 \u2248 48.99 million km\n\n**5. Calculating the Length of the Minor Axis**\n\n* The minor axis is twice the length of 'b': 2 * 48.99 million km \u2248 97.98 million km\n\n**Therefore, the length of the minor axis of the planet's orbit is approximately 97.98 million kilometers.**",
+            "options": [
+                "140 million km",
+                "100 million km",
+                "97.98 million km",
+                "48.99 million km"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A lighthouse engineer is designing a system where the beam of light will shine out from a rotating platform in the shape of a rose curve. The equation governing the path of the beam's endpoint is r = 3cos(2\u03b8), where r is the distance from the center of the platform in meters.  Find the two furthest possible distances (in meters) that the beam can reach from the center of the platform.",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem**\n\nThe equation r = 3cos(2\u03b8) represents a rose curve. We need to find the maximum distance the beam can reach from the center, which means finding the maximum value of 'r'.\n\n**Solution**\n\n1. **Maximum Value of Cosine:** The cosine function, cos(2\u03b8), has a maximum value of 1. \n\n2. **Substituting for Maximum 'r':**  Substitute the maximum value of cos(2\u03b8) into the equation:\n   r = 3 * 1 = 3\n\n3. **Considering Symmetry:** Rose curves often have symmetry. Since the coefficient of \u03b8 in our equation is 2, the curve will have 2 * 2 = 4 petals. Due to this symmetry, the maximum distance will be achieved multiple times as the beam rotates. To find all maximum distances, we need to find all the angles '\u03b8' where cos(2\u03b8) = 1 within a standard period of the curve (0 \u2264 \u03b8 \u2264 2\u03c0).\n\n4. **Solving for \u03b8:**\n   * cos(2\u03b8) = 1\n   * 2\u03b8 = 0, 2\u03c0  (within one period of the cosine function)\n   * \u03b8 = 0, \u03c0\n\n5. **Interpreting the Result:** The beam reaches its maximum distance from the center at two angles, \u03b8 = 0 and \u03b8 = \u03c0. At both of these angles, the distance 'r' is 3 meters.\n\n**Therefore, the two furthest possible distances the beam can reach from the center are both 3 meters.**",
+            "options": [
+                "1 meter",
+                "2 meters",
+                "3 meters",
+                "6 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A circle intersects the x-axis at points (2, 0) and (8, 0). Its center lies on the line x = 5.  Determine the general equation of this circle.",
+            "difficulty": "medium",
+            "reasoning": "**1. Finding the Center:**\n\n* Since the circle intersects the x-axis at (2, 0) and (8, 0), the x-coordinate of the center must be the midpoint of these two points.  The midpoint is ((2+8)/2, 0) = (5, 0).\n* We are given that the center lies on the line x = 5, which confirms our calculated x-coordinate.\n* Therefore, the center of the circle is (5, y), where 'y' is the unknown y-coordinate.\n\n**2. Finding the Radius:**\n\n* The radius is the distance from the center to any point on the circle.  We can use the point (2, 0) and the center (5, y).\n* Using the distance formula: radius = \u221a((5 - 2)^2 + (y - 0)^2) = \u221a(9 + y^2)\n\n**3. Forming the General Equation:**\n\n* The general equation of a circle is:  x^2 + y^2 + Dx + Ey + F = 0 \n* We can substitute the center (5, y) and simplify:\n    (x - 5)^2 + (y - y)^2  + Dx + Ey + F = 0\n    x^2 - 10x + 25 + y^2 + Dx + Ey + F = 0 \n\n**4. Using the x-intercepts:**\n\n* Since the circle passes through (2, 0) and (8, 0), we can substitute these points into the equation to solve for D, E, and F.\n\n   * For (2, 0): 4 - 20 + 25 + 2D + F = 0  =>  2D + F = -9\n   * For (8, 0): 64 - 80 + 25 + 8D + F = 0  => 8D + F = -9 \n\n* Solving the system of equations, we get D = 0 and F = -9\n\n**5. Final Equation:**\n\n* Substituting D and F back into the general equation, we get:\n    x^2 - 10x + 25 + y^2 - 9 = 0\n    x^2 + y^2 - 10x + 16 = 0\n\nTherefore, the general equation of the circle is x^2 + y^2 - 10x + 16 = 0. ",
+            "options": [
+                "x^2 + y^2 - 10x + 16 = 0",
+                "x^2 + y^2 + 10x + 16 = 0",
+                "x^2 + y^2 - 10x - 16 = 0",
+                "x^2 + y^2 + 10x - 16 = 0"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A city planner is laying out two new streets on a grid map. Street A goes through the points (-2, 1) and (4, 5). Street B is perpendicular to Street A and passes through the point (6, 3). Find the equation of Street B in the form y = mx + c, and then solve the system of equations algebraically to determine the coordinates (x, y) where the two streets will intersect.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Systems of Linear Equations: Graphical and Algebraic Solutions' subtopic within 'Quants - Coordinate Geometry'.\n\nHere's how to solve the problem:\n\n**1. Find the slope of Street A:**\n\nThe slope of a line passing through two points (x1, y1) and (x2, y2) is given by (y2 - y1) / (x2 - x1).\n\nFor Street A, using the points (-2, 1) and (4, 5):\n\nSlope (m) = (5 - 1) / (4 - (-2)) = 4 / 6 = 2/3\n\n**2. Find the slope of Street B:**\n\nSince Street B is perpendicular to Street A, the product of their slopes is -1.  \n\nTherefore, the slope of Street B is -1 / (2/3) = -3/2\n\n**3. Find the equation of Street B:**\n\nWe know Street B's slope (-3/2) and a point it passes through (6, 3). We can use the point-slope form of a linear equation: y - y1 = m(x - x1)\n\nPlugging in the values: y - 3 = (-3/2)(x - 6)\n\nSimplifying, we get the equation of Street B: y = (-3/2)x + 12\n\n**4. Solve the system of equations:**\n\nWe have the equations of Street A and Street B:\n\nStreet A:  Let's find its equation using one of its points and the calculated slope (2/3):\n   y - 1 = (2/3)(x - (-2))\n   Simplifying: y = (2/3)x + 7/3\n\nStreet B: y = (-3/2)x + 12\n\nTo find the intersection point, we can use substitution or elimination.  Let's use substitution:\n\nSince both equations are solved for 'y', we can set them equal to each other:\n\n(2/3)x + 7/3  =  (-3/2)x + 12\n\nTo get rid of fractions, multiply both sides by 6:\n\n4x + 14 = -9x + 72\n\nCombining like terms: 13x = 58\n\nSolving for x: x = 58/13\n\nNow substitute this value of x back into either equation to find y. Let's use Street A's equation:\n\ny = (2/3)(58/13) + 7/3 = 116/39 + 7/3 = 209/39\n\n**Therefore, the two streets intersect at the point (58/13, 209/39).**",
+            "options": [
+                "(58/13, 209/39)",
+                "(4, 5)",
+                "(6, 3)",
+                "(-2, 1)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A team of scientists is tracking the path of a comet. They discover that the path of the comet can be modeled by a hyperbola with its center at the origin. Further analysis shows that the comet passes through the point (3, 4) and has a vertex at (3, 0).\n**given_information**: \n**question**: What is the equation of the hyperbola that represents the path of the comet?\n**answer_choices**: \n  - (a) (x^2/9) - (y^2/7) = 1\n  - (b) (y^2/16) - (x^2/9) = 1\n  - (c) (x^2/9) - (y^2/16) = 1\n  - (d) (y^2/9) - (x^2/16) = 1\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Determine the Orientation:** Since the vertex (3, 0) and the center (0, 0) lie on the x-axis, the hyperbola opens horizontally.\n\n**2. Find 'a':** The distance from the center (0, 0) to the vertex (3, 0) is 'a' = 3. Therefore, a\u00b2 = 9.\n\n**3. Find 'b':** We know the comet passes through the point (3, 4).  Since this point lies on the hyperbola, it must satisfy the standard equation. Because the hyperbola opens horizontally, the standard equation is: (x\u00b2/a\u00b2) - (y\u00b2/b\u00b2) = 1.  Substituting the point (3, 4) and a\u00b2 = 9, we get: \n(3\u00b2/9) - (4\u00b2/b\u00b2) = 1\n1 - (16/b\u00b2) = 1\n16/b\u00b2 = 0\nb\u00b2 = 16\n\n**4. Formulate the Equation:** Using the values of a\u00b2 = 9 and b\u00b2 = 16 in the standard equation for a horizontally opening hyperbola, we get the equation: (x\u00b2/9) - (y\u00b2/16) = 1\n\n**Therefore, the correct answer is (c) (x\u00b2/9) - (y\u00b2/16) = 1.**",
+            "options": [
+                "(x^2/9) - (y^2/7) = 1",
+                "(y^2/16) - (x^2/9) = 1",
+                "(x^2/9) - (y^2/16) = 1",
+                "(y^2/9) - (x^2/16) = 1"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A triangle is formed by the points A(2,1), B(6,1), and C(4,5). A smaller triangle is formed inside by connecting the midpoints of each side of triangle ABC.  What is the area of this smaller triangle?",
+            "difficulty": "medium",
+            "reasoning": "This question assesses understanding of coordinate geometry, area calculation, and the midpoint formula. Here's how to solve it:\n\n**1. Find the Midpoints:**\n* Midpoint of AB:  ((2+6)/2, (1+1)/2) = (4,1)\n* Midpoint of BC:  ((6+4)/2, (1+5)/2) = (5,3)\n* Midpoint of AC:  ((2+4)/2, (1+5)/2) = (3,3) \n\n**2. Visualize the Triangles:**\n* Imagine plotting the original triangle ABC and then the smaller triangle formed by these midpoints.\n\n**3. Key Concept:**\n* The smaller triangle formed by connecting the midpoints of a larger triangle is always similar to the larger triangle and has 1/4 the area.\n\n**4. Calculate Area of Triangle ABC:**\n* You can use the formula for the area of a triangle given its vertices (look this up if needed).  However, in this case, notice that AB is a horizontal line (y=1) and the height of the triangle from side AB to point C is 4 units (from y=1 to y=5). \n* Area of ABC = (1/2) * base * height = (1/2) * 4 * 4 = 8 square units\n\n**5. Calculate Area of Smaller Triangle:**\n* Area of smaller triangle = (1/4) * Area of ABC = (1/4) * 8 = 2 square units\n\n**Therefore, the area of the smaller triangle is 2 square units.**",
+            "options": [
+                "1 square unit",
+                "4 square units",
+                "6 square units",
+                "8 square units"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A farmer wants to fence a rectangular area for his sheep. He has 100 meters of fencing available.  He wants the length of the enclosure to be at least twice the width. Let the width of the enclosure be 'w' meters and the length be 'l' meters.  \n\nWhich of the following systems of inequalities correctly represents the possible dimensions of the enclosure?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to determine the correct system of inequalities: \n\n**1. Perimeter Constraint:**\n\n* The perimeter of a rectangle is calculated as: 2 * (length + width)\n* The farmer has 100 meters of fencing, so the perimeter cannot exceed this: 2(l + w) \u2264 100\n* Simplifying the inequality: l + w \u2264 50 \n\n**2. Length Constraint:**\n\n* The length (l) must be at least twice the width (w): l \u2265 2w\n\n**3. Non-Negative Dimensions:**\n\n*  Both length and width cannot be negative: l \u2265 0 and w \u2265 0\n\n**Therefore, the correct system of inequalities representing the possible dimensions of the sheep enclosure is:**\n\nl + w \u2264 50\nl \u2265 2w\nl \u2265 0\nw \u2265 0",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A city planner is laying out a new road. The road needs to pass through the point (2, 5) on the city map, and be perpendicular to an existing road represented by the equation 3x - y = 7.  What is the equation of the new road in general form (Ax + By = C)?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the slope of the existing road:**\n   -  Rearrange the equation 3x - y = 7 into slope-intercept form (y = mx + b):\n      - y = 3x - 7\n   - The slope (m) of the existing road is 3. \n\n**2. Find the slope of the new road:**\n   - Perpendicular lines have slopes that are negative reciprocals of each other.\n   - The negative reciprocal of 3 is -1/3. This is the slope of the new road.\n\n**3. Use the point-slope form:**\n   - We know the new road passes through (2, 5) and has a slope of -1/3. Plug these values into the point-slope form: y - y1 = m(x - x1)\n      - y - 5 = (-1/3)(x - 2)\n\n**4. Convert to general form:**\n   - Multiply both sides of the equation by 3 to eliminate the fraction: 3y - 15 = -x + 2\n   - Move all terms to one side to get the general form: x + 3y = 17\n\n**Therefore, the equation of the new road in general form is x + 3y = 17.**",
+            "options": [
+                "x + 3y = 17",
+                "x - 3y = -13",
+                "3x + y = 11",
+                "3x - y = 1"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A charity organization is planning a fundraising event. They need to rent a venue and decide between two options: \n\n**Venue A:** Charges a flat fee of $500 plus $20 per person attending.\n**Venue B:** Charges a flat fee of $200 plus $35 per person attending.\n\nGraph the equations representing the total cost for each venue based on the number of attendees. Determine the number of attendees at which the cost of both venues would be the same.",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of graphing linear equations and finding the point of intersection, which represents where the costs are equal. Here's how to solve it:\n\n**1. Define Variables:**\n* Let 'x' be the number of attendees.\n* Let 'y' be the total cost.\n\n**2. Formulate Equations:**\n* Venue A: y = 20x + 500 \n* Venue B: y = 35x + 200\n\n**3. Graphing the Equations:**\n* **Venue A:** Start at the y-intercept (0, 500).  The slope is 20 (rise over run), so for every 1 person increase on the x-axis, the cost goes up by $20 on the y-axis. \n* **Venue B:** Start at the y-intercept (0, 200). The slope is 35, meaning for every 1 person increase, the cost goes up by $35.\n\n**4. Finding the Point of Intersection:**\n* The point where the two lines intersect on the graph represents the number of attendees where the cost is the same for both venues. \n* To find this point algebraically, solve the system of equations:\n    * 20x + 500 = 35x + 200\n    * 15x = 300\n    * x = 20 \n\n* When x = 20, substitute it back into either equation to find 'y':\n    * y = 20(20) + 500 = 900\n\n**Conclusion:**\nThe lines intersect at the point (20, 900). This means that if 20 people attend, the cost will be $900 at both venues. ",
+            "options": [
+                "15",
+                "20",
+                "25",
+                "30"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A city planner is designing a park with a large fountain at the center. They want to install two lampposts, each equidistant from the fountain, such that the difference in distances from any point on the walking path bordering the fountain to the two lampposts is always 30 meters. The walking path happens to trace out a hyperbola with the fountain at its center.  If the distance between the vertices of the hyperbolic path is 20 meters, what is the distance between the two lampposts?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Understand the Setup**\n\n* The problem describes a hyperbola where the walking path is the hyperbola itself. \n* The fountain at the center represents the center of the hyperbola.\n* The lampposts are the foci of the hyperbola. This is because the definition of a hyperbola is the set of all points where the difference in distances to the two foci is constant.\n\n**2. Identify Knowns and Unknowns**\n\n* We know the difference in distances from any point on the hyperbola to the foci (lampposts) is 30 meters. This is the value of  *2a* in the standard hyperbola equation. \n* We know the distance between the vertices is 20 meters. This is the value of *2a*.\n* We need to find the distance between the foci, which is *2c*.\n\n**3. Use the Hyperbola Properties**\n\n* Recall the relationship between *a*, *b*, and *c* for a hyperbola: *c\u00b2 = a\u00b2 + b\u00b2*\n\n**4. Solve for c**\n\n* We know *2a = 30* meters, so *a = 15* meters. \n* We know *2a = 20* meters, so *a = 10* meters. \n* Substitute the value of *a* into the equation: *c\u00b2 = 15\u00b2 + 10\u00b2 = 325*\n* Solve for *c*: *c = \u221a325 = 5\u221a13* meters\n\n**5. Find the Distance Between the Foci**\n\n* The distance between the foci is *2c = 2 * (5\u221a13) = 10\u221a13* meters.\n\n**Therefore, the distance between the two lampposts is 10\u221a13 meters.**",
+            "options": [
+                "10\u221a13 meters",
+                "30 meters",
+                "20 meters",
+                "5\u221a13 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A parabola is defined as the set of all points that are equidistant to a point (the focus) and a line (the directrix).  You are given that the focus of a parabola is at (2, -1) and the directrix is the line y = 3.  Find the standard equation of the parabola.",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Definition:**\n\nThe key to this problem is understanding the definition of a parabola. Every point on the parabola is the same distance from the focus and the directrix. \n\n**2. Visualize the Setup:**\n\nImagine a point (x, y) on the parabola.  Draw a line segment from this point to the focus (2, -1) and another line segment from the point (x, y) straight down to the directrix (y = 3). These two line segments must have the same length.\n\n**3.  Use the Distance Formula:**\n\n*  **Distance from (x, y) to the focus (2, -1):**  \u221a[(x - 2)^2 + (y + 1)^2] \n*  **Distance from (x, y) to the directrix (y = 3):**  Since this is a vertical line, the distance is simply the difference in the y-coordinates: |y - 3|\n\n**4. Set the Distances Equal and Simplify:**\n\n\u221a[(x - 2)^2 + (y + 1)^2] = |y - 3|\n\nSquare both sides to get rid of the square root:\n(x - 2)^2 + (y + 1)^2 = (y - 3)^2\n\nExpand:\nx^2 - 4x + 4 + y^2 + 2y + 1 = y^2 - 6y + 9\n\nSimplify:\nx^2 - 4x + 8y - 4 = 0\n\n**5.  Rewrite in Standard Form:**\n\nTo get the equation in standard form (which is either (x-h)^2 = 4p(y-k) or (y-k)^2 = 4p(x-h)), we need to complete the square.  Since we only have an x^2 term, we'll complete the square with the x terms:\n\n(x^2 - 4x) + 8y - 4 = 0\n\nTo complete the square, take half of the coefficient of the x term (-4), square it ((-2)^2 = 4), and add it to both sides.  We're also going to move the constant term to the right side:\n(x^2 - 4x + 4) + 8y = 4 + 4\n\nRewrite as a squared term:\n(x - 2)^2 + 8y = 8\n\nIsolate the y term:\n8y = - (x - 2)^2 + 8\n\nFinally, divide by 8:\ny =  -1/8(x - 2)^2 + 1\n\n**Therefore, the standard equation of the parabola is y = -1/8(x - 2)^2 + 1.**",
+            "options": [
+                "y = -1/8(x - 2)^2 + 1",
+                "y = 1/8(x - 2)^2 + 1",
+                "x = -1/8(y - 2)^2 + 1",
+                "x = 1/8(y - 2)^2 + 1"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "An elliptical whispering gallery is being designed so that a person standing at one focus can hear a whisper from a person standing at the other focus. The room is to be 50 feet long, and the foci are to be located 14 feet from the center.  \n\nFind an equation that describes the shape of the elliptical room.  Assume that the center of the room is at the origin and that the major axis is horizontal.",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Setup**\n\nWe're dealing with an ellipse where the length refers to the major axis.  Since the foci are on the horizontal axis and the center is at the origin, the standard equation will be of the form: \n\n`(x^2 / a^2) + (y^2 / b^2) = 1`\n\n**2. Identify Key Values**\n\n* **Major axis (2a):** 50 feet, so  `a = 25 feet` \n* **Distance from center to foci (c):** 14 feet\n\n**3.  Find the Minor Axis (b)**\n\nWe can use the relationship between `a`, `b`, and `c` for ellipses:\n\n`c^2 = a^2 - b^2`\n\nSubstitute the known values:\n\n`14^2 = 25^2 - b^2`\n`196 = 625 - b^2`\n`b^2 = 429`\n`b = sqrt(429)`  (We only need the positive root since it represents a distance)\n\n**4. Write the Equation**\n\nSubstitute the values of `a` and `b` into the standard form:\n\n`(x^2 / 25^2) + (y^2 / (sqrt(429))^2) = 1`\n\n**Simplified Equation:**\n\n`(x^2 / 625) + (y^2 / 429) = 1`\n\nTherefore, the equation that describes the shape of the elliptical room is `(x^2 / 625) + (y^2 / 429) = 1`.",
+            "options": [
+                "25 feet",
+                "14 feet",
+                "sqrt(429) feet",
+                "625 feet"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A regular hexagon is centered at the origin (0,0) with one vertex located at (4,0). The hexagon is first reflected across the line y = x and then rotated 120 degrees counterclockwise about its center. Determine the x-coordinate of the vertex that was originally at (4,0) after both transformations.",
+            "difficulty": "hard",
+            "reasoning": "**1. Reflection:**\n\n   - Reflecting a point across the line y = x swaps its x and y coordinates. Therefore, the image of (4,0) after reflection is (0,4). \n\n**2. Rotation:**\n\n   - A 120-degree counterclockwise rotation about the origin maps a point (x,y) to:  \n\n      *  x' = x*cos(120\u00b0) - y*sin(120\u00b0) = (-1/2)x - (\u221a3/2)y\n      *  y' = x*sin(120\u00b0) + y*cos(120\u00b0) = (\u221a3/2)x - (1/2)y\n\n   - Applying this to the point (0,4), we get:\n\n      * x' = (-1/2)(0) - (\u221a3/2)(4) = -2\u221a3\n      * y' = (\u221a3/2)(0) - (1/2)(4) = -2\n\n**Conclusion:**\n\nThe x-coordinate of the vertex after both transformations is **-2\u221a3**.",
+            "options": [
+                "-4",
+                "0",
+                "2\u221a3",
+                "-2\u221a3"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A laser beam's path is represented by a line on a coordinate plane.  The beam initially travels along the line with equation 3x - 4y = 12. However, it strikes a reflective surface and its path is reflected.  The reflection is such that the angle of incidence is equal to the angle of reflection, meaning the slopes of the lines representing the incoming and reflected beam have opposite signs but the same magnitude.  Given that the reflection occurs at the point (4,0), what is the equation of the line representing the path of the reflected laser beam in standard form (Ax + By = C, where A, B, and C are integers and A is positive)?",
+            "difficulty": "hard",
+            "reasoning": "1. **Find the slope of the original beam:** Rewrite the given equation (3x - 4y = 12) in slope-intercept form (y = mx + b): \n   -  -4y = -3x + 12\n   - y = (3/4)x - 3\n   - The slope of the original beam is 3/4. \n2. **Determine the slope of the reflected beam:** Since the angle of incidence equals the angle of reflection, the slopes of the incident and reflected beams have opposite signs but the same magnitude. Therefore, the slope of the reflected beam is -3/4. \n3. **Use the point-slope form:**  We know the reflected beam passes through (4,0) and has a slope of -3/4.  Substitute these values into the point-slope form: y - y1 = m(x - x1) \n   - y - 0 = (-3/4)(x - 4)\n4. **Simplify to standard form:** Distribute and rearrange the equation to obtain the standard form:\n   - y = (-3/4)x + 3\n   - 4y = -3x + 12\n   - **3x + 4y = 12** \nTherefore, the equation of the line representing the path of the reflected laser beam in standard form is 3x + 4y = 12.",
+            "options": [
+                "3x - 4y = 12",
+                "3x + 4y = 12",
+                "-3x + 4y = 12",
+                "3x - 4y = -12"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A hot air balloon festival is designing a light show for the evening. They plan to use two spotlights: Spotlight A and Spotlight B.  When both spotlights are shone on the same balloon, it appears a vibrant red.  Individually, Spotlight A produces a yellow hue, while Spotlight B produces a magenta hue. \n\nThe perceived brightness of each color (red, yellow, magenta) is measured on a scale of 0 to 100. For the desired red, the combined brightness from both spotlights needs to be exactly 80. Additionally, the brightness of the yellow from Spotlight A needs to be precisely 1.5 times the brightness of the magenta from Spotlight B.\n\nRepresent the brightness of yellow light from Spotlight A as 'y' and the brightness of the magenta light from Spotlight B as 'm'.\n\nDetermine the individual brightness levels (y and m) that the spotlights need to be set to achieve the desired red color with its specific brightness conditions.",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the topic of 'Systems of Linear Equations: Graphical and Algebraic Solutions' within 'Quants - Coordinate Geometry'. It requires translating a real-world scenario into a system of equations and then solving for the unknowns.\n\nHere's a step-by-step solution:\n\n**1. Formulating the Equations:**\n\n* **Equation 1 (Combined Brightness):** y + m = 80  (The combined brightness of yellow and magenta should be 80)\n* **Equation 2 (Brightness Ratio):** y = 1.5m (The yellow brightness is 1.5 times the magenta brightness)\n\n**2. Solving the System of Equations:**\n\nWe can use the substitution method to solve for 'y' and 'm'.\n\n* **Substitute** the value of 'y' from Equation 2 into Equation 1:\n   1.5m + m = 80\n\n* **Simplify** and solve for 'm':\n   2.5m = 80\n   m = 80 / 2.5\n   m = 32\n\n* **Substitute** the value of 'm' back into Equation 2 to find 'y':\n   y = 1.5 * 32\n   y = 48\n\n**Therefore, Spotlight A (yellow) should be set to a brightness of 48, and Spotlight B (magenta) should be set to a brightness of 32 to achieve the desired red color with a combined brightness of 80.**\n\n**Verification:**\n\n* The combined brightness is 48 + 32 = 80 (satisfies Equation 1)\n* The yellow brightness (48) is indeed 1.5 times the magenta brightness (32) (satisfies Equation 2) ",
+            "options": [
+                "32",
+                "48",
+                "80",
+                "1.5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**question_type**: Geometric Property\n**context**: Two planes, P1 and P2, intersect a sphere with radius 5.  The intersection of P1 and the sphere creates a circle, C1, with radius 3.  P2 is parallel to P1 and is 6 units away from it. \n**question_stem**: What is the length of the radius of the circle, C2, formed by the intersection of P2 and the sphere?\n",
+            "difficulty": "hard",
+            "reasoning": "This problem is tricky because it requires visualizing three-dimensional geometry and applying knowledge of spheres, planes, and circles. Here's how to solve it:\n\n**1. Visualize the Problem:**\n\n   Imagine a sphere. Now, picture a plane cutting through the sphere, not directly through the center, creating a smaller circle (C1) on the sphere's surface. Another plane, parallel to the first, cuts through the sphere further away, creating a second circle (C2). \n\n**2. Key Insight:**\n\n   The key to solving this problem is recognizing that the centers of the sphere, C1, and C2 all lie on the same line that is perpendicular to both planes (P1 and P2). \n\n**3. Using the Pythagorean Theorem:**\n\n   *  Let O be the center of the sphere.\n   *  Let A be the center of circle C1.\n   *  Let B be the center of circle C2.\n\n   We have now formed two right triangles: \n      * Triangle OAB with right angle at A, OA = distance from center of sphere to plane P1, AB = 6 (distance between planes). \n      * Triangle OAC with right angle at A, OA = distance from center of sphere to plane P1, AC = 3 (radius of C1), and OC = 5 (radius of the sphere). \n\n   We know OC = 5 and AC = 3.  Using the Pythagorean theorem, we can find OA:\n\n   OA\u00b2 + AC\u00b2 = OC\u00b2\n   OA\u00b2 + 3\u00b2 = 5\u00b2\n   OA\u00b2 = 16\n   OA = 4\n\n   Now, in triangle OAB, we know OA = 4 and AB = 6. We can again use the Pythagorean theorem to find OB:\n\n   OA\u00b2 + AB\u00b2 = OB\u00b2\n   4\u00b2 + 6\u00b2 = OB\u00b2\n   52 = OB\u00b2\n   OB = \u221a52 = 2\u221a13\n\n**4. Finding the Radius of C2:**\n\n   Now, consider triangle OBC, where OB is the hypotenuse, OC is the radius of the sphere (5), and BC is the radius of circle C2 (what we want to find).\n\n   OB\u00b2 = OC\u00b2 + BC\u00b2\n   (2\u221a13)\u00b2 = 5\u00b2 + BC\u00b2\n   52 = 25 + BC\u00b2\n   BC\u00b2 = 27\n   BC = \u221a27 = 3\u221a3\n\n   Therefore, the length of the radius of circle C2 is **3\u221a3**. ",
+            "options": [
+                "3",
+                "5",
+                "3\u221a2",
+                "3\u221a3"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A city planner is designing a new park bordered by four streets.  The park's borders lie on the lines represented by the following equations:\n\n1.  2x - y = 6\n2.  x + 3y = 12\n3.  2x - y = -2 \n4.  x + 3y = -3\n\nA drinking fountain is to be placed at the point within the park that is equidistant from the lines defined by equations (1) and (3), and also equidistant from the lines defined by equations (2) and (4).  What are the coordinates of this point?\n",
+            "difficulty": "hard",
+            "reasoning": "This question blends concepts of linear equations, distance formulas, and geometric reasoning, making it challenging:\n\n1. **Understanding the Setup**:  The equations represent four lines forming a parallelogram (a quadrilateral with opposite sides parallel). The drinking fountain's location, equidistant from each pair of opposite lines, lies on the intersection of the parallelogram's diagonals.\n\n2. **Finding the Diagonals**:  We don't need to find the intersection points of all four lines.  Realizing that opposite sides have the same slope, we only need to find the equations of the two diagonals.\n   *  Diagonal 1: Connects the intersection of lines (1) and (2) with the intersection of lines (3) and (4).\n   *  Diagonal 2: Connects the intersection of lines (1) and (4) with the intersection of lines (2) and (3).\n\n3. **Solving Systems of Equations**: To find the intersection points needed for the diagonals, we solve two systems of equations:\n    *  System 1: Equations (1) and (2) to find one endpoint of Diagonal 1. \n    *  System 2: Equations (1) and (4) to find one endpoint of Diagonal 2. \n\n4. **Finding Diagonal Equations**: With one point known for each diagonal, we can use the opposite point's coordinates (from solving the other two systems, which we don't strictly need to do) and the point-slope form to find the equations of the two diagonals.\n\n5. **Final Intersection**: Solve the system of equations formed by the two diagonal equations to find their intersection point, which represents the fountain's location.\n\n**Solution**\n\n* **Diagonal 1 Endpoint (Solving System 1):**\n   Solving 2x - y = 6 and x + 3y = 12 simultaneously (e.g., using elimination) gives us the point (6, 6).\n\n* **Diagonal 2 Endpoint (Solving System 2):**\n   Solving 2x - y = 6 and x + 3y = -3 simultaneously gives us the point (1, -4).\n\n* **Diagonal Equations (using point-slope form):**\n    * Diagonal 1: Passes through (6, 6) and (-3, -3) [we know this without solving the other system]. Its slope is 1. The equation becomes y - 6 = 1(x - 6), simplifying to y = x.\n    * Diagonal 2: Passes through (1, -4) and (4, 1) [again, known without fully solving]. Its slope is 5/3. The equation becomes y + 4 = (5/3)(x - 1), simplifying to y = (5/3)x - 17/3.\n\n* **Fountain's Location (Intersection of Diagonals):**\n   Solving y = x and y = (5/3)x - 17/3 simultaneously, we get x = 17/2 and y = 17/2.\n\n**Therefore, the coordinates of the drinking fountain are (17/2, 17/2).**",
+            "options": [
+                "(8.5, 8.5)",
+                "(17/2, 17/2)",
+                "(6, 6)",
+                "(1, -4)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A whispering gallery is designed with a cross-section shaped like a hyperbola.  The two foci are located 50 feet apart along the floor, and a person standing 14 feet from the closest wall, directly between the foci, can hear whispers from the other focus. \n\nThe architect wants to install a special lighting system along the asymptotes of the hyperbola, extending from the ceiling straight to the floor. What is the equation of the hyperbola representing the gallery's cross-section, assuming the center of the room is at the origin and the transverse axis is horizontal? What is the slope of one of the asymptote lines the lighting will follow?",
+            "difficulty": "medium",
+            "reasoning": "This question is tricky (8/10 difficulty) because:\n\n1. **Non-standard Application:** It uses a real-world scenario of a whispering gallery, requiring understanding of how hyperbolas relate to sound reflection.\n2. **Missing Information:** It doesn't directly give the vertices' location, requiring calculation using the given distances.\n3. **Multi-step Problem:** It asks for both the hyperbola's equation AND the asymptote's slope, involving multiple concepts.\n\n**Solution:**\n\n* **1. Find key values:**\n    * We know the foci are 50 feet apart, so c = 25 feet (half the distance between foci).\n    * The person standing 14 feet from the wall is 14 feet from one focus and (50-14) = 36 feet from the other. This difference in distances EQUALS 2a, a property of hyperbolas. So 2a = 36, and a = 18 feet.\n* **2. Calculate b:**\n    * We have 'a' and 'c', and the relationship is c\u00b2 = a\u00b2 + b\u00b2\n    * 25\u00b2 = 18\u00b2 + b\u00b2\n    * b\u00b2 = 301, so b = \u221a301\n* **3. Hyperbola Equation:**\n    * Since the transverse axis is horizontal and the center is at the origin, the standard form is (x\u00b2/a\u00b2) - (y\u00b2/b\u00b2) = 1\n    * Plugging in our values: **(x\u00b2/324) - (y\u00b2/301) = 1**\n* **4. Asymptote Slope:**\n    * For a horizontal hyperbola, the slopes are \u00b1(b/a)\n    * Slope = \u00b1(\u221a301 / 18) \n    * **Therefore, the slope of one asymptote is (\u221a301 / 18) and the other is -(\u221a301 / 18)**",
+            "options": [
+                "\u221a301 / 18",
+                "-(\u221a301 / 18)",
+                "18 / \u221a301",
+                "-18 / \u221a301"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Two points A (2, 4) and B (-3, 1) define a line segment AB on the coordinate plane. A third point C, not on line AB, is located such that the vector AC is twice the magnitude of AB and forms an angle of 60 degrees with vector AB.  What are the possible coordinates of point C?",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's understanding of vectors in the coordinate plane by combining several concepts: \n\n1. **Finding Vector Components:** Students need to calculate the components of vector AB, which is found by subtracting the coordinates of point A from point B: (-3 - 2, 1 - 4) = (-5, -3).\n\n2. **Scaling a Vector:** The problem states that AC is twice the magnitude of AB. This requires calculating the magnitude of AB first, using the Pythagorean theorem:  \u221a((-5)^2 + (-3)^2) = \u221a34. Then, the magnitude of AC is 2\u221a34.\n\n3. **Using Trigonometry with Vectors:** The 60-degree angle between the vectors introduces trigonometry. Students need to realize that the x and y components of AC can be expressed using cosine and sine, respectively, of the 60-degree angle, multiplied by the magnitude of AC. \n\n4. **Solving for Two Possible Points:** The problem has two possible solutions because the 60-degree angle can be formed either clockwise or counterclockwise from vector AB, resulting in two different locations for point C.\n\n**Calculations:**\n\n* **Vector AB:** (-5, -3)\n* **Magnitude of AB:** \u221a34\n* **Magnitude of AC:** 2\u221a34\n\n* **Components of AC:**\n    * AC_x = 2\u221a34 * cos(60\u00b0) = \u221a34\n    * AC_y = 2\u221a34 * sin(60\u00b0) = 3\u221a34 \n\n* **Finding coordinates of C (two possibilities):**\n    * **C1:** (2 + \u221a34, 4 + 3\u221a34)\n    * **C2:** (2 - \u221a34, 4 - 3\u221a34) ",
+            "options": [
+                "(2 + \u221a34, 4 + 3\u221a34)",
+                "(2 - \u221a34, 4 - 3\u221a34)",
+                "(2 + \u221a34, 4 - 3\u221a34)",
+                "(2 - \u221a34, 4 + 3\u221a34)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A satellite orbits the Earth in an elliptical path.  The Earth is located at one of the foci of this ellipse.  At its apogee (farthest point from Earth), the satellite is 25,000 km from the Earth's center. At its perigee (closest point), it is 15,000 km away.  A monitoring station is located 20,000 km from the Earth's center.  Find the distance between the satellite and the monitoring station when the satellite is passing directly overhead the station. Assume the Earth and the monitoring station lie on the major axis of the satellite's elliptical orbit.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Situation:**\n\nImagine the Earth at one focus of the ellipse. The apogee and perigee distances tell us the shape of the ellipse. Since the monitoring station is 20,000 km away from the Earth's center, it lies somewhere along the major axis between the Earth and the satellite's apogee.\n\n**2. Key Ellipse Properties:**\n\n* **Major Axis:**  The line segment passing through both foci and connecting the farthest points on the ellipse (apogee and perigee in this case). \n* **Distance Property:** The sum of the distances from any point on the ellipse to the two foci is constant. \n\n**3. Finding the Major Axis:**\n\n* The distance from one focus to the apogee is 25,000 km.\n* The distance from that same focus to the perigee is 15,000 km.\n* Since the sum of these distances is constant for all points on the ellipse, the major axis length is 25,000 km + 15,000 km = 40,000 km.\n\n**4. Finding the Distance from the Other Focus to the Perigee:**\n\n* The distance between the two foci is the major axis length minus twice the distance from one focus to the apogee: 40,000 km - 2(25,000 km) = -10,000 km.  The negative sign indicates we've overshot the other focus; the actual distance is 10,000 km.  This also tells us that the Earth is the focus closer to the perigee.\n\n**5. Finding the Distance from the Other Focus to the Monitoring Station:**\n\n* The distance from the Earth (one focus) to the monitoring station is 20,000 km. \n* The distance between the foci is 10,000 km.\n* Therefore, the distance from the other focus to the monitoring station is 20,000 km - 10,000 km = 10,000 km.\n\n**6. Using the Distance Property:**\n\n* Let 'x' be the distance from the satellite to the monitoring station when it's directly overhead.\n* The distance from the satellite to the other focus is 10,000 km.\n* Using the distance property of ellipses: x + 10,000 km = 40,000 km (the constant sum of distances to the foci)\n\n**7. Solving for x:**\n\n* x = 40,000 km - 10,000 km = 30,000 km\n\n**Therefore, the distance between the satellite and the monitoring station when the satellite is directly overhead is 30,000 km.**",
+            "options": [
+                "10,000 km",
+                "20,000 km",
+                "30,000 km",
+                "40,000 km"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Coordinate Geometry",
+    "exam_id": 10,
+    "order": 17
+}

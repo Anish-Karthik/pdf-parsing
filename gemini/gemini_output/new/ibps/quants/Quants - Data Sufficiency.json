@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "A baker increased the price of a loaf of bread by 25%.  If the original price was $2.00, what is the new price of the loaf?",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the price increase:** \n   * Multiply the original price by the percentage increase: $2.00 * 0.25 = $0.50\n\n**2. Add the price increase to the original price:**\n   *  $2.00 + $0.50 = $2.50\n\n**Therefore, the new price of the loaf of bread is $2.50.**",
+            "options": [
+                "$2.25",
+                "$2.50",
+                "$2.75",
+                "$3.00"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker uses 2 cups of flour for every 5 cookies he bakes. If he wants to bake 20 cookies, how many cups of flour will he need?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Ratio:** The baker's recipe uses a ratio of 2 cups of flour : 5 cookies.\n\n**2. Determine the Scaling Factor:**  The baker wants to make 20 cookies, which is 4 times the original amount of 5 cookies (20 / 5 = 4).\n\n**3.  Apply the Scaling Factor:** Since he's increasing the cookies by a factor of 4, he needs to increase the flour by the same factor.  Multiply the original amount of flour by 4: 2 cups * 4 = 8 cups.\n\n**Answer:** The baker will need 8 cups of flour.",
+            "options": [
+                "4 cups",
+                "6 cups",
+                "8 cups",
+                "10 cups"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**questionStem**: Is the integer *n* even?\n**statement1**: *n* divided by 2 results in an integer.\n**statement2**: The product of *n* and any other integer is always even.\n",
+            "difficulty": "easy",
+            "reasoning": "**Understanding the Concepts:**\n\n* **Even Numbers:**  Divisible by 2 without a remainder.\n* **Statement 1:** Directly tells us that *n* is divisible by 2, making it even.\n* **Statement 2:**  Implies that *n* itself must be even. If *n* were odd, multiplying it by another odd number would result in an odd product.\n\n**Step-by-Step Analysis:**\n\n1. **Statement 1:** *n* divided by 2 gives an integer. This is the definition of an even number. **Sufficient.**\n2. **Statement 2:**  *n* times any integer is even. This only holds true if *n* itself is even.  **Sufficient.**\n\n**Conclusion:**  Both statements independently prove that *n* is even.",
+            "options": [
+                "Statement 1 only",
+                "Statement 2 only",
+                "Both statements together",
+                "Neither statement alone is sufficient"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A bag contains 5 red marbles, 3 blue marbles, and 2 green marbles. If you randomly select one marble from the bag, what is the probability that it is not blue?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Find the total number of outcomes:**\n\n   There are 10 marbles in total (5 + 3 + 2 = 10).\n\n**2. Find the number of favorable outcomes:**\n\n   There are 7 marbles that are not blue (5 red + 2 green = 7).\n\n**3. Calculate the probability:**\n\n   Probability (Not Blue) = (Favorable Outcomes) / (Total Outcomes) = 7/10 \n\n**Therefore, the probability of selecting a marble that is not blue is 7/10.**",
+            "options": [
+                "3/10",
+                "5/10",
+                "7/10",
+                "9/10"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "In a group of 30 students, 18 students like pizza and 20 students like burgers. If every student likes at least one of these foods, how many students like both pizza and burgers?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understanding the Concept of Overlapping Sets**\n\nWhen we have groups with some overlap, a Venn diagram helps visualize the situation. Draw two overlapping circles, one representing 'Pizza Lovers' and the other 'Burger Lovers'. The overlapping area represents students who like both.\n\n**2. Using the Formula**\n\nWe can use this formula to find the number in the overlapping section:\n\nTotal = Group 1 + Group 2 - Both + Neither\n\n*   We know the 'Total' is 30 (all students like at least one). \n*   'Group 1' (pizza lovers) is 18.\n*   'Group 2' (burger lovers) is 20.\n*   'Neither' is 0 (everyone likes at least one).\n\n**3. Solving for 'Both'**\n\n30 = 18 + 20 - Both + 0\n30 = 38 - Both\nBoth = 38 - 30\nBoth = 8\n\n**Therefore, 8 students like both pizza and burgers.**",
+            "options": [
+                "10",
+                "12",
+                "8",
+                "6"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**questionStem**: A bakery sells three types of cookies: chocolate chip, peanut butter, and oatmeal raisin. The average number of cookies sold per day is 40. If the number of chocolate chip cookies sold is twice the number of peanut butter cookies sold, and the number of oatmeal raisin cookies sold is 10, can the number of peanut butter cookies sold be determined?\n**statement1**: The total number of chocolate chip and peanut butter cookies sold is equal to the total number of oatmeal raisin cookies sold.\n**statement2**: The number of chocolate chip cookies sold is 20 more than the number of oatmeal raisin cookies sold.\n",
+            "difficulty": "easy",
+            "reasoning": "We know the average number of cookies sold is 40 and there are three types of cookies, making the total number of cookies sold 40 * 3 = 120. We also know that 10 oatmeal raisin cookies were sold.\n\n**Statement 1:** Tells us that the combined total of chocolate chip and peanut butter cookies sold is equal to the number of oatmeal raisin cookies sold, which is 10. This statement alone is insufficient as it doesn't provide specific numbers for chocolate chip or peanut butter cookies.\n\n**Statement 2:** Tells us that 20 more chocolate chip cookies were sold than oatmeal raisin cookies, meaning 10 + 20 = 30 chocolate chip cookies were sold. Knowing this, we can determine the number of peanut butter cookies sold: 120 (total cookies) - 30 (chocolate chip) - 10 (oatmeal raisin) = 80 peanut butter cookies. This statement alone is sufficient.\n\n**Therefore, the answer is (B): Statement 2 alone is sufficient, but statement 1 alone is not sufficient.**",
+            "options": [
+                "Statement 1 alone is sufficient.",
+                "Statement 2 alone is sufficient.",
+                "Both statements together are sufficient.",
+                "Neither statement alone is sufficient."
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A circular garden path encloses a circular flower bed.  If the outer circumference of the path is 36\u03c0 feet and the path itself is 3 feet wide, what is the area of the flower bed (in square feet)?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Structure** \n\nImagine this scenario: you have a smaller circle (the flower bed) completely surrounded by a larger circle (formed by the outer edge of the path). The path's width is the difference in their radii.\n\n**2.  Find the Outer Radius**\n\n* We know the outer circumference is 36\u03c0 feet. \n* Recall the circumference formula: C = 2\u03c0r\n* We can set up the equation: 36\u03c0 = 2\u03c0r\n* Dividing both sides by 2\u03c0, we find the outer radius (r) is 18 feet.\n\n**3. Find the Inner Radius**\n\n* The path is 3 feet wide, meaning the inner circle's radius is 3 feet shorter than the outer circle's radius.\n* The inner radius is 18 feet - 3 feet = 15 feet.\n\n**4. Calculate the Flower Bed's Area**\n\n* The area of a circle is calculated with: A = \u03c0r\u00b2\n* Using the inner radius (15 feet), the area of the flower bed is: A = \u03c0(15 feet)\u00b2 = 225\u03c0 square feet\n\n**Therefore, the area of the flower bed is 225\u03c0 square feet.**",
+            "options": [
+                "15\u03c0",
+                "144\u03c0",
+                "225\u03c0",
+                "324\u03c0"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two lines intersect, forming angles A, B, C, and D. If angle A is 75 degrees, what is the measure of angle C?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Concepts:**\n\n* **Vertical Angles:** When two lines intersect, they form two pairs of opposite angles called vertical angles. Vertical angles are always congruent (equal in measure).\n\n**Applying the Concepts:**\n\n1. **Identifying Vertical Angles:** In this case, angles A and C are vertical angles. \n2. **Applying the Property:** Since vertical angles are congruent, angle C has the same measure as angle A.\n\n**Solution:**\n\nTherefore, angle C measures **75 degrees**.",
+            "options": [
+                "30 degrees",
+                "75 degrees",
+                "105 degrees",
+                "150 degrees"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bag contains 6 red marbles, 4 blue marbles, and 5 green marbles. If one marble is drawn at random, what is the probability that it is NOT green?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Find the total number of marbles:**\n\n   There are 6 + 4 + 5 = 15 marbles in the bag.\n\n**2. Find the number of favorable outcomes (marbles that are NOT green):**\n\n   There are 6 red + 4 blue = 10 marbles that are not green.\n\n**3. Calculate the probability:**\n\n   The probability of an event is the number of favorable outcomes divided by the total number of outcomes.\n\n   Therefore, the probability of drawing a marble that is NOT green is 10/15.\n\n**4. Simplify the probability:**\n\n   The fraction 10/15 can be simplified to 2/3.\n\n**Therefore, the probability of drawing a marble that is NOT green is 2/3.**",
+            "options": [
+                "1/3",
+                "2/3",
+                "10/15",
+                "3/5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "In a group of 30 students, 18 like pizza, 15 like burgers, and 5 students don't like either. How many students like both pizza and burgers?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Students who like at least one food:**\n\nSince 5 students don't like pizza or burgers, that means 30 - 5 = 25 students like at least one of these foods.\n\n**2. Total 'likes' from pizza and burgers:**\n\nIf we simply add the number who like pizza and the number who like burgers, we get 18 + 15 = 33 'likes'. \n\n**3. Finding the overlap:**\n\nWe know only 25 students like at least one food, but our 'likes' total is 33. This means we've counted the students who like both pizza and burgers twice (once for pizza, once for burgers).  The overlap is 33 - 25 = 8 students.\n\n**Therefore, 8 students like both pizza and burgers.**",
+            "options": [
+                "18 students",
+                "15 students",
+                "8 students",
+                "25 students"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two lines, Line A and Line B, intersect forming four angles. Angle 1 and Angle 3 are vertically opposite, as are Angle 2 and Angle 4. If Angle 1 measures 50 degrees, what is the measure of Angle 4?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Concepts**\n\n* **Vertically Opposite Angles:** When two lines intersect, the angles formed opposite each other are called vertically opposite angles. A key property is that vertically opposite angles are always equal.\n\n**Solving the Problem**\n\n1. **Identifying the Relationship:** We are told Angle 1 and Angle 3 are vertically opposite, and Angle 2 and Angle 4 are vertically opposite.\n\n2. **Applying the Property:** Since vertically opposite angles are equal, we know Angle 3 also measures 50 degrees (same as Angle 1).\n\n3. **Finding Angle 4:**  Angles on a straight line add up to 180 degrees. Angle 3 and Angle 4 form a straight line. Therefore:\n\n   Angle 4 = 180 degrees - Angle 3 = 180 degrees - 50 degrees = 130 degrees\n\n**Therefore, the measure of Angle 4 is 130 degrees.**",
+            "options": [
+                "50 degrees",
+                "100 degrees",
+                "130 degrees",
+                "230 degrees"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A circular garden is being designed with a stone pathway around it. The radius of the garden is 7 meters. If the pathway is to be 2 meters wide, what is the area of the pathway alone?",
+            "difficulty": "medium",
+            "reasoning": "**1. Visualize the Problem:** \nImagine a circle representing the garden. Now picture a larger circle around it representing the outer edge of the pathway.\n\n**2.  Calculate Radii:**\n* **Inner Circle (garden):** Radius = 7 meters \n* **Outer Circle (pathway's outer edge):** Radius = 7 meters (garden) + 2 meters (pathway) = 9 meters\n\n**3. Calculate Areas:**\n* **Area of Outer Circle:** \u03c0 * (9 meters)^2 = 81\u03c0 square meters\n* **Area of Inner Circle:** \u03c0 * (7 meters)^2 = 49\u03c0 square meters\n\n**4.  Find the Area of the Pathway:**\nSubtract the area of the inner circle from the area of the outer circle:  81\u03c0 square meters - 49\u03c0 square meters = 32\u03c0 square meters\n\n**Therefore, the area of the pathway alone is 32\u03c0 square meters.** ",
+            "options": [
+                "14\u03c0 square meters",
+                "28\u03c0 square meters",
+                "32\u03c0 square meters",
+                "63\u03c0 square meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bakery sells croissants and pain au chocolat. Two croissants and three pains au chocolat cost $9.  Five croissants and one pain au chocolat cost $8. What is the price of a single croissant?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Define Variables:**\n\n* Let 'c' represent the price of one croissant.\n* Let 'p' represent the price of one pain au chocolat.\n\n**2. Set Up Equations:**\n\nWe can translate the given information into two algebraic equations:\n\n* Equation 1: 2c + 3p = 9  (Two croissants and three pains au chocolat cost $9)\n* Equation 2: 5c + p = 8   (Five croissants and one pain au chocolat cost $8)\n\n**3. Solve for One Variable:**\n\nWe can use the elimination method to solve for 'c'.  Let's multiply Equation 2 by -3:\n\n* -3 * (5c + p) = -3 * 8\n* -15c - 3p = -24\n\nNow we have:\n\n* Equation 1:  2c + 3p = 9\n* Modified Equation 2: -15c - 3p = -24 \n\nAdding the two equations, we eliminate 'p':\n\n* -13c = -15\n\nDivide both sides by -13 to isolate 'c':\n\n* c = -15 / -13\n* c = 15/13 \n\n**4. Answer:**\n\nTherefore, the price of a single croissant is $15/13.",
+            "options": [
+                "$1.15",
+                "$1.25",
+                "$1.50",
+                "$1.75"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A bookstore is having a sale where all books are 20% off. If a book originally cost $25, how much will you save during the sale?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the discount amount:**\n\n* Multiply the original price by the discount percentage: $25 * 20% = $5.00\n\n**Therefore, you will save $5.00 during the sale.**\n\n**Verification:**\n\n* A 20% discount means you save 20 cents for every dollar of the original price.\n* Since the book costs $25, you save 20 cents/dollar * $25 = $5.00",
+            "options": [
+                "$5.00",
+                "$10.00",
+                "$20.00",
+                "$25.00"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A baker needs 2 cups of flour for every 5 cookies she bakes. If she wants to bake 20 cookies, how many cups of flour will she need?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Ratio:** The ratio given is 2 cups of flour : 5 cookies. This means for every 5 cookies, 2 cups of flour are needed.\n\n**2. Determine the Scaling Factor:** The baker wants to make 20 cookies, which is 4 times the amount in the original ratio (20 cookies / 5 cookies = 4).\n\n**3. Apply the Scaling Factor:** Since we're increasing the number of cookies by a factor of 4, we need to increase the flour by the same factor. Multiply the original amount of flour by 4: 2 cups of flour * 4 = 8 cups of flour. \n\n**Therefore, the baker will need 8 cups of flour to bake 20 cookies.**",
+            "options": [
+                "4 cups",
+                "6 cups",
+                "8 cups",
+                "10 cups"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A renowned bakery is creating a special edition box of pastries to celebrate its anniversary. The box has three distinct compartments: one for croissants, one for macarons, and one for \u00e9clairs.  The bakery offers 5 different types of croissants, 8 different types of macarons, and 3 different types of \u00e9clairs.  How many unique pastry boxes can be created if each compartment must contain exactly one type of pastry?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves finding the total number of possible combinations of pastries in the box. Since the order of the pastries within the box doesn't matter, we'll use the combination principle.\n\n**Step 1: Calculate the number of choices for each compartment.**\n* Croissants: 5 choices\n* Macarons: 8 choices\n* \u00c9clairs: 3 choices\n\n**Step 2: Apply the Fundamental Principle of Counting**\nThe Fundamental Principle of Counting states that if there are 'm' ways to do one thing and 'n' ways to do another, then there are m*n ways to do both. \n\nTo find the total number of unique pastry boxes, we multiply the number of choices for each compartment: 5 * 8 * 3 = 120\n\n**Therefore, there are 120 unique pastry boxes that can be created.**",
+            "options": [
+                "10",
+                "120",
+                "24",
+                "15"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "In a school's music program, students can participate in choir, band, or both. There are 60 students in the music program total. How many students participate in both choir and band?\n\nStatement (1): 45 students are in the choir.\nStatement (2): 35 students are in the band.",
+            "difficulty": "medium",
+            "reasoning": "To find the number of students in both choir and band, we can use the principle of inclusion-exclusion: \n\nTotal = Group 1 + Group 2 - Both + Neither\n\nWe know the total is 60.  We need to figure out if we can find the values for 'Both' with the information given.\n\n* **Statement (1) ALONE:**  Tells us the size of one group but doesn't give us any information about the overlap or the size of the 'band' group. Insufficient.\n* **Statement (2) ALONE:**  Similar to statement 1, this is insufficient on its own.\n* **BOTH statements TOGETHER:** Even with the size of both the choir and band groups, we still don't know how much they overlap.  We don't know how many students participate in neither activity.  Insufficient. \n\nTherefore, the answer is **(E) Statements (1) and (2) TOGETHER are NOT sufficient.**",
+            "options": [
+                "10",
+                "15",
+                "20",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A team of 5 experienced bakers can frost and decorate 30 cupcakes per hour. For a big order, they need to prepare 450 cupcakes. To speed things up, they bring in some trainees. Each trainee can frost and decorate half the number of cupcakes an experienced baker can in the same amount of time.  If the team aims to complete the order in 5 hours, how many trainees should they bring in?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the hourly output of an experienced baker:**\n   * Since 5 experienced bakers decorate 30 cupcakes per hour, one experienced baker decorates 30 cupcakes / 5 bakers = 6 cupcakes per hour.\n\n**2. Calculate the hourly output of a trainee:**\n   * A trainee decorates half as many cupcakes as an experienced baker, so a trainee decorates 6 cupcakes/hour / 2 = 3 cupcakes per hour.\n\n**3. Determine the total cupcakes needed per hour:**\n   * To complete 450 cupcakes in 5 hours, they need to decorate 450 cupcakes / 5 hours = 90 cupcakes per hour.\n\n**4. Calculate the cupcake deficit:**\n   * The 5 experienced bakers decorate 30 cupcakes per hour, leaving a deficit of 90 cupcakes/hour - 30 cupcakes/hour = 60 cupcakes per hour.\n\n**5. Determine the number of trainees needed:**\n   * To cover the 60 cupcake deficit, they need 60 cupcakes/hour / 3 cupcakes/hour/trainee = 20 trainees.\n\n**Therefore, they should bring in 20 trainees.**",
+            "options": [
+                "10",
+                "15",
+                "20",
+                "25"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter wants to create a specific shade of green paint by mixing blue and yellow paint.  He knows the ratio of blue to yellow paint needs to be 2:3.  If he wants to make 25 liters of this green paint, how many liters of blue paint will he need?\n\nStatement 1:  For every 5 liters of green paint, he needs 2 liters of blue paint.\n\nStatement 2: He needs 15 liters of yellow paint.",
+            "difficulty": "medium",
+            "reasoning": "**Question Stem Analysis:**\nThe problem sets up a proportion between blue and yellow paint to make a specific shade of green. We know the desired total volume (25 liters) and the ratio (2:3), and need to find the volume of blue paint.\n\n**Statement 1 Analysis:**\n* This statement provides a simplified ratio that's derived from the original 2:3 ratio.  It tells us that for every 5 liters of green (2 blue + 3 yellow), 2 liters will be blue.\n* Since we want 25 liters of green, we can use this simplified ratio to directly calculate the amount of blue paint needed (scaling the 5:2 ratio up to 25:10). \n* **Therefore, Statement 1 ALONE is sufficient.**\n\n**Statement 2 Analysis:**\n* This statement tells us the amount of yellow paint needed (15 liters). \n* Using the original ratio (2:3) and the fact that we need a total of 25 liters, we can set up a proportion to solve for the amount of blue paint: \n    *  2/3 = x/15\n    * Solving for x, we find we need 10 liters of blue paint.\n* **Therefore, Statement 2 ALONE is sufficient.**\n\n**Answer:** The correct answer is (D) EACH statement ALONE is sufficient.",
+            "options": [
+                "Statement 1 only",
+                "Statement 2 only",
+                "Both statements together",
+                "Neither statement alone is sufficient"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Two isosceles triangles, Triangle ABC and Triangle DEF, share a common base, line segment BC, which is also equal to DE. If angle BAC measures 40 degrees and angle EDF measures 80 degrees, what is the measure of angle AFE, where F is the point where AD and BE intersect?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**1. Visualize the Problem:**\n\n   Start by sketching the described scenario. Draw two isosceles triangles, ABC and DEF, with BC as the common base. Mark angle BAC as 40 degrees and angle EDF as 80 degrees. Label the intersection of AD and BE as point F.\n\n**2. Utilize Triangle Properties:**\n\n   * **Isosceles Triangle Property:** Since ABC is isosceles with AB = AC, we know angle ABC = angle ACB. Let's call this angle 'x'. Similarly, in triangle DEF, angle DEF = angle DFE = 'y'.\n\n   * **Angle Sum Property:** The sum of angles in a triangle is always 180 degrees. Applying this to triangle ABC:  x + x + 40 = 180. Solving for x, we get x = 70 degrees. \n\n   * **Applying to Triangle DEF:** Similarly, in triangle DEF: y + y + 80 = 180. Solving for y, we get y = 50 degrees.\n\n**3. Focusing on Triangle AFE:**\n\n   Now we have the measures of angle BAF (40 degrees) and angle BEF (50 degrees).  Our goal is to find angle AFE.\n\n   * **Angle Sum Property (again):** Applying the angle sum property to triangle AFE: 40 + 50 + angle AFE = 180\n\n**4. Calculate Angle AFE:**\n\n   Solving the equation from step 3: angle AFE = 180 - 40 - 50 = 90 degrees\n\n**Therefore, the measure of angle AFE is 90 degrees.**",
+            "options": [
+                "40 degrees",
+                "50 degrees",
+                "70 degrees",
+                "90 degrees"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A bookstore offers a 20% discount on all fiction books and a 10% discount on all non-fiction books. John buys a fiction book with an original price of $30 and a non-fiction book with an original price of $20.  A week later, the bookstore has a store-wide sale, offering an additional 15% off on all items, including discounted items. If John had waited for the sale, how much money would he have saved in total?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**Step 1: Calculate the discount on the fiction book**\n* Discount = 20% of $30 = (20/100)*$30 = $6\n\n**Step 2: Calculate the price of the fiction book after the initial discount**\n* Price after discount = $30 - $6 = $24\n\n**Step 3: Calculate the discount on the non-fiction book**\n* Discount = 10% of $20 = (10/100)*$20 = $2\n\n**Step 4: Calculate the price of the non-fiction book after the initial discount**\n* Price after discount = $20 - $2 = $18\n\n**Step 5: Calculate John's total spending before the store-wide sale**\n* Total spent = $24 + $18 = $42\n\n**Step 6: Calculate the additional discount on the fiction book during the store-wide sale**\n* Additional discount = 15% of $24 = (15/100)*$24 = $3.60\n\n**Step 7: Calculate the final price of the fiction book during the store-wide sale**\n* Final price = $24 - $3.60 = $20.40\n\n**Step 8: Calculate the additional discount on the non-fiction book during the store-wide sale**\n* Additional discount = 15% of $18 = (15/100)*$18 = $2.70\n\n**Step 9: Calculate the final price of the non-fiction book during the store-wide sale**\n* Final price = $18 - $2.70 = $15.30\n\n**Step 10: Calculate John's total spending during the store-wide sale**\n* Total spent during sale = $20.40 + $15.30 = $35.70\n\n**Step 11: Calculate John's total savings**\n* Total savings = $42 - $35.70 = $6.30\n\n**Therefore, John would have saved $6.30 in total if he had waited for the store-wide sale.**",
+            "options": [
+                "$6.30",
+                "$7.30",
+                "$5.30",
+                "$4.30"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A city planner is designing a new park shaped like a triangle. She has already marked two points for the park's vertices: Point A at (-2, 1) and Point B at (4, 7).  She knows the third vertex, Point C, lies on the line with equation y = 2x - 3.  To minimize walking distance for visitors, she wants to place a water fountain at the midpoint of the shortest side of the park. What are the coordinates of this midpoint?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Understand the Setup:**\n   - We have a triangle with vertices A (-2, 1) and B (4, 7). \n   - The third vertex C lies on the line y = 2x - 3.\n   - Our goal is to find the midpoint of the shortest side.\n\n**2.  Find Possible Locations for Point C:**\n   - Since Point C lies on the line y = 2x - 3, we can represent its coordinates as (x, 2x - 3).\n\n**3. Use the Distance Formula:**\n   - Calculate the distance between A and B:  \u221a[(4 - (-2))^2 + (7 - 1)^2] = \u221a72 = 6\u221a2\n   - Calculate the distance between A and C: \u221a[(x - (-2))^2 + ((2x - 3) - 1)^2] = \u221a(5x^2 - 16x + 20)\n   - Calculate the distance between B and C: \u221a[(x - 4)^2 + ((2x - 3) - 7)^2] = \u221a(5x^2 - 36x + 100) \n\n**4. Determine the Shortest Side:**\n   - To minimize calculations, observe that the distance formula involves squaring the differences in x and y coordinates. Since the coefficient of the x^2 term is the same (5) in the distances AC and BC, we only need to compare the constant terms under the radical to get a sense of the shortest distance. \n   - Notice that the constant term in the distance BC (100) is much larger than the constant term in the distance AC (20). This suggests that AC is likely to be shorter than BC. \n\n**5. Minimize AC (if necessary):** \n   - To confirm AC is indeed the shortest, we can optionally complete the square or use calculus to minimize the expression for the distance AC (\u221a(5x^2 - 16x + 20)). However, for the purpose of this problem, the comparison of constant terms is sufficient.\n\n**6. Find the Midpoint of AC:**\n   - Since we don't need the exact coordinates of C, we can find the midpoint of AC directly.  Let the midpoint be (M, N). \n   - M = (-2 + x) / 2  \n   - N = (1 + (2x - 3)) / 2 = (2x - 2) / 2 = x - 1\n\n**7. Express the Midpoint in Terms of x:**\n   - The midpoint of AC is ( (-2 + x)/2 ,  x - 1 ).\n\n**Therefore, we need more information to find the exact coordinates of the midpoint. The answer cannot be determined from the given information.**",
+            "options": [
+                "(-1, 0)",
+                "(1, 1)",
+                "(0, -1)",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A bag contains 10 marbles, some are red and some are blue.  We don't know the exact number of each color. If two marbles are drawn randomly without replacement, we are told the probability of picking a red marble, then a blue marble (in that order) is 1/6. How many red marbles are in the bag?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down how to solve this problem:\n\n**1. Define Variables**\n\n* Let 'R' be the number of red marbles in the bag.\n* Since there are 10 marbles total, the number of blue marbles is (10 - R).\n\n**2. Probability of the First Event**\n\n* The probability of picking a red marble first is simply the number of red marbles divided by the total number of marbles:  R/10 \n\n**3. Probability of the Second Event (Given the First)**\n\n* After taking out a red marble, there are only 9 marbles left.\n* The number of blue marbles remains the same: (10 - R)\n* So, the probability of picking a blue marble *after* picking a red marble is: (10 - R) / 9\n\n**4. Combined Probability**\n\n* The probability of two events happening in sequence is found by multiplying the probabilities of each individual event. \n* We're given this combined probability is 1/6:\n (R/10) * ((10 - R) / 9) = 1/6\n\n**5. Solve the Equation**\n\n* Simplify the equation:\n  R(10 - R) / 90 = 1/6\n* Cross-multiply:\n  6R(10 - R) = 90\n* Expand and rearrange into a quadratic equation:\n  60R - 6R^2 = 90\n  6R^2 - 60R + 90 = 0\n* Divide the equation by 6 to simplify:\n  R^2 - 10R + 15 = 0\n* Factor the quadratic equation:\n  (R - 5)(R - 3) = 0\n* Solve for R:\n  R = 5 or R = 3\n\n**Conclusion**\n\nThere are either **5** red marbles or **3** red marbles in the bag. Both solutions satisfy the given conditions.",
+            "options": [
+                "3",
+                "5",
+                "7",
+                "9"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A skilled artisan can craft 30 intricate pieces in a day.  After implementing a new technique, their efficiency increased by 20%.  Unfortunately, due to a shortage in raw materials, they had to decrease their production by 15% from the boosted amount.  How many intricate pieces can the artisan now craft in a day?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the increase in production:**\n* Increase: 30 pieces * 20% = 6 pieces\n\n**2. Calculate the total production after the efficiency increase:**\n* Total after increase: 30 pieces + 6 pieces = 36 pieces\n\n**3. Calculate the decrease in production due to material shortage:**\n* Decrease: 36 pieces * 15% = 5.4 pieces \n\n**4. Calculate the final production amount:**\n* Final production: 36 pieces - 5.4 pieces = 30.6 pieces\n\n**Therefore, the artisan can now craft 30.6 intricate pieces in a day.**",
+            "options": [
+                "24.6",
+                "27.5",
+                "30.6",
+                "35.7"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**questionStem**: A school club with 10 members is forming a committee.  The committee must have at least 2 members, but no more than 5. How many different committees can be formed?\n**statement1**: The club has exactly 3 senior members.\n**statement2**: The club president must be on the committee.\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's understanding of combinations and the principle of complementary counting. Here's how to solve it:\n\n**Understanding the Problem:**\n\nWe need to find the number of ways to choose 2, 3, 4, or 5 members out of 10.  Directly calculating this involves multiple combination calculations and summing them up.\n\n**Using Complementary Counting:**\n\nA more efficient approach is to use complementary counting.  We'll find:\n\n1. The total possible committees (without restrictions). \n2. The number of invalid committees (committees with 0 or 1 member). \n3. Subtract the invalid committees from the total to get the number of valid committees.\n\n**Analyzing the Statements:**\n\n* **Statement 1:** Knowing the number of senior members doesn't directly help us calculate any of the components needed for complementary counting. It's insufficient.\n* **Statement 2:**  This statement restricts the possible committees but doesn't give us enough information to easily calculate the valid combinations. It's also insufficient.\n\n**Combining the Statements:**\n\nEven when combined, the statements don't provide enough information to simplify the calculation of valid committees using complementary counting. We still need to calculate the total possible committees and subtract the invalid ones.\n\n**Therefore, the answer is (E) - Statements (1) and (2) TOGETHER are NOT sufficient to answer the question.**",
+            "options": [
+                "Insufficient",
+                "Sufficient",
+                "Maybe",
+                "None"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Statement:** Find the value of 'a' in the equation: (3a - 2b)/5 = a/2 + b/4 \n\n**Statement 1:** 2a - b = 5 \n\n**Statement 2:** 3a + 2b = 10\n\n**Question:** Is Statement 1 alone sufficient to solve for 'a'? Is Statement 2 alone sufficient? Or is it necessary to use both statements together?",
+            "difficulty": "medium",
+            "reasoning": "**1. Analyze the Question Stem:**\n   We need to determine the value of 'a' in an equation with two unknowns (a and b). This tells us we likely need a way to eliminate 'b' or express it in terms of 'a'.\n\n**2. Evaluate Statement 1:**\n   - 2a - b = 5\n     We can rearrange this equation to express 'b' in terms of 'a':\n     b = 2a - 5\n     While this gives us a way to substitute 'b' in the main equation, we are still left with 'a' as an unknown. Thus, Statement 1 alone is NOT sufficient.\n\n**3. Evaluate Statement 2:**\n   - 3a + 2b = 10 \n     Similar to Statement 1, we can rearrange to express 'b' in terms of 'a':\n     b = (10 - 3a) / 2\n     Again, this alone doesn't solve for 'a'. Statement 2 alone is NOT sufficient.\n\n**4. Evaluate Both Statements Together:**\n   Now we have two expressions for 'b':\n     b = 2a - 5  (from Statement 1)\n     b = (10 - 3a) / 2 (from Statement 2)\n     We can set these two expressions equal to each other:\n     2a - 5 = (10 - 3a) / 2\n     Solving this equation will give us a unique value for 'a'.\n\n**Conclusion:** Both statements TOGETHER are sufficient to solve for 'a'. ",
+            "options": [
+                "Neither",
+                "Statement 1",
+                "Statement 2",
+                "Both"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "In the figure below, circle O has a radius of 6.  Chord AC is drawn.  What is the length of arc ABC?\n\n[asy]\ndraw(Circle((0,0),10));\ndraw((-8,0)--(8,0));\ndraw((0,-10)--(0,10));\ndraw((0,0)--dir(150)--dir(210)--cycle);\nlabel(\"O\", (0,0), NE);\nlabel(\"A\", dir(150), NW);\nlabel(\"B\", dir(210), SW);\nlabel(\"C\", (8,0), E);\n[/asy]\n\nStatement (1): Angle AOC measures 120 degrees.\nStatement (2): The area of triangle AOC is $18\\sqrt{3}$.",
+            "difficulty": "medium",
+            "reasoning": "To find the length of arc ABC, we need to know the measure of central angle AOC and the radius of the circle.  We are given the radius, so we need to determine if we can find the measure of angle AOC.\n\n**Statement (1):** This statement tells us the measure of the central angle. Since the arc measure is equal to the central angle measure, we can use the formula for arc length:  arc length =  (central angle measure / 360 degrees) * 2\u03c0 * radius.  This statement is sufficient.\n\n**Statement (2):** This statement gives us information about the area of triangle AOC.  We can use this information to find the height of the triangle, which is also the length of a radius that bisects chord AC.  We then have a 30-60-90 triangle and can find the length of half of AC.  Doubling this gives us the length of AC, and we can use the Pythagorean Theorem to find the length of the other leg of the right triangle.  This gives us enough information to find the measure of angle AOC using trigonometry (sine, cosine, or tangent).  This statement is sufficient.\n\n**Answer:** Each statement alone is sufficient.",
+            "options": [
+                "Statement (1) is sufficient",
+                "Statement (2) is sufficient",
+                "Both statements together are sufficient",
+                "Neither statement alone is sufficient"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A farmer has a total of 12 animals, consisting of chickens and rabbits. Let 'c' represent the number of chickens and 'r' represent the number of rabbits.\n**statement_1**: The total number of animal legs is 38.\n**statement_2**: The farmer has twice as many chickens as rabbits.\n**question**: Is the information in statement 1 alone sufficient to solve for both 'c' and 'r'? Is the information in statement 2 alone sufficient to solve for both 'c' and 'r'? Is the information in both statements together sufficient to solve for both 'c' and 'r'?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Algebraic Equations: Solving for Two Unknowns' topic within Quants - Data Sufficiency. Here's why:\n\n**Problem Breakdown:**\n\n* **Unknowns:** We need to find the values of 'c' (chickens) and 'r' (rabbits).\n* **Information:** We are given the total number of animals and information about their legs.\n\n**Analyzing the Statements:**\n\n* **Statement 1:** This gives us the equation: 2c + 4r = 38 (chickens have 2 legs, rabbits have 4).\n    * This equation alone cannot solve for both 'c' and 'r'. We have one equation with two unknowns.\n* **Statement 2:** This gives us the equation: c = 2r \n    * Similar to statement 1, this alone cannot solve for both 'c' and 'r'.\n* **Combining Statements:** Now we have two equations:\n    1. 2c + 4r = 38\n    2. c = 2r\n    * We can substitute the value of 'c' from equation 2 into equation 1, allowing us to solve for 'r'. Then, we can substitute the value of 'r' back into either equation to find 'c'.\n\n**Conclusion:**  Each statement alone is not sufficient, but combining both statements provides enough information to solve for 'c' and 'r'.",
+            "options": [
+                "Statement 1",
+                "Statement 2",
+                "Both statements",
+                "Neither statement"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A team of skilled artisans is tasked with crafting exquisite jewelry pieces for an upcoming exhibition. Working individually at their optimal efficiency, they can complete the entire collection in 12 days. However, due to the intricate nature of the designs, their efficiency drops by 20% when they collaborate as a team.  To compensate for the reduced efficiency and ensure timely completion, additional artisans are hired. If each additional artisan works at the same individual efficiency as the original team members, how many artisans need to be added to complete the collection in 10 days?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**1. Calculate the work rate of one artisan:**\n\n* If the original team completes the work in 12 days, their combined work rate is 1/12 of the work per day.\n\n**2. Calculate the reduced efficiency:**\n\n* A 20% reduction in efficiency means they work at 80% of their individual rate. This is equivalent to 0.8 times their original efficiency.\n\n**3. Calculate the team's combined work rate with reduced efficiency:**\n\n* Let 'x' be the number of artisans on the original team. Their combined work rate with reduced efficiency is (0.8 * x)/12 of the work per day.\n\n**4.  Set up an equation to find the total number of artisans needed:**\n\n* Let 'y' be the number of additional artisans needed.\n* The total work rate with the additional artisans should be enough to complete the job in 10 days, meaning their combined work rate is 1/10 of the work per day.\n* The equation becomes:  (0.8x)/12 + (y/12) = 1/10\n\n**5. Simplify and solve for 'y':\n\n* Multiply both sides of the equation by 60 (the least common multiple of 12 and 10) to get rid of the fractions: 4x + 5y = 6\n* We need to find the value of 'y' (additional artisans) required to complete the work in 10 days. \n* Since we don't know the exact value of 'x' (the original number of artisans), we need to find a value for 'y' that satisfies the equation and represents a whole number of artisans.\n* Trying different values, if we assume x = 5 (the original team had 5 artisans), the equation becomes: 20 + 5y = 6\n* Solving for 'y', we get y = -2.8\n* Since we can't have a negative number of artisans, our assumption of x = 5 was incorrect. \n* Let's try x = 10 (the original team had 10 artisans). The equation becomes: 40 + 5y = 6\n* Solving for 'y', we get y = -6.8\n* Again, we can't have negative artisans. \n* Let's try x = 15 (original team had 15 artisans). The equation becomes: 60 + 5y = 6\n* Solving for 'y', we get y = -10.8\n* We still can't have negative artisans.  \n*  Notice that as we increase 'x', the value of 'y' becomes more negative. This indicates that we need to decrease 'x' to get a positive value for 'y'.  Let's try x = 1 (the original team had 1 artisan). The equation becomes: 4 + 5y = 6\n* Solving for 'y', we get y = 0.4 \n*  Since we need whole artisans, this means we need to add **1** artisan to the original team (rounding 0.4 up to 1) to compensate for the reduced efficiency and meet the deadline.\n\n**Therefore, 1 additional artisan needs to be added to complete the collection in 10 days.**",
+            "options": [
+                "10",
+                "15",
+                "1",
+                "5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "The following bar graph shows the sales figures (in thousands of units) for a company's three products (A, B, and C) over four consecutive quarters in a fiscal year. \n\n[Insert bar graph here - ensure clear labels for axes and data values.  Example data: Q1: A=5, B=8, C=3; Q2: A=7, B=6, C=9; Q3: A=10, B=5, C=7; Q4: A=8, B=7, C=6]\n\nIn which quarter did the company experience the smallest percentage increase in total sales compared to the previous quarter?",
+            "difficulty": "medium",
+            "reasoning": "This question requires analyzing the changes in sales between each quarter and then expressing those changes as percentages. Here's a step-by-step solution:\n\n**1. Calculate total sales for each quarter:**\n   - Q1: 5 + 8 + 3 = 16 thousand units\n   - Q2: 7 + 6 + 9 = 22 thousand units\n   - Q3: 10 + 5 + 7 = 22 thousand units\n   - Q4: 8 + 7 + 6 = 21 thousand units \n\n**2. Calculate the percentage increase in sales for each quarter compared to the previous quarter:**\n   - Q2 increase over Q1: ((22-16)/16) * 100% = 37.5%\n   - Q3 increase over Q2: ((22-22)/22) * 100% = 0%\n   - Q4 increase over Q3: ((21-22)/22) * 100% = -4.55% (This is a decrease)\n\n**3. Identify the smallest percentage increase:** \n   - The smallest percentage increase is 0%, which occurred in Q3.\n\n**Therefore, the company experienced the smallest percentage increase in total sales in Q3 compared to the previous quarter.**",
+            "options": [
+                "Q1",
+                "Q2",
+                "Q3",
+                "Q4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Problem Statement:** A rectangular garden has a length of (2x + 3) meters and a width of (x - 1) meters. A square patio with sides of length (x/2) meters is built inside the garden.  \n\n**Question:** Is the information given in statements 1 and 2 sufficient to determine the value of x? \n\n**Statement 1:** The area of the patio is 25 square meters. \n\n**Statement 2:** The remaining area of the garden after the patio is built is 58 square meters.",
+            "difficulty": "hard",
+            "reasoning": "**Reasoning:**\n\n* **Understanding the Problem:** We need to find if we can solve for 'x' using the information about the areas of the garden and the patio. \n\n* **Analyzing Statement 1:** Statement 1 tells us the area of the square patio is 25 sq meters.  We can set up an equation:\n    * (x/2)^2 = 25\n    * x^2 / 4 = 25\n    * x^2 = 100\n    * x = 10 or x = -10 \n    * We get two possible solutions for 'x'. Since the dimensions of a garden cannot be negative, we discard x = -10. Therefore, Statement 1 alone is sufficient.\n\n* **Analyzing Statement 2:** Statement 2 tells us the difference between the garden's area and the patio's area is 58 sq meters.  We can set up an equation:\n    * [(2x + 3)(x - 1)] - (x/2)^2 = 58\n    * This equation, when simplified, results in a quadratic equation. Solving a quadratic equation can yield two possible solutions for 'x'. We don't need to calculate them; just knowing there could be two solutions means Statement 2 alone is not sufficient.\n\n**Conclusion:** Statement 1 alone is sufficient to determine the value of 'x', but Statement 2 alone is not sufficient.",
+            "options": [
+                "Statement 1 only",
+                "Statement 2 only",
+                "Both statements together",
+                "Neither statement alone or together"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Two circles, A and B, are inscribed within a rectangle such that circle A is tangent to three sides of the rectangle and circle B is tangent to the remaining side and to circle A.  Knowing only that the area of circle B is 9\u03c0 square units, can you determine the area of the rectangle? If so, what is the area?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Understand the Setup**\n\nImagine a rectangle. Circle A is larger and fits snugly inside, touching three sides. Circle B, smaller, is nestled in the space between circle A and the fourth side of the rectangle. \n\n**2. Key Insight**\n\nThe key to solving this lies in recognizing that the diameter of circle B is equal to the difference between the height of the rectangle and the diameter of circle A.\n\n**3. Using the Area of Circle B**\n\n* We know the area of circle B is 9\u03c0.  The formula for the area of a circle is \u03c0r\u00b2, where r is the radius.\n* Setting up the equation: 9\u03c0 = \u03c0r\u00b2\n* Solving for r: r = 3 units (this is the radius of circle B)\n* Therefore, the diameter of circle B is 6 units.\n\n**4. Determining Side Lengths**\n\n* Let the diameter of circle A be 'd'.\n* The height of the rectangle is then 'd + 6' (diameter of A + diameter of B).\n* The width of the rectangle is equal to the diameter of circle A, which is 'd'.\n\n**5. Finding the Area of the Rectangle**\n\n* Area of rectangle = length * width = (d + 6) * d\n\n**6. Can We Determine the Area?**\n\nWe cannot definitively determine the area of the rectangle.  We only have one equation with two unknowns.  We need more information to find a unique solution for 'd' and, consequently, the area of the rectangle.\n\n**Therefore, the answer is that we cannot determine the area of the rectangle with the given information.**",
+            "options": [
+                "9\u03c0",
+                "18\u03c0",
+                "Cannot be determined",
+                "36\u03c0"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Statement:** a, b, and c are non-zero integers. Is the product abc positive?\n\n**Condition 1:** (a + b) is negative, and (b + c) is negative.\n\n**Condition 2:** (a * c) is positive.",
+            "difficulty": "hard",
+            "reasoning": "**Understanding the Concepts:**\n\n* **Even/Odd:**  The product of integers is even unless all integers involved are odd.\n* **Positive/Negative:** The product of integers is positive if there are an even number of negative integers, and negative if there are an odd number.\n\n**Analyzing the Question:**  We need to determine if the product 'abc' is positive. This depends on whether there are an even or odd number of negative integers among a, b, and c.\n\n**Analyzing Condition 1:** \n* (a + b) is negative: This tells us that at least one of 'a' or 'b' must be negative. It does not tell us if both are negative or if 'c' is positive or negative.\n* (b + c) is negative:  Similar to above, at least one of 'b' or 'c' is negative.\n\n**Combining information from Condition 1:** We know at least one of the pairs (a, b) and (b, c) must have one negative and one positive integer.  However, this does not tell us definitively about the sign of all three integers. \n    * **Scenario 1:** a (negative), b (positive), c (negative) --> abc is positive\n    * **Scenario 2:** a (negative), b (negative), c (positive) --> abc is negative \n\n**Analyzing Condition 2:**\n* (a * c) is positive:  This tells us that 'a' and 'c' are either both positive or both negative. \n\n**Combining Condition 1 and 2:** \n* We know from Condition 2 that 'a' and 'c' have the same sign.\n* Combined with Condition 1, this means 'b' must have the opposite sign of 'a' and 'c'.\n\n**Conclusion:**  We have enough information to determine that there is one negative integer and two positive integers, or two negative integers and one positive integer. In either case, the product 'abc' will be positive.\n\n**Answer:** Each statement alone is not sufficient, but both statements together are sufficient to answer the question.",
+            "options": [
+                "Yes",
+                "No",
+                "Insufficient",
+                "Cannot Determine"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A mischievous gremlin tampers with the price tags of items in a shop.  He increases the price of item A by 20%, then decreases the new price by 10%. He increases the price of item B by 10%, then increases that new price by another 10%.  At the end of his mischief, which item has experienced a larger overall percentage increase, and by what percentage?",
+            "difficulty": "hard",
+            "reasoning": "This question tests the ability to perform successive percentage calculations and then compare the results. Here's how to solve it step-by-step:\n\n**Item A:**\n\n* **Step 1: 20% increase**\n   Assume the original price of item A is $100 (choosing a convenient number makes the calculations easier). A 20% increase means adding 20/100 * $100 = $20 to the original price. \n   The new price is $100 + $20 = $120.\n* **Step 2: 10% decrease**\n   A 10% decrease from $120 means subtracting 10/100 * $120 = $12.\n   The final price is $120 - $12 = $108.\n* **Step 3: Overall change**\n   The price increased from $100 to $108, a net increase of $8. This represents an 8/100 * 100% = 8% increase.\n\n**Item B:**\n\n* **Step 1: 10% increase**\n   Again, assume the original price of item B is $100. A 10% increase means adding 10/100 * $100 = $10. \n   The new price is $100 + $10 = $110.\n* **Step 2: Another 10% increase**\n   This time, we're increasing $110 by 10%, which is 10/100 * $110 = $11. \n   The final price is $110 + $11 = $121.\n* **Step 3: Overall change**\n   The price increased from $100 to $121, a net increase of $21. This represents a 21/100 * 100% = 21% increase.\n\n**Comparison:**\n\nItem B experienced a larger percentage increase (21%) than item A (8%).\n\n**Important Note:** The trickiness lies in recognizing that consecutive percentage changes are not simply additive.  The second percentage change is calculated on the value resulting from the first change, not the original value.",
+            "options": [
+                "Item A, 8%",
+                "Item B, 21%",
+                "Item A, 10%",
+                "Item B, 10%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A survey was conducted among 120 students about their preferred subjects for an upcoming inter-school competition. The choices were Math, Science, and History. Here's what we know: \n- 65 students chose Math.\n- 55 students chose Science.\n- 48 students chose History.\n- 28 students chose both Math and Science.\n- 20 students chose both Math and History.\n- 15 students chose both Science and History.\n\nHow many students chose ALL THREE subjects if the number of students who chose NONE of the subjects is twice the number who chose all three?",
+            "difficulty": "hard",
+            "reasoning": "Let's represent the number of students who chose all three subjects by the variable 'x'. \n\n1. **Visualize with a Venn Diagram:** Draw three overlapping circles representing Math, Science, and History. The overlapping region in the center represents students who chose all three.\n\n2. **Work from the inside out:** Since 'x' students chose all three, fill that in the center. \n   -  28 students chose Math and Science, but 'x' are already counted (those who chose all three). So, 28 - x students chose only Math and Science. Fill this in the respective overlap.\n   - Similarly, 20 - x chose only Math and History, and 15 - x chose only Science and History. Fill these in.\n\n3. **Calculate single subject choices:**\n    - Math: 65 total, and we've accounted for (28 - x) + (20 - x) + x = 48 - x. So, 65 - (48 - x) = 17 + x students chose ONLY Math. Fill this in.\n    - Science: 55 total - [(28 - x) + (15 - x) + x] = 12 + x chose ONLY Science.\n    - History: 48 total - [(20 - x) + (15 - x) + x] = 13 + x chose ONLY History.\n\n4. **Total Students Equation:** The sum of all the regions in the Venn diagram MUST equal the total students surveyed.\n    (17 + x) + (28 - x) + (20 - x) + (12 + x) + (15 - x) + (13 + x) + x + 2x = 120 \n\n5. **Solve for x:** Simplifying the equation, we get 105 + 2x = 120. Solving for x, we find x = 7.5\n\n6. **Final Check:** Since we can't have half a student, we realize there's a problem. The information given is inconsistent, and there's no logical solution for the number of students who chose all three subjects based on the provided data.",
+            "options": [
+                "7.5",
+                "8",
+                "7",
+                "None"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A bakery is renowned for its delicious cookies and brownies.  Each cookie requires 'a' grams of flour and 'b' grams of sugar, while each brownie requires 'c' grams of flour and 'd' grams of sugar.  The bakery used a total of 2000 grams of flour and 1500 grams of sugar today.  Unfortunately, due to a clerical error, the exact number of cookies and brownies baked is unknown.  However, we know that '2a + 3c = 800'. \n\nGiven this information, can we determine the values of 'a', 'b', 'c', and 'd'? If not, what additional information is required?",
+            "difficulty": "medium",
+            "reasoning": "This question delves into the concept of data sufficiency within the realm of solving for two unknowns. Here's a breakdown:\n\n**1. Analyzing the Given Information:** \n\n* We have two equations representing the total flour and sugar used:\n    * Equation 1: a*cookies + c*brownies = 2000 (grams of flour)\n    * Equation 2: b*cookies + d*brownies = 1500 (grams of sugar)\n* We are also given an additional equation: 2a + 3c = 800\n\n**2.  Understanding the Problem:**\n\nWe have four unknowns (a, b, c, d) but only three equations (including the additional one). To solve for four unknowns, we need at least four independent equations.  \n\n**3.  Determining Data Sufficiency:**\n\nSince we have fewer equations than unknowns, we cannot definitively solve for 'a', 'b', 'c', and 'd'.  \n\n**4.  Identifying Additional Information Needed:**\n\nTo find unique solutions for all four unknowns, we need one more independent equation. This could be obtained in various ways, such as:\n\n* Knowing the ratio of cookies to brownies baked.\n* Knowing the total number of cookies and brownies baked.\n* Having another independent equation relating 'a', 'b', 'c', and/or 'd'.\n\n**Conclusion:**\n\nWithout additional information, we cannot determine the specific values of 'a', 'b', 'c', and 'd'. The problem is indeterminate with the given data.",
+            "options": [
+                "No, additional information is required.",
+                "Yes, we can determine all values.",
+                "Yes, with further calculation.",
+                "Not enough information to determine."
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A renowned chocolatier is crafting a new assortment box containing 12 distinct chocolates. To add an element of surprise, each box will feature a hidden compartment containing a voucher. There are 5 different vouchers:  free hot chocolate, 50% off the next purchase, a complimentary truffle box, a golden ticket for a factory tour, and a personalized chocolate bar. To further enhance the experience, the chocolatier intends to arrange the 12 chocolates in the box differently for every voucher type.  What is the minimum number of distinct chocolate arrangements the chocolatier needs to devise to accommodate all voucher possibilities?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves permutations because the order of the chocolates matters within the box. Here's how we solve it:\n\n1. **Calculate the number of ways to arrange the chocolates:** Since there are 12 distinct chocolates, we have 12 options for the first slot, 11 for the second, and so on. This is a factorial represented as 12! \n\n2. **Consider the voucher types:** For each of the 5 voucher types, we need a different chocolate arrangement. \n\n3. **Determine the minimum arrangements:**  The minimum number of chocolate arrangements the chocolatier needs is simply the number of voucher types, which is 5. This is because we only need one unique arrangement per voucher type.\n\nTherefore, the chocolatier needs to devise at least **5** distinct chocolate arrangements. The fact that there are many more potential arrangements (12!) is irrelevant in this case, as we only need one unique arrangement per voucher.",
+            "options": [
+                "12",
+                "12!",
+                "5",
+                "60"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Triangle ABC is inscribed in a circle. Point D lies on the circle such that line segment AD bisects angle BAC.  Line segment BE is drawn such that it is perpendicular to line AD and intersects the circle at point E. If angle ABC measures 70 degrees and angle BCD measures 40 degrees, what is the measure of angle AED?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem**\nWe have a triangle inscribed in a circle, with an angle bisector and a perpendicular line creating additional angles. Our goal is to find the measure of angle AED.\n\n**Solution**\n\n1. **Key Relationships:**\n   * **Angles in a Triangle:** The angles inside any triangle add up to 180 degrees.\n   * **Inscribed Angles:**  An inscribed angle is half the measure of its intercepted arc.\n   * **Angles on a Straight Line:** Angles on a straight line add up to 180 degrees.\n\n2. **Calculations**\n   * **Angle BAC:** Since AD bisects angle BAC, and angle ABC is 70 degrees, we can find angle BAD (and also angle CAD) as follows:\n      * Angle BAC = 180 degrees - angle ABC - angle ACB \n      * Angle BAC = 180 degrees - 70 degrees - 40 degrees = 70 degrees\n      * Angle BAD = Angle CAD = Angle BAC / 2 = 70 degrees / 2 = 35 degrees\n\n   * **Angle BED:** Angle BED and angle BAD intercept the same arc (arc BD). Therefore, they are equal.\n      * Angle BED = Angle BAD = 35 degrees\n\n   * **Angle AED:** Since BE is perpendicular to AD, angle BEA is a right angle (90 degrees).\n      * Angle AED = Angle BEA - Angle BED = 90 degrees - 35 degrees = 55 degrees\n\n**Answer:** The measure of angle AED is 55 degrees.",
+            "options": [
+                "40 degrees",
+                "55 degrees",
+                "70 degrees",
+                "90 degrees"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Data Sufficiency",
+    "exam_id": 10,
+    "order": 13
+}

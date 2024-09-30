@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "A lighthouse spots a boat at a distance of 5 miles and at an angle of 30 degrees north of east.  What are the polar coordinates of the boat relative to the lighthouse?",
+            "difficulty": "easy",
+            "reasoning": "In this scenario, the lighthouse is naturally considered the origin of our polar coordinate system.  \n\n* The distance the boat is from the lighthouse, 5 miles, directly represents the radial coordinate, *r*. \n* The angle, 30 degrees north of east, provides the angular coordinate, *\u03b8*.  \n\nTherefore, the polar coordinates of the boat are (5, 30\u00b0).",
+            "options": [
+                "(5, 30\u00b0)",
+                "(30\u00b0, 5)",
+                "(5, 150\u00b0)",
+                "(5, 210\u00b0)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The rhythmic rise and fall of the tide can be modeled by the function: \n\n `y = 2cos(\u03c0/6 * t) + 3` \n\n where 't' represents time in hours. What is the amplitude of this tidal function, representing the maximum height the tide reaches above its average level?",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Graphs of Trigonometric Functions' subtopic within 'Quants - Trigonometry'.  It specifically addresses the amplitude, which dictates the vertical stretch or compression of the graph. \n\n Here's how to determine the amplitude:\n\n 1. **Understanding the Standard Form:** Trigonometric functions in the form `y = A * cos(Bx + C) + D` have an amplitude of |A|. \n\n 2. **Identifying the Amplitude:** In our given function, `y = 2cos(\u03c0/6 * t) + 3`, the coefficient 'A' in front of the cosine function is 2. \n\n 3. **The Answer:** Therefore, the amplitude of the tidal function is |2|, which equals 2. This signifies that the tide reaches a maximum height of 2 units above its average level.",
+            "options": [
+                "3",
+                "\u03c0/6",
+                "2",
+                "1"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Find the general solution for the equation: 2sin(x) - \u221a3 = 0",
+            "difficulty": "easy",
+            "reasoning": "This question belongs to the subtopic 'Trigonometric Equations' within 'Quants - Trigonometry'. It tests the ability to solve basic trigonometric equations. Here's how to solve it:\n\n1. **Isolate the trigonometric function:**\n   Begin by isolating sin(x) in the equation:\n   2sin(x) = \u221a3\n   sin(x) = \u221a3 / 2\n\n2. **Find the basic angle:**\n   Determine the angle 'x' in the interval [0, 2\u03c0] for which sin(x) equals \u221a3 / 2. We know sin(\u03c0/3) = \u221a3 / 2.\n\n3. **General Solution:**\n   Since the sine function has a period of 2\u03c0, the general solution includes all angles that are multiples of 2\u03c0 away from the basic angle. Therefore, the general solution is:\n   x = \u03c0/3 + 2\u03c0k, where k is an integer. \n\nThis solution encompasses all possible values of x that satisfy the given equation.",
+            "options": [
+                "\u03c0/3 + 2\u03c0k",
+                "\u03c0/6 + 2\u03c0k",
+                "2\u03c0/3 + 2\u03c0k",
+                "5\u03c0/6 + 2\u03c0k"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A gardener is planning a triangular flower bed. She wants one side to be 6 feet long and another side to be 8 feet long. The angle between these two sides is planned to be 60 degrees. What will be the length of the third side of the flower bed?",
+            "difficulty": "easy",
+            "reasoning": "This question uses the Law of Cosines to find the missing side of a triangle given two sides and the included angle. Here's how to solve it:\n\n**1. Understand the Law of Cosines:**\n\nThe Law of Cosines states: c\u00b2 = a\u00b2 + b\u00b2 - 2ab * cos(C)\n\nWhere:\n* a, b, and c are the lengths of the sides of the triangle.\n* C is the angle opposite side c.\n\n**2. Apply the formula to the problem:**\n\n* Let's label the sides of the triangle: a = 6 feet, b = 8 feet, and c = unknown (the side we want to find).\n* The included angle C = 60 degrees.\n\nSubstitute the values into the Law of Cosines formula:\n\nc\u00b2 = 6\u00b2 + 8\u00b2 - 2 * 6 * 8 * cos(60\u00b0)\n\n**3. Solve for c:**\n\nc\u00b2 = 36 + 64 - 96 * 0.5\nc\u00b2 = 100 - 48\nc\u00b2 = 52\nc = \u221a52\nc \u2248 7.21 feet\n\nTherefore, the length of the third side of the flower bed will be approximately 7.21 feet.",
+            "options": [
+                "6 feet",
+                "8 feet",
+                "7.21 feet",
+                "10 feet"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A construction worker needs to secure a straight metal beam to the ground with a rope. The beam is 5 meters long and leans against a wall, forming a 60-degree angle with the ground.\n**Question**: How long does the rope need to be to connect the top of the beam to a point on the ground 3 meters away from the base of the wall?\n**Difficulty Level**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "This question utilizes the concept of right triangles and trigonometric ratios to determine the length of the rope (hypotenuse). Here's a step-by-step solution:\n\n1. **Visualize the Problem:** Imagine a right triangle where:\n    - The beam is the hypotenuse.\n    - The distance from the wall to the rope's base is one leg (adjacent to the angle).\n    - The rope is the hypotenuse.\n\n2. **Apply Trigonometry:** We know the adjacent side (3 meters) and the angle (60 degrees). We want to find the hypotenuse. The relevant trigonometric ratio is cosine:\n\n    cos(angle) = adjacent / hypotenuse\n\n3. **Solve for the Hypotenuse:**\n\n    cos(60\u00b0) = 3 meters / hypotenuse\n    0.5 = 3 meters / hypotenuse\n    hypotenuse = 3 meters / 0.5\n    hypotenuse = 6 meters\n\nTherefore, the rope needs to be 6 meters long.\n\n**Verification:**\n\n* The calculation uses the correct trigonometric ratio (cosine) for the given information.\n* The steps to solve for the hypotenuse are mathematically sound.\n* The final answer of 6 meters aligns with the initial conditions of the problem. ",
+            "options": [
+                "3 meters",
+                "5 meters",
+                "6 meters",
+                "10 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Difficulty**: Easy (5/10)\n**Concept**: Tangent\n**Context**: Right-angled triangle\n**Question**: Imagine a ramp leading up to a platform. The ramp makes a 30-degree angle with the ground and the platform is 5 meters high. How long is the ramp?\n**Answer**: 10 meters\n",
+            "difficulty": "easy",
+            "reasoning": "This question uses the concept of tangent in a right-angled triangle. Here's how to solve it:\n\n**1. Visualize the problem:**\n   Imagine a right-angled triangle where:\n   * The ramp is the hypotenuse.\n   * The height of the platform is the side opposite the 30-degree angle.\n   * The ground distance between the start of the ramp and the platform is the adjacent side.\n\n**2. Recall the tangent ratio:**\n   In a right-angled triangle, the tangent of an angle is the ratio of the side opposite the angle to the side adjacent to the angle. \n   *  tan(angle) = opposite side / adjacent side\n\n**3. Apply the formula:**\n   * We know the angle (30 degrees) and the opposite side (5 meters). We need to find the hypotenuse.\n   *  tan(30\u00b0) = 5 meters / adjacent side\n   * We know tan(30\u00b0) = 1/\u221a3 \n   * Therefore, 1/\u221a3 = 5 meters / adjacent side\n   * Solving for the adjacent side, we get adjacent side = 5\u221a3 meters\n\n**4. Apply Pythagorean theorem:**\n   * Now, using the Pythagorean theorem (a\u00b2 + b\u00b2 = c\u00b2) where 'c' is the hypotenuse, we can find the length of the ramp.\n   * (5\u221a3)\u00b2 + 5\u00b2 = c\u00b2\n   * 75 + 25 = c\u00b2\n   * 100 = c\u00b2\n   * c = \u221a100 = 10 meters\n\n**Therefore, the ramp is 10 meters long.**",
+            "options": [
+                "5 meters",
+                "5\u221a3 meters",
+                "10 meters",
+                "10\u221a3 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Express the complex number \\(z = 4 - 4i\\) in trigonometric form.  ",
+            "difficulty": "easy",
+            "reasoning": "This question assesses a student's ability to convert a complex number from its rectangular form to its trigonometric (polar) form. This involves finding the modulus and argument of the complex number.\n\n**1. Finding the Modulus:**\n\nThe modulus, \\(|z|\\), represents the distance of the complex number from the origin in the complex plane. It is calculated using the Pythagorean theorem:\n\n\\(|z| = \\sqrt{a^2 + b^2}\\)\n\nWhere 'a' is the real part and 'b' is the imaginary part of the complex number.\n\nIn this case, \\(a = 4\\) and \\(b = -4\\). Therefore:\n\n\\(|z| = \\sqrt{4^2 + (-4)^2} = \\sqrt{32} = 4\\sqrt{2}\\)\n\n**2. Finding the Argument:**\n\nThe argument, \\(arg(z)\\), represents the angle between the positive real axis and the line connecting the origin to the complex number in the complex plane. It is calculated using the arctangent function (tan\u207b\u00b9) while considering the quadrant of the complex number.\n\n\\(arg(z) = arctan(\\frac{b}{a}) = arctan(\\frac{-4}{4}) = arctan(-1)\\)\n\nSince the real part is positive and the imaginary part is negative, the complex number lies in the fourth quadrant. Therefore, the argument in radians is:\n\n\\(arg(z) = -\\frac{\\pi}{4}\\)\n\n**3. Trigonometric Form:**\n\nA complex number in trigonometric form is expressed as: \n\n\\(z = |z|(cos(arg(z)) + isin(arg(z)))\\)\n\nSubstituting the calculated modulus and argument:\n\n\\(z = 4\\sqrt{2}(cos(-\\frac{\\pi}{4}) + isin(-\\frac{\\pi}{4}))\\)\n\nTherefore, the trigonometric form of the complex number \\(z = 4 - 4i\\) is \\( 4\\sqrt{2}(cos(-\\frac{\\pi}{4}) + isin(-\\frac{\\pi}{4})) \\). ",
+            "options": [
+                "4\u221a2(cos(-\u03c0/4) + isin(-\u03c0/4))",
+                "4\u221a2(cos(\u03c0/4) + isin(\u03c0/4))",
+                "4(cos(-\u03c0/4) + isin(-\u03c0/4))",
+                "4(cos(\u03c0/4) + isin(\u03c0/4))"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A boat travels 20 km due east and then 15 km due north. What is the magnitude of the boat's displacement (the shortest distance from its starting point to its ending point)?",
+            "difficulty": "medium",
+            "reasoning": "This problem utilizes the Pythagorean theorem to find the hypotenuse of a right triangle, which represents the boat's displacement.\n\n1. **Visualize:** Imagine a right triangle where the eastward path is one leg (20 km) and the northward path is the other leg (15 km). The displacement is the hypotenuse of this triangle.\n\n2. **Apply Pythagorean Theorem:**  The Pythagorean theorem states: a\u00b2 + b\u00b2 = c\u00b2 , where 'a' and 'b' are the lengths of the legs, and 'c' is the length of the hypotenuse. \n\n3. **Substitute and Solve:** \n    * a = 20 km\n    * b = 15 km\n    * c\u00b2 = 20\u00b2 + 15\u00b2 = 400 + 225 = 625\n    * c = \u221a625 = 25 km\n\nTherefore, the magnitude of the boat's displacement is 25 km. ",
+            "options": [
+                "20 km",
+                "25 km",
+                "30 km",
+                "35 km"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Simplify the expression: cos(x)cos(2x) + sin(x)sin(2x)",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Trigonometric Identities' topic, specifically focusing on the sum/difference identities.  It's rated 'easy' because it involves a direct application of the cosine difference identity with minimal manipulation.\n\nHere's how to solve it:\n\n**1. Identify the relevant identity:**\n\nThe given expression resembles the right-hand side of the cosine difference identity:\n\n cos(A - B) = cos(A)cos(B) + sin(A)sin(B)\n\n**2. Apply the identity:**\n\n Matching the terms, we can see A = x and B = 2x. Substituting into the identity:\n\n cos(x)cos(2x) + sin(x)sin(2x) = cos(x - 2x)\n\n**3. Simplify:**\n\n cos(x - 2x) = cos(-x) = cos(x)  [Cosine is an even function]\n\nTherefore, the simplified form of the expression is cos(x).",
+            "options": [
+                "cos(x)",
+                "sin(x)",
+                "cos(2x)",
+                "sin(2x)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Given the complex number  z = \u221a2 (cos(\u03c0/4) + i sin(\u03c0/4)), express z in its standard rectangular form (a + bi).",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the understanding of converting a complex number from its trigonometric form to its rectangular form. It involves using basic trigonometric values and the definition of the trigonometric form of a complex number.\n\nHere's a step-by-step solution:\n\n1. **Understanding the trigonometric form:** A complex number in trigonometric form is given by z = |z|(cos \u03b8 + i sin \u03b8), where |z| is the magnitude and \u03b8 is the argument.\n\n2. **Identifying the magnitude and argument:** From the given equation, we can identify that |z| = \u221a2 and \u03b8 = \u03c0/4.\n\n3. **Calculating the rectangular components:** \n    *  a = |z|cos \u03b8 = \u221a2 * cos(\u03c0/4) = \u221a2 * (\u221a2 / 2) = 1 \n    * b = |z|sin \u03b8 = \u221a2 * sin(\u03c0/4) = \u221a2 * (\u221a2 / 2) = 1\n\n4. **Expressing in rectangular form:** Therefore, the rectangular form of z is **1 + i**.",
+            "options": [
+                "1 + 2i",
+                "1 + i",
+                "\u221a2 + i",
+                "\u221a2 + \u221a2i"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A radar system detects a ship at a distance of 5 nautical miles and a bearing of 60 degrees from the port.  What are the rectangular coordinates (x, y) of the ship's position, assuming the port is at the origin?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the basic understanding of converting polar coordinates (r, \u03b8) to rectangular coordinates (x, y). Here's how to solve it:\n\n**1. Understanding the Problem:** \n\nWe're given the ship's location in polar coordinates: \n* r = 5 nautical miles (distance from the origin/port)\n* \u03b8 = 60 degrees (angle from the positive x-axis)\n\nWe need to find the ship's location in rectangular coordinates (x, y).\n\n**2. Applying the Formulas:**\n\nWe can use the following trigonometric relationships to convert from polar to rectangular coordinates:\n\n*  x = r * cos(\u03b8)\n*  y = r * sin(\u03b8)\n\n**3. Calculation:**\n\n* x = 5 * cos(60\u00b0) = 5 * (1/2) = 2.5 nautical miles\n* y = 5 * sin(60\u00b0) = 5 * (\u221a3/2) = 4.33 nautical miles (approximately)\n\n**Therefore, the rectangular coordinates of the ship are (2.5, 4.33).**",
+            "options": [
+                "(2.5, 4.33)",
+                "(5, 60)",
+                "(4.33, 2.5)",
+                "(60, 5)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A sailboat race follows a triangular course. The first leg is 8 kilometers long, the second leg is 5 kilometers long, and the angle between them is 120 degrees. \n**question**: What is the length of the third leg of the racecourse (to the nearest tenth of a kilometer)?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the Law of Cosines because we have two sides of a triangle and the angle between them, which allows us to solve for the third side.\n\nHere's how to solve it step-by-step:\n\n1. **Identify the variables:**\n    *  Let 'a' = 8 km (first leg)\n    *  Let 'b' = 5 km (second leg)\n    *  Let 'C' = 120 degrees (angle between them)\n    *  Let 'c' = the unknown side (third leg)\n\n2. **Apply the Law of Cosines:**\n    * The Law of Cosines states: c\u00b2 = a\u00b2 + b\u00b2 - 2ab * cos(C)\n\n3. **Substitute the known values:**\n    * c\u00b2 = 8\u00b2 + 5\u00b2 - 2 * 8 * 5 * cos(120\u00b0)\n\n4. **Calculate:**\n    * c\u00b2 = 64 + 25 - 80 * (-0.5)  [cos(120\u00b0) = -0.5]\n    * c\u00b2 = 64 + 25 + 40\n    * c\u00b2 = 129\n\n5. **Solve for 'c':**\n    * c = \u221a129 \u2248 11.4 km\n\nTherefore, the length of the third leg of the racecourse is approximately 11.4 kilometers.",
+            "options": [
+                "8.5 km",
+                "10.2 km",
+                "11.4 km",
+                "12.6 km"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A ladder is leaning against a wall. The ladder makes a 60\u00b0 angle with the ground, and the base of the ladder is 5 feet away from the wall.\n**question**: How long is the ladder?\n**difficulty_level**: Easy 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question belongs to the topic of 'Trigonometric Functions: Sine, Cosine, Tangent' within 'Quants - Trigonometry'. It assesses the understanding of trigonometric ratios in a right-angled triangle. \n\nHere's how to solve the problem:\n\n1. **Visualize:** Imagine a right-angled triangle formed by the ladder, the wall, and the ground. The ladder is the hypotenuse, the wall is the opposite side (to the 60\u00b0 angle), and the ground is the adjacent side. \n\n2. **Choose the right ratio:** We know the angle (60\u00b0) and the adjacent side (5 feet) and need to find the hypotenuse. The appropriate trigonometric ratio is cosine, as cos(angle) = adjacent/hypotenuse.\n\n3. **Apply the ratio:**\n   * cos(60\u00b0) = adjacent/hypotenuse \n   * cos(60\u00b0) = 5/hypotenuse\n   * Since cos(60\u00b0) = 1/2, we have: 1/2 = 5/hypotenuse\n\n4. **Solve for the hypotenuse:**\n   * hypotenuse = 5 * 2 = 10 feet\n\nTherefore, the ladder is 10 feet long.",
+            "options": [
+                "5 feet",
+                "8.66 feet",
+                "10 feet",
+                "12 feet"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Scenario**: Two ships leave a harbor at the same time. Ship A sails on a bearing of 35 degrees at a speed of 15 knots, while Ship B sails on a bearing of 125 degrees at a speed of 20 knots.\n**Given**: The bearings and speeds of the two ships.\n**Task**: Using the Law of Sines, determine the distance between the two ships after 2 hours of sailing.\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Visualize the Problem:**\n   Imagine a triangle where the harbor is a vertex (let's call it point C), Ship A is at vertex A, and Ship B is at vertex B.  \n\n**2. Calculate Distances:**\n   * Ship A travels 15 knots/hour * 2 hours = 30 nautical miles. \n   * Ship B travels 20 knots/hour * 2 hours = 40 nautical miles.\n   * Now we know side AC = 30 and BC = 40.\n\n**3.  Find the Included Angle:**\n   * The angle between their paths is 125 degrees - 35 degrees = 90 degrees. This is angle C of our triangle. \n\n**4. Apply the Law of Sines:**\n   * We want to find AB (the distance between the ships). Let's call this side 'c' and its opposite angle 'C'.\n   *  We can use the Law of Sines:  c / sin(C) = a / sin(A)\n   *  We know C = 90 degrees. To use the Law of Sines, we need to find another angle. We can use the fact that the angles in a triangle add up to 180 degrees. \n   * Angle A + Angle B + Angle C = 180 degrees. We know C is 90 degrees. Since Ship B is traveling at a faster speed, it will be farther out. Therefore, angle A will be larger than angle B. Let's assume angle A is 60 degrees and angle B is 30 degrees (You can solve for these angles more precisely if needed).\n\n**5. Solve for the Unknown Side:**\n   * c / sin(90) = 30 / sin(60)\n   * c = (30 * sin(90)) / sin(60) \n   * c \u2248 34.64 nautical miles\n\n**Therefore, the distance between the two ships after 2 hours is approximately 34.64 nautical miles.**",
+            "options": [
+                "30 nautical miles",
+                "40 nautical miles",
+                "34.64 nautical miles",
+                "90 nautical miles"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A pirate buried his treasure following a special map, where the height of the land is represented by a trigonometric function.  The map shows a section that looks like this:\n\n[Image of a cosine wave with the following properties: Amplitude = 2, Period = 2\u03c0, Phase shift =  \u03c0/2 to the right]\n\nThe pirate remembers that he started burying his treasure at the highest point of the land. Help the pirate find his treasure!  What are the amplitude, period, and phase shift of this function?",
+            "difficulty": "medium",
+            "reasoning": "This question fits under the 'Graphs of Trigonometric Functions' topic as it requires identifying the amplitude, period, and phase shift of a cosine function from its graph. Here's how to find the solution:\n\n1. **Amplitude:** The amplitude is the distance from the midline of the function to its highest or lowest point. In this graph, the midline is the x-axis, and the highest point is 2 units above it. Therefore, the amplitude is 2.\n\n2. **Period:** The period is the horizontal distance it takes for the function to complete one full cycle.  We can see the wave starts at its highest point, goes down and then back up to the highest point again at a horizontal distance of 2\u03c0.  Therefore, the period is 2\u03c0.\n\n3. **Phase Shift:** The phase shift is the horizontal shift of the function from its standard position. A standard cosine function starts at its peak when x=0. This graph reaches its peak when x= \u03c0/2.  This means the graph has been shifted \u03c0/2 units to the *right*. Therefore, the phase shift is \u03c0/2 to the right.\n\n**Therefore, the correct answer is:**\n* Amplitude = 2\n* Period = 2\u03c0\n* Phase Shift = \u03c0/2 to the right",
+            "options": [
+                "2, 2\u03c0, \u03c0/2 to the left",
+                "2, \u03c0, \u03c0/2 to the right",
+                "2, 2\u03c0, \u03c0/2 to the right",
+                "1, 2\u03c0, \u03c0 to the right"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A right triangle has one angle measuring 30 degrees. If the hypotenuse of the triangle has a length of 2, what is the length of the side opposite the 30-degree angle?",
+            "difficulty": "medium",
+            "reasoning": "This question assesses understanding of the unit circle and trigonometric values of special angles by using them within the context of a right triangle. Here's how to solve it:\n\n**1. Identify:** We need to find the length of the side opposite the 30-degree angle in a 30-60-90 right triangle.\n\n**2. Apply:** Recall the side ratios for a 30-60-90 triangle. The side opposite the 30-degree angle is half the length of the hypotenuse.\n\n**3. Calculate:** Since the hypotenuse has a length of 2, the side opposite the 30-degree angle is 2 * (1/2) = 1.\n\n**Therefore, the length of the side opposite the 30-degree angle is 1.**",
+            "options": [
+                "1",
+                "2",
+                "\u221a3",
+                "\u221a2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A kite maker wants to design a kite in the shape of an isosceles triangle.  The two equal sides of the kite measure 40 cm each, and the angle between them is planned to be 80 degrees.  What will be the area of the kite's sail?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Area of Triangles (Using Trigonometry)' because we're given two sides and the included angle of a triangle and asked to find the area. Here's how to solve it:\n\n**1. Recall the Formula:**\n\n   The area of a triangle given two sides and the included angle is calculated using:\n\n   Area = (1/2) * side1 * side2 * sin(angle)\n\n**2. Apply the Formula:**\n\n   * side1 = 40 cm\n   * side2 = 40 cm\n   * angle = 80 degrees\n\n   Area = (1/2) * 40 cm * 40 cm * sin(80\u00b0)\n\n**3. Calculate:**\n\n   Area \u2248 (1/2) * 40 cm * 40 cm * 0.9848\n   Area \u2248 787.84 cm\u00b2\n\n**Therefore, the area of the kite's sail will be approximately 787.84 square centimeters.**",
+            "options": [
+                "393.92 cm\u00b2",
+                "787.84 cm\u00b2",
+                "1575.68 cm\u00b2",
+                "1600 cm\u00b2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**problem_statement**: A right triangle has an adjacent side of length 4 and a hypotenuse of length 7.  What is the measure of the larger acute angle in this triangle, rounded to the nearest tenth of a degree?\n**instructions**: Solve for the angle using an appropriate inverse trigonometric function.\n**answer_choices**: \n  **A**: 34.8\u00b0\n  **B**: 55.2\u00b0\n  **C**: 60.0\u00b0\n  **D**: 74.5\u00b0\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of inverse trigonometric functions, specifically inverse cosine (arccos), within the context of a right triangle. Here's how to solve it:\n\n1. **Identify the relevant trigonometric ratio:** Since we know the adjacent side and the hypotenuse, the relevant ratio is cosine:  cos(\u03b8) = adjacent/hypotenuse. \n\n2. **Set up the equation:**  cos(\u03b8) = 4/7\n\n3. **Use the inverse cosine function (arccos) to solve for \u03b8:**  \u03b8 = arccos(4/7)\n\n4. **Calculate using a calculator:** Make sure your calculator is in degree mode. arccos(4/7) \u2248 55.15\u00b0\n\n5. **Round to the nearest tenth:**  \u03b8 \u2248 55.2\u00b0\n\n**Therefore, the correct answer is (B) 55.2\u00b0.**",
+            "options": [
+                "34.8\u00b0",
+                "60.0\u00b0",
+                "74.5\u00b0",
+                "55.2\u00b0"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A mischievous gremlin has been toying with the controls of a wave generator, altering its usual smooth sine wave. The resulting wave can be modeled by the function y = 2sin(4x + \u03c0/3) - 1.  To understand the gremlin's mischief, determine the phase shift of this wave compared to a standard sine wave (y = sin x).",
+            "difficulty": "medium",
+            "reasoning": "This question deals with the transformation of trigonometric functions, specifically focusing on the phase shift within a sine function. Here's how we break down the solution:\n\n**Understanding Phase Shift:**\n\nA phase shift represents the horizontal shift of a trigonometric function from its standard position. In the standard sine function, y = sin x, there is no phase shift.\n\n**Analyzing the Given Function:**\n\nThe given function is y = 2sin(4x + \u03c0/3) - 1.  Let's break it down:\n* **2:** This represents the amplitude, affecting the wave's height, but not the phase shift.\n* **4x:** This affects the period (how quickly the wave repeats), but not directly the phase shift.\n* **+ \u03c0/3:** This term, found inside the sine function's argument, directly contributes to the phase shift.\n* **-1:** This represents a vertical shift, affecting the wave's midline, but not the phase shift.\n\n**Calculating the Phase Shift:**\n\n1. **Isolate the term inside the sine function:** (4x + \u03c0/3)\n2. **Factor out the coefficient of x:**  4(x + \u03c0/12)\n3. **The phase shift is the opposite of the value added to x inside the parentheses.**\n\nTherefore, the phase shift is **-\u03c0/12**. This means the wave has been shifted **\u03c0/12 units to the left** compared to the standard sine wave.\n",
+            "options": [
+                "\u03c0/3 to the right",
+                "\u03c0/12 to the right",
+                "\u03c0/12 to the left",
+                "\u03c0/3 to the left"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A gardener is designing a triangular flower bed. She wants to place a decorative fountain inside the flower bed. Two sides of the flower bed will be bordered with a hedge, measuring 8 feet and 12 feet respectively. The angle between these sides, where the hedges will meet, is 75 degrees.  To plan the plumbing, the gardener needs to know the distance from the fountain to the corner of the flower bed where the hedges meet. Calculate this distance using the Law of Cosines.",
+            "difficulty": "medium",
+            "reasoning": "Let's break down this problem:\n\n**1. Visualize the Problem:**\nImagine a triangle where:\n* The fountain is located inside the triangle.\n* Two sides of the triangle represent the hedges (8 feet and 12 feet).\n* The angle between the hedges is 75 degrees.\n* The distance we need to find is the line connecting the fountain to the corner where the hedges meet (this line acts as the third side of our triangle).\n\n**2. Apply the Law of Cosines:**\nThe Law of Cosines helps us find the third side of a triangle (in this case, the distance to the fountain) when we know two sides and the angle between them.\n\nThe formula is: c\u00b2 = a\u00b2 + b\u00b2 - 2ab * cos(C)\n\nWhere:\n* c is the side opposite angle C (the distance we're looking for)\n* a and b are the known sides (8 feet and 12 feet)\n* C is the angle between the known sides (75 degrees)\n\n**3.  Substitute and Calculate:**\n* c\u00b2 = 8\u00b2 + 12\u00b2 - 2 * 8 * 12 * cos(75\u00b0)\n* c\u00b2 = 64 + 144 - 192 * cos(75\u00b0)\n* c\u00b2 \u2248 64 + 144 - 49.71  (using a calculator to find the cosine of 75 degrees)\n* c\u00b2 \u2248 158.29\n* c \u2248 \u221a158.29\n* c \u2248 12.58 feet\n\n**Therefore, the distance from the fountain to the corner of the flower bed where the hedges meet is approximately 12.58 feet.**",
+            "options": [
+                "12.58 feet",
+                "8 feet",
+                "12 feet",
+                "75 degrees"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A surveyor is positioned at point A, looking up at the top of a flagpole (point B). The angle of elevation from A to B is measured to be  \u03c0/3 radians.  The surveyor then walks 10 meters further away from the flagpole to point C, keeping the flagpole in sight.  The angle of elevation from point C to B is now \u03c0/6 radians. Using your knowledge of reciprocal trigonometric functions, determine the height of the flagpole.",
+            "difficulty": "medium",
+            "reasoning": "Let h be the height of the flagpole, and x be the initial distance from the surveyor to the base of the flagpole (AC).\n\n**Step 1: Set up trigonometric ratios**\n\nFrom the information given, we can set up the following trigonometric ratios:\n\n* Triangle ABC:  tan(\u03c0/6) = h/(x + 10)\n* Triangle ABD: tan(\u03c0/3) = h/x\n\n**Step 2: Express tangent in terms of cotangent**\n\nRecall that cot(\u03b8) = 1/tan(\u03b8).  We can rewrite our equations as:\n\n*  1/cot(\u03c0/6) = h/(x + 10)\n* 1/cot(\u03c0/3) = h/x \n\n**Step 3: Solve for x**\n\nWe know cot(\u03c0/6) = \u221a3 and cot(\u03c0/3) = 1/\u221a3. Substituting these values, we get:\n\n* 1/\u221a3 = h/(x + 10)\n* \u221a3 = h/x\n\nSolving the second equation for h, we get h = x\u221a3. Substituting this into the first equation:\n\n* 1/\u221a3 = x\u221a3 / (x + 10)\n\nCross-multiplying and simplifying:\n\n* x + 10 = 3x\n* 2x = 10\n* x = 5 meters\n\n**Step 4: Calculate the height**\n\nSubstitute the value of x back into either of the original equations to solve for h.  Using h = x\u221a3:\n\n* h = 5\u221a3 meters\n\n**Therefore, the height of the flagpole is 5\u221a3 meters.**",
+            "options": [
+                "10\u221a3 meters",
+                "5 meters",
+                "5\u221a3 meters",
+                "10 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A weight attached to a spring oscillates up and down. Its displacement from its equilibrium position after 't' seconds is given by the equation:\n**problem statement**: d(t) = 4cos(\u03c0t + \u03c0/3), where 'd' is in centimeters and 't' is in seconds.\n\nFind the first two times when the weight is 2 cm below its equilibrium position.\n**instructions**: Solve the trigonometric equation d(t) = -2 for 't', where 0 \u2264 t \u2264 2.\n**difficulty level**: Medium (5/10)\n",
+            "difficulty": "medium",
+            "reasoning": "This question fits within 'Trigonometric Equations' as it requires solving a trigonometric equation. \n\nHere's how to solve it:\n\n**1. Set up the equation:**\n\nWe are given d(t) = -2 (2 cm *below* equilibrium). So, we have:\n\n-2 = 4cos(\u03c0t + \u03c0/3)\n\n**2. Isolate the cosine term:**\n\nDivide both sides by 4:\n\n-1/2 = cos(\u03c0t + \u03c0/3)\n\n**3. Find the angle:**\n\nDetermine the angles within one period of the cosine function (0 to 2\u03c0) where the cosine is -1/2. These angles are 2\u03c0/3 and 4\u03c0/3.\n\n**4. Solve for 't':**\n\nSet the argument of the cosine function equal to the angles found in step 3 and solve for 't':\n\n*  \u03c0t + \u03c0/3 = 2\u03c0/3  =>  \u03c0t = \u03c0/3  => t = 1/3 seconds\n*  \u03c0t + \u03c0/3 = 4\u03c0/3  =>  \u03c0t = \u03c0  => t = 1 second\n\n**Therefore, the first two times the weight is 2 cm below its equilibrium position are at t = 1/3 seconds and t = 1 second.**",
+            "options": [
+                "1/3 seconds",
+                "1 seconds",
+                "2/3 seconds",
+                "1.5 seconds"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Given:**\n\n*  `sin(\u03b1) = -5/13` where `\u03c0 < \u03b1 < 3\u03c0/2` \n*  `cos(\u03b2) = 12/13` where  `3\u03c0/2 < \u03b2 < 2\u03c0`\n\n**Instruction:** \n\nFind the exact value of `sin(\u03b1 - \u03b2)`.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Trigonometric Identities' specifically testing the application of the sum/difference identities. Here's a step-by-step solution:\n\n**1.  Identify the Relevant Identity:**\n\nWe need to find `sin(\u03b1 - \u03b2)`.  The relevant trigonometric identity is:\n\n  `sin(\u03b1 - \u03b2) = sin(\u03b1)cos(\u03b2) - cos(\u03b1)sin(\u03b2)`\n\n**2.  Find the Missing Trigonometric Values:**\n\n* **Find cos(\u03b1):** We know `sin(\u03b1) = -5/13` and `\u03b1` is in the third quadrant (where cosine is also negative). Using the Pythagorean identity, `sin\u00b2(\u03b1) + cos\u00b2(\u03b1) = 1`:\n\n    `cos\u00b2(\u03b1) = 1 - sin\u00b2(\u03b1) = 1 - (-5/13)\u00b2 = 144/169`\n    `cos(\u03b1) = -12/13` (negative because cosine is negative in the third quadrant)\n\n* **Find sin(\u03b2):** We know `cos(\u03b2) = 12/13` and `\u03b2` is in the fourth quadrant (where sine is negative). Using the Pythagorean identity:\n\n    `sin\u00b2(\u03b2) = 1 - cos\u00b2(\u03b2) = 1 - (12/13)\u00b2 = 25/169`\n    `sin(\u03b2) = -5/13` (negative because sine is negative in the fourth quadrant)\n\n**3. Substitute and Simplify:**\n\nNow we have all the pieces to use our angle subtraction identity:\n\n`sin(\u03b1 - \u03b2) = sin(\u03b1)cos(\u03b2) - cos(\u03b1)sin(\u03b2)`\n              `= (-5/13)(12/13) - (-12/13)(-5/13)`\n              `= -60/169 - 60/169`\n              `= -120/169` \n\nTherefore, the exact value of `sin(\u03b1 - \u03b2)` is **-120/169**.",
+            "options": [
+                "120/169",
+                "-120/169",
+                "60/169",
+                "-60/169"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A landscape architect is designing a triangular garden to be built in the corner of a city park.  The two existing sides of the park that border the garden form a 70-degree angle.  One side measures 15 meters, and the other measures 20 meters. What is the area of the triangular garden?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Area of Triangles (Using Trigonometry)' subtopic within 'Quants - Trigonometry' because it requires using the formula for calculating the area of a triangle when two sides and their included angle are known.\n\nHere's how to solve the problem step-by-step:\n\n1. **Identify the known information:** \n    * Side a = 15 meters\n    * Side b = 20 meters\n    * Angle C = 70 degrees\n\n2. **Apply the formula:** The area of a triangle given two sides and the included angle is:\n    * Area = 1/2 * a * b * sin(C)\n\n3. **Substitute the values:**\n    * Area = 1/2 * 15 meters * 20 meters * sin(70 degrees)\n\n4. **Calculate:**\n    * Area \u2248 140.95 square meters \n\nTherefore, the area of the triangular garden is approximately 140.95 square meters.",
+            "options": [
+                "Area of Triangles (Using Trigonometry)",
+                "Area of Triangles (Using Heron's Formula)",
+                "Area of Triangles (Using Base and Height)",
+                "Area of Triangles (Using Law of Sines)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A radio wave is transmitted with a signal strength modeled by the complex number  z = 2 cis(45\u00b0). Due to interference, the signal strength is reduced by a factor of  \u221a2 and the phase is shifted by 135\u00b0.  Determine the trigonometric form of the complex number representing the final signal strength.",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Problem:**\n\nWe are given an initial signal represented by a complex number in trigonometric form.  We need to find the new complex number representation after the signal strength is reduced and phase-shifted.\n\n**2.  Reducing the Modulus (Signal Strength):**\n\nThe initial signal strength is represented by the modulus of z, which is 2. Reducing it by a factor of \u221a2 gives us a new modulus of 2/\u221a2 = \u221a2.\n\n**3.  Shifting the Argument (Phase):**\n\nThe initial phase is 45\u00b0. Adding the phase shift of 135\u00b0 results in a final phase of 45\u00b0 + 135\u00b0 = 180\u00b0.\n\n**4. Forming the New Complex Number:**\n\nThe trigonometric form of a complex number is given by  r cis(\u03b8), where r is the modulus and \u03b8 is the argument. Using the new modulus (\u221a2) and argument (180\u00b0) we calculated, the final complex number representing the signal strength is \u221a2 cis(180\u00b0).",
+            "options": [
+                "\u221a2 cis(45\u00b0)",
+                "\u221a2 cis(180\u00b0)",
+                "2 cis(180\u00b0)",
+                "2 cis(225\u00b0)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Find all solutions for 'x' in the interval  [0, 2\u03c0) that satisfy the equation: 2sin\u00b2(x) - sin(x) - 1 = 0",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Trigonometric Equations' subtopic within 'Quants - Trigonometry'. It involves solving a trigonometric equation for specific values within a given interval.\n\nHere's how to solve the equation step-by-step:\n\n1. **Recognize the Quadratic Form:** The equation is essentially a quadratic equation in terms of 'sin(x)'. Let's substitute 'y = sin(x)' to make it clearer: 2y\u00b2 - y - 1 = 0\n\n2. **Solve the Quadratic:** Factor the quadratic equation: (2y + 1)(y - 1) = 0. This gives us two possible solutions: y = -1/2 and y = 1\n\n3. **Substitute Back:** Remember that 'y' represents 'sin(x)'. So, we have two equations to solve:\n    * sin(x) = -1/2\n    * sin(x) = 1\n\n4. **Find Solutions in the Interval:**\n    * For sin(x) = -1/2, the solutions within the interval [0, 2\u03c0) are x = 7\u03c0/6 and x = 11\u03c0/6.\n    * For sin(x) = 1, the solution within the interval [0, 2\u03c0) is x = \u03c0/2.\n\nTherefore, the solutions for 'x' in the given interval are x = \u03c0/2, 7\u03c0/6, and 11\u03c0/6.",
+            "options": [
+                "\u03c0/2, 7\u03c0/6, 11\u03c0/6",
+                "\u03c0/2, 5\u03c0/6, 11\u03c0/6",
+                "\u03c0/2, 7\u03c0/6, 10\u03c0/6",
+                "\u03c0/3, 7\u03c0/6, 11\u03c0/6"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A sector of a circle with radius 5 cm subtends an angle at the center.\n**task**: If the area of the sector is equal to  25\u03c0/12  square centimeters, find the measure of the central angle in degrees.\n**answer_format**: Express your answer as an integer.\n",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Angles and Their Measures (Degrees and Radians)' about 'Angles and Their Measures (Degrees and Radians)'.\n\nHere's how to solve the problem:\n\n**1. Formula for the Area of a Sector:**\n\nThe area of a sector of a circle is given by the formula:\n\nArea = (\u03b8/360\u00b0) * \u03c0 * r\u00b2\n\nwhere:\n\n* \u03b8 is the central angle in degrees\n* r is the radius of the circle\n\n**2.  Substitute Known Values:**\n\nWe are given:\n\n* Area = 25\u03c0/12 cm\u00b2\n* r = 5 cm\n\nSubstitute these values into the formula:\n\n25\u03c0/12 = (\u03b8/360\u00b0) * \u03c0 * (5)\u00b2\n\n**3. Simplify and Solve for \u03b8:**\n\n* Cancel out \u03c0 on both sides:\n   25/12 = (\u03b8/360\u00b0) * 25\n* Multiply both sides by 360\u00b0:\n   (25/12) * 360\u00b0 = \u03b8 * 25\n* Simplify:\n    750\u00b0 = \u03b8 * 25\n* Divide both sides by 25:\n    \u03b8 = 30\u00b0\n\nTherefore, the measure of the central angle is 30 degrees.",
+            "options": [
+                "15\u00b0",
+                "30\u00b0",
+                "45\u00b0",
+                "60\u00b0"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A sailboat races across a triangular course marked by buoys. The first leg of the race is 2 kilometers long, and the second leg is 3 kilometers long.  The angle between the first and second leg is 110 degrees. What is the length of the final leg of the race, which takes the sailboat directly back to the starting buoy?",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the Law of Cosines to determine the unknown side of a triangle when two sides and the included angle are known. Here's how to solve it:\n\n**1. Visualize and Label:**\n\nImagine the triangle formed by the sailboat's course. \n* Label the starting point as point A.\n* Label the end of the first leg as point B.\n* Label the end of the second leg as point C.\n\nWe know:\n* Side AB (c) = 2 kilometers\n* Side BC (a) = 3 kilometers\n* Angle B = 110 degrees\n\nWe want to find side AC (b), the length of the final leg.\n\n**2. Apply the Law of Cosines:**\n\nThe Law of Cosines states:  b\u00b2 = a\u00b2 + c\u00b2 - 2ac * cos(B)\n\nSubstitute the known values:\n\nb\u00b2 = 3\u00b2 + 2\u00b2 - 2 * 3 * 2 * cos(110\u00b0)\n\n**3. Calculate:**\n\nb\u00b2 = 9 + 4 - 12 * cos(110\u00b0)\nb\u00b2 \u2248 13 + 4.104  (using a calculator for cos(110\u00b0))\nb\u00b2 \u2248 17.104\n\nTake the square root of both sides to find b:\nb \u2248 \u221a17.104\nb \u2248 4.14 kilometers\n\n**Therefore, the length of the final leg of the race is approximately 4.14 kilometers.**",
+            "options": [
+                "2.54 km",
+                "3.14 km",
+                "4.14 km",
+                "5.14 km"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: A hot air balloon is observed from two points, A and B, on the ground that are 150 meters apart.  The angle of elevation to the balloon from point A is 55 degrees, and the angle of elevation from point B is 38 degrees. Assume that points A, B, and the balloon are all in the same vertical plane.\n**given**: \n  **AB**: 150 meters\n  **Angle of elevation from A**: 55 degrees\n  **Angle of elevation from B**: 38 degrees\n**find**: Find the height of the hot air balloon above the ground.\n",
+            "difficulty": "medium",
+            "reasoning": "Let C represent the location of the hot air balloon. We are tasked with finding the height of the balloon, which can be represented by the length of line segment CD, where D is the point on the ground directly below the balloon, forming a right triangle BCD.\n\n**1. Visualize the Problem**\n\n   Imagine a triangle ABC where A and B are the observation points, and C is the balloon's position.  Drawing a perpendicular line from C to the ground (point D) helps visualize the height we need to find.\n\n**2. Utilize the Law of Sines**\n\n   We can use the Law of Sines to find the length of either AC or BC. Let's choose to find AC.\n\n   * We know angle CAB = 55 degrees and angle ABC = 38 degrees. Therefore, angle ACB = 180 - 55 - 38 = 87 degrees.\n   * Applying the Law of Sines:\n\n      ```\n      sin(ABC) / AC = sin(ACB) / AB\n      sin(38\u00b0) / AC = sin(87\u00b0) / 150\n      AC = 150 * sin(38\u00b0) / sin(87\u00b0)\n      AC \u2248 92.62 meters\n      ```\n\n**3. Solve for Height**\n\n   Now, focus on right triangle ACD.\n\n   * We know AC \u2248 92.62 meters and angle CAD = 55 degrees.\n   * We want to find CD (the height).\n\n   * Using the sine function:\n\n      ```\n      sin(CAD) = CD / AC\n      sin(55\u00b0) = CD / 92.62\n      CD = 92.62 * sin(55\u00b0)\n      CD \u2248 75.87 meters\n      ```\n\nTherefore, the height of the hot air balloon above the ground is approximately 75.87 meters.",
+            "options": [
+                "75.87 meters",
+                "92.62 meters",
+                "150 meters",
+                "55 degrees"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**statement**: An isosceles triangle has two equal sides of length 10 units each, forming an angle  '\u03b8'.  A line segment drawn from the midpoint of the base to the opposite vertex divides '\u03b8' into two angles, '\u03b1' and '\u03b2',  where \u03b1 = 2\u03b2.  Given that cos(\u03b8) = -3/5,  determine the exact value of tan(\u03b1).\n**given_information**: Isosceles triangle with equal sides of length 10 units.\ncos(\u03b8) = -3/5\n\u03b1 = 2\u03b2, where \u03b1 and \u03b2 are angles formed by the bisector of \u03b8.\n**objective**: Find the exact value of tan(\u03b1).\n**constraints**: None\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Visualize the Problem**\n\n   Sketch an isosceles triangle. Label the equal sides as 10 units each. Mark the base angles as '\u03b8'. Draw a line segment from the midpoint of the base to the opposite vertex, creating angles '\u03b1' and '\u03b2'.\n\n**2. Utilize the Given Information**\n\n   * We know cos(\u03b8) = -3/5. Since cosine is negative, \u03b8 lies in either the second or third quadrant. Given the context of a triangle, we can infer \u03b8 is in the second quadrant.\n   * We're given \u03b1 = 2\u03b2 and know \u03b1 + \u03b2 = \u03b8.\n\n**3. Apply Trigonometric Identities**\n\n   * **Find sin(\u03b8):** Use the Pythagorean identity: sin\u00b2(\u03b8) + cos\u00b2(\u03b8) = 1. \n      *  sin\u00b2(\u03b8) = 1 - (-3/5)\u00b2 = 16/25\n      *  sin(\u03b8) = 4/5 (Since \u03b8 is in the second quadrant, sine is positive).\n\n   * **Find cos(2\u03b2):** We need to find tan(\u03b1), and since \u03b1 = 2\u03b2, we'll use double-angle identities.\n      * cos(2\u03b2) = cos(\u03b1) = 1 - 2sin\u00b2(\u03b2)  \n\n   * **Relate \u03b2 to \u03b8:**  We know \u03b1 + \u03b2 = \u03b8 and \u03b1 = 2\u03b2, so  3\u03b2 = \u03b8,  meaning  \u03b2 = \u03b8/3\n\n   * **Express cos(\u03b1) in terms of \u03b8:**\n      * cos(\u03b1) =  1 - 2sin\u00b2(\u03b2) = 1 - 2sin\u00b2(\u03b8/3) \n\n**4. Solve for sin(\u03b8/3)**\n\n   *  Use the triple-angle identity for sine:  sin(3\u03b8) = 3sin(\u03b8) - 4sin\u00b3(\u03b8). \n   *  Substitute \u03b8/3 for \u03b8: sin(\u03b8) = 3sin(\u03b8/3) - 4sin\u00b3(\u03b8/3)\n   *  We know sin(\u03b8) = 4/5.  Let x = sin(\u03b8/3). The equation becomes: 4/5 = 3x - 4x\u00b3. \n   *  Solve the cubic equation for x. You'll find x = sin(\u03b8/3) = 1/2 is the relevant solution in this context.\n\n**5. Calculate cos(\u03b1) and tan(\u03b1)**\n\n   *  cos(\u03b1) = 1 - 2sin\u00b2(\u03b8/3) = 1 - 2(1/2)\u00b2 = 1/2 \n   *  Since \u03b1 is in the second quadrant (as \u03b1 = 2\u03b2 and \u03b2 is a smaller angle within \u03b8), cos(\u03b1) is negative. Therefore, cos(\u03b1) = -1/2\n   *  Use the identity tan\u00b2(\u03b1) = 1 - cos\u00b2(\u03b1) / cos\u00b2(\u03b1) to find tan\u00b2(\u03b1) = 3\n   *  Finally, since \u03b1 is in the second quadrant where tangent is negative, tan(\u03b1) = -\u221a3\n\nTherefore, the exact value of tan(\u03b1) is **-\u221a3**.",
+            "options": [
+                "\u221a3",
+                "-\u221a2",
+                "-\u221a3",
+                "\u221a2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bicycle wheel with a radius of 40 cm rolls forward, making three and a half rotations.  What is the total angle, expressed in radians, through which a spoke on the wheel has rotated?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Understand the Relationship between Rotations and Radians**\n\n* One complete rotation of a circle is equal to 2\u03c0 radians.\n\n**2. Calculate the Angle for Three and a Half Rotations**\n\n* Since one rotation is 2\u03c0 radians, three and a half rotations would be: (3.5 rotations) * (2\u03c0 radians/rotation) = 7\u03c0 radians\n\n**3.  The Key Insight: Spokes Rotate with the Wheel**\n\n*  The question asks about the angle a *spoke* rotates through. Because a spoke is attached to the wheel, it rotates through the same angle as the wheel itself.\n\n**Therefore, the total angle the spoke rotates through is 7\u03c0 radians.** \n",
+            "options": [
+                "6\u03c0 radians",
+                "7\u03c0 radians",
+                "10\u03c0 radians",
+                "14\u03c0 radians"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Let point  'P' lie on the unit circle. Angle \u03b8 is in standard position with its terminal side passing through point P. If  tan(\u03b8) = -\u221a3  and sin(\u03b8) is negative, what is the value of  cos\u00b3(\u03b8) - sin\u00b2(\u03b8) ?",
+            "difficulty": "hard",
+            "reasoning": "**1. Determine the Quadrant:**\n\nSince tan(\u03b8) is negative and sin(\u03b8) is negative, angle \u03b8 must lie in Quadrant IV (where cosine is positive and sine is negative).\n\n**2. Identify the Reference Angle:**\n\nWe know tan(\u03b8) = -\u221a3.  Recall that the tangent of 60\u00b0 is \u221a3. Since tangent is negative in Quadrant IV, the reference angle for \u03b8 is 60\u00b0.\n\n**3. Find the Coordinates of Point P:**\n\nKnowing the reference angle is 60\u00b0 and we are in Quadrant IV, we can determine the coordinates of point P on the unit circle. In Quadrant IV, the x-coordinate is positive and the y-coordinate is negative. Therefore, point P has coordinates (1/2, -\u221a3/2).\n\n**4. Determine cos(\u03b8) and sin(\u03b8):**\n\nSince P lies on the unit circle, its coordinates are (cos(\u03b8), sin(\u03b8)). Therefore:\n* cos(\u03b8) = 1/2\n* sin(\u03b8) = -\u221a3/2 \n\n**5. Calculate the Expression:**\n\nSubstitute the values of cos(\u03b8) and sin(\u03b8) into the expression cos\u00b3(\u03b8) - sin\u00b2(\u03b8):\n\n(1/2)\u00b3 - (-\u221a3/2)\u00b2  =  1/8 - 3/4 = -5/8\n\n**Therefore, the value of cos\u00b3(\u03b8) - sin\u00b2(\u03b8) is -5/8.**",
+            "options": [
+                "-5/8",
+                "5/8",
+                "-1/8",
+                "1/8"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Two ships leave a harbor at the same time. Ship A sails on a bearing of 35\u00b0 at a speed of 15 knots, while Ship B sails on a bearing of 110\u00b0 at a speed of 20 knots.  After 3 hours, how far apart are the two ships? (Note: 1 knot = 1 nautical mile per hour)",
+            "difficulty": "hard",
+            "reasoning": "This problem utilizes the Law of Cosines to determine the distance between two ships after they have traveled on different courses for a set period. Here's how to solve it:\n\n**1. Visualize the Problem:**\n\n   Imagine a triangle where:\n   * The harbor is a vertex (let's call it point C).\n   * Ship A is at point A after 3 hours.\n   * Ship B is at point B after 3 hours.\n\n**2. Determine the Sides:**\n\n   * **AC:** Ship A travels 15 knots for 3 hours, covering 15 * 3 = 45 nautical miles.\n   * **BC:** Ship B travels 20 knots for 3 hours, covering 20 * 3 = 60 nautical miles.\n\n**3. Find the Included Angle:**\n\n   * The angle between the paths of the two ships (\u2220ACB) is 110\u00b0 - 35\u00b0 = 75\u00b0.\n\n**4. Apply the Law of Cosines:**\n\n   We want to find AB (the distance between the ships). Using the Law of Cosines:\n\n   AB\u00b2 = AC\u00b2 + BC\u00b2 - 2(AC)(BC)cos(\u2220ACB)\n   AB\u00b2 = 45\u00b2 + 60\u00b2 - 2 * 45 * 60 * cos(75\u00b0)\n   AB\u00b2 \u2248 2025 + 3600 - 5400 * 0.2588\n   AB\u00b2 \u2248 4200.48\n   AB \u2248 \u221a4200.48 \u2248 64.81 nautical miles\n\n**Therefore, the two ships are approximately 64.81 nautical miles apart after 3 hours.**",
+            "options": [
+                "50.31 nautical miles",
+                "64.81 nautical miles",
+                "75.25 nautical miles",
+                "81.42 nautical miles"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A solar panel needs to be installed on a roof with a slope of 20 degrees. To maximize efficiency, the panel should be angled perpendicular to the sun's rays at solar noon on the winter solstice. On this day, the sun's angle of elevation at solar noon is 30 degrees.\n**Problem Statement**: Calculate the angle at which the solar panel should be mounted relative to the roof's surface to ensure it is perpendicular to the sun's rays at solar noon on the winter solstice.\n**Required Information**: * Roof slope: 20 degrees\n* Sun's angle of elevation at solar noon on the winter solstice: 30 degrees\n**Question**: What angle should the solar panel make with the roof's surface for maximum efficiency?\n",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the subtopic 'Applications of Trigonometry in Real-World Problems' and specifically focuses on 'Quants - Trigonometry'. It requires a good understanding of angles, trigonometry, and spatial reasoning.\n\nHere's a step-by-step solution:\n\n1. **Visualize the problem:** Imagine the roof as a slanted line, the sun's rays as another line, and the solar panel as a line segment that needs to be perpendicular to the sun's rays.\n\n2. **Identify the relevant angles:** We have the roof's slope (20 degrees) and the sun's angle of elevation (30 degrees). The angle we need to find is the angle between the solar panel and the roof.\n\n3. **Draw a diagram:** Sketch a diagram representing the situation. Draw a horizontal line to represent the ground, then a slanted line to represent the roof, making a 20-degree angle with the horizontal. Draw another line from a point above the roof representing the sun's rays, making a 30-degree angle with the horizontal. Finally, draw a line segment representing the solar panel, perpendicular to the sun's rays line.\n\n4. **Apply trigonometry:**  Notice that the angle between the ground and the solar panel is 90 degrees (since the panel is perpendicular to the sun's rays). This means the angle between the roof and the solar panel is 90 degrees - 20 degrees = 70 degrees. Now, we have a right triangle formed by the roof, the solar panel, and a line segment connecting their endpoints. We know one angle is 70 degrees, and another is 30 degrees (the sun's angle of elevation). The remaining angle, which is the angle we need to find, is 180 degrees - 90 degrees - 30 degrees = 60 degrees.\n\nTherefore, the solar panel should be mounted at a 60-degree angle relative to the roof's surface.",
+            "options": [
+                "20 degrees",
+                "30 degrees",
+                "60 degrees",
+                "70 degrees"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A buoy bobs up and down in the ocean, with its vertical displacement from its average position modeled by the function  y(t) = -2cos(\u03c0/4(t-3)) + 5, where y(t) represents the displacement in feet and t represents time in seconds. \n\n A researcher observing the buoy notices that it takes a certain amount of time for the buoy to go from its highest point to a point 3 feet above its average position.  What is this time, to the nearest tenth of a second?",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThis problem is tricky because it requires a multi-step approach combining understanding of trigonometric functions with problem-solving skills:\n\n1. **Understanding the function:** The function y(t) = -2cos(\u03c0/4(t-3)) + 5 describes the vertical motion of the buoy. \n    * Amplitude: |-2| = 2 feet (the buoy moves 2 feet above and below its average position)\n    * Period: (2\u03c0)/(\u03c0/4) = 8 seconds (time for one complete cycle)\n    * Phase Shift: 3 seconds to the right (the graph is shifted 3 units to the right)\n    * Vertical Shift: 5 feet upwards (the average position of the buoy is 5 feet above the resting water level)\n\n2. **Visualizing the problem:** Imagine the buoy bobbing up and down. We need to find the time it takes for the buoy to travel from its highest point down to a point 3 feet above its average position.\n\n3. **Setting up the equation:**\n   * The highest point the buoy reaches is 5 (vertical shift) + 2 (amplitude) = 7 feet.\n   * We want to find the time (t) when y(t) = 3 feet.\n   * So, we need to solve the equation: -2cos(\u03c0/4(t-3)) + 5 = 3\n\n4. **Solving for t:**\n   * Subtract 5 from both sides: -2cos(\u03c0/4(t-3)) = -2\n   * Divide both sides by -2: cos(\u03c0/4(t-3)) = 1\n   * Take the inverse cosine of both sides: \u03c0/4(t-3) = 0  (The cosine function equals 1 at 0 radians)\n   * Multiply both sides by 4/\u03c0: t-3 = 0\n   * Add 3 to both sides: t = 3 seconds. This is the time the buoy is at its peak.\n\n5. **Finding the time difference:** Since the buoy reaches its peak at t=3 seconds, and we want to know how long it takes to go from the peak to 3 feet above average position, we know the time difference is **0 seconds** because it's already there.\n\nTherefore, the time it takes for the buoy to go from its highest point to a point 3 feet above its average position is **0 seconds**.\n",
+            "options": [
+                "0 seconds",
+                "3 seconds",
+                "4 seconds",
+                "8 seconds"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A surveyor is mapping out a triangular plot of land. Starting at a base point, she walks 50 meters due east. She then changes direction and walks for 80 meters on a bearing of 120\u00b0 measured clockwise from north.  To reach the final corner of the triangular plot, she must walk due west. What is the magnitude and direction (measured clockwise from east) of the final displacement vector the surveyor must take to reach the last corner?",
+            "difficulty": "hard",
+            "reasoning": "This problem combines vectors and trigonometry to determine displacement. Here's a step-by-step solution:\n\n**1. Visualize the Problem**\n\n   Imagine a coordinate system with the base point as the origin. The surveyor's first movement is 50 meters along the positive x-axis (east). The second movement is at 120\u00b0 from north, which translates to 30\u00b0 below the negative x-axis (or 210\u00b0 from the positive x-axis).\n\n**2. Break Down the Vectors**\n\n   *  **Vector 1 (East):** 50 meters along the x-axis can be represented as <50, 0>.\n   *  **Vector 2 (120\u00b0 from North):** We need to find the x and y components of this vector:\n      *  x-component = 80 * sin(30\u00b0) = -40 meters (negative as it's going west)\n      *  y-component = 80 * cos(30\u00b0) = -69.28 meters (negative as it's going south)\n      So, Vector 2 is <-40, -69.28>\n\n**3.  Find the Resultant Vector (First Two Movements)**\n\n   Add the x and y components of the two vectors:\n   *  Resultant Vector = <50 - 40, 0 - 69.28> = <10, -69.28>\n\n**4.  Determine the Final Displacement Vector**\n\n   The surveyor needs to walk due west to reach the starting point. This means the final displacement vector must cancel out the y-component of the resultant vector we just calculated.  Therefore, the final displacement vector will have a y-component of +69.28 meters.\n\n   The x-component of the final displacement vector needs to bring the surveyor back to the starting point. Since the current x-component of the resultant vector is 10 meters east, the final displacement vector must have an x-component of -10 meters.\n\n   Final Displacement Vector:  <-10, 69.28>\n\n**5.  Calculate the Magnitude**\n\n   Magnitude = \u221a((-10)^2 + (69.28)^2) = 70 meters \n\n**6.  Calculate the Direction**\n\n   The angle (\u03b8) of the final displacement vector from the positive x-axis can be found using:\n   tan(\u03b8) = (opposite side) / (adjacent side) = 69.28 / 10\n   \u03b8 = arctan(6.928) = 81.87\u00b0\n\n   Since the vector is in the second quadrant (northwest direction), we need to subtract this angle from 180\u00b0 to get the direction clockwise from east:\n\n   Direction = 180\u00b0 - 81.87\u00b0 = 98.13\u00b0\n\n**Therefore, the magnitude of the final displacement vector is 70 meters, and the direction is 98.13\u00b0 clockwise from east.**",
+            "options": [
+                "60 meters",
+                "70 meters",
+                "80 meters",
+                "90 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two ships, the Nautilus and the Argonaut, set sail from the same port at the same time. The Nautilus travels at a constant speed of 15 knots on a bearing of 60 degrees, while the Argonaut travels at a constant speed of 20 knots on a bearing of 135 degrees.  After 3 hours, the Nautilus spots a distress signal coming from a bearing of 30 degrees.  Assuming the distress signal originates from a stationary point, what is the shortest distance the Argonaut must travel from its current position to reach the source of the distress signal?",
+            "difficulty": "medium",
+            "reasoning": "This problem requires a multi-step approach utilizing the concepts of polar coordinates, trigonometry, and the law of cosines:\n\n1. **Visualize the Problem:** Imagine a polar coordinate system with the port as the origin. The paths and positions of the ships can be represented as points and line segments within this system.\n\n2. **Calculate Distances Traveled:**\n    * Nautilus: In 3 hours at 15 knots, it travels 3 * 15 = 45 nautical miles.\n    * Argonaut: In 3 hours at 20 knots, it travels 3 * 20 = 60 nautical miles.\n\n3. **Determine Positions in Polar Coordinates:**\n    * Nautilus: (45, 60\u00b0)\n    * Argonaut: (60, 135\u00b0)\n\n4. **Convert to Rectangular Coordinates:** This is essential for calculating distances using standard geometric formulas.\n    * Nautilus: (45cos(60\u00b0), 45sin(60\u00b0)) = (22.5, 38.97)\n    * Argonaut: (60cos(135\u00b0), 60sin(135\u00b0)) = (-42.43, 42.43)\n\n5. **Find the Position of the Distress Signal:** We know the Nautilus is 45 nautical miles from the port at a bearing of 60 degrees, and the distress signal is at a bearing of 30 degrees from the Nautilus. This forms a triangle where we can use the Law of Cosines to find the distance from the Nautilus to the signal.\n\n6. **Apply the Law of Cosines:**\n    * Let 'd' be the distance from the Nautilus to the distress signal.\n    * d\u00b2 = 45\u00b2 + 45\u00b2 - 2 * 45 * 45 * cos(30\u00b0)\n    * d \u2248 23.38 nautical miles\n\n7. **Calculate the Distress Signal's Coordinates:** We can use trigonometry to find the x and y components of the distance 'd' from the Nautilus's position.\n    * Distress Signal: (22.5 + d*cos(30\u00b0), 38.97 + d*sin(30\u00b0)) \u2248 (42.89, 50.66)\n\n8. **Calculate the Distance from the Argonaut to the Distress Signal:**  Use the distance formula between two points.\n    * Distance = \u221a((42.89 - (-42.43))\u00b2 + (50.66 - 42.43)\u00b2) \u2248 88.37 nautical miles\n\nTherefore, the shortest distance the Argonaut must travel to reach the distress signal is approximately 88.37 nautical miles.",
+            "options": [
+                "45 nautical miles",
+                "60 nautical miles",
+                "88.37 nautical miles",
+                "105.37 nautical miles"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given that \\(0 < \\theta < \\frac{\\pi}{2}\\), and if  \\(\\frac{2 \\sec^2 \\theta}{\\tan^2 \\theta - 1} = k\\csc^2 \\theta\\), find the value of \\(k\\).",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem**\n\nWe are given an equation involving reciprocal trigonometric functions (secant, cosecant, and tangent) and an unknown constant, *k*. Our goal is to manipulate the equation to solve for the value of *k*. \n\n**Solution**\n\n1. **Simplify using Trigonometric Identities:**\n\n   * Recall the following Pythagorean Identity:  \\(1 + \\tan^2 \\theta = \\sec^2 \\theta\\) \n   * Substitute this into the denominator of the left side of the equation:\n\n     \\(\\frac{2 \\sec^2 \\theta}{\\tan^2 \\theta - 1} = \\frac{2 \\sec^2 \\theta}{(\\sec^2 \\theta - 1) - 1} = \\frac{2 \\sec^2 \\theta}{\\sec^2 \\theta - 2}\\)\n\n2. **Express in terms of sine and cosine:**\n\n   * Rewrite secant and cosecant in terms of sine and cosine:\n\n     \\(\\frac{2 (\\frac{1}{\\cos^2 \\theta})}{(\\frac{1}{\\cos^2 \\theta}) - 2} = k (\\frac{1}{\\sin^2 \\theta})\\)\n\n3. **Simplify the equation:**\n\n   * Multiply both sides by  \\(\\cos^2 \\theta (\\sin^2 \\theta)\\):\n\n     \\(2 \\sin^2 \\theta = k (1 - 2\\cos^2 \\theta)\\)\n\n4. **Apply the Double Angle Identity:**\n\n   * Recall the double angle identity: \\(\\cos 2\\theta = 1 - 2\\sin^2 \\theta\\)\n   * Substitute this into the right side of the equation:\n\n     \\(2 \\sin^2 \\theta = k \\cos 2\\theta\\)\n\n5. **Solve for k:**\n\n   * Since \\(0 < \\theta < \\frac{\\pi}{2}\\), both \\(\\sin^2 \\theta\\) and \\(\\cos 2\\theta\\) are non-zero.\n   * Divide both sides by \\(\\sin^2 \\theta \\cos 2\\theta\\): \n\n     \\(\\frac{2}{\\cos 2\\theta} = \\frac{k}{\\sin^2 \\theta}\\) \n\n   *  To make the left side resemble the right side (to directly compare and find *k*), recall the identity: \\(\\sin^2 \\theta = \\frac{1 - \\cos 2\\theta}{2}\\)\n\n   * Substitute this into the equation:\n\n      \\(\\frac{2}{\\cos 2\\theta} = \\frac{2k}{1 - \\cos 2\\theta}\\)\n\n   *  Comparing both sides, we can see that  *k* must equal 1. \n\n**Therefore, the value of k is 1.**",
+            "options": [
+                "0",
+                "2",
+                "1/2",
+                "1"
+            ],
+            "correct_option": "D"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Trigonometry",
+    "exam_id": 10,
+    "order": 18
+}

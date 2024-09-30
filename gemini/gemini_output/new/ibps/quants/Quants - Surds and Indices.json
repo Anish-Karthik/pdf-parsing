@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "**context**: A square tile has a side length of \u221a3 inches.\n**question**: What is the area of the tile, expressed in its simplest form?\n",
+            "difficulty": "easy",
+            "reasoning": "The question belongs to the subtopic 'Combining Surds and Indices in Expressions' about 'Quants - Surds and Indices'.\n\nTo find the area of a square, we square its side length. Therefore, the area of the tile is (\u221a3)^2 square inches.\n\nSquaring a square root simply removes the radical, leaving us with:\n\n(\u221a3)^2 = 3\n\nTherefore, the area of the tile is 3 square inches.",
+            "options": [
+                "1 square inch",
+                "\u221a3 square inches",
+                "3 square inches",
+                "9 square inches"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Which of the following numbers can be classified as a surd?\n\n(a) \u221a9\n(b) \u221a17\n(c) 2.5\n(d) \u00b3\u221a27",
+            "difficulty": "easy",
+            "reasoning": "**Understanding Surds:**\nA surd is an irrational root of a number. This means it cannot be expressed as a simple fraction of two integers.\n\n**Analyzing the Options:**\n* (a) \u221a9 = 3, which is a rational number (can be expressed as 3/1).\n* (b) \u221a17 cannot be simplified into a whole number or a fraction, making it a surd.\n* (c) 2.5 is a terminating decimal, making it a rational number.\n* (d) \u00b3\u221a27 = 3, which is a rational number.\n\n**Therefore, the correct answer is (b) \u221a17.**",
+            "options": [
+                "\u221a9",
+                "\u221a17",
+                "2.5",
+                "\u00b3\u221a27"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Difficulty:** Easy (5/10)\n\n**Question Type:** Solve the Inequality\n\n**Content:**  For what values of *x* is the following inequality true?\n\n 2^(x + 1) < 16",
+            "difficulty": "easy",
+            "reasoning": "**1. Simplify to a Common Base:**\n\n   The inequality involves powers of 2.  We can express 16 as 2^4:\n\n   2^(x + 1) < 2^4 \n\n**2.  Solve for x:**\n\n   When the bases are the same in an inequality, we can simply compare the exponents:\n\n   x + 1 < 4\n\n**3. Isolate x:**\n\n   Subtract 1 from both sides:\n\n   x < 3\n\n**Therefore, the solution to the inequality is x < 3.**",
+            "options": [
+                "x > 3",
+                "x < 3",
+                "x = 3",
+                "x \u2265 3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "If \u221ax - 2 = 4, find the value of x.",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Equations Involving Surds' subtopic of 'Quants - Surds and Indices'. It involves solving a simple linear equation where one of the terms is a surd.\n\nHere's how to solve it step-by-step:\n\n1. **Isolate the surd term:** Begin by isolating the surd term on one side of the equation. Add 2 to both sides of the equation:\n\u221ax - 2 + 2 = 4 + 2\nThis simplifies to:\n\u221ax = 6\n\n2. **Square both sides:** To get rid of the square root, square both sides of the equation:\n(\u221ax)\u00b2 = 6\u00b2 \n\n3. **Simplify:** This gives you:\nx = 36\n\nTherefore, the value of x is 36. Each step in the solution is valid and logically follows from the previous step. The calculations are also correct.",
+            "options": [
+                "36",
+                "16",
+                "8",
+                "20"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Calculate the value of the following expression: (\u221a9)^0 + (5^2)^0 ",
+            "difficulty": "easy",
+            "reasoning": "This question tests the fundamental understanding of the zero index rule, which states that any non-zero number raised to the power of zero equals 1. \n\nLet's break down the solution step-by-step:\n\n1. **Simplify inside the parentheses:** \n   - (\u221a9) = 3 (The square root of 9 is 3)\n   - (5^2) = 25 (5 squared is 25)\n\n2. **Apply the zero index rule:**\n   - 3^0 = 1 (Any non-zero number raised to the power of zero equals 1)\n   - 25^0 = 1 (Any non-zero number raised to the power of zero equals 1)\n\n3. **Add the results:**\n   - 1 + 1 = 2\n\nTherefore, the value of the expression (\u221a9)^0 + (5^2)^0 is 2.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Simplify the following expression: \u221a12 + \u221a27 - \u221a3",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Simplifying Surds: Addition, Subtraction, Multiplication, and Division' subtopic of 'Quants - Surds and Indices'.\n\nHere's how to solve the expression step-by-step:\n\n1. **Factor out perfect squares:**\n   - \u221a12 can be simplified as \u221a(4 x 3) = 2\u221a3\n   - \u221a27 can be simplified as \u221a(9 x 3) = 3\u221a3\n\n2. **Substitute the simplified surds back into the expression:**\n    2\u221a3 + 3\u221a3 - \u221a3\n\n3. **Combine like terms:**\n    (2 + 3 - 1)\u221a3 = 4\u221a3\n\nTherefore, the simplified form of \u221a12 + \u221a27 - \u221a3 is 4\u221a3.",
+            "options": [
+                "2\u221a3",
+                "3\u221a3",
+                "4\u221a3",
+                "5\u221a3"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**question**: For what values of 'x' is the inequality \u221a(2x - 6) < 4 true?\n**context**: None\n**answerChoices**: \n  - x < 11\n  - 3 \u2264 x < 11\n  - x \u2265 3\n  - x > 11\n**difficulty**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Eliminate the Square Root:**\n   To solve for 'x', we need to get rid of the square root. We square both sides of the inequality:\n   (\u221a(2x - 6))\u00b2 < 4\u00b2\n   This simplifies to:\n   2x - 6 < 16\n\n**2. Isolate 'x':**\n   Now we solve for 'x' like a regular linear inequality. Add 6 to both sides:\n   2x < 22\n\n**3. Solve for 'x':**\n   Divide both sides by 2:\n   x < 11\n\n**4. Consider the Domain:**\n   Remember, the value under a square root cannot be negative. So, 2x - 6 must be greater than or equal to zero:\n   2x - 6 \u2265 0\n   2x \u2265 6\n   x \u2265 3\n\n**5. Combine the Solutions:**\n   We need to satisfy both x < 11 and x \u2265 3.  Therefore, the solution is:\n   3 \u2264 x < 11\n\n**Correct Answer:** 3 \u2264 x < 11",
+            "options": [
+                "x < 11",
+                "3 \u2264 x < 11",
+                "x \u2265 3",
+                "x > 11"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**[Difficulty Level: Easy 5/10]**\n\nRationalize the denominator of the following expression:\n\n$\\frac{3}{2\\sqrt{5}}$",
+            "difficulty": "medium",
+            "reasoning": "This question belongs to the subtopic 'Rationalizing the Denominator' within 'Quants - Surds and Indices'.\n\nHere's how to solve it step-by-step:\n\n1. **Identify the denominator:** The denominator is $2\\sqrt{5}$.\n\n2. **Multiply by the conjugate:** The conjugate of the denominator is itself, $2\\sqrt{5}$. We multiply both the numerator and denominator by this conjugate.\n\n$\\frac{3}{2\\sqrt{5}} * \\frac{2\\sqrt{5}}{2\\sqrt{5}}$\n\n3. **Simplify:**\n\n$\\frac{3 * 2\\sqrt{5}}{(2\\sqrt{5})^2}$ = $\\frac{6\\sqrt{5}}{20}$ = $\\frac{3\\sqrt{5}}{10}$\n\nTherefore, the simplified expression with a rationalized denominator is $\\frac{3\\sqrt{5}}{10}$. ",
+            "options": [
+                "6\u221a5/20",
+                "3\u221a5/10",
+                "3/10",
+                "\u221a5/10"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "What is the value of  (2^3 * 2^2) / 2^4 ?",
+            "difficulty": "medium",
+            "reasoning": "This question checks the understanding of basic laws of indices, particularly the rule that states 'when multiplying exponents with the same base, you add the powers, and when dividing, you subtract the powers'.\n\nHere's how to solve it step-by-step:\n\n1. **Simplify the numerator:** 2^3 * 2^2 = 2^(3+2) = 2^5\n2. **Apply division rule:**  2^5 / 2^4 = 2^(5-4) = 2^1\n3. **Calculate the result:** 2^1 = 2 \n\nTherefore, the value of (2^3 * 2^2) / 2^4 is 2.",
+            "options": [
+                "16",
+                "4",
+                "2",
+                "8"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Simplify the following expression: (a^4 * b^2) / (a^2 * b)",
+            "difficulty": "medium",
+            "reasoning": "This question tests the basic understanding of dividing exponents with the same base. Here's how to solve it:\n\n**Step 1: Recall the rule of dividing exponents**\nWhen dividing exponents with the same base, you subtract the powers. This means:\n x^m / x^n = x^(m-n)\n\n**Step 2: Apply the rule to the given expression**\n*  (a^4 / a^2) = a^(4-2) = a^2\n*  (b^2 / b^1) = b^(2-1) = b^1 = b\n\n**Step 3: Combine the simplified terms**\nThe simplified expression becomes: a^2 * b\n\nTherefore, the simplified form of (a^4 * b^2) / (a^2 * b) is a^2 * b.",
+            "options": [
+                "a^6 * b^3",
+                "a^2 * b",
+                "a^2 * b^2",
+                "a * b"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Simplify the following expression: \u221a8 + \u221a18 - \u221a32",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Simplifying Surds: Addition, Subtraction, Multiplication, and Division' as it requires simplifying an expression involving the addition and subtraction of surds. \n\nHere's how to solve it step-by-step:\n\n1. **Factor out perfect squares:**\n   * \u221a8 = \u221a(4 * 2) = 2\u221a2\n   * \u221a18 = \u221a(9 * 2) = 3\u221a2\n   * \u221a32 = \u221a(16 * 2) = 4\u221a2\n\n2. **Substitute the simplified surds back into the expression:**\n   2\u221a2 + 3\u221a2 - 4\u221a2\n\n3. **Combine like terms:**\n   (2 + 3 - 4)\u221a2 = \u221a2\n\nTherefore, the simplified form of the expression \u221a8 + \u221a18 - \u221a32 is \u221a2.",
+            "options": [
+                "\u221a2",
+                "2\u221a2",
+                "3\u221a2",
+                "4\u221a2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Solve for *x*: \u221a(x + 3) = 2",
+            "difficulty": "medium",
+            "reasoning": "This question tests the fundamental understanding of solving equations involving surds. It's designed as an 'easy' level question because it requires a direct application of squaring both sides to eliminate the square root and then solving a simple linear equation.\n\nHere's a step-by-step solution:\n\n1. **Square both sides:** To get rid of the square root, square both sides of the equation:\n   (\u221a(x + 3))^2 = 2^2\n\n2. **Simplify:** This simplifies to:\n   x + 3 = 4\n\n3. **Isolate *x*:**  Subtract 3 from both sides:\n   x + 3 - 3 = 4 - 3\n\n4. **Solution:** This gives us the solution:\n   x = 1\n\nTherefore, the correct answer is x = 1. This solution can be verified by substituting it back into the original equation: \u221a(1 + 3) = \u221a4 = 2, which confirms its validity.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**statement**: Express the following expression in radical form and simplify:  `(125/64)^(1/3)`\n**instruction**: Express the given expression in radical form and find its simplest form.\n",
+            "difficulty": "medium",
+            "reasoning": "This question deals with understanding fractional indices and their relationship with radicals. Here's how to solve it:\n\n**1. Understanding Fractional Indices:**\n\n   A fractional index like 1/3 represents a cube root. So, `x^(1/3)` is the same as  `\u221bx`.\n\n**2. Applying to the problem:**\n\n   *  `(125/64)^(1/3)` can be rewritten as `\u221b(125/64)`\n\n**3. Simplifying the Radical:**\n\n   *  Find the cube roots of the numerator and the denominator separately.\n   *  `\u221b125 = 5` (since 5 * 5 * 5 = 125) \n   *  `\u221b64 = 4`  (since 4 * 4 * 4 = 64)\n\n**4. Final Result:**\n\n   Therefore,  `(125/64)^(1/3)` simplified to radical form is `\u221b(125/64)` which further simplifies to  `5/4`.",
+            "options": [
+                "1/4",
+                "5/4",
+                "4/5",
+                "15/16"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Simplify the following expression: \\(\\frac{\\sqrt[3]{8a^6b^9}}{\\sqrt{ab}}\\)",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic 'Combining Surds and Indices in Expressions' as it requires simplifying an expression containing both surds (radicals) and indices (powers). \n\nHere's a step-by-step solution:\n\n1. **Simplify the cube root:**\n   \\(\\sqrt[3]{8a^6b^9} = 2a^2b^3\\)  (Since  2 x 2 x 2 = 8, a^2 x a^2 x a^2 = a^6, and b^3 x b^3 x b^3 = b^9)\n\n2. **Rewrite the square root using fractional indices:**\n   \\(\\sqrt{ab} = a^{\\frac{1}{2}}b^{\\frac{1}{2}}\\)\n\n3. **Substitute the simplified terms back into the original expression:**\n   \\(\\frac{2a^2b^3}{a^{\\frac{1}{2}}b^{\\frac{1}{2}}}\\)\n\n4. **Apply the rule of indices for division:**\n   When dividing terms with the same base, subtract the powers: \\(\\frac{x^m}{x^n} = x^{m-n}\\)\n   Therefore, the expression becomes:\n   \\(2a^{2-\\frac{1}{2}}b^{3-\\frac{1}{2}}\\)\n\n5. **Simplify the indices:**\n   \\(2a^{\\frac{3}{2}}b^{\\frac{5}{2}}\\)\n\nTherefore, the simplified form of the expression is \\(2a^{\\frac{3}{2}}b^{\\frac{5}{2}}\\).",
+            "options": [
+                "Combining Surds and Indices in Expressions",
+                "Simplifying Square Roots",
+                "Fractional Exponents",
+                "Algebraic Manipulation"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "For what values of 'x' does the following inequality hold true?\n \u221a(3x + 4) - \u221a(x + 1) > 1",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning: \n\nThis question falls under the topic of 'Inequalities Involving Surds' and is rated as 'easy' (6/10) as it involves a common manipulation technique with surds and inequalities. Here's a step-by-step solution: \n\n**1. Isolate one surd:**\nBegin by isolating one of the surds on one side of the inequality:\n\n\u221a(3x + 4) > 1 + \u221a(x + 1)\n\n**2. Square both sides:**\nSquare both sides of the inequality to get rid of the square roots. Be cautious as squaring can introduce extraneous solutions:\n\n (\u221a(3x + 4))^2 > (1 + \u221a(x + 1))^2 \n\nSimplifying both sides:\n\n 3x + 4 > 1 + 2\u221a(x + 1) + (x + 1)\n\n**3. Rearrange and simplify:**\nCombine like terms and simplify the inequality:\n\n2x + 2 > 2\u221a(x + 1)\n\nx + 1 > \u221a(x + 1)\n\n**4. Square both sides again:**\nSquare both sides again to eliminate the remaining square root:\n\n(x + 1)^2 > (\u221a(x + 1))^2\n\nx^2 + 2x + 1 > x + 1\n\n**5. Solve the quadratic inequality:**\nMove all terms to one side and solve the resulting quadratic inequality: \n\nx^2 + x > 0\n\nx(x + 1) > 0\n\nThis inequality holds true when x < -1 or x > 0.\n\n**6. Check for extraneous solutions:**\nSince we squared the inequality twice, we need to check if our solutions hold true in the original inequality.  \n\n* For x < -1: The terms inside the square roots become negative, which is not defined for real numbers. Hence, x < -1 is not a valid solution.\n* For x > 0: The inequality holds true.\n\n**Therefore, the solution to the inequality \u221a(3x + 4) - \u221a(x + 1) > 1 is x > 0.** ",
+            "options": [
+                "x < -1",
+                "x > 0",
+                "x = 0",
+                "-1 < x < 0"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A physics student is working with an equation representing the wavelength of a sound wave. The equation includes the term 5^(-2). To simplify their calculations, they need to express this term with a positive index. What is the equivalent expression with a positive index?",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the student's understanding of negative indices and how to convert them to their equivalent forms with positive indices. It does not involve complex calculations or multiple terms, making it a medium-difficulty question. \n\n**Solution:**\n\n1. **Recall the rule of negative indices:** a^(-n) = 1/a^n. This rule states that any number raised to a negative power is equal to its reciprocal raised to the positive of that power.\n2. **Apply the rule to the given term:** 5^(-2) = 1/5^2.\n3. **Calculate the simplified expression:** 1/5^2 = 1/25. \n\nTherefore, the equivalent expression of 5^(-2) with a positive index is 1/25.",
+            "options": [
+                "1/25",
+                "5^2",
+                "25",
+                "1/5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A right-angled triangle has a hypotenuse of length (\u221a5 + \u221a2) cm and one leg of length (\u221a5 - \u221a2) cm.\n**required_information**: Determine the length of the other leg of the triangle, expressing your answer in the simplest radical form.\n**context/background**: Remember the Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides. You might need to use the difference of squares factorization: (a + b)(a - b) = a\u00b2 - b\u00b2 to simplify your answer.\n**difficulty_level**: Medium (5/10)\n",
+            "difficulty": "medium",
+            "reasoning": "Let the length of the other leg be 'x' cm.\n\nApplying the Pythagorean theorem:\n\n(\u221a5 + \u221a2)\u00b2 = (\u221a5 - \u221a2)\u00b2 + x\u00b2\n\nExpanding the squares:\n\n5 + 2\u221a10 + 2 = 5 - 2\u221a10 + 2 + x\u00b2\n\nSimplifying the equation:\n\n4\u221a10 = x\u00b2\n\nTaking the square root of both sides:\n\nx = \u221a(4\u221a10) = 2\u221a\u221a10 = **2\u221a(10)** cm\n\nTherefore, the length of the other leg is 2\u221a(10) cm.",
+            "options": [
+                "\u221a10 cm",
+                "2\u221a10 cm",
+                "4\u221a10 cm",
+                "\u221a40 cm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A square inscribed in a circle has its area numerically equal to the circumference of the circle.  Find the area of a square that circumscribes this circle. Express your answer in terms of \u03c0.",
+            "difficulty": "medium",
+            "reasoning": "Let the side length of the inscribed square be 's'.  \n\n1. **Area of the inscribed square:** s\u00b2 \n2. **Diameter of the circle:**  The diameter of the circle is equal to the diagonal of the square, which is s\u221a2.\n3. **Circumference of the circle:** \u03c0 * diameter = \u03c0s\u221a2\n\n**Setting up the equation:** \nWe are given that the area of the square equals the circumference of the circle:  s\u00b2 = \u03c0s\u221a2 \n\n**Solving for s:**\n* Divide both sides by s (assuming s is not zero): s = \u03c0\u221a2\n\n**Finding the side length of the circumscribing square:**\n* The diameter of the circle is equal to the side length of the circumscribing square. Therefore, the side length of the circumscribing square is s\u221a2 = (\u03c0\u221a2)(\u221a2) = 2\u03c0\n\n**Calculating the area of the circumscribing square:**\n* Area = (side length)\u00b2 = (2\u03c0)\u00b2 = 4\u03c0\u00b2\n\nTherefore, the area of the square circumscribing the circle is **4\u03c0\u00b2**.",
+            "options": [
+                "2\u03c0\u00b2",
+                "\u03c0\u00b2",
+                "4\u03c0\u00b2",
+                "8\u03c0\u00b2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Solve for *x* in the equation:  2<sup>3*x* - 4</sup> = 16<sup>*x* + 3</sup>.",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to solve equations involving indices by applying the rule that states if a<sup>m</sup> = a<sup>n</sup>, then m=n. Here's a step-by-step solution:\n\n1. **Express both sides of the equation with the same base:**\n   Since 16 is a power of 2 (16 = 2<sup>4</sup>), we can rewrite the equation as:\n   2<sup>3*x* - 4</sup> = (2<sup>4</sup>)<sup>(*x* + 3)</sup>\n\n2. **Simplify using the power of a power rule:**\n   The power of a power rule states that (a<sup>m</sup>)<sup>n</sup> = a<sup>m*n</sup>. Applying this, we get:\n   2<sup>3*x* - 4</sup> = 2<sup>4(*x* + 3)</sup>\n   2<sup>3*x* - 4</sup> = 2<sup>4*x* + 12</sup>\n\n3. **Equate the exponents:**\n   Since the bases are now the same, we can equate the exponents:\n   3*x* - 4 = 4*x* + 12\n\n4. **Solve for *x*:**\n   Subtracting 3*x* from both sides and subtracting 12 from both sides gives:\n   -16 = *x*\n\nTherefore, the solution is *x* = -16.",
+            "options": [
+                "-16",
+                "16",
+                "-8",
+                "8"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Given that \u221a12 = 2\u221a3 and \u221a54 = 3\u221a6, simplify the following expression and express your answer in the simplest radical form:\n\n(\u221a12 + \u221a54) / \u221a6",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Definition and Basic Properties of Surds' topic as it requires understanding and applying the following:\n\n* **Simplifying Surds:** Recognizing that a surd can be simplified if it contains a factor that is a perfect square.\n* **Rationalizing the Denominator:**  Manipulating the expression to remove the surd from the denominator.\n\n**Step-by-Step Solution:**\n\n1. **Substitute the simplified forms:**\n   (\u221a12 + \u221a54) / \u221a6  =  (2\u221a3 + 3\u221a6) / \u221a6\n\n2. **Factor out \u221a6 from the numerator:**\n   (2\u221a3 + 3\u221a6) / \u221a6 =  \u221a6(2\u221a(3/6) + 3) / \u221a6\n\n3. **Simplify and cancel \u221a6:**\n   \u221a6(2\u221a(1/2) + 3) / \u221a6 = 2\u221a(1/2) + 3\n\n4. **Rationalize the denominator:**\n   2\u221a(1/2) + 3 = (2\u221a(1/2) * \u221a2) / (\u221a2 * \u221a2) = (2\u221a1) / 2 = 1 + 3 = 4 \n\nTherefore, the simplified form of the expression is 4.",
+            "options": [
+                "Simplifying Surds",
+                "Rationalizing the Denominator",
+                "Adding and Subtracting Surds",
+                "Multiplying and Dividing Surds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Evaluation\n**Difficulty**: Medium (5/10)\n**Context**: A physicist is working with a formula involving the energy levels of an electron in an atom. The energy level is represented by the expression below.\n**Expression**: ((8\u221a2)^(1/3) + \u221a3) / (\u221a18 - 4\u221a2)\n**Instruction**: Evaluate the expression to find the simplified energy level.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Combining Surds and Indices in Expressions' subtopic within 'Quants - Surds and Indices'. It tests the student's ability to:\n\n1. **Simplify Surds:** Students must simplify surds like \u221a18 and 8\u221a2.\n2. **Apply Fractional Indices:** Students need to understand and apply the fractional index in (8\u221a2)^(1/3).\n3. **Rationalize Denominators:** The expression requires rationalizing the denominator to arrive at a simplified form.\n\n**Step-by-Step Solution:**\n\n1. **Simplify Surds:**\n   * \u221a18 can be simplified to \u221a(9*2) = 3\u221a2\n   * 8\u221a2 can be written as 2^3 * \u221a2 = (2\u221a2)^3\n\n2. **Apply Fractional Index:**\n   * ((2\u221a2)^3)^(1/3) = 2\u221a2\n\n3. **Substitute Simplified Terms:** The expression now becomes: (2\u221a2 + \u221a3) / (3\u221a2 - 4\u221a2)\n\n4. **Simplify Further:**\n   * Denominator simplifies to -\u221a2\n   * The expression becomes: (2\u221a2 + \u221a3) / (-\u221a2)\n\n5. **Rationalize the Denominator:**\n   * Multiply both numerator and denominator by \u221a2\n   * This gives: [(2\u221a2 + \u221a3) * \u221a2] / (-\u221a2 * \u221a2) = (4 + \u221a6) / -2\n\n6. **Final Simplified Form:**\n   * The simplified energy level is:  **-2 - (\u221a6)/2**",
+            "options": [
+                "Surds and Indices",
+                "Algebra",
+                "Calculus",
+                "Geometry"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Solve for the value of *x* in the following equation:\n\n (5^x / \u221a5) * (\u221a5)^0 = 1",
+            "difficulty": "medium",
+            "reasoning": "This question dives into the significance of the zero index within the context of surds and indices. Here's a step-by-step breakdown of the solution:\n\n**1. Understanding the Zero Index:**\n   Any non-zero number raised to the power of zero equals 1. Therefore, (\u221a5)^0 = 1.\n\n**2. Simplifying the Equation:**\n   The equation now becomes: (5^x / \u221a5) * 1 = 1\n\n**3. Isolating the Variable:**\n   Multiply both sides of the equation by \u221a5:  5^x = \u221a5\n\n**4. Expressing Surds as Indices:**\n   Rewrite \u221a5 as 5^(1/2): 5^x = 5^(1/2)\n\n**5. Solving for *x*:**\n   Since the bases are the same, we can equate the exponents: x = 1/2\n\n**Therefore, the value of *x* is 1/2.**",
+            "options": [
+                "1/2",
+                "1",
+                "\u221a5",
+                "5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "For what values of 'x' is the following inequality true?  \\(2^{3x - 1} > 8^{x - 2}\\)",
+            "difficulty": "medium",
+            "reasoning": "To solve this inequality, we need to follow these steps:\n\n**1. Express both sides with the same base:**\n\nSince 8 is a power of 2 (8 = 2\u00b3), we can rewrite the inequality as:\n\n\\(2^{3x - 1} > (2^3)^{x - 2}\\)\n\n**2. Simplify using exponent rules:**\n\nUsing the rule \\((a^m)^n = a^{m*n}\\), we get:\n\n\\(2^{3x - 1} > 2^{3(x - 2)}\\)\n\n\\(2^{3x - 1} > 2^{3x - 6}\\)\n\n**3. Solve the inequality:**\n\nSince the bases are now the same, we can simply compare the exponents.  For the inequality to hold true, the exponent on the left side must be greater than the exponent on the right side:\n\n\\(3x - 1 > 3x - 6\\)\n\nSimplifying, we get:\n\n\\(-1 > -6\\)\n\nThis inequality is always true, regardless of the value of 'x'.\n\n**Therefore, the solution to the inequality is all real numbers.**",
+            "options": [
+                "x < -5",
+                "x > 1",
+                "All real numbers",
+                "No solution"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Simplify the following expression and express the answer as a whole number:\n\n**(\u221a27)^0  +  (1/\u221a9)^0  -  (5\u221a2)^0**",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the student's understanding of the zero index property within the context of surds and fractions. \n\n**Understanding the Zero Index Property:**\n\nAny non-zero number raised to the power of zero is always equal to 1. This is a fundamental rule in exponents.\n\n**Applying the Property:**\n\n1. **(\u221a27)^0 = 1**  Since any non-zero base raised to the power zero equals 1.\n\n2. **(1/\u221a9)^0 = 1**  Similarly, any fraction where the numerator is not zero, raised to the power zero equals 1.\n\n3. **(5\u221a2)^0 = 1**  Again, any non-zero base (in this case, a product), raised to the power zero equals 1.\n\n**Simplifying the Expression:**\n\nThe entire expression simplifies to:\n\n1 + 1 - 1 = 1\n\n**Therefore, the answer is 1.**",
+            "options": [
+                "0",
+                "2",
+                "3",
+                "1"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A square has an area of  `x^(-6)` square units. Express the length of one side of the square in terms of `x`, simplifying the expression to remove negative indices.",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of negative indices and their application in a geometrical context. Here's how to solve it:\n\n**1. Recall the area of a square:**\n\n   The area of a square is calculated by squaring the length of one side:  Area = side * side = side\u00b2\n\n**2. Set up the equation:**\n\n   We're given the area (`x^(-6)`) and need to find the side length. Let the side length be represented by 's'. So, we have:\n\n   s\u00b2 = x^(-6)\n\n**3. Solve for the side length:**\n\n   To find 's', we need to take the square root of both sides of the equation:\n\n   \u221a(s\u00b2) = \u221a(x^(-6))\n\n**4. Apply the rule of negative indices:**\n\n   Recall that x^(-n) = 1/x^n. Applying this to our equation:\n\n   s = \u221a(1/x^6)\n\n**5. Simplify:**\n\n   The square root of (1/x^6) is 1/x\u00b3. \n\n   Therefore, s = 1/x\u00b3\n\n**Therefore, the length of one side of the square is 1/x\u00b3 units.**",
+            "options": [
+                "x^3",
+                "1/x^3",
+                "x^(-3)",
+                "x^6"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A square-shaped solar panel is designed to have an area of  \u221a27 square meters. \n**Task**: Calculate the side length of the solar panel, expressing your answer in the form a\u221ab meters, where a and b are integers, and b is as small as possible.\n**Answer Format**: a\u221ab meters\n",
+            "difficulty": "medium",
+            "reasoning": "This question combines the concepts of square roots, area calculation, and simplifying surds, making it a medium-difficulty problem. Here's how to solve it:\n\n**1. Understanding Area:** \nThe area of a square is calculated by squaring its side length: Area = side * side\n\n**2. Setting up the Equation:**\nWe're given the area (\u221a27 square meters) and need to find the side. Let 's' represent the side length:\ns * s = \u221a27\n\n**3. Solving for the Side Length:**\n* To isolate 's', take the square root of both sides of the equation:\n   \u221a(s * s) = \u221a(\u221a27)\n* This simplifies to:\n   s = \u221a(\u221a27)\n* Simplify the nested radical.  Since 27 = 3 * 3 * 3, we have:\n   s = \u221a(\u221a(3 * 3 * 3))\n   s = \u221a(3\u221a3) \n* Further simplification is not possible as \u221a3 is a surd.\n\n**4. Final Answer:**\nThe side length of the solar panel is \u221a(3\u221a3) meters. ",
+            "options": [
+                "3\u221a3 meters",
+                "\u221a3 meters",
+                "\u221a9 meters",
+                "\u221a27 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Simplify the following expression, expressing your answer in the simplest radical form:\n**(\u221a8 + \u221a18) / (\u221a2 - \u221a32)**",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Simplifying Surds: Addition, Subtraction, Multiplication, and Division' within 'Quants - Surds and Indices'. It involves simplifying an expression with surds using a combination of operations, making it a medium-difficulty (6/10) problem. \n\nHere's a step-by-step solution:\n\n1. **Simplify the radicals in the expression:**\n   * \u221a8 can be simplified to 2\u221a2 (since 8 = 2 x 2 x 2)\n   * \u221a18 can be simplified to 3\u221a2 (since 18 = 2 x 3 x 3)\n   * \u221a32 can be simplified to 4\u221a2 (since 32 = 2 x 2 x 2 x 2 x 2)\n\n   The expression now becomes: **(2\u221a2 + 3\u221a2) / (\u221a2 - 4\u221a2)**\n\n2. **Combine like terms in the numerator and denominator:**\n   * The numerator simplifies to 5\u221a2\n   * The denominator simplifies to -3\u221a2\n\n   The expression now becomes: **5\u221a2 / -3\u221a2**\n\n3. **Cancel out the common factor (\u221a2):**\n   This leaves us with **-5/3**\n\nTherefore, the simplified form of the expression is **-5/3**.",
+            "options": [
+                "-5/3",
+                "5/3",
+                "\u221a2",
+                "3\u221a2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A gardener is designing a triangular flowerbed with side lengths \u221ax, \u221a(x + 7), and 5 meters.  For the triangle to exist, the sum of the lengths of any two sides must be greater than the length of the third side. Find the range of possible values of x that satisfy this condition.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Inequalities Involving Surds' as it combines the concepts of triangle inequality and surds.\n\nHere's how to solve it:\n\n**1. Formulate the Inequalities:**\n\nWe need to consider all three possible combinations of sides:\n\n* \u221ax + \u221a(x + 7) > 5\n* \u221ax + 5 > \u221a(x + 7)\n* \u221a(x + 7) + 5 > \u221ax\n\n**2. Solve each inequality:**\n\nLet's solve the first inequality as an example:\n\n* \u221ax + \u221a(x + 7) > 5\n* \u221a(x + 7) > 5 - \u221ax \n* Square both sides: x + 7 > 25 - 10\u221ax + x\n* 10\u221ax > 18\n* \u221ax > 1.8\n* x > 3.24\n\nSimilarly, solve the other two inequalities. \n\n**3. Combine the solutions:**\n\nAfter solving all three inequalities, you'll get a range of possible values for x. Find the intersection of these ranges \u2013 this represents the values of x that satisfy all three inequalities simultaneously.\n\n**4. Final Answer:**\n\nThe range of possible values for x will be the intersection of the solutions from the three inequalities. ",
+            "options": [
+                "x > 3.24",
+                "x > 7",
+                "x > 18",
+                "x > 25"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Solve for *x*, given the equation: \u221a(2x + 9) - \u221a(x - 4) = 3",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question falls under the topic of 'Equations Involving Surds' and sits at a medium (6/10) difficulty level. Here's why:\n\n**Complexity:** The equation involves two separate surds with different terms under the radical sign, and they are connected through subtraction. Solving this requires manipulating the equation to isolate and square the surds, which adds a layer of complexity. \n\n**Steps to Solve:**\n\n1. **Isolate one surd:** Begin by isolating one of the surds. In this case, adding \u221a(x - 4) to both sides gives: \u221a(2x + 9) = \u221a(x - 4) + 3\n\n2. **Square both sides:**  Squaring both sides of the equation helps eliminate one radical: (\u221a(2x + 9))^2 = (\u221a(x - 4) + 3)^2. This simplifies to: 2x + 9 = x - 4 + 6\u221a(x - 4) + 9\n\n3. **Simplify and Isolate the remaining surd:** Combine like terms and isolate the remaining surd term: x = 6\u221a(x - 4)\n\n4. **Square both sides again:**  Square both sides again to get rid of the remaining radical: x^2 = 36(x - 4)\n\n5. **Solve the quadratic equation:** Expand and rearrange into a standard quadratic equation: x^2 - 36x + 144 = 0.  \n\n6. **Factor the quadratic:** The equation factors nicely to (x - 12)(x - 12) = 0\n\n7. **Solve for x:** This gives a single solution: x = 12\n\n8. **Check for extraneous solutions:** It is crucial to check if the solution is valid by substituting it back into the original equation. In this case, x = 12 satisfies the original equation.\n\n**Therefore, the solution to the equation \u221a(2x + 9) - \u221a(x - 4) = 3 is x = 12.**",
+            "options": [
+                "Easy",
+                "Hard",
+                "Medium",
+                "Very Hard"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A physicist is working with a formula to calculate the resonant frequency of an electrical circuit. The formula involves the expression (3\u221a2 + \u221a5) / (\u221a2 - \u221a5). \n**task**: To simplify the calculations and express the result in a more manageable form, the physicist wants to rationalize the denominator of the expression. Determine the simplified form of the expression after rationalizing the denominator.\n**answer_options**: \n  - (11 + 5\u221a10) / 3\n  - (-11 - 5\u221a10) / 3\n  - (11 - 5\u221a10) / 3\n  - (-11 + 5\u221a10) / 3\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Conjugates of Surds and Their Applications' subtopic of 'Quants - Surds and Indices'. To solve this, we use the concept of conjugates. The conjugate of (\u221a2 - \u221a5) is (\u221a2 + \u221a5). \n\n**Step 1: Multiply numerator and denominator by the conjugate**\n\n[(3\u221a2 + \u221a5) / (\u221a2 - \u221a5)] * [(\u221a2 + \u221a5) / (\u221a2 + \u221a5)]\n\n**Step 2: Expand using FOIL (First, Outer, Inner, Last) method**\n\nNumerator: (3\u221a2)(\u221a2) + (3\u221a2)(\u221a5) + (\u221a5)(\u221a2) + (\u221a5)(\u221a5)\nDenominator: (\u221a2)(\u221a2) + (\u221a2)(\u221a5) - (\u221a5)(\u221a2) - (\u221a5)(\u221a5)\n\n**Step 3: Simplify**\n\nNumerator: 6 + 3\u221a10 + \u221a10 + 5\nDenominator: 2 - 5\n\n**Step 4: Combine like terms**\n\n(11 + 4\u221a10) / -3\n\n**Step 5: Simplify by multiplying numerator and denominator by -1**\n\n(-11 - 4\u221a10) / 3\n\nTherefore, the simplified form of the expression after rationalizing the denominator is **(-11 - 4\u221a10) / 3**. ",
+            "options": [
+                "(11 + 5\u221a10) / 3",
+                "(-11 - 5\u221a10) / 3",
+                "(11 - 5\u221a10) / 3",
+                "(-11 + 5\u221a10) / 3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Word Problem\n**Difficulty Level**: 8/10\n**Problem Statement**: A renowned architect is designing a peculiar art installation. The structure consists of a series of interconnected squares, each built upon the previous one. The side length of the smallest square is \u221a2 meters. Each subsequent square's side length is \u221a2 times the side length of the square before it. If the architect wants the perimeter of the fifth square to be constructed from a single piece of material, what is the minimum length of material the architect needs to order?\n**Instructions**:  Calculate the minimum length of material required, expressing your answer in the simplest radical form.\n",
+            "difficulty": "hard",
+            "reasoning": "This question falls under 'Advanced Applications and Problem-Solving Techniques' as it requires applying knowledge of surds and indices within a geometric context and utilizing problem-solving skills to determine the solution. \n\nHere's how to solve the problem:\n\n1. **Identify the pattern:** The side lengths of the squares form a geometric sequence: \u221a2, (\u221a2)(\u221a2) = 2, 2\u221a2, 4, 4\u221a2...\n\n2. **Find the side length of the fifth square:** The fifth term in the sequence is 4\u221a2 meters.\n\n3. **Calculate the perimeter:** The perimeter of a square is four times its side length.  Therefore, the perimeter of the fifth square is 4 * 4\u221a2 = 16\u221a2 meters.\n\nTherefore, the architect needs to order at least **16\u221a2 meters** of material.",
+            "options": [
+                "16\u221a2 meters",
+                "8\u221a2 meters",
+                "32\u221a2 meters",
+                "16 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Consider the equation: (2\u221a2)^x / (\u221a2)^(3x-2) = 1.  Solve for the value of 'x', ensuring you clearly demonstrate your understanding of the zero index rule.",
+            "difficulty": "hard",
+            "reasoning": "This question dives into the zero index rule within the context of surds and indices. Here's a step-by-step solution: \n\n**1. Simplify using index laws:**\n*  (a^m)^n = a^(m*n)\n*  a^m / a^n = a^(m-n)\n\nApplying these to our equation: \n(2^x * (\u221a2)^x) / (\u221a2)^(3x-2) = 1  \n(2^x * 2^(x/2)) / 2^((3x-2)/2) = 1\n2^(x + x/2 - (3x-2)/2) = 1\n\n**2.  Applying the zero index rule:**\nFor the equation to hold true, the exponent must equal zero because any non-zero number raised to the power of zero equals 1.\n\nTherefore: x + x/2 - (3x-2)/2 = 0\n\n**3. Solving for 'x':**\nMultiplying both sides by 2: 2x + x - (3x - 2) = 0\nSimplifying: 2x + x - 3x + 2 = 0\n2 = 0 (This is not possible)\n\n**Conclusion:**\nThere is no solution for 'x' that would make the equation true. This highlights a crucial point \u2013 the zero index rule is powerful, but it doesn't guarantee a solution in every case.  This problem requires careful application of index laws and an understanding of the zero index rule to arrive at the correct, albeit perhaps unexpected, conclusion.",
+            "options": [
+                "1",
+                "2",
+                "0",
+                "No solution"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "If  \\( a^{\\frac{1}{3}} = x^{\\frac{1}{2}} \\) and \\( b^{\\frac{1}{3}} = y^{\\frac{1}{2}} \\), what is the simplified expression for: \\( (a^2b)^{\\frac{2}{3}} \\) in terms of 'x' and 'y'? ",
+            "difficulty": "hard",
+            "reasoning": "This question tests a deep understanding of the fundamental laws of indices, particularly around fractional exponents and substitutions. Here's how to solve it:\n\n**Step 1: Express 'a' and 'b' in terms of 'x' and 'y'.** \n\nFrom the given equations:\n*  \\( a^{\\frac{1}{3}} = x^{\\frac{1}{2}}  \\Rightarrow  a = x^{\\frac{3}{2}} \\)  (by cubing both sides)\n*  \\( b^{\\frac{1}{3}} = y^{\\frac{1}{2}}  \\Rightarrow  b = y^{\\frac{3}{2}} \\)  (by cubing both sides)\n\n**Step 2: Substitute the values of 'a' and 'b' into the target expression.**\n\nWe need to simplify: \\( (a^2b)^{\\frac{2}{3}} \\)\n\nSubstitute the values we just derived:\n\\( =  ((x^{\\frac{3}{2}})^2 * y^{\\frac{3}{2}})^{\\frac{2}{3}} \\)\n\n**Step 3: Apply the laws of indices to simplify.**\n\n*  \\( (x^{\\frac{3}{2}})^2 = x^{\\frac{3}{2} * 2} = x^3 \\)\n*  \\( (x^3 * y^{\\frac{3}{2}})^{\\frac{2}{3}} = x^{3 * \\frac{2}{3}} * y^{\\frac{3}{2} * \\frac{2}{3}}  \\) \n*  \\( = x^2 * y \\)\n\nTherefore, the simplified expression for \\( (a^2b)^{\\frac{2}{3}} \\) in terms of 'x' and 'y' is **x\u00b2y**.",
+            "options": [
+                "x^2y",
+                "x^3y",
+                "x^2y^2",
+                "x^3y^2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Given the equation \\(\\sqrt{3x + 1} - \\sqrt{x - 1} = \\sqrt{2x}\\), find the sum of all possible real values of \\(x\\) that satisfy the equation.",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThis question is considered tricky due to the multiple steps involved in solving the equation and the potential to miss solutions if not approached carefully.\n\n**1. Isolate a Square Root:**\nBegin by isolating one of the square roots.  It's strategically easier to isolate the most complex radical, so we'll move \\(\\sqrt{x-1}\\) to the right side:\n\n\\(\\sqrt{3x + 1} = \\sqrt{2x} + \\sqrt{x - 1}\\)\n\n**2. Square Both Sides:**\nSquaring both sides helps to eliminate one square root:\n\n\\((\\sqrt{3x + 1})^2 = (\\sqrt{2x} + \\sqrt{x - 1})^2\\)\n\n\\(3x + 1 = 2x + 2\\sqrt{2x(x-1)} + (x - 1)\\)\n\n**3. Simplify and Isolate the Remaining Square Root:**\nSimplify the equation and isolate the remaining square root term:\n\n\\(3x + 1 = 3x + 2\\sqrt{2x(x-1)} - 1\\)\n\\(2 = 2\\sqrt{2x(x-1)}\\)\n\\(1 = \\sqrt{2x(x-1)}\\)\n\n**4. Square Both Sides Again:**\nSquare both sides again to get rid of the remaining square root:\n\n\\(1^2 = (\\sqrt{2x(x-1)})^2\\)\n\\(1 = 2x^2 - 2x\\)\n\n**5. Solve the Quadratic Equation:**\nRearrange the equation into a standard quadratic equation and solve for *x*:\n\n\\(2x^2 - 2x - 1 = 0\\)\n\nUsing the quadratic formula,  \\(x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\), where *a* = 2, *b* = -2, and *c* = -1:\n\n\\(x = \\dfrac{2 \\pm \\sqrt{(-2)^2 - 4 \\cdot 2 \\cdot -1}}{2 \\cdot 2}\\)\n\\(x = \\dfrac{2 \\pm \\sqrt{12}}{4}\\)\n\\(x = \\dfrac{2 \\pm 2\\sqrt{3}}{4}\\)\n\\(x = \\dfrac{1 \\pm \\sqrt{3}}{2}\\)\n\n**6. Check for Extraneous Solutions:**\nIt's crucial to check both solutions back into the original equation to ensure they don't lead to any undefined expressions (like the square root of a negative number). After checking, we find that both solutions are valid.\n\n**7. Find the Sum of Solutions:**\nThe two possible values of \\(x\\) are \\(\\dfrac{1 + \\sqrt{3}}{2}\\) and \\(\\dfrac{1 - \\sqrt{3}}{2}\\). Their sum is:\n\n\\(\\dfrac{1 + \\sqrt{3}}{2} + \\dfrac{1 - \\sqrt{3}}{2} = \\dfrac{1 + \\sqrt{3} + 1 - \\sqrt{3}}{2} = \\dfrac{2}{2} = 1\\)\n\nTherefore, the sum of all possible real values of \\(x\\) that satisfy the equation is **1**.",
+            "options": [
+                "1",
+                "2",
+                "0",
+                "\u221a3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Simplify the following surd expression and present the answer in its simplest form:\n\n[ (\u221a50 - \u221a18) / (\u221a27 + \u221a12) ] * \u221a6 ",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Simplifying Surds: Addition, Subtraction, Multiplication, and Division' subtopic within 'Quants - Surds and Indices'. It involves multiple operations and requires a good understanding of simplifying and rationalizing surds. \n\nHere's a step-by-step solution:\n\n1. **Simplify the surds inside the parentheses:**\n   * \u221a50 = \u221a(25 * 2) = 5\u221a2\n   * \u221a18 = \u221a(9 * 2) = 3\u221a2\n   * \u221a27 = \u221a(9 * 3) = 3\u221a3\n   * \u221a12 = \u221a(4 * 3) = 2\u221a3\n\n   The expression now becomes: [ (5\u221a2 - 3\u221a2) / (3\u221a3 + 2\u221a3) ] * \u221a6\n\n2. **Simplify the numerator and denominator:**\n   * (5\u221a2 - 3\u221a2) = 2\u221a2\n   * (3\u221a3 + 2\u221a3) = 5\u221a3\n\n   The expression is now: (2\u221a2 / 5\u221a3) * \u221a6\n\n3. **Multiply the numerators and the denominators:**\n   * (2\u221a2 * \u221a6) = 2\u221a12 = 2\u221a(4 * 3) = 4\u221a3\n\n   The expression becomes: (4\u221a3) / (5\u221a3)\n\n4. **Simplify by canceling out the common factor (\u221a3):**\n    * (4\u221a3) / (5\u221a3) = 4/5\n\nTherefore, the simplified form of the given surd expression is **4/5**.",
+            "options": [
+                "Hard",
+                "Medium",
+                "Easy",
+                "Very Hard"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: Solve for *x* in the following equation, expressing your answer in its simplest surd form where applicable:\n**equation**: (8x^\\frac{3}{2}) ^ \\frac{-2}{3} = \\frac{\u221a(16x)}{x^{-1}}\n**instructions**: Show all working steps clearly, demonstrating your understanding of fractional indices and surd manipulation.\n**difficulty_level**: 8/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's deep understanding of fractional indices and surds, requiring multiple steps and careful manipulation to arrive at the solution. Here's a step-by-step solution: \n\n**1. Simplify the left-hand side of the equation:**\n\n* Apply the rule (a^m)^n = a^(m*n) to the outermost exponent: (8x^(3/2))^(-2/3) becomes 8^(-2/3) * x^((3/2)*(-2/3))\n* Simplify the exponents: 8^(-2/3) * x^(-1)\n* Express 8 as 2^3 and simplify: (2^3)^(-2/3) becomes 2^(3*(-2/3)) = 2^(-2) = 1/4\n* The left-hand side now becomes: (1/4) * x^(-1)\n\n**2. Simplify the right-hand side of the equation:**\n\n* Express \u221a(16x) as (16x)^(1/2)\n* Further simplify: 16^(1/2) * x^(1/2) = 4x^(1/2)\n* Rewrite x^(-1) in the denominator as x in the numerator: 4x^(1/2) * x\n* Combine the x terms: 4x^(3/2)\n\n**3. Equate the simplified sides and solve for *x*:**\n\n* We now have: (1/4) * x^(-1) = 4x^(3/2)\n* Multiply both sides by 4: x^(-1) = 16x^(3/2)\n* Divide both sides by x^(3/2): x^(-1 - 3/2) = 16\n* Simplify the exponent: x^(-5/2) = 16\n* Express 16 as 2^4: x^(-5/2) = 2^4\n* To equate the bases, raise both sides to the power of -2/5: [x^(-5/2)]^(-2/5) = [2^4]^(-2/5)\n* This gives us x = 2^(-8/5)\n\n**4. Express the answer in its simplest surd form:**\n\n* 2^(-8/5) can be rewritten as 1/(2^(8/5))\n* Further simplification: 1/(\u221a(2^8))^(1/5) = 1/(\u221a(256))^(1/5)\n* Therefore, x = 1/\u221a2\n\n**Therefore, the solution to the equation is x = 1/\u221a2.**",
+            "options": [
+                "1/\u221a2",
+                "\u221a2",
+                "2/\u221a2",
+                "\u221a2/2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Let \\(a\\) and \\(b\\) be positive real numbers such that \\(a \\times b\\) is rational. Prove that \\(a\\) and \\(b\\) are either both rational or both irrational.",
+            "difficulty": "medium",
+            "reasoning": "This question delves into the fundamental properties of surds and their relationship with rational numbers, demanding a proof rather than a direct calculation. \n\n**Proof:**\n\nWe will use proof by contradiction. \n\n1. **Assumption:** Let's assume the opposite of what we want to prove. Assume that  \\(a\\) is rational and \\(b\\) is irrational (or vice-versa, the logic is the same). \n\n2. **Rational Number Definition:** A rational number can be expressed as \\(\\frac{p}{q}\\) where \\(p\\) and \\(q\\) are integers and  \\(q \\neq 0\\). Since \\(a\\) is rational, let \\(a = \\frac{m}{n}\\), where \\(m\\) and \\(n\\) are integers and \\(n \\neq 0\\).\n\n3. **Product:** We are given that \\(a \\times b\\) is rational. Let's express this product: \n   \\(a \\times b = \\frac{m}{n} \\times b = \\frac{m \\times b}{n}\\)\n\n4. **Contradiction:** For \\( \\frac{m \\times b}{n}\\) to be rational, \\(m \\times b\\) must be an integer (since \\(n\\) is an integer). However, we assumed that \\(b\\) is irrational.  The product of a non-zero integer (\\(m\\)) and an irrational number (\\(b\\)) will always be irrational. This contradicts our given information that \\(a \\times b\\) is rational. \n\n5. **Conclusion:** Therefore, our initial assumption that \\(a\\) is rational and \\(b\\) is irrational must be false.  We can conclude that if the product of two positive real numbers is rational, then the numbers themselves must be either both rational or both irrational. ",
+            "options": [
+                "Both Rational",
+                "Both Irrational",
+                "One Rational, One Irrational",
+                "Cannot Be Determined"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A mischievous mathematician named Algebro has a secret code hidden within a seemingly nonsensical expression:  \\(\\frac{3 + \\sqrt{7}}{2 - \\sqrt{5}} - \\frac{5}{\\sqrt{7} + \\sqrt{5}} + \\frac{2}{2 + \\sqrt{5}}\\). To crack the code, you need to simplify this expression by rationalizing the denominators and combining terms. The final simplified form of the expression represents Algebro's secret code. What is Algebro's secret code?",
+            "difficulty": "medium",
+            "reasoning": "This question dives into the application of conjugates for simplifying complex expressions involving surds. Let's break down the solution step-by-step:\n\n**Step 1: Rationalizing the Denominators**\n\n* For each fraction, multiply both the numerator and denominator by the conjugate of the denominator.\n\n  *  \\(\\frac{3 + \\sqrt{7}}{2 - \\sqrt{5}} \\times \\frac{2 + \\sqrt{5}}{2 + \\sqrt{5}} = \\frac{(3 + \\sqrt{7})(2 + \\sqrt{5})}{(2)^2 - (\\sqrt{5})^2} = \\frac{6 + 3\\sqrt{5} + 2\\sqrt{7} + \\sqrt{35}}{-1} = -6 - 3\\sqrt{5} - 2\\sqrt{7} - \\sqrt{35}\\)\n\n  * \\(\\frac{5}{\\sqrt{7} + \\sqrt{5}} \\times \\frac{\\sqrt{7} - \\sqrt{5}}{\\sqrt{7} - \\sqrt{5}} = \\frac{5(\\sqrt{7} - \\sqrt{5})}{(\\sqrt{7})^2 - (\\sqrt{5})^2} = \\frac{5\\sqrt{7} - 5\\sqrt{5}}{2} \\)\n\n  * \\(\\frac{2}{2 + \\sqrt{5}} \\times \\frac{2 - \\sqrt{5}}{2 - \\sqrt{5}} = \\frac{2(2 - \\sqrt{5})}{(2)^2 - (\\sqrt{5})^2} = \\frac{4 - 2\\sqrt{5}}{-1} = -4 + 2\\sqrt{5}\\)\n\n**Step 2: Combining the Terms**\n\n* Now, substitute the rationalized fractions back into the original expression:\n\n\\((-6 - 3\\sqrt{5} - 2\\sqrt{7} - \\sqrt{35}) - (\\frac{5\\sqrt{7} - 5\\sqrt{5}}{2}) + (-4 + 2\\sqrt{5})\\)\n\n* Combine like terms:\n\n\\(-6 - 4 - 2\\sqrt{7} - \\frac{5\\sqrt{7}}{2}  - 3\\sqrt{5} + \\frac{5\\sqrt{5}}{2} + 2\\sqrt{5} - \\sqrt{35}\\)\n\n\\(-10 - \\frac{9\\sqrt{7}}{2} + \\frac{\\sqrt{5}}{2} - \\sqrt{35}\\)\n\nTherefore, Algebro's secret code is \\(-10 - \\frac{9\\sqrt{7}}{2} + \\frac{\\sqrt{5}}{2} - \\sqrt{35}\\).",
+            "options": [
+                "-10 - 9\u221a7/2 + \u221a5/2 - \u221a35",
+                "-10 - 9\u221a7/2 - \u221a5/2 - \u221a35",
+                "-10 - 9\u221a7/2 + \u221a5/2 + \u221a35",
+                "-10 + 9\u221a7/2 + \u221a5/2 - \u221a35"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Surds and Indices",
+    "exam_id": 10,
+    "order": 16
+}

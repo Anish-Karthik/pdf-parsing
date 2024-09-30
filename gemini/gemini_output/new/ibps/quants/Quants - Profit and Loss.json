@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "Emily bought a beautiful hand-painted scarf for $15 to give to her friend for her birthday.  Her friend loved it so much that she offered to buy it from Emily.  Emily decided to sell the scarf to her friend for $20. What is Emily's profit percentage?",
+            "difficulty": "easy",
+            "reasoning": "**1. Determine the profit:**\n\n   Profit = Selling Price - Cost Price\n   Profit = $20 - $15 = $5\n\n**2. Calculate the profit percentage:**\n\n   Profit Percentage = (Profit / Cost Price) * 100%\n   Profit Percentage = ($5 / $15) * 100%\n   Profit Percentage = 33.33%\n\n**Therefore, Emily made a profit of 33.33% by selling the scarf to her friend.**",
+            "options": [
+                "15%",
+                "20%",
+                "33.33%",
+                "50%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**difficultyLevel**: 5/10\n**context**: A fruit vendor buys 50 mangoes for \u20b9200. He sells all the mangoes at \u20b95 per mango.\n**question**: What is his profit percentage?\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the total selling price:**\n\n* He sells each mango for \u20b95, and he has 50 mangoes. \n* Total selling price = 50 * \u20b95 = \u20b9250\n\n**2. Calculate the profit:**\n\n* Profit = Total selling price - Total cost price\n* Profit = \u20b9250 - \u20b9200 = \u20b950\n\n**3. Calculate the profit percentage:**\n\n* Profit percentage = (Profit / Total cost price) * 100\n* Profit percentage = (\u20b950 / \u20b9200) * 100 = 25%\n\n**Therefore, the fruit vendor's profit percentage is 25%.**",
+            "options": [
+                "15%",
+                "20%",
+                "25%",
+                "30%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Type**: Word Problem\n**Difficulty Level**: Easy (5/10)\n**Concept**: Overheads and Additional Expenses\n**Scenario**: Liam runs a lemonade stand. He sells each glass of lemonade for $2.  He spends $30 on lemons and sugar each week. His stand rent is $10 per week.\n**Question**: If Liam sells 25 glasses of lemonade this week, what is his total profit?\n",
+            "difficulty": "easy",
+            "reasoning": "Here's how to calculate Liam's profit step-by-step:\n\n**1. Calculate Total Revenue:**\n* Price per glass: $2\n* Glasses sold: 25\n* Total Revenue: $2 * 25 = $50\n\n**2. Calculate Total Expenses:**\n* Ingredient cost: $30\n* Stand rent: $10\n* Total Expenses: $30 + $10 = $40\n\n**3. Calculate Profit:**\n* Profit = Total Revenue - Total Expenses\n* Profit = $50 - $40 = $10\n\n**Therefore, Liam's total profit for the week is $10.**",
+            "options": [
+                "$10",
+                "$40",
+                "$50",
+                "$60"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A coffee vendor blends two types of coffee beans, one costing $12 per pound and the other costing $18 per pound. He wants to create a blend priced at $15 per pound. What percentage of the cheaper coffee beans should he use to achieve this target price?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Understand the Concept of Mixtures**\n\nWhen mixing two items of different prices to achieve a target price, we're essentially looking for a weighted average. \n\n**2.  Set Up a Simple Equation**\n\nLet 'x' be the percentage of the cheaper coffee ($12/pound) used in the blend. Since the blend is made of two types of coffee, the percentage of the more expensive coffee ($18/pound) will be (100-x). \n\nThe equation for the weighted average is:\n\n(0.01x * $12) + (0.01(100-x) * $18) = $15\n\n**3. Solve for x**\n\n* 0.12x + 1.8 - 0.18x = $15\n* -0.06x = -0.3\n* x = 50\n\n**Therefore, the vendor should use 50% of the cheaper coffee beans to achieve his desired blend price of $15 per pound.**",
+            "options": [
+                "25%",
+                "50%",
+                "75%",
+                "100%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A shopkeeper sells rice using a faulty balance that shows 900 grams instead of 1 kilogram. He claims to sell the rice at cost price but still makes a profit. If he buys rice at Rs. 40 per kg, what is his actual profit percentage per kg?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Calculate the selling price per 900 grams:**\n\n* The shopkeeper sells 900 grams of rice, but the balance shows it as 1 kg (1000 grams).\n* Since he claims to sell at cost price, he sells these 900 grams for the price of 1 kg, which is Rs. 40.\n\n**2. Calculate the cost price per 900 grams:**\n\n* We need to find out how much the shopkeeper actually paid for 900 grams of rice.\n* Cost price of 1000 grams (1 kg) = Rs. 40\n* Cost price of 1 gram = Rs. 40 / 1000 = Rs. 0.04\n* Cost price of 900 grams = Rs. 0.04 * 900 = Rs. 36\n\n**3. Calculate the profit:**\n\n* Profit = Selling price - Cost price\n* Profit = Rs. 40 - Rs. 36 = Rs. 4\n\n**4. Calculate the profit percentage:**\n\n* Profit percentage = (Profit / Cost price) * 100\n* Profit percentage = (Rs. 4 / Rs. 36) * 100 = 11.11%\n\n**Therefore, the shopkeeper's actual profit percentage per kg is 11.11%.**",
+            "options": [
+                "11.11%",
+                "10%",
+                "12.5%",
+                "15%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A fruit vendor buys mangoes at \u20b940 per dozen and sells them at \u20b960 per dozen. If the vendor decides to reduce the selling price by 10%, what will be his new profit percentage?",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the initial profit:**\n\n* Cost price per dozen = \u20b940\n* Selling price per dozen = \u20b960\n* Profit per dozen = \u20b960 - \u20b940 = \u20b920\n\n**2. Calculate the initial profit percentage:**\n\n* Profit percentage = (Profit / Cost Price) * 100\n* Profit percentage = (\u20b920 / \u20b940) * 100 = 50%\n\n**3. Calculate the new selling price:**\n\n* Reduction in selling price = 10% of \u20b960 = (10/100) * \u20b960 = \u20b96\n* New selling price = \u20b960 - \u20b96 = \u20b954\n\n**4. Calculate the new profit:**\n\n* New profit per dozen = \u20b954 - \u20b940 = \u20b914\n\n**5. Calculate the new profit percentage:**\n\n* New profit percentage = (New Profit / Cost Price) * 100\n* New profit percentage = (\u20b914 / \u20b940) * 100 = 35%\n\nTherefore, the fruit vendor's new profit percentage after reducing the selling price will be 35%. ",
+            "options": [
+                "25%",
+                "30%",
+                "35%",
+                "40%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A furniture store sells a sofa set for \u20b950,000. To make it easier for customers to purchase, they offer an installment plan.\n**Information**: \n  **Selling price**: \u20b950,000\n  **Down payment**: \u20b910,000\n  **Number of installments**: 4\n  **Installment amount**: \u20b912,000\n**Question**: Does the furniture store make a profit or loss with this installment plan? If they make a profit, calculate the amount.\n",
+            "difficulty": "easy",
+            "reasoning": "**Explanation**: To determine if the store makes a profit, we need to compare the total amount received through installments with the selling price minus the down payment.\n**Steps**: \n  - Step 1: Calculate the total amount received from installments: 4 installments * \u20b912,000/installment = \u20b948,000\n  - Step 2: Calculate the remaining amount after the down payment: \u20b950,000 (selling price) - \u20b910,000 (down payment) = \u20b940,000\n  - Step 3: Compare the total installment amount with the remaining amount: \u20b948,000 (installments) - \u20b940,000 (remaining) = \u20b98,000\n  - Step 4: Since the total installment amount is greater than the remaining amount, the store makes a profit of \u20b98,000.\n",
+            "options": [
+                "Loss of \u20b98,000",
+                "Profit of \u20b910,000",
+                "No profit, no loss",
+                "Profit of \u20b98,000"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A fruit vendor buys apples and oranges in bulk to sell at a local market. The table below shows the cost price, selling price, and the number of each fruit he purchased:\n**data**: \n  **type**: table\n  **content**: \n    **headers**: \n      - Fruit\n      - Cost Price per Unit\n      - Selling Price per Unit\n      - Quantity Purchased\n    **rows**: \n      - \n        - Apples\n        - $0.50\n        - $0.75\n        - 200\n      - \n        - Oranges\n        - $0.40\n        - $0.60\n        - 150\n**question**: Calculate the vendor's total profit from selling all the apples and oranges.\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the profit per apple:**\n* Selling price per apple - Cost price per apple = Profit per apple\n* $0.75 - $0.50 = $0.25\n\n**2. Calculate the total profit from apples:**\n* Profit per apple * Number of apples sold = Total profit from apples\n* $0.25 * 200 = $50\n\n**3. Calculate the profit per orange:**\n* Selling price per orange - Cost price per orange = Profit per orange\n* $0.60 - $0.40 = $0.20\n\n**4. Calculate the total profit from oranges:**\n* Profit per orange * Number of oranges sold = Total profit from oranges\n* $0.20 * 150 = $30\n\n**5. Calculate the total profit:**\n* Total profit from apples + Total profit from oranges = Total profit\n* $50 + $30 = $80\n\n**Therefore, the vendor's total profit from selling all the apples and oranges is $80.**",
+            "options": [
+                "$40",
+                "$60",
+                "$80",
+                "$100"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Ram and Shyam started a food stall business. Ram invested \u20b930,000 and Shyam invested \u20b920,000. They agreed to share profits based on their investment ratio. At the end of the month, they made a profit of \u20b910,000. What is Ram's share of the profit?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Calculate the Investment Ratio:**\n* Ram's investment: \u20b930,000\n* Shyam's investment: \u20b920,000\n* Ratio of investment (Ram : Shyam) = 30,000 : 20,000 = 3:2\n\n**2. Determine Ram's Share:**\n* Total ratio parts = 3 + 2 = 5\n* Ram's share = (Ram's ratio / Total ratio) * Total profit\n* Ram's share = (3/5) * \u20b910,000 = \u20b96,000\n\n**Therefore, Ram's share of the profit is \u20b96,000.**",
+            "options": [
+                "\u20b94,000",
+                "\u20b95,000",
+                "\u20b96,000",
+                "\u20b97,000"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A baker made 20 cakes for a bake sale.  She spent \u20b9400 on ingredients.\n**question**: If she sells each cake for \u20b930, what will her profit be?\n",
+            "difficulty": "medium",
+            "reasoning": "This question belongs to the subtopic 'Basic Concepts: Cost Price, Selling Price, Profit, Loss' about 'Quants - Profit and Loss'. It tests the student's ability to calculate profit based on cost price and selling price.\n\nHere's how to solve it step-by-step:\n\n1. **Calculate Total Revenue:** The baker sells 20 cakes at \u20b930 each, so her total revenue is 20 * \u20b930 = \u20b9600.\n\n2. **Calculate Profit:** Profit is calculated by subtracting the cost price from the selling price. In this case, her profit is \u20b9600 (revenue) - \u20b9400 (cost) = \u20b9200. \n\nTherefore, the baker's profit is \u20b9200.",
+            "options": [
+                "\u20b9100",
+                "\u20b9200",
+                "\u20b9300",
+                "\u20b9400"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bookstore is having a sale on its novels. A novel originally costs $10. The store offers a discount of 10%, followed by another discount of 10% on the new price. What is the final selling price of the novel?",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Successive Discounts' about 'Quants - Profit and Loss'.\n\nHere's how to solve the problem step-by-step:\n\n**Step 1: Calculate the first discount.** \n* Discount amount = (10/100) * $10 = $1\n* Price after the first discount = $10 - $1 = $9\n\n**Step 2: Calculate the second discount.**\n* Discount amount = (10/100) * $9 = $0.90\n* Price after the second discount = $9 - $0.90 = $8.10\n\nTherefore, the final selling price of the novel is $8.10.",
+            "options": [
+                "$8.00",
+                "$8.10",
+                "$8.20",
+                "$9.00"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A jeweler combines two types of gold, one costing $1200 per ounce and the other costing $900 per ounce. He mixes them in a ratio of 2:1 to create a new alloy which he sells for $1100 per ounce. What is his profit percentage on the sale of this new alloy?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the cost of the mixture:**\n* Cost of 2 ounces of the first type of gold: 2 ounces * $1200/ounce = $2400\n* Cost of 1 ounce of the second type of gold: 1 ounce * $900/ounce = $900\n* Total cost of 3 ounces of the mixture: $2400 + $900 = $3300\n* Cost per ounce of the mixture: $3300 / 3 ounces = $1100/ounce\n\n**2. Calculate the profit:**\n* Selling price per ounce - Cost price per ounce = Profit per ounce\n* $1100/ounce - $1100/ounce = $0/ounce\n\n**3. Calculate the profit percentage:**\n* Profit percentage = (Profit / Cost Price) * 100%\n* Since the profit is $0, the profit percentage is 0%. \n\n**Therefore, the jeweler makes no profit on the sale of this new alloy.**",
+            "options": [
+                "10%",
+                "20%",
+                "0%",
+                "5%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: Sarah is starting a lemonade stand. She spends $10 on supplies like lemons, sugar, and cups. She sells each cup of lemonade for $1.50.\n**question**: How many cups of lemonade does Sarah need to sell to break even?\n**difficulty**: easy 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question focuses on the fundamental concept of break-even analysis. Here's how to solve it:\n\n**1. Identify the fixed costs:**\n\n   - Sarah's fixed cost is the initial $10 spent on supplies. This cost remains constant regardless of how much lemonade she sells.\n\n**2. Determine the variable cost per unit:** \n\n   - In this scenario, there isn't explicit mention of a variable cost per cup. This simplifies the problem as we can assume the cost of producing each cup is negligible after the initial $10 investment.\n\n**3. Calculate the contribution margin per unit:**\n\n   - Sarah sells each cup for $1.50, and her variable cost is negligible. Therefore, her contribution margin per cup is $1.50. \n\n**4. Calculate the break-even point:**\n\n   - The break-even point is calculated by dividing fixed costs by the contribution margin per unit.\n   - Break-even point = $10 / $1.50 per cup = 6.67 cups\n\n**5. Round up to the nearest whole number:** \n\n   - Since Sarah can't sell fractions of cups, we round 6.67 up to 7. \n\n**Therefore, Sarah needs to sell 7 cups of lemonade to break even.**",
+            "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: The following table shows the revenue and expenses of a company over a period of three years:\n**data_table**: \n  **headers**: \n    - Year\n    - Revenue (in millions)\n    - Expenses (in millions)\n  **rows**: \n    - \n      - 2020\n      - 100\n      - 80\n    - \n      - 2021\n      - 120\n      - 90\n    - \n      - 2022\n      - 150\n      - 110\n**question**: What is the average profit percentage of the company over the three years?\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the Profit for Each Year:**\n   - Profit = Revenue - Expenses\n   - 2020 Profit: 100 million - 80 million = 20 million\n   - 2021 Profit: 120 million - 90 million = 30 million\n   - 2022 Profit: 150 million - 110 million = 40 million\n\n**2. Calculate the Profit Percentage for Each Year:**\n   - Profit Percentage = (Profit / Revenue) * 100\n   - 2020 Profit Percentage: (20 million / 100 million) * 100 = 20%\n   - 2021 Profit Percentage: (30 million / 120 million) * 100 = 25%\n   - 2022 Profit Percentage: (40 million / 150 million) * 100 = 26.67% (approximately)\n\n**3. Calculate the Average Profit Percentage:**\n   - Average Profit Percentage = (Sum of Yearly Profit Percentages) / (Number of Years)\n   - Average Profit Percentage = (20% + 25% + 26.67%) / 3 = 23.89% (approximately)",
+            "options": [
+                "20.56%",
+                "22.22%",
+                "23.89%",
+                "25.67%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Topic**: Calculating Profit and Loss Percentages\n**Difficulty Level**: Easy (6/10)\n**Question Description**: \n  **Context**: A fruit vendor buys 100 oranges for \u20b9250. He sells half of them at \u20b93 per orange and the remaining half at \u20b92 per orange.\n  **Values**: \n    **Cost price**: \u20b9250\n    **Selling price of first half**: \u20b93 per orange\n    **Selling price of second half**: \u20b92 per orange\n  **Question**: Calculate the fruit vendor's overall profit or loss percentage.\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the selling price of the first half:**\n\n* He sells half the oranges, which is 100 oranges / 2 = 50 oranges.\n* The selling price of the first half is 50 oranges * \u20b93/orange = \u20b9150.\n\n**2. Calculate the selling price of the second half:**\n\n* He sells the other half, which is also 50 oranges.\n* The selling price of the second half is 50 oranges * \u20b92/orange = \u20b9100.\n\n**3. Calculate the total selling price:**\n\n* The total selling price is \u20b9150 + \u20b9100 = \u20b9250.\n\n**4. Calculate the profit or loss:**\n\n* Since the total selling price (\u20b9250) is equal to the total cost price (\u20b9250), there is no profit or loss. \n\n**5.  Profit or Loss Percentage:**\n\n*  As there's no profit or loss, the profit/loss percentage is 0%.\n\n**Therefore, the fruit vendor experiences neither a profit nor a loss, resulting in a 0% profit/loss percentage.**",
+            "options": [
+                "10%",
+                "5%",
+                "0%",
+                "2.5%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A street vendor buys 20 colorful scarves for a total of \u20b9800.  He wants to make a 25% profit on his investment. How much should he sell each scarf for to achieve his goal?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the desired profit per scarf:**\n\n*   Profit percentage = 25%\n*   Cost price per scarf = \u20b9800 / 20 scarves = \u20b940\n*   Profit per scarf = (25/100) * \u20b940 = \u20b910\n\n**2. Calculate the selling price per scarf:**\n\n*   Selling price per scarf = Cost price per scarf + Profit per scarf\n*   Selling price per scarf = \u20b940 + \u20b910 = \u20b950\n\n**Therefore, the street vendor should sell each scarf for \u20b950 to achieve his desired 25% profit margin.**",
+            "options": [
+                "\u20b940",
+                "\u20b950",
+                "\u20b960",
+                "\u20b970"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: A freelance graphic designer charges $50 per hour for their services.  They recently completed a project that took 20 hours to complete.  In addition to their hourly rate, the designer also incurred $150 in expenses for software subscriptions and stock photos used in the project.\n**Data**: \n  **Hourly Rate**: $50\n  **Project Hours**: 20 hours\n  **Additional Expenses**: $150\n**Question**: What was the designer's total profit on the project after accounting for both their hourly rate and additional expenses?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Dealing with Overheads and Additional Expenses' as it requires calculating profit while considering both direct income (hourly rate) and indirect costs (project-specific expenses). \n\nHere's the breakdown:\n\n1. **Calculate Total Earnings:** Hourly Rate * Project Hours = $50/hour * 20 hours = $1000\n2. **Calculate Total Profit:** Total Earnings - Additional Expenses = $1000 - $150 = $850 \n\nTherefore, the designer's total profit on the project was $850.",
+            "options": [
+                "$750",
+                "$850",
+                "$1000",
+                "$1150"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A furniture store owner marks up the price of a sofa by 60% to set its marked price. During a sale, he offers a discount of 20% on the marked price. If a customer buys the sofa during the sale for \u20b938,400, what was the original cost price of the sofa for the store owner?",
+            "difficulty": "medium",
+            "reasoning": "Let the original cost price of the sofa be represented by 'C'.\n\n**1. Calculate the marked price:**\n* Markup percentage = 60%\n* Markup amount = (60/100) * C = 0.6C\n* Marked price = Original cost price + Markup amount = C + 0.6C = 1.6C\n\n**2. Calculate the selling price after the discount:**\n* Discount percentage = 20%\n* Discount amount = (20/100) * 1.6C = 0.32C\n* Selling price = Marked price - Discount amount = 1.6C - 0.32C = 1.28C\n\n**3. Set up an equation and solve for the original cost price:**\n* We know the selling price is \u20b938,400. So, 1.28C = 38400\n* Divide both sides by 1.28 to find C: C = 38400 / 1.28 = \u20b930,000\n\nTherefore, the original cost price of the sofa for the store owner was \u20b930,000.",
+            "options": [
+                "\u20b938,400",
+                "\u20b930,000",
+                "\u20b946,080",
+                "\u20b925,600"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A fruit vendor buys mangoes at \u20b940 per kilogram. He wants to sell them at a profit of 25%. However, he anticipates that 10% of the mangoes might rot before he can sell them.\n**question**: To maintain his desired profit margin of 25% despite the potential wastage, at what price per kilogram should he sell the mangoes?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate the desired profit per kilogram:**\n   - Profit percentage = 25%\n   - Cost price per kg = \u20b940\n   - Desired profit per kg = (25/100) * \u20b940 = \u20b910\n\n**2. Calculate the effective cost price per kg considering wastage:**\n   - Wastage percentage = 10%\n   - This means he can only sell 90% of the mangoes.\n   - To make a profit, he needs to distribute the cost of the wasted mangoes over the mangoes he can sell.\n   - Effective cost per kg = \u20b940 / (100%-10%) = \u20b940 / 0.9 = \u20b944.44 (rounded to two decimal places)\n\n**3. Calculate the selling price per kg to maintain the desired profit margin:**\n   - Effective cost price per kg = \u20b944.44\n   - Desired profit per kg = \u20b910\n   - Selling price per kg = \u20b944.44 + \u20b910 = \u20b954.44\n\nTherefore, the fruit vendor should sell the mangoes at \u20b954.44 per kilogram to maintain his desired profit margin of 25% while accounting for potential wastage.",
+            "options": [
+                "\u20b940",
+                "\u20b944.44",
+                "\u20b950",
+                "\u20b954.44"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A fruit vendor tracks their daily sales and expenses for three popular fruits.\n**data**: \n  **type**: table\n  **content**: \n    - \n      **Fruit**: Apples\n      **Cost Price per kg (\u20b9)**: 80\n      **Selling Price per kg (\u20b9)**: 100\n      **Quantity Sold (kg)**: 20\n    - \n      **Fruit**: Bananas\n      **Cost Price per kg (\u20b9)**: 40\n      **Selling Price per kg (\u20b9)**: 50\n      **Quantity Sold (kg)**: 50\n    - \n      **Fruit**: Oranges\n      **Cost Price per kg (\u20b9)**: 60\n      **Selling Price per kg (\u20b9)**: 80\n      **Quantity Sold (kg)**: 30\n**question**: Which fruit brings in the highest profit for the vendor?\n",
+            "difficulty": "medium",
+            "reasoning": "To determine the most profitable fruit, we need to calculate the profit per fruit type. Profit is calculated by subtracting the cost price from the selling price and then multiplying by the quantity sold.\n\n**Apples:**\nProfit per kg = \u20b9100 - \u20b980 = \u20b920\nTotal Profit = \u20b920/kg * 20 kg = \u20b9400\n\n**Bananas:**\nProfit per kg = \u20b950 - \u20b940 = \u20b910\nTotal Profit = \u20b910/kg * 50 kg = \u20b9500\n\n**Oranges:**\nProfit per kg = \u20b980 - \u20b960 = \u20b920\nTotal Profit = \u20b920/kg * 30 kg = \u20b9600\n\n**Conclusion:** Oranges yield the highest profit (\u20b9600) for the vendor.",
+            "options": [
+                "Apples",
+                "Bananas",
+                "Oranges",
+                "All fruits have equal profit"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A pharmaceutical company is launching a new drug. Market research indicates that the monthly demand (D) for the drug is related to the price per unit (P) in dollars by the equation:  D = 2000 - 800 * log(P/5). The company's fixed monthly production cost is $10,000, and the variable cost per unit is $2. Determine the price per unit that the company should set to achieve a monthly profit of $15,000.",
+            "difficulty": "medium",
+            "reasoning": "**1. Define Profit:**\n\nProfit is the difference between total revenue and total cost. We can express this mathematically as:\n\nProfit = Total Revenue - Total Cost\n\n**2. Express Components in terms of Price (P) and Demand (D):**\n\n* **Total Revenue:** Price per unit (P) multiplied by the demand (D), or P * D.\n* **Total Cost:** Fixed cost plus variable cost per unit multiplied by demand, or $10,000 + $2 * D.\n\n**3. Substitute Demand Equation:**\n\nSubstitute the given demand equation (D = 2000 - 800 * log(P/5)) into the profit equation:\n\nProfit = P * (2000 - 800 * log(P/5)) - ($10,000 + $2 * (2000 - 800 * log(P/5)))\n\n**4. Set Profit and Solve for P:**\n\nSet the profit to the desired amount ($15,000) and solve the resulting equation for P:\n\n$15,000 = P * (2000 - 800 * log(P/5)) - ($10,000 + $2 * (2000 - 800 * log(P/5)))\n\nThis equation involves logarithms, making it challenging to solve directly. We can use numerical methods or graphing calculators to find the solution for P, which represents the price per unit to achieve the desired profit.\n\n**5. Solution:**\n\nUsing numerical methods, we find that the price per unit (P) that satisfies the equation is approximately $7.94.  \n\n**Therefore, the company should set the price of the drug at approximately $7.94 per unit to achieve a monthly profit of $15,000.**",
+            "options": [
+                "$7.94",
+                "$8.94",
+                "$9.94",
+                "$6.94"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "An electronics store offers a high-end gaming laptop for \u20b9120,000. A customer chooses to purchase it through an installment plan: a down payment of \u20b920,000 followed by 10 equal monthly installments. The store applies a 12% annual interest rate on the outstanding balance, calculated on a reducing balance method. If the store incurs a processing fee of \u20b91,000 for each installment plan, what is the store's net profit on this sale?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Profit/Loss in Installment Sales' subtopic within Quants - Profit and Loss. Here's how to solve it:\n\n**1. Calculate the Loan Amount:**\n   * Loan Amount = Selling Price - Down Payment = \u20b9120,000 - \u20b920,000 = \u20b9100,000\n\n**2. Calculate the Monthly Interest Rate:**\n   * Monthly Interest Rate = Annual Interest Rate / 12 = 12% / 12 = 1%\n\n**3. Calculate the Monthly Installment (EMI) using the formula for reducing balance method:**\n   * EMI = [P * R * (1+R)^N] / [(1+R)^N - 1]\n   * Where:\n      * P = Loan Amount = \u20b9100,000\n      * R = Monthly Interest Rate = 0.01 (1%)\n      * N = Number of Installments = 10\n   * EMI = [100000 * 0.01 * (1.01)^10] / [(1.01)^10 - 1] \u2248 \u20b910,558.48\n\n**4. Calculate the Total Amount Paid through Installments:**\n   * Total Installment Amount = EMI * Number of Installments = \u20b910,558.48 * 10 = \u20b9105,584.80\n\n**5. Calculate the Total Amount Received by the Store:**\n   * Total Amount Received = Down Payment + Total Installment Amount = \u20b920,000 + \u20b9105,584.80 = \u20b9125,584.80\n\n**6. Calculate the Total Processing Fee:**\n   * Total Processing Fee = Processing Fee per Installment * Number of Installments = \u20b91,000 * 10 = \u20b910,000\n\n**7. Calculate the Net Profit:**\n   * Net Profit = Total Amount Received - Cost Price - Total Processing Fee\n   * Let's assume the cost price of the laptop for the store is \u20b980,000\n   * Net Profit = \u20b9125,584.80 - \u20b980,000 - \u20b910,000 = \u20b935,584.80\n\nTherefore, the store's net profit on this sale is \u20b935,584.80.",
+            "options": [
+                "\u20b915,584.80",
+                "\u20b925,584.80",
+                "\u20b935,584.80",
+                "\u20b945,584.80"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A local artisan crafts and sells handmade wooden toys. Each toy has a variable cost of $12 to produce, including materials and labor. The artisan has fixed monthly expenses of $1,800 for rent, utilities, and marketing. If each toy is sold for $30, how many toys must the artisan sell each month to break even?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding Break-Even Point:**\n\nThe break-even point is reached when the total revenue from sales equals the total costs. In other words, it's the point where there is no profit or loss.\n\n**Formula:**\n\nBreak-Even Point (in units) = Fixed Costs / (Selling Price Per Unit - Variable Cost Per Unit)\n\n**Applying the Information:**\n\n* Fixed Costs = $1,800\n* Selling Price Per Unit = $30\n* Variable Cost Per Unit = $12\n\n**Calculations:**\n\n1. **Calculate the contribution margin per unit:** Selling price per unit - variable cost per unit = $30 - $12 = $18\n\n2. **Calculate the break-even point in units:** Fixed costs / contribution margin per unit = $1,800 / $18 = 100 units\n\n**Answer:** The artisan must sell 100 wooden toys each month to break even.",
+            "options": [
+                "100",
+                "150",
+                "200",
+                "250"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A furniture store owner marks up a sofa by 40% of its cost price. During a sale, he offers a discount of 20% on the marked price. If a customer buys the sofa during the sale, what profit percentage does the store owner make?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**1. Assume Cost Price:**\n\nLet's assume the cost price of the sofa is \u20b9100. \n\n**2. Calculate Marked Price:**\n\nThe shopkeeper marks up the sofa by 40% of the cost price, so the markup is \u20b940 (40/100 * \u20b9100). \nTherefore, the marked price becomes \u20b9140 (\u20b9100 + \u20b940).\n\n**3. Calculate Discount:**\n\nDuring the sale, he offers a 20% discount on the marked price. This means the discount is \u20b928 (20/100 * \u20b9140).\n\n**4. Calculate Selling Price:**\n\nThe selling price after the discount is \u20b9112 (\u20b9140 - \u20b928).\n\n**5. Calculate Profit:**\n\nThe profit made is \u20b912 (\u20b9112 - \u20b9100).\n\n**6. Calculate Profit Percentage:**\n\nThe profit percentage is (Profit/Cost Price) * 100 = (\u20b912/\u20b9100) * 100 = 12%.\n\n**Therefore, the store owner makes a profit of 12% on the sofa.**",
+            "options": [
+                "12%",
+                "20%",
+                "40%",
+                "60%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A street vendor buys 50 apples for \u20b9200. He has to discard 10 apples that are rotten. If he wants to make a 25% profit on his initial investment, what price should he sell each remaining apple for?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the Cost of Usable Apples:**\n   * The vendor can sell 50 apples - 10 apples = 40 apples\n   * His effective cost per usable apple is \u20b9200 / 40 apples = \u20b95 per apple\n\n**2. Calculate the Desired Profit:**\n   * He wants to make a 25% profit on his initial investment of \u20b9200.\n   * Profit = (25/100) * \u20b9200 = \u20b950\n\n**3. Calculate the Total Selling Price:**\n   * To earn the desired profit, he needs to recover his initial cost and the profit.\n   * Total Selling Price = Cost Price + Profit = \u20b9200 + \u20b950 = \u20b9250\n\n**4. Calculate the Selling Price Per Apple:**\n   * Selling Price per Apple = Total Selling Price / Number of Usable Apples\n   * Selling Price per Apple = \u20b9250 / 40 apples = \u20b96.25 per apple\n\n**Therefore, the vendor should sell each remaining apple for \u20b96.25 to achieve his desired 25% profit margin.**",
+            "options": [
+                "\u20b95.00",
+                "\u20b95.75",
+                "\u20b96.00",
+                "\u20b96.25"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A local artist creates and sells handcrafted jewelry. They sell each piece for $45. The cost of materials for each piece is $18, and the artist has monthly fixed costs of $630 for studio rent and utilities. To cover an upcoming expense, the artist wants to achieve a profit of $360 this month. How many pieces of jewelry must they sell to reach this target profit?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Breaking Even: Finding the Break-Even Point' subtopic within 'Quants - Profit and Loss'. While it asks for the number of units to achieve a target profit, it fundamentally relies on the break-even point concept.\n\nHere's how to solve it:\n\n**1. Calculate the contribution margin per unit:**\n\n   Contribution Margin per Unit = Selling Price per Unit - Variable Cost per Unit\n   Contribution Margin per Unit = $45 - $18 = $27\n\n**2. Calculate the total amount needed (fixed costs + target profit):**\n\n   Total Amount Needed = Fixed Costs + Target Profit\n   Total Amount Needed = $630 + $360 = $990\n\n**3. Calculate the number of units to be sold:**\n\n   Number of Units = Total Amount Needed / Contribution Margin per Unit\n   Number of Units = $990 / $27 = 36.67\n\nSince we cannot sell fractions of jewelry, the artist must sell **37** pieces to reach the target profit of $360.\n\n**Options:**\n\nA. 23\nB. 36\nC. 37 (Correct)\nD. 42 ",
+            "options": [
+                "23",
+                "36",
+                "37",
+                "42"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Scenario/Context**: A fruit vendor buys mangoes at Rs. 30 per dozen. He wants to sell them to make a profit of 20%. However, he realizes that 1/6 of the mangoes are rotten and cannot be sold.\n**Question**: At what price per mango should he sell the remaining mangoes to still achieve his desired profit of 20% on the entire purchase?\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the desired profit:**\n\n* Cost price of one dozen mangoes = Rs. 30\n* Desired profit percentage = 20%\n* Desired profit amount = (20/100) * 30 = Rs. 6\n\n**2. Calculate the total cost price he needs to recover:**\n\n* Total cost price = Rs. 30\n* To achieve a 20% profit, he needs to earn = Rs. 30 + Rs. 6 = Rs. 36\n\n**3. Calculate the number of sellable mangoes:**\n\n* One dozen has 12 mangoes.\n* Rotten mangoes = (1/6) * 12 = 2 mangoes\n* Number of sellable mangoes = 12 - 2 = 10 mangoes\n\n**4. Calculate the selling price per mango:**\n\n* Total selling price needed = Rs. 36\n* Number of sellable mangoes = 10\n* Selling price per mango = Rs. 36 / 10 = Rs. 3.60\n\n**Therefore, the fruit vendor must sell the remaining mangoes at Rs. 3.60 each to achieve his desired 20% profit.**",
+            "options": [
+                "Rs. 3.00",
+                "Rs. 4.00",
+                "Rs. 3.60",
+                "Rs. 4.20"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A local clothing boutique designs and sells handmade scarves.  They sell each scarf for $35. The cost of materials for each scarf is $12.  The boutique also has monthly fixed costs of $1,500, which includes rent, utilities, and salaries. Additionally, they incur a variable cost of $3 per scarf for packaging and shipping. In the month of May, the boutique sold 180 scarves.  Calculate their total profit for the month.",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate Total Revenue:**\n\n* Selling Price per Scarf: $35\n* Number of Scarves Sold: 180\n* Total Revenue = $35 * 180 = $6,300\n\n**2. Calculate Total Variable Costs:**\n\n* Variable Cost per Scarf: $12 (materials) + $3 (packaging & shipping) = $15\n* Number of Scarves Sold: 180\n* Total Variable Costs = $15 * 180 = $2,700\n\n**3. Calculate Total Costs:**\n\n* Total Fixed Costs: $1,500\n* Total Variable Costs: $2,700\n* Total Costs = $1,500 + $2,700 = $4,200 \n\n**4. Calculate Total Profit:**\n\n* Total Revenue: $6,300\n* Total Costs: $4,200\n* Total Profit = $6,300 - $4,200 = $2,100\n\n**Therefore, the boutique's total profit for May was $2,100.**",
+            "options": [
+                "$1,950",
+                "$2,100",
+                "$2,850",
+                "$3,600"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A jeweler creates a custom gold alloy by melting and combining three different gold bars. The first bar weighs 200 grams and is 18-karat gold (75% pure gold), purchased for $50 per gram. The second bar weighs 300 grams and is 14-karat gold (58.33% pure gold), bought for $40 per gram. Lastly, the third bar weighs 100 grams and is 22-karat gold (91.67% pure gold), costing $70 per gram. After combining these into a new alloy, he sells it at a price of $60 per gram. What is the jeweler's overall profit percentage?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the solution:\n\n**1. Calculate the cost of each gold bar:**\n   * Bar 1: 200 grams * $50/gram = $10000\n   * Bar 2: 300 grams * $40/gram = $12000\n   * Bar 3: 100 grams * $70/gram = $7000\n\n**2. Calculate the total cost of the gold:**\n   * Total cost: $10000 + $12000 + $7000 = $29000\n\n**3. Calculate the total weight of the new alloy:**\n   * Total weight: 200 grams + 300 grams + 100 grams = 600 grams\n\n**4. Calculate the total revenue from selling the alloy:**\n   * Total revenue: 600 grams * $60/gram = $36000\n\n**5. Calculate the profit:**\n   * Profit: $36000 - $29000 = $7000\n\n**6. Calculate the profit percentage:**\n   * Profit percentage: ($7000 / $29000) * 100% = 24.14%\n\n**Therefore, the jeweler's overall profit percentage is 24.14%.**",
+            "options": [
+                "24.14%",
+                "23.14%",
+                "25.14%",
+                "26.14%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Two partners, Priya and Amit, invest in a new venture. Priya initially contributes Rs. 75,000, while Amit contributes Rs. 45,000. After 8 months, Priya withdraws Rs. 15,000 from her investment, and simultaneously, Amit adds Rs. 9,000 to his investment.  At the end of the year, the business generates a profit of Rs. 63,000. If profits are distributed in the ratio of their average capital invested throughout the year, what is Amit's share of the profit?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate Priya's average capital:**\n\n* Priya's investment for the first 8 months: Rs. 75,000\n* Priya's investment for the remaining 4 months: Rs. (75,000 - 15,000) = Rs. 60,000\n* Priya's average capital: [(8 months * Rs. 75,000) + (4 months * Rs. 60,000)] / 12 months = Rs. 68,333.33\n\n**2. Calculate Amit's average capital:**\n\n* Amit's investment for the first 8 months: Rs. 45,000\n* Amit's investment for the remaining 4 months: Rs. (45,000 + 9,000) = Rs. 54,000\n* Amit's average capital: [(8 months * Rs. 45,000) + (4 months * Rs. 54,000)] / 12 months = Rs. 48,000\n\n**3. Determine the profit-sharing ratio:**\n\n* Priya's average capital: Rs. 68,333.33\n* Amit's average capital: Rs. 48,000\n* Ratio of Priya's capital to Amit's capital: 68,333.33 : 48,000 = 17,083.33 : 12,000 (simplified by dividing both sides by 4)\n\n**4. Calculate Amit's share of the profit:**\n\n* Total ratio parts: 17,083.33 + 12,000 = 29,083.33\n* Amit's profit share: (12,000 / 29,083.33) * Rs. 63,000 = Rs. 26,000 (approximately)\n\nTherefore, Amit receives approximately Rs. 26,000 of the profit.",
+            "options": [
+                "Rs. 26,000",
+                "Rs. 37,000",
+                "Rs. 18,000",
+                "Rs. 42,000"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A furniture store is offering a clearance sale on a luxurious sofa set originally priced at \u20b985,000. To entice buyers, they announce a two-tier discount. First, a discount of 1/5th off the original price is applied.  On the already discounted price, a further reduction of 12% is offered.  Determine the final selling price of the sofa set after both successive discounts have been applied.",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Successive Discounts' topic within 'Quants - Profit and Loss'. It's deemed tricky (8/10) due to the combination of a fractional discount and a percentage discount, requiring careful calculation across two stages.\n\nHere's a step-by-step solution:\n\n**Step 1: Calculate the first discount.**\n* 1/5th of \u20b985,000 = \u20b917,000\n\n**Step 2: Calculate the price after the first discount.**\n* Original Price - First Discount = Price after First Discount\n* \u20b985,000 - \u20b917,000 = \u20b968,000\n\n**Step 3:  Calculate the second discount.**\n* 12% of \u20b968,000 = (12/100) * \u20b968,000 = \u20b98,160 \n\n**Step 4: Calculate the final selling price.**\n* Price After First Discount - Second Discount = Final Selling Price\n* \u20b968,000 - \u20b98,160 = \u20b959,840\n\nTherefore, the final selling price of the sofa set after both discounts is \u20b959,840.",
+            "options": [
+                "\u20b959,840",
+                "\u20b968,000",
+                "\u20b985,000",
+                "\u20b976,840"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A fruit vendor buys a batch of apples. He decides to sell one-third of the apples at a 20% profit. To quickly clear his stock, he offers a 15% discount on the remaining apples. If he wants to achieve an overall profit of 10% on the entire batch, what percentage discount should he have offered on the remaining apples instead?",
+            "difficulty": "hard",
+            "reasoning": "Let's assume the vendor bought the apples for a total cost of $100 (this makes it easier to work with percentages).\n\n**Step 1: Profit from the first batch**\n* He sells 1/3 of the apples at a 20% profit, meaning he earns 20/100 * $100 = $20 profit on this portion.\n\n**Step 2:  Desired profit and the remaining apples**\n* He wants a 10% overall profit, which means he wants to earn a total of 10/100 * $100 = $10 profit.\n* Since he already made $20, he needs to make a loss of $10 on the remaining apples to reach his target profit of $10.\n\n**Step 3: Cost price of the remaining apples**\n* The cost price of the remaining 2/3 of the apples is 2/3 * $100 = $66.67 (approximately).\n\n**Step 4: Selling price with the loss**\n* To incur a loss of $10 on the remaining apples, he needs to sell them for $66.67 - $10 = $56.67\n\n**Step 5: Calculating the required discount**\n* The discount required to sell at $56.67 is calculated as (($66.67 - $56.67) / $66.67) * 100% = 15%\n\n**Final Answer:** The vendor should have offered a discount of **15%** on the remaining apples to achieve his desired profit margin.",
+            "options": [
+                "10%",
+                "15%",
+                "20%",
+                "25%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A cunning fruit vendor sets up shop, claiming to sell his exotic mangoes at a generous discount. He uses two different weighing scales, both rigged! When buying from him, he uses a scale that only weighs 800 grams for every 1 kg of mangoes. However, when he buys the mangoes from the wholesaler, he uses another scale that weighs 1200 grams for every 1 kg, paying only for the lower weight.  If he buys mangoes at Rs. 50 per kg (as per his buying scale) and sells them at Rs. 80 per kg (as per his selling scale), what is his actual profit percentage?",
+            "difficulty": "hard",
+            "reasoning": "Here's how we can solve this problem step-by-step:\n\n**1. Calculate the effective cost price per kg:**\n\n* The vendor buys 1200 grams of mangoes (actual weight) but pays only for 1000 grams as per his rigged scale. \n* Effective cost price per kg = Rs. 50 (price for 1000g) / 1.2 kg (actual weight) = Rs. 41.67 per kg (approx)\n\n**2. Calculate the effective selling price per kg:**\n\n* The vendor sells 800 grams of mangoes (actual weight) but charges for 1000 grams as per his rigged scale.\n* Effective selling price per kg = Rs. 80 (price for 1000g) / 0.8 kg (actual weight) = Rs. 100 per kg \n\n**3. Calculate the profit:**\n\n* Profit per kg = Effective selling price per kg - Effective cost price per kg\n* Profit per kg = Rs. 100 - Rs. 41.67 = Rs. 58.33 (approx)\n\n**4. Calculate the profit percentage:**\n\n* Profit percentage = (Profit per kg / Effective cost price per kg) * 100\n* Profit percentage = (Rs. 58.33 / Rs. 41.67) * 100 = 140% (approx)\n\nTherefore, the fruit vendor enjoys a whopping 140% profit by cunningly manipulating both his weighing scales.",
+            "options": [
+                "100%",
+                "120%",
+                "140%",
+                "160%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A seller purchases a product for \u20b9800.  He first increases the price by 40% to establish a marked price.  However, to attract customers, he then introduces two consecutive discounts. The first discount is 15% off the marked price. Then, on the discounted price, a second discount of 10% is applied. A customer walks in and wants to buy the product.  The seller makes a cunning proposition: the customer can choose to either have the two consecutive discounts applied or instead opt for a single equivalent discount off the marked price.  What single discount percentage, rounded to the nearest tenth of a percent, would be equivalent to the two consecutive discounts of 15% and then 10%?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the marked price:**\n   * Markup amount = 40% of \u20b9800 = (40/100) * \u20b9800 = \u20b9320\n   * Marked price = Cost price + Markup amount = \u20b9800 + \u20b9320 = \u20b91120\n\n**2. Calculate the price after the first discount:**\n   * First discount amount = 15% of \u20b91120 = (15/100) * \u20b91120 = \u20b9168\n   * Price after the first discount = Marked price - First discount amount = \u20b91120 - \u20b9168 = \u20b9952\n\n**3. Calculate the price after the second discount:**\n   * Second discount amount = 10% of \u20b9952 = (10/100) * \u20b9952 = \u20b995.20\n   * Final price = Price after first discount - Second discount amount = \u20b9952 - \u20b995.20 = \u20b9856.80\n\n**4. Calculate the total discount amount:**\n   * Total discount = Marked price - Final price = \u20b91120 - \u20b9856.80 = \u20b9263.20\n\n**5. Calculate the equivalent single discount percentage:**\n   * Equivalent discount percentage = (Total discount / Marked price) * 100% \n   * Equivalent discount percentage = (\u20b9263.20 / \u20b91120) * 100% = 23.5%\n\n**Therefore, a single discount of 23.5% would be equivalent to the two consecutive discounts of 15% and then 10%.**",
+            "options": [
+                "20.5%",
+                "22.5%",
+                "23.5%",
+                "24.5%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A high-end electronics store sells a state-of-the-art home theater system for \u20b92,00,000. A customer, enticed by the offer, chooses to purchase it through an installment plan.  The plan details are as follows:\n\n* **Down Payment:** \u20b950,000\n* **Monthly Installments:** 12 equal payments over a year\n* **Interest Rate:** 18% per annum, calculated on a reducing balance method\n\nTo make things more appealing, the store offers the customer a discounted price of \u20b91,90,000 if they choose to pay within 6 months. What is the minimum monthly payment the customer would need to make to ensure the discounted price is a better deal than the 12-month installment plan?",
+            "difficulty": "hard",
+            "reasoning": "This question dives into the complexities of installment sales with a reducing balance interest calculation. It requires a multi-step approach:\n\n**1. Calculate Total Interest for the 12-Month Plan:**\n   * Principal Loan Amount: \u20b92,00,000 - \u20b950,000 = \u20b91,50,000\n   * Since the interest is calculated monthly on a reducing balance, it's difficult to calculate directly. We can approximate by calculating the average principal over the year. \n   * Assuming a linear reduction, the average principal is (\u20b91,50,000 + \u20b90) / 2 = \u20b975,000\n   * Approximate annual interest: \u20b975,000 * 18/100 = \u20b913,500\n   * Total amount payable in 12 months: \u20b91,50,000 + \u20b913,500 = \u20b91,63,500\n\n**2. Calculate Monthly Payment for the 12-Month Plan:**\n   * \u20b91,63,500 / 12 = \u20b913,625 per month\n\n**3.  Determine the Required Payments for the Discounted Price:**\n    * Amount payable in 6 months to avail the discount: \u20b91,90,000 - \u20b950,000 = \u20b91,40,000\n    * Required monthly payment for the discount: \u20b91,40,000 / 6 = \u20b923,333.33\n\n**4. Compare and Analyze:**\n    * The customer needs to pay \u20b923,333.33 per month for 6 months to benefit from the discounted price.\n    * This amount is significantly higher than the \u20b913,625 monthly payment for the 12-month plan.\n\n**Therefore, the minimum monthly payment required to make the discounted price a better option is \u20b923,333.33.** This question is tricky because it requires understanding reducing balance interest, comparing two different payment plans, and making a sound financial decision.",
+            "options": [
+                "\u20b923,333.33",
+                "\u20b913,625",
+                "\u20b91,90,000",
+                "\u20b91,40,000"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A, B, and C form a partnership with profit-sharing ratios of 2:3:5 respectively. A initially invests $10,000.  After 4 months, B joins, contributing capital in proportion to A's initial investment and their profit-sharing ratio.  Two months later, C joins, investing an amount such that his capital contribution represents the same proportion of the total capital at that point as his profit share.  If at the end of the year, the partnership earns a profit of $63,000, what is B's share of the profit?",
+            "difficulty": "hard",
+            "reasoning": "This question is tricky because it involves calculating the capital contributions of each partner at different points in time and then using those contributions to determine the final profit share. Here's how to solve it step-by-step: \n\n**1. Calculate B's Initial Investment:**\n* B's profit share is 3/10 of the total profit, and their capital contribution is in proportion to both their profit share and A's initial investment.\n* B's initial investment is (3/10) * $10,000 = $3,000. \n\n**2. Calculate the Total Capital When C Joins:**\n* A has had $10,000 invested for 6 months (half a year).\n* B has had $3,000 invested for 2 months.\n* A's weighted capital contribution is (1/2) * $10,000 = $5,000.\n* B's weighted capital contribution is (1/6) * $3,000 = $500.\n* The total weighted capital when C joins is $5,000 + $500 = $5,500. \n\n**3. Calculate C's Investment:**\n* C's profit share is 5/10 of the total, meaning his capital contribution should also represent 5/10 of the total capital when he joins.\n* C's investment is (5/10) * $5,500 = $2,750.\n\n**4. Calculate the Profit Shares:**\n* Now we need to weight the capital contributions over the entire year:\n    * A: $10,000 for 12 months = $120,000 (weighted)\n    * B: $3,000 for 8 months = $24,000 (weighted)\n    * C: $2,750 for 6 months = $16,500 (weighted)\n* The total weighted capital is $160,500.\n* A's profit share: ($120,000/$160,500) * $63,000 = $47,058.82\n    * B's profit share: ($24,000/$160,500) * $63,000 = $9,411.76\n    * C's profit share: ($16,500/$160,500) * $63,000 = $6,530.42 \n\n**Therefore, B's share of the profit is $9,411.76.**",
+            "options": [
+                "$9,411.76",
+                "$18,823.53",
+                "$12,615.79",
+                "$6,307.89"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A jeweler crafts a beautiful necklace using two types of gold alloys. The first alloy contains 80% pure gold and costs $1200 per ounce, while the second alloy contains 60% pure gold and costs $900 per ounce. He aims to create a necklace weighing 10 ounces with a 70% gold purity that he can sell for a 25% profit margin. \n\nTo minimize his costs while achieving the desired purity level, what amount of the less expensive alloy should the jeweler use in the mixture?  \n\nWhat will be the jeweler's profit from selling the necklace?",
+            "difficulty": "medium",
+            "reasoning": "**1. Define Variables:** \n\n* Let 'x' represent the amount (in ounces) of the less expensive alloy (60% gold) used.\n* Then, (10 - x) represents the amount (in ounces) of the more expensive alloy (80% gold) used.\n\n**2. Set up the Purity Equation:**\n\n* The total gold content in the final necklace should be 70%. We can express this as an equation: \n\n   0.60x + 0.80(10 - x) = 0.70 * 10\n\n**3. Solve for 'x':**\n\n* Simplify and solve the equation:\n   0.60x + 8 - 0.80x = 7\n   -0.20x = -1\n    x = 5 ounces \n\n* Therefore, the jeweler should use **5 ounces** of the less expensive alloy.\n\n**4. Calculate the Cost of Each Alloy Used:**\n\n* Cost of less expensive alloy: 5 ounces * $900/ounce = $4500\n* Cost of more expensive alloy: 5 ounces * $1200/ounce = $6000\n\n**5. Calculate the Total Cost of the Necklace:**\n\n* Total cost = $4500 + $6000 = $10500\n\n**6. Calculate the Selling Price:**\n\n* Profit desired is 25% of the cost price.\n* Profit = 0.25 * $10500 = $2625\n* Selling price = Cost price + Profit = $10500 + $2625 = $13125\n\n**7. Calculate the Profit:**\n\n* Profit = Selling Price - Total Cost = $13125 - $10500 = $2625\n\n**Therefore, the jeweler's profit from selling the necklace will be $2625.**",
+            "options": [
+                "4 ounces",
+                "6 ounces",
+                "5 ounces",
+                "7 ounces"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A fruit vendor buys a batch of mangoes for $60. He aims to make a 25% profit on the entire batch. He initially prices each mango to achieve this profit margin. However, as the day progresses and some mangoes start to ripen quickly, he decides to sell the remaining 40% of the mangoes at a 10% discount to ensure they are sold. What is the vendor's overall profit or loss percentage on the entire batch of mangoes?",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question is tricky because it involves multiple calculations and scenarios:\n\n1. **Calculating the target selling price:** The vendor wants a 25% profit on his $60 investment, meaning he wants to earn a profit of $60 * 0.25 = $15. Therefore, his target revenue is $60 + $15 = $75.\n\n2. **Impact of the discount:** Selling 40% of the mangoes at a 10% discount affects the overall revenue. To calculate this, we need to know the original selling price per mango (which we don't). This introduces an element of assumption and careful calculation.\n\n3. **Calculating the actual profit/loss:** We need to find the revenue generated from selling 60% of the mangoes at the original price and 40% at a discount, then compare it to the initial cost price to determine the actual profit or loss percentage.\n\n**Let's break down the calculation (assuming the number of mangoes allows for selling in percentages):**\n\n* **Assume the batch had 100 mangoes.** This is for easier percentage calculation.  You can assume any number.\n* **Target revenue:** $75\n* **Target price per mango:** $75 / 100 = $0.75\n* **Number of mangoes sold at full price:** 100 * 60% = 60 mangoes\n* **Revenue from full-priced mangoes:** 60 * $0.75 = $45\n* **Number of mangoes sold at a discount:** 100 * 40% = 40 mangoes\n* **Discounted price per mango:** $0.75 - ($0.75 * 10%) = $0.675\n* **Revenue from discounted mangoes:** 40 * $0.675 = $27\n* **Total Revenue:** $45 + $27 = $72\n* **Profit:** $72 - $60 = $12\n* **Profit Percentage:** ($12 / $60) * 100 = 20%\n\nTherefore, the vendor's overall profit percentage is **20%**, which is less than his initial target of 25% due to the discounted sales.",
+            "options": [
+                "25%",
+                "10%",
+                "20%",
+                "15%"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Profit and Loss",
+    "exam_id": 10,
+    "order": 3
+}

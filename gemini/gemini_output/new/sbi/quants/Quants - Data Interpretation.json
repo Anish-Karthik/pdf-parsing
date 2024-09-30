@@ -1,0 +1,460 @@
+{
+    "questions": [
+        {
+            "question": "A fruit vendor sold 120 apples on Monday and 150 apples on Tuesday. What percentage of the total apples sold over the two days were sold on Tuesday?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Calculate the total number of apples sold:**\n\n   Total apples = Apples sold on Monday + Apples sold on Tuesday\n   Total apples = 120 + 150 = 270 apples\n\n**2. Calculate the percentage of apples sold on Tuesday:**\n\n   Percentage = (Apples sold on Tuesday / Total apples) * 100%\n   Percentage = (150 / 270) * 100% \n   Percentage = 55.56%\n\n**Therefore, 55.56% of the total apples sold over the two days were sold on Tuesday.**",
+            "options": [
+                "120",
+                "55.56%",
+                "270",
+                "150"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Multiple Choice\n**Question Stem**: A data table presents the sales figures for different smartphone brands over four quarters. Which brand showed the highest total sales across all four quarters?\n**Data Source**: Table depicting quarterly sales figures for various smartphone brands.\n**Answer Choices**: \n  - Brand A\n  - Brand B\n  - Brand C\n  - Brand D\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under 'Caselets: Solving Complex Data Interpretation Scenarios' as it requires analyzing a data table to extract specific information.  \n\n**Step-by-step solution:**\n1. **Identify the relevant data:** Locate the sales figures for each brand across all four quarters in the table. \n2. **Calculate total sales:**  Add the sales figures for each quarter for each brand separately.\n3. **Compare the totals:** Determine the brand with the highest summed sales figure. \n4. **Select the correct answer:** Choose the option corresponding to the brand with the highest total sales.\n\n**Verification:** This process ensures the answer is derived directly from the data table and involves simple addition for a straightforward 'easy' level difficulty.",
+            "options": [
+                "Brand A",
+                "Brand B",
+                "Brand C",
+                "Brand D"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A group of friends recorded the number of pizzas they ate each month for a year.\n**data**: \n  **type**: table\n  **values**: \n    - \n      - January\n      - 5\n    - \n      - February\n      - 6\n    - \n      - March\n      - 4\n    - \n      - April\n      - 7\n    - \n      - May\n      - 6\n    - \n      - June\n      - 8\n    - \n      - July\n      - 5\n    - \n      - August\n      - 4\n    - \n      - September\n      - 6\n    - \n      - October\n      - 7\n    - \n      - November\n      - 5\n    - \n      - December\n      - 9\n**question**: Using the data, estimate the average number of pizzas the group eats per month.\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the topic of 'Statistical Estimation and Approximation Techniques' within 'Quants - Data Interpretation' because it requires calculating an average from a dataset, a fundamental concept in this area. Here's how to solve it:\n\n1. **Sum the number of pizzas eaten each month:** 5 + 6 + 4 + 7 + 6 + 8 + 5 + 4 + 6 + 7 + 5 + 9 = 72\n2. **Divide the total pizzas by the number of months (12) to find the average:** 72 / 12 = 6\n\nTherefore, the estimated average number of pizzas the group eats per month is 6.",
+            "options": [
+                "5",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "In a survey conducted among 100 people, it was found that 50 people like tea, 40 people like coffee, and 20 people like both tea and coffee. How many people like neither tea nor coffee?",
+            "difficulty": "easy",
+            "reasoning": "This question belongs to the subtopic 'Data Interpretation in Venn Diagrams' within 'Quants - Data Interpretation'. Here's how to solve it:\n\n**1. Visualize the Venn Diagram:**\n   Imagine two overlapping circles, one representing 'tea' and the other 'coffee'. The overlapping section represents people who like both.\n\n**2. Start with the overlap:**\n   20 people like both tea and coffee.\n\n**3.  Calculate those who like only one drink:**\n   * People who like ONLY tea: 50 (total who like tea) - 20 (who like both) = 30\n   * People who like ONLY coffee: 40 (total who like coffee) - 20 (who like both) = 20\n\n**4. Calculate the total who like at least one drink:**\n   30 (only tea) + 20 (only coffee) + 20 (both) = 70 \n\n**5.  Find those who like neither:**\n   100 (total people surveyed) - 70 (like at least one drink) = 30\n\n**Therefore, 30 people like neither tea nor coffee.**",
+            "options": [
+                "10",
+                "20",
+                "30",
+                "40"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question**: The bar chart below shows the number of books sold by a bookstore each day from Monday to Friday. On which day did the bookstore sell the least number of books?\n**Chart Type**: Bar Chart\n**Difficulty**: Easy (5/10)\n**Data**: https://i.imgur.com/0D2e5Po.png\n**Answer Choices**: \n  - Monday\n  - Tuesday\n  - Wednesday\n  - Thursday\n  - Friday\n",
+            "difficulty": "easy",
+            "reasoning": "The question is classified as 'easy' because it involves a simple, direct interpretation of the bar chart.  Here's how to find the answer:\n\n1. **Examine the chart:** Look at the bars representing each day of the week.\n2. **Identify the shortest bar:** The shortest bar represents the day with the lowest number of books sold.\n3. **Determine the corresponding day:**  The shortest bar corresponds to Tuesday.\n\nTherefore, the bookstore sold the least number of books on **Tuesday**.",
+            "options": [
+                "Monday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Is x greater than y?\n\n(1) x + y = 10\n(2) x - y = 2",
+            "difficulty": "easy",
+            "reasoning": "**1. Analyze Each Statement Individually**\n\n   * **Statement 1:** x + y = 10.  This statement alone is not sufficient. We can have multiple values of x and y that satisfy this equation (e.g., x = 5, y = 5 or x = 6, y = 4). We don't know if x is greater than y.\n\n   * **Statement 2:** x - y = 2. This statement alone is also not sufficient.  Similar to statement 1, we can have various values for x and y (e.g., x = 6, y = 4 or x = 7, y = 5).\n\n**2. Combine Statements**\n\n* Combining both statements, we have two equations:\n    * x + y = 10\n    * x - y = 2 \n\n* We can solve for x and y. Adding the two equations eliminates 'y':\n    * 2x = 12\n    * x = 6\n\n* Substituting x = 6 into either of the original equations, we find y = 4.\n\n**3. Determine Sufficiency**\n\n* Since we were able to determine that x (6) is greater than y (4), the information is **sufficient** when both statements are combined. \n\n**Therefore, the answer is (C) - BOTH statements TOGETHER are sufficient, but NEITHER statement ALONE is sufficient.**",
+            "options": [
+                "Neither",
+                "Statement 1",
+                "Statement 2",
+                "Both"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: The number of visitors to a national park is tracked each quarter over a three-year period. This data is summarized in the table below:\n**data**: \n  **table**: \n    - \n      - Quarter\n      - Year 1\n      - Year 2\n      - Year 3\n    - \n      - Q1\n      - 10,000\n      - 12,000\n      - 14,000\n    - \n      - Q2\n      - 15,000\n      - 18,000\n      - 21,000\n    - \n      - Q3\n      - 20,000\n      - 24,000\n      - 28,000\n    - \n      - Q4\n      - 12,000\n      - 14,000\n      - 16,000\n**task**: Analyze the data to identify the overall trend of visitor attendance to the park over the three-year period.\n**difficulty**: easy\n",
+            "reasoning": "This question falls under 'Trend Analysis: Identifying Patterns and Trends in Data' as it requires analyzing visitor numbers over time to determine the overall trend. \n\nLooking at the data, we can observe:\n* **Year-on-Year Increase:**  Each quarter shows a consistent increase in visitors from Year 1 to Year 2 and then again from Year 2 to Year 3. \n* **Seasonal Variation:** Q3 consistently has the highest attendance, indicating a peak season, while Q1 has the lowest, suggesting a less popular season for visits.\n\n**Overall Trend:** Despite some seasonal variation, the park is experiencing a general upward trend in visitor attendance over the three years.",
+            "options": [
+                "Declining",
+                "Stable",
+                "Increasing",
+                "No trend"
+            ],
+            "correct_option": "C",
+            "difficulty": "easy"
+        },
+        {
+            "question": "Five friends measured the heights of their pet turtles. The heights, in centimeters, are: 4, 3, 5, 4, 3. What is the mode of these turtle heights?",
+            "difficulty": "medium",
+            "reasoning": "The mode is the value that appears most often in a dataset. Let's analyze the turtle heights:\n\n* **4 cm appears 2 times.**\n* **3 cm appears 2 times.** \n* **5 cm appears 1 time.**\n\nSince both 4 cm and 3 cm appear the most (twice), the dataset has two modes: **3 cm and 4 cm**.",
+            "options": [
+                "4 cm",
+                "3 cm",
+                "5 cm",
+                "3 cm and 4 cm"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A bakery sells different types of bread.  Out of the 200 loaves baked today, 80 were sourdough bread.\n**question**: What percentage of the total bread baked today was sourdough?\n**difficulty**: easy 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Percentage Calculations and Applications' as it requires calculating a percentage based on given data. \n\n**Step 1: Identify the relevant values.**\n* Total loaves baked: 200\n* Sourdough loaves: 80\n\n**Step 2: Understand the percentage formula.**\nPercentage = (Part/Whole) * 100\n\n**Step 3: Apply the formula.**\nPercentage of sourdough bread = (80/200) * 100 = 0.4 * 100 = 40%\n\nTherefore, 40% of the bread baked today was sourdough.",
+            "options": [
+                "20%",
+                "40%",
+                "60%",
+                "80%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A survey was conducted among 300 people to understand their preferred mode of transportation for daily commute. The results are displayed in the pie chart below: \n\n[Imagine a pie chart with the following data]\n\n* Car: 40%\n* Public Transport: 30%\n* Bicycle: 15%\n* Walking: 15%\n**question**: What is the ratio of people who prefer using a car for their daily commute to those who prefer walking?\n**difficulty**: easy\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Identify the relevant information:** We need the percentage of people who prefer cars (40%) and walking (15%).\n\n**2. Express the percentages as a ratio:** The ratio is 40:15.\n\n**3. Simplify the ratio:** Both numbers are divisible by 5. Dividing both sides by 5 gives us the simplified ratio 8:3.\n\nTherefore, the ratio of people who prefer cars to those who prefer walking is 8:3.",
+            "options": [
+                "4:3",
+                "2:1",
+                "8:3",
+                "5:2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A mobile gaming company surveyed 200 players to understand their preferred game genre.\n**data_table**: \n  **Genre**: \n    - Action\n    - Puzzle\n    - Strategy\n    - Sports\n    - Other\n  **Number of Players**: \n    - 80\n    - 40\n    - 30\n    - 20\n    - 30\n**question**: If a player is randomly selected from the survey, what is the probability that their preferred genre is 'Puzzle'?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Probability Basics and Applications' topic as it involves calculating the probability of a simple event. Here's how to solve it:\n\n**1. Find the total number of outcomes:**\n   The total number of possible outcomes is equal to the total number of players surveyed, which is 200.\n\n**2. Find the number of favorable outcomes:**\n   The number of favorable outcomes is the number of players who prefer the 'Puzzle' genre, which is 40.\n\n**3. Calculate the probability:**\n   Probability = (Number of favorable outcomes) / (Total number of outcomes)\n   Probability (Puzzle) = 40 / 200 = 0.2\n\nTherefore, the probability of a randomly selected player preferring the 'Puzzle' genre is 0.2 or 20%.",
+            "options": [
+                "0.1",
+                "0.2",
+                "0.3",
+                "0.4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A survey was conducted to understand the preference of ice cream flavors. Participants could choose any 2 flavors from the following options: Vanilla, Chocolate, Strawberry, Mango, and Pistachio.\n\nHow many distinct flavor combinations were possible for the participants to choose?",
+            "difficulty": "medium",
+            "reasoning": "This question involves combinations, as the order of the flavors selected doesn't matter. We need to find how many ways we can choose 2 flavors out of 5.\n\nHere's how to solve it:\n\n* **Identify the formula:** We use the combination formula:  nCr = n! / (r! * (n-r)!), where 'n' is the total number of items and 'r' is the number of items to be chosen. \n* **Apply the formula:** In this case, n = 5 (flavors) and r = 2 (choices). So, the calculation becomes: 5C2 = 5! / (2! * 3!) \n* **Calculate the factorial:** 5! = 5 * 4 * 3 * 2 * 1 = 120, 2! = 2 * 1 = 2, and 3! = 3 * 2 * 1 = 6\n* **Solve the equation:** 5C2 = 120 / (2 * 6) = 120 / 12 = 10\n\nTherefore, there are **10** distinct flavor combinations possible.",
+            "options": [
+                "12",
+                "20",
+                "10",
+                "15"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A researcher wants to estimate the average height of students in a university. He takes a random sample of 100 students and finds the sample mean height to be 170 cm. The population standard deviation is known to be 5 cm.\n\nWhat is the 95% confidence interval for the average height of all students in the university?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of confidence intervals and their calculation when the population standard deviation is known.\n\nHere's how to solve the problem:\n\n**1. Formula:**\n\nThe formula for calculating the confidence interval when the population standard deviation is known is:\n\nConfidence Interval = Sample Mean \u00b1 (Z-score * (Standard Deviation / \u221aSample Size))\n\n**2.  Identify the values:**\n\n* Sample Mean = 170 cm\n* Population Standard Deviation = 5 cm\n* Sample Size = 100\n* Z-score for a 95% confidence interval = 1.96 (You can find this value from a standard Z-table)\n\n**3. Calculation:**\n\n* Standard Error = Standard Deviation / \u221aSample Size = 5 / \u221a100 = 0.5\n* Margin of Error = Z-score * Standard Error = 1.96 * 0.5 = 0.98\n* Confidence Interval = 170 \u00b1 0.98 = (169.02, 170.98)\n\n**Therefore, the 95% confidence interval for the average height of all students in the university is (169.02 cm, 170.98 cm).**",
+            "options": [
+                "169.02 cm",
+                "170.98 cm",
+                "(169.02 cm, 170.98 cm)",
+                "170 cm"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A local bakery is analyzing its financial performance over the past year. They are particularly interested in understanding how interest rates impacted their profitability.\n**Data**: \n  **Table 1: Monthly Profit/Loss**: \n    - \n      **Month**: January\n      **Revenue**: $10,000\n      **Cost of Goods Sold**: $6,000\n      **Operating Expenses**: $2,000\n      **Interest Expense**: $100\n      **Net Profit**: $1,900\n    - \n      **Month**: February\n      **Revenue**: $12,000\n      **Cost of Goods Sold**: $7,000\n      **Operating Expenses**: $3,000\n      **Interest Expense**: $110\n      **Net Profit**: $1,890\n    - \n      **Month**: March\n      **Revenue**: $15,000\n      **Cost of Goods Sold**: $8,000\n      **Operating Expenses**: $4,000\n      **Interest Expense**: $120\n      **Net Profit**: $2,880\n    - \n      **Month**: April\n      **Revenue**: $18,000\n      **Cost of Goods Sold**: $9,000\n      **Operating Expenses**: $5,000\n      **Interest Expense**: $130\n      **Net Profit**: $3,870\n    - \n      **Month**: May\n      **Revenue**: $20,000\n      **Cost of Goods Sold**: $10,000\n      **Operating Expenses**: $6,000\n      **Interest Expense**: $140\n      **Net Profit**: $3,860\n    - \n      **Month**: June\n      **Revenue**: $22,000\n      **Cost of Goods Sold**: $11,000\n      **Operating Expenses**: $7,000\n      **Interest Expense**: $150\n      **Net Profit**: $3,850\n  **Table 2: Interest Rates**: \n    - \n      **Month**: January\n      **Interest Rate**: 3.5%\n    - \n      **Month**: February\n      **Interest Rate**: 3.5%\n    - \n      **Month**: March\n      **Interest Rate**: 3.5%\n    - \n      **Month**: April\n      **Interest Rate**: 3.75%\n    - \n      **Month**: May\n      **Interest Rate**: 3.75%\n    - \n      **Month**: June\n      **Interest Rate**: 3.75%\n**Question**: Calculate the total interest expense incurred by the bakery during the period when the interest rate was 3.5%.\n",
+            "difficulty": "medium",
+            "reasoning": "This question is rated as 'easy' because it involves a straightforward calculation based on readily available data in the provided tables. Here's how to solve it: \n\n**Step 1: Identify the months with a 3.5% interest rate.**\nFrom Table 2, we see that January, February, and March had an interest rate of 3.5%. \n\n**Step 2: Locate the interest expense for each of those months in Table 1.**\n* January: $100\n* February: $110\n* March: $120\n\n**Step 3: Add up the interest expenses to find the total.**\n$100 + $110 + $120 = $330\n\n**Therefore, the total interest expense incurred by the bakery during the period when the interest rate was 3.5% is $330.**",
+            "options": [
+                "$300",
+                "$330",
+                "$360",
+                "$390"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**caselet**: A local farmer tracks the number of apples harvested from his orchard each month.  The data for the first quarter of the year is shown below:\n\n| Month    | January | February | March | \n|----------|---------|----------|-------|\n| Apples  |  250     |  320     |  410   |\n**question_type**: Calculation\n**question_stem**: What is the total number of apples harvested by the farmer during the entire first quarter (January to March)?\n**answer_choices**: \n  - (a) 980\n  - (b) 880\n  - (c) 770\n  - (d) 680\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Caselets: Solving Complex Data Interpretation Scenarios' topic as it requires interpreting data presented in a table format. \n\nThe calculation is straightforward:\n\n* **Step 1:** Identify the number of apples harvested each month from the table.\n* **Step 2:**  Add the number of apples from each month to find the total.\n\n**Calculation:** 250 (January) + 320 (February) + 410 (March) = 980 apples\n\nTherefore, the correct answer is **(a) 980**.",
+            "options": [
+                "980 apples",
+                "880 apples",
+                "770 apples",
+                "680 apples"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A survey was conducted in a town to analyze the preference for different modes of transport. The results are shown in the pie chart below:\n\n[Insert a pie chart with the following data:]\n\n*   Car: 40%\n*   Public Transport: 30%\n*   Bicycle: 15%\n*   Walking: 15%\n\nIf 3600 people participated in the survey, and the ratio of men to women who prefer cycling is 2:3, how many women prefer cycling as their mode of transport?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the number of people who prefer cycling:**\n\n*   Bicycle users represent 15% of the total surveyed population.\n*   Number of bicycle users = (15/100) * 3600 = 540 people\n\n**2. Determine the proportion of women who prefer cycling:**\n\n*   The ratio of men to women who prefer cycling is 2:3. \n*   This means that for every 5 people who prefer cycling, 3 are women.\n*   Proportion of women who prefer cycling = 3 / (2+3) = 3/5\n\n**3. Calculate the number of women who prefer cycling:**\n\n*   Multiply the total number of bicycle users by the proportion of women who prefer cycling.\n*   Number of women who prefer cycling = (3/5) * 540 = 324\n\n**Therefore, 324 women prefer cycling as their mode of transport.**",
+            "options": [
+                "324 women",
+                "1080 women",
+                "540 women",
+                "216 women"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: Two high schools, A and B, administered the same standardized test to their senior classes. Both schools have the same average score of 650, but School A has a variance of 1000 and School B has a variance of 1500.\n**data**: \n  **School A**: \n    **average score**: 650\n    **variance**: 1000\n  **School B**: \n    **average score**: 650\n    **variance**: 1500\n**question**: Which school has a greater spread of student scores and what does this difference in variance imply about the two student populations' performance on the standardized test?\n",
+            "difficulty": "medium",
+            "reasoning": "The school with the higher variance has a greater spread of student scores. Here's why:\n\n* **Variance** measures how far data points are spread out from the average. A higher variance indicates that data points are more dispersed, while a lower variance indicates they are clustered closer to the mean.\n\n* In this scenario, **School B has a higher variance (1500) than School A (1000).** This means that the student scores at School B are more spread out from the average score of 650 compared to School A.\n\n**Implication:**\n\nThe difference in variance suggests that School A has a more homogeneous performance level among its students on this standardized test. In contrast, School B exhibits greater variability, implying a wider range of student performance, with some students scoring significantly higher or lower than the average. ",
+            "options": [
+                "School A",
+                "School B",
+                "Same spread",
+                "Cannot be determined"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A teacher gave a quiz to 10 students. The scores were as follows: 72, 80, 85, 72, 88, 90, 72, 82, 91, and 78.  What is the mode of these quiz scores, and how does it compare to the mean and median of the dataset?",
+            "difficulty": "medium",
+            "reasoning": "**1. Finding the Mode:**\n\n* The mode is the most frequent number in a dataset.\n* Looking at the scores, we see that the number **72** appears **3 times**, which is more frequent than any other score.\n* **Therefore, the mode of the quiz scores is 72.**\n\n**2. Comparing to Mean and Median:**\n\n* **Mean:** To calculate the mean, we sum up all the scores and divide by the total number of scores (10). This gives us a mean of approximately 81.\n* **Median:**  The median is the middle value when the data is arranged in order. First, we order the scores: 72, 72, 72, 78, 80, 82, 85, 88, 90, 91. Since we have an even number of scores, the median is the average of the two middle scores (80 and 82), which is 81.\n\n**Conclusion:**\n\nIn this dataset, the mode (72) is lower than both the mean (81) and median (81). This tells us that while 72 is the most frequent score, the overall center of the data is higher, suggesting that most students scored above the mode.",
+            "options": [
+                "72",
+                "81",
+                "82",
+                "90"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A company is considering two investment options for a surplus of $50,000. Option A is a fixed deposit account with a simple interest rate of 4% per annum. Option B is a corporate bond that yields a 3% annual interest rate but pays interest semi-annually.\n**data_table**: \n**question**: Which investment option will yield a higher return at the end of 2 years?  Calculate the difference in earnings between the two options.\n",
+            "difficulty": "medium",
+            "reasoning": "**Option A: Fixed Deposit**\n\n* **Interest earned per year:** $50,000 * 4% = $2,000\n* **Total interest earned after 2 years:** $2,000/year * 2 years = $4,000\n\n**Option B: Corporate Bond**\n\n* **Interest rate per semi-annual period:** 3% / 2 = 1.5%\n* **Interest earned in the first half-year:** $50,000 * 1.5% = $750\n* **Total interest earned after 2 years (4 periods):** $750/period * 4 periods = $3,000\n\n**Difference in Earnings:**\n\n* **Option A - Option B:** $4,000 - $3,000 = $1,000\n\n**Conclusion:**  Option A (Fixed Deposit) will yield a higher return by $1,000 after 2 years.",
+            "options": [
+                "$1,000",
+                "$500",
+                "Option B",
+                "Option A"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: You are analyzing data from a survey about average monthly mobile phone bills. The survey includes 1000 randomly selected participants from a diverse population.\n**data**: You are given the following information:\n\n* **Sample Mean:** The average monthly bill reported by participants is $65.\n* **Sample Standard Deviation:** The standard deviation of the reported bills is $15.\n\nAssume the distribution of monthly mobile phone bills is approximately normal.\n**question**: Using the provided data, estimate the 95% confidence interval for the average monthly mobile phone bill for the entire population.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Statistical Estimation and Approximation Techniques' as it requires understanding of confidence intervals and their calculation.\n\nHere's how to solve the problem:\n\n1. **Identify the key values:**\n    * Sample mean (x\u0304) = $65\n    * Sample standard deviation (s) = $15\n    * Sample size (n) = 1000\n    * Confidence level = 95%\n\n2. **Determine the critical value:**\n    * Since we're dealing with a 95% confidence interval and a large sample size, we can use the z-score for a standard normal distribution.\n    * The z-score for a 95% confidence interval is 1.96 (look this up in a z-table or use a calculator).\n\n3. **Calculate the margin of error:**\n    * Margin of error = z-score * (standard deviation / \u221asample size)\n    * Margin of error = 1.96 * (15 / \u221a1000) \u2248 0.93\n\n4. **Calculate the confidence interval:**\n    * Lower limit = Sample mean - Margin of error = $65 - $0.93 = $64.07\n    * Upper limit = Sample mean + Margin of error = $65 + $0.93 = $65.93\n\nTherefore, the 95% confidence interval for the average monthly mobile phone bill for the entire population is approximately **$64.07 to $65.93**.",
+            "options": [
+                "$64.07 to $65.93",
+                "$63.07 to $66.93",
+                "$64.57 to $65.43",
+                "$64.07 to $66.93"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: The table below shows the number of units sold for different product categories in a department store over a period of six months.\n**Question**: What is the percentage difference in the average monthly units sold between the 'Electronics' and 'Home Appliances' categories over the six-month period?\n**Table**: \n  **Category**: \n    - Electronics\n    - Clothing\n    - Home Appliances\n    - Books\n    - Toys\n  **January**: \n    - 800\n    - 1200\n    - 500\n    - 300\n    - 400\n  **February**: \n    - 900\n    - 1300\n    - 550\n    - 280\n    - 420\n  **March**: \n    - 1000\n    - 1400\n    - 600\n    - 320\n    - 450\n  **April**: \n    - 1100\n    - 1500\n    - 650\n    - 350\n    - 480\n  **May**: \n    - 1200\n    - 1600\n    - 700\n    - 380\n    - 500\n  **June**: \n    - 1300\n    - 1700\n    - 750\n    - 400\n    - 520\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the total units sold for each category:**\n\n   * Electronics: 800 + 900 + 1000 + 1100 + 1200 + 1300 = 6300\n   * Home Appliances: 500 + 550 + 600 + 650 + 700 + 750 = 3750\n\n**2. Calculate the average monthly units sold for each category:**\n\n   * Electronics: 6300 / 6 = 1050 units/month\n   * Home Appliances: 3750 / 6 = 625 units/month\n\n**3.  Calculate the difference in average monthly units sold:**\n\n   * 1050 - 625 = 425 units/month\n\n**4. Calculate the percentage difference relative to Home Appliances:**\n\n   * (425 / 625) * 100% = 68%\n\n**Therefore, the percentage difference in the average monthly units sold between the 'Electronics' and 'Home Appliances' categories is 68%.**",
+            "options": [
+                "68%",
+                "425 units",
+                "1050 units/month",
+                "625 units/month"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**data**: A survey was conducted among 1000 people to understand their movie genre preferences. The results are as follows:\n\n| Genre        | Percentage | Male Viewers | Female Viewers | \n|--------------|------------|-------------|---------------|\n| Action      | 40%        | 70%          | 30%           |\n| Comedy       | 30%        | 40%          | 60%           |\n| Romance      | 20%        | 20%          | 80%           |\n| Documentary | 10%        | 60%          | 40%           |\n\nNote: Percentages within 'Male Viewers' and 'Female Viewers' columns reflect the proportion of viewers within each genre, not out of the total survey population.\n**question**: Based on the data provided, which of the following statements can be logically inferred?\n**answer_choices**: \n  - Action movies are more popular among women than men.\n  - More men watch documentaries than romantic movies.\n  - Comedy movies have the most balanced viewership between genders.\n  - More women watch movies overall compared to men.\n**correct_answer**: More men watch documentaries than romantic movies.\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how we can break down the reasoning to arrive at the correct answer:\n\n**1. Focus on the Question:** We need to identify a statement that can be *inferred* from the data. This means we need to go beyond what's directly stated and draw a logical conclusion.\n\n**2. Analyze the Data:**\n    * The table provides genre preferences for the overall population and then breaks down the viewership of each genre by gender.\n    * It's crucial to note that the 'Male Viewers' and 'Female Viewers' percentages are within each genre. For instance, 70% of 'Action' viewers are male, not 70% of all 1000 people surveyed.\n\n**3. Evaluate Each Option:**\n    * **Option A:** Incorrect.  70% of action viewers are male, indicating higher popularity among men.\n    * **Option B:** Let's calculate:\n        * Documentary viewers: 10% of 1000 = 100 people. Out of these, 60% are male, meaning 60 men watch documentaries.\n        * Romance viewers: 20% of 1000 = 200 people. Out of these, 20% are male, meaning 40 men watch romantic movies.\n        * This confirms that more men watch documentaries (60) than romantic movies (40). **This is the correct inference.**\n    * **Option C:**  While comedy has a relatively more even split, it's not the most balanced. Documentary viewing is closer to a 50/50 split.\n    * **Option D:**  We can't infer this. The data only provides genre preferences, not the total number of men and women watching movies.\n\n**Therefore, the correct answer is: 'More men watch documentaries than romantic movies.'** This is a valid inference because it's logically derived from the provided data.",
+            "options": [
+                "Action movies are more popular among women than men.",
+                "Comedy movies have the most balanced viewership between genders.",
+                "More women watch movies overall compared to men.",
+                "More men watch documentaries than romantic movies."
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A food truck owner tracked the number of sandwiches sold each day for a week:\n\n| Day | Sandwiches Sold | \n|---|---| \n| Monday | 28 | \n| Tuesday | 35 | \n| Wednesday | 32 | \n| Thursday | 41 | \n| Friday | 45 | \n| Saturday | 52 | \n| Sunday | 48 |\n\nTo get a better understanding of his typical business, the owner wants to find the median number of sandwiches sold per day. What is the median number of sandwiches sold during this week?",
+            "difficulty": "medium",
+            "reasoning": "The question requires calculating the median of a dataset, which involves ordering the data and finding the middle value.\n\n1. **Order the data:** First, we need to arrange the number of sandwiches sold each day in ascending order:\n\n   28, 32, 35, 41, 45, 48, 52\n\n2. **Identify the middle value:** Since we have an odd number of data points (7 days), the median is the middle value in the ordered list. \n\n   The middle value is the 4th number: **41**\n\nTherefore, the median number of sandwiches sold during the week is 41.",
+            "options": [
+                "28",
+                "45",
+                "41",
+                "52"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A survey was conducted among 450 students in a school to determine their preferred mode of transportation to school. The results are depicted in the pie chart below.\n**chart**: \n  **type**: pie\n  **data**: \n    **labels**: \n      - Walking\n      - Bicycle\n      - School Bus\n      - Car\n    **values**: \n      - 108\n      - 90\n      - 180\n      - 72\n**question**: If the ratio of students who prefer taking the school bus to those who prefer car remains constant, how many students would we expect to prefer the car if 150 students preferred the school bus?\n",
+            "difficulty": "medium",
+            "reasoning": "The question falls under the 'Ratio and Proportion Problems' subtopic as it requires understanding and applying ratios to data presented in a pie chart. \n\nHere's how to solve the problem step-by-step:\n\n1. **Find the original ratio:** Divide the number of students who prefer the school bus by the number who prefer a car: 180 students / 72 students = 2.5\n\n2. **Maintain the ratio:**  This means for every 2.5 students who prefer the school bus, 1 student prefers a car.\n\n3. **Apply the ratio to the new situation:** Divide the new number of students preferring the school bus (150) by the established ratio (2.5): 150 students / 2.5 = 60 students.\n\nTherefore, if 150 students preferred the school bus, we'd expect 60 students to prefer the car, assuming the ratio remains constant.",
+            "options": [
+                "60 students",
+                "72 students",
+                "108 students",
+                "180 students"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A survey was conducted on 150 people to gauge their preference for three different genres of movies: Action, Comedy, and Romance. \n**diagram**: Action: 62\nComedy: 58\nRomance: 48\nAction and Comedy: 20\nAction and Romance: 18\nComedy and Romance: 15\nAll three genres: 7\n**question**: How many people enjoy exactly two genres of movies, but not all three?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Data Interpretation in Venn Diagrams' subtopic as it requires interpreting the overlapping sections of a Venn diagram to derive the answer. \n\nHere's how to solve it step-by-step:\n\n1. **Identify the relevant sections:**  We need the number of people in the overlapping sections of Action and Comedy, Action and Romance, and Comedy and Romance, excluding those who like all three genres.\n\n2. **Calculate for each pair:**\n    * Action and Comedy (only): 20 (total) - 7 (all three) = 13\n    * Action and Romance (only): 18 - 7 = 11\n    * Comedy and Romance (only): 15 - 7 = 8\n\n3. **Add the results:** 13 + 11 + 8 = 32\n\n**Therefore, 32 people enjoy exactly two movie genres but not all three.**",
+            "options": [
+                "13",
+                "32",
+                "48",
+                "62"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A survey was conducted among 250 people about their preferred mode of transportation for commuting to work. The results are shown in the pie chart below:\n**data**: **Pie Chart: Preferred Mode of Transportation for Commuting**\n\n* Car: 45%\n* Public Transportation: 30%\n* Bicycle: 15%\n* Walking: 10%\n**question**: According to the survey, what is the difference between the number of people who prefer using a car and those who prefer public transportation for their commute?\n",
+            "difficulty": "medium",
+            "reasoning": "This question involves multiple steps of percentage calculations and interpretation:\n\n1. **Calculate the number of people preferring cars:**\n   * Multiply the total number of people surveyed by the percentage who prefer cars: 250 people * 45% = 112.5 people.\n   * Since we can't have half a person, we round this number to the nearest whole number: 113 people.\n\n2. **Calculate the number of people preferring public transportation:**\n   * Multiply the total number of people surveyed by the percentage who prefer public transportation: 250 people * 30% = 75 people.\n\n3. **Find the difference:**\n   * Subtract the number of people preferring public transportation from the number preferring cars: 113 people - 75 people = 38 people.\n\nTherefore, the difference between the number of people who prefer using a car and those who prefer public transportation is 38.",
+            "options": [
+                "25",
+                "45",
+                "75",
+                "113"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**question_type**: Calculation\n**data**: \n  **table**: \n    - \n      **Year**: 2020\n      **Loan Amount**: $50,000\n      **Interest Rate**: 6%\n      **Interest Paid**: $3,000\n    - \n      **Year**: 2021\n      **Loan Amount**: $45,000\n      **Interest Rate**: 5%\n      **Interest Paid**: $2,250\n    - \n      **Year**: 2022\n      **Loan Amount**: $40,000\n      **Interest Rate**: 4%\n      **Interest Paid**: $1,600\n**question_text**: A business took out a loan to cover startup costs. The table above shows the remaining loan amount at the beginning of each year, the interest rate for that year, and the amount of interest paid that year.  Calculate the total amount of interest paid on the loan over the three years.\n",
+            "difficulty": "medium",
+            "reasoning": "This question requires interpreting the provided data and performing a straightforward calculation. \n\n1. **Identify the relevant data:** We need the 'Interest Paid' column to determine the total interest paid. \n2. **Sum the Interest Paid:** Add the interest paid each year: $3,000 + $2,250 + $1,600 = $6,850\n3. **Result:** The total interest paid over the three years is $6,850.",
+            "options": [
+                "$6,850",
+                "$7,850",
+                "$6,350",
+                "$7,350"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A data scientist is analyzing the daily active users on a new social media platform. They have collected data for the first 20 days since launch, as shown in the table below:\n**data**: \n  **type**: table\n  **headers**: \n    - Day\n    - Active Users\n  **rows**: \n    - \n      - 1\n      - 100\n    - \n      - 2\n      - 125\n    - \n      - 3\n      - 150\n    - \n      - 4\n      - 175\n    - \n      - 5\n      - 200\n    - \n      - 6\n      - 225\n    - \n      - 7\n      - 250\n    - \n      - 8\n      - 275\n    - \n      - 9\n      - 300\n    - \n      - 10\n      - 325\n    - \n      - 11\n      - 350\n    - \n      - 12\n      - 375\n    - \n      - 13\n      - 400\n    - \n      - 14\n      - 425\n    - \n      - 15\n      - 450\n    - \n      - 16\n      - 475\n    - \n      - 17\n      - 500\n    - \n      - 18\n      - 525\n    - \n      - 19\n      - 550\n    - \n      - 20\n      - 575\n**question**: Using a linear approximation, estimate the number of daily active users on Day 25.\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to apply linear approximation techniques to a data set. Here's how to solve it:\n\n**1. Identify the Trend:** The data shows a clear linear upward trend in daily active users.\n\n**2. Approximate the Line:** We can visually approximate a line of best fit through the data points. We can see that for every day, the number of active users increase by approximately 25. \n\n**3. Extrapolate for Day 25:** We need to estimate the number of users 5 days beyond our last data point (Day 20). Since the estimated increase is 25 users per day, over 5 days, we can expect an increase of approximately 125 users (5 days * 25 users/day).\n\n**4. Calculate the Estimate:**  On Day 20, there were 575 active users. Adding the estimated increase, we get 575 + 125 = 700 active users on Day 25.\n\n**Therefore, a reasonable estimate for the number of daily active users on Day 25 is 700.**",
+            "options": [
+                "600",
+                "700",
+                "800",
+                "900"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A marketing firm is analyzing the effectiveness of three different online advertising campaigns (A, B, and C) based on the click-through rates of each campaign. The data collected over a week is shown in the table below:\n**data_table**: \n  **Campaign**: \n    - A\n    - B\n    - C\n  **Impressions**: \n    - 5000\n    - 7500\n    - 4000\n  **Clicks**: \n    - 150\n    - 250\n    - 120\n**question_text**: If a randomly selected impression from that week is chosen, what is the probability that it resulted in a click AND belonged to campaign B?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Probability Basics and Applications' within the broader topic of 'Quants - Data Interpretation'. Here's a step-by-step solution:\n\n**1. Find the probability of a click from campaign B:**\n*   First, calculate the click-through rate (CTR) for campaign B: (Clicks for B / Impressions for B) = (250 / 7500) = 0.0333 or 3.33%\n*   This CTR represents the probability that an impression from campaign B resulted in a click.\n\n**2. Find the probability of a randomly selected impression being from campaign B:**\n*   Calculate the total impressions: 5000 + 7500 + 4000 = 16500\n*   Calculate the probability of an impression being from campaign B: (Impressions for B / Total Impressions) = (7500 / 16500) = 0.4545 or 45.45%\n\n**3. Calculate the joint probability:**\n*   To get the probability of both events happening, multiply the individual probabilities:\n    *   Probability (Click from B) * Probability (Impression from B) = 0.0333 * 0.4545 = 0.0151 or 1.51%\n\n**Therefore, the probability that a randomly selected impression resulted in a click AND belonged to campaign B is 1.51%.**",
+            "options": [
+                "1.51%",
+                "3.33%",
+                "45.45%",
+                "0.0333"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A group of friends pooled money to buy a gift.  Does the total amount pooled exceed $50?\n\n(1) Each friend contributed at least $7.\n(2) There are at least 6 friends in the group.",
+            "difficulty": "medium",
+            "reasoning": "**Statement 1 ALONE is not sufficient.**  Knowing each friend gave at least $7 doesn't tell us how many friends there are, so we can't calculate the total.\n\n**Statement 2 ALONE is not sufficient.** Knowing there are at least 6 friends doesn't tell us how much each contributed, so we can't calculate the total.\n\n**Statements 1 & 2 TOGETHER are sufficient.** If each of at least 6 friends gave at least $7, the total must be at least 6 * $7 = $42.  However, this doesn't tell us if the total *exceeds* $50.\n\n**Therefore, the answer is E.  Statements 1 and 2 TOGETHER are NOT sufficient to answer the question.**",
+            "options": [
+                "Yes",
+                "No",
+                "Cannot be determined",
+                "Maybe"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A renowned chocolatier is crafting a limited-edition box of chocolates for Valentine's Day.  The box will contain two types of truffles: dark chocolate and milk chocolate. Each dark chocolate truffle weighs 'x' grams and each milk chocolate truffle weighs 'y' grams.  The box itself weighs 'z' grams. The chocolatier wants the total weight of the box and chocolates to be exactly 500 grams.\n\nIs it possible to determine the exact number of dark chocolate truffles in the box if we know the following?\n\n I. The total weight of the milk chocolate truffles is 240 grams. \nII.  The difference in weight between a dark chocolate truffle and a milk chocolate truffle is 5 grams. ",
+            "difficulty": "hard",
+            "reasoning": "Let...\n\n*  'd' represent the number of dark chocolate truffles\n*  'm' represent the number of milk chocolate truffles\n\nWe're given the following equation based on the total weight:\n\nxd + ym + z = 500\n\nWe need to determine if we can find the value of 'd'.\n\n**Statement I:**  ym = 240\n\nThis tells us the total weight of the milk chocolate truffles but doesn't give us any information about the number of dark chocolate truffles or their individual weight.  Therefore, statement I alone is insufficient.\n\n**Statement II:** x - y = 5\n\nThis tells us the weight difference between the truffles but doesn't provide any information about the actual weights or the number of truffles.  Therefore, statement II alone is insufficient.\n\n**Combining I and II:** \n\nEven when combining both statements, we still don't have enough information. We have two equations and four unknowns (d, m, x, z). We can express 'x' in terms of 'y' (or vice versa) using statement II, but we cannot definitively solve for 'd'. \n\n**Therefore, the answer is (E) - Statements I and II together are NOT sufficient to answer the question.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Insufficient"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**1. Chart/Graph Type**: Scatter Plot\n**2. Data Context**: The scatter plot displays the relationship between the number of hours studied per week and the final exam scores of 20 students in a statistics course. The x-axis represents the hours studied, ranging from 0 to 20 hours, and the y-axis represents the exam scores, ranging from 0 to 100.\n**3. Question**: Based on the trend observed in the scatter plot, if a student wants to achieve a score of at least 90 on the final exam, what is the minimum number of hours they should aim to study per week to maximize their chances of reaching this goal?\n**4. Difficulty Level**: 8/10. This question requires analyzing the trend in the scatter plot to make a prediction. Students need to identify the general pattern and extrapolate the relationship between study hours and exam scores to estimate the required study time for a target score. The presence of outliers and the need for estimation make this question challenging.\n",
+            "difficulty": "hard",
+            "reasoning": "This question cannot be answered without the actual scatter plot data. Providing a specific answer would require visual analysis of the data to determine the trendline and make predictions. \n\nHowever, here's how one would approach solving this:\n\n1. **Analyze the Trend:** Examine the scatter plot for the general relationship between study hours and exam scores. Is there a positive correlation (as study hours increase, scores tend to increase), a negative correlation, or no clear correlation?\n2. **Identify Outliers:** Are there any data points that significantly deviate from the general trend? Outliers should be considered cautiously as they might skew the perceived relationship.\n3. **Draw/Imagine a Trendline:** If a clear positive correlation exists, mentally or using tools, draw a trendline that best represents the relationship between the variables. This line doesn't have to pass through all points but should represent the overall trend.\n4. **Extrapolate for Target Score:** Locate the desired exam score (90) on the y-axis.  Trace a horizontal line from that point until it intersects with the trendline. \n5. **Estimate Study Hours:** From the intersection point, draw a vertical line down to the x-axis. The value on the x-axis represents the estimated minimum study hours needed to achieve a score of 90.\n\n**Important Note:**  Predictions based on scatter plots are estimations.  The actual exam score can be affected by various other factors not represented in the scatter plot. ",
+            "options": [
+                "10 hours",
+                "15 hours",
+                "20 hours",
+                "Cannot be determined from the provided information"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: The following line graph shows the monthly sales of two products (Product A and Product B) for a company over a one-year period.\n**data_viz**: ```\nMonth   | Product A | Product B\n------- | -------- | --------\nJan     | 25        | 15\nFeb     | 30        | 20\nMar     | 35        | 25\nApr     | 30        | 20\nMay     | 25        | 15\nJun     | 20        | 10\nJul     | 15        | 5\nAug     | 20        | 10\nSep     | 25        | 15\nOct     | 30        | 20\nNov     | 35        | 25\nDec     | 40        | 30\n```\n**question_text**: Analyzing the sales trends, if the company decides to discontinue the product that shows a consistent decline in sales growth rate every quarter throughout the year, which product would they discontinue?\n",
+            "difficulty": "hard",
+            "reasoning": "The tricky part lies in identifying the declining *sales growth rate*, not just declining sales.  Here's how to solve it:\n\n1. **Calculate Quarterly Sales Growth Rates:** Divide the year into four quarters (Jan-Mar, Apr-Jun, Jul-Sep, Oct-Dec). Calculate the sales growth rate for each product within each quarter. For example, Product A's growth rate from January to March is calculated as: ((35-25)/25)*100 = 40%.\n\n2. **Analyze the Trend:**\n    * **Product A:** While sales fluctuate, notice that the growth rate within each quarter generally declines throughout the year. \n    * **Product B:**  Sales also fluctuate but generally show an increase in the growth rate within each quarter as the year progresses.\n\n3. **Conclusion:** Product A shows a consistent decline in the sales growth rate every quarter, indicating a weakening performance despite fluctuations in actual sales figures.\n\nTherefore, the company would discontinue **Product A**.",
+            "options": [
+                "Product A",
+                "Product B",
+                "Neither",
+                "Data insufficient"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**diagram**: \n  **sets**: \n    **A**: People who own a car\n    **B**: People who own a motorcycle\n    **C**: People who own a bicycle\n  **numbers**: \n    **A only**: 30\n    **B only**: 15\n    **C only**: 25\n    **A and B**: 5\n    **A and C**: 10\n    **B and C**: 8\n    **A, B, and C**: 2\n**question**: Out of a random group of people surveyed, it is known that 50% of the car owners in the group also own a bicycle. If these car owners constitute 40% of the total people who own only bicycles, what percentage of the total group of people own neither a car nor a bicycle?\n**difficulty**: hard\n",
+            "reasoning": "Let's break down the solution step-by-step:\n\n1. **Car owners who also own bicycles:** We know 10 people own both a car and a bicycle (A and C).  This represents 50% of the car owners who also own bicycles, meaning there are 10 / 0.5 = 20 car owners who also own bicycles.\n\n2. **Total people who only own bicycles:** These 20 car owners who also own bicycles represent 40% of the total people who own only bicycles. Therefore, the total number of people who own only bicycles is 20 / 0.4 = 50.\n\n3. **Total people who own bicycles:** Since 50 people own only bicycles and 20 own both a car and a bicycle, the total number of people who own bicycles is 50 + 20 = 70.\n\n4. **Total people who own neither a car nor a bicycle:**  We know the following:\n    *  30 people own only cars.\n    *  15 people own only motorcycles.\n    *  2 people own all three.\n\n   To find the total number of people who own at least one of these, we need to avoid double counting: 30 (A only) + 15 (B only) + 50 (C only) + 5 (A and B) + 8 (B and C) - 2 (A, B, and C) = 106.\n\n5. **Percentage who own neither:**  Let 'x' be the total number of people in the group. We know 106 own at least one vehicle. Therefore, x - 106 own neither. The percentage is then calculated as ((x - 106) / x) * 100. Since we don't have a numerical value for the total group (x), we cannot calculate a specific percentage. \n\n**Therefore, the question is flawed as it asks for a specific percentage when it cannot be determined with the given information.**",
+            "option and correct options": "Options cannot be provided as the question itself is flawed and a numerical answer cannot be determined.",
+            "difficulty": "hard",
+            "options": [
+                "50%",
+                "40%",
+                "60%",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**data**: \n  **type**: table\n  **content**: \n    - \n      - Year\n      - Product A Sales (Millions USD)\n      - Product B Sales (Millions USD)\n      - Total Marketing Spend (Millions USD)\n    - \n      - 2020\n      - 10\n      - 15\n      - 3\n    - \n      - 2021\n      - 12\n      - 18\n      - 3.5\n    - \n      - 2022\n      - 15\n      - 20\n      - 4\n    - \n      - 2023\n      - 16\n      - 22\n      - 4.5\n**context**: The table presents sales data for Products A and B, alongside the total marketing spend for a company over four years.  Note: Marketing spend influences the sales of both products.\n**question**: Analyzing the data from 2020 to 2023, what was the overall percentage increase in the combined sales of Products A and B,  compared to the percentage increase in marketing spend over the same period?\n",
+            "difficulty": "hard",
+            "reasoning": "This question requires careful, multi-step calculations to arrive at the solution:\n\n**1. Calculate Total Sales:**\n   * 2020 Total Sales: $10 million + $15 million = $25 million\n   * 2023 Total Sales: $16 million + $22 million = $38 million\n\n**2. Calculate Percentage Increase in Total Sales:**\n   * Increase in Sales: $38 million - $25 million = $13 million\n   * Percentage Increase: ($13 million / $25 million) * 100% = 52%\n\n**3. Calculate Percentage Increase in Marketing Spend:**\n   * Increase in Spend: $4.5 million - $3 million = $1.5 million\n   * Percentage Increase: ($1.5 million / $3 million) * 100% = 50%\n\n**4. Compare the Percentage Increases:**\n    * The overall percentage increase in combined sales (52%) is greater than the percentage increase in marketing spend (50%) over the same period.\n\n**Therefore, the overall percentage increase in combined sales of Products A and B from 2020 to 2023 was 2 percentage points higher than the percentage increase in marketing spend.**",
+            "options": [
+                "50%",
+                "52%",
+                "2%",
+                "10%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A confectionery factory produces three types of chocolate bars: Milk Chocolate, Dark Chocolate, and White Chocolate. The table below shows the production volume (in kilograms) and the ratio of cocoa to other ingredients for each type of chocolate over a week.\n**Data Table**: \n  **Type**: \n    - Milk Chocolate\n    - Dark Chocolate\n    - White Chocolate\n  **Production (kg)**: \n    - 2400\n    - 1800\n    - 1500\n  **Cocoa Ratio (Cocoa:Other Ingredients)**: \n    - 1:3\n    - 3:1\n    - 0:1\n**Question**: The following week, the factory wants to use a total of 2700 kg of cocoa across all production.  Maintaining the existing cocoa ratios for each chocolate type, and assuming no wastage, how many kilograms of White Chocolate will the factory produce?\n",
+            "difficulty": "hard",
+            "reasoning": "**1. Calculate cocoa usage per chocolate type:**\n\n* **Milk Chocolate:**  The cocoa ratio is 1:3, meaning cocoa represents 1 part out of 4 total parts. Therefore, cocoa used per kg of Milk Chocolate is 1/4 kg.\n* **Dark Chocolate:** The cocoa ratio is 3:1, meaning cocoa represents 3 parts out of 4 total parts. So, cocoa used per kg of Dark Chocolate is 3/4 kg.\n* **White Chocolate:** The cocoa ratio is 0:1, meaning there's no cocoa in White Chocolate.\n\n**2. Calculate the proportion of total cocoa used for Milk and Dark Chocolate:**\n\n* Let's assume the factory produces 'x' kg of Milk Chocolate and 'y' kg of Dark Chocolate. \n* Total cocoa used = (1/4)x + (3/4)y = 2700 kg (given)\n\n**3.  Express the production of Milk and Dark Chocolate in terms of cocoa usage:**\n\n* From the cocoa usage in Milk Chocolate:  x = 4 * (cocoa used in Milk Chocolate)\n* From the cocoa usage in Dark Chocolate: y = (4/3) * (cocoa used in Dark Chocolate)\n\n**4.  Use the original production ratios to find the relationship between x and y:**\n\n* The original production ratio of Milk Chocolate to Dark Chocolate is 2400 kg : 1800 kg, simplifying to 4:3\n* Therefore, x/y = 4/3\n\n**5. Solve the equations to find the cocoa used for Milk and Dark Chocolate:**\n\n* Substitute the values of x and y from step 3 into the equation from step 4. \n* This gives an equation with two unknowns (cocoa usage in Milk and Dark Chocolate), solvable using the equation from step 2.\n* Solving, we get: cocoa used in Milk Chocolate = 1200 kg, cocoa used in Dark Chocolate = 1500 kg\n\n**6. Calculate the production of White Chocolate:**\n\n* Total production = Milk Chocolate (x) + Dark Chocolate (y) + White Chocolate (z) \n* Using the original production ratios and the calculated cocoa usage (which translates to production quantity), we can find the White Chocolate production.\n* Solving, we get: White Chocolate (z) = 937.5 kg\n\nTherefore, the factory will produce 937.5 kg of White Chocolate.",
+            "option and correct options": [
+                "937.5 kg",
+                "1125 kg",
+                "1500 kg",
+                "625 kg",
+                "875 kg"
+            ],
+            "correct_option": "A",
+            "options": [
+                "937.5 kg",
+                "1125 kg",
+                "1500 kg",
+                "625 kg"
+            ]
+        },
+        {
+            "question": "Two venture capital firms, 'Alpha Investments' and 'Beta Capital', are evaluating the performance of their startup portfolios over the past 5 years.  Both firms focus on early-stage tech companies. \n\nHere's the annual percentage return for each firm's portfolio:\n\n| Year | Alpha Investments | Beta Capital |\n|---|---|---|\n| 1 | 8% | -2% |\n| 2 | 15% | 25% |\n| 3 | -5% | 10% |\n| 4 | 22% | 7% |\n| 5 | 10% | 18% |\n\nWhile both firms have achieved a positive average return over the 5 years, which firm has demonstrated greater volatility in its portfolio performance, as measured by variance, and what does this difference in variance imply about each firm's investment strategy?",
+            "difficulty": "hard",
+            "reasoning": "This question is considered 'hard' due to the multi-step calculation required and the need to interpret the results in the context of investment strategy.\n\nHere's how to solve it:\n\n**1. Calculate the mean (average) return for each firm:**\n\n* **Alpha Investments:** (8% + 15% - 5% + 22% + 10%) / 5 = 10%\n* **Beta Capital:** (-2% + 25% + 10% + 7% + 18%) / 5 = 11.6%\n\n**2.  Calculate the squared deviations from the mean for each year:**\n\n* **Alpha Investments:**\n    * Year 1: (8% - 10%)\u00b2 = 0.04\n    * Year 2: (15% - 10%)\u00b2 = 0.25\n    * Year 3: (-5% - 10%)\u00b2 = 2.25\n    * Year 4: (22% - 10%)\u00b2 = 1.44\n    * Year 5: (10% - 10%)\u00b2 = 0\n* **Beta Capital:**\n    * Year 1: (-2% - 11.6%)\u00b2 = 1.85\n    * Year 2: (25% - 11.6%)\u00b2 =  1.85\n    * Year 3: (10% - 11.6%)\u00b2 = 0.03\n    * Year 4: (7% - 11.6%)\u00b2 = 0.21\n    * Year 5: (18% - 11.6%)\u00b2 = 0.41\n\n**3. Calculate the variance for each firm:**\n\n* **Alpha Investments:** (0.04 + 0.25 + 2.25 + 1.44 + 0) / (5-1) = **1.00** \n* **Beta Capital:** (1.85 + 1.85 + 0.03 + 0.21 + 0.41) / (5-1) = **1.09**\n\n**4. Interpretation:**\n\nBeta Capital has a slightly higher variance than Alpha Investments. This means that Beta Capital's portfolio returns have been more spread out from their average return compared to Alpha Investments.  In the context of investment strategy, this suggests that Beta Capital might be taking on riskier investments with the potential for both higher highs and lower lows. Alpha Investments, with its lower variance, might be employing a more conservative strategy, aiming for more consistent but potentially less spectacular returns.",
+            "options": [
+                "Alpha Investments",
+                "Beta Capital",
+                "Alpha Investments",
+                "Beta Capital"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Data Interpretation",
+    "exam_id": 18,
+    "order": 2
+}

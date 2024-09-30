@@ -1,0 +1,452 @@
+{
+    "questions": [
+        {
+            "question": "A local bakery sells cookies for $2 each.  They need to make at least $50 in cookie sales today to meet their goal.  Write an inequality to represent the number of cookies, 'c', they need to sell, and solve for the minimum number of cookies.",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the subtopic 'Solving Linear Inequalities in One Variable' within 'Quants - Inequalities' as it requires setting up and solving a linear inequality. \n\nHere's how to solve it:\n\n1. **Define the variable:** Let 'c' represent the number of cookies sold.\n\n2. **Set up the inequality:** Since each cookie costs $2, the total earnings are 2c. They need to make at least $50, so the inequality is: 2c \u2265 50\n\n3. **Solve for 'c':** Divide both sides of the inequality by 2: c \u2265 25 \n\n**Therefore, the bakery needs to sell at least 25 cookies to meet their goal.**",
+            "options": [
+                "Solving Linear Equations in One Variable",
+                "Solving Quadratic Inequalities",
+                "Solving Linear Inequalities in One Variable",
+                "Solving Exponential Inequalities"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Alice, Bob, and Charlie are measuring sticks to build a triangular frame. Alice's stick is 5 units long, and Bob's stick is 7 units long. Charlie claims he can find a stick that will form a triangle with their sticks, no matter how long it is. Is Charlie's claim true or false?",
+            "difficulty": "easy",
+            "reasoning": "Charlie's claim is **false**. Here's why:\n\n**Understanding the Triangle Inequality:**\nThe Triangle Inequality Theorem states that the sum of the lengths of any two sides of a triangle must be greater than the length of the third side.\n\n**Applying it to the problem:**\n* Let's call the length of Charlie's stick 'C'.\n* To form a triangle, these three inequalities must hold true:\n    * 5 + 7 > C\n    * 5 + C > 7\n    * 7 + C > 5\n\n* Simplifying the inequalities:\n    * 12 > C \n    * C > 2\n    * C > -2 (This inequality is always true since stick lengths can't be negative)\n\n**Conclusion:**\nCharlie's stick length (C) must be greater than 2 and less than 12.  Therefore, he cannot find a stick of any length that would always work. For example, if Charlie's stick was 1 unit long, it wouldn't form a triangle with Alice and Bob's sticks.",
+            "options": [
+                "True",
+                "False",
+                "Always",
+                "Never"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: John wants to buy some new books for his collection. He has $25 saved up, and each book costs $5.\n**variable**: Let 'b' be the number of books John can buy.\n**inequality**: 5b \u2264 25\n**question**: What is the maximum number of books John can buy?\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Applications of Inequalities in Word Problems' topic as it uses an inequality to represent a real-life scenario. \n\nHere's how to solve the problem:\n\n1. **Understanding the inequality:** The inequality 5b \u2264 25 represents the total cost of the books (5b) being less than or equal to the amount of money John has ($25).\n\n2. **Solving for 'b':** To find the maximum number of books, we need to solve the inequality for 'b'. We can do this by dividing both sides of the inequality by 5:\n\n   ```\n   5b \u2264 25\n   b \u2264 25/5\n   b \u2264 5\n   ```\n\n3. **Interpreting the solution:** The solution, b \u2264 5, means John can buy a maximum of 5 books. ",
+            "options": [
+                "3",
+                "4",
+                "6",
+                "7"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**question_type**: Absolute Value Inequality\n**difficulty_level**: Easy (5/10)\n**context**: A gardener wants to plant a row of flowers along a fence.  He wants the row to be centered, with the center of the row being exactly 10 feet from the edge of the fence. He's okay with a little variation, so he decides the center of the flower row can be within 2 feet of the target spot.\n**problem_statement**: Write an absolute value inequality that represents all the possible distances (d) in feet, from the edge of the fence, where the center of the flower row can be located.\n",
+            "difficulty": "easy",
+            "reasoning": "Let d be the distance from the edge of the fence to the center of the flower row. The gardener wants the center to be within 2 feet of the 10-foot mark. This means the difference between the actual distance (d) and the target distance (10 feet) should be less than or equal to 2 feet.\n\nMathematically, this can be expressed as:\n\n|d - 10| \u2264 2 \n\n* |d - 10| represents the absolute value of the difference between the actual distance and the target distance.\n* \u2264 2 indicates that this difference must be less than or equal to 2 feet.",
+            "options": [
+                "|d - 10| \u2264 2",
+                "|d + 10| \u2264 2",
+                "|d - 2| \u2264 10",
+                "|d + 2| \u2264 10"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Given six positive numbers a, b, c, d, e, f such that a \u2264 b \u2264 c \u2264 d \u2264 e \u2264 f, prove that (a + c + e)(b + d + f) \u2264 3(ab + cd + ef).",
+            "difficulty": "easy",
+            "reasoning": "This question utilizes the Rearrangement Inequality. Here's a step-by-step solution and explanation:\n\n**1. Understanding Rearrangement Inequality:**\n\nThe Rearrangement Inequality states that, given two sequences of real numbers arranged in a specific order, the sum of pairwise products is maximized when the sequences are similarly ordered and minimized when they are oppositely ordered.\n\n**2. Applying to the problem:**\n\n* We have two sequences: (a, c, e) and (b, d, f) arranged in ascending order.\n* According to the Rearrangement Inequality, the following holds:\n   - Maximum sum: ab + cd + ef (sequences are similarly ordered)\n   - Minimum Sum: af + be + cd (sequences are oppositely ordered)\n* All other pairings of products will have a sum that falls between these two extremes.\n\n**3. Proving the inequality:**\n\n* We need to prove: (a + c + e)(b + d + f) \u2264 3(ab + cd + ef)\n* Expanding the left side: ab + ad + af + bc + bd + bf + ce + de + ef \n* Notice that this expansion contains all possible pairings of products from the sequences (a, c, e) and (b, d, f).\n* Since ab + cd + ef is the maximum possible sum of pairwise products, the sum of all terms on the left side is less than or equal to three times this maximum sum.\n* Therefore: (a + c + e)(b + d + f) \u2264 3(ab + cd + ef) \n\n**Conclusion:**\n\nThe inequality holds true, and we have proven it using the Rearrangement Inequality.",
+            "options": [
+                "Rearrangement Inequality",
+                "Cauchy-Schwarz Inequality",
+                "AM-GM Inequality",
+                "Triangle Inequality"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A farmer wants to plant two types of crops: wheat and corn. Each acre of wheat yields a profit of $50 and requires 2 hours of labor per week. Each acre of corn yields a profit of $80 and requires 4 hours of labor per week. The farmer has a maximum of 12 acres of land available for planting and can dedicate up to 32 hours per week to labor.\n**objective**: Determine the number of acres of wheat (x) and corn (y) the farmer should plant to maximize their profit.\n**constraints**: \n  - x + y \u2264 12 (land constraint)\n  - 2x + 4y \u2264 32 (labor constraint)\n  - x \u2265 0, y \u2265 0 (non-negativity constraint)\n**question**: What is the maximum profit the farmer can achieve, and how many acres of each crop should they plant to achieve it?\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Linear Programming: Optimization with Constraints' topic within 'Quants - Inequalities'.\n\nHere's how to solve it:\n\n**1. Define the objective function:**\n\nThe objective is to maximize profit. The profit from wheat is $50/acre and from corn is $80/acre. Therefore, the objective function is:\n\nMaximize  P = 50x + 80y \n\n**2. Graph the constraints:**\n\n* **Land constraint:** x + y \u2264 12\n   To graph this, find the intercepts: (12, 0) and (0, 12). Shade the area below the line connecting these points.\n* **Labor constraint:** 2x + 4y \u2264 32\n   Intercepts: (16, 0) and (0, 8). Shade the area below the line connecting these points.\n* **Non-negativity:** x \u2265 0, y \u2265 0\n   This limits us to the first quadrant of the graph.\n\n**3. Identify the feasible region:**\n\nThe feasible region is the area where the shaded regions of all constraints overlap. In this case, it's a polygon with vertices at (0,0), (12,0), (8,4), and (0,8).\n\n**4. Find the optimal solution:**\n\nThe optimal solution lies at one of the vertices of the feasible region. Evaluate the objective function (P = 50x + 80y) at each vertex:\n\n* (0, 0): P = 0\n* (12, 0): P = 600\n* (8, 4): P = 720\n* (0, 8): P = 640\n\n**5. Interpret the solution:**\n\nThe maximum profit the farmer can achieve is $720 by planting 8 acres of wheat and 4 acres of corn.",
+            "options": [
+                "$600",
+                "$720",
+                "$640",
+                "$0"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker needs to bake a cake that's between 25 and 30 centimeters long, inclusive. He knows his cake pan expands by 2 centimeters in the oven.  Which of the following inequalities represents the initial lengths, 'L', the baker could make the cake before baking?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understand the problem:**\n\nThe baker wants the final cake length (after baking) to be between 25cm and 30cm, including those exact lengths. Since the pan expands, he needs to start with a shorter cake.\n\n**2. Set up the inequalities:**\n\n* **Lower limit:** The cake needs to be at least 25cm after expanding 2cm. So, initially, it needs to be at least 25cm - 2cm = 23cm.\n* **Upper limit:** The cake cannot be longer than 30cm after expanding 2cm. So, initially, it cannot be longer than 30cm - 2cm = 28cm.\n\n**3. Combine into a compound inequality:**\n\nWe need to express that the initial length 'L' should be within the calculated limits, *including* the limits themselves. This means using the 'and' statement and the 'less than or equal to' (\u2264) and 'greater than or equal to' (\u2265) symbols.\n\nThe correct inequality is:  23 \u2264 L \u2264 28 \n\n**Therefore, the baker should make the cake between 23cm and 28cm long before baking.**",
+            "options": [
+                "22cm",
+                "24cm",
+                "29cm",
+                "31cm"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**problem_statement**: A bakery sells cookies for $2 each. They need to earn at least $50 from cookie sales to cover the cost of ingredients. \n**inequality**: 2x \u2265 50\n**question**: What is the minimum number of cookies the bakery must sell to cover their ingredient costs?\n**difficulty**: 6\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Solving Linear Inequalities in One Variable' because it involves setting up and solving a linear inequality based on a real-world scenario. \n\nHere's how to solve the problem step-by-step:\n\n1. **Understanding the Inequality:** The inequality 2x \u2265 50 represents the situation where the bakery's earnings (2x) must be greater than or equal to $50. \n\n2. **Isolating 'x':** To find the minimum number of cookies (x), divide both sides of the inequality by 2: \n   (2x) / 2 \u2265 50 / 2\n\n3. **Solution:** This simplifies to x \u2265 25.  \n\n**Therefore, the bakery must sell at least 25 cookies to cover their ingredient costs.** ",
+            "options": [
+                "12",
+                "25",
+                "50",
+                "100"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: John is baking cookies for his friends. He needs at least 24 cookies.\n**inequality**: c + 12 > 24\n**question**: If John already baked 12 cookies, how many more cookies (represented by 'c') does he need to bake to have enough?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "**explanation**: This question utilizes the addition property of inequalities.  It checks if the student understands how to isolate a variable and solve for a minimum value.\n**steps**: \n  - **Step 1: Identify the inequality and what needs to be solved.** We have the inequality 'c + 12 > 24', and we want to find the minimum number of cookies 'c' that John still needs to bake.\n  - **Step 2: Isolate the variable 'c'.**  To do this, we subtract 12 from both sides of the inequality:\n  -   c + 12 - 12 > 24 - 12\n  - **Step 3: Simplify.** This gives us:\n  -   c > 12\n  - **Step 4: Interpret the solution.** This means John needs to bake more than 12 cookies.\n",
+            "options": [
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**visual**: A number line with an open circle at 3 and shading to the left.\n**question**: Imagine you're walking along this number line. You see a magic portal at the number 3, but it only lets you pass if you're coming from numbers smaller than 3.  \n\n 1. Describe the numbers you could start from to enter the portal. \n 2. Write an inequality that represents all the starting numbers that allow you to pass through the portal.\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the understanding of inequalities on a number line in a creative and engaging way, aligning with the 'easy' difficulty level (6/10). \n\n **Explanation:** \n\n1. **Identifying the Inequality:** The open circle at 3 indicates that 3 itself is not included in the solution set. The shading to the left represents all numbers less than 3. \n\n2. **Writing the Inequality:** The inequality representing all starting numbers allowing passage through the portal is  'x < 3'. This means 'x' can be any number smaller than 3.  \n\n**Why This Works:**\n* **Visual Interpretation:** The visual representation of the number line aids in understanding the concept of 'numbers less than 3'.\n* **Real-World Context:** The analogy of a magic portal makes the question relatable and easier to visualize.\n* **Mathematical Notation:** The question prompts the student to translate the visual information into standard mathematical notation, reinforcing the connection between the two. ",
+            "options": [
+                "x < 3",
+                "x > 3",
+                "x \u2264 3",
+                "x \u2265 3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine you're planning a hiking trip. You want to hike from Base Camp to Peak Vista, then to Sunset Point, and finally back to Base Camp.  The distance from Base Camp to Peak Vista is 8 miles, and the distance from Peak Vista to Sunset Point is 5 miles. What is the maximum possible distance (as a whole number) between Base Camp and Sunset Point if you want to ensure your hike forms a valid triangular path?",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the Triangle Inequality Theorem, which states that the sum of any two sides of a triangle must be greater than the third side.  \n\nHere's how to solve it:\n\n* **Represent the sides:**\n    * Let 'x' be the distance between Base Camp and Sunset Point.\n    * We already know the other two sides: 8 miles and 5 miles.\n\n* **Apply the Triangle Inequality:**\n    * We need to consider all three possible inequalities:\n        * x + 8 > 5  (This is always true as x must be a positive distance)\n        * x + 5 > 8  (Solving this, we get x > 3)\n        * 8 + 5 > x (Solving this, we get x < 13)\n\n* **Combine the inequalities:**\n    * Combining x > 3 and x < 13, we get 3 < x < 13.\n\n* **Find the maximum whole number:**\n    * The maximum possible whole number distance for 'x' within this range is 12 miles.\n\nTherefore, the maximum possible distance between Base Camp and Sunset Point is 12 miles to ensure a valid triangular path.",
+            "options": [
+                "10 miles",
+                "13 miles",
+                "12 miles",
+                "8 miles"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**problem_statement**: A bakery is making two types of cakes: chocolate and vanilla. They need to make at least 20 cakes in total. Due to customer demand, they must make at least 5 chocolate cakes and cannot bake more than 15 vanilla cakes.\n**constraints**: \n  - x \u2265 5 (chocolate cakes)\n  - y \u2264 15 (vanilla cakes)\n  - x + y \u2265 20 (total cakes)\n**question**: What is the maximum number of vanilla cakes the bakery can make while still meeting all the requirements?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Systems of Inequalities' topic as it involves interpreting and finding a solution within the given constraints. Here's a step-by-step solution:\n\n1. **Understand the Constraints:** \n    - The bakery needs to make at least 5 chocolate cakes (x \u2265 5).\n    - They cannot bake more than 15 vanilla cakes (y \u2264 15).\n    - The total number of cakes must be at least 20 (x + y \u2265 20).\n\n2. **Focus on the Question:** We want to maximize the number of vanilla cakes (y) while still satisfying all constraints.\n\n3. **Utilize the Constraints:**\n    - Since x + y \u2265 20 and x \u2265 5, even if the bakery makes the minimum number of chocolate cakes (x=5), they still need to make at least 15 vanilla cakes (5 + y \u2265 20).\n    - However, the constraint y \u2264 15 limits the number of vanilla cakes to a maximum of 15.\n\n4. **Determine the Maximum:** Therefore, the maximum number of vanilla cakes the bakery can make is 15.\n\nTherefore, the answer is 15.",
+            "options": [
+                "10",
+                "15",
+                "20",
+                "25"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**problem_statement**: Given two sequences of real numbers,  a = (1, 2, 3) and b = (2, 1, 2), prove that the following inequality holds true using the Cauchy-Schwarz Inequality.\n**question**: |(a \u22c5 b)| <= ||a|| * ||b||, where (a \u22c5 b) represents the dot product of vectors a and b, and ||a|| and ||b|| represent the magnitudes of vectors a and b, respectively.\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThe Cauchy-Schwarz Inequality states that for any two vectors, the absolute value of their dot product is less than or equal to the product of their magnitudes.\n\n**Step 1: Calculate the dot product of vectors a and b.**\n\n (a \u22c5 b) = (1 * 2) + (2 * 1) + (3 * 2) = 2 + 2 + 6 = 10\n\n**Step 2: Calculate the magnitudes of vectors a and b.**\n\n||a|| = sqrt((1)^2 + (2)^2 + (3)^2) = sqrt(1 + 4 + 9) = sqrt(14)\n||b|| = sqrt((2)^2 + (1)^2 + (2)^2) = sqrt(4 + 1 + 4) = sqrt(9) = 3\n\n**Step 3: Substitute the calculated values into the Cauchy-Schwarz Inequality.**\n\n|(a \u22c5 b)| <= ||a|| * ||b||\n\n|10| <= sqrt(14) * 3\n\n10 <= 10.95\n\n**Conclusion:** \nThe inequality holds true as 10 is less than or equal to 10.95, thus proving the Cauchy-Schwarz Inequality for the given vectors.",
+            "options": [
+                "10.95",
+                "10",
+                "sqrt(14)",
+                "3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A gardener is designing a rectangular garden with a length of (x + 5) meters and a width of (x - 3) meters. He wants the ratio of the garden's area to its perimeter to be less than (x + 1) meters.  What are the possible values for x?\n**instructions**: Solve the inequality and express your answer in interval notation.\n",
+            "difficulty": "medium",
+            "reasoning": "This problem, while framed around a gardening scenario, assesses the core concepts of rational inequalities, critical points, and test intervals. Here's a step-by-step solution:\n\n**1. Set up the inequality:**\n\n* **Area of the garden:** (x + 5)(x - 3)\n* **Perimeter of the garden:** 2(x + 5) + 2(x - 3) = 4x + 4\n* **Ratio of area to perimeter:** [(x + 5)(x - 3)] / (4x + 4)\n\nThe problem states that this ratio must be less than (x + 1):\n\n[(x + 5)(x - 3)] / (4x + 4) < (x + 1)\n\n**2. Simplify and find critical points:**\n\n* Subtract (x + 1) from both sides to get a 0 on the right side:\n[(x + 5)(x - 3)] / (4x + 4) - (x + 1) < 0\n\n* Find a common denominator and simplify:\n[(x + 5)(x - 3) - (x + 1)(4x + 4)] / (4x + 4) < 0\n\n* Expand and combine terms:\n(x\u00b2 + 2x - 15 - 4x\u00b2 - 8x - 4) / (4x + 4) < 0\n(-3x\u00b2 - 6x - 19) / (4x + 4) < 0\n\n* Factor out a -1 from the numerator (optional, for easier factoring):\n(3x\u00b2 + 6x + 19) / (4x + 4) > 0 \n\n* **Critical Points:**\n    * **Numerator:** The quadratic (3x\u00b2 + 6x + 19) has no real roots (the discriminant is negative). This means the expression in the numerator never equals zero.\n    * **Denominator:** 4x + 4 = 0 when x = -1. \n\n**3. Test Intervals:**\n\nWe have one critical point (x = -1) which divides the number line into two intervals:\n\n* **Interval 1:** x < -1\n* **Interval 2:** x > -1\n\nChoose a test value within each interval and substitute it into the simplified inequality  [(3x\u00b2 + 6x + 19) / (4x + 4) > 0] to see if the inequality holds true:\n\n* **Interval 1 (x < -1):** Let's test x = -2. The inequality becomes positive/negative, which is negative. The inequality does not hold.\n* **Interval 2 (x > -1):** Let's test x = 0. The inequality becomes positive/positive, which is positive. The inequality holds. \n\n**4. Express the Solution in Interval Notation:**\n\nThe solution is x > -1.  In interval notation, this is expressed as (-1, \u221e).\n",
+            "options": [
+                "(-\u221e, -1)",
+                "(-1, \u221e)",
+                "[-1, \u221e)",
+                "(-\u221e, -1]"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Difficulty Level**: 6/10\n**Question Type**: Prove/Disprove\n**Context**: Let x, y, and z be positive real numbers such that x + y + z = 1.\n**Inequality Technique**: Rearrangement Inequality\n**Example**: Prove or disprove the following inequality:  x^2*y + y^2*z + z^2*x <= 4/27\n",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the Rearrangement Inequality, which states that given two sequences of real numbers arranged in a specific order, the sum of pairwise products is maximized when the sequences are similarly ordered and minimized when they are oppositely ordered. \n\n**Solution:**\n1. **Apply AM-GM:** Applying AM-GM on  x^2*y, y^2*z, z^2*x, we get:\n(x^2*y + y^2*z + z^2*x)/3 <=  ((x^2y)^(1/3) * (y^2z)^(1/3) *(z^2x)^(1/3))^3\n\n2. **Simplify:** This simplifies to: \n(x^2*y + y^2*z + z^2*x)/3  <= xyz\n\n3. **Utilize x + y + z =1:** We know x + y + z = 1. Cubing both sides, we get: \n x^3 + y^3 + z^3 + 3(x^2y + xy^2 + x^2z + xz^2 + y^2z + yz^2) + 6xyz = 1\n\n4. **Apply AM-GM again:** Using AM-GM on (x^3 + y^3 + z^3), we know  (x^3 + y^3 + z^3)/3 >= xyz. Substituting this in the above equation we get:\n3xyz +  3(x^2y + xy^2 + x^2z + xz^2 + y^2z + yz^2) + 6xyz <= 1\nSimplifying, we get:\n(x^2y + xy^2 + x^2z + xz^2 + y^2z + yz^2)  <= 1/3 - 3xyz\nSince, (x^2y + xy^2 + x^2z + xz^2 + y^2z + yz^2) is always positive, we can say:\n1/3 - 3xyz >=0\nThis gives us xyz <= 1/9\n\n5. **Combine results:** Combining with our result from step 2, we have:\n(x^2*y + y^2*z + z^2*x)/3  <= xyz <= 1/9\nTherefore,\n(x^2*y + y^2*z + z^2*x) <= 1/27 < 4/27 \n\nHence, the inequality x^2*y + y^2*z + z^2*x <= 4/27 is **True**.",
+            "options": [
+                "True",
+                "False",
+                "Indeterminate",
+                "Cannot be determined"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A machine produces resistors with a target resistance of 20 ohms. The acceptable range of resistance is within 1.5 ohms of the target. What is the allowable range of resistance for the resistors produced by this machine?\n**instructions**: Express your answer as an absolute value inequality.\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understand Absolute Value in this Context**\n\nAbsolute value, denoted by |x|, represents the distance of a number (x) from zero on the number line. In this case, we want to find the range of resistances that are within 1.5 ohms of the target (20 ohms). This means the *difference* between the resistor's resistance (let's call it 'R') and the target resistance (20 ohms) must be less than or equal to 1.5 ohms.\n\n**2. Set up the Inequality**\n\nWe can express this mathematically as:\n\n|R - 20| \u2264 1.5\n\n* **|R - 20|** represents the absolute difference between the resistor's resistance (R) and the target resistance (20 ohms).\n* **\u2264 1.5** means this difference must be less than or equal to 1.5 ohms.\n\n**3. Interpretation**\n\nThis inequality states that the allowable resistance, R, can be 1.5 ohms greater than or 1.5 ohms less than the target resistance of 20 ohms.",
+            "options": [
+                "18.5 ohms",
+                "21.5 ohms",
+                "|R - 20| \u2264 1.5",
+                "18.5 \u2264 R \u2264 21.5"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**problem_statement**: Given that  'a'  and 'b' are positive numbers where 3a - 2b > 10 and a + b < 15, which of the following must be true?\n**question**: Determine the possible range of values for 'a'.\n**difficulty**: 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to manipulate and combine inequalities to isolate a variable. Here's how to solve it:\n\n**1. Manipulate the Inequalities:**\n\n*   Start with the first inequality: 3a - 2b > 10 \n*   Add 2b to both sides: 3a > 10 + 2b\n*   Divide both sides by 3: a > (10 + 2b)/3\n\n*   Now consider the second inequality: a + b < 15\n*   Subtract 'b' from both sides: a < 15 - b\n\n**2. Combining the Results:**\n\n*   We now have two inequalities for 'a':\n    *   a > (10 + 2b) / 3\n    *   a < 15 - b\n\n*   Since 'a' must satisfy both conditions, we know  (10 + 2b)/3  is a lower bound for 'a', and  15 - b is an upper bound for 'a'. \n\n**3. Expressing the Range:**\n\n*   Therefore, the possible range of 'a' can be expressed as:  (10 + 2b) / 3 < a < 15 - b  \n\n**Important Note:** We cannot determine a specific numerical range for 'a' without more information about 'b'. The solution represents all possible values of 'a' that would satisfy the initial conditions.",
+            "options": [
+                "(10 + 2b) / 3 < a < 15 - b",
+                "a > (10 + 2b) / 3",
+                "a < 15 - b",
+                "a > 10"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A rectangular garden is being designed with one side against an existing wall. The gardener has 40 meters of fencing to use for the remaining three sides.  What are the dimensions of the largest possible garden area, given that the length (parallel to the wall) must be at least twice the width?\n**instructions**: Find the width and length that maximize the garden's area.\n",
+            "difficulty": "medium",
+            "reasoning": "Let the width of the garden be 'w' meters. Since the length is at least twice the width, the length will be '2w' meters.\n\n**1. Set up the perimeter equation:**\n\nThe perimeter is the total length of the fence, which is 40 meters.  We only need to fence three sides: \n\n*  width (w) + length (2w) + width (w) = 40\n*  4w = 40\n\n**2.  Solve for the width:**\n\n*  w = 10 meters\n\n**3. Calculate the length:**\n\n*  length = 2w = 2 * 10 = 20 meters\n\n**4. Express the area as a function of the width:**\n\n* Area (A) = length * width\n* A = (2w) * w\n* A = 2w\u00b2\n\n**5. Analyze the quadratic:**\n\nThe area equation is a quadratic with a positive leading coefficient (2), meaning its graph is a parabola opening upwards.  The vertex of this parabola represents the maximum point, which corresponds to the maximum area. \n\nSince we already found the width (w = 10) that satisfies the perimeter constraint, and the area equation is solely in terms of 'w', this width will also correspond to the maximum area. \n\n**Therefore, the dimensions that maximize the garden's area are:**\n\n* Width: 10 meters\n* Length: 20 meters",
+            "options": [
+                "10 meters",
+                "20 meters",
+                "100 square meters",
+                "200 square meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A farmer is monitoring the temperature in his greenhouse to ensure optimal growing conditions for his tomato plants. The ideal temperature range for these tomatoes is between 20\u00b0C and 30\u00b0C, inclusive. However, the temperature can fluctuate throughout the day. In Celsius, the temperature (T)  must be at least 5\u00b0C away from the lower limit of the ideal range OR at most 3\u00b0C away from the upper limit of the ideal range. What is the range of acceptable temperatures (T) in the greenhouse?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Define the inequalities:**\n\n* **Constraint 1:** The temperature must be at least 5\u00b0C away from the lower limit (20\u00b0C).\n    *  This can be written as two separate inequalities:\n        * T < 20 - 5  or T > 20 + 5 \n        * T < 15 or T > 25\n\n* **Constraint 2:** The temperature must be at most 3\u00b0C away from the upper limit (30\u00b0C).\n    * This can be written as two separate inequalities:\n       * T > 30 - 3 or T < 30 + 3\n       * T > 27 or T < 33\n\n**2. Combine the inequalities using 'OR':**\n\nSince either constraint can be met for the temperature to be acceptable, we combine them with 'OR':\n\nT < 15 OR T > 25 OR T > 27 OR T < 33\n\n**3. Simplify the combined inequality:**\n\nNotice that the intervals T > 25 and T > 27 overlap. We can simplify the inequality to:\n\nT < 15 OR T > 25 OR T < 33\n\nFurther simplifying, as any temperature above 25 is acceptable, and any temperature below 33 is also acceptable, we are left with:\n\nT < 15 OR T > 25 \n\n**4.  Interpret the solution:**\n\nThe acceptable range of temperatures in the greenhouse is any temperature below 15\u00b0C or any temperature above 25\u00b0C. ",
+            "options": [
+                "15\u00b0C to 25\u00b0C",
+                "Below 15\u00b0C or above 25\u00b0C",
+                "20\u00b0C to 30\u00b0C",
+                "25\u00b0C to 33\u00b0C"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Solve the following inequality for the values of 'x':\\(\\frac{x^2 - 3x + 2}{x^2 + 2x - 3} \\le 0\\)",
+            "difficulty": "medium",
+            "reasoning": "**1. Factor the expressions:**\n\n  Both the numerator and denominator can be factored:\n  \n  *  $\\frac{(x-2)(x-1)}{(x+3)(x-1)} \\le 0$ \n\n**2.  Identify Critical Points:**\n\n  Critical points are where the expression equals zero or is undefined. \n  \n  * **Zeros:** Numerator equals zero: x = 2, x = 1\n  * **Undefined:** Denominator equals zero: x = -3, x = 1\n  \n  Notice that x=1 is both a zero and makes the expression undefined.\n\n**3. Create Test Intervals:**\n\n  The critical points divide the number line into intervals. We'll test a value within each interval to see if it satisfies the inequality.\n\n  *  (-\u221e, -3)\n  *  (-3, 1)\n  *  (1, 2)\n  *  (2, \u221e)\n\n**4. Test the Intervals:**\n\n  Let's choose test values and plug them into the simplified inequality: \n\n  * **x = -4:**  $\\frac{(-4-2)(-4-1)}{(-4+3)(-4-1)} = \\frac{30}{5} > 0$  (False)\n  * **x = 0:**  $\\frac{(0-2)(0-1)}{(0+3)(0-1)} = \\frac{-2}{-3} > 0$ (False)\n  * **x = 1.5:**  $\\frac{(1.5-2)(1.5-1)}{(1.5+3)(1.5-1)} = \\frac{-0.25}{2.25} < 0$ (True)\n  * **x = 3:**  $\\frac{(3-2)(3-1)}{(3+3)(3-1)} = \\frac{2}{12} > 0$  (False)\n\n**5. Determine the Solution:**\n\n The inequality is true when  1 < x < 2.  However, we need to consider the critical points themselves.\n\n* x = 2 makes the expression equal to zero, which satisfies the 'less than or equal to' condition. So, it's included in the solution.\n* x = 1 makes the expression undefined, so it's not included.\n\n**Therefore, the solution in interval notation is (1, 2].**",
+            "options": [
+                "(1,2)",
+                "(1,2]",
+                "[-3,1)",
+                "(-3,1)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**questionStatement**: Let a, b, and c be positive real numbers such that  a + b + c = 3. Prove that  (1/a + 1) + (1/b + 1) + (1/c + 1) \u2265 6.\n**context**: None\n**givenInformation**: a, b, c > 0 and a + b + c = 3\n**task**: Prove the inequality: (1/a + 1) + (1/b + 1) + (1/c + 1) \u2265 6\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis problem requires a clever application of the AM-GM inequality. Here's how to solve it:\n\n**1. Simplify the Inequality:**\n\nBegin by simplifying the left-hand side of the inequality:\n\n(1/a + 1) + (1/b + 1) + (1/c + 1)  =  1/a + 1/b + 1/c + 3 \n\n**2. Apply AM-GM:**\n\nNow, apply the AM-GM inequality to the terms 1/a, 1/b, and 1/c:\n\n(1/a + 1/b + 1/c)/3  \u2265  \u221b((1/a) * (1/b) * (1/c)) \n\nSimplifying the right-hand side gives us:\n\n(1/a + 1/b + 1/c)/3  \u2265  \u221b(1/abc)\n\n**3. Utilize the given information (a + b + c = 3):**\n\nApply AM-GM again, this time to a, b, and c:\n\n(a + b + c)/3  \u2265  \u221b(abc)\n\nSince a + b + c = 3, we get:\n\n1 \u2265 \u221b(abc)\n\nTaking the reciprocal of both sides:\n\n1/\u221b(abc) \u2265 1 \n\nOr equivalently:\n\n\u221b(1/abc) \u2265 1\n\n**4. Combine the inequalities:**\n\nNow, combine this result with the inequality from step 2:\n\n(1/a + 1/b + 1/c)/3  \u2265  \u221b(1/abc) \u2265 1\n\nThis implies:\n\n(1/a + 1/b + 1/c)/3 \u2265 1\n\nMultiplying both sides by 3, we get:\n\n1/a + 1/b + 1/c \u2265 3\n\nFinally, adding 3 to both sides, we arrive at the desired inequality:\n\n1/a + 1/b + 1/c + 3 \u2265 6\n\nTherefore, we have proven that (1/a + 1) + (1/b + 1) + (1/c + 1) \u2265 6 for positive real numbers a, b, and c such that a + b + c = 3.",
+            "options": [
+                "AM-GM",
+                "Cauchy-Schwarz",
+                "Triangle Inequality",
+                "Harmonic Mean"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Let a, b, c, and d be positive real numbers such that a + b + c + d = 1. Prove that (a^2 + 1/a)(b^2 + 1/b)(c^2 + 1/c)(d^2 + 1/d) >= 256.",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question requires a creative application of the Cauchy-Schwarz Inequality. Here's a step-by-step solution:\n\n**Step 1: Apply Cauchy-Schwarz Inequality**\n\nWe can apply the Cauchy-Schwarz inequality in the following way:\n\n[(\u221aa)^2 + (1/\u221aa)^2] [(\u221ab)^2 + (1/\u221ab)^2] [(\u221ac)^2 + (1/\u221ac)^2] [(\u221ad)^2 + (1/\u221ad)^2]  >= (a + b + c + d)^4\n\n**Step 2: Simplify the inequality**\n\nSimplifying the left side, we get:\n\n(a + 1/a)(b + 1/b)(c + 1/c)(d + 1/d) >= 1 \n\n**Step 3: Apply AM-GM Inequality**\n\nNow, apply AM-GM inequality to each of the factors on the left side:\n\n* a + 1/a >= 2\n* b + 1/b >= 2\n* c + 1/c >= 2\n* d + 1/d >= 2\n\n**Step 4: Combine the inequalities**\n\nMultiplying these inequalities, we obtain:\n\n(a + 1/a)(b + 1/b)(c + 1/c)(d + 1/d) >= 16\n\n**Step 5: Manipulate to reach the desired form**\n\nNotice that the desired inequality has terms like (a^2 + 1/a).  We can manipulate our current inequality to achieve this:\n\nMultiply both sides of the inequality (a + 1/a)(b + 1/b)(c + 1/c)(d + 1/d) >= 16  by  abcd:\n\n(a^2 + 1)(b^2 + 1)(c^2 + 1)(d^2 + 1) >= 16abcd\n\nNow, apply AM-GM one last time: a^2 + 1 >= 2a, b^2 + 1 >= 2b, and so on.  Therefore:\n\n(a^2 + 1)(b^2 + 1)(c^2 + 1)(d^2 + 1) >= 16 * 2a * 2b * 2c * 2d = 256abcd\n\nSince abcd is positive, we can divide both sides by abcd, obtaining the desired inequality:\n\n(a^2 + 1/a)(b^2 + 1/b)(c^2 + 1/c)(d^2 + 1/d) >= 256\n\nThis completes the proof.\n",
+            "options": [
+                "Cauchy-Schwarz",
+                "AM-GM",
+                "Arithmetic Mean",
+                "Geometric Mean"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A farmer wants to fence a rectangular area for his sheep. He has 100 feet of fencing available.  He wants the length of the enclosure to be at least twice the width.  \n\nWhich of the following systems of inequalities represents the possible dimensions of the enclosure, where 'l' represents the length and 'w' represents the width?",
+            "difficulty": "medium",
+            "reasoning": "**1. Formulate the inequalities:**\n\n* **Perimeter constraint:** The total fencing represents the perimeter of the rectangle.  Therefore, 2l + 2w \u2264 100  \n* **Length constraint:** The length must be at least twice the width: l \u2265 2w\n\n**2. Simplify the perimeter inequality:** Divide the perimeter inequality by 2: l + w \u2264 50\n\n**3. The System of Inequalities:**\n\nThe system of inequalities representing the situation is:\n\nl + w \u2264 50\nl \u2265 2w\n\nThis question requires understanding of both real-world applications of inequalities and the ability to form and manipulate them, making it a medium-difficulty question.",
+            "options": [
+                "l + w \u2264 50, l \u2265 2w",
+                "2l + 2w \u2264 100, l \u2265 2w",
+                "l + w \u2264 50, l \u2264 2w",
+                "2l + 2w \u2264 100, l \u2264 2w"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**statement**: Given that  -5 < x < 3 and 2 < y < 7, what is the range of possible values for x - y?\n**question**: Determine the lower and upper bounds for the expression x - y.\n",
+            "difficulty": "medium",
+            "reasoning": "To find the range of x - y, we need to consider the extreme cases:\n\n**Finding the Lower Bound:**\n\n* We want to make (x - y) as small as possible. This happens when x is as small as possible and y is as large as possible.\n* The smallest possible value of x is slightly larger than -5 (since x > -5).\n* The largest possible value of y is slightly smaller than 7 (since y < 7).\n* Therefore, the lower bound of x - y will be slightly larger than -5 - 7 = -12.\n\n**Finding the Upper Bound:**\n\n* We want to make (x - y) as large as possible. This happens when x is as large as possible and y is as small as possible.\n* The largest possible value of x is slightly smaller than 3 (since x < 3).\n* The smallest possible value of y is slightly larger than 2 (since y > 2).\n* Therefore, the upper bound of x - y will be slightly smaller than 3 - 2 = 1.\n\n**Conclusion:**\n\nThe range of possible values for x - y is -12 < x - y < 1.",
+            "options": [
+                "-12 < x - y < 1",
+                "-13 < x - y < 0",
+                "-12 < x - y < 0",
+                "-13 < x - y < 1"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "For what values of *x* is the following inequality true?\n \\sqrt{3x + 4}  <  x + 1",
+            "difficulty": "medium",
+            "reasoning": "**1.  Isolate the Radical:**\n   Begin by isolating the radical term.  \n\n   \\sqrt{3x + 4}  <  x + 1 \n\n**2.  Square Both Sides:**\n   Square both sides of the inequality to eliminate the radical. Remember that squaring both sides of an inequality can introduce extraneous solutions.\n\n   (\\sqrt{3x + 4})^2  <  (x + 1)^2\n   3x + 4 < x^2 + 2x + 1\n\n**3.  Solve the Quadratic Inequality:**\n   Move all terms to one side to form a quadratic inequality.\n\n   0 < x^2 - x - 3\n\n   Factor the quadratic expression:\n   0 < (x - 2)(x + 1)\n\n   Find the critical points (where the expression equals zero):\n   x = 2, x = -1\n\n   These critical points divide the number line into three intervals: \n    * x < -1\n    * -1 < x < 2\n    * x > 2\n\n   Test a value from each interval in the original inequality to determine the solution set:\n    *  x < -1:  Choose x = -2. The inequality does not hold.\n    * -1 < x < 2: Choose x = 0. The inequality does not hold.\n    *  x > 2:  Choose x = 3. The inequality holds.\n\n**4.  Check for Extraneous Solutions:**\n   Since we squared both sides of the inequality, we need to check if any of our solutions make the original inequality undefined. The radical is undefined for values of x that make the radicand (3x + 4) negative.  \n   \n   Solving 3x + 4 < 0, we get x < -4/3. However, none of our solutions fall in this range.\n\n**5.  Solution:**\n  Therefore, the solution to the inequality is **x > 2**. ",
+            "options": [
+                "x < -1",
+                "-1 < x < 2",
+                "x > 2",
+                "x < -4/3"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A ball is thrown vertically upwards. Its height 'h' in meters after 't' seconds is given by the equation h = 12t - t\u00b2.\n**inequality**: 12t - t\u00b2 > 20\n**task**: Find the time interval during which the ball is at a height greater than 20 meters.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Inequalities Involving Quadratic Expressions' as it requires solving a quadratic inequality. \n\nHere's a step-by-step solution:\n\n1. **Rewrite the inequality:**\n   Begin by moving all terms to one side to get a standard quadratic inequality:\n   t\u00b2 - 12t + 20 < 0\n\n2. **Factor the quadratic expression:**\n   Factor the quadratic expression to find its roots:\n   (t - 2)(t - 10) < 0 \n\n3. **Identify critical points:**\n   The critical points are the values of 't' where the expression equals zero. So, t = 2 and t = 10.\n\n4. **Test intervals:**\n   The critical points divide the number line into three intervals: t < 2, 2 < t < 10, and t > 10. Choose a test value within each interval and substitute it into the factored inequality to see if it holds true.\n\n   * For t < 2 (e.g., t = 1): (1 - 2)(1 - 10) = 9 > 0 (False)\n   * For 2 < t < 10 (e.g., t = 3): (3 - 2)(3 - 10) = -7 < 0 (True)\n   * For t > 10 (e.g., t = 11): (11 - 2)(11 - 10) = 9 > 0 (False)\n\n5. **Determine the solution:**\n   The inequality holds true only for the interval 2 < t < 10.\n\nTherefore, the ball is at a height greater than 20 meters between 2 and 10 seconds after being thrown.",
+            "options": [
+                "2 seconds",
+                "10 seconds",
+                "8 seconds",
+                "2 to 10 seconds"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A local farmer wants to donate between 100 and 200 apples to a food bank. He knows that the apples will be divided into bags, with each bag containing either 6 apples or 8 apples, depending on the size of the bag.  What is the smallest possible number of bags that the farmer's donation could fill?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Set up inequalities:**\n\n* Let 'x' be the number of bags containing 6 apples.\n* Let 'y' be the number of bags containing 8 apples.\n\nWe have two compound inequalities based on the given information:\n\n* **Total apples:** 6x + 8y \u2265 100  (at least 100 apples)\n* **Total apples:** 6x + 8y \u2264 200  (at most 200 apples)\n\n**2. Focus on minimizing total bags:**\n\nWe want to find the smallest possible value of (x + y), which represents the total number of bags.\n\n**3.  Consider extreme cases:**\n\n* **To minimize 'y' (bags of 8):** Assume the farmer donates close to the minimum of 100 apples. To minimize 'y', maximize 'x' (bags of 6). The largest multiple of 6 less than 100 is 96 (6 * 16). This leaves 4 apples unaccounted for.  We can't use a bag of 8 to perfectly fit those. \n\n* **To minimize 'x' (bags of 6):** Assume the farmer donates close to the minimum of 100 apples. The largest multiple of 8 less than 100 is 96 (8 * 12).  This leaves 4 apples unaccounted for, which could be put in one more bag of 6. This gives us a potential solution: x = 1, y = 12, total bags = 13.\n\n**4. Check for feasibility and smaller solutions:**\n\n* We need to check if 13 bags is achievable within the range of 100-200 apples. 1 bag of 6 + 12 bags of 8 = 6 + 96 = 102 apples. This works!\n\n* Since we are working with whole bags of apples, we can't have fewer than 12 bags of 8 apples if we want to get close to the minimum donation. Therefore, 13 bags is the smallest possible number.\n\n**Therefore, the smallest possible number of bags the farmer's donation could fill is 13.**",
+            "options": [
+                "10",
+                "12",
+                "13",
+                "15"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A portfolio manager is analyzing the returns of two stocks, A and B. Over the past year, the monthly returns of stock A are represented by the vector  a = (a\u2081, a\u2082, ..., a\u2081\u2082) and the monthly returns of stock B are represented by the vector b = (b\u2081, b\u2082, ..., b\u2081\u2082). The manager wants to find the maximum possible value of the absolute value of the covariance between the two stocks' returns. \n\n**Using the Cauchy-Schwarz Inequality, prove that the absolute value of the covariance between the returns of stock A and stock B is less than or equal to the product of the standard deviations of their returns.** \n\n**Note:** You can assume the average return for both stocks over the year is 0, simplifying the covariance formula to: \n\nCov(A, B) = (1/12) * \u03a3(a\u1d62 * b\u1d62)  where i ranges from 1 to 12.",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question tests the understanding of the Cauchy-Schwarz Inequality and its application in a financial context. Here's a step-by-step solution:\n\n1. **Understanding the Problem:**\n   - We're given two vectors representing monthly returns of two stocks. \n   - The goal is to find the maximum possible absolute value of their covariance using the Cauchy-Schwarz Inequality.\n\n2. **Cauchy-Schwarz Inequality:**\n   - Recall the Cauchy-Schwarz Inequality for vectors: |<u, v>| <= ||u|| * ||v||\n   - Where: \n      - <u, v> is the dot product of vectors u and v\n      - ||u|| and ||v|| are the magnitudes (or norms) of vectors u and v, respectively.\n\n3. **Applying Cauchy-Schwarz to the Problem:**\n   -  Let u = (a\u2081, a\u2082, ..., a\u2081\u2082) and v = (b\u2081, b\u2082, ..., b\u2081\u2082)\n   - The dot product <u, v> = a\u2081b\u2081 + a\u2082b\u2082 + ... + a\u2081\u2082b\u2081\u2082\n   -  ||u|| = \u221a(a\u2081\u00b2 + a\u2082\u00b2 + ... + a\u2081\u2082\u00b2)  which represents the standard deviation of stock A's returns (since the average return is assumed to be 0).\n   - Similarly, ||v|| represents the standard deviation of stock B's returns.\n\n4. **Relating to Covariance:**\n   - Notice that the covariance formula Cov(A, B) = (1/12) * \u03a3(a\u1d62 * b\u1d62) is essentially (1/12) times the dot product of vectors u and v.\n\n5. **Combining the Pieces:**\n   - Applying Cauchy-Schwarz: |<u, v>| <= ||u|| * ||v||\n   - Substituting our covariance and standard deviation terms: |12 * Cov(A, B)| <= (standard deviation of A) * (standard deviation of B)\n   - Dividing both sides by 12: |Cov(A, B)| <= (1/12) * (standard deviation of A) * (standard deviation of B)\n\n**Therefore, we've proven that the absolute value of the covariance between the returns of stock A and stock B is less than or equal to the product of the standard deviations of their returns, using the Cauchy-Schwarz Inequality.** This demonstrates the upper bound of the potential co-movement between the two stocks' returns.",
+            "options": [
+                "Standard deviation of stock A",
+                "Standard deviation of stock B",
+                "Covariance of stock A and B",
+                "Product of standard deviations of stock A and B"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A factory produces metal rods for use in construction. The acceptable length tolerance for each rod is 1.5 centimeters from the standard length of 250 centimeters.\n\n|x - 250| \u2264 1.5\n\nIf a rod is selected at random, what is the probability that its length is within the acceptable tolerance if the lengths of the rods are uniformly distributed within the acceptable range?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Inequality:**\n\nThe inequality |x - 250| \u2264 1.5 represents the acceptable range of lengths for the metal rods.  Let's break it down:\n\n* **|x - 250|:** This represents the absolute difference between the length of a rod (x) and the standard length (250 cm).\n* **\u2264 1.5:** This means the absolute difference must be less than or equal to 1.5 cm.\n\n**2. Solving the Inequality:**\n\nTo find the acceptable range, we solve the inequality:\n\n* **Case 1:** x - 250 \u2265 0  (When the difference is positive or zero)\n    * x - 250 \u2264 1.5\n    * x \u2264 251.5\n\n* **Case 2:** x - 250 < 0 (When the difference is negative)\n    * -(x - 250) \u2264 1.5\n    * -x + 250 \u2264 1.5\n    * -x \u2264 -248.5\n    * x \u2265 248.5\n\nCombining both cases, the acceptable range of lengths is 248.5 cm \u2264 x \u2264 251.5 cm.\n\n**3. Calculating the Probability:**\n\n* **Uniform Distribution:**  The problem states that rod lengths are uniformly distributed within the acceptable range. This means any length within that range has an equal chance of being selected.\n* **Favorable Outcomes:** The favorable outcomes are all the rod lengths within the acceptable range (248.5 cm to 251.5 cm), a total range of 3 cm (251.5 - 248.5 = 3).\n* **Total Possible Outcomes:** The total possible outcomes are all the lengths within the acceptable range, which is also 3 cm.\n\n* **Probability = (Favorable Outcomes) / (Total Possible Outcomes) = 3/3 = 1**\n\nTherefore, the probability of selecting a rod within the acceptable tolerance is 1, or 100%.",
+            "options": [
+                "0",
+                "0.5",
+                "1",
+                "1.5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A rectangle has a perimeter of 20 units. Using the AM-GM inequality, find the maximum possible area of the rectangle and determine the dimensions that yield this maximum area.",
+            "difficulty": "medium",
+            "reasoning": "**1. Define Variables:** \nLet the length of the rectangle be 'l' and the width be 'w'.\n\n**2. Formulate Equations:**\nWe are given:\n* Perimeter (P) = 2l + 2w = 20\n* We need to maximize Area (A) = l * w\n\n**3. Apply AM-GM:**\n* From the perimeter equation, we can deduce l + w = 10.\n* Apply AM-GM to 'l' and 'w': (l + w)/2 \u2265 \u221a(l * w)\n\n**4. Solve for Maximum Area:**\n* Substitute 10 for (l + w): 10/2 \u2265 \u221a(l * w)\n* Simplify: 5 \u2265 \u221a(l * w)\n* Square both sides: 25 \u2265 l * w\n* This shows the maximum area (l * w) is 25 square units.\n\n**5. Determine Dimensions:**\n* Equality in AM-GM holds when the quantities are equal. Therefore, the maximum area occurs when l = w.\n* Since l + w = 10 and l = w, then l = w = 5 units.\n\n**Answer:** The maximum area of the rectangle is 25 square units, achieved when the rectangle is a square with sides of 5 units each.",
+            "options": [
+                "20 square units",
+                "25 square units",
+                "5 units",
+                "10 square units"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A local artist is creating a mural for the city. They have a budget of $1500 to purchase paint and brushes.  High-quality paint costs $45 per gallon, and brushes cost $12 each. The artist wants to buy at least twice as many gallons of paint as brushes.  To add a unique touch, they're also considering purchasing a special sealant for $180. What is the maximum number of brushes the artist can buy if they decide to purchase the sealant and still stay within their budget?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this word problem step-by-step:\n\n**1. Define the Variables:**\n* Let 'p' represent the number of gallons of paint.\n* Let 'b' represent the number of brushes.\n\n**2.  Set up the Inequalities:**\n* **Budget Constraint:**  45p + 12b + 180 \u2264 1500  (The total cost of paint, brushes, and sealant cannot exceed $1500)\n* **Paint-to-Brush Ratio:** p \u2265 2b (The artist wants at least twice as many gallons of paint as brushes)\n\n**3. Simplify the Budget Constraint:**\n* 45p + 12b  \u2264 1320 (Subtract 180 from both sides)\n\n**4. Solve for 'b' in terms of 'p' in the Ratio Inequality:**\n* b \u2264 p/2 \n\n**5. Substitute to Find the Maximum 'b':**\n* Since we want to maximize 'b', we need to find the largest possible value of 'p' that still satisfies both inequalities.  We can substitute 'p/2' for 'b' in the simplified budget constraint:\n* 45p + 12(p/2) \u2264 1320\n* 45p + 6p \u2264 1320\n* 51p \u2264 1320\n* p \u2264 25.88 (approximately)\n\n* Since the artist can't buy fractions of gallons, the maximum number of gallons of paint they can buy is 25.\n\n* Now, substitute this value back into the inequality  b \u2264 p/2:\n* b \u2264 25/2\n* b \u2264 12.5\n\n* Again, the artist can't buy half a brush, so the maximum number of brushes they can buy is **12**.\n\n**Therefore, the maximum number of brushes the artist can buy is 12.** ",
+            "options": [
+                "10",
+                "15",
+                "12",
+                "25"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Solve for the values of *x* that satisfy the following inequality, expressing your answer in interval notation:\n\n`(2x^3 - 5x^2 + x + 2) / (x^2 - 3x)  > 0`",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Rational Inequalities: Finding Critical Points & Test Intervals' subtopic within 'Quants - Inequalities'.  Here's why it's rated as 'hard' and a step-by-step solution:\n\n**Reasons for Difficulty:**\n\n1. **Factoring:** The numerator is a cubic polynomial, making factoring more challenging than a simple quadratic. \n2. **Multiple Critical Points:**  You'll need to find the zeros of both the numerator and denominator, leading to multiple critical points to analyze.\n3. **Interval Testing:** With multiple critical points, testing the intervals becomes more tedious and prone to errors.\n\n**Solution:**\n\n1. **Factor the numerator and denominator:**\n\n   * Numerator: `2x^3 - 5x^2 + x + 2 = (x - 1)(x + 0.5)(2x - 4)` (Factoring a cubic can be done by trial-and-error, grouping, or using the Rational Root Theorem)\n   * Denominator: `x^2 - 3x = x(x - 3)`\n\n2. **Identify critical points:**\n\n   * Zeros of the numerator: `x = 1`, `x = -0.5`, `x = 2`\n   * Zeros of the denominator: `x = 0`, `x = 3` (These are values where the expression is undefined)\n\n3. **Create a sign chart:**\n\n   Place all critical points on a number line. This divides the number line into intervals:\n\n   ```\n     (-\u221e) ----(-0.5)----(0)----(1)----(2)----(3)----(+\u221e)\n   ```\n\n4. **Test intervals:**\n\n   Choose a test value within each interval and evaluate the sign of the entire expression: \n\n   | Interval        | Test Value | Sign of Expression |  Result  |\n   |-----------------|------------|---------------------|---------|\n   | x < -0.5        | x = -1     | (+)/(-) = (-)       | Negative |\n   | -0.5 < x < 0   | x = -0.25  | (-)/(-) = (+)       | Positive |\n   | 0 < x < 1      | x = 0.5    | (+)/(+) = (+)       | Positive |\n   | 1 < x < 2      | x = 1.5    | (+)/(-) = (-)       | Negative |\n   | 2 < x < 3      | x = 2.5    | (+)/(+) = (+)       | Positive |\n   | x > 3          | x = 4       | (+)/(+) = (+)       | Positive |\n\n5. **Solution in interval notation:**\n\n   We want the intervals where the expression is *greater than* zero (positive):\n\n   `(-0.5, 0) U (0, 1) U (2, 3) U (3, +\u221e)`",
+            "options": [
+                "Easy",
+                "Medium",
+                "Hard",
+                "Very Hard"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given the inequality \\(\\sqrt{2x + 3} - \\sqrt{x - 2} \\ge \\sqrt{x + 1}\\), find the solution set for \\(x\\).  Express your answer in interval notation.",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThis question is rated as tricky (8/10) due to the multiple radicals and the strategic manipulation required to isolate them and solve the inequality. Here's a step-by-step solution:\n\n**1. Consider the Domains of the Radicals:**\n\n*  For \\(\\sqrt{2x + 3}\\) to be real,  \\(2x + 3 \\ge 0 \\Rightarrow x \\ge -\\frac{3}{2}\\).\n*  For \\(\\sqrt{x - 2}\\) to be real, \\(x - 2 \\ge 0 \\Rightarrow x \\ge 2\\).\n*  For \\(\\sqrt{x + 1}\\) to be real, \\(x + 1 \\ge 0 \\Rightarrow x \\ge -1\\).\n\nCombining these, the initial domain restriction is \\(x \\ge 2\\).\n\n**2. Isolate a Radical:**\n\nIt's generally easier to square inequalities when one radical is isolated.  Let's move \\(\\sqrt{x - 2}\\) to the right side:\n\n \\(\\sqrt{2x + 3}  \\ge \\sqrt{x + 1} + \\sqrt{x - 2}\\)\n\n**3. Square Both Sides:**\n\nSquaring both sides (and remembering potential extraneous solutions):\n\n\\((\\sqrt{2x + 3})^2 \\ge (\\sqrt{x + 1} + \\sqrt{x - 2})^2\\)\n\\(2x + 3 \\ge (x + 1) + 2\\sqrt{(x + 1)(x - 2)} + (x - 2)\\)\n\n**4. Simplify and Isolate the Remaining Radical:**\n\nSimplifying and isolating the remaining radical term:\n\n\\(2x + 3 \\ge 2x - 1 + 2\\sqrt{(x + 1)(x - 2)}\\)\n\\(4 \\ge 2\\sqrt{(x + 1)(x - 2)}\\)\n\\(2 \\ge \\sqrt{(x + 1)(x - 2)}\\)\n\n**5. Square Both Sides Again:**\n\nSquaring both sides again:\n\n\\(4 \\ge (x + 1)(x - 2)\\)\n\\(4 \\ge x^2 - x - 2\\)\n\n**6. Solve the Quadratic Inequality:**\n\nRearranging into a standard quadratic form:\n\n\\(0 \\ge x^2 - x - 6\\)\n\\(0 \\ge (x - 3)(x + 2)\\)\n\nThis gives us critical points at \\(x = 3\\) and \\(x = -2\\). Testing intervals, we find the solution to the quadratic inequality is \\(-2 \\le x \\le 3\\).\n\n**7.  Combine with the Domain Restriction:**\n\nWe need to intersect the solution of the quadratic inequality with the initial domain restriction of \\(x \\ge 2\\). \n\nThe intersection gives us the final solution: \\([2, 3]\\). \n\n**Therefore, the solution set for the inequality is [2, 3].**",
+            "options": [
+                "[2, 3]",
+                "(-2, 3]",
+                "[-2, 3]",
+                "(-\u221e, 3]"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A robotics engineer is programming a robotic arm to sort objects on a conveyor belt. The arm needs to pick up objects within a specific range of positions along the belt. The ideal position for the arm to pick up an object is 25 cm from a sensor. Due to the sensor's margin of error, the acceptable range for the arm to pick up an object is within 3 cm of the ideal position.  At the same time, to avoid collisions with other machinery, the arm's position, represented by 'x', must be at least 18 cm away from a safety barrier located at a fixed point on the conveyor belt. \n\nThis situation can be represented by the following inequalities: \n\n1. |x - 25| \u2264 3  (representing the acceptable pick-up range)\n2. |x - b| \u2265 18 (representing the safety constraint, where 'b' is the unknown position of the safety barrier)\n\nIf the safety barrier's position ('b') needs to be as close as possible to the ideal pick-up position (25 cm) while still satisfying both inequalities, what is the smallest possible whole number value of 'b'?",
+            "difficulty": "hard",
+            "reasoning": "**Understanding the Problem:**\n\n* **Inequality 1:**  |x - 25| \u2264 3  means the robotic arm can pick up objects within 3 cm to the left or right of the ideal position (25 cm). This gives us a range of 22 cm to 28 cm for acceptable pick-up positions.\n* **Inequality 2:** |x - b| \u2265 18 means the arm's position ('x') must be at least 18 cm away from the safety barrier's position ('b').\n\n**Solving the Problem:**\n\n1. **Solving Inequality 1:**\n   - |x - 25| \u2264 3 can be broken down into two separate inequalities:\n      * x - 25 \u2264 3  \n      * -(x - 25) \u2264 3\n   - Solving these inequalities, we get:\n      * x \u2264 28\n      * x \u2265 22\n   - This confirms the acceptable pick-up range is 22 cm \u2264 x \u2264 28 cm.\n\n2. **Analyzing Inequality 2:** \n   -  We want to find the smallest value of 'b' that maintains a distance of at least 18 cm from any point within the acceptable pick-up range (22 cm \u2264 x \u2264 28 cm).\n\n3. **Finding the Closest 'b' Value:**\n   - To be as close as possible to the ideal pick-up position (25 cm),  we need to consider placing 'b' either to the left or right of the acceptable pick-up range.\n   - **Placing 'b' to the left:** To maintain a distance of at least 18 cm from the leftmost acceptable pick-up position (x = 22 cm), the smallest possible value for 'b' would be 22 - 18 = 4 cm. However, this would place the barrier too close to the ideal pick-up position and potentially interfere with the arm's operation. \n   - **Placing 'b' to the right:**  To maintain a distance of at least 18 cm from the rightmost acceptable pick-up position (x = 28 cm), the smallest possible value for 'b' would be 28 + 18 = 46 cm.\n\n**Conclusion:**\n\nThe smallest possible whole number value for 'b', the position of the safety barrier, is 46 cm. This ensures the robotic arm can safely pick up objects within its acceptable range while avoiding collisions with the barrier.",
+            "options": [
+                "4 cm",
+                "28 cm",
+                "46 cm",
+                "54 cm"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A mobile phone company offers two different data plans. Plan A costs $0.10 per text message and $5 per gigabyte of data used, with a maximum monthly cost of $50. Plan B charges a flat fee of $30 per month for unlimited text messages and $8 per gigabyte of data used.  For how many gigabytes of data used in a month would Plan A be cheaper than Plan B, assuming the user always sends enough texts to reach the maximum cost of Plan A?",
+            "difficulty": "medium",
+            "reasoning": "Let 'x' represent the number of gigabytes of data used in a month.  We first need to determine the maximum data allowance under Plan A to reach the $50 cap. Since the text messages cost a maximum of $0.10 * x, the remaining amount for data is $50 - ($0.10 * x). This amount can buy ($50 - ($0.10 * x)) / $5 gigabytes of data. To find when Plan A is cheaper, we need to identify when the cost of Plan A (always $50 when maximizing text messages) is less than the cost of Plan B, which is $30 + $8x.  Therefore, the inequality to solve is: $50 < $30 + $8x. \n\n Solving for x:\n 1. Subtract $30 from both sides:  $20 < $8x \n 2. Divide both sides by $8: 2.5 < x \n\n This means Plan A is cheaper when the data usage exceeds 2.5 gigabytes per month. However, we need to consider the maximum data allowed under Plan A's $50 limit. Assuming the user sends enough texts to reach the monthly cap, they have $50 - $0.10x to spend on data.  We need to find the maximum value of x for which ($50 - ($0.10 * x)) / $5 > 2.5. \n\nSolving for x: \n1. Multiply both sides by $5: $50 - ($0.10 * x) > $12.50 \n2. Subtract $50 from both sides: -($0.10 * x) > -$37.50\n3. Divide both sides by -$0.10 (and remember to flip the inequality sign when dividing by a negative number): x < 375 \n\nThis indicates that Plan A's $50 limit allows for a maximum of 375 GB of data. \n\nTherefore, considering both the data usage at which Plan A becomes cheaper and the maximum data allowed under Plan A, Plan A is cheaper than Plan B when data usage is between 2.5 GB and 375 GB.",
+            "options": [
+                "0.5 GB",
+                "2.5 GB",
+                "3.75 GB",
+                "375 GB"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A farmer is building rectangular pens for his sheep and goats. He wants the sheep pen to have a larger area than the goat pen. He has 100 meters of fencing to use for both pens. Let 'l' represent the length and 'w' represent the width of the goat pen. \n\nGiven the following information:\n* The length of the sheep pen is 5 meters longer than twice the width of the goat pen. \n* The width of the sheep pen is 10 meters less than the length of the goat pen. \n\nWhich of the following inequalities MUST be true to satisfy the farmer's conditions?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Define Variables:**\n* Let 'l' be the length of the goat pen.\n* Let 'w' be the width of the goat pen.\n\n**2. Formulate Expressions:**\n* Sheep pen length: 2w + 5\n* Sheep pen width: l - 10\n\n**3.  Set up the Inequalities:**\n* **Sheep pen area > Goat pen area:**  (2w + 5)(l - 10) > lw\n* **Total fencing:** 2l + 2w + 2(2w + 5) + 2(l - 10) <= 100\n\n**4. Simplify the Inequalities:**\n* **Area Inequality:** 2lw - 20w + 5l - 50 > lw  =>  lw - 20w + 5l - 50 > 0 \n* **Fencing Inequality:** 2l + 2w + 4w + 10 + 2l - 20 <= 100  =>  4l + 6w <= 110\n\n**5. Analyze the Inequalities:**\nThe question asks for an inequality that MUST be true.  The fencing inequality is essential as it limits the possible dimensions based on the available fencing.  The area inequality ensures the sheep pen is larger but doesn't define a strict limit on the dimensions.\n\n**6.  Simplify the Key Inequality:**\n* 4l + 6w <= 110 can be simplified by dividing both sides by 2: 2l + 3w <= 55\n\n**Therefore, the inequality that MUST be true is 2l + 3w <= 55.**",
+            "options": [
+                "2l + 3w > 55",
+                "lw - 20w + 5l - 50 > 0",
+                "2l + 3w <= 55",
+                "lw - 20w + 5l - 50 <= 0"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Let $x$, $y$, and $z$ be positive real numbers such that $x^2 + y^2 + z^2 + 2xyz = 1$. Prove that  \n \\begin{equation*}  \n \\frac{x^2y^2}{z^3(1+x^2)} + \\frac{y^2z^2}{x^3(1+y^2)} + \\frac{z^2x^2}{y^3(1+z^2)} \\geq \\frac{1}{3}.  \n \\end{equation*}",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem:**\n\nWe are given a constraint involving positive real numbers $x$, $y$, and $z$. The inequality we need to prove has a cyclical structure, suggesting that techniques like Rearrangement Inequality or Muirhead's Inequality might be helpful.\n\n**Solution:**\n\n**Step 1: Applying AM-GM**\nObserve that by AM-GM, we have:\n\n\\begin{align*}  \n\\frac{x^2y^2}{z^3(1+x^2)} + \\frac{z^3(1+x^2)}{4x^2y^2}  &\\geq 1 \\\\\n\\frac{y^2z^2}{x^3(1+y^2)} + \\frac{x^3(1+y^2)}{4y^2z^2} &\\geq 1 \\\\\n\\frac{z^2x^2}{y^3(1+z^2)} + \\frac{y^3(1+z^2)}{4z^2x^2} &\\geq 1\n\\end{align*}\n\nAdding these inequalities, we get:\n\n\\begin{equation*}  \n\\frac{x^2y^2}{z^3(1+x^2)} + \\frac{y^2z^2}{x^3(1+y^2)} + \\frac{z^2x^2}{y^3(1+z^2)} +  \\frac{z^3(1+x^2)}{4x^2y^2}  + \\frac{x^3(1+y^2)}{4y^2z^2} + \\frac{y^3(1+z^2)}{4z^2x^2} \\geq 3\n\\end{equation*}\n\n**Step 2: Simplifying and Utilizing the Constraint**\n\nOur goal is to show that the left-hand side of the inequality above is at least 1/3. To do this, we'll focus on proving: \n\n\\begin{equation*}  \n\\frac{z^3(1+x^2)}{4x^2y^2}  + \\frac{x^3(1+y^2)}{4y^2z^2} + \\frac{y^3(1+z^2)}{4z^2x^2} \\leq \\frac{8}{3}\n\\end{equation*}\n\nExpanding the left-hand side and simplifying, we obtain:\n\n\\begin{equation*}  \n\\frac{z(1+x^2)}{4x^2y^2} + \\frac{x(1+y^2)}{4y^2z^2} + \\frac{y(1+z^2)}{4z^2x^2} = \\frac{1}{4} \\left( \\frac{z}{x^2y^2} + \\frac{x}{y^2z^2} + \\frac{y}{z^2x^2} + \\frac{z^3}{y^2} + \\frac{x^3}{z^2} + \\frac{y^3}{x^2} \\right)\n\\end{equation*}\n\nNow, using the given constraint $x^2 + y^2 + z^2 + 2xyz = 1$, we can rewrite it as:\n\n\\begin{equation*}  \n2xyz = 1 - x^2 - y^2 - z^2\n\\end{equation*}\n\nLet's denote $a = x^2$, $b = y^2$, and $c = z^2$. Then, our constraint becomes:\n\n\\begin{equation*}  \n2\\sqrt{abc} = 1 - a - b - c \n\\end{equation*}\n\nSquaring both sides and simplifying, we get:\n\n\\begin{equation*}  \na^2 + b^2 + c^2 + 2ab + 2ac + 2bc = 1\n\\end{equation*}\n\nNow, let's go back to the expression we want to bound: \n\n\\begin{equation*}  \n\\frac{1}{4} \\left( \\frac{z}{x^2y^2} + \\frac{x}{y^2z^2} + \\frac{y}{z^2x^2} + \\frac{z^3}{y^2} + \\frac{x^3}{z^2} + \\frac{y^3}{x^2} \\right) = \\frac{1}{4} \\left( \\frac{c}{ab} + \\frac{a}{bc} + \\frac{b}{ac} + \\frac{c^2}{b} + \\frac{a^2}{c} + \\frac{b^2}{a} \\right)\n\\end{equation*}\n\nBy AM-GM: \n\n\\begin{align*}  \n\\frac{c}{ab} + \\frac{a}{bc} + \\frac{b}{ac} &\\geq 3 \\sqrt[3]{\\frac{c}{ab} \\cdot \\frac{a}{bc} \\cdot \\frac{b}{ac}} = 3 \\\\\n\\frac{c^2}{b} + \\frac{a^2}{c} + \\frac{b^2}{a} &\\geq 3 \\sqrt[3]{\\frac{c^2}{b} \\cdot \\frac{a^2}{c} \\cdot \\frac{b^2}{a}} = 3(ab+ac+bc)\n\\end{align*}\n\nTherefore,\n\n\\begin{equation*}  \n\\frac{1}{4} \\left( \\frac{c}{ab} + \\frac{a}{bc} + \\frac{b}{ac} + \\frac{c^2}{b} + \\frac{a^2}{c} + \\frac{b^2}{a} \\right)  \\geq \\frac{1}{4}(3 + 3(ab+ac+bc)) = \\frac{3}{4} + \\frac{3}{4}(ab+ac+bc)\n\\end{equation*}\n\nRecall that we have $a^2 + b^2 + c^2 + 2ab + 2ac + 2bc = 1$.  Therefore, $ab + ac + bc = \\frac{1 - a^2 - b^2 - c^2}{2}$. Plugging this back in, we get:\n\n\\begin{align*}  \n\\frac{3}{4} + \\frac{3}{4}(ab+ac+bc) &= \\frac{3}{4} + \\frac{3}{8}(1 - a^2 - b^2 - c^2) \\\\\n&= \\frac{9}{8} - \\frac{3}{8}(a^2 + b^2 + c^2) \\\\\n&\\leq \\frac{9}{8} < \\frac{8}{3} \n\\end{align*}\n\n**Step 3: Finalizing the Proof**\n\nWe have successfully shown that \n\n\\begin{equation*}  \n\\frac{z^3(1+x^2)}{4x^2y^2}  + \\frac{x^3(1+y^2)}{4y^2z^2} + \\frac{y^3(1+z^2)}{4z^2x^2} \\leq \\frac{8}{3}\n\\end{equation*}\n\nTherefore, going back to our initial inequality:\n\n\\begin{equation*}  \n\\frac{x^2y^2}{z^3(1+x^2)} + \\frac{y^2z^2}{x^3(1+y^2)} + \\frac{z^2x^2}{y^3(1+z^2)} +  \\frac{z^3(1+x^2)}{4x^2y^2}  + \\frac{x^3(1+y^2)}{4y^2z^2} + \\frac{y^3(1+z^2)}{4z^2x^2} \\geq 3\n\\end{equation*}\n\nWe can conclude: \n\n\\begin{equation*}  \n\\frac{x^2y^2}{z^3(1+x^2)} + \\frac{y^2z^2}{x^3(1+y^2)} + \\frac{z^2x^2}{y^3(1+z^2)}  \\geq 3 - \\frac{8}{3} = \\frac{1}{3}\n\\end{equation*}\n\nThis completes the proof.",
+            "options": [
+                "AM-GM",
+                "Cauchy-Schwarz",
+                "Rearrangement Inequality",
+                "Muirhead's Inequality"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Inequalities",
+    "exam_id": 18,
+    "order": 14
+}

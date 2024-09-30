@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "A triangle has two sides with lengths 7 cm and 11 cm. What is the smallest possible whole number length for the third side of the triangle?",
+            "difficulty": "easy",
+            "reasoning": "This question utilizes the triangle inequality theorem. This theorem states that the sum of the lengths of any two sides of a triangle must be greater than the length of the third side.\n\nLet's denote the unknown side length as 'x'.  We need to consider the following inequalities to find the smallest possible whole number value for 'x':\n\n*  7 + 11 > x\n*  7 + x > 11\n*  11 + x > 7\n\nSolving the second inequality, we get x > 4. Therefore, the smallest possible whole number greater than 4 is 5. \n\nTherefore, the smallest possible whole number length for the third side of the triangle is 5 cm.",
+            "options": [
+                "4 cm",
+                "5 cm",
+                "6 cm",
+                "7 cm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A basketball perfectly fits inside a cubical box, touching all sides. If the volume of the box is 125 cubic inches, what is the radius of the basketball?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Find the side length of the cube:**\n\n* We know the volume of a cube is calculated by side * side * side (or side cubed).\n* Since the volume of the box is 125 cubic inches, we find the cube root of 125, which is 5. This means each side of the box is 5 inches long.\n\n**2. Relate the side length to the diameter of the basketball:**\n\n* The basketball touches all sides of the box, meaning the diameter of the basketball is equal to the side length of the box.\n* Therefore, the diameter of the basketball is 5 inches.\n\n**3. Calculate the radius:**\n\n* The radius is half the diameter. \n* The radius of the basketball is 5 inches / 2 = 2.5 inches.",
+            "options": [
+                "5 inches",
+                "2.5 inches",
+                "12.5 inches",
+                "10 inches"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Jenny is designing a flowerbed for her garden. She wants it to have four sides where opposite sides are equal in length.  Two sides will be 5 feet long, and the other two sides will be 8 feet long. What shape is Jenny's flowerbed?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n* **Understanding Quadrilaterals:**  Quadrilaterals are polygons with four sides. Different types have unique properties:\n    * **Rectangle:** Opposite sides are equal, all angles are 90 degrees.\n    * **Square:** All sides are equal, all angles are 90 degrees. \n    * **Parallelogram:** Opposite sides are equal and parallel.\n    * **Trapezoid:**  One pair of opposite sides is parallel.\n* **Analyzing Jenny's Flowerbed:**\n    * It has four sides.\n    * Opposite sides are equal in length (5 feet and 8 feet).\n* **Conclusion:** Jenny's flowerbed fits the description of a parallelogram.",
+            "options": [
+                "Rectangle",
+                "Square",
+                "Parallelogram",
+                "Trapezoid"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A ladder leans against a wall, forming a right triangle. The base of the ladder is 5 feet away from the wall, and the ladder itself is 13 feet long. What is the sine of the angle formed between the ladder and the ground?",
+            "difficulty": "easy",
+            "reasoning": "This question assesses understanding of basic trigonometric ratios within a right triangle context. Here's how to solve it:\n\n1. **Visualize:** Imagine a right triangle where the ladder is the hypotenuse, the wall is one leg, and the ground is the other leg.\n\n2. **Identify:** We know the adjacent side (5 feet) and the hypotenuse (13 feet) relative to the angle we're interested in.\n\n3. **SOH CAH TOA:**  Recall that sine is opposite over hypotenuse (SOH).\n\n4. **Find the opposite side:** Since we have a right triangle, we can use the Pythagorean theorem to find the opposite side (the wall's height):  a\u00b2 + b\u00b2 = c\u00b2 => 5\u00b2 + b\u00b2 = 13\u00b2 => b = 12 feet.\n\n5. **Calculate Sine:** Sine = Opposite / Hypotenuse = 12 feet / 13 feet = 12/13.\n\nTherefore, the sine of the angle between the ladder and the ground is 12/13.",
+            "options": [
+                "12/13",
+                "5/13",
+                "12",
+                "13/12"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A square on a grid has vertices at coordinates (2, 2), (2, 4), (4, 4), and (4, 2). If the square is translated 3 units to the left, what will be the coordinates of the top right vertex after the translation?",
+            "difficulty": "easy",
+            "reasoning": "The question belongs to the subtopic 'Transformations: Translations' about 'Quants - Geometry'.\n\nHere's how to solve the problem:\n\n1. **Identify the original coordinates of the top right vertex:** The top right vertex of the original square is at (4, 4).\n\n2. **Apply the translation:** A translation 3 units to the left means subtracting 3 from the x-coordinate of each vertex. \n\n3. **Calculate the new coordinates:**\n   * Original x-coordinate: 4\n   * Subtract 3 for the translation: 4 - 3 = 1\n   * The y-coordinate remains the same: 4\n\nTherefore, the new coordinates of the top right vertex after the translation are **(1, 4)**.\n\n**Options:**\n* (1, 4) - **Correct**\n* (1, 1)\n* (7, 4)\n* (4, 1) ",
+            "options": [
+                "(1, 4)",
+                "(1, 1)",
+                "(7, 4)",
+                "(4, 1)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A rectangular garden measures 10 meters in length and 5 meters in width. A circular fountain with a radius of 1 meter is placed randomly within the garden. What is the probability that the fountain lies entirely within the garden (i.e., it doesn't touch or cross the garden's perimeter)?",
+            "difficulty": "easy",
+            "reasoning": "**1. Visualize the Problem:** Imagine the rectangular garden and a circle representing the fountain. To ensure the fountain is entirely within the garden, its center must be at a certain distance from the garden's edges.\n\n**2.  Favorable Area:** The center of the circle (fountain) can move freely within a smaller rectangle inside the garden. This smaller rectangle has a length of (10 meters - 2 * 1 meter = 8 meters) and a width of (5 meters - 2 * 1 meter = 3 meters).  \n\n**3. Calculate Areas:** \n* Area of the garden: length * width = 10 meters * 5 meters = 50 square meters\n* Area of the smaller rectangle (favorable area): 8 meters * 3 meters = 24 square meters\n\n**4.  Calculate Probability:**  The probability is the ratio of the favorable area to the total area:\n* Probability = (Favorable Area) / (Total Area) = 24 square meters / 50 square meters = 0.48 \n\n**Therefore, the probability that the fountain lies entirely within the garden is 0.48.**",
+            "options": [
+                "0.24",
+                "0.48",
+                "0.72",
+                "0.96"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A boat is traveling on a river with a current. The boat's velocity relative to the water is represented by the vector **v** = (4, 3) km/h, where the x-component represents the velocity in the eastward direction and the y-component represents the velocity in the northward direction.  The river's current has a velocity of **c** = (1, 1) km/h. Find the magnitude of the boat's actual velocity.",
+            "difficulty": "easy",
+            "reasoning": "To find the boat's actual velocity, we need to add the velocity of the boat relative to the water to the velocity of the current.  This is because the boat's movement is influenced by both its own engine and the force of the river current. \n\n**1. Add the corresponding components of the vectors:**\n\n* Actual velocity in the eastward direction = Velocity of boat in eastward direction + Velocity of current in eastward direction = 4 km/h + 1 km/h = 5 km/h \n* Actual velocity in the northward direction = Velocity of boat in northward direction + Velocity of current in northward direction = 3 km/h + 1 km/h = 4 km/h\n\nTherefore, the boat's actual velocity is represented by the vector (5, 4) km/h.\n\n**2. Calculate the magnitude of the resultant vector:**\n\nThe magnitude of a vector (x, y) is calculated using the Pythagorean theorem: \u221a(x\u00b2 + y\u00b2)\n\n* Magnitude of actual velocity = \u221a(5\u00b2 + 4\u00b2) = \u221a(25 + 16) = \u221a41 km/h\n\nTherefore, the magnitude of the boat's actual velocity is \u221a41 km/h.",
+            "options": [
+                "3 km/h",
+                "5 km/h",
+                "\u221a41 km/h",
+                "6 km/h"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "In the warmth of a summer evening, you find yourself gazing at a circular Ferris wheel adorned with twinkling lights.  At the center of this majestic wheel is point O. You notice two friends, Emily and Noah, seated in separate gondolas, their positions represented by points E and N on the circle respectively.  If central angle EON, formed by the radii connecting Emily, Noah, and the center, measures 80 degrees, what is the measure of the minor arc EN, which represents the shorter path along the Ferris wheel's edge between your friends?",
+            "difficulty": "medium",
+            "reasoning": "This question checks the understanding of the fundamental relationship between central angles and their corresponding arcs in a circle. Here's how we can solve it:\n\n**Understanding the Concept:**\n\n* **Central Angle:** An angle formed by two radii of a circle that share a common endpoint (the circle's center). \n* **Intercepted Arc:** The portion of the circle's circumference that lies 'inside' the central angle. \n\n**Key Relationship:** The measure of a central angle is *equal* to the measure of its intercepted arc.\n\n**Applying it to our Ferris Wheel:**\n\n1. **Central Angle:** We're given that central angle EON measures 80 degrees.\n2. **Intercepted Arc:**  Minor arc EN is the arc intercepted by central angle EON.\n\n**Solution:** Since the central angle EON measures 80 degrees, the measure of its intercepted minor arc EN is also **80 degrees**.",
+            "options": [
+                "40 degrees",
+                "80 degrees",
+                "100 degrees",
+                "160 degrees"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A circular pizza is being sliced.  A slice is cut with a central angle of 45 degrees.\n**Question**: What fraction of the whole pizza does this slice represent?\n**Diagram**: (Optional, but could show a circle with a 45-degree slice shaded)\n**Answer Choices**: \n  - A) 1/6\n  - B) 1/8\n  - C) 1/10\n  - D) 1/12\n",
+            "difficulty": "medium",
+            "reasoning": "A circle represents a full 360 degrees.  \n\n* To find what fraction of the circle the slice represents, divide the slice's central angle by 360 degrees: 45 degrees / 360 degrees = 1/8.\n\n* Therefore, the slice represents 1/8 of the whole pizza. \n\n**Correct Answer: B) 1/8**",
+            "options": [
+                "1/6",
+                "1/8",
+                "1/10",
+                "1/12"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Triangle ABC has sides AB = 6 cm, BC = 8 cm.  A new triangle, DEF, is constructed by extending each side of triangle ABC by 2 cm. So, DE = 8 cm, EF = 10 cm, and FD = 8 cm. Is the area of triangle DEF greater than twice the area of triangle ABC? Explain your reasoning.",
+            "difficulty": "medium",
+            "reasoning": "**1. Visualize the Triangles:**\n   Imagine both triangles. Notice that triangle DEF isn't simply triangle ABC scaled up; it has proportionally longer sides.\n\n**2. Consider Area Ratios:**\n   If the sides of a triangle are doubled, its area becomes four times larger (due to the squaring in area formulas).  Since the sides of DEF are not double those of ABC, its area won't be four times larger.\n\n**3.  Logic and Comparison:**\n   We know DEF's area won't be four times that of ABC.  Could it be exactly twice the area?  No.  Since the sides of DEF are proportionally larger than double the sides of ABC, its area will be more than double that of ABC.\n\n**Conclusion:**\n   The area of triangle DEF is greater than twice the area of triangle ABC.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A rectangular dartboard measures 12 inches long and 8 inches wide. Within the dartboard, there's a smaller rectangle marked 'Bonus Zone' that measures 4 inches long and 3 inches wide.  If a dart is thrown randomly and lands within the boundaries of the dartboard, what is the probability that the dart lands inside the 'Bonus Zone'?",
+            "difficulty": "medium",
+            "reasoning": "To solve this, we'll use the concept of geometric probability, where the probability of an event is the ratio of favorable area to total possible area.\n\n**1. Calculate the area of the entire dartboard:**\n* Area of dartboard = length * width = 12 inches * 8 inches = 96 square inches\n\n**2. Calculate the area of the 'Bonus Zone':**\n* Area of 'Bonus Zone' = length * width = 4 inches * 3 inches = 12 square inches\n\n**3. Determine the probability:**\n* Probability (dart lands in 'Bonus Zone') = (Area of 'Bonus Zone') / (Area of dartboard) = 12 square inches / 96 square inches = 1/8\n\n**Therefore, the probability of the dart landing in the 'Bonus Zone' is 1/8.**",
+            "options": [
+                "1/12",
+                "1/8",
+                "1/6",
+                "1/4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "In the figure below, lines AB and CD are parallel, intersected by transversal EF. If angle AGH measures 5x + 20 degrees and angle DHF measures 7x - 6 degrees, what is the value of x?\n\n[Insert diagram here with points A, B, C, D, E, F, G, and H labeled. Angle AGH and DHF should be visually distinct.]",
+            "difficulty": "medium",
+            "reasoning": "**1. Identify the angle relationship:**\nAngles AGH and DHF are corresponding angles. Corresponding angles are formed when a transversal intersects two parallel lines. They occupy the same relative position at each intersection.\n\n**2. Apply the corresponding angles postulate:**\nThe corresponding angles postulate states that if two parallel lines are cut by a transversal, then corresponding angles are congruent.\n\n**3. Set up an equation:**\nSince corresponding angles are congruent, we can set the measures of angles AGH and DHF equal to each other: \n5x + 20 = 7x - 6\n\n**4. Solve for x:**\n* Subtract 5x from both sides: 20 = 2x - 6\n* Add 6 to both sides: 26 = 2x\n* Divide both sides by 2: x = 13\n\n**Therefore, the value of x is 13.**",
+            "options": [
+                "13",
+                "26",
+                "10",
+                "5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**diagram**: https://i.imgur.com/2T9E5yW.png\n**question**: In the given figure, line segment AB is parallel to line segment CD.  Angle AED is 50 degrees and angle CFE is 130 degrees. Are triangles ABE and CFE congruent? If so, state the congruence rule.\n**options**: \n  - A) Yes, by AAS\n  - B) Yes, by ASA\n  - C) Yes, by SAS\n  - D) No, the triangles are not congruent\n**correct_option**: A\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Identify corresponding angles:**\n\n*  Because AB || CD, we know that angle BAE and angle DCF are alternate interior angles and therefore congruent.\n* We are given that angle AED is 50 degrees and angle CFE is 130 degrees.\n\n**2. Apply the Angle-Angle-Side (AAS) Congruence Postulate:**\n\n* We have two pairs of congruent angles: \u2220BAE \u2245 \u2220DCF and \u2220AED \u2245 \u2220CFE.\n* We also have a pair of congruent sides: AE \u2245 CE (given in the diagram).\n\n**3. Conclusion:**\n\nSince we have two pairs of congruent angles and a non-included side that are congruent, we can conclude that triangles ABE and CFE are congruent by the AAS postulate. \n\n**Therefore, the correct answer is (A) Yes, by AAS.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot determine"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Concept**: Slope of a Line\n**Difficulty Level**: 6/10\n**Context**: A line passes through points P(-2, 5) and Q(4, 1). \n**Question**: What is the slope of the line passing through points P and Q?\n**Answer Choices**: \n  - (a) 2/3\n  - (b) -2/3\n  - (c) 3/2\n  - (d) -3/2\n",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Coordinate Geometry: Distance formula, midpoint formula, slope, equation of a line, parallel and perpendicular lines, graphing linear equations' about 'Quants - Geometry'.\n\nTo find the slope of a line given two points, we use the formula:\n\nSlope (m) = (y2 - y1) / (x2 - x1)\n\nHere's how to solve it step-by-step:\n\n1. **Identify the coordinates:** \n   * Point P: (x1, y1) = (-2, 5)\n   * Point Q: (x2, y2) = (4, 1)\n\n2. **Plug the values into the slope formula:**\n   * m = (1 - 5) / (4 - (-2))\n\n3. **Simplify the equation:**\n   * m = (-4) / (6)\n   * m = -2/3 \n\nTherefore, the slope of the line passing through points P(-2, 5) and Q(4, 1) is -2/3.\n\n**Correct Option:** (b) -2/3",
+            "options": [
+                "2/3",
+                "-2/3",
+                "3/2",
+                "-3/2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A hot air balloon is rising vertically from a point on the ground that is 50 meters away from an observer. The observer measures the angle of elevation to the balloon as 30 degrees. A few minutes later, the angle of elevation has increased to 60 degrees.\n**diagram**: https://i.imgur.com/8WgVcYb.png\n**question**: How far did the balloon rise vertically during that time?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**1. Visualize the Problem:**\n   - Imagine a right triangle where the observer's line of sight to the balloon is the hypotenuse.\n   - The distance from the observer to the balloon's starting point (50 meters) is the base of the triangle.\n   - The balloon's height is the opposite side.\n\n**2.  Use Trigonometry (First Observation):**\n   - We have a 30-60-90 triangle at the first observation.\n   - We know the adjacent side (50 meters) and want to find the opposite side (initial height).\n   - Use the tangent function:  tan(30\u00b0) = opposite/adjacent = height/50\n   - Solve for height: height = 50 * tan(30\u00b0) = 50 * (\u221a3 / 3) = (50\u221a3)/3 meters\n\n**3. Use Trigonometry (Second Observation):**\n   - Now we have a larger 30-60-90 triangle.\n   - The adjacent side is still 50 meters.\n   - Use tangent again: tan(60\u00b0) = new height / 50\n   - Solve for new height: new height = 50 * tan(60\u00b0) = 50 * \u221a3 = 50\u221a3 meters\n\n**4. Calculate the Difference:**\n   - The balloon rose vertically the difference between the new height and the initial height.\n   - Difference = (50\u221a3) - (50\u221a3)/3 = (100\u221a3)/3 meters\n\n**Therefore, the balloon rose (100\u221a3)/3 meters vertically during that time.**",
+            "options": [
+                "25\u221a3 meters",
+                "(50\u221a3)/3 meters",
+                "50 meters",
+                "(100\u221a3)/3 meters"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A water fountain is designed as a cone with a hemisphere on top. The radius of the base of the cone and the hemisphere is 3 meters. The total height of the fountain, from the tip of the cone to the base, is 7 meters. What is the volume of water the fountain can hold, in cubic meters?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Visualize the Shapes:**\nImagine the fountain as two separate shapes: a cone and a hemisphere (half a sphere).\n\n**2. Find the Cone's Height:**\n* The total height of the fountain is 7 meters, and the radius of the hemisphere (which is also the radius of the cone's base) is 3 meters. \n* Therefore, the height of the cone is 7 meters - 3 meters = 4 meters. \n\n**3. Calculate the Volume of the Cone:**\n* Volume of a cone = (1/3)\u03c0r\u00b2h, where r is the radius and h is the height.\n* Volume of the cone = (1/3) * \u03c0 * (3 meters)\u00b2 * 4 meters = 12\u03c0 cubic meters\n\n**4. Calculate the Volume of the Hemisphere:**\n* Volume of a sphere = (4/3)\u03c0r\u00b3\n* Volume of the hemisphere = (1/2) * (4/3) * \u03c0 * (3 meters)\u00b3 = 18\u03c0 cubic meters\n\n**5. Calculate the Total Volume:**\n* Total volume = Volume of cone + Volume of hemisphere\n* Total volume = 12\u03c0 cubic meters + 18\u03c0 cubic meters = 30\u03c0 cubic meters\n\n**Therefore, the fountain can hold 30\u03c0 cubic meters of water.**",
+            "options": [
+                "94.25 cubic meters",
+                "30\u03c0 cubic meters",
+                "12\u03c0 cubic meters",
+                "18\u03c0 cubic meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**question_description**: Two quadrilaterals, ABCD and EFGH, are given such that AB = EF, BC = FG, CD = GH, and \u2220B = \u2220F.  Can we definitively prove that ABCD is congruent to EFGH? If not, provide a counterexample scenario using side lengths and/or angles.\n**difficulty**: medium\n",
+            "reasoning": "We are given that three pairs of corresponding sides are equal (AB = EF, BC = FG, CD = GH) and one pair of corresponding angles are equal (\u2220B = \u2220F). This information resembles the Side-Side-Angle (SSA) situation. However, SSA is **not** a sufficient condition to guarantee congruence in triangles, and it extends to quadrilaterals as well.\n\n**Counterexample:**\nImagine quadrilateral ABCD as a square with side length 4. Now, construct quadrilateral EFGH where EF = FG = GH = 4, \u2220F is 90 degrees, but make \u2220G slightly less than 90 degrees. This would result in EH being slightly shorter than 4 and the quadrilaterals not being congruent, despite fulfilling the given conditions.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "B",
+            "difficulty": "medium"
+        },
+        {
+            "question": "**question_type**: Multiple Choice\n**context**: You have four straight straws with lengths of 3cm, 4cm, 5cm, and 7cm. You want to form a quadrilateral (a four-sided figure) using these straws, with each straw forming one side.\n**prompt**: Which of the following statements is true about the quadrilaterals you can form?\n**answer_choices**: \n  - A) You can form only one unique quadrilateral.\n  - B) You can form multiple unique quadrilaterals.\n  - C) You can form a quadrilateral with all sides equal (a rhombus).\n  - D) You cannot form any quadrilateral using these straws.\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the understanding of the triangle inequality extended to quadrilaterals. Here's why the correct answer is **B) You can form multiple unique quadrilaterals.**\n\n* **Triangle Inequality Extension:**  The sum of the lengths of any three sides of a quadrilateral must be greater than the length of the fourth side. This ensures you can connect all sides to form a closed figure.\n* **Checking Possibilities:**  Let's examine if we can create a quadrilateral with the given straw lengths. It's helpful to focus on the largest side (7cm) and ensure the other three sides combined are longer:\n    * 3cm + 4cm + 5cm > 7cm (True)\n    * Since this condition holds true, we can form at least one quadrilateral. Furthermore, we can arrange the sides in different orders (e.g., 3-4-7-5, 5-3-7-4), leading to multiple unique quadrilaterals.\n* **Why other options are incorrect:**\n    * **A) You can form only one unique quadrilateral:**  We've shown that multiple arrangements are possible.\n    * **C) You can form a quadrilateral with all sides equal (a rhombus):** The given side lengths are all different, so we cannot form a rhombus.\n    * **D) You cannot form any quadrilateral using these straws:** We've demonstrated that at least one quadrilateral is possible. \n\n**Therefore, the correct answer is (B).**",
+            "options": [
+                "One",
+                "Multiple",
+                "Yes",
+                "No"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Multiple Choice\n**Question Text**: A rectangular garden is divided into two sections. One section is a square with a side length of 6 meters, and the other section is a rectangle with a width of 4 meters.  If the total area of the garden is 52 square meters, what is the length of the garden?\n**Difficulty Level**: Medium (5/10)\n**Answer Key**: 8 meters\n**Explanation**: First find the area of the square: 6m * 6m = 36 sq m. Then subtract the square's area from the total area to find the rectangular section's area: 52 sq m - 36 sq m = 16 sq m.  Finally, divide the rectangular section's area by its width to find its length: 16 sq m / 4 m = 4 m. Since the garden's length is the square's side plus the rectangle's length, the total length is 6 m + 4 m = 8 m.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Quadrilaterals: Types of quadrilaterals (squares, rectangles, parallelograms, trapezoids, etc.), area, perimeter, special properties' subtopic as it requires understanding of:\n\n* **Types of quadrilaterals:** Identifying squares and rectangles.\n* **Area:** Calculating the area of squares and rectangles.\n* **Problem-solving:**  Using the given information about areas and dimensions to find an unknown dimension.\n\n**Step-by-step Solution:**\n\n1. **Calculate the square's area:** Side length * side length = 6m * 6m = 36 sq m\n2. **Calculate the rectangle's area:** Total area - square's area = 52 sq m - 36 sq m = 16 sq m\n3. **Calculate the rectangle's length:** Rectangle's area / rectangle's width = 16 sq m / 4 m = 4 m\n4. **Calculate the total length of the garden:** Square's side + rectangle's length = 6 m + 4 m = 8 m\n\n**Therefore, the length of the garden is 8 meters.**\n\n**Options:**\n\nA) 6 meters\nB) 7 meters\nC) 8 meters (Correct)\nD) 9 meters\n\nThe correct option is **C) 8 meters**, as calculated and explained above.",
+            "options": [
+                "6 meters",
+                "7 meters",
+                "8 meters",
+                "9 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A city planner is designing a new park. The park will be in the shape of a quadrilateral with walking paths along each side. The endpoints of one path are represented by points A (-3, 2) and B (1, 6) on a coordinate grid.  A second path will connect points C (5, 4) and D (-1, 0).\n\na) Determine the equations of the lines containing paths AB and CD.\n\nb) Are the paths parallel, perpendicular, or neither? Explain your reasoning.\n\nc) A water fountain is to be placed at the intersection of the two paths' perpendicular bisectors.  Find the coordinates of the water fountain.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**a) Determine the equations of the lines containing paths AB and CD.**\n\n* **Find the slope of AB:**\n   m<sub>AB</sub> = (6 - 2) / (1 - (-3)) = 4 / 4 = 1\n* **Use point-slope form with point A (-3, 2):**\n   y - 2 = 1(x - (-3))\n   y - 2 = x + 3\n   **Equation of AB:** y = x + 5\n\n* **Find the slope of CD:**\n   m<sub>CD</sub> = (0 - 4) / (-1 - 5) = -4 / -6 = 2/3\n* **Use point-slope form with point C (5, 4):**\n   y - 4 = (2/3)(x - 5)\n   y - 4 = (2/3)x - 10/3\n   **Equation of CD:** y = (2/3)x + 2/3\n\n**b) Are the paths parallel, perpendicular, or neither? Explain your reasoning.**\n\nThe paths are neither parallel nor perpendicular. \n* **Parallel lines** have the same slope. m<sub>AB</sub> (1) \u2260 m<sub>CD</sub> (2/3)\n* **Perpendicular lines** have slopes that are negative reciprocals. The negative reciprocal of 1 is -1, which is not equal to 2/3.\n\n**c)  A water fountain is to be placed at the intersection of the two paths' perpendicular bisectors. Find the coordinates of the water fountain.**\n\n* **Find the midpoint of AB:** ((-3 + 1)/2, (2 + 6)/2) = (-1, 4)\n* **Find the slope of the perpendicular bisector of AB** (negative reciprocal of AB's slope): -1\n* **Find the equation of the perpendicular bisector of AB** using the midpoint (-1, 4) and slope -1: y - 4 = -1(x + 1)  \n   Simplifying: y = -x + 3\n\n* **Find the midpoint of CD:** ((5 - 1)/2, (4 + 0)/2) = (2, 2)\n* **Find the slope of the perpendicular bisector of CD** (negative reciprocal of CD's slope): -3/2\n* **Find the equation of the perpendicular bisector of CD** using the midpoint (2, 2) and slope -3/2: y - 2 = (-3/2)(x - 2)\n   Simplifying: y = (-3/2)x + 5\n\n* **Solve the system of equations formed by the two perpendicular bisectors:**\n    y = -x + 3\n    y = (-3/2)x + 5\n   Solving, we find x = -2 and y = 5\n\n**Therefore, the coordinates of the water fountain are (-2, 5).**",
+            "options": [
+                "Parallel",
+                "Perpendicular",
+                "Neither",
+                "Not enough information"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**problem_statement**: You are given a line segment PQ and a point A outside the line segment. Construct a line passing through point A and perpendicular to line segment PQ.\n**instructions**: 1. Using the compass, draw a circle with center A and a radius large enough to intersect line segment PQ at two distinct points. Label these points B and C.\n2. With B as the center and a radius greater than half of BC, draw an arc. \n3. Using the same radius and C as the center, draw another arc intersecting the previous arc. Label the intersection point D.\n4. Draw a straight line passing through points A and D. This line will be perpendicular to line segment PQ and pass through point A.\n**visual_aid**: \n**difficulty_level**: Medium 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Geometric Constructions: Using a compass and straightedge to construct geometric figures' within 'Quants - Geometry'.\n\nHere's why the construction works and how to solve it:\n\n**Understanding the Construction:**\nThe construction relies on the properties of perpendicular bisectors and circles.\n\n* **Step 1:** By drawing the initial circle, we establish two points (B and C) on the line segment PQ that are equidistant from point A. \n* **Steps 2 & 3:** Drawing arcs from points B and C with equal radii ensures that point D is equidistant from both B and C. Therefore, line AD becomes the perpendicular bisector of line segment BC. \n* **Key Concept:**  The perpendicular bisector of a line segment always passes through the center of a circle that has the line segment as a chord.\n\n**Solving the problem:**\n1. **Circle with center A:** Start by drawing a circle with point A as the center and a radius large enough to intersect the line segment PQ. Mark the points of intersection as B and C.\n2. **Arc from point B:** Set the compass to a radius greater than half the length of BC. Place the compass point on B and draw an arc on the side of line PQ opposite point A. \n3. **Arc from point C:** Without changing the compass radius, place the compass point on C and draw another arc intersecting the previously drawn arc. Label the point of intersection as D.\n4. **Line AD:** Finally, draw a straight line passing through points A and D. This line will be perpendicular to line segment PQ and pass through point A.\n\n**Verification:** By construction, we have ensured that AD is the perpendicular bisector of BC. Since BC is a part of line segment PQ, line AD is perpendicular to PQ as well. ",
+            "options": [
+                "Easy",
+                "Medium",
+                "Hard",
+                "Very Hard"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A gardener is designing a circular flower bed with a radius of 7 feet. He plans to install a circular fountain in the center, which will have a diameter of 4 feet.\n**diagram**: [Include a diagram showing a circle with a radius of 7 feet. Inside the circle, there's another smaller circle representing the fountain with a diameter of 4 feet. Clearly label the radius of the flower bed and the diameter of the fountain]\n**problem_statement**: What is the area of the flower bed excluding the fountain area?\n",
+            "difficulty": "medium",
+            "reasoning": "This question involves multiple concepts of circles and requires a two-step calculation to find the answer.\n\n**1. Calculate the area of the entire flower bed:**\n    - The formula for the area of a circle is  \u03c0r\u00b2, where r is the radius.\n    - Area of flower bed = \u03c0 * (7 ft)\u00b2 = 49\u03c0 square feet\n\n**2. Calculate the area of the fountain:**\n    - First, find the radius of the fountain: diameter / 2 = 4 ft / 2 = 2 ft\n    - Area of fountain = \u03c0 * (2 ft)\u00b2 = 4\u03c0 square feet\n\n**3. Subtract the fountain's area from the flower bed's area:**\n    - Area of flower bed excluding fountain = 49\u03c0 sq ft - 4\u03c0 sq ft = 45\u03c0 sq ft\n\nTherefore, the area of the flower bed excluding the fountain is 45\u03c0 square feet.",
+            "options": [
+                "14\u03c0 square feet",
+                "45\u03c0 square feet",
+                "49\u03c0 square feet",
+                "53\u03c0 square feet"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**problem_statement**: In triangle ABC, AD is the angle bisector of angle BAC, where D lies on BC.  The length of AB is 12 cm, AC is 15 cm, and the area of triangle ABD is 36 cm\u00b2. \n**diagram**: A diagram showing triangle ABC with angle bisector AD, labeled with AB = 12 cm, AC = 15 cm, and the area of triangle ABD = 36 cm\u00b2.\n**question**: What is the area of triangle ADC?\n**answer_choices**: \n  - 45 cm\u00b2\n  - 54 cm\u00b2\n  - 60 cm\u00b2\n  - 72 cm\u00b2\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding Angle Bisector Theorem:**\n   The Angle Bisector Theorem states that the angle bisector of a triangle divides the opposite side into two segments that are proportional to the other two sides of the triangle.  Therefore, we have: \n   BD/DC = AB/AC = 12/15 = 4/5\n\n**2.  Area Ratio and Base Ratio:**\n   Triangles ABD and ADC share the same height (from A to BC). The area of a triangle is calculated as (1/2) * base * height. Since they share the same height, the ratio of their areas is equal to the ratio of their bases: \n   Area(ABD) / Area(ADC) = BD/DC = 4/5\n\n**3. Calculating Area(ADC):**\n   We know Area(ABD) = 36 cm\u00b2.  Substituting into the equation above:\n   36 / Area(ADC) = 4/5\n   Cross-multiplying gives us:\n   4 * Area(ADC) = 36 * 5\n   Area(ADC) = (36 * 5) / 4 = 45 cm\u00b2\n\n**Therefore, the correct answer is 45 cm\u00b2.**",
+            "options": [
+                "45 cm\u00b2",
+                "54 cm\u00b2",
+                "60 cm\u00b2",
+                "72 cm\u00b2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A square dartboard with a side length of 20 cm has a circular region painted red. The red circle is centered within the square and its diameter is equal to the side of the square.  If a dart is thrown randomly at the dartboard, what is the probability that it lands within the red circle?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Geometric Probability: Calculating probabilities based on geometric figures' subtopic within 'Quants - Geometry'. \n\nHere's how to solve it:\n\n1. **Calculate the area of the square:**\n    - Area of square = side * side = 20 cm * 20 cm = 400 sq cm\n\n2. **Calculate the area of the circle:**\n    - Radius of the circle = diameter / 2 = 20 cm / 2 = 10 cm\n    - Area of circle = \u03c0 * radius\u00b2 = \u03c0 * 10 cm * 10 cm = 100\u03c0 sq cm\n\n3. **Calculate the probability:**\n    - Probability (dart lands in red circle) = (Area of the circle) / (Area of the square)\n    - Probability = (100\u03c0 sq cm) / (400 sq cm) = \u03c0/4\n\nTherefore, the probability of the dart landing within the red circle is \u03c0/4.",
+            "options": [
+                "1/4",
+                "\u03c0/2",
+                "\u03c0/4",
+                "3\u03c0/4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Scenario**: Two parallel lines are intersected by a transversal. Another line intersects one of the parallel lines and the transversal, forming a triangle with one of the angles of intersection measuring 40 degrees.\n**Given Information**: One of the interior angles formed by the transversal and the parallel lines measures 130 degrees. The triangle formed has an angle of 70 degrees adjacent to the 40-degree angle.\n**Question**: Find the measure of the angle within the triangle that is opposite the 40-degree angle.\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n1. **Identify the unknown angle:** We are asked to find the measure of the angle inside the triangle opposite the 40-degree angle. Let's call this angle 'x'.\n\n2. **Use angle properties of parallel lines:** Since the two lines are parallel and intersected by a transversal, the interior angles on the same side of the transversal are supplementary. Therefore, the angle adjacent to the given 130-degree angle measures 180 - 130 = 50 degrees.\n\n3. **Utilize triangle angle sum property:**  We now know two angles within the triangle: 40 degrees and 70 degrees. The sum of all angles in a triangle is always 180 degrees.  \n\n4. **Calculate the unknown angle:**  Therefore, the unknown angle 'x' can be calculated as follows:\n   x = 180 - 40 - 70 = 70 degrees.\n\n**Therefore, the measure of the angle within the triangle opposite the 40-degree angle is 70 degrees.**",
+            "options": [
+                "130 degrees",
+                "50 degrees",
+                "70 degrees",
+                "40 degrees"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A rectangular box has dimensions of 8 cm x 6 cm x 4 cm. Imagine a fly trapped inside the box. What is the shortest distance the fly could travel to get from one corner of the box to the diagonally opposite corner?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves visualizing a 3D diagonal within a rectangular box and using the Pythagorean theorem in three dimensions to solve for it.\n\n**1. Visualize the Diagonal:** \n\nImagine a line connecting the starting corner of the box to the opposite corner. This line represents the shortest path the fly can take and cuts through the box's interior.\n\n**2. Break Down the Diagonal:**\n\nThis diagonal can be viewed as the hypotenuse of a right triangle.  The base of this triangle is the diagonal across the bottom face of the box, and its height is the height of the box.\n\n**3. Calculate the Base Diagonal:**\n\nUse the Pythagorean theorem to find the diagonal of the bottom face (8 cm x 6 cm):\n\n   * a\u00b2 + b\u00b2 = c\u00b2\n   * 8\u00b2 + 6\u00b2 = c\u00b2\n   * 64 + 36 = c\u00b2\n   * 100 = c\u00b2\n   * c = 10 cm\n\n**4. Calculate the Space Diagonal:**\n\nNow, use the Pythagorean theorem again. This time, 'a' is the base diagonal (10 cm), 'b' is the height of the box (4 cm), and 'c' is the space diagonal we're trying to find:\n\n   * a\u00b2 + b\u00b2 = c\u00b2\n   * 10\u00b2 + 4\u00b2 = c\u00b2\n   * 100 + 16 = c\u00b2\n   * 116 = c\u00b2\n   * c = \u221a116 \u2248 10.77 cm\n\n**Therefore, the shortest distance the fly could travel is approximately 10.77 cm.**",
+            "options": [
+                "10 cm",
+                "12 cm",
+                "10.77 cm",
+                "16 cm"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**problem_statement**: Trapezoid ABCD and trapezoid EFGH are drawn such that AB || CD and EF || GH.  Given the following information:\n\n* \u2220A = 48\u00b0 and \u2220E = 132\u00b0\n* AB = 6 cm, CD = 10 cm\n* EF = 9 cm, GH = 15 cm \n\nAre trapezoids ABCD and EFGH congruent, similar, or neither?\n**question**: Are trapezoids ABCD and EFGH congruent, similar, or neither?\n**answer_choices**: \n  **A**: Congruent\n  **B**: Similar\n  **C**: Neither Congruent nor Similar\n  **D**: Not enough information to determine\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Analyze the given information:**\n\n* We are given information about the angles and sides of the two trapezoids.\n* We know that corresponding angles in similar figures are equal, and corresponding sides are proportional.\n\n**2. Compare the angles:**\n\n* We are given \u2220A = 48\u00b0 and \u2220E = 132\u00b0. Since these angles are not equal, we know the trapezoids are not congruent. \n\n**3. Compare the sides:**\n\n*  Let's check if the sides are proportional. We can set up ratios of corresponding sides:\n    * AB/EF = 6/9 = 2/3\n    * CD/GH = 10/15 = 2/3\n\n* The ratios of corresponding sides are equal. This suggests the trapezoids *might* be similar. However, to guarantee similarity in trapezoids, we need more information about the other angles or sides. \n\n**4. Conclusion:**\n\nWe cannot definitively say if the trapezoids are similar. While the ratios of two pairs of corresponding sides are equal, we don't have enough information about the other angles or sides to confirm similarity. \n\n**Therefore, the correct answer is (D) Not enough information to determine.**",
+            "options": [
+                "Congruent",
+                "Similar",
+                "Neither",
+                "Not enough information"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Context**: A gardener is planning a triangular flowerbed.  Two sides of the flowerbed will be defined by a fence, and these sides measure 5 meters and 7 meters.  The gardener wants the area of the flowerbed to be exactly 12 square meters.\n**Diagram**: [Insert a diagram of a triangle. Label the two sides as 5m and 7m. Mark the unknown side as 'x' and draw a dashed line representing the altitude to the base 'x', labeling it 'h'. ]\n**Question**: What is the length of the third side of the flowerbed needed to achieve the desired area?\n",
+            "difficulty": "medium",
+            "reasoning": "This problem combines the concepts of triangle area and the Pythagorean theorem (as we'll use the altitude to form a right triangle):\n\n**1. Area Formula:** \n* We know the area of a triangle is (1/2) * base * height. \n* We are given the area (12 sq meters) and we can choose one of the known sides as the base (let's say 5m). \n* So, 12 = (1/2) * 5 * h \n* Solving for h, the altitude is 4.8 meters.\n\n**2.  Two Right Triangles:**\n* The altitude divides the larger triangle into two right triangles.\n* Let the base of one right triangle be 'y' and the base of the other be 'x-y' (where x is the total length of the unknown side). \n\n**3. Pythagorean Theorem:**\n* Apply the Pythagorean theorem to each right triangle:\n    * Triangle 1:  5\u00b2 = y\u00b2 + 4.8\u00b2\n    * Triangle 2: 7\u00b2 = (x-y)\u00b2 + 4.8\u00b2\n\n**4. Solving the Equations:**\n* Solve the first equation for y: y = \u221a(5\u00b2 - 4.8\u00b2) = \u221a(6.04) = 2.46m (approximately)\n* Substitute this value of y into the second equation and solve for x (the unknown side length).\n* You'll find that x has two possible solutions, but only one will make sense in the context of the triangle inequality (the sum of any two sides must be greater than the third side). \n\n**Therefore, the correct length of the third side can be determined using these steps.",
+            "options": [
+                "6.74 meters",
+                "8.12 meters",
+                "9.56 meters",
+                "11.21 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**title**: Constructing a Tangent to a Circle from an External Point\n**instructions**: Using only a compass and a straightedge, construct a tangent line to a given circle that passes through a point outside the circle.\n**given**: A circle with center O and a point P outside the circle.\n**goal**: Construct a line that passes through point P and is tangent to the circle with center O.\n**difficulty level**: Medium 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's understanding of circles, tangents, perpendicular lines, and right triangles, as well as their ability to combine these concepts to perform a multi-step geometric construction. Here's how to solve it:\n\n**Step 1: Connect the Point to the Center**\n   - Draw a straight line segment connecting point P to point O (the center of the circle).\n\n**Step 2: Bisect the Line Segment**\n   - Set the compass to a radius slightly larger than half the length of line segment PO.\n   - Draw arcs from point P and point O so that they intersect on both sides of line segment PO.\n   - Connect the two intersection points of the arcs to create the perpendicular bisector of line segment PO. Label the midpoint of PO as M.\n\n**Step 3: Draw a Circle from the Midpoint**\n   - Set the compass to a radius equal to the length of line segment MO (which is also equal to MP).\n   - Draw a circle with center M and radius MO. This circle will intersect the original circle at two points. Label these points of intersection as A and B.\n\n**Step 4: Construct the Tangent Lines**\n   - Draw straight lines connecting point P to point A and point P to point B.\n   - These lines, PA and PB, are the tangent lines to the circle that pass through point P.\n\n**Explanation:**\n\n* **Tangent Property:** A tangent line to a circle is perpendicular to the radius drawn to the point of tangency.\n* **Construction Logic:** By constructing the perpendicular bisector of PO, we found the point M, which is equidistant from P and O. Drawing a circle with center M and radius MO ensures that points A and B are also equidistant from P and O.  Therefore, triangles OAP and OBp are right triangles with right angles at the points of tangency A and B, satisfying the tangent property.\n\nThis construction demonstrates a deeper understanding of geometric relationships compared to basic constructions and requires a strategic approach.",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A landscape architect is designing a unique park shaped like a trapezoid.\n**Problem Statement**: The park needs two parallel sides for walking paths, one 60 meters long and the other 100 meters long. The distance between these paths (the height of the trapezoid) is 40 meters.\n**Question**: What is the area of the park that the landscape architect is designing?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Quadrilaterals' topic, specifically focusing on the area calculation of a trapezoid.  Here's how to solve it:\n\n**1. Formula Identification:**\n   The area of a trapezoid is calculated using the formula: Area = (1/2) * height * (base1 + base2)\n\n**2.  Variable Assignment:**\n   * height = 40 meters (distance between the paths)\n   * base1 = 60 meters (length of one path)\n   * base2 = 100 meters (length of the other path)\n\n**3. Calculation:**\n   * Area = (1/2) * 40 meters * (60 meters + 100 meters)\n   * Area = 20 meters * 160 meters\n   * Area = 3200 square meters\n\n**Therefore, the area of the park is 3200 square meters.**",
+            "options": [
+                "1600 square meters",
+                "3200 square meters",
+                "4800 square meters",
+                "6400 square meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A rectangular piece of land is being prepared for a unique garden design. The land is twice as long as it is wide. A fence entirely encloses the land, with an additional fence line drawn down the middle of the width, creating two congruent spaces. If the total length of fencing used is 150 meters, what is the area of the entire piece of land?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Define Variables:**\n   * Let 'w' represent the width of the land.\n   * The length is twice the width, so the length is '2w'.\n\n**2. Set Up the Perimeter Equation:**\n   * The perimeter of the land is the total length of the outer fence: 2(length) + 2(width) = 2(2w) + 2(w) = 6w\n   * We also have the additional fence line down the middle of the width, adding another 'w' to the total fence length.\n   * Total fence length: 6w + w = 150 meters\n\n**3. Solve for the Width:**\n   * Combine like terms: 7w = 150 meters\n   * Divide both sides by 7: w = 21.43 meters (approximately)\n\n**4. Calculate the Length:**\n   * Length = 2w = 2 * 21.43 meters = 42.86 meters (approximately)\n\n**5. Calculate the Area:**\n   * Area = length * width = 42.86 meters * 21.43 meters = 920.20 square meters (approximately)\n\n**Therefore, the area of the entire piece of land is approximately 920.20 square meters.**",
+            "options": [
+                "150 square meters",
+                "428.6 square meters",
+                "920.20 square meters",
+                "1840.4 square meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A city planner is designing a new park shaped like a quadrilateral. The park's boundaries are defined by four straight pathways. The endpoints of these pathways on the city grid are: A(-3, 4), B(5, 2), C(1, -6), and D(-7, -4).  Due to budget constraints, a water fountain can only be placed on the path connecting points B and D.\n**question**: The city planner wants to place a bench at the exact location where a straight path from point A would intersect path BD perpendicularly.  What is the equation of the line representing the path where the bench would be placed?\n**data**: \n  **Point A**: (-3, 4)\n  **Point B**: (5, 2)\n  **Point C**: (1, -6)\n  **Point D**: (-7, -4)\n",
+            "difficulty": "hard",
+            "reasoning": "**1. Find the slope of line BD:**\n   * Slope (m) = (y2 - y1) / (x2 - x1)\n   * m_BD = (-4 - 2) / (-7 - 5) = -6 / -12 = 1/2\n\n**2. Find the slope of a line perpendicular to BD:**\n   * Perpendicular slopes are negative reciprocals.\n   * m_perpendicular = -1 / m_BD = -1 / (1/2) = -2\n\n**3. Find the equation of line BD:**\n   * Use point-slope form: y - y1 = m(x - x1) with point B (5, 2)\n   * y - 2 = (1/2)(x - 5)\n   * Simplifying to slope-intercept form: y = (1/2)x - (1/2)\n\n**4. Find the equation of the line passing through point A (-3, 4) with the perpendicular slope:**\n   * Use point-slope form with m = -2 and point A (-3, 4)\n   * y - 4 = -2(x + 3)\n   * Simplifying to slope-intercept form: y = -2x - 2\n\n**Therefore, the equation of the line representing the path where the bench would be placed is y = -2x - 2.**",
+            "options": [
+                "y = -2x - 2",
+                "y = (1/2)x - (1/2)",
+                "y = 2x + 10",
+                "y = -x + 1"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A sculptor wants to melt down a solid copper sphere and recast it into a cone. The sphere has a diameter of 12 cm. The cone must have a base radius of 6 cm and a slant height that is a whole number of centimeters.\n**question**: What is the minimum volume of copper that will be wasted in the process, considering the sculptor wants to minimize waste?\n**information**: None\n**difficulty**: 8/10\n",
+            "difficulty": "hard",
+            "reasoning": "**1. Calculate the volume of the sphere:**\n   - The radius of the sphere is half its diameter, so the radius is 6 cm.\n   - The volume of a sphere is (4/3)\u03c0r\u00b3.\n   - Volume of the sphere = (4/3) * \u03c0 * (6 cm)\u00b3 = 288\u03c0 cm\u00b3\n\n**2. Formulate the volume of the cone:**\n   - The volume of a cone is (1/3)\u03c0r\u00b2h, where r is the base radius and h is the height.\n   - We are given the base radius (r = 6 cm) but need to find the height (h).\n\n**3. Relate slant height, radius, and height of the cone:**\n   - The slant height (l), radius (r), and height (h) of a cone form a right triangle, where the slant height is the hypotenuse.\n   - Using the Pythagorean theorem: l\u00b2 = r\u00b2 + h\u00b2\n\n**4. Find the minimum height of the cone:**\n   - We need to find the smallest whole number slant height (l) that satisfies the equation l\u00b2 = 6\u00b2 + h\u00b2.\n   - Start by testing whole numbers greater than the radius (6 cm).\n   - If l = 7 cm, then 7\u00b2 = 6\u00b2 + h\u00b2, which gives h = \u221a13 cm (not a whole number).\n   - If l = 8 cm, then 8\u00b2 = 6\u00b2 + h\u00b2, which gives h = \u221a28 cm (not a whole number).\n   - If l = 9 cm, then 9\u00b2 = 6\u00b2 + h\u00b2, which gives h = \u221a45 cm (not a whole number).\n   - If l = 10 cm, then 10\u00b2 = 6\u00b2 + h\u00b2, which gives h = 8 cm (a whole number!).\n\n**5. Calculate the volume of the cone:**\n   - Volume of the cone = (1/3) * \u03c0 * (6 cm)\u00b2 * (8 cm) = 96\u03c0 cm\u00b3\n\n**6. Determine the volume of copper wasted:**\n   - Volume wasted = Volume of sphere - Volume of cone\n   - Volume wasted = 288\u03c0 cm\u00b3 - 96\u03c0 cm\u00b3 = 192\u03c0 cm\u00b3\n\n**Therefore, the minimum volume of copper wasted in the process is 192\u03c0 cm\u00b3.**",
+            "options": [
+                "192\u03c0 cm\u00b3",
+                "96\u03c0 cm\u00b3",
+                "288\u03c0 cm\u00b3",
+                "48\u03c0 cm\u00b3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A regular hexagon with side length 4 is centered at the origin of a coordinate plane. It undergoes a series of transformations: a dilation by a factor of 1.5 centered at the origin, followed by a rotation of 90 degrees clockwise about the origin, and finally a reflection across the line y = x.  What is the area of the polygon formed by connecting the images of the original hexagon's vertices after these transformations?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n1. **Dilation:** The dilation by a factor of 1.5 centered at the origin will multiply all distances from the origin by 1.5. Therefore, the side length of the hexagon after dilation becomes 4 * 1.5 = 6.\n\n2. **Rotation:** The 90-degree clockwise rotation about the origin doesn't change the shape or size of the hexagon. It only changes its orientation.\n\n3. **Reflection:** The reflection across the line y = x will swap the x and y coordinates of each vertex. This transformation also doesn't change the shape or size of the hexagon.\n\n4. **Area:** Since the transformations don't change the shape of the hexagon, the final polygon is still a regular hexagon.  We know its side length is 6 (from the dilation). To calculate the area, we can divide the hexagon into six equilateral triangles:\n\n    - The height of each equilateral triangle is (\u221a3)/2 times the side length: (\u221a3)/2 * 6 = 3\u221a3\n    - The area of each equilateral triangle is (1/2) * base * height: (1/2) * 6 * 3\u221a3 = 9\u221a3\n    - The area of the hexagon is 6 times the area of one triangle: 6 * 9\u221a3 = 54\u221a3\n\nTherefore, the area of the polygon formed after the transformations is 54\u221a3 square units.",
+            "options": [
+                "36\u221a3 square units",
+                "54\u221a3 square units",
+                "72\u221a3 square units",
+                "108\u221a3 square units"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A lighthouse keeper stands at the top of a lighthouse, 120 feet above sea level. He spots a sailboat at a 15-degree angle of depression.  Due to fog, visibility is limited, and he can only see objects within a 200-foot radius.  Can the lighthouse keeper see the entire sailboat?  Assume the sailboat's highest point is 20 feet above sea level.  Provide your reasoning and calculations.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Visualize the Problem:**\n\n   Imagine a right triangle where:\n   * The lighthouse is the vertical side.\n   * The line of sight to the sailboat is the hypotenuse.\n   * The horizontal distance from the lighthouse to the sailboat is the base.\n\n**2.  Angle of Depression:**\n\n   Remember that the angle of depression (looking down) is *equal* to the angle of elevation (looking up) from the sailboat to the lighthouse.\n\n**3. Using Tangent:**\n\n   * We know the angle (15 degrees) and the opposite side (120 ft - 20 ft = 100 ft, the difference in height from the lighthouse keeper's viewpoint to the top of the sailboat).\n   * We want to find the adjacent side (horizontal distance to the sailboat).\n   * Use the tangent function: tan(angle) = opposite/adjacent\n\n**4. Calculation:**\n\n   * tan(15\u00b0) = 100 ft / adjacent\n   * adjacent = 100 ft / tan(15\u00b0)\n   * adjacent \u2248 373.2 ft\n\n**5. Compare with Visibility:**\n\n   * The horizontal distance to the sailboat (373.2 ft) is greater than the visibility limit due to fog (200 ft).\n\n**6. Conclusion:** \n\n   The lighthouse keeper cannot see the entire sailboat because it is outside his visibility range.",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Cannot be determined"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two parallel lines, AB and CD, are intersected by transversal EF. Line GH intersects AB at point I and CD at point J, but GH is not parallel to EF.  Angle EIB measures 50 degrees.  Angle GJC measures 100 degrees. What is the measure of angle BIJ?",
+            "difficulty": "medium",
+            "reasoning": "**1. Identify Key Information:** \n* AB || CD (Parallel lines)\n* EF is a transversal intersecting AB and CD\n* GH intersects AB and CD, but GH is **not** parallel to EF\n* \u2220EIB = 50\u00b0\n* \u2220GJC = 100\u00b0\n\n**2. Visualize the Problem:** Sketch a diagram to represent the lines and angles described. This will help you see the relationships.\n\n**3. Use Angle Relationships:** \n* Since AB || CD and EF is a transversal, we know that alternate interior angles are equal. Therefore,  \u2220EIB = \u2220EJD = 50\u00b0. \n\n**4. Focus on Triangle JIG:**  We now have two angles in triangle JIG:\n* \u2220JIG = \u2220EJD = 50\u00b0 (Alternate interior angles)\n* \u2220GJC = 100\u00b0 (Given)\n\n**5. Apply Angle Sum Property:** The angles inside any triangle add up to 180\u00b0. Therefore, in triangle JIG:\n* \u2220JIG + \u2220GJC + \u2220BIJ = 180\u00b0\n* 50\u00b0 + 100\u00b0 + \u2220BIJ = 180\u00b0\n* \u2220BIJ = 180\u00b0 - 50\u00b0 - 100\u00b0\n* \u2220BIJ = 30\u00b0\n\n**Therefore, the measure of angle BIJ is 30 degrees.**",
+            "options": [
+                "50 degrees",
+                "100 degrees",
+                "30 degrees",
+                "130 degrees"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A quadrilateral ABCD is drawn such that AB = 6 cm, BC = 8 cm, CD = 10 cm, and DA = 9 cm.  It is also known that angle ABC is obtuse. What is the greatest possible integer length of diagonal AC?",
+            "difficulty": "medium",
+            "reasoning": "To solve this, we need to use multiple geometric inequalities:\n\n**1. Triangle Inequality:** The sum of any two sides of a triangle must be greater than the third side.\n\n**2. Relationship between Sides and Angles:** In a triangle, the largest side is opposite the largest angle. Since angle ABC is obtuse (greater than 90 degrees), AC will be the largest side in triangle ABC.\n\n**Applying the Concepts:**\n\n* **Consider triangle ABC:** Since AC is the largest side, we need to find the maximum possible length of AC while still satisfying the Triangle Inequality. \n    * AB + BC > AC  => 6 + 8 > AC => 14 > AC\n\n* **Consider triangle ACD:** We need to ensure the Triangle Inequality holds for this triangle as well.\n    * CD + DA > AC => 10 + 9 > AC => 19 > AC\n\n* **Combining the inequalities:**  We see that AC must be less than 14 (from triangle ABC).  The greatest integer less than 14 is 13. However, we need to check if AC = 13 satisfies the Triangle Inequality in triangle ACD. Since 10 + 9 > 13, it does.\n\n**Therefore, the greatest possible integer length of diagonal AC is 13 cm.**",
+            "options": [
+                "12 cm",
+                "13 cm",
+                "14 cm",
+                "15 cm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A regular hexagon is inscribed in a circle of radius 1.  Let \\vec{u} be the vector from the center of the circle to one vertex of the hexagon, and let \\vec{v} be the vector from that vertex to an adjacent vertex.  What is the dot product \\vec{u} \\cdot \\vec{v}?",
+            "difficulty": "medium",
+            "reasoning": "**1. Visualize the Problem:**\n\n   Imagine a regular hexagon perfectly fitting inside a circle.  The center of the circle is also the center of the hexagon. We're interested in the vectors going from the center to a vertex (\\vec{u}) and from that vertex to the next vertex (\\vec{v}).\n\n**2. Use Geometry:**\n\n   * **Angles:** A regular hexagon has six equal central angles, each measuring 360\u00b0/6 = 60\u00b0. Since \\vec{u} goes from the center to a vertex and \\vec{v} goes from that vertex to the next, the angle between \\vec{u} and \\vec{v} is 60\u00b0.\n   * **Magnitudes:** Both \\vec{u} and \\vec{v} are radii of the circle, so their magnitudes are both 1.\n\n**3. Apply the Dot Product Formula:**\n\n   The dot product of two vectors is related to the cosine of the angle between them:\n\n   \\vec{u} \\cdot \\vec{v} = |\\vec{u}| |\\vec{v}| cos(\u03b8)\n\n   where \u03b8 is the angle between \\vec{u} and \\vec{v}.\n\n**4. Calculate:**\n\n   Substitute the known values:\n\n   \\vec{u} \\cdot \\vec{v} = (1)(1)cos(60\u00b0) = (1)(1)(1/2) = 1/2\n\n**Therefore, the dot product \\vec{u} \\cdot \\vec{v} is 1/2.**",
+            "options": [
+                "0",
+                "1/4",
+                "1/2",
+                "\u221a3/2"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Geometry",
+    "exam_id": 10,
+    "order": 20
+}

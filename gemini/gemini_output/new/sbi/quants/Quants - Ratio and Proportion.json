@@ -1,0 +1,470 @@
+{
+    "questions": [
+        {
+            "question": "A baker wants to divide 24 cupcakes between vanilla and chocolate flavors in the ratio 2:1. How many cupcakes should be chocolate?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Ratio:** The ratio 2:1 means that for every 2 vanilla cupcakes, there's 1 chocolate cupcake.\n\n**2. Find the Unit Ratio:**  Add the ratio values: 2 + 1 = 3. This represents the total parts in the ratio.\n\n**3. Calculate the Value of One Part:** Divide the total cupcakes by the total parts: 24 cupcakes / 3 parts = 8 cupcakes per part. \n\n**4. Determine Chocolate Cupcakes:** Since the chocolate cupcake ratio is 1, multiply the value of one part by 1: 8 cupcakes/part * 1 part = 8 chocolate cupcakes.\n\n**Answer:** The baker should make 8 chocolate cupcakes.",
+            "options": [
+                "12",
+                "16",
+                "8",
+                "6"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter uses 3 liters of paint to cover 12 square meters of wall. If he needs to paint a wall that is 24 square meters, how many liters of paint will he need?",
+            "difficulty": "easy",
+            "reasoning": "This question tests the concept of direct proportion.  Here's how to solve it:\n\n**1. Identify the relationship:** The amount of paint used is directly proportional to the area covered. This means if the area doubles, the paint needed also doubles.\n\n**2. Find the proportionality constant:**  We can find how much paint is needed per square meter:\n   * 3 liters / 12 square meters = 0.25 liters/square meter \n\n**3. Calculate the paint needed:** Now, we can calculate the total paint needed for the 24 square meter wall:\n   * 0.25 liters/square meter * 24 square meters = 6 liters\n\n**Therefore, the painter will need 6 liters of paint.**",
+            "options": [
+                "3 liters",
+                "6 liters",
+                "9 liters",
+                "12 liters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A farmer has enough food to feed 20 cows for 15 days. If he buys 5 more cows, how long will the food last, assuming the cows eat at the same rate?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n**Understanding Inverse Proportion:**\nThis problem involves inverse proportion because as the number of cows increases, the number of days the food lasts will decrease, assuming the same rate of consumption.\n\n**Step 1: Find the total food units**\n* Assume each cow eats one unit of food per day. \n* The farmer has enough food for 20 cows * 15 days = 300 food units.\n\n**Step 2:  Calculate the new food duration**\n* The farmer now has 20 cows + 5 cows = 25 cows.\n* With 300 food units, the food will last for 300 food units / 25 cows = 12 days.\n\n**Therefore, the food will last for 12 days.**",
+            "options": [
+                "15 days",
+                "18 days",
+                "12 days",
+                "20 days"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Type**: Part-to-Part\n**Difficulty Level**: Easy 5/10\n**Scenario**: Liam has 4 blue marbles and 6 red marbles.\n**Question**: What is the ratio of blue marbles to red marbles?\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Identify the parts:**\n\n- The problem asks for the ratio of *blue marbles* to *red marbles*.\n\n**2.  Write the ratio:**\n\n- Liam has 4 blue marbles.\n- Liam has 6 red marbles. \n- The ratio of blue marbles to red marbles is 4:6\n\n**3. Simplification (optional):**\n\n- The ratio 4:6 can be simplified to 2:3 by dividing both sides by 2. \n\n**Therefore, the ratio of blue marbles to red marbles is 4:6 or simplified as 2:3.**",
+            "options": [
+                "4:6",
+                "2:3",
+                "6:4",
+                "3:2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A baker uses 6 cups of flour to 2 cups of sugar to make a batch of cookies.\n**question**: What is the simplified ratio of flour to sugar used in the cookie recipe?\n**difficulty**: easy 5/10\n",
+            "reasoning": "The question belongs to the subtopic 'Simplifying Ratios and Finding Equivalent Ratios' about 'Quants - Ratio and Proportion'. To simplify a ratio, we find the greatest common factor (GCF) of both numbers and divide both sides by it.\n\n1. **Find the GCF:** The GCF of 6 and 2 is 2.\n2. **Divide by the GCF:** 6 cups / 2 = 3 cups and 2 cups / 2 = 1 cup\n3. **Simplified Ratio:** The simplified ratio of flour to sugar is 3:1. This means for every 3 cups of flour, the baker uses 1 cup of sugar.",
+            "options": [
+                "6:2",
+                "3:1",
+                "1:3",
+                "2:6"
+            ],
+            "correct_option": "B",
+            "difficulty": "easy"
+        },
+        {
+            "question": "A baker uses 3 cups of flour to make 24 cookies. If the baker wants to make 72 cookies, keeping the same ratio of flour to cookies, how many cups of flour will they need?",
+            "difficulty": "easy",
+            "reasoning": "This question tests the student's understanding of finding an unknown quantity in a proportion. Here's how to solve it:\n\n**1. Set up a proportion:** \nWe know the ratio of flour to cookies is constant. Let 'x' represent the unknown quantity of flour. We can set up a proportion like this:\n\n   3 cups / 24 cookies = x cups / 72 cookies\n\n**2. Solve for x:**\nTo solve for x, we can use cross-multiplication:\n\n   3 cups * 72 cookies = 24 cookies * x cups\n\n   216 = 24x\n\n**3. Isolate x:**\nDivide both sides of the equation by 24 to isolate x:\n\n   216 / 24 = x\n\n   9 = x\n\n**Answer:** The baker will need 9 cups of flour to make 72 cookies.",
+            "options": [
+                "6 cups",
+                "9 cups",
+                "12 cups",
+                "18 cups"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A painter wants to mix a specific shade of green paint by combining blue and yellow paint in a 3:5 ratio. If he has 9 liters of blue paint, how many liters of yellow paint will he need?",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Ratio and Proportion in Mixture Problems' topic as it involves calculating the required quantity of one substance given the ratio and quantity of another substance in a mixture. \n\nHere's a step-by-step solution:\n\n1. **Understand the Ratio:** The ratio 3:5 means that for every 3 liters of blue paint, the painter needs 5 liters of yellow paint.\n\n2. **Find the Unit Ratio:**  Since we have 9 liters of blue paint, which is 3 times the amount in the ratio (3 x 3 = 9), we need to multiply the yellow paint ratio by 3 as well.\n\n3. **Calculate the Yellow Paint Quantity:** Multiply the yellow paint ratio (5) by 3: 5 x 3 = 15 liters.\n\nTherefore, the painter needs 15 liters of yellow paint.\n",
+            "options": [
+                "6 liters",
+                "10 liters",
+                "12 liters",
+                "20 liters"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A train travels 240 kilometers at a speed of 60 kilometers per hour. If the train needs to cover the same distance in 4 hours, by how much should it increase its speed?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the original time taken:**\n\n   Time = Distance / Speed \n   Time = 240 km / 60 km/h = 4 hours\n\n**2. Calculate the new required speed:**\n\n   Speed = Distance / Time\n   Speed = 240 km / 4 hours = 60 km/h \n\n**3.  Determine the speed increase:**\n\n   Since the train needs to maintain the same speed to cover the distance in 4 hours, there's no need to increase the speed.\n\n**Therefore, the train doesn't need to increase its speed.**",
+            "options": [
+                "10 km/h",
+                "20 km/h",
+                "30 km/h",
+                "0 km/h"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A bakery is known for its delicious chocolate chip cookies. The perfect ratio for their cookies is 2 parts flour to 1 part chocolate chips.\n**question**: To maintain this perfect ratio, how many cups of chocolate chips should they add if they use 8 cups of flour?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "The ratio of flour to chocolate chips is 2:1. This means for every 2 cups of flour, they need 1 cup of chocolate chips.\n\nSince they are using 8 cups of flour, which is 4 times the original ratio (2 x 4 = 8), they will need 4 times the amount of chocolate chips. \n\nTherefore, they should add 4 cups of chocolate chips (1 x 4 = 4).",
+            "options": [
+                "2 cups",
+                "4 cups",
+                "6 cups",
+                "8 cups"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker uses 2 parts flour to 1 part sugar to make a batch of cookies. If the baker wants to use 8 parts flour, how many parts of sugar will they need?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Compound Proportions: Combining Multiple Ratios' as it involves maintaining a consistent ratio between flour and sugar while scaling up the recipe.\n\nHere's how to solve it:\n\n* **Identify the base ratio:** The recipe uses a 2:1 ratio of flour to sugar.\n* **Determine the scaling factor:** The baker is increasing the flour from 2 parts to 8 parts, a factor of 4 (8 / 2 = 4).\n* **Apply the scaling factor to the sugar:**  Since the ratio must stay consistent, multiply the original sugar amount (1 part) by the scaling factor (4): 1 * 4 = 4 parts of sugar.\n\n**Therefore, the baker will need 4 parts of sugar.**",
+            "options": [
+                "2",
+                "4",
+                "6",
+                "8"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A painter mixes blue and yellow paint in the ratio 3:2 to create green paint. If they need 12 liters of green paint, how many liters of blue paint do they need?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Ratio:** The ratio 3:2 means that for every 3 liters of blue paint, the painter uses 2 liters of yellow paint.\n\n**2.  Find the Total Parts:**  Add the ratio parts: 3 + 2 = 5 parts. This represents the total parts in the mixture.\n\n**3. Determine the Value of One Part:** Divide the total liters of green paint needed by the total parts: 12 liters / 5 parts = 2.4 liters per part.\n\n**4. Calculate Blue Paint:** Multiply the value of one part by the number of parts representing blue paint: 2.4 liters/part * 3 parts = 7.2 liters.\n\n**Answer:** The painter needs 7.2 liters of blue paint.",
+            "options": [
+                "2.4 liters",
+                "5 liters",
+                "7.2 liters",
+                "12 liters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter mixes red, blue, and yellow paint in the ratio 5:3:2 to create a specific shade of brown. If he needs a total of 20 liters of this brown paint, how many liters of yellow paint does he need?",
+            "difficulty": "medium",
+            "reasoning": "**1. Determine the total ratio parts:** \n\nThe ratio is 5:3:2, representing 5 parts red, 3 parts blue, and 2 parts yellow. In total, there are 5 + 3 + 2 = 10 parts.\n\n**2. Calculate the volume of one ratio part:**\n\nThe painter needs 20 liters of brown paint, and this represents 10 parts. Therefore, one ratio part is equal to 20 liters / 10 parts = 2 liters/part.\n\n**3.  Determine the volume of yellow paint:**\n\nSince yellow paint represents 2 parts in the ratio, the painter needs 2 parts * 2 liters/part = 4 liters of yellow paint.\n\n**Therefore, the painter needs 4 liters of yellow paint.**",
+            "options": [
+                "10 liters",
+                "6 liters",
+                "4 liters",
+                "2 liters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Description**: \n  **Context**: John and Sarah are baking a cake. John is tasked with mixing the batter while Sarah prepares the frosting.\n  **Task**: Determine the fraction of the total cake-making process completed if John finishes mixing the batter.\n  **Information**: \n    **Work Rate**: John mixing the batter constitutes 2/5 of the total work involved in making the cake.\n**Question**: What fraction of the cake-making process is complete once John is done with his task?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Ratio and Proportion in Work and Time Problems' as it deals with understanding the proportional relationship between a specific task (mixing batter) and the overall work (making a cake).\n\nThe problem is straightforward:\n* John's work (mixing batter) represents 2/5 of the total cake-making process.\n* Since he completes his task, he completes 2/5 of the entire process.\n\nTherefore, the fraction of the cake-making process completed when John is done is 2/5.",
+            "options": [
+                "1/5",
+                "2/5",
+                "3/5",
+                "4/5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A painter wants to create a specific shade of green paint by mixing blue and yellow paint in the ratio of 2:3.\n**information**: He already has 10 liters of blue paint.\n**question**: How many liters of yellow paint does he need to add to achieve the desired shade of green?\n**difficulty**: easy 6/10\n",
+            "reasoning": "The question belongs to the subtopic 'Ratio and Proportion in Mixture Problems' about 'Quants - Ratio and Proportion'.\n\nHere's how to solve the problem:\n\n* **Understand the ratio:** The ratio 2:3 means that for every 2 liters of blue paint, he needs 3 liters of yellow paint.\n* **Calculate the scaling factor:** Since he has 10 liters of blue paint, and the ratio is based on 2 liters of blue paint, the scaling factor is 10/2 = 5.\n* **Apply the scaling factor:** To maintain the ratio, he needs to multiply the yellow paint quantity by the same scaling factor: 3 liters * 5 = 15 liters.\n\nTherefore, he needs 15 liters of yellow paint.",
+            "options": [
+                "10 liters",
+                "12 liters",
+                "15 liters",
+                "20 liters"
+            ],
+            "correct_option": "C",
+            "difficulty": "medium"
+        },
+        {
+            "question": "**context**: A baker uses 3 eggs to bake 9 cupcakes.\n**information**: The baker wants to bake 18 cupcakes.\n**question**: How many eggs will the baker need?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Direct Proportion and its Applications' within 'Quants - Ratio and Proportion' because it involves a scenario where increasing one quantity (cupcakes) proportionally increases another (eggs). \n\nHere's how to solve it:\n\n1. **Identify the relationship:** The number of cupcakes is directly proportional to the number of eggs. This means if you double the cupcakes, you double the eggs.\n\n2. **Find the scaling factor:** The baker wants to go from 9 cupcakes to 18 cupcakes, effectively doubling the amount. \n\n3. **Apply the scaling factor:** Since the relationship is directly proportional, we also double the number of eggs. The baker started with 3 eggs, so doubling that gives us 3 * 2 = 6 eggs.\n\n**Therefore, the baker will need 6 eggs to bake 18 cupcakes.**",
+            "options": [
+                "Direct Proportion",
+                "Inverse Proportion",
+                "No Proportion",
+                "Linear Equation"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A construction crew of 5 workers can pave 200 meters of road per day. \n**question**: If the construction company hires 3 more workers, maintaining the same pace of work, how many meters of road can they pave in a day?\n**difficulty**: medium 5/10\n",
+            "reasoning": "This question tests the concept of direct proportion. Here's how to solve it:\n\n**1. Find the work rate per worker:**\n   -  If 5 workers pave 200 meters, one worker paves 200 meters / 5 workers = 40 meters/worker per day. \n\n**2. Calculate the new total work rate:**\n   - With 3 more workers, the crew now has 5 + 3 = 8 workers.\n   - The total work rate becomes 8 workers * 40 meters/worker = 320 meters per day.\n\n**Therefore, the crew can pave 320 meters of road per day with 8 workers.**",
+            "options": [
+                "280 meters",
+                "320 meters",
+                "300 meters",
+                "360 meters"
+            ],
+            "correct_option": "B",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A construction crew is mixing concrete. The ratio of cement to sand to gravel in their mixture is 2:3:5.  If they need to make 250 kg of concrete mix, how much sand will they need?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Basic Concepts: Ratios, Proportions, and Fractions' topic as it directly involves understanding and applying ratios to solve a real-world problem.\n\nHere's how to solve the problem step-by-step:\n\n**1. Determine the total ratio parts:**\n   The ratio is 2:3:5, meaning there are 2 + 3 + 5 = 10 total parts.\n\n**2. Calculate the weight of one ratio part:**\n   They need 250 kg of concrete, and there are 10 parts, so one part weighs 250 kg / 10 = 25 kg.\n\n**3. Determine the weight of sand:**\n   The ratio of sand is 3 parts. Since one part is 25 kg, the sand will weigh 3 * 25 kg = 75 kg.\n\n**Therefore, they will need 75 kg of sand.**",
+            "options": [
+                "100 kg",
+                "75 kg",
+                "125 kg",
+                "50 kg"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A painter wants to mix a specific shade of green paint by combining blue and yellow paint in the ratio of 3:5.\n**question**: If the painter has 12 liters of blue paint, how many liters of yellow paint are needed?\n**information**: Ratio of blue paint to yellow paint = 3:5\n**difficulty**: medium 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Proportion: Finding the Unknown Quantity' as it requires setting up a proportion to determine the missing quantity of yellow paint. Here's a step-by-step solution:\n\n**1. Understanding the Ratio:** The ratio 3:5 means that for every 3 liters of blue paint, we need 5 liters of yellow paint.\n\n**2. Setting up the Proportion:**  Let 'x' represent the unknown quantity of yellow paint. We can set up a proportion like this:\n\n   3/5 = 12/x \n\n**3. Solving for x:** To solve for x, we cross-multiply:\n\n   3 * x = 5 * 12\n   3x = 60\n\n**4. Isolating x:** Divide both sides of the equation by 3:\n\n   x = 60 / 3\n   x = 20\n\n**Answer:** The painter needs 20 liters of yellow paint.",
+            "options": [
+                "12 liters",
+                "20 liters",
+                "15 liters",
+                "60 liters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A school orchestra has a total of 60 members. The ratio of students who play string instruments to students who play wind instruments is 2:3.  Among the students who play wind instruments, the ratio of students who play brass instruments to those who play woodwind instruments is 3:2. How many students in the orchestra play brass instruments?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Find the number of wind instrument players:**\n* The ratio of string to wind players is 2:3, meaning that for every 5 musicians, 3 play wind instruments.\n* Calculate the fraction of wind instrument players: 3 / (2+3) = 3/5\n* Multiply this fraction by the total number of orchestra members to find the number of wind instrument players: (3/5) * 60 = 36 students\n\n**2. Find the number of brass instrument players:**\n* The ratio of brass to woodwind players within the wind instrument section is 3:2, meaning for every 5 wind instrument players, 3 play brass.\n* Calculate the fraction of brass players within the wind instrument section: 3 / (3+2) = 3/5\n* Multiply this fraction by the number of wind instrument players to find the number of brass players: (3/5) * 36 = 21.6 students\n\n**3. Round to the nearest whole number:**\n* Since we can't have a fraction of a student, round 21.6 to the nearest whole number.\n\n**Answer:** Approximately 22 students in the orchestra play brass instruments.",
+            "options": [
+                "21",
+                "22",
+                "23",
+                "24"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**data**: A school cafeteria offers two meal options for lunch: vegetarian and non-vegetarian. The ratio of vegetarian to non-vegetarian meals prepared each day is consistently 2:3.  On a particular day, the cafeteria prepared 360 non-vegetarian meals.\n**question**: If 15% of the vegetarian meals prepared that day were left over, how many vegetarian meals were actually eaten by the students?\n**options**: \n  **a**: 168\n  **b**: 192\n  **c**: 204\n  **d**: 240\n**correct_option**: c\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the number of vegetarian meals prepared:** \n* The ratio of vegetarian to non-vegetarian meals is 2:3, meaning for every 3 non-vegetarian meals, 2 vegetarian meals are prepared.\n* Since 360 non-vegetarian meals were prepared, we can set up a proportion: 2/3 = x/360\n* Solving for x, we get x = (2 * 360) / 3 = 240 vegetarian meals prepared.\n\n**2. Calculate the number of vegetarian meals leftover:**\n* 15% of the vegetarian meals were leftover, meaning 0.15 * 240 = 36 vegetarian meals were leftover.\n\n**3. Calculate the number of vegetarian meals eaten:**\n* Subtract the leftover meals from the total prepared: 240 - 36 = 204 vegetarian meals were eaten.\n\n**Therefore, the correct answer is (c) 204.**",
+            "options": [
+                "168",
+                "192",
+                "204",
+                "240"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two friends, Alice and Bob, decide to race each other on their bicycles. They both start at the same point and ride in the same direction. Alice pedals at a constant speed of 15 km/h. After 30 minutes, Bob has cycled 10 km.  If they continue at these speeds, how long will it take Bob to catch up to Alice from the time he passes the 10 km mark?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Calculate Bob's speed:**\n\n* Bob covers 10 km in 30 minutes (0.5 hours).\n* Speed = Distance / Time\n* Bob's speed = 10 km / 0.5 h = 20 km/h\n\n**2. Determine the relative speed:**\n\n* Since Bob and Alice are traveling in the same direction, we find their relative speed by subtracting Alice's speed from Bob's speed.\n* Relative speed = 20 km/h - 15 km/h = 5 km/h\n\n**3. Calculate the distance Bob needs to cover to catch up:**\n\n* In the 30 minutes (0.5 hours) it took Bob to reach 10 km, Alice has traveled 15 km/h * 0.5 h = 7.5 km.\n* Bob needs to close a distance of 10 km - 7.5 km = 2.5 km to catch up to Alice.\n\n**4. Calculate the time it takes Bob to catch up:**\n\n* Time = Distance / Speed\n* Time = 2.5 km / 5 km/h = 0.5 hours\n\n**Answer:** It will take Bob 0.5 hours (30 minutes) to catch up to Alice from the time he passes the 10 km mark.",
+            "options": [
+                "30 minutes",
+                "1 hour",
+                "15 minutes",
+                "45 minutes"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A construction company needs to build a wall in 15 days. They initially employ 24 workers for the job. However, after 6 days, the company decides to add more workers to finish the project early.  If they want to complete the remaining work in 6 days, how many additional workers should they hire?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the concept of inverse proportion. Here's how to solve it:\n\n**1. Work done in the first 6 days:**\n\n* Assume the total work required for the wall is 'W'.\n* In one day, 24 workers complete W/15 of the work.\n* In 6 days, they would have completed (W/15) * 6 = 2W/5 of the work.\n\n**2.  Work remaining:**\n\n* Work remaining is W - (2W/5) = 3W/5\n\n**3.  Workers needed to finish in 6 days:**\n\n* Let 'x' be the total number of workers needed to complete 3W/5 of the work in 6 days.\n* In one day, 'x' workers complete (3W/5)/6 = W/10 of the work.\n\n**4. Setting up the inverse proportion:**\n\n* Since the amount of work is constant, the number of workers and the time taken are inversely proportional.\n* Therefore, 24 workers * 15 days = x workers * 10 days\n\n**5. Solving for x:**\n\n* x = (24 * 15) / 10 = 36 workers\n\n**6. Additional workers needed:**\n\n* The company needs to hire 36 - 24 = 12 additional workers.\n\n**Therefore, the company needs to hire 12 additional workers to finish the wall in the desired time.**",
+            "options": [
+                "12",
+                "24",
+                "36",
+                "48"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A painter is mixing a specific shade of green paint. They use a ratio of 3 parts blue paint to 2 parts yellow paint. To make a larger batch of the same shade, they need 15 parts of blue paint. How many parts of yellow paint will they need?",
+            "difficulty": "medium",
+            "reasoning": "This question involves finding equivalent ratios. Here's how to solve it:\n\n**1. Understand the Base Ratio:** The base ratio of blue to yellow is 3:2.\n\n**2. Determine the Scaling Factor:** The painter is using 15 parts of blue paint, which is 5 times the original 3 parts (3 * 5 = 15). \n\n**3. Apply the Scaling Factor:** To maintain the same shade of green, we need to multiply the yellow paint by the same scaling factor. So, they'll need 10 parts of yellow paint (2 * 5 = 10).\n\n**Therefore, the painter needs 10 parts of yellow paint.**",
+            "options": [
+                "5 parts",
+                "10 parts",
+                "15 parts",
+                "20 parts"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A construction team needs to build a wall. Experienced mason Alex can build the wall alone in 6 hours, while his apprentice, Ben, would take 12 hours to complete the same task.  If they work together, how long will it take them to build the wall?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Ratio and Proportion in Work and Time Problems' subtopic. Here's how to solve it:\n\n**1. Determine individual work rates:**\n\n* Alex completes 1/6 of the wall per hour (1 wall / 6 hours).\n* Ben completes 1/12 of the wall per hour (1 wall / 12 hours).\n\n**2. Calculate combined work rate:**\n\n* Add their individual rates: 1/6 + 1/12 = 1/4 of the wall built per hour.\n\n**3. Determine combined time:**\n\n* Since they build 1/4 of the wall each hour, they'll complete the entire wall in 4 hours (1 wall / (1/4 wall per hour)).\n\n**Therefore, it will take Alex and Ben 4 hours to build the wall together.**",
+            "options": [
+                "12 hours",
+                "6 hours",
+                "3 hours",
+                "4 hours"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A painter creates a specific shade of green by mixing blue and yellow paint in the ratio of 3:5.  To complete a project, the painter needs 24 liters of this green paint.  If he already has 9 liters of blue paint, how many liters of yellow paint does he need to add to create the required amount of green paint?",
+            "difficulty": "medium",
+            "reasoning": "**1. Determine the ratio representing the blue paint:**\n\n   The ratio 3:5 represents 3 parts blue paint to 5 parts yellow paint, totaling 3 + 5 = 8 parts.\n\n   Since the painter needs 24 liters of green paint, each 'part' of the ratio represents 24 liters / 8 parts = 3 liters.\n\n**2. Calculate the required amount of blue paint:**\n\n   The ratio indicates 3 parts of blue paint are needed, so this equates to 3 parts * 3 liters/part = 9 liters of blue paint.\n\n**3. Determine the remaining amount of blue paint needed:**\n\n   The painter already has 9 liters of blue paint, and needs a total of 9 liters, leaving 9 liters - 9 liters = 0 liters more of blue paint needed.\n\n**4. Calculate the required amount of yellow paint:**\n\n   The ratio indicates 5 parts of yellow paint are needed, translating to 5 parts * 3 liters/part = 15 liters of yellow paint.\n\n**Therefore, the painter needs to add 15 liters of yellow paint.**",
+            "options": [
+                "9 liters",
+                "15 liters",
+                "24 liters",
+                "3 liters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery makes two types of pastries: croissants and muffins. The ratio of croissants to muffins sold each day is initially 5:3.  Due to a surge in popularity, the bakery decides to increase its daily croissant production by 40%, while keeping the muffin production the same.  To accommodate the extra pastries, the bakery increases its total number of daily pastries by 20%. What is the new ratio of croissants to muffins sold?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the initial number of pastries:** \n\nLet's assume the bakery initially sold 5x croissants and 3x muffins, making a total of 8x pastries.\n\n**2.  Calculate the new number of croissants:**\n\nA 40% increase in croissant production means the bakery now makes 5x + (40/100)*5x = 7x croissants.\n\n**3. Calculate the new total number of pastries:**\n\nA 20% increase in total pastries means the bakery now makes 8x + (20/100)*8x = 9.6x pastries.\n\n**4. Calculate the new number of muffins:**\n\nSince the muffin production remains the same, the bakery still makes 9.6x - 7x = 2.6x muffins.\n\n**5. Determine the new ratio:**\n\nThe new ratio of croissants to muffins is 7x : 2.6x.  Simplifying this ratio by dividing both sides by x and then multiplying by 10 to get whole numbers, we get 70:26. This can be further simplified to 35:13.\n\n**Therefore, the new ratio of croissants to muffins sold is 35:13.**",
+            "options": [
+                "5:3",
+                "7:3",
+                "35:13",
+                "20:9"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A construction company uses a mixture of cement, sand, and gravel for a project. The ratio of cement to sand is 2:3, and the ratio of sand to gravel is 4:5.\n**question**: If the company uses 120 kg of cement, calculate the total weight of the mixture used.\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the common ratio for sand:**\n\n   * The ratio of cement to sand is 2:3. \n   * The ratio of sand to gravel is 4:5.\n   * To find a common ratio for all three materials, we need to make the sand portion the same in both ratios.\n   * The least common multiple of 3 (cement:sand) and 4 (sand:gravel) is 12.\n   * Multiply the cement:sand ratio (2:3) by 4: (2:3) * 4 = 8:12 \n   * Multiply the sand:gravel ratio (4:5) by 3: (4:5) * 3 = 12:15\n   * Now we have a combined ratio of cement:sand:gravel = 8:12:15\n\n**2. Calculate the scaling factor:**\n\n   * We know the company uses 120 kg of cement. \n   * In our combined ratio, cement represents 8 parts.\n   * To find out how much one part of the ratio represents, divide the actual cement amount by the cement ratio part: 120 kg / 8 = 15 kg per part.\n\n**3. Calculate the total weight:**\n\n   * The total ratio for the mixture is 8 + 12 + 15 = 35 parts.\n   * Since each part represents 15 kg, the total weight of the mixture is 35 * 15 kg = 525 kg.\n\n**Therefore, the total weight of the mixture used is 525 kg.**",
+            "options": [
+                "525 kg",
+                "35 kg",
+                "15 kg",
+                "120 kg"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A bakery produces three types of cakes: Chocolate, Vanilla, and Red Velvet. The ratio of flour to sugar used in each cake is as follows:\n\n| Cake Type | Flour (cups) | Sugar (cups) |\n|---|---|---|\n| Chocolate | 3 | 2 |\n| Vanilla | 2 | 1 |\n| Red Velvet | 4 | 3 |\n\nThe bakery used a total of 270 cups of ingredients to make a batch of these three cakes.  If the ratio of the number of Chocolate cakes to Vanilla cakes to Red Velvet cakes produced was 2:3:1, how many cups of sugar were used in the Vanilla cakes?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the total ratio parts for the cakes:**\n\n   The ratio of Chocolate : Vanilla : Red Velvet cakes is 2:3:1, giving a total of 2 + 3 + 1 = 6 parts.\n\n**2. Calculate the ingredient ratio for one 'part' of cake:**\n\n   * Chocolate cake uses 3 cups flour + 2 cups sugar = 5 cups of ingredients.\n   * Vanilla cake uses 2 cups flour + 1 cup sugar = 3 cups of ingredients. \n   * Red Velvet cake uses 4 cups flour + 3 cups sugar = 7 cups of ingredients.\n\n**3.  Determine the total ingredients per 'part':**\n\n   Since the cake ratio is 2:3:1, we need to find the weighted average of ingredients per part:\n   [(2 parts Chocolate cake * 5 cups/part) + (3 parts Vanilla cake * 3 cups/part) + (1 part Red Velvet cake * 7 cups/part)] / 6 parts = 26/6 = 13/3 cups per part.\n\n**4. Calculate the number of 'parts' produced:**\n\n   The bakery used 270 cups of ingredients, and each 'part' requires 13/3 cups, so they made 270 / (13/3) = 630/13 parts. \n\n**5.  Determine the number of Vanilla cake 'parts':**\n\n   Vanilla cakes represent 3 out of the 6 total ratio parts.  With 630/13 total parts, Vanilla cake makes up (3/6) * (630/13) = 315/13 parts.\n\n**6. Calculate the total ingredients used in the Vanilla cakes:**\n\n   Each part of Vanilla cake uses 3 cups of ingredients, and they made 315/13 parts, resulting in (315/13) * 3 = 945/13 cups of ingredients in the Vanilla cakes.\n\n**7.  Determine the amount of sugar used in the Vanilla Cakes:**\n\n   Vanilla cake has a flour to sugar ratio of 2:1, meaning 1/3 of the ingredients are sugar. So, the Vanilla cakes used (1/3) * (945/13) = **315/13 cups of sugar.**",
+            "options": [
+                "22.5 cups",
+                "315/13 cups",
+                "24.23 cups",
+                "945/13 cups"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A rectangular park measures 100 meters in length and 60 meters in width. Inside the park, a smaller rectangular playground is built that is similar in shape to the park itself.\n**information**: The ratio of the length of the park to the length of the playground is 5:2.\n**question**: What is the perimeter of the smaller playground?\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the scale factor:**\n\nThe ratio of the park's length to the playground's length is 5:2, meaning the playground's length is 2/5 the park's length. This 2/5 ratio is our scale factor.\n\n**2. Calculate the playground's dimensions:**\n\n*   Length of playground: (2/5) * 100 meters = 40 meters\n*   Width of playground: (2/5) * 60 meters = 24 meters\n\n**3. Calculate the perimeter:**\n\nPerimeter = 2 * (length + width) = 2 * (40 meters + 24 meters) = 2 * 64 meters = 128 meters\n\n**Therefore, the perimeter of the smaller playground is 128 meters.**",
+            "options": [
+                "100 meters",
+                "128 meters",
+                "64 meters",
+                "24 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A cyclist and a runner are participating in a duathlon. The cyclist covers the first leg of the race at a speed of 40 km/hr, while the runner maintains a pace of 15 km/hr. After 1.5 hours, the cyclist stops for a 15-minute break, while the runner continues without stopping.  What is the ratio of the distance covered by the cyclist to the distance covered by the runner by the time the cyclist resumes the race?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Calculate the distance covered by the cyclist before the break:**\n\n* Time = 1.5 hours\n* Speed = 40 km/hr\n* Distance = Speed x Time = 40 km/hr * 1.5 hr = 60 km\n\n**2. Calculate the distance covered by the runner in 1.5 hours:**\n\n* Time = 1.5 hours\n* Speed = 15 km/hr\n* Distance = Speed x Time = 15 km/hr * 1.5 hr = 22.5 km\n\n**3. Calculate the distance covered by the runner during the cyclist's break:**\n\n* Break time = 15 minutes = 15/60 hours = 0.25 hours\n* Speed = 15 km/hr\n* Distance = Speed x Time = 15 km/hr * 0.25 hr = 3.75 km\n\n**4. Calculate the total distance covered by the runner:**\n\n* Total distance = Distance covered in 1.5 hrs + Distance covered during the break \n* Total distance = 22.5 km + 3.75 km = 26.25 km\n\n**5. Determine the ratio of the distances:**\n\n* Cyclist's distance : Runner's distance = 60 km : 26.25 km\n* Simplify the ratio by dividing both sides by 2.5: 24:10.5\n* Further simplification by dividing by 1.5: 16:7\n\n**Therefore, the ratio of the distance covered by the cyclist to the distance covered by the runner by the time the cyclist resumes the race is 16:7.**",
+            "options": [
+                "16:7",
+                "24:10.5",
+                "60:26.25",
+                "40:15"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A bakery prepares a special bread mix using rye flour and wheat flour. The ratio of rye flour to the total amount of flour in the mix is 2:9.  If a baker wants to make a smaller batch of this bread mix using exactly 110 grams of rye flour, what is the total weight of the bread mix he needs to prepare?",
+            "difficulty": "hard",
+            "reasoning": "This question tests the understanding of part-to-whole ratios within a real-world context. Here's how to solve it:\n\n**1. Understand the Ratio:** The ratio 2:9 means that for every 2 grams of rye flour, there are a total of 9 grams of flour in the mix. \n\n**2.  Find the Scaling Factor:** The baker wants to use 110 grams of rye flour, which is 55 times the original ratio amount (110 / 2 = 55). \n\n**3.  Calculate the Total Flour:** Since the ratio applies to the entire mix, we need to multiply the total part of the ratio (9) by the scaling factor (55): 9 * 55 = 495 grams. \n\n**Therefore, the total weight of the bread mix the baker needs to prepare is 495 grams.**",
+            "options": [
+                "110 grams",
+                "220 grams",
+                "495 grams",
+                "550 grams"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter is creating a large mural using a specific shade of green paint. He achieves this shade by mixing blue and yellow paint in the ratio of 5:3 respectively.  To make 40 liters of this green paint, he already has 18 liters of blue paint. He can only buy yellow paint in 2-liter cans. How many cans of yellow paint does the painter need to buy?",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\n1. **Determine the required ratio for 40 liters:** The painter wants to make 40 liters of green paint. Since the blue to yellow ratio is 5:3, for every 8 liters of green paint, he needs 5 liters of blue and 3 liters of yellow. To get 40 liters, he needs to multiply this base ratio by 5 (8 liters x 5 = 40 liters). This means he'll need 25 liters of blue (5 liters x 5 = 25 liters) and 15 liters of yellow (3 liters x 5 = 15 liters).\n\n2. **Calculate the remaining blue paint required:** He already has 18 liters of blue paint and needs a total of 25 liters. Therefore, he needs to acquire 7 more liters of blue paint (25 liters - 18 liters = 7 liters).\n\n3. **Calculate the number of yellow paint cans:** He needs 15 liters of yellow paint and each can holds 2 liters.  Thus, he needs to buy 7.5 cans of yellow paint (15 liters / 2 liters/can = 7.5 cans).\n\n4. **Account for whole cans:** Since he can only buy whole cans of yellow paint, he needs to purchase 8 cans to have enough. \n\n**Therefore, the painter needs to buy 8 cans of yellow paint.**",
+            "options": [
+                "7",
+                "7.5",
+                "8",
+                "15"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A chemist is creating a special solution by mixing three different liquids: A, B, and C. The desired ratio of the liquids in the final solution is 2:3:5 (A:B:C). \n\nThe chemist already has 120 ml of liquid B and wants to use all of it for the solution. However, there's a constraint: the chemist can only add liquid C in multiples of 50 ml due to the measuring equipment available. \n\nWhat is the smallest total volume of the final solution the chemist can create while still maintaining the desired ratio and using all of liquid B?",
+            "difficulty": "hard",
+            "reasoning": "**1. Understand the Ratio Requirements:**\n\n   * The desired ratio is A:B:C = 2:3:5. This means for every 3 parts of liquid B, there must be 2 parts of A and 5 parts of C.\n\n**2. Calculate Proportional Amounts Based on Liquid B:**\n\n   * The chemist has 120 ml of liquid B, which represents '3' in the ratio.\n   * To find the amount of liquid A needed, we set up a proportion:  2/3 = x/120. Solving for x gives us x = 80 ml of liquid A.\n   * Similarly, for liquid C: 5/3 = y/120. Solving for y gives us y = 200 ml of liquid C.\n\n**3. Account for the Constraint on Liquid C:**\n\n   * While the ideal amount of liquid C is 200 ml, the chemist can only add it in multiples of 50 ml.\n   * The smallest multiple of 50 ml that equals or exceeds 200 ml is 200 ml itself.\n\n**4. Calculate the Total Volume:**\n\n   * Total volume = volume of A + volume of B + volume of C\n   * Total volume = 80 ml + 120 ml + 200 ml = 400 ml\n\n**Therefore, the smallest total volume of the final solution the chemist can create is 400 ml.**",
+            "options": [
+                "380 ml",
+                "400 ml",
+                "450 ml",
+                "500 ml"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two similar pentagons, ABCDE and FGHIJ, share a common vertex, E and J, respectively. Side AB is parallel to FG, and side AE is parallel to FJ. The ratio of the area of pentagon ABCDE to the area of pentagon FGHIJ is 16:25. If the length of side CD is 12 cm and the perimeter of pentagon FGHIJ is 65 cm, what is the length of side GH?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Understanding the Relationship between Area Ratio and Scale Factor**\n\nThe ratio of the areas of similar figures is equal to the square of the ratio of their corresponding sides (scale factor).  Since the area ratio is 16:25, the scale factor is the square root of this ratio, which is 4:5.\n\n**2. Finding the Perimeter of Pentagon ABCDE**\n\nThe ratio of the perimeters of similar figures is equal to the scale factor.  Therefore, the perimeter of pentagon ABCDE is (4/5) * 65 cm = 52 cm.\n\n**3. Finding the Length of a Corresponding Side in Pentagon ABCDE**\n\nLet x be the length of side GH. Since the scale factor is 4:5, the length of the corresponding side in pentagon ABCDE (let's call it side CD) is (4/5) * x.\n\n**4. Setting up a Proportion**\n\nWe know that side CD in pentagon ABCDE has a length of 12 cm.  We can now set up a proportion using the scale factor:\n\n(4/5) * x = 12 cm\n\n**5. Solving for x**\n\nTo solve for x, multiply both sides of the equation by (5/4):\n\nx = 12 cm * (5/4)\n\nx = 15 cm\n\nTherefore, the length of side GH is 15 cm.\n\n**Options:**\n\nA) 9.6 cm\nB) 10.5 cm\nC) 15 cm\nD) 18.75 cm\n\n**Correct Option:** C) 15 cm",
+            "options": [
+                "9.6 cm",
+                "10.5 cm",
+                "15 cm",
+                "18.75 cm"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A construction company uses a specific concrete mix for its projects. The mix requires cement, sand, and gravel in the ratio of 2:3:5 by weight.  To transport the materials more efficiently, they are premixed in large bags. Each bag contains a total of 300 kilograms of the concrete mix. Now, for a new project, the company needs to adjust the ratio of materials slightly.  They want to create a new mix using the same bags, but with the ratio of cement to sand to gravel changed to 3:4:7. To achieve this new ratio, they will be adding extra cement and sand to each bag. What is the combined weight of extra cement and sand that needs to be added to each bag to achieve the new ratio?",
+            "difficulty": "hard",
+            "reasoning": "**1. Calculate the weight of each component in the original mix:**\n\n   * The total ratio parts are 2 + 3 + 5 = 10\n   * Weight of cement in one bag: (2/10) * 300 kg = 60 kg\n   * Weight of sand in one bag: (3/10) * 300 kg = 90 kg\n   * Weight of gravel in one bag: (5/10) * 300 kg = 150 kg\n\n**2.  Determine the scaling factor for the new ratio:**\n\n   * Notice that the gravel portion of the ratio remains the same in both the original and new mix. This means the gravel weight in the bag will remain constant at 150kg.\n   * Since the total weight of the bag remains 300kg, the combined weight of cement and sand in the new mix must also remain 150kg (300 kg - 150 kg = 150 kg).\n\n**3.  Calculate the weight of each component in the new mix:**\n\n   * The total ratio parts for the cement and sand in the new mix are 3 + 4 = 7\n   * Weight of cement in the new mix: (3/7) * 150 kg = 64.29 kg (approximately)\n   * Weight of sand in the new mix: (4/7) * 150 kg = 85.71 kg (approximately)\n\n**4. Calculate the additional weight of cement and sand:**\n\n   * Additional cement needed: 64.29 kg - 60 kg = 4.29 kg (approximately)\n   * Additional sand needed: 85.71 kg - 90 kg = -4.29 kg (approximately)\n\n**5.  Find the combined weight of added cement and sand:**\n\n   * Since we are adding cement and the sand weight is actually decreasing, to find the combined weight of the changes, we take the absolute values of the changes and add them together. \n   *  4.29 kg + 4.29 kg = 8.58 kg (approximately)\n\n**Therefore, approximately 8.58 kg of additional cement and sand combined need to be added to each bag to achieve the new ratio.**",
+            "options": [
+                "4.29 kg",
+                "8.58 kg",
+                "12.87 kg",
+                "150 kg"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A construction company is using a special type of concrete for a new project. The mixture for this concrete requires cement, sand, and gravel in the ratio 2:3:5 by weight. However, the materials are delivered in pre-mixed bags with varying proportions. One type of bag contains cement, sand, and gravel in the ratio 1:2:3, while another type contains them in the ratio 3:4:5.  \n\nTo obtain the exact ratio needed for the project, the foreman decides to mix these two types of pre-mixed bags. What is the simplest ratio of the first type of bag to the second type of bag that the foreman should use to achieve the desired 2:3:5 ratio for the special concrete?",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThis problem is tricky because it involves working with multiple ratios and finding a combination that results in a specific target ratio. Here's a step-by-step solution: \n\n**1. Define Variables:**\n* Let 'x' be the number of parts of the first bag (1:2:3 ratio). \n* Let 'y' be the number of parts of the second bag (3:4:5 ratio). \n\n**2. Set up Equations:**\nWe need to find the ratio x:y that will create the 2:3:5 ratio.  We can set up equations based on each component: \n\n* **Cement:** (1x + 3y) / (6x + 12y) = 2/10  (Simplifying, this becomes x + 3y = 1.2x + 2.4y)\n* **Sand:** (2x + 4y) / (6x + 12y) = 3/10 (Simplifying, this becomes 2x + 4y = 1.8x + 3.6y)\n* **Gravel:** (3x + 5y) / (6x + 12y) = 5/10 (Simplifying, this becomes 3x + 5y = 3x + 6y)\n\n**3. Solve for x and y:**\nNotice that the 'Gravel' equation immediately simplifies to y = 0.  This isn't logically possible as we need both bags for the mixture. This tells us we can't achieve the exact 2:3:5 ratio using only these two bag types. \n\nHowever, the question asks for the *simplest ratio* to get as *close as possible*.  Looking at the 'Cement' and 'Sand' equations, they both simplify to similar expressions (0.2x = 0.6y). This tells us that to get closest to the desired ratio, we need to have three times as much of the second bag (3:4:5) as the first bag (1:2:3). \n\n**4. Express as a Ratio:**\nTherefore, the simplest ratio of the first bag to the second bag is **1:3**. \n\n**Note:**  This ratio won't create the exact 2:3:5 mix, but it's the closest we can get using only the given pre-mixed bag types.",
+            "option and correct options": [
+                {
+                    "option": "1:2",
+                    "correct": false
+                },
+                {
+                    "option": "2:3",
+                    "correct": false
+                },
+                {
+                    "option": "1:3",
+                    "correct": true
+                },
+                {
+                    "option": "3:5",
+                    "correct": false
+                }
+            ],
+            "options": [
+                "1:2",
+                "2:3",
+                "1:3",
+                "3:5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter wants to mix a specific shade of green paint by combining blue and yellow paint in the ratio of 2:3. He already has 5 liters of a blue-yellow mixture with blue and yellow paints in the ratio of 1:2.  To achieve his desired shade of green, what is the minimum amount of blue paint he needs to add to his existing mixture?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Analyze the existing mixture:**\n* The existing 5-liter mixture has a blue to yellow ratio of 1:2. This means it contains 1 part blue and 2 parts yellow, totaling 3 parts.\n* To find the volume of each part, divide the total volume by the total number of parts: 5 liters / 3 parts = 1.67 liters per part (approximately).\n* Therefore, the existing mixture has 1.67 liters of blue paint and 3.34 liters of yellow paint.\n\n**2. Determine the required ratio:**\n* The painter wants a final blue to yellow ratio of 2:3.\n\n**3. Calculate the required additional blue paint:**\n* Let 'x' be the amount of blue paint (in liters) the painter needs to add.\n* After adding 'x' liters of blue paint, the total volume of blue paint will be (1.67 + x) liters.\n* The ratio of blue to yellow paint in the final mixture should be (1.67 + x) : 3.34 = 2 : 3\n* Solving the proportion: (1.67 + x) / 3.34 = 2 / 3\n* Cross-multiplying: 3(1.67 + x) = 2 * 3.34\n* Simplifying: 5.01 + 3x = 6.68\n* Solving for x: 3x = 1.67\n* Therefore, x = 0.56 liters (approximately)\n\n**Answer:** The painter needs to add a minimum of 0.56 liters of blue paint to his existing mixture to achieve his desired shade of green.",
+            "options": [
+                "1.67 liters",
+                "3.34 liters",
+                "0.56 liters",
+                "2.23 liters"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Ratio and Proportion",
+    "exam_id": 18,
+    "order": 8
+}

@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "Imagine two beautifully symmetrical butterflies, one a miniature version of the other.  The smaller butterfly has a wingspan of 4 centimeters, while its larger counterpart boasts a wingspan of 10 centimeters. If the length of the larger butterfly's body is 3 centimeters, what is the length of the smaller butterfly's body?",
+            "difficulty": "easy",
+            "reasoning": "Since the butterflies are similar figures, the ratios of their corresponding sides are equal.  \n\n* Let 'x' represent the length of the smaller butterfly's body.\n* We can set up a proportion: 4/10 = x/3 \n* Cross-multiplying gives us: 10x = 12\n* Solving for x, we find: x = 12/10 = 1.2 centimeters\n\nTherefore, the length of the smaller butterfly's body is 1.2 centimeters.",
+            "options": [
+                "1.2 centimeters",
+                "3 centimeters",
+                "4 centimeters",
+                "10 centimeters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A car travels at a constant speed of 60 kilometers per hour.\n**information**: It takes the car 3 hours to travel from city A to city B.\n**question**: What is the distance between city A and city B?\n**difficulty**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "We can use the formula: \n\nDistance = Speed x Time\n\nHere's how to solve the problem step-by-step:\n\n1. **Identify the given values:**\n    - Speed = 60 kilometers per hour\n    - Time = 3 hours\n\n2. **Plug the values into the formula:**\n    - Distance = 60 km/h * 3 h\n\n3. **Calculate the distance:**\n    - Distance = 180 kilometers\n\nTherefore, the distance between city A and city B is 180 kilometers.",
+            "options": [
+                "180 kilometers",
+                "60 kilometers",
+                "3 hours",
+                "120 kilometers"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: A school cafeteria surveyed students to find out their favorite fruits. The results are shown in the table below:\n**Data**: \n  **Fruit**: \n    - Apples\n    - Bananas\n    - Oranges\n    - Grapes\n  **Number of Students**: \n    - 45\n    - 60\n    - 30\n    - 15\n**Question**: What is the ratio of students who prefer bananas to students who prefer oranges?\n",
+            "difficulty": "easy",
+            "reasoning": "This question belongs to the subtopic 'Data Interpretation using Ratio and Proportion' about 'Quants - Ratio and Proportion'.\n\nHere's how to solve the problem:\n\n1. **Identify the relevant data:** We need the number of students who prefer bananas (60) and oranges (30).\n\n2. **Express the ratio:** The ratio of students who prefer bananas to oranges is 60:30.\n\n3. **Simplify the ratio:**  Both numbers are divisible by 30. Simplifying the ratio gives us 2:1.\n\nTherefore, the ratio of students who prefer bananas to students who prefer oranges is 2:1.",
+            "options": [
+                "1:2",
+                "2:1",
+                "3:1",
+                "1:3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A bakery sells croissants, pain au chocolat, and pain aux raisins in the ratio of 5:3:2. On a particular day, they sell 30 croissants.\n**question**: How many pain au chocolat did the bakery sell on that day?\n**difficulty**: easy 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Ratio:** The ratio 5:3:2 means that for every 5 croissants sold, the bakery sells 3 pain au chocolat and 2 pain aux raisins.\n\n**2. Find the Unit Ratio:** Since 30 croissants were sold, and the croissant ratio is 5, the unit ratio is 30/5 = 6.\n\n**3. Calculate Pain au Chocolat:** The pain au chocolat ratio is 3. Multiply the unit ratio by the pain au chocolat ratio: 6 * 3 = 18 pain au chocolat.\n\n**Therefore, the bakery sold 18 pain au chocolat on that day.**",
+            "options": [
+                "18",
+                "30",
+                "12",
+                "24"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Difficulty Level**: Easy 5/10\n**Concept**: Ratios\n**Question Type**: Calculation\n**Brief Description**: There are 12 red balls and 18 blue balls in a bag. What is the ratio of red balls to blue balls?\n**Example**: In a class, there are 10 boys and 15 girls. What is the ratio of boys to the total number of students?\n",
+            "difficulty": "easy",
+            "reasoning": "The ratio of red balls to blue balls can be found by dividing the number of red balls by the number of blue balls.\n\n* Number of red balls: 12\n* Number of blue balls: 18\n\nRatio = (Number of red balls) / (Number of blue balls) = 12/18\n\nThis ratio can be simplified by dividing both numerator and denominator by their greatest common divisor, which is 6. \n\nSimplified ratio = (12/6) / (18/6) = 2/3\n\nTherefore, the ratio of red balls to blue balls is 2:3.",
+            "options": [
+                "12:18",
+                "2:3",
+                "3:2",
+                "1:1.5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "John can paint a fence in 6 hours, while his friend Mary can paint the same fence in 4 hours. If they work together, how long will it take them to paint the entire fence?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Determine individual work rates:**\n\n* John paints 1/6 of the fence per hour (1 fence / 6 hours).\n* Mary paints 1/4 of the fence per hour (1 fence / 4 hours).\n\n**2. Calculate combined work rate:**\n\n* To find their combined work rate, add their individual rates: 1/6 + 1/4 = 5/12 of the fence per hour. \n\n**3.  Determine time to complete the task:**\n\n* Since they complete 5/12 of the fence each hour,  divide the total work (1 fence) by their combined work rate to find the time:\n\n   Time = Total work / Combined work rate = 1 / (5/12) = 12/5 hours = 2.4 hours\n\n**Therefore, it will take John and Mary 2.4 hours to paint the fence together.**",
+            "options": [
+                "1.5 hours",
+                "2 hours",
+                "2.4 hours",
+                "3 hours"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bookstore is having a flash sale! For every 2 books you buy, you get a 10% discount on your total purchase.  If Sarah buys 4 books that originally cost $10 each, how much will she have to pay?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate the total cost without the discount:**\n\n* Sarah buys 4 books at $10 each, so the total cost is 4 * $10 = $40\n\n**2. Determine the number of discounts:**\n\n* The sale offers a discount for every 2 books purchased.\n* Sarah buys 4 books, so she gets 4 / 2 = 2 discounts.\n\n**3. Calculate the discount amount:**\n\n* Each discount is 10% of the total cost.\n* The discount amount is 10/100 * $40 = $4\n\n**4. Calculate the total discount:**\n\n* Sarah gets 2 discounts, so the total discount is 2 * $4 = $8\n\n**5. Calculate the final price:**\n\n* Subtract the total discount from the original price: $40 - $8 = $32\n\n**Therefore, Sarah will have to pay $32 for the 4 books after the discount.**",
+            "options": [
+                "$48",
+                "$36",
+                "$32",
+                "$40"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: A bakery prepares a special bread mix. For every 2 kg of wheat flour, they use 1 kg of rye flour. Also, for every 5 kg of wheat flour, they add 1 kg of seeds.\n**question**: If the bakery uses 10 kg of wheat flour for a batch of bread mix, how many kilograms of seeds will they need?\n**difficulty**: Easy 5/10\n",
+            "reasoning": "This question falls under 'Compound Proportions: Combining Multiple Ratios' as it involves using two ratios to find a final value. Here's how to solve it:\n\n**Step 1: Find the ratio of wheat flour to seeds.**\nThe problem states that for every 5 kg of wheat flour, they use 1 kg of seeds. This can be represented as a ratio: 5:1\n\n**Step 2:  Calculate the amount of seeds needed.**\n* We know the bakery uses 10 kg of wheat flour.\n* The ratio is 5:1, meaning for every 5 kg of flour, 1 kg of seeds is used. \n* Since 10 kg of flour is double 5 kg, we double the amount of seeds needed.\n* Therefore, they will need 1 kg * 2 = 2 kg of seeds.\n\n**Therefore, the bakery needs 2 kg of seeds.**",
+            "options": [
+                "1 kg",
+                "1.5 kg",
+                "2.5 kg",
+                "3 kg"
+            ],
+            "correct_option": "C",
+            "difficulty": "easy"
+        },
+        {
+            "question": "A fruit basket contains apples and oranges in the ratio of 2:3. If there are 6 apples in the basket, how many oranges are there?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Ratio:**\n   The ratio 2:3 means that for every 2 apples, there are 3 oranges in the basket.\n\n**2. Find the Unit Value:**\n   Since we know there are 6 apples, and the apple part of the ratio is represented by '2',  divide the number of apples by the apple ratio value: 6 apples / 2 = 3. This means each 'part' of the ratio represents 3 fruits.\n\n**3. Calculate the Number of Oranges:**\n   Multiply the unit value (3) by the orange part of the ratio (3): 3 * 3 = 9 oranges.\n\n**Therefore, there are 9 oranges in the fruit basket.**",
+            "options": [
+                "6 oranges",
+                "9 oranges",
+                "12 oranges",
+                "18 oranges"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery sells croissants. On Monday, they sold 20 croissants at full price. To clear out the remaining croissants on Tuesday, they offered a 25% discount and managed to sell all 15 remaining croissants. What is the ratio of croissants sold on Monday at full price to croissants sold on Tuesday at a discount?",
+            "difficulty": "medium",
+            "reasoning": "The question asks for the ratio of croissants sold on Monday (full price) to those sold on Tuesday (discounted). \n\n* **Monday's sales:** 20 croissants\n* **Tuesday's sales:** 15 croissants\n\nTherefore, the ratio is 20:15. This ratio can be simplified by dividing both sides by the greatest common factor, which is 5. \n\n20/5 : 15/5 = 4:3\n\nThe ratio of croissants sold on Monday to Tuesday is 4:3.",
+            "options": [
+                "20:15",
+                "4:3",
+                "3:4",
+                "15:20"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A painter is mixing green paint by combining blue and yellow paint in the ratio 3:5. \n**ratio**: 3:5\n**quantity**: 24 liters\n**question**: If the painter wants to make 24 liters of green paint, how many liters of yellow paint will he need?\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the total ratio parts:**\n   The ratio is 3:5, meaning there are 3 + 5 = 8 parts in total.\n\n**2. Determine the value of one ratio part:**\n   The total quantity is 24 liters, and there are 8 parts, so one part represents 24 liters / 8 parts = 3 liters per part.\n\n**3. Calculate the quantity of the larger part (yellow paint):**\n   The yellow paint represents 5 parts of the ratio. Therefore, the painter needs 5 parts * 3 liters/part = 15 liters of yellow paint.\n\n**Therefore, the painter needs 15 liters of yellow paint.**",
+            "options": [
+                "12 liters",
+                "15 liters",
+                "9 liters",
+                "18 liters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A painter mixes blue paint and yellow paint in the ratio 2:3 to create green paint.\n**information**: If the painter uses 4 liters of blue paint, how many liters of yellow paint will he need?\n**question**: Calculate the total liters of yellow paint required.\n**difficulty**: easy 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "The question falls under the 'Basic Concepts: Ratios, Proportions, and Fractions' subtopic within 'Quants - Ratio and Proportion'. It involves a simple ratio calculation and a single step to find the solution.\n\n**Step-by-step solution:**\n\n1. **Identify the ratio:** The ratio of blue paint to yellow paint is 2:3.\n2. **Determine the scaling factor:** The painter is using 4 liters of blue paint, which is twice the amount stated in the ratio (2 parts * 2 = 4 parts). \n3. **Apply the scaling factor:** To maintain the ratio, multiply the yellow paint portion by the same scaling factor: 3 parts * 2 = 6 parts.\n4. **Result:** The painter needs 6 liters of yellow paint.\n\n**Therefore, 6 liters of yellow paint is the correct answer.**",
+            "options": [
+                "4 liters",
+                "6 liters",
+                "8 liters",
+                "10 liters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A gardener uses 5 liters of water to water 20 flower pots.\n**Given Information**: 5 liters of water : 20 flower pots\n**Unknown Quantity**: How many liters of water will the gardener need to water 60 flower pots?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Proportion: Finding the Unknown Quantity' subtopic within 'Quants - Ratio and Proportion'. Here's how to solve it:\n\n**1. Determine the unit ratio:** \n   - The gardener uses 5 liters of water for 20 flower pots. \n   - To find the water needed for one pot, divide the total water by the number of pots: 5 liters / 20 pots = 0.25 liters/pot\n\n**2. Calculate the total water needed:**\n   - We need to water 60 flower pots.\n   - Multiply the water needed per pot by the total number of pots: 0.25 liters/pot * 60 pots = 15 liters\n\n**Therefore, the gardener will need 15 liters of water to water 60 flower pots.**",
+            "options": [
+                "10 liters",
+                "15 liters",
+                "20 liters",
+                "25 liters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Difficulty Level**: Easy (6/10)\n**Topic**: Applications of Ratios in Geometry: Similar Figures\n**Concept**: Identifying corresponding sides in similar triangles\n**Question Type**: Multiple Choice\n**Question Description**: Triangle ABC and triangle DEF are similar figures.  AB = 4 cm, BC = 5 cm, and DE = 8 cm. What is the length of side EF?\n",
+            "difficulty": "medium",
+            "reasoning": "**Understanding Similarity:** Similar figures have the same shape but different sizes. This means their corresponding angles are equal, and their corresponding sides are proportional.\n\n**Identifying Corresponding Sides:**\n* Since \u0394ABC ~ \u0394DEF, we know:\n    * AB corresponds to DE\n    * BC corresponds to EF\n    * AC corresponds to DF\n\n**Setting up the Proportion:** We can set up a proportion to find the length of EF:\n\nAB/DE = BC/EF\n\n**Solving for EF:**\n\n1. **Substitute the known values:** 4 cm / 8 cm = 5 cm / EF\n\n2. **Simplify:** 1/2 = 5 cm / EF\n\n3. **Cross-multiply:** EF = 5 cm * 2\n\n4. **Calculate:** EF = 10 cm\n\n**Therefore, the length of side EF is 10 cm.**",
+            "options": [
+                "5 cm",
+                "10 cm",
+                "8 cm",
+                "12 cm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A farmer has enough hay to feed his 12 cows for 20 days. If 4 cows are sold, how many days will the hay last for the remaining cows?",
+            "difficulty": "medium",
+            "reasoning": "This question belongs to the subtopic 'Inverse Proportion and its Applications' within 'Quants - Ratio and Proportion'. Here's why:\n\n**Understanding Inverse Proportion:**\n\nInverse proportion means when one quantity increases, the other decreases proportionally. In this case, the fewer cows there are, the longer the hay will last.\n\n**Solution:**\n\n* **Step 1: Find the total 'cow-days' of hay:**  The farmer has enough hay for 12 cows * 20 days = 240 'cow-days'. This means the hay could feed one cow for 240 days or 240 cows for one day.\n* **Step 2:  Calculate the number of remaining cows:** The farmer has 12 cows - 4 cows = 8 cows remaining.\n* **Step 3: Determine how long the hay will last:**  With 240 'cow-days' of hay and 8 cows, the hay will last 240 cow-days / 8 cows = 30 days.\n\n**Therefore, the hay will last for 30 days.**",
+            "options": [
+                "25 days",
+                "28 days",
+                "30 days",
+                "32 days"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A painter mixes green paint by combining blue and yellow paint in the ratio 3:5. If he needs to make 24 liters of green paint, how many liters of yellow paint will he use?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the student's understanding of equivalent ratios. Here's how to solve it:\n\n**1. Determine the total parts in the ratio:**\n   The ratio 3:5 represents 3 + 5 = 8 total parts.\n\n**2.  Calculate the value of one part:**\n   Since the painter needs 24 liters of green paint, and this represents 8 parts, one part is equal to 24 liters / 8 parts = 3 liters/part.\n\n**3.  Determine the liters of yellow paint:**\n   The ratio indicates that yellow paint makes up 5 parts. Therefore, the painter needs 5 parts * 3 liters/part = 15 liters of yellow paint.\n\n**Therefore, the painter will use 15 liters of yellow paint.**",
+            "options": [
+                "12 liters",
+                "15 liters",
+                "18 liters",
+                "20 liters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A painter creates a custom shade of green paint by mixing blue and yellow paint in the ratio of 4:3.  If he uses 240ml of blue paint, how much yellow paint will he need to achieve the desired shade of green?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Ratio:** The ratio 4:3 means that for every 4 parts of blue paint, the painter needs 3 parts of yellow paint.\n\n**2. Calculate the Unit Value:**  Find out how many milliliters each 'part' of the ratio represents. Since he uses 240ml of blue paint, and the blue paint represents 4 parts, one part is equal to 240ml / 4 parts = 60ml per part. \n\n**3. Determine the Yellow Paint Quantity:** Knowing that each part represents 60ml, and the yellow paint represents 3 parts in the ratio, the painter needs 60ml/part * 3 parts = 180ml of yellow paint. \n\n**Therefore, the painter needs 180ml of yellow paint to achieve the desired shade of green.**",
+            "options": [
+                "120ml",
+                "180ml",
+                "240ml",
+                "360ml"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A clothing store offers a tiered discount system for bulk purchases. If you buy 5 to 10 items, you get a 15% discount. If you buy more than 10 items, you get a 25% discount. Sarah wants to buy 12 shirts. Each shirt costs $20. What is the ratio of the discount amount Sarah receives to the original total price of the 12 shirts?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Calculate the original price:**\n* Sarah buys 12 shirts at $20 each, so the original price is 12 * $20 = $240\n\n**2. Determine the applicable discount:**\n* Sarah is buying more than 10 shirts, so she qualifies for the 25% discount.\n\n**3. Calculate the discount amount:**\n* Multiply the original price by the discount percentage: $240 * 0.25 = $60\n\n**4. Express the discount as a ratio to the original price:**\n* The discount amount ($60) : original price ($240) simplifies to 60/240\n\n**5. Simplify the ratio:**\n*  The ratio 60/240 can be simplified to 1/4\n\n**Therefore, the ratio of the discount amount Sarah receives to the original total price is 1:4.**",
+            "options": [
+                "1:6",
+                "1:5",
+                "1:4",
+                "1:3"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A rectangular garden is being designed with a paved walkway around its perimeter. The garden itself has a length of 12 meters and a width of 8 meters. The architect wants the walkway to be proportional to the garden, with the ratio of the garden's length to the total length (garden plus walkway) being 3:5. What should be the width of the walkway?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Ratio:** The ratio 3:5 represents the garden's length (3 parts) compared to the total length of the garden plus walkway (5 parts). \n\n**2. Find the Total Length:** Since the garden's length is 12 meters and represents 3 parts of the ratio, each part represents 12 meters / 3 parts = 4 meters. The total length, being 5 parts, is then 5 parts * 4 meters/part = 20 meters. \n\n**3. Calculate the Walkway's Width:** The walkway adds length on both sides of the garden. The extra length added is 20 meters (total length) - 12 meters (garden length) = 8 meters. Since this extra length is distributed on both sides, the width of the walkway on one side (and therefore the total width of the walkway) is 8 meters / 2 = 4 meters. \n\n**Therefore, the width of the walkway should be 4 meters.**",
+            "options": [
+                "8 meters",
+                "4 meters",
+                "12 meters",
+                "2 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A construction company uses a mixture of cement, sand, and gravel to make concrete. For every 2 kg of cement, they use 3 kg of sand. For every 5 kg of sand, they use 7 kg of gravel.\n**question**: If the company uses 10 kg of cement, how much gravel will they need?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Find the amount of sand needed:**\n\n* The ratio of cement to sand is 2:3. \n* This means for every 2 kg of cement, 3 kg of sand is used.\n* Since we have 10 kg of cement, which is 5 times more than 2 kg, we'll need 5 times more sand.\n* Therefore, we need 5 * 3 kg = 15 kg of sand.\n\n**2. Find the amount of gravel needed:**\n\n* The ratio of sand to gravel is 5:7.\n* This means for every 5 kg of sand, 7 kg of gravel is used.\n* We have 15 kg of sand, which is 3 times more than 5 kg. \n* Therefore, we need 3 times more gravel, or 3 * 7 kg = 21 kg of gravel.\n\n**Answer:** The company will need 21 kg of gravel.",
+            "options": [
+                "15 kg",
+                "21 kg",
+                "35 kg",
+                "10 kg"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A construction team is tasked with building a small cabin. The experienced foreman can complete the cabin alone in 48 hours. However, he is assisted by an apprentice who takes twice as long to complete the same task alone.  If they work together harmoniously, how many hours will it take them to finish building the cabin?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Ratio and Proportion in Work and Time Problems' category within the broader topic of 'Quants - Ratio and Proportion'. Here's how we can solve it:\n\n**1. Determine the apprentice's work rate:**\n   * The apprentice takes twice as long as the foreman, who completes the job in 48 hours.\n   * Therefore, the apprentice takes 48 hours * 2 = 96 hours to build the cabin alone.\n\n**2. Calculate the individual work rates:**\n   * The foreman completes 1/48 of the cabin per hour (1 job / 48 hours).\n   * The apprentice completes 1/96 of the cabin per hour (1 job / 96 hours).\n\n**3. Find the combined work rate:**\n   *  Their combined work rate is (1/48) + (1/96) = 3/96 = 1/32 of the cabin per hour.\n\n**4. Calculate the time to complete the job together:**\n   * Since their combined rate is 1/32 of the cabin per hour, they will take 32 hours to complete the entire cabin together (1 job / (1/32 job/hour)).\n\n**Therefore, it will take the foreman and apprentice 32 hours to build the cabin together.**",
+            "options": [
+                "24 hours",
+                "36 hours",
+                "40 hours",
+                "32 hours"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A small business owner decides to divide her yearly profit of $45,000 among her three employees, Alice, Bob, and Charlie, based on their years of service.  Alice has worked for 6 years, Bob for 4 years, and Charlie for 2 years. The owner wants to divide the profit in the ratio of their years of service. How much will Bob receive from the profit share?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Determine the ratio:**\n\n* The ratio needs to represent their years of service: Alice:Bob:Charlie = 6:4:2\n\n**2. Simplify the ratio:**\n\n* We can simplify the ratio by dividing each part by the greatest common factor, which is 2. This gives us a simplified ratio of 3:2:1\n\n**3. Calculate the ratio parts:** \n\n* Add the parts of the simplified ratio: 3 + 2 + 1 = 6\n* This means the profit will be divided into 6 equal parts.\n\n**4. Calculate Bob's share:**\n\n* Bob's share corresponds to 2 parts of the ratio.\n* Divide the total profit by the total ratio parts: $45,000 / 6 = $7,500 per part.\n* Multiply Bob's ratio part by the value of one part: $7,500 x 2 = $15,000\n\n**Therefore, Bob will receive $15,000 of the profit share.**",
+            "options": [
+                "$10,000",
+                "$15,000",
+                "$22,500",
+                "$7,500"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A construction company is mixing concrete using cement, sand, and gravel in the ratio 2:3:5. The company needs to produce 250 cubic meters of concrete for a project.  To ensure an adequate supply for potential waste and adjustments, the company wants to have 10% more of each material than the exact amount needed.  What is the total combined volume of cement, sand, and gravel the company needs to order, including the extra 10%?",
+            "difficulty": "medium",
+            "reasoning": "**1. Determine the unit ratio:**\n\n* The ratio 2:3:5 represents a unit ratio of 2 + 3 + 5 = 10\n\n**2. Calculate the volume of each component for 250 cubic meters:**\n\n* Cement: (2/10) * 250 cubic meters = 50 cubic meters\n* Sand: (3/10) * 250 cubic meters = 75 cubic meters\n* Gravel: (5/10) * 250 cubic meters = 125 cubic meters\n\n**3. Calculate the extra 10% needed for each component:**\n\n* Cement: 50 cubic meters * 0.10 = 5 cubic meters\n* Sand: 75 cubic meters * 0.10 = 7.5 cubic meters\n* Gravel: 125 cubic meters * 0.10 = 12.5 cubic meters\n\n**4.  Calculate the total volume needed for each component:**\n\n* Cement: 50 cubic meters + 5 cubic meters = 55 cubic meters\n* Sand: 75 cubic meters + 7.5 cubic meters = 82.5 cubic meters\n* Gravel: 125 cubic meters + 12.5 cubic meters = 137.5 cubic meters\n\n**5. Calculate the total combined volume:**\n\n* 55 cubic meters + 82.5 cubic meters + 137.5 cubic meters = 275 cubic meters\n\n**Therefore, the company needs to order a total of 275 cubic meters of cement, sand, and gravel.**",
+            "options": [
+                "250 cubic meters",
+                "275 cubic meters",
+                "300 cubic meters",
+                "325 cubic meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery received an order for 280 pastries. The order specified a ratio of 3:2 for croissants to pain au chocolat.  How many pain au chocolat does the bakery need to bake?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the subtopic 'Dividing a Quantity in a Given Ratio' within the broader topic of 'Quants - Ratio and Proportion'. Here's how to solve it:\n\n**1. Determine the total ratio parts:**\n   The ratio is 3:2, meaning there are 3 + 2 = 5 total parts.\n\n**2. Calculate the value of one ratio part:**\n   Divide the total pastries by the total ratio parts: 280 pastries / 5 parts = 56 pastries per part.\n\n**3. Determine the number of pain au chocolat:**\n   Since pain au chocolat represents 2 parts of the ratio, multiply the value of one part by 2: 56 pastries/part * 2 parts = 112 pain au chocolat. \n\n**Therefore, the bakery needs to bake 112 pain au chocolat.**",
+            "options": [
+                "112",
+                "140",
+                "168",
+                "224"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A painter uses 3 liters of paint to cover 22.5 square meters of wall. If the painter maintains the same rate of paint usage, how much paint in liters will be needed to cover a wall with an area of 75 square meters?",
+            "difficulty": "medium",
+            "reasoning": "This problem exemplifies direct proportion because the amount of paint used is directly proportional to the area of the wall covered.  This means if we increase the wall area, the paint required will also increase proportionally.\n\nHere's how to solve it step-by-step:\n\n**1. Find the unit rate:**\n   - Divide the total paint (3 liters) by the area covered (22.5 square meters) to find out how much paint is needed per square meter:\n     3 liters / 22.5 square meters = 0.133 liters per square meter\n\n**2. Calculate the paint needed for the larger area:**\n   - Multiply the paint needed per square meter (0.133 liters) by the total area of the larger wall (75 square meters):\n     0.133 liters/square meter * 75 square meters = 10 liters\n\n**Therefore, the painter will need 10 liters of paint to cover a wall with an area of 75 square meters.**",
+            "options": [
+                "15 liters",
+                "10 liters",
+                "7.5 liters",
+                "22.5 liters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A painter is mixing a specific shade of green paint by combining blue and yellow paint in the ratio of 2:3. He needs 15 liters of the green paint to complete a project.\n**question**: Calculate the quantity of blue paint, in liters, required by the painter.\n**difficulty**: medium 6/10\n",
+            "reasoning": "The question falls under the 'Basic Concepts: Ratios, Proportions, and Fractions' subtopic as it involves determining the quantity of a component (blue paint) given a ratio (2:3) and the total quantity of the mixture (15 liters). \n\nLet's break down the solution:\n1. **Determine the proportion of blue paint:** The ratio 2:3 signifies that for every 2 parts of blue paint, 3 parts of yellow paint are used. Therefore, the total parts in the mixture are 2 + 3 = 5.\n2. **Calculate the fraction of blue paint:** The fraction of blue paint in the mixture is represented as 2/5.\n3. **Calculate the quantity of blue paint:** Multiply the total quantity of green paint (15 liters) by the fraction representing the blue paint:\n(2/5) * 15 liters = 6 liters. \n\nTherefore, the painter needs 6 liters of blue paint.",
+            "options": [
+                "4 liters",
+                "5 liters",
+                "7.5 liters",
+                "8 liters"
+            ],
+            "correct_option": "C",
+            "difficulty": "medium"
+        },
+        {
+            "question": "**Context**: A factory relies on a constant water supply for its production. When the water pressure drops, the machines operate at a slower rate, directly impacting the time it takes to complete an order.  At its normal operating pressure, the factory can complete a large order in 48 hours.\n**Question**: If the water pressure decreases by 25%, causing the machines to slow down proportionally, how many extra hours will the factory need to complete the same large order?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Inverse Proportion and its Applications' topic within Quants - Ratio and Proportion. Here's how to solve it:\n\n**1. Understand the Inverse Proportion:**\n   - Water pressure and time taken to complete the order are inversely proportional. This means if pressure decreases, the time increases.\n\n**2. Calculate the Impact of Pressure Reduction:**\n   - A 25% decrease in water pressure means the pressure is now 75% of its original value (100% - 25% = 75%).\n\n**3. Determine the Time Multiplier:**\n   - Since the relationship is inverse, to find how much longer the task will take, we need the inverse of the pressure ratio.\n   - The pressure ratio is 75/100 (or 3/4). The inverse is 100/75 (or 4/3).\n\n**4. Calculate the New Total Time:**\n   - Multiply the original time by the time multiplier: 48 hours * (4/3) = 64 hours\n\n**5. Determine the Extra Time:**\n   - Subtract the original time from the new time: 64 hours - 48 hours = 16 hours\n\n**Answer:** The factory will need an extra 16 hours to complete the order.",
+            "options": [
+                "12 hours",
+                "18 hours",
+                "24 hours",
+                "16 hours"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A clothing store is having a sale where all items are 20% off. Sarah wants to buy two shirts, originally priced at $25 and $30, and a pair of pants originally priced at $40. Additionally, she has a coupon for 10% off her total purchase. What is the final price Sarah will pay for all the items after both discounts are applied?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the discount on each shirt:**\n* Discount on the $25 shirt: $25 * 20/100 = $5\n* Discount on the $30 shirt: $30 * 20/100 = $6\n\n**2. Calculate the discount on the pants:**\n* Discount on the $40 pants: $40 * 20/100 = $8\n\n**3. Calculate the sale price of each item:**\n* Sale price of the $25 shirt: $25 - $5 = $20\n* Sale price of the $30 shirt: $30 - $6 = $24\n* Sale price of the $40 pants: $40 - $8 = $32\n\n**4. Calculate the total price of the items after the initial 20% discount:**\n* Total sale price: $20 + $24 + $32 = $76\n\n**5. Calculate the amount of the coupon discount:**\n* Coupon discount: $76 * 10/100 = $7.60\n\n**6. Calculate the final price Sarah pays:**\n* Final price: $76 - $7.60 = $68.40\n\nTherefore, the final price Sarah will pay for all the items is $68.40.",
+            "options": [
+                "$76.00",
+                "$68.40",
+                "$78.40",
+                "$70.00"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A cartographer is creating a map of a national park. The scale of the map is 1:50,000, meaning that 1 centimeter on the map represents 50,000 centimeters in the actual park. A hiking trail on the map measures 7.5 centimeters in length. What is the actual length of the hiking trail in the park, in kilometers?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Proportion: Finding the Unknown Quantity' subtopic within 'Quants - Ratio and Proportion'. It involves setting up a proportion to determine the actual length of the hiking trail. \n\nHere's a step-by-step solution:\n\n1. **Understand the Scale:** The map scale of 1:50,000 means 1 cm on the map equals 50,000 cm in reality.\n\n2. **Set up the Proportion:** Let 'x' represent the actual length of the trail. The proportion is:\n   1 cm / 50,000 cm = 7.5 cm / x\n\n3. **Solve for x (the unknown):** Cross-multiply to solve the proportion:\n   1 cm * x = 7.5 cm * 50,000 cm\n   x = 375,000 cm\n\n4. **Convert to Kilometers:**  Since 1 meter equals 100 centimeters and 1 kilometer equals 1000 meters:\n   x = 375,000 cm * (1 m / 100 cm) * (1 km / 1000 m) \n   x = 3.75 km\n\nTherefore, the actual length of the hiking trail in the park is 3.75 kilometers.",
+            "options": [
+                "1.875 km",
+                "3.75 km",
+                "7.5 km",
+                "37.5 km"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bag contains red, blue, and green marbles. The ratio of red marbles to blue marbles is 5:3, and the ratio of blue marbles to green marbles is 2:1.  What is the ratio of red marbles to the total number of marbles in the bag?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find a Common Ratio for Blue Marbles:** \nTo compare all three colors, we need to find a common ratio for blue marbles.  \n* The ratio of red to blue is 5:3. \n* The ratio of blue to green is 2:1.\nTo make the blue parts equal, find the least common multiple of 3 and 2, which is 6. \n* Multiply the red:blue ratio by 2: (5:3) * 2 = 10:6 \n* Multiply the blue:green ratio by 3: (2:1) * 3 = 6:3\n\n**2. Express the Ratios as a Combined Ratio:**\nNow we have the ratios: \n* Red:Blue = 10:6\n* Blue:Green = 6:3\nThis can be combined into a single ratio: Red:Blue:Green = 10:6:3\n\n**3. Calculate the Part-to-Whole Ratio:**\n* The ratio 10:6:3 means there are 10 + 6 + 3 = 19 parts total.\n* The ratio of red marbles to the total number of marbles is 10:19.\n\n**Therefore, the ratio of red marbles to the total number of marbles is 10:19.**",
+            "options": [
+                "5:19",
+                "10:19",
+                "10:6",
+                "6:19"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A specialized printing company produces custom posters. The time it takes to print these posters is directly proportional to the total area of the posters being printed.  If it takes 6 hours to print 24 posters, each with an area of 2 square meters, how long will it take to print 15 posters, each with an area of 3 square meters?",
+            "difficulty": "hard",
+            "reasoning": "**1. Calculate the total area of the first print job:**\n\n* 24 posters * 2 square meters/poster = 48 square meters\n\n**2. Determine the printing rate:**\n\n* 6 hours / 48 square meters = 0.125 hours/square meter\n\n**3. Calculate the total area of the second print job:**\n\n* 15 posters * 3 square meters/poster = 45 square meters\n\n**4. Calculate the total printing time for the second job:**\n\n* 45 square meters * 0.125 hours/square meter = 5.625 hours\n\n**Therefore, it will take 5.625 hours to print the second set of posters.**",
+            "options": [
+                "48 hours",
+                "5.625 hours",
+                "6 hours",
+                "7.5 hours"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A master baker is preparing a special sourdough bread. He needs to divide 6.75 kilograms of dough into three portions to make three different-sized loaves. The weight of the dough for each loaf should be in the ratio 5:3:2.  What is the weight, in grams, of the LARGEST loaf he will bake?",
+            "difficulty": "hard",
+            "reasoning": "**1. Find the total ratio parts:**\n\n   Add the individual ratio parts: 5 + 3 + 2 = 10\n\n**2. Determine the value of one ratio part:**\n\n   Divide the total dough weight by the total ratio parts: 6.75 kg / 10 = 0.675 kg per ratio part \n\n**3. Calculate the weight of the largest loaf:**\n\n   The largest loaf corresponds to the ratio part '5'.  Multiply the value of one ratio part by 5: 0.675 kg/part * 5 parts = 3.375 kg\n\n**4. Convert the weight to grams:**\n\n   Multiply the weight in kilograms by 1000: 3.375 kg * 1000 g/kg = 3375 g\n\n**Therefore, the largest loaf will weigh 3375 grams.**",
+            "options": [
+                "2025 g",
+                "2700 g",
+                "3375 g",
+                "4050 g"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two cyclists, Alice and Bob, start simultaneously from points X and Y respectively, cycling towards each other. The ratio of their speeds is 5:3. After they cross each other, Alice reaches Y in 4 hours, while Bob takes 9 hours to reach X. Find the ratio of the distances XY covered by Alice and Bob, respectively, after they crossed each other.",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this challenging ratio and proportion problem step-by-step:\n\n**1. Understand the Context**\n\nTwo cyclists are traveling towards each other. The key is that their speeds are in a ratio, and we're interested in the distances they cover *after* they cross paths.\n\n**2. Assign Variables**\n\n* Let Alice's speed be 5x\n* Let Bob's speed be 3x\n* Let the distance Alice covers after crossing Bob be 'a'\n* Let the distance Bob covers after crossing Alice be 'b'\n\n**3. Use the Formula: Time = Distance / Speed**\n\n* We know Alice takes 4 hours to cover 'a' at a speed of 5x:  4 = a / 5x\n* We know Bob takes 9 hours to cover 'b' at a speed of 3x:  9 = b / 3x\n\n**4.  Solve for 'a' and 'b'**\n\n* From the first equation, a = 20x\n* From the second equation, b = 27x\n\n**5. Find the Ratio**\n\n* The ratio of the distances covered after crossing is a:b, which is 20x:27x\n* Simplifying the ratio by dividing by 'x', we get **20:27**\n\n**Therefore, the ratio of the distances XY covered by Alice and Bob after they crossed each other is 20:27.**",
+            "options": [
+                "5:3",
+                "3:5",
+                "20:27",
+                "27:20"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A survey was conducted in a town to analyze the reading habits of its residents. The ratio of people who read newspapers, magazines, and books is 5:3:2, respectively. Among those who read magazines, the ratio of fiction to non-fiction readers is 7:3. If 210 residents read non-fiction magazines, find the total number of residents surveyed.",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**1. Magazine Readers:**\n* The ratio of fiction to non-fiction magazine readers is 7:3, meaning that for every 10 magazine readers, 3 read non-fiction.\n* Since 210 residents read non-fiction magazines, they represent 3 parts of the 10-part ratio.\n* To find the value of one part of the magazine reader ratio, divide the number of non-fiction readers by its ratio part: 210 residents / 3 parts = 70 residents per part.\n* Therefore, there are 70 residents/part * 10 parts = 700 magazine readers in total.\n\n**2. Total Residents:**\n* The ratio of newspaper, magazine, and book readers is 5:3:2.\n* We know that 700 residents read magazines, which represents 3 parts of this ratio.\n* To find the value of one part of the total reader ratio, divide the number of magazine readers by its ratio part: 700 residents / 3 parts = 233.33 residents per part (approximately).\n* Finally, to find the total number of residents surveyed, multiply the value of one part by the total parts in the ratio: 233.33 residents/part * (5 parts + 3 parts + 2 parts) = 2333.3 residents (approximately).\n\n**Therefore, approximately 2333 residents were surveyed.**\n\n**Note:** The answer is rounded to the nearest whole number as we cannot have a fraction of a resident.",
+            "options": [
+                "1500",
+                "1867",
+                "2800",
+                "3500"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A team of skilled weavers are creating a magnificent tapestry. Working at their usual pace, they could complete the tapestry in 48 days. However, due to an upcoming festival, they need to finish the tapestry in 32 days. To meet this deadline, they decide to bring in some apprentice weavers. Each apprentice weaver works at 2/3 the speed of a skilled weaver.  What is the minimum number of apprentice weavers they need to hire to complete the tapestry on time?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Understand the Inverse Proportion:**\n\n* The number of weavers and the time taken to complete the tapestry are inversely proportional. This means as the number of weavers increases, the time taken decreases, and vice-versa.\n\n**2. Calculate the Workload:**\n\n* Let's assume the total workload of the tapestry is represented by 'W'. \n* We can measure the work rate of one skilled weaver as W/48 (workload divided by the time taken).\n\n**3.  Calculate the Work to be Done in 32 Days:**\n\n* In 32 days, the skilled weavers would complete (32 days / 48 days) = 2/3 of the total work.\n* This means 1/3 of the work (W/3) still needs to be done.\n\n**4. Calculate the Work Rate of an Apprentice:**\n\n* An apprentice works at 2/3 the speed of a skilled weaver, so their work rate is (2/3) * (W/48) = W/72.\n\n**5. Determine the Number of Apprentices:**\n\n* Let 'x' be the number of apprentices needed.\n* The combined work rate of 'x' apprentices in 32 days should equal the remaining workload (W/3).\n* Therefore:  (W/72) * x * 32 = W/3\n* Simplifying: 32x/72 = 1/3\n* Further simplification: 8x/18 = 1/3\n* Cross-multiplying: 24x = 18\n* Solving for x: x = 18/24 = 3/4 \n\n**6.  Find the Minimum Whole Number:**\n\n* Since we cannot have a fraction of an apprentice, we round up to the nearest whole number. \n* Therefore, they need to hire a minimum of 1 apprentice weaver.\n\n**Important Note:**  Even though the calculation results in a fraction, we need a whole number of apprentices. In this context, rounding down would mean they wouldn't finish the tapestry on time. ",
+            "options": [
+                "2 apprentices",
+                "3 apprentices",
+                "4 apprentices",
+                "1 apprentice"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A paint manufacturer produces two types of paint: \"Sunset Orange\" and \"Ocean Blue.\"  The ratio of yellow pigment to red pigment in \"Sunset Orange\" is 5:7. \"Ocean Blue\" is created using a 30% yellow pigment solution and a 70% blue pigment solution.  \n\nA new paint, \"Tropical Teal,\" is created by mixing \"Sunset Orange\" and \"Ocean Blue\" in a ratio of 3:2.  To achieve a specific shade, the manufacturer wants \"Tropical Teal\" to contain exactly 40% yellow pigment. To accomplish this, they decide to adjust the percentage of yellow pigment in \"Sunset Orange\" while keeping the total amount of pigment the same.  \n\nWhat percentage of the original amount of yellow pigment in \"Sunset Orange\" should be used to achieve the desired 40% yellow pigment concentration in \"Tropical Teal\"?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Understanding the Problem**\n\nWe need to find the new ratio of yellow to red pigment in \"Sunset Orange\" that will result in \"Tropical Teal\" having exactly 40% yellow pigment. This involves working with ratios, percentages, and a bit of algebra.\n\n**2. Setting up the Equation**\n\nLet 'x' be the percentage of the original yellow pigment used in the adjusted \"Sunset Orange.\"\n\n* **Sunset Orange (Original):** 5 parts yellow : 7 parts red (Total 12 parts)\n* **Sunset Orange (Adjusted):** 5x parts yellow : 7 parts red (Total 5x + 7 parts)\n* **Ocean Blue:** 30% yellow : 70% blue\n* **Tropical Teal (Target):** 40% yellow : 60% other pigments\n\n**3. Calculating Yellow Pigment Contributions**\n\n* **Sunset Orange (Adjusted) contribution to Tropical Teal:** (3/5) * (5x / (5x + 7))\n* **Ocean Blue contribution to Tropical Teal:** (2/5) * 0.30 \n\n**4. Formulating the Equation**\n\nThe sum of yellow pigment contributions from both paints in \"Tropical Teal\" should equal 40%:\n\n[(3/5) * (5x / (5x + 7))] + [(2/5) * 0.30] = 0.40\n\n**5. Solving for x**\n\n* Simplify the equation: (3x / (5x + 7)) + 0.12 = 0.40\n* Subtract 0.12 from both sides: (3x / (5x + 7)) = 0.28\n* Multiply both sides by (5x + 7): 3x = 1.4x + 1.96\n* Subtract 1.4x from both sides: 1.6x = 1.96\n* Divide both sides by 1.6: x = 1.225\n\n**6. Converting to Percentage**\n\nMultiply 'x' by 100% to express the answer as a percentage: 1.225 * 100% = 122.5%\n\n**Therefore, the manufacturer should use 122.5% of the original amount of yellow pigment in \"Sunset Orange\" to achieve the desired 40% yellow pigment concentration in \"Tropical Teal.\" This means they will need to add more yellow pigment to their original \"Sunset Orange\" mixture.**",
+            "options": [
+                "122.5%",
+                "100%",
+                "150%",
+                "200%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A team of pastry chefs is preparing a large batch of three types of macarons for a wedding: vanilla, pistachio, and raspberry.  The ratio of vanilla macarons to pistachio macarons is 7:5.  For every 8 pistachio macarons, they need enough ingredients to make 3 raspberry macarons.  The team has determined that they need 4,410 vanilla macarons to meet the wedding's demand.  Given these ratios, how many raspberry macarons will the team need to prepare?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the scaling factor for the vanilla macarons:**\n\n* The ratio of vanilla to pistachio macarons is 7:5. This means for every 7 vanilla macarons, there are 5 pistachio macarons.\n* They need 4,410 vanilla macarons. \n* Divide the total vanilla macarons needed by the vanilla portion of the ratio: 4410 / 7 = 630\n* This means the recipe is being scaled up by a factor of 630. \n\n**2. Calculate the number of pistachio macarons:**\n\n* Multiply the pistachio portion of the vanilla-pistachio ratio (5) by the scaling factor: 5 * 630 = 3150 pistachio macarons\n\n**3. Determine the scaling factor for the raspberry macarons:**\n\n* The ratio of pistachio to raspberry macarons is 8:3.\n* Divide the total number of pistachio macarons by the pistachio portion of the pistachio-raspberry ratio: 3150 / 8 = 393.75\n* This means the pistachio-raspberry ratio is scaled up by a factor of 393.75. \n\n**4. Calculate the number of raspberry macarons:**\n\n* Multiply the raspberry portion of the pistachio-raspberry ratio (3) by the scaling factor: 3 * 393.75 = 1181.25 raspberry macarons.\n\n**5. Round to the nearest whole number:** \n\n* Since you can't have a fraction of a macaron, round up to the nearest whole number: 1181.25 rounds up to 1182 raspberry macarons. \n\n**Therefore, the team will need to prepare 1182 raspberry macarons.**",
+            "options": [
+                "1181",
+                "3150",
+                "393.75",
+                "4410"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A team of skilled artisans is tasked with creating a magnificent tapestry for the royal court. The tapestry consists of three distinct sections: a majestic landscape, intricate floral patterns, and a grand portrait of the king.  Four master weavers, Anya, Beatrice, Charles, and Darius, are assigned to the project. Working individually, they can complete an identical section of the landscape in 6, 8, 10, and 12 hours respectively.  Due to their unique skills, Beatrice can complete a section of the floral pattern in half the time it takes her to complete a landscape section, while Charles can complete a portrait section in twice the time it takes him to complete a landscape section. Anya and Darius are not assigned to the floral or portrait sections. \n\nThe team decides to work in a relay system:  Anya begins with a landscape section, then passes it to Beatrice to complete a floral section, followed by Charles completing a portrait section. Finally, Darius takes over to complete a landscape section. This cycle repeats until the tapestry is finished.  \n\nAssuming they maintain a consistent pace and seamless transitions, how many hours will it take the team to complete the entire tapestry consisting of four landscape sections, four floral sections, and four portrait sections?",
+            "difficulty": "medium",
+            "reasoning": "Here's the breakdown of the solution:\n\n**1. Calculate individual section completion times:**\n\n   * **Anya (Landscape):** 6 hours (given)\n   * **Beatrice (Landscape):** 8 hours (given)\n   * **Beatrice (Floral):** 8 hours / 2 = 4 hours \n   * **Charles (Landscape):** 10 hours (given)\n   * **Charles (Portrait):** 10 hours * 2 = 20 hours\n   * **Darius (Landscape):** 12 hours (given)\n\n**2. Calculate the time for one complete cycle:**\n\n   * One cycle consists of Anya (Landscape), Beatrice (Floral), Charles (Portrait), and Darius (Landscape).\n   * Total cycle time = 6 hours + 4 hours + 20 hours + 12 hours = 42 hours\n\n**3. Calculate the total time for the tapestry:**\n\n   * The tapestry requires four cycles (four sections of each type). \n   * Total time = 42 hours/cycle * 4 cycles = 168 hours\n\n**Therefore, it will take the team 168 hours to complete the entire tapestry.**",
+            "options": [
+                "126 hours",
+                "168 hours",
+                "192 hours",
+                "210 hours"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Ratio and Proportion",
+    "exam_id": 10,
+    "order": 8
+}

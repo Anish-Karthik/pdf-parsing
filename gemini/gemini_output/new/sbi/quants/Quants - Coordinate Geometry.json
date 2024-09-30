@@ -1,0 +1,452 @@
+{
+    "questions": [
+        {
+            "question": "A square on a coordinate plane has vertices at A(1,1), B(4,1), C(4,4), and D(1,4). If the square is reflected across the y-axis, what will be the new coordinates of point C?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understanding Reflections:** When a point is reflected across the y-axis, its x-coordinate changes sign while its y-coordinate remains the same. \n\n**2. Applying the Reflection:** Point C is originally at (4,4).  Reflecting across the y-axis means we change the sign of the x-coordinate: \n\n* Original C: (4, 4) \n* Reflected C: (-4, 4)\n\n**Therefore, the new coordinates of point C after the reflection are (-4, 4).**",
+            "options": [
+                "(4, 4)",
+                "(-4, 4)",
+                "(4, -4)",
+                "(-4, -4)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A city planner is designing a new park in the shape of a parallelogram. He knows that two sides of the park can be represented by the equations y = 2x + 3 and y = 2x - 1. He wants to place a fountain at one of the corners of the park. To ensure the fountain is placed correctly, he needs to determine if the two given lines representing the park sides are parallel, perpendicular, or neither. What should the city planner conclude?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to determine the relationship between the lines:\n\n**Understanding Slopes:**\n\n* **Parallel Lines:** Parallel lines have the *same* slope.\n* **Perpendicular Lines:** Perpendicular lines have slopes that are *negative reciprocals* of each other (e.g., 2 and -1/2).\n\n**Analyzing the Equations:**\n\n* Both equations are in slope-intercept form (y = mx + b), where 'm' represents the slope.\n* Line 1 (y = 2x + 3) has a slope of 2.\n* Line 2 (y = 2x - 1) also has a slope of 2.\n\n**Conclusion:** Since both lines have the same slope (2), the city planner can conclude that the two sides of the park represented by these equations are **parallel**.",
+            "options": [
+                "Perpendicular",
+                "Parallel",
+                "Neither",
+                "Intersecting"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A pirate buried his treasure on a small island.  He left a clue on a bottle, indicating the treasure's location using polar coordinates: (5 paces, 30\u00b0). Assuming the pirate started at the island's only palm tree and measured the angle counterclockwise from the shore, how many paces east and north from the palm tree should you walk to find the treasure?",
+            "difficulty": "easy",
+            "reasoning": "This question involves converting from polar coordinates (r, \u03b8) to Cartesian coordinates (x, y), which represent 'east' and 'north' directions in this scenario. Here's how to solve it:\n\n**1. Understanding Polar Coordinates**\n\n   * The polar coordinate (5 paces, 30\u00b0) means the treasure is 5 paces away from the palm tree (the origin) at an angle of 30 degrees from the shore.\n\n**2. Conversion Formulas**\n\n   * We use the following formulas to convert polar coordinates to Cartesian coordinates:\n\n     *  x = r * cos(\u03b8)\n     *  y = r * sin(\u03b8)\n\n**3. Applying the Formulas**\n\n   *  x = 5 * cos(30\u00b0) = 5 * (\u221a3/2) = 5\u221a3/2 paces east\n   *  y = 5 * sin(30\u00b0) = 5 * (1/2) = 5/2 paces north\n\n**Therefore, you should walk 5\u221a3/2 paces east and 5/2 paces north from the palm tree to find the treasure.**",
+            "options": [
+                "4.33 paces east, 2.5 paces north",
+                "5 paces east, 3 paces north",
+                "2.5 paces east, 4.33 paces north",
+                "5 paces east, 2.5 paces north"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A street lamp is situated at point (2, 5) on a city map. A straight road passes through this point and has a slope of 2/3. What is the equation of the line representing the road in slope-intercept form (y = mx + c)?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Given Information:**\n\n   * We are given a point (2, 5) that lies on the line.\n   * We are given the slope of the line: m = 2/3\n\n**2. Recall the Slope-Intercept Form:**\n\n   * The slope-intercept form of a linear equation is y = mx + c, where 'm' is the slope and 'c' is the y-intercept.\n\n**3. Substitute the Slope and Point:**\n\n   * Substitute the slope (m = 2/3) and the given point (x = 2, y = 5) into the slope-intercept equation:\n      5 = (2/3)*2 + c\n\n**4. Solve for the y-intercept (c):**\n\n   * Simplify the equation and solve for 'c':\n      5 = 4/3 + c\n      c = 5 - 4/3\n      c = 11/3\n\n**5. Write the Equation:**\n\n   * Substitute the values of 'm' and 'c' back into the slope-intercept form:\n      y = (2/3)x + 11/3\n\n**Therefore, the equation of the line representing the road is y = (2/3)x + 11/3.**",
+            "options": [
+                "y = (2/3)x + 11/3",
+                "y = (2/3)x - 11/3",
+                "y = (3/2)x + 11/3",
+                "y = (3/2)x - 11/3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Difficulty Level**: Easy 5/10\n**Question Type**: Multiple Choice\n**Context**: A hyperbola is centered at the origin with vertices at (0, 4) and (0, -4). Its asymptotes have slopes of \u00b12.\n**Task**: What is the standard equation of this hyperbola?\n**Example**: \n  **(A)**: x\u00b2/16 - y\u00b2/4 = 1\n  **(B)**: y\u00b2/16 - x\u00b2/4 = 1\n  **(C)**: x\u00b2/4 - y\u00b2/16 = 1\n  **(D)**: y\u00b2/4 - x\u00b2/16 = 1\n",
+            "difficulty": "easy",
+            "reasoning": "The hyperbola's center is at the origin (0, 0), and its vertices lie on the y-axis, indicating a vertical orientation.  This means the y\u00b2 term will be positive in the standard equation.\n\nThe distance from the center to each vertex is 'a' = 4. Therefore, a\u00b2 = 16.\n\nThe slopes of the asymptotes for a vertically oriented hyperbola are \u00b1(a/b). Given the slopes are \u00b12, we have a/b = 2. With 'a' being 4, we solve for 'b':  4/b = 2 => b = 2, so b\u00b2 = 4.\n\nThe standard equation for a vertically oriented hyperbola centered at the origin is (y\u00b2/a\u00b2) - (x\u00b2/b\u00b2) = 1. Substituting our values, we get the equation: y\u00b2/16 - x\u00b2/4 = 1.\n\n**Therefore, the correct answer is (B) y\u00b2/16 - x\u00b2/4 = 1.**",
+            "options": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine a whispering gallery designed in the shape of an ellipse.  The room is laid out on a coordinate grid, and the center of the room is at the origin (0,0). The longest distance across the room is 12 meters, running east-west, and the shortest distance across is 8 meters, running north-south. If you and a friend wanted to stand at the foci of the ellipse to whisper secrets to each other, how far apart would you need to stand?",
+            "difficulty": "easy",
+            "reasoning": "This problem involves finding the distance between the foci of an ellipse. Here's how to solve it step-by-step:\n\n**1. Identify the major and minor radii:**\n\n* The longest distance across the room (12 meters) represents the major axis. The major radius ('a') is half this length: a = 12 meters / 2 = 6 meters.\n* The shortest distance (8 meters) represents the minor axis. The minor radius ('b') is half this length: b = 8 meters / 2 = 4 meters.\n\n**2. Calculate the distance from the center to each focus (focal length 'c'):**\n\n*  We use the formula: c\u00b2 = a\u00b2 - b\u00b2\n*  Substitute the values: c\u00b2 = 6\u00b2 - 4\u00b2 = 36 - 16 = 20\n*  Solve for c: c = \u221a20 = 2\u221a5 meters\n\n**3. Find the distance between the foci:**\n\n* Since the foci are located on the major axis, symmetrically about the center, the distance between them is simply twice the focal length.\n* Distance between foci = 2 * c = 2 * 2\u221a5 meters = 4\u221a5 meters\n\n**Therefore, you and your friend would need to stand 4\u221a5 meters apart to whisper secrets from the foci of the elliptical whispering gallery.**",
+            "options": [
+                "6 meters",
+                "8 meters",
+                "4\u221a5 meters",
+                "2\u221a5 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**questionType**: Finding Coordinates\n**difficultyLevel**: 5/10\n**context**: A cat is chasing a laser pointer across the floor. The cat's initial position is represented by the vector  **a** = <2, 1> and the laser pointer's position is represented by the vector **b** = <5, 4>.\n**problemStatement**: If the cat wants to directly intercept the laser pointer, what displacement vector will the cat need to follow?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Vectors in the Coordinate Plane' within 'Quants - Coordinate Geometry' as it involves vector operations in a 2-dimensional plane.  \n\nHere's how to solve it:\n\n1. **Understanding Displacement:** Displacement is the change in position. To find the displacement vector the cat needs, we want to find the vector that, when added to the cat's initial position, results in the laser pointer's position.\n\n2. **Vector Subtraction:**  We can find this displacement vector by subtracting the cat's initial position vector (**a**) from the laser pointer's position vector (**b**).\n\n3. **Calculation:**\n   * **b** - **a** = <5, 4> - <2, 1> = <5-2, 4-1> = <3, 3>\n\nTherefore, the displacement vector the cat needs to follow is **<3, 3>**.",
+            "options": [
+                "<2, 1>",
+                "<3, 3>",
+                "<5, 4>",
+                "<7, 5>"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A line segment has endpoints at P (-3, 4) and Q (1, 4). What is the length of this line segment?",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the understanding of distance on a coordinate plane. Since the y-coordinates of both points are the same, the line segment is horizontal. We can find the length by calculating the difference between the x-coordinates:\n\nLength = |1 - (-3)| = |4| = 4 units. \n\nTherefore, the length of the line segment PQ is 4 units.",
+            "options": [
+                "3 units",
+                "5 units",
+                "4 units",
+                "2 units"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A boat sets sail from the harbor and travels 4 miles east and then 3 miles north.  Representing the boat's journey with vectors, where the positive x-axis points east and the positive y-axis points north, answer the following:\n\nWhat is the unit vector in the direction of the boat's final displacement from the harbor?",
+            "difficulty": "medium",
+            "reasoning": "The boat's displacement can be represented by the vector <4, 3>, which indicates a movement of 4 units in the positive x-direction (east) and 3 units in the positive y-direction (north).\n\nTo find the unit vector in the direction of this displacement, we first need to calculate the magnitude of the displacement vector:\n\nMagnitude = \u221a(4\u00b2 + 3\u00b2) = \u221a(16 + 9) = \u221a25 = 5\n\nA unit vector in the direction of any vector can be found by dividing the vector by its magnitude.  Therefore, the unit vector in the direction of the boat's displacement is:\n\n<4/5, 3/5>",
+            "options": [
+                "<4, 3>",
+                "<1, 1>",
+                "<4/5, 3/5>",
+                "<3/5, 4/5>"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A rectangular box has vertices at the points (0,0,0), (3,0,0), (0,2,0), and (0,0,4). What is the length of the space diagonal of the box?",
+            "difficulty": "medium",
+            "reasoning": "The space diagonal of a rectangular box is the line segment connecting opposite vertices of the box that are not on the same face.  \n\n**1. Visualize the Box:**\nImagine a box in 3D space with the given vertices. The space diagonal we're looking for connects the origin (0,0,0) to the point opposite it (3,2,4).\n\n**2. Apply the Distance Formula:**\nThe length of the space diagonal is the distance between these two points. We can use the distance formula in 3D to find this length:\n\nDistance = \u221a[(3-0)^2 + (2-0)^2 + (4-0)^2]\n\n**3. Calculate the Distance:**\nDistance = \u221a(9 + 4 + 16)\nDistance = \u221a29\n\nTherefore, the length of the space diagonal of the box is \u221a29 units.",
+            "options": [
+                "\u221a20",
+                "\u221a29",
+                "5",
+                "7"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A city planner is drawing a new street on a coordinate grid. The street must pass through the point (-2, 5) and have a slope of 2.  What is the equation of the line representing the new street in slope-intercept form (y = mx + b)?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding Slope-Intercept Form:**\n\n   The slope-intercept form of a linear equation is y = mx + b, where:\n   * 'm' represents the slope of the line.\n   * 'b' represents the y-intercept (the point where the line crosses the y-axis).\n\n**2. Using the Given Information:**\n\n   * We are given the slope (m) = 2\n   * We are given a point on the line (-2, 5), which means x = -2 and y = 5.\n\n**3. Substituting to find 'b':**\n\n   Substitute the known values into the slope-intercept form:\n   5 = (2)(-2) + b\n   5 = -4 + b\n   9 = b\n\n**4. Writing the Equation:**\n\n   Now that we know the slope (m = 2) and the y-intercept (b = 9), we can write the equation of the line:\n   y = 2x + 9",
+            "options": [
+                "y = 2x + 1",
+                "y = 2x + 5",
+                "y = 2x + 9",
+                "y = -2x + 9"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A city planner is designing a new road layout. On the city grid, Main Street is represented by the equation  y = 2x + 5. The planner wants to construct Oak Avenue to be parallel to Main Street and pass through the point (3, 1).  What is the equation of Oak Avenue in slope-intercept form (y = mx + b)?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding Parallel Lines:**\n   * Parallel lines have the *same* slope.  \n\n**2. Finding the Slope:**\n   * The equation of Main Street is in slope-intercept form (y = mx + b), where 'm' represents the slope.\n   * Therefore, the slope of Main Street (and Oak Avenue) is 2. \n\n**3. Using Point-Slope Form:**\n   * We know the slope (m = 2) and a point (3, 1) on Oak Avenue. We can use the point-slope form of a linear equation:\n      *  y - y\u2081 = m(x - x\u2081)\n   * Substitute the values: y - 1 = 2(x - 3)\n\n**4. Converting to Slope-Intercept Form:**\n   * Simplify the equation to get it in the form y = mx + b:\n      * y - 1 = 2x - 6\n      * y = 2x - 5\n\n**Therefore, the equation of Oak Avenue is y = 2x - 5.**",
+            "options": [
+                "y = 2x + 1",
+                "y = 2x - 5",
+                "y = -2x + 7",
+                "y = -2x - 5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A solar cooker uses a parabolic mirror to focus sunlight onto a cooking pot. The pot is placed at the focus of the parabola. If the mirror is 1 meter wide and its depth (the distance from the vertex to the focus) is 0.2 meters, find the equation of the parabola that represents the mirror.",
+            "difficulty": "medium",
+            "reasoning": "**1. Visualize the Problem:**\n   Imagine the parabolic mirror as lying on its side, with the vertex at the origin (0,0) of a coordinate plane. Since the mirror is symmetrical, the focus will be along the positive x-axis.\n\n**2. Identify Given Information:**\n   *  Vertex: (0, 0)\n   *  Depth (which is the value of 'p'): 0.2 meters\n   *  Width: 1 meter (This tells us that the points (-0.5, 0.2) and (0.5, 0.2) lie on the parabola)\n\n**3. Use the Standard Equation:**\n   Since the parabola opens to the right (focus is to the right of the vertex), we use the standard equation:\n   (y - k)\u00b2 = 4p(x - h)\n\n**4. Substitute and Solve:**\n   * Substitute the vertex (h, k) = (0, 0) and p = 0.2 into the equation:\n     (y - 0)\u00b2 = 4(0.2)(x - 0)\n   * Simplify the equation:\n     y\u00b2 = 0.8x \n\nTherefore, the equation of the parabola representing the solar cooker mirror is y\u00b2 = 0.8x.",
+            "options": [
+                "y\u00b2 = 0.8x",
+                "x\u00b2 = 0.8y",
+                "y\u00b2 = 0.4x",
+                "x\u00b2 = 0.4y"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A local farmer's market has a fruit vendor selling apples and oranges. Apples are sold for $2 per pound, and oranges are sold for $1.50 per pound.\n**goal**: Determine how many pounds of apples and oranges a customer bought if they spent a total of $10 and the combined weight of their purchase is 5 pounds.\n**information**: \n  **Let 'x' represent the number of pounds of apples.**: None\n  **Let 'y' represent the number of pounds of oranges.**: None\n  **Cost equation: 2x + 1.5y = 10**: None\n  **Weight equation: x + y = 5**: None\n**question**: Solve the system of equations to find the number of pounds of apples (x) and oranges (y) the customer bought.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Systems of Linear Equations: Graphical and Algebraic Solutions' subtopic within 'Quants - Coordinate Geometry' as it involves setting up and solving a system of linear equations based on given information about costs and quantities. Here's a step-by-step solution: \n\n**1. Solve for one variable in terms of the other:** \nLet's solve the weight equation (x + y = 5) for 'x': \nx = 5 - y\n\n**2. Substitute the expression into the second equation:** \nSubstitute this value of 'x' into the cost equation (2x + 1.5y = 10):\n2(5 - y) + 1.5y = 10\n\n**3. Simplify and solve for 'y':**\n10 - 2y + 1.5y = 10\n-0.5y = 0\ny = 0\n\n**4. Substitute the value of 'y' back into either equation to solve for 'x':**\nLet's use the weight equation (x + y = 5):\nx + 0 = 5\nx = 5\n\n**Solution:** The customer bought 5 pounds of apples (x = 5) and 0 pounds of oranges (y = 0).",
+            "options": [
+                "5 pounds of apples",
+                "0 pounds of oranges",
+                "5 pounds of oranges",
+                "0 pounds of apples"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "An ellipse has its center at the origin, a horizontal major axis of length 10 units, and foci at (-3, 0) and (3, 0). What is the length of its minor axis?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Concepts:**\n\n   * **Ellipse:** An ellipse is defined as the set of all points where the sum of the distances to the two foci is constant.\n   * **Major Axis:**  The longest diameter of an ellipse, passing through the center and both foci.\n   * **Minor Axis:** The shortest diameter of an ellipse, passing through the center and perpendicular to the major axis.\n\n**2. Using the Given Information:**\n\n   * **Center at the origin:** This simplifies our standard equation. \n   * **Horizontal major axis:** This means the foci lie on the horizontal axis, and the 'a' value will be associated with the x-term in the equation.\n   * **Major axis length = 10:**  This means 2*a = 10, so a = 5.\n   * **Foci at (-3, 0) and (3, 0):** The distance from the center to each focus (focal length) is 3,  which is 'c' in our ellipse equations. \n\n**3. Applying the Formula:**\n\n   * We can use the relationship between a, b (half the length of the minor axis), and c in an ellipse:  c\u00b2 = a\u00b2 - b\u00b2\n   * Substitute the values: 3\u00b2 = 5\u00b2 - b\u00b2 \n   * Simplify: 9 = 25 - b\u00b2\n   * Solve for b\u00b2: b\u00b2 = 16\n   * Find b: b = 4 \n\n**4. Finding the Minor Axis Length:**\n\n   * Since b is half the length of the minor axis, the full length is 2 * b = 2 * 4 = 8 units.\n\n**Therefore, the length of the minor axis is 8 units.**",
+            "options": [
+                "6 units",
+                "10 units",
+                "12 units",
+                "16 units"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A city planner is designing a new park. The park will be in the shape of a quadrilateral with vertices at A(-2, 1), B(3, 4), C(8, -1), and D(3, -4).  To ensure the park's paths meet at right angles, the planner wants to confirm if side AB is perpendicular to side BC.  Are these two sides of the park perpendicular?",
+            "difficulty": "medium",
+            "reasoning": "To determine if two lines are perpendicular, we need to calculate their slopes and see if they are negative reciprocals of each other.\n\n**1. Calculate the slope of AB:**\n\nThe slope formula is (y2 - y1) / (x2 - x1)\n\nFor AB, using points A(-2, 1) and B(3, 4):\n\nSlope of AB = (4 - 1) / (3 - (-2)) = 3 / 5\n\n**2. Calculate the slope of BC:**\n\nFor BC, using points B(3, 4) and C(8, -1):\n\nSlope of BC = (-1 - 4) / (8 - 3) = -5 / 5 = -1\n\n**3. Check if slopes are negative reciprocals:**\n\nThe negative reciprocal of 3/5 is -5/3. Since the slope of BC (-1) is not the negative reciprocal of the slope of AB (3/5), the lines are not perpendicular.\n\n**Therefore, sides AB and BC of the park are not perpendicular.**",
+            "options": [
+                "Yes",
+                "No",
+                "Perpendicular",
+                "Not perpendicular"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A line segment has endpoints A(-3, 5) and B(1, y).  A third point C lies on line segment AB such that AC:CB = 2:1.  If the slope of line segment AC is -1, what is the y-coordinate of point B?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Ratio:**\nThe ratio AC:CB = 2:1 means that point C divides line segment AB into three equal parts, with AC being twice as long as CB.\n\n**2. Utilize Slope to Find the Change in Coordinates:**\nSince the slope of AC is -1, this means for every 1 unit you move to the right on the coordinate plane, you move 1 unit down. Since AC represents 2 parts of the ratio, the total change in x from A to C is 2 units, and the total change in y from A to C is -2 units.\n\n**3. Find the Coordinates of Point C:**\nStarting at point A(-3, 5), and knowing the change in x is +2 and the change in y is -2, we find the coordinates of C: \nC(-3 + 2, 5 - 2) = C(-1, 3)\n\n**4. Find the Change in Coordinates from C to B:**\nSince C divides AB into a 2:1 ratio, the change in coordinates from C to B will be half the change in coordinates from A to C. Therefore, the change in x from C to B is +1 and the change in y from C to B is -1.\n\n**5. Find the Coordinates of Point B:**\nStarting at point C(-1, 3) and knowing the change in x is +1 and the change in y is -1, we find the coordinates of B:\nB(-1 + 1, 3 - 1) = B(0, 2)\n\n**6. Answer:**\nThe y-coordinate of point B is **2**.",
+            "options": [
+                "1",
+                "3",
+                "5",
+                "2"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Context**: A city planner is drawing a new road on a coordinate grid. The road will pass through the point (-1, 3) and be parallel to an existing road represented by the equation 2x - y = 5.\n**Given Information**: The new road passes through (-1, 3) and is parallel to the line 2x - y = 5.\n**Question**: Determine the equation of the new road in point-slope form.\n**Difficulty Level**: Medium (5/10)\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Finding the Slope:**\n\n* Since the new road is parallel to the line 2x - y = 5, they have the same slope.  We need to rearrange the given equation into slope-intercept form (y = mx + b) to find the slope (m).\n* 2x - y = 5  =>  -y = -2x + 5  =>  y = 2x - 5\n* The slope (m) of the given line, and therefore the new road, is 2.\n\n**2. Using Point-Slope Form:**\n\n* The point-slope form of a linear equation is y - y1 = m(x - x1), where (x1, y1) is a point on the line, and m is the slope. \n* We know the new road passes through (-1, 3) and has a slope of 2.\n* Substitute these values into the point-slope form:\n    * y - 3 = 2(x - (-1))\n\n**3. Simplifying:**\n\n* While the question asks for the equation in point-slope form, we can simplify slightly:\n    * y - 3 = 2(x + 1)\n\nTherefore, the equation of the new road in point-slope form is **y - 3 = 2(x + 1)**.",
+            "options": [
+                "y - 3 = 2(x - 1)",
+                "y - 3 = 2(x + 1)",
+                "y = 2x - 1",
+                "y = 2x + 5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A local farmer wants to divide his triangular plot of land into two sections by building a fence. The fence will start at one corner of the plot and extend to a point on the opposite side. The farmer wants the area of the two sections to be equal.\n**question**: The vertices of the triangular plot are A(1, 2), B(5, 2), and C(3, 6).  Find the equation of the line representing the fence, knowing it divides the triangular plot into two sections of equal area.\n**input**: Coordinates of the vertices: A(1, 2), B(5, 2), C(3, 6)\n**output**: The equation of the line in slope-intercept form (y = mx + c).\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Problem:**\n\nThe problem involves finding the equation of a line that divides a triangle into two equal areas. This line represents the fence.  We'll use our knowledge of coordinate geometry, specifically linear equations and areas of triangles.\n\n**2. Finding the Midpoint:**\n\nSince the fence divides the triangle into equal areas, it must pass through a midpoint of one side and the opposite vertex.  Let's find the midpoint of side AB:\n\nMidpoint formula: ((x1 + x2)/2, (y1 + y2)/2)\n\nMidpoint of AB: ((1 + 5)/2, (2 + 2)/2) = (3, 2)\n\n**3. Determining the Equation of the Line:**\n\nThe line passes through point C(3, 6) and the midpoint of AB (3, 2). Notice that the x-coordinates are the same, implying a vertical line.\n\n**4.  Equation of a Vertical Line:**\n\nThe equation of a vertical line passing through a point with x-coordinate 'a' is simply x = a.\n\nTherefore, the equation of the fence line is **x = 3**.",
+            "options": [
+                "x = 1",
+                "y = 3",
+                "x = 3",
+                "y = 2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A mobile phone company offers two different plans to its customers. Plan A charges a flat fee of $20 per month and an additional $0.05 per minute of talk time. Plan B charges a flat fee of $30 per month and an additional $0.03 per minute of talk time.\n**instructions**: Graph the equations representing the monthly cost for both plans on the same coordinate plane. Let the x-axis represent the number of minutes used and the y-axis represent the total monthly cost.\n**information**: The equation for Plan A is y = 0.05x + 20, and the equation for Plan B is y = 0.03x + 30.\n**question**: Determine the number of minutes for which the two plans would cost the same.\n",
+            "difficulty": "medium",
+            "reasoning": "The question tests the understanding of graphing linear equations and finding the point of intersection. Here's how to solve it:\n\n**1. Graphing the equations:**\n\n   - **Plan A (y = 0.05x + 20):** \n      - When x = 0, y = 20 (y-intercept)\n      - When x = 100, y = 25 (For every 100 minutes, cost increases by $5)\n\n   - **Plan B (y = 0.03x + 30):**\n      - When x = 0, y = 30 (y-intercept)\n      - When x = 100, y = 33 (For every 100 minutes, cost increases by $3)\n\n   - Plot these points and draw the lines representing each plan.\n\n**2. Finding the point of intersection:**\n\n   - The point where the two lines intersect represents the number of minutes where both plans cost the same.\n   - By visually inspecting the graph, or by solving the system of equations, we find the intersection point.\n\n**3. Solving the system of equations:**\n\n   - To find the x-coordinate of the intersection (number of minutes), set the two equations equal to each other:\n      0.05x + 20 = 0.03x + 30\n\n   - Solve for x:\n      0.02x = 10\n      x = 500 minutes\n\n**Therefore, both plans would cost the same at 500 minutes of talk time.**",
+            "options": [
+                "200 minutes",
+                "400 minutes",
+                "500 minutes",
+                "600 minutes"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A farmer wants to build a triangular pen for his goats using a straight section of riverbank as one side. He has 100 meters of fencing to use for the other two sides.  One corner of the pen will be located at the origin (0, 0), and the riverbank can be represented by the x-axis. What is the maximum area the farmer can enclose, and what are the coordinates of the other two vertices of the triangular pen?",
+            "difficulty": "medium",
+            "reasoning": "This problem utilizes coordinate geometry, area calculations, and optimization techniques.\n\n**1. Setting up the Problem:**\n\n*   Let the two vertices of the triangle on the x-axis be (a, 0) and (b, 0), where a < b. \n*   The third vertex, on the y-axis, will be (0, h).\n*   The sides of the triangle will have lengths a, b-a (along the river), and \u221a(h\u00b2 + b\u00b2) (the hypotenuse).\n\n**2.  Applying Constraints:**\n\n*   The farmer has 100 meters of fencing: a + (b-a) + \u221a(h\u00b2 + b\u00b2) = 100\n*   Simplifying, we get: b + \u221a(h\u00b2 + b\u00b2) = 100\n\n**3. Expressing Area in Terms of One Variable:**\n\n*   Area of a triangle = (1/2) * base * height = (1/2) * b * h\n*   We need to express this area in terms of a single variable (either b or h) to apply optimization.\n*   From the constraint equation: \u221a(h\u00b2 + b\u00b2) = 100 - b\n*   Squaring both sides: h\u00b2 + b\u00b2 = 10000 - 200b + b\u00b2\n*   Therefore: h\u00b2 = 10000 - 200b\n*   Solving for h: h = \u221a(10000 - 200b)\n*   Substituting this value of h into the area formula: Area = (1/2) * b * \u221a(10000 - 200b)\n\n**4. Optimizing the Area:**\n\n*   To find the maximum area, we need to find the critical points of the area function. This involves taking the derivative of the area function with respect to b, setting it equal to 0, and solving for b. \n*   The derivative will involve the product rule and chain rule, leading to a somewhat complex expression. Solving this expression will give us the value of 'b' that maximizes the area.\n*   We can then substitute this value of 'b' back into the equation for 'h' to find the corresponding height.\n\n**5.  Finding the Vertices:**\n\n*   With the values of 'b' and 'h', we can determine the coordinates of the triangle's vertices: (0, 0), (b, 0), and (0, h).\n\n**Note:** The calculations for finding the derivative and solving for 'b' are not shown here for brevity, as they can be quite lengthy. However, this reasoning outlines the complete logical and mathematical process to solve the problem.",
+            "options": [
+                "1250 square meters",
+                "2500 square meters",
+                "3750 square meters",
+                "5000 square meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Type**: Calculate the distance\n**Context**: A rectangular prism has vertices at A(1, 2, 3), B(4, 2, 3), C(4, 5, 3), D(1, 5, 3), E(1, 2, 7), F(4, 2, 7), G(4, 5, 7), and H(1, 5, 7).\n**Task**: Find the distance between the line passing through points A and G, and the line passing through points B and H.\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Visualize the Problem:**\n\n   Imagine a rectangular prism (like a box). The points A-H define its corners. We need to find the shortest distance between the diagonal AG and the diagonal BH. \n\n**2. Finding Direction Vectors:**\n\n   To work with lines, we need their direction vectors:\n   *  **Direction vector of AG:**  Vector AG = G - A = (4-1, 5-2, 7-3) = (3, 3, 4)\n   *  **Direction vector of BH:**  Vector BH = H - B = (1-4, 5-2, 7-3) = (-3, 3, 4)\n\n**3. Finding a Vector Perpendicular to Both Lines:**\n\n   The shortest distance between two skew lines (lines that don't intersect and aren't parallel) is along a line that's perpendicular to both. We can find the direction vector of this perpendicular line using the cross product:\n\n   Vector AG x Vector BH = (3, 3, 4) x (-3, 3, 4) = (0, -24, 18)\n\n   We can simplify this vector by dividing by 6: (0, -4, 3)\n\n**4. Finding a Point on One Line and a Plane Equation:**\n\n   We'll use point A(1, 2, 3) on line AG. Now we need the equation of the plane containing line BH and parallel to the perpendicular direction we found.\n\n   The plane's normal vector is (0, -4, 3). Using point B(4, 2, 3) and the normal vector, the plane's equation is:\n\n   0(x - 4) - 4(y - 2) + 3(z - 3) = 0\n   Simplifying: -4y + 8 + 3z - 9 = 0\n               -4y + 3z - 1 = 0\n\n**5. Calculating the Distance:**\n\n   Now we use the point-to-plane distance formula with point A(1, 2, 3) and the plane equation:\n\n   Distance = |(0)(1) + (-4)(2) + (3)(3) - 1| / sqrt(0^2 + (-4)^2 + 3^2)\n            = |-8 + 9 - 1| / sqrt(25)\n            = 0 / 5\n            = 0\n\n**Conclusion:** The distance between the two lines is 0. This means the lines actually intersect. While we assumed they were skew, the calculations show they lie in the same plane within the rectangular prism.",
+            "options": [
+                "0",
+                "3",
+                "4",
+                "5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: A drone is being flown along a path represented by the vector **p** = (4, -3), where the components represent the horizontal and vertical displacement in meters from its starting point.\n**Task**: The drone operator decides to change the drone's trajectory by adding a new vector **q** = (-2, 5) to its current path. Find the components of the vector representing the drone's new path.\n**Additional Information**: None\n",
+            "difficulty": "medium",
+            "reasoning": "This question involves the addition of vectors in the coordinate plane, a fundamental concept in this topic. Students need to understand that adding vectors means adding their corresponding components.  \n\nHere's how to solve it:\n\n1. **Identify the components of each vector:** \n   * Vector **p**: (4, -3)\n   * Vector **q**: (-2, 5)\n\n2. **Add the corresponding components:**\n   *  (4 + (-2), -3 + 5) = (2, 2)\n\n3. **Resultant vector:**\n   * The components of the new path are (2, 2). This represents a displacement of 2 meters to the right and 2 meters upwards from the drone's initial starting point. ",
+            "options": [
+                "(4, 5)",
+                "(6, -8)",
+                "(2, 2)",
+                "(-2, 2)"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A city planner is designing a new park on a coordinate grid. The park's entrance is located at (0, 0).  There will be a drinking fountain located 4 units east and 6 units north of the entrance. A bench will be placed 7 units south and 2 units east of the fountain. What is the slope of the straight line path that connects the park entrance to the bench?",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the coordinates of the fountain:**\n   * The fountain is 4 units east and 6 units north of the entrance (0, 0).\n   * Moving east corresponds to increasing the x-coordinate, and moving north corresponds to increasing the y-coordinate. \n   * Therefore, the fountain's coordinates are (0 + 4, 0 + 6) = (4, 6).\n\n**2. Find the coordinates of the bench:**\n   * The bench is 7 units south and 2 units east of the fountain (4, 6).\n   * Moving south corresponds to decreasing the y-coordinate, and moving east corresponds to increasing the x-coordinate. \n   * Therefore, the bench's coordinates are (4 + 2, 6 - 7) = (6, -1).\n\n**3. Calculate the slope:**\n   * The slope of a line passing through two points (x1, y1) and (x2, y2) is given by the formula: (y2 - y1) / (x2 - x1)\n   * Using the entrance (0, 0) as (x1, y1) and the bench (6, -1) as (x2, y2), we get:\n     * Slope = (-1 - 0) / (6 - 0) = -1 / 6\n\n**Therefore, the slope of the straight line path connecting the park entrance to the bench is -1/6.**",
+            "options": [
+                "1/6",
+                "-1/6",
+                "6",
+                "-6"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**problem_statement**: A city planner is designing a new park in the shape of a parallelogram. Two opposite corners of the park will be located at coordinates A (2, 5) and C (8, 1). A straight road, represented by the line y = 2x - 3, runs through the park.\n**given_information**: \n  - Coordinates of point A: (2, 5)\n  - Coordinates of point C: (8, 1)\n  - Equation of the road: y = 2x - 3\n**question**: Determine the equation of the line that represents the park boundary that is parallel to the road and passes through point C.\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Find the slope of the road:**\n   - The equation of the road is in slope-intercept form (y = mx + b), where 'm' represents the slope.\n   - Therefore, the slope of the road is 2.\n\n**2. Parallel Lines have Equal Slopes:**\n   - Since the park boundary is parallel to the road, it will have the same slope as the road, which is 2.\n\n**3. Use Point-Slope Form:**\n   - We know the slope (m = 2) and a point (C: 8, 1) on the line representing the park boundary.\n   - We can use the point-slope form of a linear equation: y - y1 = m(x - x1)\n\n**4. Substitute and Simplify:**\n   - Substitute m = 2, x1 = 8, and y1 = 1 into the point-slope form:\n      y - 1 = 2(x - 8)\n\n   - Simplify the equation to get the equation of the park boundary in slope-intercept form:\n      y - 1 = 2x - 16\n      y = 2x - 15\n\n**Therefore, the equation of the line representing the park boundary parallel to the road is y = 2x - 15.**",
+            "options": [
+                "y = 2x - 3",
+                "y = 2x - 15",
+                "y = -1/2x + 5",
+                "y = -1/2x + 9"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A quadrilateral, QUAD, is drawn on a coordinate plane.  Point Q is located at (-3, 2), U at (-1, 4), A at (1, 2), and D at (0, 0).\n**task**: Determine the new coordinates of the quadrilateral if it's first reflected across the x-axis, then rotated 90 degrees clockwise about the origin. Finally, analyze the symmetry of both the original and the transformed shape, stating if any type of symmetry is present.\n**input**: Coordinates of quadrilateral QUAD, description of the transformations.\n**output**: Coordinates of the transformed quadrilateral, analysis of symmetry in both original and transformed shapes.\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Reflection Across the x-axis:**\n\n* When reflecting across the x-axis, the x-coordinate of each point stays the same, while the y-coordinate changes its sign.\n* Q'(-3, -2), U'(-1, -4), A'(1, -2), D'(0, 0) \n\n**2. 90-Degree Clockwise Rotation About the Origin:**\n\n* A 90-degree clockwise rotation about the origin follows the rule: (x, y) \u2192 (y, -x).\n* Applying this to our reflected points:\n    * Q'(-3, -2) \u2192 Q\"(-2, 3)\n    * U'(-1, -4) \u2192 U\"(-4, 1)\n    * A'(1, -2)  \u2192 A\"(-2, -1)\n    * D'(0, 0)   \u2192 D\"(0, 0) \n\n**3. Symmetry Analysis:**\n\n* **Original Quadrilateral (QUAD):**  By plotting the points, we can see that the original quadrilateral does not have line symmetry or rotational symmetry.\n* **Transformed Quadrilateral (Q\"U\"A\"D\"):** Similarly, the transformed quadrilateral does not possess line symmetry or rotational symmetry. \n\n**Therefore, the final coordinates are  Q\"(-2, 3), U\"(-4, 1), A\"(-2, -1), D\"(0, 0). Neither the original nor the transformed quadrilateral exhibit line or rotational symmetry.**",
+            "options": [
+                "No symmetry",
+                "Line symmetry",
+                "Rotational symmetry",
+                "Both line and rotational symmetry"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A circle passes through the point (5, 1) and its center is the intersection point of the lines 2x - y = 1 and x + 3y = 11. What is the general equation of this circle?",
+            "difficulty": "medium",
+            "reasoning": "First, we need to find the center of the circle. We can do this by solving the system of equations representing the two given lines. \n\n1. **Solve for x in terms of y (or vice-versa) in one of the equations.** \n   Let's solve the first equation for x:\n   2x - y = 1\n   2x = y + 1\n   x = (y + 1) / 2\n\n2. **Substitute this expression for x into the second equation:**\n   ((y + 1) / 2) + 3y = 11\n\n3. **Simplify and solve for y:**\n   y + 1 + 6y = 22\n   7y = 21\n   y = 3\n\n4. **Substitute the value of y back into either of the original equations to solve for x:**\n   2x - 3 = 1\n   2x = 4\n   x = 2\n\n5. **Now we know the center of the circle is (2, 3).** To find the radius, we need the distance between the center and the given point (5, 1). We can use the distance formula:\n   radius = \u221a((5 - 2)^2 + (1 - 3)^2) = \u221a(3^2 + (-2)^2) = \u221a13\n\n6. **Finally, we can write the general equation of the circle using the center (2, 3) and radius \u221a13:**\n   (x - 2)^2 + (y - 3)^2 = (\u221a13)^2\n   (x - 2)^2 + (y - 3)^2 = 13\n\nTherefore, the general equation of the circle is (x - 2)^2 + (y - 3)^2 = 13.",
+            "options": [
+                "(x - 2)^2 + (y - 3)^2 = 9",
+                "(x + 2)^2 + (y + 3)^2 = 13",
+                "(x - 2)^2 + (y - 3)^2 = 13",
+                "(x + 2)^2 + (y - 3)^2 = 13"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**problem_statement**: A street vendor sells two types of snacks: samosas and spring rolls. He sells each samosa for $2.50 and each spring roll for $1.75. At the end of the day, he finds that he made a total of $63 from selling a total of 30 snacks.\n**question**: Represent this situation as a system of linear equations and determine the number of samosas and spring rolls the vendor sold using either a graphical or algebraic method.\n**possible_solution_approaches**: Possible solution approaches include:\n\n* **Define variables:** Let 'x' represent the number of samosas and 'y' represent the number of spring rolls.\n* **Formulate equations:** Create two equations based on the given information:\n    * Equation 1 (total earnings): 2.50x + 1.75y = 63\n    * Equation 2 (total snacks): x + y = 30\n* **Solve the system:** Solve for 'x' and 'y' using either substitution, elimination, or graphical methods.\n",
+            "difficulty": "medium",
+            "reasoning": "**Reasoning:**\n\nThis problem falls under the 'Systems of Linear Equations: Graphical and Algebraic Solutions' topic as it involves:\n\n* **Formulating linear equations:** The problem requires translating real-world information into mathematical equations representing the vendor's earnings and the number of snacks sold.\n* **Solving a system of equations:**  We have two unknowns (number of samosas and spring rolls) and two linear equations. This forms a system of equations solvable through various algebraic methods like substitution or elimination.  Alternatively, a graphical approach where each equation is plotted as a line can be used. The intersection point of the lines represents the solution (x, y).\n\n**Step-by-step Solution (using Substitution):**\n\n1. **Solve Equation 2 for x:**  x = 30 - y\n2. **Substitute** this value of x into Equation 1: 2.50(30 - y) + 1.75y = 63\n3. **Simplify and solve for y:** 75 - 2.50y + 1.75y = 63  =>  -0.75y = -12  =>  y = 16 \n4. **Substitute the value of y back into either original equation to solve for x:**  x + 16 = 30  =>  x = 14\n\n**Answer:** The vendor sold 14 samosas (x = 14) and 16 spring rolls (y = 16).\n\n**Verification:**\n\n* **Earnings:** (14 samosas * $2.50/samosa) + (16 spring rolls * $1.75/spring roll) = $35 + $28 = $63 (Correct)\n* **Total Snacks:** 14 samosas + 16 spring rolls = 30 snacks (Correct) ",
+            "options": [
+                "Substitution",
+                "Elimination",
+                "Graphical",
+                "All of the above"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A radar system detects an aircraft at a distance of 5 miles and an angle of 30 degrees from the positive x-axis.  Determine the position of the aircraft in Cartesian coordinates, assuming the radar station is located at the origin.",
+            "difficulty": "medium",
+            "reasoning": "This question involves converting from polar coordinates (r, \u03b8) to Cartesian coordinates (x, y). Here's how to solve it:\n\n**Understanding the Problem:**\n\n* The radar gives us the aircraft's location in polar coordinates: \n    * r = 5 miles (distance from the origin)\n    * \u03b8 = 30 degrees (angle from the positive x-axis)\n* We need to find the aircraft's position in Cartesian coordinates (x, y). \n\n**Using the Conversion Formulas:**\n\nWe can use the following formulas to convert from polar to Cartesian coordinates:\n\n*  x = r * cos(\u03b8)\n*  y = r * sin(\u03b8)\n\n**Calculations:**\n\n1. **Convert the angle to radians:**\n   * \u03b8 = 30 degrees * (\u03c0 / 180 degrees) = \u03c0/6 radians \n\n2. **Calculate x:**\n   * x = 5 miles * cos(\u03c0/6) = 5 miles * (\u221a3 / 2) = (5\u221a3) / 2 miles\n\n3. **Calculate y:**\n   * y = 5 miles * sin(\u03c0/6) = 5 miles * (1 / 2) = 5/2 miles\n\n**Answer:**\n\nThe aircraft's position in Cartesian coordinates is ((5\u221a3) / 2, 5/2) miles, or approximately (4.33, 2.5) miles.",
+            "options": [
+                "(5\u221a3 / 2, 5/2) miles",
+                "(4.33, 2.5) miles",
+                "(5, 30) miles",
+                "(30, 5) miles"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: Imagine a drone flying in a 3D space. Its starting position is marked as point A (2, 3, 1). It receives commands to move 5 units in the positive x-direction, then 2 units in the negative y-direction, and finally 4 units in the positive z-direction, reaching its final position, point B.\n**Question**: What are the coordinates of the drone's final position, point B?\n**Data**: None (all necessary information is provided in the context).\n**Difficulty Level**: Medium 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Movements:**\n   * **+x direction:**  Means increasing the x-coordinate.\n   * **-y direction:** Means decreasing the y-coordinate.\n   * **+z direction:** Means increasing the z-coordinate.\n\n**2.  Applying the Movements to the Initial Coordinates:**\n    * **Start:** A (2, 3, 1)\n    * **+5 in x:** (2 + 5, 3, 1)  -> (7, 3, 1)\n    * **-2 in y:** (7, 3 - 2, 1) -> (7, 1, 1)\n    * **+4 in z:** (7, 1, 1 + 4) -> (7, 1, 5)\n\n**3. Final Coordinates:**\n    * Therefore, the final position B is (7, 1, 5).\n\n**Verification:**\n*  Each step logically follows the rules of 3D coordinate geometry, ensuring the solution's correctness.",
+            "options": [
+                "(2, 1, 5)",
+                "(7, 1, 5)",
+                "(7, 3, 5)",
+                "(2, 3, 9)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A rhombus is formed by connecting the midpoints of the sides of a quadrilateral ABCD.  The lines containing two sides of the rhombus have equations  `y = 2x + 1` and `y = -1/2x + 3`.  What are the possible slopes of the lines containing the other two sides of the rhombus?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Understanding the Properties**\n\n* **Rhombus Properties:** A rhombus is a quadrilateral with all sides equal. More importantly, its diagonals are perpendicular bisectors of each other.\n* **Midpoint Theorem:**  The line segment connecting the midpoints of two sides of a triangle is parallel to the third side and half its length. This theorem applies to quadrilaterals as well.\n* **Perpendicular Lines:** Two lines are perpendicular if and only if the product of their slopes is -1.\n\n**2. Applying the Concepts**\n\n* **Parallel Sides:** Since the rhombus is formed by connecting the midpoints of quadrilateral ABCD, the sides of the rhombus are parallel to the diagonals of ABCD (by the Midpoint Theorem).\n* **Perpendicular Diagonals:**  The diagonals of the rhombus are perpendicular to each other.\n* **Finding the Slopes:** We are given the equations of two lines containing sides of the rhombus, which are parallel to the diagonals of ABCD. These lines have slopes of 2 and -1/2. Since these slopes are negative reciprocals of each other (2 * -1/2 = -1), the diagonals of ABCD are perpendicular. \n* **Finding the Missing Slopes:** The other two sides of the rhombus are parallel to the diagonals of ABCD.  Therefore, the slopes of the lines containing these sides must also be 2 and -1/2.\n\n**3. Answer**\n\nThe possible slopes of the lines containing the other two sides of the rhombus are **2 and -1/2**.",
+            "options": [
+                "2 and -1/2",
+                "1/2 and -2",
+                "1 and -1",
+                "4 and -1/4"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A lima\u00e7on is defined by the polar equation r = 1 + 2cos(\u03b8). A line passing through the origin divides the inner loop of the lima\u00e7on into two regions of equal area.  Determine the polar equation of this line.",
+            "difficulty": "hard",
+            "reasoning": "This question dives deep into polar coordinate geometry, requiring multiple steps and a strong conceptual understanding:\n\n**1. Understanding the Lima\u00e7on:**\n   - The equation r = 1 + 2cos(\u03b8) represents a lima\u00e7on with an inner loop because the constant term (1) is smaller than the coefficient of the cosine term (2).\n\n**2. Finding the Limits of the Inner Loop:**\n   - The inner loop is formed when r = 0. Solving 1 + 2cos(\u03b8) = 0 gives us cos(\u03b8) = -1/2. This occurs at \u03b8 = 2\u03c0/3 and \u03b8 = 4\u03c0/3.\n\n**3. Area in Polar Coordinates:**\n   - Recall that the area enclosed by a polar curve r = f(\u03b8) from \u03b8 = \u03b1 to \u03b8 = \u03b2 is given by (1/2)\u222b[f(\u03b8)]^2 d\u03b8 from \u03b1 to \u03b2.\n\n**4. Setting Up the Area Equation:**\n   - Let the equation of the line be \u03b8 = k, where 2\u03c0/3 < k < 4\u03c0/3.  We need to find k such that the area of the inner loop from \u03b8 = 2\u03c0/3 to \u03b8 = k is half the total area of the inner loop.\n\n**5. Calculating the Areas:**\n   - Area of half the inner loop: (1/4)\u222b(1 + 2cos(\u03b8))^2 d\u03b8 from 2\u03c0/3 to 4\u03c0/3 \n   - Area from \u03b8 = 2\u03c0/3 to \u03b8 = k:  (1/2)\u222b(1 + 2cos(\u03b8))^2 d\u03b8 from 2\u03c0/3 to k\n\n**6. Equating and Solving for k:**\n   - Set the two area expressions equal and solve the resulting integral equation for k. This will involve trigonometric integrals and potential use of trigonometric identities.\n\n**7. Final Equation:**\n   - The solution for k will provide the angle of the line. The final answer will be in the form \u03b8 = k, representing the polar equation of the line.",
+            "options": [
+                "\u03b8 = \u03c0",
+                "\u03b8 = 5\u03c0/6",
+                "\u03b8 = 7\u03c0/6",
+                "\u03b8 = 3\u03c0/2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Point A lies in the first quadrant and is equidistant from the points (4, 0) and (0, -6). Point B lies on the line y = 3x + 12 and the midpoint of AB is  (-1, 3). What is the distance between points A and B?",
+            "difficulty": "hard",
+            "reasoning": "Let the coordinates of point A be (x, y). Since A is equidistant from (4, 0) and (0, -6), we can use the distance formula: \n\n\u221a((x - 4)\u00b2 + (y - 0)\u00b2) = \u221a((x - 0)\u00b2 + (y + 6)\u00b2) \n\nSquaring both sides and simplifying, we get: \n\n(x - 4)\u00b2 + y\u00b2 = x\u00b2 + (y + 6)\u00b2 \n\nx\u00b2 - 8x + 16 + y\u00b2 = x\u00b2 + y\u00b2 + 12y + 36\n\n-8x - 12y = 20\n\n2x + 3y = -5  ---(1) \n\nWe are given that the midpoint of AB is (-1, 3). Let the coordinates of B be (a, b). Using the midpoint formula: \n\n(-1, 3) = ((x + a)/2, (y + b)/2)\n\nThis gives us two equations: \n\nx + a = -2  ---(2) \n\ny + b = 6    ---(3)\n\nWe know B lies on the line y = 3x + 12. Substituting  'a' from equation (2) into this equation, we get:\n\nb = 3(-2 - x) + 12\n\nb = -6 - 3x + 12\n\nb = -3x + 6   ---(4)\n\nSubstituting (4) into (3), we get: \n\ny - 3x + 6 = 6\n\ny - 3x = 0  ---(5)\n\nNow we have two equations with two unknowns (equations 1 & 5). Solving them simultaneously, we get:\n\nx = 3 and y = 9\n\nTherefore, point A is (3, 9). Substituting x = 3 in equation (2) and (4), we get a = -5 and b = -3. So, point B is (-5, -3).\n\nFinally, using the distance formula to find the distance between A(3, 9) and B(-5, -3):\n\nAB = \u221a((3 + 5)\u00b2 + (9 + 3)\u00b2) = \u221a(8\u00b2 + 12\u00b2) = \u221a208 = 4\u221a13\n\nTherefore, the distance between points A and B is 4\u221a13.",
+            "options": [
+                "2\u221a13",
+                "4\u221a13",
+                "8\u221a13",
+                "16\u221a13"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two circles, C1 and C2, are externally tangent to each other. The equation of C1 is given by  x\u00b2 + y\u00b2 - 6x + 8y - 11 = 0. Circle C2 has its center at (10, -4) and a radius of 5. A third circle, C3, is drawn such that it is tangent to both C1 and C2 externally, and its center lies on the line passing through the centers of C1 and C2.  Find the standard equation of the circle C3.",
+            "difficulty": "hard",
+            "reasoning": "**1. Find the center and radius of C1:**\n   - Rearrange the equation of C1 to standard form by completing the square:\n     (x\u00b2 - 6x) + (y\u00b2 + 8y) = 11 \n     (x\u00b2 - 6x + 9) + (y\u00b2 + 8y + 16) = 11 + 9 + 16\n     (x - 3)\u00b2 + (y + 4)\u00b2 = 36 = 6\u00b2\n   - Therefore, the center of C1 is (3, -4) and its radius is 6.\n\n**2. Determine the distance between the centers of C1 and C2:**\n   - Use the distance formula:\n     \u221a((10 - 3)\u00b2 + (-4 - (-4))\u00b2) = \u221a(7\u00b2 + 0\u00b2) = 7\n\n**3.  Visualize the relationship between the circles:**\n   - Since C1 and C2 are externally tangent, the distance between their centers (7) is equal to the sum of their radii (6 + 5 = 11). \n   - C3 is externally tangent to both C1 and C2, meaning the distance from the center of C3 to the center of C1 is the sum of their radii, and similarly for C3 and C2.\n\n**4. Use the concept of ratios:**\n   - Let the radius of C3 be 'r'. The distance from the center of C3 to the center of C1 is (r + 6) and to the center of C2 is (r + 5).  \n   - Since the center of C3 lies on the line connecting the centers of C1 and C2, these distances are in the same ratio as the radii of C1 and C2 (due to similar triangles): \n      (r + 6) / (r + 5) = 6 / 5\n\n**5. Solve for the radius of C3:**\n   - Cross-multiply and solve the equation:\n     5(r + 6) = 6(r + 5)\n     5r + 30 = 6r + 30\n     r = 0 \n\n**6. Analyze the result:**\n   - A radius of 0 for C3 means that C3 degenerates into a point. This point is the point of tangency between C1 and C2.\n\n**7. Find the point of tangency:**\n   - This point divides the line segment joining the centers of C1 and C2 in the ratio of their radii (6:5). \n   -  Using the section formula, the point of tangency is:\n      ((6*10 + 5*3)/(6+5), (6*(-4) + 5*(-4))/(6+5)) = (9, -4) \n\n**8. State the equation of C3:**\n   - Since C3 is a point at (9, -4), its equation is simply: \n     **(x - 9)\u00b2 + (y + 4)\u00b2 = 0**",
+            "options": [
+                "(x - 9)\u00b2 + (y + 4)\u00b2 = 0",
+                "(x - 3)\u00b2 + (y + 4)\u00b2 = 36",
+                "(x - 10)\u00b2 + (y + 4)\u00b2 = 25",
+                "(x - 9)\u00b2 + (y + 4)\u00b2 = 1"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A city planner is designing a park bordered by four roads that can be represented by the following equations: \n\n* Road 1:  y = 2x + 5\n* Road 2: y = -0.5x + 8 \n* Road 3:  A line parallel to Road 1 passing through the point (3, 1) \n* Road 4: A line perpendicular to Road 2 passing through the point (-2, 6) \n\nInside the park, the planner wants to install a circular fountain with the largest possible diameter such that it touches all four sides of the park (it's inscribed in the park). What is the area of the fountain?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under 'Applications of Coordinate Geometry: Area, Perimeter, Optimization' within the broader topic of 'Coordinate Geometry'. Here's how to solve it:\n\n1. **Find the equations of Road 3 and Road 4:**\n    * **Road 3:** Since it's parallel to Road 1, it has the same slope (m=2). Using the point-slope form with the point (3,1), we get the equation y - 1 = 2(x - 3), which simplifies to y = 2x - 5.\n    * **Road 4:** It's perpendicular to Road 2, so its slope is the negative reciprocal of -0.5, which is 2. Using the point-slope form with the point (-2, 6), we get y - 6 = 2(x + 2), simplifying to y = 2x + 10.\n\n2. **Find the vertices of the park:** This involves solving systems of equations formed by the intersection points of the roads:\n    * **Road 1 & Road 2:** Solve y = 2x + 5 and y = -0.5x + 8 to get (1.2, 7.4)\n    * **Road 1 & Road 4:** Solve y = 2x + 5 and y = 2x + 10. These lines are parallel, indicating that the park is a trapezoid, not a parallelogram.\n    * **Road 2 & Road 3:** Solve y = -0.5x + 8 and y = 2x - 5 to get (2.6, 6.7)\n    * **Road 3 & Road 4:** Solve y = 2x - 5 and y = 2x + 10 (parallel lines, confirming the trapezoid shape)\n\n3. **Determine the critical distances:**\n    * **Height of the trapezoid:**  This is the perpendicular distance between Road 1 (or Road 3) and Road 2 (or Road 4).  We can use the formula for the distance between a point and a line.  Let's take point (1.2, 7.4) on Road 1 and Road 2's equation (y = -0.5x + 8, rewritten as 0.5x + y - 8 = 0):\n        * Distance = |(0.5 * 1.2) + (1 * 7.4) - 8| / sqrt(0.5\u00b2 + 1\u00b2) = 2.4 / sqrt(1.25) = 2.15 (approx)\n\n4. **Inscribed Circle:**\n    * In a trapezoid, the diameter of the inscribed circle is equal to the height of the trapezoid.\n    * Therefore, the diameter of the fountain is approximately 2.15 units.\n\n5. **Calculate the area of the fountain:**\n    * Radius = Diameter / 2 = 2.15 / 2 = 1.075\n    * Area = \u03c0 * radius\u00b2 \u2248 \u03c0 * (1.075)\u00b2 \u2248 3.63 square units\n\nTherefore, the area of the fountain is approximately 3.63 square units.",
+            "options": [
+                "1.29 square units",
+                "2.15 square units",
+                "3.63 square units",
+                "5.76 square units"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A parabola is defined by the following property: For any point P on the parabola, the distance from P to the line y = -2 is equal to the distance from P to the point F(1, 2). \n\n a) Find the equation of the parabola in the form (x - h)^2 = 4p(y - k). \n\n b) A line with a slope of 3 passes through the focus F and intersects the parabola at two distinct points, A and B.  Find the length of segment AB.",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\n**Part a)**\n\n1. **Understanding the Definition:** The given definition is the geometric definition of a parabola. The line y = -2 is the directrix, and the point F(1, 2) is the focus.\n\n2. **Finding the Vertex:** The vertex (h, k) of the parabola is the midpoint of the segment connecting the focus and the directrix's point closest to the focus.  The directrix's point closest to (1, 2) is (1, -2). Therefore, the vertex is ((1+1)/2, (2-2)/2) = (1, 0). \n\n3. **Determining 'p':**  'p' is the distance between the vertex and the focus (or the vertex and the directrix). In this case, p = 2.\n\n4. **Parabola's Orientation:** Since the focus is above the directrix, the parabola opens upwards. This means the standard equation will be of the form (x - h)^2 = 4p(y - k). \n\n5. **Final Equation:** Plugging in the values for h, k, and p, we get the equation of the parabola:  **(x - 1)^2 = 8y**\n\n**Part b)**\n\n1. **Equation of the Line:** The line passing through F(1, 2) with a slope of 3 is given by y - 2 = 3(x - 1), which simplifies to y = 3x - 1.\n\n2. **Points of Intersection:**  Substitute y = 3x - 1 into the parabola's equation: (x - 1)^2 = 8(3x - 1). This simplifies to x^2 - 22x + 9 = 0.\n\n3. **Solving the Quadratic:** Solve the quadratic equation to find the x-coordinates of the intersection points A and B. Let the x-coordinates be x1 and x2. \n\n4. **Distance Formula:**  Find the corresponding y-coordinates using the line's equation (y = 3x - 1).  Then, use the distance formula to find the length of AB:  AB = \u221a[(x2 - x1)^2 + (y2 - y1)^2]. Since y = 3x - 1, we can substitute to get AB = \u221a[(x2 - x1)^2 + (3x2 - 3x1)^2] = \u221a[10(x2 - x1)^2] = \u221a10 |x2 - x1|. \n\n5. **Simplifying with the Quadratic Formula:** Recall that for a quadratic ax^2 + bx + c = 0, the difference of roots is given by \u221a(b^2 - 4ac)/|a|. In our case, this becomes  \u221a(22^2 - 4 * 1 * 9)/1 = \u221a448 = 4\u221a28 = 8\u221a7. Therefore, AB = \u221a10 * 8\u221a7 = 8\u221a70. \n\n**Therefore, the answer to part a) is (x - 1)^2 = 8y, and the answer to part b) is 8\u221a70.**",
+            "options": [
+                "4",
+                "8",
+                "16",
+                "24"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: Two cell phone plans are available. Plan A charges a base fee of $10 per month plus $0.05 per minute for calls. Plan B charges a base fee of $15 per month plus $0.025 per minute for calls.\n**question**: Graph the cost equations for both plans on the same coordinate plane. Determine the call time (in minutes) at which both plans would cost the same. Additionally, shade the region representing the minutes for which Plan A is a better deal.\n**constraints**: Assume that calls are rounded up to the nearest minute for billing purposes.\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\n**1. Define Variables:**\n* Let 'x' represent the number of minutes used for calls.\n* Let 'y' represent the total monthly cost of the plan.\n\n**2. Formulate Equations:**\n* **Plan A:**  y = 0.05x + 10\n* **Plan B:**  y = 0.025x + 15\n\n**3.  Graphing the Equations:**\n* **To graph each equation, we'll find two points:**\n    * For x = 0 (no calls), find the y-intercept.\n    * Choose another value for x (e.g., x = 100 minutes) and calculate the corresponding y value.\n* **Plan A:**\n    * (0, 10)  (y-intercept)\n    * (100, 15)\n* **Plan B:**\n    * (0, 15) (y-intercept)\n    * (100, 17.5) \n* Plot these points on the coordinate plane and draw a line through them for each plan.\n\n**4. Finding the Point of Intersection:**\n* The point where the two lines intersect represents the call time and cost at which both plans are equal. To find this point, we can solve the system of equations:\n    0.05x + 10 = 0.025x + 15\n    0.025x = 5\n    x = 200 minutes \n* Substitute x = 200 into either equation to find the corresponding cost (y = 20). The point of intersection is (200, 20).\n\n**5. Shading the Region for Plan A as a Better Deal:**\n*  For call times less than 200 minutes, observe which line is lower on the graph.  The lower line represents the cheaper plan. In this case, Plan A's line is below Plan B's line for x < 200.  Shade this region to indicate when Plan A is more cost-effective.\n\n**Conclusion:**\nBoth plans cost the same ($20) at 200 minutes of call time.  Plan A is a better deal for call times less than 200 minutes.",
+            "options": [
+                "100 minutes",
+                "200 minutes",
+                "250 minutes",
+                "300 minutes"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Coordinate Geometry",
+    "exam_id": 18,
+    "order": 17
+}

@@ -1,0 +1,284 @@
+{
+    "questions": [
+        {
+            "question": "A rectangular garden is being designed with a paved walkway of uniform width surrounding it. The total area of the garden plus the walkway needs to be 70 square meters. The garden itself is 7 meters long and 5 meters wide. If the quadratic equation representing the total area is given in standard form as ax\u00b2 + bx + c = 0, what is the value of 'b'?",
+            "difficulty": "medium",
+            "reasoning": "Let 'x' be the width of the walkway.\n\n1. **Dimensions of the entire area (garden + walkway):**\n    * Length = 7 meters (garden) + x meters (walkway left) + x meters (walkway right) = 7 + 2x meters\n    * Width = 5 meters (garden) + x meters (walkway top) + x meters (walkway bottom) = 5 + 2x meters\n\n2. **Area Equation:**\n    * Area = Length * Width\n    * 70 = (7 + 2x)(5 + 2x) \n\n3. **Expanding and Rearranging into Standard Form:**\n    * 70 = 35 + 14x + 10x + 4x\u00b2\n    * 0 = 4x\u00b2 + 24x - 35\n\nTherefore, the standard form of the quadratic equation is 4x\u00b2 + 24x - 35 = 0, and the value of 'b' (the coefficient of the x term) is 24.",
+            "options": [
+                "14",
+                "24",
+                "35",
+                "48"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**graph**: A parabola opening upwards with its vertex at (-1, 2) and passing through the point (0, 3).\n**question_description**: The graph above represents a parabola. Which of the following equations could represent this parabola?\n**options**: \n  - y = (x - 1)^2 + 2\n  - y = (x + 1)^2 + 2\n  - y = - (x + 1)^2 + 2\n  - y = 2(x - 1)^2 + 2\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's understanding of the vertex form of a quadratic equation and how it relates to the graphical representation of a parabola. Here's how to solve it:\n\n**1. Understanding Vertex Form:**\n   The vertex form of a quadratic equation is y = a(x - h)^2 + k, where (h, k) represents the vertex of the parabola.\n\n**2. Analyzing the Graph:**\n   * The graph shows a parabola opening upwards, indicating a positive 'a' value.\n   * The vertex is at (-1, 2). \n\n**3. Applying the Information:**\n   * We can immediately eliminate options (a) and (d) as they have the incorrect vertex coordinates.\n   * Since the parabola opens upwards, we need a positive 'a' value. This eliminates option (c).\n\n**4. The Correct Equation:**\n   * Option (b) y = (x + 1)^2 + 2 correctly reflects the vertex at (-1, 2) and a positive 'a' value, making it the correct equation for the parabola.",
+            "options": [
+                "y = (x - 1)^2 + 2",
+                "y = (x + 1)^2 + 2",
+                "y = - (x + 1)^2 + 2",
+                "y = 2(x - 1)^2 + 2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A solar panel company is designing a new panel model. The panel's surface area can be represented by the expression  $2x^2 + 7x - 15$ square centimeters. To optimize energy absorption, they need to factor this expression to determine the panel's dimensions. Determine the factored form of the expression representing the panel's length and width.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Advanced Factoring Techniques for Quadratic Expressions' as it goes beyond simple factoring. Here's how to solve it:\n\n**1. Factor by Grouping:**\n\n*  **Find two numbers that add up to 7 (the coefficient of the middle term) and multiply to -30 (the product of the coefficient of the first term and the constant term).** These numbers are 10 and -3.\n*  **Rewrite the middle term (7x) as the sum of 10x and -3x:** \n   $2x^2 + 10x - 3x - 15$ \n*  **Group the terms:**\n   $(2x^2 + 10x) + (-3x - 15)$ \n*  **Factor out the greatest common factor (GCF) from each group:**\n   $2x(x + 5) - 3(x + 5)$ \n*  **Notice that (x + 5) is a common factor. Factor it out:** \n   $(x + 5)(2x - 3)$ \n\n**Therefore, the factored form of the expression is (x + 5)(2x - 3), representing the possible dimensions of the solar panel.**",
+            "options": [
+                "(x + 5)(2x - 3)",
+                "(x - 5)(2x + 3)",
+                "(2x + 5)(x - 3)",
+                "(2x - 5)(x + 3)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A projectile is launched vertically upward from the ground with an initial velocity of 20 meters per second. The height, 'h', of the projectile above the ground after 't' seconds is given by the equation: h = -5t\u00b2 + 20t.  \n**equation**:  -5t\u00b2 + 20t = h\n**question**: How long after launch does the projectile reach a height of 15 meters?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Solving Quadratic Equations using the Quadratic Formula' subtopic of 'Quants - Quadratic Equations'.  Here's how to solve it:\n\n1. **Set up the equation:** We're given that the height (h) is 15 meters. Substitute this into the equation:\n   -5t\u00b2 + 20t = 15\n\n2. **Rearrange into standard quadratic form:**  Subtract 15 from both sides to get the equation in the standard form (ax\u00b2 + bx + c = 0):\n   -5t\u00b2 + 20t - 15 = 0\n\n3. **Identify a, b, and c:** In this equation:\n   * a = -5\n   * b = 20\n   * c = -15\n\n4. **Apply the quadratic formula:** The quadratic formula is: \n   t = (-b \u00b1 \u221a(b\u00b2 - 4ac)) / 2a\n   Substitute the values of a, b, and c:\n   t = (-20 \u00b1 \u221a(20\u00b2 - 4 * -5 * -15)) / (2 * -5)\n\n5. **Simplify and solve:** \n   t = (-20 \u00b1 \u221a(400 - 300)) / -10\n   t = (-20 \u00b1 \u221a100) / -10\n   t = (-20 \u00b1 10) / -10\n\n6. **Calculate the two possible solutions:**\n   * t1 = (-20 + 10) / -10 = -10 / -10 = 1 second\n   * t2 = (-20 - 10) / -10 = -30 / -10 = 3 seconds\n\n**Therefore, the projectile reaches a height of 15 meters at two different times: 1 second after launch (on the way up) and 3 seconds after launch (on the way down).**",
+            "options": [
+                "1 second",
+                "3 seconds",
+                "4 seconds",
+                "5 seconds"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A firework is launched vertically into the air.  Its height, *h*, in meters, above the ground after *t* seconds is given by the equation *h* = -4.9*t*<sup>2</sup> + 39.2*t*. A drone is flying nearby, its height also modeled by a quadratic equation *h* = 2*t*<sup>2</sup> - 8*t + 14.\n**task**: Determine the time (in seconds) when the firework and the drone are at the same height.\n**equations**: \n  - h = -4.9t<sup>2</sup> + 39.2t\n  - h = 2t<sup>2</sup> - 8t + 14\n",
+            "difficulty": "medium",
+            "reasoning": "This question belongs to the 'Systems of Quadratic Equations' subtopic within 'Quants - Quadratic Equations'. Here's how to solve it:\n\n**1. Set the Equations Equal**\n\nSince we want to find when the heights are equal, set the two equations equal to each other:\n\n-4.9t<sup>2</sup> + 39.2t = 2t<sup>2</sup> - 8t + 14 \n\n**2. Rearrange into Standard Quadratic Form**\n\nMove all terms to one side to get a standard quadratic equation:\n\n6.9t<sup>2</sup> - 47.2t + 14 = 0\n\n**3. Solve for 't' Using the Quadratic Formula**\n\nThis equation doesn't factor easily, so use the quadratic formula to solve for *t*:\n\nt = (-b \u00b1 \u221a(b<sup>2</sup> - 4ac)) / 2a\n\nWhere a = 6.9, b = -47.2, and c = 14\n\n**4. Calculate the Solutions**\n\nSubstitute the values into the quadratic formula and calculate:\n\nt = (47.2 \u00b1 \u221a((-47.2)<sup>2</sup> - 4 * 6.9 * 14)) / (2 * 6.9)\n\nt \u2248 0.32 seconds or t \u2248 6.52 seconds\n\n**Therefore, the firework and the drone are at the same height at approximately 0.32 seconds and 6.52 seconds after launch.**",
+            "options": [
+                "0.32 seconds",
+                "6.52 seconds",
+                "0.32 seconds and 6.52 seconds",
+                "1 second"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A gardener is designing a parabolic archway for a garden entrance. The archway is represented by the equation \\(y = -x^2 + 6x - 5\\), where \\(x\\) represents the horizontal distance (in feet) from the left edge of the archway and \\(y\\) represents the height (in feet) above the ground. Determine the coordinates \\((x, y)\\) of the highest point of the archway.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Finding the Vertex of a Parabola' topic as it requires determining the highest point of a parabolic archway represented by a quadratic equation.\n\nHere's how to solve the problem:\n\n1. **Understanding the Problem:** We are given the equation of a parabola that models an archway. The vertex of this parabola represents the highest point of the archway.\n\n2. **Finding the Vertex:** The x-coordinate of the vertex can be found using the formula \\(x = -b / 2a\\), where 'a' and 'b' are the coefficients in the standard quadratic equation \\(ax^2 + bx + c = 0\\). In our case, \\(a = -1\\) and \\(b = 6\\). \n   * Substituting these values, we get: \\(x = -6 / (2 * -1) = 3\\)\n\n3. **Finding the y-coordinate:** Substitute the value of \\(x = 3\\) back into the original equation to find the corresponding y-coordinate (the height at the vertex): \n   *  \\(y = -(3)^2 + 6(3) - 5 = -9 + 18 - 5 = 4\\)\n\n4. **The Solution:** Therefore, the vertex of the parabola, which represents the highest point of the archway, is at the coordinates \\((3, 4)\\). This means the highest point is 3 feet from the left edge of the archway and has a height of 4 feet.",
+            "options": [
+                "(3, 4)",
+                "(4, 3)",
+                "(0, 5)",
+                "(6, -5)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A fireworks display company is designing a new firework. The trajectory of the firework is modeled by the quadratic function h(t) = -5t\u00b2 + 40t + 2, where h(t) represents the height of the firework in meters and t represents the time in seconds after launch. To ensure the safety of the spectators and maximize the visual impact, the company wants to detonate the firework at its highest point. Determine the maximum height the firework will reach.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Maximum and Minimum Values of Quadratic Expressions' as it requires finding the maximum value of a quadratic function representing the height of a firework. \n\nHere's how to solve the problem:\n\n**1. Understanding the Problem:**\n\nThe given quadratic function, h(t) = -5t\u00b2 + 40t + 2, represents a parabola opening downwards (since the coefficient of the t\u00b2 term is negative). The vertex of this parabola represents the highest point of the firework's trajectory.\n\n**2. Finding the Vertex:**\n\nThe x-coordinate of the vertex can be found using the formula: t = -b/(2a), where 'a' and 'b' are the coefficients of the quadratic equation. In this case, a = -5 and b = 40.\n\nTherefore, t = -40 / (2 * -5) = 4 seconds. This means the firework will reach its maximum height after 4 seconds.\n\n**3. Calculating the Maximum Height:**\n\nTo find the maximum height, substitute the value of t = 4 seconds back into the original equation:\n\nh(4) = -5(4)\u00b2 + 40(4) + 2 = -80 + 160 + 2 = 82 meters\n\n**Therefore, the maximum height the firework will reach is 82 meters.**",
+            "options": [
+                "4 seconds",
+                "82 meters",
+                "40 meters",
+                "160 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A local bakery is trying to optimize the pricing of their best-selling cookie. They notice that their weekly profit, 'P', in dollars, can be modeled by the quadratic inequality  P \u2264 -2x\u00b2 + 24x - 40, where 'x' is the price of each cookie in dollars.  What price range should the bakery set for their cookies to ensure a weekly profit of at least $32?",
+            "difficulty": "medium",
+            "reasoning": "This problem falls under the 'Solving Quadratic Inequalities' subtopic within 'Quants - Quadratic Equations' because it requires solving a quadratic inequality to find a valid range for the price of a cookie. \n\nHere's how to solve it:\n\n1. **Set up the inequality:** We're given that the profit should be at least $32, so we have the inequality: \n   -2x\u00b2 + 24x - 40 \u2265 32\n\n2. **Simplify and factor:** Subtract 32 from both sides to get a standard quadratic inequality form:\n   -2x\u00b2 + 24x - 72 \u2265 0\n   Divide both sides by -2 (remembering to flip the inequality sign):\n   x\u00b2 - 12x + 36 \u2264 0\n   Factor the quadratic expression:\n   (x - 6)(x - 6) \u2264 0\n\n3. **Find the critical points:** The critical points are the values of 'x' where the expression equals zero. In this case, we have a double root at x = 6.\n\n4. **Test intervals:** Since the parabola opens upwards (the coefficient of x\u00b2 is positive), the expression is less than or equal to zero *between* the roots. However, we have a double root, meaning the expression is only equal to zero at x = 6.\n\n5. **Interpret the solution:**  The bakery should price their cookies at $6 each to achieve a weekly profit of exactly $32. Any deviation from this price will result in a profit less than $32.",
+            "options": [
+                "$4",
+                "$8",
+                "$6",
+                "$10"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A farmer wants to fence off a rectangular area of land along a river. He has 100 meters of fencing and will use the river as one side of the rectangle, so he only needs fencing for the other three sides. What dimensions of the rectangle will maximize the enclosed area?",
+            "difficulty": "medium",
+            "reasoning": "This problem falls under the topic 'Maximum and Minimum Values of Quadratic Expressions' within 'Quants - Quadratic Equations'. Here's why and how to solve it:\n\n**1. Setting up the problem:**\n\n* Let the length of the rectangle (parallel to the river) be 'l' meters.\n* Let the width of the rectangle (perpendicular to the river) be 'w' meters.\n\n**2. Formulating the equations:**\n\n* **Perimeter:** The farmer uses fencing for three sides, so  l + 2w = 100 \n* **Area:** The area of a rectangle is length times width, so A = l * w\n\n**3. Expressing Area as a quadratic function:**\n\n* Solve the perimeter equation for 'l':  l = 100 - 2w\n* Substitute this value of 'l' into the area equation: A = (100 - 2w) * w\n* Simplify: A = 100w - 2w\u00b2 \n\nNow we have a quadratic equation where the area (A) is a function of the width (w): A(w) = -2w\u00b2 + 100w \n\n**4. Finding the maximum area:**\n\n* The graph of this quadratic equation is a parabola opening downwards (because the coefficient of the w\u00b2 term is negative).\n* The maximum point of the parabola represents the maximum area and the corresponding width.\n* We can find the width that maximizes the area using the vertex formula for a parabola: w = -b / 2a  (where a and b are the coefficients in the quadratic equation)\n\n* In our equation A(w) = -2w\u00b2 + 100w: a = -2, b = 100\n* Substitute these values into the vertex formula: w = -100 / (2 * -2) = 25 meters\n\n**5. Finding the length:**\n\n* Substitute the value of w back into the perimeter equation: l + 2(25) = 100\n* Simplify and solve for l: l = 50 meters\n\n**6. Conclusion:**\n\nThe dimensions that maximize the enclosed area are length = 50 meters and width = 25 meters. The maximum area is 50 * 25 = 1250 square meters.",
+            "options": [
+                "100 meters",
+                "25 meters",
+                "50 meters",
+                "1250 square meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Type**: Solve for x\n**Context**: A farmer wants to create a rectangular pen for her goats. She has 100 meters of fencing and wants the length of the pen to be 5 meters longer than twice its width.  To figure out the dimensions, she uses the following equation (where 'x' represents the width of the pen):\n**Equation**: 2x\u00b2 + 15x - 50 = 0 \n**Instructions**: Solve the equation by factoring to find the possible widths (x) of the goat pen.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Solving Quadratic Equations by Factoring' topic as it requires factoring a quadratic expression to find the solution. Here's how to solve it:\n\n**1. Factor the quadratic expression:**\n\n* Find two numbers that add up to 15 (the coefficient of the x term) and multiply to -100 (the product of the coefficient of the x\u00b2 term and the constant term). These numbers are 20 and -5.\n* Rewrite the equation by splitting the middle term: 2x\u00b2 + 20x - 5x - 50 = 0\n* Factor by grouping: 2x(x + 10) - 5(x + 10) = 0\n* Factor out the common binomial: (x + 10)(2x - 5) = 0 \n\n**2. Solve for x:**\n\n* Set each factor equal to zero:\n    * x + 10 = 0  \n    * 2x - 5 = 0\n* Solve for x in each equation: \n    * x = -10\n    * x = 2.5\n\n**3. Determine the valid solution:**\n\n* Since the width cannot be negative, discard x = -10. \n* Therefore, the only possible width of the pen is x = 2.5 meters.\n\nThis solution demonstrates the process of factoring a quadratic equation with a leading coefficient other than 1 and applying it to a real-world scenario. The problem requires a good understanding of factoring techniques and the ability to interpret the solution in the given context, making it a medium-difficulty question.",
+            "options": [
+                "10 meters",
+                "2.5 meters",
+                "5 meters",
+                "-10 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**problemStatement**: A student is studying quadratic equations and comes across the following equation:  k*x\u00b2 - 10x + 25 = 0.  For what value(s) of k will this equation have exactly one real root?\n**instructions**: Determine the value(s) of k that satisfy the given condition.\n",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the student's understanding of the discriminant of a quadratic equation and its relation to the nature of roots. \n\n**Understanding the Discriminant**\n\nThe discriminant (\u0394) of a quadratic equation in the standard form ax\u00b2 + bx + c = 0 is given by:\n\n\u0394 = b\u00b2 - 4ac\n\nThe discriminant tells us about the nature of the roots:\n* **\u0394 > 0:** The equation has two distinct real roots.\n* **\u0394 = 0:** The equation has exactly one real root (a double root).\n* **\u0394 < 0:** The equation has no real roots (two complex roots).\n\n**Solving the Problem**\n\n1. **Identify the coefficients:** In the given equation, k*x\u00b2 - 10x + 25 = 0, we have: \na = k, b = -10, and c = 25. \n\n2. **Apply the condition for one real root:**  For the equation to have exactly one real root, the discriminant must be equal to zero (\u0394 = 0). \n\n3. **Substitute and solve for k:** Substitute the values of a, b, and c into the discriminant formula and set it equal to zero:\n\n\u0394 = (-10)\u00b2 - 4 * k * 25 = 0\n\nSimplifying the equation:\n\n100 - 100k = 0\n\n100k = 100\n\nk = 1\n\n**Therefore, the equation will have exactly one real root when k = 1.**",
+            "options": [
+                "0",
+                "1",
+                "2",
+                "3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A farmer wants to build a rectangular pen for his sheep. He has 100 meters of fencing to use for three sides of the pen, as a stone wall will form the fourth side. He wants to maximize the area of the pen to give his sheep as much space as possible.\n**question**: What dimensions should the farmer use for the pen to maximize the enclosed area, and what is the maximum area?\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis problem falls under 'Applications of Quadratic Equations in Real-World Problems' as it involves finding the maximum value of a quadratic function representing the area of the pen. \n\nHere's how to solve it:\n\n**1. Set up the equations:**\n\n* Let the width of the pen be 'w' meters.\n* The length of the pen, using the fencing, will be '100 - 2w' meters (since 100 meters of fencing is used for three sides).\n* The area 'A' of a rectangle is length times width:  A = w(100 - 2w) = 100w - 2w\u00b2\n\n**2.  Find the maximum area:**\n\n* The equation for the area 'A' is a quadratic equation (shaped like a parabola), and its graph opens downwards (because of the -2w\u00b2 term).  The maximum point of this parabola represents the maximum area and occurs at the vertex.\n* The x-coordinate of the vertex of the parabola represented by the equation  ax\u00b2 + bx + c  is given by -b/2a. In our equation, a = -2 and b = 100.\n* Therefore, the width 'w' that maximizes the area is: w = -100 / (2 * -2) = 25 meters.\n\n**3. Calculate the length and maximum area:**\n\n* Length (l) = 100 - 2w = 100 - 2(25) = 50 meters.\n* Maximum area (A) = l * w = 50 * 25 = 1250 square meters. \n\n**Therefore, the farmer should build the pen with a width of 25 meters and a length of 50 meters to maximize the enclosed area, which will be 1250 square meters.**",
+            "options": [
+                "25 meters by 50 meters",
+                "50 meters by 25 meters",
+                "1250 square meters",
+                "1000 square meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Problem Statement:** A rectangular garden has a length that is 3 meters longer than twice its width. If the area of the garden is 54 square meters, find the dimensions of the garden using the completing the square method. \n\n**Instructions:**\n1. Define variables for the width and length of the garden.\n2. Set up an equation representing the area of the garden in terms of these variables.\n3. Solve the resulting quadratic equation for the width of the garden using the completing the square method.\n4. Calculate the length of the garden.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Completing the Square: Method and Applications' subtopic within 'Quants - Quadratic Equations'. It requires setting up a quadratic equation based on a word problem and then solving it using the completing the square method, integrating geometry and algebra. \n\n**Solution:**\n\n1. **Define Variables:**\n   * Let 'w' represent the width of the garden (in meters).\n   * Let 'l' represent the length of the garden (in meters).\n\n2. **Set up the Equation:**\n   * We know l = 2w + 3 (length is 3 meters longer than twice the width)\n   * We know the area is length * width: l * w = 54 \n   * Substitute the first equation into the second equation: (2w + 3) * w = 54\n\n3. **Solve for 'w' using Completing the Square:**\n   * Expand the equation: 2w\u00b2 + 3w = 54\n   * Move the constant term to the right side: 2w\u00b2 + 3w - 54 = 0\n   * Divide the equation by 2: w\u00b2 + (3/2)w - 27 = 0 \n   * To complete the square, take half of the coefficient of the 'w' term (which is 3/2), square it ((3/4)\u00b2 = 9/16), and add it to both sides of the equation:\n      w\u00b2 + (3/2)w + 9/16 = 27 + 9/16\n   * Factor the left side as a perfect square trinomial: (w + 3/4)\u00b2 = 441/16\n   * Take the square root of both sides: w + 3/4 = \u00b1\u221a(441/16) = \u00b121/4\n   * Solve for 'w': \n      * w = (21/4) - 3/4 = 18/4 = 9/2  or\n      * w = (-21/4) - 3/4 = -24/4 = -6\n   * Since the width cannot be negative, discard w = -6.\n\n4. **Calculate 'l':**\n   * Use the equation l = 2w + 3 and substitute w = 9/2\n   * l = (2 * 9/2) + 3 = 9 + 3 = 12\n\n**Therefore, the dimensions of the garden are width = 9/2 meters (or 4.5 meters) and length = 12 meters.**",
+            "options": [
+                "Completing the Square: Method and Applications",
+                "Quadratic Equations: Solving Techniques",
+                "Word Problems: Quadratic Equations",
+                "Geometry: Area and Perimeter"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A farmer wants to build a square enclosure for his sheep. He already has a fence that's 20 meters long that he'll use for one side of the square. To complete the enclosure, he needs to buy additional fencing. He can afford to buy 32 meters of fencing.  Can he build a square enclosure that uses all the available fencing (the existing 20m plus the new 32m) ? If so, what will be the area of the square enclosure?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem using the method of completing the square:\n\n**1. Set up the equation:**\n\n* Let 's' be the length of one side of the square.\n* The total fencing the farmer has is 20m + 32m = 52m\n* The perimeter of the square must equal the total fencing: 4s = 52 \n* Simplify the equation: s = 13\n\n**2. Check if the solution is valid:**\n\n* We found that the side length of the square would be 13 meters if we used all the available fencing.\n* This means the farmer can build a square enclosure with the available fencing materials.\n\n**3. Calculate the area:**\n\n* Area of a square = side * side\n* Area = 13m * 13m = 169 sq meters\n\n**Answer:** Yes, the farmer can build a square enclosure with the available fencing. The area of the square enclosure would be 169 square meters.",
+            "options": [
+                "No",
+                "Yes, 13 meters",
+                "Yes, 169 square meters",
+                "Yes, 52 square meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A projectile's height (h) in feet above the ground after t seconds is modeled by the equation h(t) = -16t\u00b2 + 64t + 80.  Determine the maximum height the projectile reaches during its flight and the time it takes to reach that maximum height.",
+            "difficulty": "medium",
+            "reasoning": "This question tests the application of finding the vertex of a parabola in the context of a physics problem. The vertex of the parabola represents the highest point the projectile reaches. \n\n**Step 1: Identify the coefficients**\nThe equation is in standard quadratic form: h(t) = at\u00b2 + bt + c, where a = -16, b = 64, and c = 80.\n\n**Step 2: Find the x-coordinate (t-coordinate in this case) of the vertex**\nThe x-coordinate of the vertex is given by -b/2a. Substituting the values, we get:\nt = -64 / (2 * -16) = 2 seconds. \n\n**Step 3: Find the y-coordinate (h-coordinate) of the vertex**\nSubstitute the value of t = 2 back into the original equation to find the maximum height:\nh(2) = -16(2)\u00b2 + 64(2) + 80 = -64 + 128 + 80 = 144 feet\n\n**Therefore, the projectile reaches a maximum height of 144 feet after 2 seconds.**",
+            "options": [
+                "144 feet",
+                "2 seconds",
+                "144 seconds",
+                "2 feet"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "For what values of 'k' does the inequality 2x\u00b2 - (k+1)x + 8 < 0 have a solution set that represents a finite interval on the number line?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Solving Quadratic Inequalities' as it requires finding the values of 'k' that result in a specific solution type for the inequality.\n\nHere's how to solve it:\n\n**1. Understanding the Problem:**\n\nA quadratic inequality represents a parabola opening either upwards or downwards when graphed.  A 'finite interval' solution means the parabola dips below the x-axis (for 'less than' inequalities) for a limited range of x-values.\n\n**2. Conditions for a Finite Interval Solution:**\n\nFor a quadratic expression 'ax\u00b2 + bx + c', a finite interval solution for 'ax\u00b2 + bx + c < 0' exists when:\n    * a > 0 (parabola opens upwards)\n    * The discriminant (b\u00b2 - 4ac) is positive (meaning the quadratic equation has two distinct real roots).\n\n**3. Applying to Our Problem:**\n\n* In our case, a = 2 (which is greater than 0).\n* b = -(k+1)\n* c = 8\n\nWe need to find 'k' such that the discriminant is positive:\n\n    (k+1)\u00b2 - 4 * 2 * 8 > 0 \n    k\u00b2 + 2k + 1 - 64 > 0\n    k\u00b2 + 2k - 63 > 0\n    (k+9)(k-7) > 0\n\n**4. Solving the Inequality:**\n\nThe inequality (k+9)(k-7) > 0 holds when either:\n    * k > 7 \n    * k < -9\n\n**Therefore, the solution set for 'k' that results in a finite interval solution for the given inequality is k \u2208 (-\u221e, -9) U (7, \u221e).**",
+            "options": [
+                "(-\u221e, -9)",
+                "(7, \u221e)",
+                "(-\u221e, -9) U (7, \u221e)",
+                "(-9, 7)"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Determine the quadratic equation with integer coefficients whose roots are \\(\\frac{2}{3}\\) and \\(-\\sqrt{2}\\).",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Forming Quadratic Equations from Given Roots' subtopic within 'Quants - Quadratic Equations'. It's of medium (7/10) difficulty as it involves a fractional root and a surd, demanding a good grasp of quadratic concepts.\n\nHere's a step-by-step solution:\n\n**1. Understanding the Relationship between Roots and Equations:**\n\n   If a quadratic equation has roots \\( \u03b1 \\) and \\( \u03b2 \\), it can be written in the form:\n   \\( (x - \u03b1)(x - \u03b2) = 0 \\)\n\n**2. Applying the Roots:**\n\n   In our case, \\( \u03b1 = \\frac{2}{3} \\) and \\( \u03b2 = -\\sqrt{2} \\). Substituting these into the equation:\n   \\( (x - \\frac{2}{3})(x + \\sqrt{2}) = 0 \\)\n\n**3. Expanding and Simplifying:**\n\n   Expanding the equation, we get:\n   \\( x^2 + \\sqrt{2}x - \\frac{2}{3}x - \\frac{2\\sqrt{2}}{3} = 0 \\)\n\n**4. Achieving Integer Coefficients:**\n\n   To eliminate fractions, multiply the entire equation by 3:\n   \\( 3x^2 + 3\\sqrt{2}x - 2x - 2\\sqrt{2} = 0 \\)\n\n   This gives us the quadratic equation with integer coefficients: \n   \\( 3x^2 + (3\\sqrt{2} - 2)x - 2\\sqrt{2} = 0 \\) \n\nTherefore, the correct answer is \\( 3x^2 + (3\\sqrt{2} - 2)x - 2\\sqrt{2} = 0 \\).",
+            "options": [
+                "3x^2 + (3\u221a2 - 2)x - 2\u221a2 = 0",
+                "3x^2 + 2x - 2\u221a2 = 0",
+                "x^2 + (\u221a2 - 2/3)x - 2\u221a2/3 = 0",
+                "x^2 + (\u221a2 - 2)x - 2\u221a2 = 0"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A fireworks display company is designing a new firework. The trajectory of the firework is modeled by a quadratic function. The firework is launched from ground level and its height (h) in meters, t seconds after launch, is described by the equation:\n**equation**: h(t) = -5t\u00b2 + 40t\n**question**: Describe the transformations applied to the parent function, y = x\u00b2, to achieve the graph of the firework's height function. Additionally, determine the time it takes for the firework to reach its maximum height and find the maximum height itself.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Quadratic Functions: Domain, Range, and Transformations' and sits at a medium (7/10) difficulty level for several reasons:\n\n**1. Transformations:**\n* Students need to analyze the given equation and identify the transformations applied to the basic quadratic function y = x\u00b2. This involves recognizing the vertical stretch by a factor of -5 (leading to reflection across the x-axis) and a vertical shift upwards by 0 units. \n\n**2. Vertex Interpretation:**\n* The question requires finding the vertex of the parabola, which represents the maximum height of the firework and the time it takes to reach it. This involves understanding the relationship between the vertex's coordinates and the maximum/minimum values of a quadratic function.\n\n**Solution:**\n\n**1. Transformations:**\n   * **Vertical Stretch/Reflection:** The coefficient -5 in front of the t\u00b2 term indicates a vertical stretch by a factor of 5 and a reflection across the x-axis compared to y=x\u00b2.\n   * **Vertical Shift:** There's no constant term added to or subtracted from the equation, implying no vertical shift. \n\n**2. Finding the Vertex:**\n   *  The vertex of the parabola represents the maximum point. We can find the vertex's x-coordinate (which represents time 't' in this case) using the formula: t = -b/(2a), where 'a' and 'b' are the coefficients in the quadratic equation.\n   * In our equation, a = -5 and b = 40. \n   * Therefore, t = -40/(2 * -5) = 4 seconds. This is the time when the firework reaches its maximum height.\n   *  To find the maximum height, substitute t = 4 seconds back into the original equation:\n      h(4) = -5(4)\u00b2 + 40(4) = -80 + 160 = 80 meters.\n\n**Therefore, the transformations are a vertical stretch by a factor of 5 and a reflection across the x-axis. The firework reaches a maximum height of 80 meters after 4 seconds.**",
+            "options": [
+                "40 meters",
+                "4 seconds",
+                "80 meters",
+                "5 seconds"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "For what range of integer values of 'k' does the inequality  -2x\u00b2 + 5x + k < 3 hold true for exactly 7 distinct integer values of 'x'?",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThis question blends quadratic inequalities with the concept of finding integer solutions, demanding a strategic approach.\n\n1. **Standard Form:** Start by bringing the inequality to standard quadratic form:\n\n   -2x\u00b2 + 5x + (k - 3) < 0\n\n2. **Critical Points:** Consider the corresponding quadratic equation -2x\u00b2 + 5x + (k - 3) = 0.  The solutions of this equation represent the points where the parabola intersects the x-axis.  We need to find the values of 'k' for which there are 7 integers between these roots.\n\n3. **Visualizing:** Imagine the parabola. Since the coefficient of x\u00b2 is negative, it opens downwards. For the inequality to hold true for exactly 7 integer values, the parabola needs to intersect the x-axis at points such that there are 7 integers between the points of intersection. \n\n4. **Factoring and Integer Solutions:** The key is to realize that for the quadratic to have integer solutions, its discriminant must be a perfect square. The discriminant (\u0394) is given by:\n\n   \u0394 = b\u00b2 - 4ac = 5\u00b2 - 4(-2)(k-3) = 25 + 8k - 24 = 8k + 1 \n\n   We need to find values of 'k' such that 8k + 1 is a perfect square and the parabola encloses 7 integers.\n\n5. **Testing Values:**  We start testing integer values of 'k' to find suitable values that result in a perfect square for the discriminant and satisfy the 7 integer solution criteria:\n\n   - For 'k' = 1, \u0394 = 9 (perfect square), but the parabola won't enclose 7 integers\n   - Continue testing values of 'k' systematically (k = 3, k = 6, etc.)\n\n6. **Solution:** Through trial and error, we discover that when k = 10, the discriminant \u0394 = 81, which is a perfect square. Upon solving the quadratic equation, we find the roots to be x = -1.5 and x = 4. The integers -1, 0, 1, 2, 3, 4, and 5 satisfy the inequality, giving us exactly 7 integer solutions.\n\n   Therefore, the only integer value of 'k' that satisfies the given conditions is k = 10. \n",
+            "options": [
+                "1",
+                "10",
+                "15",
+                "20"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Determine the quadratic equation whose roots are \\(3\\sqrt{5} + 2\\) and \\(3\\sqrt{5} - 2\\), given that the coefficients of the equation are integers and the coefficient of the linear term is a multiple of 6.",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThis question dives deep into the relationship between roots and coefficients of a quadratic equation, demanding a good understanding of surds and factorization. \n\n**1. Understanding the Relationship**\n\nWe know that for a quadratic equation in the standard form of  *ax\u00b2 + bx + c = 0*, the following holds true if \u03b1 and \u03b2 are its roots:\n\n* **Sum of roots:** \u03b1 + \u03b2 = -b/a\n* **Product of roots:** \u03b1\u03b2 = c/a\n\n**2. Applying the Formulae**\n\nLet's apply these relationships to our given roots:\n\n* **Sum of roots:** (3\u221a5 + 2) + (3\u221a5 - 2) = 6\u221a5\n* **Product of roots:** (3\u221a5 + 2)(3\u221a5 - 2) = (3\u221a5)\u00b2 - 2\u00b2 = 45 - 4 = 41\n\n**3. Constructing the Equation**\n\nWe now know that -b/a = 6\u221a5 and c/a = 41.  To have integer coefficients, 'a' must be a factor of the coefficient of \u221a5 in the sum of roots. Since the coefficient of the linear term ('b') needs to be a multiple of 6, and -b/a = 6\u221a5, we can deduce: \n\n* a = -6 (This ensures 'b' is a multiple of 6)\n* b = -6 * 6\u221a5 = -36\u221a5\n* c = 41 * a = 41 * -6 = -246 \n\n**4. Final Equation**\n\nSubstituting these values into the standard form, we get the quadratic equation:\n\n**-6x\u00b2 - 36\u221a5x - 246 = 0**",
+            "options": [
+                "6x\u00b2 + 36\u221a5x + 246 = 0",
+                "-6x\u00b2 - 36\u221a5x - 246 = 0",
+                "6x\u00b2 - 36\u221a5x - 246 = 0",
+                "-6x\u00b2 + 36\u221a5x - 246 = 0"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A mischievous squirrel knocks a flowerpot off a balcony, sending it plummeting towards the sidewalk below. The flowerpot's height (h) above the ground in meters, t seconds after it starts falling, can be modeled by the equation:  h(t) = -4.9t\u00b2 + vt + 3.  A witness observes that the flowerpot passes by a window 2 meters above the ground exactly 1 second after it begins to fall.  Determine the initial velocity (v) of the flowerpot at the moment it was knocked off the balcony.",
+            "difficulty": "hard",
+            "reasoning": "This problem falls under the subtopic 'Understanding the Standard Form of Quadratic Equations (ax\u00b2 + bx + c = 0)' and sits within the broader topic of 'Quants - Quadratic Equations'.\n\nHere's a step-by-step solution:\n\n1. **Understand the Equation:** The equation h(t) = -4.9t\u00b2 + vt + 3 is in standard quadratic form, where:\n    * -4.9t\u00b2 represents the effect of gravity on the flowerpot's height.\n    * vt represents the initial upward velocity of the flowerpot multiplied by the time elapsed.\n    * 3 represents the initial height of the flowerpot (the balcony height).\n\n2. **Use the Given Information:** We know that the flowerpot is at a height of 2 meters (h(t) = 2) when t = 1 second.  Substitute these values into the equation:\n    * 2 = -4.9(1)\u00b2 + v(1) + 3\n\n3. **Simplify and Solve for 'v':**\n    * 2 = -4.9 + v + 3\n    * 2 = v - 1.9\n    * v = 2 + 1.9\n    * v = 3.9 meters per second\n\nTherefore, the initial velocity (v) of the flowerpot was 3.9 meters per second.\n\n**Options:**\n\n* a) 1.9 meters per second\n* b) 2.0 meters per second\n* c) 3.9 meters per second\n* d) -1.9 meters per second\n\n**Correct Option:** c) 3.9 meters per second ",
+            "options": [
+                "1.9 meters per second",
+                "2.0 meters per second",
+                "3.9 meters per second",
+                "-1.9 meters per second"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A video game developer is designing a parabolic trajectory for a firework launched in their game. The height of the firework (in pixels) after 't' seconds is given by the function h(t) = -2(t - 3)^2 + 100.  Due to limitations in the game engine, the firework can only be displayed on-screen within a height range of 50 pixels to 90 pixels.  Determine the time interval during which the firework will be visible on-screen.",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Quadratic Functions: Domain, Range, and Transformations' topic as it involves analyzing a quadratic function representing a parabolic trajectory. It requires understanding transformations (shifting, stretching) and their impact on the function's range. \n\nHere's a step-by-step solution:\n\n1. **Identify Transformations:** The function h(t) = -2(t - 3)^2 + 100 is a transformation of the basic quadratic function f(t) = t^2.\n    * -2 coefficient: Reflects the parabola across the x-axis and stretches it vertically by a factor of 2.\n    * (t - 3): Shifts the parabola 3 units to the right.\n    * +100: Shifts the parabola 100 units up.\n\n2. **Visualize the Parabola:**  Imagine a basic parabola. The transformations indicate it's flipped, stretched vertically, and shifted right and up.\n\n3. **Find Time Intervals for Visible Height:** We need to find when the height, h(t), is between 50 and 90 pixels.\n    * **Lower Bound (50 pixels):** Solve the equation -2(t - 3)^2 + 100 = 50 \n       *  -2(t - 3)^2 = -50\n       *  (t - 3)^2 = 25\n       *  t - 3 = \u00b15 \n       *  t = 8 or t = -2 (We discard t = -2 as time cannot be negative.)\n    * **Upper Bound (90 pixels):** Solve -2(t - 3)^2 + 100 = 90\n       * -2(t - 3)^2 = -10\n       * (t - 3)^2 = 5\n       * t - 3 = \u00b1\u221a5\n       * t = 3 + \u221a5  or t = 3 - \u221a5\n\n4. **Time Interval:** Combining the solutions, the firework is visible between t = 3 - \u221a5 seconds and t = 3 + \u221a5 seconds, and also between t = 8 seconds and the time it takes to reach the ground after the second crossing of 90 pixels. Since the question asks for the interval where it's visible between 50 and 90 pixels, the final answer is **3 - \u221a5  \u2264 t \u2264 3 + \u221a5**\n\nThis question is challenging due to the required understanding of transformations, solving quadratic inequalities, and interpreting the results within the context of the problem.",
+            "options": [
+                "3 - \u221a5  \u2264 t \u2264 3 + \u221a5",
+                "3 - \u221a5  \u2264 t \u2264 8",
+                "3 + \u221a5  \u2264 t \u2264 8",
+                "t \u2264 3 - \u221a5  or  t \u2265 3 + \u221a5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A financial analyst is modeling the growth of a particular stock option using a quadratic equation. The expected profit, P, in thousands of dollars, is given by the equation:  \n\n -2.5P\u00b2 + 15P - 17.5 = -k,  \n\nwhere k represents a constant market adjustment factor.  Using the method of completing the square, determine the value(s) of P, in terms of k, that would result in a profit of zero (P = 0). Express your answer in the simplest form: a \u00b1 b\u221a(ck + d), where a, b, c, and d are integers or simplified fractions.",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning: \n\nThis question combines several challenging aspects to thoroughly test the understanding of completing the square:\n\n1. **Decimal Coefficients:** The presence of -2.5 as the leading coefficient increases the complexity of the calculations. \n2. **Contextual Application:** The problem is embedded in a financial scenario requiring the student to understand the meaning of zero profit and its relationship to the quadratic equation.\n3. **Non-Standard Form:** The equation needs to be rearranged first, which adds an extra step.\n4. **Solution Involving k:**  The solution is not a numerical value but an expression involving the constant k, testing the student's ability to work with parameters.\n5. **Specific Form Requirement:** The answer needs to be expressed in a specific radical form, further assessing algebraic manipulation skills.\n\n## Solution:\n\n**Step 1: Set P to zero and rearrange the equation:**\nSince we're looking for the values of P where the profit is zero, we substitute P = 0: \n-2.5(0)\u00b2 + 15(0) - 17.5 = -k \nThis simplifies to -17.5 = -k, or k = 17.5 \nNow, substitute this value of k back into the original equation and set P to zero to solve for the values of P that give zero profit:\n-2.5P\u00b2 + 15P - 17.5 = -17.5\nSimplifying, we get:\n-2.5P\u00b2 + 15P = 0\n\n**Step 2:  Divide by the leading coefficient:**\nTo complete the square, we need the coefficient of the P\u00b2 term to be 1. Divide both sides of the equation by -2.5:\nP\u00b2 - 6P = 0\n\n**Step 3:  Complete the square:**\nTake half of the coefficient of the P term (-6), square it ((-6/2)\u00b2 = 9), and add it to both sides of the equation:\nP\u00b2 - 6P + 9 = 0 + 9\n\n**Step 4: Factor the left side and simplify the right side:**\nThe left side now forms a perfect square trinomial: \n(P - 3)\u00b2 = 9\n\n**Step 5:  Solve for P:**\nTake the square root of both sides:\nP - 3 = \u00b1\u221a9\nP - 3 = \u00b13\n\n**Step 6: Isolate P:**\nP = 3 \u00b1 3\n\n**Therefore, the values of P that would result in a profit of zero are P = 0 and P = 6.**\n\n**Expressing the answer in the required form a \u00b1 b\u221a(ck + d), although not directly applicable here since we get integer solutions, would involve recognizing that 9 can be expressed as \u221a(9 * 1) = 3\u221a(1 * 17.5 - 16.5). This gives us:**\n\nP = 3 \u00b1 3\u221a(1 * 17.5 - 16.5) \n\nThis elaborate form, while not strictly necessary for the specific solutions, reinforces the understanding of the required format and demonstrates how the solution could be expressed with the constant k if it were part of the radical.",
+            "options": [
+                "0 and 6",
+                "3 \u00b1 \u221a(17.5 - 16.5)",
+                "3 \u00b1 3\u221a(17.5 - 16.5)",
+                "3 \u00b1 3\u221a(17.5)"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Quadratic Equations",
+    "exam_id": 10,
+    "order": 0
+}

@@ -1,0 +1,452 @@
+{
+    "questions": [
+        {
+            "question": "**Difficulty**: Easy (5/10)\n**Question Type**: Multiple Choice\n**Topic**: Exponents and Roots\n**Description**: What is the value of 4 raised to the power of 3 (represented as 4^3)?\n**Example**: a) 12 \nb) 24 \nc) 64 \nd) 128\n",
+            "difficulty": "easy",
+            "reasoning": "The expression 4^3 means multiplying 4 by itself three times. \n\nStep 1: 4 * 4 = 16\nStep 2: 16 * 4 = 64\n\nTherefore, 4 raised to the power of 3 is 64.",
+            "options": [
+                "12",
+                "24",
+                "64",
+                "128"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Problem Statement**: A baker had 72 cookies and wanted to divide them equally into boxes. If each box can hold 9 cookies,\n**Question**:  how many boxes will the baker need?\n**Difficulty Level**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "The question falls under 'Basic Operations (Addition, Subtraction, Multiplication, Division)' as it involves a simple division operation.\n\nTo find out how many boxes the baker needs, we perform the following calculation:\n\nTotal cookies / Cookies per box = Number of boxes\n72 / 9 = 8\n\nTherefore, the baker will need 8 boxes.",
+            "options": [
+                "7",
+                "8",
+                "9",
+                "10"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Alice wants to make identical treat bags for her friends. She has 24 cookies and 36 candies. What is the largest number of treat bags she can make without having any leftovers?",
+            "difficulty": "easy",
+            "reasoning": "This problem involves finding the greatest common divisor (GCD) of 24 and 36. Here's how to solve it:\n\n**1. Find the factors of each number:**\n\n* Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24\n* Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36\n\n**2. Identify the common factors:**\n\n* Common factors of 24 and 36: 1, 2, 3, 4, 6, 12\n\n**3. Determine the greatest common factor:**\n\n* The greatest common factor (GCD) of 24 and 36 is 12.\n\n**Therefore, Alice can make a maximum of 12 treat bags.**",
+            "options": [
+                "12",
+                "24",
+                "36",
+                "48"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "True or False: The equation 7 * (4 + 9) = (7 * 4) + (7 * 9) demonstrates the commutative property of multiplication.",
+            "difficulty": "easy",
+            "reasoning": "The question belongs to the subtopic 'Properties of Operations (Commutative, Associative, Distributive)' about 'Quants - Number Systems'.\n\nThe given equation showcases the distributive property, not the commutative property. \n\n**Distributive Property:** a * (b + c) = (a * b) + (a * c)\n\n**Commutative Property of Multiplication:** a * b = b * a\n\n**Let's break down the equation:**\n\n* **Left Side:** 7 * (4 + 9) = 7 * 13 = 91\n* **Right Side:** (7 * 4) + (7 * 9) = 28 + 63 = 91\n\nBoth sides of the equation are equal, demonstrating the distributive property where multiplication is distributed over addition. Therefore, the statement is **False**.",
+            "options": [
+                "True",
+                "False",
+                "Commutative",
+                "Distributive"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A fruit basket contains apples and oranges. The ratio of apples to oranges is 3:5. If 40% of the apples are green and the rest are red, what percentage of the total fruit in the basket are red apples?",
+            "difficulty": "easy",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**1. Apples and Oranges:** \nThe ratio 3:5 tells us that for every 3 apples, there are 5 oranges. This means that apples represent 3 parts out of a total of 3 + 5 = 8 parts.\n\n**2.  Percentage of Apples:**\nApples make up (3/8) * 100% = 37.5% of the total fruit in the basket.\n\n**3. Red Apples:**\nSince 40% of the apples are green, the remaining 100% - 40% = 60% are red. \n\n**4. Percentage of Red Apples:**\nTo find what percentage of the *total* fruit are red apples, we multiply the percentage of apples by the percentage of red apples: 37.5% * 60% = 22.5%\n\n**Therefore, 22.5% of the total fruit in the basket are red apples.**",
+            "options": [
+                "37.5%",
+                "60%",
+                "22.5%",
+                "40%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Which of the following is a natural number?",
+            "difficulty": "easy",
+            "reasoning": "The question belongs to the subtopic 'Types of Numbers (Natural, Whole, Integers, Rational, Irrational, Real, Complex)' about 'Quants - Number Systems'.\n\nHere's how to break down the answer:\n\n* **Natural Numbers:** These are the counting numbers we start with: 1, 2, 3, 4, and so on. \n* **Whole Numbers:** Include all the natural numbers plus zero: 0, 1, 2, 3, ...\n* **Integers:**  Include whole numbers and their negative counterparts:  ..., -3, -2, -1, 0, 1, 2, 3, ...\n* **Rational Numbers:** Can be expressed as a fraction where the numerator and denominator are both integers (and the denominator isn't zero). \n* **Irrational Numbers:** Cannot be expressed as a fraction of integers (e.g., pi).\n* **Real Numbers:**  Encompass all rational and irrational numbers.\n* **Complex Numbers:** Numbers of the form a + bi, where 'i' is the imaginary unit (\u221a-1) and 'a' and 'b' are real numbers.\n\nLet's look at the options and identify the natural number.",
+            "options": [
+                "-5",
+                "0",
+                "3.14",
+                "7"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A baker wants to arrange 36 muffins in a rectangular tray. What is the total number of different rectangular arrangements possible?",
+            "difficulty": "easy",
+            "reasoning": "To find the total number of rectangular arrangements, we need to find the factors of 36.  \n\nHere's how to find the factors:\n1. **Start with 1 and 36:** These are always factors.\n2. **Check divisibility by 2:** 36 is divisible by 2, giving us 2 and 18.\n3. **Check divisibility by 3:** 36 is divisible by 3, giving us 3 and 12. \n4. **Check divisibility by 4:** 36 is divisible by 4, giving us 4 and 9.\n5. **Check divisibility by 6:** 36 is divisible by 6, giving us 6 and 6.\n\nTherefore, the factors of 36 are 1, 2, 3, 4, 6, 9, 12, 18, and 36.  Each factor pair represents a possible rectangular arrangement (length x width).\n\nSince we have 9 factors, there are **9** different rectangular arrangements possible.",
+            "options": [
+                "4",
+                "6",
+                "8",
+                "9"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A baker arranges cookies on trays. If he can fit 12 cookies on a tray and he has 60 cookies, how many full trays of cookies can he make?",
+            "difficulty": "medium",
+            "reasoning": "This question uses the concept of division to solve a real-world problem. Here's how to solve it:\n\n* **Understanding the Problem:** The baker has a fixed number of cookies and wants to divide them equally onto trays.\n* **Calculation:** To find out how many full trays he can make, we divide the total number of cookies (60) by the number of cookies per tray (12): 60 cookies / 12 cookies/tray = 5 trays\n* **Answer:** The baker can make 5 full trays of cookies.",
+            "options": [
+                "4",
+                "6",
+                "5",
+                "7"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Let's consider a group of friends sharing a pizza. They can divide the pizza into equal slices represented by positive whole numbers. If we include the possibility of having no pizza at all, which type of numbers best describes ALL possible numbers of pizza slices?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the answer:\n\n* **Positive whole numbers:** This part makes sense because we can have 1, 2, 3 (and so on) slices of pizza.\n* **No pizza at all:** This represents zero slices. \n\nSince we need to include both positive whole numbers and zero, the answer is **whole numbers**. Whole numbers include all natural numbers (positive whole numbers) along with zero.",
+            "options": [
+                "Natural numbers",
+                "Integers",
+                "Rational numbers",
+                "Whole numbers"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "The diameter of a certain type of atom is approximately 0.000000025 centimeters. Express this number in scientific notation.",
+            "difficulty": "medium",
+            "reasoning": "To express a number in scientific notation, we need to rewrite it as a product of a number between 1 and 10 and a power of 10. Here's how to do it:\n\n1. **Move the decimal point:** Move the decimal point to the right until you have a number between 1 and 10. In this case, we need to move the decimal point seven places to the right, giving us 2.5.\n\n2. **Count the places:** Since we moved the decimal point seven places to the right, the exponent of 10 will be -7.\n\nTherefore, 0.000000025 centimeters in scientific notation is 2.5 x 10^-7 centimeters.",
+            "options": [
+                "2.5 x 10^7 cm",
+                "2.5 x 10^-7 cm",
+                "25 x 10^-8 cm",
+                "0.25 x 10^-6 cm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A baker uses a ratio of 3:2 for flour to sugar when baking a cake. If the baker wants to use 9 cups of flour, how many cups of sugar will he need?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understand the Ratio:**\n   The ratio 3:2 means that for every 3 cups of flour, the baker uses 2 cups of sugar.\n\n**2.  Determine the Scaling Factor:**\n   The baker wants to use 9 cups of flour, which is 3 times the amount in the ratio (9 / 3 = 3).\n\n**3. Apply the Scaling Factor:**\n   To maintain the ratio, we multiply the sugar amount by the same scaling factor: 2 cups of sugar * 3 = 6 cups of sugar.\n\n**Therefore, the baker will need 6 cups of sugar.**",
+            "options": [
+                "3 cups",
+                "4.5 cups",
+                "6 cups",
+                "9 cups"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Sarah baked 5 chocolate chip cookies and 3 peanut butter cookies. Her brother, David, baked 3 chocolate chip cookies and 5 peanut butter cookies.  Did Sarah and David bake the same total number of cookies? Explain your answer using the commutative property of addition.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n* **Sarah's cookies:** 5 (chocolate chip) + 3 (peanut butter) = 8 cookies\n* **David's cookies:** 3 (chocolate chip) + 5 (peanut butter) = 8 cookies\n\n**The Commutative Property of Addition** states that the order in which numbers are added does not change the sum.  Even though Sarah and David baked different types of cookies in a different order, they both baked a total of 8 cookies.\n\n**Therefore, yes, Sarah and David baked the same total number of cookies.**",
+            "options": [
+                "Yes",
+                "No",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A three-digit number is formed using the digits 4, 5, and 6, with no digit being repeated. Is the number always divisible by 3?",
+            "difficulty": "medium",
+            "reasoning": "**Divisibility Rule of 3:** A number is divisible by 3 if the sum of its digits is divisible by 3.\n\nLet's check all the possible three-digit numbers formed using 4, 5, and 6:\n\n* 456: 4 + 5 + 6 = 15 (divisible by 3)\n* 465: 4 + 6 + 5 = 15 (divisible by 3)\n* 546: 5 + 4 + 6 = 15 (divisible by 3)\n* 564: 5 + 6 + 4 = 15 (divisible by 3)\n* 645: 6 + 4 + 5 = 15 (divisible by 3)\n* 654: 6 + 5 + 4 = 15 (divisible by 3)\n\nIn all cases, the sum of the digits is 15, which is divisible by 3. \n\n**Therefore, any three-digit number formed using the digits 4, 5, and 6 (without repetition) is always divisible by 3.**",
+            "options": [
+                "No",
+                "Sometimes",
+                "Yes",
+                "Cannot be determined"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Timmy the Tech-loving Turtle loves binary numbers! He has a message for you, but he wrote it in binary: 10110. Can you help him by converting this binary number to a decimal number so everyone can understand?",
+            "difficulty": "medium",
+            "reasoning": "This question tests basic conversion from binary to decimal. Here's how to solve it:\n\n**1. Understanding Place Values:**\n   * In binary (base-2), each digit's place value is a power of 2, starting from the rightmost digit as 2^0.\n   * So, the place values are: ... 2^4, 2^3, 2^2, 2^1, 2^0\n   *  This translates to: ... 16, 8, 4, 2, 1\n\n**2.  Multiply and Sum:**\n   * Multiply each digit in the binary number by its corresponding place value and add the results.\n\n   * 10110 would be:\n      * (1 * 2^4) + (0 * 2^3) + (1 * 2^2) + (1 * 2^1) + (0 * 2^0)\n      *  16 + 0 + 4 + 2 + 0 = 22\n\n**Therefore, the decimal equivalent of the binary number 10110 is 22.**",
+            "options": [
+                "10",
+                "18",
+                "22",
+                "26"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Imagine you're walking on a number line starting at zero. You take 3 steps forward, 1 step back, then 5 more steps forward. Where do you end up on the number line?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Start at zero:** You begin your journey at the point representing zero on the number line.\n\n2. **3 steps forward:** Taking 3 steps forward is the same as adding 3 to your starting position: 0 + 3 = 3. \n\n3. **1 step back:** Taking one step back is the same as subtracting 1: 3 - 1 = 2. \n\n4. **5 steps forward:** Finally, you take 5 more steps forward, adding 5 to your current position: 2 + 5 = 7.\n\nTherefore, you end up at the point representing **7** on the number line.",
+            "options": [
+                "3",
+                "5",
+                "7",
+                "9"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A square garden is designed to have an area equal to the volume of a cube with side length 4 meters.  What is the length of one side of the garden?",
+            "difficulty": "medium",
+            "reasoning": "First find the volume of the cube: 4 meters * 4 meters * 4 meters = 64 cubic meters. Since this volume is equal to the area of the square garden, find the side length of the square: \u221a64 square meters = 8 meters. Therefore, the length of one side of the garden is 8 meters.",
+            "options": [
+                "4 meters",
+                "16 meters",
+                "64 meters",
+                "8 meters"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A baker wants to divide a 3.75-pound block of butter evenly into portions weighing 5/16 of a pound each. How many complete portions can the baker make, and what fraction of a portion will be left over? Express your answer as a mixed number.",
+            "difficulty": "medium",
+            "reasoning": "To solve this, we need to divide the total weight of the butter by the weight of each portion.  \n\n**1. Convert the mixed number to a decimal:**\n   3.75 pounds is equivalent to 3 + 75/100 = 3 + 3/4 = 15/4 pounds. \n\n**2. Divide the total butter weight by the portion weight:**\n   (15/4) / (5/16) = (15/4) * (16/5) = 12\n\nThis tells us the baker can make 12 complete portions. Since the result is a whole number, there is no butter left over. \n\n**3. Express the answer as a mixed number:**\n   12 is equivalent to 12 + 0/16, which simplifies to just 12.",
+            "options": [
+                "11 11/16",
+                "12 1/16",
+                "12",
+                "13 1/16"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A baker wants to pack cookies into boxes. He has 48 chocolate chip cookies, 36 peanut butter cookies, and 60 oatmeal raisin cookies. He wants to divide the cookies evenly among the boxes, using all the cookies and having the same number of each type of cookie in each box. What is the greatest number of boxes the baker can use?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves finding the greatest common divisor (GCD), as we're looking for the greatest number that divides evenly into 48, 36, and 60.\n\nHere's how to solve it:\n\n**1. Prime Factorization:**\n* Prime factors of 48: 2 x 2 x 2 x 2 x 3\n* Prime factors of 36: 2 x 2 x 3 x 3\n* Prime factors of 60: 2 x 2 x 3 x 5\n\n**2. Identify Common Prime Factors:**\n* All numbers share the prime factors 2 x 2 x 3 \n\n**3. Calculate the GCD:**\n*  Multiply the common prime factors: 2 x 2 x 3 = 12\n\n**Answer:** The baker can use a maximum of **12** boxes.",
+            "options": [
+                "12",
+                "24",
+                "18",
+                "30"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A secret society uses a code based on the binary system to send messages. A '1' represents a dot, and a '0' represents a dash.  They need to send the message 'GO' using this code. Given that 'G' is represented by the binary number 1000111 and 'O' by 1001111, how many dots and dashes will the message contain in total?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Analyze the binary codes:**\n   * 'G' (1000111) has 4 dots (represented by '1') and 3 dashes (represented by '0').\n   * 'O' (1001111) has 5 dots and 2 dashes.\n\n**2. Calculate the total number of dots:**\n   * Total dots = Dots in 'G' + Dots in 'O' = 4 + 5 = 9\n\n**3. Calculate the total number of dashes:**\n   * Total dashes = Dashes in 'G' + Dashes in 'O' = 3 + 2 = 5\n\n**Therefore, the message 'GO' will contain 9 dots and 5 dashes in total.**\n",
+            "options": [
+                "14",
+                "13",
+                "12",
+                "15"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**question_description**: A digital artist is working with a limited palette for a retro gaming project. The color palette stores each color's Red, Green, and Blue components as 4-bit binary numbers (ranging from 0000 to 1111).  If the artist wants to use a vibrant green with a binary RGB value of  `0011 1110 0010`, what is the equivalent decimal representation of the Green component?\n**difficulty**: medium\n",
+            "reasoning": "The question falls under 'Base Conversion (Binary, Decimal, Hexadecimal)' as it requires converting a binary number representing the Green color component into its decimal equivalent.\n\nHere's how to solve it:\n\n1. **Identify the Green component:** The RGB value is given as `0011 1110 0010`. The Green component is the middle group of 4 bits: `1110`.\n\n2. **Convert binary to decimal:**  Each bit in a binary number represents a power of 2, starting from the rightmost bit as 2^0.\n    * 1110 = (1 * 2^3) + (1 * 2^2) + (1 * 2^1) + (0 * 2^0) \n    *       = 8 + 4 + 2 + 0\n    *       = 14\n\nTherefore, the decimal representation of the Green component is 14.",
+            "options": [
+                "7",
+                "14",
+                "26",
+                "30"
+            ],
+            "correct_option": "B",
+            "difficulty": "medium"
+        },
+        {
+            "question": "**context**: A school organized a trip to a museum. 60% of the students were interested in the dinosaur exhibit, and 25% of those students also wanted to see the space exhibition.\n**question**: What percentage of the total number of students were interested in both the dinosaur and space exhibitions?\n**data**: \n  **Students interested in dinosaurs**: 60%\n  **Students interested in space (out of dinosaur enthusiasts)**: 25%\n",
+            "difficulty": "medium",
+            "reasoning": "This question involves calculating a percentage of a percentage, requiring a bit more than a single-step calculation. Here's how to solve it:\n\n**Step 1: Calculate the number of students interested in both exhibits.**\n\n* Since 25% of the students interested in dinosaurs were also interested in the space exhibition, we need to find 25% of 60%.\n* Mathematically, this is (25/100) * (60/100) = 0.25 * 0.60 = 0.15\n\n**Step 2: Convert the decimal to a percentage.**\n\n* Multiply the decimal result by 100%: 0.15 * 100% = 15%\n\n**Therefore, 15% of the total number of students were interested in both the dinosaur and space exhibitions.**",
+            "options": [
+                "10%",
+                "15%",
+                "25%",
+                "35%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A baker is preparing a large batch of cookies and needs to calculate the total amount of flour needed.\n**problem**: The recipe calls for 1 1/4 cups of flour per batch, and the baker wants to make 3 batches.  Using the distributive property, calculate the total flour needed in two different ways.\n**instructions**: Show your calculations for both methods using the distributive property and clearly indicate how the property is applied.\n**difficulty**: medium (5/10)\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of the distributive property in a practical scenario. \n\n**Method 1: Distributing multiplication over addition**\n\n* Write the mixed number as a fraction: 1 1/4 = 5/4\n* Express the total flour needed as a product: (5/4 cups/batch) * 3 batches\n* Apply the distributive property by breaking down the 3 batches: (5/4 cups/batch) * (2 batches + 1 batch)\n* Distribute: (5/4 cups/batch * 2 batches) + (5/4 cups/batch * 1 batch)\n* Calculate: (10/4 cups) + (5/4 cups) = 15/4 cups = 3 3/4 cups\n\n**Method 2: Distributing multiplication over subtraction**\n\n* Write the mixed number as a fraction: 1 1/4 = 5/4\n* Express 3 batches as a difference: 4 batches - 1 batch \n* Apply the distributive property: (5/4 cups/batch * 4 batches) - (5/4 cups/batch * 1 batch)\n* Calculate: (20/4 cups) - (5/4 cups) = 15/4 cups = 3 3/4 cups \n\nTherefore, the baker needs a total of 3 3/4 cups of flour.",
+            "options": [
+                "3 3/4 cups",
+                "15/4 cups",
+                "10/4 cups + 5/4 cups",
+                "20/4 cups - 5/4 cups"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A carpenter has a piece of wood that is 7.5 meters long. He needs to cut it into smaller pieces, each measuring 1 1/4 meters long. How many complete pieces can he cut, and how much wood will be left over?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Basic Operations (Addition, Subtraction, Multiplication, Division)' subtopic within 'Quants - Number Systems'. It involves multiple steps and fractions to solve:\n\n1. **Convert mixed number to a fraction:** 1 1/4 meters is equivalent to 5/4 meters.\n2. **Divide the total length by the length of each piece:** 7.5 meters \u00f7 5/4 meters.  To divide by a fraction, we multiply by its inverse: 7.5 * (4/5) = 6 pieces.\n3. **Calculate the leftover wood:** 6 pieces * (5/4 meters/piece) = 7.5 meters used. Therefore, there is 7.5 meters (total) - 7.5 meters (used) = 0 meters left over.\n\n**Answer:** The carpenter can cut 6 complete pieces with no wood left over.",
+            "options": [
+                "5 pieces",
+                "6 pieces",
+                "7 pieces",
+                "8 pieces"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A four-digit number is formed by using the digits 3, 5, 7, and 9 each exactly once. Which of the following numbers must be a factor of this four-digit number?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**Understanding Divisibility Rules**\n\n* **Divisibility by 3:** A number is divisible by 3 if the sum of its digits is divisible by 3.\n* **Divisibility by 9:** A number is divisible by 9 if the sum of its digits is divisible by 9.\n\n**Applying the Rules**\n\n1. **Calculate the sum of the digits:** 3 + 5 + 7 + 9 = 24 \n2. **Check divisibility by 3:** 24 is divisible by 3. \n3. **Check divisibility by 9:** 24 is not divisible by 9.\n\n**Conclusion**\nSince the sum of the digits (24) is divisible by 3, any four-digit number formed using these digits will also be divisible by 3. \n",
+            "options": [
+                "3",
+                "6",
+                "9",
+                "12"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine a number line representing temperatures in degrees Celsius. Point A is located at -12 degrees Celsius, indicating a very cold temperature. Point B represents the boiling point of water.  Point C is situated exactly halfway between Point A and Point B. What temperature does Point C represent?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n1. **Identify the boiling point of water:** The boiling point of water in Celsius is 100 degrees.\n\n2. **Find the difference between the two extreme temperatures:** The difference between the boiling point of water (100 degrees Celsius) and Point A (-12 degrees Celsius) is 100 - (-12) = 112 degrees Celsius.\n\n3. **Calculate the temperature at the midpoint:** Since Point C is halfway between Point A and Point B, it's located at half the temperature difference.  Therefore, Point C represents a temperature of 112 / 2 = 56 degrees Celsius above Point A.\n\n4. **Determine the final temperature:**  Add the temperature difference calculated in step 3 to the temperature at Point A: -12 + 56 = 44 degrees Celsius.\n\n**Therefore, Point C represents a temperature of 44 degrees Celsius.**",
+            "options": [
+                "100 degrees Celsius",
+                "56 degrees Celsius",
+                "44 degrees Celsius",
+                "-12 degrees Celsius"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A clockmaker is setting a clock that operates on a modulo 24 system (like a standard clock). However, this clock only chimes once every 13 hours. If the clockmaker sets the clock to chime for the first time at 5:00 AM, at what time will the clock chime for the 100th time?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Determine the pattern:** \nThe clock chimes every 13 hours, which is equivalent to 13 modulo 24.\n\n**2. Calculate the time for the 100th chime:**\n* The clock chimes for the 1st time at 5:00 AM (hour 5).\n* To find the hour of the 100th chime, we can use the following calculation: (5 + (13 * 99)) modulo 24 \n* This simplifies to 1292 modulo 24\n\n**3. Simplify using modulo arithmetic:**\n* 1292 divided by 24 results in a quotient of 53 with a remainder of 20. \n* Therefore, 1292 modulo 24 is 20.\n\n**4. Interpret the result:**\nA remainder of 20 in modulo 24 corresponds to 8:00 PM on a standard clock.\n\n**Answer:** The clock will chime for the 100th time at 8:00 PM.",
+            "options": [
+                "5:00 AM",
+                "8:00 PM",
+                "11:00 PM",
+                "1:00 AM"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: Two old friends, Alice and Bob, are planning a reunion trip. Alice suggests they both visit a museum she knows, which offers guided tours starting every 45 minutes. Bob wants to try a new escape room experience that runs every 75 minutes.\n**problem**: They want to enjoy both activities on the same day and leave their hotel at the same time, returning as early as possible without having to wait for the next available tour or game.\n**question**: What is the shortest amount of time Alice and Bob need to allocate for their activities, ensuring they can enjoy both without any waiting time and return to the hotel together?\n",
+            "difficulty": "medium",
+            "reasoning": "This problem requires finding the LCM (Least Common Multiple) of 45 and 75, which represents the shortest duration where both activities will coincide. \n\nHere's how to solve it:\n\n1. **Prime Factorization:**\n   * 45 = 3 x 3 x 5\n   * 75 = 3 x 5 x 5 \n\n2. **Identify Common and Uncommon Factors:**\n   * Both numbers share the factors 3 and 5.\n   * 45 has an additional factor of 3.\n   * 75 has an additional factor of 5.\n\n3. **Calculate the LCM:**\n   * LCM = (Product of common factors) x (Product of uncommon factors)\n   * LCM = (3 x 5) x (3 x 5) = 225\n\nTherefore, the shortest amount of time Alice and Bob need to allocate is 225 minutes, or 3 hours and 45 minutes. This ensures they can participate in both activities and return to the hotel simultaneously.",
+            "options": [
+                "135 minutes",
+                "225 minutes",
+                "300 minutes",
+                "375 minutes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A fruit vendor buys a mix of oranges and apples. He purchases oranges at a price 30% less than the price of apples. He then sells all the oranges at a 20% profit and all the apples at a 30% profit. His overall profit on the entire transaction is 25%.  Determine the ratio of the number of oranges to apples he originally bought.",
+            "difficulty": "medium",
+            "reasoning": "Let's assume the vendor buys 'x' oranges and 'y' apples.\n\n**1. Cost Price:**\n   * Let the cost price of each apple be $A. \n   * The cost price of each orange is then $0.7A (since he buys oranges at 30% less than apples).\n\n**2. Selling Price:**\n   * Selling price of each orange = $1.2 * 0.7A = $0.84A (20% profit)\n   * Selling price of each apple = $1.3A (30% profit)\n\n**3. Overall Profit:**\n   * Total cost price = $(0.7Ax + Ay)\n   * Total selling price = $(0.84Ax + 1.3Ay)\n   * Overall profit = 25%, meaning the selling price is 125% of the cost price.\n\n**4. Setting up the Equation:**\n   * 1.25 (0.7Ax + Ay) = 0.84Ax + 1.3Ay\n\n**5. Solving for x/y:**\n   * 0.875Ax + 1.25Ay = 0.84Ax + 1.3Ay\n   * 0.035Ax = 0.05Ay\n   * x/y = 0.05A / 0.035A\n   * x/y = 10/7\n\nTherefore, the ratio of oranges to apples the vendor originally bought is **10:7**.",
+            "options": [
+                "10:7",
+                "7:10",
+                "3:5",
+                "5:3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A sequence of numbers is given: 3, 10, 29, 66, 127, ___. Find the next number in the sequence.",
+            "difficulty": "medium",
+            "reasoning": "This sequence is based on the pattern of adding consecutive cubes of numbers to the previous term.\n\n* **1^3 + 2 = 3** \n* **2^3 + 3 = 11**\n* **3^3 + 11 = 38**\n* **4^3 + 38 = 102**\n* **5^3 + 102 = 227**\n\nTherefore, the next number in the sequence is 227.",
+            "options": [
+                "127",
+                "227",
+                "38",
+                "102"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**statement**: A three-digit number is formed by multiplying three prime numbers.  Two of the prime numbers are factors of 21.\n**instructions**: Find the sum of all possible three-digit numbers that can be formed in this way.\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Identify the prime factors of 21:**\n\n   The prime factors of 21 are 3 and 7.\n\n**2.  Consider possible third prime numbers:**\n\n   To form a three-digit number, the third prime number needs to be greater than or equal to 5 (since 3 x 7 x 2 = 42, which is less than 100).\n\n**3. Calculate possible three-digit numbers:**\n\n*  3 x 7 x 5 = 105\n*  3 x 7 x 7 = 147\n*  3 x 7 x 11 = 231\n*  3 x 7 x 13 = 273\n*  ... and so on.\n\n   Continue checking multiples of 21 (3 x 7) with prime numbers until you exceed 999.\n\n**4.  Identify all valid three-digit numbers:**\n\n    The valid three-digit numbers are: 105, 147, 231, 273, 441, 588, 693, 882. \n\n**5. Calculate the sum:**\n\n    105 + 147 + 231 + 273 + 441 + 588 + 693 + 882 = **3360**\n\nTherefore, the sum of all possible three-digit numbers is 3360.",
+            "options": [
+                "3260",
+                "3360",
+                "3460",
+                "3560"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A mystical artifact grants you the power to manipulate numbers. However, it follows peculiar rules. Every time you add two numbers, the result is multiplied by 2. Every time you subtract two numbers, the result is divided by 2.  You begin with the number 10, and perform the following operations in sequence:\n\n1. Add 5\n2. Subtract 3\n3. Add 1\n\nWhat final number will the artifact display?",
+            "difficulty": "hard",
+            "reasoning": "This question tests a student's ability to follow a sequence of operations while applying non-standard rules. Here's how to solve it step-by-step:\n\n1. **Add 5:** 10 + 5 = 15. Following the artifact's rule, we multiply this by 2: 15 * 2 = 30.\n2. **Subtract 3:** 30 - 3 = 27. We then divide this result by 2: 27 / 2 = 13.5\n3. **Add 1:** 13.5 + 1 = 14.5.  Multiplying by 2 gives us: 14.5 * 2 = 29\n\nTherefore, the final number displayed on the artifact will be 29.",
+            "options": [
+                "15",
+                "27",
+                "13.5",
+                "29"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "The number A8888B is divisible by 72, where A and B represent distinct digits. What is the sum of all possible values of the digit A?",
+            "difficulty": "hard",
+            "reasoning": "**Understanding Divisibility Rules**\n\n* **Divisibility by 8:** A number is divisible by 8 if the number formed by its last three digits is divisible by 8. Therefore, 88B must be divisible by 8.  The only digit that works for B to make this true is 0 (880 is divisible by 8).\n* **Divisibility by 9:** A number is divisible by 9 if the sum of its digits is divisible by 9. Since A8880 is divisible by 9, A + 8 + 8 + 8 + 0 must be divisible by 9.\n\n**Finding Possible Values of A**\n\nA + 32 must be divisible by 9.  The possible values for A are 4 (4 + 32 = 36, which is divisible by 9). \n\n**Calculating the Sum**\n\nThe sum of all possible values of A is simply 4.\n\n**Answer:** The sum of all possible values of the digit A is 4.",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A craftsman makes bracelets using beads. He has two types of beads: red beads with a diameter of 12mm and blue beads with a diameter of 18mm. He wants to create a bracelet with alternating red and blue beads, where all beads touch each other and the bracelet forms a perfect circle. What is the minimum length of string (in centimeters) that the craftsman needs to create such a bracelet?",
+            "difficulty": "hard",
+            "reasoning": "This question requires finding the LCM of the diameters of the beads to determine the circumference of the smallest possible circle that can accommodate both bead sizes in an alternating pattern.\n\nHere's the step-by-step solution:\n\n1. **Find the LCM of 12 and 18:**\n   - The prime factorization of 12 is 2 x 2 x 3.\n   - The prime factorization of 18 is 2 x 3 x 3.\n   - The LCM is the product of the highest powers of all prime factors: 2\u00b2 x 3\u00b2 = 36\n\n2. **Interpret the LCM:**\n   - The LCM of 36mm represents the smallest possible circumference of the bracelet where both red and blue beads will perfectly align after one full cycle of the pattern.\n\n3. **Convert to centimeters:**\n   - 36mm is equal to 3.6cm (since 1cm = 10mm)\n\nTherefore, the minimum length of string the craftsman needs is 3.6 centimeters.",
+            "options": [
+                "12 cm",
+                "18 cm",
+                "3.6 cm",
+                "7.2 cm"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Consider the set S containing all possible sums that can be formed by adding exactly one number from set A and exactly one number from set B:\n\nSet A: {\u221a2, \u03c0, 1/3}\nSet B: {-\u221a2, 2/3, -\u03c0}\n\nWhat is the most accurate classification for the set S? Is it a set of: \n\nA) Only Rational Numbers\nB) Only Irrational Numbers\nC) Both Rational and Irrational Numbers\nD)  Neither Rational nor Irrational Numbers",
+            "difficulty": "hard",
+            "reasoning": "Here's the breakdown:\n\n1. **Understanding the Sets:**\n   * Set A contains two irrational numbers (\u221a2, \u03c0) and one rational number (1/3).\n   * Set B contains two irrational numbers (-\u221a2, -\u03c0) and one rational number (2/3).\n\n2. **Possible Sums:** To be thorough, let's visualize all possible sums:\n   * \u221a2 + (-\u221a2) = 0 (Rational)\n   * \u221a2 + (2/3) = (3\u221a2 + 2)/3 (Irrational)\n   * \u221a2 + (-\u03c0)  (Irrational)\n   * \u03c0 + (-\u221a2)  (Irrational)\n   * \u03c0 + (2/3) = (3\u03c0 + 2)/3 (Irrational)\n   * \u03c0 + (-\u03c0) = 0 (Rational)\n   * (1/3) + (-\u221a2)  (Irrational)\n   * (1/3) + (2/3) = 1 (Rational)\n   * (1/3) + (-\u03c0) (Irrational)\n\n3. **Analyzing the Sums:** We see that adding numbers from Set A and Set B can result in both rational and irrational outcomes.\n\n4. **Conclusion:**  Set S contains a mix of rational and irrational numbers. \n\n**Therefore, the correct answer is (C) Both Rational and Irrational Numbers.**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A team of physicists is conducting an experiment involving the measurement of extremely small distances.\n**problem**: During one phase of the experiment, a laser beam is pulsed for a duration of  8.5 x 10^-15 seconds to excite an atom. The same experiment is repeated under different conditions, with the laser pulse lasting 2.5 x 10^-13 seconds.\n**question**: How many times longer is the second laser pulse compared to the first pulse?\n**difficulty**: Tricky 8/10\n",
+            "difficulty": "hard",
+            "reasoning": "**1. Understand the Problem:** We need to determine the factor by which the second laser pulse duration (2.5 x 10^-13 seconds) is greater than the first pulse duration (8.5 x 10^-15 seconds). \n\n**2. Set up the Calculation:**  To find how many times greater the second pulse is, we'll divide the duration of the second pulse by the duration of the first pulse:\n\n(2.5 x 10^-13 seconds) / (8.5 x 10^-15 seconds)\n\n**3. Simplify using Rules of Exponents:** When dividing numbers in scientific notation, we divide the coefficients and subtract the exponents:\n\n(2.5 / 8.5) x 10^(-13 - (-15))\n\n**4. Calculate:**\n\n\u2248 0.294 x 10^2\n\n**5. Adjust to Proper Scientific Notation:**\n\n\u2248 2.94 x 10^1\n\n**Therefore, the second laser pulse is approximately 29.4 times longer than the first laser pulse.**",
+            "options": [
+                "1.47 x 10^-2",
+                "2.94 x 10^-1",
+                "29.4",
+                "147"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "For positive integers 'a' and 'b', the equation (a^(1/3) + b^(1/3))^3 = a + b + 3(a^(2/3)b^(1/3) + a^(1/3)b^(2/3)) holds true. If a = 8 and b = 27, what is the value of (a^(1/3) + b^(1/3))^(-6)?",
+            "difficulty": "hard",
+            "reasoning": "This question dives deep into the properties of exponents and roots by linking them to a polynomial identity. Here's how to solve it:\n\n**1. Understand the Identity:**\nThe given equation is actually a factored form of the cube of a binomial:\n(x + y)^3 = x^3 + y^3 + 3x^2y + 3xy^2\n\n**2. Apply the Given Values:**\nSubstitute a = 8 and b = 27 into the equation:\n(8^(1/3) + 27^(1/3))^3 = 8 + 27 + 3(8^(2/3)27^(1/3) + 8^(1/3)27^(2/3))\n\n**3. Simplify:**\n* 8^(1/3) = cube root of 8 = 2\n* 27^(1/3) = cube root of 27 = 3\n\nSubstitute these values back into the equation:\n(2 + 3)^3 = 8 + 27 + 3(2^2 * 3 + 2 * 3^2)\n\n**4. Calculate:**\n* (2 + 3)^3 = 5^3 = 125\n* 8 + 27 + 3(2^2 * 3 + 2 * 3^2) = 35 + 3(12 + 18) = 125\n\n**5. Find the Target Value:**\nWe now know that (8^(1/3) + 27^(1/3)) = 5.  We need to find (8^(1/3) + 27^(1/3))^(-6):\n5^(-6) = 1/(5^6) = 1/15625\n\n**Therefore, the value of (a^(1/3) + b^(1/3))^(-6) is 1/15625.**",
+            "options": [
+                "1/15625",
+                "15625",
+                "5",
+                "1/5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "[Tricky 8/10] [Conversion] Imagine a base-17 number system using digits 0-9 and A-G (A=10, B=11,...G=16).  You are given three secret numbers: X (base-2), Y (base-17), and Z (base-16).  You know the following: \n\n* X is the largest 8-bit binary number that, when converted to base-17, results in a single-digit number. \n* Y, when expressed in decimal, is equal to the product of the decimal equivalents of X and Z.  \n* The sum of the digits of Z, when Z is expressed in hexadecimal, is equal to 13 (in decimal). \n\nDetermine the hexadecimal representation of the sum (X + Y + Z).",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Finding X:**\n* We need the largest 8-bit binary number that converts to a single-digit base-17 number. \n* The largest 8-bit binary number is 11111111 (255 in decimal).\n*  We need to find the largest power of 17 that is less than 255. 17^1 = 17, and 17^2 = 289, so the largest power is 17^1.\n* The largest single-digit base-17 number is G (which equals 16 in decimal).\n* Therefore, X in binary is 11111111 (255 in decimal) and G in base-17 (16 in decimal).\n\n**2. Finding Z:**\n* We know the sum of the digits of Z in hexadecimal equals 13 (decimal).\n*  We also know Y = X * Z in decimal, and since X is relatively small (16), Z must be a small number to keep Y within a reasonable range.\n*  Let's try different combinations for the digits of Z. A good starting point is using the hexadecimal digits D (13 in decimal) and 0 since 13 + 0 = 13.\n* This gives us Z = D0 (hexadecimal), which is 208 in decimal.\n\n**3. Finding Y:**\n* Y (decimal) = X (decimal) * Z (decimal) = 16 * 208 = 3328\n\n**4. Calculating X + Y + Z:**\n* First, we need to convert all numbers to a common base, like decimal:\n    * X = 255 (decimal)\n    * Y = 3328 (decimal)\n    * Z = 208 (decimal)\n* X + Y + Z = 255 + 3328 + 208 = 3791 (decimal)\n\n**5. Converting the sum to hexadecimal:**\n* 3791 divided by 256 (16^2) is 14 with a remainder of 215\n* 215 divided by 16 is 13 with a remainder of 7\n* So, 3791 in decimal is equivalent to ED7 in hexadecimal.\n\n**Therefore, the hexadecimal representation of the sum (X + Y + Z) is ED7.**\n",
+            "options": [
+                "ED6",
+                "ED7",
+                "ED8",
+                "ED9"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Number Systems",
+    "exam_id": 18,
+    "order": 0
+}

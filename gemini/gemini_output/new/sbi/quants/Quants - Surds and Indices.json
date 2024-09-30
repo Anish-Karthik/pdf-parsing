@@ -1,0 +1,452 @@
+{
+    "questions": [
+        {
+            "question": "**statement**: (a^4 * a^2) / a^3\n**instruction**: Simplify the following expression.\n",
+            "difficulty": "easy",
+            "reasoning": "The question belongs to the subtopic 'Simplifying Expressions with Indices: Multiplication and Division' about 'Quants - Surds and Indices'.\n\nHere's how to solve the expression step-by-step:\n\n1. **Combine the indices in the numerator:** When multiplying indices with the same base, we add the powers.\n   (a^4 * a^2) = a^(4+2) = a^6\n\n2. **Divide the result by the denominator:** When dividing indices with the same base, we subtract the powers.\n   a^6 / a^3 = a^(6-3) = a^3\n\nTherefore, the simplified expression is a^3.",
+            "options": [
+                "a^6",
+                "a^3",
+                "a^2",
+                "a^5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Simplify the expression (x^5 * x^2) / x^3 using the laws of indices.",
+            "difficulty": "easy",
+            "reasoning": "This question tests the basic understanding of the laws of indices, particularly the rules for multiplying and dividing powers with the same base.\n\nHere's a step-by-step solution:\n\n1. **Combining the exponents in the numerator:** When multiplying powers with the same base, we add the exponents. Therefore, (x^5 * x^2) = x^(5+2) = x^7\n\n2. **Dividing powers with the same base:** When dividing powers with the same base, we subtract the exponent of the denominator from the exponent of the numerator. Therefore, x^7 / x^3 = x^(7-3) = x^4\n\nTherefore, the simplified expression is x^4.",
+            "options": [
+                "x^2",
+                "x^4",
+                "x^6",
+                "x^7"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "What is the simplified form of  (81)^(1/4)?",
+            "difficulty": "easy",
+            "reasoning": "This question falls under 'Fractional Indices and Their Interpretation' as it requires understanding how a fractional index represents a root.\n\nHere's the step-by-step solution:\n\n1. **Understanding Fractional Indices:** The expression (81)^(1/4) means finding the fourth root of 81.\n\n2. **Calculating the Fourth Root:** The fourth root of a number is the value that, when multiplied by itself four times, equals the original number. Since 3 * 3 * 3 * 3 = 81, the fourth root of 81 is 3.\n\nTherefore, (81)^(1/4) simplifies to 3.",
+            "options": [
+                "1",
+                "3",
+                "4",
+                "81"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Solve for *x*: \n\n 5^(2*x - 4) = 125",
+            "difficulty": "easy",
+            "reasoning": "This question tests the ability to solve equations involving indices by making the bases on both sides of the equation the same. Here's how to solve it:\n\n1. **Express both sides with the same base:** \n   *  We can express 125 as 5^3. \n   *  The equation becomes: 5^(2*x - 4) = 5^3\n\n2. **Equate the powers:**\n   * Since the bases are now the same, we can equate the powers. \n   * This gives us: 2*x - 4 = 3\n\n3. **Solve for x:** \n   * Add 4 to both sides: 2*x = 7\n   * Divide both sides by 2: x = 7/2 \n\nTherefore, the solution is x = 7/2.",
+            "options": [
+                "3.5",
+                "7/2",
+                "125",
+                "5^3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "What is the simplified form of the expression  \\(\\frac{1}{a^{-3}}\\)?",
+            "difficulty": "easy",
+            "reasoning": "**Understanding Negative Indices:**\n\nA negative index indicates that we take the reciprocal of the base raised to the positive of that index. \n\n**Applying the Concept:**\n\n1.  **Reciprocal:**  The expression  \\(\\frac{1}{a^{-3}}\\)  is the same as  \\( (a^{-3})^{-1} \\) because 1 raised to any power is still 1.\n\n2. **Power of a Power:** When raising a power to another power, we multiply the exponents. Therefore,  \\( (a^{-3})^{-1} = a^{(-3)(-1)} = a^3 \\).\n\n**Solution:**\n\nThe simplified form of  \\(\\frac{1}{a^{-3}}\\)  is  \\(a^3\\).",
+            "options": [
+                "a^3",
+                "1/a^3",
+                "a^-3",
+                "1/a^-3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Simplify the following expression: (2 + \u221a3) / (2 - \u221a3)",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the subtopic 'Conjugates of Surds and Their Applications' within 'Quants - Surds and Indices'. It involves simplifying an expression by rationalizing the denominator using the conjugate. \n\n**Step-by-step Solution:**\n\n1. **Identify the conjugate:** The conjugate of the denominator (2 - \u221a3) is (2 + \u221a3). \n\n2. **Multiply by 1:** Multiply the expression by (2 + \u221a3) / (2 + \u221a3), which is equivalent to 1 and doesn't change the value of the expression.\n\n   [(2 + \u221a3) / (2 - \u221a3)] * [(2 + \u221a3) / (2 + \u221a3)]\n\n3. **Apply the difference of squares pattern:** The denominator simplifies using the pattern (a + b)(a - b) = a\u00b2 - b\u00b2\n\n   [(2 + \u221a3)(2 + \u221a3)] / [(2)\u00b2 - (\u221a3)\u00b2]\n\n4. **Simplify:** Expand the numerator and simplify the denominator.\n\n   [4 + 2\u221a3 + 2\u221a3 + 3] / [4 - 3]\n\n   [7 + 4\u221a3] / 1\n\n5. **Final Result:** 7 + 4\u221a3\n\nTherefore, the simplified form of (2 + \u221a3) / (2 - \u221a3) is 7 + 4\u221a3.",
+            "options": [
+                "7 + 4\u221a3",
+                "7 - 4\u221a3",
+                "4 + 7\u221a3",
+                "4 - 7\u221a3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A square garden has a side length of \u221a(800) meters. The owner wants to install a decorative fence around the garden, leaving a 2-meter wide pathway outside the fence.  What will be the total length of the fence needed (in meters) ?",
+            "difficulty": "easy",
+            "reasoning": "**1. Simplify the side length of the garden:**\n\n* \u221a(800) can be simplified as \u221a(16 * 50) = \u221a(16) * \u221a(50) = 4\u221a50\n* Further simplifying \u221a50 = \u221a(25 * 2) = \u221a(25) * \u221a(2) = 5\u221a2\n* Therefore, the side length of the garden is 4 * 5\u221a2 = 20\u221a2 meters.\n\n**2. Calculate the side length including the pathway:**\n\n* The pathway adds 2 meters on each side of the square.\n* So, the side length including the pathway = 20\u221a2 + 2 + 2 = 20\u221a2 + 4 meters\n\n**3. Calculate the total length of the fence:**\n\n* Total fence length = Perimeter of the square including the pathway\n* Perimeter = 4 * side length = 4 * (20\u221a2 + 4) = 80\u221a2 + 16 meters\n\n**Therefore, the total length of the fence needed is 80\u221a2 + 16 meters.**",
+            "options": [
+                "80\u221a2 meters",
+                "160\u221a2 meters",
+                "80\u221a2 + 16 meters",
+                "80\u221a2 + 8 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "What is the value of 10 raised to the power of negative 2 (10<sup>-2</sup>) expressed as a simple fraction?",
+            "difficulty": "medium",
+            "reasoning": "This question deals with understanding negative indices. Here's how to solve it:\n\n**Understanding Negative Indices:**\n\nA negative index indicates that we take the reciprocal of the base raised to the positive version of the exponent.  \n\n**Applying the Concept:**\n\n* 10<sup>-2</sup> is the same as 1 / (10<sup>2</sup>)\n* 10<sup>2</sup> equals 10 * 10 = 100\n* Therefore, 10<sup>-2</sup> = 1 / 100\n\n**Answer:** 1/100",
+            "options": [
+                "1/100",
+                "1/10",
+                "100",
+                "10"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**expression**: 2 / (\u221a8)\n**instructions**: Rationalize the denominator of the following expression.\n",
+            "difficulty": "medium",
+            "reasoning": "This question aims to test a student's basic understanding of rationalizing denominators. \n\n**Here's how to solve it:**\n\n1. **Simplify the surd in the denominator (if possible):** \u221a8 can be simplified to 2\u221a2 (since \u221a8 = \u221a(4*2) = \u221a4 * \u221a2 = 2\u221a2)\n\n2. **Multiply both numerator and denominator by the simplified surd:**\n   (2 / 2\u221a2) * (\u221a2 / \u221a2) = 2\u221a2 / 4 \n\n3. **Simplify the expression:** 2\u221a2 / 4 simplifies to \u221a2 / 2\n\nTherefore, the simplified expression with a rational denominator is \u221a2 / 2.",
+            "options": [
+                "\u221a2 / 2",
+                "2\u221a2 / 4",
+                "2 / 2\u221a2",
+                "2\u221a2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Solve for *x* in the following equation:\n\n 2<sup>*x*</sup> = 16 ",
+            "difficulty": "medium",
+            "reasoning": "This question tests the basic understanding of indices and how to solve for an unknown variable in the exponent. Here's how to solve it:\n\n**1. Express both sides of the equation with the same base:**\n\n Since 16 can be expressed as 2 raised to the power of 4 (2 * 2 * 2 * 2 = 16), we can rewrite the equation as:\n\n 2<sup>*x*</sup> = 2<sup>4</sup>\n\n**2.  Equate the exponents:**\n\nWhen the bases are the same in an equation, we can simply equate the exponents to find the unknown variable:\n\n*x* = 4\n\nTherefore, the solution to the equation 2<sup>*x*</sup> = 16 is *x* = 4.",
+            "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "What is the value of  (5^3 * 2^0) / (10^0) ?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of the zero index rule, which states that any non-zero number raised to the power of zero equals 1. \n\nLet's solve the expression step-by-step:\n\n1. **Calculate the powers:**\n   * 5^3 = 5 * 5 * 5 = 125\n   * 2^0 = 1 (Anything raised to the power zero is 1)\n   * 10^0 = 1 (Anything raised to the power zero is 1)\n\n2. **Substitute the values back into the expression:**\n   (125 * 1) / (1)\n\n3. **Simplify:**\n   125 / 1 = 125\n\nTherefore, the value of (5^3 * 2^0) / (10^0) is 125.",
+            "options": [
+                "1",
+                "125",
+                "25",
+                "5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Solve for *x* in the inequality:  $4^{x-1} < 32$",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Solving Inequalities Involving Indices' topic as it requires manipulating indices to find the solution set for *x*. Here's a step-by-step solution:\n\n1. **Express both sides of the inequality with the same base:** Notice that both 4 and 32 can be expressed as powers of 2:\n    *  $4 = 2^2$\n    *  $32 = 2^5$\n    Substituting these into the inequality, we get: $(2^2)^{x-1} < 2^5$ \n\n2. **Simplify using exponent rules:** When raising a power to another power, multiply the exponents:\n    * $2^{2(x-1)} < 2^5$ \n    * $2^{2x-2} < 2^5$\n\n3. **Solve the inequality:**  Since the bases are now the same, we can simply compare the exponents:\n    * $2x - 2 < 5$\n    * $2x < 7$\n    * $x < \\frac{7}{2}$\n\nTherefore, the solution to the inequality is  $x < \\frac{7}{2}$. ",
+            "options": [
+                "x < 7/2",
+                "x > 7/2",
+                "x = 7/2",
+                "x \u2264 7/2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Given that \u221aa = x and \u221ab = y, express \u221a(a\u00b2b) in terms of x and y.",
+            "difficulty": "medium",
+            "reasoning": "This question tests the fundamental properties of surds, particularly how they interact with exponents and multiplication. Here's a step-by-step solution:\n\n1. **Understanding the given information:** \n    - We know \u221aa = x, which means 'x' is the number that, when multiplied by itself, equals 'a'. \n    - Similarly, \u221ab = y means 'y' is the number that, when multiplied by itself, equals 'b'.\n\n2. **Breaking down the expression:**\n    - We need to simplify \u221a(a\u00b2b).  Let's break it down using the properties of surds:\n       \u221a(a\u00b2b) = \u221a(a\u00b2) * \u221ab  (Since the square root of a product is the product of the square roots)\n\n3. **Substituting and simplifying:**\n    - We know \u221a(a\u00b2) is simply 'a' (since the square root and square cancel each other). \n    - Substitute 'a' with 'x\u00b2' (because \u221aa = x implies a = x\u00b2) and \u221ab with 'y':\n       \u221a(a\u00b2b) = \u221a(a\u00b2) * \u221ab = a * \u221ab = x\u00b2 * y\n\nTherefore, the simplified expression for \u221a(a\u00b2b) in terms of x and y is x\u00b2y.",
+            "options": [
+                "x\u00b2y",
+                "xy\u00b2",
+                "x\u00b2 + y",
+                "x + y\u00b2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A construction company is designing a square park with an area of 300 square meters.  To make the park more accessible, they decide to build a diagonal pathway across the park.  To determine the length of materials needed for the pathway, they need to calculate the length of the diagonal.  \n\nUsing your knowledge of surds, determine the exact length of the pathway in meters.",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand the Relationship:** \n\n   * The diagonal of a square divides it into two right-angled triangles.\n   * The diagonal becomes the hypotenuse of these triangles.\n   * We can use the Pythagorean theorem to relate the diagonal (hypotenuse) to the sides of the square.\n\n**2. Apply the Pythagorean Theorem:**\n\n   *  Pythagorean theorem:  a\u00b2 + b\u00b2 = c\u00b2\n      * Where 'a' and 'b' are the sides of the square, and 'c' is the diagonal (hypotenuse).\n\n   * Since it's a square, both sides are equal (a = b). Let's represent the side length as 's'.\n\n   *  Therefore: s\u00b2 + s\u00b2 = c\u00b2\n\n**3. Calculate the Side Length:**\n\n   * We know the area of the square is 300 square meters: s\u00b2 = 300 \n   * Taking the square root of both sides: s = \u221a300\n\n**4. Substitute and Solve for the Diagonal (c):**\n\n   * 2s\u00b2 = c\u00b2\n   * 2 * (\u221a300)\u00b2 = c\u00b2\n   * 2 * 300 = c\u00b2\n   * 600 = c\u00b2\n   * c = \u221a600\n\n**5. Simplify the Surd:**\n\n   * \u221a600 can be simplified by finding the largest perfect square that divides 600. \n   * The largest perfect square that divides 600 is 100.\n   * \u221a600 = \u221a(100 * 6) = \u221a100 * \u221a6 = 10\u221a6\n\n**Therefore, the exact length of the pathway is 10\u221a6 meters.**",
+            "options": [
+                "10\u221a3 meters",
+                "10\u221a6 meters",
+                "\u221a300 meters",
+                "\u221a600 meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A square tile has a side length of (2\u221a2 + 3) cm.\n**question**: What is the area of the tile in square centimeters?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the ability to use conjugates of surds to simplify expressions. Here's how to solve it:\n\n**1. Understand the Problem:**\n\nWe are given the side length of a square and asked to find its area. Recall that the area of a square is calculated by squaring the side length.\n\n**2. Apply the Formula and Conjugate:**\n\n* Area = (side length)^2 = (2\u221a2 + 3)^2 \n* To simplify, we can recognize this as the square of a binomial: (a + b)^2 = a^2 + 2ab + b^2\n* Applying this to our problem: (2\u221a2)^2 + 2(2\u221a2)(3) + (3)^2\n\n**3. Calculate:**\n\n* Simplify each term: 8 + 12\u221a2 + 9\n* Combine like terms: 17 + 12\u221a2\n\n**Therefore, the area of the tile is 17 + 12\u221a2 square centimeters.**",
+            "options": [
+                "17 cm\u00b2",
+                "12\u221a2 cm\u00b2",
+                "17 + 12\u221a2 cm\u00b2",
+                "25 cm\u00b2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A sculptor is working with two pieces of metal sheeting. The first piece has an area of (8\u221a3 + 12\u221a2) square meters, and the second piece has an area of (5\u221a3 - 4\u221a2) square meters.  To complete her project, she needs to weld these two pieces together to form a larger sheet. What will be the total area of the combined metal sheeting in simplified surd form?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic 'Simplifying Surds: Addition, Subtraction, Multiplication, and Division' within 'Quants - Surds and Indices.'\n\nTo find the total area, we need to add the areas of the two pieces of metal sheeting:\n\n(8\u221a3 + 12\u221a2) + (5\u221a3 - 4\u221a2)\n\nNext, we group the like terms (those with the same radical):\n\n(8\u221a3 + 5\u221a3) + (12\u221a2 - 4\u221a2)\n\nFinally, we simplify by performing the addition and subtraction:\n\n13\u221a3 + 8\u221a2 \n\nTherefore, the total area of the combined metal sheeting is 13\u221a3 + 8\u221a2 square meters.",
+            "options": [
+                "13\u221a3 + 8\u221a2 square meters",
+                "21\u221a6 square meters",
+                "13\u221a3 - 8\u221a2 square meters",
+                "13\u221a6 square meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A square tile has a side length represented by the expression  2^(1/3) * 3^(1/4). If four of these tiles are arranged to form a larger square, what is the area of the larger square expressed in the simplest radical form?",
+            "difficulty": "medium",
+            "reasoning": "**1. Side length of the larger square:**\n\nSince four tiles form the larger square, the side length of the larger square is twice the side length of a single tile.\n\nSide length of larger square = 2 * (2^(1/3) * 3^(1/4)) = 2^(4/3) * 3^(1/4)\n\n**2. Area of the larger square:**\n\nThe area of a square is calculated by squaring its side length.\n\nArea = (side length)^2 = (2^(4/3) * 3^(1/4))^2 \n\n**3. Simplifying the expression:**\n\nUsing the rule (a^m)^n = a^(m*n), we get:\n\nArea = 2^(8/3) * 3^(1/2)\n\n**4. Expressing in simplest radical form:**\n\nArea = (2^2 * 2^(2/3)) * \u221a3 = 4\u221a3 * \u221b4\n\nTherefore, the area of the larger square, expressed in the simplest radical form, is **4\u221a3 \u221b4**.",
+            "options": [
+                "12\u221a3",
+                "4\u221a3\u221b4",
+                "8\u221a3\u221b4",
+                "16\u221b3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type:** Solve for x\n\n**Difficulty Level:** Medium 5/10\n\n**Question Content:** Solve the equation for x:  (4^x) / (2^(x+2)) = 8^(1/3)",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Definition and Fundamental Laws of Indices' about 'Quants - Surds and Indices'.\n\nHere's a step-by-step solution:\n\n1. **Express all numbers as powers of the same base:** \n   We can express 4, 2, and 8 as powers of 2: \n   * 4 = 2^2 \n   * 2 = 2^1\n   * 8 = 2^3\n\n   The equation becomes: (2^(2x)) / (2^(x+2)) = (2^3)^(1/3)\n\n2. **Simplify using index laws:**\n   * When dividing powers with the same base, we subtract the exponents: 2^(2x-(x+2)) = 2^(3*(1/3))\n   * This simplifies to: 2^(x-2) = 2^1\n\n3. **Solve for x:**\n   * Since the bases are the same, we can equate the exponents: x - 2 = 1\n   * Solving for x, we get: x = 3\n\nTherefore, the solution to the equation is x = 3. Each step utilizes fundamental laws of indices and involves correct mathematical calculations and logical reasoning.",
+            "options": [
+                "Indices",
+                "Surds",
+                "Equations",
+                "Algebra"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: Simplify the expression: (a^(1/3) * b^(1/2))^2 / (\u221aa * b)\n**instructions**: Simplify the expression by applying the rules of indices.\n**answer_options**: \n  - a^(1/3)\n  - b^(1/2)\n  - a^(1/6) * b^(1/2)\n  - a^(2/3) * b\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Simplify the numerator:**\n\n   - Apply the rule (a^m)^n = a^(m*n) to both a and b inside the parentheses:\n     (a^(1/3) * b^(1/2))^2 = a^((1/3)*2) * b^((1/2)*2) = a^(2/3) * b\n\n**2. Rewrite the denominator with fractional exponents:**\n\n   - \u221aa is equivalent to a^(1/2):\n     (a^(2/3) * b) / (a^(1/2) * b)\n\n**3. Apply the rule of division of exponents:**\n\n   - a^m / a^n = a^(m-n):\n      a^(2/3 - 1/2) * b^(1 - 1) = a^(1/6) * b^0\n\n**4. Simplify:**\n\n   - Any number raised to the power of 0 equals 1:\n      a^(1/6) * 1 = a^(1/6)\n\nTherefore, the simplified expression is **a^(1/6)**.",
+            "options": [
+                "a^(1/3)",
+                "b^(1/2)",
+                "a^(1/6) * b^(1/2)",
+                "a^(2/3) * b"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**question**: Rationalize the denominator of the following expression:\n**expression**: (4 - \u221a2) / (2\u221a2 + 3)\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Rationalizing the Denominator' subtopic of 'Quants - Surds and Indices'. It's categorized as 'medium' because it involves a binomial denominator with a surd, requiring a slightly more involved conjugate multiplication than simpler cases. \n\nHere's a step-by-step solution:\n\n1. **Identify the conjugate:** The conjugate of the denominator (2\u221a2 + 3) is (2\u221a2 - 3). \n\n2. **Multiply by the conjugate:** Multiply both the numerator and the denominator of the expression by the denominator's conjugate:\n\n  [(4 - \u221a2) / (2\u221a2 + 3)] * [(2\u221a2 - 3) / (2\u221a2 - 3)]\n\n3. **Simplify using FOIL and the difference of squares pattern:**\n\n  * **Numerator:** (4 - \u221a2)(2\u221a2 - 3) = 8\u221a2 - 12 - 4 + 3\u221a2 = 11\u221a2 - 16 \n  * **Denominator:** (2\u221a2 + 3)(2\u221a2 - 3) = (2\u221a2)^2 - 3^2 = 8 - 9 = -1\n\n4. **Combine the simplified terms:**\n\n  (11\u221a2 - 16) / -1\n\n5. **Simplify:**\n\n  -11\u221a2 + 16\n\nTherefore, the rationalized form of the expression is -11\u221a2 + 16.",
+            "options": [
+                "11\u221a2 + 16",
+                "-11\u221a2 - 16",
+                "16 - 11\u221a2",
+                "16 + 11\u221a2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**question_type**: Inequality\n**subject**: Surds (Radicals)\n**difficulty**: Medium (5/10)\n**context**: A gardener is designing a rectangular flower bed with a stone path running diagonally across it. He wants the path to be as long as possible while ensuring the sum of the length and width of the flower bed, excluding the path, doesn't exceed 6 meters.\n**problem_statement**: The length of the path is represented by \u221a(l\u00b2 + w\u00b2), where l is the length and w is the width of the flower bed. Given the constraint l + w < 6, find the maximum possible length of the diagonal path.\n**instructions**: Solve the inequality \u221a(l\u00b2 + w\u00b2) subject to the constraint l + w < 6 to determine the maximum possible value of \u221a(l\u00b2 + w\u00b2).\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question tests the ability to solve inequalities involving surds within a given constraint. Here's how we can approach the solution:\n\n1. **Understanding the Problem:** We need to maximize the value of \u221a(l\u00b2 + w\u00b2) while ensuring l + w < 6. This represents a real-world scenario where we want the longest path within a limited rectangular area.\n\n2. **Applying the Constraint:**  To maximize \u221a(l\u00b2 + w\u00b2), we need to maximize (l\u00b2 + w\u00b2).  Since l + w < 6, we can consider the extreme case where l + w = 6. \n\n3. **Maximizing the Expression:** Notice that (l\u00b2 + w\u00b2) resembles the square of the hypotenuse in the Pythagorean theorem. The hypotenuse is maximized when l = w (the rectangle becomes a square).\n\n4. **Solving for l and w:** If l + w = 6 and l = w, then l = w = 3.\n\n5. **Calculating the Maximum Path Length:** Substitute l = 3 and w = 3 into \u221a(l\u00b2 + w\u00b2) to get \u221a(3\u00b2 + 3\u00b2) = \u221a18 = 3\u221a2.\n\nTherefore, the maximum possible length of the diagonal path is 3\u221a2 meters. \n\n## Options and Correct Answer:\n\nHere are some options for the answer, with the correct option highlighted:\n\n a) 6\n b) 6\u221a2\n **c) 3\u221a2** \n d) 9 ",
+            "options": [
+                "6 meters",
+                "6\u221a2 meters",
+                "3\u221a2 meters",
+                "9 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Solve for *x*, given the equation: \u221a(x + 5) - \u221a(x - 3) = 2",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to solve equations involving surds. It requires multiple steps and a good understanding of how to manipulate surds to isolate the variable.\n\n**Solution:**\n\n1. **Isolate one of the surds:** Begin by isolating one of the square roots.  We'll isolate \u221a(x + 5): \n   \u221a(x + 5) = \u221a(x - 3) + 2\n\n2. **Square both sides:** Square both sides of the equation to eliminate the isolated square root:\n   [\u221a(x + 5)]\u00b2 = [\u221a(x - 3) + 2]\u00b2\n   x + 5 = (x - 3) + 4\u221a(x - 3) + 4\n\n3. **Simplify and isolate the remaining surd:** Combine like terms and isolate the remaining square root term:\n   x + 5 = x + 1 + 4\u221a(x - 3)\n   4 = 4\u221a(x - 3)\n   1 = \u221a(x - 3)\n\n4. **Solve for x:** Square both sides again to get rid of the remaining square root and solve for *x*:\n   1\u00b2 = [\u221a(x - 3)]\u00b2\n   1 = x - 3\n   x = 4\n\n5. **Check for extraneous solutions:** It's crucial to check if the solution is valid by plugging it back into the original equation. In this case, x = 4 satisfies the original equation.\n\n**Therefore, the solution to the equation is x = 4.**",
+            "options": [
+                "3",
+                "5",
+                "4",
+                "2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A square-shaped solar panel has a side length of \u221a5 meters.\n**task**: Calculate the area of the solar panel and express the answer in its simplest surd form.\n**question**: What is the area of the solar panel in its simplest surd form?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Definition and Basic Properties of Surds' topic as it requires understanding that the area of a square is calculated by squaring the side length, and then simplifying the resulting surd. \n\nHere's the step-by-step solution:\n\n1. **Area of a square = (side length)^2**\n2. **Area of the solar panel = (\u221a5)^2**\n3. **Area of the solar panel = 5 square meters**\n\nTherefore, the area of the solar panel in its simplest surd form is 5 square meters. While '5' is not a surd itself, it represents the simplest form of the answer in this context.",
+            "options": [
+                "10 square meters",
+                "\u221a5 square meters",
+                "5 square meters",
+                "2\u221a5 square meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A square garden with side length \u221a8 meters is inscribed within a larger square park, such that the vertices of the garden touch the midpoints of the sides of the park.  What is the total area of the walkways surrounding the garden within the park (i.e., the area of the park not covered by the garden)?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves multiple steps and the application of surds and area calculations:\n\n1. **Visualize:** Imagine a square (the garden) fully enclosed within a larger square (the park). The corners of the smaller square touch the sides of the larger square at their midpoints.\n\n2. **Diagonal of the Small Square:** The diagonal of the smaller square is equal to the side length of the larger square. We can find this diagonal using the Pythagorean theorem or by knowing the relationship between the side and diagonal of a square (d = s\u221a2). So, the diagonal of the garden is (\u221a8)(\u221a2) = \u221a16 = 4 meters.\n\n3. **Area of the Larger Square:** Since the diagonal of the smaller square is the side of the larger square, the area of the larger square (the park) is 4 meters * 4 meters = 16 square meters. \n\n4. **Area of the Smaller Square:** The area of the smaller square (the garden) is side * side = \u221a8 meters * \u221a8 meters = 8 square meters.\n\n5. **Area of Walkways:**  Finally, subtract the garden's area from the park's area to find the area of the walkways: 16 square meters - 8 square meters = 8 square meters. \n\n**Therefore, the total area of the walkways surrounding the garden is 8 square meters.**",
+            "options": [
+                "4 square meters",
+                "8 square meters",
+                "16 square meters",
+                "32 square meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Simplify the expression, expressing the final answer in the simplest radical form:  **(\u221a8 + 2^(3/2))^4 / 16\u221a2**",
+            "difficulty": "medium",
+            "reasoning": "This question tests the ability to combine surds and indices within a more complex expression requiring simplification. It involves several properties and steps, making it a suitable medium-level challenge.\n\n**Step-by-step Solution:**\n\n1. **Simplify within the parentheses:**\n   - \u221a8 can be simplified to 2\u221a2\n   - 2^(3/2) can be simplified to (\u221a2)^3 = 2\u221a2 \n   - The expression now becomes: (2\u221a2 + 2\u221a2)^4 / 16\u221a2\n\n2. **Combine terms within the parentheses:**\n   - (2\u221a2 + 2\u221a2) = 4\u221a2\n   - The expression now becomes: (4\u221a2)^4 / 16\u221a2\n\n3. **Apply the exponent:**\n   - (4\u221a2)^4 = 4^4 * (\u221a2)^4 = 256 * 4 = 1024\n   - The expression now becomes: 1024 / 16\u221a2\n\n4. **Simplify by rationalizing the denominator:**\n   - Multiply both numerator and denominator by \u221a2: (1024 * \u221a2) / (16\u221a2 * \u221a2)\n   - This simplifies to: (1024\u221a2) / 32\n\n5. **Reduce to the simplest form:**\n   - 1024 / 32 = 32\n   - The final simplified expression is: **32\u221a2**",
+            "options": [
+                "16\u221a2",
+                "32\u221a2",
+                "64\u221a2",
+                "128\u221a2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: Simplify the following expression by rationalizing the denominator:\n**expression**: (\u221a8 - \u221a2) / (\u221a2 + 1)\n",
+            "difficulty": "medium",
+            "reasoning": "This question involves rationalizing a denominator where the denominator is a binomial containing surds. Here's how to solve it:\n\n**1. Identify the Conjugate:**\n   The conjugate of the denominator (\u221a2 + 1) is (\u221a2 - 1).  The conjugate is formed by changing the sign between the terms.\n\n**2. Multiply by the Conjugate:** \n   Multiply both the numerator and denominator by the conjugate:\n   [(\u221a8 - \u221a2) / (\u221a2 + 1)] * [(\u221a2 - 1) / (\u221a2 - 1)]\n\n**3. Simplify Using Difference of Squares:**\n   * **Denominator:** (\u221a2 + 1)(\u221a2 - 1) simplifies to (\u221a2)\u00b2 - (1)\u00b2 = 2 - 1 = 1\n   * **Numerator:** Expand (\u221a8 - \u221a2)(\u221a2 - 1) \n      = (\u221a8 * \u221a2) - (\u221a8 * 1) - (\u221a2 * \u221a2) + (\u221a2 * 1)\n      = \u221a16 - \u221a8 - 2 + \u221a2\n      = 4 - 2\u221a2 - 2 + \u221a2\n      = 2 - \u221a2\n\n**4. Final Result:**\n   The simplified expression is **2 - \u221a2** since the denominator is 1.",
+            "options": [
+                "\u221a2 - 1",
+                "2 - \u221a2",
+                "\u221a16 - \u221a8 - 2 + \u221a2",
+                "4 - 2\u221a2 - 2 + \u221a2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**problem_statement**: A square-shaped solar panel's side length is given by \\(2^x\\) centimeters.  For optimal sunlight absorption, the panel's area needs to be greater than 16 square centimeters but less than 256 square centimeters.  Find the possible values of x.\n**inequality**: 16 < (2^x)^2 < 256\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\n1. **Area of the Square:** The area of a square is calculated by squaring its side length.  Therefore, the area of the solar panel is (2^x)^2 = 2^(2x) square centimeters.\n\n2. **Setting up the Inequality:** We are given that the area must be greater than 16 and less than 256 square centimeters. This can be expressed as the compound inequality:\n    16 < 2^(2x) < 256\n\n3. **Solving the Inequality:**\n    * **Left side:** 16 can be expressed as 2^4. So, 2^4 < 2^(2x), which means 4 < 2x, or 2 < x.\n    * **Right side:** 256 can be expressed as 2^8. So, 2^(2x) < 2^8, which means 2x < 8, or x < 4. \n\n4. **Combining the Solutions:** Combining both sides of the inequality, we get the solution 2 < x < 4.\n\nTherefore, the possible values of x lie between 2 and 4.",
+            "options": [
+                "2 < x < 4",
+                "x < 2",
+                "x > 4",
+                "x = 2 or x = 4"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**statement**: Find the value of x that satisfies the equation: \\(\\sqrt[3]{(27)^{x-2}} = (\\frac{1}{81})^{2x+1}\\)\n**instructions**: Solve for x.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Solving Equations Involving Indices' within 'Quants - Surds and Indices' because it requires manipulating exponents and applying the rules of indices to isolate and solve for the unknown variable, x. \n\nHere's a step-by-step solution:\n\n1. **Express all numbers as prime factors with exponents:**\n   *  \\(27 = 3^3\\) \n   *  \\(81 = 3^4\\)\n   *  \\(\\frac{1}{81} = 3^{-4}\\)\n   The equation becomes:  \\(\\sqrt[3]{(3^{3})^{x-2}} = (3^{-4})^{2x+1}\\)\n\n2. **Simplify using the rules of exponents:** \n   *  \\( (a^m)^n = a^{m*n} \\)\n   *  \\( \\sqrt[n]{a^m} = a^{\\frac{m}{n}} \\)\n   The equation becomes: \\(3^{\\frac{3(x-2)}{3}} = 3^{-4(2x+1)}\\)\n   Which simplifies to: \\(3^{x-2} = 3^{-8x-4}\\)\n\n3. **Equate the exponents:**\n   Since the bases are the same, we can equate the exponents:\n   \\(x - 2 = -8x - 4\\)\n\n4. **Solve the linear equation for x:**\n   * Add 8x to both sides: \\(9x - 2 = -4\\)\n   * Add 2 to both sides:  \\(9x = -2\\)\n   * Divide both sides by 9:  \\(x = -\\frac{2}{9}\\)\n\nTherefore, the solution to the equation is \\(x = -\\frac{2}{9}\\).",
+            "options": [
+                "Surds and Indices",
+                "Solving Linear Equations",
+                "Exponents and Logarithms",
+                "Algebraic Manipulation"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Solve for *x* in the following equation: (2<sup>x</sup>)<sup>\u221a2</sup> = 16 / 2<sup>x/2</sup>",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Definition and Fundamental Laws of Indices' within 'Quants - Surds and Indices'. It tests a student's ability to apply multiple laws of indices with the inclusion of a surd in the exponent, making it creatively challenging. Here's a step-by-step solution:\n\n1. **Simplify both sides:**\n   *  Left side: Using the rule (a<sup>m</sup>)<sup>n</sup> = a<sup>m*n</sup>, we get 2<sup>x\u221a2</sup>\n   *  Right side: Rewrite 16 as 2<sup>4</sup>. The equation becomes 2<sup>x\u221a2</sup> = 2<sup>4</sup> / 2<sup>x/2</sup>\n\n2. **Combine terms with the same base:**\n   *  Right side: Using the rule a<sup>m</sup> / a<sup>n</sup> = a<sup>m-n</sup>, we get 2<sup>x\u221a2</sup> = 2<sup>(4 - x/2)</sup>\n\n3. **Equate the exponents:**\n   * Since the bases are the same, we can equate the exponents: x\u221a2 = 4 - x/2\n\n4. **Solve for x:**\n   *  Multiply both sides by 2: 2x\u221a2 = 8 - x\n   *  Move all x terms to one side: 2x\u221a2 + x = 8\n   *  Factor out x: x(2\u221a2 + 1) = 8\n   *  Isolate x: x = 8 / (2\u221a2 + 1)\n\n5. **Rationalize the denominator (optional):**\n   *  Multiply numerator and denominator by the conjugate of the denominator: x = 8(2\u221a2 - 1) / ((2\u221a2 + 1)(2\u221a2 - 1))\n   *  Simplify: x = (16\u221a2 - 8) / (8 - 1) = (16\u221a2 - 8) / 7\n\nTherefore, the solution is x = (16\u221a2 - 8) / 7.",
+            "options": [
+                "16\u221a2 - 8",
+                "7",
+                "(16\u221a2 - 8) / 7",
+                "8 / (2\u221a2 + 1)"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Simplify the following expression: \\(\\frac{\\sqrt[3]{16}  y^{\\frac{5}{2}}}{y^{\\frac{1}{6}} \\cdot 2^{\\frac{2}{3}}}\\)",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Simplifying Expressions with Indices: Multiplication and Division' within the broader subject of 'Quants - Surds and Indices'. Here's a step-by-step solution:\n\n**Step 1: Simplify the Surd**\n\n* We can simplify the cube root of 16:  \\(\\sqrt[3]{16} = \\sqrt[3]{2^4} = 2^{\\frac{4}{3}}\\)\n\n**Step 2: Apply the Rules of Indices**\n\n* **Division Rule:** When dividing terms with the same base, subtract the exponents: \\(y^{\\frac{5}{2}} / y^{\\frac{1}{6}} = y^{\\frac{5}{2} - \\frac{1}{6}} = y^{\\frac{7}{3}}\\)\n* **Division Rule (again):**  \\(2^{\\frac{4}{3}} / 2^{\\frac{2}{3}} = 2^{\\frac{4}{3} - \\frac{2}{3}} = 2^{\\frac{2}{3}}\\)\n\n**Step 3: Combine the Simplified Terms**\n\n* Putting it all together, we get: \\(2^{\\frac{2}{3}} \\cdot y^{\\frac{7}{3}}\\)\n\nTherefore, the simplified expression is \\(2^{\\frac{2}{3}}y^{\\frac{7}{3}}\\). This demonstrates a good understanding of simplifying expressions with indices involving both multiplication and division.",
+            "options": [
+                "Surds and Indices",
+                "Simplifying Expressions",
+                "Algebra",
+                "Arithmetic"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: An intricate pattern is formed by squares, where the side length of each square is half the side length of the previous square. The side length of the first square is represented by  2^(3/2).  If the equation (2^(3/2) * (1/2)^n)^2 represents the area of the nth square, find the value of 'n' when the area of the square is 1/8.\n**equation**: (2^(3/2) * (1/2)^n)^2 = 1/8\n**instructions**: Solve for 'n'.\n",
+            "difficulty": "hard",
+            "reasoning": "This problem blends geometry and indices to create a multi-step challenge. Here's a step-by-step solution:\n\n1. **Simplify the equation:**\n   - Begin by simplifying the left side of the equation. \n   -  (2^(3/2) * (1/2)^n)^2 = 2^3 * (1/2)^(2n) = 8 * (1/2)^(2n)\n\n2. **Express both sides with the same base:**\n   - Rewrite 1/8 as a power of 2: 1/8 = 2^(-3)\n   - Now the equation becomes: 8 * (1/2)^(2n) = 2^(-3)\n\n3. **Further simplification:**\n   - Express 8 as a power of 2: 2^3 * (1/2)^(2n) = 2^(-3)\n   - Combine the terms on the left side: 2^(3-2n) = 2^(-3)\n\n4. **Solve for n:**\n   - Since the bases are the same, we can equate the exponents: 3 - 2n = -3\n   - Solve for 'n': 2n = 6 => n = 3 \n\nTherefore, the value of 'n' when the area of the square is 1/8 is 3.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Solve for *x* in the equation:\n\n \u221a[(2<sup>-3</sup> * *x*<sup>-1/2</sup>)<sup>-2</sup>] = 16",
+            "difficulty": "hard",
+            "reasoning": "This question delves into negative indices and their interpretation within the context of surds, demanding a thorough understanding of index laws and simplification strategies. Here's a step-by-step solution:\n\n**1. Simplify the outermost exponent:**\n\n   The expression (2<sup>-3</sup> * *x*<sup>-1/2</sup>) is raised to the power of -2. Applying the power of a power rule, we multiply the inner exponents by -2:\n\n   [(2<sup>-3</sup> * *x*<sup>-1/2</sup>)<sup>-2</sup>] = 2<sup>(-3)*(-2)</sup> * *x*<sup>(-1/2)*(-2)</sup> = 2<sup>6</sup> * *x*<sup>1</sup>\n\n**2. Address the square root:**\n\n   \u221a(2<sup>6</sup> * *x*<sup>1</sup>) = (2<sup>6</sup> * *x*)<sup>1/2</sup>\n\n**3. Simplify further:**\n\n   (2<sup>6</sup> * *x*)<sup>1/2</sup> = 2<sup>(6 * 1/2)</sup> * *x*<sup>(1 * 1/2)</sup> = 2<sup>3</sup> * *x*<sup>1/2</sup>\n\n**4. Set up the equation:**\n\n   We now have: 2<sup>3</sup> * *x*<sup>1/2</sup> = 16. Simplifying, we get 8 * *x*<sup>1/2</sup> = 16\n\n**5. Solve for *x*:**\n\n   Divide both sides by 8: *x*<sup>1/2</sup> = 2\n\n   Square both sides to isolate *x*: (*x*<sup>1/2</sup>)<sup>2</sup> = 2<sup>2</sup>\n\n   Therefore, *x* = 4\n\n**Correct Answer:** *x* = 4",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A research team is studying the growth patterns of two species of bacteria in a controlled environment. The population of the first species after 't' hours is modeled by the function P(t) = 2^(t/3), and the population of the second species is modeled by Q(t) = 4^(t/5).  To analyze the growth dynamics, the team wants to determine when the population of the first species, P(t), will exceed twice the population of the second species, Q(t).  In other words, they need to solve the inequality:\n\n 2^(t/3) > 2 * 4^(t/5)\n\nDetermine the range of values for 't', in hours, for which the population of the first species of bacteria exceeds twice the population of the second species. ",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the category of 'Solving Inequalities Involving Indices' and is considered 'tricky 8/10' due to the following factors:\n\n1. **Complex Indices:** The inequality involves fractional indices (t/3 and t/5), which require careful manipulation.\n2. **Multiple Variables:**  While there's only one variable, 't', the presence of two distinct exponential functions adds complexity.\n3. **Advanced Techniques:** Solving the inequality requires a combination of algebraic manipulation, applying the properties of exponents, and logarithmic functions to isolate 't'.\n\n**Solution:**\n\n1. **Simplify using exponent rules:**\n   * Rewrite 4 as 2^2:  2^(t/3) > 2 * (2^2)^(t/5)\n   * Simplify using (a^m)^n = a^(m*n):  2^(t/3) > 2^(1 + 2t/5)\n\n2. **Since the bases are the same, we can equate the exponents:**\n   * t/3 > 1 + 2t/5\n\n3. **Solve the linear inequality:**\n   * Multiply both sides by 15 (LCM of 3 and 5): 5t > 15 + 6t\n   * Subtract 6t from both sides: -t > 15\n   * Multiply both sides by -1 (and remember to flip the inequality sign): t < -15\n\n**Therefore, the population of the first species of bacteria will exceed twice the population of the second species for t < -15 hours. However, since time cannot be negative, this inequality has no solution in the real world.**",
+            "options": [
+                "t < -15 hours",
+                "t > -15 hours",
+                "t > 15 hours",
+                "No solution"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Find the range of all real numbers 'x' that satisfy the following inequality:\n \\sqrt{2x + 3} - \\sqrt{x - 1} > \\sqrt{3x - 2} - \\sqrt{2x}.",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\nThis question falls under the 'Inequalities Involving Surds' subtopic within 'Quants - Surds and Indices'.  The question's difficulty (8/10) stems from the complex arrangement of surds and the multiple steps of manipulation required. Let's solve it step-by-step:\n\n**1. Rearranging the Inequality:**\nBegin by rearranging the inequality to group similar terms:\n\\sqrt{2x + 3} + \\sqrt{2x} > \\sqrt{3x - 2} + \\sqrt{x - 1}\n\n**2. Squaring Both Sides (First Time):**\nSquare both sides of the inequality. Remember to handle the product of the square roots carefully:\n\n(2x + 3) + 2\\sqrt{(2x + 3)(2x)} + 2x > (3x - 2) + 2\\sqrt{(3x - 2)(x - 1)} + (x - 1)\n\n**3. Simplifying and Isolating the Remaining Surd:**\nSimplify the expression and move the remaining surd terms to one side:\n\n2\\sqrt{(2x + 3)(2x)} - 2\\sqrt{(3x - 2)(x - 1)}  >  -6\n\n\\sqrt{(2x + 3)(2x)} - \\sqrt{(3x - 2)(x - 1)} > -3\n\n**4.  Squaring Both Sides (Second Time):**\nSquare both sides again to eliminate the remaining surds:\n\n(2x + 3)(2x) - 2\\sqrt{(2x + 3)(2x)(3x - 2)(x - 1)} + (3x - 2)(x - 1) > 9 \n\n**5. Simplifying and Rearranging:**\nSimplify the inequality and move all terms to one side, resulting in a polynomial inequality:\n\n7x^2 - 14x + 4 > 2\\sqrt{(2x + 3)(2x)(3x - 2)(x - 1)}\n\n7x^2 - 14x + 4 > 0 \n\n**6. Factoring the Quadratic:**\nFactor the quadratic expression:\n(7x - 2)(x - 2) > 0\n\n**7. Critical Points and Intervals:**\nIdentify the critical points where the expression equals zero: x = 2/7, x = 2. These points divide the number line into three intervals.\n\n**8.  Testing Intervals:**\nTest each interval in the original inequality to determine where it holds true:\n* x < 2/7: Not possible because of the domains of the square roots in the original inequality.\n* 2/7 < x < 2: Does not satisfy the original inequality.\n* x > 2: Satisfies the original inequality. \n\n**9. Domain Restrictions:**\nConsider the initial domain restrictions imposed by the square roots in the original inequality. For all square roots to be defined, we need:\n* 2x + 3 \u2265 0  => x \u2265 -3/2\n* x - 1  \u2265 0   => x \u2265 1\n* 3x - 2 \u2265 0  => x \u2265 2/3\n\n**10. Combining Solutions and Domain:**\nThe solution x > 2 satisfies all the domain restrictions. Therefore, the final solution in interval notation is (2, \u221e). ",
+            "options": [
+                "(2, \u221e)",
+                "(-\u221e, 2)",
+                "(-3/2, \u221e)",
+                "(2/3, \u221e)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "An architect is designing a spiral staircase for a new building.  The staircase will wind around a central pillar, and the architect needs to calculate the precise length of the railing.  The length of the railing for a single rotation depends on the height (h) of the central pillar and the radius (r) of the staircase.  This length can be represented by the following expression:  \n\n  (2\u03c0\u221a(r^2 + h^2)  ) / (\u221a(r + h) - \u221a(r - h))\n\n**Question:** To simplify further calculations, rationalize the denominator of the expression representing the railing length for a single rotation.",
+            "difficulty": "medium",
+            "reasoning": "This question delves into the heart of rationalizing the denominator within the context of surds and indices. Here's a step-by-step breakdown of the solution:\n\n**1. Understanding the Problem:**\n\nWe are presented with a complex fraction where both the numerator and denominator contain surds. Our goal is to eliminate the surds from the denominator.\n\n**2. Utilizing the Conjugate:**\n\nTo rationalize the denominator, we multiply both the numerator and denominator by the denominator's conjugate.  The conjugate of (\u221a(r + h) - \u221a(r - h)) is (\u221a(r + h) + \u221a(r - h)). \n\n**3. Performing the Multiplication:**\n\n* **Numerator:**\n   [2\u03c0\u221a(r^2 + h^2)] * [(\u221a(r + h) + \u221a(r - h))]  = 2\u03c0\u221a(r^2 + h^2) * (\u221a(r + h) + \u221a(r - h))\n\n* **Denominator:**\n  [(\u221a(r + h) - \u221a(r - h))] * [(\u221a(r + h) + \u221a(r - h))] = (r + h) - (r - h) = 2h\n\n**4. Simplification:**\n\nThe expression now becomes:\n\n [2\u03c0\u221a(r^2 + h^2) * (\u221a(r + h) + \u221a(r - h))] / 2h\n\nWe can simplify this further by canceling the 2:\n\n[\u03c0\u221a(r^2 + h^2) * (\u221a(r + h) + \u221a(r - h))] / h\n\n**Therefore, the rationalized form of the expression is [\u03c0\u221a(r^2 + h^2) * (\u221a(r + h) + \u221a(r - h))] / h**",
+            "options": [
+                "2h",
+                "\u03c0\u221a(r^2 + h^2) * (\u221a(r + h) + \u221a(r - h))",
+                "[\u03c0\u221a(r^2 + h^2) * (\u221a(r + h) + \u221a(r - h))] / h",
+                "2\u03c0\u221a(r^2 + h^2) * (\u221a(r + h) + \u221a(r - h))"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Simplify the following expression, expressing your answer in the simplest radical form:  **(\u221aa^3 * \u221a(a^5 * b^7)) / (a^(-1/2) * b^(5/2))** ",
+            "difficulty": "medium",
+            "reasoning": "This question is considered 'tricky 8/10' because it combines several challenging aspects of indices and surds:\n\n* **Nested Radicals and Fractional Indices:** The expression involves both square roots and fractional indices, requiring students to convert between these forms and apply the rules of indices flexibly.\n* **Combination of Multiplication and Division:** The expression requires careful application of index laws for both multiplication and division, increasing the complexity of the simplification.\n* **Variable Indices:** The presence of variables in both the base and the index requires students to have a strong grasp of algebraic manipulation within the context of indices. \n\n**Here's a step-by-step solution:**\n\n1. **Simplify inside the radical first:**\n   * \u221a(a^5 * b^7) = \u221a(a^5) * \u221a(b^7) = a^(5/2) * b^(7/2)\n\n2. **Substitute the simplified term back into the original expression:**\n   * (\u221aa^3 * (a^(5/2) * b^(7/2))) / (a^(-1/2) * b^(5/2))\n\n3. **Apply the rule of indices for multiplication:**\n   * (a^(3/2) * a^(5/2) * b^(7/2)) / (a^(-1/2) * b^(5/2))\n   * a^(8/2) * b^(7/2) / (a^(-1/2) * b^(5/2))\n   * a^4 * b^(7/2) / (a^(-1/2) * b^(5/2))\n\n4. **Apply the rule of indices for division:**\n   * a^(4-(-1/2)) * b^((7/2)-(5/2))\n   * a^(9/2) * b\n\n5. **Express the answer in simplest radical form:**\n   * \u221a(a^9) * b\n   * a^4\u221aa * b\n\nTherefore, the simplified expression is **a^4\u221aa * b**.",
+            "options": [
+                "Easy",
+                "Medium",
+                "Hard",
+                "Very Hard"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**problem**: Simplify the following expression by applying the rules of surds and indices, expressing the result in its simplest radical form.\n**example**: For example, an expression like \u221a(8) + \u221a(18) - \u221a(32) would simplify to 3\u221a(2).\n**instruction**: Simplify the expression: \u221a(98a^5 b^9) - \u221a(50a^3 b^11) + \u221a(32a^7 b^5), where a and b are positive real numbers.\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning: \nThis question is rated as **hard (8/10)** due to the combination of larger numbers within the surds and the varied powers of the variables. This increases the steps and considerations needed for simplification.\n\n**Step-by-Step Solution:**\n\n1. **Factor out perfect squares within each surd:**\n   * \u221a(98a^5 b^9) = \u221a(49 * 2 * a^4 * a * b^8 * b) = 7a^2 b^4 \u221a(2ab)\n   * \u221a(50a^3 b^11) = \u221a(25 * 2 * a^2 * a * b^10 * b) = 5ab^5 \u221a(2ab)\n   * \u221a(32a^7 b^5) = \u221a(16 * 2 * a^6 * a * b^4 * b) = 4a^3 b^2 \u221a(2ab)\n\n2. **Rewrite the expression with the simplified surds:**\n   7a^2 b^4 \u221a(2ab) - 5ab^5 \u221a(2ab) + 4a^3 b^2 \u221a(2ab) \n\n3. **Identify the common factor and factor it out:**\n   Notice that all terms have a common factor of \u221a(2ab). Factoring this out, we get:\n   \u221a(2ab) (7a^2 b^4 - 5ab^5 + 4a^3 b^2) \n\n4. **Simplify the expression within the parentheses (optional):**\n   While not strictly necessary, we can rearrange the terms within the parentheses for a slightly neater look:\n   \u221a(2ab) (7a^2 b^4 + 4a^3 b^2 - 5ab^5)\n\nTherefore, the simplified expression is **\u221a(2ab) (7a^2 b^4 + 4a^3 b^2 - 5ab^5)**",
+            "options": [
+                "Easy",
+                "Medium",
+                "Hard",
+                "Very Hard"
+            ],
+            "correct_option": "C"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Surds and Indices",
+    "exam_id": 18,
+    "order": 16
+}

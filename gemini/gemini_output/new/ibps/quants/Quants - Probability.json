@@ -1,0 +1,465 @@
+{
+    "questions": [
+        {
+            "question": "**context**: A bakery sells loaves of sourdough bread by weight. The weight of a loaf of sourdough bread follows a normal distribution with a mean of 500 grams and a standard deviation of 20 grams.\n**variable**: Let X be the weight of a loaf of sourdough bread in grams. X ~ N(500, 20^2).\n**task**: Calculate the expected weight of a loaf of sourdough bread.\n**difficulty**: easy 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "This question assesses the understanding of expected value in the context of a normal distribution.  The expected value of a random variable represents the average outcome over many trials. For a normally distributed variable, the expected value is equal to the mean of the distribution.\n\n**Solution:**\n\n1. **Identify the distribution:** The weight of the bread (X) follows a normal distribution: X ~ N(500, 20^2).\n2. **Recall the property:** The expected value of a normally distributed random variable is equal to its mean.\n3. **Apply to the problem:** The mean weight of a loaf is given as 500 grams.\n\nTherefore, the expected weight of a loaf of sourdough bread is **500 grams**.",
+            "options": [
+                "480 grams",
+                "500 grams",
+                "520 grams",
+                "20 grams"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Calculation\n**Difficulty Level**: 5\n**Topic**: Probability Axioms\n**Scenario**: A company is launching a new product and wants to assess the probability of its success. Market research suggests there is a 30% chance the product will be very successful, a 50% chance it will be moderately successful, and a 20% chance it will be unsuccessful.\n**Question**: What is the probability that the product will be either very successful or moderately successful?\n",
+            "difficulty": "easy",
+            "reasoning": "This question tests the understanding of the **Axiom of Probability that states the probability of the union of mutually exclusive events is the sum of their individual probabilities.** \n\nHere's how to solve the problem: \n\n1. **Identify the mutually exclusive events:** The events 'very successful' and 'moderately successful' are mutually exclusive because the product launch cannot have both outcomes simultaneously.\n2. **Apply the axiom:** Since the events are mutually exclusive, the probability of either event happening is the sum of their individual probabilities. \n3. **Calculate:** P(very successful or moderately successful) = P(very successful) + P(moderately successful) = 0.30 + 0.50 = 0.80\n\nTherefore, the probability of the product being either very successful or moderately successful is 0.80 or 80%.",
+            "options": [
+                "0.20",
+                "0.30",
+                "0.50",
+                "0.80"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**question_type**: Multiple Choice\n**difficulty**: Easy (5/10)\n**context**: A bag contains 4 red balls and 6 blue balls. One ball is drawn at random.\n**question**: What is the probability that the ball drawn is blue?\n**options**: \n  **A**: 1/10\n  **B**: 2/5\n  **C**: 3/5\n  **D**: 4/5\n**correct_option**: C\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under 'Basic Definitions: Sample Spaces, Events, and Probability' as it deals with calculating the probability of a simple event.\n\nHere's how to solve it:\n\n**1. Define the Sample Space:**\n   The sample space is the set of all possible outcomes. In this case, it's drawing any of the 10 balls (4 red + 6 blue).\n\n**2. Define the Event:**\n   The event we're interested in is drawing a blue ball.\n\n**3. Calculate the Probability:**\n   Probability is calculated as (Favorable Outcomes) / (Total Possible Outcomes)\n\n   * Favorable Outcomes: 6 (number of blue balls)\n   * Total Possible Outcomes: 10 (total number of balls)\n\n   Therefore, the probability of drawing a blue ball is 6/10, which simplifies to 3/5.\n\n**Therefore, the correct answer is (C) 3/5.**",
+            "options": [
+                "1/10",
+                "2/5",
+                "3/5",
+                "4/5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**topic**: Poisson Distribution\n**difficulty**: Easy (5/10)\n**context**: A bakery receives an average of 6 orders for cakes every hour.\n**question**: What is the probability of receiving exactly 4 cake orders in the next hour?\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Common Discrete Probability Distributions' subtopic, specifically the Poisson distribution, as it deals with the probability of a certain number of events (cake orders) occurring within a fixed interval (one hour) given a known average rate (6 orders per hour).\n\nHere's how to solve the problem:\n\n**1. Identify the parameters of the Poisson distribution:**\n\n*  \u03bb (lambda) = average number of events in the given interval = 6 cake orders per hour\n*  x = number of events we're interested in = 4 cake orders\n\n**2.  Apply the Poisson probability formula:**\n\n   P(X = x) = (e^-\u03bb * \u03bb^x) / x!\n\n   Where:\n   * P(X = x) is the probability of observing x events\n   * e is the base of the natural logarithm (approximately 2.71828)\n\n**3.  Plug in the values and calculate:**\n\n   P(X = 4) = (e^-6 * 6^4) / 4!\n   P(X = 4) = (0.002479 * 1296) / 24\n   P(X = 4) \u2248 0.1339\n\nTherefore, the probability of receiving exactly 4 cake orders in the next hour is approximately 0.1339 or 13.39%.",
+            "options": [
+                "0.002479",
+                "13.39%",
+                "1296",
+                "0.1339"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "The lifespan of a certain brand of smartphone battery is exponentially distributed. On average, these batteries last for 2 years. What is the probability that a randomly selected battery of this brand will last less than 1 year?",
+            "difficulty": "easy",
+            "reasoning": "This question deals with the Exponential distribution, a continuous probability distribution often used to model the time until an event occurs. Here's how to break down the solution:\n\n**1. Understanding the Exponential Distribution:**\n\n   - The Exponential distribution has a key parameter: the mean (average) time, often denoted by the Greek letter lambda (\u03bb). In this case, \u03bb = 2 years.\n   - A crucial property of the Exponential distribution is the 'memoryless property'. This means that the probability of the event happening in the next 'x' time units is the same, regardless of how much time has already elapsed.\n\n**2. Applying the Formula:**\n\n   - The cumulative distribution function (CDF) of the Exponential distribution gives us the probability that a random variable X (in this case, battery lifespan) will take a value less than or equal to a specific value 'x'. \n   - The CDF formula for the exponential distribution is: F(x) = 1 - e^(-x/\u03bb)\n\n**3. Calculation:**\n\n   - We want to find the probability that a battery lasts less than 1 year (x=1). \n   - Plugging in the values: F(1) = 1 - e^(-1/2) \n   - Calculating the expression: F(1) \u2248 0.3935 \n\n**Therefore, the probability that a randomly selected battery will last less than 1 year is approximately 0.3935 or 39.35%.**",
+            "options": [
+                "0.1353",
+                "0.6065",
+                "0.3935",
+                "0.2865"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: A jar contains 10 cookies, 6 of which are chocolate chip and 4 of which are peanut butter.\n**information**: You randomly select a cookie from the jar and eat it. You then select a second cookie.\n**question**: What is the probability that the second cookie is chocolate chip, given that the first cookie you ate was also chocolate chip?\n",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Understand the problem:**\n\nWe are given that the first cookie selected was chocolate chip. This means we are working with a conditional probability \u2013 the probability of an event happening given that another event has already occurred. \n\n**2. Define the events:**\n\n* Event A: The first cookie selected is chocolate chip.\n* Event B: The second cookie selected is chocolate chip.\n\n**3. Determine the probabilities:**\n\n* **P(A):** The probability of selecting a chocolate chip cookie on the first draw is 6 (chocolate chip cookies) / 10 (total cookies) = 3/5\n* **P(B|A):**  The probability of selecting another chocolate chip cookie after already eating one. Since we didn't replace the first cookie, there are only 5 chocolate chip cookies left and 9 total cookies. So, P(B|A) = 5/9.\n\n**4. Apply the formula (although not necessary in this simple case):**\n\nThe formula for conditional probability is P(B|A) = P(A and B) / P(A). However, in this easy example, we have directly calculated P(B|A) in step 3. \n\n**Therefore, the probability of selecting a chocolate chip cookie as the second cookie, given the first was also chocolate chip, is 5/9.**",
+            "options": [
+                "3/5",
+                "5/9",
+                "2/3",
+                "1/2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A quantitative analyst is evaluating a simple trading strategy. The strategy has a 70% chance of generating a profit of $1,000 and a 30% chance of resulting in a loss of $500.\n**Random Variable**: The net profit or loss from the trading strategy.\n**Probability Distribution**: Profit = $1000: Probability = 0.7 \nLoss = -$500: Probability = 0.3\n**Task**: Calculate the expected value of the profit or loss for this trading strategy.\n",
+            "difficulty": "easy",
+            "reasoning": "**Explanation**: This question falls under the 'Expected Value and Variance of Discrete Random Variables' topic within Quantitative Finance. We are given a discrete random variable (profit/loss) with its probability distribution and asked to calculate the expected value, which represents the average outcome if the strategy were to be repeated many times.\n**Solution**: **Step 1: Define the formula for Expected Value**\n The expected value (E[X]) of a discrete random variable X is calculated as follows:\n E[X] = \u03a3 [ xi * P(xi) ]\n where:\n *  xi represents each possible outcome of the random variable\n *  P(xi) represents the probability of outcome xi\n\n**Step 2: Apply the formula to the given scenario**\n In this case:\n *  x1 = $1000 (profit)\n *  P(x1) = 0.7\n *  x2 = -$500 (loss)\n *  P(x2) = 0.3\n\n**Step 3: Calculate the Expected Value**\n E[X] = ($1000 * 0.7) + (-$500 * 0.3)\n       = $700 - $150\n       = $550\n\n Therefore, the expected value of the profit or loss for this trading strategy is $550. This means that, on average, the trader can expect to make a profit of $550 per trade if they use this strategy over a long period.\n**Verification**: The calculation is correct as it follows the formula for expected value.  Each outcome is multiplied by its probability, and the results are summed up. The positive expected value indicates that the trading strategy is expected to be profitable in the long run.\n",
+            "options": [
+                "$450",
+                "$650",
+                "$550",
+                "$700"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A group of 5 friends wants to take a photo in a line.  \n**question**: How many different ways can they arrange themselves for the photo?\n**difficulty**: 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question involves finding the number of permutations of 5 distinct objects (the friends) taken 5 at a time.  Here's how to solve it:\n\n**Understanding Permutations**\n\nA permutation is an arrangement of objects in a specific order. The number of permutations of *n* objects taken *r* at a time is calculated as:\n\n nPr = n! / (n - r)!\n\nwhere '!' denotes the factorial (e.g., 5! = 5 * 4 * 3 * 2 * 1).\n\n**Solution**\n\n1. **Identify n and r:** We have 5 friends (n = 5) and want to arrange all of them (r = 5). \n\n2. **Apply the formula:**\n    5P5 = 5! / (5 - 5)!\n    5P5 = 5! / 0!  (Remember 0! = 1)\n    5P5 = 5 * 4 * 3 * 2 * 1 = 120\n\n**Therefore, there are 120 different ways the friends can arrange themselves for the photo.**",
+            "options": [
+                "25",
+                "5",
+                "10",
+                "120"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A bank lends money to two customers, Customer A and Customer B. The probability of Customer A defaulting on the loan is 3%, while the probability of Customer B defaulting is 5%. Assuming the events of default for each customer are independent, what is the probability that at least one customer will default?",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the understanding of basic probability concepts, specifically the concept of independent events and the 'at least one' scenario. Here's how to solve it:\n\n**1. Probability of Neither Customer Defaulting:**\n\n* Probability of Customer A NOT defaulting = 100% - 3% = 97%\n* Probability of Customer B NOT defaulting = 100% - 5% = 95%\n* Probability of BOTH customers NOT defaulting = 0.97 * 0.95 = 0.9215\n\n**2. Probability of At Least One Customer Defaulting:**\n\n* Probability of at least one customer defaulting = 1 - Probability of neither defaulting\n* Therefore, the probability = 1 - 0.9215 = 0.0785 or 7.85%\n\n**In summary:** The probability of at least one customer defaulting is found by first calculating the probability of neither defaulting and subtracting that from 1. This leverages the concept of complementary probabilities in probability theory.",
+            "options": [
+                "12.85%",
+                "7.85%",
+                "92.15%",
+                "3%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A team of 4 students needs to be selected from a class of 10.  How many different teams can be formed?",
+            "difficulty": "medium",
+            "reasoning": "This question involves combinations, as the order in which the students are chosen for the team doesn't matter. Here's how to solve it:\n\n* **Identify the relevant formula:** We need to use the combination formula, which is nCr = n! / (r! * (n-r)!), where n is the total number of items and r is the number of items being chosen. \n* **Apply the formula:** In this case, we have n = 10 (total students) and r = 4 (students per team). Plugging these values into the formula gives us:\n\n   10C4 = 10! / (4! * 6!) \n   = (10 * 9 * 8 * 7 * 6!)/(4 * 3 * 2 * 1 * 6!)\n   = (10 * 9 * 8 * 7) / (4 * 3 * 2 * 1)\n   = 210\n\n* **Therefore, there are 210 different teams that can be formed.**",
+            "options": [
+                "10",
+                "210",
+                "40",
+                "5040"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Topic**: Exponential Distribution\n**Difficulty**: Easy 6/10\n**Question Type**: Calculate probability\n**Context**: The time (in minutes) between customer arrivals at a bank is exponentially distributed with an average of 5 minutes between arrivals.\n**Question**: What is the probability that the next customer arrives in less than 3 minutes?\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Identify the Distribution:** The problem states the time between events is exponentially distributed. \n\n**2. Define the Parameter:** The average time between arrivals is 5 minutes.  For an exponential distribution, this is the mean (and also the standard deviation), so  \u03bb = 1/5 (where \u03bb is the rate parameter). \n\n**3. Formulate the Probability Question:** We want to find P(X < 3), the probability that the time until the next arrival (X) is less than 3 minutes.\n\n**4. Apply the Exponential CDF:** The cumulative distribution function (CDF) of the exponential distribution is: \n  *  F(x) = 1 - e^(-\u03bbx)  \n\n**5. Calculate:** \n   * P(X < 3) = 1 - e^(-(1/5)*3) \n   * P(X < 3) = 1 - e^(-0.6) \n   * P(X < 3) \u2248 0.4512\n\n**Therefore, the probability that the next customer arrives in less than 3 minutes is approximately 0.4512 or 45.12%.**",
+            "options": [
+                "0.4512",
+                "45.12%",
+                "5 minutes",
+                "3 minutes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A deck of cards has 4 suits (hearts, diamonds, clubs, and spades) with 13 cards each. You pick a card randomly, put it back, shuffle the deck, and then pick another card.\n**Question**: What is the probability that you pick a heart on the first draw and a spade on the second draw?\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Independent Events and Multiplication Rule' within 'Quants - Probability'.\n\nHere's how to solve it:\n\n* **Step 1: Probability of picking a heart.** There are 13 hearts and 52 total cards. So, the probability of picking a heart is 13/52 = 1/4.\n* **Step 2: Probability of picking a spade.** After replacing the first card, the deck is back to its original state.  The probability of picking a spade is also 13/52 = 1/4.\n* **Step 3: Applying the multiplication rule.** Since these events are independent (the first draw doesn't affect the second), we multiply the individual probabilities. The probability of picking a heart then a spade is (1/4) * (1/4) = 1/16.\n\nTherefore, the probability of picking a heart on the first draw and a spade on the second draw is 1/16.",
+            "options": [
+                "1/52",
+                "1/16",
+                "1/4",
+                "1/2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A music streaming service categorizes its songs as either \"Pop\" or \"Not Pop\" and as either \"Liked by User\" or \"Not Liked by User\".\n**data**: \n  **type**: table\n  **data**: \n    **headers**: \n      - \n      - Liked by User (L)\n      - Not Liked by User (NL)\n    **rows**: \n      - \n        - Pop (P)\n        - 0.3\n        - 0.2\n      - \n        - Not Pop (NP)\n        - 0.1\n        - 0.4\n**question**: What is the probability that a randomly selected song is categorized as \"Pop\" given that it is \"Liked by User\"?\n",
+            "difficulty": "medium",
+            "reasoning": "This question involves calculating a conditional probability from a joint probability distribution table. Here's how to solve it:\n\n**1. Identify the relevant probabilities:**\n\n* We want to find P(Pop | Liked), the probability that a song is Pop given that it is Liked by User. \n* From the table, we can directly find:\n    * P(Pop and Liked) = 0.3\n    * P(Liked) = P(Pop and Liked) + P(Not Pop and Liked) = 0.3 + 0.1 = 0.4\n\n**2. Apply the conditional probability formula:**\n\n   P(Pop | Liked) = P(Pop and Liked) / P(Liked) \n                   = 0.3 / 0.4\n                   = 0.75\n\n**Therefore, the probability that a randomly selected song is \"Pop\" given that it is \"Liked by User\" is 0.75.**",
+            "options": [
+                "0.1",
+                "0.3",
+                "0.75",
+                "0.4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**topic**: Expected Value and Variance of Continuous Random Variables\n**difficulty_level**: Easy 6/10\n**question_type**: Calculation\n**context**: Imagine a spinner that can land anywhere on the edge of a circle. This circle has a radius of 1 unit. Let X represent the distance from the center of the circle to where the spinner lands. Assume the spinner has an equal chance of landing at any point on the circle's edge.\n**question**: What is the expected value (E[X]) of the distance X?\n**answer**: 2/3\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understanding the Problem:**\n\nThe spinner can land anywhere on the circle's edge.  We're interested in the average distance from the center (which is the expected value of X).\n\n**2.  Intuitive Approach:**\n\nSince the spinner lands with equal probability anywhere on the edge, we can think about symmetry.  For every point a certain distance 'd' from the center, there's another point on the opposite side, also 'd' away. This symmetry suggests the average distance should be somewhere between 0 (the center) and 1 (the edge). \n\n**3. Mathematical Approach:** \n\nWhile intuition is helpful, we need to calculate E[X] formally. For a continuous random variable with a uniform distribution (like our spinner) over the interval [a, b], the expected value is:\n\nE[X] = (a + b) / 2\n\nIn our case, the distance X ranges from 0 (center) to 1 (edge), so a = 0 and b = 1. \n\nTherefore:\n\nE[X] = (0 + 1) / 2 = 1/2\n\n**Therefore, the expected value of X, the distance from the center of the circle to where the spinner lands, is 1/2.**",
+            "options": [
+                "1/2",
+                "1",
+                "2/3",
+                "3/4"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**question_type**: Short Answer\n**context**: A research survey found that 60% of people in a city own a smartphone, 45% own a laptop, and 25% own both. A person is randomly selected from the city.\n**question**: What is the probability that the person owns a smartphone OR a laptop, but NOT both?\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of the axioms of probability, particularly the addition rule and the concept of mutually exclusive events. Here's how to solve it:\n\n**1. Define the Events:**\n\n* Let A be the event that a person owns a smartphone.\n* Let B be the event that a person owns a laptop.\n\n**2.  Identify the Probabilities:**\n\n* P(A) = 0.60 (Probability of owning a smartphone)\n* P(B) = 0.45 (Probability of owning a laptop)\n* P(A \u2229 B) = 0.25 (Probability of owning both)\n\n**3. Apply the Addition Rule:**\n\nThe probability of A or B happening is given by: \n\nP(A \u222a B) = P(A) + P(B) - P(A \u2229 B) \n\nHowever, we want the probability of owning a smartphone OR a laptop, but NOT both.  This means we need to exclude the probability of owning both.\n\n**4. Visualize (Optional):**\n\nDrawing a Venn diagram can help visualize this. The overlapping region represents owning both. We want the probability of the non-overlapping portions of the 'smartphone' circle and the 'laptop' circle. \n\n**5. Calculate:**\n\n*  Probability of owning only a smartphone: P(A) - P(A \u2229 B) = 0.60 - 0.25 = 0.35\n*  Probability of owning only a laptop: P(B) - P(A \u2229 B) = 0.45 - 0.25 = 0.20\n\n**6.  Add the Exclusive Probabilities:**\n\nTo get the probability of owning a smartphone OR a laptop, but NOT both, we add the probabilities of these mutually exclusive events:\n\n0.35 + 0.20 = 0.55\n\n**Therefore, the probability that the person owns a smartphone OR a laptop, but NOT both is 0.55.**",
+            "options": [
+                "0.25",
+                "0.55",
+                "0.60",
+                "0.80"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A fair coin is flipped three times. What is the probability of getting exactly two heads and one tail in any order?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Independent Events and Multiplication Rule' because each coin flip is an independent event (one flip doesn't affect the next) and we're ultimately calculating the probability of a sequence of these events. \n\nHere's how to solve it:\n\n**1. Probability of a single successful outcome:**\n   - The probability of getting heads (H) is 1/2.\n   - The probability of getting tails (T) is also 1/2.\n   - So, the probability of getting a specific sequence like HHT is (1/2) * (1/2) * (1/2) = 1/8\n\n**2. Accounting for different orders:**\n   - The sequence HHT can occur in three different orders: HHT, HTH, THH.\n   - Each of these orders has a probability of 1/8 (calculated above).\n\n**3. Total probability:**\n   - To get the total probability of getting two heads and one tail in any order, we add the probabilities of each possible order:\n      1/8 + 1/8 + 1/8 = 3/8\n\n**Therefore, the probability of getting exactly two heads and one tail in any order when flipping a fair coin three times is 3/8.**",
+            "options": [
+                "1/8",
+                "3/8",
+                "1/2",
+                "1/4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A machine produces resistors with their resistance (in ohms) following a normal distribution. It is known that 95% of the resistors fall within the range of 95 ohms to 105 ohms. What is the standard deviation of the resistance of the resistors produced by this machine?",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the understanding of the Normal Distribution and its properties. Here's how to solve it:\n\n**1. Understanding the Empirical Rule:** \n   The empirical rule (or 68-95-99.7 rule) for normal distributions states that:\n   * 68% of the data falls within one standard deviation of the mean.\n   * 95% of the data falls within two standard deviations of the mean.\n   * 99.7% of the data falls within three standard deviations of the mean. \n\n**2. Applying the Rule:**\n   We're given that 95% of the resistors fall between 95 ohms and 105 ohms.  This means this range represents two standard deviations on either side of the mean.\n\n**3. Calculating the Standard Deviation:**\n   * **Range:** 105 ohms - 95 ohms = 10 ohms\n   * **Two Standard Deviations:** 10 ohms / 2 = 5 ohms (Since the range represents two standard deviations)\n   * **Standard Deviation:** 5 ohms / 2 = 2.5 ohms \n\n**Therefore, the standard deviation of the resistance of the resistors is 2.5 ohms.** ",
+            "options": [
+                "1.25 ohms",
+                "5 ohms",
+                "10 ohms",
+                "2.5 ohms"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**Context**: A weather station provides probability forecasts for rain. They have determined the following based on historical data:\n\n* Probability of rain on any given day: 0.3\n* Probability of rain on two consecutive days: 0.2\n\nThe station wants to use these probabilities to inform their forecast for tomorrow.\n**Problem Statement**: Using the axioms of probability, what is the probability that it will rain tomorrow given that it rained today?\n**Requirements**: Apply the axioms of probability, specifically focusing on the relationship between joint probability, conditional probability, and individual event probabilities.\n**Answer Type**: Numerical (expressed as a decimal)\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning: \nThis question utilizes the concept of conditional probability and its relationship with joint and individual event probabilities. Here's a step-by-step solution:\n\n**1. Define Events:** \n*  Let 'A' be the event that it rains today.\n*  Let 'B' be the event that it rains tomorrow.\n\n**2. Given Probabilities:**\n*  P(A) = Probability of rain today = 0.3\n*  P(A and B) = Probability of rain on two consecutive days (today and tomorrow) = 0.2 \n\n**3. Required Probability:**\n*  P(B|A) = Probability of rain tomorrow given that it rained today\n\n**4. Apply Conditional Probability Formula:**\n*  P(B|A) = P(A and B) / P(A)\n\n**5. Calculate:**\n*  P(B|A) = 0.2 / 0.3\n*  P(B|A) = 2/3 \n*  P(B|A) \u2248 0.67\n\nTherefore, the probability that it will rain tomorrow given that it rained today is approximately 0.67 or 67%. ",
+            "options": [
+                "0.33",
+                "0.67",
+                "0.2",
+                "0.3"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A financial analyst is studying the daily returns of a particular stock. The historical data shows that the daily returns are normally distributed with a mean of 0.1% and a standard deviation of 0.5%. The analyst wants to estimate the probability that the average daily return over the next 25 trading days will be negative. Using the Central Limit Theorem, what is the approximate probability that the average daily return over the next 25 trading days will be negative?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understanding the Central Limit Theorem**\n\nThe Central Limit Theorem (CLT) states that the distribution of sample means will be approximately normally distributed, regardless of the shape of the original population distribution, given a sufficiently large sample size. The mean of the sampling distribution of the mean will be equal to the population mean, and the standard deviation of the sampling distribution of the mean (also known as the standard error) will be equal to the population standard deviation divided by the square root of the sample size.\n\n**2. Applying the CLT to the Problem**\n\n* We're given that the population mean (\u03bc) is 0.1% and the population standard deviation (\u03c3) is 0.5%. \n* The sample size (n) is 25 trading days.\n* We need to find the probability that the sample mean (x\u0304) is less than 0%.\n\n**3. Calculating the Standard Error**\n\nStandard Error (SE) = \u03c3 / \u221an = 0.5% / \u221a25 = 0.1%\n\n**4. Standardizing the Sample Mean**\n\nTo use the standard normal distribution table, we need to standardize the sample mean. We do this by calculating the z-score:\n\nz = (x\u0304 - \u03bc) / SE = (0% - 0.1%) / 0.1% = -1\n\n**5. Finding the Probability**\n\nA z-score of -1 corresponds to a cumulative probability of 0.1587 (you can find this using a standard normal distribution table or calculator). This means there's a 15.87% probability of observing a sample mean less than 0% (a negative average daily return) over 25 trading days.\n\n**Therefore, the approximate probability that the average daily return over the next 25 trading days will be negative is 15.87%.**",
+            "options": [
+                "1.587%",
+                "15.87%",
+                "84.13%",
+                "98.42%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A customer service hotline receives an average of 6 calls per hour on weekdays between 2 PM and 3 PM. \n**Question**: What is the probability that the hotline receives exactly 4 calls during this one-hour period on a particular Wednesday?\n**Difficulty Level**: Medium 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Common Discrete Probability Distributions' because it involves the Poisson distribution, which is used to model the probability of a certain number of events occurring in a fixed interval of time or space when the events happen independently and at a constant average rate.\n\nHere's how to solve the problem:\n\n**1. Identify the Distribution:** The scenario describes events (calls) occurring independently at a constant average rate (6 calls per hour) within a fixed interval (one hour). This aligns with the characteristics of a Poisson distribution.\n\n**2. Define Parameters:** \n*  \u03bb (lambda) = average number of events in the given interval = 6 calls per hour\n*  x =  number of events we want to find the probability for = 4 calls\n\n**3. Apply the Poisson Formula:**\nThe probability mass function of the Poisson distribution is:\n\nP(X = x) = (e^-\u03bb * \u03bb^x) / x!\n\nWhere:\n* P(X = x) is the probability of observing exactly x events\n* e is Euler's number (approximately 2.71828)\n* \u03bb is the average number of events in the given interval\n* x is the specific number of events we are interested in\n* x! represents the factorial of x (x! = x * (x-1) * (x-2) * ... * 2 * 1)\n\n**4. Calculate the Probability:**\nSubstitute the values into the formula:\nP(X = 4) = (e^-6 * 6^4) / 4!\n           = (0.002479 * 1296) / 24\n           \u2248 0.1339\n\n**Therefore, the probability of the hotline receiving exactly 4 calls between 2 PM and 3 PM on that Wednesday is approximately 0.1339 or 13.39%.**",
+            "options": [
+                "0.002479",
+                "13.39%",
+                "6 calls",
+                "4 calls"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A certain stock is predicted to have the following changes in price over the next month: \n\n* Increase by $5 with a probability of 0.2 \n* Increase by $2 with a probability of 0.3 \n* Decrease by $1 with a probability of 0.5\n\nAn investor is considering buying 100 shares of this stock.  Calculate the expected value and variance of the potential profit (or loss) for this investment. Interpret what the expected value and variance tell us about the risk and potential reward of this investment.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Expected Value and Variance of Discrete Random Variables' topic within Quants - Probability. It's classified as medium difficulty due to involving multiple steps: \n\n1. **Calculating the expected value and variance of a single share:** This requires applying the expected value and variance formulas for discrete random variables. \n2. **Scaling up to 100 shares:** The calculated expected value and variance need to be adjusted to reflect the investment in 100 shares.\n3. **Interpreting the results:** Going beyond calculations, the question demands understanding the implications of expected value and variance for investment decisions. \n\n**Solution:**\n\n**1. Expected Value and Variance for a Single Share**\n\n* **Expected Value (E[X]):**  \n   E[X] = (5 * 0.2) + (2 * 0.3) + (-1 * 0.5) = 1 + 0.6 - 0.5 = $1.10\n* **Variance (Var[X]):**\n   Var[X] =  E[X\u00b2] - (E[X])\u00b2 \n   First calculate E[X\u00b2] = (5\u00b2 * 0.2) + (2\u00b2 * 0.3) + ((-1)\u00b2 * 0.5) = 5 + 1.2 + 0.5 = 6.7\n   Then, Var[X] = 6.7 - (1.10)\u00b2 = 5.49\n\n**2. Expected Value and Variance for 100 Shares**\n\n* **Expected Value (E[100X]):**  E[100X] = 100 * E[X] = 100 * $1.10 = $110\n* **Variance (Var[100X]):**  Var[100X] = 100\u00b2 * Var[X] = 10000 * 5.49 = 54900 \n\n**Interpretation:**\n\n* **Expected Value:** The expected value of $110 indicates that, on average, the investor can expect to gain $110 from this investment. It's important to remember that this is a long-term average and doesn't guarantee a profit of exactly $110.\n* **Variance:** The variance of 54900, which represents the square of the standard deviation, is a measure of the investment's risk or volatility. A higher variance implies a wider range of potential outcomes, making the investment riskier.",
+            "options": [
+                "$110",
+                "54900",
+                "$110",
+                "54900"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "[Medium 5/10] | [Calculate Probability and Expected Value]\n\n**Description:** A board game uses a spinner divided into 10 equal sections.  Seven sections are green and award the player points ranging from 1 to 7. The remaining three sections are red and cause the player to lose points ranging from -2 to -4. The probabilities of landing on each point value are proportional to the number of sections with that value. \n\n1.  Construct a probability distribution table for the points a player can earn or lose on a single spin. \n2.  Calculate the expected value of points earned or lost on a single spin. ",
+            "difficulty": "medium",
+            "reasoning": "**1. Probability Distribution Table:**\n\nFirst, determine the probability of landing on each color:\n* P(Green) = 7/10\n* P(Red) = 3/10\n\nNext, determine the probability of landing on each specific point value within each color, remembering the probabilities are proportional to the number of sections:\n\n| Points | Green (Probability) | Red (Probability) | Total Probability |\n|---|---|---|---| \n| 1 | 1/10 | 0 | 1/10 |\n| 2 | 1/10 | 1/10 | 2/10 |\n| 3 | 1/10 | 1/10 | 2/10 |\n| 4 | 1/10 | 1/10 | 2/10 |\n| 5 | 1/10 | 0 | 1/10 |\n| 6 | 1/10 | 0 | 1/10 |\n| 7 | 1/10 | 0 | 1/10 |\n| -2 | 0 | 1/10 | 1/10 |\n| -3 | 0 | 1/10 | 1/10 |\n| -4 | 0 | 1/10 | 1/10 |\n\n**2. Expected Value Calculation:**\n\nThe expected value (E) is calculated by multiplying each point value by its probability and summing the results:\n\nE = (1 * 1/10) + (2 * 2/10) + (3 * 2/10) + (4 * 2/10) + (5 * 1/10) + (6 * 1/10) + (7 * 1/10) + (-2 * 1/10) + (-3 * 1/10) + (-4 * 1/10) \n\nE = 1/10 + 4/10 + 6/10 + 8/10 + 5/10 + 6/10 + 7/10 - 2/10 - 3/10 - 4/10\n\nE = 28/10 = 2.8\n\nTherefore, the expected value of points earned or lost on a single spin is 2.8. This means that on average, a player can expect to gain 2.8 points per spin.",
+            "options": [
+                "2.0",
+                "3.0",
+                "2.8",
+                "3.5"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A standard deck of 52 playing cards is shuffled. A card is drawn at random. If the card drawn is a heart, another card is drawn without replacement. If the first card is not a heart, it is placed back into the deck and the deck is reshuffled before drawing a second card. What is the probability that the second card drawn is a spade?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves conditional probability and understanding how the sample space changes based on the outcome of the first event (drawing the first card).\n\nHere's how to solve it step-by-step:\n\n**Step 1: Define the events**\n\n* Event A: Drawing a heart on the first draw.\n* Event B: Drawing a spade on the second draw.\n\n**Step 2: Calculate the probabilities**\n\n* **P(A):** The probability of drawing a heart on the first draw is 13/52 (there are 13 hearts in a deck of 52 cards) which simplifies to 1/4.\n* **P(B|A):** The probability of drawing a spade on the second draw *given* that a heart was drawn on the first draw. Since the heart is not replaced, there are only 51 cards left, and 13 of them are spades. So, P(B|A) = 13/51.\n* **P(B|A'):** The probability of drawing a spade on the second draw *given* that a heart was *not* drawn on the first draw. Since the first card was not a heart and is placed back in, the deck is back to its original state. Therefore, P(B|A') = 13/52 = 1/4.\n\n**Step 3: Apply the law of total probability**\n\nThe probability of drawing a spade on the second draw (event B) can be calculated using the law of total probability, considering both scenarios (drawing a heart or not drawing a heart on the first draw):\n\nP(B) = P(B|A) * P(A) + P(B|A') * P(A')\n\nTo find P(A'), the probability of not drawing a heart on the first draw, we subtract P(A) from 1: \nP(A') = 1 - 1/4 = 3/4\n\nNow we can plug in the values:\n\nP(B) = (13/51) * (1/4) + (1/4) * (3/4)\n      = 13/204 + 3/16\n      = 51/204\n      = 1/4\n\n**Therefore, the probability of the second card drawn being a spade is 1/4.**",
+            "options": [
+                "1/13",
+                "1/4",
+                "1/2",
+                "13/51"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A printing press produces minor ink smudges on a page with an average rate of 1 smudge per 5 pages.\n**Distribution**: Poisson\n**Question**: What is the probability that a randomly selected 10-page document printed on this press contains exactly 3 ink smudges?\n**Difficulty Level**: Medium 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Common Discrete Probability Distributions' as it involves applying the Poisson distribution to calculate the probability of a specific number of events (ink smudges) occurring within a fixed interval (10 pages) given a known average rate (1 smudge per 5 pages). \n\nHere's how to solve it:\n\n**1. Define the parameters:**\n*  \u03bb (lambda) = average rate of events = 1 smudge per 5 pages = 2 smudges per 10 pages \n*  x = number of events we want to find the probability for = 3 smudges\n\n**2. Apply the Poisson probability formula:**\n   P(X = x) = (e^-\u03bb * \u03bb^x) / x!\n\n**3. Substitute the values:** \n   P(X = 3) = (e^-2 * 2^3) / 3! \n   P(X = 3) = (0.1353 * 8) / 6\n   P(X = 3) \u2248 0.1804\n\nTherefore, the probability of finding exactly 3 ink smudges in a randomly selected 10-page document is approximately 0.1804 or 18.04%.",
+            "options": [
+                "0.018",
+                "0.1804",
+                "0.25",
+                "0.5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A team of 4 software engineers needs to be formed from a group of 8 candidates.  Of these candidates, 5 specialize in front-end development and 3 specialize in back-end development.  If the team must have at least 2 front-end specialists and at least 1 back-end specialist, how many different teams can be formed?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Identify the possible team compositions:**\n\nSince we need at least 2 front-end specialists and 1 back-end specialist, we have two possible scenarios:\n\n   * **Scenario 1:** 3 Front-end specialists, 1 Back-end specialist\n   * **Scenario 2:** 2 Front-end specialists, 2 Back-end specialists \n\n**2. Calculate the combinations for each scenario:**\n\n* **Scenario 1:**\n    * Choosing 3 front-end specialists out of 5:  \u2075C\u2083 = (5*4*3)/(3*2*1) = 10 ways\n    * Choosing 1 back-end specialist out of 3: \u00b3C\u2081 = (3)/(1) = 3 ways\n    * Total combinations for Scenario 1: 10 * 3 = 30\n\n* **Scenario 2:**\n    * Choosing 2 front-end specialists out of 5: \u2075C\u2082 = (5*4)/(2*1) = 10 ways\n    * Choosing 2 back-end specialists out of 3: \u00b3C\u2082 = (3*2)/(2*1) = 3 ways\n    * Total combinations for Scenario 2: 10 * 3 = 30\n\n**3. Add the combinations from both scenarios:**\n\nTotal possible teams: 30 (Scenario 1) + 30 (Scenario 2) = 60\n\n**Therefore, there are 60 different teams that can be formed.**",
+            "options": [
+                "40",
+                "50",
+                "60",
+                "70"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: The customer service call center for a major telecommunications company receives an average of 5 calls per minute. The time between calls follows an exponential distribution.\n**Question**: What is the probability that the call center will have to wait more than 3 minutes for the next call?\n**Data**: \n  **Average calls per minute (\u03bb)**: 5\n",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Exponential Distribution:**\n\nThe exponential distribution models the time *between* events in a Poisson process (where events occur at a constant average rate). A key property is the 'memoryless' property, meaning the past doesn't influence the future waiting time.\n\n**Solution:**\n\n1. **Identify the parameter:**  We are given the average calls per minute (\u03bb) = 5. This is the rate parameter of our exponential distribution.\n\n2. **Probability of waiting MORE than 3 minutes:** We need P(X > 3), where X is the time (in minutes) until the next call.\n\n3. **Using the Exponential CDF (or its complement):**\n   * The cumulative distribution function (CDF) of the exponential distribution is given by: F(x) = 1 - e^(-\u03bbx)\n   * To find the probability of waiting *more* than 3 minutes, we can use the complement of the CDF: \n       P(X > 3) = 1 - P(X \u2264 3) = 1 - F(3)\n   * Substituting our values: P(X > 3) = 1 - (1 - e^(-5 * 3)) = e^(-15)\n\n4. **Calculation:**  e^(-15) is approximately 3.06 x 10^-7\n\n**Therefore, the probability of the call center waiting more than 3 minutes for the next call is extremely low, approximately 3.06 x 10^-7.**",
+            "options": [
+                "0.0025",
+                "0.1847",
+                "0.8153",
+                "3.06 x 10^-7"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: An investment firm is analyzing the returns of a particular stock. They have collected data on the daily returns of the stock over a long period, and they found that the average daily return is 0.1% with a standard deviation of 0.5%.\n**question**: Assuming the daily returns are normally distributed, what is the probability that the average daily return over the next 25 days will exceed 0.2%?\n**data**: \n  **Average daily return (\u03bc)**: 0.1%\n  **Standard deviation (\u03c3)**: 0.5%\n  **Sample size (n)**: 25\n  **Target average return**: 0.2%\n**expected answer**: Probability (as a decimal)\n",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the Central Limit Theorem to determine the probability of an average exceeding a certain value. Here's a step-by-step solution:\n\n1. **Understand the Central Limit Theorem:** The theorem states that the distribution of sample means will be approximately normal, regardless of the shape of the population distribution, given a sufficiently large sample size. \n\n2. **Calculate the standard error:** The standard error represents the standard deviation of the sample mean distribution. It's calculated as: \n   *Standard Error (SE) = \u03c3 / \u221an = 0.5% / \u221a25 = 0.1%*\n\n3. **Calculate the z-score:** This measures how many standard errors the target average return (0.2%) is away from the population mean (0.1%):\n   *z = (Target Average - Population Mean) / SE = (0.2% - 0.1%) / 0.1% = 1*\n\n4. **Find the probability:** Using a z-table or calculator, we can find the probability corresponding to a z-score of 1. Since we're looking for the probability that the average exceeds 0.2%, we need the area to the right of the z-score.  \n   *P(Z > 1) \u2248 0.1587*\n\nTherefore, the probability that the average daily return over the next 25 days will exceed 0.2% is approximately 0.1587 or 15.87%.",
+            "options": [
+                "0.0228",
+                "0.1587",
+                "0.8413",
+                "0.9772"
+            ],
+            "correct option": "0.1587",
+            "correct_option": "B"
+        },
+        {
+            "question": "An online streaming platform wants to personalize its recommendation algorithm using data from its A/B testing. They have two recommendation algorithms: Algorithm A (the current one) and Algorithm B (the new one).  \n\nHere's what they know:\n* 60% of users were initially assigned Algorithm A, while 40% were assigned Algorithm B.\n* Users who liked the recommendations from their assigned algorithm clicked the 'thumbs up' button 80% of the time.\n* Users who didn't like the recommendations from their assigned algorithm clicked the 'thumbs up' button only 30% of the time. \n\nA user, part of this A/B testing, clicked the 'thumbs up' button. What is the probability that this user was recommended content by Algorithm B?",
+            "difficulty": "medium",
+            "reasoning": "This problem uses Bayes' Theorem and the concept of conditional probability. Here's how to solve it:\n\n**1. Define Events**\n\n* Let A be the event that a user is assigned Algorithm A.\n* Let B be the event that a user is assigned Algorithm B.\n* Let T be the event that a user clicks the 'thumbs up' button.\n\n**2. State the Given Probabilities**\n\n* P(A) = 0.6 (60% assigned Algorithm A)\n* P(B) = 0.4 (40% assigned Algorithm B)\n* P(T|A) = 0.8 (80% thumbs up given they liked Algorithm A)\n* P(T|B) = 0.8 (80% thumbs up given they liked Algorithm B)\n* P(T| not A) = 0.3 (30% thumbs up given they disliked Algorithm A)\n* P(T| not B) = 0.3 (30% thumbs up given they disliked Algorithm B)\n\n**3. Apply Bayes' Theorem**\n\nWe want to find P(B|T), the probability a user was assigned Algorithm B given they clicked 'thumbs up'. Bayes' Theorem states:\n\n P(B|T) = [P(T|B) * P(B)] / P(T)\n\nTo find P(T), the probability of a thumbs up, we use the law of total probability:\n\n P(T) = P(T|A) * P(A)  +  P(T|B) * P(B) \n\n**4. Calculate**\n\n* P(T) = (0.8 * 0.6) + (0.8 * 0.4) = 0.8\n* P(B|T) = (0.8 * 0.4) / 0.8 = 0.4\n\n**Therefore, the probability that the user was recommended content by Algorithm B given they clicked the 'thumbs up' is 0.4 or 40%.**",
+            "options": [
+                "0.3",
+                "0.6",
+                "0.4",
+                "0.8"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A city experiences varying daily rainfall, modeled by a continuous random variable X with the probability density function: \n\nf(x) =  { 0.1 - 0.005x,  0 \u2264 x \u2264 20\n         { 0,            otherwise \n\nIf the city council decides to activate its drainage system only when the daily rainfall exceeds 12mm, what is the probability of the drainage system being activated on a randomly chosen day?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Continuous Random Variables and Probability Density Functions' topic as it requires understanding and application of these concepts. \n\nHere's a step-by-step solution:\n\n1. **Problem Interpretation:** We need to find the probability of rainfall (X) being greater than 12mm.  Mathematically, this translates to finding P(X > 12). \n\n2. **Applying the Probability Density Function:**  Since we are dealing with a continuous random variable, we'll use integration on the probability density function to find this probability. \n\n3. **Setting up the Integral:**  The required probability is the area under the density function curve from x = 12 to x = 20 (the upper limit of our function). So, we set up the integral as follows:\n\nP(X > 12) = \u222b from 12 to 20 (0.1 - 0.005x) dx\n\n4. **Solving the Integral:**\n    * Integrating, we get: [0.1x - (0.005/2)x^2] evaluated from 12 to 20\n    * Plugging in the limits:  (0.1 * 20 - 0.0025 * 20^2) - (0.1 * 12 - 0.0025 * 12^2)\n    * Simplifying: (2 - 1) - (1.2 - 0.36) = 0.16\n\n5. **Result:** Therefore, the probability of the drainage system being activated on a randomly chosen day is 0.16 or 16%.",
+            "options": [
+                "0.84",
+                "0.16",
+                "16%",
+                "84%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A board game uses a spinner divided into 8 equal sections. Three sections are colored blue, two are red, two are green, and one is yellow.\n**question**: If a player spins the spinner once, determine the probability that the spinner lands on either a blue or a red section.  Express your answer as a simplified fraction.\n**difficulty**: medium\n**solution_type**: Numerical Probability\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Basic Definitions: Sample Spaces, Events, and Probability' subtopic as it requires understanding and calculating the probability of an event within a defined sample space. \n\nHere's a step-by-step solution:\n\n1. **Define the Sample Space:** The sample space represents all possible outcomes. In this case, it consists of all 8 sections of the spinner.\n\n2. **Define the Event:** The event we are interested in is the spinner landing on either a blue or red section. \n\n3. **Calculate Favorable Outcomes:** There are 3 blue sections and 2 red sections, totaling 5 favorable outcomes.\n\n4. **Calculate the Probability:**\n   - Probability is calculated as (Favorable Outcomes) / (Total Possible Outcomes).\n   - In this case, the probability is 5/8.\n\nTherefore, the probability of the spinner landing on a blue or red section is 5/8.",
+            "options": [
+                "1/8",
+                "3/8",
+                "5/8",
+                "7/8"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: A skilled archer is practicing at a target range. She has a 90% chance of hitting the bullseye on any given shot, regardless of the outcome of her previous attempts.\n**question**: The archer takes three consecutive shots at the target. What is the probability that she hits the bullseye on the first two shots, but misses on her third attempt?\n**hint**: Keep in mind that each shot is independent of the others.\n",
+            "difficulty": "hard",
+            "reasoning": "This question tests the concept of independent events and the multiplication rule in probability. Here's how to solve it:\n\n**1. Probability of Hitting the Bullseye:**\n* The archer has a 90% chance of hitting the bullseye, which can be expressed as a probability of 0.9.\n\n**2. Probability of Missing the Bullseye:**\n* Since hitting and missing are complementary events, the probability of missing is 1 - 0.9 = 0.1.\n\n**3. Applying the Multiplication Rule:**\n* Each shot is independent, meaning the outcome of one shot doesn't affect the others.  Therefore, we can use the multiplication rule to find the probability of the desired sequence of events.\n\n**4. Calculating the Probability:**\n* Probability (Hit, Hit, Miss) = P(Hit) * P(Hit) * P(Miss)\n*  = 0.9 * 0.9 * 0.1\n*  = 0.081 \n\n**Therefore, the probability of the archer hitting the bullseye on her first two shots but missing on the third is 0.081 or 8.1%.**",
+            "options": [
+                "0.01",
+                "0.09",
+                "0.81",
+                "0.081"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A financial analyst is studying the daily returns of a particular stock. They know that the daily returns are independently and identically distributed, but they don't know the specific distribution. The analyst collects a large sample of daily returns and calculates the average return for each possible sample size from 2 to 100.  Surprisingly, they find that for sample sizes less than 30, the distribution of the sample means appears slightly skewed to the right, even though the CLT suggests it should approach normality.  However, as the sample size increases beyond 30, the distribution of sample means does indeed become increasingly symmetrical and bell-shaped. What is the most likely explanation for this observation?",
+            "difficulty": "hard",
+            "reasoning": "This question assesses a deeper understanding of the Central Limit Theorem's assumptions and limitations: \n\n* **Understanding the CLT:** The student must know that the CLT states that the distribution of sample means approaches a normal distribution as the sample size increases, *regardless* of the original population distribution, **as long as the sample size is sufficiently large and the underlying data is independently and identically distributed.**\n* **Identifying the Anomaly:** The 'trick' is recognizing that the initial skewness for smaller sample sizes contradicts the expected behavior according to the CLT. \n* **Reasoning and Application:** The student needs to deduce that the original distribution of daily stock returns likely has some degree of right skew.  With smaller sample sizes, this skewness persists in the distribution of sample means. However, as the sample size grows, the CLT's power takes effect, gradually 'overcoming' the initial skewness and driving the distribution of sample means toward normality.\n\n**Therefore, the most likely explanation is that the underlying distribution of daily stock returns is itself slightly skewed to the right.**\n\nThis question goes beyond a simple calculation and requires the student to analyze a scenario, identify a discrepancy with theoretical expectations, and apply their knowledge of the CLT's principles to explain the observed phenomenon.",
+            "options": [
+                "The daily returns are not independently and identically distributed.",
+                "The sample size of 100 is not large enough for the CLT to apply.",
+                "The underlying distribution of daily stock returns is slightly skewed to the right.",
+                "The analyst made an error in calculating the sample means."
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A company manufactures light bulbs with a lifespan that follows an exponential distribution. The average lifespan of a bulb is 1200 hours.\n**Question**: If the company offers a warranty for bulbs lasting up to a certain number of hours, and they want to limit warranty claims to only 10% of the bulbs sold, what warranty period (in hours) should they offer?\n**Difficulty Level**: 8/10\n",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Common Continuous Probability Distributions' topic, specifically focusing on the exponential distribution. Here's a step-by-step solution: \n\n**1. Understanding the Problem:**\n\nWe're dealing with an exponential distribution representing bulb lifespan. The key is to find the time (warranty period) before which 10% of the bulbs are expected to fail. \n\n**2. Exponential Distribution Properties:**\n\nThe exponential distribution has a crucial property:  \n* **Probability Density Function (PDF):**  f(x) = (1/\u03bc) * e^(-x/\u03bc)  for x \u2265 0\n* **Cumulative Distribution Function (CDF):** F(x) = 1 - e^(-x/\u03bc) for x \u2265 0 \n   where \u03bc is the mean (average lifespan in this case).\n\n**3. Setting up the Problem:**\n\nWe want to find 'x' (warranty period) such that: \n P(X \u2264 x) = 0.10 (10% failure rate)\n\nThis is equivalent to finding the 10th percentile of the exponential distribution.\n\n**4. Using the CDF:**\n\nWe can use the CDF to solve for 'x': \n\n 1 - e^(-x/\u03bc) = 0.10\n\n**5. Solving for x:**\n\n* e^(-x/\u03bc) = 0.90\n* -x/\u03bc = ln(0.90) \n* x = -\u03bc * ln(0.90)\n\n**6. Plugging in the Mean:**\n\nGiven that the average lifespan (\u03bc) is 1200 hours:\n\n x = -1200 * ln(0.90) \u2248 131.48 hours\n\n**Therefore, the company should offer a warranty period of approximately 131.48 hours to ensure that warranty claims are limited to 10% of the bulbs sold.**",
+            "options": [
+                "1200 hours",
+                "131.48 hours",
+                "10% of the bulbs sold",
+                "90% of the bulbs sold"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A quantitative analyst is developing a model to assess the probability of default for a portfolio of bonds. They are considering two key economic factors: interest rate movements and credit spreads.  \n\n* **Event A:** Interest rates increase significantly in the next year.  \n* **Event B:** Credit spreads widen significantly in the next year. \n\nFrom historical data and economic modeling, the analyst has determined the following probabilities:\n\n* **P(A):** The probability of interest rates increasing significantly is 0.3. \n* **P(B):** The probability of credit spreads widening significantly is 0.25. \n* **P(A|B):** The conditional probability of interest rates increasing significantly *given* that credit spreads have widened significantly is 0.6.\n\n**Question:** What is the probability that at least one of these events (interest rate increase or credit spread widening) will occur in the next year?",
+            "difficulty": "hard",
+            "reasoning": "This question tests the understanding of the Axioms of Probability, specifically the addition rule and the concept of conditional probability in a financial context. Here's how to solve it:\n\n**1. Understanding the Problem:**\n\nWe need to find the probability of either interest rates increasing **or** credit spreads widening, or both happening.  This is represented by P(A \u222a B), the probability of the union of events A and B. \n\n**2. Applying the Addition Rule:**\n\nThe addition rule of probability states: \n\n P(A \u222a B) = P(A) + P(B) - P(A \u2229 B)\n\nwhere P(A \u2229 B) is the probability of both events A and B occurring. \n\n**3. Finding P(A \u2229 B):** \n\nWe are given P(A|B), the conditional probability of A given B. We can use the following relationship: \n\nP(A|B) = P(A \u2229 B) / P(B)\n\nRearranging to solve for  P(A \u2229 B):\n\nP(A \u2229 B) = P(A|B) * P(B) = 0.6 * 0.25 = 0.15\n\n**4. Calculating P(A \u222a B):**\n\nNow we can plug the values back into the addition rule: \n\nP(A \u222a B) = P(A) + P(B) - P(A \u2229 B) = 0.3 + 0.25 - 0.15 = 0.4\n\n**Therefore, the probability that at least one of these events (interest rate increase or credit spread widening) will occur in the next year is 0.4 or 40%.**",
+            "options": [
+                "0.15",
+                "0.6",
+                "0.4",
+                "0.3"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A quantitative analyst at a prominent investment bank is tasked with assessing the tail risk of a portfolio consisting of 100 different bonds. Each bond has a default probability of 2% over the next year.  To simplify the model, the analyst assumes that bond defaults are independent events.  The bank considers a portfolio loss exceeding 5% of its total value to be unacceptable. \n\nWhat is the probability that the portfolio will experience a loss exceeding 5% in the next year due to bond defaults?  \n\n**Hint:** Consider what happens when more than 2 bonds default, and how that affects the calculation.  Also, think about what probability distribution best models the occurrence of multiple independent events.",
+            "difficulty": "hard",
+            "reasoning": "This question is tricky because it involves calculating the probability of a tail event (portfolio loss exceeding 5%) which is particularly relevant in risk management. It involves applying the binomial distribution to model the probability of a specific number of bond defaults out of 100. The tricky part lies in recognizing the need to calculate the cumulative probability of defaults exceeding a certain threshold (more than 2 bonds defaulting), making the calculation more involved. \n\nHere's a step-by-step solution:\n\n1. **Identify the distribution:** Since we are dealing with a fixed number of trials (100 bonds), each with two possible outcomes (default or no default), and the assumption of independence, the binomial distribution is appropriate.\n\n2. **Define the parameters:**\n   *  n = 100 (number of trials/bonds)\n   *  p = 0.02 (probability of success/default on each trial)\n\n3. **Calculate the probability of more than 2 defaults:**  \n    * We want P(X > 2), where X is the number of defaults.\n    * It's easier to calculate the complement: P(X > 2) = 1 - P(X <= 2)\n    * Using the binomial probability formula or a calculator:\n        * P(X = 0) = (100 choose 0) * (0.02)^0 * (0.98)^100 \n        * P(X = 1) = (100 choose 1) * (0.02)^1 * (0.98)^99 \n        * P(X = 2) = (100 choose 2) * (0.02)^2 * (0.98)^98\n    * Calculate the above probabilities and subtract their sum from 1 to get P(X > 2).\n\n4. **Interpret the result:** The final calculated probability represents the likelihood that the portfolio will experience a loss exceeding 5% due to bond defaults under the given assumptions. This information is crucial for the bank's risk management strategy.",
+            "options": [
+                "0.04%",
+                "1.84%",
+                "10.47%",
+                "90.41%"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A mobile game developer is analyzing player behavior to improve their in-app purchase system. They observe that: \n\n* 60% of players are casual players (CP), while 40% are hardcore players (HP).\n* 10% of CP players make in-app purchases (IAP).\n* 30% of HP players make IAP. \n\nThe data also reveals a peculiar pattern: among players who made an IAP within the first week of installing the game, 70% made a second IAP within a month. Conversely, of those who didn't make an IAP in the first week, only 5% went on to make an IAP within a month. \n\nIf a player, randomly selected from those who made their first IAP within a week of installing, has just made a second IAP, what is the probability that this player is a hardcore player?",
+            "difficulty": "hard",
+            "reasoning": "This question goes beyond a simple application of Bayes' Theorem by introducing a time-based element and requiring careful conditional probability assessment. Here's a step-by-step solution:\n\n**1. Define Events:**\n* Let CP be the event that a player is a Casual Player.\n* Let HP be the event that a player is a Hardcore Player. \n* Let IAP1 be the event of making an IAP within the first week.\n* Let IAP2 be the event of making a second IAP within a month.\n\n**2. State Given Probabilities:**\n* P(CP) = 0.6\n* P(HP) = 0.4\n* P(IAP1|CP) = 0.1\n* P(IAP1|HP) = 0.3\n* P(IAP2|IAP1) = 0.7\n* P(IAP2|\u00acIAP1) = 0.05 (\u00ac denotes 'not')\n\n**3. Determine the Target Probability:**\nWe want to find P(HP|IAP2, IAP1), the probability a player is Hardcore given they made both the first and second IAP.\n\n**4. Apply Bayes' Theorem and the Law of Total Probability:**\nWe can use Bayes' Theorem to express the target probability:\n\n P(HP|IAP2, IAP1) = [P(IAP2, IAP1|HP) * P(HP)] / P(IAP2, IAP1)\n\nTo calculate the denominator, we'll use the Law of Total Probability: \n\nP(IAP2, IAP1) = P(IAP2, IAP1|HP) * P(HP)  +  P(IAP2, IAP1|CP) * P(CP)\n\n**5. Calculate Intermediate Probabilities:**\n*  We need to find P(IAP2, IAP1|HP) and P(IAP2, IAP1|CP). We can use the fact that P(A, B|C) = P(A|B, C) * P(B|C) for any events A, B, and C. \n\n    * P(IAP2, IAP1|HP) = P(IAP2|IAP1, HP) * P(IAP1|HP). Since making the second IAP depends only on making the first, P(IAP2|IAP1, HP) is the same as P(IAP2|IAP1) = 0.7. We already know P(IAP1|HP) = 0.3. Therefore, P(IAP2, IAP1|HP) = 0.7 * 0.3 = 0.21\n\n    * Similarly, P(IAP2, IAP1|CP) = P(IAP2|IAP1, CP) * P(IAP1|CP) = 0.7 * 0.1 = 0.07\n\n**6. Substitute and Compute:**\n* Now we have all the pieces to calculate P(HP|IAP2, IAP1):\n\n    * P(IAP2, IAP1) = (0.21 * 0.4) + (0.07 * 0.6) = 0.126\n    * P(HP|IAP2, IAP1) = (0.21 * 0.4) / 0.126 = 0.6667 (approximately) \n\n**Therefore, the probability that the player who made a second IAP within a month, given they also made a first IAP within a week of install, is a hardcore player is approximately 66.67%.** ",
+            "options": [
+                "0.4",
+                "0.6667",
+                "70%",
+                "30%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A manufacturing plant produces a specific type of electronic component. The probability of a component being defective is 0.02. Components are randomly selected and tested during quality control.  What is the probability that the inspector will need to test at most 20 components to find the third defective one?",
+            "difficulty": "medium",
+            "reasoning": "This problem involves the Negative Binomial Distribution, which calculates the probability of a specified number of failures occurring before a specified number of successes in a series of independent Bernoulli trials. Here's how to solve it:\n\n**1. Define the parameters:**\n\n   *  'r' (number of successes) = 3 (We want to find the third defective component).\n   *  'p' (probability of success) = 0.02 (The probability of a component being defective).\n   *  'x' (maximum number of trials to achieve 'r' successes) = 20 (We want to find the probability of needing *at most* 20 trials).\n\n**2. Understand the question:**\n\n   We want the probability of finding the third defective component *on or before* the 20th trial.  This is equivalent to finding the cumulative probability for x = 3, 4, 5, ..., 20 and summing those probabilities.\n\n**3. Apply the Negative Binomial Distribution Formula:**\n\n   The probability mass function of the negative binomial distribution is:\n\n   P(X = k) = (k + r - 1 choose r - 1) * p^r * (1 - p)^k\n\n   Where (k + r - 1 choose r - 1) is the binomial coefficient.\n\n**4. Calculate the Cumulative Probability:**\n\n   We need to calculate the sum of probabilities from x = 3 to x = 20:\n\n   P(X <= 20) = P(X = 3) + P(X = 4) + ... + P(X = 20) \n\n   Calculating each term using the formula above and summing them would be tedious. Instead, we can use statistical software or a calculator with negative binomial distribution capabilities to find this cumulative probability directly.\n\n**5. Interpretation:**\n\n   The calculated cumulative probability will give us the likelihood that the inspector will need to test at most 20 components to find three defective ones.",
+            "options": [
+                "0.00004",
+                "0.0004",
+                "0.004",
+                "0.04"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A research study is investigating the relationship between smartphone usage (categorized as high or low) and sleep quality (categorized as good or poor) among young adults.  The study found that 60% of young adults have high smartphone usage. Among those with high smartphone usage, 70% report poor sleep quality. Conversely, among those with low smartphone usage, only 30% report poor sleep quality. \n\nA young adult is randomly selected from the study. If this individual has poor sleep quality, what is the probability that they also have high smartphone usage? (Tricky 8/10)",
+            "difficulty": "medium",
+            "reasoning": "This question delves into conditional probability and Bayes' Theorem within the context of joint probability distributions. Here's a breakdown of the solution:\n\n**1. Define Events:**\n\n* Let H represent the event of a young adult having high smartphone usage.\n* Let L represent the event of a young adult having low smartphone usage.\n* Let P represent the event of a young adult having poor sleep quality.\n* Let G represent the event of a young adult having good sleep quality.\n\n**2. Given Probabilities:**\n\n* P(H) = 0.60 (60% have high smartphone usage)\n* P(L) = 1 - P(H) = 0.40 (40% have low smartphone usage)\n* P(P|H) = 0.70 (70% of those with high usage have poor sleep)\n* P(P|L) = 0.30 (30% of those with low usage have poor sleep)\n\n**3. Question:**\n\nWe need to find P(H|P), the probability of high smartphone usage given poor sleep quality.\n\n**4. Bayes' Theorem:**\n\nBayes' Theorem provides the formula to calculate this conditional probability:\n\nP(H|P) = [P(P|H) * P(H)] / P(P)\n\n**5. Calculate P(P):** \nTo use Bayes' Theorem, we need to find P(P), the overall probability of poor sleep quality.  We can calculate this using the law of total probability:\n\nP(P) = [P(P|H) * P(H)] + [P(P|L) * P(L)]\nP(P) = (0.70 * 0.60) + (0.30 * 0.40) = 0.54\n\n**6. Apply Bayes' Theorem:**\n\nP(H|P) = (0.70 * 0.60) / 0.54 \nP(H|P) \u2248 0.778\n\n**Therefore, the probability that a young adult with poor sleep quality has high smartphone usage is approximately 0.778 or 77.8%.** ",
+            "options": [
+                "0.30",
+                "0.778",
+                "0.54",
+                "0.60"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Probability",
+    "exam_id": 10,
+    "order": 12
+}

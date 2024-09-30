@@ -1,0 +1,470 @@
+{
+    "questions": [
+        {
+            "question": "**Type**: Linear Race\n**Difficulty**: Easy (5/10)\n**Context**: Amy and Bob are racing each other on a straight track. Amy runs at a speed of 5 meters per second, while Bob runs at a speed of 4 meters per second. The race is 20 meters long.\n**Question**: If they both start at the same time, how many seconds will it take Amy to win the race?\n",
+            "difficulty": "easy",
+            "reasoning": "This question belongs to the 'Linear Races' subtopic within 'Quants - Time, Distance, and Speed'.  To solve this, we use the formula: \n\nTime = Distance / Speed\n\nWe need to find the time Amy takes to finish the race. We know:\n\n* Distance = 20 meters\n* Amy's speed = 5 meters per second\n\nPlugging these values into the formula: \n\nTime = 20 meters / 5 meters per second = 4 seconds\n\nTherefore, Amy will take 4 seconds to win the race.",
+            "options": [
+                "3 seconds",
+                "4 seconds",
+                "5 seconds",
+                "6 seconds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**difficulty_level**: Easy 5/10\n**skill**: Calculating Speed\n**context**: A cheetah runs a distance of 100 meters in 4 seconds.\n**question_stem**: What is the cheetah's speed?\n",
+            "difficulty": "easy",
+            "reasoning": "The question belongs to the subtopic 'Data Interpretation: Analyzing Charts and Tables Related to Time, Distance, and Speed' about 'Quants - Time, Distance, and Speed'.\n\nWe are given:\n* Distance = 100 meters\n* Time = 4 seconds\n\nTo find the speed, we use the formula:\n\nSpeed = Distance / Time\n\nPlugging in the values:\n\nSpeed = 100 meters / 4 seconds\n\nSpeed = 25 meters per second\n\nTherefore, the cheetah's speed is 25 meters per second.",
+            "options": [
+                "20 meters per second",
+                "25 meters per second",
+                "30 meters per second",
+                "40 meters per second"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two friends, Alice and Bob, are jogging on a circular track. They start at the same point and run in the same direction. Alice maintains a speed of 5 meters per second, while Bob runs at a speed of 3 meters per second. If the track has a circumference of 400 meters, how long will it take Alice to lap Bob (i.e., to be one full lap ahead)?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understand Relative Speed:**\n\nSince Alice and Bob are running in the same direction, we need to find their relative speed to determine how quickly Alice is gaining distance.  Relative speed when moving in the same direction is found by subtracting the smaller speed from the larger speed.\n\n* Relative speed = Alice's speed - Bob's speed \n* Relative speed = 5 m/s - 3 m/s = 2 m/s\n\n**2. Calculate the Time to Lap:**\n\nAlice gains a full lap (400 meters) on Bob at a rate of 2 meters per second.  To find the time, we use the formula:\n\n* Time = Distance / Speed\n* Time = 400 meters / 2 m/s = 200 seconds\n\n**Therefore, it will take Alice 200 seconds to lap Bob.**",
+            "options": [
+                "100 seconds",
+                "200 seconds",
+                "300 seconds",
+                "400 seconds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A swimmer can swim at a speed of 4 km/h in still water. He attempts to swim across a river with a current flowing at 2 km/h. The river is 1 km wide.  How long will it take him to swim across the river and reach the opposite bank?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Understand the impact of the current:**\n   * The swimmer's speed is affected by the river's current. When swimming against the current (upstream), his speed is reduced. When swimming with the current (downstream), his speed is increased.\n   * In this scenario, we only need to consider the swimmer's speed across the river (perpendicular to the current), so the current doesn't affect the time to cross.\n\n**2. Calculate the time to cross:**\n   * **Speed across the river:** 4 km/h (his speed in still water)\n   * **Distance:** 1 km\n   * **Time = Distance / Speed** \n   * **Time = 1 km / 4 km/h = 0.25 hours**\n\n**3. Convert to minutes (optional):**\n   * **0.25 hours * 60 minutes/hour = 15 minutes**\n\n**Therefore, it will take the swimmer 15 minutes to swim across the river.**",
+            "options": [
+                "15 minutes",
+                "0.25 hours",
+                "1 hour",
+                "30 minutes"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A bus and a car start simultaneously from city A towards city B, 600 km apart. The bus travels at an average speed of 80 km/h, but stops for 15 minutes every 2 hours for a break. The car maintains a consistent speed of 100 km/h. How long will the car need to wait in city B before the bus arrives?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Calculate the bus's net travel time:**\n\n* **Time taken without breaks:**  Time = Distance / Speed = 600 km / 80 km/h = 7.5 hours\n* **Number of breaks:** The bus takes a break every 2 hours, so for a 7.5-hour journey, it takes 7.5 / 2 = 3.75 breaks. Since it can't have a fraction of a break, round down to 3 breaks.\n* **Total break time:** 3 breaks * 15 minutes/break = 45 minutes\n* **Total travel time for the bus:** 7.5 hours + 45 minutes = 8 hours and 15 minutes\n\n**2. Calculate the car's travel time:**\n\n* **Time taken by car:** Time = Distance / Speed = 600 km / 100 km/h = 6 hours\n\n**3. Determine the waiting time:**\n\n* **Waiting time:** 8 hours 15 minutes (bus) - 6 hours (car) = 2 hours and 15 minutes\n\n**Therefore, the car will need to wait for 2 hours and 15 minutes in city B before the bus arrives.**",
+            "options": [
+                "1 hour 15 minutes",
+                "2 hours 15 minutes",
+                "3 hours",
+                "3 hours 45 minutes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A car needs to travel 360 km. It covers half the distance at 60 km/h.\n**Question**: What speed should the car travel for the remaining distance to achieve an average speed of 48 km/h for the entire journey?\n**Difficulty Level**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "This question utilizes the concept of average speed and introduces a shortcut by focusing on the fact that half the distance is covered at one speed. Here's how to solve it:\n\n**1. Calculate the time taken for the first half:**\n\n   * Distance = 360 km / 2 = 180 km\n   * Time = Distance / Speed = 180 km / 60 km/h = 3 hours\n\n**2. Calculate the total time required for the entire journey:**\n\n   * Total distance = 360 km\n   * Desired average speed = 48 km/h\n   * Total time = Total distance / Average speed = 360 km / 48 km/h = 7.5 hours\n\n**3. Calculate the time remaining for the second half:**\n\n   * Time remaining = Total time - Time for the first half = 7.5 hours - 3 hours = 4.5 hours\n\n**4. Calculate the required speed for the second half:**\n\n   * Distance = 180 km \n   * Time = 4.5 hours\n   * Required speed = Distance / Time = 180 km / 4.5 hours = 40 km/h\n\n**Therefore, the car needs to travel at 40 km/h for the remaining distance to achieve an average speed of 48 km/h for the entire journey.**",
+            "options": [
+                "60 km/h",
+                "48 km/h",
+                "40 km/h",
+                "36 km/h"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A train travels at a constant speed of 60 km/h for 2 hours.  What distance does the train cover during this time?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Speed-Time Graphs: Interpretation and Calculation of Distance' subtopic because even though we don't see a visual graph, we're given information that could easily be represented by one. We're essentially interpreting a flat line on a speed-time graph. \n\nHere's how to solve it:\n\n* **Understanding the Relationship:**  Distance, speed, and time are related by the formula: **Distance = Speed x Time**\n* **Applying the Formula:**\n    * Speed = 60 km/h \n    * Time = 2 hours\n    * Distance = 60 km/h * 2 hours = 120 km \n\n**Therefore, the train covers a distance of 120 km in 2 hours.**",
+            "options": [
+                "120 km/h",
+                "120 km",
+                "60 km",
+                "240 km"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A cyclist rides for 30 minutes at an average speed of 10 kilometers per hour.  How many kilometers did the cyclist travel?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of the relationship between time, distance, and speed, as well as the ability to perform conversions between units. Here's how to solve it:\n\n**1. Convert Minutes to Hours:**\n\n* There are 60 minutes in an hour, so 30 minutes is equal to 30/60 = 0.5 hours.\n\n**2.  Apply the Formula:**\n\n* We know:\n    * Speed = 10 kilometers per hour\n    * Time = 0.5 hours\n* We need to find Distance. Using the formula Distance = Speed x Time, we get:\n    * Distance = 10 km/hour * 0.5 hours = 5 kilometers\n\n**Therefore, the cyclist traveled 5 kilometers.**",
+            "options": [
+                "10 kilometers",
+                "30 kilometers",
+                "5 kilometers",
+                "15 kilometers"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A train travels a distance of 300 km at a speed of 60 km/h. If it covers half the distance at this speed, how much time will it take to cover the remaining distance at the same speed?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the time taken to cover the first half:**\n\n   * Distance = 300 km / 2 = 150 km\n   * Speed = 60 km/h\n   * Time = Distance / Speed = 150 km / 60 km/h = 2.5 hours\n\n**2. Calculate the time taken to cover the remaining half:**\n\n   * The remaining distance is also 150 km.\n   * Since the speed is constant, the time taken to cover the remaining half will be the same as the time taken for the first half.\n   * Time = 2.5 hours\n\n**Therefore, the train will take 2.5 hours to cover the remaining distance.**",
+            "options": [
+                "2.5 hours",
+                "5 hours",
+                "1.25 hours",
+                "150 km"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Alice drives to work every morning, covering a distance of 20 kilometers.  She usually maintains a steady speed of 40 kilometers per hour.  One day, traffic was heavier than usual, and it took her 36 minutes to reach her office. What was her average speed for that day's commute?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Convert Time to Hours:**\n\n*   Since the speed is given in kilometers per hour, we need to convert the time from minutes to hours.\n*   There are 60 minutes in an hour, so 36 minutes is equal to 36/60 = 0.6 hours.\n\n**2. Calculate Average Speed:**\n\n*   Average speed is calculated by dividing the total distance by the total time taken.\n*   Average Speed = Total Distance / Total Time\n*   Average Speed = 20 kilometers / 0.6 hours\n*   Average Speed = 33.33 kilometers per hour (approximately)\n\n**Therefore, Alice's average speed for that day's commute was approximately 33.33 kilometers per hour.**",
+            "options": [
+                "40 kilometers per hour",
+                "33.33 kilometers per hour",
+                "20 kilometers per hour",
+                "0.6 kilometers per hour"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two friends, Alice and Bob, are jogging on a circular track of length 400 meters. Alice runs at a speed of 5 meters per second, and Bob runs at a speed of 4 meters per second. They start at the same point and run in the same direction.  After how many minutes will Alice lap Bob?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Find the relative speed:**\n\n   Since Alice and Bob are running in the same direction, we find their relative speed by subtracting their individual speeds. \n\n   Relative speed = 5 m/s - 4 m/s = 1 m/s\n\n**2. Calculate the time to lap:**\n\n   Alice will lap Bob when she covers a distance equal to the track's length (400 meters) relative to Bob.  We can use the formula:\n\n   Time = Distance / Speed\n\n   Time = 400 meters / 1 m/s = 400 seconds\n\n**3. Convert seconds to minutes:**\n\n   Time in minutes = 400 seconds / 60 seconds/minute = 6.67 minutes (approximately)\n\n**Therefore, Alice will lap Bob after approximately 6.67 minutes.**",
+            "options": [
+                "400 meters",
+                "6.67 minutes",
+                "1 meter per second",
+                "4 minutes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Alice and Bob are participating in a 100-meter dash. Alice, a fierce competitor, runs at a speed of 8 meters per second, while Bob clocks in at a slightly slower 6 meters per second.  If they both start at the same time, who will win the race and by how many seconds?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Calculate Alice's time:**\n\n* Distance = 100 meters\n* Speed = 8 meters/second\n* Time = Distance / Speed = 100 meters / 8 meters/second = 12.5 seconds\n\n**2. Calculate Bob's time:**\n\n* Distance = 100 meters\n* Speed = 6 meters/second\n* Time = Distance / Speed = 100 meters / 6 meters/second = 16.67 seconds (approximately)\n\n**3. Determine the winner and the time difference:**\n\n* Alice finishes the race in 12.5 seconds, while Bob finishes in 16.67 seconds.\n* Therefore, Alice wins the race.\n* Time difference = Bob's time - Alice's time = 16.67 seconds - 12.5 seconds = 4.17 seconds (approximately)\n\n**Answer:** Alice wins the race by approximately 4.17 seconds.",
+            "options": [
+                "Bob, 4.17 seconds",
+                "Alice, 4.17 seconds",
+                "Bob, 12.5 seconds",
+                "Alice, 16.67 seconds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: A train 200 meters long is traveling at a speed of 72 km/h. It approaches a tunnel that is 300 meters long.\n**Question**: How long will it take the train to completely pass through the tunnel?\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "The question belongs to the subtopic 'Trains: Crossing Stationary Objects' about 'Quants - Time, Distance, and Speed'.\n\nHere's how to solve the problem:\n\n**1. Convert Speed to Meters per Second:**\n\n* The train's speed is given in km/h, but we need it in m/s to match the other units.\n* To convert km/h to m/s, multiply by (5/18).\n* 72 km/h * (5/18) = 20 m/s \n\n**2. Calculate Total Distance:**\n\n* The train needs to cover its own length plus the length of the tunnel.\n* Total distance = Train length + Tunnel length = 200m + 300m = 500m\n\n**3. Calculate Time:**\n\n* Time = Distance / Speed\n* Time = 500m / 20 m/s = 25 seconds\n\nTherefore, it will take the train **25 seconds** to completely pass through the tunnel.",
+            "options": [
+                "10 seconds",
+                "25 seconds",
+                "30 seconds",
+                "40 seconds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A motorboat travels 30 km downstream in 2 hours. If the speed of the current is 3 km/h, what is the speed of the boat in still water?",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\n1. **Understand Downstream Speed:** When a boat travels downstream, its speed is increased by the speed of the current. Therefore, the downstream speed is the sum of the boat's speed in still water and the speed of the current.\n\n2. **Calculate Downstream Speed:** We are given that the boat travels 30 km downstream in 2 hours.  Therefore, the downstream speed can be calculated as follows:\n\n   Downstream speed = Distance / Time = 30 km / 2 hours = 15 km/h\n\n3. **Calculate Speed in Still Water:**  Let the speed of the boat in still water be 'x' km/h. We know the speed of the current is 3 km/h. Therefore, we can write the equation:\n\n   x + 3 = 15 \n\n   Solving for x, we get:\n\n   x = 15 - 3 = 12 km/h\n\n   Therefore, the speed of the boat in still water is 12 km/h.\n\n## Options:\n\nA. 9 km/h\nB. 12 km/h\nC. 15 km/h\nD. 18 km/h\n\n## Correct Option:\n\n**B. 12 km/h**",
+            "options": [
+                "9 km/h",
+                "12 km/h",
+                "15 km/h",
+                "18 km/h"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A delivery truck's journey is represented by the speed-time graph shown below. The truck travels at a constant speed for the first 2 hours, then makes a delivery stop for 1 hour. After the stop, the truck continues its journey at a constant speed for another 3 hours.  \n\n[Insert a speed-time graph with the following segments: \nSegment 1: Constant speed of 40 km/h for 2 hours.\nSegment 2: Speed drops to 0 km/h for 1 hour (representing the delivery stop).\nSegment 3: Constant speed of 60 km/h for 3 hours.]\n\nWhat is the total distance traveled by the delivery truck during its entire journey?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Speed-Time Graphs: Interpretation and Calculation of Distance' subtopic within 'Quants - Time, Distance, and Speed'. To solve for total distance, we need to calculate the distance covered in each segment and sum them up.\n\n**Step 1: Distance covered in the first segment**\n* Speed = 40 km/h\n* Time = 2 hours\n* Distance = Speed x Time = 40 km/h * 2 h = 80 km\n\n**Step 2: Distance covered in the second segment**\n* The truck is stationary during the delivery stop, so speed = 0 km/h\n* Time = 1 hour\n* Distance = Speed x Time = 0 km/h * 1 h = 0 km\n\n**Step 3: Distance covered in the third segment**\n* Speed = 60 km/h\n* Time = 3 hours\n* Distance = Speed x Time = 60 km/h * 3 h = 180 km\n\n**Step 4: Total Distance**\n* Total Distance = Distance (Segment 1) + Distance (Segment 2) + Distance (Segment 3)\n* Total Distance = 80 km + 0 km + 180 km = 260 km\n\nTherefore, the total distance traveled by the delivery truck is 260 km.",
+            "options": [
+                "120 km",
+                "240 km",
+                "260 km",
+                "300 km"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**scenario**: A delivery driver needs to transport a package from the depot to a customer's house. The graph below shows the journey, with the distance from the depot represented on the y-axis and the time elapsed on the x-axis.\n**graph**: https://i.imgur.com/x7l5V51.png\n**question**: What is the average speed of the delivery driver over the entire journey in kilometers per hour?\n",
+            "difficulty": "medium",
+            "reasoning": "To find the average speed, we need the total distance traveled and the total time taken.  \n\n**1. Calculate the total distance:**\n* From the graph, the driver traveled 10 km to reach the customer's house.\n\n**2. Calculate the total time:**\n* The journey took 60 minutes (1 hour).\n\n**3. Calculate the average speed:**\n* Average speed = Total distance / Total time\n* Average speed = 10 km / 1 hour\n* Average speed = 10 km/h\n\nTherefore, the average speed of the delivery driver over the entire journey is 10 km/h.",
+            "options": [
+                "8 km/h",
+                "10 km/h",
+                "12.5 km/h",
+                "15 km/h"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A train, 180 meters long, is traveling at a speed of 72 km/h. It approaches a tunnel that is partially obstructed by a stationary goods train. The goods train is 240 meters long and occupies a portion of the tunnel's length.\n**Question**: If the train takes 35 seconds to completely pass both the goods train and the tunnel, how long is the tunnel?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Convert the train's speed to meters per second:**\n\n* 72 km/h * (1000 m/km) * (1 h/3600 s) = 20 m/s\n\n**2. Calculate the total distance covered by the train in 35 seconds:**\n\n* Distance = Speed x Time\n* Distance = 20 m/s * 35 s = 700 meters\n\n**3. Determine the combined length of the train and the goods train:**\n\n* Combined Length = Train Length + Goods Train Length\n* Combined Length = 180 m + 240 m = 420 meters\n\n**4. Calculate the length of the tunnel:**\n\n* Tunnel Length = Total Distance - Combined Length\n* Tunnel Length = 700 m - 420 m = 280 meters\n\n**Therefore, the length of the tunnel is 280 meters.**",
+            "options": [
+                "280 meters",
+                "420 meters",
+                "700 meters",
+                "180 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A motorcyclist is cruising down a scenic highway at a speed of 72 km/h.  Suddenly, a deer darts out onto the road ahead. It takes the motorcyclist 0.6 seconds to react and apply the brakes.  Under these conditions, the motorcycle's braking distance is 30 meters. What is the total distance traveled by the motorcycle from the moment the deer appears until it comes to a complete stop?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the solution:\n\n**1. Convert km/h to meters per second (m/s):**\n\n   *  72 km/h * (1000 meters / 1 km) * (1 hour / 3600 seconds) = 20 m/s\n\n**2. Calculate the distance traveled during the reaction time:**\n\n   * Distance = Speed * Time\n   * Distance = 20 m/s * 0.6 s = 12 meters\n\n**3. Calculate the total stopping distance:**\n\n   * Total Stopping Distance = Reaction Distance + Braking Distance\n   * Total Stopping Distance = 12 meters + 30 meters = 42 meters\n\n**Therefore, the total distance traveled by the motorcycle from the moment the deer appears until it stops is 42 meters.**",
+            "options": [
+                "12 meters",
+                "30 meters",
+                "42 meters",
+                "72 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two trains, Train A and Train B, are traveling on parallel tracks. Train A is 500 meters long and travels at a speed of 80 km/h. Train B is 300 meters long and travels at a speed of 100 km/h.  If Train B is initially behind Train A, how long will it take for Train B to completely overtake Train A (i.e., the back of Train B passes the front of Train A)?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understand Relative Speed:**\n\nSince the trains are moving in the same direction, we need to find their relative speed to determine how quickly Train B is closing the gap. \n\nRelative Speed = Speed of Train B - Speed of Train A \nRelative Speed = 100 km/h - 80 km/h = 20 km/h\n\n**2. Calculate the Distance to be Covered:**\n\nTo completely overtake Train A, Train B needs to cover a distance equal to the sum of both their lengths.\n\nTotal Distance = Length of Train A + Length of Train B\nTotal Distance = 500 meters + 300 meters = 800 meters\n\n**3. Convert Units:**\n\nOur relative speed is in km/h, but the distance is in meters. Let's convert the relative speed to meters per second (m/s).\n\n20 km/h * (1000 m/km) * (1 h/3600 s) = 5.56 m/s (approximately)\n\n**4. Calculate Time:**\n\nNow we can use the formula Time = Distance / Speed to find the overtaking time.\n\nTime = 800 meters / 5.56 m/s = 144 seconds\n\n**Therefore, it will take Train B 144 seconds to completely overtake Train A.**",
+            "options": [
+                "144 seconds",
+                "20 km/h",
+                "800 meters",
+                "5.56 m/s"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A cyclist is training for a race.  Their speed during one interval of their training is represented by the speed-time graph below: \n\nThe graph shows speed in meters per second (m/s) on the y-axis and time in seconds (s) on the x-axis. The graph starts at (0,0), rises linearly to (10,5), remains constant at 5 m/s until time = 20 seconds, then decreases linearly to (30,0). \n\nWhat is the total distance covered by the cyclist during this 30-second interval?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Speed-Time Graphs: Interpretation and Calculation of Distance' subtopic because it requires analyzing a speed-time graph to determine the total distance traveled. \n\nHere's how to solve the problem: \n\n1. **Divide the graph into sections:** The graph can be divided into three sections:\n    * Section 1: Acceleration (0-10 seconds) - a triangle\n    * Section 2: Constant speed (10-20 seconds) - a rectangle\n    * Section 3: Deceleration (20-30 seconds) - a triangle \n\n2. **Calculate the distance for each section:** \n    * **Section 1:** Area of a triangle = (1/2) * base * height = (1/2) * 10 s * 5 m/s = 25 meters \n    * **Section 2:** Area of a rectangle = length * width = 10 s * 5 m/s = 50 meters\n    * **Section 3:** Area of a triangle = (1/2) * base * height = (1/2) * 10 s * 5 m/s = 25 meters\n\n3. **Add the distances to find the total distance:**\n    Total distance = 25 m + 50 m + 25 m = 100 meters\n\nTherefore, the cyclist covers a total distance of 100 meters during this 30-second interval.",
+            "options": [
+                "50 meters",
+                "75 meters",
+                "100 meters",
+                "125 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**question_type**: Circular Race\n**question_description**: \n  **context**: Two athletes, Alice and Bob, are running on a circular track of length 400 meters. Alice runs at a speed of 5 meters per second, while Bob runs at a speed of 4 meters per second. They start at the same point and run in the same direction.\n  **question**: If Alice and Bob start running at the same time, how many times will they meet each other before Alice laps Bob for the first time?\n  **answer_options**: \n    **A**: 3 times\n    **B**: 4 times\n    **C**: They will meet continuously\n    **D**: They will never meet\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understand Relative Speed:**\n\nSince Alice and Bob are running in the same direction, we need to find their relative speed to understand how quickly the distance between them changes.  Relative speed is calculated as the difference in speeds when moving in the same direction.\n\nRelative speed = Alice's speed - Bob's speed = 5 m/s - 4 m/s = 1 m/s\n\n**2. Determine Time for Alice to Lap Bob:**\n\nAlice will lap Bob when she covers a distance equal to one full lap of the track (400 meters) more than Bob.\n\nTime = Distance / Speed = 400 meters / 1 m/s = 400 seconds\n\n**3. Calculate the Number of Times They Meet:**\n\n* Alice completes one lap in 400 meters / 5 m/s = 80 seconds.\n* Bob completes one lap in 400 meters / 4 m/s = 100 seconds.\n\nTo figure out how many times they meet before Alice laps Bob, we need to find the least common multiple (LCM) of their lap times (80 seconds and 100 seconds).\n\nThe LCM of 80 and 100 is 400.\n\n* Alice completes 400 seconds / 80 seconds/lap = 5 laps in 400 seconds.\n* Bob completes 400 seconds / 100 seconds/lap = 4 laps in 400 seconds.\n\nThis means they will meet **4 times** (at the starting point after each of Bob's laps) before Alice laps Bob for the first time.\n\n**Therefore, the correct answer is (B).**",
+            "options": [
+                "3 times",
+                "4 times",
+                "Continuously",
+                "Never"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A car leaves City A at 10:00 AM, traveling towards City B at a speed of 60 km/h. At 10:30 AM, a bus leaves City B, traveling towards City A at a speed of 40 km/h. A truck also leaves City B at 11:00 AM, traveling towards City A. The truck overtakes the car at a point 20 km away from City B.\n**question**: What is the speed of the truck if it meets the bus 1 hour after overtaking the car?\n**data**: \n  **Car speed**: 60 km/h\n  **Bus speed**: 40 km/h\n  **Car departure time**: 10:00 AM\n  **Bus departure time**: 10:30 AM\n  **Truck departure time**: 11:00 AM\n  **Truck overtaking distance from City B**: 20 km\n**difficulty**: medium 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the solution step-by-step:\n\n**Step 1: Calculate the distance covered by the car when the truck overtakes it.**\n\n* The car travels for 1 hour from 10:00 AM to 11:00 AM at 60 km/h, covering 60 km.\n* Since the truck overtakes the car 20 km away from City B, the car has covered 60 km - 20 km = 40 km from City B.\n\n**Step 2: Calculate the time taken by the truck to overtake the car.**\n\n* Let the time taken by the truck be 't' hours.\n* Distance covered by the truck in 't' hours = Speed of truck * t\n* Distance covered by the car in 't' hours = 40 km (from Step 1) + 60 km/h * t \n* Since both distances are equal at the point of overtaking, we have: Speed of truck * t = 40 + 60t \n\n**Step 3: Use the information about the truck and bus meeting.**\n\n* The truck overtakes the car 1 hour before meeting the bus, meaning the truck travels for 't + 1' hours when it meets the bus.\n* Distance covered by the truck in (t+1) hours = Speed of truck * (t+1)\n* Distance covered by the bus in 1.5 hours (from 10:30 AM to 12:00 PM) = 40 km/h * 1.5 h = 60 km\n* Since the truck and bus meet after these durations, their distances covered from City B would add up to the total distance between City A and City B.\n* Let the distance between City A and City B be 'D'. Therefore, Speed of truck * (t+1) + 60 km = D\n\n**Step 4:  Solve for the speed of the truck.**\n\n* We have two equations:\n    * Speed of truck * t = 40 + 60t  \n    * Speed of truck * (t+1) + 60 km = D \n* Since we are interested in the speed of the truck, we need to eliminate 't' and 'D'. \n* Notice that we can express 'D' in terms of the car's journey. The car travels from 10:00 AM to 12:00 PM (2 hours) at 60 km/h, covering a total distance of 120 km. Therefore, D = 120 km.\n* Substituting D in the second equation: Speed of truck * (t+1) + 60 km = 120 km\n* Simplifying the above equation: Speed of truck * (t+1) = 60 km\n* Now we have two equations:\n    * Speed of truck * t = 40 + 60t\n    * Speed of truck * (t+1) = 60\n* Dividing the second equation by the first equation, we get: (t+1)/t = 60/(40+60t)\n* Solving for 't', we get: t = 2/3 hours\n* Substituting 't' in the equation Speed of truck * t = 40 + 60t, we get:\n    * Speed of truck * (2/3) = 40 + 60*(2/3)\n    * Speed of truck = 100 km/h\n\nTherefore, the speed of the truck is 100 km/h.",
+            "options": [
+                "80 km/h",
+                "100 km/h",
+                "120 km/h",
+                "140 km/h"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Two cyclists, Alice and Bob, embark on a bike race. The distance-time graph represents their journey. Initially, Alice maintains a steady speed, while Bob starts slower but gradually increases his pace. They both stop for a break at the same time. After the break, Bob cycles at a constant speed, while Alice gradually slows down, reaching the finish line just ahead of Bob.  \n\n**Analyze the provided distance-time graph and determine at what point in time (approximately) does Bob overtake Alice during the race?**",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Distance-Time Graphs: Interpretation and Analysis' subtopic within 'Quants - Time, Distance, and Speed.'  \n\nHere's how to break down the solution:\n\n1. **Understanding the Graph:** The graph visually represents Alice and Bob's distances over time.  Steeper slopes indicate faster speeds. Flat lines mean the cyclists are stationary.\n\n2. **Identifying Overtaking:** Bob overtakes Alice when his distance line on the graph crosses above Alice's line. This signifies that he's covered more distance than her at that specific time.\n\n3. **Pinpointing the Time:**  Examine the graph closely to find the point of intersection between Alice's and Bob's lines. This intersection point's corresponding time on the x-axis represents the approximate time Bob overtakes Alice. Due to the graph's nature, an exact time might not be discernible, making it an approximation. \n\n**Important Note:** Without the actual graph, a precise numerical answer cannot be provided. Students would need to visually analyze the provided graph to determine the approximate time Bob overtakes Alice.",
+            "options": [
+                "15 minutes",
+                "25 minutes",
+                "35 minutes",
+                "45 minutes"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A train, 150 meters long, is traveling at a speed of 90 km/h. It approaches another train, 200 meters long, traveling in the opposite direction at a speed of 72 km/h. From the moment their fronts align, how long does it take for the two trains to completely pass each other?",
+            "difficulty": "medium",
+            "reasoning": "**1. Relative Speed:** When two objects move in opposite directions, their speeds add up to determine how quickly they are approaching each other. \n\n* Convert the speeds to meters per second (m/s): \n    * 90 km/h = (90 * 1000) m / (3600 s) = 25 m/s\n    * 72 km/h = (72 * 1000) m / (3600 s) = 20 m/s\n* Relative speed = 25 m/s + 20 m/s = 45 m/s\n\n**2. Total Distance:** To completely pass each other, the trains need to cover a distance equal to their combined lengths.\n\n* Total distance = 150 m + 200 m = 350 m\n\n**3. Time Calculation:**  Time is the distance covered divided by the speed.\n\n* Time = Total distance / Relative speed\n* Time = 350 m / 45 m/s = 7.78 seconds (approximately)\n\n**Therefore, it takes approximately 7.78 seconds for the two trains to completely pass each other.**",
+            "options": [
+                "6 seconds",
+                "8.5 seconds",
+                "9.2 seconds",
+                "7 seconds"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Scenario Description**: A train leaves New York City traveling towards Chicago at a speed of 60 mph. Two hours later, another train leaves Chicago traveling towards New York City on a parallel track at a speed of 70 mph. The distance between New York City and Chicago is 800 miles.\n**Question**: How many miles from New York City will the two trains meet?\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the distance traveled by the first train:**\n\n* The first train travels for 2 hours before the second train leaves Chicago.\n* Distance covered by the first train in 2 hours: 60 mph * 2 hours = 120 miles\n\n**2. Calculate the remaining distance:**\n\n* The remaining distance between the two trains: 800 miles - 120 miles = 680 miles\n\n**3. Calculate the relative speed of the trains:**\n\n* Since the trains are traveling towards each other, their speeds add up.\n* Relative speed: 60 mph + 70 mph = 130 mph\n\n**4. Calculate the time it takes for the trains to meet:**\n\n* Time = Distance / Speed\n* Time = 680 miles / 130 mph = 5.23 hours (approximately)\n\n**5. Calculate the distance traveled by the first train from its starting point:**\n\n* Total time traveled by the first train: 5.23 hours + 2 hours = 7.23 hours\n* Total distance traveled by the first train: 60 mph * 7.23 hours = 433.8 miles (approximately)\n\n**Therefore, the two trains will meet approximately 433.8 miles from New York City.**",
+            "options": [
+                "433.8 miles",
+                "680 miles",
+                "5.23 hours",
+                "120 miles"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: A motorcycle is traveling at 40 mph in a residential area.  The rider notices a child run out into the street ahead and immediately applies the brakes.\n**Information**: The motorcycle's reaction time is 0.6 seconds.  The braking distance of the motorcycle at 20 mph is 15 feet.  Assume the braking distance is proportional to the square of the speed.\n**Question**: What is the total stopping distance of the motorcycle?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the thinking distance:**\n\n* First, convert the motorcycle's speed from miles per hour (mph) to feet per second (fps): \n   40 mph * (5280 ft/mile) / (3600 seconds/hour) \u2248 58.67 fps\n* Thinking distance is the distance traveled during the reaction time:\n   Thinking distance = speed * reaction time = 58.67 fps * 0.6 s \u2248 35.2 feet\n\n**2. Calculate the braking distance:**\n\n* Since braking distance is proportional to the square of the speed, we need to find the proportionality constant.  We know the braking distance at 20 mph is 15 feet.\n* Let 'k' be the proportionality constant. Then:\n    15 feet = k * (20 mph)^2\n    k = 15 feet / (400 mph^2) = 0.0375 feet/mph^2\n* Now, we can calculate the braking distance at 40 mph:\n    Braking distance = k * (40 mph)^2 = 0.0375 feet/mph^2 * 1600 mph^2 = 60 feet\n\n**3. Calculate the total stopping distance:**\n\n* Total stopping distance = Thinking distance + Braking distance\n* Total stopping distance = 35.2 feet + 60 feet = 95.2 feet\n\nTherefore, the total stopping distance of the motorcycle is 95.2 feet.",
+            "options": [
+                "60 feet",
+                "95.2 feet",
+                "35.2 feet",
+                "15 feet"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A motorboat enthusiast decides to test his new boat's speed on a river known for its strong current. He first travels 30 kilometers downstream, enjoying the scenery and the boost from the current. The journey takes him 2 hours. On the way back, fighting against the same current, he covers the same 30 kilometers but in 3 hours.  His curious neighbor, watching from the riverbank, wants to know how fast the river current actually is. Can you help the neighbor determine the speed of the river current?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Upstream and Downstream Motion in Still Water and Current' subtopic of 'Quants - Time, Distance, and Speed'. It involves calculating the speed of the river current given the distances traveled, the times taken for each trip (upstream and downstream), and the understanding that the boat's speed is affected by the current. \n\nHere's how we can solve this problem step-by-step:\n\n**1. Define Variables:**\n* Let 'x' be the speed of the boat in still water (km/h). \n* Let 'y' be the speed of the river current (km/h).\n\n**2. Formulate Equations:**\n* **Downstream:** When traveling downstream, the boat's speed is increased by the current. So, the effective speed is (x + y) km/h. We know the distance (30 km) and time (2 hours), so we can write the equation:  x + y = 30/2  or x + y = 15\n* **Upstream:** When traveling upstream, the boat's speed is reduced by the current. The effective speed is (x - y) km/h.  Using the distance (30 km) and time (3 hours) for the upstream journey, we get the equation: x - y = 30/3 or x - y = 10\n\n**3. Solve the Equations:**\nNow we have two equations with two unknowns. We can solve for 'y' (speed of the current) by either using elimination or substitution. Let's use elimination:\n\n* Add the two equations together: \n   (x + y) + (x - y) = 15 + 10\n   2x = 25\n* Solve for 'x':\n   x = 25 / 2\n   x = 12.5 km/h (This is the boat's speed in still water)\n\n* Substitute the value of 'x' back into either of the original equations to solve for 'y'.  Let's use the first equation (x + y = 15): \n   12.5 + y = 15\n   y = 15 - 12.5\n   y = 2.5 km/h\n\n**Therefore, the speed of the river current is 2.5 km/h.**",
+            "options": [
+                "12.5 km/h",
+                "2.5 km/h",
+                "15 km/h",
+                "10 km/h"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A snail wants to travel 2 kilometers to reach a delicious strawberry patch. The snail can cover 5 meters in 10 minutes.  How many hours will it take the snail to reach the strawberry patch?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Convert kilometers to meters:**\n\n* There are 1000 meters in 1 kilometer.\n* The snail wants to travel 2 kilometers, so that's 2 * 1000 = 2000 meters.\n\n**2. Calculate the time to travel 1 meter:**\n\n* The snail travels 5 meters in 10 minutes.\n* To find the time for 1 meter, divide the time by the distance: 10 minutes / 5 meters = 2 minutes/meter\n\n**3. Calculate the total time in minutes:**\n\n* Multiply the time per meter by the total distance: 2 minutes/meter * 2000 meters = 4000 minutes\n\n**4. Convert minutes to hours:**\n\n* There are 60 minutes in 1 hour.\n* Divide the total time in minutes by 60: 4000 minutes / 60 minutes/hour = 66.67 hours (approximately)\n\n**Therefore, it will take the snail approximately 66.67 hours to reach the strawberry patch.**",
+            "options": [
+                "2000 meters",
+                "66.67 hours",
+                "4000 minutes",
+                "2 minutes/meter"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A motorboat travels 24 km downstream and then returns 16 km upstream in a total of 5 hours. If the speed of the current is 2 km/hr, what is the speed of the motorboat in still water?",
+            "difficulty": "medium",
+            "reasoning": "Let the speed of the motorboat in still water be 'x' km/hr. \n\n**Downstream:**\n* Speed downstream = (x + 2) km/hr (speed of boat + speed of current)\n* Time taken downstream = Distance / Speed = 24 / (x + 2) hours\n\n**Upstream:**\n* Speed upstream = (x - 2) km/hr (speed of boat - speed of current)\n* Time taken upstream = Distance / Speed = 16 / (x - 2) hours\n\n**Total Time:**\n* Total time taken = Time downstream + Time upstream\n* 5 = 24 / (x + 2) + 16 / (x - 2)\n\n**Solving the Equation:**\n1. Multiply both sides of the equation by (x + 2)(x - 2) to get rid of the fractions: 5(x + 2)(x - 2) = 24(x - 2) + 16(x + 2)\n2. Expand the equation: 5(x\u00b2 - 4) = 24x - 48 + 16x + 32\n3. Simplify and bring all terms to one side: 5x\u00b2 - 20 - 40x + 16 = 0\n4. Simplify further: 5x\u00b2 - 40x - 4 = 0\n5. This is a quadratic equation. We can solve for 'x' using the quadratic formula:\nx = (-b \u00b1 \u221a(b\u00b2 - 4ac)) / 2a \nWhere a = 5, b = -40, and c = -4\n6. Plugging in the values: x = (40 \u00b1 \u221a((-40)\u00b2 - 4 * 5 * -4)) / (2 * 5)\n7. Simplifying: x = (40 \u00b1 \u221a(1600 + 80)) / 10\n8. Further simplification: x = (40 \u00b1 \u221a1680) / 10  \n9. x \u2248 (40 \u00b1 41) / 10\n10. This gives us two possible solutions: x \u2248 8.1 or x \u2248 -0.1. Since speed cannot be negative, we discard x \u2248 -0.1\n\nTherefore, the speed of the motorboat in still water is approximately 8.1 km/hr.",
+            "options": [
+                "6.1 km/hr",
+                "8.1 km/hr",
+                "10.1 km/hr",
+                "12.1 km/hr"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A delivery drone flies from its base to a drop-off location and back.  The drone's journey is represented by the speed-time graph below.\n**graph**: The graph shows the drone's speed in meters per second (m/s) on the y-axis and time in seconds (s) on the x-axis. The graph can be broken down into four sections: \n\n* **Section 1:** Starts at (0,0) and rises linearly to (10, 8).\n* **Section 2:**  Remains constant at 8 m/s from (10, 8) to (20, 8).\n* **Section 3:**  Decreases linearly from (20, 8) to (30, 0).\n* **Section 4:** Remains at 0 m/s from (30, 0) to (40, 0). \n**question**: What is the total distance traveled by the drone throughout its entire journey?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Speed-Time Graphs: Interpretation and Calculation of Distance' topic. To solve this, we need to understand that the area under each section of a speed-time graph represents the distance traveled during that time interval.\n\nHere's how to solve it step-by-step:\n\n1. **Section 1 (0s to 10s):** This is a triangle. The area (distance) is (1/2) * base * height = (1/2) * 10s * 8 m/s = 40 meters. \n\n2. **Section 2 (10s to 20s):** This is a rectangle. The area (distance) is base * height = 10s * 8 m/s = 80 meters.\n\n3. **Section 3 (20s to 30s):**  This is another triangle with the same dimensions as Section 1.  The area (distance) is (1/2) * 10s * 8 m/s = 40 meters. \n\n4. **Section 4 (30s to 40s):** The drone is at rest here, so the distance traveled is 0 meters.\n\n5. **Total Distance:** Sum the distances from each section: 40m + 80m + 40m + 0m = 160 meters.\n\nTherefore, the total distance traveled by the drone throughout its entire journey is 160 meters.",
+            "options": [
+                "80 meters",
+                "120 meters",
+                "160 meters",
+                "200 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Imagine a standard analog clock. At precisely 10:10 AM, a mischievous gremlin freezes the second hand but allows the hour and minute hands to continue their normal movement.  Much later, you glance at the clock and notice that the minute hand has moved precisely 210 degrees from its frozen position. How many degrees has the hour hand moved from its position at 10:10 AM?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve this tricky clock problem:\n\n**1. Minute Hand Movement:**\n* The minute hand moving 210 degrees represents 210/6 = 35 minutes (since the minute hand moves 360 degrees in 60 minutes).\n\n**2. Time Elapsed:**\n* Because the minute hand moved 35 minutes, the actual time is now 10:45 AM.\n\n**3. Hour Hand Movement (Relative Speed):** \n* The hour hand moves 360 degrees in 12 hours or 30 degrees per hour.\n* The hour hand also moves 0.5 degrees every minute (30 degrees / 60 minutes). \n\n**4. Total Hour Hand Movement:**\n* In 35 minutes, the hour hand would have moved 35 minutes * 0.5 degrees/minute = 17.5 degrees.\n\n**Therefore, the hour hand has moved 17.5 degrees from its position at 10:10 AM.** ",
+            "options": [
+                "17 degrees",
+                "17.5 degrees",
+                "18 degrees",
+                "18.5 degrees"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: A snail wants to travel 100 meters. It crawls at a speed of 1 centimeter per second for the first 5 minutes and then increases its speed to 2 centimeters per second. \n**question**: How much time (in minutes and seconds) will the snail take to complete the remaining distance?\n**difficulty**: 8\n",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the distance covered in the first 5 minutes:**\n\n* Convert the snail's initial speed to meters per second: 1 cm/s = 0.01 m/s\n* Calculate the total time in seconds: 5 minutes * 60 seconds/minute = 300 seconds\n* Calculate the distance covered: distance = speed * time = 0.01 m/s * 300 s = 3 meters\n\n**2. Calculate the remaining distance:**\n\n* Remaining distance = Total distance - Distance covered = 100 m - 3 m = 97 m\n\n**3. Calculate the time to cover the remaining distance:**\n\n* Convert the snail's new speed to meters per second: 2 cm/s = 0.02 m/s\n* Calculate the time: time = distance / speed = 97 m / 0.02 m/s = 4850 seconds\n\n**4. Convert the time into minutes and seconds:**\n\n* Minutes: 4850 seconds / 60 seconds/minute = 80 minutes\n* Remaining seconds: 4850 seconds % 60 seconds/minute = 50 seconds\n\n**Answer:** The snail will take **80 minutes and 50 seconds** to complete the remaining distance.",
+            "options": [
+                "3 minutes and 50 seconds",
+                "80 minutes and 50 seconds",
+                "97 minutes and 50 seconds",
+                "100 minutes and 50 seconds"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A drone is programmed to follow a specific flight path represented by the speed-time graph shown below. The graph consists of linear segments and a curved section. Calculate the total distance traveled by the drone in the first 12 seconds of its flight.\n\n![Speed-Time Graph](speed_time_graph.png)\n\nNote: The curved section of the graph between t = 4 seconds and t = 8 seconds represents a quarter of a circle with a radius of 4 m/s.",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThe total distance traveled by the drone is represented by the area under the speed-time graph. To solve this, we need to divide the graph into calculable geometric shapes:\n\n1. **Triangle (0s to 4s):**\n   - Base = 4 seconds\n   - Height = 4 m/s\n   - Area = (1/2) * base * height = (1/2) * 4 * 4 = 8 meters\n\n2. **Quarter Circle (4s to 8s):** \n   - Radius = 4 m/s\n   - Area = (1/4) * \u03c0 * radius\u00b2 = (1/4) * \u03c0 * 4\u00b2 = 4\u03c0 meters\n\n3. **Rectangle (8s to 12s):**\n   - Length = 4 seconds\n   - Width = 4 m/s\n   - Area = length * width = 4 * 4 = 16 meters\n\n4. **Total Distance:**\n    - Add the areas of all the shapes: 8 meters + 4\u03c0 meters + 16 meters = **(24 + 4\u03c0) meters**\n\nTherefore, the total distance traveled by the drone in the first 12 seconds is (24 + 4\u03c0) meters, which is approximately **36.57 meters**.",
+            "options": [
+                "36.57 meters",
+                "24 meters",
+                "16 meters",
+                "4\u03c0 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A boatman decides to row his boat, capable of a speed of 5 km/h in still water, to a town located 24 km upstream and return to his starting point. However, he forgets to factor in the river's current, which remains constant throughout his journey. He completes the round trip in 11 hours. To his dismay, he realizes upon returning that he forgot to deliver a package at a village located exactly halfway between his starting point and the town.  What is the speed of the river's current if he completes the delivery trip (starting point to the village and back) in the shortest possible time?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down the problem step-by-step:\n\n**1. Define Variables:**\n\n* Let 'x' be the speed of the current (in km/h).\n* The boat's speed upstream will be (5 - x) km/h.\n* The boat's speed downstream will be (5 + x) km/h.\n\n**2.  Set up the Equation for the Round Trip:**\n\n* Time taken to travel upstream = 24 / (5 - x) hours\n* Time taken to travel downstream = 24 / (5 + x) hours\n* Total time for the round trip = 11 hours \n\nTherefore, the equation becomes: \n24/(5 - x) + 24/(5 + x) = 11\n\n**3. Solve the Equation:**\n\n* Simplify the equation: [24(5 + x) + 24(5 - x)] / [(5 - x)(5 + x)] = 11\n* Further simplification: 240 / (25 - x^2) = 11\n* Cross-multiply: 240 = 275 - 11x^2\n* Rearrange: 11x^2 = 35\n* Solve for x: x = \u221a(35/11)  km/h \n\n**4. Consider the Delivery Trip:**\n\n* The boatman wants to complete the delivery trip in the shortest possible time. This means he should row at his maximum speed downstream (with the current) and return upstream at his maximum speed against the current.\n\n**5.  Therefore, the speed of the river's current is \u221a(35/11) km/h.**",
+            "options": [
+                "1.78 km/h",
+                "2.54 km/h",
+                "3.16 km/h",
+                "4.23 km/h"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Two friends, Alice and Bob, decided to race each other on their bicycles. They both started from the same point and rode along a straight path. The distance-time graph below represents their journeys. \n\n[Insert a distance-time graph here with the following characteristics: \n* Both Alice and Bob's journeys should be represented on the same graph. \n* Alice's graph should have two segments: a steeper segment initially, followed by a less steep segment. \n* Bob's graph should have three segments: starting with a less steep segment than Alice's initial segment, then a steeper segment than Alice's second segment, and finally a horizontal line representing a stop.]\n\nAlice claims that although Bob overtook her at some point during the race, she was ultimately faster than him.  \n\n1. Analyze the graph and determine at what time Bob overtook Alice. \n2. Calculate Alice's average speed for the entire duration of the race shown on the graph. \n3. By calculating Bob's average speed for the portions of the race where he was moving, determine if Alice's claim about being faster is true or false. Explain your reasoning.",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Distance-Time Graphs: Interpretation and Analysis' topic as it requires students to:\n\n* **Interpret:**  Understand the different slopes representing different speeds, recognize overtaking as the point where the lines intersect, and identify periods of rest on the graph. \n* **Analyze:** Compare speeds based on the steepness of the slopes, and understand the concept of average speed over different durations.\n* **Calculate:** Determine average speeds from the graph using the formula (total distance/total time). \n\n**Step-by-Step Solution:**\n\n1. **Finding when Bob overtook Alice:** This is determined by locating the point on the graph where the line representing Bob's journey intersects with the line representing Alice's journey.\n\n2. **Calculating Alice's average speed:** \n    *  Identify the total distance covered by Alice from the graph.\n    *  Identify the total time taken by Alice from the graph. \n    *  Divide the total distance by the total time to get Alice's average speed.\n\n3. **Analyzing Alice's claim:**\n    *  Calculate Bob's total distance covered (exclude the time he was stationary).\n    *  Calculate Bob's total time taken (exclude the time he was stationary).\n    *  Divide the total distance by the total time to find Bob's average speed while moving.\n    *  Compare Alice's average speed to Bob's average speed while moving. If Alice's speed is higher, her claim is true; otherwise, it's false. \n\n**Note:** This explanation provides the framework for solving the problem. The specific calculations and the final answer depend on the values depicted in the distance-time graph provided within the question.",
+            "options": [
+                "Alice's claim is true",
+                "Alice's claim is false",
+                "It is impossible to determine based on the provided graph",
+                "Bob was faster than Alice"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A boat captain decides to take a leisurely trip down a river. He travels 30 km downstream, enjoying the scenery. However, on the return journey upstream, he realizes he needs to increase his speed to reach his destination before nightfall. He knows the river current flows at a steady 3 km/h. If he completes the entire trip (downstream and upstream) in 8 hours, and he increases his speed upstream by 25% compared to his downstream speed, what was his speed in still water during the downstream journey?",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Define Variables:**\n\n* Let 'x' be the boat's speed in still water during the downstream journey (km/h).\n\n**2. Downstream Journey:**\n\n* Speed downstream = (x + 3) km/h  (speed in still water + speed of current)\n* Time taken downstream = Distance / Speed = 30 / (x + 3) hours\n\n**3. Upstream Journey:**\n\n* Speed upstream = 1.25x + 3 km/h (25% increased speed + speed of current)\n* Time taken upstream = Distance / Speed = 30 / (1.25x + 3) hours\n\n**4. Total Time Equation:**\n\n* Total time = Time downstream + Time upstream \n* 8 = 30/(x + 3) + 30/(1.25x + 3)\n\n**5. Solving the Equation:**\n\n* Multiply the entire equation by (x + 3)(1.25x + 3) to get rid of the fractions:\n   * 8(x + 3)(1.25x + 3) = 30(1.25x + 3) + 30(x + 3)\n* Expand and simplify:\n   * 10x\u00b2 + 57x + 72 = 37.5x + 90 + 30x + 90\n   * 10x\u00b2 - 10.5x - 108 = 0\n* Divide the equation by 1.5 to simplify:\n   * 6.67x\u00b2 - 7x - 72 = 0 (approximately)\n* This quadratic equation doesn't factor easily, so we can use the quadratic formula to solve for x:\n   * x = [-b \u00b1 \u221a(b\u00b2 - 4ac)] / 2a\n     * Where a = 6.67, b = -7, and c = -72\n* Solving this gives us two possible solutions for x.  One will be negative (which doesn't make sense in this context) and the other will be our answer.\n* x \u2248 3.93 km/h (approximately)\n\n**Therefore, the boat captain's speed in still water during the downstream journey was approximately 3.93 km/h.**",
+            "options": [
+                "3.93 km/h",
+                "5.93 km/h",
+                "7.93 km/h",
+                "10.93 km/h"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Two cyclists, Alice and Bob, are participating in a velodrome race on a circular track of 400 meters. Alice, known for her endurance, maintains a steady speed of 15 meters per second. Bob, a notorious sprinter, starts slower at 12 meters per second but increases his speed by 0.5 meters per second with each passing lap.  \n\nIf they start at the same line and Bob is aiming to overtake Alice before they complete 8 laps, in which lap will Bob manage to pass Alice for the first time?",
+            "difficulty": "hard",
+            "reasoning": "This question involves relative speed in a circular motion scenario and requires multiple calculations to determine the answer. Here's a step-by-step solution:\n\n**1. Calculate the relative speed per lap:**\n   - Alice's speed remains constant at 15 m/s.\n   - Bob's speed increases each lap. We need to find when his speed surpasses Alice's.\n\n**2.  Determine the lap where Bob's speed surpasses Alice's:**\n   - Lap 1: Bob's speed = 12 m/s \n   - Lap 2: Bob's speed = 12.5 m/s\n   - Lap 3: Bob's speed = 13 m/s\n   - ... and so on, increasing by 0.5 m/s each lap. \n   - We need to find the lap where his speed is greater than 15 m/s.\n\n**3. Calculate the time taken for each lap:**\n   - Time = Distance / Speed\n   - Calculate the time taken by both Alice and Bob for each lap until Bob's speed surpasses Alice's.\n\n**4.  Determine the relative distance covered per lap:**\n   - Relative distance = (Bob's speed - Alice's speed) * Time taken for that lap\n   - Keep calculating the relative distance covered by Bob each lap.\n\n**5. Identify the overtaking lap:**\n   - Bob will overtake Alice in the lap where the cumulative relative distance equals or exceeds the track length (400 meters).\n\n**Let's calculate:**\n\n- Bob's speed surpasses Alice's in Lap 6 (12 + 0.5 * 5 = 14.5 m/s).\n- We need to calculate the time taken by both for the first 5 laps and then for lap 6 to find when Bob overtakes.\n\n| Lap | Bob's Speed (m/s) | Alice's Speed (m/s) | Bob's Time (s) | Alice's Time (s) | Relative Speed (m/s) | Relative Distance (m) |\n|-----|--------------------|---------------------|----------------|-----------------|----------------------|-----------------------|\n| 1   | 12                | 15                  | 33.33          | 26.67          | -3                  | -100                 |\n| 2   | 12.5               | 15                  | 32            | 26.67          | -2.5                | -80                  |\n| 3   | 13                | 15                  | 30.77          | 26.67          | -2                  | -61.54               |\n| 4   | 13.5               | 15                  | 29.63          | 26.67          | -1.5                | -44.44               |\n| 5   | 14                | 15                  | 28.57          | 26.67          | -1                  | -28.57               |\n| 6   | 14.5               | 15                  | 27.59          | 26.67          | -0.5                | -13.79               |\n\n-  Total relative distance covered by Bob in 6 laps = -324.34 meters (He is behind Alice)\n-  In lap 7, Bob's speed is 15 m/s, same as Alice. So, he won't be able to overtake her.\n-  Therefore, Bob will not be able to overtake Alice within 8 laps.\n\n",
+            "option and correct options": [
+                {
+                    "option": "Lap 4",
+                    "correct": false
+                },
+                {
+                    "option": "Lap 6",
+                    "correct": false
+                },
+                {
+                    "option": "Lap 7",
+                    "correct": false
+                },
+                {
+                    "option": "Bob won't be able to overtake Alice within 8 laps",
+                    "correct": true
+                }
+            ],
+            "options": [
+                "Lap 4",
+                "Lap 6",
+                "Lap 7",
+                "Never"
+            ],
+            "correct_option": "D"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Time, Distance, and Speed",
+    "exam_id": 18,
+    "order": 6
+}

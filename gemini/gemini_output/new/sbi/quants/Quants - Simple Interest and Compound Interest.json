@@ -1,0 +1,452 @@
+{
+    "questions": [
+        {
+            "question": "John wants to buy a bicycle that costs $200. He decides to save $10 each week from his allowance. If we only consider the principal amount John saves, how many weeks will it take him to save enough money for the bicycle?",
+            "difficulty": "easy",
+            "reasoning": "This question focuses on understanding the basic concept of 'principal' in a financial context. \n\nHere's how to solve it:\n\n* **Identify the principal:** The principal is the amount of money John needs to save, which is $200. \n* **Determine the saving rate:** John saves $10 per week. \n* **Calculate the number of weeks:** Divide the total amount needed ($200) by the weekly saving rate ($10): $200 / $10 = 20 weeks.\n\nTherefore, it will take John 20 weeks to save enough money for the bicycle by considering only the principal amount.",
+            "options": [
+                "10 weeks",
+                "20 weeks",
+                "30 weeks",
+                "40 weeks"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine you have a magical piggy bank where every year, the money you saved doubles! You start with $5. After 3 years, how much money will you have in your piggy bank?",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Introduction to Compound Interest: The Power of Compounding' topic as it illustrates the core concept of compounding in a simple and engaging way. The money doubling each year represents a 100% annual interest rate. Here's how the amount grows:\n\n* **Year 1:** $5 doubles to $5 * 2 = $10\n* **Year 2:** $10 doubles to $10 * 2 = $20\n* **Year 3:** $20 doubles to $20 * 2 = $40\n\nTherefore, after 3 years, you will have $40 in your magical piggy bank.",
+            "options": [
+                "$15",
+                "$20",
+                "$30",
+                "$40"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Imagine you're saving up for a new bike. You put $200 in a savings account that earns 4% interest compounded annually.  After 2 years of saving, how much money will you have in the account (including the interest)?",
+            "difficulty": "easy",
+            "reasoning": "This question focuses on calculating compound interest with annual compounding, making it relatively straightforward:\n\n**Step 1: Calculate the interest earned in the first year.**\n* Interest = Principal * Interest Rate \n* Interest = $200 * 0.04 = $8\n\n**Step 2: Add the interest earned to the principal to find the new balance after the first year.**\n* New Balance = Principal + Interest\n* New Balance = $200 + $8 = $208\n\n**Step 3: Calculate the interest earned in the second year (on the new balance).**\n* Interest = New Balance * Interest Rate\n* Interest = $208 * 0.04 = $8.32\n\n**Step 4: Add the interest earned in the second year to find the total amount after two years.**\n* Total Amount = New Balance + Interest\n* Total Amount = $208 + $8.32 = $216.32\n\n**Therefore, after two years, you will have $216.32 in the account.**",
+            "options": [
+                "$208",
+                "$212",
+                "$216.32",
+                "$220"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Imagine you're considering a savings account at a bank. The bank advertises a 6% nominal annual interest rate, compounded semi-annually. To make an informed decision, you want to know how much interest you'll actually earn in a year. What is the Effective Annual Rate (EAR) for this savings account?",
+            "difficulty": "easy",
+            "reasoning": "The Effective Annual Rate (EAR) represents the actual interest earned on an investment in a year, taking into account the compounding effect. Since the interest is compounded semi-annually (twice a year), we need to adjust the nominal rate to reflect this.\n\nHere's how to calculate the EAR:\n\n1. **Identify the variables:**\n   - Nominal interest rate (i) = 6% = 0.06\n   - Number of compounding periods per year (n) = 2 \n\n2. **Apply the EAR formula:**\n   EAR = (1 + i/n)^n - 1\n   EAR = (1 + 0.06/2)^2 - 1\n   EAR = (1.03)^2 - 1\n   EAR = 1.0609 - 1\n   EAR = 0.0609 \n\n3. **Convert to percentage:**\n   EAR = 0.0609 * 100% = 6.09%\n\nTherefore, the Effective Annual Rate (EAR) for this savings account is 6.09%. This means you will earn slightly more than the advertised 6% nominal rate due to the compounding effect.",
+            "options": [
+                "6%",
+                "6.09%",
+                "7%",
+                "12%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: You want to invest some money in a savings account that offers compound interest. You're aiming to double your initial investment.\n**question**: If the account has an annual interest rate of 5%, compounded annually, how many years will it take for your investment to double?\n**data**: \n  **Principal amount**: Irrelevant for this specific problem\n  **Interest rate**: 5%\n  **Compounding frequency**: Annually\n  **Future value**: Double the principal\n",
+            "difficulty": "easy",
+            "reasoning": "This question belongs to the subtopic of 'Solving Compound Interest Problems with Logarithms' within 'Quants - Simple Interest and Compound Interest'. While it appears to require logarithms to solve for the time, we can simplify it by using the Rule of 72.\n\nThe Rule of 72 is a quick approximation for determining how long it takes an investment to double at a fixed annual interest rate.  You divide 72 by the annual interest rate to get an estimate of the number of years required for doubling.\n\nIn this case:\n\nYears to double \u2248 72 / Interest Rate \nYears to double \u2248 72 / 5\nYears to double \u2248 14.4 years\n\nTherefore, it will take approximately 14.4 years for the investment to double. Although this rule provides an approximation, it's remarkably accurate for interest rates that fall within a typical range.",
+            "options": [
+                "7.2 years",
+                "10 years",
+                "14.4 years",
+                "20 years"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: Sarah wants to have $2000 in her savings account after 3 years. The bank offers a 4% annual interest rate, compounded annually.\n**Problem Statement**: Calculate the principal amount Sarah needs to invest today to reach her goal of $2000.\n**Difficulty Level**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "**Understanding the Problem:**\n\nSarah wants to know how much money she needs to invest now (the principal) to have $2000 after 3 years with a 4% annual compound interest rate. \n\n**Formula:**\n\nWe can use the compound interest formula to solve for the principal (P):\n\nA = P(1 + r/n)^(nt)\n\nWhere:\n* A = the future value of the investment/loan, including interest\n* P = the principal investment amount (the initial deposit or loan amount)\n* r = the annual interest rate (as a decimal)\n* n = the number of times that interest is compounded per year\n* t = the number of years the money is invested or borrowed for\n\n**Solution:**\n\n1. **Identify the knowns:**\n   * A = $2000 (the desired future value)\n   * r = 4% = 0.04 (annual interest rate)\n   * n = 1 (compounded annually)\n   * t = 3 years \n\n2. **Plug the values into the formula and solve for P:**\n\n   2000 = P(1 + 0.04/1)^(1*3)\n   2000 = P(1.04)^3\n   2000 = P(1.124864)\n   P = 2000 / 1.124864 \n   P = $1777.99 (rounded to the nearest cent)\n\n**Therefore, Sarah needs to invest approximately $1777.99 today to have $2000 in her savings account after 3 years.**",
+            "options": [
+                "$1777.99",
+                "$2000",
+                "3 years",
+                "4%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**topic**: Confusing Simple Interest Growth with Compound Interest Growth\n**context**: John wants to invest $1000 for 3 years. He's considering two options: \n\nOption A: Simple interest of 5% per year. \nOption B: Compound interest of 4% per year, compounded annually.\n\nJohn mistakenly believes that Option A will always yield a higher return than Option B because the simple interest rate is higher.\n**question**: Calculate the difference in earnings between Option A and Option B after 3 years.  Which option yields a higher return, and by how much?\n**difficulty**: easy 5/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question addresses the common mistake of assuming simple interest will always outperform compound interest due to a higher stated rate.  It's designed as 'easy' because it involves straightforward calculations of both simple and compound interest to highlight the difference in growth.\n\n**Step-by-Step Solution:**\n\n**1. Calculate Simple Interest (Option A):**\n\n* Interest per year = (Principal * Rate * Time) / 100 = ($1000 * 5 * 1) / 100 = $50\n* Total interest after 3 years = $50/year * 3 years = $150\n* Total amount after 3 years = $1000 (principal) + $150 (interest) = $1150\n\n**2. Calculate Compound Interest (Option B):**\n\n* Amount after year 1 = $1000 * (1 + 4/100) = $1040\n* Amount after year 2 = $1040 * (1 + 4/100) = $1081.60\n* Amount after year 3 = $1081.60 * (1 + 4/100) = $1124.86 (rounded to the nearest cent)\n\n**3. Calculate the Difference:**\n\n* Difference = $1150 (Option A) - $1124.86 (Option B) = $25.14 \n\n**Conclusion:**\n\nOption A (simple interest) yields a higher return by $25.14 after 3 years. This demonstrates that even with a lower rate, compound interest can surpass simple interest over time due to the effect of earning interest on interest.",
+            "options": [
+                "$25.14",
+                "$150",
+                "Option B",
+                "Option A"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Imagine you have a magical piggy bank that doubles the money inside every year. If you start with $5, how much money will you have after 3 years?",
+            "difficulty": "medium",
+            "reasoning": "This question uses a simple analogy to explain the concept of compound interest. Here's how to solve it: \n\n* **Year 1:** Your initial $5 doubles to $5 * 2 = $10.\n* **Year 2:** The $10 doubles to $10 * 2 = $20.\n* **Year 3:** The $20 doubles to $20 * 2 = $40.\n\nTherefore, after 3 years, you will have $40 in your magical piggy bank.",
+            "options": [
+                "$15",
+                "$20",
+                "$30",
+                "$40"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Sarah wants to buy a new bicycle that costs $250. She already has $100 saved. If Sarah earns a 5% annual interest rate on her savings, how long will it take her to earn the remaining $150 in simple interest?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the interest needed per year:**\n   - Sarah needs to earn $150 in interest. \n   - Since the interest is simple, she earns the same amount each year.\n\n**2. Calculate the annual interest earned:**\n   - Interest = (Principal * Rate * Time) / 100\n   - We need to find the time (in years).\n   - Let's represent time as 'T'.\n   - $150 = ($100 * 5 * T) / 100\n\n**3. Solve for Time (T):**\n   - $150 = $5T\n   - T = $150 / $5 = 30 years\n\n**Therefore, it will take Sarah 30 years to earn the remaining $150 in simple interest.**",
+            "options": [
+                "30 years",
+                "15 years",
+                "5 years",
+                "10 years"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: John wants to buy a new bicycle that costs $250. He decides to invest some money in a savings account that earns simple interest.\n**Question**: If the savings account has an interest rate of 5% per annum, how much money does John need to invest to earn enough interest to buy the bicycle after one year?\n**Given Information**: Interest earned = $250, Time = 1 year, Rate = 5%\n**Difficulty Level**: Easy (6/10)\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Understand Simple Interest:** Simple interest is calculated using the formula: Interest = (Principal * Rate * Time) / 100 \n**2.  Identify the knowns and unknown:** We know the Interest ($250), Rate (5%), and Time (1 year). We need to find the Principal.\n**3.  Rearrange the formula:**  To find the Principal, we can rearrange the formula as follows: Principal = (Interest * 100) / (Rate * Time)\n**4.  Substitute the values:** Principal = (250 * 100) / (5 * 1) = 5000 / 5\n**5.  Calculate the Principal:** Principal = $1000\n**Therefore, John needs to invest $1000 to earn enough interest to buy the bicycle after one year.**",
+            "options": [
+                "$1000",
+                "$500",
+                "$250",
+                "$1250"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Question Type**: Calculation\n**Difficulty**: Easy 6/10\n**Context**: Sarah deposits $500 into a savings account that earns an annual interest rate of 4%. The interest is compounded quarterly.\n**Prompt**: Calculate the total amount Sarah will have in her account after one year.\n",
+            "difficulty": "medium",
+            "reasoning": "**Understanding Compounding Frequencies**\n\nCompounding interest quarterly means that the interest earned each quarter is added to the principal, and the next quarter's interest is calculated on the new, higher principal amount. This leads to faster growth than simple interest.\n\n**Calculations**\n\n1. **Calculate the quarterly interest rate:**\n   Annual interest rate = 4%\n   Quarterly interest rate = 4% / 4 = 1%\n\n2. **Calculate the interest earned each quarter:**\n   Quarter 1: $500 * 0.01 = $5\n   Quarter 2: ($500 + $5) * 0.01 = $5.05\n   Quarter 3: ($505 + $5.05) * 0.01 = $5.10\n   Quarter 4: ($510.05 + $5.10) * 0.01 = $5.15\n\n3. **Calculate the total amount after one year:**\n   Total amount = Principal + Interest earned over 4 quarters\n   Total amount = $500 + $5 + $5.05 + $5.10 + $5.15 = $520.30\n\nTherefore, Sarah will have $520.30 in her account after one year.",
+            "options": [
+                "$500",
+                "$520.30",
+                "$510.10",
+                "$515.20"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Problem Type**: Finding Rate\n**Context**: Sarah wants to double her initial investment of $2,500 in 5 years. She's considering a certificate of deposit (CD) that compounds interest annually.\n**Information Provided**: Principal = $2,500, Time = 5 years, Future Value = $5,000, Compounding Frequency = Annually\n**Question**: What annual interest rate does the CD need to offer for Sarah to achieve her goal?\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Compound Interest: Finding Rate' category and requires understanding the relationship between principal, time, rate, and future value. Here's how to solve it:\n\n**1. Formula:**\n\nWe start with the compound interest formula:\n\n*  Future Value (FV) = Principal (P) * (1 + Rate (R)/Compounding Frequency (n))^(Time (t) * Compounding Frequency (n))\n\nSince the interest is compounded annually, n = 1. We can simplify the formula to:\n\n* FV = P * (1 + R)^t\n\n**2.  Input Values:**\n\n*  FV = $5,000 (Sarah wants to double her investment)\n*  P = $2,500\n*  t = 5 years\n*  R =  What we need to find\n\n**3. Solve for R:**\n\n*  5,000 = 2,500 * (1 + R)^5\n*  2 = (1 + R)^5 \n*  2^(1/5) = 1 + R\n*  R = 2^(1/5) - 1 \n*  R \u2248 0.1487 or 14.87%\n\n**Therefore, Sarah needs a CD with an annual interest rate of approximately 14.87% to double her investment in 5 years.**",
+            "options": [
+                "14.87%",
+                "15.00%",
+                "13.00%",
+                "12.50%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Difficulty Level**: Easy (6/10)\n**Context**: Sarah wants to buy a new phone in 2 years that costs $600. She decides to invest some money in a savings account that offers a 4% annual interest rate compounded annually.\n**Question**: How much money does Sarah need to deposit today to have enough to buy the phone in 2 years?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Applications of Compound Interest: Investments' subtopic as it involves calculating the present value (initial investment) needed to reach a future value (phone cost) with a given interest rate and time period. \n\nHere's how to solve it step-by-step:\n\n**1. Understand Compound Interest:** Compound interest means that each year, the interest is calculated not only on the principal amount but also on the accumulated interest from previous years.\n\n**2.  Use the Formula:** The formula for compound interest is A = P(1 + r/n)^(nt), where:\n    * A = the future value of the investment/loan, including interest\n    * P = the principal investment amount (the initial deposit or loan amount)\n    * r = the annual interest rate (as a decimal)\n    * n = the number of times that interest is compounded per year\n    * t = the number of years the money is invested or borrowed for\n\n**3.  Apply the Formula to this Problem:** \n    * We need to find 'P' (the present value - Sarah's initial deposit)\n    * A = $600 (future value - the cost of the phone)\n    * r = 4% = 0.04 (annual interest rate)\n    * n = 1 (compounded annually)\n    * t = 2 years \n\n**4. Substitute and Solve:**\n    * 600 = P (1 + 0.04/1)^(1*2)\n    * 600 = P (1.04)^2\n    * 600 = P * 1.0816\n    * P = 600 / 1.0816\n    * P = $554.87 (rounded to the nearest cent)\n\n**Therefore, Sarah needs to deposit approximately $554.87 today to have enough money to buy the $600 phone in 2 years.**",
+            "options": [
+                "$554.87",
+                "$600",
+                "$624.00",
+                "$554.00"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: John wants to calculate the interest he'll earn on a $1000 investment with a 5% annual interest rate compounded annually over 2 years. He mistakenly uses the simple interest formula instead of the compound interest formula.\n**Question**: What is the difference between the interest John mistakenly calculated and the actual compound interest earned after 2 years?\n**Answer Choices**: \n  - A) $2.50\n  - B) $5.00\n  - C) $10.00\n  - D) $102.50\n",
+            "difficulty": "medium",
+            "reasoning": "This question addresses a common mistake: confusing simple and compound interest. Here's how to solve it:\n\n**1. Calculate Simple Interest (John's mistake):**\n   * Simple Interest = (Principal * Rate * Time) / 100\n   * Simple Interest = ($1000 * 5 * 2) / 100 = $100\n\n**2. Calculate Compound Interest (Correct Calculation):**\n   * Amount after Year 1 = Principal + (Principal * Rate / 100) = $1000 + ($1000 * 5 / 100) = $1050 \n   * Amount after Year 2 = $1050 + ($1050 * 5 / 100) = $1102.50\n   * Compound Interest = $1102.50 - $1000 = $102.50\n\n**3. Find the Difference:**\n   * Difference = Compound Interest - Simple Interest \n   * Difference = $102.50 - $100 = $2.50\n\n**Therefore, the correct answer is (A) $2.50.**",
+            "options": [
+                "2.50",
+                "5.00",
+                "10.00",
+                "102.50"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: You want to invest some money in a savings account that compounds interest annually. Your goal is to double your initial investment.\n**question**: If the account offers a 7% annual interest rate, how many full years will it take for your investment to double?\n**information_given**: Interest rate = 7% compounded annually, Target amount = Double the initial investment.\n**difficulty_level**: Easy 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic 'Solving Compound Interest Problems with Logarithms' within 'Quants - Simple Interest and Compound Interest'.  Here's how we can solve it:\n\n**Understanding the Problem:**\n\nWe need to find the time (in years) it takes for an investment to double with a 7% annual compound interest rate.  \n\n**Formula and Solution:**\n\nThe formula for compound interest is:\n\nA = P(1 + r/n)^(nt)\n\nWhere:\n* A = the future value of the investment/loan, including interest\n* P = the principal investment amount (the initial deposit or loan amount)\n* r = the annual interest rate (decimal)\n* n = the number of times that interest is compounded per year\n* t = the time the money is invested or borrowed for, in years\n\nSince we want to double the investment, A will be 2P. Also, n = 1 as it compounds annually.\n\nThe equation becomes:\n2P = P(1 + 0.07/1)^(1*t)\n\nSimplifying the equation:\n2 = (1.07)^t\n\nTo solve for 't', we'll use logarithms:\n\nlog(2) = log(1.07)^t\nlog(2) = t * log(1.07)\n\nt = log(2) / log(1.07)\n\nt \u2248 10.24 years\n\n**Therefore, it will take approximately 10 full years for the investment to double.**\n",
+            "options": [
+                "7 years",
+                "9 years",
+                "11 years",
+                "12 years"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: Sarah wants to buy a used car that costs $3,000. She decides to invest some money in a simple interest savings account to reach her goal.\n**Question**: If Sarah invests her money for 3 years at an annual interest rate of 4%, how much principal does she need to invest to earn the remaining $360 in interest?\n**Given Information**: \n  **Time**: 3 years\n  **Interest Rate**: 4% per year\n  **Interest Earned**: $360\n**Difficulty Level**: Medium (5/10)\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question requires us to use the simple interest formula to solve for the principal. Here's how we can break down the solution:\n\n**1. Understand the Formula:**\n\nThe simple interest formula is:\n\n*Interest = (Principal * Rate * Time) / 100*\n\n**2. Identify the Knowns and Unknown:**\n\n* We know the Interest earned ($360), the Rate (4%), and the Time (3 years).\n* We need to find the Principal.\n\n**3.  Rearrange the Formula:**\n\nTo solve for the Principal, we can rearrange the formula:\n\n*Principal = (Interest * 100) / (Rate * Time)*\n\n**4.  Plug in the Values and Calculate:**\n\n*Principal = ($360 * 100) / (4 * 3)*\n\n*Principal = $36,000 / 12*\n\n*Principal = $3,000*\n\n**Therefore, Sarah needs to invest $3,000 as the principal to reach her goal.** ",
+            "options": [
+                "$3000",
+                "$3600",
+                "$360",
+                "$1200"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine you have $1,000 to invest for 5 years. Bank A offers a simple interest rate of 4% per year, while Bank B offers a compound interest rate of 3% per year, compounded annually.  Which bank will yield a higher return on your investment after the 5 years, and what's the difference in the final amount between the two banks?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate Simple Interest (Bank A):**\n\n* Simple Interest formula: (Principal * Rate * Time) / 100\n* Interest earned over 5 years: ($1000 * 4 * 5) / 100 = $200\n* Total amount after 5 years: $1000 (initial investment) + $200 (interest) = $1200\n\n**2. Calculate Compound Interest (Bank B):**\n\n* Compound Interest formula: Principal * (1 + Rate/100)^Time - Principal\n* Amount after 5 years: $1000 * (1 + 3/100)^5 = $1159.27 (rounded to the nearest cent)\n\n**3. Compare and find the difference:**\n\n* Bank A yields $1200 after 5 years.\n* Bank B yields $1159.27 after 5 years.\n* Difference: $1200 - $1159.27 = $40.73\n\n**Therefore, Bank A offers a higher return on your investment after 5 years, with a difference of $40.73 compared to Bank B.**\n\nEven though Bank B offers a lower interest rate, the power of compounding allows your money to grow faster than with simple interest over time.  In this scenario, however, the higher simple interest rate of Bank A results in a greater return within the 5-year period.",
+            "options": [
+                "Bank A",
+                "Bank B",
+                "Equal",
+                "$40.73"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Aisha wants to buy her dream car in 5 years, which will cost $30,000. She decides to invest in a certificate of deposit (CD) that offers a 4% annual interest rate, compounded quarterly. How much money does Aisha need to invest in the CD today to reach her goal of $30,000 in 5 years?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Applications of Compound Interest: Investments, Loans, and Annuities' topic as it involves calculating the present value needed for a future investment goal. \n\n**Here's how to solve the problem:**\n\nWe need to use the formula for compound interest with quarterly compounding:\n\n* **A = P(1 + r/n)^(nt)** \n\nWhere:\n* A = the future value of the investment/loan, including interest ($30,000)\n* P = the principal investment amount (what we need to find)\n* r = the annual interest rate (4% or 0.04)\n* n = the number of times that interest is compounded per year (quarterly means n = 4)\n* t = the time the money is invested or borrowed for in years (5 years)\n\n**Let's plug in the values and solve for P:**\n\n30000 = P(1 + 0.04/4)^(4*5)\n30000 = P(1.01)^20\n30000 = P * 1.22019\nP = 30000 / 1.22019\n**P \u2248 $24,586.38**\n\nAisha needs to invest approximately $24,586.38 today in the CD to reach her goal of $30,000 for her dream car in 5 years.",
+            "options": [
+                "$24,000",
+                "$24,586.38",
+                "$25,525.63",
+                "$29,204.94"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "John takes out a loan of $10,000 to purchase a used car. The loan agreement stipulates an annual interest rate of 6%, compounded quarterly. If John wants to repay the loan completely in 3 years, how much will his quarterly payment be?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Using the Time Value of Money (TVM) Formula' subtopic within 'Quants - Simple Interest and Compound Interest'.  Here's how to solve it:\n\n**1. Understand Compounding Periods:**\n   Since the interest is compounded quarterly, we need to adjust the annual interest rate and the loan term accordingly. \n\n   * Quarterly interest rate = Annual interest rate / Number of compounding periods per year = 6% / 4 = 1.5%\n   * Total number of quarters = Loan term in years * Number of quarters per year = 3 years * 4 = 12 quarters\n\n**2. Apply the TVM Formula for Annuities:**\n   We'll use the formula for calculating the periodic payment (PMT) of an annuity:\n\n   PMT = PV * [r(1+r)^n] / [(1+r)^n - 1]\n\n   Where:\n   * PMT = Quarterly Payment (what we need to find)\n   * PV = Present Value (loan amount) = $10,000\n   * r = Quarterly interest rate = 0.015 (1.5% as a decimal)\n   * n = Total number of periods = 12 quarters\n\n**3. Calculate the Quarterly Payment:**\n   PMT = $10,000 * [0.015(1+0.015)^12] / [(1+0.015)^12 - 1]\n   PMT = $10,000 * [0.015 * 1.1956] / [1.1956 - 1]\n   PMT = $10,000 * 0.017934 / 0.1956\n   PMT \u2248 $916.99 \n\n**Therefore, John's quarterly payment will be approximately $916.99.**",
+            "options": [
+                "$916.99",
+                "$10,000",
+                "12",
+                "3 years"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "John wants to invest $10,000 for 2 years. He's considering two options:\n\n* **Option A:** Simple interest at 6% per annum.\n* **Option B:** Compound interest at 5% per annum, compounded annually.\n\nJohn mistakenly calculates the interest for Option B by simply doubling the interest he would earn after one year. What is the difference between John's incorrect calculation for Option B and the actual interest he would earn with Option B?",
+            "difficulty": "medium",
+            "reasoning": "This question addresses a common mistake in compound interest calculations: forgetting that the interest earned in each period is added to the principal, affecting the interest earned in subsequent periods. \n\nHere's how to solve the problem:\n\n**1. Calculate the interest for Option A:**\n* Simple Interest = (Principal * Rate * Time) / 100\n* Simple Interest = ($10,000 * 6 * 2) / 100 = $1,200\n\n**2. Calculate the actual interest for Option B (Compound Interest):**\n* Year 1: Interest = ($10,000 * 5 * 1) / 100 = $500\n* Year 2: Principal becomes $10,000 + $500 = $10,500\n* Year 2: Interest = ($10,500 * 5 * 1) / 100 = $525\n* Total Compound Interest = $500 + $525 = $1,025\n\n**3. Calculate John's incorrect interest for Option B:**\n* John's Incorrect Calculation: $500 (interest for year 1) * 2 = $1,000\n\n**4. Find the difference between the incorrect and actual interest for Option B:**\n* Difference = $1,000 - $1,025 = -$25\n\nTherefore, John's incorrect calculation is $25 less than the actual interest he would earn with Option B.",
+            "options": [
+                "$25",
+                "-$25",
+                "$50",
+                "-$50"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: Maria wants to have $15,000 saved up in 6 years to make a down payment on a house. She found a savings account that compounds interest monthly.\n**question**: What annual interest rate does Maria need to secure so her initial investment will grow to $15,000? \n**information provided**: \n  **future value**: $15,000\n  **principal**: $10,000\n  **time**: 6 years\n  **compounding frequency**: monthly\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Compound Interest: Finding Principal, Rate, or Time' category within the broader topic of 'Quants - Simple Interest and Compound Interest'.  It's categorized as 'medium' difficulty because it requires solving for the interest rate, involving rearranging the compound interest formula and dealing with monthly compounding. Here's a step-by-step solution:\n\n1. **Understand the Compound Interest Formula:** The formula is A = P(1 + r/n)^(nt), where:\n    * A = Future Value\n    * P = Principal\n    * r = Annual interest rate (decimal)\n    * n = Number of times interest compounds per year\n    * t = Time (in years)\n\n2. **Plug in the known values:**\n    * A = $15,000\n    * P = $10,000\n    * n = 12 (compounded monthly)\n    * t = 6 years\n\n    We need to solve for 'r'.\n\n3. **Rearrange the formula to solve for 'r':**\n    * (A/P) = (1 + r/n)^(nt)\n    * (A/P)^(1/nt) = 1 + r/n\n    * (A/P)^(1/nt) - 1 = r/n\n    * r = n[(A/P)^(1/nt) - 1]\n\n4. **Substitute and calculate:**\n    * r = 12[(15000/10000)^(1/(12*6)) - 1]\n    * r = 12[(1.5)^(1/72) - 1]\n    * r \u2248 12 (1.0059 - 1)\n    * r \u2248 0.0708 \n\n5. **Convert to percentage:**\n    * r \u2248 7.08%\n\nTherefore, Maria needs to find a savings account with an annual interest rate of approximately 7.08% compounded monthly to reach her goal of $15,000 in 6 years.",
+            "options": [
+                "8.00%",
+                "7.08%",
+                "6.50%",
+                "7.50%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: John wants to have $20,000 in his savings account in 5 years. He's considering an investment opportunity that offers a 6% annual interest rate, compounded annually.\n**Question**: How much money should John invest today to reach his goal of $20,000 in 5 years?\n**Given Information**: Future Value = $20,000, Interest Rate = 6%, Time = 5 years\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Present Value and Future Value: Linking Time and Money' topic as it requires calculating the present value (the amount to be invested today) to achieve a desired future value. Here's how to solve it:\n\n**Understanding the Concepts**\n\n* **Present Value (PV):** The current worth of a future sum of money, given a specific interest rate and time period.\n* **Future Value (FV):** The value of an investment at a specific point in the future, considering the accumulated interest.\n* **Compound Interest:**  Interest calculated on both the principal amount and any accumulated interest.\n\n**Formula:**\n\nThe formula to calculate Present Value with compound interest is:\n\nPV = FV / (1 + r)^n\n\nWhere:\n* PV = Present Value\n* FV = Future Value\n* r = Interest rate (as a decimal)\n* n = Number of compounding periods\n\n**Calculation:**\n\n1. **Convert the interest rate to a decimal:** 6% = 0.06\n\n2. **Plug the values into the formula:**\n   PV = $20,000 / (1 + 0.06)^5\n\n3. **Calculate the denominator:** (1 + 0.06)^5 = 1.3382 (rounded to four decimal places)\n\n4. **Solve for PV:**\n   PV = $20,000 / 1.3382 = $14,945.22 (rounded to two decimal places)\n\n**Therefore, John needs to invest approximately $14,945.22 today to have $20,000 in his savings account after 5 years.**",
+            "options": [
+                "$14,945.22",
+                "$15,000",
+                "$16,000",
+                "$17,000"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Samantha decides to invest some of her savings. She deposits $5,000 into an account with a fixed annual interest rate of 3%. After 18 months, she makes another deposit of $1,000 into the same account.  What is the total amount of interest Samantha will have earned on her initial deposit after 3 years?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Calculating Simple Interest: Formula and Applications' subtopic as it requires understanding and applying the simple interest formula in a scenario involving multiple deposits. Here's how to solve it:\n\n**1. Calculate the interest for the first 18 months:**\n\n* Time (in years) = 18 months / 12 months/year = 1.5 years\n* Interest = (Principal * Rate * Time) / 100\n* Interest = ($5,000 * 3% * 1.5) / 100 = $225\n\n**2. Calculate the interest for the remaining 18 months:**\n\n* The second deposit doesn't affect the interest earned on the initial deposit in simple interest.\n* Interest = (Principal * Rate * Time) / 100\n* Interest = ($5,000 * 3% * 1.5) / 100 = $225\n\n**3. Calculate the total interest earned over 3 years:**\n\n* Total Interest = Interest (first 18 months) + Interest (remaining 18 months)\n* Total Interest = $225 + $225 = $450\n\nTherefore, Samantha will have earned a total of $450 in interest on her initial deposit after 3 years.",
+            "options": [
+                "$450",
+                "$600",
+                "$500",
+                "$300"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "John wants to invest some money in a fixed deposit account that offers simple interest. He wants his investment to double in 10 years. What is the minimum annual interest rate that the bank should offer for John to achieve his goal?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem:**\n\n* **Simple Interest:**  Simple interest means the interest earned each year is calculated only on the original principal amount (the initial investment).\n* **Doubling the Investment:** For John's investment to double, the interest earned over 10 years should be equal to the initial principal amount.\n\n**Let's Represent the Information with Variables:**\n\n* **P:**  Principal amount (the initial investment)\n* **R:** Annual interest rate (what we need to find)\n* **T:** Time period = 10 years\n* **SI:** Simple Interest earned\n\n**Using the Simple Interest Formula:**\n\nThe formula for simple interest is:\n\nSI = (P * R * T) / 100\n\n**Setting Up the Equation:**\n\nSince John wants his investment to double, the simple interest earned (SI) should be equal to the principal amount (P):\n\nSI = P\n\nNow, substitute the SI in the simple interest formula:\n\nP = (P * R * 10) / 100\n\n**Solving for R (the interest rate):**\n\n1. **Cancel out P on both sides:**  1 = (R * 10) / 100\n2. **Multiply both sides by 100:** 100 = R * 10\n3. **Divide both sides by 10:** R = 10\n\n**Answer:** The bank should offer a minimum annual interest rate of 10% for John to double his investment in 10 years.",
+            "options": [
+                "5%",
+                "10%",
+                "15%",
+                "20%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine you're considering two investment options for a year.  Option A offers a nominal interest rate of 6%, compounded quarterly. Option B offers a nominal interest rate of 5.9%, compounded monthly. Which option provides a higher Effective Annual Rate (EAR) and by approximately what percentage difference?",
+            "difficulty": "medium",
+            "reasoning": "This question assesses the understanding of EAR and its relationship to compounding frequency.  Here's how to solve it:\n\n**Understanding the Concepts**\n\n* **Nominal Interest Rate:** The stated interest rate without considering the effect of compounding.\n* **Effective Annual Rate (EAR):** The actual interest rate earned or paid on an investment or loan, taking compounding into account.\n\n**Calculations**\n\n* **Option A (6% compounded quarterly):**\n    * Number of compounding periods (n) = 4 (quarterly)\n    * Interest rate per period (r) = 6% / 4 = 1.5%\n    * EAR = (1 + r/n)^(n) - 1 = (1 + 0.015)^4 - 1 = 0.06136 or 6.136%\n\n* **Option B (5.9% compounded monthly):**\n    * Number of compounding periods (n) = 12 (monthly)\n    * Interest rate per period (r) = 5.9% / 12 = 0.4917%\n    * EAR = (1 + r/n)^(n) - 1 = (1 + 0.004917)^12 - 1 = 0.06062 or 6.062%\n\n* **Difference:**\n    * Option A (EAR) - Option B (EAR) = 6.136% - 6.062% = 0.074%\n\n**Conclusion**\n\nOption A provides a higher EAR of 6.136% compared to Option B's EAR of 6.062%, a difference of approximately 0.074%.",
+            "options": [
+                "Option A",
+                "Option B",
+                "Option A by 0.074%",
+                "Option B by 0.074%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: A municipality wants to invest in a bond that will mature in 10 years. They need the bond to be worth $500,000 upon maturity to finance a new park.  The bond compounds interest semi-annually at a rate of 3%.\n**missing_value**: Calculate the principal amount the municipality needs to invest today to achieve their financial goal.\n**difficulty**: medium 6/10\n",
+            "reasoning": "This problem involves calculating the principal amount in a compound interest scenario. Here's how to solve it:\n\n**1. Identify the given information:**\n\n* Final Amount (A) = $500,000\n* Time (t) = 10 years\n* Interest Rate (r) = 3% = 0.03 (convert percentage to decimal)\n* Compounding Periods per year (n) = 2 (semi-annually)\n\n**2.  Use the Compound Interest Formula:**\n\nThe formula for compound interest is: A = P(1 + r/n)^(nt) \n\nWhere:\n* A = Final Amount\n* P = Principal\n* r = Interest Rate\n* n = Number of compounding periods per year\n* t = Time in years\n\n**3. Rearrange the formula to solve for Principal (P):**\n\nP = A / (1 + r/n)^(nt)\n\n**4. Substitute the given values and calculate:**\n\nP = $500,000 / (1 + 0.03/2)^(2*10)\n\nP = $500,000 / (1.015)^20\n\nP = $500,000 / 1.346855\n\nP \u2248 $371,235.70\n\n**Therefore, the municipality needs to invest approximately $371,235.70 today to have $500,000 in 10 years.**",
+            "options": [
+                "$350,842.95",
+                "$371,235.70",
+                "$400,123.88",
+                "$432,987.56"
+            ],
+            "correct_option": "B",
+            "difficulty": "medium"
+        },
+        {
+            "question": "**Context**: Imagine you've invested $1000 in a savings account that earns 5% interest compounded annually.  You're curious to see how your investment will grow over time.\n**Question**: Without withdrawing any money, how much more interest will you earn in the 4th year compared to the 3rd year?\n**Difficulty**: Medium (6/10)\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Introduction to Compound Interest: The Power of Compounding' topic because it requires understanding how interest earned in previous years contributes to earning more interest in subsequent years. \n\nHere's how to solve the problem step-by-step:\n\n**1. Calculate the total amount at the end of year 3:**\n* Year 1: $1000 + ($1000 * 5%) = $1050 \n* Year 2: $1050 + ($1050 * 5%) = $1102.50\n* Year 3: $1102.50 + ($1102.50 * 5%) = $1157.625\n\n**2. Calculate the total amount at the end of year 4:**\n* Year 4: $1157.625 + ($1157.625 * 5%) = $1215.50625\n\n**3. Calculate the interest earned in year 3:**\n* Interest earned in year 3 = $1157.625 - $1102.50 = $55.125\n\n**4. Calculate the interest earned in year 4:**\n* Interest earned in year 4 = $1215.50625 - $1157.625 = $57.88125\n\n**5. Find the difference in interest earned between year 4 and year 3:**\n* $57.88125 - $55.125 = $2.75625 \n\n**Therefore, you will earn $2.75625 more in interest in the 4th year compared to the 3rd year.**",
+            "options": [
+                "$2.76",
+                "$57.88",
+                "$55.13",
+                "$1215.51"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: Imagine you're offered two investment options. Option A offers a simple interest rate of 5% per year. Option B offers a compound interest rate of 4.5% per year, compounded annually. You want to invest $20,000 for 6 years.\n**task**: Determine the difference in interest earned between Option B (compound interest) and Option A (simple interest) after 6 years.\n**data**: \n  **Principal (P)**: $20,000\n  **Simple Interest Rate (R1)**: 5%\n  **Compound Interest Rate (R2)**: 4.5%\n  **Time (t)**: 6 years\n  **Compounding Frequency (n)**: 1 (compounded annually)\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Compound Interest Formula: Derivation and Interpretation' as it requires calculating and comparing simple and compound interest. Here's a step-by-step solution:\n\n**Step 1: Calculate Simple Interest**\n\nSimple Interest (SI) = (P * R1 * t) / 100\nSI = ($20,000 * 5 * 6) / 100\nSI = $6,000\n\n**Step 2: Calculate Compound Interest**\n\nAmount (A) after compound interest = P (1 + R2/n)^(nt)\nA = $20,000 (1 + 4.5/100)^(1*6)\nA = $20,000 (1.045)^6\nA \u2248 $26,042.55\n\nCompound Interest (CI) = A - P\nCI \u2248 $26,042.55 - $20,000\nCI \u2248 $6,042.55\n\n**Step 3: Calculate the Difference**\n\nDifference = CI - SI\nDifference \u2248 $6,042.55 - $6,000\nDifference \u2248 $42.55\n\nTherefore, the difference in interest earned between the two options is approximately $42.55. This demonstrates that even a slightly lower compound interest rate can yield greater returns than a simple interest rate over time due to the effect of compounding.",
+            "options": [
+                "$35.80",
+                "$42.55",
+                "$48.72",
+                "$51.09"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Sarah wants to purchase a used car for $8,000. She currently has $6,500 in a savings account that earns a compounded interest rate of 4% per annum, compounded annually.  Using logarithms, determine how long Sarah needs to keep her money in the savings account to reach her goal of $8,000, assuming she makes no further deposits.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Solving Compound Interest Problems with Logarithms' topic as it requires understanding compound interest calculation and using logarithms to solve for the time period. Here's a step-by-step solution:\n\n**1. Understand the Formula:**\n\nThe formula for compound interest is A = P(1 + r/n)^(nt), where:\n* A = the future value of the investment/loan, including interest\n* P = the principal investment amount (the initial deposit or loan amount)\n* r = the annual interest rate (as a decimal)\n* n = the number of times that interest is compounded per year\n* t = the time the money is invested or borrowed for, in years\n\n**2. Plug in the Known Values:**\n\nWe know:\n* A = $8,000 (Sarah's goal)\n* P = $6,500 (her initial savings)\n* r = 4% = 0.04 (annual interest rate)\n* n = 1 (compounded annually)\n* t = what we need to find\n\nSo the equation becomes: 8000 = 6500(1 + 0.04/1)^(1*t)\n\n**3. Simplify the Equation:**\n\n* 8000 = 6500(1.04)^t\n* 8000/6500 = 1.04^t\n* 1.2308 \u2248 1.04^t\n\n**4. Solve for 't' using Logarithms:**\n\nTo get 't' out of the exponent, we use logarithms. Applying log on both sides:\n\n* log(1.2308) = log(1.04^t)\n* log(1.2308) = t * log(1.04)  [Using the logarithmic property: log(a^b) = b*log(a)]\n* t = log(1.2308) / log(1.04)\n* t \u2248 5.24 years \n\n**Therefore, Sarah needs to keep her money in the savings account for approximately 5.24 years to reach her goal of $8,000.**",
+            "options": [
+                "4.87 years",
+                "5.24 years",
+                "6.12 years",
+                "7.05 years"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "John wants to buy a used car for $5,000. He has two options for financing:\n\n**Option 1:** A personal loan with a simple interest rate of 6% per year for 3 years.\n**Option 2:** A loan from the car dealership with a compound interest rate of 5% per year, compounded annually, for 3 years. \n\nWhich option will result in John paying less interest overall, and by how much?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Real-World Applications and Problem-Solving Strategies' topic as it presents a common financial decision individuals face when borrowing money. It requires understanding both simple and compound interest to compare loan options effectively.\n\nHere's how to solve the problem:\n\n**Option 1: Simple Interest**\n\n* **Interest per year:** $5,000 * 6/100 = $300\n* **Total interest over 3 years:** $300 * 3 = $900\n\n**Option 2: Compound Interest**\n\n* **Year 1:** Principal + Interest = $5,000 * (1 + 5/100) = $5,250\n* **Year 2:** $5,250 * (1 + 5/100) = $5,512.50\n* **Year 3:** $5,512.50 * (1 + 5/100) = $5,788.13 \n* **Total interest paid:** $5,788.13 - $5,000 = $788.13\n\n**Comparison:**\n\nOption 2 (compound interest) results in less interest paid compared to Option 1 (simple interest). The difference is $900 - $788.13 = $111.87.\n\n**Therefore, John should choose Option 2, the car dealership loan with compound interest, as it will save him $111.87 in interest payments over the 3 years.**",
+            "options": [
+                "Option 1, $111.87 more",
+                "Option 2, $111.87 less",
+                "Option 1, $788.13 less",
+                "Option 2, $900 more"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine you've just discovered an old family heirloom: a journal detailing a small investment your great-great-grandfather made back in 1870. The journal mentions he deposited $5 into a brand new savings account with a fixed 4% annual interest rate, compounded annually.  Intrigued, you want to know how much that small deposit would be worth today, in the year 2023, assuming the account remained untouched and the interest rate never changed. What is the astonishing growth of that initial $5 deposit after these many years?",
+            "difficulty": "hard",
+            "reasoning": "This question dives into the heart of compound interest's power over long periods. Here's how we break it down: \n\n**1. Calculate the Time:** \nFirst, we need to determine the total time the money has been compounding. From 1870 to 2023, there are 153 years (2023-1870 = 153). \n\n**2. Apply the Compound Interest Formula:** \nThe core formula for compound interest is A = P(1 + r/n)^(nt), where:\n* A = the future value of the investment/loan, including interest\n* P = the principal investment amount (the initial deposit)\n* r = the annual interest rate (as a decimal)\n* n = the number of times that interest is compounded per year\n* t = the time the money is invested for in years\n\nIn this case:\n* P = $5\n* r = 4% = 0.04\n* n = 1 (compounded annually)\n* t = 153 years\n\n**3. Calculation:**\nA = 5 (1 + 0.04/1)^(1 * 153)\nA = 5 (1.04)^153\nA \u2248 $2915.26\n\n**Therefore, that initial $5 deposit from 1870 would be worth approximately $2915.26 today, showcasing the exponential growth potential of compound interest over long periods.**",
+            "options": [
+                "$2915.26",
+                "$153",
+                "$500",
+                "153 years"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Imagine you're trying to convince a friend to invest their savings instead of keeping it under their mattress. You explain compound interest using the analogy of a snowball rolling downhill, getting bigger over time. Your friend, skeptical, asks, \"But how is the snowball's growth like compound interest's formula? Show me how the formula itself reflects this 'snowball effect'.\"  \n\nHow would you explain the connection between the visual analogy of the snowball and the specific mathematical components of the compound interest formula to clearly demonstrate the 'snowball effect'? ",
+            "difficulty": "hard",
+            "reasoning": "This question goes beyond simple calculation and requires a deep understanding of how the compound interest formula works. Here's how to break down the explanation:\n\n**1. The Snowball Analogy:** The snowball represents the initial investment. As it rolls (over time), it picks up more snow (interest), which in turn makes it bigger and able to gather even more snow (compounding the interest). \n\n**2. Connecting to the Formula:** The compound interest formula is A = P(1 + r/n)^(nt).  Here's how each part relates to the snowball:\n    * **P (Principal):** This is the initial size of the snowball, the starting investment.\n    * **r (Interest rate):** This represents how much snow the snowball picks up relative to its size \u2013 a higher interest rate means it picks up snow faster.\n    * **n (Compounding frequency):**  This is like how often the snowball rolls over fresh snow. More frequent compounding (e.g., daily vs. yearly) means the snowball grows faster.\n    * **t (Time):** The longer the snowball rolls (the longer the investment period), the bigger it gets. \n\n**3. The 'Snowball Effect' in the Formula:** The key lies in the exponent (nt).  Each compounding period, the earned interest is added to the principal, and then *that* new amount earns interest. This is like the snowball getting bigger and thus picking up even more snow with each roll. The exponent reflects this repeated, accelerating growth, just like the snowball's exponential increase in size.",
+            "options": [
+                "The exponent (nt) represents the frequency of interest compounding.",
+                "The exponent (nt) reflects the number of times interest is added to the principal and earns interest.",
+                "The principal amount (P) determines the initial size of the snowball.",
+                "The interest rate (r) affects the rate at which the snowball gathers snow."
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "John plans to invest $15,000 for a period of 3 years. He has two options: a simple interest savings account offering a 4.5% annual interest rate, or a certificate of deposit (CD) with a 4% annual interest rate compounded quarterly.  John also has an unexpected expense arise, and he realizes he can only invest $12,000 instead of the initial $15,000.  How much more interest will John earn with the CD compared to the savings account after the 3 years, considering his reduced investment amount?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Comparing Simple Interest and Compound Interest Growth' subtopic because it requires calculating and comparing the interest earned from both simple and compound interest options to determine the difference. \n\nHere's a step-by-step solution:\n\n**1. Calculate Simple Interest:**\n* Principal (P): $12,000\n* Rate (R): 4.5% = 0.045\n* Time (T): 3 years\n* Simple Interest (SI) = P * R * T = $12,000 * 0.045 * 3 = $1,620\n\n**2. Calculate Compound Interest:**\n* Principal (P): $12,000\n* Rate (R): 4% per annum = 0.04\n* Compounding Frequency (n): Quarterly = 4 times a year\n* Time (T): 3 years\n* Number of times interest is compounded (nt): n * T = 4 * 3 = 12\n* Compound Interest (CI) = P * (1 + R/n)^(nt) - P = $12,000 * (1 + 0.04/4)^(12) - $12,000 = $1,490.97 (rounded to the nearest cent)\n\n**3. Find the Difference:**\n* Difference = CI - SI = $1,490.97 - $1,620 = -$129.03\n\n**Therefore, John will earn $129.03 less interest with the CD compared to the savings account after 3 years, considering his reduced investment amount.**\n\nThe question is challenging because it:\n* **Involves multiple steps:**  Calculating both simple and compound interest, then finding the difference.\n* **Includes misleading information:**  The initial investment amount of $15,000 is irrelevant to the final calculation.\n* **Requires careful attention:**  The change in investment amount affects the final outcome, and students might overlook this detail.",
+            "options": [
+                "$129.03 less",
+                "$129.03 more",
+                "$1,620",
+                "$1,490.97"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "You are planning for your dream vacation to Hawaii in 5 years. The estimated cost of the trip is $15,000. You have two investment options: \n\n**Option A:** Invest a lump sum today in a Certificate of Deposit (CD) that offers a 4.5% annual interest rate, compounded semi-annually.\n\n**Option B:** Invest in a high-yield savings account with a 4% annual interest rate, compounded monthly. You plan to make equal monthly deposits into this account for the next 5 years.\n\n**Question:**  Calculate the lump sum amount you need to invest today in Option A (the CD) to reach your target vacation fund of $15,000 in 5 years. Then, determine the monthly deposit amount required for Option B (the savings account) to achieve the same goal. Finally, compare the two options and explain which one you would choose and why, considering factors like total investment amount and convenience.",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThis question falls under the 'Present Value and Future Value: Linking Time and Money' subtopic as it requires understanding the time value of money and calculating present values and periodic payments to achieve a future financial goal.\n\nHere's a step-by-step solution:\n\n**Step 1: Calculate the lump sum needed for Option A (CD):**\n\n* We need to find the present value (PV) that will grow to $15,000 (FV) in 5 years (t) at a 4.5% annual interest rate (r) compounded semi-annually (n = 2 times per year).\n* Formula: PV = FV / (1 + r/n)^(nt)\n* PV = $15,000 / (1 + 0.045/2)^(2*5)\n* PV = $15,000 / (1.0225)^10 \n* PV \u2248 $11,882.54 \n\n**Step 2: Calculate the monthly deposit for Option B (Savings Account):**\n\n*  We need to find the periodic payment (PMT) required to reach $15,000 (FV) in 5 years (t) with a 4% annual interest rate (r) compounded monthly (n = 12 times per year).\n*  Formula: PMT = (FV * (r/n)) / [((1 + r/n)^(nt)) - 1] \n*  PMT = ($15,000 * (0.04/12)) / [((1 + 0.04/12)^(12*5)) - 1]\n*  PMT = $50 / [(1.00333)^60 - 1]\n*  PMT \u2248 $226.05\n\n**Step 3: Compare and analyze:**\n\n* Option A: Requires a lump sum investment of $11,882.54 today.\n* Option B: Requires monthly deposits of $226.05 for 5 years, totaling $13,563 ($226.05 x 60 months).\n\n**Conclusion:**\n\nBoth options have pros and cons. Option A requires a larger upfront investment, which might be challenging for some. However, it ultimately requires a smaller overall investment amount. Option B is more flexible, allowing you to spread the cost over time.  The best choice depends on your financial situation and preferences.\n",
+            "options": [
+                "Option A",
+                "Option B",
+                "Option A: $11,882.54, Option B: $13,563",
+                "Option A: $11,882.54, Option B: $226.05"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "John borrows a certain amount of money from a lender who charges simple interest. He plans to repay the loan in two installments. He knows that if he repays 40% of the principal after 8 months, the remaining interest he'll owe the lender will be $320.  If he instead chooses to repay 60% of the principal after 8 months, the remaining interest he'll owe is $240.  Given this information, what is the annual interest rate on John's loan?",
+            "difficulty": "medium",
+            "reasoning": "Let P be the principal amount and R be the annual rate of interest. \n\n**Scenario 1: Repaying 40% of the principal**\n\n* Principal remaining after 8 months: 0.6P (100% - 40%)\n* Interest on the remaining principal for the remaining 4 months (12-8): (0.6P * R * 4) / 12 = 0.2PR\n* This interest equals $320:  0.2PR = 320\n\n**Scenario 2: Repaying 60% of the principal**\n\n* Principal remaining after 8 months: 0.4P (100% - 60%)\n* Interest on the remaining principal for the remaining 4 months: (0.4P * R * 4) / 12 = (1/15)PR\n* This interest equals $240: (1/15)PR = 240\n\nNow we have two equations:\n\n1. 0.2PR = 320\n2. (1/15)PR = 240\n\nDivide equation 1 by equation 2:\n\n(0.2PR) / ((1/15)PR) = 320/240\n\nSimplifying, we get:\n\n3 = 4/3 \n\nThis simplification eliminates P and R, leading to a contradiction.  Therefore, there must be an error in the problem statement or the given information is inconsistent. It is impossible to determine the annual interest rate with the information provided.",
+            "options": [
+                "12%",
+                "15%",
+                "18%",
+                "Cannot be determined"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "John decides to invest $10,000 in a high-yield savings account. The bank offers a promotional interest rate of 6% per annum for the first 18 months, compounded monthly. After the promotional period, the interest rate drops to 4% per annum, compounded quarterly.  Calculate the total amount John will have in his account after 3 years.",
+            "difficulty": "medium",
+            "reasoning": "This question is designed to be tricky by incorporating multiple interest rates and different compounding frequencies within the same investment period. Here's how to solve it step-by-step:\n\n**Step 1: Calculate the amount accumulated during the promotional period (18 months):**\n\n* Principal (P): $10,000\n* Interest rate (r): 6% per annum = 0.06 (decimal form)\n* Compounding frequency (n): Monthly = 12 times per year\n* Time (t): 18 months = 1.5 years\n\nUsing the compound interest formula: A = P(1 + r/n)^(nt)\n\nA = 10000(1 + 0.06/12)^(12*1.5)\n\nA = 10000(1 + 0.005)^18\n\nA = 10000(1.005)^18\n\nA \u2248 $10,934.43\n\n**Step 2: Calculate the amount accumulated during the remaining period (18 months) with the new interest rate:**\n\n* Principal (P): $10,934.43 (amount from step 1)\n* Interest rate (r): 4% per annum = 0.04 (decimal form)\n* Compounding frequency (n): Quarterly = 4 times per year\n* Time (t): 18 months = 1.5 years\n\nUsing the compound interest formula: A = P(1 + r/n)^(nt)\n\nA = 10934.43(1 + 0.04/4)^(4*1.5)\n\nA = 10934.43(1 + 0.01)^6\n\nA = 10934.43(1.01)^6\n\nA \u2248 $11,611.82\n\nTherefore, John will have approximately **$11,611.82** in his account after 3 years.",
+            "options": [
+                "$11,611.82",
+                "$10,934.43",
+                "$12,000",
+                "$11,000"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A shrewd investor named Alice has two investment opportunities: \n\n**Option A:** Invest $10,000 in a bond with a simple interest rate of 5% per annum for 5 years.\n**Option B:** Invest $10,000 in a fixed deposit with a 4.5% interest rate compounded annually for 5 years.\n\nAlice decides to spice things up. She chooses Option A for the first 3 years. After 3 years, she takes all her accumulated earnings from Option A and invests them in Option B for the remaining 2 years. \n\nCalculate the total amount Alice will have at the end of 5 years.",
+            "difficulty": "medium",
+            "reasoning": "This question blends simple and compound interest calculations, requiring a multi-step approach:\n\n**Step 1: Calculate the interest earned from Option A for 3 years.**\n* Simple Interest = (Principal * Rate * Time) / 100\n* Interest (Option A) = ($10,000 * 5 * 3) / 100 = $1,500\n\n**Step 2: Calculate the total amount Alice has after 3 years (Option A).**\n* Total Amount (Option A) = Principal + Interest = $10,000 + $1,500 = $11,500\n\n**Step 3: Use the amount from Step 2 as the principal for Option B (for the remaining 2 years).**\n\n**Step 4: Calculate the compound interest for Option B for 2 years.**\n* Formula: A = P(1 + r/n)^(nt) where:\n    * A = Final amount\n    * P = Principal ($11,500 from Step 2)\n    * r = Annual interest rate (4.5% or 0.045)\n    * n = Number of times interest is compounded per year (1, as it's compounded annually)\n    * t = Time in years (2 years)\n* A = $11,500(1 + 0.045/1)^(1*2)\n* A = $11,500(1.045)^2 \n* A \u2248 $12,541.11\n\n**Therefore, Alice will have approximately $12,541.11 at the end of 5 years.**\n\nThis question is tricky because it requires a clear understanding of when to apply simple interest and when to switch to compound interest calculations. The change in investment strategy mid-way demands careful attention to detail and accurate calculations.",
+            "options": [
+                "$12,541.11",
+                "$11,500",
+                "$13,000",
+                "$12,000"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Simple Interest and Compound Interest",
+    "exam_id": 18,
+    "order": 4
+}

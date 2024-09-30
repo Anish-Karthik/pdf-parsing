@@ -1,0 +1,464 @@
+{
+    "questions": [
+        {
+            "question": "If we know that p < q and q < 5, can we conclude that p < 5?  Why or why not?",
+            "difficulty": "easy",
+            "reasoning": "This question uses the Transitive Property of Inequalities. Here's how it works:\n\n* **Transitive Property:** If a < b and b < c, then a < c.\n\n* **Applying it to our problem:** We're given p < q and q < 5.  Just like the Transitive Property, this means p is less than q, and q is less than 5.  Therefore, p must also be less than 5.\n\n**Answer:** Yes, we can conclude that p < 5 because of the Transitive Property of Inequalities.",
+            "options": [
+                "No",
+                "Yes",
+                "Maybe",
+                "Not enough information"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery sells cookies and brownies. Each cookie requires 2 ounces of dough and each brownie requires 3 ounces of dough. The bakery has 24 ounces of dough available.  The baker wants to make at least 3 cookies.  Represent the possible number of cookies and brownies the baker can make as a system of inequalities. Let 'x' represent the number of cookies and 'y' represent the number of brownies.",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the topic of 'Systems of Inequalities' because it involves setting up multiple inequalities to represent real-world constraints. Here's how to solve it:\n\n**1. Dough Constraint:**\n\n* Each cookie needs 2 ounces of dough: 2x\n* Each brownie needs 3 ounces of dough: 3y\n* Total dough used cannot exceed 24 ounces: 2x + 3y \u2264 24\n\n**2. Cookie Constraint:**\n\n* The baker wants to make at least 3 cookies: x \u2265 3\n\n**System of Inequalities:**\n\nThe system of inequalities representing the situation is:\n\n* 2x + 3y \u2264 24 \n* x \u2265 3\n\nThis system can then be graphed to visualize the possible solutions, with each point (x, y) in the solution region representing a valid combination of cookies and brownies the baker can make.",
+            "options": [
+                "Linear Equations",
+                "Systems of Equations",
+                "Quadratic Equations",
+                "Systems of Inequalities"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A farmer wants to build a rectangular pen for his sheep using 100 meters of fencing. What is the maximum possible area (in square meters) of the pen he can create?",
+            "difficulty": "easy",
+            "reasoning": "This problem can be solved using the AM-GM inequality.\n\n**1. Setting up the equations:**\n\nLet the length of the rectangle be 'l' and the width be 'w'. We know:\n* Perimeter = 2l + 2w = 100 meters\n* Area = l * w \n\n**2. Applying AM-GM:**\n\nThe AM-GM inequality states that for non-negative numbers, the arithmetic mean is always greater than or equal to the geometric mean. In this case:\n\n(l + w)/2  >=  \u221a(l * w)\n\nSince 2l + 2w = 100, we know l + w = 50. Substituting this into the inequality:\n\n50/2 >= \u221a(l * w)\n25 >= \u221a(l * w)\n\nSquaring both sides:\n\n625 >= l * w\n\n**3. Interpretation:**\n\nThis means the maximum possible value of the product of length and width (i.e., the area) is 625 square meters. This maximum is achieved when l = w = 25 meters, making the rectangle a square.\n\n**Therefore, the maximum possible area of the pen is 625 square meters.**",
+            "options": [
+                "500 square meters",
+                "625 square meters",
+                "1000 square meters",
+                "1250 square meters"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Let $x$ and $y$ be two vectors with elements [2, 3] and [4, 1] respectively. What is the maximum value of their dot product?",
+            "difficulty": "easy",
+            "reasoning": "**Understanding Cauchy-Schwarz Inequality:**\n\nThe Cauchy-Schwarz Inequality states that for any two vectors  'a' and 'b' of equal length:\n\n  |a \u22c5 b| \u2264 ||a|| ||b||\n\nwhere:\n* |a \u22c5 b| represents the absolute value of the dot product of vectors 'a' and 'b'.\n* ||a|| and ||b|| represent the magnitudes (or lengths) of vectors 'a' and 'b', respectively.\n\n**Applying to the problem:**\n\n1. **Calculate magnitudes:**\n   * ||x|| = \u221a(2\u00b2 + 3\u00b2) = \u221a13 \n   * ||y|| = \u221a(4\u00b2 + 1\u00b2) = \u221a17\n\n2. **Apply Cauchy-Schwarz:**\n   * |x \u22c5 y| \u2264 ||x|| ||y||\n   * |x \u22c5 y| \u2264 (\u221a13)(\u221a17)\n\n3. **Maximum dot product:**\n   * The maximum value of the dot product occurs when the vectors are linearly dependent (pointing in the same or opposite directions).  Therefore, the maximum value of |x \u22c5 y| is  (\u221a13)(\u221a17). \n\n**Therefore, the maximum value of the dot product of vectors x and y is (\u221a13)(\u221a17).**",
+            "options": [
+                "\u221a221",
+                "13",
+                "17",
+                "\u221a13\u221a17"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "For what values of 'x' is the following inequality true?\n\n x\u00b2 - 5x + 6 > 0 ",
+            "difficulty": "easy",
+            "reasoning": "This quadratic inequality can be solved by factoring.  \n\n1. **Factor the quadratic expression:**\n\n  (x - 2)(x - 3) > 0\n\n2. **Find the critical points:** The critical points are the values of x where the expression equals zero.\n\n  x - 2 = 0  or  x - 3 = 0\n  x = 2     or  x = 3\n\n3. **Test intervals:** The critical points divide the number line into three intervals:\n\n* x < 2\n* 2 < x < 3\n* x > 3\n\nChoose a test value within each interval and substitute it into the factored inequality to see if it holds true.\n\n* **x < 2:**  Let's try x = 1. (1 - 2)(1 - 3) = 2 > 0 (True)\n* **2 < x < 3:** Let's try x = 2.5. (2.5 - 2)(2.5 - 3) = -0.25 < 0 (False)\n* **x > 3:** Let's try x = 4. (4 - 2)(4 - 3) = 2 > 0 (True)\n\n4. **Solution:** The inequality is true when x < 2 or x > 3.\n\nTherefore, the solution in interval notation is:  (-\u221e, 2) U (3, \u221e)",
+            "options": [
+                "x < 2",
+                "x > 3",
+                "2 < x < 3",
+                "x = 2 or x = 3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: Solve the inequality: \\begin{equation*} \\frac{(x+3)}{(x-1)} \\leq 0 \\end{equation*}\n**instructions**: Express your answer in interval notation.\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under 'Rational Inequalities: Finding Critical Points & Test Intervals' as it requires identifying critical points where the expression equals zero or is undefined, and then testing intervals to determine the solution set. \n\n**Solution:**\n\n1. **Find Critical Points:** \n   * Numerator is zero:  x + 3 = 0  => x = -3\n   * Denominator is zero: x - 1 = 0  => x = 1\n\n2. **Create Test Intervals:**\n   The critical points divide the number line into three intervals:\n   *  (-\u221e, -3)\n   *  (-3, 1)\n   *  (1, \u221e)\n\n3. **Test Intervals:**\n   Choose a test value within each interval and substitute it into the original inequality to see if it holds true.\n   *  (-\u221e, -3):  Let's try x = -4. (-4 + 3)/(-4 - 1) = 1/5 > 0 (False)\n   *  (-3, 1): Let's try x = 0. (0 + 3)/(0 - 1) = -3 < 0 (True)\n   *  (1, \u221e): Let's try x = 2. (2 + 3)/(2 - 1) = 5 > 0 (False)\n\n4. **Solution in Interval Notation:**\n   The inequality is true for the interval (-3, 1).  Since the inequality is less than or equal to zero, we include -3 in the solution set. However, we exclude 1 as it makes the denominator zero.\n\n   Therefore, the solution in interval notation is **[-3, 1).**",
+            "options": [
+                "Rational Inequalities: Finding Critical Points & Test Intervals",
+                "Linear Inequalities: Solving for x",
+                "Quadratic Inequalities: Factoring and Finding Roots",
+                "Absolute Value Inequalities: Solving for Cases"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The solution set of an inequality is shown on the number line below. Which of the following inequalities could be represented by this graph?\n\n[Image of a number line with an open circle at -3 and shading to the right.]\n\n(A) x < -3 \n(B) x \u2264 -3\n(C) x > -3\n(D) x \u2265 -3 ",
+            "difficulty": "medium",
+            "reasoning": "The question tests the understanding of representing inequalities on a number line. \n\n1. **Analyze the graph:**  We see an open circle at -3 and shading to the right. \n\n2. **Open Circle Meaning:** An open circle indicates that the value at -3 is *not* included in the solution.\n\n3. **Shading Meaning:**  Shading to the right indicates that all values greater than -3 are included.\n\n4. **Matching the Inequality:** This graphical representation corresponds to the inequality  'x > -3'.\n\n**Therefore, the correct answer is (C).**",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question:** Solve for *x*: \u221a(3x + 1) - 2 < 1\n",
+            "difficulty": "medium",
+            "reasoning": "**Solution:**\n\n1. **Isolate the radical:** Begin by adding 2 to both sides of the inequality:\n   \u221a(3x + 1) < 3\n\n2. **Square both sides:** To eliminate the square root, square both sides of the inequality. Remember that squaring both sides of an inequality is valid when both sides are non-negative, which is true in this case. \n   (\u221a(3x + 1))\u00b2 < 3\u00b2\n   3x + 1 < 9\n\n3. **Solve for x:** Solve the resulting linear inequality:\n   3x < 8\n   x < 8/3\n\n4. **Consider the domain of the radical:**  Since we are dealing with a square root, the radicand (the expression inside the radical) cannot be negative.  Therefore, we must also consider the constraint:\n   3x + 1 \u2265 0\n   3x \u2265 -1\n   x \u2265 -1/3\n\n5. **Combine the solutions:** Combining the solutions from steps 3 and 4, the solution to the inequality is:\n   -1/3 \u2264 x < 8/3\n\n**Therefore, the correct answer is -1/3 \u2264 x < 8/3.**",
+            "options": [
+                "8/3",
+                "-1/3",
+                "-8/3",
+                "1/3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A baker needs to cut strips of dough that are exactly 7 inches long.  He has a machine that cuts the dough, but it can be off by up to 1 inch. What is the range of acceptable lengths of dough strips the machine could cut and still be usable for the baker?",
+            "difficulty": "medium",
+            "reasoning": "This problem can be represented by the absolute value inequality  |x - 7| \u2264 1, where 'x' represents the length of a cut dough strip. \n\n Here's how to solve it:\n\n* **Understanding the Inequality:** This inequality means the difference between the cut length (x) and the desired length (7 inches) must be less than or equal to 1 inch. \n* **Solving the Inequality:**  We break this down into two separate inequalities: \n    *  x - 7 \u2264 1  \n    *  x - 7 \u2265 -1 \n* **Solving for x:**\n    *  For the first inequality, add 7 to both sides: x \u2264 8\n    *  For the second inequality, add 7 to both sides: x \u2265 6\n* **Combining the Solutions:**  The solution is 6 \u2264 x \u2264 8. This means the machine can cut dough strips between 6 and 8 inches (inclusive) for them to be usable by the baker.",
+            "options": [
+                "5 to 9 inches",
+                "6 to 8 inches",
+                "7 to 8 inches",
+                "6 to 7 inches"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "For what values of 'x' is the inequality \u221a(3x + 1) < 5 true?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Inequalities with Radicals' subtopic within 'Quants - Inequalities'.\n\nHere's how to solve it:\n\n**1. Isolate the radical:**\n   The radical is already isolated on the left side of the inequality.\n\n**2. Square both sides:**\n   Squaring both sides of an inequality is only valid when both sides are non-negative. Since the square root is always non-negative, we can safely square both sides:\n   (\u221a(3x + 1))\u00b2 < 5\u00b2\n   3x + 1 < 25\n\n**3. Solve for 'x':**\n   Subtract 1 from both sides:\n   3x < 24\n   Divide both sides by 3:\n   x < 8 \n\n**4. Check for extraneous solutions:**\n   Since we squared both sides of the inequality, we need to ensure our solution doesn't create a negative value under the radical in the original inequality.  If we substitute x = 8 into the original inequality, we get \u221a25 < 5, which is true. Any value less than 8 will also result in a true statement.\n\n**Therefore, the solution to the inequality \u221a(3x + 1) < 5 is x < 8.**",
+            "options": [
+                "x > 8",
+                "x < 8",
+                "x = 8",
+                "x \u2265 8"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bakery sells cookies for $2 each and brownies for $3 each.  Emily wants to buy at least 4 cookies. If she has a budget of $20, what is the maximum number of brownies she can purchase?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**1. Define Variables:**\n    * Let 'c' represent the number of cookies Emily buys.\n    * Let 'b' represent the number of brownies Emily buys.\n\n**2. Set up the Inequalities:**\n    *  We know Emily wants to buy at least 4 cookies: c \u2265 4\n    *  We also know her total spending must be less than or equal to $20: 2c + 3b \u2264 20 \n\n**3. Solve for the Maximum Number of Brownies:**\n    * Since Emily wants the *maximum* number of brownies, let's assume she buys the minimum number of cookies, which is 4.\n    * Substitute c = 4 into the second inequality: 2(4) + 3b \u2264 20\n    * Simplify: 8 + 3b \u2264 20\n    * Subtract 8 from both sides: 3b \u2264 12\n    * Divide both sides by 3: b \u2264 4\n\n**Therefore, the maximum number of brownies Emily can buy is 4.**\n",
+            "options": [
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A rectangular garden plot needs to be fenced on three sides, with the wall of a house acting as the fourth side. If you have 12 meters of fencing and want the area of the garden to be at least 16 square meters, what is the possible range of widths for the garden?",
+            "difficulty": "medium",
+            "reasoning": "Let the width of the garden be 'w' meters. Since we fence three sides, and one side is the wall, the length of the garden will be (12 - 2w) meters (total fencing - 2 * width). \n\nThe area of a rectangle is length * width, and we want this area to be at least 16 square meters. So, we have the inequality: \n\n(12 - 2w) * w \u2265 16\n\nExpanding and rearranging the inequality:\n12w - 2w\u00b2 \u2265 16\n2w\u00b2 - 12w + 16 \u2264 0\nw\u00b2 - 6w + 8 \u2264 0\n\nFactoring the quadratic expression:\n(w - 4)(w - 2) \u2264 0\n\nThis inequality holds true when either: \n1. (w - 4) \u2264 0  and (w - 2) \u2265 0  OR\n2. (w - 4) \u2265 0 and (w - 2) \u2264 0\n\nSolving for 'w' in each case: \n1. w \u2264 4 and w \u2265 2  (This solution is valid)\n2. w \u2265 4 and w \u2264 2 (This solution is not possible)\n\nTherefore, the possible range of widths for the garden is 2 meters \u2264 w \u2264 4 meters.",
+            "options": [
+                "2 meters to 4 meters",
+                "1 meter to 3 meters",
+                "3 meters to 5 meters",
+                "4 meters to 6 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A farmer wants to build a rectangular pen for her sheep. She has 100 meters of fencing to use for the perimeter. To ensure her sheep have ample grazing space, what dimensions should the farmer choose for the pen to maximize its area? Use the AM-GM Inequality to find the solution.",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem:**\n\nThe problem requires us to find the dimensions (length and width) of a rectangle that maximize its area given a fixed perimeter. This is a classic optimization problem where the AM-GM inequality proves useful.\n\n**Applying AM-GM:**\n\n1. **Define Variables:** Let the length of the rectangle be 'l' and the width be 'w'.\n\n2. **Formulate Equations:**\n    * Perimeter: 2l + 2w = 100 (Since the farmer has 100 meters of fencing)\n    * Area: A = l * w (Our goal is to maximize A)\n\n3. **AM-GM Inequality:** For non-negative numbers, the AM-GM inequality states:\n    (a + b)/2  >= sqrt(a * b), where equality holds when a = b.\n\n4. **Applying to Our Problem:**\n    *  We know l + w = 50 (from the perimeter equation).\n    *  Applying AM-GM: (l + w)/2 >= sqrt(l * w)\n    *  Substituting: 50/2 >= sqrt(A)\n    *  Simplifying: 25 >= sqrt(A)\n    *  Squaring both sides: 625 >= A\n\n5. **Maximum Area and Dimensions:**\n    *  The maximum area is achieved when A = 625 square meters.\n    *  Equality in AM-GM holds when l = w. \n    *  Therefore, l = w = 25 meters. \n\n**Conclusion:**\n\nThe farmer should build a square pen with sides of 25 meters each to maximize the grazing area for her sheep. This solution demonstrates how the AM-GM inequality can elegantly solve optimization problems involving geometric shapes.",
+            "options": [
+                "25 meters",
+                "50 meters",
+                "100 meters",
+                "625 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A bakery sells cookies for $2 each and cupcakes for $3 each. Liam wants to buy a mix of cookies and cupcakes and spend no more than $15. He also wants to buy at least 3 cookies.  Which of the following inequalities represents the possible number of cookies (c) and cupcakes (p) Liam can buy?",
+            "difficulty": "medium",
+            "reasoning": "Let's analyze the given information step-by-step:\n\n1. **Cost:** \n    - Cookies cost $2 each, so 'c' cookies cost 2c dollars.\n    - Cupcakes cost $3 each, so 'p' cupcakes cost 3p dollars.\n    - Liam's total spending should be no more than $15, meaning 2c + 3p \u2264 15.\n\n2. **Minimum Cookies:**\n    - Liam wants at least 3 cookies, meaning c \u2265 3.\n\n**Combining the inequalities:**\nWe have two conditions that need to be satisfied simultaneously, so we use the 'AND' conjunction:\n\n c \u2265 3  AND  2c + 3p \u2264 15 \n\nTherefore, the correct compound inequality representing Liam's possible purchases is c \u2265 3 AND 2c + 3p \u2264 15.",
+            "options": [
+                "c \u2265 3 OR 2c + 3p \u2264 15",
+                "c \u2265 3 AND 2c + 3p \u2264 15",
+                "c \u2264 3 AND 2c + 3p \u2265 15",
+                "c \u2264 3 OR 2c + 3p \u2265 15"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A local farmer is deciding how many acres of corn and soybeans to plant this year. They have a total of 200 acres of land available. Due to soil conditions, they can plant at most 150 acres of corn and at most 120 acres of soybeans. The farmer estimates a profit of $300 per acre of corn and $250 per acre of soybeans.  \n\n**Variables:** \n\n* Let 'c' represent the number of acres of corn. \n* Let 's' represent the number of acres of soybeans. \n\n**Constraints:**\n\n* c + s <= 200 (Total land constraint) \n* c <= 150 (Corn acreage constraint) \n* s <= 120 (Soybean acreage constraint) \n* c >= 0, s >= 0 (Non-negativity constraint) \n\n**Objective Function:**\n\n* Profit = 300c + 250s\n\n**Question:** How many acres of corn and soybeans should the farmer plant to maximize their profit?",
+            "difficulty": "medium",
+            "reasoning": "This linear programming problem aims to maximize the farmer's profit given the constraints on available land and the maximum acreage for each crop. Here's how to solve it: \n\n**1. Graphing the Constraints**\n\n* First, we'll need to plot the constraints on a graph where the x-axis represents acres of corn (c) and the y-axis represents acres of soybeans (s).  \n* **c + s <= 200:**  To graph this, find the intercepts. If c=0, then s=200 and if s=0, then c=200. Connect the points (200, 0) and (0, 200). The inequality represents all points below and including this line. \n* **c <= 150:** This is a vertical line at c=150. The inequality represents all points to the left of and including this line.\n* **s <= 120:**  This is a horizontal line at s=120. The inequality represents all points below and including this line. \n* **c >= 0, s >= 0:**  These constraints mean we are only considering solutions in the first quadrant of the graph. \n\n**2. Identifying the Feasible Region**\n\n* The feasible region is the area on the graph where all the constraints are satisfied simultaneously. It is the polygon formed by the intersection of all the shaded areas from the inequalities. \n\n**3. Finding the Optimal Solution**\n\n* The optimal solution lies at one of the vertices (corners) of the feasible region. We need to evaluate the objective function (Profit = 300c + 250s) at each of these vertices to determine which point yields the maximum profit.\n\n    * Vertex 1: (0, 120) - Profit = 300(0) + 250(120) = $30,000\n    * Vertex 2: (80, 120) - Profit = 300(80) + 250(120) = $54,000\n    * Vertex 3: (150, 50) - Profit = 300(150) + 250(50) = $57,500\n    * Vertex 4: (150, 0) - Profit = 300(150) + 250(0) = $45,000\n\n**Conclusion:**\n\nThe farmer will maximize their profit by planting 150 acres of corn and 50 acres of soybeans, resulting in a profit of $57,500.",
+            "options": [
+                "150 acres of corn, 50 acres of soybeans",
+                "120 acres of corn, 80 acres of soybeans",
+                "0 acres of corn, 120 acres of soybeans",
+                "150 acres of corn, 0 acres of soybeans"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A rope is bent into two segments. The first segment has a length of 'x' units and the second segment is further divided into two more segments of lengths 15 units and 'x + 2' units. What is the range of possible values for 'x' if these three segments are used to form a triangle?",
+            "difficulty": "medium",
+            "reasoning": "To form a triangle, the lengths of the segments must satisfy the Triangle Inequality Theorem. This theorem states that the sum of the lengths of any two sides of a triangle must be greater than the length of the third side.  Let's apply this to our problem:\n\n**1. Considering the segments 'x' and 15:**\n   -  x + 15 > x + 2  (This simplifies to 13 > 0, which is always true)\n   -  x + (x + 2) > 15  (This simplifies to 2x > 13, and further to x > 6.5)\n   -  15 + (x + 2) > x (This simplifies to 17 > 0, which is always true)\n\n**2. Considering the segments 'x' and 'x + 2':**\n   - This combination doesn't give us any new restrictions on the value of 'x'.\n\n**Combining the Restrictions:**\nThe only restriction we get is x > 6.5. Therefore, the range of possible values for 'x' is any number greater than 6.5. ",
+            "options": [
+                "6.5",
+                "7",
+                "13",
+                "17"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A gardener is planning a rectangular flower bed. He wants the length of the bed to be at least 5 feet longer than the width. He also wants the perimeter of the bed to be no more than 42 feet.  \n\nOn a coordinate plane, let 'x' represent the width and 'y' represent the length of the flower bed. Which of the following inequalities accurately represents the possible dimensions of the gardener's flower bed?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down the problem step-by-step:\n\n**1. Defining Variables:**\n    - We are given that 'x' represents the width of the flower bed.\n    - We are given that 'y' represents the length of the flower bed.\n\n**2. Formulating Inequalities:**\n    -  \"The length of the bed to be at least 5 feet longer than the width\" translates to the inequality:  y \u2265 x + 5\n    - \"The perimeter of the bed to be no more than 42 feet\" translates to the inequality: 2x + 2y \u2264 42. This simplifies to x + y \u2264 21.\n\n**3. Graphical Representation:**\n    - The inequalities y \u2265 x + 5 and x + y \u2264 21 would be graphed on the coordinate plane. The solution set would be the area where the shaded regions of both inequalities overlap. This overlapping region represents all the possible combinations of length and width that satisfy the gardener's requirements.\n\nTherefore, the system of inequalities representing the possible dimensions of the flower bed is: \n\ny \u2265 x + 5\nx + y \u2264 21",
+            "options": [
+                "y \u2264 x + 5\nx + y \u2265 21",
+                "y \u2265 x + 5\nx + y \u2264 21",
+                "y \u2264 x - 5\nx + y \u2265 21",
+                "y \u2265 x - 5\nx + y \u2264 21"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A local gym offers two membership plans: a standard plan for $35 per month and a premium plan for $50 per month with unlimited guest passes. Sarah wants to join the gym and bring a guest each time she goes. What is the maximum number of times Sarah can bring a guest with the premium plan and still spend less than or equal to $200 in a month?\n**question**: Let 'x' represent the number of times Sarah brings a guest. Write and solve an inequality to find the maximum value of 'x'.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Solving Linear Inequalities in One Variable' topic as it requires setting up and solving a linear inequality.  Here's how to solve it:\n\n**1. Setting up the Inequality:**\n\n* **Cost of the premium plan:** $50\n* **Cost per guest visit (included in the premium plan):** $0\n* **Total allowable spending:** $200\n\nThe inequality representing the situation is: 50 + 0x \u2264 200\n\n**2. Solving the Inequality:**\n\n* **Simplify:** 50 \u2264 200 \n* **Isolate 'x':** Since there is no 'x' term left, we can determine that the cost is always less than $200, regardless of how many times Sarah brings a guest.\n\n**3. Interpretation:**\n\nThe solution indicates that Sarah can bring a guest an unlimited number of times with the premium plan and still remain within her budget of $200.\n\n**Options:**\n\nA. x \u2264 3\nB. x \u2265 3\nC. x \u2264 150\nD. x  can be any number \n\n**Correct Option:** D. x can be any number",
+            "options": [
+                "3",
+                "3 or more",
+                "150",
+                "Unlimited"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A local artist is creating custom-designed t-shirts for a music festival. He can produce a maximum of 60 shirts per day. He has pre-orders for 25 shirts already. He plans to sell the shirts for $15 each, but needs to make at least $400 per day to cover his expenses.  Represent the number of additional shirts he needs to sell as an inequality and determine the minimum number of shirts he must sell at the festival to meet his goal.",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning: \n\nLet 'x' be the number of additional shirts the artist needs to sell.\n\nHere's how we can break down the problem to form the inequality:\n\n* **Total shirts:** The artist can make a maximum of 60 shirts:  x + 25 \u2264 60 \n* **Earnings:** He wants to earn at least $400, and each shirt sells for $15: 15(x + 25) \u2265 400\n\nNow, let's solve the inequalities:\n\n**Inequality 1:**\n x + 25 \u2264 60\n x \u2264 60 - 25\n x \u2264 35 \n\n**Inequality 2:**\n15(x + 25) \u2265 400\n15x + 375 \u2265 400\n15x \u2265 400 - 375\n15x \u2265 25\nx \u2265 25/15\nx \u2265 1.67\n\nSince the artist cannot sell a fraction of a shirt, we round up to the nearest whole number. Therefore, x \u2265 2. \n\n**Considering both inequalities, the artist needs to sell at least 2 additional shirts but no more than 35 additional shirts.**\n\n**To find the minimum total shirts he needs to sell, we consider the lower limit of our solution:**\n\nTotal shirts = Pre-orders + Additional shirts\nTotal shirts = 25 + 2 = 27\n\n**Therefore, the artist must sell a minimum of 27 shirts at the festival to meet his goal.**",
+            "options": [
+                "25",
+                "35",
+                "27",
+                "60"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A craftsperson is creating two sizes of bespoke wooden toys: cars and trains. They are limited in their production by both the available wood and the time they have to work.\n**inequalities**: \n  - 2x + 3y \u2264 60  (where x represents the number of cars and y represents the number of trains)\n  - x + y \u2264 30\n  - x \u2265 5\n  - y \u2265 3\n**question**: Given these constraints, what is the maximum number of toys the craftsperson can make?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Systems of Inequalities' topic as it requires understanding and manipulating multiple inequalities to find an optimal solution. Here's how we solve it:\n\n**1. Graphing the Inequalities:**\n   - First, convert each inequality into an equation to find the boundary lines:\n     - 2x + 3y = 60\n     - x + y = 30\n     - x = 5\n     - y = 3\n   - Plot these lines on a graph. \n   - Shade the area that satisfies each inequality. The overlapping shaded region represents the feasible solutions. \n\n**2. Identifying the Vertices:**\n   - The feasible region is a polygon. The maximum or minimum value of an objective function (in this case, the total number of toys) will always occur at one of the vertices of this polygon. \n   - Find the coordinates of the vertices by solving the system of equations for the points where the lines intersect. In this case, the vertices are: (5, 3), (5, 20), (15, 15), and (25, 5).\n\n**3. Evaluating the Objective Function:**\n   - The objective function represents the total number of toys: x + y\n   - Substitute the coordinates of each vertex into the objective function to determine the total number of toys at each point:\n     - (5, 3): 5 + 3 = 8\n     - (5, 20): 5 + 20 = 25\n     - (15, 15): 15 + 15 = 30\n     - (25, 5): 25 + 5 = 30\n\n**4. Determining the Maximum:**\n   - The maximum value of the objective function is 30, which occurs at two vertices: (15, 15) and (25, 5). This means the craftsperson can make a maximum of 30 toys.",
+            "options": [
+                "15",
+                "20",
+                "25",
+                "30"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Solve for the values of *x* that satisfy the following inequality:\n\n \u221a(3*x* + 7) - \u221a(*x* + 1)  > 1 ",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Inequalities with Radicals' subtopic within 'Quants - Inequalities'.  It tests a student's ability to isolate radicals, square inequalities to remove radicals, factor quadratic expressions, and understand the domain restrictions inherent in working with square roots. \n\nHere's a step-by-step solution:\n\n1. **Isolate One Radical:** Begin by isolating one of the radicals. Add \u221a(*x* + 1) to both sides of the inequality:\n\n   \u221a(3*x* + 7)  > 1 + \u221a(*x* + 1) \n\n2. **Square Both Sides:** Square both sides of the inequality to eliminate the radical on the left side. Remember that squaring an inequality requires careful consideration of signs:\n\n   (\u221a(3*x* + 7))\u00b2  >  (1 + \u221a(*x* + 1))\u00b2\n\n   3*x* + 7 > 1 + 2\u221a(*x* + 1) + (*x* + 1)\n\n3. **Simplify and Isolate the Remaining Radical:** Simplify the inequality and isolate the remaining radical term:\n\n   2*x* + 5 > 2\u221a(*x* + 1)\n\n   *x* + 5/2 > \u221a(*x* + 1)\n\n4. **Square Both Sides Again:** Square both sides again to get rid of the remaining radical:\n\n   (*x* + 5/2)\u00b2 > (\u221a(*x* + 1))\u00b2\n\n   *x*\u00b2 + 5*x* + 25/4 > *x* + 1\n\n5. **Solve the Quadratic Inequality:**  Move all terms to one side to form a quadratic inequality and solve:\n\n    *x*\u00b2 + 4*x* + 21/4 > 0\n\n    (x + 3/2)(x + 7/2) > 0\n\n   This gives us two critical points: *x* = -3/2 and *x* = -7/2.  We need to consider the intervals between and outside these points.\n\n6. **Consider Domain Restrictions:** Remember that the values under a radical (the radicand) must be non-negative. This imposes the following restrictions:\n\n    * 3*x* + 7 \u2265 0  =>  *x* \u2265 -7/3\n    * *x* + 1 \u2265 0  => *x* \u2265 -1 \n\n7. **Combine Solutions and Restrictions:** Combining the solutions from the quadratic inequality with the domain restrictions, we get the final solution:\n\n   *x* > -3/2 \n\nTherefore, the correct answer is any option that represents all values of *x* greater than -3/2.",
+            "options": [
+                "x > -3/2",
+                "x < -3/2",
+                "x > -7/3",
+                "x > -1"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A furniture company produces two types of chairs: armchairs and dining chairs. Each armchair requires 5 hours of carpentry and 2 hours of upholstery. Each dining chair requires 3 hours of carpentry and 1 hour of upholstery. The company has 40 hours of carpentry and 15 hours of upholstery available each day.\n**objective**: The company makes a profit of $60 per armchair and $40 per dining chair. How many of each type of chair should the company produce daily to maximize profit?\n**constraints**: \n  - Carpentry constraint: 5x + 3y \u2264 40 (where x is the number of armchairs and y is the number of dining chairs)\n  - Upholstery constraint: 2x + y \u2264 15\n  - Non-negativity constraints: x \u2265 0, y \u2265 0\n**question**: What is the maximum profit the company can achieve daily, and how many of each chair type should they produce to reach it?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Linear Programming: Optimization with Constraints' subtopic within 'Quants - Inequalities.' Here's how to solve it:\n\n**1. Define Variables:**\n\n* Let 'x' represent the number of armchairs produced daily.\n* Let 'y' represent the number of dining chairs produced daily.\n\n**2. Formulate the Objective Function:**\n\nThe objective is to maximize profit. The profit function is:\nProfit = 60x + 40y\n\n**3. Establish the Constraints:**\n\n* **Carpentry Constraint:** 5x + 3y \u2264 40 (Each armchair needs 5 hours, each dining chair needs 3 hours, and there are 40 hours available).\n* **Upholstery Constraint:** 2x + y \u2264 15 (Each armchair needs 2 hours, each dining chair needs 1 hour, and there are 15 hours available).\n* **Non-Negativity Constraints:** x \u2265 0, y \u2265 0 (The company cannot produce a negative number of chairs).\n\n**4. Graph the Feasible Region:**\n\nPlot the constraints on a graph. The feasible region is the area where all constraints are satisfied. \n\n**5. Identify Corner Points:**\n\nThe corner points of the feasible region are potential solutions for maximizing profit. In this case, the corner points are (0,0), (0,15), (6,5), and (8,0).\n\n**6. Evaluate the Objective Function at Each Corner Point:**\n\n* (0,0): Profit = 60(0) + 40(0) = $0\n* (0,15): Profit = 60(0) + 40(15) = $600\n* (6,5): Profit = 60(6) + 40(5) = $560\n* (8,0): Profit = 60(8) + 40(0) = $480\n\n**7. Determine the Optimal Solution:**\n\nThe maximum profit is $600, achieved when the company produces 0 armchairs and 15 dining chairs.\n\nTherefore, the answer is: The company can achieve a maximum daily profit of $600 by producing 0 armchairs and 15 dining chairs.",
+            "options": [
+                "$480",
+                "$560",
+                "$600",
+                "15 armchairs"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**problem_statement**: Given positive real numbers $a$, $b$, and $c$ such that $a + b + c = 3$, prove the following inequality:\n**goal**: $\\frac{a^2}{b} + \\frac{b^2}{c} + \\frac{c^2}{a} \\ge a^2 + b^2 + c^2$\n**hint**: Consider applying Rearrangement Inequality on appropriately chosen sequences.\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\n**1. Choosing the sequences:**\n\nWe aim to apply Rearrangement Inequality. To do so, let's consider the sequences $(a^2, b^2, c^2)$ and $(\\frac{1}{a}, \\frac{1}{b}, \\frac{1}{c})$. \n\n**2. Applying Rearrangement Inequality:**\n\nBy Rearrangement Inequality, the maximum sum of pairwise products occurs when the sequences are similarly ordered. Without loss of generality, assume $a \\ge b \\ge c$. This implies  $\\frac{1}{a} \\le \\frac{1}{b} \\le \\frac{1}{c}$. Therefore, we have:\n\n$$a^2 \\cdot \\frac{1}{a} + b^2 \\cdot \\frac{1}{b} + c^2 \\cdot \\frac{1}{c} \\ge a^2 \\cdot \\frac{1}{b} + b^2 \\cdot \\frac{1}{c} + c^2 \\cdot \\frac{1}{a}$$\n\nSimplifying, we get:\n\n$$a + b + c \\ge \\frac{a^2}{b} + \\frac{b^2}{c} + \\frac{c^2}{a}$$\n\n**3. Utilizing the given condition:**\n\nWe know that $a + b + c = 3$. Substituting this into the inequality above, we obtain:\n\n$$3 \\ge \\frac{a^2}{b} + \\frac{b^2}{c} + \\frac{c^2}{a}$$\n\n**4. Final Manipulation:**\n\nFinally, note that  $a^2 + b^2 + c^2 \\ge 3$ (this can be proven using AM-GM or Cauchy-Schwarz).  Therefore:\n\n$$\\frac{a^2}{b} + \\frac{b^2}{c} + \\frac{c^2}{a} \\ge 3 \\ge a^2 + b^2 + c^2$$\n\nThis completes the proof.",
+            "options": [
+                "Rearrangement Inequality",
+                "Cauchy-Schwarz",
+                "AM-GM",
+                "Jensen's Inequality"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A city planner is designing a triangular park. Two sides of the park are already determined: one side will be 800 meters long, and the other will be 550 meters long.\n**context**: The planner needs to consider the possible lengths of the third side of the park while ensuring it adheres to the Triangle Inequality, which states that the sum of any two sides of a triangle must be greater than the third side.\n**question**: To satisfy the Triangle Inequality, what is the range of possible lengths for the third side of the park?\n",
+            "difficulty": "medium",
+            "reasoning": "To find the range, we apply the Triangle Inequality in two ways: \n\n**1. Finding the minimum length:**\n* The third side must be greater than the difference between the other two sides: 800m - 550m = 250m.\n\n**2. Finding the maximum length:**\n* The third side must be smaller than the sum of the other two sides: 800m + 550m = 1350m.\n\n**Therefore, the third side must be greater than 250 meters and smaller than 1350 meters.**",
+            "options": [
+                "250 meters to 1350 meters",
+                "250 meters",
+                "1350 meters",
+                "550 meters to 800 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**graphical_representation**: Imagine a number line representing the distance in kilometers from a school. Point A is marked at -3, representing 3 km west of the school, and point B is marked at 5, representing 5 km east of the school. The region between points A and B, excluding the points themselves, is shaded.\n**instruction**: Write the inequality that represents the shaded region on the number line, describing the possible distances a student could be from the school if they are within the shaded region.\n**difficulty_level**: medium 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Graphical Representation of Inequalities on a Number Line' as it requires interpreting a shaded region on a number line and translating it into an inequality. \n\nHere's how to solve it:\n\n1. **Understand the representation:** The number line represents distance, with the school as the reference point (zero). Points west of the school have negative values, and points east have positive values.\n\n2. **Interpret the shaded region:** The shaded region represents all the points between -3 and 5, excluding -3 and 5 themselves.\n\n3. **Formulate the inequality:**  Since the shaded region excludes the endpoints, we use strict inequalities:  -3 < x < 5. This means the distance 'x' from the school is greater than -3 km and less than 5 km.\n\nTherefore, the inequality representing the shaded region is -3 < x < 5. ",
+            "options": [
+                "-3 \u2264 x \u2264 5",
+                "-3 < x < 5",
+                "x > -3 and x < 5",
+                "-3 < x \u2264 5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Problem**: Solve the inequality and express the solution in interval notation: \\(\\frac{2x-3}{4} + 1  \\ge  \\frac{x+2}{3} - \\frac{1}{2}\\)\n**Solution**: 1. Find a common denominator for all fractions.\n2. Multiply both sides of the inequality by the common denominator to eliminate fractions.\n3. Simplify and combine like terms.\n4. Isolate the variable 'x'.\n5. Express the solution as an interval.\n**Answer**: [\\(\\frac{17}{2}, \\infty\\))\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Find a common denominator:** The smallest common denominator for 4, 3, and 2 is 12. \n\n**2. Eliminate fractions:**\n Multiply each term by 12:  \n \\( 12 \\cdot \\frac{2x-3}{4} + 12 \\cdot 1 \\ge 12 \\cdot \\frac{x+2}{3} - 12 \\cdot \\frac{1}{2}\\) \n\n This simplifies to: \n \\(3(2x-3) + 12 \\ge 4(x+2) - 6 \\)\n\n**3. Simplify and combine like terms:**\n\\( 6x - 9 + 12 \\ge 4x + 8 - 6 \\)\n\\(6x + 3 \\ge 4x + 2 \\)\n\n**4. Isolate 'x':**\n Subtract 4x from both sides: \n \\(2x + 3 \\ge 2 \\)\n\n Subtract 3 from both sides: \n \\( 2x \\ge -1 \\)\n\n Divide both sides by 2: \n \\(x \\ge -\\frac{1}{2} \\)\n\n**5. Express the solution in interval notation:**\n Since x is greater than or equal to -1/2, the solution in interval notation is [\\(\\frac{-1}{2}, \\infty\\)).",
+            "options": [
+                "[-1/2, \u221e)",
+                "[17/2, \u221e)",
+                "(-1/2, \u221e)",
+                "(-\u221e, 17/2]"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A local artisan crafts and sells handmade bracelets and necklaces. Each bracelet takes 2 hours to make and generates a profit of $15, while each necklace takes 3 hours and yields a profit of $20. Due to other commitments, the artisan can only dedicate a maximum of 20 hours per week to crafting.  To cover weekly material expenses, the artisan needs to make at least $90 in profit. What is the maximum number of necklaces the artisan can craft in a week while still meeting their financial and time constraints?",
+            "difficulty": "medium",
+            "reasoning": "Let... \n*  'x' represent the number of bracelets crafted. \n* 'y' represent the number of necklaces crafted.\n\nWe can set up the following inequalities based on the given information:\n\n**Time constraint:** 2x + 3y \u2264 20 (Each bracelet takes 2 hours, each necklace takes 3 hours, and the maximum available time is 20 hours)\n\n**Profit constraint:** 15x + 20y \u2265 90 (Each bracelet generates $15 profit, each necklace generates $20, and the artisan needs to make at least $90)\n\nWe want to maximize 'y' (the number of necklaces) while satisfying both constraints. \n\nLet's first consider the time constraint: \n2x + 3y \u2264 20\n\nSolving for y, we get: \ny \u2264 (20 - 2x) / 3\n\nNow, let's look for the maximum integer value of 'y' that satisfies this inequality, given that 'x' must also be a non-negative integer (as the artisan cannot craft a negative number of bracelets).\n\nWe can start by testing the maximum possible value for 'x' within the time constraint, which is x = 10 (when y = 0). However, this would not satisfy the profit constraint.\n\nLet's decrease 'x' and observe the corresponding 'y' values:\n\n* If x = 7, then y \u2264 (20 - 14) / 3 = 2. This means the maximum integer value for 'y' is 2.\n* If x = 4, then y \u2264 (20 - 8) / 3 = 4. However, this doesn't satisfy the profit constraint (15 * 4 + 20 * 4 = $140, which is more than the minimum required).\n\nTherefore, the maximum number of necklaces the artisan can craft while meeting both constraints is **2**.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Solve the following inequality and express the solution in interval notation:\n\n**(x^2 - 3x + 2) / (x - 4)  \u2264 0**",
+            "difficulty": "medium",
+            "reasoning": "## Solution:\n\n**1. Finding Critical Points:** \n\nCritical points are values of 'x' where the expression either equals zero or becomes undefined. We find these by setting the numerator and denominator equal to zero and solving:\n\n* **Numerator:** x\u00b2 - 3x + 2 = 0  \n   Factors into (x - 2)(x - 1) = 0\n   Therefore, x = 2 and x = 1 are critical points. \n\n* **Denominator:** x - 4 = 0\n   Therefore, x = 4 is a critical point.\n\n**2. Creating Test Intervals:**\n\nThe critical points divide the number line into four intervals:\n\n* (-\u221e, 1) \n* (1, 2)\n* (2, 4)\n* (4, \u221e)\n\n**3. Testing the Intervals:**\n\nWe'll pick a test value within each interval and substitute it into the inequality to see if it holds true:\n\n* **Interval (-\u221e, 1):** Let's test x = 0.  \n   [(0)\u00b2 - 3(0) + 2] / (0 - 4) = -1/2, which is \u2264 0. **True**\n* **Interval (1, 2):** Let's test x = 1.5. \n   [(1.5)\u00b2 - 3(1.5) + 2] / (1.5 - 4) = 1/10, which is not \u2264 0. **False**\n* **Interval (2, 4):** Let's test x = 3. \n   [(3)\u00b2 - 3(3) + 2] / (3 - 4) = -2, which is \u2264 0. **True**\n* **Interval (4, \u221e):** Let's test x = 5. \n   [(5)\u00b2 - 3(5) + 2] / (5 - 4) = 12, which is not  \u2264 0. **False**\n\n**4. Expressing the Solution:**\n\nThe solution includes intervals where the inequality holds true, including the critical points where the expression equals zero (x = 1 and x = 2). Since the inequality includes the 'equal to' part (\u2264), we include the critical points where the numerator is zero. However, x = 4 is not included as it makes the denominator zero, making the expression undefined.\n\n**Solution in Interval Notation:** (-\u221e, 1] \u222a [2, 4) ",
+            "options": [
+                "(-\u221e, 1) \u222a (2, 4)",
+                "(-\u221e, 1] \u222a [2, 4)",
+                "(-\u221e, 1) \u222a (2, \u221e)",
+                "(-\u221e, 1] \u222a [2, \u221e)"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A small carpentry business specializes in making two types of wooden toys: cars and trains. Each car requires 2 hours of cutting and 1 hour of assembly, while each train requires 1 hour of cutting and 3 hours of assembly. The business owner has a maximum of 10 hours available for cutting and 15 hours available for assembly each week. The profit from selling a car is $10, and the profit from selling a train is $12.  \n\n**Variables:**\n\n* Let 'x' represent the number of cars produced.\n* Let 'y' represent the number of trains produced.\n\n**Objective Function:** Maximize the total weekly profit (P). \n\n**Constraints:**\n\n* Cutting time constraint:\n* Assembly time constraint:\n* Non-negativity constraint: \n\n**Question:** Given the constraints, how many cars and trains should the business owner produce each week to maximize profit? What is the maximum profit?",
+            "difficulty": "medium",
+            "reasoning": "**1. Formulating the Equations:**\n\n* **Objective Function:** The goal is to maximize profit (P), which is calculated as: \n   P = 10x + 12y (where 10x is the profit from cars and 12y is the profit from trains)\n\n* **Constraints:**\n    * **Cutting time:** 2x + y \u2264 10 (2 hours per car + 1 hour per train must be less than or equal to 10 hours)\n    * **Assembly time:** x + 3y \u2264 15 (1 hour per car + 3 hours per train must be less than or equal to 15 hours) \n    * **Non-negativity:** x \u2265 0, y \u2265 0 (The business owner cannot produce a negative number of toys)\n\n**2. Graphical Solution:**\n\n* **Plot the Constraints:** Plot each constraint inequality on a graph. The shaded region where all constraints overlap represents the feasible region, containing all possible combinations of car and train production that satisfy the constraints.\n\n* **Identify Corner Points:** The feasible region will have corner points (vertices). These points are crucial as the optimal solution will always lie on one of these corners.  Find the coordinates of these corner points. \n\n* **Evaluate the Objective Function:** Substitute the coordinates of each corner point into the objective function (P = 10x + 12y). The corner point that yields the highest value for P is the optimal solution.\n\n**3. Determining the Optimal Solution:**\n\nLet's assume the corner points of the feasible region are (0,0), (5,0), (0,5), and (3,4) (You would find these by graphing the inequalities).  We plug these into our objective function:\n\n* (0,0): P = 10(0) + 12(0) = $0\n* (5,0): P = 10(5) + 12(0) = $50\n* (0,5): P = 10(0) + 12(5) = $60\n* (3,4): P = 10(3) + 12(4) = $78\n\nThe corner point (3,4) yields the highest profit, making it the optimal solution.\n\n**Answer:** The business owner should produce 3 cars and 4 trains to maximize their weekly profit, which will be $78.",
+            "options": [
+                "2 cars, 5 trains",
+                "3 cars, 4 trains",
+                "5 cars, 0 trains",
+                "0 cars, 5 trains"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Prove that for any positive real numbers  *a*, *b*, *c*: \n \\begin{equation*}\n\\frac{a^8 + b^8 + c^8}{a^3 b^3 c^3} \\ge \\frac{a^2}{bc} + \\frac{b^2}{ac} + \\frac{c^2}{ab}\n\\end{equation*}",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question utilizes **Muirhead's Inequality** to demonstrate the given inequality.\n\n**Step 1: Simplifying the inequality**\n\nFirst, we simplify the inequality by multiplying both sides by  $a^3b^3c^3$:\n\n$a^8 + b^8 + c^8  \\ge a^5b^2c + a^2b^5c + ab^2c^5$\n\n**Step 2: Applying Muirhead's Inequality**\n\nNow, consider the sequences $(8,0,0)$, $(5,2,1)$ associated with the terms in the inequality. \n\nNotice that $(8,0,0)$ majorizes $(5,2,1)$ as:\n* $8 \u2265 5 \u2265 1$ \n* $8 + 0 \u2265 5 + 2$ \n* $8 + 0 + 0 = 5 + 2 + 1$\n\nTherefore, by Muirhead's Inequality, we have: \n\n$\\frac{1}{3!} (a^8b^0c^0 + a^0b^8c^0 + a^0b^0c^8 + a^8b^0c^0 + a^0b^8c^0 + a^0b^0c^8)  \\ge \\frac{1}{3!}(a^5b^2c^1 + a^2b^5c^1 + a^1b^2c^5 + a^5b^1c^2 + a^2b^1c^5 + a^1b^5c^2)$\n\nSimplifying: \n\n$a^8 + b^8 + c^8  \\ge a^5b^2c + a^2b^5c + ab^2c^5$\n\nThis proves the original inequality.\n\n**Therefore, the inequality holds true for all positive real numbers a, b, and c.**",
+            "options": [
+                "Muirhead's Inequality",
+                "Cauchy-Schwarz Inequality",
+                "AM-GM Inequality",
+                "Rearrangement Inequality"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Two number lines are shown below, each representing the solution set of a different inequality in terms of the variable 'x'.\n\n**Number Line 1:**\n[Image of a number line with an open circle at -2, a shaded region to the right of the circle, and an arrow extending to positive infinity.]\n\n**Number Line 2:**\n[Image of a number line with a closed circle at 3, a shaded region to the left of the circle, and an arrow extending to negative infinity.]\n\n  A new inequality is formed by combining the inequalities represented by the two number lines using the **OR** conjunction.  Which of the following descriptions accurately represents the solution set of this new combined inequality?\n\n(A)  All real numbers less than 3.\n(B)  All real numbers greater than -2.\n(C)  All real numbers except for -2.\n(D)  All real numbers.",
+            "difficulty": "hard",
+            "reasoning": "Here's how to break down the solution:\n\n**1. Identify the inequalities from the number lines:**\n\n   * **Number Line 1:** Represents the inequality  x > -2 (open circle means -2 is not included)\n   * **Number Line 2:** Represents the inequality x \u2264 3 (closed circle means 3 is included)\n\n**2. Understand the 'OR' conjunction:**\n\n   * In inequalities, 'OR' means the solution includes any value that satisfies *at least one* of the individual inequalities.\n\n**3. Combine the solutions:**\n\n   * We need values greater than -2 **OR** less than or equal to 3.\n   * This covers the entire number line because every number is either greater than -2 or less than or equal to 3.\n\n**4. Determine the correct option:**\n\n   * **(D) All real numbers** accurately describes the solution set since the combined inequality includes all possible values on the number line.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A local phone company offers two monthly plans. Plan A costs $25 per month for unlimited talk and text, but charges $0.10 per megabyte (MB) of data used. Plan B costs $40 per month for unlimited talk and text, and includes 2000 MB of data. For each additional MB of data used beyond the 2000 MB, Plan B charges $0.05.  Represent the range of data usage for which Plan A would be more cost-effective than Plan B using inequalities and interval notation.",
+            "difficulty": "hard",
+            "reasoning": "Let 'x' represent the total data usage in MB for a given month.\n\n**Plan A Cost:** $25 + $0.10x\n\n**Plan B Cost:** \n- $40 (if x \u2264 2000 MB) \n- $40 + $0.05(x - 2000) (if x > 2000 MB)\n\nTo find when Plan A is cheaper, we need to set up inequalities comparing the costs:\n\n**Scenario 1: x \u2264 2000 MB**\n\n$25 + $0.10x < $40\n$0.10x < $15\nx < 150 MB\n\n**Scenario 2: x > 2000 MB**\n\n$25 + $0.10x < $40 + $0.05(x - 2000)$\n$25 + $0.10x < $40 + $0.05x - $100$\n$0.05x < $-85\nx < -1700 MB  (This solution can be disregarded as data usage cannot be negative)\n\n**Combining the Results:**\n\n- For data usage less than 150 MB (0 < x < 150), Plan A is cheaper.\n- For data usage between 150 MB and 2000 MB (150 \u2264 x \u2264 2000), Plan B is cheaper.\n- For data usage beyond 2000 MB, our inequality yielded no solutions where Plan A is cheaper.\n\n**Answer in Interval Notation:** (0, 150)\n\nThis question is tricky due to the two-part cost structure of Plan B, requiring the student to analyze two separate inequalities. It also demands careful interpretation of the results to determine the valid range for which Plan A is more cost-effective.",
+            "options": [
+                "(0, 150)",
+                "(150, 2000)",
+                "(0, 2000)",
+                "(150, \u221e)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A textile factory specializes in producing two types of fabrics: silk and cotton. They have two main resources: 48 labor hours and 72 units of a special dye. Each meter of silk requires 3 labor hours and 2 units of dye, yielding a profit of $50. Conversely, each meter of cotton requires 2 labor hours and 4 units of dye, resulting in a profit of $40.  To complicate matters, the factory received a last-minute order for at least 6 meters of cotton fabric that needs to be fulfilled. How many meters of each fabric should the factory produce to maximize its profit while meeting all constraints?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Linear Programming: Optimization with Constraints' topic, specifically dealing with 'Quants - Inequalities'. It's tricky because it combines resource allocation with a minimum production requirement, demanding careful inequality construction and solution. Here's a step-by-step solution:\n\n**1. Define Variables:**\n\n* Let 'x' represent the number of meters of silk produced.\n* Let 'y' represent the number of meters of cotton produced.\n\n**2. Formulate the Objective Function:**\n\n* Our goal is to maximize profit, which is represented by:  Profit = 50x + 40y\n\n**3. Establish the Constraints:**\n\n* Labor Constraint: 3x + 2y \u2264 48  (Total labor hours cannot exceed 48)\n* Dye Constraint: 2x + 4y \u2264 72   (Total dye units cannot exceed 72)\n* Minimum Cotton Constraint: y \u2265 6 (At least 6 meters of cotton must be produced)\n* Non-Negativity Constraints: x \u2265 0, y \u2265 0 (We cannot produce negative amounts of fabric)\n\n**4. Graph the Constraints:**\n\n* Plot each constraint inequality on a graph. The shaded feasible region represents all possible combinations of silk and cotton production that satisfy all constraints.\n\n**5. Identify Corner Points:**\n\n* The feasible region will be a polygon. The optimal solution will always lie at one of the corner points (vertices) of this polygon. Find the coordinates of these corner points.\n\n* In this case, the corner points are likely to be (0, 6), (0, 18), (16, 0), and possibly one more point representing the intersection of the labor and dye constraints. Solve the system of equations 3x + 2y = 48 and 2x + 4y = 72 to find this intersection point, if it exists within the feasible region.\n\n**6. Evaluate the Objective Function at Each Corner Point:**\n\n* Substitute the x and y values of each corner point into our profit function (50x + 40y) to calculate the profit at each point.\n\n**7. Determine the Optimal Solution:**\n\n* The corner point that yields the highest profit value represents the optimal production plan.\n\nBy following these steps, we can determine the exact number of meters of silk and cotton fabric the factory should produce to maximize profit while adhering to all constraints. The provided options should reflect the x and y values of this optimal solution.",
+            "options": [
+                "10 meters of silk and 8 meters of cotton",
+                "16 meters of silk and 6 meters of cotton",
+                "0 meters of silk and 18 meters of cotton",
+                "12 meters of silk and 6 meters of cotton"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A farmer is planning to build a rectangular pen for his sheep. He has 100 meters of fencing available and wants to maximize the enclosed area. However, due to local regulations, the length (l) of the pen must be at least twice the width (w), and the width must be at least 5 meters.  What is the maximum possible area of the pen, in square meters, that satisfies these conditions?",
+            "difficulty": "hard",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Formulate the inequalities:**\n\n* **Perimeter constraint:** The total fencing represents the perimeter of the rectangle: 2l + 2w \u2264 100\n* **Length constraint:** The length must be at least twice the width: l \u2265 2w\n* **Width constraint:** The width must be at least 5 meters: w \u2265 5\n\n**2. Simplify the perimeter inequality:**\n\nDivide the perimeter inequality by 2: l + w \u2264 50\n\n**3.  Focus on the constraints to maximize area:**\n\n* We want to maximize area, which is given by A = l * w. \n* Since l \u2265 2w, to maximize area, we should aim for the largest possible value of l within the constraints.\n\n**4.  Solve for l in terms of w from the simplified perimeter inequality:**\n\nl \u2264 50 - w\n\n**5. Substitute to create a quadratic inequality:**\n\nSubstitute this expression for l in the area formula:\n A = (50 - w) * w = 50w - w\u00b2\n\n**6.  Find the maximum value of the quadratic:**\n\nThe graph of this quadratic equation is a parabola opening downwards.  The maximum value occurs at the vertex. We can find the vertex's x-coordinate (which represents the width, w, that maximizes the area) using:\n w = -b / 2a  (where a = -1 and b = 50 from our quadratic equation)\n w = -50 / (2 * -1) = 25\n\n**7. Check for feasibility:**\n\n* Our calculated width, w = 25, satisfies the constraint w \u2265 5.\n* Substituting w = 25 into l \u2264 50 - w, we get l \u2264 25.  However, the constraint l \u2265 2w requires l to be at least 50, which is not possible. This means we need to adjust our solution.\n\n**8.  Adjusting the solution based on constraints:**\n\n* Since we can't maximize the area at w = 25 due to the length constraint, we need to find the largest possible value of l that satisfies  l \u2265 2w.\n* With w = 25, the smallest possible l is 50. However, this violates l \u2264 50 - w.  \n* We need to decrease w until we find a combination that satisfies all constraints.\n\n**9.  Finding the optimal solution:**\n\n* By trial and error within our constraints, we find that the largest possible width is w = 16.66 (approximately).  \n* This gives us l = 33.33 (approximately), satisfying l \u2265 2w.\n\n**10.  Calculate the maximum area:**\n\n* A = l * w = 33.33 * 16.66 = 555.44 square meters (approximately)\n\nTherefore, the maximum possible area of the pen is approximately 555.44 square meters.",
+            "options": [
+                "100 square meters",
+                "500 square meters",
+                "555.44 square meters",
+                "625 square meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A robotic arm moves in a three-dimensional space. It starts at Point X, travels to Point Y, then to Point Z, and finally returns to Point X.  The robotic arm's movement is constrained by the following: \n\n* Distance XY =  2a + 3b units\n* Distance YZ = 5a - b units\n* a and b are positive integers, and a is always greater than b. \n\nWhat is the tightest possible range for the distance XZ?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the Triangle Inequality theorem in a more abstract and multi-step context, demanding careful application and reasoning to arrive at the solution. Here's how we can solve it:\n\n**Understanding the Problem:** \nWe need to find the minimum and maximum possible distances between points X and Z (XZ), given the distances the robotic arm travels between XY and YZ. The constraints on 'a' and 'b' add an extra layer of complexity.\n\n**Applying the Triangle Inequality:**\nThe Triangle Inequality Theorem states that the sum of the lengths of any two sides of a triangle must be greater than the length of the remaining side. We can apply this to the three points X, Y, and Z:\n\n1. **XZ < XY + YZ:** This tells us XZ must be less than the sum of the other two sides. Substituting the given values: \n   XZ < (2a + 3b) + (5a - b) \n   XZ < 7a + 2b\n\n2. **XY < XZ + YZ:**  Rearranging to isolate XZ:  XZ > XY - YZ\n   XZ > (2a + 3b) - (5a - b)\n   XZ > -3a + 4b\n\n3. **YZ < XY + XZ:** Rearranging to isolate XZ: XZ > YZ - XY\n   XZ > (5a - b) - (2a + 3b)\n   XZ > 3a - 4b\n\n**Considering the Constraints:**\n*  We know 'a' and 'b' are positive integers, and a > b. This means the smallest possible values for 'a' and 'b' are a = 2 and b = 1.\n*  We need to find the 'tightest' range, so we want the largest possible lower bound and the smallest possible upper bound for XZ.\n\n**Finding the Tightest Range:**\n* **Upper Bound:** The expression '7a + 2b' will always yield a larger value than '3a - 4b'. Therefore, the smallest upper bound for XZ is determined by: XZ < 7a + 2b \n* **Lower Bound:**  The expression '-3a + 4b' could potentially be negative, which isn't physically possible for a distance.  Therefore, the largest lower bound for XZ is determined by: XZ > 3a - 4b \n\n**The answer is therefore: 3a - 4b < XZ < 7a + 2b** \n",
+            "options": [
+                "7a + 2b",
+                "3a - 4b",
+                "5a - b",
+                "2a + 3b"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A mobile phone manufacturer is planning production for the next quarter. They produce two models: a basic model (B) and a premium model (P). Due to limited resources and high demand, they face the following constraints:\n\n* **Production Capacity:** The total number of phones produced cannot exceed 5000 units.\n* **Labor Hours:** Each basic phone requires 2 labor hours, and each premium phone requires 3 labor hours. A maximum of 12,000 labor hours are available.\n* **Component Availability:** A critical component is in short supply. Each basic phone requires 1 unit of this component, while each premium phone requires 2 units. Only 7000 units of the component are available.\n* **Demand Constraint:**  Market research suggests that the number of premium phones produced should be at least 30% of the total number of phones produced. \n\n**Representing the number of basic phones as 'B' and the number of premium phones as 'P', determine the feasible region that satisfies all the constraints. Which of the following points (B, P) lies within this feasible region?**",
+            "difficulty": "medium",
+            "reasoning": "This question is designed to be challenging (8/10) due to the following factors:\n\n* **Multiple Constraints:** The problem involves four distinct constraints, including production capacity, labor hours, component availability, and demand proportion. This requires students to carefully formulate and analyze a system of inequalities.\n* **Demand as a Percentage:** The demand constraint is expressed as a percentage relationship between the two phone models, demanding a deeper understanding of how to translate this into an inequality. \n* **Graphical Analysis:** Finding the feasible region necessitates plotting the inequalities on a graph and identifying the overlapping region. This requires proficiency in graphing inequalities and interpreting their intersections.\n* **Identifying a Feasible Point:** The question goes beyond simply finding the feasible region and requires identifying a specific point that lies within it. This adds an extra layer of complexity as students need to test potential solutions against all constraints.\n\n**Here's how to solve the problem:**\n\n1. **Formulate the inequalities:**\n   * Production Capacity:  B + P \u2264 5000\n   * Labor Hours: 2B + 3P \u2264 12000\n   * Component Availability: B + 2P \u2264 7000\n   * Demand Constraint: P \u2265 0.3(B + P)  (This simplifies to 0.7P \u2265 0.3B or P \u2265 3B/7)\n   * Non-negativity: B \u2265 0, P \u2265 0\n\n2. **Graph the inequalities:** Plot each inequality on a graph with B on the x-axis and P on the y-axis. The feasible region will be the area where the shaded regions of all inequalities overlap.\n\n3. **Test the given points:** Substitute the coordinates of each given point into all the inequalities. The point that satisfies all the inequalities lies within the feasible region.\n\n**Options and Correct Option:**\n\nThis part would require providing four specific points, one of which lies within the determined feasible region. Since the solution involves graphing, the options and correct answer would depend on the scale and precision of the graph used. \n",
+            "options": [
+                "(1000, 1500)",
+                "(2000, 2000)",
+                "(3000, 1000)",
+                "(4000, 500)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context:** Imagine you're developing a machine learning algorithm that analyzes data points in a high-dimensional space. Each data point is represented by a vector, and you're interested in understanding the relationship between the magnitudes of these vectors and their dot products.\n\n**Task:**  Let  '**a**' and '**b**' be vectors in R^n, with  ||**a**|| representing the magnitude (or norm) of vector '**a**'.  Prove the following inequality, a generalized form of the Cauchy-Schwarz Inequality,  and demonstrate how it relates to the concept of cosine similarity in vector spaces:\n\n||**a**||^2  * ||**b**||^2  \u2265 |(**a** \u2022 **b**)|^2  +  ((||**a**|| * ||**b**|| * sin \u03b8)^2)\n\nwhere (**a** \u2022 **b**) represents the dot product of vectors '**a**' and '**b**', and \u03b8 represents the angle between the two vectors.\n\n**Difficulty:** 8/10",
+            "difficulty": "medium",
+            "reasoning": "**Explanation:**\n\nThis question goes beyond a simple application of the standard Cauchy-Schwarz Inequality. It requires a deeper understanding of:\n\n1. **Vector Geometry:**  Students need to be familiar with the geometric interpretation of the dot product and its relationship to the angle between vectors.\n2. **Trigonometric Identities:** The problem involves incorporating the trigonometric identity  sin^2(\u03b8) + cos^2(\u03b8) = 1. \n3. **Generalization:** The task is to recognize and prove a more general form of the Cauchy-Schwarz Inequality, showcasing a deeper grasp of the inequality's implications.\n\n**Solution:**\n\n1. **Start with the Cauchy-Schwarz Inequality:**\n  |(**a** \u2022 **b**)| \u2264 ||**a**|| * ||**b**||\n\n2. **Square both sides:**\n  |(**a** \u2022 **b**)|^2 \u2264 ||**a**||^2 * ||**b**||^2\n\n3. **Geometric Interpretation of Dot Product:**\n  Recall that (**a** \u2022 **b**) = ||**a**|| * ||**b**|| * cos(\u03b8) \n\n4. **Substitute and Rearrange:**\n  |(**a** \u2022 **b**)|^2 = (||**a**|| * ||**b**|| * cos(\u03b8))^2\n  Substitute this into the inequality from step 2:\n  (||**a**|| * ||**b**|| * cos(\u03b8))^2 \u2264 ||**a**||^2 * ||**b**||^2 \n\n5. **Apply Trigonometric Identity:**\n  Subtract (||**a**|| * ||**b**|| * cos(\u03b8))^2 from both sides:\n  0  \u2264  ||**a**||^2 * ||**b**||^2  - (||**a**|| * ||**b**|| * cos(\u03b8))^2\n  Factor out ||**a**||^2 * ||**b**||^2:\n  0  \u2264  ||**a**||^2 * ||**b**||^2 (1 -  cos^2(\u03b8))\n  Use the trigonometric identity 1 - cos^2(\u03b8) = sin^2(\u03b8):\n  0  \u2264  ||**a**||^2 * ||**b**||^2 * sin^2(\u03b8) \n\n6. **Final Result:**\n  Since all terms are non-negative, we can take the square root of both sides and rearrange to get the desired inequality:\n  ||**a**||^2  * ||**b**||^2  \u2265 |(**a** \u2022 **b**)|^2  +  ((||**a**|| * ||**b**|| * sin \u03b8)^2) \n\n**Connection to Cosine Similarity:**\n\n* Cosine similarity is defined as cos(\u03b8) = (**a** \u2022 **b**) / (||**a**|| * ||**b**||).\n* This problem highlights that the Cauchy-Schwarz Inequality, in its generalized form, provides a lower bound on the squared magnitudes of vectors based not only on their dot product but also on the angle between them. \n* When the angle \u03b8 is 0 (vectors are parallel and have maximum cosine similarity), the rightmost term becomes 0, and we recover the standard Cauchy-Schwarz Inequality. \n* As the angle \u03b8 increases, the contribution of the sine term grows, reflecting the decreasing similarity between the vectors.",
+            "options": [
+                "Trigonometric Identities",
+                "Vector Geometry",
+                "Generalization",
+                "All of the above"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "A farmer wants to build a rectangular pen for his sheep using 100 meters of fencing. He wants to maximize the area of the pen while also ensuring that the length and width of the pen are both integers.  However, due to the landscape, the width of the pen must be at least 5 meters less than the length. What is the maximum possible area of the pen that the farmer can build?",
+            "difficulty": "medium",
+            "reasoning": "This problem combines the AM-GM inequality with integer constraints, making it trickier than a standard optimization problem.\n\n**1. Setting up the Equations:**\n\n* Let the length of the pen be  'l' meters.\n* Let the width of the pen be 'w' meters.\n\nWe are given two pieces of information:\n\n* **Perimeter:** 2l + 2w = 100  (or l + w = 50)\n* **Constraint:** w <= l - 5\n\n**2. Applying AM-GM:**\n\nWe want to maximize the area, which is given by A = l * w.  The AM-GM inequality states:\n\n(l + w)/2 >= sqrt(l * w)\n\nSince l + w = 50, we have:\n\n25 >= sqrt(l * w)\n\nSquaring both sides:\n\n625 >= l * w\n\nThis tells us the maximum possible area is 625 square meters, but we need to check if it's achievable with integer side lengths and the given constraint.\n\n**3. Integer Constraints and the Width Constraint:**\n\nTo get as close to 625 as possible, we want 'l' and 'w' to be as close as possible (ideal case: l = w = 25, but this violates the width constraint).  \n\nLet's try decreasing the length from 25 while still satisfying the constraint. If we let l = 26, then the maximum possible width, w = 24, satisfies the constraint (w <= l - 5). \n\n**4. Calculating the Maximum Area:**\n\nWith l = 26 and w = 24, the area is:\n\nA = 26 * 24 = 624 square meters.\n\n**Therefore, the maximum possible area of the pen is 624 square meters.**",
+            "options": [
+                "625 square meters",
+                "624 square meters",
+                "500 square meters",
+                "700 square meters"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Inequalities",
+    "exam_id": 10,
+    "order": 14
+}

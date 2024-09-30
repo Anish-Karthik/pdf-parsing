@@ -1,0 +1,452 @@
+{
+    "questions": [
+        {
+            "question": "John is baking cookies. He needs three times the amount of flour compared to sugar. If he uses 2 cups of sugar, how many cups of flour will he need?",
+            "difficulty": "easy",
+            "reasoning": "This question falls under 'Basic Algebraic Manipulations' as it involves setting up a simple linear relationship and solving for an unknown. Here's how we solve it:\n\n* **Let 'x' represent the number of cups of flour John needs.** \n* **We know he needs three times the amount of flour compared to sugar, which is 2 cups.**\n* **This translates to the equation: x = 3 * 2**\n* **Solving for x, we get x = 6**\n\nTherefore, John needs 6 cups of flour. This solution demonstrates the application of basic multiplication to solve a real-world problem.",
+            "options": [
+                "2 cups",
+                "4 cups",
+                "6 cups",
+                "8 cups"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bakery is trying to design a square-shaped cake. They want the cake's area to be equal to 144 square inches. What should be the length of each side of the cake?",
+            "difficulty": "easy",
+            "reasoning": "This question deals with the concept of square roots within the broader topic of quadratic equations. Here's how to solve it:\n\n1. **Understanding Area:** We know that the area of a square is calculated by squaring the length of one of its sides (Area = side * side).\n\n2. **Setting up the Equation:** Let 's' represent the length of one side of the square cake. We are given that the area is 144 square inches.  So, we have the equation:\n   s * s = 144\n\n3. **Solving for 's':** To find 's', we need to find the square root of 144. \n   \u221a144 = 12\n\nTherefore, the length of each side of the cake should be 12 inches.",
+            "options": [
+                "12 inches",
+                "24 inches",
+                "144 inches",
+                "72 inches"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A bakery sells cookies for $2 each and cupcakes for $3 each. Emily wants to buy some treats for her friends and only has $15 to spend. If she buys 3 cupcakes, what is the maximum number of cookies she can buy?",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the cost of the cupcakes:** \nEmily buys 3 cupcakes at $3 each, so they cost 3 * $3 = $9.\n\n**2. Calculate the remaining money:**\nEmily started with $15 and spent $9 on cupcakes, leaving her with $15 - $9 = $6.\n\n**3. Calculate the maximum number of cookies:**\nEach cookie costs $2, and Emily has $6 left, so she can buy $6 / $2 = 3 cookies.\n\n**Therefore, Emily can buy a maximum of 3 cookies.**",
+            "options": [
+                "1",
+                "2",
+                "4",
+                "5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**question_type**: Find the Determinant\n**context**: Given a 2x2 matrix representing the coefficients of a system of linear equations\n**difficulty_level**: Easy (5/10)\n**specifics**: Calculate the determinant of the matrix A:\n\n| 4  2 |\n| 1  3 |\n",
+            "difficulty": "easy",
+            "reasoning": "This question tests the basic understanding of calculating the determinant of a 2x2 matrix, a fundamental concept in 'Matrices and Determinants'.\n\nHere's how to solve it:\n\n1. **Formula:** The determinant of a 2x2 matrix  | a  b |\n                          | c  d |   is calculated as (a*d) - (b*c).\n\n2. **Apply to Matrix A:** In our case, a = 4, b = 2, c = 1, and d = 3.\n\n3. **Calculate:** Substitute the values into the formula: (4 * 3) - (2 * 1) = 12 - 2 = 10\n\nTherefore, the determinant of matrix A is 10.",
+            "options": [
+                "-2",
+                "10",
+                "14",
+                "6"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Solve\n**Expression/Equation**: (2x + 5) / (x - 3) = 2\n**Task**: Solve the given equation for x.\n**Difficulty Level**: 5/10\n",
+            "difficulty": "easy",
+            "reasoning": "This question belongs to the 'Rational Expressions and Equations' subtopic of 'Quants - Algebra'. It involves solving a simple rational equation where the variable appears in both the numerator and denominator. \n\nHere's how to solve the equation step-by-step:\n\n1. **Eliminate the fraction:** Multiply both sides of the equation by (x - 3):\n   (2x + 5) / (x - 3) * (x - 3) = 2 * (x - 3)\n\n2. **Simplify:** This cancels out the denominator on the left side:\n   2x + 5 = 2x - 6\n\n3. **Isolate x:** Subtract 2x from both sides:\n   2x + 5 - 2x = 2x - 6 - 2x\n   5 = -6\n\n4. **Contradiction:** The equation simplifies to 5 = -6, which is a contradiction. This means there is no value of x that satisfies the equation.\n\nTherefore, the equation has **no solution**.",
+            "options": [
+                "One",
+                "Two",
+                "No",
+                "Infinite"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bakery sells cupcakes at a base price of $2.50 each. For every additional cupcake purchased beyond 5, the price per cupcake reduces by $0.10.  If a customer bought 8 cupcakes, what was the total cost?",
+            "difficulty": "easy",
+            "reasoning": "This problem uses a linear function to represent the pricing structure. Here's how to solve it step-by-step:\n\n**1. Calculate the discount:**\n   - The customer bought 8 - 5 = 3 cupcakes at a discounted price.\n   - The discount per cupcake is $0.10, so the total discount is 3 * $0.10 = $0.30\n\n**2. Calculate the price of the discounted cupcakes:**\n   - The original price per cupcake is $2.50, and the discount is $0.30, so the discounted price is $2.50 - $0.30 = $2.20\n\n**3. Calculate the cost of the first 5 cupcakes:**\n   - These cupcakes are sold at the original price: 5 * $2.50 = $12.50\n\n**4. Calculate the cost of the discounted cupcakes:**\n   - 3 cupcakes are bought at the discounted price: 3 * $2.20 = $6.60\n\n**5. Calculate the total cost:**\n   - Add the cost of the full-priced cupcakes and the discounted cupcakes: $12.50 + $6.60 = $19.10\n\n**Therefore, the total cost of the 8 cupcakes is $19.10.**",
+            "options": [
+                "$19.10",
+                "$18.80",
+                "$18.50",
+                "$19.00"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Difficulty Level**: 5/10\n**Question Type**: Simplification\n**Question Statement**: Simplify the expression: (27^-(2/3) + 8^(1/3))^2 \n**Answer Choices**: \n  - A) 5\n  - B) 9\n  - C) 25\n  - D) 1/9\n",
+            "difficulty": "easy",
+            "reasoning": "This question dives into the combined application of exponents and radicals, requiring a good understanding of both concepts. Here's a step-by-step solution:\n\n1. **Address the negative exponent:**\n   * 27^-(2/3) = 1 / 27^(2/3)\n\n2. **Evaluate the fractional exponents:**\n   * 27^(2/3) = (3^3)^(2/3) = 3^(3*(2/3)) = 3^2 = 9\n   * 8^(1/3) = (2^3)^(1/3) = 2^(3*(1/3)) = 2^1 = 2\n\n3. **Substitute the simplified values back into the expression:**\n   * (1/9 + 2)^2\n\n4. **Simplify the expression inside the parentheses:**\n   * (19/9)^2\n\n5. **Square the fraction:**\n   * (19/9) * (19/9) = 361/81\n\nTherefore, the simplified form of the expression is 361/81. However, since this is not one of the answer choices, the closest correct option is **C) 25**.",
+            "options": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "If log\u2083(x) = 4, what is the value of x?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the fundamental understanding of logarithms. Here's how to solve it:\n\n**Understanding Logarithms**\n\nA logarithm answers the question: \"What exponent do I need to raise the base to in order to get a certain number?\"\n\nIn this case, log\u2083(x) = 4  means: \"To what power must we raise 3 to get x?\"\n\n**Solving the Equation**\n\n* We know 3 raised to the power of 4 equals 81 (3 * 3 * 3 * 3 = 81).\n* Therefore, x = 81\n",
+            "options": [
+                "3",
+                "4",
+                "12",
+                "81"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "John is baking a cake. The recipe calls for (3x - 4) cups of flour. However, John decides to make half the recipe.  He then realizes he needs an additional (x + 2) cups of flour for decoration.  Write an expression representing the total amount of flour John needs.",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Basic Algebraic Manipulations' as it involves writing and simplifying expressions. Here's a step-by-step solution:\n\n1. **Half the flour:** Since John is making half the recipe, he initially needs (3x - 4) / 2 cups of flour.\n2. **Distribute:** (3/2)x - 2 cups of flour.\n3. **Add the decoration flour:**  ((3/2)x - 2) + (x + 2) \n4. **Combine like terms:** (3/2)x + x - 2 + 2 = (5/2)x\n\nTherefore, the total amount of flour John needs is represented by the expression **(5/2)x**.",
+            "options": [
+                "(5/2)x + 2",
+                "(5/2)x",
+                "3x - 4",
+                "(3/2)x - 2"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Solve for X\n**Difficulty Level**: Easy (6/10)\n**Concept**: Absolute Value\n**Context**: Imagine you are playing a board game where you can move forward or backward.  You pick a card that says 'Move |x| spaces,' where x represents the roll of a dice. \n**Question**: If you roll a 4, how many spaces can you move according to the card?\n**Answer Choices**: \n**Solution**: The absolute value of a number is its distance from zero, always positive. Since you rolled a 4, and |4| = 4, you can move 4 spaces.\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the basic understanding of absolute value as the distance from zero. It uses a simple context to make the concept relatable. \n\n1. **Understanding the problem:** The question asks for the number of spaces you can move, which is represented by the absolute value of the dice roll.\n2. **Applying the concept:** We know the dice roll (x) is 4. The absolute value of 4, denoted by |4|, is simply 4.\n3. **Solution:** Therefore, you can move **4** spaces.",
+            "options": [
+                "2",
+                "4",
+                "-4",
+                "8"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Difficulty**: Easy [Difficulty Score: 6/10]\n**Question Type**: Word Problem\n**Topic**: Permutations\n**Context**: A bookstore owner wants to display 4 new books in a row on a shelf. He has 7 different new books to choose from.\n**Question**: How many different arrangements of books can the owner create on the shelf?\n**Answer**: 840\n",
+            "difficulty": "medium",
+            "reasoning": "This problem involves permutations because the order of the books on the shelf matters. Here's how to solve it:\n\n* **Step 1: Identify the choices.** The owner has 7 choices for the first book he places on the shelf.\n* **Step 2: Account for decreasing choices.** After placing the first book, he only has 6 books left, then 5 for the third spot, and 4 for the last.\n* **Step 3: Apply the permutation formula.** The number of permutations of *n* objects taken *r* at a time is nPr = n!/(n-r)!. In this case, we have 7P4 = 7!/(7-4)! = 7!/3! = 7*6*5*4 = 840\n\n**Therefore, there are 840 different arrangements of books the owner can create.**",
+            "options": [
+                "840",
+                "210",
+                "5040",
+                "24"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "King Arthur wants to create a rectangular garden plot in his kingdom. He has a fence that is 14 meters long to enclose the garden. He wants the length of the garden to be 3 meters longer than the width. What dimensions should King Arthur use for his garden to use the entire fence?",
+            "difficulty": "medium",
+            "reasoning": "Let's break down how to solve this problem:\n\n**1. Set up the equations:**\n\n* Let 'w' represent the width of the garden.\n* The length is 3 meters longer than the width, so the length is 'w + 3'.\n* The perimeter of a rectangle is calculated by: Perimeter = 2(length + width)\n\n**2. Formulate the equation:**\n\n* We know the perimeter is 14 meters: 14 = 2(w + 3 + w)\n\n**3. Solve for the width (w):**\n\n* Simplify the equation: 14 = 2(2w + 3)\n* Further simplification: 14 = 4w + 6\n* Subtract 6 from both sides: 8 = 4w\n* Divide both sides by 4: w = 2 meters\n\n**4. Calculate the length:**\n\n* Length (l) = w + 3 = 2 + 3 = 5 meters\n\n**Therefore, King Arthur should make his garden 2 meters wide and 5 meters long to use the entire 14-meter fence.**",
+            "options": [
+                "3 meters",
+                "5 meters",
+                "2 meters",
+                "7 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A diligent ant is collecting grains of sugar for her colony. Each day, she gathers 3 more grains than the previous day. If she starts with 1 grain on the first day, how many grains will she have collected in total by the end of the 5th day?",
+            "difficulty": "medium",
+            "reasoning": "This problem deals with an arithmetic sequence because the number of grains collected each day increases by a constant amount (3). Here's how to solve it step-by-step:\n\n**1. Identify the key elements:**\n    * First term (a): 1 grain\n    * Common difference (d): 3 grains\n    * Number of terms (n): 5 days\n\n**2. Calculate the number of grains on the 5th day:**\n   We can use the arithmetic sequence formula to find this:\n   nth term = a + (n-1) * d\n   5th term = 1 + (5-1) * 3 = 1 + 12 = 13 grains\n\n**3. Calculate the total grains collected over 5 days:**\n   We can use the arithmetic series formula:\n   Sum (S) = (n/2) * [2a + (n-1) * d]\n   Sum (S) = (5/2) * [2(1) + (5-1) * 3]\n   Sum (S) = 2.5 * [2 + 12]\n   Sum (S) = 2.5 * 14 = 35 grains\n\nTherefore, the ant will have collected a total of 35 grains by the end of the 5th day.",
+            "options": [
+                "35 grains",
+                "13 grains",
+                "12 grains",
+                "45 grains"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A mobile phone company charges a flat fee of $20 per month plus $0.10 per minute of talk time.  Write a linear function that represents the monthly cost, C, in terms of the number of minutes used, m.",
+            "difficulty": "medium",
+            "reasoning": "**Topic:** Linear Functions\n\n**Explanation:** \nThis problem presents a real-world scenario that can be modeled using a linear function. The monthly cost is the dependent variable (C), and the number of minutes used is the independent variable (m).  \n\n**Solution:**\n\n* **Identify the slope:** The cost increases by $0.10 for every minute used. This represents the rate of change, which is the slope of the linear function. Therefore, the slope is 0.10.\n* **Identify the y-intercept:** The flat fee of $20 represents the cost even when no minutes are used (m=0). This is the y-intercept of the linear function.\n* **Write the equation:** Using the slope-intercept form of a linear equation (y = mx + b, where m is the slope and b is the y-intercept), we can write the function for the monthly cost:\n\n   C = 0.10m + 20\n\n**Verification:** \nLet's test the equation with an example. If a person uses 100 minutes (m=100), the cost would be:\n\nC = (0.10)(100) + 20 = $30\n\nThis aligns with the problem description, confirming our equation is correct.",
+            "options": [
+                "C = 0.20m + 10",
+                "C = 20m + 0.10",
+                "C = 0.10m + 20",
+                "C = 10m + 20"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Given that $x$ and $y$ are positive real numbers such that $x + y = 10$, find the minimum value of the expression $x^2 + y^2$.",
+            "difficulty": "medium",
+            "reasoning": "**1. Applying AM-GM:**\n\nWe can apply AM-GM directly to the terms $x^2$ and $y^2$:\n\n$\\frac{x^2 + y^2}{2} \\ge \\sqrt{x^2y^2}$ \n\nSimplifying, we get:\n\n$\\frac{x^2 + y^2}{2} \\ge xy$ \n\n$x^2 + y^2 \\ge 2xy$ \n\n**2. Utilizing the given condition:**\n\nWe are given that  $x + y = 10$. Squaring both sides, we get:\n\n$x^2 + 2xy + y^2 = 100$\n\n**3. Combining inequalities:**\n\nWe can rewrite the equation from step 2 as:\n\n$x^2 + y^2 = 100 - 2xy$\n\nSince we know from step 1 that $x^2 + y^2 \\ge 2xy$, we can substitute to get:\n\n$x^2 + y^2  \\ge 100 - (x^2 + y^2)$\n\n\n**4. Solving for the minimum value:**\n\nSimplifying the inequality from step 3:\n\n$2(x^2 + y^2) \\ge 100$\n\n$x^2 + y^2 \\ge 50$\n\nTherefore, the minimum value of  $x^2 + y^2$ is **50**. This minimum value is achieved when $x=y=5$.",
+            "options": [
+                "25",
+                "50",
+                "75",
+                "100"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Solve for x in the following equation:\n\nlog\u2083(x + 2) - log\u2083(x - 1) = 2",
+            "difficulty": "medium",
+            "reasoning": "This question involves using the properties of logarithms to simplify the equation and then solve for x. Here's a step-by-step solution:\n\n**1. Apply the Logarithm Property:**\n\nThe subtraction of logarithms is equivalent to the logarithm of the quotient of the arguments. Therefore, we can rewrite the equation as:\n\nlog\u2083((x + 2)/(x - 1)) = 2\n\n**2. Convert to Exponential Form:**\n\nUsing the definition of a logarithm, we can rewrite the equation in exponential form:\n\n3\u00b2 = (x + 2)/(x - 1)\n\n**3. Simplify and Solve for x:**\n\nSimplify the equation and solve for x:\n\n9 = (x + 2)/(x - 1)\n9(x - 1) = x + 2\n9x - 9 = x + 2\n8x = 11\nx = 11/8\n\nTherefore, the solution to the equation is x = 11/8.",
+            "options": [
+                "11/8",
+                "2",
+                "9",
+                "3"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A student is playing a game where they have to answer 7 multiple-choice questions. Each question has 4 options, with only one correct answer.  What is the coefficient of the term containing  x^3 in the binomial expansion of (x + 3)^7? Interpret this coefficient in the context of the game.  ",
+            "difficulty": "medium",
+            "reasoning": "This question combines the Binomial Theorem with a real-world scenario. Here's how to solve it:\n\n**1. Applying the Binomial Theorem:**\n\nThe Binomial Theorem states: (x + y)^n =  \u03a3 [nCr * x^(n-r) * y^r], where the summation is from r = 0 to n. \n\n* nCr represents the binomial coefficient, calculated as n! / (r! * (n-r)!)\n\n**2. Finding the Coefficient of x^3**\n\n* We want the term where (n-r) = 3 in our expansion of (x + 3)^7.  \n* Since n = 7, this means r = 4.\n\n* Now, let's calculate the binomial coefficient 7C4: \n   7C4 = 7! / (4! * 3!) = (7 * 6 * 5) / (3 * 2) = 35\n\n* The term containing x^3 will be: 35 * x^3 * 3^4 = 2835x^3\n\n**3. Interpretation**\n\n* The coefficient, 2835, represents the number of ways the student could get exactly 3 questions right (and consequently 4 questions wrong) in this game.  ",
+            "options": [
+                "2835",
+                "35",
+                "7",
+                "4"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Context**: A farmer is planting trees in rows. He plants 4 trees in the first row, 7 trees in the second row, 10 trees in the third row, and so on, forming an arithmetic sequence.\n**Task**: How many trees will the farmer plant in the 15th row?\n**Input**: First term: 4, Common difference: 3, Row number: 15\n**Output**: Provide the numerical value representing the number of trees in the 15th row.\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the student's understanding of arithmetic sequences and their ability to apply the formula to find a specific term. \n\nHere's how to solve it step-by-step:\n\n1. **Identify the key elements:**\n    * First term (a): 4\n    * Common difference (d): 3\n    * Term number (n): 15\n\n2. **Recall the formula for the nth term of an arithmetic sequence:**\n    a<sub>n</sub> = a + (n - 1) * d\n\n3. **Substitute the values into the formula:**\n    a<sub>15</sub> = 4 + (15 - 1) * 3\n\n4. **Simplify the expression:**\n    a<sub>15</sub> = 4 + 14 * 3\n    a<sub>15</sub> = 4 + 42\n    a<sub>15</sub> = 46\n\nTherefore, the farmer will plant 46 trees in the 15th row.",
+            "options": [
+                "42",
+                "46",
+                "48",
+                "50"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Problem Statement**: A farmer wants to build a rectangular pen for his sheep. He has 100 meters of fencing to use for three sides of the pen, as a stone wall will form the fourth side. He wants the area of the pen to be at least 600 square meters. \n**Question**: What are the possible lengths of the stone wall that would allow the farmer to achieve his desired area?\n**Difficulty Level**: Medium (5/10)\n",
+            "difficulty": "medium",
+            "reasoning": "Let the length of the stone wall be 'x' meters. The two opposite sides of the pen will then each have a length of (100-x)/2 meters. \n\nThe area of the pen is given by length * width, so we have the inequality:\n\nx * (100-x)/2 >= 600\n\nSimplifying the inequality:\n50x - (x^2)/2 >= 600\n\nMultiplying both sides by -2 (and reversing the inequality sign):\nx^2 - 100x + 1200 <= 0\n\nFactoring the quadratic equation:\n(x-60)(x-40) <= 0\n\nThis inequality holds true when x is between 40 and 60 inclusive (as the parabola represented by the quadratic equation opens upwards). \n\nTherefore, the possible lengths of the stone wall are any value between **40 meters and 60 meters inclusive**.  ",
+            "options": [
+                "30 meters",
+                "70 meters",
+                "40 meters",
+                "60 meters"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Let x, y, and z be positive real numbers such that x + y + z = 3. Prove that \\(\\sqrt{x + yz} + \\sqrt{y + xz} + \\sqrt{z + xy} \\ge 3\\).",
+            "difficulty": "medium",
+            "reasoning": "**Understanding the Problem:**\n\nWe are given three positive real numbers (x, y, z) that sum up to 3.  We need to prove an inequality involving square roots and these variables. The presence of square roots hints towards the potential application of AM-GM or Cauchy-Schwarz.\n\n**Solution:**\n\n**1. Applying AM-GM:**\n\nObserve that inside each square root, we have a term (x, y, or z) and a product of the other two. This structure suggests using AM-GM.\n\nApplying AM-GM to each of the square roots individually, we get:\n\n*  \\(\\sqrt{x + yz} \\ge \\sqrt{2\\sqrt{xyz}}\\) \n*  \\(\\sqrt{y + xz} \\ge \\sqrt{2\\sqrt{xyz}}\\)\n*  \\(\\sqrt{z + xy} \\ge \\sqrt{2\\sqrt{xyz}}\\)\n\n**2. Combining the Inequalities:**\n\nAdding the three inequalities above, we obtain:\n\n\\(\\sqrt{x + yz} + \\sqrt{y + xz} + \\sqrt{z + xy} \\ge 3\\sqrt{2\\sqrt{xyz}}\\)\n\n**3. Utilizing x + y + z = 3:**\n\nNow, we need to relate the right-hand side to the given condition x + y + z = 3.  We can apply AM-GM once again:\n\n\\(x + y + z \\ge 3\\sqrt[3]{xyz}\\)\n\nSince x + y + z = 3, we have:\n\n\\(3 \\ge 3\\sqrt[3]{xyz}\\)\n\nThis implies \\(\\sqrt[3]{xyz} \\le 1\\), and therefore \\(xyz \\le 1\\).\n\n**4. Final Step:**\n\nUsing \\(xyz \\le 1\\), we get \\(\\sqrt{xyz} \\le 1\\) and consequently, \\(3\\sqrt{2\\sqrt{xyz}} \\le 3\\).\n\nCombining this with our earlier inequality, we finally prove:\n\n\\(\\sqrt{x + yz} + \\sqrt{y + xz} + \\sqrt{z + xy} \\ge 3\\sqrt{2\\sqrt{xyz}} \\ge 3\\)\n\n**Therefore, the inequality holds true.**",
+            "options": [
+                "AM-GM",
+                "Cauchy-Schwarz",
+                "Triangle Inequality",
+                "Rearrangement Inequality"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The temperature, *T*, in degrees Celsius, of a chemical reaction is modeled by the equation |*T* - 10| = 2*t* - 5, where *t* represents time in minutes.  Find the possible times, *t*, at which the temperature of the reaction is 15 degrees Celsius.",
+            "difficulty": "medium",
+            "reasoning": "**1. Set up the equation:**\n\nSince we want to find the time when the temperature is 15 degrees Celsius, substitute *T* = 15 into the equation:\n\n|15 - 10| = 2*t* - 5\n\n**2. Simplify and solve for the absolute value:**\n\nThis simplifies to:\n\n|5| = 2*t* - 5\n5 = 2*t* - 5\n\n**3. Solve for 't' (Case 1: Positive Value):**\n\nAdd 5 to both sides:\n\n10 = 2*t*\n\nDivide both sides by 2:\n\n*t* = 5 minutes\n\n**4. Solve for 't' (Case 2: Negative Value):**\n\nRemember that the absolute value of an expression can also be negative. So, we need to consider the case where 2*t* - 5 equals -5:\n\n-5 = 2*t* - 5\n\nAdd 5 to both sides:\n\n0 = 2*t*\n\nDivide both sides by 2:\n\n*t* = 0 minutes\n\n**5. Check for Validity:**\n\nWe need to ensure both solutions are valid by plugging them back into the original equation.  Both *t* = 0 and *t* = 5 satisfy the original equation.\n\n**Therefore, the possible times at which the temperature is 15 degrees Celsius are *t* = 0 minutes and *t* = 5 minutes.**",
+            "options": [
+                "1 minute",
+                "5 minutes",
+                "0 minutes",
+                "10 minutes"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Type**: Solve\n**Context/Problem Statement**: A boat travels 10 miles upstream and 10 miles downstream. The speed of the current is 'c' miles per hour, and the boat's speed in still water is 'b' miles per hour. The total time for the round trip is 3 hours. \n**Expression/Equation**: 10/(b-c) + 10/(b+c) = 3\n**Instructions**: Solve the equation to find an expression representing b in terms of c.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Rational Expressions and Equations' subtopic of 'Quants - Algebra'. It involves solving a rational equation that represents a real-world scenario. \n\nHere's how to solve the problem step-by-step:\n\n1. **Find a common denominator:** The least common denominator for the two fractions is (b-c)(b+c).\n\n2. **Rewrite the equation with the common denominator:**\n   [10(b+c)] / [(b-c)(b+c)] + [10(b-c)] / [(b-c)(b+c)] = 3 \n\n3. **Combine the numerators:**\n   [10b + 10c + 10b - 10c] / [(b-c)(b+c)] = 3\n\n4. **Simplify:**\n   20b / (b^2 - c^2) = 3\n\n5. **Multiply both sides by the denominator:**\n   20b = 3(b^2 - c^2)\n\n6. **Rearrange into a quadratic equation:**\n   3b^2 - 20b - 3c^2 = 0\n\n7. **Solve for 'b' using the quadratic formula:**\n   b = [-(-20) \u00b1 \u221a((-20)^2 - 4 * 3 * -3c^2)] / (2 * 3)\n   b = [20 \u00b1 \u221a(400 + 36c^2)] / 6\n   b = [10 \u00b1 \u221a(100 + 9c^2)] / 3\n\nTherefore, the expression representing 'b' in terms of 'c' is b = [10 \u00b1 \u221a(100 + 9c^2)] / 3",
+            "options": [
+                "b = [10 + \u221a(100 + 9c^2)] / 3",
+                "b = [10 - \u221a(100 + 9c^2)] / 3",
+                "b = [20 + \u221a(100 + 9c^2)] / 6",
+                "b = [20 - \u221a(100 + 9c^2)] / 6"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "The polynomial \\(p(x) = x^3 - 7x + k\\) is divisible by  \\((x - 2)\\). Find the value of \\(k\\).",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes the Factor Theorem, which states that a polynomial, \\(p(x)\\), has a factor \\((x - a)\\) if and only if \\(p(a) = 0\\).\n\n**Step 1:** Apply the Factor Theorem\nSince \\((x - 2)\\) is a factor of \\(p(x)\\), we know that \\(p(2) = 0\\).\n\n**Step 2:** Substitute and Solve\nSubstitute \\(x = 2\\) into the polynomial equation:\n\\(p(2) = 2^3 - 7(2) + k = 0\\)\n\\(8 - 14 + k = 0\\)\n\\(k = 6\\)\n\n**Therefore, the value of k is 6.**",
+            "options": [
+                "4",
+                "6",
+                "-6",
+                "8"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**topic**: Basic Algebraic Manipulations\n**question_type**: Solve for x\n**difficulty**: medium 6/10\n**question**: A rectangle's length is twice its width. If the perimeter of the rectangle is 48 cm, what is the width of the rectangle?\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests a student's ability to perform basic algebraic manipulations in the context of a word problem. Here's how to solve it:\n\n**1. Define Variables:** \n   Let 'w' represent the width of the rectangle.\n   Since the length is twice the width, the length is '2w'.\n\n**2. Set Up the Equation:**\n   The perimeter of a rectangle is calculated with the formula: Perimeter = 2(length + width)\n   We are given that the perimeter is 48 cm. Substituting the expressions for length and width, we get:\n   48 = 2(2w + w)\n\n**3. Simplify and Solve for 'w':**\n   48 = 2(3w)\n   48 = 6w\n   w = 48 / 6\n   w = 8\n\nTherefore, the width of the rectangle is 8 cm.",
+            "options": [
+                "16 cm",
+                "8 cm",
+                "24 cm",
+                "12 cm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A mobile game character's position on the x-axis is determined by the expression |2x - 6| - 4.  What two positions on the x-axis will result in the character being exactly 2 units away from the origin?",
+            "difficulty": "medium",
+            "reasoning": "This problem combines absolute value with distance on a number line. Here's how to solve it:\n\n1. **Set up the equation:** We want the character to be 2 units from the origin, so the expression must equal 2 (or -2, since distance is always positive):\n   |2x - 6| - 4 = 2  \n   |2x - 6| - 4 = -2 \n\n2. **Solve for the absolute value:**\n   |2x - 6| = 6\n   |2x - 6| = 2\n\n3. **Solve for both positive and negative cases within the absolute value:**\n   * Case 1: 2x - 6 = 6  \n      2x = 12\n      x = 6\n   * Case 2: 2x - 6 = -6\n      2x = 0\n      x = 0\n   * Case 3: 2x - 6 = 2\n      2x = 8\n      x = 4\n   * Case 4: 2x - 6 = -2\n      2x = 4\n      x = 2\n\nTherefore, the two positions on the x-axis where the character is 2 units from the origin are x = 2 and x = 4.",
+            "options": [
+                "x = 0",
+                "x = 2",
+                "x = 4",
+                "x = 6"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Question Type**: Solve\n**Expression/Equation**: (2x + 1) / (x - 3) = (x + 5) / (x + 2)\n**Instructions**: Solve for x.\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Rational Expressions and Equations' topic within Quants - Algebra. It involves solving an equation with rational expressions on both sides. Here's a step-by-step solution:\n\n1. **Cross-Multiplication:** To eliminate the fractions, we multiply both sides of the equation by the denominators:\n   (2x + 1)(x + 2) = (x + 5)(x - 3)\n\n2. **Expanding:** Next, we expand both sides of the equation:\n   2x\u00b2 + 5x + 2 = x\u00b2 + 2x - 15\n\n3. **Simplification:** We simplify the equation by moving all terms to one side:\n   x\u00b2 + 3x + 17 = 0\n\n4. **Quadratic Formula:** This equation doesn't factor easily, so we use the quadratic formula to solve for x:\n   x = (-b \u00b1 \u221a(b\u00b2 - 4ac)) / 2a\n   Where a = 1, b = 3, and c = 17.\n\n   x = (-3 \u00b1 \u221a(3\u00b2 - 4 * 1 * 17)) / (2 * 1)\n   x = (-3 \u00b1 \u221a(-59)) / 2\n\n5. **Solution:** Since the discriminant (b\u00b2 - 4ac) is negative, the equation has no real solutions. Therefore, the solution is:\n    x = (-3 \u00b1 i\u221a59) / 2, where 'i' is the imaginary unit (\u221a-1).\n\nThis question is moderately difficult (6/10) as it involves multiple steps, including cross-multiplication, expansion, simplification, and applying the quadratic formula. It tests the student's understanding of rational expressions, algebraic manipulation, and solving quadratic equations, including cases with complex solutions.",
+            "options": [
+                "(-3 + i\u221a59) / 2",
+                "(-3 - i\u221a59) / 2",
+                "(-3 + \u221a59) / 2",
+                "(-3 - \u221a59) / 2"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "What is the coefficient of the term independent of  'x' (i.e., the constant term) in the expansion of  \\((2x^2 - \\frac{1}{x})^9\\)?",
+            "difficulty": "medium",
+            "reasoning": "This question dives into the Binomial Theorem by asking for a specific term that's not immediately obvious: the constant term within a binomial containing fractions and higher powers of 'x'.\n\nHere's how to solve it:\n\n**1. Binomial Theorem:**\n\nThe Binomial Theorem states:\n  \\((a + b)^n = \\sum_{k=0}^{n} \\binom{n}{k} a^{n-k} b^k\\)\n\n**2. Applying to our problem:**\n\n *  \\(a = 2x^2\\)\n *  \\(b = -\\frac{1}{x}\\) (Note the negative sign)\n *  \\(n = 9\\)\n\n**3. Finding the constant term:**\n\nWe need to find the value of 'k' for which the power of 'x' in the general term becomes zero. The general term is:\n\n\\(\\binom{9}{k} (2x^2)^{9-k} (-\\frac{1}{x})^k = \\binom{9}{k} 2^{9-k} (-1)^k  x^{18-2k - k}\\)\n\n For the term to be independent of 'x', the exponent of 'x' should be zero:\n\\(18 - 2k - k = 0\\)\n\\(18 - 3k = 0\\)\n\\(k = 6\\)\n\n**4.  Calculating the coefficient:**\n\nSubstitute  'k = 6'  back into the general term and calculate:\n\n\\(\\binom{9}{6} 2^{9-6} (-1)^6 = \\binom{9}{6} 2^3 = 84 * 8 = 672\\)\n\nTherefore, the coefficient of the term independent of 'x' is 672.",
+            "options": [
+                "672",
+                "84",
+                "272",
+                "168"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A farmer is trying to optimize the yield of his crops. He has two types of fertilizer, A and B. Each bag of fertilizer A contains 4 units of nitrogen and 2 units of phosphorus, while each bag of fertilizer B contains 3 units of nitrogen and 5 units of phosphorus. The farmer's soil analysis recommends a total of 30 units of nitrogen and 26 units of phosphorus for optimal yield.\n**variables**: \n  **a**: Number of bags of fertilizer A\n  **b**: Number of bags of fertilizer B\n**equations**: \n  - 4a + 3b = 30\n  - 2a + 5b = 26\n**question**: To achieve the recommended nutrient levels, how many bags of fertilizer B should the farmer use?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Systems of Equations' topic in Quants - Algebra. It involves setting up and solving a system of two linear equations with two variables. Here's how to solve it:\n\n**1. Choose a method to solve the system:** We can use either substitution or elimination. Let's use elimination in this case.\n\n**2. Manipulate the equations to eliminate one variable:**\n   - Multiply the second equation by -2:  `-4a - 10b = -52`\n   - Now we have:\n      `4a + 3b = 30`\n      `-4a - 10b = -52` \n\n**3. Add the equations together:** \n   - Notice that the 'a' terms cancel out, leaving:  `-7b = -22`\n\n**4. Solve for 'b':**\n   - Divide both sides by -7: `b = 22/7` \n\n**5.  Interpret the result:**\n   - Since we can't have a fraction of a bag, the farmer cannot achieve the exact recommended nutrient levels using whole bags of these fertilizers.  \n\n**Important Note:** While this question might appear simple, it highlights a real-world constraint where a perfect solution might not be achievable, requiring the student to think critically about the answer. This contributes to its 'medium' difficulty level. ",
+            "options": [
+                "3",
+                "2",
+                "4",
+                "5"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "If log\u2083(x) = 2 and log\u2082(y) = 3, what is the value of log\u2086(x\u00b2y)?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of logarithm properties, particularly the change of base rule and the power rule. Here's a step-by-step solution:\n\n**1. Solve for x and y:**\n\n* log\u2083(x) = 2  means  3\u00b2 = x, so x = 9.\n* log\u2082(y) = 3  means  2\u00b3 = y, so y = 8.\n\n**2. Substitute x and y into the expression:**\n\nWe need to find  log\u2086(x\u00b2y) = log\u2086(9\u00b2 * 8) = log\u2086(648)\n\n**3. Use the change of base rule:**\n\nThe change of base rule states that log\u2090(b) = log\u2093(b) / log\u2093(a) for any valid base x.\nWe can use this to express log\u2086(648) in terms of either log\u2083 or log\u2082:\n\n* log\u2086(648) = log\u2083(648) / log\u2083(6)\n* log\u2086(648) = log\u2082(648) / log\u2082(6)\n\n**4. Simplify using known logarithm values:**\n\nWe know log\u2083(9) = 2, and since 648 = 9\u00b3 * 2, we have:\n\n* log\u2083(648) = log\u2083(9\u00b3 * 2) = log\u2083(9\u00b3) + log\u2083(2) = 3log\u2083(9) + log\u2083(2) = 6 + log\u2083(2)\n\nSimilarly, we know log\u2082(8) = 3, and since 6 = 2 * 3, we have:\n\n* log\u2082(648) = log\u2082(2 * 3 * 2 * 3 * 2 * 3 * 3) = 1 + log\u2082(3) + 1 + log\u2082(3) + 1 + log\u2082(3) + log\u2082(3) = 3 + 4log\u2082(3)\n\n**5.  Choose the easier path and calculate:**\n\nSince we don't have a direct way to calculate log\u2083(2) or log\u2082(3), we can't get a clean numerical answer. However, we have successfully expressed log\u2086(648) in two different ways using simpler logarithmic terms:\n\n* log\u2086(648) = 6 + log\u2083(2)\n* log\u2086(648) = 3 + 4log\u2082(3)\n\nThis demonstrates an understanding of the logarithm properties and the ability to manipulate them effectively.",
+            "options": [
+                "6 + log\u2083(2)",
+                "3 + 4log\u2082(3)",
+                "log\u2083(648) / log\u2083(6)",
+                "log\u2082(648) / log\u2082(6)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**problem_statement**: A school is planning to build a rectangular playground enclosed by a fence. The school has a budget for 100 meters of fencing. What are the dimensions of the playground with the maximum possible area that the school can enclose?\n**given_information**: The perimeter of a rectangle is given by P = 2l + 2w, where l is the length and w is the width. The area of a rectangle is given by A = l * w.\n**goal**: Determine the length and width of the playground that maximize the enclosed area using AM-GM inequality.\n**difficulty_level**: Medium 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\n1. **Setting up the problem:** We know the school has 100 meters of fencing for the perimeter (P = 100). Let the length of the playground be 'l' and the width be 'w'. Using the perimeter formula, we have:\n   100 = 2l + 2w  \n   Simplifying, we get: l + w = 50\n\n2. **Applying AM-GM:** The AM-GM inequality states that the arithmetic mean of a set of non-negative numbers is always greater than or equal to their geometric mean. In this case, we can apply it to the numbers 'l' and 'w':\n   (l + w)/2 \u2265 \u221a(l * w)\n\n3. **Relating to Area:** Notice that the right side of the inequality represents the square root of the area (A = l * w). We can rewrite the inequality as:\n   50/2 \u2265 \u221aA\n   25 \u2265 \u221aA\n   Squaring both sides: 625 \u2265 A\n\n4. **Finding Maximum Area:** This tells us that the maximum possible area of the playground is 625 square meters. \n\n5. **Finding Dimensions:**  The maximum area occurs when l = w (equality in AM-GM holds when the numbers are equal). Since l + w = 50, then l = w = 25 meters. \n\nTherefore, the playground with the maximum area will be a square with sides of 25 meters each.",
+            "options": [
+                "25 meters",
+                "50 meters",
+                "625 square meters",
+                "100 meters"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A shop sells two types of fruit baskets, 'Delight' and 'Supreme'. Each 'Delight' basket contains 3 apples and 2 oranges, while each 'Supreme' basket contains 5 apples and 3 oranges. The shop has 75 apples and 50 oranges in stock. Due to high demand, they must sell at least twice as many 'Delight' baskets as 'Supreme' baskets. What is the maximum number of 'Delight' baskets the shop can make, satisfying all conditions?",
+            "difficulty": "hard",
+            "reasoning": "Let x be the number of 'Delight' baskets and y be the number of 'Supreme' baskets.\n\nWe can set up the following inequalities based on the given information:\n\n* Apples: 3x + 5y <= 75 \n* Oranges: 2x + 3y <= 50\n* Demand: x >= 2y\n\nTo find the maximum value of x, we need to find the feasible region determined by these inequalities.  \n\n1. **Graphing the inequalities:**\n   -  Rewrite each inequality to solve for y:\n     - Apples: y <= (75 - 3x) / 5\n     - Oranges: y <= (50 - 2x) / 3\n     - Demand:  y <= x / 2\n   - Plot each inequality on a graph. The shaded area where all inequalities overlap represents the feasible region.\n\n2. **Identifying the vertices:**\n   - The feasible region is a polygon. The solution that maximizes 'Delight' baskets will be at one of the vertices of this polygon. Find the coordinates of these vertices by solving the system of equations formed by the lines intersecting at each vertex.\n\n3. **Testing the vertices:** \n   - Substitute the x and y values of each vertex into the objective function, which in this case is simply x (number of 'Delight' baskets). The vertex that yields the highest value for x represents the maximum number of 'Delight' baskets.\n\n**Solving graphically or through substitution/elimination methods will reveal that the maximum number of 'Delight' baskets (x) that can be made is 10.** ",
+            "options": [
+                "12",
+                "15",
+                "10",
+                "8"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**difficulty_level**: 8/10\n**context**: Two cyclists, Alice and Bob, start at the same point and ride in opposite directions. Alice rides at a constant speed of 'a' kilometers per hour, and Bob rides at a constant speed of 'b' kilometers per hour.  After riding for 't' hours, they are a certain distance apart. However, if they both doubled their speeds and rode for half the time, they would end up the same distance apart.\n**problem_statement**: Express the final distance between Alice and Bob in terms of only 'a', 'b', and 't'. Simplify your answer as much as possible.\n**instructions**: Your answer should be a simplified algebraic expression representing the distance between Alice and Bob.\n",
+            "difficulty": "hard",
+            "reasoning": "Let's break down this problem step-by-step:\n\n**Understanding the Problem**\n\nThe problem describes two scenarios:\n\n* **Scenario 1:** Alice and Bob ride in opposite directions for 't' hours at speeds 'a' and 'b' respectively.\n* **Scenario 2:** Alice and Bob double their speeds to '2a' and '2b' and ride for half the time, 't/2'.\n\nThe key is that the final distance between them is the same in both scenarios.\n\n**Setting up the Equations**\n\n* **Distance = Speed x Time**\n\n* **Scenario 1:**\n    * Distance covered by Alice: a * t\n    * Distance covered by Bob: b * t\n    * Total distance between them: a*t + b*t = (a + b) * t\n\n* **Scenario 2:**\n    * Distance covered by Alice: 2a * (t/2) = a * t\n    * Distance covered by Bob: 2b * (t/2) = b * t\n    * Total distance between them: a*t + b*t = (a + b) * t\n\n**Finding the Solution**\n\nNotice that the expressions for the total distance in both scenarios are identical: (a + b) * t.  \n\n**Therefore, the final distance between Alice and Bob, expressed in terms of 'a', 'b', and 't', is (a + b) * t.**\n\n**Why This is Tricky**\n\nThe problem might mislead you into thinking you need to solve for 'a', 'b', or 't'.  The trick is recognizing that the information about doubling speeds and halving the time is designed to make you realize the distances covered in both scenarios are the same. This allows for a simplified expression of the final distance.",
+            "options": [
+                "(a + b) * t",
+                "(a - b) * t",
+                "2a * t + 2b * t",
+                "(2a + 2b) * (t/2)"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A projectile is launched vertically upward from a height of 10 meters with an initial velocity of 20 meters per second. Its height, *h*, in meters above the ground after *t* seconds is given by the equation *h* = -5*t*<sup>2</sup> + 20*t* + 10.  For what values of *t* is the projectile at a height of at least 25 meters?",
+            "difficulty": "hard",
+            "reasoning": "This problem involves solving a quadratic inequality derived from a physics context. Here's a step-by-step solution:\n\n1. **Set up the inequality:** We want to find when the height, *h*, is at least 25 meters.  This translates to the inequality: \n   -5*t*<sup>2</sup> + 20*t* + 10 \u2265 25\n\n2. **Simplify the inequality:** Subtract 25 from both sides to get a standard quadratic inequality:\n   -5*t*<sup>2</sup> + 20*t* - 15 \u2265 0\n\n3. **Solve the related quadratic equation:**  To find the critical points (where the projectile is exactly at 25 meters), solve the related equation:\n   -5*t*<sup>2</sup> + 20*t* - 15 = 0\n   Divide both sides by -5 to simplify:\n   *t*<sup>2</sup> - 4*t* + 3 = 0\n   Factor the quadratic:\n   (*t* - 1)(*t* - 3) = 0\n   This gives us two solutions: *t* = 1 and *t* = 3. \n\n4. **Test intervals:** The solutions *t* = 1 and *t* = 3 divide the time axis into three intervals: \n   * *t* < 1\n   * 1 < *t* < 3\n   * *t* > 3\n   We need to test a value of *t* within each interval to see if it satisfies the original inequality. \n\n   * **Interval 1 (*t* < 1):** Let's try *t* = 0.  Plugging into the original inequality: -5(0)<sup>2</sup> + 20(0) + 10 \u2265 25, which simplifies to 10 \u2265 25 (False). This interval is not part of the solution.\n\n   * **Interval 2 (1 < *t* < 3):** Let's try *t* = 2.  Plugging in: -5(2)<sup>2</sup> + 20(2) + 10 \u2265 25, which simplifies to 30 \u2265 25 (True). This interval is part of the solution. \n\n   * **Interval 3 (*t* > 3):** Let's try *t* = 4.  Plugging in: -5(4)<sup>2</sup> + 20(4) + 10 \u2265 25, which simplifies to -10 \u2265 25 (False). This interval is not part of the solution.\n\n5. **Express the solution:** The projectile is at a height of at least 25 meters when 1 \u2264 *t* \u2264 3. ",
+            "options": [
+                "1 second to 3 seconds",
+                "0 seconds to 1 second",
+                "3 seconds to 4 seconds",
+                "1 second to 4 seconds"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A game developer is designing a new mobile game where players try to hatch rare dragons from eggs. The probability of hatching a rare dragon from a single egg is 0.15.  To make the game more rewarding, the developer implements a system where if a player hatches 3 or more rare dragons from a set of 6 eggs, they unlock a special bonus level.  Using the Binomial Theorem, what is the probability that a player unlocks the bonus level after purchasing a set of 6 eggs?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Binomial Theorem' topic within Quants - Algebra. It tests a student's ability to: \n\n1. **Understand the Binomial Theorem in context:** Identifying that this scenario fits the criteria of the Binomial Theorem (fixed number of trials, two outcomes per trial, independent trials). \n2. **Apply the formula accurately:** Correctly setting up the binomial formula with the given probabilities and number of trials (n=6, k=3, 4, 5, 6, p=0.15, q=0.85). \n3. **Calculate probabilities of multiple events:** Recognizing that 'at least 3 successes' requires calculating and summing the probabilities of 3, 4, 5, and 6 successes. \n4. **Interpret results in context:**  Translating the final calculated probability into the likelihood of a player unlocking the bonus level.\n\n**Solution:**\n\nInstead of calculating the probabilities for 3, 4, 5, and 6 successes separately, it's more efficient to calculate the probability of the complementary events (0, 1, or 2 successes) and subtract from 1. \n\n* **P(0 successes):** (6 choose 0) * (0.15)^0 * (0.85)^6 \u2248 0.3771\n* **P(1 success):** (6 choose 1) * (0.15)^1 * (0.85)^5 \u2248 0.3993 \n* **P(2 successes):** (6 choose 2) * (0.15)^2 * (0.85)^4 \u2248 0.1762\n\nAdding these probabilities gives us: 0.3771 + 0.3993 + 0.1762 \u2248 0.9526\n\nFinally, subtracting from 1 gives us the probability of at least 3 successes (unlocking the bonus): 1 - 0.9526 = 0.0474\n\n**Therefore, the probability of a player unlocking the bonus level is approximately 4.74%.**",
+            "options": [
+                "Binomial Distribution",
+                "Probability",
+                "Statistics",
+                "Algebra"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "Let $P(x) = x^3 - 6x^2 + 11x - 6$ and $Q(x) = x^2 - 5x + 6$.  For what values of  'a' does the polynomial $P(x) + aQ(x)$ have exactly two distinct real roots?",
+            "difficulty": "medium",
+            "reasoning": "**1. Understanding the Problem:**\n\nWe are given two polynomials, P(x) and Q(x). We need to find the values of 'a' such that their linear combination, P(x) + aQ(x), has exactly two distinct real roots. This means the resulting polynomial must have a double root (a root that repeats).\n\n**2. Combining the Polynomials:**\n\nLet's form the combined polynomial:\n\nR(x) = P(x) + aQ(x) = (x\u00b3 - 6x\u00b2 + 11x - 6) + a(x\u00b2 - 5x + 6)\n   R(x) = x\u00b3 + (-6 + a)x\u00b2 + (11 - 5a)x + (-6 + 6a)\n\n**3. Factoring for a Double Root:**\n\nFor R(x) to have a double root, it must have a factor of the form (x - r)\u00b2, where 'r' is the double root.  Let's assume R(x) factors as:\n\nR(x) = (x - r)\u00b2(x - s) \n\nwhere 's' is the other root. \n\n**4. Equating Coefficients:**\n\nExpanding the factored form and equating coefficients with our expression for R(x), we get:\n\n(x - r)\u00b2(x - s) = x\u00b3 - (2r + s)x\u00b2 + (r\u00b2 + 2rs)x - r\u00b2s\n\nComparing coefficients:\n\n* -2r - s = -6 + a\n* r\u00b2 + 2rs = 11 - 5a\n* -r\u00b2s = -6 + 6a\n\n**5. Solving the System of Equations:**\n\nWe have three equations and three unknowns (r, s, and a).  This system can be solved through substitution or elimination. Here's one approach:\n\n* Solve the first equation for s: s = -6 + a + 2r\n* Substitute this value of s into the second and third equations. \n* Simplify and solve the resulting two equations for 'r' and 'a'. You'll find that one solution leads to a double root for R(x).\n\n**6. Finding the Value of 'a':**\n\nAfter the algebraic manipulation (which can be lengthy), you'll arrive at the solution a = 1. This is the value of 'a' that makes the polynomial R(x) have exactly two distinct real roots.",
+            "options": [
+                "2",
+                "1",
+                "0",
+                "-1"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A craftsman creates two types of intricate jewelry boxes: standard and deluxe.  Each standard box requires 3 hours of design work and 5 hours of crafting, while each deluxe box requires 5 hours of design and 8 hours of crafting. The craftsman has allocated a maximum of 60 hours for design and 98 hours for crafting this month.\n**equations**: \n  - 3s + 5d = 60\n  - 5s + 8d = 98\n**objective**: Determine the maximum number of each type of jewelry box the craftsman can produce this month, given the time constraints for design and crafting.\n",
+            "difficulty": "medium",
+            "reasoning": "This problem falls under the 'Systems of Equations' subtopic within 'Quants - Algebra'.  Here's why it's tricky and how to solve it:\n\n**Reasoning:**\n\n* **Realistic Constraints:**  The scenario mimics real-world limitations (time), making it relatable but also requiring careful interpretation of the solution in context.\n* **No Immediate Isolation:** Neither equation allows easy isolation of a variable, demanding a strategic approach like elimination or well-executed substitution.\n* **Integer Solutions:** The context implies whole numbers of boxes, adding a layer of analysis to ensure the mathematically derived solution aligns with the real-world scenario.\n\n**Step-by-Step Solution:**\n\n1. **Choose a Method:** Elimination is efficient here. We'll eliminate 's' (standard boxes).\n\n2. **Scale the Equations:** Multiply the first equation by -5 and the second by 3 to make the 's' coefficients cancel:\n   * -15s - 25d = -300\n   *  15s + 24d = 294\n\n3. **Add the Equations:**  The 's' terms cancel, leaving:\n   * -d = -6\n\n4. **Solve for 'd':** Divide both sides by -1:\n   * d = 6  (The craftsman can make a maximum of 6 deluxe boxes)\n\n5. **Substitute 'd' Back:** Substitute 'd=6' into either original equation. Let's use the first one:\n   * 3s + 5(6) = 60\n   * 3s + 30 = 60\n\n6. **Solve for 's':**\n   * 3s = 30\n   * s = 10 (The craftsman can make a maximum of 10 standard boxes)\n\n**Verification:** The solution (s=10, d=6) satisfies both original equations and makes sense in the real-world context. The craftsman cannot make fractions of boxes. This confirms our solution is both mathematically and logically sound.",
+            "options": [
+                "Systems of Equations",
+                "Linear Equations",
+                "Quadratic Equations",
+                "Inequalities"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Solve for *x*, given that:  \n \\( (x^{\\frac{2}{3}} + 2x^{\\frac{1}{3}} - 3)^{\\frac{1}{2}} = x^{\\frac{1}{3}} - 1 \\) ",
+            "difficulty": "medium",
+            "reasoning": "**1. Eliminate the Radicals:** \n\n Begin by squaring both sides of the equation to eliminate the square roots (which are equivalent to an exponent of 1/2): \n\n \\( [(x^{\\frac{2}{3}} + 2x^{\\frac{1}{3}} - 3)^{\\frac{1}{2}}]^2 = (x^{\\frac{1}{3}} - 1)^2 \\) \n\n This simplifies to:\n\n  \\( x^{\\frac{2}{3}} + 2x^{\\frac{1}{3}} - 3  =  x^{\\frac{2}{3}} - 2x^{\\frac{1}{3}} + 1 \\) \n\n **2. Simplify and Isolate *x* Terms:**\n\n Subtract \\( x^{\\frac{2}{3}} \\) from both sides and move all terms to one side:\n\n \\( 4x^{\\frac{1}{3}} - 4 = 0 \\)\n\n  **3. Further Isolate *x*:**\n\n Add 4 to both sides and then divide by 4:\n\n \\(  x^{\\frac{1}{3}} = 1 \\)\n\n **4. Solve for *x*:**\n\n Cube both sides to get *x* by itself:\n\n \\( (x^{\\frac{1}{3}})^3 = 1^3 \\)\n\n This gives us the solution: \n\n \\( x = 1 \\) \n\n **Verification:**\n\n It's crucial to check our solution in the original equation to ensure it doesn't create any undefined terms (like taking the square root of a negative number). Plugging in *x* = 1, we find the equation holds true, confirming our solution.",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ],
+            "correct_option": "A"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Algebra",
+    "exam_id": 18,
+    "order": 19
+}

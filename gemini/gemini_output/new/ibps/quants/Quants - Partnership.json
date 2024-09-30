@@ -1,0 +1,471 @@
+{
+    "questions": [
+        {
+            "question": "Ravi and Arun start a business together, agreeing to share profits in a 2:1 ratio, respectively.  If their business earns a profit of $9,000, how much will Arun receive?",
+            "difficulty": "easy",
+            "reasoning": "**1. Understand the Ratio:** The ratio 2:1 means that for every $3 of profit, Ravi receives $2 and Arun receives $1.\n\n**2. Calculate the Value of One Share:** Divide the total profit by the sum of the ratio parts: $9,000 / (2+1) = $3,000 per share. \n\n**3. Determine Arun's Share:** Since Arun's share is represented by 1 part of the ratio, he will receive 1 * $3,000 = $3,000.\n\n**Therefore, Arun will receive $3,000 of the profit.**",
+            "options": [
+                "$3,000",
+                "$6,000",
+                "$1,000",
+                "$9,000"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Partners, John and Sarah, decide to dissolve their business. Their partnership agreement specifies a 70/30 profit-sharing ratio for John and Sarah respectively. They have the following assets and liabilities:\n\n**Assets:**\n* Cash: $15,000\n* Equipment: $10,000\n\n**Liabilities:**\n* Accounts Payable: $2,000\n\nAfter selling the equipment for $8,000 and settling liabilities, how much cash will Sarah receive?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate the total assets after selling the equipment:**\n* Cash: $15,000 + $8,000 (from equipment sale) = $23,000\n\n**2. Calculate the net assets (assets - liabilities):**\n* Net Assets: $23,000 - $2,000 = $21,000\n\n**3. Calculate Sarah's share of the net assets:**\n* Sarah's Share: $21,000 * 30% = $6,300\n\n**Therefore, Sarah will receive $6,300 in cash after the dissolution of the partnership.**",
+            "options": [
+                "$6,300",
+                "$7,000",
+                "$8,000",
+                "$9,000"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Scenario:** Sarah and Emily decide to open a lemonade stand. Sarah invests $50 for the entire summer (4 months), while Emily invests $100 but only for 2 months. At the end of the summer, they earned a profit of $300. \n\n**Task:** Calculate each partner's share of the profit based on the duration of their investment.",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Time-Based Profit Distribution' subtopic as it requires calculating profit shares based on how long each partner's investment was active. Here's how to solve it:\n\n**1. Calculate Investment Ratios:**\n   * Sarah's Investment Ratio: $50 x 4 months = 200 \n   * Emily's Investment Ratio: $100 x 2 months = 200\n\n**2. Determine Individual Shares:**\n   * Total Ratio: 200 + 200 = 400\n   * Sarah's Profit Share: (200/400) * $300 = $150\n   * Emily's Profit Share: (200/400) * $300 = $150\n\n**Therefore, Sarah and Emily each receive $150 of the profit.** \n\nThe calculation is straightforward, utilizing simple multiplication and division to determine the profit split. The investment ratios are used to represent the weighted contribution of each partner over time.",
+            "options": [
+                "$150",
+                "$200",
+                "$100",
+                "$250"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Scenario**: Alex and Ben start a bakery. Alex invests $5,000 for equipment and supplies but can't work at the bakery. Ben doesn't invest any money but runs the bakery full-time.\n**Profit**: In the first month, the bakery earns a profit of $2,000.\n**Distribution**: They agree that since Ben does all the work, he'll receive a salary of $1,000 from the profit. The remaining profit will be split equally between them.\n**Question**: How much profit will Ben receive in total for this month?\n",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n1. **Calculate the profit after Ben's salary:**\n   - Total profit: $2,000\n   - Ben's salary: $1,000\n   - Profit remaining: $2,000 - $1,000 = $1,000\n\n2. **Calculate the profit share for each partner:**\n   - Remaining profit: $1,000\n   - Equal share: $1,000 / 2 = $500\n\n3. **Calculate Ben's total profit:**\n   - Ben's salary: $1,000\n   - Ben's profit share: $500\n   - Ben's total profit: $1,000 + $500 = $1,500\n\nTherefore, Ben receives a total of $1,500 in profit this month.",
+            "options": [
+                "$1,000",
+                "$1,500",
+                "$2,000",
+                "$2,500"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: Ram and Shyam decide to start a business selling handmade chocolates. Ram invests Rs. 5,000 in ingredients and packaging, while Shyam invests Rs. 3,000 in a portable display counter. They agree to split their profits in proportion to their initial investments.\n**profit**: After a successful month, Ram and Shyam earn a profit of Rs. 4,000 from selling their delicious chocolates.\n**question**: What is Ram's share of the profit?\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the profit-sharing ratio:**\n\n   - Ram's investment : Rs. 5,000\n   - Shyam's investment: Rs. 3,000\n   - Total investment: Rs. 5,000 + Rs. 3,000 = Rs. 8,000\n\n   - Ram's investment ratio: 5000/8000 = 5/8\n   - Shyam's investment ratio: 3000/8000 = 3/8\n\n   -Therefore, the profit-sharing ratio is 5:3 for Ram and Shyam.\n\n**2. Calculate Ram's profit share:**\n\n   - Total profit: Rs. 4,000\n   - Ram's share: (5/8) * Rs. 4,000 = Rs. 2,500\n\n**Therefore, Ram's share of the profit is Rs. 2,500.**",
+            "options": [
+                "Rs. 2,000",
+                "Rs. 2,500",
+                "Rs. 3,000",
+                "Rs. 3,500"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: Partners, Liam and Noah, started a business with Liam contributing $60,000 and Noah contributing $40,000. They agreed to share profits and losses in proportion to their capital contributions. Sadly, Liam passed away. At the time of his death, the partnership assets totaled $180,000, and liabilities amounted to $30,000.\n**information**: \n  **Liam's Capital**: $60,000\n  **Noah's Capital**: $40,000\n  **Partnership Assets**: $180,000\n  **Partnership Liabilities**: $30,000\n**objective**: Calculate the amount that should be paid to Liam's estate.\n",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the Net Partnership Assets:**\n\n   * Net Partnership Assets = Total Assets - Total Liabilities\n   * Net Partnership Assets = $180,000 - $30,000 = $150,000\n\n**2. Determine Liam's Share of Capital:**\n\n   * Total Capital = Liam's Capital + Noah's Capital = $60,000 + $40,000 = $100,000\n   * Liam's Share = (Liam's Capital / Total Capital) = ($60,000 / $100,000) = 0.6 or 60%\n\n**3. Calculate the Amount Due to Liam's Estate:**\n\n   * Amount Due = Liam's Share * Net Partnership Assets \n   * Amount Due = 0.6 * $150,000 = $90,000\n\nTherefore, Liam's estate should receive **$90,000**.",
+            "options": [
+                "$75,000",
+                "$90,000",
+                "$60,000",
+                "$100,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Partners X, Y, and Z decided to dissolve their partnership on December 31, 2023. X, Y, and Z had contributed $50,000, $50,000, and $100,000 respectively, with a profit and loss sharing ratio of 1:1:2. On the date of dissolution, the firm's assets were sold for $300,000. The firm had no liabilities. Goodwill is to be recorded prior to the distribution of cash in accordance with the profit and loss sharing ratio. What amount of cash will Z receive upon liquidation?",
+            "difficulty": "easy",
+            "reasoning": "**1. Calculate the total capital:** \n\n   Total capital = X's capital + Y's capital + Z's capital \n   Total capital = $50,000 + $50,000 + $100,000 = $200,000\n\n**2. Calculate the gain on realization:**\n\n   Gain on realization = Cash from sale of assets - Total capital\n   Gain on realization = $300,000 - $200,000 = $100,000\n\n**3. Allocate the gain on realization based on the profit and loss sharing ratio:**\n\n   Z's share of gain = (Z's profit share / Total profit share) * Gain on realization\n   Z's share of gain = (2 / (1+1+2)) * $100,000\n   Z's share of gain = (2/4) * $100,000 = $50,000\n\n**4. Calculate Z's total share of cash distribution:**\n\n   Z's total share = Z's capital + Z's share of gain\n   Z's total share = $100,000 + $50,000 = $150,000\n\nTherefore, Z will receive $150,000 in cash upon the liquidation of the partnership.",
+            "options": [
+                "$100,000",
+                "$150,000",
+                "$200,000",
+                "$300,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Partner Sarah and Partner Emily decide to draw a fixed amount each month for personal expenses. Sarah withdraws $1,500 at the beginning of each month, while Emily withdraws $1,000 at the end of each month. The partnership agreement states an interest rate of 8% per annum on drawings, calculated on average drawings. What is the total interest charged on drawings for both partners for the entire year?",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the 'Drawings and Interest on Drawings: Understanding Regular and Irregular Withdrawals' subtopic within 'Quants - Partnership' because it involves calculating interest on regular drawings made by partners throughout the year. \n\nHere's how to solve the problem step-by-step:\n\n**1. Calculate Sarah's average drawings:**\n\n* Since Sarah withdraws $1,500 at the beginning of each month, her average drawings remain $1,500.\n\n**2. Calculate Emily's average drawings:**\n\n* Emily withdraws $1,000 at the end of each month. To find the average, we consider she effectively had $0 for the first half of each month and $1,000 for the second half. Therefore, her average monthly drawings are ($0 + $1,000) / 2 = $500.\n\n**3. Calculate the total annual drawings for each partner:**\n\n* Sarah's total annual drawings: $1,500/month * 12 months = $18,000\n* Emily's total annual drawings: $500/month * 12 months = $6,000\n\n**4. Calculate the interest on drawings for each partner:**\n\n* Sarah's interest: $18,000 * 8/100 = $1,440\n* Emily's interest: $6,000 * 8/100 = $480\n\n**5. Calculate the total interest charged on drawings:**\n\n* Total interest: $1,440 + $480 = $1,920\n\nTherefore, the total interest charged on drawings for both partners for the entire year is $1,920.",
+            "options": [
+                "$1,740",
+                "$1,920",
+                "$2,080",
+                "$2,240"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Partners, Alice and Bob, decide to dissolve their business. Their partnership agreement specifies that profits and losses are shared equally. Here's their financial situation:\n\n* **Assets:**\n    * Equipment: $10,000\n    * Inventory: $5,000\n* **Liabilities:**\n    * Loan: $3,000\n\n**How much will Alice receive upon the dissolution of the partnership?**",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this step-by-step:\n\n**1. Calculate Total Assets:**\n   * Equipment ($10,000) + Inventory ($5,000) = $15,000\n\n**2. Calculate Net Assets (Assets - Liabilities):**\n   * Total Assets ($15,000) - Loan ($3,000) = $12,000\n\n**3. Divide Net Assets Equally:**\n   * Net Assets ($12,000) / 2 Partners = $6,000 per partner\n\n**Therefore, Alice will receive $6,000 upon the dissolution of the partnership.**",
+            "options": [
+                "$3,000",
+                "$5,000",
+                "$6,000",
+                "$12,000"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Amy and Ben decide to start a food truck business. Amy invests $8,000, while Ben contributes $12,000. They agree to share profits in a ratio of 5:3, with Amy receiving the larger share.  In their first month of operation, the food truck earns a profit of $3,000. What is Ben's share of the profit for the month?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the total ratio:** \nThe total ratio representing the profit sharing is 5 + 3 = 8\n\n**2. Determine Ben's share proportion:**\nBen's share is represented by 3 parts out of the total 8 parts, so his proportion is 3/8.\n\n**3. Calculate Ben's profit share:**\nMultiply the total profit by Ben's profit proportion: ($3,000) * (3/8) = $1,125\n\n**Therefore, Ben's share of the profit for the month is $1,125.**",
+            "options": [
+                "$900",
+                "$1,125",
+                "$1,500",
+                "$1,875"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Alice and Bob decided to open a lemonade stand. Alice invested $40 and Bob invested $60.  Alice ran the stand for the first 2 weeks, and then Bob took over for the next 4 weeks.  They made a profit of $100.  How much of the profit should Alice receive if the profit is divided based on how long each partner ran the stand?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Determine the total time the stand was open:**\n   - Alice ran the stand for 2 weeks.\n   - Bob ran the stand for 4 weeks.\n   - Total time: 2 + 4 = 6 weeks\n\n**2. Calculate each person's share of time:**\n   - Alice: (2 weeks / 6 weeks) * 100% = 33.33%\n   - Bob: (4 weeks / 6 weeks) * 100% = 66.67%\n\n**3. Calculate each person's profit share:**\n   - Alice: 33.33% of $100 = $33.33\n   - Bob: 66.67% of $100 = $66.67\n\n**Therefore, Alice should receive $33.33 of the profit.**",
+            "options": [
+                "$33.33",
+                "$66.67",
+                "$40",
+                "$60"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Two partners, A and B, contribute to a business venture.  Partner A's investment is equivalent to 2 parts, while Partner B's investment is equivalent to 3 parts.  They decide to split their profits according to the ratio of their investments using the principles of allegation and mixture.  If the total profit for the year is $25,000, what is Partner B's share?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Determine the Ratio:**\n\n   * Partner A's investment ratio: 2 parts\n   * Partner B's investment ratio: 3 parts\n   * Total Ratio: 2 + 3 = 5 parts\n\n**2.  Calculate Partner B's Share Proportion:**\n\n   * Partner B's share proportion = (Partner B's ratio) / (Total ratio)\n   * Partner B's share proportion = 3 / 5\n\n**3. Calculate Partner B's Profit Share:**\n\n   * Partner B's profit = (Partner B's share proportion) * (Total Profit)\n   * Partner B's profit = (3/5) * $25,000 = $15,000\n\n**Therefore, Partner B's share of the profit is $15,000.**",
+            "options": [
+                "$10,000",
+                "$12,500",
+                "$15,000",
+                "$17,500"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**difficulty**: Easy 6/10\n**type**: Calculation\n**description**: Ram and Shyam enter into a simple partnership. Ram invests $8,000 for 9 months, while Shyam invests $6,000 for 5 months.  If the profits are to be shared in the ratio of their effective investments (capital multiplied by time), what is the profit-sharing ratio for Ram and Shyam?\n**task**: Calculate the profit sharing ratio for Ram and Shyam.\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Understanding Effective Investment**\n\nEffective investment takes into account both the amount of capital invested and the duration for which it was invested.  A higher capital invested for a longer time leads to a higher effective investment.\n\n**2. Calculating Effective Investment for Ram**\n\n* Ram's investment = $8,000\n* Ram's investment period = 9 months\n* Ram's effective investment = $8,000 * 9 = $72,000\n\n**3. Calculating Effective Investment for Shyam**\n\n* Shyam's investment = $6,000\n* Shyam's investment period = 5 months\n* Shyam's effective investment = $6,000 * 5 = $30,000\n\n**4. Determining the Profit-Sharing Ratio**\n\n* The ratio of their effective investments is 72,000:30,000\n* This ratio can be simplified to 12:5\n\n**Therefore, the profit-sharing ratio for Ram and Shyam is 12:5.**",
+            "options": [
+                "12:5",
+                "5:12",
+                "72,000:30,000",
+                "8:6"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**Question Type**: Word Problem\n**Scenario**: Three friends - Priya, Quentin, and Ryan - decide to open a food truck together. Priya invests $45,000, Quentin invests $30,000, and Ryan invests $25,000. At the end of the year, the food truck makes a profit of $24,000.  They decide to reinvest 50% of the profit back into the business and divide the remaining profit amongst themselves in the ratio of their initial investment.\n**Objective**: Calculate Ryan's total share of the profit after the reinvestment.\n**Difficulty Level**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Past Year Partnership Questions: Practicing Diverse Problem-Solving' category as it requires understanding profit sharing based on investment ratios and a reinvestment component. Here's a step-by-step solution:\n\n**1. Calculate the amount to be reinvested:** \n\n* Reinvestment amount = 50% of $24,000 = (50/100) * $24,000 = $12,000\n\n**2. Calculate the profit available for distribution:**\n\n* Profit for distribution = Total profit - Reinvestment amount \n* Profit for distribution = $24,000 - $12,000 = $12,000\n\n**3. Determine the ratio of their investments:**\n\n* Priya : Quentin : Ryan = $45,000 : $30,000 : $25,000 = 9 : 6 : 5\n\n**4. Calculate Ryan's share of the profit:**\n\n* Ryan's share = (Ryan's ratio share / Total ratio) * Profit for distribution\n* Ryan's share = (5 / 20) * $12,000 = $3,000 \n\n**Therefore, Ryan's total share of the profit after reinvestment is $3,000.**",
+            "options": [
+                "$3,000",
+                "$12,000",
+                "$4,500",
+                "$2,500"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: Partners Sarah and Emily operate a successful bakery, 'Sugar & Spice'.  Sarah's capital account balance is $80,000, while Emily's is $60,000. They currently split profits and losses evenly.\n**new_partner**: Their friend, Tom, is interested in joining the bakery. Tom wants to invest $70,000 and receive a 25% share of future profits.\n**instructions**: Based on Tom's desired profit share, determine the following: \n 1. Goodwill upon Tom's admission to 'Sugar & Spice'.\n 2.  The new capital balance for Sarah, Emily, and Tom.\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning: \n\nThis question is classified as 'easy' due to the straightforward calculation of goodwill and the clear relationship between Tom's desired profit share and his investment. Here's a step-by-step solution:\n\n**1. Calculate Tom's implied total capital balance:**\n\n* Tom wants a 25% share of profits, implying the total capital after his admission should reflect this proportion.\n* Calculation: $70,000 (Tom's investment) / 0.25 (Tom's desired profit share) = $280,000 (Total Implied Capital)\n\n**2.  Calculate Goodwill:**\n\n* Goodwill represents the excess of the implied total capital over the sum of existing capital and the new partner's investment.\n* Calculation: $280,000 (Total Implied Capital) - $80,000 (Sarah's Capital) - $60,000 (Emily's Capital) - $70,000 (Tom's Investment) = $70,000 (Goodwill)\n\n**3. Determine the adjusted capital balances:**\n\n* **Sarah:** $80,000 (Existing Capital) + ($70,000 (Goodwill) x 0.5 (Sarah's Profit Share)) = $115,000\n* **Emily:** $60,000 (Existing Capital) + ($70,000 (Goodwill) x 0.5 (Emily's Profit Share)) = $95,000\n* **Tom:** $70,000 (Investment) = $70,000 (Since his investment aligns with his profit share, he doesn't receive a portion of goodwill).\n\n**Therefore, the answer is:**\n\n* Goodwill: $70,000\n* Sarah's Adjusted Capital: $115,000\n* Emily's Adjusted Capital: $95,000\n* Tom's Adjusted Capital: $70,000 ",
+            "options": [
+                "140,000",
+                "70,000",
+                "115,000",
+                "95,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: Two friends, Priya and Amit, decided to start a business together. Priya invested \u20b945,000 and Amit invested \u20b960,000. They agreed to share the profits in the same ratio as their investments.\n**Question**: If the business made a profit of \u20b921,000 at the end of the year, what is Amit's share of the profit?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic 'Partnership and Ratio & Proportion: Solving Partnership Problems Using Ratios' as it requires calculating the profit share based on the investment ratio.\n\nHere's how to solve the problem:\n\n**Step 1: Calculate the ratio of investments.**\nPriya's investment : Amit's investment = \u20b945,000 : \u20b960,000\nSimplifying the ratio by dividing both sides by 15,000, we get 3:4.\n\n**Step 2: Determine Amit's share of the ratio.**\nThe total ratio representing their shares is 3 + 4 = 7\nAmit's share of the ratio is 4/7.\n\n**Step 3: Calculate Amit's share of the profit.**\nMultiply Amit's share of the ratio by the total profit:\n(4/7) * \u20b921,000 = \u20b912,000\n\nTherefore, Amit's share of the profit is \u20b912,000.\n\nThis step-by-step solution ensures that each calculation and logical deduction is mathematically sound and clearly explained, verifying the correctness of the final answer.",
+            "options": [
+                "\u20b910,500",
+                "\u20b912,000",
+                "\u20b99,000",
+                "\u20b915,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Partners X, Y, and Z started a business with capital investments of $40,000, $60,000, and $80,000 respectively. Their profit-sharing agreement dictates a ratio of 2:3:4. If the business generated a profit of $90,000 at the end of the year, calculate the difference between the profit shares of Partner Z and Partner X.",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the total ratio parts:**\n   The profit-sharing ratio is 2:3:4, totaling 2 + 3 + 4 = 9 parts.\n\n**2. Determine the value of one ratio part:**\n   Divide the total profit by the total ratio parts: $90,000 / 9 = $10,000 per ratio part.\n\n**3. Calculate Partner X's profit share:**\n   Partner X's ratio is 2 parts, so their share is 2 * $10,000 = $20,000.\n\n**4. Calculate Partner Z's profit share:**\n   Partner Z's ratio is 4 parts, so their share is 4 * $10,000 = $40,000.\n\n**5.  Find the difference between Partner Z's and Partner X's shares:**\n   $40,000 - $20,000 = $20,000\n\n**Therefore, the difference between the profit shares of Partner Z and Partner X is $20,000.**",
+            "options": [
+                "$10,000",
+                "$20,000",
+                "$30,000",
+                "$40,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Partners Sarah and Emily agreed to receive interest at 8% per annum on drawings exceeding $10,000 in a year. Sarah withdrew $2,000 at the beginning of each quarter and Emily withdrew $5,000 at the beginning of every half year. Calculate the total interest on drawings charged to Sarah and Emily at the end of the year.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate Sarah's total drawings:**\n   - Sarah withdraws $2,000 every quarter, and there are 4 quarters in a year. \n   - Total drawings = $2,000/quarter * 4 quarters/year = $8,000\n\n**2. Calculate Emily's total drawings:**\n   - Emily withdraws $5,000 every half year, and there are 2 half years in a year.\n   - Total drawings = $5,000/half year * 2 half years/year = $10,000\n\n**3. Determine drawings subject to interest:**\n   - Sarah's total drawings ($8,000) are less than $10,000, so she won't be charged interest.\n   - Emily's total drawings ($10,000) are exactly at the threshold, so she also won't be charged interest. \n\n**4. Calculate total interest on drawings:**\n   - Since neither Sarah nor Emily exceeded the $10,000 limit, the total interest on drawings is $0.\n\n**Therefore, the total interest on drawings charged to Sarah and Emily at the end of the year is $0.**",
+            "options": [
+                "$8,000",
+                "$10,000",
+                "$0",
+                "$18,000"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: Two friends, Liam and Noah, started a landscaping business. Liam is responsible for securing clients and managing the schedule, while Noah handles the physical landscaping work.\n**Contribution**: Liam secures a lucrative contract with a local business park, increasing their usual monthly revenue by 25%.\n**Profit**: Their profit for the month, after deducting expenses and Noah's fixed salary of $3,000, is $7,500.\n**Question**: If Liam and Noah agreed to split profits based on their contributions, how much of the $7,500 profit should Liam receive?\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down the solution:\n\n**1. Calculate the profit increase:**\n* We know Liam's efforts led to a 25% increase in revenue, directly translating to a 25% increase in profit.\n* Let 'x' be the original profit.  The increase is 0.25x.\n* The total profit this month is the original profit plus the increase: x + 0.25x = $7,500\n* Combining like terms: 1.25x = $7,500\n* Solving for x: x = $7,500 / 1.25 = $6,000 (This was the original profit before the increase)\n* The profit increase due to Liam is $7,500 - $6,000 = $1,500\n\n**2. Determine Liam's share:**\n* Liam deserves to be compensated for the additional $1,500 profit generated due to his efforts. \n* Since there's no predefined profit-sharing ratio, it's reasonable to assume Liam receives the entire $1,500.\n\n**3. Final Calculation:**\n* Liam's total share of the profit is $1,500. \n\nTherefore, Liam should receive $1,500 of the $7,500 profit.",
+            "options": [
+                "$1,500",
+                "$3,750",
+                "$6,000",
+                "$7,500"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Three friends, Alex, Blake, and Chris, decided to open a trendy food truck business.  They agreed to share profits and losses in proportion to their initial investments.  \n\nAlex, being the most cautious, invested $40,000 at the beginning of the year. Blake, excited about the venture, added $60,000 to the pot on April 1st.  Chris, initially hesitant, joined with $50,000 on July 1st.  \n\nAfter a booming year, their food truck generated a net profit of $75,000.  Their partnership agreement specifies a 8% annual interest on capital.  \n\nCalculate the interest on capital for each partner and determine how much of the profit remains to be shared based on their initial investment proportions.",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the time-weighted investment for each partner:**\n\n* **Alex:** Invested $40,000 for the full year (12 months) \n* **Blake:** Invested $60,000 for 9 months (April to December)\n* **Chris:** Invested $50,000 for 6 months (July to December)\n\n**2. Calculate the interest on capital for each partner:**\n\n* **Alex:**  $40,000 * 8% = $3,200\n* **Blake:** $60,000 * 8% * (9/12) = $3,600\n* **Chris:** $50,000 * 8% * (6/12) = $2,000\n\n**3. Calculate the total interest on capital:**\n\n* Total Interest = $3,200 + $3,600 + $2,000 = $8,800\n\n**4.  Calculate the remaining profit after deducting the interest on capital:**\n\n* Remaining Profit = $75,000 (Net Profit) - $8,800 (Total Interest) = $66,200\n\n**Therefore, the interest on capital for Alex, Blake, and Chris are $3,200, $3,600, and $2,000 respectively.  The remaining profit to be distributed according to their initial investment proportions is $66,200.**",
+            "options": [
+                "$3,200",
+                "$3,600",
+                "$2,000",
+                "$66,200"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**scenario**: Amit and Bijay started a business in partnership on 1st January 2022. Amit invested $20,000 initially, while Bijay invested $30,000. On 1st July 2022, Amit withdrew $5,000 from his investment. On 1st October 2022, Bijay added $10,000 to his investment. Their partnership agreement states that profits will be shared in the ratio of their effective capital invested for the time period. The profit for the year ended 31st December 2022 was $15,000. \n**question**: What is the difference between Amit's share of the profit and Bijay's share of the profit?\n**difficulty**: medium (5/10)\n",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem step-by-step:\n\n**1. Calculate Amit's Effective Capital:**\n\n* **Period 1:** $20,000 invested for 6 months (January to June)\n* **Period 2:** $15,000 invested for 6 months (July to December)\n\nAmit's effective capital = ($20,000 * 6) + ($15,000 * 6) = $210,000 for 1 month.\n\n**2. Calculate Bijay's Effective Capital:**\n\n* **Period 1:** $30,000 invested for 9 months (January to September)\n* **Period 2:** $40,000 invested for 3 months (October to December)\n\nBijay's effective capital = ($30,000 * 9) + ($40,000 * 3) = $390,000 for 1 month.\n\n**3. Determine the Profit Sharing Ratio:**\n\nAmit's effective capital : Bijay's effective capital = $210,000 : $390,000 = 7:13\n\n**4. Calculate Amit's Share of the Profit:**\n\nAmit's share = (7 / (7+13)) * $15,000 = $5,250\n\n**5. Calculate Bijay's Share of the Profit:**\n\nBijay's share = (13 / (7+13)) * $15,000 = $9,750\n\n**6. Find the Difference:**\n\nBijay's share - Amit's share = $9,750 - $5,250 = $4,500\n\n**Therefore, the difference between Amit's share of the profit and Bijay's share of the profit is $4,500.**",
+            "options": [
+                "$4,250",
+                "$4,500",
+                "$4,750",
+                "$5,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**scenario**: Three friends - Alex, Blake, and Charles - decide to open a food stall specializing in their favorite dishes. Alex, famous for his pasta, agrees to manage the supplies. Blake, the marketing guru, takes charge of promotions. Charles, a skilled cook, handles the cooking. They decide to share profits and losses based on their initial investments and the time they dedicate.\n**information**: Alex invests $5,000 and spends 4 hours daily at the stall. Blake invests $3,000 and dedicates 2 hours daily. Charles invests $2,000 but, being the chef, puts in 6 hours a day.  After a successful month, their profit is $4,500. They decide to allocate 40% of the profit based on investment proportion and 60% based on the ratio of their working hours.\n**question**: Calculate Charles's share of the profit for the month.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Partnership and Allegation & Mixture: Applications in Partnership Scenarios' as it combines the concepts of partnership, investment ratios, and work ratios to determine individual shares of profit. \n\nHere's how to solve the problem step-by-step:\n\n**Step 1: Calculate the profit share based on investment.**\n   * Total Investment = $5,000 + $3,000 + $2,000 = $10,000\n   * Alex's Investment Ratio = $5,000 / $10,000 = 1/2\n   * Blake's Investment Ratio = $3,000 / $10,000 = 3/10\n   * Charles's Investment Ratio = $2,000 / $10,000 = 1/5\n   * Profit allocated for investment = 40% of $4,500 = $1,800\n   * Charles's share based on investment = (1/5) * $1,800 = $360\n\n**Step 2: Calculate the profit share based on working hours.**\n   * Total work hours per day = 4 + 2 + 6 = 12 hours\n   * Alex's Work Ratio = 4 hours / 12 hours = 1/3\n   * Blake's Work Ratio = 2 hours / 12 hours = 1/6\n   * Charles's Work Ratio = 6 hours / 12 hours = 1/2\n   * Profit allocated for working hours = 60% of $4,500 = $2,700\n   * Charles's share based on work = (1/2) * $2,700 = $1,350\n\n**Step 3: Calculate Charles's total profit share.**\n   * Charles's Total Share = Share based on investment + Share based on work\n   * Charles's Total Share = $360 + $1,350 = $1,710\n\nTherefore, Charles's share of the profit for the month is $1,710.",
+            "options": [
+                "$1,500",
+                "$1,710",
+                "$1,350",
+                "$1,890"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Three individuals, Alex, Blake, and Charles, enter a partnership to launch a tech startup. Alex contributes 50% of the initial capital, Blake contributes 30%, and Charles, a silent partner, contributes the remaining 20%.  They agree to a profit-sharing ratio of 4:3:2 (Alex:Blake:Charles), with Blake guaranteed a minimum profit of $20,000. If the startup generates a profit of $100,000, how much profit will Blake receive?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Advanced Partnership Concepts: Guaranteed Profits, Hidden Partnerships' topic as it involves calculating profit distribution considering both a guaranteed profit and a hidden partner. Here's how to solve it: \n\n**1. Calculate Profit Shares Based on the Ratio:** \n\n* Total ratio parts: 4 + 3 + 2 = 9\n* One ratio part's value: $100,000 (profit) / 9 = $11,111.11 (approximately)\n* Alex's share (4 parts): $11,111.11 * 4 = $44,444.44\n* Blake's share (3 parts): $11,111.11 * 3 = $33,333.33 \n* Charles's share (2 parts): $11,111.11 * 2 = $22,222.22\n\n**2. Factor in Blake's Guaranteed Profit:**\n\n* Blake's calculated share ($33,333.33) is higher than his guaranteed profit of $20,000. Therefore, he receives his calculated share.\n\n**3. Final Profit Distribution:**\n\n* Alex: $44,444.44\n* Blake: $33,333.33\n* Charles: $22,222.22 \n\nTherefore, Blake will receive $33,333.33 in profit.",
+            "options": [
+                "$20,000",
+                "$33,333.33",
+                "$44,444.44",
+                "$22,222.22"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Partners, Liam and Sophia, operate a successful bakery. Liam, deciding to pursue other ventures, retires and sells his partnership interest to Sophia.  Their profit-sharing ratio is 6:4 (Liam:Sophia). The partnership agreement dictates that goodwill be recognized on retirement based on 3 years' worth of the retiring partner's average share of profits.  The bakery's average net profit for the past three years is $80,000.  Given this information, what is the value of goodwill credited to Liam's capital account upon his retirement?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem step-by-step:\n\n**1. Calculate Liam's Average Profit Share:**\n\n* Liam's profit share ratio is 6/(6+4) = 0.6\n* Liam's average annual profit share: 0.6 * $80,000 = $48,000\n\n**2. Calculate Total Goodwill:**\n\n* Goodwill is valued based on 3 years of Liam's average profit share: 3 * $48,000 = $144,000\n\n**3. Determine Liam's Goodwill Credit:**\n\n* Since Liam is the retiring partner, the entire goodwill amount is credited to his capital account: $144,000\n\n**Therefore, the value of goodwill credited to Liam's capital account upon his retirement is $144,000.** ",
+            "options": [
+                "$72,000",
+                "$96,000",
+                "$144,000",
+                "$216,000"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Maya and Zara decide to open a fashion boutique. Maya invests $40,000 initially and Zara contributes $30,000. After 6 months, Maya increases her investment by adding another $10,000. At the end of the year, the boutique makes a profit of $25,000. To determine a fair distribution of profits based on their investments and the duration of those investments,  what ratio should be used to divide the profit between Maya and Zara?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to determine the profit-sharing ratio between Maya and Zara:\n\n**1. Calculate Maya's Investment:**\n\n* Maya invests $40,000 for the first 6 months (0.5 years). \n* She then adds $10,000, bringing her total to $50,000 for the remaining 6 months (0.5 years). \n\n**2. Calculate Maya's Weighted Investment:**\n\n* Investment for the first 6 months: $40,000 * 0.5 years = $20,000 (weighted investment)\n* Investment for the next 6 months: $50,000 * 0.5 years = $25,000 (weighted investment)\n* Total Weighted Investment for Maya: $20,000 + $25,000 = $45,000 \n\n**3. Calculate Zara's Weighted Investment:**\n\n* Zara invests $30,000 for the entire year (1 year).\n* Total Weighted Investment for Zara: $30,000 * 1 year = $30,000\n\n**4. Determine the Profit-Sharing Ratio:**\n\n* Maya's Weighted Investment : Zara's Weighted Investment\n* $45,000 : $30,000\n* This ratio can be simplified by dividing both sides by 15,000, resulting in a ratio of 3:2.\n\n**Therefore, the profit should be divided between Maya and Zara in the ratio of 3:2.**",
+            "options": [
+                "1:1",
+                "3:2",
+                "4:3",
+                "2:1"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: Partners, X, Y, and Z, decide to run a venture together. X, a silent partner, invests 40% of the capital but chooses to remain hidden. Y invests 30% and manages the operations, receiving a 10% share of the profit for his efforts. Z invests the remaining capital. After a year, the venture yields a profit of $50,000. However, a previously unknown agreement between X and Z surfaces, revealing that Z is guaranteed 20% of the total profit, with any shortfall being covered by X from his share.\n**Question**: Determine the final profit share for each partner, accounting for the hidden agreement and Y's management fee.\n**Difficulty Level**: Medium (6/10)\n",
+            "difficulty": "medium",
+            "reasoning": "This question delves into the intricacies of hidden partnerships and guaranteed profit arrangements. Here's a breakdown:\n\n**1. Initial Profit Distribution:**\n\n* **Y's Management Fee:** Y receives 10% of $50,000 = $5,000. \n* **Remaining Profit:** $50,000 - $5,000 = $45,000\n\n**2. Profit Share Based on Investment:**\n\n* **X:** 40% of $45,000 = $18,000\n* **Y:** 30% of $45,000 = $13,500\n* **Z:** 30% of $45,000 = $13,500\n\n**3.  Factoring in Z's Guaranteed Profit:**\n\n* **Z's Guaranteed Amount:** 20% of $50,000 = $10,000\n* **Shortfall:** $10,000 - $13,500 = -$3,500 (Z is actually exceeding his guarantee)\n\n**4. Adjusting X's Share:**\n\nSince Z is exceeding his guaranteed profit, there's no need for X to cover any shortfall.  \n\n**5. Final Profit Distribution:**\n\n* **X:** $18,000 \n* **Y:** $13,500 + $5,000 (management fee) = $18,500\n* **Z:** $13,500 \n\nTherefore, the final profit share for X, Y, and Z is $18,000, $18,500, and $13,500 respectively.",
+            "options": [
+                "$18,000",
+                "$18,500",
+                "$13,500",
+                "$10,000"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**scenario**: Three friends - Alex, Ben, and Charles - decide to open a food truck business. They form a compound partnership with the following investment and profit-sharing structure:\n**information**:  - Alex invests $40,000 for the first 6 months, then increases his investment to $50,000 for the remainder of the year. \n - Ben invests $30,000 for the entire year. \n - Charles joins later and invests $50,000 for the last 4 months of the year. \n\nTheir profit-sharing agreement is based on a combination of investment amount and time invested.\n**question**: At the end of the year, the food truck business generates a profit of $65,000. Calculate Charles's share of the profit.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the 'Fundamentals of Partnerships: Types (Simple, Compound), Profit Sharing Ratios' subtopic within 'Quants - Partnership'. It's classified as medium difficulty due to the need to calculate profit shares in a compound partnership involving varying investment durations. \n\nHere's how to solve it:\n\n**Step 1: Calculate the investment-month units for each partner.**\n   - Alex: ($40,000 x 6 months) + ($50,000 x 6 months) = 240,000 + 300,000 = 540,000 investment-month units\n   - Ben: $30,000 x 12 months = 360,000 investment-month units\n   - Charles: $50,000 x 4 months = 200,000 investment-month units\n\n**Step 2: Calculate the total investment-month units.**\n   - Total: 540,000 + 360,000 + 200,000 = 1,100,000 investment-month units\n\n**Step 3: Determine Charles's profit share proportion.**\n   - Charles's share: (200,000 / 1,100,000) = 2/11\n\n**Step 4:  Calculate Charles's profit.**\n   - Charles's profit: (2/11) * $65,000 = $11,818.18 (approximately)\n\nTherefore, Charles's share of the profit is approximately $11,818.18.",
+            "options": [
+                "$12,000",
+                "$11,818.18",
+                "$10,000",
+                "$15,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Sarah and Emily decided to open a bakery together. Sarah invested $40,000, while Emily invested $60,000.  Despite their different initial investments, they agreed to split the profits 60/40, with Sarah receiving the larger share. At the end of the year, the bakery made a profit of $50,000.  What is the difference between the amount Sarah receives and the amount she would have received if the profits were split proportionally to their initial investments?",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate Sarah's profit share based on the agreed ratio:**\n\n* Sarah's share = (60/100) * $50,000 = $30,000\n\n**2. Calculate Sarah's profit share based on capital investment:**\n\n* Total investment = $40,000 + $60,000 = $100,000\n* Sarah's investment ratio = $40,000 / $100,000 = 0.4\n* Sarah's capital-based profit share = 0.4 * $50,000 = $20,000\n\n**3.  Calculate the difference:**\n\n* Difference = $30,000 - $20,000 = $10,000\n\n**Therefore, the difference between Sarah's agreed-upon profit share and her capital-based profit share is $10,000.**",
+            "options": [
+                "$20,000",
+                "$10,000",
+                "$30,000",
+                "$40,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: Partners Alex, Ben, and Charles operate a successful software development firm, sharing profits and losses in a 5:3:2 ratio, respectively. Sadly, Charles passed away unexpectedly. The partnership agreement outlines that a deceased partner's share will be calculated based on their capital balance plus their share of goodwill. The goodwill is determined using the average of the last three years' profits, multiplied by 2.  \n**Task**: Determine the total amount payable to Charles' estate, considering his capital balance and share of goodwill.\n**Additional Information**: The partnership's profits for the past three years were: Year 1 - $150,000, Year 2 - $200,000, Year 3 - $250,000. Charles' capital balance at the time of his death was $120,000.\n",
+            "difficulty": "medium",
+            "reasoning": "**1. Calculate the average profit:** \n\n* Add the profits from the last three years: $150,000 + $200,000 + $250,000 = $600,000 \n* Divide the total profit by 3 to find the average: $600,000 / 3 = $200,000\n\n**2. Calculate the Partnership's Goodwill:**\n\n* Multiply the average profit by 2: $200,000 * 2 = $400,000\n\n**3. Calculate Charles' Share of Goodwill:**\n\n* Charles' profit-sharing ratio is 2 out of a total of 10 (5 + 3 + 2).\n* Calculate his share of the goodwill: $400,000 * (2/10) = $80,000\n\n**4. Calculate the Total Amount Payable to Charles' Estate:**\n\n* Add Charles' capital balance and his share of the goodwill: $120,000 + $80,000 = $200,000\n\n**Therefore, the total amount payable to Charles' estate is $200,000.**",
+            "options": [
+                "$120,000",
+                "$400,000",
+                "$200,000",
+                "$80,000"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Partners Sarah and John agreed to the following drawing terms for the year: \n- Sarah draws $2,000 at the beginning of each month. \n- John draws $3,000 at the end of each quarter. \n\nThe partnership agreement stipulates a 5% annual interest rate on drawings, calculated based on the average balance throughout the year.  Determine the total interest charged on drawings for both Sarah and John. ",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question falls under the 'Drawings and Interest on Drawings: Understanding Regular and Irregular Withdrawals' topic because it involves calculating interest on drawings made at different frequencies throughout the year.  The 'medium' difficulty stems from requiring an understanding of average balance calculations for interest on drawings, which is a step above simple interest scenarios. \n\nHere's how to solve it:\n\n**1. Calculate Sarah's Interest:**\n* **Monthly Drawings:** $2,000\n* **Annual Drawings:** $2,000 * 12 = $24,000\n* **Since drawings are at the beginning of each month, consider the full amount for the entire year for interest calculation.**\n* **Average Balance:** $24,000 \n* **Interest on Sarah's Drawings:** $24,000 * 0.05 = $1,200\n\n**2. Calculate John's Interest:**\n* **Quarterly Drawings:** $3,000\n* **Annual Drawings:** $3,000 * 4 = $12,000\n* **To find the average balance, consider a weighted average approach as the withdrawals are done quarterly.**\n* **Assume each quarter has 3 months. Since John withdraws at the END of each quarter, his first withdrawal will accrue interest for 9 months (12 - 3), the second for 6 months, and so on.**\n* **Average Balance:** [($9,000 * 9) + ($9,000 * 6) + ($9,000 * 3) + ($9,000 * 0)] / 12 = $5,625 \n* **Interest on John's Drawings:** $5,625 * 0.05 = $281.25\n\n**3. Calculate Total Interest:**\n* **Total Interest:** $1,200 + $281.25 = $1,481.25 \n\nTherefore, the total interest charged on drawings for both Sarah and John is $1,481.25",
+            "options": [
+                "$1,481.25",
+                "$1,200",
+                "$1,500",
+                "$281.25"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Partners Alex, Blake, and Chris operate a successful design firm.  Their initial capital contributions on January 1st were as follows: \n*Alex: $60,000\n*Blake: $40,000\n*Chris: $50,000\n\nThe partnership agreement specifies a 6% annual interest rate on capital.  However, due to a lucrative project, Blake invests an additional $20,000 on July 1st of the same year.  Calculate the total interest on capital to be credited to each partner at the end of the year.",
+            "difficulty": "hard",
+            "reasoning": "This question is tricky because it involves calculating interest on capital for different time periods within a single year. Here's a step-by-step solution:\n\n**1. Calculate Interest for Alex and Chris (Full Year):**\n* Alex's Interest: $60,000 * 6% = $3,600\n* Chris's Interest: $50,000 * 6% = $3,000\n\n**2. Calculate Interest for Blake (Two Periods):**\n* Period 1 (Jan 1st - June 30th): $40,000 * 6% * (6/12) = $1,200\n* Period 2 (July 1st - Dec 31st): $60,000 * 6% * (6/12) = $1,800\n* Blake's Total Interest: $1,200 + $1,800 = $3,000\n\n**Therefore, the interest credited to each partner is:**\n* **Alex: $3,600**\n* **Blake: $3,000**\n* **Chris: $3,000**",
+            "options": [
+                "$3,600",
+                "$3,000",
+                "$3,900",
+                "$4,200"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Three friends, Aarav,  Ishaan, and Neel, decided to open a food truck together. Aarav, being the business-minded one, invested \u20b960,000. Ishaan, a fantastic chef, contributed his culinary skills and invested \u20b940,000. Neel, the social media expert, invested \u20b920,000 and took charge of marketing.  They agreed to share profits based on a ratio that reflected their diverse contributions. Aarav would receive 3 shares, Ishaan 2 shares, and Neel 1 share of the profit. In the first year, their innovative concept was a hit, and they earned a profit of \u20b966,000.  Calculate the difference between the profit earned by Aarav and the profit earned by Neel.",
+            "difficulty": "hard",
+            "reasoning": "**Understanding the Problem:**\nThe problem involves a partnership where the profit-sharing ratio (3:2:1) differs from the capital investment ratio (6:4:2). We need to determine the difference in profit earned by Aarav and Neel.\n\n**Step 1: Calculate the Total Ratio Parts**\nThe total ratio parts representing their profit sharing are 3 + 2 + 1 = 6\n\n**Step 2: Determine the Value of One Ratio Part**\nDivide the total profit by the total ratio parts: \u20b966,000 / 6 = \u20b911,000 per ratio part\n\n**Step 3: Calculate Aarav's Profit Share**\nMultiply Aarav's ratio (3 parts) by the value of one ratio part: 3 * \u20b911,000 = \u20b933,000\n\n**Step 4: Calculate Neel's Profit Share**\nMultiply Neel's ratio (1 part) by the value of one ratio part: 1 * \u20b911,000 = \u20b911,000\n\n**Step 5: Find the Difference Between Aarav's and Neel's Profit**\nSubtract Neel's profit from Aarav's profit: \u20b933,000 - \u20b911,000 = \u20b922,000\n\n**Answer:** The difference between the profit earned by Aarav and Neel is \u20b922,000.",
+            "options": [
+                "\u20b920,000",
+                "\u20b922,000",
+                "\u20b933,000",
+                "\u20b911,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Three friends, Alex, Ben, and Carl, decide to open a food truck together.  Alex manages the sourcing and logistics, contributing his expertise for the first 6 months but doesn't invest any money. Ben handles the cooking, investing $12,000 initially and an additional $3,000 after 4 months. Carl takes care of marketing and sales, investing $18,000 upfront.  They agree that 20% of the profit will be distributed equally to acknowledge their combined effort, and the remaining 80% will be split according to their capital investment and time.  If the food truck makes a profit of $30,000 at the end of the year, how much does Ben receive?",
+            "difficulty": "hard",
+            "reasoning": "Here's how we can solve this problem step-by-step:\n\n**1. Calculate the profit for distribution based on investment:**\n\n* Total profit: $30,000\n* Profit for equal distribution (20%): $30,000 * 0.20 = $6,000\n* Profit for distribution based on investment (80%): $30,000 * 0.80 = $24,000\n\n**2. Calculate the weighted investment for each partner:**\n\n* Alex: Alex's contribution is his expertise, not capital, so his weighted investment is 0 for the profit-sharing calculation.\n* Ben: ($12,000 * 12 months) + ($3,000 * 8 months) = $144,000 + $24,000 = $168,000\n* Carl: $18,000 * 12 months = $216,000 \n\n**3. Calculate the profit share for each partner based on investment:**\n\n* Total weighted investment: $168,000 (Ben) + $216,000 (Carl) = $384,000\n* Ben's profit share: ($168,000 / $384,000) * $24,000 = $10,500\n* Carl's profit share: ($216,000 / $384,000) * $24,000 = $13,500\n\n**4.  Calculate Ben's total earnings:**\n\n* Equal share of profit: $6,000 / 3 partners = $2,000\n* Ben's total earnings: $10,500 (investment share) + $2,000 (equal share) = $12,500\n\n**Therefore, Ben receives $12,500 of the profit.**",
+            "options": [
+                "$10,500",
+                "$12,500",
+                "$13,500",
+                "$15,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Three friends, Alex, Ben, and Charles, decided to pool their resources and start a food truck business. Alex, being the culinary enthusiast, invested $12,000 and dedicated 5 hours a day to the venture. Ben, the marketing guru, brought in $18,000 and handled promotions for 3 hours daily.  Charles, the logistics expert, invested $15,000 and managed operations for 4 hours a day.\n\nAfter a successful year, their food truck generated a profit of $24,000. However, they agreed to divide the profits in two parts:\n\n* **Part 1:**  40% of the profit will be divided in the ratio of their invested capital. \n* **Part 2:**  60% of the profit will be divided in proportion to the product of their capital invested and the number of hours worked daily.\n\nCalculate Ben's total share of the profit.",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the category of 'Past Year Partnership Questions: Practicing Diverse Problem-Solving' as it involves a complex profit-sharing scenario that goes beyond simple ratios. It requires the student to calculate ratios, proportions, and weighted averages, demonstrating a deep understanding of partnership concepts.\n\nHere's a step-by-step solution:\n\n**Step 1: Calculate the profit share for Part 1**\n\n* Total capital invested = $12,000 + $18,000 + $15,000 = $45,000\n* Alex's capital ratio = $12,000 / $45,000 = 4/15\n* Ben's capital ratio = $18,000 / $45,000 = 6/15\n* Charles's capital ratio = $15,000 / $45,000 = 5/15\n* Profit allocated for Part 1 = 40/100 * $24,000 = $9,600\n* Ben's share in Part 1 = (6/15) * $9,600 = $3,840\n\n**Step 2: Calculate the profit share for Part 2**\n\n* Alex's weighted contribution = $12,000 * 5 hours = 60,000\n* Ben's weighted contribution = $18,000 * 3 hours = 54,000\n* Charles's weighted contribution = $15,000 * 4 hours = 60,000\n* Total weighted contribution = 60,000 + 54,000 + 60,000 = 174,000\n* Profit allocated for Part 2 = 60/100 * $24,000 = $14,400\n* Ben's share in Part 2 = (54,000 / 174,000) * $14,400 = $4,495.40 (approximately)\n\n**Step 3: Calculate Ben's total profit share**\n\n* Ben's total share = Ben's share in Part 1 + Ben's share in Part 2 \n* Ben's total share = $3,840 + $4,495.40 = $8,335.40 (approximately)\n\nTherefore, Ben's total share of the profit is approximately $8,335.40.",
+            "options": [
+                "$8,335.40",
+                "$7,840",
+                "$9,600",
+                "$10,000"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Alex, Ben, and Charles were partners in a textile manufacturing business called 'ABC Fabrics,' sharing profits and losses in the ratio of 4:3:2.  Tragically, Alex passed away on March 31st, 2023. The partnership agreement, drafted in 2018,  stipulated the following in the event of a partner's death:\n\n1. **Goodwill:**  Valued at 3 years' average of the previous 4 years' profits.\n2. **Patents:** Valued at cost, being amortized at 10% per annum on the straight-line method. \n3. **Profits Accrued:** Deceased partner's share of profit from the beginning of the financial year (April 1st) until the date of death is to be calculated based on the average profits of the preceding two years.\n\n**Additional Information:**\n\n* The firm's financial year runs from April 1st to March 31st.\n* Profits for the past four years were: \n    * 2019-20: $120,000\n    * 2020-21: $150,000\n    * 2021-22: $180,000\n    * 2022-23: $200,000\n* The cost of patents on April 1st, 2022, was $60,000\n\nCalculate the total amount due to Alex's estate by ABC Fabrics.",
+            "difficulty": "hard",
+            "reasoning": "This question is tricky because it requires a multi-step calculation process and understanding different aspects of partnership accounting. Here's how to break it down:\n\n**1. Goodwill Calculation:**\n\n* **Average Profits (Past 3 Years):**  ($150,000 + $180,000 + $200,000) / 3 = $176,666.67\n* **Goodwill:** $176,666.67 * 3 = $530,000\n* **Alex's Share of Goodwill:** $530,000 * (4/9) = $235,555.56\n\n**2. Patents Calculation:**\n\n* **Depreciation for 2022-23:** $60,000 * (10/100) = $6,000 \n* **Book Value of Patents on March 31st, 2023:** $60,000 - $6,000 = $54,000\n* **Alex's Share of Patents:** $54,000 * (4/9) = $24,000\n\n**3. Profits Accrued Calculation:**\n\n* **Average Profit (2021-22 & 2022-23):** ($180,000 + $200,000) / 2 = $190,000\n* **Alex's Share of Average Profit:** $190,000 * (4/9) = $84,444.44\n* **Alex's Share of Profit till March 31st, 2023:** $84,444.44 * (12/12) = $84,444.44 (Since he was a partner for the entire year)\n\n**4. Total Amount Due to Alex's Estate:**\n\n* **Total:** $235,555.56 (Goodwill) + $24,000 (Patents) + $84,444.44 (Profit Share) = $344,000\n\nTherefore, the total amount due to Alex's estate by ABC Fabrics is $344,000.",
+            "options": [
+                "$344,000",
+                "$300,000",
+                "$400,000",
+                "$350,000"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "Three partners, Alex, Blake, and Chloe, establish a software development company. Alex, being the most experienced, contributes $150,000 as initial capital. Blake brings in $100,000 at the start. Chloe, still completing her degree, joins with $50,000 initially but promises an additional investment later. After six months, seeing the company's potential, Chloe injects another $100,000. However, a year into the operation, Blake needs liquidity and decides to withdraw $20,000 from his capital.  \n\nTheir profit-sharing agreement is based on a weighted average capital contribution, calculated quarterly. The weights are as follows: \n- Q1: 1\n- Q2: 2 \n- Q3: 3\n- Q4: 4\n\nIf the company makes a profit of $80,000 at the end of the first year, what will be Chloe's share?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the 'Capital Contributions: Initial, Additional, and Varying Capital' subtopic of 'Quants - Partnership'. It's tricky (8/10) because: \n\n1. **Varying Time Periods:**  Capital investments and withdrawals happen at different times (initially, after six months, after a year). \n2. **Complex Profit Sharing Ratios:** The profit-sharing depends on a weighted average capital contribution calculated *quarterly*, making it more complex than simple ratios.\n3. **Capital Adjustments:**  Chloe adds capital, while Blake withdraws, requiring adjustments in their respective capital calculations.\n4. **Multiple Calculations:** The solution involves numerous steps: calculating weighted average capital for each partner per quarter, then for the entire year, and finally determining individual profit shares. \n\n**Here's a step-by-step solution:**\n\n**1. Calculate Weighted Average Capital for each Partner per Quarter:**\n\n* **Alex:**\n    - Remains constant at $150,000 throughout the year.\n* **Blake:**\n    - Q1 & Q2: $100,000 \n    - Q3 & Q4: $80,000 (after withdrawal)\n* **Chloe:**\n    - Q1 & Q2: $50,000\n    - Q3 & Q4: $150,000 (after additional investment)\n\n**2. Calculate Weighted Average Capital for the entire year:**\n\n* **Alex:**  ((150,000 * 1) + (150,000 * 2) + (150,000 * 3) + (150,000 * 4)) / (1+2+3+4) = $150,000\n* **Blake:**  ((100,000 * 1) + (100,000 * 2) + (80,000 * 3) + (80,000 * 4)) / (1+2+3+4) = $88,000\n* **Chloe:**  ((50,000 * 1) + (50,000 * 2) + (150,000 * 3) + (150,000 * 4)) / (1+2+3+4) = $110,000 \n\n**3. Calculate Profit Share Percentages:**\n\n* **Total Weighted Average Capital:** $150,000 + $88,000 + $110,000 = $348,000\n* **Alex:** ($150,000 / $348,000) * 100% = 43.10%\n* **Blake:** ($88,000 / $348,000) * 100% = 25.29%\n* **Chloe:** ($110,000 / $348,000) * 100% = 31.61%\n\n**4. Determine Individual Profit Shares:**\n\n* **Alex:** 43.10% of $80,000 = $34,480\n* **Blake:** 25.29% of $80,000 = $20,232\n* **Chloe:** 31.61% of $80,000 = $25,288 \n\n**Therefore, Chloe's share of the profit is $25,288.**",
+            "option and correct options": {
+                "A": "$20,000",
+                "B": "$23,520",
+                "C": "$25,288",
+                "D": "$26,667",
+                "correct_option": "C"
+            },
+            "options": [
+                "$20,000",
+                "$23,520",
+                "$25,288",
+                "$26,667"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "Three friends, Liam, Noah, and Oliver, decided to pool their resources and open a food truck specializing in gourmet grilled cheese sandwiches. Liam, excited about the venture, invested $15,000 for the entire year. Noah, a bit more cautious, invested $20,000 but only for the first nine months.  Oliver, always the entrepreneur, invested $10,000 initially, but seeing the demand, added another $5,000 at the beginning of the fourth month.  At the end of the year, after deducting all expenses, the food truck had earned a profit of $31,500.  To ensure a fair division, they agreed their profit share should be proportional to their investment amount and the duration for which it was invested.  Determine Noah's share of the profit.",
+            "difficulty": "medium",
+            "reasoning": "Here's how to break down Noah's profit share:\n\n**1. Calculate the investment-duration units:**\n   - **Liam:** $15,000 x 12 months = 180,000 investment-duration units\n   - **Noah:** $20,000 x 9 months = 180,000 investment-duration units\n   - **Oliver:** ($10,000 x 3 months) + ($15,000 x 9 months) = 165,000 investment-duration units \n\n**2. Calculate the total investment-duration units:**\n   180,000 + 180,000 + 165,000 = 525,000 investment-duration units\n\n**3. Determine Noah's profit share percentage:**\n   (Noah's investment-duration units / Total investment-duration units) x 100\n   (180,000 / 525,000) x 100 = 34.29%\n\n**4. Calculate Noah's profit share:**\n   (Noah's profit share percentage / 100) x Total profit\n   (34.29 / 100) x $31,500 = $10,800\n\n**Therefore, Noah's share of the profit is $10,800.**",
+            "options": [
+                "$10,000",
+                "$10,800",
+                "$12,000",
+                "$15,000"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Partners Alex and Blair decided to start a textile business together, officially establishing their partnership on January 1st. Alex contributed $60,000 in initial capital, while Blair brought in $40,000. Their partnership agreement stipulated that they would share profits and losses in the ratio of their initial capital contributions.  To support their living expenses, the partners agreed to a drawing plan with an interest rate of 5% per annum on drawings: \n\n* **Alex:** Withdraws $1,000 at the beginning of each month.\n* **Blair:** Makes a single withdrawal of $12,000 sometime during the year. \n\nAt the end of the year, after deducting the interest on drawings from the total profit, the remaining profit available for distribution is $33,900.  What was the total profit for the year before the interest on drawings was deducted?",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\nThis question is tricky because it combines regular and irregular drawings with a two-step calculation.  We need to determine the interest charged on both partners' drawings, work backwards from the final distributable profit to find the total profit before interest deduction. Here's the step-by-step solution: \n\n**1. Calculate Alex's Interest on Drawings:**\n* Alex withdraws $1,000 at the beginning of each month, totaling $1,000 * 12 = $12,000 for the year. \n* Since he withdraws at the beginning of each month, we can assume his money was used for the entire year. \n* Interest on Alex's drawings = $12,000 * 5/100 = $600\n\n**2.  Calculate Blair's Interest on Drawings:**\n* Blair withdraws $12,000 once, but we don't know the exact date.\n* To calculate the maximum possible interest, let's assume Blair withdrew the money at the beginning of the year. \n* Interest on Blair's drawings (maximum) = $12,000 * 5/100 = $600 \n\n**3. Calculate Total Interest on Drawings:**\n* Total interest on drawings = $600 (Alex) + $600 (Blair) = $1,200\n\n**4. Calculate Total Profit Before Interest Deduction:**\n* We know the profit after interest deduction is $33,900\n* Total profit = Profit after interest deduction + Total interest on drawings\n* Total profit = $33,900 + $1,200 = $35,100\n\nTherefore, the partnership's total profit for the year before deducting the interest on drawings was $35,100.  It's important to note that this calculation assumes Blair made her withdrawal at the beginning of the year. If she withdrew the funds later in the year, the total interest on drawings, and therefore the total profit, would be slightly lower.",
+            "options": [
+                "$34,300",
+                "$35,100",
+                "$36,000",
+                "$33,900"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Partnership",
+    "exam_id": 10,
+    "order": 9
+}

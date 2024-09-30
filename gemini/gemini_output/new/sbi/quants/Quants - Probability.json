@@ -1,0 +1,481 @@
+{
+    "questions": [
+        {
+            "question": "**scenario**: A bag contains 4 red marbles and 6 blue marbles. A marble is drawn at random and then replaced. Then, a second marble is drawn.\n**question**: What is the probability that the first marble drawn is red and the second marble drawn is blue?\n**difficulty**: easy\n",
+            "difficulty": "easy",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Probability of drawing a red marble:**\n* There are 4 red marbles and 10 total marbles.\n* The probability of drawing a red marble is 4/10.\n\n**2. Probability of drawing a blue marble after replacement:**\n* Since the first marble is replaced, the total number of marbles remains 10.\n* There are 6 blue marbles.\n* The probability of drawing a blue marble is 6/10.\n\n**3. Applying the multiplication rule for independent events:**\n* The events of drawing a red marble and then a blue marble (after replacement) are independent because the outcome of the first event doesn't affect the outcome of the second event.\n* To find the probability of both events happening, we multiply the probabilities of each individual event.\n\n**Calculation:**\n (4/10) * (6/10) = 24/100 = 6/25\n\n**Therefore, the probability of drawing a red marble followed by a blue marble is 6/25.**",
+            "options": [
+                "1/5",
+                "3/5",
+                "6/25",
+                "1/4"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A baker sells cookies in boxes of 12.  He knows that 1 in every 20 cookies he bakes tends to crumble. What is the approximate probability that a randomly selected box will contain exactly one crumbled cookie?",
+            "difficulty": "easy",
+            "reasoning": "This problem can be solved using the Poisson distribution because we're dealing with the probability of a rare event (a crumbled cookie) happening a certain number of times (once) within a fixed interval (a box of 12 cookies).\n\nHere's how to break down the solution:\n\n1. **Identify the parameters:**\n    *  \u03bb (lambda) - the average number of events in the given interval. Since 1 in 20 cookies crumble, in a box of 12, we'd expect \u03bb = 12/20 = 0.6 crumbled cookies.\n    *  x - the specific number of events we're interested in (in this case, x = 1 crumbled cookie).\n\n2. **Apply the Poisson formula:**\n    *  P(X = x) = (e^-\u03bb * \u03bb^x) / x!\n    *  P(X = 1) = (e^-0.6 * 0.6^1) / 1! \n    *  P(X = 1) \u2248 (0.5488 * 0.6) / 1 \n    *  P(X = 1) \u2248 0.3293\n\nTherefore, the approximate probability of finding exactly one crumbled cookie in a box is about 0.3293, or about 32.93%. ",
+            "options": [
+                "0.15",
+                "0.6",
+                "0.3293",
+                "32.93%"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**question_description**: A financial analyst is assessing the risk of a portfolio consisting of two stocks. Stock A has a 10% probability of losing 5% of its value in a month, a 50% probability of gaining 2%, and a 40% probability of remaining unchanged. Stock B has a 20% probability of losing 8%, a 30% probability of gaining 4%, and a 50% probability of remaining unchanged. Assuming the stock movements are independent, what is the probability that both stocks will experience losses in the same month?\n**options**: \n  - 2%\n  - 8%\n  - 10%\n  - 18%\n**correct_option**: 2%\n",
+            "difficulty": "easy",
+            "reasoning": "This question assesses the understanding of basic probability concepts, specifically the calculation of joint probabilities of independent events, within the context of portfolio risk assessment. \n\n**Step-by-step solution:**\n1. **Identify the probabilities of individual events:**\n    - Probability of Stock A losing value: 10%\n    - Probability of Stock B losing value: 20%\n2. **Apply the concept of independent events:** Since the stock movements are assumed to be independent, the probability of both events happening is found by multiplying the probabilities of each event.\n3. **Calculate the joint probability:** \n    - Probability (Stock A loses AND Stock B loses) = Probability (Stock A loses) * Probability (Stock B loses) = 10% * 20% = 2%\n\nTherefore, the probability of both stocks experiencing losses in the same month is 2%. ",
+            "options": [
+                "2%",
+                "8%",
+                "10%",
+                "18%"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A survey is conducted in a city to understand the preference for two newspapers: \"The Daily Times\" and \"The Morning Chronicle.\" It's found that 65% of the population reads \"The Daily Times,\" 45% reads \"The Morning Chronicle,\" and 25% read both newspapers.\n**question**: What is the probability that a randomly selected person from the city reads either \"The Daily Times\" or \"The Morning Chronicle\"?\n",
+            "difficulty": "easy",
+            "reasoning": "This question assesses the understanding of calculating probabilities from a joint probability distribution table. Here's how to solve it:\n\n**1. Define the Events:**\n\n* Let 'D' represent the event of a person reading \"The Daily Times.\"\n* Let 'C' represent the event of a person reading \"The Morning Chronicle.\"\n\n**2.  Given Probabilities:**\n\n* P(D) = 0.65 (Probability of reading The Daily Times)\n* P(C) = 0.45 (Probability of reading The Morning Chronicle)\n* P(D \u2229 C) = 0.25 (Probability of reading both)\n\n**3. Formula for Union of Events:**\n\nWe need to find P(D \u222a C), the probability of a person reading either newspaper.  We can use the formula:\n\nP(D \u222a C) = P(D) + P(C) - P(D \u2229 C)\n\n**4. Calculation:**\n\nP(D \u222a C) = 0.65 + 0.45 - 0.25 = 0.85\n\n**Therefore, the probability that a randomly selected person reads either \"The Daily Times\" or \"The Morning Chronicle\" is 0.85 or 85%.**",
+            "options": [
+                "0.85",
+                "85%",
+                "25%",
+                "65%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "Imagine a game where two players, Player A and Player B, each draw a card from a standard deck of 52 cards. Player A's score is determined by the card's face value (Ace = 1, Jack = 11, Queen = 12, King = 13), while Player B's score is always 7 regardless of the card drawn.  \n\nLet X represent Player A's score and Y represent Player B's score.  \n\nWhat is the covariance between Player A's score (X) and Player B's score (Y)?",
+            "difficulty": "easy",
+            "reasoning": "Here's how to determine the covariance:\n\n**Understanding Covariance:**\n\nCovariance measures the degree to which two random variables change together. A positive covariance indicates a tendency to move in the same direction, while a negative covariance suggests movement in opposite directions. A covariance of zero implies no linear relationship.\n\n**Key Insight:**\n\nIn this scenario, Player B's score (Y) is always 7, making it a constant value, regardless of Player A's score.  Because Y doesn't vary, there's no way for it to covary with X.\n\n**Mathematical Proof:**\n\n* **Cov(X,Y) = E[(X - E[X])(Y - E[Y])] ** (Formula for covariance)\n* Since Y is always 7, E[Y] = 7\n* Substituting, we get: Cov(X,Y) = E[(X - E[X])(7 - 7)]\n* Simplifying: Cov(X,Y) = E[(X - E[X]) * 0]\n* Therefore: Cov(X,Y) = 0\n\n**Conclusion:**\nThe covariance between Player A's score and Player B's score is 0. This means there is no linear relationship between their scores, which makes sense because Player B's score is always constant.",
+            "options": [
+                "7",
+                "1",
+                "0",
+                "13"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A coffee shop claims that their average coffee serving size is 12 ounces. A curious customer believes the shop might be under-serving and decides to investigate. They visit the shop daily for a week and record the following coffee serving sizes in ounces: 11.8, 12.1, 11.9, 11.7, 12.2, 11.8, 11.9. Assuming the serving sizes are normally distributed, what is the approximate distribution of the average serving size for the week?",
+            "difficulty": "easy",
+            "reasoning": "This question assesses the understanding of the Central Limit Theorem in a simple scenario.  Here's why the correct answer is **Normal distribution with a mean of approximately 11.91 and a standard deviation dependent on the population standard deviation.**\n\n**Explanation:**\n\n* **Central Limit Theorem:** The CLT states that the distribution of sample means will be approximately normally distributed, regardless of the underlying population distribution, as long as the sample size is sufficiently large (generally n \u2265 30). \n* **Our Scenario:** Even though we don't know the underlying population distribution of coffee serving sizes, the Central Limit Theorem tells us that the average of a week's worth of coffee servings will be approximately normally distributed.\n* **Mean:** The mean of the sample means will be approximately equal to the population mean, which the coffee shop claims is 12 ounces. Our sample mean is approximately 11.91 ounces.\n* **Standard Deviation:** The standard deviation of the sample means (also known as the standard error) is calculated by dividing the population standard deviation by the square root of the sample size. However, we don't know the population standard deviation in this case. \n\n**Therefore, we can conclude that the distribution of the average serving size for the week is approximately normal, centered around 11.91 ounces, but we need additional information (the population standard deviation) to determine the exact standard deviation of this distribution.**",
+            "options": [
+                "Normal, 11.91 ounces",
+                "Normal, 12 ounces",
+                "Unknown, 11.91 ounces",
+                "Unknown, 12 ounces"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**context**: A coffee shop uses an automatic machine to dispense espresso shots. The amount of coffee dispensed in each shot, in ounces, is modeled by a continuous random variable X with the following probability density function:\n**formula**: f(x) = \\begin{cases} 12x(1-x^2), & 0 \\le x \\le 1 \\\\ 0, & \\text{otherwise} \\end{cases}\n**question**: What is the probability that the machine dispenses between 0.5 and 0.8 ounces of espresso in a shot?\n**difficulty**: easy\n",
+            "difficulty": "easy",
+            "reasoning": "This question falls under the topic of 'Continuous Random Variables and Probability Density Functions' because it involves calculating the probability of a continuous random variable (amount of coffee dispensed) falling within a specific range (0.5 to 0.8 ounces). \n\nHere's how to solve it:\n\n1. **Identify the relevant range:**  We need to find the probability that the coffee dispensed (X) is between 0.5 and 0.8 ounces. \n\n2. **Apply the probability density function:** For continuous random variables, the probability within a range is found by integrating the probability density function over that range. So, we need to calculate:\n\n   P(0.5 \u2264 X \u2264 0.8) =  \u222b<sub>0.5</sub><sup>0.8</sup> f(x) dx = \u222b<sub>0.5</sub><sup>0.8</sup> 12x(1-x<sup>2</sup>) dx \n\n3. **Solve the integral:** \n\n   = 12 \u222b<sub>0.5</sub><sup>0.8</sup> (x - x<sup>3</sup>) dx  \n   = 12 [(x<sup>2</sup>/2) - (x<sup>4</sup>/4)] <sub>0.5</sub><sup>0.8</sup> \n   = 12 [((0.8)<sup>2</sup>/2) - ((0.8)<sup>4</sup>/4) - ((0.5)<sup>2</sup>/2) + ((0.5)<sup>4</sup>/4)]\n   = 12 [(0.32 - 0.1024) - (0.125 - 0.015625)]\n   = 12 (0.2176 - 0.109375)\n   = 12 (0.108225) \n   \u2248 1.2987\n\n4. **Interpret the result:**  The calculated probability, 1.2987, is greater than 1. This indicates an error in our calculation. The probability density function might not be valid, as the probability cannot exceed 1. \n\n**Therefore, we need to re-evaluate the given probability density function, as it leads to an illogical result.** ",
+            "options": [
+                "0.649",
+                "1.2987",
+                "0.4326",
+                "0.8653"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A fair six-sided die is rolled once.  What is the probability that the number rolled is an even number?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve this problem:\n\n**1. Define the Sample Space**\n\nThe sample space is the set of all possible outcomes. When rolling a six-sided die, the possible outcomes are: {1, 2, 3, 4, 5, 6}\n\n**2. Define the Event**\n\nThe event is the specific outcome we're interested in, which is rolling an even number. The even numbers in our sample space are: {2, 4, 6}\n\n**3. Calculate the Probability**\n\nProbability is calculated as:\n\n*Probability = (Number of favorable outcomes) / (Total number of possible outcomes)*\n\n* Number of favorable outcomes (even numbers): 3\n* Total number of possible outcomes: 6\n\nTherefore, the probability of rolling an even number is 3/6 = 1/2.",
+            "options": [
+                "1/6",
+                "1/2",
+                "2/3",
+                "3/4"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A fair six-sided die is rolled once.\n**Variable**: Let X be the number shown on the die.\n**Probability Distribution**: Each face of the die has an equal probability of 1/6.\n**Question**: What is the expected value of the random variable X?\n",
+            "difficulty": "medium",
+            "reasoning": "The expected value (or mean) of a discrete random variable is calculated by summing the product of each possible value of the variable and its corresponding probability.\n\nIn this case, the possible values of X are 1, 2, 3, 4, 5, and 6, each with a probability of 1/6.\n\nTherefore, the expected value is:\n\nE(X) = (1 * 1/6) + (2 * 1/6) + (3 * 1/6) + (4 * 1/6) + (5 * 1/6) + (6 * 1/6) \n      = 21/6\n      = 3.5\n\nTherefore, the expected value of the random variable X is 3.5",
+            "option and correct options": {
+                "options": [
+                    "1/6",
+                    "3",
+                    "3.5",
+                    "6"
+                ],
+                "correct_option": "3.5"
+            },
+            "options": [
+                "1/6",
+                "3",
+                "3.5",
+                "6"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "An analyst observes that two stocks, A and B, tend to move in the same direction. When stock A's price increases, stock B's price also tends to increase, and vice versa. Which of the following statements is most likely true about the covariance and correlation between the returns of stock A and stock B?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding Covariance and Correlation:**\n\n* **Covariance** measures the direction of the linear relationship between two variables. A positive covariance indicates a positive relationship (variables tend to move in the same direction), while a negative covariance indicates a negative relationship (variables tend to move in opposite directions). \n* **Correlation** measures both the strength and direction of the linear relationship between two variables. Correlation values range from -1 to +1. \n    * A correlation of +1 indicates a perfect positive linear relationship. \n    * A correlation of -1 indicates a perfect negative linear relationship. \n    * A correlation of 0 indicates no linear relationship.\n\n**Applying it to the Question:**\n\nSince stock A and stock B tend to move in the same direction, their returns have a positive relationship. This means:\n\n* The **covariance** between their returns is likely **positive**.\n* The **correlation** between their returns is likely **positive**. \n\n**Therefore, the most likely true statement is that both the covariance and correlation between the returns of stock A and stock B are positive.**",
+            "options": [
+                "Both are negative",
+                "Covariance is positive, correlation is negative",
+                "Both are positive",
+                "Covariance is negative, correlation is positive"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**topic**: Continuous Random Variables and Probability Density Functions\n**difficulty_level**: Easy 6/10\n**question_type**: Calculation\n**question_statement**: A random variable X representing the waiting time (in minutes) at a bus stop is uniformly distributed between 0 and 10 minutes. What is the probability of waiting between 3 and 7 minutes?\n**solution**: For a uniform distribution over the interval [a, b], the probability density function is f(x) = 1/(b-a) for a \u2264 x \u2264 b, and 0 otherwise. \n\nHere, a = 0 and b = 10. So, f(x) = 1/10 for 0 \u2264 x \u2264 10. \n\nThe probability of X being between 3 and 7 is given by the area under the density function between these two points:\n\nP(3 \u2264 X \u2264 7) = \u222b(from 3 to 7) (1/10) dx = [(1/10)x] (evaluated from 3 to 7) = (7/10) - (3/10) = 4/10 = 0.4\n",
+            "difficulty": "medium",
+            "reasoning": "The question tests the understanding of continuous uniform distribution and calculating probability using its probability density function. The calculation is straightforward, involving a simple integral, making it an easy-level question.",
+            "options": [
+                "Understanding probability density functions.",
+                "Calculating probabilities for continuous distributions.",
+                "Applying the concept of uniform distribution.",
+                "Performing basic integration for probability calculation."
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A bag contains 10 marbles, 6 of which are blue and 4 are red. A marble is drawn at random from the bag.\n**question**: If the marble drawn is known to be red, what is the probability that it was the only red marble left in the bag?\n**difficulty**: easy 6/10\n",
+            "reasoning": "This question assesses the understanding of conditional probability. It's important to note that we've already been given the information that the marble drawn is red. This changes our sample space. Here's how to solve it:\n\n**1. Define the events:**\n   *  Let A be the event that the red marble drawn was the only red marble left in the bag.\n   *  Let B be the event that the marble drawn is red.\n\n**2. Determine the probabilities:**\n   *  P(B) = Probability of drawing a red marble = 4/10 (since there were initially 4 red marbles out of 10)\n   *  P(A and B) = Probability of drawing the last red marble = 1/10 (since there's only one scenario where this is possible)\n\n**3. Apply the conditional probability formula:**\n   *  P(A|B) = P(A and B) / P(B) = (1/10) / (4/10) = 1/4\n\nTherefore, the probability that the drawn red marble was the only red marble left in the bag is 1/4.",
+            "options": [
+                "1/10",
+                "1/4",
+                "3/4",
+                "4/10"
+            ],
+            "correct_option": "B",
+            "difficulty": "medium"
+        },
+        {
+            "question": "A machine fills bags of coffee beans with an average weight of 500 grams and a standard deviation of 10 grams. If you take a random sample of 25 bags of coffee, what is the approximate probability that the average weight of the sample will be less than 495 grams?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Understand the Central Limit Theorem:**\n\nThe Central Limit Theorem states that the distribution of sample means will be approximately normal, regardless of the shape of the population distribution, if the sample size is large enough (usually n \u2265 30). Even with a sample size of 25, which is slightly below 30, we can still use the normal approximation since the population distribution is not heavily skewed.\n\n**2. Calculate the standard error:**\n\nThe standard error (SE) is the standard deviation of the sampling distribution of the mean. It is calculated as:\n\nSE = \u03c3 / \u221an\n\nWhere:\n* \u03c3 = population standard deviation = 10 grams\n* n = sample size = 25 bags\n\nSE = 10 / \u221a25 = 2 grams\n\n**3. Calculate the z-score:**\n\nThe z-score measures how many standard errors a particular sample mean is away from the population mean. It is calculated as:\n\nz = (x\u0304 - \u03bc) / SE\n\nWhere:\n* x\u0304 = sample mean = 495 grams\n* \u03bc = population mean = 500 grams\n* SE = standard error = 2 grams\n\nz = (495 - 500) / 2 = -2.5\n\n**4. Find the probability:**\n\nA z-score of -2.5 corresponds to a probability of 0.0062 (look this up in a standard normal distribution table or use a calculator). This means there is a 0.62% probability that the average weight of the sample will be less than 495 grams.",
+            "options": [
+                "0.62%",
+                "2.5",
+                "0.0062",
+                "10 grams"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**context**: A bakery knows that, on average, 3 customers per hour order a specific type of gluten-free cake.\n**question**: Using the Poisson distribution, what is the probability that in a randomly chosen hour, exactly 5 customers will order the gluten-free cake?\n**difficulty**: 6/10\n",
+            "difficulty": "medium",
+            "reasoning": "This problem utilizes the Poisson distribution because it deals with the probability of a specific number of events (customers ordering the cake) occurring within a fixed interval (one hour) given a known average rate (3 customers per hour).\n\nHere's how to solve the problem step-by-step:\n\n**1. Identify the parameters:**\n\n*  \u03bb (lambda) = average number of events per interval = 3 customers per hour\n*  x = desired number of events = 5 customers\n\n**2. Apply the Poisson probability formula:**\n\n   P(X = x) = (e^(-\u03bb) * \u03bb^x) / x!\n\n   Where:\n   * P(X = x) = probability of exactly x events\n   * e = Euler's number (approximately 2.71828)\n\n**3. Substitute the values and calculate:**\n\n   P(X = 5) = (e^(-3) * 3^5) / 5!\n   P(X = 5) = (0.0498 * 243) / 120\n   P(X = 5) \u2248 0.1008 \n\nTherefore, the probability of exactly 5 customers ordering the gluten-free cake in a randomly chosen hour is approximately 0.1008 or about 10.08%.",
+            "options": [
+                "0.0504",
+                "0.1008",
+                "0.2240",
+                "0.3452"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**question_type**: Problem Solving\n**difficulty_level**: 6\n**context**: A mischievous leprechaun has hidden a pot of gold at the end of a rainbow. To reach the pot, you must correctly guess which of three paths the leprechaun has magically imbued with good luck. Let's say you randomly choose a path.\n**specifics**: 1. What is the probability you choose the correct path on your first try? \n2. Now, imagine the leprechaun, being fond of games, allows you to choose a different path if you fail on the first try.  What is the probability you'll find the gold by your second attempt?\n",
+            "difficulty": "medium",
+            "reasoning": "This problem deals with basic probability concepts: \n\n**Part 1:** \n* There's only one correct path out of three.  \n* The probability of choosing the correct path is the number of favorable outcomes (1) divided by the total possible outcomes (3). \n* Therefore, the probability of finding the gold on the first try is 1/3.\n\n**Part 2:**\n* If you fail on the first try, there are only two paths remaining. \n* Since you're choosing a different path, you now have a 1/2 chance of selecting the correct one. \n* To get the probability of finding the gold by the second try, consider these two scenarios:\n    * **Scenario 1:** You find it on the first try (probability 1/3)\n    * **Scenario 2:** You miss on the first try (probability 2/3) but find it on the second (probability 1/2). \n* The probability of Scenario 2 is (2/3) * (1/2) = 1/3\n* Finally, the probability of finding the gold by the second attempt is the probability of Scenario 1 OR Scenario 2: (1/3) + (1/3) = 2/3",
+            "options": [
+                "1/3",
+                "2/3",
+                "1/2",
+                "1"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**question_type**: Calculate\n**difficulty**: 5\n**context**: A mobile game developer is analyzing player data for their new RPG.  They've recorded whether players prefer to play as a 'Warrior' or a 'Mage', and whether they primarily engage in 'Quests', 'Player vs. Player (PvP)' combat, or 'Crafting'.\n**data**: \n  **table**: \n    - \n      - \n      - Warrior\n      - Mage\n    - \n      - Quests\n      - 0.25\n      - 0.15\n    - \n      - PvP\n      - 0.1\n      - 0.2\n    - \n      - Crafting\n      - 0.05\n      - 0.2\n  **labels**: \n    - Playstyle\n    - Class\n**question**: What is the probability that a randomly selected player is a Mage who primarily engages in Crafting?\n",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of joint probability distributions presented in a table format. The student needs to correctly identify the probability value corresponding to the event 'Mage' and 'Crafting' from the given table.\n\n1. **Locate the event:** Find the row corresponding to 'Crafting' and the column corresponding to 'Mage' in the table.\n2. **Identify the probability:** The cell at the intersection of this row and column represents the joint probability of a player being a Mage who primarily engages in Crafting.\n\nThe value in this cell is **0.20**. Therefore, the probability that a randomly selected player is a Mage who primarily engages in Crafting is **0.20** or **20%**.",
+            "options": [
+                "0.10",
+                "0.20",
+                "0.25",
+                "0.05"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A school chess club has 10 members.  They are selecting a team of 4 to compete in a regional tournament.  The team must have at least one boy and one girl.  If the club has 6 boys and 4 girls, what is the probability that a randomly selected team will meet the gender requirement?",
+            "difficulty": "medium",
+            "reasoning": "This problem is best solved by considering the probability of the team *not* meeting the requirement, then subtracting from 1.\n\n**1.  Calculate the total possible teams:**\n\n* This is a combination problem, as the order of selection doesn't matter. \n* We use the formula: nCr = n! / (r! * (n-r)!), where n = total number of items, r = number of items being chosen.\n*  \u00b9\u2070C\u2084 = 10! / (4! * 6!) = 210. There are 210 possible teams.\n\n**2. Calculate the number of teams with all boys:**\n\n* \u2076C\u2084 = 6! / (4! * 2!) = 15. There are 15 possible all-boy teams.\n\n**3. Calculate the number of teams with all girls:**\n\n* \u2074C\u2084 = 4! / (4! * 0!) = 1. There is 1 possible all-girl team.\n\n**4. Calculate the probability of a team NOT meeting the requirement:**\n\n* Add the undesirable outcomes: 15 + 1 = 16\n* Divide by the total number of outcomes: 16 / 210 = 8/105\n\n**5. Calculate the probability of a team meeting the requirement:**\n\n* Subtract the probability of NOT meeting the requirement from 1: 1 - (8/105) = 97/105\n\n**Therefore, the probability of a randomly selected team having at least one boy and one girl is 97/105.**",
+            "options": [
+                "15/210",
+                "97/105",
+                "16/210",
+                "8/105"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**context**: A data scientist is analyzing the relationship between the number of hours studied and the exam scores of a group of students. They find that the covariance between the two variables is 15. The standard deviation of the hours studied is 2.5 hours, and the standard deviation of the exam scores is 10 points.\n**question**: What is the correlation coefficient between the number of hours studied and the exam scores?\n**answer_choices**: \n  - a) 0.3\n  - b) 0.6\n  - c) 0.9\n  - d) 1.5\n",
+            "difficulty": "medium",
+            "reasoning": "The question tests the understanding of the relationship between covariance, standard deviations, and the correlation coefficient. Here's how to solve it:\n\n**Understanding the Concepts:**\n\n* **Covariance:** Measures the degree to which two variables change together. A positive covariance indicates a positive relationship, while a negative covariance indicates a negative relationship.\n* **Correlation Coefficient:** A standardized measure of the linear relationship between two variables. It ranges from -1 (perfect negative correlation) to +1 (perfect positive correlation), with 0 indicating no linear relationship.\n* **Formula:** The correlation coefficient (\u03c1) is calculated as:\n\n   \u03c1 = Covariance(X, Y) / (Standard Deviation(X) * Standard Deviation(Y))\n\n**Applying the Formula:**\n\n1. **Identify the given values:**\n   * Covariance (hours studied, exam scores) = 15\n   * Standard Deviation (hours studied) = 2.5 hours\n   * Standard Deviation (exam scores) = 10 points\n\n2. **Plug the values into the formula:**\n\n   \u03c1 = 15 / (2.5 * 10) \n   \u03c1 = 15 / 25\n   \u03c1 = 0.6\n\n**Therefore, the correlation coefficient between the number of hours studied and the exam scores is 0.6 (option b).**",
+            "options": [
+                "0.3",
+                "0.6",
+                "0.9",
+                "1.5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Scenario**: A bank has issued 1000 loans, each with a principal of $100,000. The bank estimates that 2% of these loans will default. If a loan defaults, the bank can recover 60% of the principal through collateral.\n**Task**: Calculate the expected loss of the loan portfolio.\n**Data**: \n**Note**: Expected loss can be calculated as the product of Probability of Default (PD), Loss Given Default (LGD), and Exposure at Default (EAD).\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question involves calculating the expected loss of a loan portfolio, a core concept in credit risk management. It utilizes the fundamental formula of expected loss and requires understanding the components: \n\n* **Probability of Default (PD):**  The likelihood that a borrower will fail to repay the loan. Here, it's given as 2%.\n* **Loss Given Default (LGD):** The percentage of the exposure that is lost if a default occurs. In this case, the bank expects to recover 60%, so the LGD is 40% (100% - 60%).\n* **Exposure at Default (EAD):** The amount of money the bank risks losing at the time of default.  This is the principal amount of each loan, $100,000.\n\n**Calculations:**\n\n1. **Expected Loss per Loan:** \n   PD * LGD * EAD = 0.02 * 0.40 * $100,000 = $800\n\n2. **Total Expected Loss:**\n   Expected Loss per Loan * Number of Loans = $800 * 1000 = $800,000\n\nTherefore, the expected loss of the loan portfolio is $800,000.\n",
+            "options": [
+                "$200,000",
+                "$400,000",
+                "$800,000",
+                "$1,000,000"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A weather station is tracking the wind speed during a storm. The wind speed (in kilometers per hour) can be modeled as a continuous random variable.\n**Variable**: Let 'W' represent the wind speed at a given moment during the storm.\n**PDF**: The PDF of 'W' is given by the following piecewise function:\n\nf(w) = {\n    0.1,  0 \u2264 w < 20\n    0.02w - 0.3,  20 \u2264 w < 30\n    0,  otherwise\n}\n**Question**: What is the probability that the wind speed is between 15 km/h and 25 km/h?\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Continuous Random Variables and Probability Density Functions' within 'Quants - Probability'. It assesses the student's ability to:\n\n1. **Interpret piecewise PDFs:**  The student must understand how to work with a PDF defined in sections.\n2. **Calculate probabilities over intervals:** The question requires integrating the PDF over a specific interval to find the probability.\n\n**Solution:**\n\n1. **Identify the relevant intervals:** We need the probability between 15 km/h and 25 km/h. This spans both sections of our piecewise PDF.\n\n2. **Break up the integral:**  We'll calculate the probability in two parts:\n    * P(15 \u2264 W < 20):  \u222b(from 15 to 20) 0.1 dw\n    * P(20 \u2264 W < 25):  \u222b(from 20 to 25) (0.02w - 0.3) dw \n\n3. **Calculate the integrals:**\n    * P(15 \u2264 W < 20) = 0.1w | (from 15 to 20) = 0.1(20) - 0.1(15) = 0.5\n    * P(20 \u2264 W < 25) = (0.01w\u00b2 - 0.3w) | (from 20 to 25) = (0.01(25)\u00b2 - 0.3(25)) - (0.01(20)\u00b2 - 0.3(20)) = 0.375 \n\n4. **Add the probabilities:**\n    * P(15 \u2264 W < 25) = P(15 \u2264 W < 20) + P(20 \u2264 W < 25) = 0.5 + 0.375 = 0.875\n\n**Therefore, the probability that the wind speed is between 15 km/h and 25 km/h is 0.875.**",
+            "options": [
+                "0.125",
+                "0.875",
+                "0.5",
+                "0.375"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Question Type**: Calculation\n**Difficulty**: Medium\n**Context**: A meteorologist models the daily rainfall in Sunnyville during a particular month using a continuous random variable X (measured in millimeters). The probability density function of X is given by:\n**Function**: f(x) = { 0.05(10 - x)  for  0 \u2264 x \u2264 10, \n           0              otherwise\n**Prompt**: 1. Calculate the expected daily rainfall for this month.\n2. Calculate the variance of the daily rainfall for this month.\n**Solution**: \n  **Expected Value**: E(X) = \u222b(x * f(x)) dx from 0 to 10 = \u222b(x * 0.05(10 - x)) dx from 0 to 10 = 8.33 mm\n  **Variance**: Var(X) = E(X^2) - (E(X))^2\nE(X^2) = \u222b(x^2 * f(x)) dx from 0 to 10 = \u222b(x^2 * 0.05(10 - x)) dx from 0 to 10 = 50\nVar(X) = 50 - (8.33)^2 = 8.33 mm^2\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Expected Value and Variance of Continuous Random Variables' within 'Quants - Probability'. It involves calculating the expected value (mean) and variance of a continuous random variable using its probability density function.  \n\n**Step-by-step solution:**\n\n**1. Expected Value (E[X]):**\n\n* **Definition:** The expected value represents the average daily rainfall we expect in Sunnyville for this particular month. \n* **Formula:** E[X] = \u222b(x * f(x)) dx, integrated over all possible values of x.\n* **Applying the formula:** In our case, x ranges from 0 to 10 mm. So, E[X] =  \u222b(x * 0.05(10 - x)) dx from 0 to 10.\n* **Solving the integral:** \n    * E[X] = 0.05 \u222b(10x - x^2) dx from 0 to 10 \n    * E[X] = 0.05 [ (5x^2 - (x^3)/3) ] from 0 to 10\n    * E[X] = 0.05 * [(500 - 1000/3) - (0)] = 8.33 mm\n\n**2. Variance (Var[X]):**\n\n* **Definition:** Variance measures the spread or dispersion of the daily rainfall values around the expected value. \n* **Formula:** Var[X] = E[X^2] - (E[X])^2 \n* **We already have E[X] = 8.33 mm**\n* **Calculate E[X^2]:** \n    * E[X^2] = \u222b(x^2 * f(x)) dx from 0 to 10 = \u222b(x^2 * 0.05(10 - x)) dx from 0 to 10 \n    * E[X^2] = 0.05 \u222b (10x^2 - x^3) dx from 0 to 10\n    * E[X^2] = 0.05 [ (10/3 * x^3 - x^4 / 4) ] from 0 to 10\n    * E[X^2] = 0.05 * [(10000/3 - 10000/4) - (0)] = 50\n* **Final Calculation:** Var[X] = 50 - (8.33)^2 = 8.33 mm^2\n\n**Therefore, the expected daily rainfall is 8.33 mm, and the variance is 8.33 mm^2.**\n\n**Options:**\n\nA) E[X] = 5 mm, Var[X] = 2.08 mm^2\nB) E[X] = 8.33 mm, Var[X] = 8.33 mm^2\nC) E[X] = 10 mm, Var[X] = 5 mm^2\nD) E[X] = 6.67 mm, Var[X] = 5.56 mm^2\n\n**Correct Option: B) E[X] = 8.33 mm, Var[X] = 8.33 mm^2**",
+            "options": [
+                "5 mm",
+                "8.33 mm",
+                "10 mm",
+                "6.67 mm"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "**Context**: A software company uses two code repositories, A and B, to store its projects.  Repository A contains 60% of the company's projects, while repository B contains the remaining 40%.  It is known that 5% of the projects in repository A have a specific security vulnerability, and 3% of the projects in repository B have the same vulnerability.\n**Question**: If a project is randomly selected from the company's entire codebase and is found to have the security vulnerability, what is the probability that the project is stored in repository A?\n**Data**: \n  **Repository A projects**: 60%\n  **Repository B projects**: 40%\n  **Vulnerability in A**: 5%\n  **Vulnerability in B**: 3%\n**Answer Format**: Express your answer as a percentage rounded to two decimal places (e.g., 12.34%).\n",
+            "difficulty": "medium",
+            "reasoning": "This question utilizes Bayes' Theorem to determine the probability of an event (project being in repository A) given that another event has occurred (project has the vulnerability).  Here's a step-by-step solution:\n\n**1. Define Events:**\n* Let A be the event that a project is stored in repository A.\n* Let B be the event that a project is stored in repository B.\n* Let V be the event that a project has the security vulnerability.\n\n**2. State Probabilities:**\n* P(A) = 0.60 (Probability of a project being in repository A)\n* P(B) = 0.40 (Probability of a project being in repository B)\n* P(V|A) = 0.05 (Probability of vulnerability given the project is in repository A)\n* P(V|B) = 0.03 (Probability of vulnerability given the project is in repository B)\n\n**3. Apply Bayes' Theorem:**\nWe want to find P(A|V), the probability that a project is in repository A given it has the vulnerability.  Bayes' Theorem states:\n\n*P(A|V) = [P(V|A) * P(A)] / P(V)*\n\nTo find P(V), the probability of a project having the vulnerability, we use the law of total probability:\n\n*P(V) = P(V|A) * P(A) + P(V|B) * P(B)*\n\n**4. Calculate:**\n*P(V) = (0.05 * 0.60) + (0.03 * 0.40) = 0.042*\n\n*P(A|V) = (0.05 * 0.60) / 0.042 \u2248 0.7143*\n\n**5. Express Answer:**\nTherefore, the probability that the project is stored in repository A given it has the security vulnerability is approximately **71.43%**. ",
+            "options": [
+                "60.00%",
+                "71.43%",
+                "42.86%",
+                "5.00%"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A bag contains 5 red marbles, 3 blue marbles, and 2 green marbles. A marble is drawn at random and then replaced. Then, a second marble is drawn. What is the probability that the first marble is red and the second marble is blue?",
+            "difficulty": "medium",
+            "reasoning": "Here's how to solve the problem:\n\n**1. Probability of the First Event:**\n\n* The probability of drawing a red marble on the first draw is the number of red marbles divided by the total number of marbles:\n  * P(Red) = 5 / (5 + 3 + 2) = 5/10 = 1/2\n\n**2. Probability of the Second Event:**\n\n* Since the first marble is replaced, the second draw is independent of the first. The probability of drawing a blue marble on the second draw is:\n  * P(Blue) = 3 / (5 + 3 + 2) = 3/10\n\n**3. Multiplication Rule for Independent Events:**\n\n* To find the probability of both events happening, we multiply the probabilities of each individual event:\n   * P(Red and Blue) = P(Red) * P(Blue) = (1/2) * (3/10) = 3/20\n\n**Therefore, the probability of drawing a red marble followed by a blue marble is 3/20.**",
+            "options": [
+                "1/10",
+                "3/20",
+                "1/5",
+                "9/100"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A data scientist is analyzing the relationship between the number of hours studied (X) and exam scores (Y) for a group of students. They find that the covariance between X and Y is 15. The standard deviation of study hours is 2.5 hours, and the standard deviation of exam scores is 8 points.  What is the correlation coefficient between study time and exam scores, and what does this value tell us about the relationship between these variables?",
+            "difficulty": "medium",
+            "reasoning": "**Understanding Covariance and Correlation**\n\n* **Covariance:**  Measures the degree to which two variables change together. A positive covariance indicates a positive relationship (as one variable increases, the other tends to increase), while a negative covariance indicates a negative relationship.\n* **Correlation:** A standardized measure of the linear relationship between two variables. It ranges from -1 (perfect negative correlation) to +1 (perfect positive correlation), with 0 indicating no linear relationship.\n\n**Formula:**\n\nThe relationship between covariance and correlation is given by:\n\nCorrelation (\u03c1) = Covariance(X, Y) / (Standard Deviation(X) * Standard Deviation(Y))\n\n**Calculation:**\n\n1. **Plug in the given values:**\n   \u03c1 = 15 / (2.5 * 8)\n\n2. **Calculate:**\n   \u03c1 = 15 / 20 = 0.75\n\n**Interpretation:**\n\nA correlation coefficient of 0.75 indicates a strong positive linear relationship between study time and exam scores. This suggests that, in general, students who study for longer hours tend to achieve higher exam scores. \n\n**Important Note:** Correlation does not imply causation. While a strong positive correlation exists, it doesn't mean that studying more hours directly causes higher scores \u2013 other factors could be involved.",
+            "options": [
+                "0.5",
+                "0.75",
+                "1.0",
+                "1.5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A risk manager is analyzing the potential losses for a portfolio of bonds due to changes in interest rates. They use historical data and simulations to estimate the following probabilities for different loss levels over the next year:\n\n| Potential Loss | Probability  |\n|---|---| \n| $0 | 0.60 |\n| $1 million | 0.25 |\n| $5 million | 0.10 |\n| $10 million | 0.05 |\n\nWhat is the expected loss of the bond portfolio over the next year?",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the topic of 'Applications of Probability in Finance (e.g., Risk Management)' as it directly deals with calculating potential losses in a financial portfolio using probability. \n\nHere's how to solve for the expected loss:\n\n**Understanding Expected Value**\n\nIn probability, the expected value represents the average outcome of a random event. When dealing with potential losses, it gives us an idea of the average loss we can expect over time.\n\n**Calculation**\n\nTo calculate the expected loss, we multiply each potential loss by its probability and sum the results:\n\n* Expected Loss = (Loss_1 * Probability_1) + (Loss_2 * Probability_2) + ... + (Loss_n * Probability_n)\n\nApplying this to our problem:\n\n* Expected Loss = ($0 * 0.60) + ($1 million * 0.25) + ($5 million * 0.10) + ($10 million * 0.05)\n* Expected Loss = $0 + $0.25 million + $0.5 million + $0.5 million\n* Expected Loss = $1.25 million\n\n**Therefore, the expected loss of the bond portfolio over the next year is $1.25 million.**",
+            "options": [
+                "$1 million",
+                "$1.25 million",
+                "$2.5 million",
+                "$5 million"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A skilled dart player aims for the bullseye on a standard dartboard. The probability of them hitting the bullseye on any given throw is 20%.  If they throw 5 darts, what is the probability that they hit the bullseye with exactly 3 of those darts? ",
+            "difficulty": "medium",
+            "reasoning": "This question falls under the umbrella of Discrete Random Variables and Probability Distributions, specifically dealing with the binomial distribution. Here's why and how to solve it:\n\n**Why Binomial Distribution?**\n\n* **Fixed Number of Trials:** The dart player throws the dart 5 times, a fixed number.\n* **Independent Trials:** Each dart throw is independent of the others; the outcome of one doesn't affect the others.\n* **Two Possible Outcomes:** Each throw either hits the bullseye (success) or doesn't (failure).\n* **Constant Probability of Success:** The probability of hitting the bullseye is consistently 20% for each throw. \n\n**Solution**\n\n1. **Identify parameters:** \n    * n = number of trials = 5\n    * k = number of successes = 3\n    * p = probability of success on a single trial = 0.20\n    * q = probability of failure on a single trial = 1 - p = 0.80\n\n2. **Apply the Binomial Probability Formula:**\n    \n    P(X = k) = (nCk) * (p^k) * (q^(n-k))\n\n    Where nCk represents the binomial coefficient, calculated as n! / (k! * (n-k)!)\n\n3. **Calculate:**\n    \n    *  5C3 = 5! / (3! * 2!) = 10\n    *  P(X = 3) = 10 * (0.20)^3 * (0.80)^2 \n    *  P(X = 3) \u2248 0.0512 \n\n**Therefore, the probability of the dart player hitting the bullseye with exactly 3 out of 5 darts is approximately 0.0512 or 5.12%.**",
+            "options": [
+                "0.0512",
+                "5.12%",
+                "0.20",
+                "0.80"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A quantitative analyst is building a risk model for a portfolio of bonds.  The model identifies two independent risk factors: 'Interest Rate Hikes' (Event A) and 'Credit Downgrades' (Event B). Based on historical data and market analysis:\n\n* The probability of Interest Rate Hikes (Event A) occurring within the next year is 0.35. \n* The probability of Credit Downgrades (Event B) within the same period is 0.2. \n* The probability of at least one of these events occurring is calculated to be 0.45. \n\nUsing the axioms of probability, determine the probability that BOTH Interest Rate Hikes AND Credit Downgrades will occur within the next year.",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of the addition rule in probability, specifically its application in a financial context relevant to Quants. Here's how to solve it: \n\n**1. Identify the Axioms and Formula:**\n\nWe need to use the following probability axiom: \n* **P(A \u222a B) = P(A) + P(B) - P(A \u2229 B)** \nWhere:\n    * P(A \u222a B) = Probability of event A or event B or both occurring.\n    * P(A) = Probability of event A occurring.\n    * P(B) = Probability of event B occurring.\n    * P(A \u2229 B) = Probability of both event A and event B occurring. \n\n**2.  Apply the Information Given:**\n\n* P(A) = 0.35 (Probability of Interest Rate Hikes)\n* P(B) = 0.2  (Probability of Credit Downgrades)\n* P(A \u222a B) = 0.45 (Probability of at least one event occurring)\n\nWe need to find P(A \u2229 B), the probability of both events occurring.\n\n**3. Rearrange and Solve:**\n\nRearranging the formula from step 1 to solve for P(A \u2229 B):\n\nP(A \u2229 B) = P(A) + P(B) - P(A \u222a B)\n\nSubstitute the known probabilities:\n\nP(A \u2229 B) = 0.35 + 0.2 - 0.45\n\nP(A \u2229 B) = 0.1\n\n**Therefore, the probability that BOTH Interest Rate Hikes AND Credit Downgrades will occur within the next year is 0.1 or 10%.**",
+            "options": [
+                "0.2",
+                "0.35",
+                "0.45",
+                "0.1"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A financial analyst is studying the daily price fluctuations of a particular stock. They have determined that the percentage change in the stock price over a day can be modeled using a continuous random variable.\n**variable**: Let Y represent the daily percentage change in the stock price. The PDF of Y is given by f(y) = k(4 - y^2) for -2 \u2264 y \u2264 2 and f(y) = 0 otherwise, where k is a constant.\n**question**: Find the value of k and calculate the variance of the daily percentage change in the stock price.\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question belongs to the subtopic 'Expected Value and Variance of Continuous Random Variables' within 'Quants - Probability'. It involves:\n\n1. **Finding the constant k in the PDF:** This requires understanding that the total probability over the entire sample space must equal 1. \n2. **Calculating the Variance:** This involves applying the formula for variance using the given PDF and performing integration.\n\n**Step 1: Finding k**\n\nWe know that the integral of the PDF over the entire sample space must equal 1. Therefore:\n\n\u222b(-2 to 2) k(4 - y^2) dy = 1\n\nk [4y - (y^3)/3] (-2 to 2) = 1\nk [(8 - 8/3) - (-8 + 8/3)] = 1\nk (32/3) = 1\nk = 3/32\n\n**Step 2: Calculating Variance**\n\nVariance (Var(Y)) = E(Y^2) - [E(Y)]^2\n\nFirst, we find E(Y):\n\nE(Y) = \u222b(-2 to 2) y * (3/32)(4 - y^2) dy = 0  (The integrand is an odd function, and the integral is over a symmetric interval)\n\nNext, we find E(Y^2):\n\nE(Y^2) = \u222b(-2 to 2) y^2 * (3/32)(4 - y^2) dy \n         = (3/32) \u222b(-2 to 2) (4y^2 - y^4) dy\n         = (3/32) [ (4y^3)/3 - (y^5)/5 ] (-2 to 2)\n         = (3/32) * (128/15)\n         = 8/5\n\nFinally, we calculate the variance:\n\nVar(Y) = E(Y^2) - [E(Y)]^2 = 8/5 - 0^2 = 8/5 \n\nTherefore, the value of k is 3/32, and the variance of the daily percentage change in the stock price is 8/5.",
+            "options": [
+                "1.6",
+                "0.6",
+                "1.2",
+                "0.8"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A mobile gaming company analyzes player behavior based on in-app purchases and daily playtime. They find the following probabilities:\n\n* 30% of players make in-app purchases (let's call this event 'P').\n* 60% of players have a daily playtime of over 30 minutes (let's call this event 'T').\n* 20% of players both make in-app purchases AND have a daily playtime of over 30 minutes.\n\nThe company is considering a new feature aimed at players who spend significant time in-game but haven't made any purchases.  What is the probability a randomly selected player plays over 30 minutes a day GIVEN that they have not made an in-app purchase?",
+            "difficulty": "medium",
+            "reasoning": "This question tests the understanding of conditional probability within the framework of joint probability distributions. Here's how to solve it:\n\n**1. Define the Events**\n\n*  Let 'P' be the event that a player makes an in-app purchase.\n*  Let 'T' be the event that a player has a daily playtime of over 30 minutes. \n\n**2. Use the Provided Information**\n\n* P(P) = 0.3 (Probability of making a purchase)\n* P(T) = 0.6 (Probability of playing over 30 minutes)\n* P(P and T) = 0.2 (Probability of both)\n\n**3. Apply Conditional Probability Formula**\n\nWe need to find P(T | not P), the probability of a player playing over 30 minutes given they haven't made a purchase.  The formula for conditional probability is:\n\nP(A|B) = P(A and B) / P(B)\n\nIn our case:\nP(T | not P) = P(T and not P) / P(not P)\n\n**4. Calculate P(T and not P)**\n\nWe can use the formula:\nP(A and B) = P(A) - P(A and not B) \n\nTherefore:\nP(T and not P) = P(T) - P(T and P) = 0.6 - 0.2 = 0.4\n\n**5. Calculate P(not P)**\n\nP(not P) = 1 - P(P) = 1 - 0.3 = 0.7\n\n**6. Final Calculation**\n\nP(T | not P) = P(T and not P) / P(not P) = 0.4 / 0.7 = 4/7\n\n**Therefore, the probability of a randomly selected player playing over 30 minutes a day, given they haven't made an in-app purchase, is 4/7.**",
+            "options": [
+                "0.2",
+                "0.4",
+                "0.57",
+                "0.6"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "**Context**: A mobile game developer introduces a new loot box system. Players can purchase a loot box for $2. Each loot box has a chance of containing different rarity items:\n**Variable Definition**: Let X be the random variable representing the **net profit** a player gains from purchasing a single loot box. The possible values and their probabilities are:\n**Probability Table**: \n  **Item Rarity**: \n    - Legendary\n    - Epic\n    - Rare\n    - Common\n  **Item Value (USD)**: \n    - $10\n    - $5\n    - $1\n    - $0\n  **Probability**: \n    - 0.1\n    - 0.2\n    - 0.3\n    - 0.4\n**Question**: (Medium 6/10) Calculate the variance of a player's net profit from a single loot box purchase.\n",
+            "difficulty": "medium",
+            "reasoning": "This question falls under 'Expected Value and Variance of Discrete Random Variables' within 'Quants - Probability'. It requires calculating the variance, which involves these steps:\n\n1. **Understanding Net Profit:**  The net profit considers both the potential winnings from items and the initial cost of the loot box. \n2. **Calculating Expected Value (E[X]):**  First, we need the expected value of the winnings. This is calculated as the sum of (value * probability) for each outcome:\n    * E[X] = ($10 * 0.1) + ($5 * 0.2) + ($1 * 0.3) + ($0 * 0.4) - $2 (Loot box cost)\n    * E[X] = $1 + $1 + $0.3 + $0 - $2 = $0.30\n3. **Calculating Variance (Var[X]):**  Variance measures how spread out the possible outcomes are from the expected value. It's calculated as the sum of (the squared difference from the mean * probability) for each outcome:\n    * Var[X] = [($10 - $0.30)^2 * 0.1] + [($5 - $0.30)^2 * 0.2] + [($1 - $0.30)^2 * 0.3] + [($0 - $0.30)^2 * 0.4]\n    * Var[X] = ($9.7)^2 * 0.1 + ($4.7)^2 * 0.2 + ($0.7)^2 * 0.3 + (-$0.3)^2 * 0.4\n    * Var[X] = $9.409 + $4.418 + $0.147 + $0.036 = $14.01\n\nTherefore, the variance of a player's net profit from a single loot box purchase is $14.01.",
+            "options": [
+                "$14.01",
+                "$0.30",
+                "$2.00",
+                "$10.00"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "A financial analyst is modeling the time until default (in years) for a portfolio of high-yield bonds. They determine that this time can be represented by a continuous random variable, T, with its probability density function defined as follows:\n\nf(t) = { k * e^(-kt),  t \u2265 0\n           { 0,           t < 0\n\nwhere k is a positive constant related to the riskiness of the bonds. Historical data suggests that the average time until default for similar bond portfolios is 5 years. \n\nWhat is the variance of the time until default for this specific portfolio of high-yield bonds?",
+            "difficulty": "hard",
+            "reasoning": "**1. Finding the value of k:** \n\nWe are given that the average time until default is 5 years.  This represents the expected value of our random variable T.  The expected value of an exponentially distributed random variable with parameter k is 1/k. Therefore:\n\nE(T) = 1/k = 5 years\n\nSolving for k, we get k = 1/5 = 0.2\n\n**2. Calculating the Variance:** \n\nThe variance of an exponentially distributed random variable with parameter k is 1/k\u00b2.  Therefore, the variance of our time until default variable T is:\n\nVar(T) = 1/k\u00b2 = 1/(0.2)\u00b2 = 1/0.04 = 25\n\n**Therefore, the variance of the time until default for this portfolio is 25 years\u00b2.**\n\n**Important Note:**  The unit of variance is squared (years\u00b2 in this case) as it represents a measure of dispersion around the mean. ",
+            "options": [
+                "5 years\u00b2",
+                "10 years\u00b2",
+                "25 years\u00b2",
+                "50 years\u00b2"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A team of 6 software engineers needs to be formed from a pool of 8 experienced developers and 5 junior developers. The team must include at least 2 experienced developers and at least 1 junior developer. Additionally, there are 2 experienced developers who refuse to be on the team together. What is the probability that a randomly selected team meets all the criteria?",
+            "difficulty": "hard",
+            "reasoning": "This problem involves multiple steps and considerations, making it a tricky combinatorics problem:\n\n**1. Calculate the total possible teams:**\n\n* Without any restrictions, we need to choose 6 engineers out of 13:  \u00b9\u00b3C\u2086 = (13*12*11*10*9*8)/(6*5*4*3*2*1) = 1716 possible teams.\n\n**2. Calculate the number of undesirable teams:**\n\n* **Teams with less than 2 experienced developers:**\n   * 1 Experienced, 5 Junior: \u2078C\u2081 * \u2075C\u2085 = 8 * 1 = 8\n   * 0 Experienced, 6 Junior: This combination is not possible as we only have 5 junior developers.\n* **Teams with less than 1 junior developer:**\n   * 6 Experienced, 0 Junior: \u2078C\u2086 = (8*7*6*5*4*3)/(6*5*4*3*2*1) = 28\n* **Teams with both conflicting experienced developers:**\n    *  Treat the 2 conflicting developers as a single unit: We now need to choose 5 members from the remaining 11.  \u00b9\u00b9C\u2085 = (11*10*9*8*7)/(5*4*3*2*1) = 462. However, for each of these combinations, the two conflicting developers can switch places within the team, so we need to multiply by 2: 462 * 2 = 924\n\n**3. Subtract undesirable teams from the total possible teams:**\n\n* Total undesirable teams: 8 + 28 + 924 = 960\n* Total desirable teams: 1716 - 960 = 756\n\n**4. Calculate the probability:**\n\n* Probability of a randomly selected team meeting the criteria: 756 / 1716 = 0.441\n\n**Therefore, the probability of a randomly selected team meeting all the criteria is 0.441**",
+            "options": [
+                "0.234",
+                "0.441",
+                "0.756",
+                "0.960"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A meteorologist studying rainfall patterns in a tropical region observes that the duration of individual rain showers (in hours) can be modeled by a continuous random variable X. The probability density function of X is defined as follows:\n\nf(x) =  { 2x * e^(-x^2),  for 0 \u2264 x \u2264  \u221a(ln 2)\n          { 0,                     otherwise\n\nWhat is the probability that a randomly selected rain shower in this region lasts for more than 30 minutes?",
+            "difficulty": "hard",
+            "reasoning": "This question falls under the topic of 'Continuous Random Variables and Probability Density Functions' within 'Quants - Probability'. It's tricky because it combines a non-standard PDF involving an exponential function with a change in time units (hours to minutes) requiring careful attention to detail.\n\nHere's a step-by-step solution:\n\n1. **Convert Time Units:** Since the PDF is defined in hours, convert 30 minutes to 0.5 hours.\n\n2. **Identify the Probability to Calculate:** We need P(X > 0.5), the probability that a shower lasts longer than 0.5 hours.\n\n3. **Apply the Properties of PDFs:**  Recall that for a continuous random variable, the probability of it falling within a certain range is found by integrating the PDF over that range.  Furthermore, the total probability over the entire range of the variable must equal 1.  Therefore:\n\nP(X > 0.5) = 1 - P(X \u2264 0.5) \n\n4. **Set up the Integral:**\n\nP(X \u2264 0.5) = \u222b from 0 to 0.5  [2x * e^(-x^2)] dx \n\n5. **Solve the Integral:** This integral can be solved using a u-substitution (u = -x^2, du = -2x dx):\n\n P(X \u2264 0.5) = -\u222b from 0 to -0.25  [e^u] du  \n              =  -[e^u] evaluated from 0 to -0.25\n              = -(e^-0.25 - e^0) \n              = 1 - e^-0.25\n\n6. **Calculate the Final Probability:**\n\nP(X > 0.5) = 1 - (1 - e^-0.25)\n              = e^-0.25 \n              \u2248 0.779\n\nTherefore, the probability that a randomly selected rain shower in this region lasts for more than 30 minutes is approximately 0.779 or 77.9%.",
+            "options": [
+                "0.221",
+                "0.779",
+                "1.779",
+                "0.5"
+            ],
+            "correct_option": "B"
+        },
+        {
+            "question": "A mobile game developer introduces a new loot box system.  Players can purchase these loot boxes for $2 each.  \n\nHere's how the loot box probabilities work: \n\n* **10% Chance:**  The player wins a rare item worth $20. \n* **30% Chance:** The player wins a common item worth $5. \n* **60% Chance:** The player receives no item. \n\nTo make informed purchasing decisions, players want to understand the long-term value proposition of these loot boxes.  \n\n**Task:** Calculate the expected value and variance of a player's net profit from buying a single loot box.",
+            "difficulty": "hard",
+            "reasoning": "## Reasoning:\n\nThis question tests a student's ability to calculate expected value and variance in a scenario involving potential profit and loss. Here's a breakdown of the solution:\n\n**1. Define the Random Variable:**\n\nLet X represent the net profit a player makes from buying a single loot box.\n\n**2.  Possible Values of X:**\n\n* **Win Rare Item:** X = $20 (item value) - $2 (box cost) = $18\n* **Win Common Item:** X = $5 (item value) - $2 (box cost) = $3\n* **Win No Item:**  X = $0 (item value) - $2 (box cost) = -$2 \n\n**3. Probability Distribution:**\n\n| X     | $18  | $3   | -$2  |\n|-------|------|------|------|\n| P(X) | 0.10 | 0.30 | 0.60 |\n\n**4. Calculate Expected Value (E[X]):**\n\nE[X] = \u03a3 [x * P(x)] = ($18 * 0.10) + ($3 * 0.30) + (-$2 * 0.60) = $1.80 + $0.90 - $1.20 = **$1.50**\n\n**5. Calculate Variance (Var[X]):**\n\nVar[X] = E[X\u00b2] - (E[X])\u00b2 \n\n* First, calculate E[X\u00b2]: E[X\u00b2] = \u03a3 [x\u00b2 * P(x)] = ($18\u00b2 * 0.10) + ($3\u00b2 * 0.30) + (-$2\u00b2 * 0.60) = $32.40 + $2.70 + $2.40 = $37.50\n* Now, find Var[X]: Var[X] = $37.50 - ($1.50)\u00b2 = $37.50 - $2.25 = **$35.25**\n\n**Therefore, the expected net profit from buying a loot box is $1.50, and the variance is $35.25.**",
+            "options": [
+                "$1.50",
+                "$1.20",
+                "$35.25",
+                "$37.50"
+            ],
+            "correct_option": "A"
+        },
+        {
+            "question": "**description**: A city experiences power outages according to a Poisson distribution. On average, there are 2 power outages per month.\n\nA new power grid system is being implemented that is expected to reduce the average number of outages by 50%. However, during the initial testing phase of the new system (which lasts for 3 months), there is a 10% chance that the number of outages might actually increase by 20% compared to the old system's average.\n\nWhat is the probability that the city experiences exactly one power outage during the first month of the new system's testing phase, considering the possibility of the initial increase in outages?\n**parameters**: \n  **average_outages_old**: 2\n  **outage_reduction**: 0.5\n  **testing_period**: 3\n  **increase_chance**: 0.1\n  **outage_increase**: 0.2\n",
+            "difficulty": "hard",
+            "reasoning": "This question is designed to be tricky due to the multiple layers of probability involved. Here's how to break down the solution:\n\n**1. Calculate the potential outage rates:**\n   * **Reduced Rate:** 2 outages * 0.5 reduction = 1 outage per month\n   * **Increased Rate:** 2 outages * 0.2 increase = 0.4 increase\n                               2 outages + 0.4 increase = 2.4 outages per month\n\n**2. Calculate the probability of one outage for each scenario:**\n   * **Reduced Rate Scenario:** Use the Poisson distribution formula with \u03bb = 1\n      P(X = 1) = (e^-1 * 1^1) / 1! \u2248 0.368\n   * **Increased Rate Scenario:** Use the Poisson distribution formula with \u03bb = 2.4\n      P(X = 1) = (e^-2.4 * 2.4^1) / 1! \u2248 0.261\n\n**3. Calculate the weighted average probability:**\n   * Probability of one outage is influenced by:\n      * 90% chance of the reduced rate (10% chance of increase is the opposite)\n      * 10% chance of the increased rate\n   * Weighted Average = (0.9 * 0.368) + (0.1 * 0.261) \u2248 0.357 \n\nTherefore, the probability of the city experiencing exactly one power outage during the first month of the new system's testing phase is approximately 0.357 or 35.7%.",
+            "options": [
+                "0.147",
+                "0.261",
+                "0.357",
+                "0.368"
+            ],
+            "correct_option": "C"
+        },
+        {
+            "question": "A bag contains 5 red marbles and 3 blue marbles. You randomly draw three marbles from the bag without replacement. Consider the following events:\n\n* Event A: You draw at least one red marble.\n* Event B: You draw at least two blue marbles. \n\nWhat is the probability of event A happening given that event B has already occurred? ",
+            "difficulty": "medium",
+            "reasoning": "This problem delves into conditional probability and requires careful analysis of the sample space after event B occurs. Here's a step-by-step solution:\n\n**1. Sample Space After Event B:**\n\nSince event B (at least two blue marbles) has occurred, our sample space is reduced. The possible scenarios are:\n\n* B1: Blue, Blue, Red (BBR)\n* B2: Blue, Red, Blue (BRB)\n* B3: Red, Blue, Blue (RBB)\n\n**2.  Favorable Outcomes for Event A:**\n\nWe want to find the probability of event A (at least one red marble) within this reduced sample space. Notice that all three scenarios (B1, B2, B3) satisfy event A.\n\n**3. Calculating Conditional Probability:**\n\nSince all scenarios in our reduced sample space satisfy event A, the probability of A happening given B is 1 (or 100%).\n\n**In summary:** The occurrence of event B guarantees the occurrence of event A in this specific scenario, making the conditional probability 1. ",
+            "options": [
+                "1/8",
+                "3/8",
+                "1/2",
+                "1"
+            ],
+            "correct_option": "D"
+        },
+        {
+            "question": "**context**: A financial analyst is studying the relationship between the stock prices of two companies, TechCorp and Innovate Inc. Let X represent the daily percentage change in TechCorp's stock price, and Y represent the daily percentage change in Innovate Inc.'s stock price. Historical data has revealed the following:\n\n*  Var(X) = 0.0004\n*  Var(Y) = 0.0001\n*  Correlation(X, Y) = -0.6 \n\nThe analyst wants to create a new investment portfolio by combining the stocks of these two companies. They plan to invest 70% of their capital in TechCorp and 30% in Innovate Inc.\n**task**: Calculate the variance of the daily percentage change in the value of this portfolio.  Based on your calculation, would you say that diversifying the portfolio in this way, compared to investing in only one of the companies, has increased or decreased risk?\n**difficulty**: tricky 8/10\n",
+            "difficulty": "medium",
+            "reasoning": "## Reasoning:\n\nThis question dives into the application of covariance and correlation in analyzing investment portfolios, specifically focusing on risk reduction through diversification.\n\n**1. Understanding Portfolio Variance**\n\nThe variance of a portfolio's return is not simply the weighted average of individual asset variances. It also critically considers the covariance between the assets, reflecting how they move together.\n\nThe formula for the variance of a two-asset portfolio is:\n\n```\nVar(Portfolio) = w\u2081\u00b2 * Var(X) + w\u2082\u00b2 * Var(Y) + 2 * w\u2081 * w\u2082 * Cov(X, Y) \n```\n\nwhere:\n\n* w\u2081 and w\u2082 are the weights of the assets in the portfolio (0.7 and 0.3 in this case)\n* Var(X) and Var(Y) are the variances of the individual asset returns\n* Cov(X, Y) is the covariance between the returns of the two assets\n\n**2. Calculating Covariance from Correlation**\n\nWe are given the correlation coefficient (\u03c1) and individual variances, and we can use the following relationship to calculate covariance:\n\n```\nCorrelation(X, Y) = Cov(X, Y) / (SD(X) * SD(Y))\n```\n\nRearranging to solve for covariance:\n\n```\nCov(X, Y) = Correlation(X, Y) * SD(X) * SD(Y)\n```\n\nWe can calculate the standard deviations (SD) by taking the square root of the variances:\n\n* SD(X) = \u221aVar(X) = \u221a0.0004 = 0.02\n* SD(Y) = \u221aVar(Y) = \u221a0.0001 = 0.01\n\nNow, we can calculate the covariance:\n\n```\nCov(X, Y) = -0.6 * 0.02 * 0.01 = -0.00012\n```\n\n**3. Calculating Portfolio Variance**\n\nPlugging the values into the portfolio variance formula:\n\n```\nVar(Portfolio) = (0.7)\u00b2 * 0.0004 + (0.3)\u00b2 * 0.0001 + 2 * 0.7 * 0.3 * (-0.00012)\n             = 0.000196 + 0.000009 - 0.0000504\n             = 0.0001546\n```\n\n**4. Interpreting the Result**\n\nThe variance of the portfolio (0.0001546) is less than the variance of either individual stock (0.0004 for TechCorp and 0.0001 for Innovate Inc.). This demonstrates that diversification has reduced the risk of the portfolio. The negative correlation between the two stocks implies they tend to move in opposite directions, which helps to offset losses in one stock with gains in the other.\n\n**Therefore, diversifying the portfolio in this way has decreased risk.**",
+            "option and correct options": {
+                "options": [
+                    {
+                        "option": "The variance of the portfolio is 0.00025, and diversification has increased risk.",
+                        "correct": false
+                    },
+                    {
+                        "option": "The variance of the portfolio is 0.0001546, and diversification has decreased risk.",
+                        "correct": true
+                    },
+                    {
+                        "option": "The variance of the portfolio is 0.000305, and diversification has had no impact on risk.",
+                        "correct": false
+                    },
+                    {
+                        "option": "The variance of the portfolio cannot be determined with the given information.",
+                        "correct": false
+                    }
+                ]
+            },
+            "options": [
+                "0.00025",
+                "0.0001546",
+                "0.000305",
+                "Cannot be determined"
+            ],
+            "correct_option": "B"
+        }
+    ],
+    "title": "Quantitative Ability",
+    "topic": "Quants - Probability",
+    "exam_id": 18,
+    "order": 12
+}
