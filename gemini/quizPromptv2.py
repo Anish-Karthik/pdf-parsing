@@ -6,7 +6,7 @@ import traceback
 from commonQuizPrompt import *
 
 
-def get_response_delayed_prompt(prompt, delay=1):
+def get_response_delayed_prompt(prompt, delay=0.5):
     time.sleep(delay)
     try:
         raw_response = model.generate_content([prompt])
@@ -88,8 +88,8 @@ def get_quiz_json_prompt(topic, question_prompt, subtopic, skills, difficulty):
     """
 
 
-def get_pro_reasoning(question):
-    return model_pro.generate_content(
+def get_pro_reasoning_math(question):
+    return get_response_delayed_prompt(
         f"""
         <question>
         {question["question"]}
@@ -100,6 +100,24 @@ def get_pro_reasoning(question):
 
         verify the mathematical calulations and every logical reasoning is correct.
 
+        """
+    ).text
+
+def get_pro_reasoning(question):
+    return get_response_delayed_prompt(
+        f"""
+        <question>
+        {question["question"]}
+        </question>
+
+        answer the above question step by step.
+        Carefully examine the grammar and sentence structure, offering suggestions for improvement where necessary.
+Explore the deeper meaning of the text, considering context, authorial intent, and its relevance to broader themes.
+
+        for literature
+        Break down the passage step by step, discussing key literary techniques such as metaphor, simile, symbolism, tone, and theme.
+
+        verify the answer is correct and is grammatically, contextually correct
         """
     ).text
 
@@ -242,8 +260,8 @@ def get_topics(topic):
     List[{{"subtopic": subtopic1}}]
     """
 
-    result = model_pro.generate_content([prompt])
-    return result.text
+    result = get_response_delayed_prompt(prompt)
+    return result
 
 
 def get_valid_topics(topic):
@@ -274,10 +292,27 @@ difficulties = {
     "tricky 8/10": "hard"
 }
 model_pro = generativeai.GenerativeModel(
-    model_name="gemini-1.5-pro"
+    model_name="gemini-1.5-flash"
 )
 
 topics = [
+    "Fill ups - Tenses",
+    # "Fill ups - Modals",
+    # "Fill ups - Articles: A, an, the",
+    # "Fill ups - Prepositions",
+    # "Fill ups - Conjunctions",
+    # "Fill ups - Adjectives and adverbs",
+    # "Fill ups - Pronouns",
+    # "Fill ups - Subject-verb agreement",
+    # "Fill ups - Sentence structure",
+    # "Fill ups - Vocabulary: Synonyms and antonyms",
+    # "Fill ups - Vocabulary: Phrasal verbs",
+    # "Fill ups - Vocabulary: Idioms and proverbs",
+    # "Fill ups - Vocabulary: Collocations",
+    # "Fill ups - Vocabulary: One-word substitutes",
+]
+
+quants_topics = [
     "Quants - Number Systems",
     "Quants - Simplification and Approximation",
     "Quants - Data Interpretation",
