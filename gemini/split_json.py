@@ -19,28 +19,29 @@ json_path_list = sorted([f for f in os.listdir("gemini/gemini_output/new/sbi/rea
 print(json_path_list)
 
 for json_path in json_path_list:
-  with open(f'gemini/gemini_output/new/sbi/reasoning/{json_path}', 'r') as json_file:
-    data = json.load(json_file)
+  if(json_path == "Logical Reasoning - Alphanumeric Series.json"):
+    with open(f'gemini/gemini_output/new/sbi/reasoning/{json_path}', 'r') as json_file:
+      data = json.load(json_file)
 
-    sbi_questions = []
-    ibps_questions = []
+      sbi_questions = []
+      ibps_questions = []
 
-    for i,question in enumerate(data["questions"]):
-      if i % 2 == 0:
-        ibps_questions.append(question)
-      else:
-        sbi_questions.append(question)
+      for i,question in enumerate(data["questions"]):
+        if i % 2 == 0:
+          ibps_questions.append(question)
+        else:
+          sbi_questions.append(question)
 
-    sbi = data.copy()
-    sbi["questions"] = sbi_questions
-    sbi["exam_id"] = sbi_exam_id
+      sbi = data.copy()
+      sbi["questions"] = sbi_questions
+      sbi["exam_id"] = sbi_exam_id
 
-    ibps = data.copy()
-    ibps["questions"] = ibps_questions
-    ibps["exam_id"] = ibps_exam_id
+      ibps = data.copy()
+      ibps["questions"] = ibps_questions
+      ibps["exam_id"] = ibps_exam_id
 
-    with open(f'gemini/gemini_output/new/sbi/reasoning/{json_path}', 'w') as json_file:
-      json.dump(sbi, json_file, indent=4)
+      with open(f'gemini/gemini_output/new/sbi/reasoning/{json_path}', 'w') as json_file:
+        json.dump(sbi, json_file, indent=4)
 
-    with open(f'gemini/gemini_output/new/ibps/reasoning/{json_path}', 'w') as json_file:
-      json.dump(ibps, json_file, indent=4)
+      with open(f'gemini/gemini_output/new/ibps/reasoning/{json_path}', 'w') as json_file:
+        json.dump(ibps, json_file, indent=4)

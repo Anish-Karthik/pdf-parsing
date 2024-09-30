@@ -1,18 +1,6 @@
 {
     "questions": [
         {
-            "question": "What letter comes next in this sequence?\n\nA, C, E, G, __",
-            "difficulty": "easy",
-            "reasoning": "This sequence follows a pattern of skipping one letter of the alphabet:\n\nA \u2192 (B) \u2192 C \u2192 (D) \u2192 E \u2192 (F) \u2192 G \u2192 (H) \u2192 **I**\n\nTherefore, the next letter in the sequence is 'I'.",
-            "options": [
-                "H",
-                "I",
-                "J",
-                "K"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "What letter comes next in the series: C, E, G, I, ...?",
             "difficulty": "easy",
             "reasoning": "This series follows a simple pattern of skipping one letter in the alphabet:\n\n* C is followed by D (skipped), then E\n* E is followed by F (skipped), then G\n* G is followed by H (skipped), then I\n\nTherefore, the next letter should be K (skipping J).",
@@ -21,18 +9,6 @@
                 "K",
                 "L",
                 "M"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "What number should replace the question mark in the following series?\n\n2, 4, 6, 8, ?",
-            "difficulty": "easy",
-            "reasoning": "This number series follows a simple pattern of adding 2 to the previous number. \n\nLet's break it down step-by-step:\n* 2 + 2 = 4\n* 4 + 2 = 6\n* 6 + 2 = 8\n* 8 + 2 = 10\n\nTherefore, the missing number is 10.",
-            "options": [
-                "8",
-                "10",
-                "12",
-                "14"
             ],
             "correct_option": "B"
         },
@@ -49,18 +25,6 @@
             "correct_option": "B"
         },
         {
-            "question": "What is the next term in the following alphanumeric series?\n\nA2Z, C4X, E6V, G8T, ... ",
-            "difficulty": "easy",
-            "reasoning": "This series follows a pattern:\n\n* **Letters:**  The letters are increasing by two steps: A, C, E, G...\n* **Numbers:** The numbers are increasing by two: 2, 4, 6, 8...\n* **Letters:** The letters are decreasing by two steps: Z, X, V, T...\n\nTherefore, the next term in the series would be **I10R** continuing all three established patterns.",
-            "options": [
-                "I10R",
-                "H12Q",
-                "I10T",
-                "J12S"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "What is the missing term in the following alphanumeric series?\n\nA2, C4, E6, __, I10",
             "difficulty": "easy",
             "reasoning": "This question tests the basic understanding of arithmetic progressions within alphanumeric series. Here's how to solve it:\n\n1. **Analyze the pattern:**\n   - The series alternates between letters and numbers.\n   - The letters are consecutive vowels (A, E, I, ...).\n   - The numbers are consecutive even numbers (2, 4, 6, ...).\n\n2. **Identify the missing term:**\n   - The missing term should be a letter following 'E', which is 'G'.\n   - The missing term should be a number following '6', which is '8'.\n\n3. **Combine the letter and number:**\n   - The missing term is **G8**.",
@@ -71,18 +35,6 @@
                 "G9"
             ],
             "correct_option": "B"
-        },
-        {
-            "question": "**Series:**  B2E5H8K11\n\n**Instruction:** What is the next element in the series?",
-            "difficulty": "easy",
-            "reasoning": "This series combines alphabetical and numerical patterns:\n\n* **Alphabetical Pattern:** The letters are increasing by three letters: B (+3) E (+3) H (+3) K...\n* **Numerical Pattern:** The numbers are increasing by three: 2 (+3) 5 (+3) 8 (+3) 11...\n\nTo find the next element, follow both patterns:\n\n* **Next Letter:** K (+3) = N\n* **Next Number:** 11 (+3) = 14\n\nTherefore, the next element in the series is **N14**.",
-            "options": [
-                "N14",
-                "M13",
-                "N13",
-                "M14"
-            ],
-            "correct_option": "A"
         },
         {
             "question": "**Series:** A1B, C2D, E3F, ...\n\n**Task:** What is the next term in the series?\n\n**Difficulty Level:** 5/10",
@@ -97,18 +49,6 @@
             "correct_option": "A"
         },
         {
-            "question": "Identify the term that does not belong in the following series:\n\nA2, C4, E6, G8, I9, K10",
-            "difficulty": "easy",
-            "reasoning": "This series follows a pattern where the letters increase alphabetically (A, C, E, G, I, K) and the numbers increase by 2 (2, 4, 6, 8, 9, 10).\n\nLet's analyze each term:\n* A2 follows the pattern.\n* C4 follows the pattern.\n* E6 follows the pattern.\n* G8 follows the pattern.\n* **I9 breaks the pattern.** The number should be 10, not 9.\n* K10 follows the pattern.\n\nTherefore, the term that does not belong is **I9**.",
-            "options": [
-                "A2",
-                "C4",
-                "E6",
-                "I9"
-            ],
-            "correct_option": "D"
-        },
-        {
             "question": "What is the missing element in the following series: A1, C8, E27, __?, I81?",
             "difficulty": "easy",
             "reasoning": "This series combines letter positions with cubes of consecutive numbers:\n\n* **A1:**  A is the 1st letter, and 1\u00b3 = 1\n* **C8:**  C is the 3rd letter, and 3\u00b3 = 8\n* **E27:** E is the 5th letter, and 5\u00b3 = 27\n* **I81:** I is the 9th letter, and 9\u00b3 = 81\n\nFollowing the pattern, the missing element should use the 7th letter and the cube of 7:\n\n* 7th letter = G\n* 7\u00b3 = 343 \n\nTherefore, the missing element is G343.",
@@ -119,18 +59,6 @@
                 "G344"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "A rabbit breeder observes that his rabbits reproduce in pairs. Each mature rabbit pair produces one new pair of rabbits every month. Starting with one pair of newborn rabbits, how many pairs of rabbits will the breeder have after 3 months? Assume no rabbits die during this period.",
-            "difficulty": "easy",
-            "reasoning": "This question illustrates a Fibonacci-like recursive pattern. Here's how it unfolds:\n\n* **Month 1:** The initial rabbit pair is still too young to reproduce. So, there remains **1** pair.\n* **Month 2:** The initial pair matures and gives birth to a new pair. Total pairs now: **2**.\n* **Month 3:** The original pair reproduces again (1 pair), and the new pair from Month 2 matures but doesn't reproduce yet. Total pairs: **3**.\n\nTherefore, the breeder will have 3 pairs of rabbits after 3 months.",
-            "options": [
-                "1 pair",
-                "2 pairs",
-                "3 pairs",
-                "4 pairs"
-            ],
-            "correct_option": "C"
         },
         {
             "question": "Observe the following alphanumeric sequence and identify the next element:\n\nA2, C4, E6, G8, ... ",
@@ -145,18 +73,6 @@
             "correct_option": "B"
         },
         {
-            "question": "What is the next letter in the sequence: Z, Y, X, W, __?",
-            "difficulty": "easy",
-            "reasoning": "This sequence follows the reverse order of the English alphabet. \n\n* We start with 'Z'.\n* The next letter is 'Y', which comes before 'Z'.\n* This pattern continues: 'X', then 'W'. \n\nTherefore, the next letter would be 'V', as it comes before 'W' in the reverse order.",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "V"
-            ],
-            "correct_option": "D"
-        },
-        {
             "question": "What letter comes next in the series: A, D, G, J, __?",
             "difficulty": "easy",
             "reasoning": "This series follows a pattern of adding 3 letters to get the next letter. \n\n* A + 3 = D\n* D + 3 = G\n* G + 3 = J\n* J + 3 = M \n\nTherefore, the missing letter is **M**.",
@@ -167,18 +83,6 @@
                 "N"
             ],
             "correct_option": "C"
-        },
-        {
-            "question": "**Series:** C3F6I9... \n**Question:** What is the next term in the series?",
-            "difficulty": "easy",
-            "reasoning": "This question tests your understanding of how letters and numbers relate to each other within a sequence.  \n\nHere's how to break down the pattern:\n\n* **Letters:** The letters are increasing by 3 alphabetical positions: C, F, I (+3 each time).\n* **Numbers:** The numbers are increasing by 3: 3, 6, 9 (+3 each time).\n\n**To find the next term:**\n1. **Next Letter:**  Following I (+3 positions) is L.\n2. **Next Number:** Following 9 (+3) is 12.\n\n**Therefore, the next term in the series is L12.**",
-            "options": [
-                "L12",
-                "J10",
-                "M15",
-                "K11"
-            ],
-            "correct_option": "A"
         },
         {
             "question": "What is the next number in the sequence below?\n\n2, 5, 11, 23, __",
@@ -193,18 +97,6 @@
             "correct_option": "C"
         },
         {
-            "question": "Consider the following alphanumeric series and identify the next term in the sequence:\n\nK1A, J4C, I7E, H10G, ... ",
-            "difficulty": "medium",
-            "reasoning": "This alphanumeric series involves a combination of patterns for both letters and numbers:\n\n**Letter Pattern:** The letters are in reverse alphabetical order, decreasing by one letter each time: K, J, I, H...\n\n**Number Pattern:** The numbers increase by 3 in each term: 1, 4, 7, 10...\n\n**Combining the patterns:** To get the next term, we continue both patterns. The next letter would be 'G' (one letter before H), and the next number would be '13' (adding 3 to 10).\n\nTherefore, the next term in the series is **G13I**.",
-            "options": [
-                "G13I",
-                "H13I",
-                "G10I",
-                "I13G"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "What is the next element in this series?\n\nK2L4M8N16...",
             "difficulty": "medium",
             "reasoning": "This series uses a combined alphabetic and numeric pattern. Let's break it down:\n\n* **Alphabetic Pattern:** The letters are consecutive in alphabetical order (K, L, M, N...).\n* **Numeric Pattern:** The numbers are doubling (2, 4, 8, 16...). \n\nTo find the next element, we follow both patterns:\n\n* **Next Letter:**  The letter after N is O.\n* **Next Number:**  16 doubled is 32. \n\nTherefore, the next element in the series is **O32**.",
@@ -213,18 +105,6 @@
                 "O32",
                 "P32",
                 "P34"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "What is the missing element in this series: ZY, WX, UT, __, QP?",
-            "difficulty": "medium",
-            "reasoning": "This series follows a pattern of reverse alphabetical order with pairs of letters. \n\n* We start with ZY, then move two steps back in the alphabet to get WX.\n* Continuing this pattern, we get UT and then need to move two steps back again.\n* Two steps back from UT in reverse alphabetical order brings us to SR. \n\nTherefore, the missing element is SR, and the complete series is ZY, WX, UT, SR, QP.",
-            "options": [
-                "TS",
-                "SR",
-                "RS",
-                "QT"
             ],
             "correct_option": "B"
         },
@@ -241,18 +121,6 @@
             "correct_option": "B"
         },
         {
-            "question": "Observe the alphanumeric series below. Identify the underlying pattern and determine the missing term:\n\n P5, R10, T15, V20, __, X30 ",
-            "difficulty": "medium",
-            "reasoning": "This question falls under the category of 'Arithmetic Progressions in Alphanumeric Series' within the broader topic of 'Logical Reasoning - Alphanumeric Series'. Here's how to break down the solution:\n\n1. **Analyze the pattern:**\n    * **Letters:** The letters are progressing alphabetically with a skip of one letter (P, _R_, _T_, _V_, __, _X_). \n    * **Numbers:** The numbers form an arithmetic progression with a common difference of 5 (5, 10, 15, 20,...).\n\n2. **Determine the missing term:**\n    * **Letter:** Following the pattern, the missing letter should be 'Y' (skipping 'W').\n    * **Number:** The number sequence continues with 25 (20 + 5 = 25).\n\n3. **Combine letter and number:** The missing term is **Y25**.",
-            "options": [
-                "W20",
-                "Y25",
-                "Z30",
-                "X35"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "Consider the following alphanumeric series:\n\nZ1A, Y3C, X6E, W9G, ...\n\nWhich term comes next in the series?",
             "difficulty": "medium",
             "reasoning": "This series involves a combination of patterns:\n\n1. **Decreasing Alphabets:** The series progresses backward through the alphabet (Z, Y, X, W, ...).\n2. **Increasing Numbers:** The numbers increase by 3 in each term (1, 3, 6, 9, ...).\n3. **Alternating Letters:** Every other letter is skipped (A, C, E, G, ...).\n\nFollowing these patterns, the next term should start with the letter 'V', followed by the number '12', and then the letter 'I'. \n\nTherefore, the correct next term in the series is **V12I**.",
@@ -261,18 +129,6 @@
                 "W15K",
                 "U12I",
                 "V9I"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Identify the next element in the following alphanumeric series:\n\nZ1, Y4, X7, W10, ...",
-            "difficulty": "medium",
-            "reasoning": "This series involves two interwoven patterns:\n\n**1.  Descending Alphabet:** The letters are moving backward through the alphabet, decreasing by one position each time (Z, Y, X, W,...).\n\n**2. Increasing Numbers (Adding 3):**  The numbers are increasing by 3 with each element (1, 4, 7, 10,...).\n\n**To find the next element:**\n\n* **Letter:** Following the pattern, the next letter should come before 'W' in the alphabet, which is 'V'.\n* **Number:**  The next number should be 3 more than the last number, '10', which is 13.\n\nTherefore, the next element in the series is **V13**.",
-            "options": [
-                "V13",
-                "U16",
-                "V10",
-                "X13"
             ],
             "correct_option": "A"
         },
@@ -289,18 +145,6 @@
             "correct_option": "B"
         },
         {
-            "question": "What element comes next in this alphanumeric series?\n\nSeries: D2, G5, J8, __ ",
-            "difficulty": "medium",
-            "reasoning": "This question tests a student's understanding of positional values of letters and their ability to apply this knowledge to decipher patterns in alphanumeric series. Here's how to solve it:\n\n**1. Analyze the pattern:**\n   * **Letters:** The letters are progressing alphabetically with a skip of two letters (D, _ , G, _ , J, _ ).\n   * **Numbers:** The numbers are increasing by 3 in each step (2, 5, 8, ...).\n\n**2. Apply the pattern:**\n   * **Next Letter:** Following the pattern, the next letter should be 'M' (skip two letters after 'J').\n   * **Next Number:** Adding 3 to the last number '8' gives us '11'.\n\n**3. Combine letter and number:** The missing element is 'M11'.\n\nTherefore, the complete series is: D2, G5, J8, **M11**",
-            "options": [
-                "K11",
-                "M11",
-                "L10",
-                "N12"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "What comes next in the following alphanumeric series?\n\nB4, D16, F36, H64, ___.",
             "difficulty": "medium",
             "reasoning": "This series combines letters and the squares of consecutive even numbers:\n\n* **B4:** B is the second letter of the alphabet, and 4 is the square of 2 (2 * 2 = 4).\n* **D16:** D is the fourth letter, and 16 is the square of 4 (4 * 4 = 16).\n* **F36:** F is the sixth letter, and 36 is the square of 6 (6 * 6 = 36).\n* **H64:** H is the eighth letter, and 64 is the square of 8 (8 * 8 = 64).\n\nFollowing this pattern, the next element should use the tenth letter of the alphabet (J) and the square of 10 (10 * 10 = 100).\n\nTherefore, the missing element is **J100**.",
@@ -309,18 +153,6 @@
                 "I81",
                 "K121",
                 "H144"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**Series:** A1 Z2 B3 Y4 C5\n\n**Question:** What is the next element in the series?",
-            "difficulty": "medium",
-            "reasoning": "This question falls under the 'Alternating Patterns in Series' subtopic within 'Logical Reasoning - Alphanumeric Series'.  Here's how to break down the pattern:\n\n* **Pattern 1:**  The series alternates between letters and numbers. \n* **Pattern 2:** The letters follow an ascending alphabetical order: A, B, C...\n* **Pattern 3:** The numbers follow an ascending numerical order: 1, 2, 3...\n* **Pattern 4:**  The letters are also presented in an alternating pattern - one from the beginning of the alphabet, then one from the end, and so on (A, Z, B, Y, C...)\n\n**Therefore, to find the next element:**\n1. The next element should be a letter (following the alternating pattern).\n2. The letter should be 'X' as it comes after 'Y' when moving backward in the alphabet.\n3. The number following 'X' should be '6', continuing the ascending numerical order.\n\n**The correct answer is X6.**",
-            "options": [
-                "X6",
-                "D6",
-                "W5",
-                "Y7"
             ],
             "correct_option": "A"
         },
@@ -337,18 +169,6 @@
             "correct_option": "A"
         },
         {
-            "question": "What is the next element in this series?\n\nB2, E5, H8, K11, ...",
-            "difficulty": "medium",
-            "reasoning": "This question tests a student's ability to convert letters to their corresponding numerical positions in the alphabet and then identify the pattern in the given alphanumeric series. Here's how to break it down:\n\n1. **Convert the letters to numbers:**\n   * B = 2\n   * E = 5\n   * H = 8\n   * K = 11 \n\n2. **Identify the pattern:**\n   * Notice that both the letter positions and the numbers are increasing by 3 in each element of the series.\n\n3. **Apply the pattern to find the next element:**\n   * The next letter after K would be N (11 + 3 = 14)\n   * The next number after 11 would be 14 (11 + 3 = 14)\n\n4. **Combine the letter and number:**\n   * The next element in the series is N14. \n",
-            "options": [
-                "N13",
-                "N14",
-                "M14",
-                "L15"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "Observe the following alphanumeric sequence and determine the missing element:\n\nA3Z, D9W, G27T, ..., P81N\n\nWhat is the missing element in the sequence?",
             "difficulty": "medium",
             "reasoning": "This question falls under the category of 'Geometric Progressions in Alphanumeric Series' within the broader topic of 'Logical Reasoning - Alphanumeric Series'. Here's a breakdown of the solution:\n\n**1. Analyze the Pattern:**\n   * **Letters:** The letters are advancing by 3 steps forward in the alphabet (A + 3 = D, D + 3 = G, G + 3 = J, and so on).\n   * **Numbers:** The numbers form a geometric progression: 3, 9, 27...  Each number is three times greater than the previous one (3 x 3 = 9, 9 x 3 = 27, and so on).\n   * **Reverse Letters:** The letters at the end of each element are moving one step backward in the alphabet (Z - 1 = Y, Y - 1 = X, X - 1 = W, and so on)\n\n**2.  Apply the Pattern to Find the Missing Element:**\n    * Following G27T, the next letter should be J (G + 3 = J).\n    * The next number should be 81 (27 x 3 = 81).\n    * The last letter should be P (T - 1 = S, S - 1 = R, R - 1 = Q, Q - 1 = P)\n\n**3. The Answer:** Therefore, the missing element in the series is **J81P**.",
@@ -361,18 +181,6 @@
             "correct_option": "B"
         },
         {
-            "question": "Identify the next element in the series: Z52, W48, T44, Q40, ...",
-            "difficulty": "medium",
-            "reasoning": "This series involves a combination of alphabetical and numerical patterns:\n\n* **Alphabetical Pattern:** The letters are moving backward in steps of two: Z, W, T, Q...\n* **Numerical Pattern:** The numbers are decreasing in steps of four: 52, 48, 44, 40...\n\nTo find the next element:\n1. **Next Letter:** Following the pattern, two letters back from 'Q' is 'N'.\n2. **Next Number:**  Subtracting four from '40' gives us '36'.\n\nTherefore, the next element in the series is **N36**.",
-            "options": [
-                "N36",
-                "O32",
-                "P36",
-                "N32"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "What is the next element in this series:  Z25, Y23, X21, W19, __ ",
             "difficulty": "medium",
             "reasoning": "This series follows a pattern of alternating letters and numbers.  \n\n* **Letters:** The letters are in reverse alphabetical order (Z, Y, X, W...). \n* **Numbers:** The numbers decrease by 2 (25, 23, 21, 19...).  \n\nFollowing this pattern, the next letter would be V, and the next number would be 17. \n\nTherefore, the next element in the series is **V17**.",
@@ -381,18 +189,6 @@
                 "U18",
                 "W17",
                 "V19"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**Series:** B8, F27, K64, P125, ... \n\n**Instruction:** What is the next element in the series?",
-            "difficulty": "medium",
-            "reasoning": "This series combines letter sequences with the cubes of consecutive numbers. Let's break it down:\n\n* **Letters:** The letters progress by skipping three letters in the alphabet (B, F, K, P...). Following this pattern, the next letter should be U (P, Q, R, S, **U**).\n* **Numbers:** The numbers represent consecutive cubes (2\u00b3, 3\u00b3, 4\u00b3, 5\u00b3...). The next number in this sequence would be 6\u00b3, which equals 216.\n\n**Therefore, the next element in the series is U216.**",
-            "options": [
-                "U216",
-                "V216",
-                "U126",
-                "V126"
             ],
             "correct_option": "A"
         },
@@ -409,18 +205,6 @@
             "correct_option": "A"
         },
         {
-            "question": "What term comes next in this alphanumeric series:\n\nB3D, E7G, H11K, K15N, ?",
-            "difficulty": "medium",
-            "reasoning": "This series combines patterns in both the letters and the numbers:\n\n**Letters:** The letters follow a pattern of skipping one letter: B (_C_) D (_E_) F (_G_) H ...\n\n**Numbers:** The numbers increase by 4 in each term: 3 (+4) 7 (+4) 11 (+4) 15 ...\n\n**Combining the Patterns:**\n\n* The next letter after K, skipping one, is N.\n* The next number after 15, adding 4, is 19. \n\nTherefore, the missing term is **N19Q**.",
-            "options": [
-                "N19P",
-                "N19Q",
-                "O19Q",
-                "M19Q"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "A secret code is being used to send messages. The code works by converting each letter to its corresponding numerical position in the alphabet (A=1, B=2, C=3...Z=26) and then adding a specific number to it. For example, if the specific number is 3, then the letter 'D' would be converted to 7 (4+3). Using this information, decipher the code for the word 'GAME' if the specific number used for encoding is '5'. ",
             "difficulty": "medium",
             "reasoning": "Here's how to solve the problem:\n\n1. **Convert each letter to its numerical equivalent:**\n    * G = 7\n    * A = 1\n    * M = 13\n    * E = 5\n\n2. **Add the specific number (5) to each letter's numerical equivalent:**\n    * G = 7 + 5 = 12\n    * A = 1 + 5 = 6\n    * M = 13 + 5 = 18\n    * E = 5 + 5 = 10 \n\n3. **The final code for 'GAME' is 12 6 18 10.**",
@@ -431,18 +215,6 @@
                 "12 1 18 10"
             ],
             "correct_option": "B"
-        },
-        {
-            "question": "What is the next element in the following alphanumeric series?\n\nZ1, Y4, X9, W16, ...",
-            "difficulty": "medium",
-            "reasoning": "This question combines a geometric progression with a reverse alphabetical pattern, creating a medium level of difficulty. Here's how to solve it:\n\n* **Numbers:** The numbers (1, 4, 9, 16...) represent the squares of consecutive whole numbers (1\u00b2, 2\u00b2, 3\u00b2, 4\u00b2...).  The next number in this sequence would be 5\u00b2, which is 25.\n* **Letters:** The letters are in reverse alphabetical order (Z, Y, X, W...). The letter preceding W is V.\n* **Combining the Patterns:**  Combining these patterns, the next element in the series is V25.",
-            "options": [
-                "V25",
-                "U16",
-                "W25",
-                "X25"
-            ],
-            "correct_option": "A"
         },
         {
             "question": "**Series:** Z25, Y23, X21, W19, V15\n\n**Instruction:** Identify the term that does not follow the pattern of the series.",
@@ -457,18 +229,6 @@
             "correct_option": "D"
         },
         {
-            "question": "What is the missing element in the following alphanumeric series?\n\nZ1, W4, T7, Q10, ? ",
-            "difficulty": "medium",
-            "reasoning": "This series combines skipping letters with a numerical pattern:\n\n**1. Letter Pattern:** The letters are going backward, skipping two letters each time:\n\n   Z, W, T, Q, ... \n\n**2. Number Pattern:** The numbers are increasing by 3:\n\n    1, 4, 7, 10, ...\n\n**Combining the Patterns:** To find the missing element, follow both patterns:\n\n*   The next letter after Q, skipping two letters backward, is N.\n*   The next number in the sequence, adding 3 to the last number, is 13.\n\nTherefore, the missing element is **N13**.",
-            "options": [
-                "N11",
-                "N13",
-                "P13",
-                "S16"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "Consider the following alphanumeric series: A2, B4, C8, D16, ...\n\nWhat is the next element in the series?",
             "difficulty": "medium",
             "reasoning": "This question tests the ability to recognize and apply combined recursive patterns within an alphanumeric series, a key concept in understanding 'Fibonacci and Other Recursive Patterns'.\n\nHere's how to break down the pattern:\n\n* **Letters:** The letters are simply progressing alphabetically: A, B, C, D, ...\n* **Numbers:** The numbers are doubling with each step: 2, 4, 8, 16, ...\n\nTo find the next element, follow these steps:\n\n1. **Determine the next letter:** The letter after D is E.\n2. **Determine the next number:** The number after 16 (16 x 2) is 32.\n3. **Combine the letter and number:** The next element in the series is E32.\n\nTherefore, the correct answer is E32.",
@@ -477,18 +237,6 @@
                 "D32",
                 "E16",
                 "F32"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "What is the 10th term in the following alphanumeric series?\n\nZ25, Y23, X21, W19,... ",
-            "difficulty": "medium",
-            "reasoning": "This series utilizes the positional values of letters in the English alphabet.  Let's break down the pattern:\n\n* **Letters:** The letters are in reverse alphabetical order (Z, Y, X, W,...).\n* **Numbers:** The numbers are decreasing by 2 (25, 23, 21, 19,...).\n\nTo find the 10th term, we need to continue both patterns:\n\n1. **Letters:** Following the reverse alphabetical order, the first 10 letters would be: Z, Y, X, W, V, U, T, S, R, Q\n2. **Numbers:** Subtracting 2 for each term, the first 10 numbers would be: 25, 23, 21, 19, 17, 15, 13, 11, 9, 7\n\nCombining the 10th letter and number gives us the answer: **Q7**",
-            "options": [
-                "Q7",
-                "R9",
-                "S11",
-                "T13"
             ],
             "correct_option": "A"
         },
@@ -505,18 +253,6 @@
             "correct_option": "B"
         },
         {
-            "question": "**Series:** Z1A3V5E8\n\n**Task:** What is the next term in the series?\n\n**Options:**\n* a) J11\n* b) I13\n* c) J13 \n* d) I11",
-            "difficulty": "medium",
-            "reasoning": "This series combines alphabetic and numeric patterns. Let's break it down:\n\n**Alphabetic Pattern:** The letters are moving backward in the English alphabet, skipping a letter each time (Z, A, V, E,...). Therefore, the next letter should be 'I'. \n\n**Numeric Pattern:** The numbers are increasing with the following pattern: +2, +2, +3.  This pattern repeats, so the next increase should be +2. The last number was '8', so adding 2 gives us '10'. However, since the next letter in the sequence ('J') comes *after* 'I' in the alphabet, we add an extra '1' to the numeric sequence, making the next number '11'.\n\n**Combining the Patterns:** The next term in the series combines the next letter ('I') and the next number ('11'), giving us **I11**.",
-            "options": [
-                "J11",
-                "I13",
-                "J13",
-                "I11"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "Consider the following alphanumeric series:\n\nZ1Y4X9W16_ \n\nWhat letter-number combination should replace the underscore to complete the series?",
             "difficulty": "medium",
             "reasoning": "This series follows two alternating patterns: \n\n**Letters:** The letters are in reverse alphabetical order, decreasing by one letter each time (Z, Y, X, W, ...).\n\n**Numbers:** The numbers are perfect squares, increasing in order (1, 4, 9, 16, ...).\n\nTo find the missing element, follow the patterns:\n\n* **Letter:** The next letter should come before 'W' in the alphabet, which is 'V'.\n* **Number:** The next perfect square after 16 is 25. \n\nTherefore, the missing element is V25.",
@@ -529,18 +265,6 @@
             "correct_option": "C"
         },
         {
-            "question": "Identify the next element in this series: \n\nA2Z, B4Y, C6X, D8W, ...",
-            "difficulty": "medium",
-            "reasoning": "This question falls under the 'Practice with Diverse Alphanumeric Series' subtopic within the broader topic of 'Logical Reasoning - Alphanumeric Series'.  To solve this, observe the patterns:\n\n* **Letters:**  The letters are in alphabetical order (A, B, C, D...).\n* **Numbers:** The numbers increase by 2 (2, 4, 6, 8...).\n* **Reverse Letters:** The final letters are in reverse alphabetical order (Z, Y, X, W...).\n\nTherefore, the next element would continue these patterns: \n\n* **Letter:** E (following D)\n* **Number:** 10 (adding 2 to 8)\n* **Reverse Letter:** V (preceding W in reverse)\n\nThis gives us the answer: **E10V**",
-            "options": [
-                "E10V",
-                "F12U",
-                "E12V",
-                "F10V"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "Identify the missing terms in the following alphanumeric series:\n\nZ1A3V5E7...?...",
             "difficulty": "medium",
             "reasoning": "This series combines alphabetic and numeric patterns:\n\n* **Alphabetic Pattern:**  The series uses letters in reverse alphabetical order, skipping one letter at a time: Z, A, V, E...  The next letters would be C, A.\n* **Numeric Pattern:** The numbers increase consecutively by 2: 1, 3, 5, 7... The next numbers would be 9, 11. \n\nCombining these patterns, the missing terms are **C9A11**.",
@@ -549,18 +273,6 @@
                 "D8B10",
                 "B10D12",
                 "C10A12"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Identify the missing term in the following alphanumeric series:\n\nA3Z, C9Y, E27X, __, I81V ",
-            "difficulty": "medium",
-            "reasoning": "This series combines multiple patterns: \n\n**1. Letter Pattern:** The letters are in alphabetical order, skipping one letter each time (A, C, E, _, I). Therefore, the missing letter is G.\n\n**2. Number Pattern:** The numbers are increasing by multiplying the previous number by 3 (3, 9, 27, _, 81).  The missing number is 27 * 3 = 83.\n\n**3. Last Letter Pattern:** The last letters are in reverse alphabetical order (Z, Y, X, _, V).  The missing letter is W.\n\nCombining these patterns, the missing term is **G81W**.",
-            "options": [
-                "G81W",
-                "F81W",
-                "G81X",
-                "H81W"
             ],
             "correct_option": "A"
         },
@@ -577,18 +289,6 @@
             "correct_option": "C"
         },
         {
-            "question": "What is the next element in this series?\n\n2A, 5C, 10E, 17G, __",
-            "difficulty": "medium",
-            "reasoning": "This series combines two patterns: \n\n1. **Number Pattern:**  The difference between the numbers increases by consecutive prime numbers (3, 5, 7...)\n   * 5 - 2 = 3\n   * 10 - 5 = 5\n   * 17 - 10 = 7\n   * The next prime number is 11, so the next number should be 17 + 11 = 28 \n\n2. **Letter Pattern:** The letters are alternating vowels and consonants, each appearing twice in a row.\n   * A, C, E, G\n   * The next letter should be 'I'.\n\nTherefore, the next element in the series is **28I**.",
-            "options": [
-                "26I",
-                "28I",
-                "26H",
-                "28H"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "Series: A3, C5, F8, K13, ...\n\nQuestion: What is the next element in the series?",
             "difficulty": "medium",
             "reasoning": "This series combines two patterns: \n\n1. **Alphabetical Pattern:** The letters increase by skipping one letter: A, _C_, D, _F_, G, _K_...\n\n2. **Fibonacci Sequence (Numerical):** The numbers follow the Fibonacci sequence where each number is the sum of the two preceding ones: 3, 5, 8 (3+5), 13 (5+8)...\n\nTo find the next element:\n\n- The next letter after K, skipping one, would be R.\n- The next number in the Fibonacci sequence is 21 (8+13).\n\nTherefore, the next element in the series is **R21**.",
@@ -601,19 +301,6 @@
             "correct_option": "A"
         },
         {
-            "question": "What are the next two terms in this series?\n\nAB2, EF5, IJ8, __, __ ",
-            "difficulty": "medium",
-            "reasoning": "This series involves two patterns happening simultaneously:\n\n**1. Letter Pattern:**  The series skips two letters forward: \n   * AB __ CD __ EF __ GH __ IJ __ KL __ MN\n\n**2. Number Pattern:** The series adds 3 to the previous number:\n   * 2 + 3 = 5\n   * 5 + 3 = 8\n   * 8 + 3 = 11\n   * 11 + 3 = 14\n\nCombining both patterns, the missing terms are MN11 and OP14.",
-            "options": [
-                "KL11, MN14",
-                "MN12, OP15",
-                "MN11, OP14",
-                "LN11, OQ14"
-            ],
-            "correct": "MN11, OP14",
-            "correct_option": "C"
-        },
-        {
             "question": "What is the next element in this series?\n\nSeries: Z1A, Y4D, X9G, W16J, ...",
             "difficulty": "medium",
             "reasoning": "This series combines three patterns:\n\n1. **Descending Alphabet (Reverse Order):** The letters are moving backward in the alphabet (Z, Y, X, W,...).\n\n2. **Squaring Numbers:** The numbers represent consecutive squares (1, 4, 9, 16,... which are 1\u00b2, 2\u00b2, 3\u00b2, 4\u00b2,...).\n\n3. **Skipping Letters:**  Each letter in the sequence is three letters ahead of the previous one (A to D, D to G, G to J,...).\n\n**To find the next element:**\n\n* **Letter:** The next letter after W in reverse order is V.\n* **Number:**  The next square after 16 is 5\u00b2 = 25.\n* **Skipped Letter:** The letter three letters after J is M. \n\nTherefore, the next element in the series is **V25M**.",
@@ -622,18 +309,6 @@
                 "V25M",
                 "U25M",
                 "V25L"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Observe the following alphanumeric series and find the missing term: \n\n P4, R7, T10, V13, __, X19 \n\n What is the missing term, considering the series follows an arithmetic progression in both its alphabetical and numerical components?",
-            "difficulty": "medium",
-            "reasoning": "Let's break down the series to understand the pattern:\n\n**1. Alphabetical Pattern:**\n* The series progresses with every other letter: P, R, T, V, _, X...\n* Notice that the missing letter should fall alphabetically between V and X.\n* Therefore, the missing letter is 'W'.\n\n**2. Numerical Pattern:**\n* The numbers in the series form an arithmetic progression: 4, 7, 10, 13, _, 19...\n* The common difference in this progression is 3 (each number is 3 greater than the previous one).\n* Following this pattern, the missing number would be 16 (13 + 3).\n\n**Combining the patterns:**\nBy combining the alphabetical and numerical patterns, we can determine that the missing term in the series is **W16**.",
-            "options": [
-                "W14",
-                "W16",
-                "X16",
-                "V19"
             ],
             "correct_option": "B"
         },
@@ -650,19 +325,6 @@
             "correct_option": "A"
         },
         {
-            "question": "Identify the term that does NOT belong in the following alphanumeric series:\n\nK2A, L4C, M8E, N14G, O22I, P32K ",
-            "difficulty": "medium",
-            "reasoning": "This series combines three patterns:\n\n1. **Letters:**  The series progresses through consecutive letters of the alphabet (K, L, M, N, O, P). \n\n2. **Numbers:** The numbers initially double (2, 4, 8), but then transition to a pattern of adding consecutive even numbers (8 + 6 = 14, 14 + 8 = 22, 22 + 10 = 32).\n\n3. **Vowel Pattern:**  Every other letter, starting with the second term, is a vowel, ascending in alphabetical order (A, C, E, G, I, K).\n\n**The incorrect term is O22I.** While the letter and vowel pattern hold, the number should be 20 (14 + 6) to follow the established numerical pattern.",
-            "options": [
-                "K2A",
-                "M8E",
-                "O22I",
-                "P32K"
-            ],
-            "correct": "O22I",
-            "correct_option": "C"
-        },
-        {
             "question": "What two elements are missing from the following alphanumeric series?\n\nK4L3M2N1O0P_Q_R8S7",
             "difficulty": "medium",
             "reasoning": "This series involves two interwoven patterns: a descending letter sequence and an alternating numerical sequence.\n\n**1. Letter Pattern:** The letters are descending alphabetically, starting with 'K' and moving backward to 'S': K, L, M, N, O, P, Q, R, S. \n\n**2. Numerical Pattern:**  The numbers alternate between descending by 1 (4, 3, 2, 1, 0) and ascending by 1 (8, 7). \n\n**Finding the Missing Elements:**\n* Following the letter pattern, the next letter after 'P' should be 'Q'.\n*  Continuing the numerical pattern, we need to descend from 0, giving us '-1'.\n* The next missing element, following 'Q', would be 'R'.\n* The final missing element, continuing the numerical pattern, requires us to ascend from 7, giving us '8'.\n\n**Therefore, the complete series is: K4L3M2N1O0P-1Q8R8S7**",
@@ -673,18 +335,6 @@
                 "Q and 8"
             ],
             "correct_option": "D"
-        },
-        {
-            "question": "**Series:** C8, H27, M64, R125, ?  \n\n**Task:** What is the next element in this alphanumeric series? \n\n**Difficulty Level:** Medium 8/10",
-            "difficulty": "medium",
-            "reasoning": "This series combines letter positions with the cubes of consecutive numbers. Let's break it down:\n\n* **C8:**  'C' is the 3rd letter of the alphabet, and 8 is the cube of 2 (2 x 2 x 2 = 8). \n* **H27:** 'H' is the 8th letter, and 27 is the cube of 3 (3 x 3 x 3 = 27).\n* **M64:** 'M' is the 13th letter, and 64 is the cube of 4 (4 x 4 x 4 = 64).\n* **R125:** 'R' is the 18th letter, and 125 is the cube of 5 (5 x 5 x 5 = 125). \n\n**Pattern:**  The letter position increases by 5 each time, and the numbers are consecutive cubes.\n\n**Finding the Next Element:**\n1. **Letter:** The next letter should be 5 positions after 'R', which is 'W'.\n2. **Number:**  The next cube after 125 is 6 x 6 x 6 = 216. \n\n**Therefore, the next element in the series is W216.**",
-            "options": [
-                "W216",
-                "X216",
-                "W217",
-                "V216"
-            ],
-            "correct_option": "A"
         },
         {
             "question": "Consider the series: D4, G18, J36, ...\n\nWhat is the next term in the series?",
@@ -699,18 +349,6 @@
             "correct_option": "D"
         },
         {
-            "question": "**Series:** ZA, YB, XC, ...\n\n**Task:** What is the next element in the series?\n\n**Options:**\n\nA) WD\nB) DV\nC) YU\nD) WV",
-            "difficulty": "medium",
-            "reasoning": "This series uses a combination of alphabetical order and reverse order:\n\n* **First Letter:**  The first letter of each element moves backward through the alphabet (Z, Y, X, ...).\n* **Second Letter:** The second letter of each element moves forward through the alphabet (A, B, C, ...).\n\nFollowing this pattern, the next element would be **WD**:\n\n* **W** comes before X in the alphabet.\n* **D** comes after C in the alphabet. \n\nTherefore, the correct answer is **A) WD**.",
-            "options": [
-                "WD",
-                "DV",
-                "YU",
-                "WV"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "If we convert the English alphabets A-Z to 1-26, what would be the missing term in the series?\n\nSeries: 2-1, 4-3, 8-5, 16-7, ___, 64-11 ",
             "difficulty": "medium",
             "reasoning": "This alphanumeric series presents a pattern where:\n\n* **Number Part:** The number part of each term is doubled in the subsequent term (2, 4, 8, 16, ___, 64). So the missing number would be 16 * 2 = 32\n* **Letter Part:**  The letter part of each term is represented by consecutive odd numbers (1, 3, 5, 7, ___, 11). The missing odd number in the sequence would be 9. \n\nTherefore, combining both parts, the missing term is **32-9**.",
@@ -723,18 +361,6 @@
             "correct_option": "B"
         },
         {
-            "question": "Given two sequences intertwined: A Z B Y C X...  What would be the 8th element in this series?",
-            "difficulty": "hard",
-            "reasoning": "This question delves into the concept of intertwined sequences specifically focusing on Alphabetical Order and Reverse Order. \n\nLet's break down the pattern:\n-  The sequence alternates between a forward progression through the alphabet (A, B, C...) and a backward progression (Z, Y, X...).\n\nTo find the 8th element, let's map out the sequence:\n1. **A**\n2. **Z**\n3. **B**\n4. **Y**\n5. **C**\n6. **X**\n7. **D**\n8. **W** \n\nTherefore, the 8th element in the series is **W**. ",
-            "options": [
-                "A",
-                "Z",
-                "W",
-                "X"
-            ],
-            "correct_option": "C"
-        },
-        {
             "question": "What is the next element in this series?\n\nSeries: Z1A, Y3B, X5C, ...",
             "difficulty": "hard",
             "reasoning": "This alphanumeric series combines three distinct patterns:\n\n1. **Descending Alphabet (Z-Y-X...):** The series moves backward through the alphabet.\n2. **Ascending Odd Numbers (1-3-5...):** The numerical component increases by two with each element.\n3. **Ascending Alphabet (A-B-C...):** A third letter pattern runs concurrently, advancing through the alphabet in standard order.\n\nFollowing these patterns, the next element should be: \n*  Next letter in descending order: W\n*  Next odd number: 7\n*  Next letter in ascending order: D\n\nTherefore, the correct answer is **W7D**.",
@@ -743,18 +369,6 @@
                 "X7D",
                 "W5E",
                 "X9E"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "What is the missing term in the following alphanumeric series?\n\nZ1A, Y4B, X9C, W16D, ____",
-            "difficulty": "hard",
-            "reasoning": "This series combines multiple patterns: \n\n**1. Descending Alphabet:** The letters are moving backward through the alphabet (Z, Y, X, W...).\n\n**2. Perfect Squares:** The numbers are consecutive perfect squares (1, 4, 9, 16...).\n\n**3. Interlacing:** The pattern alternates between a letter and then a number.\n\n**To find the missing term:**\n\n*   **Next Letter:** Following the descending pattern, the next letter should be 'V'.\n*   **Next Number:** The next perfect square after 16 is 25.\n\n**Therefore, the missing term is V25E.**",
-            "options": [
-                "V25E",
-                "U25E",
-                "V25F",
-                "W25E"
             ],
             "correct_option": "A"
         },
@@ -771,18 +385,6 @@
             "correct_option": "B"
         },
         {
-            "question": "What is the missing element in this series?\n\n `20A, 19C, 17E, __, 12I` ",
-            "difficulty": "hard",
-            "reasoning": "This series involves converting letters to their corresponding numerical positions in the alphabet (A=1, B=2, C=3, etc.) and then applying a pattern.\n\nHere's how to break it down:\n\n* **20A:**  20 represents the number, and A represents its alphabetical position (1). \n* **19C:** The number decreases by 1 (20-1=19), and the letter skips to the next odd-positioned letter (C). \n* **17E:** The number decreases by 2 (19-2=17), and the letter again skips to the next odd-positioned letter (E).\n\nFollowing this pattern, the missing element would be:\n\n* The number should decrease by 3 from the previous element (17-3 = 14). \n* The letter should skip to the next odd-positioned letter (G).\n\nTherefore, the missing element is **14G**.  ",
-            "options": [
-                "13G",
-                "14G",
-                "15H",
-                "16J"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "Identify the next element in the series:\n\nZ1A, Y4D, X9G, W16J, ...",
             "difficulty": "hard",
             "reasoning": "This series combines multiple patterns:\n\n* **Letters:** The letters are in reverse alphabetical order, decreasing by one: Z, Y, X, W...\n* **Numbers:** The numbers are perfect squares, increasing consecutively: 1 (1x1), 4 (2x2), 9 (3x3), 16 (4x4)...\n* **Hidden Pattern:** Every other letter is skipped (A, D, G, J... which represents a +3 letter progression).\n\nTherefore, the next element in the series is **V25M**.\n\n* The letter following W in reverse alphabetical order is V.\n* The next perfect square after 16 is 25 (5x5).\n* The letter following J with a +3 progression is M. ",
@@ -793,18 +395,6 @@
                 "V25N"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "The following series represents a variation on the Fibonacci sequence, intertwined with a letter pattern. Decipher the logic and determine the next element in the series:\n\nA1, B3, C2, D5, E7, F12, G...? ",
-            "difficulty": "hard",
-            "reasoning": "This series cleverly blends two distinct patterns: \n\n**1. Fibonacci Sequence (Numbers):**  The numbers follow a modified Fibonacci sequence, where each number is the sum of the *two* preceding numbers:\n    * 1 + 2 = 3\n    * 2 + 3 = 5\n    * 3 + 5 = 8\n    * 5 + 7 = 12\n    * 7 + 12 = 19\n\n**2. Alphabetical Order (Letters):** The letters simply progress in alphabetical order (A, B, C, D...).\n\nTherefore, combining both patterns, the next element in the series is **G19**.",
-            "options": [
-                "H12",
-                "G19",
-                "F17",
-                "G21"
-            ],
-            "correct_option": "B"
         },
         {
             "question": "Consider the following alphanumeric series:\n\nK1, M8, P27, S64, ? \n\nWhat comes next in the series? ",
@@ -819,18 +409,6 @@
             "correct_option": "C"
         },
         {
-            "question": "What is the next element in this alphanumeric sequence?\n\nSeries:  Q1A, S2D, U6G, W12J, ...",
-            "difficulty": "hard",
-            "reasoning": "This series combines three interwoven patterns:\n\n1. **Letters:** The letters follow a pattern of skipping one letter in the alphabet: Q, S, U, W, ...  The next letter should be Y.\n\n2. **Numbers:** The numbers increase according to the following pattern: 1, 2, 6, 12...  Notice the differences between the numbers are increasing: 1, 4, 6,... These differences are increasing by 3, then 2.  To continue this pattern, the next difference should be an increase of 1, making the next number in the sequence 13 (12 + 1 = 13).\n\n3. **Consonant Vowel Pattern:**  The pattern alternates between consonants and vowels:  Q(consonant) 1 A(vowel), S(consonant) 2 D(vowel), and so on.  Following W, which is a consonant, the next letter needs to be a vowel. This further supports our conclusion that the next letter is Y.\n\n**Therefore, the next element in the series is Y13M.**",
-            "options": [
-                "Y13M",
-                "X13M",
-                "Y14M",
-                "Y13N"
-            ],
-            "correct_option": "A"
-        },
-        {
             "question": "What is the next element in this alphanumeric series?\n\nSeries:  K1A, J4D, I9G, H16J, ... ",
             "difficulty": "hard",
             "reasoning": "This series combines three interwoven patterns:\n\n**1. Letter Pattern (Decreasing):** The letters are moving backward in alphabetical order, decreasing by one letter at a time: K, J, I, H...\n\n**2. Number Pattern (Squares):** The numbers are consecutive perfect squares: 1 (1\u00b2), 4 (2\u00b2), 9 (3\u00b2), 16 (4\u00b2)...\n\n**3. Letter Pattern (Increasing):** The second letters in each element are moving forward in alphabetical order, increasing by one letter at a time: A, D, G, J...\n\n**Finding the Next Element:**\n\n* **Letter:** Following the pattern, the next letter should come before 'H' in the alphabet, which is 'G'.\n* **Number:** The next perfect square after 16 is 25 (5\u00b2). \n* **Second Letter:** The second letter should come after 'J' in the alphabet, which is 'K'.\n\n**Therefore, the next element in the series is G25K.**",
@@ -841,18 +419,6 @@
                 "G25L"
             ],
             "correct_option": "A"
-        },
-        {
-            "question": "Identify the missing term in the following alphanumeric series:\n\n2A4 Z1B3 Y2C5 __ 3E9\n\n A) W3D7  B) X4D7  C) X3D7  D) W4D8",
-            "difficulty": "hard",
-            "reasoning": "This alphanumeric series incorporates multiple interwoven patterns, demanding a keen eye for detail to decipher:\n\n**Pattern 1: Numbers**\n* Observe the first number in each group: 2 _ 4 _  _ 3.  These numbers follow a +2 pattern (2 + 2 = 4, 4 + 2 = 6). Therefore, the first number in the missing group should be 6.\n* The second number in each group (A4, B3, C5, __, E9) increases by +1 (4, 5, 6, 7, 8, 9).\n* The third number in each group (4, 3, 5, _, 9) follows a pattern of -1, +2, -1, +2... Therefore, the third number in the missing group should be 7.\n\n**Pattern 2: Letters**\n* The letters are in reverse alphabetical order with a letter skipped between each group (Z, Y, X, W, V...). Therefore, the missing letter should be 'X'.\n\n**Combining the Patterns**\nWhen we combine our deduced patterns, the missing group should be 'X3D7'.\n\n**Therefore, the correct answer is C) X3D7**",
-            "options": [
-                "W3D7",
-                "X4D7",
-                "X3D7",
-                "W4D8"
-            ],
-            "correct_option": "C"
         },
         {
             "question": "Decipher the missing element in this alphanumeric sequence. Consider each element as a distinct unit and analyze the patterns within and between them:\n\n1A4,  E4D,  5I9,  O9L,  ? \n\nWhat intricate rule governs the progression of letters and numbers in this series? Unravel the logic and provide the missing element.",
@@ -867,18 +433,6 @@
             "correct_option": "A"
         },
         {
-            "question": "Series: D4, I10, N14, S20, ...\n\nTask:  What is the logic governing this alphanumeric series, and what would be the next element? Keep in mind that this question involves intricate positional relationships between the letters and numbers. Carefully analyze the pattern for successful decoding.  \n\nDifficulty: Tricky 9/10",
-            "difficulty": "hard",
-            "reasoning": "This series combines letter positions with numerical sequences. Let's break it down:\n\n* **Letter Pattern:** The letters are progressing in a +5 pattern according to their positions in the alphabet (D is the 4th letter, I is the 9th, N is the 14th, S is the 19th, and so on).\n* **Number Pattern:** The numbers initially seem to increase by 6, then 4, then 6 again. This suggests an alternating pattern of +6, +4, +6, +4, and so on.\n\n**Finding the Next Element:**\n1. **Next Letter:** Following the +5 pattern, the next letter would be the 24th letter of the alphabet, which is 'X'.\n2. **Next Number:** Following the alternating pattern, we should add +4 to the last number (20). So, 20 + 4 = 24.\n\nTherefore, the next element in the series is **X24**.",
-            "options": [
-                "X22",
-                "X24",
-                "Z24",
-                "Y26"
-            ],
-            "correct_option": "B"
-        },
-        {
             "question": "Identify the missing term in this alphanumeric series:\n\nZ1, Y4, X9, W16, _ , U36",
             "difficulty": "hard",
             "reasoning": "This alphanumeric series presents a tricky pattern involving both letters and numbers:\n\n**1. Letter Pattern:** The letters are in reverse alphabetical order, decreasing by one letter each time (Z, Y, X, W, ..., U).\n\n**2. Number Pattern:**  The numbers represent perfect squares, increasing sequentially (1\u00b2, 2\u00b2, 3\u00b2, 4\u00b2, ..., 6\u00b2).\n\n**Finding the Missing Term:**\n* **Letter:** Following the pattern, the missing letter should be 'V'.\n* **Number:** The next perfect square in the sequence is 5\u00b2, which equals 25.\n\nTherefore, the missing term is **V25**.",
@@ -889,18 +443,6 @@
                 "V36"
             ],
             "correct_option": "B"
-        },
-        {
-            "question": "Identify the incorrect term in the following alphanumeric sequence. The pattern is intricate, demanding close attention to both the alphabetic and numerical progressions.\n\nSeries:  Z1A3Y6B8X12C13V18D20U24",
-            "difficulty": "hard",
-            "reasoning": "This alphanumeric series combines multiple patterns:\n\n**1. Alternating Letters and Numbers:** The series alternates between letters and numbers (Z1A3Y6...).\n\n**2. Alphabetical Pattern:** The letters follow a pattern of moving one step forward, then two steps backward in the alphabet:\n   - Z \u2192 A (Forward 1)\n   - A \u2192 Y (Backward 2)\n   - Y \u2192 B (Forward 1)\n   - B \u2192 X (Backward 2)\n   - And so on...\n\n**3. Numerical Pattern:** The numbers initially increase by 2, then 4, then 6, and so on, creating an expanding difference:\n   - 1 \u2192 3 (+2)\n   - 3 \u2192 6 (+3)\n   - 6 \u2192 8 (+2)\n   - 8 \u2192 12 (+4)\n   - 12 \u2192 13 (+1)\n   - 13 \u2192 18 (+5)\n   - 18 \u2192 20 (+2)\n   - 20 \u2192 24 (+4)\n\n**Error Identification:** The error lies in the numerical pattern. Instead of 'C13', it should be 'C14' to maintain the expanding difference. \n\n**Therefore, the incorrect term is 'C13'.**",
-            "options": [
-                "A13",
-                "B13",
-                "C13",
-                "D13"
-            ],
-            "correct_option": "C"
         }
     ],
     "title": "Logical Reasoning",
