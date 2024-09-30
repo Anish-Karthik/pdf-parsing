@@ -180,6 +180,9 @@ def get_valid_quiz_json_recursive(topic, subtopic, difficulty, difficulty_value,
     quiz_json_prompt = get_quiz_json_prompt(topic, question_prompt, subtopic, skills, difficulty)
     option_map = {"0": "A", "1": "B", "2": "C", "3": "D"}
 
+    question_json_response_without_options = ""
+    question_json_response = ""
+
     try:
         question_json_response_without_options = get_pro_response(quiz_json_prompt)
         question_json = json_parse(question_json_response_without_options)
@@ -212,6 +215,7 @@ def get_valid_quiz_json_recursive(topic, subtopic, difficulty, difficulty_value,
             return {}
         print(f"no. of recursive calls: {cnt}")
         print(f"question error: {error}")
+
         error_question_json = {
             "question": question_json_response_without_options,
             "option": question_json_response,
@@ -274,6 +278,33 @@ model_pro = generativeai.GenerativeModel(
 )
 
 topics = [
+    # "Quants - Number Systems",
+    # "Quants - Simplification and Approximation",
+    # "Quants - Data Interpretation",
+    "Quants - Quadratic Equations",
+    # "Quants - Profit and Loss",
+    # "Quants - Simple Interest and Compound Interest",
+    # "Quants - Time and Work",
+    # "Quants - Time, Distance, and Speed",
+    # "Quants - Mensuration",
+    # "Quants - Average",
+    # "Quants - Ratio and Proportion",
+    # "Quants - Partnership",
+    # "Quants - Mixtures and Alligations",
+    # "Quants - Permutation and Combination",
+    # "Quants - Probability",
+    # "Quants - Data Sufficiency",
+    # "Quants - Inequalities",
+    # "Quants - Logarithms",
+    # "Quants - Surds and Indices",
+    # "Quants - Coordinate Geometry",
+    # "Quants - Trigonometry",
+    # "Quants - Algebra",
+    # "Quants - Geometry",
+    # "Quants - Calculus",
+]
+
+reasoning_topics = [
     # "Logical Reasoning - Alphanumeric Series",
     # "Logical Reasoning - Ranking Direction Alphabet Test",
     # "Logical Reasoning - Data Sufficiency",
@@ -282,7 +313,7 @@ topics = [
     # "Logical Reasoning - Puzzle",
     # "Logical Reasoning - Syllogism",
     # "Logical Reasoning - Clocks",
-    "Logical Reasoning - Blood Relations",
+    # "Logical Reasoning - Blood Relations",
     # "Logical Reasoning - Input-Output",
     # "Logical Reasoning - Coding-Decoding",
     # "Logical Reasoning - Calendars",
@@ -308,16 +339,21 @@ for order, topic in enumerate(topics):
             thread.join()
     quiz = {}
     quiz["questions"] = questions
-    quiz["title"] = "Logical Reasoning"
+    quiz["title"] = "Quantitative Ability"
     quiz["topic"] = f"{topic}"
-    quiz["exam_id"] = 17
+    quiz["exam_id"] = 18
     quiz["order"] = order
 
-    with open(f'gemini_output/new/sbi/{topic}.json', 'w') as json_file:
+    
+    if not os.path.exists(f'gemini_output/new/sbi/quants'):
+        os.mkdir(f'gemini_output/new/sbi/quants')
+    with open(f'gemini_output/new/sbi/quants/{topic}.json', 'w') as json_file:
         json.dump(quiz, json_file, indent=4)
 
     quiz["questions"] = error_questions
-    with open(f'gemini_output/error/sbi/reasoning/{topic}.json', 'w') as json_file:
+    if not os.path.exists(f'gemini_output/error/sbi/quants'):
+        os.mkdir(f'gemini_output/error/sbi/quants')
+    with open(f'gemini_output/error/sbi/quants/{topic}.json', 'w') as json_file:
         json.dump(quiz, json_file, indent=4)
 
 # def get_pro_questions(quiz_json, cnt=0):

@@ -144,5 +144,5 @@ def find_json_files(directory):
 
 
 # Example usage:
-directory_path = "gemini/gemini_output/new/ibps/reasoning/"
+directory_path = "gemini/gemini_output/new/sbi/quants/"
 json_files = find_json_files(directory_path)
