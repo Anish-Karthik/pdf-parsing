@@ -296,7 +296,7 @@ model_pro = generativeai.GenerativeModel(
 )
 
 topics = [
-    "Fill ups - Tenses",
+    # "Fill ups - Tenses",
     # "Fill ups - Modals",
     # "Fill ups - Articles: A, an, the",
     # "Fill ups - Prepositions",
@@ -380,15 +380,15 @@ for order, topic in enumerate(topics):
     quiz["order"] = order
 
     
-    if not os.path.exists(f'gemini_output/new/sbi/quants'):
-        os.mkdir(f'gemini_output/new/sbi/quants')
-    with open(f'gemini_output/new/sbi/quants/{topic}.json', 'w') as json_file:
+    if not os.path.exists(f'gemini_output/new/sbi/fill_ups'):
+        os.mkdir(f'gemini_output/new/sbi/fill_ups')
+    with open(f'gemini_output/new/sbi/fill_ups/{topic}.json', 'w') as json_file:
         json.dump(quiz, json_file, indent=4)
 
     quiz["questions"] = error_questions
-    if not os.path.exists(f'gemini_output/error/sbi/quants'):
-        os.mkdir(f'gemini_output/error/sbi/quants')
-    with open(f'gemini_output/error/sbi/quants/{topic}.json', 'w') as json_file:
+    if not os.path.exists(f'gemini_output/error/sbi/fill_ups'):
+        os.mkdir(f'gemini_output/error/sbi/fill_ups')
+    with open(f'gemini_output/error/sbi/fill_ups/{topic}.json', 'w') as json_file:
         json.dump(quiz, json_file, indent=4)
 
 # def get_pro_questions(quiz_json, cnt=0):

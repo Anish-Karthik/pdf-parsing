@@ -10,16 +10,18 @@ para_jumbles_topics = [
     "Sentence structure and grammar: Understanding how sentence structure and grammar affect the overall coherence and flow"
 ]
 
-ibps_exam_id = 10
-sbi_exam_id = 18
+ibps_exam_id = 9
+sbi_exam_id = 16
+copy_from = "gemini/gemini_output/new/sbi/fill_ups/"
+copy_to = "gemini/gemini_output/new/ibps/fill_ups/"
 # title = "Logical Reasoning"
 
-json_path_list = sorted([f for f in os.listdir("gemini/gemini_output/new/sbi/quants") if f.endswith(".json")])
+json_path_list = sorted([f for f in os.listdir(f"{copy_from}") if f.endswith(".json")])
 
 print(json_path_list)
 
 for json_path in json_path_list:
-    with open(f'gemini/gemini_output/new/sbi/quants/{json_path}', 'r') as json_file:
+    with open(f'{copy_from}{json_path}', 'r') as json_file:
       data = json.load(json_file)
 
       sbi_questions = []
@@ -39,12 +41,12 @@ for json_path in json_path_list:
       ibps["questions"] = ibps_questions
       ibps["exam_id"] = ibps_exam_id
 
-      if not os.path.exists(f'gemini/gemini_output/new/sbi/quants'):
-        os.mkdir(f'gemini/gemini_output/new/sbi/quants')
-      with open(f'gemini/gemini_output/new/sbi/quants/{json_path}', 'w') as json_file:
+      if not os.path.exists(f'{copy_from}'):
+        os.mkdir(f'{copy_from}')
+      with open(f'{copy_from}{json_path}', 'w') as json_file:
         json.dump(sbi, json_file, indent=4)
 
-      if not os.path.exists(f'gemini/gemini_output/new/ibps/quants'):
-        os.mkdir(f'gemini/gemini_output/new/ibps/quants')
-      with open(f'gemini/gemini_output/new/ibps/quants/{json_path}', 'w') as json_file:
+      if not os.path.exists(f'{copy_to}'):
+        os.mkdir(f'{copy_to}')
+      with open(f'{copy_to}{json_path}', 'w') as json_file:
         json.dump(ibps, json_file, indent=4)
