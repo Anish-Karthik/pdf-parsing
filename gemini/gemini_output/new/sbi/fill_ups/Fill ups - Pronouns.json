@@ -1,452 +1,983 @@
 {
-    "questions": [
-        {
-            "question": "The squirrel and ____ ate the nuts from the feeder.",
-            "difficulty": "easy",
-            "reasoning": "The sentence has a compound subject: \"the squirrel and ____\".  The correct pronoun must agree with the plural subject.  Since \"squirrel\" and \"____\" are both singular, we need a plural pronoun. Of the options, only \"they\" is a plural pronoun. So the answer is \"they\".",
-            "options": [
-                "it",
-                "they",
-                "he",
-                "she"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The team celebrated _____ victory after a hard-fought game. \n\n (a) its \n (b) it's \n (c) their \n (d) his",
-            "difficulty": "easy",
-            "reasoning": "The correct pronoun must agree with the antecedent in number. The antecedent 'team' is plural, so the correct pronoun is 'their.'  The other options are incorrect because they are either singular possessive pronouns or contractions.",
-            "options": [
-                "its",
-                "it's",
-                "their",
-                "his"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "____ went to the store to buy some milk.",
-            "difficulty": "medium",
-            "reasoning": "The sentence is simple and requires a subject pronoun to complete the sentence. The action of 'going to the store' is singular, indicating the subject pronoun should also be singular.  Of the choices, only 'She' is a singular subject pronoun.  Therefore, the correct answer is 'She'.",
-            "options": [
-                "He",
-                "She",
-                "We",
-                "They"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The dog wagged its tail at ______.",
-            "difficulty": "medium",
-            "reasoning": "The sentence uses the verb 'wagged' which takes an object.  The object of the sentence is the pronoun that receives the action of wagging the tail.  Since the sentence is referring to the dog, the correct object pronoun is 'me'.  The other options are incorrect because 'you' refers to the person being spoken to, and 'myself' is a reflexive pronoun used when the subject and object of the sentence are the same person.  Therefore, the correct answer is 'me'.",
-            "options": [
-                "me",
-                "you",
-                "myself",
-                "it"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The ______ cat sat on the windowsill, watching the birds outside.",
-            "difficulty": "medium",
-            "reasoning": "The sentence clearly indicates that the cat belongs to someone. The pronoun \"his\" refers to a male owner of the cat. The other options are incorrect as they refer to different genders or a different owner.",
-            "options": [
-                "her",
-                "his",
-                "their",
-                "its"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "___ of the students in the class brought their lunch today.  \n\nOptions: all, any, both, each, either, everyone, everything, few, many, neither, nobody, nothing, some, several",
-            "difficulty": "medium",
-            "reasoning": "The sentence implies that not all students brought their lunch, but some did.  The pronoun 'some' suggests a portion or a number that is not all.  The other options do not fit the context. For example, 'all' would mean every student brought their lunch, while 'none' would mean no students brought their lunch.  The correct answer is 'some' because it suggests that a portion of the students, but not all, brought their lunch.",
-            "options": [
-                "all",
-                "any",
-                "both",
-                "some"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "My dog is much more playful than ____.",
-            "difficulty": "medium",
-            "reasoning": "The sentence compares the speaker's dog to another dog.  The pronoun 'he' or 'she' is used to refer to a singular person or animal.  In this case, the pronoun should refer to the other dog being compared. Since the dog is the subject of the comparison, the pronoun 'he' or 'she' is appropriate, depending on the dog's gender.  The options 'him' and 'her' are incorrect because they are objective case pronouns, used as objects of verbs or prepositions.",
-            "options": [
-                "him",
-                "her",
-                "he",
-                "she"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The cat cleaned _______ after spilling its food.",
-            "difficulty": "medium",
-            "reasoning": "The correct reflexive pronoun is \"itself.\"  The sentence describes the cat performing an action on itself, so a reflexive pronoun is needed. Since the cat is singular, the correct reflexive pronoun is \"itself.\" ",
-            "options": [
-                "itself",
-                "themselves",
-                "herself",
-                "himself"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The dog ____ chased the cat is brown.",
-            "difficulty": "medium",
-            "reasoning": "The relative pronoun in this sentence should refer to the dog. Since the dog is the subject of the verb 'chased', we need a subject pronoun. 'Who' is the subject pronoun that refers to people or animals.  'Which' is used for things. 'Whom' and 'whose' are used for objects.  Therefore, the correct answer is 'who'.",
-            "options": [
-                "who",
-                "whom",
-                "which",
-                "whose"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The **_____**  loved to play in the garden, but **_____**  were too small to reach the highest branches.",
-            "difficulty": "medium",
-            "reasoning": "The correct pronoun to use in the first blank is 'child' because it is singular and refers to the antecedent 'The'. In the second blank, we need the plural pronoun 'they' because it refers to the plural antecedent 'child'. The sentence is about a single child who is too small to reach the highest branches, implying more than one branch, but the focus is on the singular child and their individual limitations. Therefore, the correct pronoun is 'they' to refer to the plural 'child' in the first blank.",
-            "options": [
-                "Child",
-                "Children",
-                "He",
-                "She"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The baker had a dozen cookies, but ______ of them were burnt. ",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a situation where some of the cookies were burnt. The indefinite pronoun 'some' accurately reflects this, as it implies a portion of the cookies were affected.  The other options don't fit the context: \n\n* 'All' suggests every cookie was burnt, which isn't the case.\n* 'Any' implies it's uncertain if any were burnt.\n* 'Few' suggests a small number, but the sentence doesn't specify the quantity.  \n\nTherefore, 'some' is the most appropriate choice.",
-            "options": [
-                "All",
-                "Some",
-                "Any",
-                "Few"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The cat stretched ___  legs and yawned lazily in the sun.",
-            "difficulty": "medium",
-            "reasoning": "This question tests understanding of possessive pronouns. The sentence requires a possessive pronoun to show ownership of the cat's legs. \"Its\" is the correct possessive pronoun for the singular noun \"cat\". \"It's\" is a contraction for \"it is\" and does not apply here. \"Their\" is a plural possessive pronoun, inappropriate for a singular noun. \"His\" would be correct if the cat was male, but the sentence doesn't specify gender.",
-            "options": [
-                "It's",
-                "Its",
-                "Their",
-                "His"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "I saw two cats playing in the yard.  ______ were chasing a butterfly.",
-            "difficulty": "medium",
-            "reasoning": "The sentence refers to multiple cats, making \"those\" the correct choice. \"Those\" is the plural form of the demonstrative pronoun and refers to the cats previously mentioned. \"This\" and \"that\" are singular and inappropriate in this context.  \"These\" is also plural but doesn't fit the sentence structure because it would imply a proximity that's not indicated in the sentence.",
-            "options": [
-                "This",
-                "That",
-                "These",
-                "Those"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The professor, [blank] I had previously consulted [blank] the research paper, provided valuable insights.",
-            "difficulty": "medium",
-            "reasoning": "The question tests the student's understanding of pronoun case with the preposition \"for\".  The pronoun following \"for\" is in the objective case, so the correct answer is \"whom\". The pronoun also needs to agree with the antecedent \"professor\", which is singular, so the correct answer is \"whom\".\n\nStep-by-step Explanation:\n\n1. Identify the pronoun: The blank needs a pronoun to replace the noun phrase \"the professor\".\n2. Determine the pronoun's function: The pronoun functions as the object of the preposition \"for\".  Therefore, it should be in the objective case. \n3. Consider pronoun case: The objective case of the pronoun \"who\" is \"whom\".\n4. Check for pronoun-antecedent agreement: \"Whom\" agrees with the singular antecedent \"professor.\"\n5. Verify the preposition: The preposition \"for\" is appropriate in the context, indicating the professor was consulted for a purpose related to the research paper.",
-            "options": [
-                "whom, for",
-                "who, for",
-                "who, about",
-                "whom, about"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The children shared ______ toys with their new friend, who was visiting from another town.",
-            "difficulty": "medium",
-            "reasoning": "The sentence is about children sharing their toys. The possessive adjective 'their' correctly reflects the plural ownership of the toys by the children. 'His' and 'her' would be incorrect because they are singular possessive adjectives, and 'its' is used for inanimate objects. Therefore, 'their' is the only grammatically correct possessive adjective in this context.",
-            "options": [
-                "his",
-                "her",
-                "its",
-                "their"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The CEO, ___ the employees all respected, announced a company-wide bonus.",
-            "difficulty": "medium",
-            "reasoning": "The sentence requires an object pronoun to function as the object of the preposition \"respected.\"  \"Whom\" is the object form of the pronoun, used when the pronoun is the object of a verb or preposition. The other options are incorrect because they are either subject pronouns or possessive pronouns. \n\n* \"Who\" is the subject form of the pronoun and cannot be used as an object.\n* \"Whose\" is a possessive pronoun and cannot be used as the object of a preposition.\n* \"He\" is a subject pronoun and cannot be used as an object.\n\nTherefore, \"whom\" is the only correct option.",
-            "options": [
-                "Who",
-                "Whose",
-                "He",
-                "Whom"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The children shared  ______ toys with their new friends at the park.",
-            "difficulty": "medium",
-            "reasoning": "The correct possessive adjective is 'their' because the sentence refers to the toys belonging to the children.  'Their' is the plural possessive adjective for 'they' which is the subject of the sentence. The other options are incorrect because they don't fit the context of the sentence. 'Its' is used for things, not people. 'Our' is used when referring to something belonging to the speaker and another person. 'My' refers to something belonging to the speaker. \n\nStep by step explanation:\n1. Identify the subject of the sentence: 'The children'.\n2. Determine the possessive adjective needed: Since the subject is plural, we need a plural possessive adjective.\n3. Choose the correct possessive adjective: 'Their' is the correct plural possessive adjective that refers to the children's toys. \n4. The sentence now reads: 'The children shared their toys with their new friends at the park.'",
-            "options": [
-                "its",
-                "our",
-                "my",
-                "their"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The old oak tree stood tall in the center of the park.  ___ leaves rustled gently in the breeze, casting dancing shadows on the grass.",
-            "difficulty": "medium",
-            "reasoning": "The correct pronoun is \"Its.\"  The sentence refers to the singular noun \"tree.\"  \"Its\" is the possessive pronoun for \"it,\" which is the subject pronoun for a singular, non-human noun. While \"Their\" is a plural possessive pronoun and might seem tempting, it refers to multiple nouns and wouldn't be accurate here. Similarly, \"It's\" is a contraction of \"it is\" and does not fit the grammatical structure of the sentence.  \"They\" would refer to multiple trees, but the context is about a single tree.",
-            "options": [
-                "Its",
-                "Their",
-                "It's",
-                "They"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The team practiced diligently for the tournament, but ______ of them were able to secure a victory.",
-            "difficulty": "medium",
-            "reasoning": "The sentence suggests that not all the team members won. This implies a partial number, not the entire team. Among the choices, 'few' is the only option that indicates a small or limited number of team members achieved victory.  The other choices are not suitable: 'any' suggests an indefinite amount, 'some' implies a portion, and 'all' indicates the entirety of the team. Therefore, 'few' is the correct pronoun to complete the sentence.",
-            "options": [
-                "any",
-                "few",
-                "some",
-                "all"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The team of engineers worked tirelessly on the new design, finally presenting ___ final proposal to the board.\na) its \nb) their \nc) it's \nd) them",
-            "difficulty": "medium",
-            "reasoning": "The antecedent of the pronoun is \"team,\" which is a singular noun even though it refers to a group of people. Therefore, the pronoun must also be singular.  \"its\" is the possessive form of \"it,\" and \"it\" is singular. \"their\" is the possessive form of \"they,\" which is plural. \"it's\" is a contraction of \"it is,\" not a possessive pronoun. \"them\" is a plural object pronoun.",
-            "options": [
-                "its",
-                "their",
-                "it's",
-                "them"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The talented artist, [blank] and the experienced sculptor, collaborated on a magnificent art installation.",
-            "difficulty": "medium",
-            "options": [
-                "He",
-                "Them",
-                "They",
-                "It"
-            ],
-            "correct_option": "C",
-            "reasoning": "The sentence has a compound subject: 'the talented artist' and 'the experienced sculptor.'  We need a pronoun that agrees with this plural subject. 'He' is incorrect because it is a singular pronoun. 'Them' is incorrect because it is an object pronoun. We need a subject pronoun. 'They' is the correct answer as it is a plural pronoun that agrees with the compound subject and acts as the subject of the verb 'collaborated.'"
-        },
-        {
-            "question": "After a long day of studying,  ___  decided to treat  ___  to a delicious meal at a new restaurant.",
-            "difficulty": "medium",
-            "reasoning": "This question tests the understanding of pronoun case in a sentence with two pronouns. The first blank requires the nominative case pronoun because it acts as the subject of the verb 'decided'. The second blank requires the objective case pronoun because it is the object of the verb 'treat'.  The correct pronouns are 'he/she' and 'himself/herself', depending on the gender of the person being referred to. However, the question requires a singular pronoun, making 'he/she' the best fit in this context.  Therefore, the correct answer is 'he/she' for the first blank and 'himself/herself' for the second blank.  The pronoun in the first blank functions as the subject of the verb 'decided', while the pronoun in the second blank functions as the object of the verb 'treat', requiring the objective case.",
-            "options": [
-                " He, him",
-                " She, she",
-                " He, himself",
-                " She, her"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "____ did you say was responsible for the missing supplies?",
-            "difficulty": "medium",
-            "reasoning": "The question is asking about the person who is responsible, making 'who' the correct interrogative pronoun.  It functions as the subject of the verb 'was'.  The sentence structure is simple, but it requires the student to understand the grammatical role of the pronoun within the question.",
-            "options": [
-                "Who",
-                "What",
-                "When",
-                "Where"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The mischievous monkey, known for its playful antics, amused _______ by swinging from the vines.",
-            "difficulty": "medium",
-            "reasoning": "The sentence refers to a single monkey performing an action on itself. Therefore, the correct reflexive pronoun is 'itself'. It reflects the action back to the subject, the monkey.  'Himself' and 'themselves' are incorrect because they refer to a male person or multiple people, respectively. The sentence is about a monkey, not a human or a group of individuals. Thus, 'itself' is the only grammatically correct and logically fitting pronoun.",
-            "options": [
-                "itself",
-                "himself",
-                "themselves",
-                "herself"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "While walking in the park, ____ noticed a small, colorful bird perched on a branch.",
-            "difficulty": "medium",
-            "reasoning": "The correct pronoun is \"I\" because the sentence is describing the action of the speaker. The sentence is in the first-person perspective, making \"I\" the appropriate subject pronoun. The sentence is grammatically correct and makes sense in the context of describing a personal observation. \n\n**Step-by-Step Reasoning:**\n1. **Identify the Subject:**  The subject is the person or thing performing the action. In this sentence, the subject is \"____.\" \n2. **Determine the Subject Pronoun:** We need to choose a subject pronoun that refers to the speaker. \n3. **Apply the Correct Pronoun:** Since the sentence is from the first-person perspective, the correct subject pronoun is \"I.\" \n4. **Check for Consistency:** The sentence is written in the present tense and uses consistent verb conjugation, ensuring grammatical accuracy.",
-            "options": [
-                "You",
-                "They",
-                "I",
-                "He"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "While exploring the ancient ruins, the archaeologists discovered a hidden chamber containing  ______  treasures, including gold coins and ornate jewelry.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes the archaeologists' discovery of treasures within the hidden chamber.  We need a possessive adjective that indicates ownership belonging to the archaeologists. Of the options, only \"their\" signifies ownership by a plural subject, which is \"the archaeologists.\"  The other options are incorrect: \"my\" refers to a single speaker, \"your\" refers to the listener, \"his\" refers to a male singular subject, and \"its\" refers to a singular non-human subject.",
-            "options": [
-                "my",
-                "his",
-                "its",
-                "their"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "After the long hike, we decided to rest ____ the shade of a large oak tree.",
-            "difficulty": "medium",
-            "reasoning": "The correct pronoun to use here is \"in\" because it refers to a location.  We are resting *within* the shade of the tree. The preposition \"in\" is used to indicate a location, and the pronoun \"we\" is in the nominative case.  The pronoun \"we\" is the subject of the verb \"decided.\"  It is important to use the correct case of pronoun when using prepositions, as this can change the meaning of the sentence. For instance, \"under\" would be used to indicate something is beneath the shade of the tree, and \"into\" would be used to indicate the act of moving into the shade of the tree.",
-            "options": [
-                "in",
-                "on",
-                "to",
-                "at"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The committee presented **[blank]** findings to the board, outlining their recommendations for the upcoming fiscal year.",
-            "difficulty": "medium",
-            "reasoning": "The correct pronoun is \"its\" because it refers to the singular noun \"committee.\" The committee is a singular entity, even though it is made up of multiple people.  The pronoun \"their\" is incorrect because it is a plural pronoun and does not agree with the singular subject \"committee.\" The other options, \"our\" and \"we,\" are also incorrect because they do not refer to the committee. \"Our\" refers to the speaker and others, while \"we\" refers to the speaker and a group that includes the listener. \n\n**Step-by-step explanation:**\n1. **Identify the antecedent:** The antecedent is the word or phrase that the pronoun refers to. In this sentence, the antecedent is \"committee.\" \n2. **Determine the pronoun's case:** The pronoun needs to be in the possessive case because it is modifying the noun \"findings.\" \n3. **Check for agreement:** The pronoun must agree with the antecedent in number (singular or plural).  \"Committee\" is singular, so the pronoun must also be singular. \n4. **Choose the correct pronoun:** Based on these steps, the correct pronoun is \"its.\" \n5. **Eliminate incorrect options:** The options \"their,\" \"our,\" and \"we\" are incorrect because they are either plural pronouns or do not refer to the committee.",
-            "options": [
-                "its",
-                "their",
-                "our",
-                "we"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The antique vase is more valuable than _____, but less intricate in design.",
-            "difficulty": "medium",
-            "reasoning": "The pronoun in this sentence needs to refer back to the noun phrase \"the antique vase.\"  This is a singular, non-human noun.  We need a pronoun that agrees in number and gender with the noun.  The correct pronoun is \"it.\"  'They' and 'her' are incorrect because they are plural and feminine, respectively.  'This' could potentially work grammatically but is not the most natural choice in this context, as it refers to something close at hand, while 'it' can refer to something more distant.  Therefore, \"it\" is the most grammatically correct and natural choice for this sentence.",
-            "options": [
-                "it",
-                "they",
-                "her",
-                "this"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The old, worn-out map was useless, but  _______  one, with its bright colours and detailed markings, promised a successful journey.",
-            "difficulty": "medium",
-            "reasoning": "The sentence refers to two maps. The first is described as 'old' and 'worn-out', indicating it is in the past and no longer relevant. The second map is described as 'bright' and 'detailed', implying it is the one being considered for the journey. Since the second map is being introduced and discussed, the correct demonstrative pronoun is 'this'. 'That' would be used for something further away or already mentioned, while 'these' and 'those' are plural and wouldn't apply to a single map.",
-            "options": [
-                "This",
-                "That",
-                "These",
-                "Those"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The team was excited to finally play in **______** new stadium, which had been under construction for months.",
-            "difficulty": "hard",
-            "reasoning": "The correct possessive adjective is \"their\". The sentence refers to the team's excitement about their new stadium. It might be tempting to choose \"its\" because of the phrase \"under construction\". However, \"its\" is used for singular nouns, while \"their\" is used for plural nouns. Since the sentence talks about \"the team\", which is plural, the correct possessive adjective is \"their\".",
-            "options": [
-                "its",
-                "their",
-                "his",
-                "her"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "**Type**: Fill-ups - Pronouns\n**Difficulty**: tricky 8/10\n**Sentence**: The artist, known for vibrant colors and bold strokes, presented a portrait of the queen to ______, who was visiting the gallery.\n**Options**: \n  - she\n  - her\n  - they\n  - them\n",
-            "difficulty": "hard",
-            "reasoning": "This sentence requires careful analysis to determine the correct pronoun case. The blank represents the object of the preposition 'to'.  The prepositional phrase 'to ______' modifies the verb 'presented', indicating the recipient of the portrait. Since the recipient is the object of the preposition, the objective case pronoun 'her' is the correct choice.  The other options are incorrect because they are nominative case pronouns, which are used for subjects of verbs or predicate nominatives.",
-            "options": [
-                "she",
-                "her",
-                "they",
-                "them"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The committee, composed of several brilliant minds, submitted  _________ final report to the board.",
-            "difficulty": "hard",
-            "reasoning": "The antecedent of the pronoun is \"committee.\"  Although the sentence includes the phrase \"several brilliant minds,\" which might lead some to think the pronoun should be plural, \"committee\" itself is a singular noun. Therefore, the correct pronoun is \"its.\"  The sentence describes the actions of the committee as a single entity, not the actions of individual members.  The word \"its\" refers to the committee's report, signifying a singular possession.",
-            "options": [
-                "its",
-                "their",
-                "it's",
-                "they're"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Fill in the blank with the correct pronoun: The old oak tree stood tall and proud, its branches reaching towards the sky, but ____  leaves were starting to turn a vibrant shade of red.",
-            "difficulty": "hard",
-            "reasoning": "The correct pronoun is \"its.\" The sentence refers to the leaves of the oak tree, and \"its\" is the possessive pronoun for \"it.\" While the word \"it's\" may seem tempting due to its similar sound, it is a contraction of \"it is\" and doesn't function as a possessive pronoun. The possessive pronoun \"its\" is used to show that the leaves belong to the oak tree. The sentence structure is slightly complex due to the descriptive phrases, requiring the student to correctly identify the subject and its related possessive pronoun.",
-            "options": [
-                "its",
-                "it's",
-                "their",
-                "his"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The old house, once filled with laughter and memories, stood alone, a monument to a past that had long since abandoned ______.",
-            "difficulty": "hard",
-            "reasoning": "The correct reflexive pronoun is **itself**. The sentence describes the house as a solitary entity, separate from the past that once filled it with life. The reflexive pronoun emphasizes this separation by showing that the house stands alone, without any external influence or connection.  \n\nThe options 'them' and 'themselves' would be incorrect because they refer to a plural subject, which doesn't align with the singular noun 'house.'  The option 'it' is a personal pronoun and doesn't reflect the action of the house standing alone.  The reflexive pronoun 'itself' accurately reflects the subject's action and emphasizes its isolation.\n\nIn this sentence, the reflexive pronoun 'itself' clarifies that the house is standing alone, without the need for an external entity to abandon it.  It establishes the house as the subject of the action of standing alone, highlighting its independent existence.",
-            "options": [
-                "it",
-                "them",
-                "themselves",
-                "itself"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The artist, ___ painting won the grand prize, is from a small town in Italy.",
-            "difficulty": "hard",
-            "reasoning": "This question is tricky because it tests the understanding of \"whose\" as a possessive pronoun referring to the artist's painting. The sentence structure can lead students to mistakenly choose \"who\" or \"whom\" due to the presence of the relative clause. The correct answer is \"whose\" as it functions as the possessive pronoun, indicating ownership of the painting by the artist.  \n\n**Step-by-step explanation:**\n1. **Identify the pronoun:** The sentence requires an interrogative pronoun to replace the missing word in the phrase \"___ painting\". \n2. **Analyze the function:** The phrase needs a pronoun that shows possession, indicating that the painting belongs to the artist. \n3. **Consider the choices:**  \"Who\" and \"whom\" are not suitable as they refer to the subject or object of a sentence. \"Whose\"  is the correct choice as it signifies possession.\n4. **Final answer:**  The correct answer is \"whose\" as it accurately connects the artist's ownership of the painting.",
-            "options": [
-                "who",
-                "whom",
-                "whose",
-                "which"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The renowned scientist, known for **___** groundbreaking discoveries in quantum mechanics, received the prestigious Nobel Prize in Physics. The committee commended **___** for **___** exceptional contributions to the field.",
-            "difficulty": "hard",
-            "reasoning": "This question tests the ability to correctly use pronouns in different parts of a complex sentence, especially when dealing with prepositional phrases.  Let's break it down:\n\n1. **First Blank:** The first blank requires a possessive pronoun since it modifies the noun 'discoveries.' The sentence is referring to the scientist's discoveries.  The pronoun 'his' is the correct choice because it is possessive and agrees with the singular antecedent 'scientist'.\n\n2. **Second Blank:** The second blank needs a pronoun that acts as the object of the verb 'commended.' 'Him' is the correct pronoun choice because it is in the objective case and refers back to the antecedent 'scientist'.\n\n3. **Third Blank:** The third blank requires a possessive pronoun to modify the noun 'contributions.'  Again, 'his' is the correct choice as it agrees with the antecedent 'scientist' and indicates possession. \n\nTherefore, the correct answer is: 'his, him, his'.  \n\n**Explanation:**  This question is particularly challenging because it involves multiple pronouns within a single sentence, each with a different grammatical function. The test taker must be able to identify the correct pronoun case for each blank and ensure consistency with the antecedent. The use of prepositional phrases further complicates the structure of the sentence, requiring a nuanced understanding of pronoun placement.",
-            "options": [
-                "his, he, his",
-                "their, them, they",
-                "his, him, their",
-                "his, him, his"
-            ],
-            "correct_option": "D"
-        }
-    ],
-    "title": "English Language",
-    "topic": "Fill ups - Pronouns",
-    "exam_id": 16,
-    "order": 5
+  "questions": [
+    {
+      "question": "The dog wagged ______ tail excitedly when it saw its owner.",
+      "difficulty": "easy",
+      "reasoning": "The question tests the understanding of possessive pronouns. The sentence is about a dog, which is a singular, non-human noun. The correct possessive pronoun for a singular, non-human noun is 'its'. The sentence is grammatically correct and the possessive pronoun is used correctly. This question is categorized as easy because it involves a straightforward identification of the correct possessive pronoun based on the subject's gender and number. The sentence structure is simple and there are no ambiguous pronoun references. The answer choices are straightforward and do not present any distractors that might confuse the student.",
+      "options": [
+        "her",
+        "his",
+        "it's",
+        "its"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The book ____ I borrowed from the library is about the history of the Roman Empire.",
+      "difficulty": "easy",
+      "reasoning": "The correct answer is 'that'. The sentence requires a relative pronoun to connect the relative clause 'I borrowed from the library' to the noun 'book'.  'That' is the appropriate relative pronoun in this case because it refers to a non-human subject ('book') and the clause is restrictive, meaning it is essential to understanding which book is being discussed.  The other options ('who', 'whom', 'whose', and 'which') are not appropriate because they are used for people, objects with specific qualities, or possession, respectively. ",
+      "options": [
+        "who",
+        "whom",
+        "which",
+        "that"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The cat washed ______ after eating its dinner.",
+      "difficulty": "easy",
+      "reasoning": "The correct answer is 'itself'. The sentence refers to a single cat performing an action on itself. The reflexive pronoun 'itself' correctly reflects this action. The other options, 'himself' and 'herself', are incorrect because they refer to male and female individuals, respectively, and the sentence is about a cat. The sentence structure is simple, making it easy to identify the subject (the cat) and the object (itself).  The verb 'washed' is transitive, meaning it requires an object, and the reflexive pronoun 'itself' functions as that object. The sentence is grammatically correct and uses the reflexive pronoun appropriately.",
+      "options": [
+        "himself",
+        "herself",
+        "itself",
+        "themself"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The students in the class were asked to complete a project, but ______ of them finished on time.",
+      "difficulty": "easy",
+      "reasoning": "The correct answer is 'few' because the sentence implies that not many students finished on time. The other choices, 'all' and 'many', don't fit the context. 'All' would mean everyone finished on time, and 'many' implies a significant number, which contradicts the sentence's meaning. 'Few' is the most suitable choice as it indicates a small number of students finishing on time.",
+      "options": [
+        "all",
+        "many",
+        "few",
+        "some"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The children excitedly played tag in the park, and ______ laughed uncontrollably at each other's antics. \n\n a) they \n b) them \n c) their",
+      "difficulty": "easy",
+      "reasoning": "The correct pronoun is 'they' because it is in the nominative case and acts as the subject of the verb 'laughed'. It replaces the noun phrase 'The children' and agrees in number.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "Which of the following interrogative pronouns is used to ask about a person or thing, but only when there are more than two options?",
+      "difficulty": 1,
+      "reasoning": "This question focuses on the specific function of the pronoun 'which'. It tests the understanding of the pronoun's usage within the context of choices and options. The question is easy because it involves basic knowledge of interrogative pronouns and their application in asking about options. The correct answer is 'which' as it is specifically used to refer to one choice from a group of options, implying there are more than two possibilities. The sentence structure is straightforward, and the vocabulary used is simple and easily understood.",
+      "options": [
+        "who",
+        "what",
+        "which",
+        "whom"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The dog wagged its tail happily when the boy gave ___ a treat.",
+      "difficulty": 1,
+      "reasoning": "This sentence focuses on a simple action with a clear subject and object. The pronoun 'it' refers to the dog, and the object pronoun 'him' would be incorrect as it refers to a person. Therefore, the correct object pronoun to complete the sentence is 'it',  as it directly receives the action of giving a treat.",
+      "options": [
+        "him",
+        "her",
+        "it",
+        "they"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The twins were very excited to see their new toys, but *___* couldn't decide which one to play with first.",
+      "difficulty": 1,
+      "reasoning": "The correct pronoun to fill the blank is \"they.\"  The sentence refers to the twins as a plural subject, so the pronoun must agree in number. \"They\" is the plural pronoun that correctly replaces \"the twins.\" The other options, \"he\" and \"she,\" are singular pronouns and wouldn't agree with the plural subject. The pronoun \"it\" is also incorrect because it refers to things, not people.  This question tests pronoun agreement, which is a fundamental concept in pronoun use, making it an appropriate question for the \"easy\" difficulty level.",
+      "options": [
+        "he",
+        "she",
+        "it",
+        "they"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "I want to buy ____  shoes, but they are too expensive.",
+      "difficulty": 1,
+      "reasoning": "The correct answer is 'those' because it refers to the shoes that are being discussed. The sentence implies that the shoes are at a distance from the speaker, and 'those' is the demonstrative pronoun used for plural objects that are at a distance. The other options are incorrect: 'this' and 'that' are used for singular objects, and 'these' is used for plural objects that are close to the speaker.",
+      "options": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The little girl built a sandcastle ______, using only her pail and shovel.",
+      "difficulty": 1,
+      "reasoning": "The correct answer is 'herself'. The sentence focuses on the girl's independent action of building the sandcastle. The intensive pronoun 'herself' emphasizes that she did it alone, without any help.  The other options are incorrect because: \n\n* 'itself' refers to an object, not a person. \n* 'themselves' is plural, and the sentence is about a single girl. \n* 'himself' refers to a male, and the sentence is about a girl. \n\nTherefore, 'herself' is the only option that correctly completes the sentence and emphasizes the girl's independent action.",
+      "options": [
+        "herself",
+        "itself",
+        "themselves",
+        "himself"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old woman gave ______ dog a treat. \n\n(a) she's \n(b) her \n(c) hers \n(d) she",
+      "difficulty": 1,
+      "reasoning": "The correct answer is **(b) her**. This question tests the understanding of the objective case of pronouns. The pronoun in this sentence acts as the indirect object, receiving the direct object (the treat). In the objective case, 'her' is the correct form. \n\nThe other options are incorrect: \n* (a) she's - This is a contraction of 'she is' and is not a pronoun in the objective case. \n* (c) hers - This is a possessive pronoun, not an objective pronoun. \n* (d) she - This is a nominative pronoun, used for the subject of a sentence.  \n\nThe sentence is grammatically correct as the direct object 'treat' follows the indirect object 'her dog' with a preposition.",
+      "options": [
+        "she's",
+        "her",
+        "hers",
+        "she"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The playful puppy chased **_____** tail around the yard.",
+      "difficulty": 1,
+      "reasoning": "The question tests the understanding of possessive pronouns, specifically 'its'.  The sentence describes a puppy chasing its own tail.  The pronoun 'its' is the correct choice because it is the possessive form of the singular neuter noun 'puppy'.  The other options, 'his', 'her', and 'their' are incorrect because they refer to masculine, feminine, and plural nouns respectively, which do not apply to the single puppy in the sentence.",
+      "options": [
+        "his",
+        "her",
+        "their",
+        "its"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The cat chased  ___ toy across the room.",
+      "difficulty": 1,
+      "reasoning": "The correct answer is **its**. The sentence refers to the cat's toy, and 'its' is the possessive adjective for 'it' (the cat). The other options are incorrect because they are possessive adjectives for other pronouns: 'her' (she), 'his' (he), and 'our' (we).  The sentence is simple and straightforward, making it easy to identify the correct possessive adjective.  It's also important to consider the context of the sentence. The sentence is about a cat chasing a toy, which would be the cat's toy, making 'its' the most appropriate possessive adjective.  The sentence has correct grammar and structure, using the correct verb tense and subject-verb agreement.",
+      "options": [
+        "her",
+        "his",
+        "its",
+        "our"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "___ went to the store to buy some milk. The speaker is talking about themselves.",
+      "difficulty": 1,
+      "reasoning": "The correct answer is \"I.\" The sentence is in the first person, and the speaker is referring to themselves. The subject pronoun \"I\" is used when the speaker is the subject of the sentence. The context clarifies that the speaker is the one who went to the store. Therefore, \"I\" is the correct subject pronoun to fill in the blank.",
+      "options": [
+        "You",
+        "He",
+        "She",
+        "I"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The playful puppy wagged ____ tail excitedly, hoping for a treat.",
+      "difficulty": 1,
+      "reasoning": "The correct pronoun is 'its' because it refers to the singular antecedent 'puppy' and is possessive. 'Its' is the possessive pronoun for 'it', which is the pronoun used for singular, non-human nouns. The other options are incorrect: 'her' is possessive for 'she', used for singular, female nouns, and 'their' is possessive for 'they', used for plural nouns or mixed-gender groups. The sentence structure is grammatically correct, with the pronoun 'its' correctly placed as the object of the verb 'wagged'.",
+      "options": [
+        "her",
+        "its",
+        "their",
+        "his"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The children played with ______ toys in the park. \n a) they're \n b) there \n c) their \n d) theirs",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **c) their**. The sentence requires a possessive pronoun to show ownership of the toys by the children.  \n\n * **they're** is a contraction of 'they are', which doesn't fit the context. \n * **there** is an adverb indicating a place, not possession. \n * **theirs** is a possessive pronoun but is used independently, not before a noun like 'toys'. \n * **their** is the correct possessive pronoun modifying the noun 'toys' and indicating ownership by the children.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The little girl dressed ______ for the party.",
+      "difficulty": "medium",
+      "reasoning": "This question is easy because it uses a simple sentence structure and the subject (little girl) is singular, making the reflexive pronoun 'herself' the obvious choice. The sentence is grammatically correct and conveys the idea of the girl dressing herself for the party. The answer is 'herself' as it reflects the action back to the subject, the little girl.",
+      "options": [
+        "herself",
+        "himself",
+        "themself",
+        "themselves"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The artist _______ paintings were displayed in the gallery was very famous. \n\n a) which \n b) who \n c) whose",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **c) whose**.  \n\nHere's why:\n\n* **'Whose'** is the possessive form of the relative pronoun 'who.' It refers to the artist's paintings, indicating ownership.  \n\n* **'Which'** is used for things, not people.  \n\n* **'Who'** is the subject of the relative clause, but it doesn't fit here because the paintings are being owned, not performing an action.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "My grandmother baked a cake for ______ birthday.",
+      "difficulty": "medium",
+      "reasoning": "The correct pronoun is 'her' because it is in the possessive case and shows ownership of the birthday. The other options are incorrect because 'she' is nominative, 'her' is objective, and 'they' is plural.",
+      "options": [
+        "she",
+        "her",
+        "they",
+        "him"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "___ of the team members arrived early for the meeting, but the rest were late.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the understanding of indefinite pronouns that refer to a quantity or number. The sentence describes a situation where some team members were early, and the rest were late. This implies that not all team members were early. Of the given choices, 'some' is the most appropriate pronoun to fill the blank. It indicates that a portion of the team members arrived early. \n\n**Breakdown:**\n\n* **Sentence structure:** The sentence has a simple structure, making it easy to understand. \n* **Pronoun choice:** 'Some' is the most appropriate pronoun to indicate a partial quantity, fitting the context of the sentence. \n* **Logic:** The sentence implies that not all team members arrived early, indicating a partial quantity, which 'some' effectively represents.",
+      "options": [
+        "All",
+        "Some",
+        "None",
+        "Many"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The dog playing fetch is happy, but  ______ one chasing the squirrels seems frustrated.",
+      "difficulty": 1,
+      "reasoning": "The question tests the student's understanding of using 'that' to refer to a singular noun that has been previously mentioned but is not close to the speaker. The sentence is a simple comparison, making it straightforward to identify the appropriate demonstrative pronoun. The correct option is 'that' because it refers to the second dog mentioned, not the one currently playing fetch. \n\nHere's the breakdown:\n\n1. **The first sentence introduces the dog playing fetch.**\n2. **The second sentence introduces a different dog, the one chasing squirrels.**\n3. **'That' is used to refer to the second dog, as it is farther away from the speaker.**\n4. **The question is easy because the context directly indicates which demonstrative pronoun is correct.**",
+      "options": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The cat cleaned ______ after spilling its milk.",
+      "difficulty": 1,
+      "reasoning": "The question tests the student's understanding of intensive pronouns, specifically in a simple sentence. The subject is 'The cat,' and the blank space requires a pronoun that emphasizes the subject's action. The correct answer is 'itself,' as it reinforces the idea that the cat cleaned itself. The other options are incorrect because they don't align with the singular and neuter gender of the cat. The sentence structure is straightforward, making it easy for students to identify the pronoun needed.",
+      "options": [
+        "themself",
+        "itself",
+        "herself",
+        "himself"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Difficulty Level: 6/10\n\nSentence:  \"___ did you see at the party last night?\"",
+      "difficulty": 1,
+      "reasoning": "This question focuses on the interrogative pronoun 'who' to ask about a person. The sentence is grammatically correct and requires the student to choose the appropriate pronoun based on the context. It's a good challenge at an easy level because it involves identifying the correct pronoun within a simple sentence structure.",
+      "options": [
+        "Whom",
+        "Who",
+        "Whose",
+        "What"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The [_____] arrived late, but  [_____]  still managed to catch the beginning of the performance.\n\na)  He/They\nb)  She/They\nc)  They/They",
+      "difficulty": 1,
+      "reasoning": "This question tests the understanding of pronoun agreement with antecedents in the context of a plural noun.\n\n* **Step 1:** Identify the antecedent. The antecedent is \"The [_____] \", which refers to a group of people arriving late.\n* **Step 2:** Determine the singular or plural form of the antecedent. The phrase \"the [_____]\" suggests a plural group of people.\n* **Step 3:**  Choose the pronoun that agrees with the antecedent in number and gender. Since the antecedent is plural, the correct pronoun is \"They\" in both blanks.",
+      "options": [
+        "a) He/They",
+        "b) She/They",
+        "c) They/They",
+        "d)  He/He"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The team celebrated **_** victory after the long season. They had worked hard and deserved to win.",
+      "difficulty": 1,
+      "reasoning": "The correct pronoun is 'their'. The sentence is referring to the team's victory, and 'their' is the possessive pronoun that agrees with the plural noun 'team'.  The other options are incorrect: 'his' is singular masculine, 'her' is singular feminine, and 'it' is singular neuter.  The sentence is also grammatically correct because it uses the pronoun 'they' to refer to the team in the subsequent clause, which maintains consistency.",
+      "options": [
+        "his",
+        "her",
+        "it",
+        "their"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The children are playing with ____ toys in the backyard.",
+      "difficulty": 1,
+      "reasoning": "The correct answer is \"their\" because it refers to the possession of the toys by the children. The sentence is simple and straightforward, making it easy for the student to identify the possessive adjective needed. The options should be: \n a) their \n b) his \n c) our \n d) her",
+      "options": [
+        "their",
+        "his",
+        "our",
+        "her"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The cat chased its tail.  ______ meowed loudly at the birds.",
+      "difficulty": 1,
+      "reasoning": "The correct answer is 'It'.  The sentence refers to the cat, which is a singular, non-human subject.  'It' is the correct subject pronoun to replace 'the cat' in the second part of the sentence. 'I' would be incorrect because it refers to the speaker, and 'They' would be incorrect because it refers to multiple people or things.  Therefore, the sentence should read: 'The cat chased its tail.  It meowed loudly at the birds.'",
+      "options": [
+        "I",
+        "They",
+        "It",
+        "He"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The cat licked ____ paws after a long nap.",
+      "difficulty": 1,
+      "reasoning": "This question tests the understanding of possessive pronouns in a simple sentence. The sentence refers to a single cat, so the correct pronoun is 'its', indicating possession of the paws. The other options are incorrect as they refer to different subjects: 'his' (male), 'her' (female), and 'our' (plural). The sentence structure and grammar are simple and straightforward, making it an easy question.",
+      "options": [
+        "his",
+        "her",
+        "our",
+        "its"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The mailman delivered ___ a package.",
+      "difficulty": 1,
+      "reasoning": "This question focuses on the basic understanding of object pronouns. The sentence requires an object pronoun to receive the package. The correct answer is 'him' because it is the object of the verb 'delivered.' The other options, 'he,' 'she,' and 'her,' are subject pronouns and wouldn't be grammatically correct in this context.",
+      "options": [
+        "he",
+        "she",
+        "her",
+        "him"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The dog wagged **_** tail happily as its owner approached.",
+      "difficulty": 1,
+      "reasoning": "The correct pronoun is **its**. The sentence is simple and the pronoun-antecedent relationship is clear. The antecedent, 'dog,' is singular and the pronoun should agree in number. 'Its' is the possessive pronoun that refers to the dog's tail. The other options are incorrect because they are either plural pronouns (they) or personal pronouns in the wrong form (his/her).",
+      "options": [
+        "its",
+        "they",
+        "his",
+        "her"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The artist displayed a series of paintings, but I was particularly drawn to ______ one with the vibrant colors. ",
+      "difficulty": "medium",
+      "reasoning": "This question tests the understanding of singular demonstrative pronouns and their use in context. The sentence refers to a single painting, making \"that\" the appropriate choice. \"Those\" refers to multiple items, \"this\" is used for a singular item close to the speaker, and \"these\" refers to multiple items close to the speaker. Therefore, \"that\" is the correct demonstrative pronoun to complete the sentence.",
+      "options": [
+        "this",
+        "those",
+        "these",
+        "that"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The research team, ______  investigation uncovered the hidden truth about the ancient artifact, presented their findings at the conference.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **whose**, as it functions as a possessive pronoun, asking about the ownership of the investigation. The sentence is asking about the team whose investigation uncovered the truth. The other options are incorrect:\n\n* **who** is a subject pronoun used for people, but the sentence needs a possessive pronoun.\n* **whom** is an object pronoun, and this sentence requires a pronoun functioning as an adjective.\n* **what** is used to ask about things or concepts, and the sentence refers to the research team's investigation.",
+      "options": [
+        "who",
+        "whom",
+        "what",
+        "whose"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The artist painted a portrait of ______, which she proudly displayed in her studio.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **herself**. The sentence emphasizes the artist's own involvement in the painting.  'Herself' is an intensive pronoun, used to emphasize the noun 'artist'.\n\nHere's why the other options are incorrect:\n\n* **a) her:** 'Her' is a possessive pronoun, indicating ownership, not emphasis.\n* **b) she:**  'She' is a personal pronoun, not an intensive pronoun.\n* **c) they:** 'They' is a plural pronoun, not appropriate for a singular subject ('artist').\n\nThe sentence structure clearly indicates the need for an intensive pronoun to emphasize the artist's action.  Therefore, 'herself' is the only logically and grammatically correct option.",
+      "options": [
+        "her",
+        "she",
+        "they",
+        "herself"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The bakery had a wide selection of pastries, but ______ of them were gluten-free. \n\n a) Many \n b) Few \n c) All \n d) Some",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **b) Few**.  The sentence implies that only a small portion of the pastries were gluten-free, and 'few' accurately reflects this meaning. Here's why the other options are incorrect:\n\n* **a) Many:** 'Many' suggests a large quantity, which contradicts the sentence's implication of a limited selection.\n* **c) All:** 'All' implies that every single pastry was gluten-free, which is clearly not the case.\n* **d) Some:**  While 'some' could technically be used, 'few' is a more precise and fitting choice given the context of the sentence.",
+      "options": [
+        "Many",
+        "Few",
+        "All",
+        "Some"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "While  ____ were playing basketball in the gym, the lights suddenly went out.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is 'they' because it refers to a group of people playing basketball. The sentence indicates that multiple individuals were engaged in the activity. 'They' is the subject pronoun that replaces the plural noun 'group' or 'individuals'. \n\nLet's analyze the options:\n\n* **A) I:**  'I' is a singular pronoun and does not fit the context of a group action. \n* **B) He:** 'He' refers to a single male individual, not a group of people. \n* **C) She:**  'She' refers to a single female individual, not a group of people. \n* **D) They:**  'They' is a plural pronoun that accurately represents a group of people. \n\nTherefore, the correct answer is 'They'.",
+      "options": [
+        "I",
+        "He",
+        "She",
+        "They"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The mischievous cat, known for stealing food, dashed past the startled chef and darted under the table, dragging a juicy steak with ____.",
+      "difficulty": "medium",
+      "reasoning": "The question tests the understanding of object pronouns in a context where the pronoun acts as the object of the verb 'dragging'.  The correct pronoun is 'it' because 'it' refers to the steak, which is the direct object of the verb 'dragging'.  The other options, 'him' and 'her', are incorrect because they are subject pronouns and do not function as objects in the sentence.",
+      "options": [
+        "him",
+        "her",
+        "it",
+        "they"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The young artist, known for her intricate sculptures, taught ______ the techniques of metal casting.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **herself**. The sentence describes an artist teaching *herself* a skill. Here's why:\n\n1. **Subject-Verb Agreement:** The subject is \"The young artist\" which is singular.  \n2. **Reflexive Pronoun:** We need a reflexive pronoun because the action of teaching is being done by the artist to *herself*.  \n3. **Pronoun Choice:** The options are limited to reflexive pronouns, and \"herself\" is the only option that fits the singular subject and the meaning of the sentence. \n4. **Context:** The sentence emphasizes the artist's self-sufficiency in learning a new technique. \n\nTherefore, \"herself\" is the only grammatically correct and contextually appropriate reflexive pronoun to complete the sentence.",
+      "options": [
+        "him",
+        "her",
+        "them",
+        "herself"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The twins were excited to share ______ new toys with their friends.",
+      "difficulty": "medium",
+      "reasoning": "The correct possessive adjective is 'their'. The sentence refers to the twins, who are plural, and therefore require the plural possessive adjective 'their' to indicate ownership of the new toys. \n\nStep 1: Identify the subject of the sentence: The twins are the subject of the sentence, indicating that the toys belong to them. \n\nStep 2: Determine the possessive adjective for the subject: Since the subject is plural ('twins'), the corresponding possessive adjective is 'their'. \n\nStep 3: Ensure the possessive adjective matches the context: The sentence is talking about the twins sharing 'their' new toys, which aligns with the correct possessive adjective 'their'. \n\nTherefore, the answer is 'their'. The other possessive adjectives are not appropriate in this context. 'My' is singular and refers to the speaker. 'Your' refers to the listener. 'Its' is used for singular inanimate objects.  ",
+      "options": [
+        "my",
+        "your",
+        "its",
+        "their"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The children gave ______ toys to the orphanage.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the student's understanding of the objective case of pronouns. The pronoun in this sentence is the object of the verb 'gave'. Therefore, we need to use the objective case of the pronoun.  \n\n The correct answer is 'their' because it is the objective case of the pronoun 'they'. \n\n The other options are incorrect because they are not the objective case of the pronoun: \n\n * 'They' is the nominative case. \n\n * 'Themselves' is the reflexive pronoun.",
+      "options": [
+        "they",
+        "them",
+        "themselves",
+        "their"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The hikers, tired from their long journey, decided to rest by the lake. They had been walking for hours, and ____ were ready for a break.",
+      "difficulty": "medium",
+      "reasoning": "This question tests pronoun agreement and usage in a complex sentence. The correct pronoun is 'they' because it refers back to the plural noun 'hikers'.  The sentence is complex because it includes a dependent clause ('They had been walking for hours') that adds information about the hikers' actions.  The use of 'they' in the second clause ensures subject-verb agreement with the plural noun 'hikers' and clarifies the pronoun's reference.  The other options are incorrect: 'it' is singular and refers to a single object; 'he' and 'she' are singular and specific to a male or female subject, respectively.",
+      "options": [
+        "it",
+        "he",
+        "she",
+        "they"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The mischievous squirrel hid its treasure in a hollow log, carefully guarding  ____ prize with sharp eyes and twitching whiskers.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **'its'**. The sentence refers to the squirrel's treasure, and 'its' is the possessive pronoun for 'it'. \n\n**Explanation:**\n\n* The sentence describes the squirrel's actions, specifically hiding and guarding its treasure.  This indicates that the possessive pronoun should be referring to the squirrel itself.\n* 'Its' is the possessive pronoun for 'it' and is used for singular, non-human nouns. \n\n**Incorrect Options:**\n\n* **'his'**:  This pronoun is used for male objects, and the sentence doesn't indicate the squirrel's gender.\n* **'her'**: This pronoun is used for female objects, and the sentence doesn't indicate the squirrel's gender.\n* **'their'**: This pronoun is used for plural objects, and the sentence refers to a singular squirrel.\n\n**Grammar and Sentence Structure:**\n\nThe sentence is grammatically correct, using a complex structure to describe the squirrel's actions. It includes a dependent clause ('while exploring the forest') and an independent clause ('the hikers came across a clearing') with a specific focus on the squirrel's activities and treasure.",
+      "options": [
+        "his",
+        "her",
+        "its",
+        "their"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The artist, known for ______ vibrant colors, was praised for ______ unique style. \n\n a) his/her \n b) their \n c) they're \n\n Choose the correct pronoun to fill in the blank.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the student's understanding of pronoun agreement and ambiguous pronoun references. \n\n **Step 1: Identify the Pronoun Antecedent:** The antecedent (the noun the pronoun refers to) is 'artist.' \n\n **Step 2: Determine the Pronoun's Case:** The pronoun needs to be in the possessive case because it modifies the noun 'colors' and 'style.' \n\n **Step 3:  Consider Pronoun Agreement:** The pronoun must agree with the antecedent in number and gender. While 'artist' could be either male or female, we need a pronoun that can represent both possibilities.  \n\n **Step 4: Analyze the Options:** \n * a) his/her: This option is grammatically correct but clunky and awkward. It suggests a specific gender rather than encompassing both possibilities.  \n * b) their: This option is the correct answer. It is the plural possessive pronoun, which can refer to a singular antecedent if that antecedent is a person whose gender is unknown or unspecified. \n * c) they're: This option is incorrect. It is the contraction of 'they are' and doesn't have a possessive function. \n\n **Conclusion:**  \n The correct answer is b) their. The sentence is grammatically correct and avoids gender ambiguity.",
+      "options": [
+        "a)",
+        "b)",
+        "c)",
+        "they're"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The group of students, excited about the upcoming field trip, had been planning it for weeks.  ______ had already researched the museum and made a list of exhibits they wanted to see.",
+      "difficulty": 1,
+      "reasoning": "The correct pronoun is 'They' because the antecedent, 'group of students,' is plural.  The pronoun must agree in number with its antecedent. The phrase 'had already researched' indicates that the action is attributed to the group, making 'they' the appropriate choice. The use of 'had' in the past perfect tense further reinforces that the action is linked to the 'group of students.' The sentence structure is complex, requiring the student to carefully consider the relationship between the pronoun and its antecedent to make the correct choice. ",
+      "options": [
+        "He",
+        "She",
+        "They",
+        "It"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The young girl, who had been saving all summer, finally bought ____ dream bike.  She couldn't wait to ride it around the neighborhood.",
+      "difficulty": 1,
+      "reasoning": "The correct answer is **her**.  This sentence requires a possessive pronoun to show ownership of the bike. The phrase 'her dream bike' indicates that the bike belongs to the young girl.  The pronoun 'her' clearly establishes this ownership.  The other options are incorrect:\n\n* **She:**  This is a subject pronoun and wouldn't show possession.\n* **It:** This is an object pronoun and is not appropriate in this context, as the sentence is about possession, not the object itself.\n* **Them:** This is a plural object pronoun and doesn't fit with the singular subject of the sentence.  ",
+      "options": [
+        "She",
+        "It",
+        "Her",
+        "Them"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The antique vase, ______ intricate designs were breathtaking, was discovered in an ancient tomb. \n\n(a) who (b) whom (c) whose (d) which",
+      "difficulty": 1,
+      "reasoning": "The correct answer is (c) whose. Here's why:\n\n* **Antecedent:** The antecedent of the relative pronoun is \"the antique vase.\"  We need a pronoun that refers to the vase's possession.\n* **Relative Pronoun:** 'Whose' is used to show possession, and it's the only pronoun in the options that fits this context. \n* **Grammatical Structure:**  The sentence requires a possessive relative pronoun to link the vase to the intricate designs.  The sentence would read: \"The antique vase, whose intricate designs were breathtaking, was discovered in an ancient tomb.\" \n\n**Incorrect Options:**\n* **(a) who:**  'Who' refers to people, not objects.\n* **(b) whom:** 'Whom' is used as the object of a verb or preposition, and doesn't fit here.\n* **(d) which:** 'Which' typically refers to things, but it often implies a more general choice rather than possession. It might work in a sentence like \"The antique vase, which was found in an ancient tomb, had intricate designs.\" ",
+      "options": [
+        "who",
+        "whom",
+        "whose",
+        "which"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old man, despite his age, still enjoyed playing chess with ____ every Saturday afternoon.",
+      "difficulty": "medium",
+      "reasoning": "The correct pronoun is **him**. Here's why:\n\n1. **Sentence Structure:** The sentence has a complex structure, with a dependent clause ('despite his age') modifying the main clause. This might make identifying the object pronoun slightly trickier.\n2. **Object Pronoun:**  The pronoun needs to be an object pronoun because it follows the preposition 'with'.  'Him' functions as the object of the preposition 'with'.\n3. **Distractors:**  The other options are incorrect. 'I' and 'me' refer to the speaker, and 'us' would indicate more than one person. \n\nTherefore, 'him' is the only grammatically correct and contextually appropriate pronoun to complete the sentence.",
+      "options": [
+        "I",
+        "me",
+        "him",
+        "us"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The mysterious package, ______ contents were unknown, arrived at the doorstep with no return address.",
+      "difficulty": "medium",
+      "reasoning": "The correct interrogative pronoun is \"whose.\" The sentence refers to the package's unknown contents, and \"whose\" is used to indicate possession. \n\n1. **Identify the noun:** The sentence focuses on the \"package.\" \n2. **Determine the relationship:** The sentence is asking about the contents of the package, implying ownership or possession. \n3. **Choose the appropriate pronoun:**  \"Whose\" is the interrogative pronoun that signifies possession. \n4. **Construct the sentence:** \"The mysterious package, whose contents were unknown, arrived at the doorstep with no return address.\"  This sentence logically connects the package to its unknown contents, and \"whose\" accurately expresses the possessive relationship. \n\nTherefore, \"whose\" is the correct interrogative pronoun to fill the blank.",
+      "options": [
+        "who",
+        "which",
+        "what",
+        "whose"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The painting on the wall depicts a serene landscape, while  ________  one on the easel is a vibrant abstract piece.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the student's understanding of demonstrative pronouns in relation to proximity and context. The sentence describes two paintings, one on the wall and one on an easel. Since the speaker is referring to the painting on the easel, which is closer to them, the correct demonstrative pronoun is 'this'.  The other options are incorrect because they either refer to objects farther away or are grammatically inappropriate in this context.  The question is at a medium difficulty level because it requires the student to consider both proximity and context to determine the correct pronoun.",
+      "options": [
+        "that",
+        "those",
+        "the",
+        "this"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The children built a fort in the backyard and decorated it ____ with flags and streamers.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **(C) themselves**. Here's why:\n\n* **Subject-Verb Agreement:** The subject of the sentence is 'children' (plural). The verb 'decorated' agrees with the plural subject. \n* **Reflexive Pronoun:** The sentence is about the children decorating the fort themselves, meaning the action is reflected back on the subject.  Therefore, the reflexive pronoun 'themselves' is the correct choice. \n\nThe other options are incorrect because:\n\n* **(A) herself:**  'Herself' is used for a singular female subject. \n* **(B) itself:** 'Itself' is used for a singular, non-human subject. \n* **(D) himself:** 'Himself' is used for a singular male subject.",
+      "options": [
+        "herself",
+        "itself",
+        "themselves",
+        "himself"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Although ____ of the team members were exhausted after the intense training session, they all agreed to practice for another hour to perfect their final performance.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **'some'**. Here's why:\n\n* **Subject-Verb Agreement:**  The verb 'were' in the sentence indicates a plural subject.  'Some' is the only indefinite pronoun from the options that can be used with a plural verb. \n* **Context:**  The sentence implies that not all team members were exhausted, but some were. 'All' would contradict the sentence's meaning, while 'none' and 'few' wouldn't align with the idea of a few members still agreeing to practice. \n\nThe sentence structure is fairly complex, requiring the student to understand the relationship between the subject, verb, and indefinite pronoun in a longer sentence. The use of 'some' in this context also requires a careful understanding of its implications, making this a 'medium' difficulty question.",
+      "options": [
+        "some",
+        "all",
+        "none",
+        "few"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The scientist carefully observed the specimen under the microscope.  [blank] was surprisingly small and intricate.",
+      "difficulty": "medium",
+      "reasoning": "The correct pronoun is \"it\" because the antecedent is \"specimen\", which is singular and refers to a non-human object.  \"It\" agrees with the singular and non-human nature of the antecedent. The other options, \"he,\" \"she,\" and \"they,\" do not agree with the singular and non-human nature of the antecedent. \"He\" and \"she\" are used for singular human antecedents, while \"they\" is used for plural antecedents. Therefore, \"it\" is the only correct pronoun in this context.",
+      "options": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The artist, known for her vibrant landscapes, painted the scene ______, capturing the essence of the sunset with remarkable detail.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **(b) herself**. The sentence describes an artist who painted a scene alone, emphasizing the artist's individual effort and skill. The intensive pronoun \"herself\" emphasizes that the artist did the painting without assistance.  \n\nHere's why the other options are incorrect:\n\n* **(a) himself:** This is incorrect because the sentence refers to a female artist. \n* **(c) themselves:** This pronoun refers to a group of people, not a single person. \n* **(d) ourselves:** This pronoun is used when referring to the speaker and one or more other people. It's not appropriate in this context.",
+      "options": [
+        "himself",
+        "herself",
+        "themselves",
+        "ourselves"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The twins were excited to share their new toys, but their mother reminded them that  ____ friends were coming over later, and they should save some for them.",
+      "difficulty": "medium",
+      "reasoning": "The sentence focuses on the twins' friends, implying a group of people. Therefore, the correct possessive pronoun to use is 'their', reflecting the plural ownership of the toys. The sentence is not overly simple, as it involves a scenario with multiple characters and requires the student to understand the relationships between them to choose the appropriate pronoun. The sentence also includes a slight degree of complexity by referencing the friends' arrival later, demanding the student to consider the context of the time frame and its implications on the toy sharing situation. This overall complexity makes the question suitable for a medium difficulty level (6/10).",
+      "options": [
+        "her",
+        "his",
+        "their",
+        "its"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The book ____ I bought at the bookstore last week is about the history of the Roman Empire.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **which**. Here's why:\n\n* **Relative pronoun function:**  A relative pronoun introduces a relative clause, which provides additional information about a noun in the main clause. In this case, the relative clause '____ I bought at the bookstore last week' modifies the noun 'book'.\n\n* **Identifying the correct pronoun:**\n    * **'Who' and 'whom'** refer to people. The sentence is about a book, not a person.\n    * **'Whose'** indicates possession. The sentence doesn't imply possession of the book by someone or something else.\n    * **'Which'** is the correct choice because it refers to things, and in this case, it refers to 'book'.\n\n* **Sentence structure:** The relative clause acts as an adjective modifying 'book'. The full sentence can be rewritten as: 'The book, which I bought at the bookstore last week, is about the history of the Roman Empire.'\n\n**Answer choices:**\n\na) who  - Incorrect\nb) whom - Incorrect\nc) whose - Incorrect\nd) which - Correct",
+      "options": [
+        "who",
+        "whom",
+        "whose",
+        "which"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The children played with _____ toys in the park. \n\n* her \n* our \n* their",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is 'their'.\n\n* The sentence refers to multiple children, so we need a possessive adjective that indicates plural ownership.\n* 'Her' is singular and possessive, referencing a single female. \n* 'Our' indicates possession by the speaker and another person or group.  \n* 'Their' is the correct choice because it's plural and indicates ownership by the children mentioned in the sentence. \n\nTherefore, the sentence should read: \"The children played with their toys in the park.\" This sentence correctly conveys the idea of the children's collective ownership of the toys.",
+      "options": [
+        "her",
+        "our",
+        "their",
+        "its"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The team, **[BLANK]**  had been practicing diligently for weeks, finally reached the championship game.  **[BLANK]** were determined to win, and **[BLANK]** spirits were high.",
+      "difficulty": "medium",
+      "reasoning": "This question assesses the student's understanding of pronoun agreement and usage in a compound-complex sentence.  The correct pronoun choices are:\n\n1. **[BLANK]**  - **which**:  The relative pronoun 'which' refers back to 'the team' as the antecedent, introducing a relative clause describing the team's practice. \n\n2. **[BLANK]** - **They**:  The pronoun 'they'  agrees in number with the plural antecedent 'team' and is used to maintain clarity and avoid repetition. \n\n3. **[BLANK]** - **Their**:  The possessive pronoun 'their' again refers back to 'the team' and correctly modifies the noun 'spirits'.\n\nThe complexity lies in identifying the correct pronouns for each blank, ensuring they agree with their antecedents in number and gender, and understanding the relative clause structure within the sentence.  This makes the question moderately challenging.",
+      "options": [
+        "who",
+        "which",
+        "whom",
+        "whose"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe provided answer \"which\" is incorrect.  The sentence requires a pronoun to refer back to the team.  \n\nHere's a corrected version:\n\n```\n    <question>\n    The team, **[BLANK]**  had been practicing diligently for weeks, finally reached the championship game.  **[BLANK]** were determined to win, and **[BLANK]** spirits were high.\n    </question>\n    <answer>\n    they\n    </answer>\n``` \n"
+    },
+    {
+      "question": "The twins were excited to go to the amusement park, but their parents decided to take **[blank]** to the zoo instead.",
+      "difficulty": 1,
+      "reasoning": "The correct pronoun is **them**. The sentence refers to the twins, which is a plural noun. Therefore, the pronoun must also be plural. The pronoun 'them' is in the objective case and is used as the object of the verb 'take'. The other options are incorrect:\n\n* **'they'** is in the nominative case and would be incorrect as the object of the verb.\n* **'their'** is a possessive pronoun and would be incorrect in this context.\n* **'theirs'** is also a possessive pronoun and would be incorrect in this context.\n\nTherefore, the correct answer is **them**.",
+      "options": [
+        "they",
+        "them",
+        "their",
+        "theirs"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The children and their teacher sang a song together.  ______ enjoyed the melody.",
+      "difficulty": 1,
+      "reasoning": "The correct answer is **They**. The sentence refers to the children and their teacher, which is a plural subject, therefore requiring the plural pronoun 'They' to replace 'the children and their teacher'.  The other options are incorrect because 'I' refers to the speaker and 'We' refers to the speaker and at least one other person. The sentence does not include the speaker in the group.",
+      "options": [
+        "I",
+        "We",
+        "They",
+        "It"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The mischievous squirrel, known for ____ playful antics, hid ____ nuts in the hollow of the old oak tree.",
+      "difficulty": 1,
+      "reasoning": "This question focuses on pronoun usage and agreement.  The first blank requires a possessive pronoun to describe the squirrel's antics.  The second blank requires an object pronoun as the object of the verb 'hid'.  The correct answer is 'its' for the first blank and 'them' for the second blank.  The sentence is grammatically correct and the pronouns are correctly placed and matched to their antecedents (the squirrel). The sentence structure is also clear and easy to understand.",
+      "options": [
+        "his",
+        "their",
+        "its",
+        "her"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old woman, _____ had lived through many hardships, shared her wisdom with the younger generation. \n\n(a) who \n(b) whom \n(c) whose",
+      "difficulty": 1,
+      "reasoning": "The correct pronoun is **(a) who**. Here's why:\n\n* **Subject Pronoun:**  The pronoun is the subject of the verb \"had lived.\" Subjects of verbs are in the nominative case.  The pronoun is directly describing the woman, who is the subject of the sentence.\n\n* **Object Pronoun:**  'Whom' is the objective case and would be used if the pronoun was the object of a verb or preposition. This is not the case here.  \n\n* **Possessive Pronoun:** 'Whose' indicates possession. While the sentence could be rewritten to imply possession, it's not the most direct way to express the meaning.  The sentence focuses on the woman's actions, not something she possesses.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "None of the above"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The award was presented to the talented artist, ______ paintings had captivated the audience. \n(a) who \n(b) whom \n(c) whose",
+      "difficulty": "hard",
+      "reasoning": "This question tests the understanding of the possessive case. The sentence needs a pronoun that indicates ownership of the 'paintings'.  'Whose' is the correct choice because it signifies possession, answering the question 'Whose paintings?' The sentence structure is complex, with a dependent clause ('whose paintings had captivated the audience') modifying the main clause.  The other options, 'who' and 'whom', are incorrect because they are nominative and objective case pronouns, respectively, and don't express ownership.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "none of the above"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "While walking through the park, Sarah and I stumbled upon a beautiful garden. We admired the vibrant flowers and the meticulous landscaping, and Sarah exclaimed, \"This garden is truly amazing!  _____ beauty is breathtaking!\" ",
+      "difficulty": "hard",
+      "reasoning": "This question is tricky because the sentence includes two individuals, Sarah and the speaker, making the choice between 'her' and 'our' ambiguous. The key is to focus on the intended meaning. The speaker is expressing admiration for the garden's beauty, not their own or Sarah's personal beauty. Therefore, the correct pronoun is \"its\", as it refers to the garden's inherent beauty. This question tests the understanding of possessive pronouns within a complex sentence structure and requires careful consideration of context and intended meaning.",
+      "options": [
+        "her",
+        "our",
+        "its",
+        "their"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe answer is incorrect. The correct pronoun to use is \"its\", not \"its\".  The sentence should read:\n\n\"This garden is truly amazing! **Its** beauty is breathtaking!\" \n"
+    },
+    {
+      "question": "The group of friends, after a long day of hiking, finally reached the top of the mountain and reveled in the breathtaking view, each taking a moment to admire ______ own reflection in the vast sky.",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is 'their' because it is the possessive adjective that refers to the plural noun 'friends.' The sentence describes a group of friends, and each individual is admiring their own reflection.  The other options, 'her' and 'its,' are incorrect because they refer to singular nouns, not a group. 'Her' would refer to a single female friend, and 'its' would refer to a singular object or animal. The sentence requires a possessive adjective that corresponds to a plural noun. The sentence structure is also complex, as it describes a series of actions by a group of friends. This complexity adds to the difficulty of the question, as students need to carefully consider the context and the relationship between the pronoun and its antecedent to arrive at the correct answer.",
+      "options": [
+        "her",
+        "its",
+        "their",
+        "his"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "**Sentence with blank**: While walking through the bustling market, I bumped into my friend and offered to carry ____'s shopping bags.\n**Difficulty**: 8\n**Target Pronoun**: her\n",
+      "difficulty": "hard",
+      "reasoning": "This question is classified as 'tricky 8/10' due to the sentence structure and the presence of multiple potential object pronouns. The sentence is relatively verbose, requiring careful reading to identify the correct pronoun. It also involves understanding the concept of possessive pronouns, as the pronoun needs to refer to 'my friend'.  The correct pronoun is 'her' because it is the object of the verb 'carry' and is the object pronoun form of the possessive pronoun 'her's'. The sentence is grammatically correct and logically sound, as it describes a situation where the speaker offers to help their friend by carrying their shopping bags.",
+      "options": [
+        "his",
+        "her",
+        "their",
+        "hers"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The antique clock on the mantlepiece is quite valuable, but  _______ one in the attic, with its intricate carvings and delicate porcelain face, is truly priceless.",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is **(c) that**. This question is tricky because it requires the student to understand that \"this\" refers to something close to the speaker, and \"that\" refers to something farther away. The student must also recognize that the sentence is comparing the value of two clocks, one being the antique clock on the mantlepiece and the other being the one in the attic.  The use of \"one\" in the second part of the sentence implies that the clock in the attic is a single item, making \"that\" the correct pronoun choice. While \"these\" could be considered, the context of a single antique clock in the attic makes \"those\" grammatically incorrect.  The use of the phrase \"with its intricate carvings and delicate porcelain face\" further emphasizes the specific qualities of the clock in the attic, making \"that\" the most appropriate pronoun to refer to it.  The sentence structure is also important.  The use of the conjunction \"but\" introduces a contrast between the two clocks, making the second part of the sentence a direct comparison to the first.",
+      "options": [
+        "this",
+        "those",
+        "that",
+        "these"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "After a long day of exploring the bustling city, ____  decided to retreat to the quiet tranquility of the countryside, where the only sound was the gentle rustling of leaves in the wind.",
+      "difficulty": "hard",
+      "reasoning": "This question is tricky because it requires the student to consider the context of the sentence to determine the correct pronoun. While the sentence mentions 'exploring the bustling city,' which might suggest a singular person, the phrase 'retreat to the quiet tranquility of the countryside'  hints at a more general and possibly plural subject.  The correct pronoun is 'they' because it refers to a group of people who have chosen to escape the city.  The use of the plural 'only sound' in the final phrase reinforces this idea, as it implies multiple people experiencing the tranquility together. \n\nStep 1: Analyze the Sentence - We see that the sentence talks about people going back to the countryside after a busy day in the city.\nStep 2: Focus on the 'they'  - The pronoun 'they' refers to a group of people who have chosen to escape the city. \nStep 3: Consider the 'only sound' - The sentence implies that multiple people are experiencing the tranquility together. This is further indicated by the plural 'only sound.'\nStep 4: Final Check - The sentence makes sense when you use 'they' as the subject pronoun. \n\nTherefore, the correct pronoun is 'they' and the answer is a). ",
+      "options": [
+        "they",
+        "he",
+        "she",
+        "it"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Having meticulously prepared for the presentation, the CEO assured the board that she _______  was ready to deliver a compelling pitch.",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is **(c) herself**. The sentence uses the intensive pronoun to emphasize the CEO's personal involvement in the preparation. This emphasizes that she, and no one else, was responsible for the presentation's readiness. The other options are incorrect for the following reasons:\n\n* **(a) themself** is a non-standard singular form of \"themselves\". While some dictionaries recognize its use, it's not generally considered grammatically correct.\n* **(b) themselves** would be incorrect as it refers to a plural subject, while the sentence is about a single CEO.\n* **(d) himself**  would be incorrect as it's a masculine pronoun and the sentence clearly states 'she' referring to the CEO.",
+      "options": [
+        "themself",
+        "themselves",
+        "himself",
+        "herself"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Despite the recent snowfall, ______ of the hikers were still determined to reach the summit, even though the trail was treacherous and visibility was poor. The group leader reassured them that they had enough supplies and experience to navigate the challenging terrain. ",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is **'some'**. The sentence states that the hikers were determined to reach the summit, despite the difficult conditions. This implies that not *all* of the hikers were determined, but rather a *portion* of them. The other options are incorrect:  \n\n* **'All'** would be incorrect because it implies that every hiker was determined, which contradicts the information provided in the sentence.  \n* **'None'** would be incorrect because the sentence clearly states that *some* hikers were determined.  \n* **'Each'** would be incorrect because it implies that every hiker was determined individually, which is not supported by the context. The sentence focuses on a group, not individual determination.  \n\nThe question is challenging due to the use of a complex sentence structure and the ambiguity surrounding the number of hikers. The reader needs to carefully consider the context and the meaning of the sentence to arrive at the correct answer.",
+      "options": [
+        "All",
+        "None",
+        "Each",
+        "Some"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The antique clock, with its intricate carvings, was a family heirloom. It had been passed down through generations, and each member had cherished ______ own way. Even though ______ intricate mechanism required delicate care, ______  was a constant reminder of the family's rich history.",
+      "difficulty": "hard",
+      "reasoning": "This question tests the understanding of pronoun usage in a complex sentence with multiple clauses and potential antecedents for the pronouns.  Let's break down the reasoning:  \n\n1. **The first blank:** The phrase 'each member had cherished ______ own way' refers to the individual members of the family cherishing the clock in their own unique way.  The pronoun 'their' is the correct choice because it is the plural possessive pronoun referring to 'each member'. \n\n2. **The second blank:** The phrase 'even though ______ intricate mechanism required delicate care' refers to the clock's intricate mechanism. The correct pronoun is 'its' because it is the possessive pronoun referring to 'clock'.  \n\n3. **The third blank:** The phrase '______ was a constant reminder of the family's rich history' refers back to the clock. The pronoun 'it' is the correct choice because it is the singular pronoun referring to 'clock'.  \n\nTherefore, the correct answer is: **their, its, it.**  The difficulty level is 'hard' because it requires analyzing the sentence structure and identifying the correct pronoun for each clause while considering potential ambiguities.",
+      "options": [
+        "their, its, it",
+        "its, their, it",
+        "its, its, it",
+        "their, their, it"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The team members discussed the project amongst **_** and decided on a strategy for the upcoming presentation.  They were determined to ensure everyone on the team understood their role and responsibilities.  \n\n A. themself \n B. themselves \n C. himself \n D. herself",
+      "difficulty": "hard",
+      "reasoning": "The correct pronoun is **B. themselves**. \n\n* **Themself** is incorrect because it is a singular reflexive pronoun and the sentence refers to a plural subject - the team members. \n* **Himself** and **herself** are incorrect because the sentence is referring to a group, not a single individual.  \n* **Themselves** is the correct reflexive pronoun for the plural noun \"team members\". It emphasizes that the team members discussed the project amongst themselves. \n\nThis question is tricky because it involves understanding the reflexive pronoun and its agreement with the plural subject. The sentence's complexity also adds to the challenge as it requires analyzing the context and the intended meaning.",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The detective, ____ investigation had been hampered by a lack of evidence, decided to re-interview all the witnesses.",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is **whose**. Here's why:\n\n* **The function of the relative pronoun:**  The relative pronoun in this sentence acts as a possessive adjective modifying 'investigation'. It answers the question 'Whose investigation?'.\n* **Eliminating incorrect options:**\n    * **who:**  'Who' is used for subjects of verbs, and 'investigation' is not the subject of the verb 'had been hampered'.\n    * **whom:**  'Whom' is used for objects of verbs or prepositions, and 'investigation' is not the direct object of 'hampered'.\n    * **which:** 'Which' is used for things or groups, but it doesn't fit the possessive context of the sentence. \n\n**Step-by-step breakdown:**\n\n1. **Identify the relative clause:**  '____ investigation had been hampered by a lack of evidence' is the relative clause.\n2. **Determine the role of the relative pronoun:**  The pronoun is needed to connect the relative clause to the noun 'detective' and to show possession.\n3. **Apply the correct relative pronoun:** 'Whose' is the appropriate pronoun for possessive situations.\n4. **Verify grammar:** The sentence is grammatically correct and the meaning is clear.",
+      "options": [
+        "who",
+        "whom",
+        "which",
+        "whose"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The renowned artist, ______ masterful brushstrokes captured the essence of the human form, has finally unveiled their latest masterpiece.",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is **(a) whose**. Here's why:\n\n* **The sentence requires a possessive pronoun to modify 'brushstrokes'.**  This means we need a pronoun that shows ownership or belonging. 'Whose' is the only interrogative pronoun that fulfills this role.\n\n* **'Who' is a subject pronoun.**  It refers to the person performing the action, but the sentence is already clear about the subject ('The renowned artist'). \n\n* **'Whom' is an object pronoun.** It's used when referring to the receiver of an action, which isn't the case here. \n\n* **'What' is too general.** It doesn't specify possession or belonging, making it unsuitable for this sentence. \n\n**The structure of the sentence also plays a role:**  The phrase 'whose masterful brushstrokes' acts as a modifying clause, describing the artist and their unique talent. 'Whose' is the only option that fits grammatically and logically within this construction.",
+      "options": [
+        "who",
+        "whom",
+        "whose",
+        "what"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Each of the students in Ms. Johnson's class had to present **[blank]** research project on a topic of **[blank]** choice.  The students were given the freedom to explore **[blank]** interests and present **[blank]** findings in a creative way.",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is 'their / their / their / their'.  The phrase 'each of the students' is a singular entity, so the pronoun referring to it must also be singular.  The first blank requires a singular possessive pronoun to agree with the antecedent 'each of the students'.  The second blank requires a singular possessive pronoun to agree with the antecedent 'each of the students'. The third blank requires a plural possessive pronoun to agree with the antecedent 'students'.  The fourth blank requires a plural possessive pronoun to agree with the antecedent 'students'. The pronouns 'his' or 'her' would be incorrect because they are singular and do not agree with the plural antecedent 'students'. The pronoun 'its' is incorrect because it is a possessive pronoun that refers to inanimate objects and cannot refer to a group of people. The sentence structure is complex but the pronoun agreement remains consistent throughout. The sentence is about the students' research projects, so it is logical and consistent.",
+      "options": [
+        "his",
+        "its",
+        "their",
+        "her"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "While Sarah preferred hiking, John suggested they go to the beach, and he asked _______ to vote on which activity they should do.",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is \"them\" because it functions as the object of the verb \"asked\" and agrees in case with its antecedent \"everyone\". The sentence is a compound-complex sentence with two independent clauses and one dependent clause. The pronoun is the object of the verb \"asked\" and therefore needs to be in the objective case.  Since \"everyone\" is the antecedent, the correct object pronoun is \"them\".",
+      "options": [
+        "everyone",
+        "them",
+        "they",
+        "he"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The team celebrated their victory, congratulating _______ on a job well done.",
+      "difficulty": 1,
+      "reasoning": "This question tests the understanding of reflexive pronouns in a context where the subject is a collective noun ('team'). The correct reflexive pronoun is 'themselves' because the team is congratulating its own members, emphasizing that the action is directed back to the subject. \n\nHere's why the other options are incorrect:\n\n* **'myself'**:  This refers to the speaker, and the sentence does not indicate the speaker is part of the team.\n* **'yourself'**: This refers to the listener, and the sentence doesn't suggest the listener is involved.\n* **'himself'**:  This is singular and doesn't match the plural subject 'team'.",
+      "options": [
+        "myself",
+        "yourself",
+        "himself",
+        "themselves"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    }
+  ],
+  "title": "Quantitative Ability",
+  "topic": "Fill ups - Pronouns",
+  "exam_id": 18,
+  "order": 0
 }

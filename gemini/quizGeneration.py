@@ -70,13 +70,8 @@ def get_quiz_json_prompt(topic, question_prompt, subtopic, skills, difficulty):
             Give detailed explanation of why the answer is correct.
             Solve the above question step by step reviewing each step is correct and valid.
             Each step should be explained in detail and step by step and is very important.
-            verify the mathematical calulations and every logical reasoning is correct.
+            Carefully examine the grammar and sentence structure
         </reasoning>
-
-        <option and correct options>
-            After doing the reasoning based on the final calculation, create 4 options and a correct option.
-            Verify the correctness of the options. The correct option should be exact, not closest.
-        </option and correct options>
 
         Output:
         give valid JSON
@@ -119,7 +114,7 @@ Explore the deeper meaning of the text, considering context, authorial intent, a
 
         verify the answer is correct and is grammatically, contextually correct
         """
-    ).text
+    )
 
 
 def add_options_to_json(question):
@@ -127,8 +122,12 @@ def add_options_to_json(question):
         f"""
         Output:
         <question>
-            {question}
+            {question["question"]}
         </question>
+
+        <reasoning>
+            {question["reasoning"]}
+        </reasoning>
 
         Identify the correct option from the reasoning and create 4 options and a correct option.
         Verify the correctness of the options.
@@ -204,7 +203,7 @@ def get_valid_quiz_json_recursive(topic, subtopic, difficulty, difficulty_value,
     try:
         question_json_response_without_options = get_pro_response(quiz_json_prompt)
         question_json = json_parse(question_json_response_without_options)
-
+        question_json["reasoning"] = get_pro_reasoning(question_json)
         question_json_response = add_options_to_json(question_json)
         options_json = json_parse(question_json_response)
         question_json["difficulty"] = difficulty_value
@@ -302,7 +301,7 @@ topics = [
     # "Fill ups - Prepositions",
     # "Fill ups - Conjunctions",
     # "Fill ups - Adjectives and adverbs",
-    # "Fill ups - Pronouns",
+    "Fill ups - Pronouns",
     # "Fill ups - Subject-verb agreement",
     # "Fill ups - Sentence structure",
     # "Fill ups - Vocabulary: Synonyms and antonyms",
@@ -376,7 +375,7 @@ for order, topic in enumerate(topics):
     quiz["questions"] = questions
     quiz["title"] = "Quantitative Ability"
     quiz["topic"] = f"{topic}"
-    quiz["exam_id"] = 18
+    quiz["exam_id"] = 16
     quiz["order"] = order
 
     

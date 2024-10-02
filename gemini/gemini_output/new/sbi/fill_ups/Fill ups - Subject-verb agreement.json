@@ -1,452 +1,489 @@
 {
-    "questions": [
-        {
-            "question": "The playful puppy and the mischievous kitten ____ chasing butterflies in the garden.",
-            "difficulty": "easy",
-            "reasoning": "The subject of the sentence is 'puppy' and 'kitten,' which are joined by 'and,' making it a compound subject. Compound subjects joined by 'and' require a plural verb. Therefore, the correct verb is 'are,' which agrees with the plural subject. The other options, 'is' and 'was,' are incorrect because they are singular verbs.",
-            "options": [
-                "is",
-                "was",
-                "are",
-                "were"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "____ of the cookies ____ left on the plate. ",
-            "difficulty": "easy",
-            "options": [
-                "Some",
-                "None",
-                "Is",
-                "Are"
-            ],
-            "correct_option": "D",
-            "reasoning": "The subject of the sentence is 'some', which refers to a plural number of cookies. Therefore, the verb must be in the plural form. The correct verb is 'are' because it agrees with the plural subject 'some'.  Option (d) is the only option that correctly uses the plural verb 'are'."
-        },
-        {
-            "question": "The *____* of the play is very moving.",
-            "difficulty": "easy",
-            "reasoning": "The subject of the sentence is 'The theme of the play.' The noun 'theme' is the central idea or subject matter of the play.  Since 'theme' is singular, the verb must also be singular. Therefore, the correct verb is 'is', which is the singular present tense form of the verb 'to be'. The other options are incorrect because they are plural or possessive forms of the noun 'theme' and do not agree with the singular subject.",
-            "options": [
-                "is",
-                "are",
-                "themes",
-                "theme's"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The cat ___ on the windowsill, or the birds ___ in the garden.",
-            "difficulty": "medium",
-            "reasoning": "The compound subject 'the cat' or 'the birds' requires a singular verb. 'Is' is the singular form of the verb 'to be', so 'is' should be used in both blanks.  The correct sentence would be: 'The cat is on the windowsill, or the birds are in the garden.'",
-            "options": [
-                "is / is",
-                "is / are",
-                "are / is",
-                "are / are"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The children, who **[blank]** always eager to learn new things, were excited about the upcoming field trip.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the verb is 'children,' which is plural. The relative clause 'who are always eager to learn new things' modifies the subject, but the verb must agree with the main subject. Therefore, the correct verb form is 'are.'",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Here _______ a warm, inviting fire crackling in the hearth.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is \"fire,\" which is singular. Therefore, the correct verb is \"is.\" The phrase \"a warm, inviting fire\" is a modifier describing the fire, not changing its grammatical number.  \"Here\" and \"there\" are introductory words and don't affect the subject-verb agreement.",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "A swarm of bees ____ buzzing around the flower patch.",
-            "difficulty": "medium",
-            "reasoning": "The collective noun 'swarm' refers to a group of bees, making it singular. The verb should agree with the singular subject, so the correct verb form is 'is'.  'Buzzing' is the present participle acting as an adjective describing the bees.",
-            "options": [
-                "is",
-                "are",
-                "has",
-                "have"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The [Fill in the blank]  the bluebird and the robin [Rest of sentence] singing in the trees.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is a compound subject, 'the bluebird and the robin'.  Since the subject is plural, the verb must also be plural.  The correct verb to use is 'are', which agrees with the plural subject.  'Is' is the singular form of the verb, so it is incorrect.",
-            "options": [
-                "are",
-                "is",
-                "was",
-                "were"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The group of friends ____ (is/are) going to the movies tonight.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is \"group of friends\", which is plural.  Therefore, the verb must be plural as well. The correct plural verb is \"are\".  The sentence should read: \"The group of friends are going to the movies tonight.\"",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "There ____ a few cookies left on the plate. \nA) is \nB) are \nC) has \nD) have",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is **B) are**.  'There' is an introductory word, and the true subject is 'cookies,' which is plural.  Plural subjects require plural verbs, so 'are' is the correct choice.  The other options are incorrect because they are singular verbs.",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The group of students, **[blank]** eager to learn about history, **[blank]** for the museum tour.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'group,' which is singular.  The intervening phrase 'eager to learn about history' modifies 'group' but does not change its number. Therefore, the verb must agree with the singular subject 'group.' The correct verb form is 'is.'  The sentence should read: 'The group of students, eager to learn about history, is ready for the museum tour.'",
-            "options": [
-                "are",
-                "is",
-                "was",
-                "were"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Two-thirds of the cake _[blank]_ already been eaten.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'Two-thirds of the cake'.  While it seems like a plural noun, 'cake' is the actual noun being referred to, and it is singular. The phrase 'Two-thirds' acts as a modifier, indicating the portion of the cake that's been eaten.  Since the subject is singular, the verb must also be singular. Therefore, the correct verb form is 'has'. The sentence should read: \"Two-thirds of the cake has already been eaten.\"",
-            "options": [
-                "has",
-                "have",
-                "are",
-                "is"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The **team** [blank] to practice early tomorrow morning. \na) is planning  b) are planning  c) plans  d) plan",
-            "difficulty": "medium",
-            "reasoning": "The collective noun \"team\" functions as a singular unit in this sentence. Therefore, the verb must agree with a singular subject. Of the options provided, only \"is planning\" is a singular verb form.  The other options are plural forms.  Hence, the correct answer is \"a) is planning\".",
-            "options": [
-                "a",
-                "b",
-                "c",
-                "d"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Every student ____ (is/are) required to wear a uniform.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'every student'.  Since 'every' is a singular quantifier, the verb should be singular.  Therefore, the correct verb is 'is'.  'Are' is the plural form and would be incorrect in this case.",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Some of the furniture ____ been delivered, but the rest is still on backorder.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'some of the furniture'. While 'furniture' is a plural noun, the phrase 'some of the furniture' refers to a portion of the furniture, making it singular. Therefore, the verb should agree with a singular subject.  The correct verb form is 'has' because it agrees with the singular subject 'some of the furniture'.",
-            "options": [
-                "has",
-                "have",
-                "is",
-                "are"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "None of the committee members ______ yet decided on a date for the next meeting. \n\n(a) has \n(b) have",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is \"None of the committee members.\"  While \"committee members\" is plural,  \"none\"  in this context refers to the entire group as a singular entity. Therefore, the verb should be singular.  The correct verb is  \"has.\"",
-            "options": [
-                "has",
-                "have",
-                "hasn't",
-                "haven't"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The playful puppies  ______  through the park, chasing squirrels and barking at birds.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'puppies,' which is plural.  Therefore, the verb must also be in the plural form.  The correct verb is 'run,' which agrees with the plural subject 'puppies.'",
-            "options": [
-                "run",
-                "runs",
-                "running",
-                "ran"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Everyone in the class ____ excited for the field trip.",
-            "difficulty": "medium",
-            "reasoning": "The indefinite pronoun 'Everyone' is singular, meaning it refers to a single, collective entity.  Therefore, the verb should also be singular.  The correct verb is 'is' because it agrees in number with the singular subject 'Everyone.'",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The **committee** _______  debating the new proposal.  \na) is \nb) are \nc) was \nd) were",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'committee,' which is a collective noun. Collective nouns can be singular or plural depending on whether they are acting as a single unit or as individuals. In this case, the committee is acting as a single unit, making the verb singular. Therefore, the correct verb form is 'is.' \n\n**Step-by-step reasoning:**\n1. **Identify the subject:** The subject is 'committee,' a collective noun. \n2. **Determine if the collective noun is singular or plural:** The committee is acting as a single unit, making it singular. \n3. **Choose the correct verb form:** Since the subject is singular, the verb must be singular as well. \n4. **Correct verb form:** 'is' is the singular present tense form of the verb 'to be.'\n\n**Incorrect Options:**\n* 'are' is the plural present tense form of 'to be.'\n* 'was' is the singular past tense form of 'to be.'\n* 'were' is the plural past tense form of 'to be.'",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The [blank] and the [blank] in the bakery are always busy during the holiday season.",
-            "difficulty": "medium",
-            "reasoning": "The compound subject of the sentence is 'baker' and 'decorator'. Since the subject is plural, the verb should also be plural. The correct verb is 'are', which agrees with the plural subject.  The sentence is about the baker and decorator being busy, and the verb 'are' accurately reflects the plural nature of the subject.",
-            "options": [
-                "baker, decorator, is",
-                "baker, decorator, are",
-                "bakers, decorators, is",
-                "bakers, decorators, are"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "At the heart of the bustling city ______ a towering skyscraper, a symbol of modern architecture.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'skyscraper', which is singular. The verb must also be singular to agree with the subject. The correct answer is 'stands' because it is the singular present tense form of the verb 'to stand' and agrees with the singular subject 'skyscraper'.",
-            "options": [
-                "stands",
-                "stand",
-                "standing",
-                "stood"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The old, dusty book ____ on the shelf for decades.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'book,' which is singular.  The verb must also be singular. Of the options, only 'has sat' is a singular verb in the correct tense (present perfect). 'Have sat' is a plural verb, and 'sits' is in the present tense, not the present perfect.",
-            "options": [
-                "have sat",
-                "has sat",
-                "sits",
-                "sitting"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The ______ of time spent on social media these days is a growing concern for many parents. \n\n a) amount\n b) amounts\n c) is\n d) are",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is \"amount\", which is an uncountable noun. Uncountable nouns are singular, so they take singular verbs.  Therefore, the correct verb is \"is.\"  The other options, \"amounts\" and \"are,\" are plural and do not agree with the singular subject. The verb \"amount\" is a noun, not a verb, and therefore does not agree with the subject of the sentence. ",
-            "options": [
-                "amount",
-                "amounts",
-                "is",
-                "are"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "A flock of geese  ___  flying south for the winter.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is \"flock of geese\", which is plural. Therefore, the verb must also be plural. The correct verb is \"are\", which agrees with the plural subject. The other options are incorrect because they are singular verbs.",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Each of the contestants ____ (verb)  a chance to win the grand prize, but only one will be chosen.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'each,' which is singular.  Therefore, the verb must also be singular.  The phrase 'of the contestants' is just a prepositional phrase modifying 'each,' and does not affect the subject's singularity. The correct verb is 'has,' which agrees with the singular subject 'each.'",
-            "options": [
-                "have",
-                "has",
-                "are having",
-                "is having"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The collection of antique books, carefully curated over many years,  _[blank]_ a valuable treasure for the library.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is \"collection\", which is singular. The intervening phrase \"carefully curated over many years\" describes the collection but does not change its grammatical number. Therefore, the verb must agree with the singular subject \"collection\" and should be in the singular form.  The correct verb is \"is\".",
-            "options": [
-                "are",
-                "is",
-                "was",
-                "have"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Some of the evidence ____ (is/are/was) missing from the case file.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'Some of the evidence.'  While 'some' can act as a singular pronoun, in this context, it is a quantifier referring to a plural amount of evidence.  Therefore, the verb should agree with the plural noun 'evidence.' The correct verb is 'are.'  The other choices, 'is' and 'was,' are incorrect because they are singular verbs.",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The  ____  (is/are) going to the museum or the library this weekend.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'The (blank)'.  The blank contains a compound subject joined by 'or'. One of the nouns in the compound subject is plural ('theories').  The verb must agree with the plural noun, making 'are' the correct verb form. Therefore, the complete sentence is 'The theories or the hypothesis are going to the museum or the library this weekend.'",
-            "options": [
-                "is",
-                "are",
-                "has",
-                "were"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The **colorful kite and the bright red balloon** ____  high above the park, catching the attention of everyone below. \n(a) floats (b) float",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'the colorful kite and the bright red balloon,' which is a compound subject joined by 'and'. Compound subjects joined by 'and' take a plural verb. Therefore, the correct verb is 'float'.  \n\nStep 1: Identify the subject - 'the colorful kite and the bright red balloon'.  \nStep 2: Recognize the compound subject joined by 'and'.  \nStep 3: Select the plural verb, which is 'float'.  \n\nTherefore, the correct answer is (b) float.",
-            "options": [
-                "floats",
-                "float",
-                "fly",
-                "flies"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Everyone ____ (be) invited to the party, but only a few people showed up.",
-            "difficulty": "medium",
-            "reasoning": "The indefinite pronoun \"Everyone\" is singular, so the verb must agree with it. In the present tense, the singular form of the verb \"to be\" is \"is.\" Therefore, the correct verb to use is \"is.\"",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Some of the evidence presented in the trial ____ (is/are/was) considered inconclusive by the jury, leading to a hung verdict.",
-            "difficulty": "hard",
-            "reasoning": "The correct verb form is **are**. Here's why:\n\n1. **Subject-Verb Agreement:** The subject of the sentence is \"Some of the evidence.\" Even though \"evidence\" is singular, the phrase \"some of\" indicates that we are talking about a portion of the evidence, which is plural. \n\n2. **'Some' as a Plural Determiner:**  When \"some\" is used before a plural noun, it acts as a plural determiner, indicating that more than one item is being considered. This means the verb must agree with the plural subject. \n\n3. **Verb Choice:**  Since \"some of the evidence\" is plural, we need the plural form of the verb \"to be\" in the present tense, which is \"are.\"  The options \"is\" and \"was\" are singular and incorrect.",
-            "options": [
-                "is",
-                "are",
-                "was",
-                "were"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The collection of antique coins, passed down through generations,  ________  a significant value in the current market.",
-            "difficulty": "hard",
-            "reasoning": "The subject of the sentence is 'collection,' which is a singular noun despite being a collective noun. Even though 'coins' are plural, the word 'collection' refers to the entire group as a single unit. Therefore, the verb must be singular, making 'has' the correct choice. The phrase 'passed down through generations' is a prepositional phrase that modifies the subject but does not change the subject-verb agreement.",
-            "options": [
-                "has",
-                "have",
-                "is",
-                "are"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The cast of the play, including the talented Dr. Smith, _______ (A) is, (B) are, (C) was preparing for their opening night performance. ",
-            "difficulty": "hard",
-            "reasoning": "The subject of the sentence is \"cast\", which is a collective noun.  Collective nouns can be singular or plural depending on the context. Here, the focus is on the group as a whole, so the verb should be singular. \"The cast\" is acting as a single unit, so the correct verb is \"is\". The other options are incorrect because \"are\" is plural and \"was\" is past tense. The phrase \"including the talented Dr. Smith\" is an appositive, which simply adds more information about the cast. It does not change the singular nature of the subject.",
-            "options": [
-                "A",
-                "B",
-                "C",
-                "D"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The majority of the students ______  already completed their assignments, but a small group ______  still working diligently.",
-            "difficulty": "hard",
-            "reasoning": "This question is tricky because it uses two collective nouns: 'majority' and 'group'. The first blank requires the verb to agree with 'majority', which acts as a singular noun in this context, referring to the group as a whole. The second blank requires the verb to agree with 'group', which also acts as a singular noun, referring to the group as a whole.  Therefore, the correct verbs are 'have' and 'is' respectively. \n\n**Step 1: Analyzing the First Blank**\n The phrase 'the majority of the students' refers to the group of students as a single unit, not individual students. Therefore, 'majority' acts as a singular noun, requiring a singular verb. \n\n**Step 2: Analyzing the Second Blank**\n Similarly, 'a small group' refers to the group of students as a single unit. Therefore, 'group' acts as a singular noun, requiring a singular verb.\n\n**Step 3: Identifying the Correct Verb Forms**\n The correct verb form for the first blank is 'have' because it agrees with the singular noun 'majority'. The correct verb form for the second blank is 'is' because it agrees with the singular noun 'group'.\n\n**Conclusion:** The correct answer choices are 'have' and 'is' because they accurately reflect the subject-verb agreement for each collective noun in the sentence.",
-            "options": [
-                "have...are",
-                "has...is",
-                "have...is",
-                "has...are"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Among the many challenges facing the modern world, **_on the forefront_** ____  **_the growing need for sustainable practices_**. ",
-            "difficulty": "medium",
-            "reasoning": "The sentence has an inverted structure. The subject is \"the growing need for sustainable practices\" which is singular. The verb needs to agree with the singular subject. The word \"on the forefront\" is a prepositional phrase and does not affect the subject-verb agreement.  Therefore, the correct verb is \"stands\", which is the singular form of the verb \"stand\". ",
-            "options": [
-                "stand",
-                "stands",
-                "standing",
-                "are standing"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Each of the intricate mechanisms within the clockwork automaton ____ (is/are) designed to perform a specific function, contributing to the overall movement of the device.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'each of the intricate mechanisms within the clockwork automaton,' which is singular.  Although the phrase appears complex, it's important to recognize that 'each' always refers to a single item. Since the subject is singular, the verb must also be singular. Therefore, the correct verb form is 'is.'  The phrase 'within the clockwork automaton' is a prepositional phrase modifying the noun 'mechanisms' and does not affect the subject-verb agreement.",
-            "options": [
-                "are",
-                "is",
-                "were",
-                "was"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "There, amidst the bustling marketplace, ______ a group of artisans showcasing their intricate crafts, their hands moving with practiced ease, each piece a testament to their dedication.",
-            "difficulty": "medium",
-            "reasoning": "The subject of the sentence is 'a group of artisans', which is plural. Even though 'There' comes before the verb, it doesn't affect the subject-verb agreement.  The verb should agree with the subject in number. The sentence is describing a present action, so the correct verb tense is the present tense.  Therefore, the correct verb is 'are'.\n\nHere's a breakdown of the reasoning:\n\n1. **Identify the Subject:**  The subject is 'a group of artisans', which is plural.\n2. **Identify the Verb:**  The verb is missing and needs to be chosen from the options.\n3. **Subject-Verb Agreement:** The verb needs to agree with the subject in number. Since the subject is plural, the verb needs to be plural as well.\n4. **Tense:** The sentence describes a present action, so the correct tense is the present tense.\n5. **Correct Verb:** The only verb option that is both plural and in the present tense is 'are'.",
-            "options": [
-                "is",
-                "was",
-                "were",
-                "are"
-            ],
-            "correct_option": "D"
-        }
-    ],
-    "title": "English Language",
-    "topic": "Fill ups - Subject-verb agreement",
-    "exam_id": 16,
-    "order": 6
+  "questions": [
+    {
+      "question": "The playful puppy and the mischievous kitten ____ chasing butterflies in the garden.",
+      "difficulty": "easy",
+      "reasoning": "The subject of the sentence is 'puppy' and 'kitten,' which are joined by 'and,' making it a compound subject. Compound subjects joined by 'and' require a plural verb. Therefore, the correct verb is 'are,' which agrees with the plural subject. The other options, 'is' and 'was,' are incorrect because they are singular verbs.",
+      "options": [
+        "is",
+        "was",
+        "are",
+        "were"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "____ of the cookies ____ left on the plate. ",
+      "difficulty": "easy",
+      "options": [
+        "Some",
+        "None",
+        "Is",
+        "Are"
+      ],
+      "correct_option": "D",
+      "reasoning": "The subject of the sentence is 'some', which refers to a plural number of cookies. Therefore, the verb must be in the plural form. The correct verb is 'are' because it agrees with the plural subject 'some'.  Option (d) is the only option that correctly uses the plural verb 'are'.",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The *____* of the play is very moving.",
+      "difficulty": "easy",
+      "reasoning": "The subject of the sentence is 'The theme of the play.' The noun 'theme' is the central idea or subject matter of the play.  Since 'theme' is singular, the verb must also be singular. Therefore, the correct verb is 'is', which is the singular present tense form of the verb 'to be'. The other options are incorrect because they are plural or possessive forms of the noun 'theme' and do not agree with the singular subject.",
+      "options": [
+        "is",
+        "are",
+        "themes",
+        "theme's"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe question is grammatically correct, but the provided answer \"is\" is incorrect.  The sentence needs an adjective or noun to describe the play, not a verb. \n\nHere are some examples of correct answers:\n\n* **The *climax* of the play is very moving.**\n* **The *ending* of the play is very moving.**\n* **The *story* of the play is very moving.** \n"
+    },
+    {
+      "question": "The cat ___ on the windowsill, or the birds ___ in the garden.",
+      "difficulty": "medium",
+      "reasoning": "The compound subject 'the cat' or 'the birds' requires a singular verb. 'Is' is the singular form of the verb 'to be', so 'is' should be used in both blanks.  The correct sentence would be: 'The cat is on the windowsill, or the birds are in the garden.'",
+      "options": [
+        "is / is",
+        "is / are",
+        "are / is",
+        "are / are"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The children, who **[blank]** always eager to learn new things, were excited about the upcoming field trip.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the verb is 'children,' which is plural. The relative clause 'who are always eager to learn new things' modifies the subject, but the verb must agree with the main subject. Therefore, the correct verb form is 'are.'",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Here _______ a warm, inviting fire crackling in the hearth.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is \"fire,\" which is singular. Therefore, the correct verb is \"is.\" The phrase \"a warm, inviting fire\" is a modifier describing the fire, not changing its grammatical number.  \"Here\" and \"there\" are introductory words and don't affect the subject-verb agreement.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "A swarm of bees ____ buzzing around the flower patch.",
+      "difficulty": "medium",
+      "reasoning": "The collective noun 'swarm' refers to a group of bees, making it singular. The verb should agree with the singular subject, so the correct verb form is 'is'.  'Buzzing' is the present participle acting as an adjective describing the bees.",
+      "options": [
+        "is",
+        "are",
+        "has",
+        "have"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe question is grammatically correct, but the answer is incorrect.  A swarm is a collective noun, and collective nouns usually take singular verbs. \n\nThe correct answer should be \"**was**\". \n\nThe corrected sentence is: \n\n\"A swarm of bees **was** buzzing around the flower patch.\" \n"
+    },
+    {
+      "question": "The [Fill in the blank]  the bluebird and the robin [Rest of sentence] singing in the trees.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is a compound subject, 'the bluebird and the robin'.  Since the subject is plural, the verb must also be plural.  The correct verb to use is 'are', which agrees with the plural subject.  'Is' is the singular form of the verb, so it is incorrect.",
+      "options": [
+        "are",
+        "is",
+        "was",
+        "were"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The group of friends ____ (is/are) going to the movies tonight.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is \"group of friends\", which is plural.  Therefore, the verb must be plural as well. The correct plural verb is \"are\".  The sentence should read: \"The group of friends are going to the movies tonight.\"",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "There ____ a few cookies left on the plate. \nA) is \nB) are \nC) has \nD) have",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **B) are**.  'There' is an introductory word, and the true subject is 'cookies,' which is plural.  Plural subjects require plural verbs, so 'are' is the correct choice.  The other options are incorrect because they are singular verbs.",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The group of students, **[blank]** eager to learn about history, **[blank]** for the museum tour.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'group,' which is singular.  The intervening phrase 'eager to learn about history' modifies 'group' but does not change its number. Therefore, the verb must agree with the singular subject 'group.' The correct verb form is 'is.'  The sentence should read: 'The group of students, eager to learn about history, is ready for the museum tour.'",
+      "options": [
+        "are",
+        "is",
+        "was",
+        "were"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Two-thirds of the cake _[blank]_ already been eaten.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'Two-thirds of the cake'.  While it seems like a plural noun, 'cake' is the actual noun being referred to, and it is singular. The phrase 'Two-thirds' acts as a modifier, indicating the portion of the cake that's been eaten.  Since the subject is singular, the verb must also be singular. Therefore, the correct verb form is 'has'. The sentence should read: \"Two-thirds of the cake has already been eaten.\"",
+      "options": [
+        "has",
+        "have",
+        "are",
+        "is"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The **team** [blank] to practice early tomorrow morning. \na) is planning  b) are planning  c) plans  d) plan",
+      "difficulty": "medium",
+      "reasoning": "The collective noun \"team\" functions as a singular unit in this sentence. Therefore, the verb must agree with a singular subject. Of the options provided, only \"is planning\" is a singular verb form.  The other options are plural forms.  Hence, the correct answer is \"a) is planning\".",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Every student ____ (is/are) required to wear a uniform.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'every student'.  Since 'every' is a singular quantifier, the verb should be singular.  Therefore, the correct verb is 'is'.  'Are' is the plural form and would be incorrect in this case.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Some of the furniture ____ been delivered, but the rest is still on backorder.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'some of the furniture'. While 'furniture' is a plural noun, the phrase 'some of the furniture' refers to a portion of the furniture, making it singular. Therefore, the verb should agree with a singular subject.  The correct verb form is 'has' because it agrees with the singular subject 'some of the furniture'.",
+      "options": [
+        "has",
+        "have",
+        "is",
+        "are"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "None of the committee members ______ yet decided on a date for the next meeting. \n\n(a) has \n(b) have",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is \"None of the committee members.\"  While \"committee members\" is plural,  \"none\"  in this context refers to the entire group as a singular entity. Therefore, the verb should be singular.  The correct verb is  \"has.\"",
+      "options": [
+        "has",
+        "have",
+        "hasn't",
+        "haven't"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The playful puppies  ______  through the park, chasing squirrels and barking at birds.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'puppies,' which is plural.  Therefore, the verb must also be in the plural form.  The correct verb is 'run,' which agrees with the plural subject 'puppies.'",
+      "options": [
+        "run",
+        "runs",
+        "running",
+        "ran"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "Everyone in the class ____ excited for the field trip.",
+      "difficulty": "medium",
+      "reasoning": "The indefinite pronoun 'Everyone' is singular, meaning it refers to a single, collective entity.  Therefore, the verb should also be singular.  The correct verb is 'is' because it agrees in number with the singular subject 'Everyone.'",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The **committee** _______  debating the new proposal.  \na) is \nb) are \nc) was \nd) were",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'committee,' which is a collective noun. Collective nouns can be singular or plural depending on whether they are acting as a single unit or as individuals. In this case, the committee is acting as a single unit, making the verb singular. Therefore, the correct verb form is 'is.' \n\n**Step-by-step reasoning:**\n1. **Identify the subject:** The subject is 'committee,' a collective noun. \n2. **Determine if the collective noun is singular or plural:** The committee is acting as a single unit, making it singular. \n3. **Choose the correct verb form:** Since the subject is singular, the verb must be singular as well. \n4. **Correct verb form:** 'is' is the singular present tense form of the verb 'to be.'\n\n**Incorrect Options:**\n* 'are' is the plural present tense form of 'to be.'\n* 'was' is the singular past tense form of 'to be.'\n* 'were' is the plural past tense form of 'to be.'",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The [blank] and the [blank] in the bakery are always busy during the holiday season.",
+      "difficulty": "medium",
+      "reasoning": "The compound subject of the sentence is 'baker' and 'decorator'. Since the subject is plural, the verb should also be plural. The correct verb is 'are', which agrees with the plural subject.  The sentence is about the baker and decorator being busy, and the verb 'are' accurately reflects the plural nature of the subject.",
+      "options": [
+        "baker, decorator, is",
+        "baker, decorator, are",
+        "bakers, decorators, is",
+        "bakers, decorators, are"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "At the heart of the bustling city ______ a towering skyscraper, a symbol of modern architecture.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'skyscraper', which is singular. The verb must also be singular to agree with the subject. The correct answer is 'stands' because it is the singular present tense form of the verb 'to stand' and agrees with the singular subject 'skyscraper'.",
+      "options": [
+        "stands",
+        "stand",
+        "standing",
+        "stood"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old, dusty book ____ on the shelf for decades.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'book,' which is singular.  The verb must also be singular. Of the options, only 'has sat' is a singular verb in the correct tense (present perfect). 'Have sat' is a plural verb, and 'sits' is in the present tense, not the present perfect.",
+      "options": [
+        "have sat",
+        "has sat",
+        "sits",
+        "sitting"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The ______ of time spent on social media these days is a growing concern for many parents. \n\n a) amount\n b) amounts\n c) is\n d) are",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is \"amount\", which is an uncountable noun. Uncountable nouns are singular, so they take singular verbs.  Therefore, the correct verb is \"is.\"  The other options, \"amounts\" and \"are,\" are plural and do not agree with the singular subject. The verb \"amount\" is a noun, not a verb, and therefore does not agree with the subject of the sentence. ",
+      "options": [
+        "amount",
+        "amounts",
+        "is",
+        "are"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe question is grammatically correct. However, the provided answer \"is\" is incorrect. \n\nThe correct answer should be **\"amount\"**.\n\nHere's why:\n\n* **\"Amount\"** is used when referring to a singular, uncountable quantity (like time). \n* **\"Amounts\"** is used when referring to multiple, distinct quantities.\n\nThe corrected sentence would be:\n\n\"The **amount** of time spent on social media these days is a growing concern for many parents.\" \n"
+    },
+    {
+      "question": "A flock of geese  ___  flying south for the winter.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is \"flock of geese\", which is plural. Therefore, the verb must also be plural. The correct verb is \"are\", which agrees with the plural subject. The other options are incorrect because they are singular verbs.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "Each of the contestants ____ (verb)  a chance to win the grand prize, but only one will be chosen.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'each,' which is singular.  Therefore, the verb must also be singular.  The phrase 'of the contestants' is just a prepositional phrase modifying 'each,' and does not affect the subject's singularity. The correct verb is 'has,' which agrees with the singular subject 'each.'",
+      "options": [
+        "have",
+        "has",
+        "are having",
+        "is having"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The collection of antique books, carefully curated over many years,  _[blank]_ a valuable treasure for the library.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is \"collection\", which is singular. The intervening phrase \"carefully curated over many years\" describes the collection but does not change its grammatical number. Therefore, the verb must agree with the singular subject \"collection\" and should be in the singular form.  The correct verb is \"is\".",
+      "options": [
+        "are",
+        "is",
+        "was",
+        "have"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Some of the evidence ____ (is/are/was) missing from the case file.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'Some of the evidence.'  While 'some' can act as a singular pronoun, in this context, it is a quantifier referring to a plural amount of evidence.  Therefore, the verb should agree with the plural noun 'evidence.' The correct verb is 'are.'  The other choices, 'is' and 'was,' are incorrect because they are singular verbs.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The  ____  (is/are) going to the museum or the library this weekend.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'The (blank)'.  The blank contains a compound subject joined by 'or'. One of the nouns in the compound subject is plural ('theories').  The verb must agree with the plural noun, making 'are' the correct verb form. Therefore, the complete sentence is 'The theories or the hypothesis are going to the museum or the library this weekend.'",
+      "options": [
+        "is",
+        "are",
+        "has",
+        "were"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The **colorful kite and the bright red balloon** ____  high above the park, catching the attention of everyone below. \n(a) floats (b) float",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'the colorful kite and the bright red balloon,' which is a compound subject joined by 'and'. Compound subjects joined by 'and' take a plural verb. Therefore, the correct verb is 'float'.  \n\nStep 1: Identify the subject - 'the colorful kite and the bright red balloon'.  \nStep 2: Recognize the compound subject joined by 'and'.  \nStep 3: Select the plural verb, which is 'float'.  \n\nTherefore, the correct answer is (b) float.",
+      "options": [
+        "floats",
+        "float",
+        "fly",
+        "flies"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Everyone ____ (be) invited to the party, but only a few people showed up.",
+      "difficulty": "medium",
+      "reasoning": "The indefinite pronoun \"Everyone\" is singular, so the verb must agree with it. In the present tense, the singular form of the verb \"to be\" is \"is.\" Therefore, the correct verb to use is \"is.\"",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Some of the evidence presented in the trial ____ (is/are/was) considered inconclusive by the jury, leading to a hung verdict.",
+      "difficulty": "hard",
+      "reasoning": "The correct verb form is **are**. Here's why:\n\n1. **Subject-Verb Agreement:** The subject of the sentence is \"Some of the evidence.\" Even though \"evidence\" is singular, the phrase \"some of\" indicates that we are talking about a portion of the evidence, which is plural. \n\n2. **'Some' as a Plural Determiner:**  When \"some\" is used before a plural noun, it acts as a plural determiner, indicating that more than one item is being considered. This means the verb must agree with the plural subject. \n\n3. **Verb Choice:**  Since \"some of the evidence\" is plural, we need the plural form of the verb \"to be\" in the present tense, which is \"are.\"  The options \"is\" and \"was\" are singular and incorrect.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The collection of antique coins, passed down through generations,  ________  a significant value in the current market.",
+      "difficulty": "hard",
+      "reasoning": "The subject of the sentence is 'collection,' which is a singular noun despite being a collective noun. Even though 'coins' are plural, the word 'collection' refers to the entire group as a single unit. Therefore, the verb must be singular, making 'has' the correct choice. The phrase 'passed down through generations' is a prepositional phrase that modifies the subject but does not change the subject-verb agreement.",
+      "options": [
+        "has",
+        "have",
+        "is",
+        "are"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The cast of the play, including the talented Dr. Smith, _______ (A) is, (B) are, (C) was preparing for their opening night performance. ",
+      "difficulty": "hard",
+      "reasoning": "The subject of the sentence is \"cast\", which is a collective noun.  Collective nouns can be singular or plural depending on the context. Here, the focus is on the group as a whole, so the verb should be singular. \"The cast\" is acting as a single unit, so the correct verb is \"is\". The other options are incorrect because \"are\" is plural and \"was\" is past tense. The phrase \"including the talented Dr. Smith\" is an appositive, which simply adds more information about the cast. It does not change the singular nature of the subject.",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The majority of the students ______  already completed their assignments, but a small group ______  still working diligently.",
+      "difficulty": "hard",
+      "reasoning": "This question is tricky because it uses two collective nouns: 'majority' and 'group'. The first blank requires the verb to agree with 'majority', which acts as a singular noun in this context, referring to the group as a whole. The second blank requires the verb to agree with 'group', which also acts as a singular noun, referring to the group as a whole.  Therefore, the correct verbs are 'have' and 'is' respectively. \n\n**Step 1: Analyzing the First Blank**\n The phrase 'the majority of the students' refers to the group of students as a single unit, not individual students. Therefore, 'majority' acts as a singular noun, requiring a singular verb. \n\n**Step 2: Analyzing the Second Blank**\n Similarly, 'a small group' refers to the group of students as a single unit. Therefore, 'group' acts as a singular noun, requiring a singular verb.\n\n**Step 3: Identifying the Correct Verb Forms**\n The correct verb form for the first blank is 'have' because it agrees with the singular noun 'majority'. The correct verb form for the second blank is 'is' because it agrees with the singular noun 'group'.\n\n**Conclusion:** The correct answer choices are 'have' and 'is' because they accurately reflect the subject-verb agreement for each collective noun in the sentence.",
+      "options": [
+        "have...are",
+        "has...is",
+        "have...is",
+        "has...are"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Among the many challenges facing the modern world, **_on the forefront_** ____  **_the growing need for sustainable practices_**. ",
+      "difficulty": "medium",
+      "reasoning": "The sentence has an inverted structure. The subject is \"the growing need for sustainable practices\" which is singular. The verb needs to agree with the singular subject. The word \"on the forefront\" is a prepositional phrase and does not affect the subject-verb agreement.  Therefore, the correct verb is \"stands\", which is the singular form of the verb \"stand\". ",
+      "options": [
+        "stand",
+        "stands",
+        "standing",
+        "are standing"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe question has a grammatical error. The phrase \"on the forefront\" should be \"at the forefront\" or \"in the forefront\". Additionally, the word \"stands\" doesn't quite fit grammatically.  A better fit would be a verb like \"is\" or \"lies\". \n\nHere's a corrected version:\n\n**Among the many challenges facing the modern world, at the forefront is the growing need for sustainable practices.** \n"
+    },
+    {
+      "question": "Each of the intricate mechanisms within the clockwork automaton ____ (is/are) designed to perform a specific function, contributing to the overall movement of the device.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'each of the intricate mechanisms within the clockwork automaton,' which is singular.  Although the phrase appears complex, it's important to recognize that 'each' always refers to a single item. Since the subject is singular, the verb must also be singular. Therefore, the correct verb form is 'is.'  The phrase 'within the clockwork automaton' is a prepositional phrase modifying the noun 'mechanisms' and does not affect the subject-verb agreement.",
+      "options": [
+        "are",
+        "is",
+        "were",
+        "was"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "There, amidst the bustling marketplace, ______ a group of artisans showcasing their intricate crafts, their hands moving with practiced ease, each piece a testament to their dedication.",
+      "difficulty": "medium",
+      "reasoning": "The subject of the sentence is 'a group of artisans', which is plural. Even though 'There' comes before the verb, it doesn't affect the subject-verb agreement.  The verb should agree with the subject in number. The sentence is describing a present action, so the correct verb tense is the present tense.  Therefore, the correct verb is 'are'.\n\nHere's a breakdown of the reasoning:\n\n1. **Identify the Subject:**  The subject is 'a group of artisans', which is plural.\n2. **Identify the Verb:**  The verb is missing and needs to be chosen from the options.\n3. **Subject-Verb Agreement:** The verb needs to agree with the subject in number. Since the subject is plural, the verb needs to be plural as well.\n4. **Tense:** The sentence describes a present action, so the correct tense is the present tense.\n5. **Correct Verb:** The only verb option that is both plural and in the present tense is 'are'.",
+      "options": [
+        "is",
+        "was",
+        "were",
+        "are"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    }
+  ],
+  "title": "English Language",
+  "topic": "Fill ups - Subject-verb agreement",
+  "exam_id": 16,
+  "order": 6
 }

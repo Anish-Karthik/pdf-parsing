@@ -256,9 +256,10 @@ def get_response_delayed_prompt(prompt, delay=0.1):
         )
         return raw_response.text
     except ResourceExhausted as e:
+        print(traceback.format_exc())
         return get_response_delayed_prompt(prompt, delay * 2)
     except Exception as e:
-        print(e)
+        print(traceback.format_exc())
         return None
 
 

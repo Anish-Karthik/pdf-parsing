@@ -1,464 +1,502 @@
 {
-    "questions": [
-        {
-            "question": "The sun ____ brightly today, making it a perfect day for a picnic.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes an action happening now, making the Present Continuous Tense appropriate. The verb 'shine' needs to be in the Present Continuous form, which is 'is shining' since the subject 'sun' is singular.  Therefore, the correct option is 'is shining'.",
-            "options": [
-                "shine",
-                "is shining",
-                "shined",
-                "will shine"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The award ceremony ____ [blank] by the mayor next week.",
-            "difficulty": "easy",
-            "reasoning": "The sentence is in the passive voice. The subject (award ceremony) is the receiver of the action (being held).  The action is happening in the future, indicating a future tense. The verb 'to hold' should be used in the future tense in the passive voice, which is 'will be held'.",
-            "options": [
-                "hold",
-                "is holding",
-                "was held",
-                "will be held"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The children were very excited because they ______ (see) a real-life dinosaur at the museum before.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes an action that happened before another action in the past. The children's excitement is because they had already seen a dinosaur at the museum. This calls for the Past Perfect Tense. Therefore, the correct verb form is 'had seen.'",
-            "options": [
-                "see",
-                "saw",
-                "had seen",
-                "have seen"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "This time next year, I ______ [BLANK] enjoying the warm weather in Hawaii.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes an ongoing action in the future, specifically 'enjoying the warm weather in Hawaii' which will be happening at a specific point in time - 'this time next year'. This indicates the use of the Future Continuous Tense.  The verb 'to be' in the Future Continuous Tense is formed by combining 'will' and 'be', followed by the present participle of the main verb.  Therefore, the correct form of the verb 'to be' in the blank is 'will be'.",
-            "options": [
-                "will being",
-                "will be being",
-                "will be",
-                "am being"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "By the time she graduates next month, Sarah ______ (complete) all her course requirements.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes an action that will be finished by a specific point in the future (next month). The future perfect tense is used to express an action that will be completed before a certain time in the future. Therefore, the correct verb is \"will have completed\" because it signifies the completion of all course requirements before Sarah graduates.  \n\nStep 1: Identify the time frame: \"By the time she graduates next month\" indicates the action must be completed before a specific future time.\n\nStep 2: Identify the verb: \"complete\" is the verb in the sentence.\n\nStep 3: Determine the tense: The tense required is future perfect, indicating the completion of an action before a specific time in the future.\n\nStep 4: Form the future perfect tense: The future perfect tense is formed using \"will have\" + past participle of the verb. The past participle of \"complete\" is \"completed\".\n\nStep 5: Combine the elements: \"will have\" + \"completed\" = \"will have completed\".\n\nTherefore, the correct answer is \"will have completed\".",
-            "options": [
-                "future perfect",
-                "past perfect",
-                "present perfect",
-                "simple future"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The children _______ (a)  ____  in the park when it started to rain. ",
-            "difficulty": "easy",
-            "reasoning": "The question tests the understanding of the Past Continuous Tense, which describes an ongoing action in the past.  The sentence describes an action that was happening when something else interrupted it.  The correct verb form in the Past Continuous Tense is formed by using 'was/were' + the present participle of the verb.  Since the subject 'children' is plural, we use 'were'.  Therefore, the correct answer is 'were playing', indicating that the children were engaged in an activity in the park before the rain began.",
-            "options": [
-                "play",
-                "played",
-                "were playing",
-                "was playing"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "If I _______ (have) more time, I would have traveled to Paris last summer.",
-            "difficulty": "easy",
-            "reasoning": "The sentence uses the past perfect conditional, which describes a hypothetical situation in the past that did not happen. The verb in the 'if' clause should be in the past perfect tense, indicating that the action did not happen in the past. Therefore, the correct answer is 'had'. The full sentence would be: 'If I had had more time, I would have traveled to Paris last summer.' This sentence indicates that the speaker did not have enough time to travel to Paris last summer, and is expressing regret about that.",
-            "options": [
-                "have",
-                "had",
-                "having",
-                "will have"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "They ______ (visit) the museum twice this year. ",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes an action that has happened more than once in the past and is still relevant to the present. This is a classic example of the Present Perfect tense. The correct verb conjugation is 'have visited' because 'they' is a plural subject. The past participle of 'visit' is 'visited'.",
-            "options": [
-                "have visited",
-                "visited",
-                "are visiting",
-                "will visit"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "My cat _______  on the windowsill every afternoon and watches the birds.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a habitual action that happens regularly. The Simple Present Tense is used for actions that happen repeatedly or regularly. The verb should be in the third person singular form because the subject is 'My cat', which is singular. The correct verb form is 'sits' as it matches the subject and the tense.",
-            "options": [
-                "sit",
-                "sits",
-                "sat",
-                "will sit"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "This time tomorrow, I ______ ______ (relax) on the beach. I can't wait to escape the city noise and soak up the sun!",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes an action that will be ongoing at a specific time in the future. The correct tense to use is the Future Continuous. The Future Continuous is formed with 'will be' + the present participle of the verb. Therefore, the correct answer is 'will be relaxing'. The context of the sentence suggests a future action that will continue for a period of time, aligning with the concept of the Future Continuous tense.",
-            "options": [
-                "Past Continuous",
-                "Future Perfect",
-                "Future Continuous",
-                "Present Perfect Continuous"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The children ____ (build) a sandcastle on the beach. They're having so much fun!",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes an ongoing action happening now. The present continuous tense is used to describe actions happening at the moment of speaking. The verb 'build' needs to be conjugated in the present continuous tense, which is formed by using the present tense of 'to be' (are) and the -ing form of the verb (building). So, the correct answer is 'are building'.",
-            "options": [
-                "are building",
-                "builds",
-                "build",
-                "will building"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The annual report _____ by the company's CEO last week.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes an action that happened in the past.  The subject of the sentence is \"report\" and the action is \"presented.\"  Since the report is the receiver of the action, the passive voice is required. The action occurred \"last week,\" indicating the past tense. Therefore, the correct verb form is \"was presented.\" \n\nIn the passive voice, the structure is \"subject + be + past participle.\" Here, the subject is \"report\", the past participle is \"presented,\" and the verb \"be\" is conjugated to match the tense. Since the action happened in the past, we use \"was.\" \n\nTherefore, the complete sentence is \"The annual report was presented by the company's CEO last week.\" ",
-            "options": [
-                "is presenting",
-                "has been presented",
-                "will be presented",
-                "presented"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "By the time the concert starts, the band _______ already ______ their instruments.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes an action that will be completed before another future event (the concert starting). This requires the Future Perfect tense, which is formed with 'will have' + past participle. The verb in this case is 'set up', so the correct form is 'will have set up'.\n\nStep 1: Identify the time frame - The action is completed before the concert starts, indicating a future event.\nStep 2: Identify the tense - The sentence talks about a completed action before a future event, suggesting the Future Perfect tense.\nStep 3: Form the verb - The Future Perfect tense is formed with 'will have' + past participle. The verb in this case is 'set up', so the past participle is 'set up'.\nStep 4: Combine the elements - Combining the elements, the correct form is 'will have set up'.",
-            "options": [
-                "will have set up",
-                "will set up",
-                "have set up",
-                "will be setting up"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "She ______ (study) for her exams all week. She's exhausted!",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes an action that started in the past and is still ongoing.  This is the defining characteristic of the Present Perfect Continuous tense.  The verb 'study' needs to be conjugated in the Present Perfect Continuous form: \n\n1. **Present participle:** 'study' becomes 'studying'.\n2. **Auxiliary verb:**  'has' is used because the subject is 'she'.\n3. **Combining the parts:** 'has' + 'been' + 'studying' = 'has been studying'.\n\nTherefore, the complete sentence is: 'She has been studying for her exams all week.'",
-            "options": [
-                "She has studying",
-                "She was studying",
-                "She is studying",
-                "She has been studying"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "Next week, I ______  visit my grandparents in the countryside.  I haven't seen them in a while, and I'm looking forward to catching up.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes a future action that is planned or expected. Therefore, the Simple Future Tense is required. The correct verb form is 'will visit' because it indicates a future action that is not yet decided or certain. The other options are incorrect because they do not express the future tense: 'visit' is present tense, 'am going to visit' is the present continuous tense, and 'visited' is the past tense.  Therefore, the only correct answer is 'will visit.'",
-            "options": [
-                "visit",
-                "will visit",
-                "am going to visit",
-                "visited"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The weather forecast predicts that it _______ rain heavily tomorrow afternoon. We should reschedule our outdoor picnic for another day.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a prediction about the future, which is a classic use case for the Simple Future Tense. The subject 'it' is singular, so the correct verb conjugation is 'will rain'.  The other options are incorrect: 'rain' is the present tense, 'is raining' is the present continuous tense, and 'rained' is the past tense.",
-            "options": [
-                "rain",
-                "is raining",
-                "rained",
-                "will rain"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The chef _______ a new recipe for the restaurant's menu all week.",
-            "difficulty": "medium",
-            "reasoning": "The question tests the understanding of the Present Perfect Continuous tense.  The sentence describes an action that began in the past and is still ongoing. The correct answer is 'has been working' because it indicates an action that started in the past and continues up to the present moment.\n\nHere's a breakdown of why the other options are incorrect:\n\n* **is working:** This uses the Present Continuous tense, which indicates an action happening now. It doesn't convey the duration of the action from the past.\n* **worked:** This uses the Past Simple tense, which describes a completed action in the past. It doesn't indicate the ongoing nature of the action.\n\nTherefore, the only option that accurately reflects the meaning of the sentence and the use of the Present Perfect Continuous tense is 'has been working'.",
-            "options": [
-                "is working",
-                "has been working",
-                "worked",
-                "will be working"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Since moving to the city, I  ______  to the new art museum three times. It's fantastic!",
-            "difficulty": "medium",
-            "reasoning": "The sentence is about an action that started in the past (moving to the city) and continues to the present (going to the museum). This is a typical scenario for the Present Perfect Tense. The sentence also includes the phrase 'since moving to the city', indicating a point in the past that marks the beginning of the action. Therefore, the correct verb form is 'have been', which is the present perfect tense of 'to be'. \n\nThe other options are incorrect because:\n\n* 'went' is the past simple tense and describes a completed action in the past. It doesn't convey the ongoing nature of the action. \n* 'will be' is the future tense and expresses an action that will happen in the future, not in the present. \n\nThus, the only correct option is 'have been'.",
-            "options": [
-                "have been",
-                "went",
-                "will be",
-                "been"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The children ______ playing in the park at this time tomorrow. They are looking forward to the picnic lunch their parents are packing.",
-            "difficulty": "medium",
-            "reasoning": "This question tests the understanding of the Future Continuous Tense. The sentence describes an action that will be in progress at a specific time in the future.  The Future Continuous Tense is formed using \"will be\" followed by the present participle of the verb. The context indicates a future event, specifically the children playing in the park tomorrow, thus requiring the Future Continuous tense. So, the correct answer is 'will be' because it accurately expresses the ongoing action of playing at a specific future time.",
-            "options": [
-                "will been",
-                "are being",
-                "will being",
-                "will have been"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "As the sun was setting, casting long shadows across the field, the birds _______ their evening songs, creating a beautiful melody.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes an action happening in the past, while another action was also happening simultaneously.  This is a classic example of the Past Continuous Tense. The first part of the sentence, 'As the sun was setting...'  sets the scene and tells us the action was ongoing. The second part, 'the birds ... songs,' describes another action that was happening at the same time. We need to fill in the blank with a verb in the Past Continuous Tense.  The correct form of the verb 'sing' in the Past Continuous Tense is 'were singing'.\n\nHere's the breakdown:\n\n* **'were'** is the past tense of 'to be' and is used with the plural subject 'birds'.\n* **'singing'** is the present participle of 'to sing'.\n\nTherefore, the complete sentence reads: \"As the sun was setting, casting long shadows across the field, the birds were singing their evening songs, creating a beautiful melody.\"",
-            "options": [
-                "sang",
-                "were singing",
-                "have sung",
-                "sing"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The mechanic _______ on the car for hours before he finally figured out what was wrong. He had been so frustrated, as it was a very unusual problem.",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is **had been working**. The sentence describes an action that was ongoing in the past, and that action was completed before another action in the past (figuring out the problem).  The Past Perfect Continuous tense is used to show an action that started in the past, continued for a period of time, and then stopped before another action in the past. The other options are incorrect because:\n\n* **was working** - This is the Past Continuous tense, which indicates an action that was ongoing in the past but does not specify whether it was completed before another action in the past.\n* **has been working** - This is the Present Perfect Continuous tense, which describes an action that began in the past and continues up to the present moment.\n* **will have been working** - This is the Future Perfect Continuous tense, which describes an action that will be ongoing in the future but has not started yet.\n\nTherefore, the only option that correctly describes the action in the sentence as a past action that continued for a period of time and then stopped before another action in the past is **had been working**.",
-            "options": [
-                "was working",
-                "had been working",
-                "has been working",
-                "will have been working"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The ancient city of Petra ______ by the Nabataeans in the 1st century BC, and its impressive architecture ______ by visitors from around the world for centuries.",
-            "difficulty": "medium",
-            "reasoning": "The first blank requires the past tense of the passive voice, as the city was built in the past. The correct verb is \"was built.\"  The second blank also requires the passive voice because the architecture is being admired by visitors. Since the admiration is ongoing, the present perfect tense is needed, making the correct verb \"has been admired.\" \n\n**Step 1:** Identify the action being performed in the sentence: The city was built by the Nabataeans and the architecture is admired by visitors.\n\n**Step 2:** Determine the subject of the action: The subject of the first action is the city, and the subject of the second action is the architecture. Since the subjects are being acted upon, the passive voice is required.\n\n**Step 3:** Determine the tense needed for each blank: The first blank refers to a past event, requiring the past tense. The second blank refers to an action that started in the past and continues to the present, requiring the present perfect tense.\n\n**Step 4:** Apply the passive voice rules:  The passive voice is formed using \"to be\" and the past participle of the verb. In this case, the past participles are \"built\" and \"admired.\" ",
-            "options": [
-                "was built, was admired",
-                "built, had been admired",
-                "has been built, will be admired",
-                "was built, has been admired"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "By the time the school year ends, they ______ (raise) enough money for a new playground.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes an action that will be completed by a specific point in the future (the end of the school year). This indicates the use of the Future Perfect Tense. The structure of the Future Perfect Tense is 'will have + past participle.' In this case, the verb 'raise' needs to be conjugated into the past participle form, which is 'raised.' Therefore, the correct answer is 'will have raised.'",
-            "options": [
-                "will have raised",
-                "will raise",
-                "are raising",
-                "have raised"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The construction crew has been working tirelessly on the new bridge.  They are hoping to complete the project by the end of summer.  By August, the crew ______ ______ ______ on the bridge for nearly six months.",
-            "difficulty": "medium",
-            "reasoning": "The question tests the student's understanding of the Future Perfect Continuous Tense, which describes an action that will have been ongoing for a period of time in the future.  The context provides the necessary information to determine the correct verb form. The sentence requires the Future Perfect Continuous Tense of the verb \"work.\" This tense is formed using \"will have been\" + the present participle of the verb.  Therefore, the correct answer is \"will have been working.\" The sentence should read: \"By August, the crew will have been working on the bridge for nearly six months.\"",
-            "options": [
-                "will have been working",
-                "will have worked",
-                "will be working",
-                "will work"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The company ______ several new employees this year, which has helped them increase productivity.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes an action that began in the past (this year) and continues to the present. The Present Perfect Tense is used to describe actions that started in the past and have an effect on the present.  We need a verb that conveys this ongoing effect. Of the options, 'has hired' is the only verb that correctly expresses this idea. \n\n * **has hired:** This form is the correct Present Perfect Tense, indicating that the hiring began in the past and the results are still relevant today. \n\n * **hired:**  This is the simple past tense, indicating a completed action in the past, not an ongoing one. \n\n * **will hire:** This is the future tense, indicating an action that will happen in the future, not something that has already happened. \n\n * **is hiring:** This is the present continuous tense, indicating an action happening right now, not a completed action with ongoing effects.",
-            "options": [
-                "hired",
-                "will hire",
-                "is hiring",
-                "has hired"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The Smiths are having a family reunion next month. Everyone is excited to see each other again. While they are catching up, the kids ______ (play) games in the backyard.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes an action that will be ongoing during a specific time in the future: while the adults are catching up, the kids will be playing games. This indicates the use of the Future Continuous Tense. The correct verb phrase is 'will be playing'. The context indicates that the kids will be engaged in an action during the time the adults are catching up, which is a point in the future. This is the core characteristic of the Future Continuous Tense: describing an ongoing action at a specific point in the future.",
-            "options": [
-                "will play",
-                "will be playing",
-                "are going to play",
-                "are playing"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The sun _______ (shine) brightly today, making it the perfect day for a picnic in the park.  \n\n   a) is shining\n   b) shines\n   c) shined\n   d) will shine",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes an action happening currently, indicating the use of the present continuous tense.  The present continuous tense is formed with the present tense of the verb 'to be' (is/am/are) followed by the present participle of the main verb, which ends in '-ing'. In this case, the correct form is 'is shining' because the subject is 'sun' (third person singular).  \n\n   Option 'b) shines' is incorrect because it's in the simple present tense, which describes a general truth or habitual action.  Option 'c) shined' is incorrect because it's in the simple past tense, which describes an action that happened in the past.  Option 'd) will shine' is incorrect because it's in the future tense, which describes an action that will happen in the future.",
-            "options": [
-                "is shining",
-                "shines",
-                "shined",
-                "will shine"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The old house had been abandoned for years.  When the new owners finally moved in, they discovered that the previous occupants __________ (leave) behind a collection of antique furniture.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a situation where the action of leaving the furniture happened before another past action (the new owners moving in).  This means we need to use the Past Perfect tense. The correct verb form is 'had left' because it indicates that the action of leaving happened before the new owners moved in.  The other options are incorrect: \n\n* **had been leaving:** This is the past perfect continuous tense and describes an action that was ongoing in the past, which is not the case here. \n* **left:**  This is the simple past tense, which indicates an action that happened at a specific point in the past, not before another past action. \n* **have left:** This is the present perfect tense and indicates an action that happened in the past and has an effect on the present, which is not relevant to the context.",
-            "options": [
-                "had been leaving",
-                "had left",
-                "left",
-                "have left"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The kids were playing in the park when a sudden downpour _______ (begin). They quickly ran for shelter under a large oak tree.",
-            "difficulty": "medium",
-            "reasoning": "The question tests the student's understanding of the Past Continuous tense. The sentence describes an action in progress (the kids playing) interrupted by another action (the downpour beginning). The Past Continuous tense is used to describe an action happening in the past over a period of time. The verb 'begin' needs to be conjugated into the Past Continuous tense, which is formed by using 'was/were' + the present participle (-ing form) of the verb.  Therefore, the correct answer is 'was beginning'.\n\nHere is the breakdown of the reasoning:\n1. **Identify the tense:** The sentence requires the Past Continuous tense because it describes an ongoing action in the past that was interrupted.\n2. **Identify the verb:** The verb to be conjugated is 'begin'.\n3. **Conjugate the verb:**  The Past Continuous tense of 'begin' is 'was/were beginning'. Since the subject is 'a sudden downpour', which is singular, we use 'was'.\n4. **Complete the sentence:** The sentence becomes 'The kids were playing in the park when a sudden downpour was beginning. They quickly ran for shelter under a large oak tree.'",
-            "options": [
-                "began",
-                "was begining",
-                "was beginning",
-                "begun"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Type: Fill-ups (choose the correct tense)\nTopic: Conditional Sentences\nSentence: If I __ (be) __ more patient, I would have finished the project on time.\nDifficulty: Medium (6/10)",
-            "difficulty": "medium",
-            "reasoning": "This question focuses on the conditional sentence structure, specifically the past unreal conditional. The sentence is structured as 'If + Past Perfect, would have + Past Participle.' It explores the hypothetical situation where the speaker was not patient, leading to a consequence in the past. The blank requires the past perfect tense 'had been' to correctly reflect this hypothetical past condition. \n\nHere's a step-by-step breakdown:\n\n1. **Identify the conditional sentence type:** The sentence uses the 'If + Past Perfect, would have + Past Participle' structure, indicating a past unreal conditional. This type of conditional expresses a hypothetical situation in the past and its unrealized consequence.\n2. **Identify the blank:** The blank requires a verb tense that reflects the past hypothetical condition.  The verb 'be' needs to be in the past perfect tense.\n3. **Apply the past perfect tense:** The past perfect tense of 'be' is 'had been'. This tense emphasizes a completed action in the past that happened before another past event.\n4. **Complete the sentence:** The sentence then reads: 'If I had been more patient, I would have finished the project on time.' This correctly portrays the hypothetical scenario and its unrealized consequence.\n\nTherefore, the correct answer is 'had been'.",
-            "options": [
-                "was",
-                "have been",
-                "had been",
-                "will be"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "By the time the scientists  ________ their groundbreaking research on the origins of life, a new generation of researchers will be ready to take the reins.",
-            "difficulty": "hard",
-            "reasoning": "The sentence describes an action that will be completed before a future event.  The phrase \"By the time\" signals the use of the Future Perfect Tense.  The correct verb should be in the Future Perfect form to reflect that the research will be finished before the new generation takes over.  The Future Perfect is formed by using \"will have\" + past participle of the verb.  The past participle of \"complete\" is \"completed.\"  Therefore, the correct verb is \"will have completed.\" ",
-            "options": [
-                "will have completed",
-                "will complete",
-                "have completed",
-                "will be completing"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The bustling city of New York ______ with activity, from the early morning rush hour to the late-night entertainment scene, making it a vibrant and captivating metropolis.",
-            "difficulty": "hard",
-            "reasoning": "The sentence describes a general truth about New York City - its constant activity. This calls for the Simple Present Tense, which is used to describe habitual actions, facts, or general truths. The verb 'teems' is the correct Simple Present Tense form, as it accurately reflects the city's continuous buzz. 'Teeming' is the present participle, indicating ongoing action, while 'teamed' is the past tense, not fitting the context.  Therefore, the correct answer is 'teems'.",
-            "options": [
-                "teems",
-                "teeming",
-                "teamed",
-                "teem"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The team _______ (play) exceptionally well this season, but they haven't won a championship yet. Their fans are eager to see them finally claim the title.",
-            "difficulty": "hard",
-            "reasoning": "This question tests the understanding of the present perfect tense and its relationship with duration and completion. The sentence describes an action that started in the past (beginning of the season) and continues to the present (they are still playing well). The use of 'yet' indicates that the action hasn't been completed (winning a championship). The correct answer is 'have been playing' because the action is ongoing and hasn't reached its conclusion. It signifies the action is in progress and continues up to the present moment.  The other options like 'played', 'have played', 'has played' are incorrect because they signify a completed action, not an ongoing action.  'Played' is simple past tense, which implies the action has finished. 'Have played' and 'Has played' could be correct in other contexts but not in this scenario because the context implies an ongoing action. Therefore, 'have been playing' is the correct answer to complete the sentence and convey the intended meaning.",
-            "options": [
-                "played",
-                "have played",
-                "has played",
-                "have been playing"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "**Sentence**: If I ______ (be) more careful with my finances last year, I ______ (not need) to take on so much debt.\n**Question**: Choose the correct tense to complete the sentence.\n**Options**: \n  - was / don't need\n  - had been / wouldn't have needed\n  - would be / won't need\n  - were / wouldn't need\n",
-            "difficulty": "hard",
-            "reasoning": "This sentence uses the third conditional, which describes hypothetical situations in the past. The first clause, 'If I ______ (be) more careful with my finances last year,' requires the past perfect tense ('had been') to express an action that didn't happen in the past. The second clause, 'I ______ (not need) to take on so much debt,' requires the conditional perfect tense ('wouldn't have needed') to express the consequence that wouldn't have occurred if the first action had been different. The correct answer is therefore 'had been / wouldn't have needed'.  The other options are incorrect because they do not correctly reflect the tense required for the third conditional.",
-            "options": [
-                "was / don't need",
-                "had been / wouldn't have needed",
-                "would be / won't need",
-                "were / wouldn't need"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "**Sentence**: As the sun began to set, the hikers  ______ their way down the treacherous mountain path.\n**Context**: The hikers had been climbing for hours, and they were exhausted.\n**Difficulty**: tricky 8/10\n**Answer**: made\n",
-            "difficulty": "hard",
-            "reasoning": "This question is classified as 'tricky 8/10' due to the use of a phrasal verb, 'make their way'.  The past tense of the phrasal verb 'make their way' is 'made their way'. The sentence is in the simple past tense, describing a completed action in the past. 'Made' is the correct answer because it accurately reflects the past tense of the phrasal verb 'make their way'. The sentence tells us that the hikers completed the action of descending the mountain path after the sun began to set. Therefore, the correct past tense verb to fill the blank is 'made'.",
-            "options": [
-                "made",
-                "making",
-                "make",
-                "had made"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The ancient ruins, ______ by centuries of weathering and neglect, were slowly being reclaimed by the jungle, their once-imposing presence now obscured by a dense canopy of vines and foliage.",
-            "difficulty": "hard",
-            "reasoning": "This sentence tests the understanding of the passive voice in a complex context. The correct tense is the past participle, as it describes an action completed in the past and whose effects are still visible. The phrase 'were slowly being reclaimed' indicates an ongoing process in the past, implying that the weathering and neglect happened before this process began. The passive voice is crucial here because it focuses on the ruins themselves (the object) as the receiver of the action (weathering and neglect). \n\nHere's a breakdown:\n\n1. **Action:** Weathering and neglect\n2. **Object:** Ancient ruins\n3. **Passive voice construction:** The object (ancient ruins) becomes the subject, and the verb 'be' is used in the appropriate tense along with the past participle of the verb 'to weather' and 'to neglect.'\n\nTherefore, the correct answer is 'weathered and neglected' because it accurately reflects the passive voice construction and the past participle tense, highlighting the long-term effects of the action on the ruins.",
-            "options": [
-                "weathered and neglected",
-                "weathering and neglecting",
-                "to weather and neglect",
-                "weather and neglect"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The team _____ (prepare) for their upcoming game, practicing drills and strategizing plays, while the fans eagerly anticipate the match.",
-            "difficulty": "hard",
-            "reasoning": "The sentence describes an ongoing action, the team's preparation for the game, which is happening in the present. The Present Continuous Tense is used to express actions happening now. The verb 'prepare' needs to be conjugated in the Present Continuous Tense, which is formed by using the present tense of the auxiliary verb 'to be' (is/am/are) followed by the present participle (-ing form) of the main verb. Since the subject 'team' is plural, the correct auxiliary verb is 'are.' Therefore, the correct answer is 'are preparing.'\n\n**Step-by-step explanation:**\n1. **Identify the action:** The action is 'preparing' for the upcoming game.\n2. **Identify the tense:** The tense is Present Continuous, indicating an ongoing action.\n3. **Determine the subject:** The subject is 'team,' which is plural.\n4. **Choose the correct auxiliary verb:**  The auxiliary verb for plural subjects in the Present Continuous Tense is 'are.'\n5. **Combine the auxiliary verb with the present participle:** 'are' + 'preparing' = 'are preparing.'\n6. **Fill in the blank:**  The completed sentence is 'The team **are preparing** for their upcoming game, practicing drills and strategizing plays, while the fans eagerly anticipate the match.'",
-            "options": [
-                "is preparing",
-                "prepare",
-                "prepared",
-                "will be preparing"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "As the train ______ into the station, a group of musicians began playing lively tunes, their instruments filling the air with vibrant melodies.",
-            "difficulty": "easy",
-            "reasoning": "The correct answer is \"was pulling\" because the sentence describes an action that was in progress in the past. The phrase \"As the train...\" indicates a continuous action, and \"pulling into the station\" implies an action that was ongoing at the time the musicians started playing. This aligns with the definition of the Past Continuous tense, which describes an ongoing action that was happening at a specific point in the past.\n\nThe other options are incorrect:\n\n1. \"pulled\" - This is in the Simple Past tense, which would indicate a completed action rather than an ongoing one.\n2. \"is pulling\" - This is in the Present Continuous tense, which describes an action happening now.\n3. \"had pulled\" - This is in the Past Perfect tense, which describes a completed action that happened before another event in the past.  The sentence emphasizes the action being in progress simultaneously with the musicians playing, making the Past Continuous tense the most appropriate choice.",
-            "options": [
-                "pulled",
-                "was pulling",
-                "is pulling",
-                "had pulled"
-            ],
-            "correct_option": "B"
-        }
-    ],
-    "title": "English Language",
-    "topic": "Fill ups - Tenses",
-    "exam_id": 9,
-    "order": 0
+  "questions": [
+    {
+      "question": "The sun ____ brightly today, making it a perfect day for a picnic.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes an action happening now, making the Present Continuous Tense appropriate. The verb 'shine' needs to be in the Present Continuous form, which is 'is shining' since the subject 'sun' is singular.  Therefore, the correct option is 'is shining'.",
+      "options": [
+        "shine",
+        "is shining",
+        "shined",
+        "will shine"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The award ceremony ____ [blank] by the mayor next week.",
+      "difficulty": "easy",
+      "reasoning": "The sentence is in the passive voice. The subject (award ceremony) is the receiver of the action (being held).  The action is happening in the future, indicating a future tense. The verb 'to hold' should be used in the future tense in the passive voice, which is 'will be held'.",
+      "options": [
+        "hold",
+        "is holding",
+        "was held",
+        "will be held"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The children were very excited because they ______ (see) a real-life dinosaur at the museum before.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes an action that happened before another action in the past. The children's excitement is because they had already seen a dinosaur at the museum. This calls for the Past Perfect Tense. Therefore, the correct verb form is 'had seen.'",
+      "options": [
+        "see",
+        "saw",
+        "had seen",
+        "have seen"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "This time next year, I ______ [BLANK] enjoying the warm weather in Hawaii.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes an ongoing action in the future, specifically 'enjoying the warm weather in Hawaii' which will be happening at a specific point in time - 'this time next year'. This indicates the use of the Future Continuous Tense.  The verb 'to be' in the Future Continuous Tense is formed by combining 'will' and 'be', followed by the present participle of the main verb.  Therefore, the correct form of the verb 'to be' in the blank is 'will be'.",
+      "options": [
+        "will being",
+        "will be being",
+        "will be",
+        "am being"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "By the time she graduates next month, Sarah ______ (complete) all her course requirements.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes an action that will be finished by a specific point in the future (next month). The future perfect tense is used to express an action that will be completed before a certain time in the future. Therefore, the correct verb is \"will have completed\" because it signifies the completion of all course requirements before Sarah graduates.  \n\nStep 1: Identify the time frame: \"By the time she graduates next month\" indicates the action must be completed before a specific future time.\n\nStep 2: Identify the verb: \"complete\" is the verb in the sentence.\n\nStep 3: Determine the tense: The tense required is future perfect, indicating the completion of an action before a specific time in the future.\n\nStep 4: Form the future perfect tense: The future perfect tense is formed using \"will have\" + past participle of the verb. The past participle of \"complete\" is \"completed\".\n\nStep 5: Combine the elements: \"will have\" + \"completed\" = \"will have completed\".\n\nTherefore, the correct answer is \"will have completed\".",
+      "options": [
+        "future perfect",
+        "past perfect",
+        "present perfect",
+        "simple future"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The children _______ (a)  ____  in the park when it started to rain. ",
+      "difficulty": "easy",
+      "reasoning": "The question tests the understanding of the Past Continuous Tense, which describes an ongoing action in the past.  The sentence describes an action that was happening when something else interrupted it.  The correct verb form in the Past Continuous Tense is formed by using 'was/were' + the present participle of the verb.  Since the subject 'children' is plural, we use 'were'.  Therefore, the correct answer is 'were playing', indicating that the children were engaged in an activity in the park before the rain began.",
+      "options": [
+        "play",
+        "played",
+        "were playing",
+        "was playing"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "If I _______ (have) more time, I would have traveled to Paris last summer.",
+      "difficulty": "easy",
+      "reasoning": "The sentence uses the past perfect conditional, which describes a hypothetical situation in the past that did not happen. The verb in the 'if' clause should be in the past perfect tense, indicating that the action did not happen in the past. Therefore, the correct answer is 'had'. The full sentence would be: 'If I had had more time, I would have traveled to Paris last summer.' This sentence indicates that the speaker did not have enough time to travel to Paris last summer, and is expressing regret about that.",
+      "options": [
+        "have",
+        "had",
+        "having",
+        "will have"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "They ______ (visit) the museum twice this year. ",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes an action that has happened more than once in the past and is still relevant to the present. This is a classic example of the Present Perfect tense. The correct verb conjugation is 'have visited' because 'they' is a plural subject. The past participle of 'visit' is 'visited'.",
+      "options": [
+        "have visited",
+        "visited",
+        "are visiting",
+        "will visit"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "My cat _______  on the windowsill every afternoon and watches the birds.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a habitual action that happens regularly. The Simple Present Tense is used for actions that happen repeatedly or regularly. The verb should be in the third person singular form because the subject is 'My cat', which is singular. The correct verb form is 'sits' as it matches the subject and the tense.",
+      "options": [
+        "sit",
+        "sits",
+        "sat",
+        "will sit"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "This time tomorrow, I ______ ______ (relax) on the beach. I can't wait to escape the city noise and soak up the sun!",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes an action that will be ongoing at a specific time in the future. The correct tense to use is the Future Continuous. The Future Continuous is formed with 'will be' + the present participle of the verb. Therefore, the correct answer is 'will be relaxing'. The context of the sentence suggests a future action that will continue for a period of time, aligning with the concept of the Future Continuous tense.",
+      "options": [
+        "Past Continuous",
+        "Future Perfect",
+        "Future Continuous",
+        "Present Perfect Continuous"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The children ____ (build) a sandcastle on the beach. They're having so much fun!",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes an ongoing action happening now. The present continuous tense is used to describe actions happening at the moment of speaking. The verb 'build' needs to be conjugated in the present continuous tense, which is formed by using the present tense of 'to be' (are) and the -ing form of the verb (building). So, the correct answer is 'are building'.",
+      "options": [
+        "are building",
+        "builds",
+        "build",
+        "will building"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The annual report _____ by the company's CEO last week.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes an action that happened in the past.  The subject of the sentence is \"report\" and the action is \"presented.\"  Since the report is the receiver of the action, the passive voice is required. The action occurred \"last week,\" indicating the past tense. Therefore, the correct verb form is \"was presented.\" \n\nIn the passive voice, the structure is \"subject + be + past participle.\" Here, the subject is \"report\", the past participle is \"presented,\" and the verb \"be\" is conjugated to match the tense. Since the action happened in the past, we use \"was.\" \n\nTherefore, the complete sentence is \"The annual report was presented by the company's CEO last week.\" ",
+      "options": [
+        "is presenting",
+        "has been presented",
+        "will be presented",
+        "presented"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": false\n}\n``` \nThe question is grammatically correct, but the provided answer is not. The correct answer should be in the **past tense** since the report was presented \"last week\".\n\nHere's a corrected version:\n\n**<question> The annual report _____ by the company's CEO last week. </question>**\n\n**<answer> was presented </answer>** \n"
+    },
+    {
+      "question": "By the time the concert starts, the band _______ already ______ their instruments.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes an action that will be completed before another future event (the concert starting). This requires the Future Perfect tense, which is formed with 'will have' + past participle. The verb in this case is 'set up', so the correct form is 'will have set up'.\n\nStep 1: Identify the time frame - The action is completed before the concert starts, indicating a future event.\nStep 2: Identify the tense - The sentence talks about a completed action before a future event, suggesting the Future Perfect tense.\nStep 3: Form the verb - The Future Perfect tense is formed with 'will have' + past participle. The verb in this case is 'set up', so the past participle is 'set up'.\nStep 4: Combine the elements - Combining the elements, the correct form is 'will have set up'.",
+      "options": [
+        "will have set up",
+        "will set up",
+        "have set up",
+        "will be setting up"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "She ______ (study) for her exams all week. She's exhausted!",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes an action that started in the past and is still ongoing.  This is the defining characteristic of the Present Perfect Continuous tense.  The verb 'study' needs to be conjugated in the Present Perfect Continuous form: \n\n1. **Present participle:** 'study' becomes 'studying'.\n2. **Auxiliary verb:**  'has' is used because the subject is 'she'.\n3. **Combining the parts:** 'has' + 'been' + 'studying' = 'has been studying'.\n\nTherefore, the complete sentence is: 'She has been studying for her exams all week.'",
+      "options": [
+        "She has studying",
+        "She was studying",
+        "She is studying",
+        "She has been studying"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Next week, I ______  visit my grandparents in the countryside.  I haven't seen them in a while, and I'm looking forward to catching up.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes a future action that is planned or expected. Therefore, the Simple Future Tense is required. The correct verb form is 'will visit' because it indicates a future action that is not yet decided or certain. The other options are incorrect because they do not express the future tense: 'visit' is present tense, 'am going to visit' is the present continuous tense, and 'visited' is the past tense.  Therefore, the only correct answer is 'will visit.'",
+      "options": [
+        "visit",
+        "will visit",
+        "am going to visit",
+        "visited"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The weather forecast predicts that it _______ rain heavily tomorrow afternoon. We should reschedule our outdoor picnic for another day.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a prediction about the future, which is a classic use case for the Simple Future Tense. The subject 'it' is singular, so the correct verb conjugation is 'will rain'.  The other options are incorrect: 'rain' is the present tense, 'is raining' is the present continuous tense, and 'rained' is the past tense.",
+      "options": [
+        "rain",
+        "is raining",
+        "rained",
+        "will rain"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The chef _______ a new recipe for the restaurant's menu all week.",
+      "difficulty": "medium",
+      "reasoning": "The question tests the understanding of the Present Perfect Continuous tense.  The sentence describes an action that began in the past and is still ongoing. The correct answer is 'has been working' because it indicates an action that started in the past and continues up to the present moment.\n\nHere's a breakdown of why the other options are incorrect:\n\n* **is working:** This uses the Present Continuous tense, which indicates an action happening now. It doesn't convey the duration of the action from the past.\n* **worked:** This uses the Past Simple tense, which describes a completed action in the past. It doesn't indicate the ongoing nature of the action.\n\nTherefore, the only option that accurately reflects the meaning of the sentence and the use of the Present Perfect Continuous tense is 'has been working'.",
+      "options": [
+        "is working",
+        "has been working",
+        "worked",
+        "will be working"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Since moving to the city, I  ______  to the new art museum three times. It's fantastic!",
+      "difficulty": "medium",
+      "reasoning": "The sentence is about an action that started in the past (moving to the city) and continues to the present (going to the museum). This is a typical scenario for the Present Perfect Tense. The sentence also includes the phrase 'since moving to the city', indicating a point in the past that marks the beginning of the action. Therefore, the correct verb form is 'have been', which is the present perfect tense of 'to be'. \n\nThe other options are incorrect because:\n\n* 'went' is the past simple tense and describes a completed action in the past. It doesn't convey the ongoing nature of the action. \n* 'will be' is the future tense and expresses an action that will happen in the future, not in the present. \n\nThus, the only correct option is 'have been'.",
+      "options": [
+        "have been",
+        "went",
+        "will be",
+        "been"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The children ______ playing in the park at this time tomorrow. They are looking forward to the picnic lunch their parents are packing.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the understanding of the Future Continuous Tense. The sentence describes an action that will be in progress at a specific time in the future.  The Future Continuous Tense is formed using \"will be\" followed by the present participle of the verb. The context indicates a future event, specifically the children playing in the park tomorrow, thus requiring the Future Continuous tense. So, the correct answer is 'will be' because it accurately expresses the ongoing action of playing at a specific future time.",
+      "options": [
+        "will been",
+        "are being",
+        "will being",
+        "will have been"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe question is grammatically correct, but the answer provided (\"are being\") is not. \n\nHere's why:\n\n* The sentence uses the future continuous tense (\"will be + verb-ing\"). This tense describes an ongoing action at a specific point in the future. \n* The correct verb to fill the blank is **will be**, not \"are being\". \n\nThe corrected sentence would be: \n\n\"The children **will be** playing in the park at this time tomorrow. They are looking forward to the picnic lunch their parents are packing.\" \n"
+    },
+    {
+      "question": "As the sun was setting, casting long shadows across the field, the birds _______ their evening songs, creating a beautiful melody.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes an action happening in the past, while another action was also happening simultaneously.  This is a classic example of the Past Continuous Tense. The first part of the sentence, 'As the sun was setting...'  sets the scene and tells us the action was ongoing. The second part, 'the birds ... songs,' describes another action that was happening at the same time. We need to fill in the blank with a verb in the Past Continuous Tense.  The correct form of the verb 'sing' in the Past Continuous Tense is 'were singing'.\n\nHere's the breakdown:\n\n* **'were'** is the past tense of 'to be' and is used with the plural subject 'birds'.\n* **'singing'** is the present participle of 'to sing'.\n\nTherefore, the complete sentence reads: \"As the sun was setting, casting long shadows across the field, the birds were singing their evening songs, creating a beautiful melody.\"",
+      "options": [
+        "sang",
+        "were singing",
+        "have sung",
+        "sing"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The mechanic _______ on the car for hours before he finally figured out what was wrong. He had been so frustrated, as it was a very unusual problem.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **had been working**. The sentence describes an action that was ongoing in the past, and that action was completed before another action in the past (figuring out the problem).  The Past Perfect Continuous tense is used to show an action that started in the past, continued for a period of time, and then stopped before another action in the past. The other options are incorrect because:\n\n* **was working** - This is the Past Continuous tense, which indicates an action that was ongoing in the past but does not specify whether it was completed before another action in the past.\n* **has been working** - This is the Present Perfect Continuous tense, which describes an action that began in the past and continues up to the present moment.\n* **will have been working** - This is the Future Perfect Continuous tense, which describes an action that will be ongoing in the future but has not started yet.\n\nTherefore, the only option that correctly describes the action in the sentence as a past action that continued for a period of time and then stopped before another action in the past is **had been working**.",
+      "options": [
+        "was working",
+        "had been working",
+        "has been working",
+        "will have been working"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The ancient city of Petra ______ by the Nabataeans in the 1st century BC, and its impressive architecture ______ by visitors from around the world for centuries.",
+      "difficulty": "medium",
+      "reasoning": "The first blank requires the past tense of the passive voice, as the city was built in the past. The correct verb is \"was built.\"  The second blank also requires the passive voice because the architecture is being admired by visitors. Since the admiration is ongoing, the present perfect tense is needed, making the correct verb \"has been admired.\" \n\n**Step 1:** Identify the action being performed in the sentence: The city was built by the Nabataeans and the architecture is admired by visitors.\n\n**Step 2:** Determine the subject of the action: The subject of the first action is the city, and the subject of the second action is the architecture. Since the subjects are being acted upon, the passive voice is required.\n\n**Step 3:** Determine the tense needed for each blank: The first blank refers to a past event, requiring the past tense. The second blank refers to an action that started in the past and continues to the present, requiring the present perfect tense.\n\n**Step 4:** Apply the passive voice rules:  The passive voice is formed using \"to be\" and the past participle of the verb. In this case, the past participles are \"built\" and \"admired.\" ",
+      "options": [
+        "was built, was admired",
+        "built, had been admired",
+        "has been built, will be admired",
+        "was built, has been admired"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "By the time the school year ends, they ______ (raise) enough money for a new playground.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes an action that will be completed by a specific point in the future (the end of the school year). This indicates the use of the Future Perfect Tense. The structure of the Future Perfect Tense is 'will have + past participle.' In this case, the verb 'raise' needs to be conjugated into the past participle form, which is 'raised.' Therefore, the correct answer is 'will have raised.'",
+      "options": [
+        "will have raised",
+        "will raise",
+        "are raising",
+        "have raised"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The construction crew has been working tirelessly on the new bridge.  They are hoping to complete the project by the end of summer.  By August, the crew ______ ______ ______ on the bridge for nearly six months.",
+      "difficulty": "medium",
+      "reasoning": "The question tests the student's understanding of the Future Perfect Continuous Tense, which describes an action that will have been ongoing for a period of time in the future.  The context provides the necessary information to determine the correct verb form. The sentence requires the Future Perfect Continuous Tense of the verb \"work.\" This tense is formed using \"will have been\" + the present participle of the verb.  Therefore, the correct answer is \"will have been working.\" The sentence should read: \"By August, the crew will have been working on the bridge for nearly six months.\"",
+      "options": [
+        "will have been working",
+        "will have worked",
+        "will be working",
+        "will work"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The company ______ several new employees this year, which has helped them increase productivity.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes an action that began in the past (this year) and continues to the present. The Present Perfect Tense is used to describe actions that started in the past and have an effect on the present.  We need a verb that conveys this ongoing effect. Of the options, 'has hired' is the only verb that correctly expresses this idea. \n\n * **has hired:** This form is the correct Present Perfect Tense, indicating that the hiring began in the past and the results are still relevant today. \n\n * **hired:**  This is the simple past tense, indicating a completed action in the past, not an ongoing one. \n\n * **will hire:** This is the future tense, indicating an action that will happen in the future, not something that has already happened. \n\n * **is hiring:** This is the present continuous tense, indicating an action happening right now, not a completed action with ongoing effects.",
+      "options": [
+        "hired",
+        "will hire",
+        "is hiring",
+        "has hired"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The Smiths are having a family reunion next month. Everyone is excited to see each other again. While they are catching up, the kids ______ (play) games in the backyard.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes an action that will be ongoing during a specific time in the future: while the adults are catching up, the kids will be playing games. This indicates the use of the Future Continuous Tense. The correct verb phrase is 'will be playing'. The context indicates that the kids will be engaged in an action during the time the adults are catching up, which is a point in the future. This is the core characteristic of the Future Continuous Tense: describing an ongoing action at a specific point in the future.",
+      "options": [
+        "will play",
+        "will be playing",
+        "are going to play",
+        "are playing"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The sun _______ (shine) brightly today, making it the perfect day for a picnic in the park.  \n\n   a) is shining\n   b) shines\n   c) shined\n   d) will shine",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes an action happening currently, indicating the use of the present continuous tense.  The present continuous tense is formed with the present tense of the verb 'to be' (is/am/are) followed by the present participle of the main verb, which ends in '-ing'. In this case, the correct form is 'is shining' because the subject is 'sun' (third person singular).  \n\n   Option 'b) shines' is incorrect because it's in the simple present tense, which describes a general truth or habitual action.  Option 'c) shined' is incorrect because it's in the simple past tense, which describes an action that happened in the past.  Option 'd) will shine' is incorrect because it's in the future tense, which describes an action that will happen in the future.",
+      "options": [
+        "is shining",
+        "shines",
+        "shined",
+        "will shine"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old house had been abandoned for years.  When the new owners finally moved in, they discovered that the previous occupants __________ (leave) behind a collection of antique furniture.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a situation where the action of leaving the furniture happened before another past action (the new owners moving in).  This means we need to use the Past Perfect tense. The correct verb form is 'had left' because it indicates that the action of leaving happened before the new owners moved in.  The other options are incorrect: \n\n* **had been leaving:** This is the past perfect continuous tense and describes an action that was ongoing in the past, which is not the case here. \n* **left:**  This is the simple past tense, which indicates an action that happened at a specific point in the past, not before another past action. \n* **have left:** This is the present perfect tense and indicates an action that happened in the past and has an effect on the present, which is not relevant to the context.",
+      "options": [
+        "had been leaving",
+        "had left",
+        "left",
+        "have left"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The kids were playing in the park when a sudden downpour _______ (begin). They quickly ran for shelter under a large oak tree.",
+      "difficulty": "medium",
+      "reasoning": "The question tests the student's understanding of the Past Continuous tense. The sentence describes an action in progress (the kids playing) interrupted by another action (the downpour beginning). The Past Continuous tense is used to describe an action happening in the past over a period of time. The verb 'begin' needs to be conjugated into the Past Continuous tense, which is formed by using 'was/were' + the present participle (-ing form) of the verb.  Therefore, the correct answer is 'was beginning'.\n\nHere is the breakdown of the reasoning:\n1. **Identify the tense:** The sentence requires the Past Continuous tense because it describes an ongoing action in the past that was interrupted.\n2. **Identify the verb:** The verb to be conjugated is 'begin'.\n3. **Conjugate the verb:**  The Past Continuous tense of 'begin' is 'was/were beginning'. Since the subject is 'a sudden downpour', which is singular, we use 'was'.\n4. **Complete the sentence:** The sentence becomes 'The kids were playing in the park when a sudden downpour was beginning. They quickly ran for shelter under a large oak tree.'",
+      "options": [
+        "began",
+        "was begining",
+        "was beginning",
+        "begun"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Type: Fill-ups (choose the correct tense)\nTopic: Conditional Sentences\nSentence: If I __ (be) __ more patient, I would have finished the project on time.\nDifficulty: Medium (6/10)",
+      "difficulty": "medium",
+      "reasoning": "This question focuses on the conditional sentence structure, specifically the past unreal conditional. The sentence is structured as 'If + Past Perfect, would have + Past Participle.' It explores the hypothetical situation where the speaker was not patient, leading to a consequence in the past. The blank requires the past perfect tense 'had been' to correctly reflect this hypothetical past condition. \n\nHere's a step-by-step breakdown:\n\n1. **Identify the conditional sentence type:** The sentence uses the 'If + Past Perfect, would have + Past Participle' structure, indicating a past unreal conditional. This type of conditional expresses a hypothetical situation in the past and its unrealized consequence.\n2. **Identify the blank:** The blank requires a verb tense that reflects the past hypothetical condition.  The verb 'be' needs to be in the past perfect tense.\n3. **Apply the past perfect tense:** The past perfect tense of 'be' is 'had been'. This tense emphasizes a completed action in the past that happened before another past event.\n4. **Complete the sentence:** The sentence then reads: 'If I had been more patient, I would have finished the project on time.' This correctly portrays the hypothetical scenario and its unrealized consequence.\n\nTherefore, the correct answer is 'had been'.",
+      "options": [
+        "was",
+        "have been",
+        "had been",
+        "will be"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "By the time the scientists  ________ their groundbreaking research on the origins of life, a new generation of researchers will be ready to take the reins.",
+      "difficulty": "hard",
+      "reasoning": "The sentence describes an action that will be completed before a future event.  The phrase \"By the time\" signals the use of the Future Perfect Tense.  The correct verb should be in the Future Perfect form to reflect that the research will be finished before the new generation takes over.  The Future Perfect is formed by using \"will have\" + past participle of the verb.  The past participle of \"complete\" is \"completed.\"  Therefore, the correct verb is \"will have completed.\" ",
+      "options": [
+        "will have completed",
+        "will complete",
+        "have completed",
+        "will be completing"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The bustling city of New York ______ with activity, from the early morning rush hour to the late-night entertainment scene, making it a vibrant and captivating metropolis.",
+      "difficulty": "hard",
+      "reasoning": "The sentence describes a general truth about New York City - its constant activity. This calls for the Simple Present Tense, which is used to describe habitual actions, facts, or general truths. The verb 'teems' is the correct Simple Present Tense form, as it accurately reflects the city's continuous buzz. 'Teeming' is the present participle, indicating ongoing action, while 'teamed' is the past tense, not fitting the context.  Therefore, the correct answer is 'teems'.",
+      "options": [
+        "teems",
+        "teeming",
+        "teamed",
+        "teem"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The team _______ (play) exceptionally well this season, but they haven't won a championship yet. Their fans are eager to see them finally claim the title.",
+      "difficulty": "hard",
+      "reasoning": "This question tests the understanding of the present perfect tense and its relationship with duration and completion. The sentence describes an action that started in the past (beginning of the season) and continues to the present (they are still playing well). The use of 'yet' indicates that the action hasn't been completed (winning a championship). The correct answer is 'have been playing' because the action is ongoing and hasn't reached its conclusion. It signifies the action is in progress and continues up to the present moment.  The other options like 'played', 'have played', 'has played' are incorrect because they signify a completed action, not an ongoing action.  'Played' is simple past tense, which implies the action has finished. 'Have played' and 'Has played' could be correct in other contexts but not in this scenario because the context implies an ongoing action. Therefore, 'have been playing' is the correct answer to complete the sentence and convey the intended meaning.",
+      "options": [
+        "played",
+        "have played",
+        "has played",
+        "have been playing"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "**Sentence**: If I ______ (be) more careful with my finances last year, I ______ (not need) to take on so much debt.\n**Question**: Choose the correct tense to complete the sentence.\n**Options**: \n  - was / don't need\n  - had been / wouldn't have needed\n  - would be / won't need\n  - were / wouldn't need\n",
+      "difficulty": "hard",
+      "reasoning": "This sentence uses the third conditional, which describes hypothetical situations in the past. The first clause, 'If I ______ (be) more careful with my finances last year,' requires the past perfect tense ('had been') to express an action that didn't happen in the past. The second clause, 'I ______ (not need) to take on so much debt,' requires the conditional perfect tense ('wouldn't have needed') to express the consequence that wouldn't have occurred if the first action had been different. The correct answer is therefore 'had been / wouldn't have needed'.  The other options are incorrect because they do not correctly reflect the tense required for the third conditional.",
+      "options": [
+        "was / don't need",
+        "had been / wouldn't have needed",
+        "would be / won't need",
+        "were / wouldn't need"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "**Sentence**: As the sun began to set, the hikers  ______ their way down the treacherous mountain path.\n**Context**: The hikers had been climbing for hours, and they were exhausted.\n**Difficulty**: tricky 8/10\n**Answer**: made\n",
+      "difficulty": "hard",
+      "reasoning": "This question is classified as 'tricky 8/10' due to the use of a phrasal verb, 'make their way'.  The past tense of the phrasal verb 'make their way' is 'made their way'. The sentence is in the simple past tense, describing a completed action in the past. 'Made' is the correct answer because it accurately reflects the past tense of the phrasal verb 'make their way'. The sentence tells us that the hikers completed the action of descending the mountain path after the sun began to set. Therefore, the correct past tense verb to fill the blank is 'made'.",
+      "options": [
+        "made",
+        "making",
+        "make",
+        "had made"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The ancient ruins, ______ by centuries of weathering and neglect, were slowly being reclaimed by the jungle, their once-imposing presence now obscured by a dense canopy of vines and foliage.",
+      "difficulty": "hard",
+      "reasoning": "This sentence tests the understanding of the passive voice in a complex context. The correct tense is the past participle, as it describes an action completed in the past and whose effects are still visible. The phrase 'were slowly being reclaimed' indicates an ongoing process in the past, implying that the weathering and neglect happened before this process began. The passive voice is crucial here because it focuses on the ruins themselves (the object) as the receiver of the action (weathering and neglect). \n\nHere's a breakdown:\n\n1. **Action:** Weathering and neglect\n2. **Object:** Ancient ruins\n3. **Passive voice construction:** The object (ancient ruins) becomes the subject, and the verb 'be' is used in the appropriate tense along with the past participle of the verb 'to weather' and 'to neglect.'\n\nTherefore, the correct answer is 'weathered and neglected' because it accurately reflects the passive voice construction and the past participle tense, highlighting the long-term effects of the action on the ruins.",
+      "options": [
+        "weathered and neglected",
+        "weathering and neglecting",
+        "to weather and neglect",
+        "weather and neglect"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The team _____ (prepare) for their upcoming game, practicing drills and strategizing plays, while the fans eagerly anticipate the match.",
+      "difficulty": "hard",
+      "reasoning": "The sentence describes an ongoing action, the team's preparation for the game, which is happening in the present. The Present Continuous Tense is used to express actions happening now. The verb 'prepare' needs to be conjugated in the Present Continuous Tense, which is formed by using the present tense of the auxiliary verb 'to be' (is/am/are) followed by the present participle (-ing form) of the main verb. Since the subject 'team' is plural, the correct auxiliary verb is 'are.' Therefore, the correct answer is 'are preparing.'\n\n**Step-by-step explanation:**\n1. **Identify the action:** The action is 'preparing' for the upcoming game.\n2. **Identify the tense:** The tense is Present Continuous, indicating an ongoing action.\n3. **Determine the subject:** The subject is 'team,' which is plural.\n4. **Choose the correct auxiliary verb:**  The auxiliary verb for plural subjects in the Present Continuous Tense is 'are.'\n5. **Combine the auxiliary verb with the present participle:** 'are' + 'preparing' = 'are preparing.'\n6. **Fill in the blank:**  The completed sentence is 'The team **are preparing** for their upcoming game, practicing drills and strategizing plays, while the fans eagerly anticipate the match.'",
+      "options": [
+        "is preparing",
+        "prepare",
+        "prepared",
+        "will be preparing"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "As the train ______ into the station, a group of musicians began playing lively tunes, their instruments filling the air with vibrant melodies.",
+      "difficulty": "easy",
+      "reasoning": "The correct answer is \"was pulling\" because the sentence describes an action that was in progress in the past. The phrase \"As the train...\" indicates a continuous action, and \"pulling into the station\" implies an action that was ongoing at the time the musicians started playing. This aligns with the definition of the Past Continuous tense, which describes an ongoing action that was happening at a specific point in the past.\n\nThe other options are incorrect:\n\n1. \"pulled\" - This is in the Simple Past tense, which would indicate a completed action rather than an ongoing one.\n2. \"is pulling\" - This is in the Present Continuous tense, which describes an action happening now.\n3. \"had pulled\" - This is in the Past Perfect tense, which describes a completed action that happened before another event in the past.  The sentence emphasizes the action being in progress simultaneously with the musicians playing, making the Past Continuous tense the most appropriate choice.",
+      "options": [
+        "pulled",
+        "was pulling",
+        "is pulling",
+        "had pulled"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    }
+  ],
+  "title": "English Language",
+  "topic": "Fill ups - Tenses",
+  "exam_id": 9,
+  "order": 0
 }

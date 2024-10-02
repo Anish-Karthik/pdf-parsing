@@ -1,452 +1,489 @@
 {
-    "questions": [
-        {
-            "question": "The door is stuck.  ______ you please help me open it?",
-            "difficulty": "easy",
-            "reasoning": "The sentence is asking for a favor, which is best expressed using the modal 'could'.  'Could' is used to politely request something.  The other modals 'would' and 'may' are not as appropriate in this context. 'Would' suggests willingness, which is not the primary focus here. 'May' implies permission, which isn't relevant to the request for help. ",
-            "options": [
-                "Could",
-                "Would",
-                "May",
-                "Should"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "You ______ get a visa if you want to travel to that country. The embassy requires it for all visitors.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes a requirement for travel, which is a necessity.  The phrase \"The embassy requires it\" clearly indicates an obligation.  Of the modal verbs, 'have to' is the best choice to express this necessity.",
-            "options": [
-                "have to",
-                "can",
-                "should",
-                "might"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "You ______  follow the traffic rules when driving. It's for your own safety and the safety of others.",
-            "difficulty": "easy",
-            "reasoning": "The sentence is about following traffic rules, which are mandatory for all drivers. This indicates a strong obligation, making 'must' the most suitable choice. 'Must' is used to express a strong necessity or obligation.  'Should' suggests a weaker recommendation, while 'have to' often implies external pressure or a requirement, which doesn't quite fit the context of following traffic rules for safety.",
-            "options": [
-                "must",
-                "can",
-                "should",
-                "have to"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "I ____ have gone to the concert last night, but I had to work late. ",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes a situation where the speaker was unable to do something in the past.  The correct modal verb in this context is 'could' as it expresses past ability.  The other options are incorrect because they do not fit the context of the sentence:\n\n* **should:** Indicates obligation or advice, but the sentence does not imply any obligation or advice. \n* **must:**  Indicates strong obligation or necessity, which is not present in the context. \n* **would:**  Indicates willingness or hypothetical situations, which is not applicable here. \n\nTherefore, 'could' is the only option that accurately conveys the speaker's inability to go to the concert due to work commitments.",
-            "options": [
-                "should",
-                "must",
-                "could",
-                "would"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "I ______ stay at home and watch a movie than go out to a noisy party. \n\n A) would rather \n B) want",
-            "difficulty": "easy",
-            "reasoning": "The sentence expresses a preference between two options (staying home and going out). The correct modal to use in this context is \"would rather\" as it explicitly indicates a preference. \"Want\" simply expresses a desire, not a preference between two choices. \n\nTherefore, the correct answer is **A) would rather**. ",
-            "options": [
-                "A",
-                "B",
-                "would rather",
-                "want"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The weather forecast says it ______ rain tomorrow, but I'm hoping it stays sunny.",
-            "difficulty": "easy",
-            "reasoning": "The sentence expresses uncertainty about the weather.  \"May\" is used to express possibility, suggesting that rain is a potential outcome. \"Might\" is also a possibility, but it implies a slightly lower likelihood than \"may.\" \"Could\" is less appropriate here because it focuses on ability or potential rather than probability. Therefore, \"may\" is the most fitting modal in this context.",
-            "options": [
-                "may",
-                "might",
-                "could",
-                "will"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "You ______  check the weather forecast before you go hiking. It's been raining a lot lately.",
-            "difficulty": "easy",
-            "reasoning": "The sentence is expressing advice, and the context suggests the speaker is concerned about the potential for bad weather.  The modal verb 'should' is used to express advice or recommendations.  'Might' and 'can' are incorrect as they do not convey the same sense of obligation or suggestion. Therefore, the correct modal verb is 'should'.",
-            "options": [
-                "might",
-                "can",
-                "should",
-                "will"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The weather forecast predicts a chance of rain tomorrow, but it's not certain. It ____ rain, so bring an umbrella just in case.",
-            "difficulty": "medium",
-            "reasoning": "The sentence expresses uncertainty about the weather.  The modal verb 'might' indicates a possibility, suggesting that rain is not guaranteed but could happen. 'May' could also be used in this context, but 'might' is more commonly used when there's a greater chance of something happening.  'Could' is possible, but it suggests a less likely chance compared to 'might'. Therefore, 'might' is the most suitable option for this sentence.",
-            "options": [
-                "might",
-                "may",
-                "could",
-                "will"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "**context**: You are at a museum.\n**sentence**: You ____ touch the exhibits, they are very delicate.\n**options**: \n  - (a) mustn't\n  - (b) can't\n  - (c) shouldn't\n",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is (a) mustn't.  The sentence expresses a strong prohibition, meaning it is absolutely forbidden to touch the exhibits. 'Mustn't' conveys this strict rule. 'Can't' implies a lack of ability, and 'shouldn't' suggests a weaker suggestion or recommendation, neither of which fit the context of a strict prohibition in a museum.",
-            "options": [
-                "mustn't",
-                "can't",
-                "shouldn't",
-                "don't have to"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "My grandfather ____ play the piano beautifully when he was younger, but he can't anymore.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a past ability, so we need a modal verb that expresses past ability.  'Could' is the correct choice because it indicates an ability that existed in the past. 'Can' is used for present ability, and 'will be able to' refers to future ability. Therefore, 'could' is the only option that fits the context of the sentence.",
-            "options": [
-                "could",
-                "can",
-                "will be able to",
-                "is able to"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Context: You are volunteering at a local animal shelter and are happy to help with any task. \nSentence:  \"I ______  walk the dogs this afternoon, if that's okay with you.\" ",
-            "difficulty": "medium",
-            "reasoning": "The sentence expresses willingness to perform an action.  \"Will\" is used to express willingness in the present or future.  While \"would\" can also express willingness, it is often used to indicate a more tentative or conditional offer.  \"Shall\" is less commonly used to express willingness in modern English.  In this context, \"I will walk the dogs\" conveys a clear and confident willingness to help, making it the most appropriate choice. ",
-            "options": [
-                "shall",
-                "would",
-                "will",
-                "could"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The doctor told me I  ______  eat more vegetables and fruits to improve my health. ",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a recommendation from a doctor, suggesting a strong obligation for the person to change their diet.  \"Must\" indicates a strong, absolute necessity, while \"have to\" suggests a more general obligation. \"Should\" is the most appropriate choice because it conveys a recommendation, implying that eating more fruits and vegetables is advisable for improving health.",
-            "options": [
-                "must",
-                "have to",
-                "should",
-                "can"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "I ____ go for a walk in the park, but my dog ____ stay inside and sleep.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes two preferences, one for the speaker and one for the dog. The speaker's preference is for a walk, while the dog's preference is for sleeping. 'Would rather' is used to express a personal preference, while 'would prefer' is used to express a more general preference.  Therefore, the correct answer is to use 'would rather' for the speaker and 'would prefer' for the dog. \n\n**Step 1:** Identify the preferences of the speaker and the dog. \n**Step 2:**  Understand the difference between 'would rather' and 'would prefer'.  'Would rather' expresses a personal preference, while 'would prefer' expresses a more general preference.  \n**Step 3:** Apply the correct expression based on the context.  Since the speaker's preference is personal, use 'would rather'. Since the dog's preference is general (not specific to this moment), use 'would prefer'.",
-            "options": [
-                "would rather / would prefer",
-                "would prefer / would rather",
-                "would prefer / would prefer",
-                "would rather / would rather"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The sky is dark and cloudy. It _______ rain soon.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes a situation where rain is likely to occur due to the weather conditions. 'Must' indicates a strong certainty, while 'have to' implies an obligation. In this case, the speaker is expressing a high probability of rain, not a necessity. Therefore, 'will' is the most appropriate modal verb, as it expresses a prediction based on the context. ",
-            "options": [
-                "must",
-                "will",
-                "have to",
-                "can"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The doctor told me I ______ have taken that medication, as it could have caused serious side effects.",
-            "difficulty": "easy",
-            "reasoning": "The correct answer is \"shouldn't\". The sentence expresses a past obligation or advice that was not followed.  The modal verb \"shouldn't\" conveys this meaning in the past tense. Here's why the other options are incorrect:\n\n* **couldn't:**  \"Couldn't\" implies a lack of ability in the past, which doesn't fit the context.  The doctor is not saying the person was unable to take the medication, but rather that they shouldn't have.\n* **might not:** \"Might not\" expresses uncertainty in the past, which doesn't match the doctor's clear advice. The doctor is not saying it was possible the medication could have had side effects, but rather that it definitely could have.\n* **would not:**  \"Would not\" expresses refusal or unwillingness in the past, which is not relevant to the situation. The person wasn't refusing to take the medication; they simply took it without considering the potential consequences.",
-            "options": [
-                "couldn't",
-                "shouldn't",
-                "might not",
-                "would not"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The train is running late. We _______ be able to catch our connecting flight. \n\nContext: The speaker is concerned about the impact of the train delay on their flight.",
-            "difficulty": "medium",
-            "reasoning": "The correct modal verb is \"might.\"  The sentence expresses uncertainty about catching the connecting flight due to the train delay.  While \"could\" also implies possibility, \"might\"  better conveys a sense of doubt or potential difficulty. \"May\" implies a more neutral possibility, which doesn't align with the context of the delayed train.",
-            "options": [
-                "could",
-                "may",
-                "might",
-                "will"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The librarian asked me if I ______ borrow the book for another week. I politely agreed, as I hadn't finished reading it yet.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a request for an extension. The modal 'could' is used to make a polite request or ask for permission. In this case, the librarian is asking if the speaker is allowed to borrow the book for longer.  So, 'could' is the most appropriate choice in this context.\n\nHere's why the other options are incorrect:\n\n* **would:** This implies a willingness or preference, not a request for permission.\n* **may:** While 'may' can be used for permission, it's often more formal and less common in informal situations.\n* **will:** This implies a future action or commitment, which is not relevant to the request being made.",
-            "options": [
-                "could",
-                "would",
-                "may",
-                "will"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Your friend is planning a trip to a new city and is unsure about which restaurant to try for their first night. You want to suggest a place you enjoyed. What would you say? \n\n\"You ____ try [Restaurant Name]. It has delicious [Type of cuisine] and a great atmosphere.\"",
-            "difficulty": "medium",
-            "reasoning": "The question is about suggesting a restaurant to a friend. The context implies that the friend is unsure about their choice, making it appropriate to offer a suggestion. Out of the options, 'should' is the most suitable modal for expressing a suggestion or recommendation. 'Could' implies possibility, while 'might' suggests uncertainty, neither of which fit the context of suggesting a specific place.  \n\n**Step by Step Reasoning:** \n1. The situation calls for offering a suggestion, implying a degree of confidence in the recommendation. \n2. 'Should' is the modal that best expresses a suggestion, recommending a particular action. \n3. 'Could' implies possibility, while 'might' suggests uncertainty, both of which are not as appropriate for recommending a specific restaurant.",
-            "options": [
-                "should",
-                "could",
-                "might",
-                "will"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The library staff has informed us that we ______ use the computers for more than two hours at a time. They want to ensure everyone has access to the resources.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a rule or policy, suggesting a formal permission with limitations.  \"May\" expresses a formal permission, while \"can\" is more casual and \"could\" implies a possibility rather than a guaranteed permission. The context emphasizes a rule, making \"may\" the most appropriate choice.",
-            "options": [
-                "may",
-                "can",
-                "could",
-                "must"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The weather forecast predicts heavy rain tomorrow. We ____ stay inside and watch movies.",
-            "difficulty": "medium",
-            "reasoning": "The sentence expresses a strong suggestion or necessity based on the weather forecast.  The modal verb 'must' implies a strong obligation, while 'have to' suggests a more general necessity. In this case, 'will' is the most appropriate choice because it expresses a future action that is likely to happen due to the predicted weather. The sentence indicates that the speaker and their company are likely to stay inside as a result of the anticipated heavy rain.",
-            "options": [
-                "must",
-                "will",
-                "have to",
-                "should"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The old man _____ have seen better days, but he was always kind and helpful to everyone in the neighborhood.  \n\nContext:  The speaker is describing the current state of an elderly man who used to be healthier and more prosperous.  \n\nOptions: \n a) could  b) might  c) would  d) must",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is **a) could**. The sentence implies that the old man was in a better state in the past, but now he is not. The modal verb \"could\" expresses the idea of ability or possibility in the past.  \n\n* **Could** indicates a past ability or possibility. It suggests that the old man was capable of having better days but no longer is.  \n* **Might** suggests a past possibility, but it doesn't necessarily imply a past ability.  \n* **Would** implies a willingness or habit in the past, which doesn't fit the context. \n* **Must** expresses certainty or obligation, which is not appropriate in this situation.  \n\nTherefore, \"could\" is the most suitable past modal verb to express the speaker's meaning.",
-            "options": [
-                "a",
-                "b",
-                "c",
-                "d"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "You are planning a trip to a country where the local currency is significantly different from your own. You ____ exchange your money before you leave, as it may be difficult to find a reliable exchange service at your destination.",
-            "difficulty": "medium",
-            "reasoning": "The correct modal verb in this context is \"should\". While it is not strictly necessary to exchange money beforehand, it is highly advisable due to the potential difficulties mentioned in the context. \"Must\" implies a strong obligation, which is not present in the scenario. \"Have to\" implies a more urgent need, which is not the case here. Therefore, \"should\" best reflects the level of recommendation implied in the context.",
-            "options": [
-                "must",
-                "have to",
-                "should",
-                "could"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The doctor said I ______ need surgery, but I'm hoping it won't be necessary.",
-            "difficulty": "medium",
-            "reasoning": "The sentence expresses uncertainty about the possibility of needing surgery.  Of the three modal verbs, \"may\" is the most appropriate choice here. \"Might\" suggests a slightly higher level of doubt, while \"could\" is less specific and could imply an ability rather than a possibility. The sentence indicates a possibility, but it's not a firm prediction, making \"may\" the best fit.",
-            "options": [
-                "might",
-                "could",
-                "may",
-                "will"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "You ____ eat with your hands at a formal dinner. It's considered rude.",
-            "difficulty": "medium",
-            "reasoning": "The sentence expresses a prohibition, meaning something is not allowed or advised against. Of the three options, 'mustn't' is the only one that correctly conveys this meaning. 'Can't' might imply a lack of ability, while 'shouldn't' suggests a milder suggestion rather than a strict rule. Therefore, 'mustn't' is the most accurate choice to express the prohibition against eating with hands at a formal dinner.",
-            "options": [
-                "can't",
-                "shouldn't",
-                "mustn't",
-                "don't have to"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Sentence: \"I ____ grab you a glass of water while you wait?\"\n\nContext: You are at a friend's house, and they are waiting for a phone call.  You want to be helpful and offer to get them a drink.",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is \"would.\" The context indicates that you are offering to do something for your friend.  \"Would\" is used to make polite offers in this situation.  While \"can\" can also be used to offer help, \"would\" is more polite and indicates a willingness to do something, even if it's not strictly necessary.\n\nOther options are incorrect because: \n\n* \"Will\" suggests a promise, not a polite offer.\n* \"May\" is used for permission, not offers.\n* \"Should\" expresses a suggestion or obligation, not an offer.",
-            "options": [
-                "will",
-                "may",
-                "should",
-                "would"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The library is closed today, but _______ I return this book tomorrow instead?",
-            "difficulty": "medium",
-            "reasoning": "The sentence asks for permission to return a book a day later than expected. 'May' is used to request permission politely, making it the most appropriate choice. 'Can' is less formal and implies ability rather than permission in this context. 'Could' is used for past or hypothetical situations, not the present request. Therefore, 'May' is the correct answer.",
-            "options": [
-                "May",
-                "Can",
-                "Could",
-                "Should"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "John is planning a trip to the beach, but he's not sure whether to go to a busy beach with lots of people or a quiet beach with fewer crowds.  He _______ spend his vacation in a more tranquil setting.",
-            "difficulty": "medium",
-            "reasoning": "The context states that John is unsure between a busy beach and a quiet beach.  The sentence implies a preference for a quiet beach.  'Would rather' is the correct choice because it expresses a stronger preference compared to 'would prefer.'  Therefore, the completed sentence would be: 'John would rather spend his vacation in a more tranquil setting.'  This highlights his preference for a quieter beach experience.",
-            "options": [
-                "would prefer",
-                "would rather",
-                "should",
-                "could"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Despite the long wait, the chef  ____  prepare a special meal for the guests arriving late.  He wanted to ensure they felt welcomed and well-cared for.",
-            "difficulty": "medium",
-            "reasoning": "The sentence expresses a willingness to do something, even though it might be inconvenient.  \"Will\" is the most appropriate modal verb to express a firm intention in this context. While \"would\" can also express willingness, it suggests a more tentative or conditional offer. \"Shall\" is rarely used in contemporary English to express willingness, and it sounds quite formal in this context. Therefore, \"will\" is the most suitable choice here, as it implies a clear and firm decision to prepare the special meal.",
-            "options": [
-                "will",
-                "would",
-                "shall",
-                "could"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The weather forecast predicts a severe storm with heavy winds and rain. You are planning a camping trip in a remote area. You ________ postpone your trip until the weather improves.",
-            "difficulty": "medium",
-            "reasoning": "The question tests the student's understanding of using modal verbs to give advice. \"Should\" is a general recommendation, \"may\" indicates possibility, while \"must\" conveys a strong necessity, making it the most appropriate choice in the context of a dangerous weather situation.",
-            "options": [
-                "Should",
-                "May",
-                "Must",
-                "Could"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Context: Before starting his new job, Mark had to complete a series of training courses. \n\nSentence with Blank: Mark _______ operate the machinery independently after completing the training. \n\nMultiple Choice Options: \na) can \nb) could \nc) be able to",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is **(a) can**. The sentence describes a current ability, meaning Mark is now able to operate the machinery after finishing the training. 'Can' is used to express present ability. \n\n'Could' is used for past ability, suggesting he was able to operate the machinery in the past but may not be able to now. \n\n'Be able to' is a more general expression of ability that can be used in various contexts. However, in this case, 'can' is the most appropriate choice due to the focus on the present ability. \n\nTherefore, the sentence should read: 'Mark can operate the machinery independently after completing the training.'",
-            "options": [
-                "can",
-                "could",
-                "be able to",
-                "will be able to"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The professor mentioned that the exam  ____  be postponed due to the unexpected snowstorm, but he didn't confirm it. We'll have to wait for an official announcement.",
-            "difficulty": "hard",
-            "reasoning": "The sentence expresses uncertainty about the exam postponement. The professor hasn't confirmed it, so it's a possibility.  While 'could' indicates possibility, 'may' is more suitable for expressing uncertainty.  'Should' implies a suggestion or recommendation, which isn't applicable in this case. Therefore, \"may\" is the correct modal to convey the uncertainty surrounding the exam postponement.",
-            "options": [
-                "should",
-                "could",
-                "may",
-                "must"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The meeting is scheduled for tomorrow, but we ____ reschedule it if the weather is bad.  The organizer has expressed concern about the safety of attendees traveling in inclement conditions, and would prefer to prioritize everyone's well-being.",
-            "difficulty": "hard",
-            "reasoning": "The correct answer is \"could.\"  The sentence expresses a possibility, suggesting a contingency plan in case of bad weather.  While \"should\" implies a more strongly recommended course of action, and \"might\" suggests a weaker possibility, \"could\"  best reflects the speaker's intent to offer a flexible option in case of a potentially disruptive weather event.  The speaker isn't definitively stating that the meeting *will* be rescheduled, but rather presenting a reasonable alternative if necessary.",
-            "options": [
-                "should",
-                "might",
-                "could",
-                "will"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The museum curator informed us that we ______ take photos inside the exhibit, but only without flash. ",
-            "difficulty": "hard",
-            "reasoning": "The context suggests a formal setting (a museum) and a specific instruction (no flash photography). This implies a degree of restriction, even with permission. Of the three options: \n\n* **'May'** is the most formal and suggests permission granted. However, the specific instruction about flash makes the permission not entirely open-ended, leaning away from 'may'. \n* **'Can'** is more casual and may suggest a general possibility without the nuance of restrictions. \n* **'Could'** is the most suitable choice here. It implies a conditional permission, acknowledging the specific restriction about flash photography. The sentence becomes: \"The museum curator informed us that we **could** take photos inside the exhibit, but only without flash.\"  This sentence conveys the nuance of permission granted under specific conditions, making it the most accurate and contextually appropriate.",
-            "options": [
-                "May",
-                "Can",
-                "Could",
-                "Might"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The old map indicated that a hidden treasure **____** be found on the island, but the explorers soon realized it was just a legend.  They had spent weeks searching every corner, but their efforts were in vain.",
-            "difficulty": "hard",
-            "reasoning": "The correct answer is **'could'**. The sentence implies that the map suggested a possibility, but the explorers ultimately discovered it was not true.  Here's a breakdown: \n\n* **'Could'** implies a past ability or possibility, suggesting that the treasure *might* have been found based on the map. \n* **'Should'** implies an obligation or recommendation, which doesn't fit the context of the sentence. \n* **'Might'** is similar to 'could' in implying a possibility, but 'could' is more appropriate in this case because it emphasizes the potential based on the map's indication. \n* **'Would'** implies a repeated action or a willingness in the past, which doesn't align with the context of a single instance of searching for treasure.",
-            "options": [
-                "should",
-                "might",
-                "would",
-                "could"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The deadline for the project is tomorrow, and we've only completed half of it. We _______ work through the night to finish it on time.",
-            "difficulty": "medium",
-            "reasoning": "The context highlights a situation where the completion of the project is a strong necessity due to the looming deadline.  While 'need to' and 'have to' could be used, 'must' emphasizes the urgency and obligation more strongly. Therefore, the correct choice is 'must' because it conveys the strongest sense of necessity and urgency in this scenario.",
-            "options": [
-                "need to",
-                "have to",
-                "should",
-                "must"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The doctor suggested I take a long walk every day, but I'd rather  ____  stay home and read a book. However, I know I should exercise more, so maybe I'll  ____  go for a shorter walk instead.",
-            "difficulty": "medium",
-            "reasoning": "The first blank requires a modal that expresses a preference for one option over another. While both 'would rather' and 'would prefer' can express this, 'would rather' is more suitable here because it implies a stronger preference and a definite choice to avoid the doctor's suggestion. \n\nThe second blank requires a modal that expresses a more tentative preference, acknowledging the need to exercise while still suggesting an alternative. 'Would prefer' is better suited for this, as it indicates a less definite choice and a willingness to compromise.\n\nTherefore, the correct answer is 'would rather' for the first blank and 'would prefer' for the second blank.",
-            "options": [
-                "would rather - would rather",
-                "would prefer - would prefer",
-                "would rather - would prefer",
-                "would prefer - would rather"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The museum curator was very strict about photography. \"I ______ ask that you refrain from taking pictures inside the exhibition hall,\" she said, \"as it can be distracting to other visitors and potentially damage the artifacts.\"",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is \"would\". The sentence expresses a polite request, not a possibility or permission. \"Could\" implies ability, and \"may\" implies permission. The context suggests the curator is making a request for the sake of order and preservation within the museum, hence \"would\" is the most suitable option to convey a polite but firm request.\n\n**Step-by-step reasoning:**\n1. **Identify the type of request:** The sentence expresses a polite request, not a question of possibility or permission. This eliminates \"could\" and \"may\".\n2. **Understand the intention:** The curator is seeking to maintain a peaceful and respectful environment for all visitors, and to protect the artifacts. This eliminates \"could\" (which implies ability) and \"may\" (which implies permission).\n3. **Consider the context:** The context establishes that the curator is in a position of authority, and is making a request for the benefit of everyone. \"Would\" conveys this sense of authority and politeness, making it the most appropriate choice.",
-            "options": [
-                "could",
-                "would",
-                "may",
-                "should"
-            ],
-            "correct_option": "B"
-        }
-    ],
-    "title": "English Language",
-    "topic": "Fill ups - Modals",
-    "exam_id": 16,
-    "order": 0
+  "questions": [
+    {
+      "question": "The door is stuck.  ______ you please help me open it?",
+      "difficulty": "easy",
+      "reasoning": "The sentence is asking for a favor, which is best expressed using the modal 'could'.  'Could' is used to politely request something.  The other modals 'would' and 'may' are not as appropriate in this context. 'Would' suggests willingness, which is not the primary focus here. 'May' implies permission, which isn't relevant to the request for help. ",
+      "options": [
+        "Could",
+        "Would",
+        "May",
+        "Should"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "You ______ get a visa if you want to travel to that country. The embassy requires it for all visitors.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes a requirement for travel, which is a necessity.  The phrase \"The embassy requires it\" clearly indicates an obligation.  Of the modal verbs, 'have to' is the best choice to express this necessity.",
+      "options": [
+        "have to",
+        "can",
+        "should",
+        "might"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "You ______  follow the traffic rules when driving. It's for your own safety and the safety of others.",
+      "difficulty": "easy",
+      "reasoning": "The sentence is about following traffic rules, which are mandatory for all drivers. This indicates a strong obligation, making 'must' the most suitable choice. 'Must' is used to express a strong necessity or obligation.  'Should' suggests a weaker recommendation, while 'have to' often implies external pressure or a requirement, which doesn't quite fit the context of following traffic rules for safety.",
+      "options": [
+        "must",
+        "can",
+        "should",
+        "have to"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "I ____ have gone to the concert last night, but I had to work late. ",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes a situation where the speaker was unable to do something in the past.  The correct modal verb in this context is 'could' as it expresses past ability.  The other options are incorrect because they do not fit the context of the sentence:\n\n* **should:** Indicates obligation or advice, but the sentence does not imply any obligation or advice. \n* **must:**  Indicates strong obligation or necessity, which is not present in the context. \n* **would:**  Indicates willingness or hypothetical situations, which is not applicable here. \n\nTherefore, 'could' is the only option that accurately conveys the speaker's inability to go to the concert due to work commitments.",
+      "options": [
+        "should",
+        "must",
+        "could",
+        "would"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "I ______ stay at home and watch a movie than go out to a noisy party. \n\n A) would rather \n B) want",
+      "difficulty": "easy",
+      "reasoning": "The sentence expresses a preference between two options (staying home and going out). The correct modal to use in this context is \"would rather\" as it explicitly indicates a preference. \"Want\" simply expresses a desire, not a preference between two choices. \n\nTherefore, the correct answer is **A) would rather**. ",
+      "options": [
+        "A",
+        "B",
+        "would rather",
+        "want"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The weather forecast says it ______ rain tomorrow, but I'm hoping it stays sunny.",
+      "difficulty": "easy",
+      "reasoning": "The sentence expresses uncertainty about the weather.  \"May\" is used to express possibility, suggesting that rain is a potential outcome. \"Might\" is also a possibility, but it implies a slightly lower likelihood than \"may.\" \"Could\" is less appropriate here because it focuses on ability or potential rather than probability. Therefore, \"may\" is the most fitting modal in this context.",
+      "options": [
+        "may",
+        "might",
+        "could",
+        "will"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "You ______  check the weather forecast before you go hiking. It's been raining a lot lately.",
+      "difficulty": "easy",
+      "reasoning": "The sentence is expressing advice, and the context suggests the speaker is concerned about the potential for bad weather.  The modal verb 'should' is used to express advice or recommendations.  'Might' and 'can' are incorrect as they do not convey the same sense of obligation or suggestion. Therefore, the correct modal verb is 'should'.",
+      "options": [
+        "might",
+        "can",
+        "should",
+        "will"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The weather forecast predicts a chance of rain tomorrow, but it's not certain. It ____ rain, so bring an umbrella just in case.",
+      "difficulty": "medium",
+      "reasoning": "The sentence expresses uncertainty about the weather.  The modal verb 'might' indicates a possibility, suggesting that rain is not guaranteed but could happen. 'May' could also be used in this context, but 'might' is more commonly used when there's a greater chance of something happening.  'Could' is possible, but it suggests a less likely chance compared to 'might'. Therefore, 'might' is the most suitable option for this sentence.",
+      "options": [
+        "might",
+        "may",
+        "could",
+        "will"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "**context**: You are at a museum.\n**sentence**: You ____ touch the exhibits, they are very delicate.\n**options**: \n  - (a) mustn't\n  - (b) can't\n  - (c) shouldn't\n",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is (a) mustn't.  The sentence expresses a strong prohibition, meaning it is absolutely forbidden to touch the exhibits. 'Mustn't' conveys this strict rule. 'Can't' implies a lack of ability, and 'shouldn't' suggests a weaker suggestion or recommendation, neither of which fit the context of a strict prohibition in a museum.",
+      "options": [
+        "mustn't",
+        "can't",
+        "shouldn't",
+        "don't have to"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "My grandfather ____ play the piano beautifully when he was younger, but he can't anymore.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a past ability, so we need a modal verb that expresses past ability.  'Could' is the correct choice because it indicates an ability that existed in the past. 'Can' is used for present ability, and 'will be able to' refers to future ability. Therefore, 'could' is the only option that fits the context of the sentence.",
+      "options": [
+        "could",
+        "can",
+        "will be able to",
+        "is able to"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Context: You are volunteering at a local animal shelter and are happy to help with any task. \nSentence:  \"I ______  walk the dogs this afternoon, if that's okay with you.\" ",
+      "difficulty": "medium",
+      "reasoning": "The sentence expresses willingness to perform an action.  \"Will\" is used to express willingness in the present or future.  While \"would\" can also express willingness, it is often used to indicate a more tentative or conditional offer.  \"Shall\" is less commonly used to express willingness in modern English.  In this context, \"I will walk the dogs\" conveys a clear and confident willingness to help, making it the most appropriate choice. ",
+      "options": [
+        "shall",
+        "would",
+        "will",
+        "could"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The doctor told me I  ______  eat more vegetables and fruits to improve my health. ",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a recommendation from a doctor, suggesting a strong obligation for the person to change their diet.  \"Must\" indicates a strong, absolute necessity, while \"have to\" suggests a more general obligation. \"Should\" is the most appropriate choice because it conveys a recommendation, implying that eating more fruits and vegetables is advisable for improving health.",
+      "options": [
+        "must",
+        "have to",
+        "should",
+        "can"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "I ____ go for a walk in the park, but my dog ____ stay inside and sleep.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes two preferences, one for the speaker and one for the dog. The speaker's preference is for a walk, while the dog's preference is for sleeping. 'Would rather' is used to express a personal preference, while 'would prefer' is used to express a more general preference.  Therefore, the correct answer is to use 'would rather' for the speaker and 'would prefer' for the dog. \n\n**Step 1:** Identify the preferences of the speaker and the dog. \n**Step 2:**  Understand the difference between 'would rather' and 'would prefer'.  'Would rather' expresses a personal preference, while 'would prefer' expresses a more general preference.  \n**Step 3:** Apply the correct expression based on the context.  Since the speaker's preference is personal, use 'would rather'. Since the dog's preference is general (not specific to this moment), use 'would prefer'.",
+      "options": [
+        "would rather / would prefer",
+        "would prefer / would rather",
+        "would prefer / would prefer",
+        "would rather / would rather"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The sky is dark and cloudy. It _______ rain soon.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes a situation where rain is likely to occur due to the weather conditions. 'Must' indicates a strong certainty, while 'have to' implies an obligation. In this case, the speaker is expressing a high probability of rain, not a necessity. Therefore, 'will' is the most appropriate modal verb, as it expresses a prediction based on the context. ",
+      "options": [
+        "must",
+        "will",
+        "have to",
+        "can"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The doctor told me I ______ have taken that medication, as it could have caused serious side effects.",
+      "difficulty": "easy",
+      "reasoning": "The correct answer is \"shouldn't\". The sentence expresses a past obligation or advice that was not followed.  The modal verb \"shouldn't\" conveys this meaning in the past tense. Here's why the other options are incorrect:\n\n* **couldn't:**  \"Couldn't\" implies a lack of ability in the past, which doesn't fit the context.  The doctor is not saying the person was unable to take the medication, but rather that they shouldn't have.\n* **might not:** \"Might not\" expresses uncertainty in the past, which doesn't match the doctor's clear advice. The doctor is not saying it was possible the medication could have had side effects, but rather that it definitely could have.\n* **would not:**  \"Would not\" expresses refusal or unwillingness in the past, which is not relevant to the situation. The person wasn't refusing to take the medication; they simply took it without considering the potential consequences.",
+      "options": [
+        "couldn't",
+        "shouldn't",
+        "might not",
+        "would not"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The train is running late. We _______ be able to catch our connecting flight. \n\nContext: The speaker is concerned about the impact of the train delay on their flight.",
+      "difficulty": "medium",
+      "reasoning": "The correct modal verb is \"might.\"  The sentence expresses uncertainty about catching the connecting flight due to the train delay.  While \"could\" also implies possibility, \"might\"  better conveys a sense of doubt or potential difficulty. \"May\" implies a more neutral possibility, which doesn't align with the context of the delayed train.",
+      "options": [
+        "could",
+        "may",
+        "might",
+        "will"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The librarian asked me if I ______ borrow the book for another week. I politely agreed, as I hadn't finished reading it yet.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a request for an extension. The modal 'could' is used to make a polite request or ask for permission. In this case, the librarian is asking if the speaker is allowed to borrow the book for longer.  So, 'could' is the most appropriate choice in this context.\n\nHere's why the other options are incorrect:\n\n* **would:** This implies a willingness or preference, not a request for permission.\n* **may:** While 'may' can be used for permission, it's often more formal and less common in informal situations.\n* **will:** This implies a future action or commitment, which is not relevant to the request being made.",
+      "options": [
+        "could",
+        "would",
+        "may",
+        "will"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Your friend is planning a trip to a new city and is unsure about which restaurant to try for their first night. You want to suggest a place you enjoyed. What would you say? \n\n\"You ____ try [Restaurant Name]. It has delicious [Type of cuisine] and a great atmosphere.\"",
+      "difficulty": "medium",
+      "reasoning": "The question is about suggesting a restaurant to a friend. The context implies that the friend is unsure about their choice, making it appropriate to offer a suggestion. Out of the options, 'should' is the most suitable modal for expressing a suggestion or recommendation. 'Could' implies possibility, while 'might' suggests uncertainty, neither of which fit the context of suggesting a specific place.  \n\n**Step by Step Reasoning:** \n1. The situation calls for offering a suggestion, implying a degree of confidence in the recommendation. \n2. 'Should' is the modal that best expresses a suggestion, recommending a particular action. \n3. 'Could' implies possibility, while 'might' suggests uncertainty, both of which are not as appropriate for recommending a specific restaurant.",
+      "options": [
+        "should",
+        "could",
+        "might",
+        "will"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The library staff has informed us that we ______ use the computers for more than two hours at a time. They want to ensure everyone has access to the resources.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a rule or policy, suggesting a formal permission with limitations.  \"May\" expresses a formal permission, while \"can\" is more casual and \"could\" implies a possibility rather than a guaranteed permission. The context emphasizes a rule, making \"may\" the most appropriate choice.",
+      "options": [
+        "may",
+        "can",
+        "could",
+        "must"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The weather forecast predicts heavy rain tomorrow. We ____ stay inside and watch movies.",
+      "difficulty": "medium",
+      "reasoning": "The sentence expresses a strong suggestion or necessity based on the weather forecast.  The modal verb 'must' implies a strong obligation, while 'have to' suggests a more general necessity. In this case, 'will' is the most appropriate choice because it expresses a future action that is likely to happen due to the predicted weather. The sentence indicates that the speaker and their company are likely to stay inside as a result of the anticipated heavy rain.",
+      "options": [
+        "must",
+        "will",
+        "have to",
+        "should"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old man _____ have seen better days, but he was always kind and helpful to everyone in the neighborhood.  \n\nContext:  The speaker is describing the current state of an elderly man who used to be healthier and more prosperous.  \n\nOptions: \n a) could  b) might  c) would  d) must",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **a) could**. The sentence implies that the old man was in a better state in the past, but now he is not. The modal verb \"could\" expresses the idea of ability or possibility in the past.  \n\n* **Could** indicates a past ability or possibility. It suggests that the old man was capable of having better days but no longer is.  \n* **Might** suggests a past possibility, but it doesn't necessarily imply a past ability.  \n* **Would** implies a willingness or habit in the past, which doesn't fit the context. \n* **Must** expresses certainty or obligation, which is not appropriate in this situation.  \n\nTherefore, \"could\" is the most suitable past modal verb to express the speaker's meaning.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "You are planning a trip to a country where the local currency is significantly different from your own. You ____ exchange your money before you leave, as it may be difficult to find a reliable exchange service at your destination.",
+      "difficulty": "medium",
+      "reasoning": "The correct modal verb in this context is \"should\". While it is not strictly necessary to exchange money beforehand, it is highly advisable due to the potential difficulties mentioned in the context. \"Must\" implies a strong obligation, which is not present in the scenario. \"Have to\" implies a more urgent need, which is not the case here. Therefore, \"should\" best reflects the level of recommendation implied in the context.",
+      "options": [
+        "must",
+        "have to",
+        "should",
+        "could"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The doctor said I ______ need surgery, but I'm hoping it won't be necessary.",
+      "difficulty": "medium",
+      "reasoning": "The sentence expresses uncertainty about the possibility of needing surgery.  Of the three modal verbs, \"may\" is the most appropriate choice here. \"Might\" suggests a slightly higher level of doubt, while \"could\" is less specific and could imply an ability rather than a possibility. The sentence indicates a possibility, but it's not a firm prediction, making \"may\" the best fit.",
+      "options": [
+        "might",
+        "could",
+        "may",
+        "will"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "You ____ eat with your hands at a formal dinner. It's considered rude.",
+      "difficulty": "medium",
+      "reasoning": "The sentence expresses a prohibition, meaning something is not allowed or advised against. Of the three options, 'mustn't' is the only one that correctly conveys this meaning. 'Can't' might imply a lack of ability, while 'shouldn't' suggests a milder suggestion rather than a strict rule. Therefore, 'mustn't' is the most accurate choice to express the prohibition against eating with hands at a formal dinner.",
+      "options": [
+        "can't",
+        "shouldn't",
+        "mustn't",
+        "don't have to"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "Sentence: \"I ____ grab you a glass of water while you wait?\"\n\nContext: You are at a friend's house, and they are waiting for a phone call.  You want to be helpful and offer to get them a drink.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is \"would.\" The context indicates that you are offering to do something for your friend.  \"Would\" is used to make polite offers in this situation.  While \"can\" can also be used to offer help, \"would\" is more polite and indicates a willingness to do something, even if it's not strictly necessary.\n\nOther options are incorrect because: \n\n* \"Will\" suggests a promise, not a polite offer.\n* \"May\" is used for permission, not offers.\n* \"Should\" expresses a suggestion or obligation, not an offer.",
+      "options": [
+        "will",
+        "may",
+        "should",
+        "would"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The library is closed today, but _______ I return this book tomorrow instead?",
+      "difficulty": "medium",
+      "reasoning": "The sentence asks for permission to return a book a day later than expected. 'May' is used to request permission politely, making it the most appropriate choice. 'Can' is less formal and implies ability rather than permission in this context. 'Could' is used for past or hypothetical situations, not the present request. Therefore, 'May' is the correct answer.",
+      "options": [
+        "May",
+        "Can",
+        "Could",
+        "Should"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "John is planning a trip to the beach, but he's not sure whether to go to a busy beach with lots of people or a quiet beach with fewer crowds.  He _______ spend his vacation in a more tranquil setting.",
+      "difficulty": "medium",
+      "reasoning": "The context states that John is unsure between a busy beach and a quiet beach.  The sentence implies a preference for a quiet beach.  'Would rather' is the correct choice because it expresses a stronger preference compared to 'would prefer.'  Therefore, the completed sentence would be: 'John would rather spend his vacation in a more tranquil setting.'  This highlights his preference for a quieter beach experience.",
+      "options": [
+        "would prefer",
+        "would rather",
+        "should",
+        "could"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Despite the long wait, the chef  ____  prepare a special meal for the guests arriving late.  He wanted to ensure they felt welcomed and well-cared for.",
+      "difficulty": "medium",
+      "reasoning": "The sentence expresses a willingness to do something, even though it might be inconvenient.  \"Will\" is the most appropriate modal verb to express a firm intention in this context. While \"would\" can also express willingness, it suggests a more tentative or conditional offer. \"Shall\" is rarely used in contemporary English to express willingness, and it sounds quite formal in this context. Therefore, \"will\" is the most suitable choice here, as it implies a clear and firm decision to prepare the special meal.",
+      "options": [
+        "will",
+        "would",
+        "shall",
+        "could"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The weather forecast predicts a severe storm with heavy winds and rain. You are planning a camping trip in a remote area. You ________ postpone your trip until the weather improves.",
+      "difficulty": "medium",
+      "reasoning": "The question tests the student's understanding of using modal verbs to give advice. \"Should\" is a general recommendation, \"may\" indicates possibility, while \"must\" conveys a strong necessity, making it the most appropriate choice in the context of a dangerous weather situation.",
+      "options": [
+        "Should",
+        "May",
+        "Must",
+        "Could"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Context: Before starting his new job, Mark had to complete a series of training courses. \n\nSentence with Blank: Mark _______ operate the machinery independently after completing the training. \n\nMultiple Choice Options: \na) can \nb) could \nc) be able to",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **(a) can**. The sentence describes a current ability, meaning Mark is now able to operate the machinery after finishing the training. 'Can' is used to express present ability. \n\n'Could' is used for past ability, suggesting he was able to operate the machinery in the past but may not be able to now. \n\n'Be able to' is a more general expression of ability that can be used in various contexts. However, in this case, 'can' is the most appropriate choice due to the focus on the present ability. \n\nTherefore, the sentence should read: 'Mark can operate the machinery independently after completing the training.'",
+      "options": [
+        "can",
+        "could",
+        "be able to",
+        "will be able to"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The professor mentioned that the exam  ____  be postponed due to the unexpected snowstorm, but he didn't confirm it. We'll have to wait for an official announcement.",
+      "difficulty": "hard",
+      "reasoning": "The sentence expresses uncertainty about the exam postponement. The professor hasn't confirmed it, so it's a possibility.  While 'could' indicates possibility, 'may' is more suitable for expressing uncertainty.  'Should' implies a suggestion or recommendation, which isn't applicable in this case. Therefore, \"may\" is the correct modal to convey the uncertainty surrounding the exam postponement.",
+      "options": [
+        "should",
+        "could",
+        "may",
+        "must"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The meeting is scheduled for tomorrow, but we ____ reschedule it if the weather is bad.  The organizer has expressed concern about the safety of attendees traveling in inclement conditions, and would prefer to prioritize everyone's well-being.",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is \"could.\"  The sentence expresses a possibility, suggesting a contingency plan in case of bad weather.  While \"should\" implies a more strongly recommended course of action, and \"might\" suggests a weaker possibility, \"could\"  best reflects the speaker's intent to offer a flexible option in case of a potentially disruptive weather event.  The speaker isn't definitively stating that the meeting *will* be rescheduled, but rather presenting a reasonable alternative if necessary.",
+      "options": [
+        "should",
+        "might",
+        "could",
+        "will"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The museum curator informed us that we ______ take photos inside the exhibit, but only without flash. ",
+      "difficulty": "hard",
+      "reasoning": "The context suggests a formal setting (a museum) and a specific instruction (no flash photography). This implies a degree of restriction, even with permission. Of the three options: \n\n* **'May'** is the most formal and suggests permission granted. However, the specific instruction about flash makes the permission not entirely open-ended, leaning away from 'may'. \n* **'Can'** is more casual and may suggest a general possibility without the nuance of restrictions. \n* **'Could'** is the most suitable choice here. It implies a conditional permission, acknowledging the specific restriction about flash photography. The sentence becomes: \"The museum curator informed us that we **could** take photos inside the exhibit, but only without flash.\"  This sentence conveys the nuance of permission granted under specific conditions, making it the most accurate and contextually appropriate.",
+      "options": [
+        "May",
+        "Can",
+        "Could",
+        "Might"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old map indicated that a hidden treasure **____** be found on the island, but the explorers soon realized it was just a legend.  They had spent weeks searching every corner, but their efforts were in vain.",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is **'could'**. The sentence implies that the map suggested a possibility, but the explorers ultimately discovered it was not true.  Here's a breakdown: \n\n* **'Could'** implies a past ability or possibility, suggesting that the treasure *might* have been found based on the map. \n* **'Should'** implies an obligation or recommendation, which doesn't fit the context of the sentence. \n* **'Might'** is similar to 'could' in implying a possibility, but 'could' is more appropriate in this case because it emphasizes the potential based on the map's indication. \n* **'Would'** implies a repeated action or a willingness in the past, which doesn't align with the context of a single instance of searching for treasure.",
+      "options": [
+        "should",
+        "might",
+        "would",
+        "could"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The deadline for the project is tomorrow, and we've only completed half of it. We _______ work through the night to finish it on time.",
+      "difficulty": "medium",
+      "reasoning": "The context highlights a situation where the completion of the project is a strong necessity due to the looming deadline.  While 'need to' and 'have to' could be used, 'must' emphasizes the urgency and obligation more strongly. Therefore, the correct choice is 'must' because it conveys the strongest sense of necessity and urgency in this scenario.",
+      "options": [
+        "need to",
+        "have to",
+        "should",
+        "must"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The doctor suggested I take a long walk every day, but I'd rather  ____  stay home and read a book. However, I know I should exercise more, so maybe I'll  ____  go for a shorter walk instead.",
+      "difficulty": "medium",
+      "reasoning": "The first blank requires a modal that expresses a preference for one option over another. While both 'would rather' and 'would prefer' can express this, 'would rather' is more suitable here because it implies a stronger preference and a definite choice to avoid the doctor's suggestion. \n\nThe second blank requires a modal that expresses a more tentative preference, acknowledging the need to exercise while still suggesting an alternative. 'Would prefer' is better suited for this, as it indicates a less definite choice and a willingness to compromise.\n\nTherefore, the correct answer is 'would rather' for the first blank and 'would prefer' for the second blank.",
+      "options": [
+        "would rather - would rather",
+        "would prefer - would prefer",
+        "would rather - would prefer",
+        "would prefer - would rather"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The museum curator was very strict about photography. \"I ______ ask that you refrain from taking pictures inside the exhibition hall,\" she said, \"as it can be distracting to other visitors and potentially damage the artifacts.\"",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is \"would\". The sentence expresses a polite request, not a possibility or permission. \"Could\" implies ability, and \"may\" implies permission. The context suggests the curator is making a request for the sake of order and preservation within the museum, hence \"would\" is the most suitable option to convey a polite but firm request.\n\n**Step-by-step reasoning:**\n1. **Identify the type of request:** The sentence expresses a polite request, not a question of possibility or permission. This eliminates \"could\" and \"may\".\n2. **Understand the intention:** The curator is seeking to maintain a peaceful and respectful environment for all visitors, and to protect the artifacts. This eliminates \"could\" (which implies ability) and \"may\" (which implies permission).\n3. **Consider the context:** The context establishes that the curator is in a position of authority, and is making a request for the benefit of everyone. \"Would\" conveys this sense of authority and politeness, making it the most appropriate choice.",
+      "options": [
+        "could",
+        "would",
+        "may",
+        "should"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    }
+  ],
+  "title": "English Language",
+  "topic": "Fill ups - Modals",
+  "exam_id": 16,
+  "order": 0
 }

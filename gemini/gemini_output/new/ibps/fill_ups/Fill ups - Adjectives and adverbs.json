@@ -1,468 +1,506 @@
 {
-    "questions": [
-        {
-            "question": "The bakery had a _______ selection of pastries, with everything from delicate croissants to rich chocolate cakes.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes a wide variety of pastries.  This implies a large amount or quantity.  The adjective 'vast' indicates a large or extensive selection, making it the most suitable option to describe the bakery's offerings.",
-            "options": [
-                "Limited",
-                "Vast",
-                "Simple",
-                "Small"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The child was feeling very ____ after a long day of playing outside. (a) tired, (b) tiring",
-            "difficulty": "easy",
-            "reasoning": "The correct answer is (a) tired. The sentence describes the child's state of being, which requires an adjective to modify the noun 'child'.  'Tired' describes a feeling or condition, while 'tiring' describes something that causes tiredness. In this context, the child is the one who is tired, not the cause of tiredness.  The sentence is talking about the child's feeling, not about the action of playing outside.  Therefore, the adjective 'tired' is the correct choice.",
-            "options": [
-                "tired",
-                "tiring",
-                "a",
-                "b"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The ripe cherries were a ____ red, almost glowing in the sun.",
-            "difficulty": "easy",
-            "reasoning": "This question tests the ability to identify an appropriate adjective to describe the color of cherries.  The correct answer must be a color adjective that describes the appearance of ripe cherries. 'Deep' is the most fitting adjective as it suggests a rich, intense red color, common in ripe cherries.  The other options are either not appropriate for the context or not descriptive enough: \n\n* 'Bright' is a general adjective and doesn't accurately describe the specific red of cherries. \n* 'Small' describes size, not color. \n* 'Rough' describes texture, not color.\n* 'Deep' is the only option that specifically describes the color of ripe cherries.",
-            "options": [
-                "Bright",
-                "Small",
-                "Rough",
-                "Deep"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "**question_description**: Choose the most suitable adverb of degree to complete the sentence.\n**sentence**: The child was ______ tired after a long day of playing.\n**options**: \n  - a) extremely\n  - b) quite\n  - c) hardly\n  - d) never\n",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is **a) extremely**.  The sentence describes a child who is very tired after playing all day.  'Extremely' is an adverb of degree that intensifies the adjective 'tired', conveying a high level of tiredness. \n\nThe other options are not suitable: \n\n* **b) quite** implies a moderate level of tiredness, which doesn't fit the context of a long day of playing. \n* **c) hardly** means almost not at all, which is the opposite of what the sentence suggests. \n* **d) never** is incorrect because the child is clearly tired. \n\nTherefore, 'extremely' is the most suitable adverb of degree to complete the sentence.",
-            "options": [
-                "extremely",
-                "quite",
-                "hardly",
-                "never"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The little girl giggled _______ as she played with her new doll.",
-            "difficulty": "medium",
-            "reasoning": "The sentence requires an adverb to describe how the girl giggled.  The word 'giggled' is a verb, and adverbs modify verbs.  The adverb 'happily' best fits the sentence because it describes the manner in which the girl giggled.  It suggests that she was enjoying her playtime with the new doll.",
-            "options": [
-                "Sadly",
-                "Happily",
-                "Slowly",
-                "Quietly"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "My dog ______ barks at squirrels in the backyard.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a regular action, but not necessarily every time. The adverb 'always' implies the dog barks at squirrels every time, which is unlikely. 'Never' implies the dog never barks at squirrels, which is also unlikely. 'Sometimes' fits the context best, as it implies the dog barks at squirrels occasionally. 'Rarely' suggests the dog barks at squirrels very infrequently, which doesn't fit the sentence's description of a regular occurrence.",
-            "options": [
-                "Always",
-                "Never",
-                "Sometimes",
-                "Rarely"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The old house was _____ and _____. \n a) creaky  b) spacious  c) modern",
-            "difficulty": "medium",
-            "reasoning": "This question tests the ability to use adjectives to describe a house. The adjectives 'creaky' and 'spacious' both fit the description of an old house.  'Creaky' describes the sound an old house might make, and 'spacious' describes its size. The adjective 'modern' does not fit the description of an old house. Therefore, the correct answer is a) creaky and b) spacious.",
-            "options": [
-                "creaky",
-                "spacious",
-                "modern",
-                "None of the above"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The artist _______ painted a portrait of the Queen, capturing her regal elegance in every detail.",
-            "difficulty": "medium",
-            "reasoning": "The question focuses on describing how the artist performed the action of painting. The sentence emphasizes the capturing of elegance, implying a careful and precise approach.  \n\n* **carefully** best fits the context because it suggests meticulous attention to detail and a deliberate approach to capturing the Queen's regal presence.  \n\nThe other options are less suitable: \n* **quickly** implies haste, which contradicts the idea of capturing details. \n* **noisily** suggests a disruptive action, which is not relevant to the context. \n* **angrily** implies emotion, which is inappropriate for a portrait of royalty. \n\nTherefore, **carefully** is the most fitting adverb of manner, making it the correct answer.",
-            "options": [
-                "carefully",
-                "quickly",
-                "noisily",
-                "angrily"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The old, weathered house stood on the hill, its windows __________ staring out at the storm.",
-            "difficulty": "medium",
-            "reasoning": "This question requires the student to choose an adverb that best describes the way the windows are \"staring.\" The context suggests that the house is old and weathered, and the storm implies a sense of foreboding or even menace.  Therefore, the most appropriate adverb would be one that conveys a feeling of emptiness, sadness, or even fear.  For example, \"blankly\" or \"sadly\" would be effective choices.  Other adverbs, like \"brightly\" or \"cheerfully\" would be inappropriate because they contradict the context of the sentence.  The question is therefore medium difficulty because it requires the student to consider the context of the sentence and choose an adverb that fits the mood and tone.",
-            "options": [
-                "brightly",
-                "cheerfully",
-                "blankly",
-                "happily"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The children played ________ in the backyard, chasing butterflies and laughing.",
-            "difficulty": "medium",
-            "reasoning": "This question tests the understanding of adverbs of place, specifically focusing on where the action of playing takes place. The sentence describes the children playing in the backyard, indicating a specific location. The correct answer is 'outside' because it indicates the location of the action, while the other options, 'happily' and 'loudly', describe how the children played, not where.  \n\n**Step-by-step explanation:** \n1. **Identify the action:** The action is 'played'.\n2. **Identify the location:** The location is 'in the backyard'.\n3. **Choose the adverb that specifies the location:** The adverb 'outside' specifies the location of the action.  \n4. **Eliminate incorrect options:**  The other options, 'happily' and 'loudly', are adverbs of manner describing how the children played, not where.\n5. **Correct answer:**  The correct answer is 'outside' because it accurately specifies the location of the action.",
-            "options": [
-                "happily",
-                "outside",
-                "loudly",
-                "nearby"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The old man walked ______ towards the park, his cane tapping rhythmically on the pavement.",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is **slowly**. The sentence describes a leisurely pace, which aligns with the image of an old man using a cane.  The other options, 'quickly' and 'loudly', do not fit the context. 'Quickly' suggests a hurried pace, while 'loudly' describes the manner of walking with a focus on noise, which is not implied in the sentence.",
-            "options": [
-                "Slowly",
-                "Quickly",
-                "Loudly",
-                "Happily"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "My grandmother ______ visits us on Sundays. She loves spending time with the family.",
-            "difficulty": "medium",
-            "reasoning": "This question assesses the understanding of adverbs of frequency in a simple context. The sentence describes a recurring action \u2013 visiting on Sundays. The word bank provides options that fit the context, but the most appropriate choice is \"usually\" because it implies that the grandmother's visits are regular but not every single Sunday. The other options are less fitting: \"always\" suggests every Sunday without fail, \"sometimes\" implies sporadic visits, and \"never\" contradicts the sentence.",
-            "options": [
-                "always",
-                "sometimes",
-                "never",
-                "usually"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The old, worn leather jacket had a  ______ texture, like the rough surface of a rock.",
-            "difficulty": "medium",
-            "reasoning": "The context describes a leather jacket that is old and worn, suggesting a rough and uneven surface.  The word \"rough\" accurately reflects this texture, while the other options do not fit the description. \n\n* **Smooth** suggests a flat, even surface. \n* **Shiny** implies a polished, reflective surface.\n* **Soft** indicates a delicate, yielding surface. \n* **Rough** describes a textured surface with uneven bumps or ridges.  \n\nTherefore, \"rough\" is the only option that accurately describes the texture of the leather jacket based on the context provided.",
-            "options": [
-                "Smooth",
-                "Shiny",
-                "Soft",
-                "Rough"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The old dog, once a  [blank] hunter, now moved  [blank]  across the lawn.",
-            "difficulty": "medium",
-            "reasoning": "This question focuses on using adjectives and adverbs to improve writing style. It assesses a student's understanding of choosing the right words to convey a specific image. The sentence describes a dog that has aged and lost its former vigor,  and we need to fill in the blanks with words that reflect this change. \n\nFor the first blank, we need an adjective that describes a dog's hunting ability, like 'fierce,' 'vigorous,' or 'agile.'  The word 'vigorous' best fits the context, as it indicates the dog's former strength and energy.\n\nFor the second blank, we need an adverb that describes the dog's movement. Since the dog is old and less energetic, we need a word like 'slowly,' 'leisurely,' or 'cautiously.'  The word 'slowly' is the most fitting, as it accurately portrays the dog's age and reduced energy.\n\nTherefore, the correct answer would be to fill in the blanks with 'vigorous' and 'slowly' to create a sentence that depicts the dog's decline in strength and agility.\n\n**Step 1**:  Identify the blank spaces and determine if they require an adjective or an adverb.\n**Step 2**: Think about the meaning and context of the sentence.  What kind of dog are we talking about? How is it moving?  \n**Step 3**: Choose words that best convey the intended image and accurately reflect the dog's condition.\n**Step 4**:  Verify that the chosen words make sense grammatically and logically within the sentence.",
-            "options": [
-                "vigorous, swiftly",
-                "fierce, quickly",
-                "vigorous, slowly",
-                "agile, rapidly"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The old, wooden chair creaked _______ as I sat down. \n\n a) loud \n b) loudly \n c) soft",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes the sound made by the chair, which is a characteristic of the action.  We need an adverb to modify the verb 'creaked'.  The correct answer is 'loudly' because it describes how the chair creaked.  'Loud' is an adjective and modifies a noun or pronoun.  'Soft' is an adjective that doesn't fit the context of the sentence.",
-            "options": [
-                "loud",
-                "loudly",
-                "soft",
-                "softly"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The artist _______ blended the colors on her palette, creating a stunning sunset effect. \n\nWord Bank: carefully, quickly, smoothly, roughly",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes the artist's technique of blending colors.  Out of the options provided, \"smoothly\" best describes the way colors are blended for a seamless, gradual effect.  The other adverbs don't fit the context: \n\n* **carefully:**  While blending colors can involve care, it doesn't imply a smooth, seamless transition. \n* **quickly:**  Speed doesn't necessarily determine the quality of the blending. \n* **roughly:**  This suggests a less refined, less controlled blending, which wouldn't create a stunning sunset effect.",
-            "options": [
-                "carefully",
-                "quickly",
-                "smoothly",
-                "roughly"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The old, rusty car was driven ____ down the dusty road.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes the manner in which the car was driven.  We need an adverb to modify the verb 'driven'. Of the options provided, only 'slowly' is an adverb, modifying how quickly the car moved. The other options are adjectives describing qualities of the car or the road, not the act of driving.",
-            "options": [
-                "slowly",
-                "dusty",
-                "old",
-                "rusty"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "My brother ______ forgets to lock the door when he leaves for work, even after I remind him.",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is **(a) frequently** because it indicates that the brother forgets to lock the door often, but not always. The sentence emphasizes the repetition of this action, even with reminders. The other options are incorrect because they do not fit the context. \n\n* **(b) rarely** implies that the brother rarely forgets to lock the door, which contradicts the information in the sentence. \n\n* **(c) never** indicates that the brother never forgets to lock the door, which is completely opposite to what the sentence states. \n\n* **(d) usually** suggests a higher frequency than \"frequently,\" indicating that the brother typically forgets to lock the door, which doesn't align with the sentence's intention.",
-            "options": [
-                "frequently",
-                "rarely",
-                "never",
-                "usually"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The old, dusty book was filled with  ____ stories about knights and dragons, each page containing illustrations of ____ creatures and grand castles.",
-            "difficulty": "medium",
-            "reasoning": "This question tests the student's ability to choose appropriate descriptive adjectives to create a vivid image. The first blank requires an adjective that describes the type of stories found in the book. 'Fantastic' fits well, as it suggests imaginative and unbelievable tales, typical of those about knights and dragons.  The second blank needs an adjective describing the creatures and castles. 'Magnificent' effectively depicts the grandeur and impressive nature of such elements in these stories. The chosen adjectives paint a picture of a book full of exciting and impressive content.",
-            "options": [
-                "boring, small",
-                "funny, realistic",
-                "fantastic, magnificent",
-                "sad, ordinary"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The artist, known for her  ______  use of color, stood before the blank canvas, ready to begin her masterpiece.",
-            "options": [
-                "Cautious",
-                "Diligent",
-                "Expressive",
-                "Vibrant"
-            ],
-            "correct_option": "D",
-            "difficulty": "medium",
-            "reasoning": "The sentence focuses on the artist's approach to color.  We need an adjective that describes how she uses color in her artwork. 'Vibrant' is the best choice as it implies a strong, bold, and perhaps even dramatic use of color, which aligns with the idea of a 'masterpiece.' 'Cautious', 'diligent', and 'expressive' are less suitable as they do not convey the same impact."
-        },
-        {
-            "question": "The children laughed ______ at the funny clown.",
-            "difficulty": "medium",
-            "reasoning": "The sentence requires an adverb to describe how the children laughed. The adverb needs to modify the verb 'laughed'.  The options are:\n\n a) loud - This is an adjective, and we need an adverb to modify the verb. \n b) loudly - This is the correct adverb and it correctly modifies the verb 'laughed'.\n c) louder - This is a comparative adjective, and we need a simple adverb to modify the verb.\n\nTherefore, the correct answer is 'loudly' because it is the only adverb that modifies the verb 'laughed' appropriately.",
-            "options": [
-                "loud",
-                "loudly",
-                "louder",
-                "louding"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The mischievous squirrel hid ______ the oak tree, watching the children play in the park.",
-            "difficulty": "medium",
-            "reasoning": "The question tests the understanding of adverbs of place, specifically focusing on the correct placement of the squirrel. The sentence describes the squirrel hiding in a specific location, and the blank requires an adverb of place that indicates where the squirrel is hiding. Of the options, \"behind\" is the only adverb of place that accurately describes the hiding spot. It suggests the squirrel is concealed from view, partially or fully, by the oak tree. The other options do not fit the context: \"above\" implies the squirrel is on top of the tree, \"inside\" suggests it is within the tree's trunk, and \"quickly\" is an adverb of manner, not place.",
-            "options": [
-                "above",
-                "inside",
-                "quickly",
-                "behind"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The hikers were _______ tired after their long trek through the mountains, but they were also _______ exhilarated by the stunning views.",
-            "difficulty": "medium",
-            "reasoning": "This question tests the understanding of the difference between 'very' and 'extremely' and 'quite' and 'rather'. While all these words can be used to modify adjectives and adverbs, 'extremely' and 'rather' indicate a more intense degree of the emotion than 'very' and 'quite'.  The sentence describes a situation where the hikers are tired but also feel a strong sense of exhilaration.  Therefore, 'extremely' and 'rather' are the more appropriate choices for this sentence.",
-            "options": [
-                "very, quite",
-                "extremely, rather",
-                "very, rather",
-                "extremely, quite"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The ornate rug, with its intricate patterns and vibrant colors, was a true work of art, crafted from ____ wool, known for its durability and softness.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a rug made from a specific type of wool, implying the adjective needs to specify the origin of the wool. Of the options, only 'Tibetan' refers to a place of origin, making it the correct choice. 'Woven' describes the process of making the rug, not the material itself, while 'fine' and 'plush' are qualities of the wool, not its origin. Therefore, the adjective 'Tibetan' accurately completes the sentence, highlighting the specific origin of the wool used in the rug.",
-            "options": [
-                "Woven",
-                "Tibetan",
-                "Fine",
-                "Plush"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "While both cats were playful, the [BLANK] of the two, named Mittens, was particularly mischievous, often getting into trouble.",
-            "difficulty": "medium",
-            "reasoning": "The sentence compares the playfulness of two cats. Since we are comparing two items, we need the comparative form of the adjective. The comparative form of 'playful' is 'more playful'. Therefore, the correct answer is 'more playful'.",
-            "options": [
-                "playful",
-                "more playful",
-                "most playful",
-                "playfuller"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The old,  _____  clock on the mantle chimed the hour, its sound echoing through the quiet house.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a clock that is old and makes a sound. We need an adverb to modify the verb \"chimed\" and describe how the clock chimed. The adverb should describe the quality of the sound. Of the options provided, only \"melodiously\" fits this description.\n\n* **Option (a) \"melodious\"** is an adjective and cannot modify a verb. It would need to be used as part of a phrase, such as \"The clock chimed in a melodious manner.\"\n* **Option (b) \"melodiously\"** is an adverb, correctly modifying the verb \"chimed\" and describing the sound. \n* **Option (c) \"melodiousness\"** is a noun and doesn't fit the context of modifying the verb.\n* **Option (d) \"melodic\"** is an adjective and cannot be used to describe the action of chiming. ",
-            "options": [
-                "melodious",
-                "melodiously",
-                "melodiousness",
-                "melodic"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The ancient tapestry was woven with threads of a _____, almost _____, gold that shimmered in the dim light of the museum.",
-            "difficulty": "medium",
-            "reasoning": "This question tests the ability to choose adjectives and adverbs that accurately describe the appearance of a tapestry. The sentence focuses on the color and texture of the gold threads. The blank for color requires a descriptive adjective that emphasizes the unique quality of the gold.  The options should include words that suggest a specific shade or quality of gold, such as 'muted', 'rich', 'deep', or 'pale'. The second blank requires an adverb that modifies the adjective, emphasizing the way the gold appears.  The options should include adverbs that suggest a subtle or delicate appearance, such as 'softly', 'subtly', 'delicately', or 'gently'.",
-            "options": [
-                "muted, softly",
-                "pale, brightly",
-                "deep, subtly",
-                "rich, gently"
-            ],
-            "correct_options": [
-                "b) muted",
-                "f) subtly"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The artist's brushstrokes were  _____, creating a sense of movement and energy in the painting.",
-            "difficulty": "medium",
-            "reasoning": "This question tests the student's ability to choose an adverb that best describes the action of the brushstrokes and enhances the overall effect of the painting. The sentence describes the visual impact of the brushstrokes, requiring an adverb to modify the verb 'were'.  The correct option should convey a sense of movement and energy, fitting the description of the painting. \n\n**Step 1:** Identify the action: The action is 'were', which describes the state of the brushstrokes. This indicates the need for an adverb. \n\n**Step 2:** Analyze the intended effect: The sentence suggests a dynamic and energetic painting. The adverb should capture this feeling.\n\n**Step 3:** Evaluate options: The correct option needs to be an adverb that conveys movement and energy. The other options should be adjectives or adverbs that don't fit the context. \n\n**Step 4:**  Select the most appropriate option.  The adverb that best conveys the desired meaning and fits the context of the sentence is \"vigorously\".",
-            "options": [
-                "vigorously",
-                "vividly",
-                "carefully",
-                "abstractly"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The athlete trained **[blank]** intensely for the upcoming marathon, ensuring she was fully prepared to endure the grueling race.",
-            "difficulty": "medium",
-            "reasoning": "The sentence requires an adverb of degree that emphasizes the intensity of the athlete's training.  While 'slightly' implies a minimal effort, and 'moderately' suggests a balanced approach, the context calls for a stronger adverb. 'Extremely'  indicates a high level of intensity, fitting the context of a marathon preparation. 'Intensely' alone implies effort, but 'extremely intensely' further emphasizes the degree of her training, making it the most appropriate choice to convey the athlete's dedication and preparation for the demanding race.",
-            "options": [
-                "Slightly",
-                "Moderately",
-                "Intensely",
-                "Extremely intensely"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The young artist painted the portrait with a  _______  hand, each stroke precise and deliberate. ",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a careful and controlled way of painting.  The blank requires an adverb to modify the verb 'painted'. Of the choices, 'steady' best conveys the artist's precise and deliberate movements.  The other choices do not fit the context: 'loudly' is irrelevant, 'quick' suggests haste, and 'brightly' refers to color, not technique. ",
-            "options": [
-                "Loudly",
-                "Steady",
-                "Quick",
-                "Brightly"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The old woman, a seasoned traveler,  _____  recalled the day she first set foot in Paris, a memory that still brought a smile to her face.",
-            "difficulty": "hard",
-            "reasoning": "The sentence requires an adverb of time that indicates a specific point in the past, setting the context for the memory. While 'often' and 'always' refer to recurring events, 'eventually' and 'once' are more suitable options. However, 'once' is the most appropriate adverb here because it specifies a specific point in the past - the day she first set foot in Paris.  The other options do not fit the context as they refer to a more general, recurring past, or the future, which is not relevant to the sentence.",
-            "options": [
-                "often",
-                "eventually",
-                "once",
-                "always"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The detective investigated the case **______**, following every lead with meticulous detail and unwavering determination.",
-            "difficulty": "hard",
-            "reasoning": "The sentence requires an adverb to modify the verb 'investigated'.  The word 'thorough' is an adjective, describing a noun or pronoun.  'Thoroughly' is an adverb, modifying the verb 'investigated' by describing how the detective carried out the investigation. The sentence implies a thorough investigation, making 'thoroughly' the correct choice. ",
-            "options": [
-                "thorough",
-                "thoroughly",
-                "intensely",
-                "intense"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The intricate tapestry, woven with threads of pure ____ silk, depicted a scene from ancient Egyptian mythology, showcasing vibrant colors and intricate patterns.",
-            "difficulty": "hard",
-            "reasoning": "The sentence describes a tapestry made from a specific type of silk. The adjective \"pure\" indicates a high quality and implies a specific origin. The adjective \"Egyptian\" is related to the scene depicted, not the material of the tapestry. Therefore, the correct adjective is **a) Chinese**, as Chinese silk is known for its quality and was a prized material in ancient times. The other options are incorrect: **b) Medieval** refers to a historical period and not a specific material, while **c) Fine** is a general descriptive adjective and does not specify the origin or material of the silk.",
-            "options": [
-                "Chinese",
-                "Medieval",
-                "Fine",
-                "Egyptian"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The children giggled ______ as they watched the magician pull a rabbit out of his hat, their eyes wide with wonder.",
-            "difficulty": "hard",
-            "reasoning": "This question tests the student's ability to choose the most fitting adverb to describe the children's laughter. The context emphasizes the children's amusement and amazement, suggesting a joyful and excited type of laughter.  While several adverbs could be used, 'joyfully' best captures the overall tone of the sentence, as it emphasizes both joy and excitement. 'Excitedly' could also be a suitable option, but 'joyfully' more accurately reflects the children's feelings of wonder.  Therefore, 'joyfully' is the most fitting and nuanced adverb choice for this sentence.",
-            "options": [
-                "excitedly",
-                "nervously",
-                "quietly",
-                "joyfully"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The antique clock, with its intricate carvings and faded gold accents, had a  _______  aura that seemed to whisper tales of a bygone era.",
-            "difficulty": "hard",
-            "reasoning": "The sentence describes an antique clock with a special atmosphere. We need an adjective that captures the feeling of history and mystery.  'Ethereal' is the best fit because it suggests a sense of otherworldly or supernatural quality, which aligns with the idea of whispers from the past.  The other options are not as suitable: \n\n* **Nostalgic** implies a longing for the past, which is not the focus of the sentence. \n* **Antique** is redundant because it's already stated in the sentence. \n* **Grand** suggests size and importance, which doesn't match the subtle atmosphere implied. \n\nTherefore, 'ethereal' is the most accurate and evocative adjective to describe the antique clock's aura.",
-            "options": [
-                "Nostalgic",
-                "Antique",
-                "Grand",
-                "Ethereal"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The old, weathered lighthouse stood stoic against the relentless waves, its beam cutting through the ____ night like a guiding hand.  Fill in the blank with an adverb that best describes how the lighthouse's beam cuts through the darkness.",
-            "difficulty": "hard",
-            "reasoning": "This question is tricky because it requires the student to consider the overall tone of the sentence and choose an adverb that creates a specific atmosphere. The sentence evokes a sense of resilience and hope in the face of a powerful, unrelenting force (the waves). The adverb chosen should reflect this contrast and highlight the beam's unwavering strength.  \n\n* **'Relentless waves'**: This phrase establishes a sense of constant, powerful motion and danger.\n* **'Stoic lighthouse'**: This suggests the lighthouse is unwavering and strong, standing firm against the waves.\n* **'Guiding hand'**: This creates a sense of comfort and security, implying the lighthouse's beam offers hope.\n\nTherefore, an adverb that emphasizes the beam's determined and unwavering nature, like 'steadily' or 'unflinchingly', would be the most effective choice. This creates a vivid image of the beam pushing through the darkness, offering hope and guidance in a harsh environment.",
-            "options": [
-                "steadily",
-                "brightly",
-                "gently",
-                "dimly"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The [blank] wind howled through the [blank] trees, whipping up a frenzy of fallen leaves that danced in the swirling air.",
-            "difficulty": "hard",
-            "reasoning": "This question tests the student's ability to select adjectives and adverbs that create a vivid and evocative image.  The sentence describes a stormy scene, and the correct words need to capture the intensity and chaos of the weather. \n\n**Step 1: Analyzing the Sentence:**\nThe sentence focuses on the wind and the trees, suggesting a need for words that describe their movement and appearance.\n\n**Step 2: Examining the Options:**\nWe need to consider options that depict the wind's force and the trees' response to it.  The words 'violent' and 'ferocious' describe the wind's strength, while 'ancient' and 'gnarled' suggest the trees' weathered appearance. \n\n**Step 3: Choosing the Best Fit:**\n* **'Violent'** effectively captures the wind's intensity and is a stronger descriptor than 'ferocious.' \n* **'Gnarled'** portrays the trees as weathered and resilient, complementing the image of the wind's force. \n\n**Step 4: Verifying the Choice:**\nThe sentence now reads, \"The violent wind howled through the gnarled trees, whipping up a frenzy of fallen leaves that danced in the swirling air.\" This combination creates a powerful and descriptive picture of the storm, emphasizing the wind's raw force and the trees' enduring presence.",
-            "options": [
-                "ferocious, ancient",
-                "violent, gnarled",
-                "strong, aged",
-                "mighty, old"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The weary traveler, lost in the sprawling wilderness, stumbled ______, hoping to find shelter from the approaching storm.",
-            "difficulty": "medium",
-            "reasoning": "The question requires the student to identify the adverb of place that best describes the traveler's movement within the wilderness. The correct answer is 'onward,' as it implies a continued movement forward despite the challenges. The other options are not appropriate in this context: 'carefully' describes the manner of movement, 'happily' describes the emotional state, and 'secretly' suggests a hidden or concealed action. The sentence describes a physical movement with a clear direction, making 'onward' the most fitting adverb of place.\n\nTherefore, the answer is **(b) onward**, as it accurately conveys the traveler's continued movement in the wilderness.",
-            "options": [
-                "carefully",
-                "onward",
-                "happily",
-                "secretly"
-            ],
-            "correct_option": "B"
-        }
-    ],
-    "title": "English Language",
-    "topic": "Fill ups - Adjectives and adverbs",
-    "exam_id": 9,
-    "order": 4
+  "questions": [
+    {
+      "question": "The bakery had a _______ selection of pastries, with everything from delicate croissants to rich chocolate cakes.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes a wide variety of pastries.  This implies a large amount or quantity.  The adjective 'vast' indicates a large or extensive selection, making it the most suitable option to describe the bakery's offerings.",
+      "options": [
+        "Limited",
+        "Vast",
+        "Simple",
+        "Small"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The child was feeling very ____ after a long day of playing outside. (a) tired, (b) tiring",
+      "difficulty": "easy",
+      "reasoning": "The correct answer is (a) tired. The sentence describes the child's state of being, which requires an adjective to modify the noun 'child'.  'Tired' describes a feeling or condition, while 'tiring' describes something that causes tiredness. In this context, the child is the one who is tired, not the cause of tiredness.  The sentence is talking about the child's feeling, not about the action of playing outside.  Therefore, the adjective 'tired' is the correct choice.",
+      "options": [
+        "tired",
+        "tiring",
+        "a",
+        "b"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The ripe cherries were a ____ red, almost glowing in the sun.",
+      "difficulty": "easy",
+      "reasoning": "This question tests the ability to identify an appropriate adjective to describe the color of cherries.  The correct answer must be a color adjective that describes the appearance of ripe cherries. 'Deep' is the most fitting adjective as it suggests a rich, intense red color, common in ripe cherries.  The other options are either not appropriate for the context or not descriptive enough: \n\n* 'Bright' is a general adjective and doesn't accurately describe the specific red of cherries. \n* 'Small' describes size, not color. \n* 'Rough' describes texture, not color.\n* 'Deep' is the only option that specifically describes the color of ripe cherries.",
+      "options": [
+        "Bright",
+        "Small",
+        "Rough",
+        "Deep"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "**question_description**: Choose the most suitable adverb of degree to complete the sentence.\n**sentence**: The child was ______ tired after a long day of playing.\n**options**: \n  - a) extremely\n  - b) quite\n  - c) hardly\n  - d) never\n",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **a) extremely**.  The sentence describes a child who is very tired after playing all day.  'Extremely' is an adverb of degree that intensifies the adjective 'tired', conveying a high level of tiredness. \n\nThe other options are not suitable: \n\n* **b) quite** implies a moderate level of tiredness, which doesn't fit the context of a long day of playing. \n* **c) hardly** means almost not at all, which is the opposite of what the sentence suggests. \n* **d) never** is incorrect because the child is clearly tired. \n\nTherefore, 'extremely' is the most suitable adverb of degree to complete the sentence.",
+      "options": [
+        "extremely",
+        "quite",
+        "hardly",
+        "never"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The little girl giggled _______ as she played with her new doll.",
+      "difficulty": "medium",
+      "reasoning": "The sentence requires an adverb to describe how the girl giggled.  The word 'giggled' is a verb, and adverbs modify verbs.  The adverb 'happily' best fits the sentence because it describes the manner in which the girl giggled.  It suggests that she was enjoying her playtime with the new doll.",
+      "options": [
+        "Sadly",
+        "Happily",
+        "Slowly",
+        "Quietly"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "My dog ______ barks at squirrels in the backyard.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a regular action, but not necessarily every time. The adverb 'always' implies the dog barks at squirrels every time, which is unlikely. 'Never' implies the dog never barks at squirrels, which is also unlikely. 'Sometimes' fits the context best, as it implies the dog barks at squirrels occasionally. 'Rarely' suggests the dog barks at squirrels very infrequently, which doesn't fit the sentence's description of a regular occurrence.",
+      "options": [
+        "Always",
+        "Never",
+        "Sometimes",
+        "Rarely"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old house was _____ and _____. \n a) creaky  b) spacious  c) modern",
+      "difficulty": "medium",
+      "reasoning": "This question tests the ability to use adjectives to describe a house. The adjectives 'creaky' and 'spacious' both fit the description of an old house.  'Creaky' describes the sound an old house might make, and 'spacious' describes its size. The adjective 'modern' does not fit the description of an old house. Therefore, the correct answer is a) creaky and b) spacious.",
+      "options": [
+        "creaky",
+        "spacious",
+        "modern",
+        "None of the above"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The artist _______ painted a portrait of the Queen, capturing her regal elegance in every detail.",
+      "difficulty": "medium",
+      "reasoning": "The question focuses on describing how the artist performed the action of painting. The sentence emphasizes the capturing of elegance, implying a careful and precise approach.  \n\n* **carefully** best fits the context because it suggests meticulous attention to detail and a deliberate approach to capturing the Queen's regal presence.  \n\nThe other options are less suitable: \n* **quickly** implies haste, which contradicts the idea of capturing details. \n* **noisily** suggests a disruptive action, which is not relevant to the context. \n* **angrily** implies emotion, which is inappropriate for a portrait of royalty. \n\nTherefore, **carefully** is the most fitting adverb of manner, making it the correct answer.",
+      "options": [
+        "carefully",
+        "quickly",
+        "noisily",
+        "angrily"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": false\n}\n``` \nThe question is grammatically correct, but the answer is incorrect. The sentence requires an adjective to describe the artist, not an adverb. A better answer could be \"skillfully\" or \"masterfully\". \n"
+    },
+    {
+      "question": "The old, weathered house stood on the hill, its windows __________ staring out at the storm.",
+      "difficulty": "medium",
+      "reasoning": "This question requires the student to choose an adverb that best describes the way the windows are \"staring.\" The context suggests that the house is old and weathered, and the storm implies a sense of foreboding or even menace.  Therefore, the most appropriate adverb would be one that conveys a feeling of emptiness, sadness, or even fear.  For example, \"blankly\" or \"sadly\" would be effective choices.  Other adverbs, like \"brightly\" or \"cheerfully\" would be inappropriate because they contradict the context of the sentence.  The question is therefore medium difficulty because it requires the student to consider the context of the sentence and choose an adverb that fits the mood and tone.",
+      "options": [
+        "brightly",
+        "cheerfully",
+        "blankly",
+        "happily"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The children played ________ in the backyard, chasing butterflies and laughing.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the understanding of adverbs of place, specifically focusing on where the action of playing takes place. The sentence describes the children playing in the backyard, indicating a specific location. The correct answer is 'outside' because it indicates the location of the action, while the other options, 'happily' and 'loudly', describe how the children played, not where.  \n\n**Step-by-step explanation:** \n1. **Identify the action:** The action is 'played'.\n2. **Identify the location:** The location is 'in the backyard'.\n3. **Choose the adverb that specifies the location:** The adverb 'outside' specifies the location of the action.  \n4. **Eliminate incorrect options:**  The other options, 'happily' and 'loudly', are adverbs of manner describing how the children played, not where.\n5. **Correct answer:**  The correct answer is 'outside' because it accurately specifies the location of the action.",
+      "options": [
+        "happily",
+        "outside",
+        "loudly",
+        "nearby"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old man walked ______ towards the park, his cane tapping rhythmically on the pavement.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **slowly**. The sentence describes a leisurely pace, which aligns with the image of an old man using a cane.  The other options, 'quickly' and 'loudly', do not fit the context. 'Quickly' suggests a hurried pace, while 'loudly' describes the manner of walking with a focus on noise, which is not implied in the sentence.",
+      "options": [
+        "Slowly",
+        "Quickly",
+        "Loudly",
+        "Happily"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "My grandmother ______ visits us on Sundays. She loves spending time with the family.",
+      "difficulty": "medium",
+      "reasoning": "This question assesses the understanding of adverbs of frequency in a simple context. The sentence describes a recurring action \u2013 visiting on Sundays. The word bank provides options that fit the context, but the most appropriate choice is \"usually\" because it implies that the grandmother's visits are regular but not every single Sunday. The other options are less fitting: \"always\" suggests every Sunday without fail, \"sometimes\" implies sporadic visits, and \"never\" contradicts the sentence.",
+      "options": [
+        "always",
+        "sometimes",
+        "never",
+        "usually"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old, worn leather jacket had a  ______ texture, like the rough surface of a rock.",
+      "difficulty": "medium",
+      "reasoning": "The context describes a leather jacket that is old and worn, suggesting a rough and uneven surface.  The word \"rough\" accurately reflects this texture, while the other options do not fit the description. \n\n* **Smooth** suggests a flat, even surface. \n* **Shiny** implies a polished, reflective surface.\n* **Soft** indicates a delicate, yielding surface. \n* **Rough** describes a textured surface with uneven bumps or ridges.  \n\nTherefore, \"rough\" is the only option that accurately describes the texture of the leather jacket based on the context provided.",
+      "options": [
+        "Smooth",
+        "Shiny",
+        "Soft",
+        "Rough"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old dog, once a  [blank] hunter, now moved  [blank]  across the lawn.",
+      "difficulty": "medium",
+      "reasoning": "This question focuses on using adjectives and adverbs to improve writing style. It assesses a student's understanding of choosing the right words to convey a specific image. The sentence describes a dog that has aged and lost its former vigor,  and we need to fill in the blanks with words that reflect this change. \n\nFor the first blank, we need an adjective that describes a dog's hunting ability, like 'fierce,' 'vigorous,' or 'agile.'  The word 'vigorous' best fits the context, as it indicates the dog's former strength and energy.\n\nFor the second blank, we need an adverb that describes the dog's movement. Since the dog is old and less energetic, we need a word like 'slowly,' 'leisurely,' or 'cautiously.'  The word 'slowly' is the most fitting, as it accurately portrays the dog's age and reduced energy.\n\nTherefore, the correct answer would be to fill in the blanks with 'vigorous' and 'slowly' to create a sentence that depicts the dog's decline in strength and agility.\n\n**Step 1**:  Identify the blank spaces and determine if they require an adjective or an adverb.\n**Step 2**: Think about the meaning and context of the sentence.  What kind of dog are we talking about? How is it moving?  \n**Step 3**: Choose words that best convey the intended image and accurately reflect the dog's condition.\n**Step 4**:  Verify that the chosen words make sense grammatically and logically within the sentence.",
+      "options": [
+        "vigorous, swiftly",
+        "fierce, quickly",
+        "vigorous, slowly",
+        "agile, rapidly"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old, wooden chair creaked _______ as I sat down. \n\n a) loud \n b) loudly \n c) soft",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes the sound made by the chair, which is a characteristic of the action.  We need an adverb to modify the verb 'creaked'.  The correct answer is 'loudly' because it describes how the chair creaked.  'Loud' is an adjective and modifies a noun or pronoun.  'Soft' is an adjective that doesn't fit the context of the sentence.",
+      "options": [
+        "loud",
+        "loudly",
+        "soft",
+        "softly"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The artist _______ blended the colors on her palette, creating a stunning sunset effect. \n\nWord Bank: carefully, quickly, smoothly, roughly",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes the artist's technique of blending colors.  Out of the options provided, \"smoothly\" best describes the way colors are blended for a seamless, gradual effect.  The other adverbs don't fit the context: \n\n* **carefully:**  While blending colors can involve care, it doesn't imply a smooth, seamless transition. \n* **quickly:**  Speed doesn't necessarily determine the quality of the blending. \n* **roughly:**  This suggests a less refined, less controlled blending, which wouldn't create a stunning sunset effect.",
+      "options": [
+        "carefully",
+        "quickly",
+        "smoothly",
+        "roughly"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The old, rusty car was driven ____ down the dusty road.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes the manner in which the car was driven.  We need an adverb to modify the verb 'driven'. Of the options provided, only 'slowly' is an adverb, modifying how quickly the car moved. The other options are adjectives describing qualities of the car or the road, not the act of driving.",
+      "options": [
+        "slowly",
+        "dusty",
+        "old",
+        "rusty"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "My brother ______ forgets to lock the door when he leaves for work, even after I remind him.",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **(a) frequently** because it indicates that the brother forgets to lock the door often, but not always. The sentence emphasizes the repetition of this action, even with reminders. The other options are incorrect because they do not fit the context. \n\n* **(b) rarely** implies that the brother rarely forgets to lock the door, which contradicts the information in the sentence. \n\n* **(c) never** indicates that the brother never forgets to lock the door, which is completely opposite to what the sentence states. \n\n* **(d) usually** suggests a higher frequency than \"frequently,\" indicating that the brother typically forgets to lock the door, which doesn't align with the sentence's intention.",
+      "options": [
+        "frequently",
+        "rarely",
+        "never",
+        "usually"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old, dusty book was filled with  ____ stories about knights and dragons, each page containing illustrations of ____ creatures and grand castles.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the student's ability to choose appropriate descriptive adjectives to create a vivid image. The first blank requires an adjective that describes the type of stories found in the book. 'Fantastic' fits well, as it suggests imaginative and unbelievable tales, typical of those about knights and dragons.  The second blank needs an adjective describing the creatures and castles. 'Magnificent' effectively depicts the grandeur and impressive nature of such elements in these stories. The chosen adjectives paint a picture of a book full of exciting and impressive content.",
+      "options": [
+        "boring, small",
+        "funny, realistic",
+        "fantastic, magnificent",
+        "sad, ordinary"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The artist, known for her  ______  use of color, stood before the blank canvas, ready to begin her masterpiece.",
+      "options": [
+        "Cautious",
+        "Diligent",
+        "Expressive",
+        "Vibrant"
+      ],
+      "correct_option": "D",
+      "difficulty": "medium",
+      "reasoning": "The sentence focuses on the artist's approach to color.  We need an adjective that describes how she uses color in her artwork. 'Vibrant' is the best choice as it implies a strong, bold, and perhaps even dramatic use of color, which aligns with the idea of a 'masterpiece.' 'Cautious', 'diligent', and 'expressive' are less suitable as they do not convey the same impact.",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The children laughed ______ at the funny clown.",
+      "difficulty": "medium",
+      "reasoning": "The sentence requires an adverb to describe how the children laughed. The adverb needs to modify the verb 'laughed'.  The options are:\n\n a) loud - This is an adjective, and we need an adverb to modify the verb. \n b) loudly - This is the correct adverb and it correctly modifies the verb 'laughed'.\n c) louder - This is a comparative adjective, and we need a simple adverb to modify the verb.\n\nTherefore, the correct answer is 'loudly' because it is the only adverb that modifies the verb 'laughed' appropriately.",
+      "options": [
+        "loud",
+        "loudly",
+        "louder",
+        "louding"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The mischievous squirrel hid ______ the oak tree, watching the children play in the park.",
+      "difficulty": "medium",
+      "reasoning": "The question tests the understanding of adverbs of place, specifically focusing on the correct placement of the squirrel. The sentence describes the squirrel hiding in a specific location, and the blank requires an adverb of place that indicates where the squirrel is hiding. Of the options, \"behind\" is the only adverb of place that accurately describes the hiding spot. It suggests the squirrel is concealed from view, partially or fully, by the oak tree. The other options do not fit the context: \"above\" implies the squirrel is on top of the tree, \"inside\" suggests it is within the tree's trunk, and \"quickly\" is an adverb of manner, not place.",
+      "options": [
+        "above",
+        "inside",
+        "quickly",
+        "behind"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The hikers were _______ tired after their long trek through the mountains, but they were also _______ exhilarated by the stunning views.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the understanding of the difference between 'very' and 'extremely' and 'quite' and 'rather'. While all these words can be used to modify adjectives and adverbs, 'extremely' and 'rather' indicate a more intense degree of the emotion than 'very' and 'quite'.  The sentence describes a situation where the hikers are tired but also feel a strong sense of exhilaration.  Therefore, 'extremely' and 'rather' are the more appropriate choices for this sentence.",
+      "options": [
+        "very, quite",
+        "extremely, rather",
+        "very, rather",
+        "extremely, quite"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The ornate rug, with its intricate patterns and vibrant colors, was a true work of art, crafted from ____ wool, known for its durability and softness.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a rug made from a specific type of wool, implying the adjective needs to specify the origin of the wool. Of the options, only 'Tibetan' refers to a place of origin, making it the correct choice. 'Woven' describes the process of making the rug, not the material itself, while 'fine' and 'plush' are qualities of the wool, not its origin. Therefore, the adjective 'Tibetan' accurately completes the sentence, highlighting the specific origin of the wool used in the rug.",
+      "options": [
+        "Woven",
+        "Tibetan",
+        "Fine",
+        "Plush"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "While both cats were playful, the [BLANK] of the two, named Mittens, was particularly mischievous, often getting into trouble.",
+      "difficulty": "medium",
+      "reasoning": "The sentence compares the playfulness of two cats. Since we are comparing two items, we need the comparative form of the adjective. The comparative form of 'playful' is 'more playful'. Therefore, the correct answer is 'more playful'.",
+      "options": [
+        "playful",
+        "more playful",
+        "most playful",
+        "playfuller"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The old,  _____  clock on the mantle chimed the hour, its sound echoing through the quiet house.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a clock that is old and makes a sound. We need an adverb to modify the verb \"chimed\" and describe how the clock chimed. The adverb should describe the quality of the sound. Of the options provided, only \"melodiously\" fits this description.\n\n* **Option (a) \"melodious\"** is an adjective and cannot modify a verb. It would need to be used as part of a phrase, such as \"The clock chimed in a melodious manner.\"\n* **Option (b) \"melodiously\"** is an adverb, correctly modifying the verb \"chimed\" and describing the sound. \n* **Option (c) \"melodiousness\"** is a noun and doesn't fit the context of modifying the verb.\n* **Option (d) \"melodic\"** is an adjective and cannot be used to describe the action of chiming. ",
+      "options": [
+        "melodious",
+        "melodiously",
+        "melodiousness",
+        "melodic"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The ancient tapestry was woven with threads of a _____, almost _____, gold that shimmered in the dim light of the museum.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the ability to choose adjectives and adverbs that accurately describe the appearance of a tapestry. The sentence focuses on the color and texture of the gold threads. The blank for color requires a descriptive adjective that emphasizes the unique quality of the gold.  The options should include words that suggest a specific shade or quality of gold, such as 'muted', 'rich', 'deep', or 'pale'. The second blank requires an adverb that modifies the adjective, emphasizing the way the gold appears.  The options should include adverbs that suggest a subtle or delicate appearance, such as 'softly', 'subtly', 'delicately', or 'gently'.",
+      "options": [
+        "muted, softly",
+        "pale, brightly",
+        "deep, subtly",
+        "rich, gently"
+      ],
+      "correct_options": [
+        "b) muted",
+        "f) subtly"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The artist's brushstrokes were  _____, creating a sense of movement and energy in the painting.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the student's ability to choose an adverb that best describes the action of the brushstrokes and enhances the overall effect of the painting. The sentence describes the visual impact of the brushstrokes, requiring an adverb to modify the verb 'were'.  The correct option should convey a sense of movement and energy, fitting the description of the painting. \n\n**Step 1:** Identify the action: The action is 'were', which describes the state of the brushstrokes. This indicates the need for an adverb. \n\n**Step 2:** Analyze the intended effect: The sentence suggests a dynamic and energetic painting. The adverb should capture this feeling.\n\n**Step 3:** Evaluate options: The correct option needs to be an adverb that conveys movement and energy. The other options should be adjectives or adverbs that don't fit the context. \n\n**Step 4:**  Select the most appropriate option.  The adverb that best conveys the desired meaning and fits the context of the sentence is \"vigorously\".",
+      "options": [
+        "vigorously",
+        "vividly",
+        "carefully",
+        "abstractly"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The athlete trained **[blank]** intensely for the upcoming marathon, ensuring she was fully prepared to endure the grueling race.",
+      "difficulty": "medium",
+      "reasoning": "The sentence requires an adverb of degree that emphasizes the intensity of the athlete's training.  While 'slightly' implies a minimal effort, and 'moderately' suggests a balanced approach, the context calls for a stronger adverb. 'Extremely'  indicates a high level of intensity, fitting the context of a marathon preparation. 'Intensely' alone implies effort, but 'extremely intensely' further emphasizes the degree of her training, making it the most appropriate choice to convey the athlete's dedication and preparation for the demanding race.",
+      "options": [
+        "Slightly",
+        "Moderately",
+        "Intensely",
+        "Extremely intensely"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe answer \"Extremely intensely\" is grammatically incorrect.  It uses two intensifiers (\"extremely\" and \"intensely\") redundantly. \n\nHere's a corrected version:\n\n**<question>**\nThe athlete trained **[blank]** for the upcoming marathon, ensuring she was fully prepared to endure the grueling race.\n**</question>\n\n**<answer>**\nIntensely\n**</answer> \n"
+    },
+    {
+      "question": "The young artist painted the portrait with a  _______  hand, each stroke precise and deliberate. ",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a careful and controlled way of painting.  The blank requires an adverb to modify the verb 'painted'. Of the choices, 'steady' best conveys the artist's precise and deliberate movements.  The other choices do not fit the context: 'loudly' is irrelevant, 'quick' suggests haste, and 'brightly' refers to color, not technique. ",
+      "options": [
+        "Loudly",
+        "Steady",
+        "Quick",
+        "Brightly"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The old woman, a seasoned traveler,  _____  recalled the day she first set foot in Paris, a memory that still brought a smile to her face.",
+      "difficulty": "hard",
+      "reasoning": "The sentence requires an adverb of time that indicates a specific point in the past, setting the context for the memory. While 'often' and 'always' refer to recurring events, 'eventually' and 'once' are more suitable options. However, 'once' is the most appropriate adverb here because it specifies a specific point in the past - the day she first set foot in Paris.  The other options do not fit the context as they refer to a more general, recurring past, or the future, which is not relevant to the sentence.",
+      "options": [
+        "often",
+        "eventually",
+        "once",
+        "always"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The detective investigated the case **______**, following every lead with meticulous detail and unwavering determination.",
+      "difficulty": "hard",
+      "reasoning": "The sentence requires an adverb to modify the verb 'investigated'.  The word 'thorough' is an adjective, describing a noun or pronoun.  'Thoroughly' is an adverb, modifying the verb 'investigated' by describing how the detective carried out the investigation. The sentence implies a thorough investigation, making 'thoroughly' the correct choice. ",
+      "options": [
+        "thorough",
+        "thoroughly",
+        "intensely",
+        "intense"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The intricate tapestry, woven with threads of pure ____ silk, depicted a scene from ancient Egyptian mythology, showcasing vibrant colors and intricate patterns.",
+      "difficulty": "hard",
+      "reasoning": "The sentence describes a tapestry made from a specific type of silk. The adjective \"pure\" indicates a high quality and implies a specific origin. The adjective \"Egyptian\" is related to the scene depicted, not the material of the tapestry. Therefore, the correct adjective is **a) Chinese**, as Chinese silk is known for its quality and was a prized material in ancient times. The other options are incorrect: **b) Medieval** refers to a historical period and not a specific material, while **c) Fine** is a general descriptive adjective and does not specify the origin or material of the silk.",
+      "options": [
+        "Chinese",
+        "Medieval",
+        "Fine",
+        "Egyptian"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": false\n}\n``` \nThe sentence is grammatically correct, but the answer is incorrect. It's unlikely that a tapestry would be woven with \"Chinese silk\" for an ancient Egyptian scene.  Silk production in China wasn't prevalent until the 3rd century BC, while the tapestry likely depicts motifs from much earlier periods. \n\nA more appropriate answer would be \"Egyptian\" silk, as it's known that ancient Egyptians produced their own silk. \n"
+    },
+    {
+      "question": "The children giggled ______ as they watched the magician pull a rabbit out of his hat, their eyes wide with wonder.",
+      "difficulty": "hard",
+      "reasoning": "This question tests the student's ability to choose the most fitting adverb to describe the children's laughter. The context emphasizes the children's amusement and amazement, suggesting a joyful and excited type of laughter.  While several adverbs could be used, 'joyfully' best captures the overall tone of the sentence, as it emphasizes both joy and excitement. 'Excitedly' could also be a suitable option, but 'joyfully' more accurately reflects the children's feelings of wonder.  Therefore, 'joyfully' is the most fitting and nuanced adverb choice for this sentence.",
+      "options": [
+        "excitedly",
+        "nervously",
+        "quietly",
+        "joyfully"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The antique clock, with its intricate carvings and faded gold accents, had a  _______  aura that seemed to whisper tales of a bygone era.",
+      "difficulty": "hard",
+      "reasoning": "The sentence describes an antique clock with a special atmosphere. We need an adjective that captures the feeling of history and mystery.  'Ethereal' is the best fit because it suggests a sense of otherworldly or supernatural quality, which aligns with the idea of whispers from the past.  The other options are not as suitable: \n\n* **Nostalgic** implies a longing for the past, which is not the focus of the sentence. \n* **Antique** is redundant because it's already stated in the sentence. \n* **Grand** suggests size and importance, which doesn't match the subtle atmosphere implied. \n\nTherefore, 'ethereal' is the most accurate and evocative adjective to describe the antique clock's aura.",
+      "options": [
+        "Nostalgic",
+        "Antique",
+        "Grand",
+        "Ethereal"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The old, weathered lighthouse stood stoic against the relentless waves, its beam cutting through the ____ night like a guiding hand.  Fill in the blank with an adverb that best describes how the lighthouse's beam cuts through the darkness.",
+      "difficulty": "hard",
+      "reasoning": "This question is tricky because it requires the student to consider the overall tone of the sentence and choose an adverb that creates a specific atmosphere. The sentence evokes a sense of resilience and hope in the face of a powerful, unrelenting force (the waves). The adverb chosen should reflect this contrast and highlight the beam's unwavering strength.  \n\n* **'Relentless waves'**: This phrase establishes a sense of constant, powerful motion and danger.\n* **'Stoic lighthouse'**: This suggests the lighthouse is unwavering and strong, standing firm against the waves.\n* **'Guiding hand'**: This creates a sense of comfort and security, implying the lighthouse's beam offers hope.\n\nTherefore, an adverb that emphasizes the beam's determined and unwavering nature, like 'steadily' or 'unflinchingly', would be the most effective choice. This creates a vivid image of the beam pushing through the darkness, offering hope and guidance in a harsh environment.",
+      "options": [
+        "steadily",
+        "brightly",
+        "gently",
+        "dimly"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The [blank] wind howled through the [blank] trees, whipping up a frenzy of fallen leaves that danced in the swirling air.",
+      "difficulty": "hard",
+      "reasoning": "This question tests the student's ability to select adjectives and adverbs that create a vivid and evocative image.  The sentence describes a stormy scene, and the correct words need to capture the intensity and chaos of the weather. \n\n**Step 1: Analyzing the Sentence:**\nThe sentence focuses on the wind and the trees, suggesting a need for words that describe their movement and appearance.\n\n**Step 2: Examining the Options:**\nWe need to consider options that depict the wind's force and the trees' response to it.  The words 'violent' and 'ferocious' describe the wind's strength, while 'ancient' and 'gnarled' suggest the trees' weathered appearance. \n\n**Step 3: Choosing the Best Fit:**\n* **'Violent'** effectively captures the wind's intensity and is a stronger descriptor than 'ferocious.' \n* **'Gnarled'** portrays the trees as weathered and resilient, complementing the image of the wind's force. \n\n**Step 4: Verifying the Choice:**\nThe sentence now reads, \"The violent wind howled through the gnarled trees, whipping up a frenzy of fallen leaves that danced in the swirling air.\" This combination creates a powerful and descriptive picture of the storm, emphasizing the wind's raw force and the trees' enduring presence.",
+      "options": [
+        "ferocious, ancient",
+        "violent, gnarled",
+        "strong, aged",
+        "mighty, old"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The weary traveler, lost in the sprawling wilderness, stumbled ______, hoping to find shelter from the approaching storm.",
+      "difficulty": "medium",
+      "reasoning": "The question requires the student to identify the adverb of place that best describes the traveler's movement within the wilderness. The correct answer is 'onward,' as it implies a continued movement forward despite the challenges. The other options are not appropriate in this context: 'carefully' describes the manner of movement, 'happily' describes the emotional state, and 'secretly' suggests a hidden or concealed action. The sentence describes a physical movement with a clear direction, making 'onward' the most fitting adverb of place.\n\nTherefore, the answer is **(b) onward**, as it accurately conveys the traveler's continued movement in the wilderness.",
+      "options": [
+        "carefully",
+        "onward",
+        "happily",
+        "secretly"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    }
+  ],
+  "title": "English Language",
+  "topic": "Fill ups - Adjectives and adverbs",
+  "exam_id": 9,
+  "order": 4
 }

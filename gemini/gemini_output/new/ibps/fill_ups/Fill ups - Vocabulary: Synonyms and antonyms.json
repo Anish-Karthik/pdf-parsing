@@ -1,465 +1,503 @@
 {
-    "questions": [
-        {
-            "question": "The sprawling ______ of the Amazon rainforest is home to a vast array of biodiversity.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes a large, expansive area of land, which aligns with the definition of 'wilderness'.  'Wilderness' is a synonym for a wild and unpopulated area, specifically referring to a vast, undeveloped region. The other options are not suitable: 'city' is an urban area, 'village' is a small settlement, and 'town' is a smaller urban area than a city. 'Wilderness' accurately conveys the vastness and undeveloped nature of the Amazon rainforest.",
-            "options": [
-                "Wilderness",
-                "City",
-                "Village",
-                "Town"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "A refreshing **[blank]** drink is perfect on a hot summer day, unlike a heavy, sugary beverage.",
-            "difficulty": "easy",
-            "reasoning": "The sentence contrasts the preference for a light and refreshing drink versus a heavy, sugary one. Therefore, the blank requires the antonym of 'heavy' in the context of drinks. 'Light' is the most appropriate antonym, as it describes a drink that is not dense or substantial.  \n\nThe other options are not suitable: \n\n* **Strong:** While 'strong' can describe a drink, it doesn't directly oppose 'heavy' in terms of weight or density.  \n* **Sweet:** 'Sweet' is a flavor descriptor, not a descriptor of the drink's weight or density.  \n* **Bitter:** 'Bitter' is a flavor descriptor and doesn't contrast with 'heavy' in the given context. \n\nTherefore, the correct answer is 'light', as it accurately conveys the opposite of 'heavy' in the context of drinks.",
-            "options": [
-                "Strong",
-                "Sweet",
-                "Bitter",
-                "Light"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The abstract concept of **uncertainty** can be described as **ambiguity**, meaning [blank].",
-            "difficulty": "easy",
-            "reasoning": "The question asks for a synonym of 'uncertainty,' which means a state of doubt or lack of clarity. 'Ambiguity' is a synonym for uncertainty as both refer to a situation where there is more than one possible interpretation or meaning. Both words convey a sense of doubt and vagueness. Therefore, the correct answer is 'ambiguity' as it directly corresponds to the definition of uncertainty in the question.",
-            "options": [
-                "certainty",
-                "clarity",
-                "precision",
-                "ambiguity"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "**sentence**: The square was a sharp, angular shape, unlike the smooth, ______ circle.\n**word_bank**: \n  - round\n  - pointed\n  - curved\n  - square\n  - jagged\n**answer**: curved\n",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes a contrast between the sharp angles of a square and the smooth, rounded shape of a circle.  The word 'curved' is the antonym of 'angular' in this context, as it describes the opposite characteristic of a circle. The other words in the word bank are not antonyms of 'angular' or do not fit the context of the sentence.",
-            "options": [
-                "round",
-                "pointed",
-                "jagged",
-                "square"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "A person who is **_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _** in their approach to problem-solving might be considered inflexible and unwilling to adapt.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes someone who is not adaptable in their problem-solving. The opposite of adaptable is inflexible, meaning they are unwilling to change or adjust their approach. The word 'inflexible' perfectly captures the rigid and unyielding nature described in the sentence, making it the correct antonym.",
-            "options": [
-                "Adaptable",
-                "Flexible",
-                "Unwilling",
-                "Unchangeable"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The rise of e-commerce has led to a  __________ in online shopping, with more people buying goods and services over the internet.",
-            "difficulty": "easy",
-            "reasoning": "The sentence describes an increase in online shopping, indicating a positive change. 'Surge' is the only word that clearly represents a rapid increase, aligning with the context of the sentence. The other words in the word bank are antonyms or unrelated: 'Decline' represents a decrease, 'Advancement' represents progress, but not necessarily rapid, 'Regression' represents a decline or return to a previous state, 'Evolution' represents gradual development, and 'Stagnation' represents lack of growth or change.",
-            "options": [
-                "Decline",
-                "Surge",
-                "Advancement",
-                "Stagnation"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "Instead of being **outgoing** and engaging with colleagues, she preferred to work independently in her office.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes someone who avoids social interaction, the opposite of being outgoing.  The antonym for 'outgoing' in this context is 'introverted'.  'Introverted' describes a personality type that prefers solitude and quiet reflection over social interaction. The question focuses on the antonym of 'outgoing' as it relates to social interactions at work.  It is an easy question as the antonym is a direct opposite of the highlighted word.",
-            "options": [
-                "Outgoing",
-                "Friendly",
-                "Enthusiastic",
-                "Introverted"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The ____ of the sun after a rainstorm creates a dazzling display of colors in the sky.",
-            "difficulty": "medium",
-            "reasoning": "The question tests the student's knowledge of synonyms for the natural phenomenon of sunlight shining through raindrops. The correct synonym is 'refraction,' which refers to the bending of light as it passes through a different medium, such as water droplets.  The other options are not relevant to the phenomenon described in the sentence. \n\n* **Refraction:** The bending of light as it passes from one medium to another, such as from air to water. This is the correct synonym for the phenomenon described in the sentence. \n\n* **Reflection:** The bouncing back of light from a surface. While reflection plays a role in the creation of a rainbow, it's not the primary factor causing the dazzling display of colors. \n\n* **Absorption:** The process of a material taking in light energy. This is not relevant to the phenomenon described in the sentence. \n\n* **Diffusion:** The scattering of light in multiple directions. While some diffusion occurs, it's not the main reason for the dazzling display of colors after a rainstorm.",
-            "options": [
-                "Reflection",
-                "Absorption",
-                "Refraction",
-                "Diffusion"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The sprawling __________ of London is home to iconic landmarks like Buckingham Palace and the Houses of Parliament.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a large city with notable landmarks. The word 'metropolis' is a synonym for a large city, making it the correct answer. The other options are not synonyms for a large city and do not fit the context of the sentence. 'Forest' refers to a wooded area, 'field' refers to an open area of land, and 'street' refers to a road in a city. Therefore, 'metropolis' is the only suitable synonym for the blank space.",
-            "options": [
-                "Metropolis",
-                "Forest",
-                "Field",
-                "Street"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "A **soft** object is gentle to the touch, while a ______ object is hard and rough.",
-            "difficulty": "medium",
-            "reasoning": "This question tests the understanding of antonyms for everyday objects. The word 'soft' describes a texture that is gentle and yielding, while its opposite, 'hard', describes a texture that is firm and unyielding. The question specifically asks for the antonym of 'soft' in the context of an object's texture, making the answer 'hard'. The sentence structure is simple and direct, making it an easy question to understand and answer.",
-            "options": [
-                "Rough",
-                "Smooth",
-                "Flexible",
-                "Solid"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The old clock was extremely **slow**, and we needed to replace it with a new one that was much **______**.",
-            "difficulty": "medium",
-            "reasoning": "The question asks for the antonym of 'slow' in the context of time. The sentence implies we need a clock that keeps time accurately and quickly. Therefore, the antonym of 'slow' in this context is 'fast'. \n\nThe sentence describes a situation where a slow clock needs to be replaced with a fast one. This clearly indicates the opposite meaning of 'slow'.  The word 'fast' accurately captures the desired characteristic of the new clock - keeping time accurately and quickly.  \n\n'Fast' is the correct antonym of 'slow' in this context because it directly contradicts the original meaning of 'slow' and highlights the desired opposite characteristic.  The other options are not relevant to the context of timekeeping and do not accurately reflect the opposite meaning of 'slow'.",
-            "options": [
-                "precise",
-                "accurate",
-                "fast",
-                "efficient"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The artist's work was incredibly _______, full of intricate detail and symbolic meaning.",
-            "difficulty": "medium",
-            "word_bank": "complex, simple, vibrant, abstract, chaotic",
-            "reasoning": "The word 'intricate' in the sentence provides a clear clue that the missing word should be a synonym for 'complex,' meaning intricate or complicated.  Of the words in the word bank, 'complex' is the most direct synonym.  The word 'simple' is the opposite of 'complex.' The words 'vibrant,' 'abstract,' and 'chaotic' do not directly relate to the concept of intricate detail and symbolic meaning. Therefore, 'complex' is the most suitable synonym for the given sentence.",
-            "correct_option": "A",
-            "options": [
-                "complex",
-                "simple",
-                "vibrant",
-                "abstract"
-            ]
-        },
-        {
-            "question": "Instead of feeling ______ after failing the exam, John felt a sense of determination to study harder next time. \nWord Bank: Discouraged, Enthusiasm, Nervous, Upset",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a situation where John experiences a positive reaction despite failing an exam. The word 'determination' implies a positive, proactive feeling, which contrasts with the negative emotion the blank should represent. Of the provided options, 'Discouraged' is the antonym of determination.  \n\n'Enthusiasm' is a positive emotion, but it doesn't directly oppose 'determination.'  \n\n'Nervous' and 'Upset' are both negative emotions but don't convey the sense of resolve implied by 'determination.'",
-            "options": [
-                "Enthusiasm",
-                "Nervous",
-                "Upset",
-                "Discouraged"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "A circle is a round shape, while a square is a ____ shape.",
-            "difficulty": "medium",
-            "reasoning": "The question tests the understanding of antonyms for shapes.  The sentence describes a circle as round. The antonym for round in this context is 'square', as a square is a shape with four straight sides and four right angles.  The opposite of round is not curved or angular, which are the characteristics of a square.  Therefore, the correct antonym for 'round' in this context is 'square'.",
-            "options": [
-                "rectangular",
-                "square",
-                "oval",
-                "triangular"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "**Topic**: Healthy Eating\n**Instruction**: Fill in the blank with the **antonym** of the provided word.\n**Word**: Nutritious\n**Sentence**: While the salad was considered _____, the burger was full of unhealthy fats and calories.\n**Difficulty**: easy (6/10)\n",
-            "difficulty": "medium",
-            "reasoning": "The question belongs to the subtopic 'Antonyms for Food and Drink' about 'Fill ups - Vocabulary: Synonyms and antonyms'. The word 'Nutritious' refers to food that is healthy and beneficial for your body. The sentence suggests that the burger is unhealthy, which is the opposite of nutritious. Therefore, the antonym of 'Nutritious' that fits the context is 'Unhealthy'. \n\nThe antonym 'Unhealthy' is a common word and the sentence provides a clear clue, making the question easy to solve.",
-            "options": [
-                "Healthy",
-                "Unhealthy",
-                "Tasty",
-                "Delicious"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "**Sentence**: The child's face lit up with _______ as she received the gift she had always wanted.\n**Context**: She had been hinting at it for weeks, and her parents finally surprised her with it.\n**Word Bank**: delight, elation, joy, happiness\n",
-            "difficulty": "medium",
-            "reasoning": "The correct answer is **delight** because it accurately conveys the child's happy reaction to receiving the desired gift. While the other words are also synonyms for positive emotions, they don't perfectly capture the feeling of joy mixed with surprise and excitement that the sentence suggests.  'Elation' implies a stronger, more overwhelming feeling of happiness, while 'joy' and 'happiness' are more general terms that don't fully convey the specific context.  'Delight' specifically refers to a feeling of pleasure and happiness, often triggered by something unexpected or delightful, which fits the sentence's description of the child's reaction.",
-            "options": [
-                "Elation",
-                "Joy",
-                "Happiness",
-                "Delight"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The bustling marketplace, known for its vibrant colors and exotic aromas, was a popular ____ for tourists and locals alike.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a place that is bustling and popular, with a focus on its vibrancy and attractions.  Of the options, \"destination\" best fits the context. It refers to a place that people travel to for a specific purpose, in this case, to experience the marketplace. The other options do not fit the context: \"residence\" implies a place of dwelling, \"monument\" is a structure of historical importance, and \"facility\" is a general term for a place with a specific function.  Therefore, the correct synonym for \"marketplace\" in this sentence is \"destination.\"",
-            "options": [
-                "Residence",
-                "Destination",
-                "Monument",
-                "Facility"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The study's **______** results suggested that further research was needed to confirm the initial findings.",
-            "difficulty": "medium",
-            "reasoning": "The sentence is asking for a synonym for \"preliminary.\"  \"Preliminary\" means \"done, made, or occurring before something else that is more important or complete.\"  The correct answer is \"tentative\" because it means \"not definite or certain; provisional.\"  The other words in the word bank are not synonyms for \"preliminary\" in the context of the sentence.\n\n* **Tentative:** Not definite or certain; provisional.\n* **Conclusive:** Providing or serving as conclusive evidence or proof.\n* **Definite:** Clearly stated or expressed; leaving no room for doubt.\n* **Uncertain:** Not sure; doubtful.",
-            "options": [
-                "Tentative",
-                "Conclusive",
-                "Definite",
-                "Uncertain"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The company's recent [BLANK] in artificial intelligence led to the development of a groundbreaking new product.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a company's advancement in a specific technological field, artificial intelligence.  The blank requires a synonym for 'technology' that emphasizes progress and advancement.  Of the options, \"breakthrough\" is the most suitable as it suggests a significant advancement or discovery, aligning with the context of \"groundbreaking new product.\"  The other options are not as fitting because they don't convey the same level of advancement or innovation.  \"Advancement\" is too general, \"invention\" is too specific to a single creation, and \"development\" is a broader term that doesn't capture the sense of a significant leap forward.",
-            "options": [
-                "advancement",
-                "invention",
-                "development",
-                "breakthrough"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The initial plan for the renovation was a  ______  process, spanning several months, but due to unforeseen circumstances, it had to be drastically shortened.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a renovation plan that was originally intended to be extended over a significant period. The word needed to complete the sentence is the antonym of 'prolonged,' which means lasting for a long time. 'Abrupt' accurately conveys the opposite of a prolonged process, suggesting that the renovation had to be shortened significantly. The other options do not fit the context: 'permanent' implies a lasting state, 'temporary' suggests a limited duration, and 'immediate' means happening instantly.",
-            "options": [
-                "Permanent",
-                "Temporary",
-                "Abrupt",
-                "Immediate"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "Despite her outwardly **_ _ _ _ _ _ _ _ _ _ _ _** nature, Amelia possesses a deep well of empathy and often prioritizes the needs of others.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a contrast between Amelia's outward appearance and her inner nature.  The blank requires an antonym for 'empathic' which describes a person's ability to understand and share the feelings of others.  The word bank includes 'callous', 'uncaring', 'indifferent', 'apathetic', and 'selfish'. All these words describe a lack of empathy or concern for others.  The word 'callous' is the most fitting antonym for 'empathic' as it implies a lack of sensitivity and a disregard for the feelings of others, aligning with the sentence's depiction of Amelia's outward nature.",
-            "options": [
-                "Uncaring",
-                "Indifferent",
-                "Apathetic",
-                "Selfish"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "While some people are **[Word: *outgoing*]** and enjoy being the center of attention, others prefer to stay in the background.",
-            "difficulty": "medium",
-            "reasoning": "The question asks for the antonym of the word \"outgoing\", which is related to social interactions. The sentence describes two contrasting personality types: those who are outgoing and those who are not. The correct antonym for \"outgoing\" in this context is \"reserved\" as it describes someone who is less comfortable with social interactions and prefers to be quieter and less noticeable. The sentence implies that the opposite of being \"outgoing\" is being \"reserved\". The answer is \"reserved\" because it accurately reflects the opposite personality trait of someone who prefers to stay in the background.",
-            "options": [
-                "Introverted",
-                "Shy",
-                "Quiet",
-                "Aloof"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The bathroom was designed for maximum relaxation, so the **[blank]** was replaced with a luxurious soaking tub.",
-            "difficulty": "medium",
-            "reasoning": "The question asks for the antonym of 'soaking tub', which implies a large bath designed for relaxation.  Of the options provided, the only word that is the opposite of a soaking tub in terms of function is 'shower'.\n\n* Shower: A shower provides a quick, standing spray of water, contrasting with the relaxing, immersive experience of a soaking tub.\n* Sink: A sink is used for washing hands and faces, not bathing.\n* Toilet: A toilet is for waste disposal, not bathing.\n* Mirror:  A mirror reflects light and is not a bathing appliance.\n\nTherefore, 'shower' is the correct antonym for 'soaking tub' in this context.",
-            "options": [
-                "Sink",
-                "Toilet",
-                "Mirror",
-                "Shower"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The athlete's  _________ physique was a testament to years of rigorous training, with defined muscles and a lean build.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a person who is physically fit and muscular. The word '_________' needs to convey this meaning.  \n\nOut of the provided options, \"athletic\" is the most suitable synonym for 'physique' in this context. The other options, while describing physical attributes, do not accurately represent the athlete's built physique. \n\n* 'Robust' refers to strong and healthy, but it doesn't necessarily suggest a muscular build. \n* 'Sturdy' implies strength and durability, not necessarily a defined physique. \n* 'Slender' denotes a thin and graceful figure, which is opposite to the description of a defined physique. \n* 'Athletic' is the most accurate synonym as it specifically refers to a physique developed through physical exercise and training.  \n\nTherefore, the correct answer is \"athletic.\"",
-            "options": [
-                "robust",
-                "sturdy",
-                "athletic",
-                "slender"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The team's initial _________ approach to the project quickly evolved into a collaborative effort after they realized the importance of working together.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a shift from an individualistic to a collaborative approach. The antonym of 'individualistic' is 'collaborative'. Therefore, the correct answer is 'collaborative'.",
-            "options": [
-                "individualistic",
-                "competitive",
-                "uncooperative",
-                "unorganized"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "After a long and arduous day at work, John felt a sense of  __[blank]__  at the thought of returning home to his family.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a situation where John feels drained and exhausted after work. The blank space should be filled with the antonym of a negative emotion that reflects this feeling. The correct answer is 'rejuvenation' as it represents the opposite of exhaustion and signifies a feeling of renewed energy and vitality.  The other options are distractors, offering words with similar meanings but not the exact opposite of exhaustion. 'Discouragement' implies a lack of motivation, 'apprehension' suggests worry, and 'disillusionment' conveys a loss of hope. None of these words accurately represent the opposite of exhaustion, making 'rejuvenation' the only suitable antonym.",
-            "options": [
-                "Rejuvenation",
-                "Discouragement",
-                "Apprehension",
-                "Disillusionment"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "A **solid** object is the opposite of a __________ object, which can easily change shape.",
-            "difficulty": "medium",
-            "reasoning": "The question tests the understanding of antonyms for everyday objects, specifically focusing on the contrasting properties of 'solid' and 'liquid'.  A solid object maintains its shape, while a liquid readily conforms to the shape of its container.  Therefore, the antonym of 'solid' in this context is 'liquid'.",
-            "options": [
-                "Liquid",
-                "Gaseous",
-                "Flexible",
-                "Soft"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The speaker's voice trembled as they spoke, revealing their deep **anxiety** about the upcoming presentation. Choose the best synonym for the word in bold from the following options:",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a speaker feeling nervous and worried about an upcoming presentation.  The synonym we need must reflect this feeling of nervousness and unease.\n\n* **a) curiosity:**  Curiosity refers to a desire to know or learn something, not a feeling of nervousness.\n* **b) disappointment:** Disappointment is a feeling of sadness or dissatisfaction, not related to anxiety.\n* **c) apprehension:** Apprehension is a synonym for anxiety, meaning a feeling of fear or worry about something that might happen. This fits the context of the sentence.\n* **d) excitement:** Excitement is a feeling of anticipation or enthusiasm, opposite to anxiety.\n\nTherefore, **apprehension** is the most accurate synonym for anxiety in this context.",
-            "options": [
-                "curiosity",
-                "disappointment",
-                "apprehension",
-                "excitement"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "While the restaurant boasted a **___** menu with exotic dishes, the customer preferred the simple and familiar comfort food on offer.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a contrast between the restaurant's menu and the customer's preference. The word 'exotic' implies something unusual and foreign. Therefore, the antonym needed in the blank is a word that describes a menu that is ordinary and familiar. Of the given options, 'plain' is the best fit. It describes a menu that is straightforward and uncomplicated, the opposite of exotic. ",
-            "options": [
-                "Plain",
-                "Diverse",
-                "Refined",
-                "Extensive"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "A person who is **extroverted** enjoys social interactions and being around others. Conversely, someone who is **introverted** might prefer _____.",
-            "difficulty": "medium",
-            "reasoning": "The question asks for the antonym of 'extroverted'.  An extroverted person thrives on social interaction, while an introverted person prefers solitude. The antonym of 'extroverted' is 'introverted', which describes a person who finds energy in solitude and prefers smaller social groups. Therefore, the answer is 'solitude' or something synonymous with it, as it captures the essence of an introvert's preference for quiet and private time.",
-            "options": [
-                "solitude",
-                "large crowds",
-                "being the center of attention",
-                "public speaking"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "Despite the constant barrage of criticism, the artist remained remarkably ______, confident in his unique vision and refusing to be swayed by negativity.",
-            "difficulty": "hard",
-            "reasoning": "The sentence describes a person who persists in their artistic vision despite facing criticism. This suggests a positive emotional state, the opposite of being discouraged or disheartened.  Of the options provided, only 'unfazed' accurately portrays this resilience in the face of negativity. The other options are either synonyms for negative emotions (dejected, disheartened, dismayed) or describe a lack of interest (apathetic), which doesn't fit the context of the artist's determination.",
-            "options": [
-                "Dejected",
-                "Unfazed",
-                "Disheartened",
-                "Apathetic"
-            ],
-            "correct_option": "B"
-        },
-        {
-            "question": "The ballerina's  ______ frame allowed her to move with grace and fluidity, defying the weight of her elaborate costume.",
-            "difficulty": "hard",
-            "reasoning": "This question tests the student's ability to identify synonyms for physical characteristics, specifically focusing on words that describe a slender and delicate build.  The sentence highlights the ballerina's ability to move with grace despite the weight of her costume, suggesting a physique that is light and agile.  \n\n* **'Slender'** is the correct synonym because it accurately describes a physique that is thin and delicate, aligning with the ballerina's graceful movements. It also emphasizes the contrast between her light frame and the weight of her costume.\n\n* **'Sturdy'**, while suggesting strength, does not align with the ballerina's graceful movements. \n\n* **'Stout'** implies a more robust and heavy build, contradicting the description of the ballerina's physique. \n\n* **'Robust'** focuses on strength and resilience, not the delicate grace needed for ballet.",
-            "options": [
-                "Sturdy",
-                "Stout",
-                "Slender",
-                "Robust"
-            ],
-            "correct_option": "C"
-        },
-        {
-            "question": "The researcher's **_ _ _ _ _** analysis of the data revealed a complex and multifaceted relationship between the variables, leading to new insights into the phenomenon being studied.",
-            "difficulty": "hard",
-            "reasoning": "This question is tricky because it tests the student's ability to distinguish between nuanced synonyms, as all the options relate to examining data in some way. However, only 'exhaustive' accurately captures the researcher's thorough and comprehensive approach to analyzing the data. \n\n* **'Exhaustive'** means comprehensive and thorough, leaving no aspect unexplored. This perfectly aligns with the sentence's description of a detailed analysis revealing multifaceted relationships. \n* **'Comprehensive'** is also a synonym for 'thorough', but it doesn't quite capture the researcher's intense focus on the data as 'exhaustive' does. \n* **'Superficial'** is an antonym of 'exhaustive' and implies a shallow or incomplete examination, the opposite of what the sentence describes. \n* **'Arbitrary'** means based on random choice or personal preference, which doesn't fit the context of a rigorous analysis. \n\nTherefore, 'exhaustive' is the only correct synonym that accurately reflects the researcher's approach to data analysis.",
-            "options": [
-                "Exhaustive",
-                "Comprehensive",
-                "Superficial",
-                "Arbitrary"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The ancient __________ of Petra, carved into the rose-colored sandstone cliffs, is a testament to the ingenuity of the Nabataean civilization. It is a UNESCO World Heritage Site, known for its intricate architecture and unique design. ",
-            "difficulty": "hard",
-            "reasoning": "The correct answer is **a) city**. The sentence describes a historical location with significant architectural features, which aligns with the definition of a city. The word 'city' accurately captures the concept of a large, established urban center, while the other options are less appropriate. \n\n* **b) Town:** While a town can have historical significance, the description of Petra, with its intricate architecture and designation as a UNESCO World Heritage Site, suggests a more substantial and historically significant urban center than a typical town.\n\n* **c)  Village:** A village is generally smaller and less developed than a city or town, and the sentence emphasizes the grandeur and complexity of Petra, suggesting it is not a village. \n\n* **d)  Building:**  A building is a singular structure, while the sentence refers to an entire location or settlement. ",
-            "options": [
-                "City",
-                "Town",
-                "Village",
-                "Building"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The delicate, ____ petals of the rose contrasted with the bold, angular branches of the thorny bush.  [Word Bank:  Curved,  Linear]",
-            "difficulty": "hard",
-            "reasoning": "The correct antonym for 'angular' is 'curved,' as the sentence describes the contrasting shapes of a rose's petals and a thorny bush's branches.  The sentence's abstract language and subtle comparison between natural elements make the question more challenging.  The antonym 'curved' is less common than 'angular,' further increasing the difficulty.",
-            "options": [
-                "Curved",
-                "Linear",
-                "Angular",
-                "Bold"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The politician's speech was met with thunderous applause, a stark contrast to the ______ silence that greeted his opponent's remarks.",
-            "difficulty": "hard",
-            "reasoning": "The sentence describes a situation where the politician's speech received enthusiastic reception, while his opponent's speech was met with silence. This indicates a contrasting reaction.  The target word is 'applause', which refers to loud approval.  Therefore, the blank needs to be filled with an antonym of 'applause', representing silence or lack of approval. \n\nHere's why each option is correct or incorrect:\n\n**Correct Option:**\n* **'deafening'**:  While 'deafening' can refer to loud sounds, it also implies a lack of response or attention, making it a suitable antonym for 'applause'.  The silence was 'deafening' because it was so noticeable and complete.  \n\n**Incorrect Options:** \n* **'enthusiastic'**: This is a synonym of 'applause', not an antonym. \n* **'disruptive'**: While 'disruptive' implies a lack of order, it doesn't directly represent the opposite of 'applause'. \n* **'unanimous'**: This refers to agreement, which doesn't necessarily contradict 'applause'. \n* **'contentious'**: This implies disagreement or argument, not silence.  \n\nThe best answer is 'deafening' as it captures the contrasting nature of the reactions.  It highlights the silence, implying a lack of positive response.",
-            "options": [
-                "Deafening",
-                "Enthusiastic",
-                "Disruptive",
-                "Unanimous"
-            ],
-            "correct_option": "A"
-        },
-        {
-            "question": "The sommelier described the wine as having a **______** flavor, lacking any hint of sweetness or fruitiness.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a wine that is not sweet or fruity. This implies that the wine is dry, meaning it lacks sweetness.  The opposite of a dry wine is a sweet wine. Therefore, the blank should be filled with the antonym of 'dry' which is 'sweet'.  The word 'sweet' best represents the opposite of a dry wine's flavor profile, as it emphasizes the presence of sugar and fruitiness, which are absent in a dry wine. \n\nThe remaining options do not fit the context:\n\n* **Strong:**  While strong can describe a wine's flavor, it doesn't specifically relate to sweetness or dryness.  A strong wine can still be dry or sweet.\n* **Bitter:** Bitter is an opposing flavor to sweet but doesn't directly express the absence of sweetness in a wine.\n* **Fruity:** This is the opposite of a 'non-fruity' wine, but the sentence specifically mentions 'lacking any hint of fruitiness', making it the opposite of what is being described. \n\nTherefore, the correct antonym for 'dry' in the context of wine is 'sweet'.",
-            "options": [
-                "Strong",
-                "Bitter",
-                "Fruity",
-                "Sweet"
-            ],
-            "correct_option": "D"
-        },
-        {
-            "question": "The meticulous scientist meticulously ______ the experiment, ensuring every variable was accounted for, a stark contrast to the more ______ approach of his colleague.",
-            "difficulty": "medium",
-            "reasoning": "The sentence describes a contrast between two scientists' approaches to an experiment. The first scientist is meticulous, meaning they pay close attention to detail and are thorough. The second scientist is described as the opposite, meaning they are less careful and more likely to take shortcuts. This suggests the blank should be filled with a word meaning 'carefully planned and executed,' which is synonymous with 'meticulous.'  The second blank should be filled with an antonym of 'meticulous,' suggesting a lack of carefulness or thoroughness.  \n\nFrom the word bank, the following words fit the context: \n\n* **Executed:** This is the correct answer as it is a synonym for 'meticulous,' meaning to carry out something with care and precision.\n* **Haphazard:** This word means 'random and lacking in order' and is the antonym of 'meticulous.'  \n\nThe remaining words are not suitable for the context as they lack the necessary meaning to match the intended contrast between the two scientists.\n\nTherefore, the sentence should read: 'The meticulous scientist meticulously **executed** the experiment, ensuring every variable was accounted for, a stark contrast to the more **haphazard** approach of his colleague.'",
-            "options": [
-                "executed",
-                "ignored",
-                "constructed",
-                "scrutinized"
-            ],
-            "correct_option": "A"
-        }
-    ],
-    "title": "English Language",
-    "topic": "Fill ups - Vocabulary: Synonyms and antonyms",
-    "exam_id": 9,
-    "order": 8
+  "questions": [
+    {
+      "question": "The sprawling ______ of the Amazon rainforest is home to a vast array of biodiversity.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes a large, expansive area of land, which aligns with the definition of 'wilderness'.  'Wilderness' is a synonym for a wild and unpopulated area, specifically referring to a vast, undeveloped region. The other options are not suitable: 'city' is an urban area, 'village' is a small settlement, and 'town' is a smaller urban area than a city. 'Wilderness' accurately conveys the vastness and undeveloped nature of the Amazon rainforest.",
+      "options": [
+        "Wilderness",
+        "City",
+        "Village",
+        "Town"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "A refreshing **[blank]** drink is perfect on a hot summer day, unlike a heavy, sugary beverage.",
+      "difficulty": "easy",
+      "reasoning": "The sentence contrasts the preference for a light and refreshing drink versus a heavy, sugary one. Therefore, the blank requires the antonym of 'heavy' in the context of drinks. 'Light' is the most appropriate antonym, as it describes a drink that is not dense or substantial.  \n\nThe other options are not suitable: \n\n* **Strong:** While 'strong' can describe a drink, it doesn't directly oppose 'heavy' in terms of weight or density.  \n* **Sweet:** 'Sweet' is a flavor descriptor, not a descriptor of the drink's weight or density.  \n* **Bitter:** 'Bitter' is a flavor descriptor and doesn't contrast with 'heavy' in the given context. \n\nTherefore, the correct answer is 'light', as it accurately conveys the opposite of 'heavy' in the context of drinks.",
+      "options": [
+        "Strong",
+        "Sweet",
+        "Bitter",
+        "Light"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The abstract concept of **uncertainty** can be described as **ambiguity**, meaning [blank].",
+      "difficulty": "easy",
+      "reasoning": "The question asks for a synonym of 'uncertainty,' which means a state of doubt or lack of clarity. 'Ambiguity' is a synonym for uncertainty as both refer to a situation where there is more than one possible interpretation or meaning. Both words convey a sense of doubt and vagueness. Therefore, the correct answer is 'ambiguity' as it directly corresponds to the definition of uncertainty in the question.",
+      "options": [
+        "certainty",
+        "clarity",
+        "precision",
+        "ambiguity"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe question is grammatically incorrect.  The phrase \"meaning [blank]\" is redundant because \"ambiguity\" already defines \"uncertainty\". \n\nHere's a corrected version:\n\n**Question:** The abstract concept of **uncertainty** can be described as **ambiguity**, which means [blank]. \n\n**Answer:**  The answer \"ambiguity\" is correct, but it should be rephrased to make the sentence flow better.  Here are a few options:\n\n* **... which means a lack of clarity or definiteness.**\n* **... which means a situation with multiple possible interpretations.**\n* **... which means a state of being unclear or doubtful.** \n"
+    },
+    {
+      "question": "**sentence**: The square was a sharp, angular shape, unlike the smooth, ______ circle.\n**word_bank**: \n  - round\n  - pointed\n  - curved\n  - square\n  - jagged\n**answer**: curved\n",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes a contrast between the sharp angles of a square and the smooth, rounded shape of a circle.  The word 'curved' is the antonym of 'angular' in this context, as it describes the opposite characteristic of a circle. The other words in the word bank are not antonyms of 'angular' or do not fit the context of the sentence.",
+      "options": [
+        "round",
+        "pointed",
+        "jagged",
+        "square"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "A person who is **_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _** in their approach to problem-solving might be considered inflexible and unwilling to adapt.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes someone who is not adaptable in their problem-solving. The opposite of adaptable is inflexible, meaning they are unwilling to change or adjust their approach. The word 'inflexible' perfectly captures the rigid and unyielding nature described in the sentence, making it the correct antonym.",
+      "options": [
+        "Adaptable",
+        "Flexible",
+        "Unwilling",
+        "Unchangeable"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The rise of e-commerce has led to a  __________ in online shopping, with more people buying goods and services over the internet.",
+      "difficulty": "easy",
+      "reasoning": "The sentence describes an increase in online shopping, indicating a positive change. 'Surge' is the only word that clearly represents a rapid increase, aligning with the context of the sentence. The other words in the word bank are antonyms or unrelated: 'Decline' represents a decrease, 'Advancement' represents progress, but not necessarily rapid, 'Regression' represents a decline or return to a previous state, 'Evolution' represents gradual development, and 'Stagnation' represents lack of growth or change.",
+      "options": [
+        "Decline",
+        "Surge",
+        "Advancement",
+        "Stagnation"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Instead of being **outgoing** and engaging with colleagues, she preferred to work independently in her office.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes someone who avoids social interaction, the opposite of being outgoing.  The antonym for 'outgoing' in this context is 'introverted'.  'Introverted' describes a personality type that prefers solitude and quiet reflection over social interaction. The question focuses on the antonym of 'outgoing' as it relates to social interactions at work.  It is an easy question as the antonym is a direct opposite of the highlighted word.",
+      "options": [
+        "Outgoing",
+        "Friendly",
+        "Enthusiastic",
+        "Introverted"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The ____ of the sun after a rainstorm creates a dazzling display of colors in the sky.",
+      "difficulty": "medium",
+      "reasoning": "The question tests the student's knowledge of synonyms for the natural phenomenon of sunlight shining through raindrops. The correct synonym is 'refraction,' which refers to the bending of light as it passes through a different medium, such as water droplets.  The other options are not relevant to the phenomenon described in the sentence. \n\n* **Refraction:** The bending of light as it passes from one medium to another, such as from air to water. This is the correct synonym for the phenomenon described in the sentence. \n\n* **Reflection:** The bouncing back of light from a surface. While reflection plays a role in the creation of a rainbow, it's not the primary factor causing the dazzling display of colors. \n\n* **Absorption:** The process of a material taking in light energy. This is not relevant to the phenomenon described in the sentence. \n\n* **Diffusion:** The scattering of light in multiple directions. While some diffusion occurs, it's not the main reason for the dazzling display of colors after a rainstorm.",
+      "options": [
+        "Reflection",
+        "Absorption",
+        "Refraction",
+        "Diffusion"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The sprawling __________ of London is home to iconic landmarks like Buckingham Palace and the Houses of Parliament.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a large city with notable landmarks. The word 'metropolis' is a synonym for a large city, making it the correct answer. The other options are not synonyms for a large city and do not fit the context of the sentence. 'Forest' refers to a wooded area, 'field' refers to an open area of land, and 'street' refers to a road in a city. Therefore, 'metropolis' is the only suitable synonym for the blank space.",
+      "options": [
+        "Metropolis",
+        "Forest",
+        "Field",
+        "Street"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "A **soft** object is gentle to the touch, while a ______ object is hard and rough.",
+      "difficulty": "medium",
+      "reasoning": "This question tests the understanding of antonyms for everyday objects. The word 'soft' describes a texture that is gentle and yielding, while its opposite, 'hard', describes a texture that is firm and unyielding. The question specifically asks for the antonym of 'soft' in the context of an object's texture, making the answer 'hard'. The sentence structure is simple and direct, making it an easy question to understand and answer.",
+      "options": [
+        "Rough",
+        "Smooth",
+        "Flexible",
+        "Solid"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The old clock was extremely **slow**, and we needed to replace it with a new one that was much **______**.",
+      "difficulty": "medium",
+      "reasoning": "The question asks for the antonym of 'slow' in the context of time. The sentence implies we need a clock that keeps time accurately and quickly. Therefore, the antonym of 'slow' in this context is 'fast'. \n\nThe sentence describes a situation where a slow clock needs to be replaced with a fast one. This clearly indicates the opposite meaning of 'slow'.  The word 'fast' accurately captures the desired characteristic of the new clock - keeping time accurately and quickly.  \n\n'Fast' is the correct antonym of 'slow' in this context because it directly contradicts the original meaning of 'slow' and highlights the desired opposite characteristic.  The other options are not relevant to the context of timekeeping and do not accurately reflect the opposite meaning of 'slow'.",
+      "options": [
+        "precise",
+        "accurate",
+        "fast",
+        "efficient"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The artist's work was incredibly _______, full of intricate detail and symbolic meaning.",
+      "difficulty": "medium",
+      "word_bank": "complex, simple, vibrant, abstract, chaotic",
+      "reasoning": "The word 'intricate' in the sentence provides a clear clue that the missing word should be a synonym for 'complex,' meaning intricate or complicated.  Of the words in the word bank, 'complex' is the most direct synonym.  The word 'simple' is the opposite of 'complex.' The words 'vibrant,' 'abstract,' and 'chaotic' do not directly relate to the concept of intricate detail and symbolic meaning. Therefore, 'complex' is the most suitable synonym for the given sentence.",
+      "correct_option": "A",
+      "options": [
+        "complex",
+        "simple",
+        "vibrant",
+        "abstract"
+      ],
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "Instead of feeling ______ after failing the exam, John felt a sense of determination to study harder next time. \nWord Bank: Discouraged, Enthusiasm, Nervous, Upset",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a situation where John experiences a positive reaction despite failing an exam. The word 'determination' implies a positive, proactive feeling, which contrasts with the negative emotion the blank should represent. Of the provided options, 'Discouraged' is the antonym of determination.  \n\n'Enthusiasm' is a positive emotion, but it doesn't directly oppose 'determination.'  \n\n'Nervous' and 'Upset' are both negative emotions but don't convey the sense of resolve implied by 'determination.'",
+      "options": [
+        "Enthusiasm",
+        "Nervous",
+        "Upset",
+        "Discouraged"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "A circle is a round shape, while a square is a ____ shape.",
+      "difficulty": "medium",
+      "reasoning": "The question tests the understanding of antonyms for shapes.  The sentence describes a circle as round. The antonym for round in this context is 'square', as a square is a shape with four straight sides and four right angles.  The opposite of round is not curved or angular, which are the characteristics of a square.  Therefore, the correct antonym for 'round' in this context is 'square'.",
+      "options": [
+        "rectangular",
+        "square",
+        "oval",
+        "triangular"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "**Topic**: Healthy Eating\n**Instruction**: Fill in the blank with the **antonym** of the provided word.\n**Word**: Nutritious\n**Sentence**: While the salad was considered _____, the burger was full of unhealthy fats and calories.\n**Difficulty**: easy (6/10)\n",
+      "difficulty": "medium",
+      "reasoning": "The question belongs to the subtopic 'Antonyms for Food and Drink' about 'Fill ups - Vocabulary: Synonyms and antonyms'. The word 'Nutritious' refers to food that is healthy and beneficial for your body. The sentence suggests that the burger is unhealthy, which is the opposite of nutritious. Therefore, the antonym of 'Nutritious' that fits the context is 'Unhealthy'. \n\nThe antonym 'Unhealthy' is a common word and the sentence provides a clear clue, making the question easy to solve.",
+      "options": [
+        "Healthy",
+        "Unhealthy",
+        "Tasty",
+        "Delicious"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "**Sentence**: The child's face lit up with _______ as she received the gift she had always wanted.\n**Context**: She had been hinting at it for weeks, and her parents finally surprised her with it.\n**Word Bank**: delight, elation, joy, happiness\n",
+      "difficulty": "medium",
+      "reasoning": "The correct answer is **delight** because it accurately conveys the child's happy reaction to receiving the desired gift. While the other words are also synonyms for positive emotions, they don't perfectly capture the feeling of joy mixed with surprise and excitement that the sentence suggests.  'Elation' implies a stronger, more overwhelming feeling of happiness, while 'joy' and 'happiness' are more general terms that don't fully convey the specific context.  'Delight' specifically refers to a feeling of pleasure and happiness, often triggered by something unexpected or delightful, which fits the sentence's description of the child's reaction.",
+      "options": [
+        "Elation",
+        "Joy",
+        "Happiness",
+        "Delight"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The bustling marketplace, known for its vibrant colors and exotic aromas, was a popular ____ for tourists and locals alike.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a place that is bustling and popular, with a focus on its vibrancy and attractions.  Of the options, \"destination\" best fits the context. It refers to a place that people travel to for a specific purpose, in this case, to experience the marketplace. The other options do not fit the context: \"residence\" implies a place of dwelling, \"monument\" is a structure of historical importance, and \"facility\" is a general term for a place with a specific function.  Therefore, the correct synonym for \"marketplace\" in this sentence is \"destination.\"",
+      "options": [
+        "Residence",
+        "Destination",
+        "Monument",
+        "Facility"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The study's **______** results suggested that further research was needed to confirm the initial findings.",
+      "difficulty": "medium",
+      "reasoning": "The sentence is asking for a synonym for \"preliminary.\"  \"Preliminary\" means \"done, made, or occurring before something else that is more important or complete.\"  The correct answer is \"tentative\" because it means \"not definite or certain; provisional.\"  The other words in the word bank are not synonyms for \"preliminary\" in the context of the sentence.\n\n* **Tentative:** Not definite or certain; provisional.\n* **Conclusive:** Providing or serving as conclusive evidence or proof.\n* **Definite:** Clearly stated or expressed; leaving no room for doubt.\n* **Uncertain:** Not sure; doubtful.",
+      "options": [
+        "Tentative",
+        "Conclusive",
+        "Definite",
+        "Uncertain"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The company's recent [BLANK] in artificial intelligence led to the development of a groundbreaking new product.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a company's advancement in a specific technological field, artificial intelligence.  The blank requires a synonym for 'technology' that emphasizes progress and advancement.  Of the options, \"breakthrough\" is the most suitable as it suggests a significant advancement or discovery, aligning with the context of \"groundbreaking new product.\"  The other options are not as fitting because they don't convey the same level of advancement or innovation.  \"Advancement\" is too general, \"invention\" is too specific to a single creation, and \"development\" is a broader term that doesn't capture the sense of a significant leap forward.",
+      "options": [
+        "advancement",
+        "invention",
+        "development",
+        "breakthrough"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The initial plan for the renovation was a  ______  process, spanning several months, but due to unforeseen circumstances, it had to be drastically shortened.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a renovation plan that was originally intended to be extended over a significant period. The word needed to complete the sentence is the antonym of 'prolonged,' which means lasting for a long time. 'Abrupt' accurately conveys the opposite of a prolonged process, suggesting that the renovation had to be shortened significantly. The other options do not fit the context: 'permanent' implies a lasting state, 'temporary' suggests a limited duration, and 'immediate' means happening instantly.",
+      "options": [
+        "Permanent",
+        "Temporary",
+        "Abrupt",
+        "Immediate"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": false\n}\n```\n\nThe sentence is grammatically incorrect.  \"Abrupt\" doesn't fit logically in the context. The sentence needs a word that describes a lengthy process, not a sudden one. \n\nHere are some better options:\n\n* **The initial plan for the renovation was a **lengthy** process, spanning several months, but due to unforeseen circumstances, it had to be drastically shortened.**\n* **The initial plan for the renovation was a **gradual** process, spanning several months, but due to unforeseen circumstances, it had to be drastically shortened.**\n* **The initial plan for the renovation was a **multi-phased** process, spanning several months, but due to unforeseen circumstances, it had to be drastically shortened.** \n"
+    },
+    {
+      "question": "Despite her outwardly **_ _ _ _ _ _ _ _ _ _ _ _** nature, Amelia possesses a deep well of empathy and often prioritizes the needs of others.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a contrast between Amelia's outward appearance and her inner nature.  The blank requires an antonym for 'empathic' which describes a person's ability to understand and share the feelings of others.  The word bank includes 'callous', 'uncaring', 'indifferent', 'apathetic', and 'selfish'. All these words describe a lack of empathy or concern for others.  The word 'callous' is the most fitting antonym for 'empathic' as it implies a lack of sensitivity and a disregard for the feelings of others, aligning with the sentence's depiction of Amelia's outward nature.",
+      "options": [
+        "Uncaring",
+        "Indifferent",
+        "Apathetic",
+        "Selfish"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "While some people are **[Word: *outgoing*]** and enjoy being the center of attention, others prefer to stay in the background.",
+      "difficulty": "medium",
+      "reasoning": "The question asks for the antonym of the word \"outgoing\", which is related to social interactions. The sentence describes two contrasting personality types: those who are outgoing and those who are not. The correct antonym for \"outgoing\" in this context is \"reserved\" as it describes someone who is less comfortable with social interactions and prefers to be quieter and less noticeable. The sentence implies that the opposite of being \"outgoing\" is being \"reserved\". The answer is \"reserved\" because it accurately reflects the opposite personality trait of someone who prefers to stay in the background.",
+      "options": [
+        "Introverted",
+        "Shy",
+        "Quiet",
+        "Aloof"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The bathroom was designed for maximum relaxation, so the **[blank]** was replaced with a luxurious soaking tub.",
+      "difficulty": "medium",
+      "reasoning": "The question asks for the antonym of 'soaking tub', which implies a large bath designed for relaxation.  Of the options provided, the only word that is the opposite of a soaking tub in terms of function is 'shower'.\n\n* Shower: A shower provides a quick, standing spray of water, contrasting with the relaxing, immersive experience of a soaking tub.\n* Sink: A sink is used for washing hands and faces, not bathing.\n* Toilet: A toilet is for waste disposal, not bathing.\n* Mirror:  A mirror reflects light and is not a bathing appliance.\n\nTherefore, 'shower' is the correct antonym for 'soaking tub' in this context.",
+      "options": [
+        "Sink",
+        "Toilet",
+        "Mirror",
+        "Shower"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The athlete's  _________ physique was a testament to years of rigorous training, with defined muscles and a lean build.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a person who is physically fit and muscular. The word '_________' needs to convey this meaning.  \n\nOut of the provided options, \"athletic\" is the most suitable synonym for 'physique' in this context. The other options, while describing physical attributes, do not accurately represent the athlete's built physique. \n\n* 'Robust' refers to strong and healthy, but it doesn't necessarily suggest a muscular build. \n* 'Sturdy' implies strength and durability, not necessarily a defined physique. \n* 'Slender' denotes a thin and graceful figure, which is opposite to the description of a defined physique. \n* 'Athletic' is the most accurate synonym as it specifically refers to a physique developed through physical exercise and training.  \n\nTherefore, the correct answer is \"athletic.\"",
+      "options": [
+        "robust",
+        "sturdy",
+        "athletic",
+        "slender"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The team's initial _________ approach to the project quickly evolved into a collaborative effort after they realized the importance of working together.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a shift from an individualistic to a collaborative approach. The antonym of 'individualistic' is 'collaborative'. Therefore, the correct answer is 'collaborative'.",
+      "options": [
+        "individualistic",
+        "competitive",
+        "uncooperative",
+        "unorganized"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "After a long and arduous day at work, John felt a sense of  __[blank]__  at the thought of returning home to his family.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a situation where John feels drained and exhausted after work. The blank space should be filled with the antonym of a negative emotion that reflects this feeling. The correct answer is 'rejuvenation' as it represents the opposite of exhaustion and signifies a feeling of renewed energy and vitality.  The other options are distractors, offering words with similar meanings but not the exact opposite of exhaustion. 'Discouragement' implies a lack of motivation, 'apprehension' suggests worry, and 'disillusionment' conveys a loss of hope. None of these words accurately represent the opposite of exhaustion, making 'rejuvenation' the only suitable antonym.",
+      "options": [
+        "Rejuvenation",
+        "Discouragement",
+        "Apprehension",
+        "Disillusionment"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "A **solid** object is the opposite of a __________ object, which can easily change shape.",
+      "difficulty": "medium",
+      "reasoning": "The question tests the understanding of antonyms for everyday objects, specifically focusing on the contrasting properties of 'solid' and 'liquid'.  A solid object maintains its shape, while a liquid readily conforms to the shape of its container.  Therefore, the antonym of 'solid' in this context is 'liquid'.",
+      "options": [
+        "Liquid",
+        "Gaseous",
+        "Flexible",
+        "Soft"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The speaker's voice trembled as they spoke, revealing their deep **anxiety** about the upcoming presentation. Choose the best synonym for the word in bold from the following options:",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a speaker feeling nervous and worried about an upcoming presentation.  The synonym we need must reflect this feeling of nervousness and unease.\n\n* **a) curiosity:**  Curiosity refers to a desire to know or learn something, not a feeling of nervousness.\n* **b) disappointment:** Disappointment is a feeling of sadness or dissatisfaction, not related to anxiety.\n* **c) apprehension:** Apprehension is a synonym for anxiety, meaning a feeling of fear or worry about something that might happen. This fits the context of the sentence.\n* **d) excitement:** Excitement is a feeling of anticipation or enthusiasm, opposite to anxiety.\n\nTherefore, **apprehension** is the most accurate synonym for anxiety in this context.",
+      "options": [
+        "curiosity",
+        "disappointment",
+        "apprehension",
+        "excitement"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "While the restaurant boasted a **___** menu with exotic dishes, the customer preferred the simple and familiar comfort food on offer.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a contrast between the restaurant's menu and the customer's preference. The word 'exotic' implies something unusual and foreign. Therefore, the antonym needed in the blank is a word that describes a menu that is ordinary and familiar. Of the given options, 'plain' is the best fit. It describes a menu that is straightforward and uncomplicated, the opposite of exotic. ",
+      "options": [
+        "Plain",
+        "Diverse",
+        "Refined",
+        "Extensive"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "A person who is **extroverted** enjoys social interactions and being around others. Conversely, someone who is **introverted** might prefer _____.",
+      "difficulty": "medium",
+      "reasoning": "The question asks for the antonym of 'extroverted'.  An extroverted person thrives on social interaction, while an introverted person prefers solitude. The antonym of 'extroverted' is 'introverted', which describes a person who finds energy in solitude and prefers smaller social groups. Therefore, the answer is 'solitude' or something synonymous with it, as it captures the essence of an introvert's preference for quiet and private time.",
+      "options": [
+        "solitude",
+        "large crowds",
+        "being the center of attention",
+        "public speaking"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "Despite the constant barrage of criticism, the artist remained remarkably ______, confident in his unique vision and refusing to be swayed by negativity.",
+      "difficulty": "hard",
+      "reasoning": "The sentence describes a person who persists in their artistic vision despite facing criticism. This suggests a positive emotional state, the opposite of being discouraged or disheartened.  Of the options provided, only 'unfazed' accurately portrays this resilience in the face of negativity. The other options are either synonyms for negative emotions (dejected, disheartened, dismayed) or describe a lack of interest (apathetic), which doesn't fit the context of the artist's determination.",
+      "options": [
+        "Dejected",
+        "Unfazed",
+        "Disheartened",
+        "Apathetic"
+      ],
+      "correct_option": "B",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The ballerina's  ______ frame allowed her to move with grace and fluidity, defying the weight of her elaborate costume.",
+      "difficulty": "hard",
+      "reasoning": "This question tests the student's ability to identify synonyms for physical characteristics, specifically focusing on words that describe a slender and delicate build.  The sentence highlights the ballerina's ability to move with grace despite the weight of her costume, suggesting a physique that is light and agile.  \n\n* **'Slender'** is the correct synonym because it accurately describes a physique that is thin and delicate, aligning with the ballerina's graceful movements. It also emphasizes the contrast between her light frame and the weight of her costume.\n\n* **'Sturdy'**, while suggesting strength, does not align with the ballerina's graceful movements. \n\n* **'Stout'** implies a more robust and heavy build, contradicting the description of the ballerina's physique. \n\n* **'Robust'** focuses on strength and resilience, not the delicate grace needed for ballet.",
+      "options": [
+        "Sturdy",
+        "Stout",
+        "Slender",
+        "Robust"
+      ],
+      "correct_option": "C",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The researcher's **_ _ _ _ _** analysis of the data revealed a complex and multifaceted relationship between the variables, leading to new insights into the phenomenon being studied.",
+      "difficulty": "hard",
+      "reasoning": "This question is tricky because it tests the student's ability to distinguish between nuanced synonyms, as all the options relate to examining data in some way. However, only 'exhaustive' accurately captures the researcher's thorough and comprehensive approach to analyzing the data. \n\n* **'Exhaustive'** means comprehensive and thorough, leaving no aspect unexplored. This perfectly aligns with the sentence's description of a detailed analysis revealing multifaceted relationships. \n* **'Comprehensive'** is also a synonym for 'thorough', but it doesn't quite capture the researcher's intense focus on the data as 'exhaustive' does. \n* **'Superficial'** is an antonym of 'exhaustive' and implies a shallow or incomplete examination, the opposite of what the sentence describes. \n* **'Arbitrary'** means based on random choice or personal preference, which doesn't fit the context of a rigorous analysis. \n\nTherefore, 'exhaustive' is the only correct synonym that accurately reflects the researcher's approach to data analysis.",
+      "options": [
+        "Exhaustive",
+        "Comprehensive",
+        "Superficial",
+        "Arbitrary"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The ancient __________ of Petra, carved into the rose-colored sandstone cliffs, is a testament to the ingenuity of the Nabataean civilization. It is a UNESCO World Heritage Site, known for its intricate architecture and unique design. ",
+      "difficulty": "hard",
+      "reasoning": "The correct answer is **a) city**. The sentence describes a historical location with significant architectural features, which aligns with the definition of a city. The word 'city' accurately captures the concept of a large, established urban center, while the other options are less appropriate. \n\n* **b) Town:** While a town can have historical significance, the description of Petra, with its intricate architecture and designation as a UNESCO World Heritage Site, suggests a more substantial and historically significant urban center than a typical town.\n\n* **c)  Village:** A village is generally smaller and less developed than a city or town, and the sentence emphasizes the grandeur and complexity of Petra, suggesting it is not a village. \n\n* **d)  Building:**  A building is a singular structure, while the sentence refers to an entire location or settlement. ",
+      "options": [
+        "City",
+        "Town",
+        "Village",
+        "Building"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The delicate, ____ petals of the rose contrasted with the bold, angular branches of the thorny bush.  [Word Bank:  Curved,  Linear]",
+      "difficulty": "hard",
+      "reasoning": "The correct antonym for 'angular' is 'curved,' as the sentence describes the contrasting shapes of a rose's petals and a thorny bush's branches.  The sentence's abstract language and subtle comparison between natural elements make the question more challenging.  The antonym 'curved' is less common than 'angular,' further increasing the difficulty.",
+      "options": [
+        "Curved",
+        "Linear",
+        "Angular",
+        "Bold"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n```"
+    },
+    {
+      "question": "The politician's speech was met with thunderous applause, a stark contrast to the ______ silence that greeted his opponent's remarks.",
+      "difficulty": "hard",
+      "reasoning": "The sentence describes a situation where the politician's speech received enthusiastic reception, while his opponent's speech was met with silence. This indicates a contrasting reaction.  The target word is 'applause', which refers to loud approval.  Therefore, the blank needs to be filled with an antonym of 'applause', representing silence or lack of approval. \n\nHere's why each option is correct or incorrect:\n\n**Correct Option:**\n* **'deafening'**:  While 'deafening' can refer to loud sounds, it also implies a lack of response or attention, making it a suitable antonym for 'applause'.  The silence was 'deafening' because it was so noticeable and complete.  \n\n**Incorrect Options:** \n* **'enthusiastic'**: This is a synonym of 'applause', not an antonym. \n* **'disruptive'**: While 'disruptive' implies a lack of order, it doesn't directly represent the opposite of 'applause'. \n* **'unanimous'**: This refers to agreement, which doesn't necessarily contradict 'applause'. \n* **'contentious'**: This implies disagreement or argument, not silence.  \n\nThe best answer is 'deafening' as it captures the contrasting nature of the reactions.  It highlights the silence, implying a lack of positive response.",
+      "options": [
+        "Deafening",
+        "Enthusiastic",
+        "Disruptive",
+        "Unanimous"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    },
+    {
+      "question": "The sommelier described the wine as having a **______** flavor, lacking any hint of sweetness or fruitiness.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a wine that is not sweet or fruity. This implies that the wine is dry, meaning it lacks sweetness.  The opposite of a dry wine is a sweet wine. Therefore, the blank should be filled with the antonym of 'dry' which is 'sweet'.  The word 'sweet' best represents the opposite of a dry wine's flavor profile, as it emphasizes the presence of sugar and fruitiness, which are absent in a dry wine. \n\nThe remaining options do not fit the context:\n\n* **Strong:**  While strong can describe a wine's flavor, it doesn't specifically relate to sweetness or dryness.  A strong wine can still be dry or sweet.\n* **Bitter:** Bitter is an opposing flavor to sweet but doesn't directly express the absence of sweetness in a wine.\n* **Fruity:** This is the opposite of a 'non-fruity' wine, but the sentence specifically mentions 'lacking any hint of fruitiness', making it the opposite of what is being described. \n\nTherefore, the correct antonym for 'dry' in the context of wine is 'sweet'.",
+      "options": [
+        "Strong",
+        "Bitter",
+        "Fruity",
+        "Sweet"
+      ],
+      "correct_option": "D",
+      "valid": "```json\n{\n  \"valid\": false\n}\n``` \nThe answer is incorrect and the sentence does not make sense. \n\nThe sommelier is describing a dry wine, meaning it lacks sweetness. The blank should be filled with a word that describes a dry flavor profile. \n\nHere are some possible correct answers:\n\n* **Earthy**\n* **Mineral**\n* **Savory**\n* **Dry** \n"
+    },
+    {
+      "question": "The meticulous scientist meticulously ______ the experiment, ensuring every variable was accounted for, a stark contrast to the more ______ approach of his colleague.",
+      "difficulty": "medium",
+      "reasoning": "The sentence describes a contrast between two scientists' approaches to an experiment. The first scientist is meticulous, meaning they pay close attention to detail and are thorough. The second scientist is described as the opposite, meaning they are less careful and more likely to take shortcuts. This suggests the blank should be filled with a word meaning 'carefully planned and executed,' which is synonymous with 'meticulous.'  The second blank should be filled with an antonym of 'meticulous,' suggesting a lack of carefulness or thoroughness.  \n\nFrom the word bank, the following words fit the context: \n\n* **Executed:** This is the correct answer as it is a synonym for 'meticulous,' meaning to carry out something with care and precision.\n* **Haphazard:** This word means 'random and lacking in order' and is the antonym of 'meticulous.'  \n\nThe remaining words are not suitable for the context as they lack the necessary meaning to match the intended contrast between the two scientists.\n\nTherefore, the sentence should read: 'The meticulous scientist meticulously **executed** the experiment, ensuring every variable was accounted for, a stark contrast to the more **haphazard** approach of his colleague.'",
+      "options": [
+        "executed",
+        "ignored",
+        "constructed",
+        "scrutinized"
+      ],
+      "correct_option": "A",
+      "valid": "```json\n{\n  \"valid\": true\n}\n``` \n"
+    }
+  ],
+  "title": "English Language",
+  "topic": "Fill ups - Vocabulary: Synonyms and antonyms",
+  "exam_id": 9,
+  "order": 8
 }
