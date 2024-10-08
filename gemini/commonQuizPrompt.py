@@ -337,7 +337,7 @@ api_key = os.getenv("GEMINI_API_KEY")
 configure_client(api_key)
 
 model = generativeai.GenerativeModel(
-    model_name="gemini-1.5-flash"
+    model_name="gemini-1.0-pro"
 )
 
 
