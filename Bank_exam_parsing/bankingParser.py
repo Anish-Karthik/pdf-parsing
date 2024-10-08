@@ -35,15 +35,15 @@ def filter_questions(questions_json):
     return new_questions_json
 
 
-pdfs = os.listdir("/Users/pranav/GitHub/pdf-parsing/Bank exam parsing/Bank Exam Materials/")
+pdfs = os.listdir("/Users/pranav/GitHub/pdf-parsing/Bank_exam_parsing/Bank Exam Materials/sbi")
 
 print(pdfs)
 for pdf in pdfs:
 
     if not pdf.endswith(".pdf"):
         continue
-    pdf_path = "/Users/pranav/GitHub/pdf-parsing/Bank exam parsing/Bank Exam Materials/" + pdf
-    answer_pdf_path = "/Users/pranav/GitHub/pdf-parsing/Bank exam parsing/Bank Exam Materials/answers/" + pdf
+    pdf_path = "/Users/pranav/GitHub/pdf-parsing/Bank_exam_parsing/Bank Exam Materials/sbi/" + pdf
+    answer_pdf_path = "/Users/pranav/GitHub/pdf-parsing/Bank_exam_parsing/Bank Exam Materials/answers/sbi/" + pdf
     if os.path.exists(pdf_path) == False or os.path.exists(answer_pdf_path) == False:
         continue
 
@@ -79,5 +79,5 @@ for pdf in pdfs:
 
     questions_json = filter_questions(questions_json)
 
-    with open(f"parsing-output/{pdf[:-4]}.json", "w") as outfile:
+    with open(f"parsing-output/sbi/{pdf[:-4]}.json", "w") as outfile:
         json.dump(questions_json, outfile, indent=4)

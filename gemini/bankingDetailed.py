@@ -50,6 +50,18 @@ def is_standalone(json):
       Determine if we can answer the above question with the given data and tell if it is sufficient or not,
       Give true if it is sufficient and false if it is not sufficient
 
+    Ex:
+            "question": "Which of the following statements is Incorrect as per the information given in the passage?",
+        Response:
+        {{
+          "standalone": false
+        }}
+            "question": "500, 50, 10, 3, 1.2 ?",
+        Response:
+        {{
+          "standalone": true
+        }}
+
     **Output**
       give valid json
       {{
@@ -105,12 +117,11 @@ def get_new_json(json_file):
     with open(path+json_file, 'w') as f:
       json.dump(new_jsons, f, indent=4)
 
-path = "/Users/pranav/GitHub/pdf-parsing/Bank_exam_parsing/parsing-output/"
+path = "/Users/pranav/GitHub/pdf-parsing/Bank_exam_parsing/parsing-output/sbi/"
 json_files = sorted(os.listdir(path))
 
 threads = []
-# for json_file in json_files:
-for json_file in ["IBPS PO 2020 Questions 1.json","IBPS PO Prelims QP 2023.json"]:
+for json_file in json_files:
   # get_new_json(json_file)
   thread = threading.Thread(target=get_new_json, args=(json_file,))
   threads.append(thread)
