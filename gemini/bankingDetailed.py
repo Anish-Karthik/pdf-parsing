@@ -110,7 +110,7 @@ json_files = sorted(os.listdir(path))
 
 threads = []
 # for json_file in json_files:
-for json_file in ["IBPS PO 2020 Questions 1.json","BPS PO Prelims QP 2023.json"]:
+for json_file in ["IBPS PO 2020 Questions 1.json","IBPS PO Prelims QP 2023.json"]:
   # get_new_json(json_file)
   thread = threading.Thread(target=get_new_json, args=(json_file,))
   threads.append(thread)

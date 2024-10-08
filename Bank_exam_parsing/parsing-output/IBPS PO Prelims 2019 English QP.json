@@ -11,7 +11,7 @@
         "correct_option": "E",
         "reasoning": "{\n  \"detailed_answer\": {\n    \"Question\": \"The (A) academician did a (B) commendable job in (C) highlighting the (D)dangers of the so called lethal weapon (E)systems.\",\n    \"Options\": [\n      \"[(A) \u2013 (E)\", \"(B) \u2013 (C)\", \"(B) \u2013 (E)\", \"(A) - (D) and (B) and (E)\", \"No interchange required\"]\",\n    \"Correct Option\": \"E\",\n    \"Explanation\": \"The sentence is grammatically correct as it is. No interchange is required.\\nHere's a breakdown of the sentence:\\n- **(A) Academician:** This is the subject of the sentence, referring to a person who specializes in a particular field of study.\\n- **(B) Commendable job:** This is the object of the verb \\\"did.\\\" It describes the quality of the academician's work.\\n- **(C) Highlighting:** This is a gerund acting as the direct object of \\\"did.\\\" It means emphasizing or drawing attention to something.\\n- **(D) Dangers:** This is the object of \\\"highlighting.\\\" It refers to the potential risks or harms associated with lethal weapon systems.\\n- **(E) Systems:** This is the noun that completes the phrase \\\"lethal weapon systems.\\\"\\nThe sentence structure follows the pattern: Subject + Verb + Direct Object + Indirect Object (optional). In this case, the indirect object is \\\"dangers.\\\"\\nTherefore, the sentence is grammatically correct as it is, and no interchange is necessary.\"\n  }\n}",
         "question": "The (A) academician did a (B) commendable job in (C) highlighting the (D)dangers of the so called lethal weapon (E)systems.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -27,7 +27,7 @@
         "correct_option": "C",
         "reasoning": "**Step 1: Read and understand the question**\n\nThe question asks for the correct option that completes the sentence. The sentence states that \"Skills are a (A) asset (B) vital in today\u2019s globalised economy where (C) threat jobs are under (D) unskilled of (E) automation.\"\n\n**Step 2: Identify the correct option**\n\nThe correct option is (C), which completes the sentence as \"Skills are a valuable asset vital in today\u2019s globalised economy where threatened jobs are under the threat of automation.\"\n\n**Step 3: Explain why the correct option is correct**\n\nOption (C) is correct because it provides the necessary information to complete the sentence. The sentence is talking about the importance of skills in today's economy, where many jobs are threatened by automation. Option (C) correctly identifies this threat and completes the sentence logically.\n\nOptions (A), (B), (D), and (E) are incorrect because they do not complete the sentence logically. Option (A) is incorrect because it does not provide any information about the importance of skills. Option (B) is incorrect because it does not provide any information about the threat of automation. Option (D) is incorrect because it is grammatically incorrect. Option (E) is incorrect because it does not provide any information about the threat of automation.\n\n**Step 4: Conclusion**\n\nTherefore, the correct option is (C), which completes the sentence logically and provides the necessary information to make the sentence meaningful.",
         "question": "Skills are a (A) asset (B) vital in today\u2019s globalised economy where (C) threat jobs are under (D) unskilled of (E) automation.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -75,7 +75,7 @@
         "correct_option": "B",
         "reasoning": "```json\n{\n  \"detailed_answer\": {\n    \"correct_option\": \"(B) \u2013 (E)\",\n    \"reason\": {\n      \"sentence\": \"The sentence is about the revenue department asking customs officials to ensure strict implementation of import prohibition on e-cigarettes.\",\n      \"incorrect_options\": {\n        \"(A) \u2013 (E)\": \"revenue department is not related to import prohibition\",\n        \"(D) \u2013 (E)\": \"import on is incorrect. It should be import prohibition on\",\n        \"(A) - (D) and (B) and (E)\": \"it includes both correct and incorrect options\"\n      },\n      \"correct_option\": \"(B) \u2013 (E)\": \"customs officials is related to import prohibition on e-cigarettes\"\n    }\n  }\n}\n```",
         "question": "The revenue (A)department has asked customs (B)officials to ensure strict (C)implementation of (D) import on (E) prohibition of e- cigarettes.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -171,7 +171,7 @@
         "correct_option": "A",
         "reasoning": "The correct option is **Only (III)**.\n\nThe question asks the reasons for parents in China to prefer international schools for their children. The passage states that \"International schools open up more opportunities for the students to admissions to foreign universities and better jobs\". This means that international schools can help students get better education and job opportunities, which is a reason for parents to prefer international schools. The other two reasons are not mentioned in the passage, so they are not the reasons for parents to prefer international schools.\n\nTherefore, the correct option is **Only (III)**.",
         "question": "Which of the following is/ are the reasons for parents in China to prefer international schools for their children? (I) The syllabus in Chinese schools in complex and therefore should be avoided. (II) There is lack of local teachers within Chinese schools (III) International schools open up more opportunities for the students to admissions to foreign universities and better jobs.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     },
@@ -187,7 +187,7 @@
         "correct_option": "E",
         "reasoning": "```json\n{\n    \"detailed_answer\": {\n        \"Explanation\": \"The correct option is **(e) Only (A)**.\\n\\n**Reason:**\\n\\nHounding means pursuing someone aggressively and persistently. In this context, it fits well with the situation where the minister was being pursued by the authorities for not paying taxes. The other options do not accurately describe the minister's situation:\\n\\n* **Moved** does not imply any aggressive or persistent pursuit.\\n* **Pursued** is a general term that does not convey the intensity or relentless nature of the pursuit implied by \\\"hounding.\\\"\\n\\nTherefore, the most appropriate answer is (A) Hounded, as it captures the idea of the minister being aggressively and persistently pursued by the authorities.\"\n    }\n}\n```",
         "question": "The minister was __________________ by the authorities for not paying the taxes. (A) Hounded (B) Moved (C) Pursued",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -203,7 +203,7 @@
         "correct_option": "B",
         "reasoning": "{\n  \"detailed_answer\": {\n    \"correct_answer\": \"(b) Only (B)\",\n    \"sentence\": \"Police said the case ____________ huge amounts of public money which have been diverted fraudulently and that interrogation is needed to track the funds.\",\n    \"word_that_fits_the_blank\": \"involves\",\n    \"meaning_of_the_word\": \"to include or contain something\",\n    \"why_other_options_dont_fit\": {\n      \"hours\": \"doesn't make sense in the context of the sentence\",\n      \"conduct\": \"means to behave or act in a certain way, which doesn't fit the context of the sentence either\"\n    }\n  }\n}",
         "question": "Police said the case ____________ huge amounts of public money which have been diverted fraudulently and that interrogation is needed to track the funds. (A) hours (B) involves (C) conduct",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -219,7 +219,7 @@
         "correct_option": "E",
         "reasoning": "```json\n{\n  \"detailed_answer\": {\n    \"correct_option\": \"E\",\n    \"sentence\": \"The farmer finds it difficult to find buyers to sell their fresh organic produce.\",\n    \"tense\": \"present\",\n    \"subject\": \"the farmer\",\n    \"verb\": \"finds\",\n    \"object\": \"it\",\n    \"infinitive\": \"to find\",\n    \"object_of_infinitive\": \"buyers\",\n    \"prepositional_phrase\": \"to sell their fresh organic produce\",\n    \"pronoun\": \"their\",\n    \"error\": false\n  }\n}\n```",
         "question": "The farmer finds (A)/ it difficult to find (B)/ buyers to sell their (C)/ fresh organic produce (D).",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -235,7 +235,7 @@
         "correct_option": "A",
         "reasoning": "```json\n{\n  \"detailed_answer\": {\n    \"Assistant\": \"The correct option is **(A)**.\\n\\n**Explanation:**\\n\\nThe sentence is in the past tense, so we need to use the past subjunctive for the verb \\\"were\\\" in the main clause. The past subjunctive is \\\"were\\\", so \\\"it were\\\" is incorrect.\\n\\nThe correct sentence should be:\\n\\n> It was not Mr. Kejriwal's fault that the BJP Mayors are \\\"incompetent\\\" and \\\"corrupt\\\" that they were not invited, said Sanjay Singh.\\n\\n**Other options:**\\n\\n**(B)** is incorrect because \\\"incompetent\\\" and \\\"corrupt\\\" are adjectives, not nouns.\\n\\n**(C)** is incorrect because \\\"that they were not invited\\\" is a subordinate clause, so it cannot start a sentence.\\n\\n**(D)** is incorrect because \\\"said Sanjay Singh\\\" is a subordinate clause, so it cannot start a sentence.\"\n  }\n}\n```",
         "question": "It were not Mr. Kejriwal\u2019s fault (A) /that the BJP Mayors are \u201cincompetent\u201d (B)/ and \u201ccorrupt\u201d that they were not (C)/ invited, said Sanjay Singh (D).",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -267,7 +267,7 @@
         "correct_option": "E",
         "reasoning": "The correct option is (E) No error.\n\nThe sentence is in the active voice and the subject (government) is performing the action (issue). The verb (expected) is in the past tense because the action has not yet happened. The prepositional phrase (to the press) correctly indicates the recipient of the statement. Therefore, there is no error in the sentence.",
         "question": "The government is (A)/ expected to issue a statement (B) /regarding the investigation (C)/ to the press (D).",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -283,7 +283,7 @@
         "correct_option": "B",
         "reasoning": "{\n  \"detailed_answer\": \"The correct answer is **(B)**:\n\n* **(A)** is incorrect because \\\"has been producing\\\" is in the present perfect tense, which indicates an action that started in the past and continues to the present. However, the time period specified is \\\"since it was established in 1982,\\\" which is a past event. Therefore, the past tense \\\"produced\\\" should be used instead.\n* **(B)** is correct because \\\"ten million units\\\" is a specific quantity that can be counted. Therefore, the plural form of \\\"unit\\\" is correct.\n* **(C)** is incorrect because \\\"established\\\" is a past participle and should be used with the helping verb \\\"was\\\" to form the past tense.\n* **(D)** is incorrect because \\\"in 1982\\\" specifies a specific year, so the preposition \\\"on\\\" should not be used.\n\n**Correct sentence:**\nThe company, Maruti Suzuki, has produced ten million units since it was established in 1982.\"\n}",
         "question": "The company, Maruti Suzuki, (A) / has been producing ten million (B) / units since it was (C)/ established in 1982 (D).",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -299,7 +299,7 @@
         "correct_option": "B",
         "reasoning": "The correct answer is **option (B)**.\n\n**Explanation**:\n\nThe sentence is in the passive voice and the subject is \"you\". Therefore, the verb should be in the second form, which is \"would be allowed\". However, the verb in option (B) is in the first form, which is \"you would be allowed\". This is incorrect. The correct verb form is \"would be allowed\".\n\nThe correct sentence is: Under no circumstances would you be allowed to remain out of home after ten o'clock, said Radhika to her son.",
         "question": "Under no circumstances (A)/you would be allowed to remain (B)/ out of home after ten o\u2019clock , (C)/said Radhika to her son (D).",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -315,7 +315,7 @@
         "correct_option": "C",
         "reasoning": "```json\n{\n  \"detailed_answer\": {\n    \"Explanation\": \"The correct option is C: Despite the praise.\\n\\nThe phrase \\\"despite the praise\\\" means that something happened even though there was praise. In this case, Mr. Trump never formally nominated Mr. McAleenan to run the agency despite the praise he had for him.\\n\\nThe other options are incorrect because they do not make sense in the context of the sentence.\\n\\n* \\\"Despite of the praise\\\" is incorrect because \\\"of\\\" is not used correctly in this context.\\n* \\\"Whether the praise\\\" is incorrect because it does not make sense to use \\\"whether\\\" in this context.\\n* \\\"Although the praised\\\" is incorrect because \\\"praised\\\" is not a noun and does not make sense in this context.\\n* \\\"No replacement required\\\" is incorrect because it does not make sense in the context of the sentence.\",\n    \"Output\": \"C: Despite the praise\"\n  }\n}\n```",
         "question": "Although of the praise, Mr. Trump never formally nominated Mr. McAleenan to run the agency.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -331,7 +331,7 @@
         "correct_option": "D",
         "reasoning": "**The correct answer is D: in close collaboration.**\n\nThe phrase \"in close collaboration\" means that the two playwrights worked together very closely on the script. The other options are incorrect because they either use the wrong preposition (\"on\") or the wrong form of the verb (\"collaborate\").\n\nHere is a breakdown of the other options:\n\n* **A. in close collaborate** is incorrect because \"collaborate\" is a verb that takes a preposition, such as \"with\" or \"on.\"\n* **B. on close collaborating** is incorrect because the correct form of the verb is \"collaborate,\" not \"collaborating.\"\n* **C. on close collaborate** is incorrect because it uses the wrong preposition. The correct preposition is \"in.\"\n\nTherefore, the only correct option is D: in close collaboration.",
         "question": "The two playwrights worked in close collaborating with each other on the script.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -347,7 +347,7 @@
         "correct_option": "B",
         "reasoning": "**Step 1: Understand the Question**\n\nThe question is asking for the correct option that fills the blank in the sentence, which is about the agreement of the UK to provisions on e-commerce.\n\n**Step 2: Analyze the Options**\n\nThe options are:\n\n* A. agree to the\n* B. agrees to the\n* C. shall agrees to the\n* D. will agrees to the\n* E. No replacement required\n\n**Step 3: Check the Grammar**\n\nTo determine the correct option, we need to check the grammar of the sentence.\n\n**Subject:** UK\n**Verb:** will agree (future tense)\n\nThe subject is a singular noun (UK), so the verb should agree and be in the singular form.\n\n**Step 4: Eliminate Incorrect Options**\n\nOptions C and D are incorrect because they use the plural form of the verb \"agrees\" and \"will agrees\", which is not grammatically correct.\n\n**Step 5: Choose the Correct Option**\n\nOption B, \"agrees to the\", is grammatically correct because it uses the singular form of the verb that agrees with the singular subject UK.\n\n**Therefore, the correct option is B.**",
         "question": "If UK will agree to the provisions on e-commerce, it will mean it won\u2019t be allowed to impose data privatisation rules on industries looking to do business in UK.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -363,7 +363,7 @@
         "correct_option": "A",
         "reasoning": "```json\n{\n  \"detailed_answer\": {\n    \"correct_option\": \"A: border fell in.\",\n    \"explanation\": \"The sentence states that \\\"arrests at the U.S.-Mexico border fall in September for the fourth month in the row.\\\" The verb \\\"fall\\\" is used in the simple present tense here because the action is happening right now, in September. The subject of the sentence, \\\"arrests,\\\" is plural, so we use the third-person plural form of the verb, \\\"fall.\\\"\\n\\nThe other options are incorrect because they use incorrect verb tenses or forms:\\n\\n* \\\"Border falled in\\\" is incorrect because \\\"falled\\\" is not a correct verb form.\\n* \\\"Border falling in\\\" is incorrect because the present participle \\\"falling\\\" is used incorrectly as the past tense.\\n* \\\"Border has fell in\\\" is incorrect because \\\"has fell\\\" is not a correct verb form.\"\n  }\n}\n```",
         "question": "U.S. Customs and Border Protection said this week that arrests at the U.S.-Mexico border fall in September for the fourth month in the row.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },

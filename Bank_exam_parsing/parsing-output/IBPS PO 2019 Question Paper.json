@@ -91,7 +91,7 @@
         "correct_option": "D",
         "reasoning": "**Step 1: Understand the question**\n\nThe question asks us to identify the one that does not belong to the group. To do this, we need to examine the options and determine what characteristic they share.\n\n**Step 2: Examine the options**\n\nThe options are 'E', 'G', 'D', 'H', 'B'. Letters 'E', 'G', 'H', 'B' are all even numbers and D is the only odd number,\n\n**Step 3: Answer the question**\n\nOption 'D' does not belong to this group because it is the only odd number, and even numbers form a group. So, D is the correct answer.",
         "question": "Four of the following five are alike in a certain way and hence they form a group. Which one of the following does not belong to that group?",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     },
@@ -187,7 +187,7 @@
         "correct_option": "C",
         "reasoning": "**Explanation**\n\nThe correct option is C.\n\nThe given pairs of letters are related to each other in the following way:\n\n* Q and L are consecutive letters in the alphabet.\n* R and P are consecutive letters in the alphabet.\n* O and S are consecutive letters in the alphabet.\n* P and N are consecutive letters in the alphabet.\n\nHowever, M and O are not consecutive letters in the alphabet.\n\nTherefore, M-O is the only pair that does not belong to the group.",
         "question": "Four of the following five are alike in a certain way and hence they form a group. Which one of the following does not belong to that group?",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     },
@@ -235,7 +235,7 @@
         "correct_option": "E",
         "reasoning": "**Understanding the Question:**\n\nThe question asks us to identify the \"odd one\" in the given list of characters: ['Q', 'L', 'R', 'P', 'S'].\n\n**Correct Option:**\n\nThe correct option is \"E\".\n\n**Solution:**\n\nTo determine the odd one, we can analyze the pattern or characteristics of the characters in the list.\n\n* 'Q', 'L', 'R', 'P', 'S' are all consonants.\n* 'E' is a vowel.\n\nTherefore, 'E' is the odd one because it is the only vowel in the list, while the others are consonants.\n\n**Detailed Explanation:**\n\nConsonants are sounds that are produced by blocking the airflow through the mouth or nose, resulting in a closure or friction. Vowels, on the other hand, are sounds that are produced without any closure or friction and allow the airflow to pass freely through the vocal tract.\n\nIn the given list, 'Q', 'L', 'R', 'P', and 'S' are all consonants. They each represent sounds that involve some obstruction or modification in the vocal tract. For example, 'Q' is pronounced with a closure at the back of the throat, 'L' is pronounced with the tongue touching the alveolar ridge, and 'P' is pronounced with a closure of the lips.\n\n'E', on the other hand, is a vowel. It represents a sound that is produced without any obstruction or modification in the vocal tract. When we pronounce 'E', the airflow passes freely through the vocal cords and out of the mouth.\n\nSince 'E' is the only vowel in the list and the others are all consonants, it stands out as the odd one.",
         "question": "Which of the following is odd one?",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     },
@@ -443,7 +443,7 @@
         "correct_option": "B",
         "reasoning": "```json\n{\n  \"detailed_answer\": \"The correct option is **B** i.e. **Q-26**.\n\nWe can see that in all the given pairs, the first letter of the pair is the alphabet that comes 3 letters before the second alphabet in the pair.\n\nFor example, in the pair P-29, P comes 3 letters before 29 in the alphabet.\n\nSimilarly, in the pair Q-26, Q comes 3 letters before 26 in the alphabet.\n\nHowever, in the pair R-56, R does not come 3 letters before 56 in the alphabet. Therefore, the pair R-56 is incorrect.\n\nAlso, in the pair S-43, S does not come 3 letters before 43 in the alphabet. Therefore, the pair S-43 is also incorrect.\n\nHence, the only correct pair is **Q-26**.\"\n}\n```",
         "question": "Which of the following pair of combination is true?",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     },

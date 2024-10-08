@@ -203,7 +203,7 @@
         "correct_option": "B",
         "reasoning": "```json\n{\n  \"detailed_answer\": {\n    \"Explanation of Question\": \"The question is about replacing the office's technology with a new system and how it will allow the workers to get more done. The correct answer is **B) computer outdated**. \",\n    \"Step 1: Analyze the sentence structure\": \" The sentence is in the conditional form, \\\"If [condition], then [result].\\\" The condition is \\\"replacing the office's technology (A) computer outdated (B).\\\" The result is \\\"would allow (D) the workers to get a lot more done (C).\\\"\",\n    \"Step 2: Identify the correct word order\": \" The condition should come before the result. So, the correct word order is \\\"computer outdated (B) with new system (C) would allow (D) the workers to get a lot more done (A).\\\"\",\n    \"Step 3: Rearrange the options\": \" The options are given in the incorrect order. Here is the correct order: \\n* B) computer outdated \\n* C) with new system \\n* D) would allow \\n* A) the workers to get a lot more done\\nTherefore, the correct answer is B) computer outdated.**\"\n  }\n}\n```",
         "question": "Replacing the office\u2019s technology (A) computer outdated (B) with new system (C)would allow (D)the workers to get a lot more done.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -235,7 +235,7 @@
         "correct_option": "B",
         "reasoning": "{\n  \"detailed_answer\": {\n    \"Correct_Option\": \"(b) Only (C)-(D)\",\n    \"Step_1:_Identify_the_grammatical_errors\": {\n      \"(A) \\\"required me to assemble\\\" is grammatically correct.\": true,\n      \"(B) \\\"a clippings\\\" should be \\\"a collection of clippings\\\".\": true,\n      \"(C) \\\"of magazine collection\\\" is grammatically correct.\": true,\n      \"(D) \\\"a clippings\\\" should be \\\"a collection of clippings\\\".\": true\n    },\n    \"Step_2:_Eliminate_incorrect_options\": {\n      \"(a) (A)-(B) is incorrect because \\\"a clippings\\\" is grammatically incorrect.\": true,\n      \"(c) (A)-(C) and (B)-(D) is incorrect because \\\"a clippings\\\" is grammatically incorrect in both cases.\": true,\n      \"(d) (A)-(D) and (B)-(C) is incorrect because \\\"a clippings\\\" is grammatically incorrect in both cases.\": true\n    },\n    \"Therefore,_the_only_correct_option_is_(b)_Only_(C)-(D).\": true,\n    \"Explanation:\": \"The sentence requires a noun phrase after \\\"assemble\\\". \\\"A clippings\\\" is not a noun phrase, but \\\"a collection of clippings\\\" is. Therefore, the correct option is (b) Only (C)-(D), which replaces \\\"a clippings\\\" with \\\"a collection of clippings\\\".\",\n    \"Corrected_sentence:\": \"My art project required me to assemble a collection of magazine clippings.\"\n  }\n}",
         "question": "My art project (A)required me to assemble (B)a clippings (C)of magazine collection (D).",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -251,7 +251,7 @@
         "correct_option": "B",
         "reasoning": "**Detailed step-by-step solution:**\n\n1. **Identify the grammatical errors in the sentence:**\n\n   - \"a better (A) company\" should be \"a better (A) companion\"\n   - \"loyal (B)\" should be \"loyal (B) to\"\n   - \"be stand (C) to you\" should be \"stand (C) by you\"\n   - \"treat (D) him right\" should be \"treat (D) it right\"\n\n2. **Reorder the corrected words into a grammatically correct sentence:**\n\n   You will never be able to find a better companion than a dog, as a dog will always be loyal to you and stand by you if you treat it right.\n\n3. **The correct answer is:**\n\n   Only (B)- (C)\n\n**Explanation:**\n\nThe correct answer option eliminates the grammatical errors in options (A) and (D) but retains the grammatical errors in option (C).\n\n**Therefore, the only correct replacement is for options (B) and (C).**",
         "question": "You will never be able to find a better (A) company than a dog, as a dog will always loyal (B) by you and be stand (C)to you if you treat (D)him right.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -267,7 +267,7 @@
         "correct_option": "C",
         "reasoning": "{\n  \"detailed_answer\": \"The correct option is **C**.\n\nThe sentence is: \\\"The playground was jumped (A)with equipment (B)as fifty students filled (C)and climbed all over the mayhem (D)\\\"\n\nWe can see that option (A) is incorrect because \\\"jumped\\\" is a verb and needs a subject. The subject of the sentence is \\\"fifty students\\\", so option (C) is correct.\n\nOption (B) is also incorrect because \\\"with equipment\\\" is a prepositional phrase and needs a noun to modify. The noun in the sentence is \\\"playground\\\", so option (A) is correct.\n\nOption (D) is incorrect because \\\"mayhem\\\" is a noun and needs a verb to modify. The verb in the sentence is \\\"climbed\\\", so option (C) is correct.\n\nTherefore, the correct option is **C**.\"\n}",
         "question": "The playground was jumped (A)with equipment (B)as fifty students filled (C)and climbed all over the mayhem (D)",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -283,7 +283,7 @@
         "correct_option": "B",
         "reasoning": "The correct option is **B** which is valiant.\n\nValiant means showing courage or determination. The losing team made a valiant effort to catch up to their opponent, but it was futile, meaning it was not successful.",
         "question": "The losing team made a ______________ but futile effort to catch up to their opponent.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -299,7 +299,7 @@
         "correct_option": "D",
         "reasoning": "```json\n{\n  \"detailed_answer\": {\n    \"correct_option\": \"D: fragile\",\n    \"explanation\": \"The grandmother has extremely _________ health. This means that her health is very weak and vulnerable. The word \\\"fragile\\\" means easily broken or damaged, which is a good description for someone who is in poor health. The other options are not as good because they do not describe someone who is in poor health.\",\n    \"incorrect_options\": [\n      {\n        \"option\": \"cripple\",\n        \"reason\": \"means someone who is unable to walk or move properly. This is not necessarily the case for someone who is in poor health.\"\n      },\n      {\n        \"option\": \"reliant\",\n        \"reason\": \"means someone who needs help from others. This is not necessarily the case for someone who is in poor health.\"\n      },\n      {\n        \"option\": \"splendid\",\n        \"reason\": \"means very good or excellent. This is not a good description for someone who is in poor health.\"\n      },\n      {\n        \"option\": \"elevated\",\n        \"reason\": \"means raised or lifted up. This is not a good description for someone who is in poor health.\"\n      }\n    ]\n  }\n}\n```",
         "question": "My grandmother has extremely _________ health so she sees her doctor once a week.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -331,7 +331,7 @@
         "correct_option": "D",
         "reasoning": "```json\n{\n  \"detailed_answer\": \"The correct option is **D**.\n\nThe sentence is \\\"She felt an overwhelming desire to return back home.\\\" The subject is \\\"she\\\" and the verb is \\\"felt\\\". The object of the verb is \\\"an overwhelming desire to return back home\\\". The word \\\"desire\\\" is a noun, and the phrase \\\"to return back home\\\" is a prepositional phrase. The preposition \\\"to\\\" shows that the phrase is telling us what the desire is for. The phrase \\\"return back\\\" is redundant because \\\"return\\\" already means \\\"to go back\\\". So, the correct way to write the sentence is \\\"She felt an overwhelming desire to return home.\\\"\n\nHere is a breakdown of the sentence:\n\n* **Subject:** She\n* **Verb:** felt\n* **Object:** an overwhelming desire to return back home\n* **Prepositional phrase:** to return back home\n\nThe prepositional phrase \\\"to return back home\\\" is telling us what the desire is for. The phrase \\\"return back\\\" is redundant because \\\"return\\\" already means \\\"to go back\\\". So, the correct way to write the sentence is \\\"She felt an overwhelming desire to return home.\\\"\"\n}\n```",
         "question": "She felt an overwhelming desire to return back home.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -347,7 +347,7 @@
         "correct_option": "E",
         "reasoning": "**Option E is the correct option:**\n\nThe sentence \"No sooner had I closed my eyes than I fell asleep\" is an example of an inversion sentence. Inversion sentences invert the normal word order, placing the verb before the subject.\n\n**Structure of Inversion Sentences:**\n\n\"No sooner/ Hardly/ Scarcely\" + had + Subject + Past Participle + than + Subject + Main Verb\n\n**Analysis of the sentence:**\n\n* \"No sooner\" is an adverbial phrase that means \"as soon as.\"\n* \"Had closed\" is the past participle of the verb \"to close.\"\n* \"I\" is the subject.\n* \"Fell asleep\" is the main verb.\n\n**Reason for Correct Option E:**\n\nOption E, \"No replacement required,\" is correct because it does not replace any words in the sentence. The sentence remains the same, with the inversion structure intact.\n\n**Incorrect Options:**\n\n* **Option A:** \"No soon had I\" is incorrect because \"soon\" should not be separated from \"no.\"\n* **Option B:** \"No soon I had\" is incorrect because the subject \"I\" should come after \"had closed.\"\n* **Option C:** \"I had no sooner\" is incorrect because \"no sooner\" should come before \"had closed.\"\n* **Option D:** \"No sooner I have\" is incorrect because the sentence is in the past tense.\n\nTherefore, the correct option is E, which leaves the inversion sentence unchanged.",
         "question": "No sooner had I closed my eyes than I fell asleep.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "English Language"
     },
@@ -523,7 +523,7 @@
         "correct_option": "B",
         "reasoning": "The given series follows the pattern of multiplying each number by 2 and then subtracting 2.\n\n* 2 \u00d7 2 - 2 = 6\n* 6 \u00d7 2 - 2 = 12\n* 12 \u00d7 2 - 2 = 20\n* 20 \u00d7 2 - 2 = 30\n* 30 \u00d7 2 - 2 = **42**\n\nTherefore, the missing number is 42.",
         "question": "2, 6, 12, 20, 30, ?",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Quantitative Aptitude"
     },
@@ -539,7 +539,7 @@
         "correct_option": "B",
         "reasoning": "In this series, each number is the sum of the previous two numbers, with the first two terms being the first and second prime numbers.\n\n24 + 49 = 73\n73 + 49 = 122\n122 + 97 = 219\n219 + 169 = 388\n388 + 289 = 677\n\nTherefore, the missing number is 97.\n\nThe correct option is B: '**98**'.",
         "question": "24, 49, ?, 219, 388, 677",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Quantitative Aptitude"
     },
@@ -587,7 +587,7 @@
         "correct_option": "B",
         "reasoning": "**Step 1: Understand the Question**\n\nThe question presents a series of numbers and asks for the missing number. The given options are:\n\n```\n['1890', '1860', '1990', '1830', '1960']\n```\n\n**Step 2: Analyze the Series**\n\nTo find the missing number, let's analyze the pattern in the series:\n\n```\n2, 6, 30, 210, ?, 20790\n```\n\nMultiplying each term by 3 gives the next term:\n\n```\n2 x 3 = 6\n6 x 5 = 30\n30 x 7 = 210\n```\n\n**Step 3: Determine the Missing Number**\n\nFollowing the pattern, the missing number should be 210 x 9 = 1890.\n\n**Step 4: Check the Options**\n\nWe can now check the given options to see which one matches the calculated missing number:\n\n```\n['1890', '1860', '1990', '1830', '1960']\n```\n\nOption B, '1890', matches our calculation.\n\n**Therefore, the correct option is B: 1890.**",
         "question": "2, 6, 30, 210, ?, 20790",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Quantitative Aptitude"
     },
@@ -859,7 +859,7 @@
         "correct_option": "E",
         "reasoning": "**Step 1: Understand the question**\n\nThe question asks us to find the total number of valid votes in block B in 2012 after recasting, if the invalid votes were allowed for a recast and only 25% of them were valid.\n\n**Step 2: Convert the percentage to a decimal**\n\n25% = 0.25\n\n**Step 3: Recalculate the number of valid votes from invalid votes**\n\nThe number of invalid votes in block B in 2012 is not given in the question, so we cannot directly calculate the number of valid votes from invalid votes. However, we know that 25% of the invalid votes will be valid after recasting.\n\n**Step 4: Recalculate the total number of valid votes**\n\nTo find the total number of valid votes after recasting, we need to add the number of valid votes from the original count to the number of valid votes from the invalid votes.\n\n**Given options:**\n\n['1405', '1260', '1075', '1190', '1050']\n\n**Solve:**\n\nLet's say the number of invalid votes in block B in 2012 was x.\n\nNumber of valid votes from invalid votes = x * 0.25\n\nTotal number of valid votes = Original valid votes + Valid votes from invalid votes\n\nWe don't have the original number of valid votes, but we can use the given options to find the total number of valid votes after recasting.\n\n**Option A: 1405**\n\n1405 + x * 0.25 = ?\n\n**Option B: 1260**\n\n1260 + x * 0.25 = ?\n\n**Option C: 1075**\n\n1075 + x * 0.25 = ?\n\n**Option D: 1190**\n\n1190 + x * 0.25 = ?\n\n**Option E: 1050**\n\n1050 + x * 0.25 = ?\n\nWe can see that Option E gives us the lowest possible total number of valid votes after recasting, which is consistent with the fact that only 25% of the invalid votes will be valid.\n\n**Therefore, the correct option is E.**",
         "question": "If the invalid votes in block B in 2012 were again allowed for a recast and only 25% were valid from them, then find the total number of valid votes in block B in 2012 after recasting.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Quantitative Aptitude"
     },
@@ -987,7 +987,7 @@
         "correct_option": "A",
         "reasoning": "Given statements:\n1. Some Hero are Film.\n2. Some Film are Star.\n3. All Star are Actor.\n\nConclusions:\nI. Some Actor are Film.\nII. Some Hero are not Star.\n\nTo determine which conclusions follow logically from the given statements, we can create a Venn diagram representing the relationships described in the statements:\n\n[Image of a Venn diagram with three circles: Hero, Film, and Star]\n\nHero\n/   \\\n/     \\\n/       \\\n/         \\\n\\_________/\n\\       /\n\\     /\n\\   /\n\\ /\nFilm\n\nStar\n/   \\\n/     \\\n/       \\\n/         \\\n\\_________/\n\\       /\n\\     /\n\\   /\n\\ /\nActor\n\nFrom the statements, we know:\n\n* Some Hero are in the Film circle (statement 1).\n* Some Film are in the Star circle (statement 2).\n* All Star are in the Actor circle (statement 3).\n\n**Conclusion I:** Some Actor are Film.\n\nFrom the diagram, we can see that there is an overlap between the Film circle and the Actor circle, meaning there are Film that are also Actor. Therefore, conclusion I follows logically from the given statements.\n\n**Conclusion II:** Some Hero are not Star.\n\nFrom the diagram, we can see that there is a\u90e8\u5206 of the Hero circle that is not in the Star circle, meaning there are Hero that are not Star. Therefore, conclusion II also follows logically from the given statements.\n\nTherefore, the correct option is: **If both conclusions I and II follow.**",
         "question": "Statements: Some Hero are Film. Some Film are Star. All Star are Actor. Conclusions: I. Some Actor are Film. II. Some Hero are not Star.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     },
@@ -1019,7 +1019,7 @@
         "correct_option": "C",
         "reasoning": "**C. If either conclusion I or II follows.**\n\n**Explanation:**\n\nFrom the given statements:\n\n* All Book are Pen. (E)\n* Some Pen are Eraser. (I)\n* All Eraser are Pencil. (A)\n\n**Drawing the Venn diagram:**\n\n```\n          ____________________________\n         |                            |\n         |       Book (E)               |\n         |____________________________|\n                 /|\\\n                / | \\\n               /  |  \\\n              /   |   \\\n             |    |    |\n         Pen (I)/____|____\\Pencil (A)\n             |    |    |\n             |    |    |\n              \\   |   /\n               \\  |  /\n                \\ | /\n                 \\|/\n                Eraser (A)\n```\n\n**Conclusion I:** Some Book are Pencil.\n\nThis conclusion follows because all Book are Pen (E), and some Pen are Eraser (I), and all Eraser are Pencil (A). Therefore, some Book must also be Pencil.\n\n**Conclusion II:** No Pencil is Book.\n\nThis conclusion does not follow because we cannot determine from the given statements whether any Pencil is Book or not. The Venn diagram shows that some Book is Pencil, but it does not tell us whether all Book is Pencil.\n\nTherefore, only conclusion I follows, so the correct option is **C**.",
         "question": "Statements: All Book are Pen. Some Pen are Eraser. All Eraser are Pencil. Conclusions: I. Some Book are Pencil. II. No Pencil is Book.",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     },
@@ -1403,7 +1403,7 @@
         "correct_option": "A",
         "reasoning": "```json\n{\n  \"detailed_answer\": {\n    \"step_1\": {\n      \"a_greater_than_m\": \"A > M: A is greater than M.\",\n      \"m_less_than_x\": \"M < X: M is less than X.\",\n      \"x_less_than_v\": \"X < V: X is less than V.\",\n      \"d_less_than_or_equal_to_l\": \"D \u2264 L: D is less than or equal to L.\",\n      \"l_equals_m\": \"L = M: L is equal to M.\",\n      \"d_greater_than_s\": \"D > S: D is greater than S.\"\n    },\n    \"step_2\": {\n      \"linear_representation\": \"Based on the statements, we can draw a linear representation as follows:\\n\\n```\\nS < D < L = M < A < X < V\\n```\"\n    },\n    \"step_3\": {\n      \"conclusion_i\": {\n        \"explanation\": \"From the linear representation, we can see that A is greater than S. **Therefore, I is true.**\",\n        \"result\": \"I. A > S: True\"\n      },\n      \"conclusion_ii\": {\n        \"explanation\": \"From the linear representation, we cannot determine whether A is greater than V. **Therefore, II is false.**\",\n        \"result\": \"II. A > V: False\"\n      }\n    },\n    \"final_conclusion\": \"Only I is true.\"\n  }\n}\n```",
         "question": "Statements: A > M < X < V; D \u2264 L = M; D > S Conclusions: I. A > S II. A > V",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     },
@@ -1419,7 +1419,7 @@
         "correct_option": "D",
         "reasoning": "<detailed_answer>\n**Given Statements :**\n\n* M > A \u2265 P > U\n* E < R > U\n* E \u2265 L > W\n\n**Conclusions :**\n\n* I. M > L\n* II. W \u2264 A\n\n**Analysis :**\n\n**Conclusion I : M > L**\n\nFrom the given statements, we can establish the following order :\n\nM > A \u2265 P > U > E \u2265 L > W\n\nTherefore, M > L. Hence, conclusion I is **true**.\n\n**Conclusion II : W \u2264 A**\n\nFrom the given statements, we have no relation between W and A. Hence, we cannot conclude anything about W \u2264 A. Therefore, conclusion II is **false**.\n\n**Therefore, the correct answer is : Neither I nor II is true.**\n</detailed_answer>",
         "question": "Statements: M > A \u2265 P > U; E < R > U; E \u2265 L > W Conclusions: I. M > L II. W \u2264 A",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     },
@@ -1435,7 +1435,7 @@
         "correct_option": "E",
         "reasoning": "```json\n{\n  \"detailed_answer\": {\n    \"step_1\": {\n      \"information\": \"L > W < U < B\\nW \u2265 X > P > T \u2265 K\"\n    },\n    \"step_2\": {\n      \"combined_inequalities\": \"L > W > X > P > T \u2265 K > U < B\"\n    },\n    \"step_3\": {\n      \"conclusions\": {\n        \"i\": {\n          \"statement\": \"L > T\",\n          \"result\": \"True\"\n        },\n        \"ii\": {\n          \"statement\": \"K < U\",\n          \"result\": \"True\"\n        }\n      },\n      \"final_conclusion\": \"Therefore, the correct option is E. Both I and II are true.\"\n    }\n  }\n}\n```",
         "question": "Statements: L > W < U < B; W \u2265 X > P; P > T \u2265 K Conclusions: I. L > T II. K < U",
-        "valid": false,
+        "valid": true,
         "standalone": true,
         "topic": "Reasoning"
     }
