@@ -1,0 +1,66 @@
+import google.generativeai as generativeai
+import os
+import re
+import time
+from google.api_core.exceptions import ResourceExhausted
+import json
+import traceback
+import threading
+
+def configure_client(api_key):
+    generativeai.configure(
+        api_key=api_key
+    )
+
+def get_response_delayed_prompt(prompt, delay=0.1):
+    try:
+        time.sleep(delay)
+        raw_response = model.generate_content(
+            prompt
+        )
+        return raw_response.text
+    except ResourceExhausted as e:
+        print(traceback.format_exc())
+        return get_response_delayed_prompt(prompt, delay * 2)
+    except Exception as e:
+        print(traceback.format_exc())
+        return None
+
+def change_response_to_list(raw_response):
+    prompt_2 = f"""Convert the following raw response into a valid Python list.
+    remove all unecessary characters:\n{raw_response}"""
+    prompt_2_response = get_response_delayed_prompt(prompt_2)
+
+    try:   
+        list_response = json.loads(filter_response_as_list(prompt_2_response))
+        return list_response
+    except Exception as e:
+        print(traceback.format_exc())
+        return prompt_2_response.split(",")
+
+    
+
+
+def filter_response(text):
+    text = re.sub("\\*{2,}", "", text)
+    text = text[text.index("{"):text.rindex("}") + 1]
+    return text
+
+
+def filter_response_as_list(text):
+    # text = re.sub("\\*{2,}", "", text)
+    return text[text.index("["):text.rindex("]") + 1]
+
+def upload_file_to_gemini(file):
+    return generativeai.upload_file(file)
+
+
+def split_into_batches(array, batch_size=5):
+    return [array[i:i + batch_size] for i in range(0, len(array), batch_size)]
+
+api_key = os.getenv("GEMINI_API_KEY")
+configure_client(api_key)
+
+model = generativeai.GenerativeModel(
+    model_name="gemini-1.5-flash"
+)
