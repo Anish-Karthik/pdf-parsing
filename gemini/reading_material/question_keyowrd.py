@@ -5,6 +5,7 @@ import threading
 import google.generativeai as generativeai
 from google.api_core.exceptions import ResourceExhausted
 import pandas as pd
+from gemini_utilities import *
 
 
 def get_prompt(qn, correct_option, topic):
@@ -109,13 +110,15 @@ def consolidate_keywords():
     print(len(keywords))
 
     chat = model.start_chat(history=[])
+    neet_pdf = upload_file_to_gemini("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo120.pdf")
+    print(neet_pdf.name)
 
     prompt = f"""
     questions:{questions}
     keywords: {keywords}
-    Cluster the given question and keywords and,
-    *Create 20+ buckets/groups*, where the given questions and its relevant keywords can be put into"""
-    resoponse = chat.send_message(prompt)
+    Give 20+ modules these questions and keywords can be taken from the given pdf"""
+    response = chat.send_message([prompt, neet_pdf])
+    print(response.text)
     
     prompt = f"""
     questions: {questions}
