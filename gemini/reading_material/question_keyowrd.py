@@ -6,6 +6,8 @@ import google.generativeai as generativeai
 from google.api_core.exceptions import ResourceExhausted
 import pandas as pd
 from gemini_utilities import *
+from sklearn.cluster import KMeans
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 def get_prompt(qn, correct_option, topic):
@@ -94,8 +96,8 @@ def populate_question_keywords():
         json.dump(quiz, f, indent=4)
 
 
-def consolidate_keywords():
-    input_file_path = f"""/Users/pranav/GitHub/pdf-parsing/gemini/Neet/53.json"""
+def cluster_keywords():
+    input_file_path = f"""/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/53.json"""
     keywords = []
     questions = []
     with open(input_file_path, 'r') as f:
@@ -107,28 +109,78 @@ def consolidate_keywords():
 
     keywords = list(set(keywords))
 
-    print(len(keywords))
+    # Create a TF-IDF vectorizer to convert keywords to numerical features
+    vectorizer = TfidfVectorizer()
+    X = vectorizer.fit_transform(keywords)
+
+    # Apply K-means clustering
+    kmeans = KMeans(n_clusters=40)  # Adjust the number of clusters as needed
+    kmeans.fit(X)
+
+    # Get the cluster labels for each keyword
+    labels = kmeans.labels_
+
+    # Create buckets of keywords based on the labels
+    buckets = {}
+    for i, label in enumerate(labels):
+        if label not in buckets:
+            buckets[label] = []
+        buckets[label].append(keywords[i])
+
+    # Print the buckets
+    for label, keywords in buckets.items():
+        print(f"Cluster {label}: {keywords}")
+
+
+def consolidate_keywords():
+    input_file_path = f"""/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/53.json"""
+    keywords = []
+    questions_with_options = []
+    questions = []
+    with open(input_file_path, 'r') as f:
+        quiz = json.load(f)
+
+        for question in quiz["questions"]:
+            options = ""
+            for option in question["options"]:
+                options += (option["description"] + " ")
+            keywords += question["keywords"]
+            questions_with_options.append(
+                {"id": question["id"], "question": question["description"], "options": options, "answer": get_correct_option(question)})
+            questions.append(
+                {"id": question["id"], "question": question["description"]})
+
+    # keywords = list(set(keywords))
+
+    # print(keywords)
+    # return
+
+    # print(len(keywords))
 
     chat = model.start_chat(history=[])
-    neet_pdf = upload_file_to_gemini("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo120.pdf")
+    neet_pdf = upload_file_to_gemini("/home/barath/Documents/Neet Books/kebo1dd/kebo117.pdf")
     print(neet_pdf.name)
 
     prompt = f"""
-    questions:{questions}
-    keywords: {keywords}
-    Give 20+ modules these questions and keywords can be taken from the given pdf"""
+    questions:{questions_with_options}
+    Understand each question and determine some keywords related to each question.
+    Group the questions based on the technical knowledge required to answer these questions and also use the keywords determined.
+    **Each bucket must contain maximum of 5 questions only**
+    Verify and make sure that each bucket contains no more than 5 questions.
+    """
     response = chat.send_message([prompt, neet_pdf])
     print(response.text)
-    
-    prompt = f"""
-    questions: {questions}
-    keywords: {keywords}
-    From the above buckets/groups assign all the questions to buckets, assign the relevant keywords to each bucket from the above keywords.
-    """
-    response = chat.send_message(prompt)
 
-    prompt = "remove the groups which are very similar to other groups"
-    response = chat.send_message(prompt)
+    # return
+    # prompt = f"""
+    # questions: {questions}
+    # keywords: {keywords}
+    # From the above buckets/groups assign all the questions to buckets, assign the relevant keywords to each bucket from the above keywords.
+    # """
+    # response = chat.send_message(prompt)
+
+    # prompt = "remove the groups which are very similar to other groups"
+    # response = chat.send_message(prompt)
 
     prompt = f"""
     Format the above content as json"""
@@ -136,7 +188,7 @@ def consolidate_keywords():
 
     print(get_json_response(response))
 
-    output_file_path = f"""/Users/pranav/GitHub/pdf-parsing/gemini/Neet/53_question_keyword_map.json"""
+    output_file_path = f"""/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/53_question_keyword_map.json"""
     with open(output_file_path, "w") as f:
         json.dump(get_json_response(response), f, indent=4)
 
