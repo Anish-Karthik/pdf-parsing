@@ -94,7 +94,7 @@ def populate_question_keywords():
 
 
 def consolidate_keywords():
-    input_file_path = f"""/home/barath/Documents/Neet/53.json"""
+    input_file_path = f"""/Users/pranav/GitHub/pdf-parsing/gemini/Neet/53.json"""
     keywords = []
     questions = []
     with open(input_file_path, 'r') as f:
@@ -108,24 +108,32 @@ def consolidate_keywords():
 
     print(len(keywords))
 
+    chat = model.start_chat(history=[])
+
+    prompt = f"""
+    questions:{questions}
+    keywords: {keywords}
+    Cluster the given question and keywords and,
+    *Create 20+ buckets/groups*, where the given questions and its relevant keywords can be put into"""
+    resoponse = chat.send_message(prompt)
+    
     prompt = f"""
     questions: {questions}
     keywords: {keywords}
-
-    Group the given questions into various buckets and assign the relevant keywords to each bucket from the above keywords.
-    Make sure that the number of keywords and number of questions are optimally balanced.
+    From the above buckets/groups assign all the questions to buckets, assign the relevant keywords to each bucket from the above keywords.
     """
+    response = chat.send_message(prompt)
 
-    response = model.generate_content(prompt)
+    prompt = "remove the groups which are very similar to other groups"
+    response = chat.send_message(prompt)
 
     prompt = f"""
-    content: {response.text}
     Format the above content as json"""
-    response = model.generate_content(prompt)
+    response = chat.send_message(prompt)
 
     print(get_json_response(response))
 
-    output_file_path = f"""/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/53_question_keyword_map.json"""
+    output_file_path = f"""/Users/pranav/GitHub/pdf-parsing/gemini/Neet/53_question_keyword_map.json"""
     with open(output_file_path, "w") as f:
         json.dump(get_json_response(response), f, indent=4)
 

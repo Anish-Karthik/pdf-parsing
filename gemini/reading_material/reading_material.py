@@ -2,7 +2,10 @@ import json
 from gemini_utilities import *
 
 
-neet_pdf = upload_file_to_gemini("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo120.pdf")
+# neet_pdf = upload_file_to_gemini("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo120.pdf")
+# print(neet_pdf.name)
+neet_pdf = generativeai.get_file("files/ksodcmmmmojq")
+# neet_pdf = extract_text_from_pdf("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo120.pdf")
 
 
 def get_page_content(keywords,questions):
@@ -11,9 +14,8 @@ def get_page_content(keywords,questions):
     chat = model.start_chat(history=[])
     prompt = f"""help me learn in detailed about {keywords}, prepare a content about {keywords} using the above pdf so that i will be able to learn it later"""
     page_content = chat.send_message([prompt, neet_pdf])
-    prompt = f"""make the content more engaging like a story rather than points"""
-    page_content = chat.send_message(prompt)
-    prompt = f"""Make sure the reading the content makes the questions {questions} answerable"""
+    print(page_content.text)
+    prompt = f"""make the content more engaging. also make sure the content has the answer for {questions} without giving the questions explicitly"""
     page_content = chat.send_message([prompt, neet_pdf])
 
     print(page_content.text)

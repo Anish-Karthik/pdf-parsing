@@ -5,7 +5,7 @@ import time
 from google.api_core.exceptions import ResourceExhausted
 import json
 import traceback
-import threading
+import fitz
 
 def configure_client(api_key):
     generativeai.configure(
@@ -47,12 +47,22 @@ def filter_response(text):
     return text
 
 
+def extract_text_from_pdf(pdf_path):
+    doc = fitz.open(pdf_path)
+    pdf_text = ""
+    for page in doc:
+        pdf_path += page.get_text("text") + "\n"
+
+
 def filter_response_as_list(text):
     # text = re.sub("\\*{2,}", "", text)
     return text[text.index("["):text.rindex("]") + 1]
 
 def upload_file_to_gemini(file):
-    return generativeai.upload_file(file)
+    print("uploading...")
+    upload_file = generativeai.upload_file(file)
+    print("file uploaded successfull!")
+    return upload_file
 
 
 def split_into_batches(array, batch_size=5):
