@@ -158,13 +158,15 @@ def consolidate_keywords():
     # print(len(keywords))
 
     chat = model.start_chat(history=[])
-    neet_pdf = upload_file_to_gemini("/home/barath/Documents/Neet Books/kebo1dd/kebo117.pdf")
+
+    # neet_pdf = upload_file_to_gemini("/home/barath/Documents/Neet Books/kebo1dd/kebo117.pdf")
+    neet_pdf = generativeai.get_file("files/wm9cvlcyhc0d")
     print(neet_pdf.name)
 
     prompt = f"""
     questions:{questions_with_options}
-    Understand each question and determine some keywords related to each question.
-    Group the questions based on the technical knowledge required to answer these questions and also use the keywords determined.
+    Understand each question and also the keywords involved in the question.
+    Group the questions based on the technical knowledge required to answer these questions.
     **Each bucket must contain maximum of 5 questions only**
     Verify and make sure that each bucket contains no more than 5 questions.
     """
