@@ -39,10 +39,10 @@ def get_json_response(response):
     return json.loads(text)
 
 
-def get_question_keywords(question, topic, retry=0):
+def get_question_keywords(question, topic, neet_pdf, retry=0):
     try:
-        response = model.generate_content(
-            get_prompt(question["description"], get_correct_option(question), topic))
+        response = model.generate_content([
+            get_prompt(question["description"], get_correct_option(question), topic), neet_pdf])
 
         print(question["id"])
         print(question["description"])
@@ -58,10 +58,10 @@ def get_question_keywords(question, topic, retry=0):
         except Exception as e:
             if retry == 3:
                 return
-            return get_question_keywords(question, topic, retry + 1)
+            return get_question_keywords(question, topic, neet_pdf, retry + 1)
     except ResourceExhausted as e:
         print(e)
-        return get_question_keywords(question, topic)
+        return get_question_keywords(question, topic, neet_pdf)
     except Exception as e:
         print(e)
 
@@ -78,15 +78,15 @@ def split_into_batches(array, batch_size=5):
     return [array[i:i + batch_size] for i in range(0, len(array), batch_size)]
 
 
-def populate_question_keywords():
-    input_file_path = f"""/home/barath/Documents/Neet/53.json"""
+def populate_question_keywords(input_file_path):
+    neet_pdf = upload_file_to_gemini("/home/barath/Documents/Neet Books/kebo1dd/kebo115.pdf")
     with open(input_file_path, 'r') as f:
         quiz = json.load(f)
         question_batches = split_into_batches(quiz["questions"], 5)
         for question_batch in question_batches:
             threads = []
             for question in question_batch:
-                thread = threading.Thread(target=get_question_keywords, args=(question, quiz["topic"]))
+                thread = threading.Thread(target=get_question_keywords, args=(question, quiz["topic"], neet_pdf))
                 threads.append(thread)
                 thread.start()
             for thread in threads:
@@ -133,7 +133,7 @@ def cluster_keywords():
 
 
 def consolidate_keywords():
-    input_file_path = f"""/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/53.json"""
+    input_file_path = f"""/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/51.json"""
     keywords = []
     questions_with_options = []
     questions = []
@@ -159,7 +159,7 @@ def consolidate_keywords():
 
     chat = model.start_chat(history=[])
 
-    neet_pdf = upload_file_to_gemini("/home/barath/Documents/Neet Books/kebo1dd/kebo117.pdf")
+    neet_pdf = upload_file_to_gemini("/home/barath/Documents/Neet Books/kebo1dd/kebo115.pdf")
     # neet_pdf = generativeai.get_file("files/wm9cvlcyhc0d")
     print(neet_pdf.name)
 
@@ -168,6 +168,7 @@ def consolidate_keywords():
     Group 5 questions each based on their relevancy, topic and the knowledge required to answer the question.
     **Each bucket must contain maximum of 5 questions only**
     Verify and make sure that each bucket contains no more than 5 questions.
+    output question id and description for each bucket.
     """
     response = chat.send_message([prompt, neet_pdf])
     print(response.text)
@@ -190,9 +191,10 @@ def consolidate_keywords():
 
     print(get_json_response(response))
 
-    output_file_path = f"""/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/53_question_keyword_map.json"""
+    output_file_path = f"""/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/51_question_keyword_map.json"""
     with open(output_file_path, "w") as f:
         json.dump(get_json_response(response), f, indent=4)
 
 
+# populate_question_keywords("/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/51.json")
 consolidate_keywords()
