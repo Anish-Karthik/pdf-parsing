@@ -144,9 +144,9 @@ def consolidate_keywords():
             options = ""
             for option in question["options"]:
                 options += (option["description"] + " ")
-            keywords += question["keywords"]
+            # keywords += question["keywords"]
             questions_with_options.append(
-                {"id": question["id"], "question": question["description"], "options": options, "answer": get_correct_option(question)})
+                {"id": question["id"], "question": question["description"], "keywords": question["keywords"], "answer": get_correct_option(question)})
             questions.append(
                 {"id": question["id"], "question": question["description"]})
 
@@ -159,14 +159,13 @@ def consolidate_keywords():
 
     chat = model.start_chat(history=[])
 
-    # neet_pdf = upload_file_to_gemini("/home/barath/Documents/Neet Books/kebo1dd/kebo117.pdf")
-    neet_pdf = generativeai.get_file("files/wm9cvlcyhc0d")
+    neet_pdf = upload_file_to_gemini("/home/barath/Documents/Neet Books/kebo1dd/kebo117.pdf")
+    # neet_pdf = generativeai.get_file("files/wm9cvlcyhc0d")
     print(neet_pdf.name)
 
     prompt = f"""
     questions:{questions_with_options}
-    Understand each question and also the keywords involved in the question.
-    Group the questions based on the technical knowledge required to answer these questions.
+    Group 5 questions each based on their relevancy, topic and the knowledge required to answer the question.
     **Each bucket must contain maximum of 5 questions only**
     Verify and make sure that each bucket contains no more than 5 questions.
     """
@@ -185,6 +184,7 @@ def consolidate_keywords():
     # response = chat.send_message(prompt)
 
     prompt = f"""
+    {response.text}
     Format the above content as json"""
     response = chat.send_message(prompt)
 
