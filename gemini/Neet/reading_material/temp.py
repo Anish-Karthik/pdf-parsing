@@ -1,12 +1,19 @@
 import markdown
+import json
 
-path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/reading_material/51.1.md"
+path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/reading_material/53_reading_material.json"
+html_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/reading_material/html/"
+
 
 with open(path, "r") as f:
-  text = f.read()
+  json_obj = json.load(f)
 
-text = text.replace("\\n", "\n")
-html = markdown.markdown(text)
+  
+  for i,item in enumerate(json_obj):
+    text = item["content"]
+    html = markdown.markdown(text)
 
-with open("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/reading_material/51.1.html", "w") as f:
-  f.write(html)
+    item["content_html"] = html
+    
+    with open(html_path + str(i) + ".html", "w") as f:
+      f.write(html)
