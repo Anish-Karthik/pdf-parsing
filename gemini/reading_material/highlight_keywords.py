@@ -17,7 +17,6 @@ def get_highlighted_html(page):
 
     page["html_with_keywords"] = page["html_with_keywords"].replace("```html\n", "")
     page["html_with_keywords"] = page["html_with_keywords"].replace("\n```", "")
-    page["html_with_keywords"] = page["html_with_keywords"].replace("\n", "</br>")
 
     output_json.append(page)
 
