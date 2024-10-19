@@ -14,6 +14,7 @@ with open(path, "r") as f:
     html = markdown.markdown(text)
 
     item["content_html"] = html
-    
+
+
     with open(html_path + str(i) + ".html", "w") as f:
-      f.write(html)
+      f.write

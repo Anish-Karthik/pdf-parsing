@@ -38,7 +38,15 @@ def change_response_to_list(raw_response):
         print(traceback.format_exc())
         return prompt_2_response.split(",")
 
-    
+
+
+def read_json_file(file_path):
+    with open(file_path, "r") as f:
+        return json.load(f)
+
+def write_json_file(file_path, data):
+    with open(file_path, "w") as f:
+        json.dump(data, f, indent=4)    
 
 
 def filter_response(text):
