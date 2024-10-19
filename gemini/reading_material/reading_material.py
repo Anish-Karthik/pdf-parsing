@@ -1,11 +1,19 @@
 import json
 from gemini_utilities import *
 import markdown
+import threading
 
 
-neet_pdf = upload_file_to_gemini("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo115.pdf")
-print(neet_pdf.name)
-# neet_pdf = generativeai.get_file("files/ksodcmmmmojq")
+quiz_id_to_pdf_map = {
+    "51": "115",
+    "52": "116",
+    "53": "117"
+}
+
+
+# neet_pdf = upload_file_to_gemini("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo115.pdf")
+# print(neet_pdf.name)
+# neet_pdf = generativeai.get_file("files/2f37whdgjqik")
 # neet_pdf = extract_text_from_pdf("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo120.pdf")
 
 def get_correct_option(question):
@@ -17,89 +25,70 @@ def get_correct_option(question):
     return "no answer"
 
 
-def get_page_content(questions):
-    keywords = []
-    for question in questions:
-        keywords += question["keywords"]
-    keywords = list(set(keywords))
+def get_page_content(question):
+    keywords = question["keywords"]
 
-    questions_desc = []
-    for question in questions:
-        questions_desc.append({"question":question["description"], "answer":get_correct_option(question)})
-
-    print(keywords)
-    print(questions_desc)
     global neet_pdf
 
-    prompt = f"""prepare a content about {keywords} so that i will be able to answer these questions {questions_desc}"""
+    prompt = f"""prepare a content about {keywords} so that i will be able to answer this
+    question:{question["description"]}
+    answer:{get_correct_option(question)}"""
     page_content = model.generate_content(prompt)
     print(page_content.text)
+
     prompt = f"""{page_content.text}
     Get to the point. Make sure the content is clear and concise.
-    make the content engaging and easy to read for better understanding. also make sure the content has the answer for {questions_desc} without giving the questions explicitly"""
+    make the content engaging and easy to read for better understanding. also make sure the content has the answer for
+    question:{question["description"]}
+    answer:{get_correct_option(question)}
+    without giving the questions explicitly"""
     page_content = model.generate_content(prompt)
-
-    prompt = f"""{page_content.text}
-    Hightlight the important data and keywords from the content in *Red*
-    additional context:
-    {questions_desc}
-    output as html
-    """
-    page_content = model.generate_content(prompt)
-
     print(page_content.text)
+
     return page_content.text
 
 
-# keywords = [
-#   "sarcomere",
-#   "myosin",
-#   "H-zone",
-#   "relaxed state",
-#   "muscle contraction",
-#   "Actin",
-#   "thick filaments",
-#   "Z-lines",
-#   "M-line",
-# ]
+def id_to_question(id, questions):
+    for question in questions:
+        if question["id"] == id:
+            return question
 
-# questions = [
-#   "Which proteins will be included in H-zone of myofilaments if sarcomere is in relaxed state?"
-# ]
-# get_page_content(keywords,questions)
-def id_to_question(id,questions):
-  for question in questions:
-    if question["id"] == id:
-      return question
 
 reading_materials = []
-def create_reading_material(json_map_path, json_path):
-  with open(json_map_path, 'r') as f:
+
+
+def create_page_content(question):
+    page_content = get_page_content(question)
+
+    reading_material_page = {}
+    reading_material_page["id"] = question["id"]
+    reading_material_page["keywords"] = question["keywords"]
+    reading_material_page["content"] = page_content
+
+    reading_materials.append(reading_material_page)
+
+
+def create_reading_material(json_path, quiz_id):
     with open(json_path, 'r') as f2:
-      buckets = json.load(f)
-      quiz = json.load(f2)
-      
-      for i,bucket in enumerate(buckets[:10]):
-          questions = []
-          for question in bucket["questions"]:
-              questions.append(id_to_question(question["id"],quiz["questions"]))
+        quiz = json.load(f2)
 
-          page_content = get_page_content(questions)
-          reading_materials.append(page_content)
-          with open(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/reading_material/51.{i}.html", "w") as f:
-              text = page_content
-              f.write(text)
-          
+        threads = []
 
-json_map_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/51_question_keyword_map.json"
-json_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/51.json"
-create_reading_material(json_map_path, json_path)
+        for question_batch in split_into_batches(quiz["questions"], 10):
+            for question in question_batch:
+                thread = threading.Thread(target=create_page_content, args=(question,))
+                threads.append(thread)
+                thread.start()
 
-for i,reading_material in enumerate(reading_materials):
-  with open(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/reading_material/51.{i}.html", "w") as f:
-    text = reading_material
-    # text = text.replace("\\n", "\n")
+            for thread in threads:
+                thread.join()
 
-    # html = markdown.markdown(text)
+        with open(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/reading_material/{quiz_id}_reading_material.json", "w") as f:
+            json.dump(reading_materials, f, indent=4)
+            reading_materials = []
 
-    f.write(text)
+
+for quiz_id in quiz_id_to_pdf_map:
+    json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/{quiz_id}.json"
+    neet_pdf = upload_file_to_gemini(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf")
+    create_reading_material(json_path, quiz_id)
