@@ -30,50 +30,10 @@ def get_correct_option(question):
     return "no answer"
 
 
-def get_json_response(response):
-    text = response.text
-    text = text.replace("```json", "")
-    text = text.replace("```", "")
-    return json.loads(text)
-
-
 def get_question_keywords(question, topic, neet_pdf, retry=0):
-    try:
-        response = model.generate_content([
-            get_prompt(question["description"], get_correct_option(question), topic), neet_pdf])
-
-        print(question["id"])
-        print(question["description"])
-        print(get_correct_option(question))
-
-        keywords = response.text
-        keywords = keywords.replace("```json", "")
-        keywords = keywords.replace("```", "")
-        try:
-            get_json_response(response)
-
-            question["keywords"] = get_json_response(response)
-        except Exception as e:
-            if retry == 3:
-                return
-            return get_question_keywords(question, topic, neet_pdf, retry + 1)
-    except ResourceExhausted as e:
-        print(e)
-        return get_question_keywords(question, topic, neet_pdf)
-    except Exception as e:
-        print(e)
-
-
-api_key = os.environ.get("GEMINI_API_KEY")
-generativeai.configure(api_key=api_key)
-
-model = generativeai.GenerativeModel(
-    model_name="models/gemini-1.5-flash"
-)
-
-
-def split_into_batches(array, batch_size=5):
-    return [array[i:i + batch_size] for i in range(0, len(array), batch_size)]
+    response = model.generate_content([
+        get_prompt(question["description"], get_correct_option(question), topic), neet_pdf])
+    return change_response_to_list(response)
 
 
 def populate_question_keywords(input_file_path, neet_pdf):
@@ -85,16 +45,10 @@ def populate_question_keywords(input_file_path, neet_pdf):
             if "keywords" not in question:
                 questions.append(question)
 
-        question_batches = split_into_batches(questions, 5)
-        for question_batch in question_batches:
-            threads = []
-            for question in question_batch:
-                thread = threading.Thread(target=get_question_keywords, args=(question, quiz["topic"], neet_pdf))
-                threads.append(thread)
-                thread.start()
-            for thread in threads:
-                thread.join()
+        call_collection_with_threading(
+            func=get_question_keywords,
+            args=(quiz["topic"], neet_pdf),
+            threads=10, collection=questions)
 
     with open(input_file_path, "w") as f:
         json.dump(quiz, f, indent=4)
-

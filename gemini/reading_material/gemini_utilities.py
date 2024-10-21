@@ -6,11 +6,14 @@ from google.api_core.exceptions import ResourceExhausted
 import json
 import traceback
 import fitz
+import threading
+
 
 def configure_client(api_key):
     generativeai.configure(
         api_key=api_key
     )
+
 
 def get_response_delayed_prompt(prompt, delay=0.1):
     try:
@@ -26,12 +29,13 @@ def get_response_delayed_prompt(prompt, delay=0.1):
         print(traceback.format_exc())
         return None
 
-def change_response_to_list(raw_response):
+
+def change_response_to_list(raw_response) -> list:
     prompt_2 = f"""Convert the following raw response into a valid Python list.
     remove all unecessary characters:\n{raw_response}"""
     prompt_2_response = get_response_delayed_prompt(prompt_2)
 
-    try:   
+    try:
         list_response = json.loads(filter_response_as_list(prompt_2_response))
         return list_response
     except Exception as e:
@@ -39,14 +43,25 @@ def change_response_to_list(raw_response):
         return prompt_2_response.split(",")
 
 
-
 def read_json_file(file_path):
     with open(file_path, "r") as f:
         return json.load(f)
 
+
+def call_collection_with_threading(func=None, args=(), threads=10, collection=None):
+    for item_batch in split_into_batches(collection, 10):
+        threads = []
+        for item in item_batch:
+            thread = threading.Thread(target=func, args=(item, *args))
+            threads.append(thread)
+            thread.start()
+        for thread in threads:
+            thread.join()
+
+
 def write_json_file(file_path, data):
     with open(file_path, "w") as f:
-        json.dump(data, f, indent=4)    
+        json.dump(data, f, indent=4)
 
 
 def filter_response(text):
@@ -66,6 +81,7 @@ def filter_response_as_list(text):
     # text = re.sub("\\*{2,}", "", text)
     return text[text.index("["):text.rindex("]") + 1]
 
+
 def upload_file_to_gemini(file):
     print("uploading...")
     upload_file = generativeai.upload_file(file)
@@ -75,6 +91,7 @@ def upload_file_to_gemini(file):
 
 def split_into_batches(array, batch_size=5):
     return [array[i:i + batch_size] for i in range(0, len(array), batch_size)]
+
 
 api_key = os.getenv("GEMINI_API_KEY")
 configure_client(api_key)

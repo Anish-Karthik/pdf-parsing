@@ -10,6 +10,7 @@ quiz_id_to_pdf_map = {
     "51": "115",
 }
 
+
 def get_correct_option(question):
     options = question["options"]
     for option in options:
@@ -19,9 +20,8 @@ def get_correct_option(question):
     return "no answer"
 
 
-def get_page_content(question, neet_pdf):
+def create_page_content(question, neet_pdf):
     keywords = question["keywords"]
-
 
     prompt = f"""prepare a content about {keywords} so that i will be able to answer this
     question:{question["description"]}
@@ -38,33 +38,19 @@ def get_page_content(question, neet_pdf):
     page_content = model.generate_content([prompt, neet_pdf])
     print(page_content.text)
 
-    return page_content.text
-
-
-def id_to_question(id, questions):
-    for question in questions:
-        if question["id"] == id:
-            return question
-
-def create_page_content(question, neet_pdf):
-    page_content = get_page_content(question, neet_pdf)
-    question["content_html"] = markdown.markdown(page_content)
+    question["content_html"] = markdown.markdown(page_content.text)
 
 
 def create_reading_material(json_path, neet_pdf):
     with open(json_path, 'r') as f2:
         quiz = json.load(f2)
 
-        threads = []
-
-        for question_batch in split_into_batches(quiz["questions"], 10):
-            for question in question_batch:
-                thread = threading.Thread(target=create_page_content, args=(question,neet_pdf,))
-                threads.append(thread)
-                thread.start()
-
-            for thread in threads:
-                thread.join()
+        call_collection_with_threading(
+            func=create_page_content,
+            args=(neet_pdf,),
+            threads=10,
+            collection=quiz["questions"]
+        )
 
         with open(json_path, "w") as f:
             json.dump(quiz, f, indent=4)
@@ -76,4 +62,3 @@ for quiz_id in quiz_id_to_pdf_map:
     populate_question_keywords(json_path, neet_pdf)
     create_reading_material(json_path, neet_pdf)
     highlight_keywords(json_path)
-    

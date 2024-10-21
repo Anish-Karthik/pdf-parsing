@@ -1,6 +1,15 @@
 from gemini_utilities import *
-from reading_material import get_correct_option
 import threading
+
+
+def get_correct_option(question):
+    options = question["options"]
+    for option in options:
+        if option["is_correct"]:
+            return option["description"]
+
+    return "no answer"
+
 
 def get_highlighted_html(question):
 
@@ -8,9 +17,12 @@ def get_highlighted_html(question):
     question: {question["description"]}
     answer: {get_correct_option(question)}
     keywords: {question["keywords"]}
-    
-    wrap *unique* important data and keywords in the given html in a *span class="important"*
-    length of each important keyword should be less than 3 words and 
+
+    wrap *unique* important data and keywords based on the question,answer in the given html in a *span class="important"*
+
+    rules:
+    - use <span class="important"></span> tags
+    - if one occurance of keyword is wrapped in <span class="important"> tag, do not wrap other occurances of keyword in <span class="important"> tag
 
     html:
 
@@ -26,22 +38,16 @@ def get_highlighted_html(question):
     question["html_with_keywords"] = question["html_with_keywords"].replace("\\\"", r"\"")
 
 
-
 def highlight_keywords(path):
 
-  with open(path, "r") as f:
-      quiz = json.load(f)
+    with open(path, "r") as f:
+        quiz = json.load(f)
 
-      for question_batch in split_into_batches(quiz["questions"], 10):
-        threads = []
-        for question in question_batch:
-            thread = threading.Thread(target=get_highlighted_html, args=(question,))
-            threads.append(thread)
-            thread.start()
-        for thread in threads:
-            thread.join()  
+        call_collection_with_threading(
+            func=get_highlighted_html,
+            threads=10,
+            collection=quiz["questions"]
+        )
 
-        with open(path, "w") as f:
-            json.dump(quiz, f, indent=4)
-
-highlight_keywords()
+    with open(path, "w") as f:
+        json.dump(quiz, f, indent=4)
