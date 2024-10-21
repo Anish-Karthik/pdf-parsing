@@ -12,16 +12,24 @@ def get_correct_option(question):
 
 
 def get_highlighted_html(question):
-
     prompt = f"""
-    question: {question["description"]}
+            question: {question["description"]}
     answer: {get_correct_option(question)}
     metadata: {question["keywords"]}
     content:{question["content_html"]}
 
+    understand the content, question and metadata, return the unique    keywords/ important words
+    """
+    response = model.generate_content(prompt)
+    print(response.text)
     
-    understand minimum **5 unique keywords** in the content based on the question,answer and the metadata.
-    wrap the found keywords in the given html in a *span class="important"* - use <span class="important"></span> tags
+
+    prompt = f"""
+    keywords: {response.text}
+    content:{question["content_html"]}
+
+    wrap the found keywords in the given html in a using <span class="important"></span> tags
+    each keyword should be marked important only once
 
     verify that each keyword is wrapped only once in the output html.
 
