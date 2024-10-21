@@ -16,17 +16,13 @@ def get_highlighted_html(question):
     prompt = f"""
     question: {question["description"]}
     answer: {get_correct_option(question)}
-    keywords: {question["keywords"]}
+    metadata: {question["keywords"]}
+    content:{question["content_html"]}
 
-    wrap *unique* important data and keywords based on the question,answer in the given html in a *span class="important"*
+    
+    find minimum **5 unique keywords** in the content based on the question,answer and the metadata.
+    wrap the found keywords in the given html in a *span class="important"* - use <span class="important"></span> tags
 
-    rules:
-    - use <span class="important"></span> tags
-    - if one occurance of keyword is wrapped in <span class="important"> tag, do not wrap other occurances of keyword in <span class="important"> tag
-
-    html:
-
-    {question["content_html"]}
     """
     question["html_with_keywords"] = model.generate_content(
         prompt
