@@ -23,13 +23,15 @@ def get_correct_option(question):
 def create_page_content(question, neet_pdf):
     keywords = question["keywords"]
 
-    prompt = f"""prepare a content about {keywords} so that i will be able to answer this
-    question:{question["description"]}
-    answer:{get_correct_option(question)}"""
-    page_content = model.generate_content([prompt, neet_pdf])
-    print(page_content.text)
+    # prompt = f"""prepare a content about {keywords} so that i will be able to answer this
+    # The prepared content should be 100-150 words.
+    # question:{question["description"]}
+    # answer:{get_correct_option(question)}"""
+    # page_content = model.generate_content([prompt, neet_pdf])
+    # print(page_content.text)
 
-    prompt = f"""{page_content.text}
+    prompt = f"""prepare a content about {keywords} so that i will be able to answer this
+    The prepared content should be 100-150 words.
     Get to the point. Make sure the content is clear and concise.
     make the content engaging and easy to read for better understanding. also make sure the content has the answer for
     question:{question["description"]}
@@ -56,7 +58,7 @@ def create_reading_material(json_path, neet_pdf):
 
 
 for quiz_id in quiz_id_to_pdf_map:
-    json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/{quiz_id}.json"
+    json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/{quiz_id}_copy.json"
     neet_pdf = upload_file_to_gemini(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf")
     populate_question_keywords(json_path, neet_pdf)
     create_reading_material(json_path, neet_pdf)
