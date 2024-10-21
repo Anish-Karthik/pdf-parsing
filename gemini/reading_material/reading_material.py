@@ -33,6 +33,8 @@ def create_page_content(question, neet_pdf):
     prompt = f"""prepare a content about {keywords} so that i will be able to answer this
     The prepared content should be 100-150 words.
     Get to the point. Make sure the content is clear and concise.
+    Skip any introductions that are not relevant to the topic.
+    
     make the content engaging and easy to read for better understanding. also make sure the content has the answer for
     question:{question["description"]}
     answer:{get_correct_option(question)}
