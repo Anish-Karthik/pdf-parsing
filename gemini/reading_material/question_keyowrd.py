@@ -37,18 +37,16 @@ def get_question_keywords(question, topic, neet_pdf, retry=0):
 
 
 def populate_question_keywords(input_file_path, neet_pdf):
-    with open(input_file_path, 'r') as f:
-        quiz = json.load(f)
+    quiz = read_json_file(input_file_path)
 
-        questions = []
-        for question in quiz["questions"]:
-            if "keywords" not in question:
-                questions.append(question)
+    questions = []
+    for question in quiz["questions"]:
+        if "keywords" not in question:
+            questions.append(question)
 
-        call_collection_with_threading(
-            func=get_question_keywords,
-            args=(quiz["topic"], neet_pdf),
-            threads=10, collection=questions)
+    call_collection_with_threading(
+        func=get_question_keywords,
+        args=(quiz["topic"], neet_pdf),
+        threads=10, collection=questions)
 
-    with open(input_file_path, "w") as f:
-        json.dump(quiz, f, indent=4)
+    write_json_file(input_file_path, quiz)

@@ -42,18 +42,17 @@ def create_page_content(question, neet_pdf):
 
 
 def create_reading_material(json_path, neet_pdf):
-    with open(json_path, 'r') as f2:
-        quiz = json.load(f2)
+    
+    quiz = read_json_file(json_path)
 
-        call_collection_with_threading(
-            func=create_page_content,
-            args=(neet_pdf,),
-            threads=10,
-            collection=quiz["questions"]
-        )
+    call_collection_with_threading(
+        func=create_page_content,
+        args=(neet_pdf,),
+        threads=10,
+        collection=quiz["questions"]
+    )
 
-        with open(json_path, "w") as f:
-            json.dump(quiz, f, indent=4)
+    write_json_file(json_path, quiz)
 
 
 for quiz_id in quiz_id_to_pdf_map:

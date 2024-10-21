@@ -40,14 +40,12 @@ def get_highlighted_html(question):
 
 def highlight_keywords(path):
 
-    with open(path, "r") as f:
-        quiz = json.load(f)
+    quiz = read_json_file(path)
 
-        call_collection_with_threading(
-            func=get_highlighted_html,
-            threads=10,
-            collection=quiz["questions"]
-        )
+    call_collection_with_threading(
+        func=get_highlighted_html,
+        threads=10,
+        collection=quiz["questions"]
+    )
 
-    with open(path, "w") as f:
-        json.dump(quiz, f, indent=4)
+    write_json_file(path, quiz)
