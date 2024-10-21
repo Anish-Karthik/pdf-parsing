@@ -28,19 +28,11 @@ def get_highlighted_html(question):
     keywords: {response.text}
     content:{question["content_html"]}
 
-    wrap the each keyword exactly once in the given html in a using <span class="important"></span> tags
+    mark the first occurrence of each keyword exactly once in the given html in a using <span class="important"></span> tags
     each keyword should be marked important only once
 
     verify that each keyword is wrapped only once in the output html.
 
-    """
-    question["html_with_keywords"] = model.generate_content(
-        prompt
-    ).text
-    prompt = f"""
-    html: {question["html_with_keywords"]}
-
-    make sure that each keyword is marked only once as important, remove important span for any duplicate.
     """
     question["html_with_keywords"] = model.generate_content(
         prompt
