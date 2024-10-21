@@ -28,7 +28,7 @@ def get_highlighted_html(question):
     keywords: {response.text}
     content:{question["content_html"]}
 
-    wrap the found keywords in the given html in a using <span class="important"></span> tags
+    wrap the each keyword exactly once in the given html in a using <span class="important"></span> tags
     each keyword should be marked important only once
 
     verify that each keyword is wrapped only once in the output html.
