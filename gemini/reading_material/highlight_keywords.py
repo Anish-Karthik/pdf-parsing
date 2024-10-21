@@ -20,8 +20,10 @@ def get_highlighted_html(question):
     content:{question["content_html"]}
 
     
-    find minimum **5 unique keywords** in the content based on the question,answer and the metadata.
+    understand minimum **5 unique keywords** in the content based on the question,answer and the metadata.
     wrap the found keywords in the given html in a *span class="important"* - use <span class="important"></span> tags
+
+    verify that each keyword is wrapped only once in the output html.
 
     """
     question["html_with_keywords"] = model.generate_content(
