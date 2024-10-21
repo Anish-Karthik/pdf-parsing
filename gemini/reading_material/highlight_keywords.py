@@ -37,6 +37,14 @@ def get_highlighted_html(question):
     question["html_with_keywords"] = model.generate_content(
         prompt
     ).text
+    prompt = f"""
+    html: {question["html_with_keywords"]}
+
+    make sure that each keyword is marked only once as important, remove important span for any duplicate.
+    """
+    question["html_with_keywords"] = model.generate_content(
+        prompt
+    ).text
 
     question["html_with_keywords"] = question["html_with_keywords"].replace("```html\n", "")
     question["html_with_keywords"] = question["html_with_keywords"].replace("\n```", "")
