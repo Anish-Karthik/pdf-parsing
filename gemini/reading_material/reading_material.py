@@ -43,7 +43,7 @@ Focus on delivering both the explanation of the {question["keywords"]} and the a
     add <hr> between each section
     """
     response = model.generate_content(prompt)
-    return get_html_from_response(response.text)
+    question["content_html"] = get_html_from_response(response.text)
 
 #     prompt = f"""
 # Using the following content:
@@ -122,8 +122,8 @@ def create_reading_material(json_path, neet_pdf):
     quiz = read_json_file(json_path)
 
     call_collection_with_threading(
-        func=create_page_content,
-        args=(neet_pdf,),
+        func=create_question_material,
+        args=(),
         threads=10,
         collection=quiz["questions"]
     )
@@ -133,16 +133,9 @@ def create_reading_material(json_path, neet_pdf):
 
 for quiz_id in quiz_id_to_pdf_map:
     json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/35.json"
-    # neet_pdf = upload_file_to_gemini(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf")
-    # populate_question_keywords(json_path, neet_pdf)
-    # create_reading_material(json_path, neet_pdf)
-    # highlight_keywords(json_path)
-    quiz = read_json_file(json_path)
-
-    for question in quiz["questions"]:
-            
-            html = create_question_material(question)
-            with open(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/reading_material/html/{question['id']}.html", "w") as f:
-                f.write(html)
+    neet_pdf = upload_file_to_gemini(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf")
+    populate_question_keywords(json_path, neet_pdf)
+    create_reading_material(json_path, neet_pdf)
+    highlight_keywords(json_path)
 
     
