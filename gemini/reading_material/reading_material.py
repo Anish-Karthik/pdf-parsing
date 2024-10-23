@@ -21,6 +21,53 @@ def get_correct_option(question):
 
     return "no answer"
 
+def create_question_material(question):
+    prompt = f"""
+    Prepare a short reading material about the given question including key details and explanations.
+The content should directly address the following question:
+
+**Question:** {question['description']}
+**Answer:** {get_correct_option(question)}
+
+Focus on delivering both the explanation of the {question["keywords"]} and the answer.
+
+
+**Output as html**"""
+    response = model.generate_content(prompt)
+    print(response.text)
+
+    prompt=f"""
+    html: {response.text}
+
+    split the html into sections with relevant subheadings to organize ideas clearly.
+    add <hr> between each section
+    """
+    response = model.generate_content(prompt)
+    return get_html_from_response(response.text)
+
+#     prompt = f"""
+# Using the following content:
+# {prompt.text}
+
+# Format the above reading material in a way that is both appealing and stimulating, using the following format:
+
+# 1. **Subheadings**: Divide the content into sections with relevant subheadings to organize ideas clearly.
+# 2. **Bullet Points**: Use bullet points to present key facts, concepts, or steps in a structured way.
+# 3. **Bold Key Terms**: Highlight important terms or concepts in bold to make them stand out.
+# 4. **Engaging Language(Simple)**: Use language that sparks curiosity and encourages the reader to explore more and very simple
+# 5. **Short Sentences**: Ensure sentences are short, punchy, simple, and to the point, making the content easier to digest and more memorable.
+
+# The final content should:
+# - Be concise (around 100-150 words).
+# - Use the above formatting to make it visually engaging and easy to read.
+# - Include elements that ignite curiosity and leave the reader wanting to explore further.
+# - skip any introductions
+# """
+#     response = model.generate_content(prompt)
+
+    html = get_html_from_response(response.text)
+    
+    return html
 
 def create_page_content(question, neet_pdf):
     keywords = question["keywords"]
@@ -33,8 +80,8 @@ def create_page_content(question, neet_pdf):
     # print(page_content.text)
 
     prompt = f"""
-    Prepare content about {keywords}, including key details and explanations to help students understand the topic thoroughly.
-The content should also directly address the following and also exploring similar questions:
+    Prepare a reading material about the given question including key details and explanations to help students understand the topic thoroughly.
+The content should also directly address the following question:
 
 **Question:** {question['description']}
 **Answer:** {get_correct_option(question)}
@@ -85,8 +132,17 @@ def create_reading_material(json_path, neet_pdf):
 
 
 for quiz_id in quiz_id_to_pdf_map:
-    json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/{quiz_id}_copy.json"
-    neet_pdf = upload_file_to_gemini(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf")
-    populate_question_keywords(json_path, neet_pdf)
-    create_reading_material(json_path, neet_pdf)
-    highlight_keywords(json_path)
+    json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/35.json"
+    # neet_pdf = upload_file_to_gemini(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf")
+    # populate_question_keywords(json_path, neet_pdf)
+    # create_reading_material(json_path, neet_pdf)
+    # highlight_keywords(json_path)
+    quiz = read_json_file(json_path)
+
+    for question in quiz["questions"]:
+            
+            html = create_question_material(question)
+            with open(f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/reading_material/html/{question['id']}.html", "w") as f:
+                f.write(html)
+
+    

@@ -30,6 +30,15 @@ def get_response_delayed_prompt(prompt, delay=0.1):
         return None
 
 
+def get_html_from_response(raw_response):
+    html = raw_response.replace("```html\n", "")
+    endIndex = html.find("\n```")
+    html = html[:endIndex]
+    html = html.replace("\n", "")
+    html = html.replace("\\\"", r"\"")
+
+    return html
+
 def change_response_to_list(raw_response) -> list:
     prompt_2 = f"""Convert the following raw response into a valid Python list.
     remove all unecessary characters:\n{raw_response}"""
