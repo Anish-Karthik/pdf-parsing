@@ -7,7 +7,9 @@ import threading
 
 
 quiz_id_to_pdf_map = {
-    "51": "115",
+    "35": "101",
+    "38": "102",
+    "39": "103",
 }
 
 
@@ -47,8 +49,9 @@ def create_page_content(question, neet_pdf):
         {html_content}
 
         Modify the content to make it more engaging and interesting to read for the students.
-        Make multiple sections, headers as possible for the student to read it step by step and easy to memorize.
+        Make multiple sections as possible for the student to read it step by step and easy to memorize. Use bullet points.
         Highlight important things, make things obvious.
+        **Content should not be more than 150 words.**
     """
 
     page_content = model.generate_content([prompt, neet_pdf])
@@ -71,7 +74,7 @@ def create_reading_material(json_path, neet_pdf):
 
 
 for quiz_id in quiz_id_to_pdf_map:
-    json_path = f"/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/{quiz_id}.json"
+    json_path = f"/home/barath/Documents/sat/code/pdf-parsing/gemini/Neet/{quiz_id}_copy.json"
     neet_pdf = upload_file_to_gemini(f"/home/barath/Documents/Neet Books/kebo1dd/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf")
     populate_question_keywords(json_path, neet_pdf)
     create_reading_material(json_path, neet_pdf)

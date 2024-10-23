@@ -27,599 +27,698 @@
     "daily_date": "September 17, 2024",
     "max_mistake_count": 9,
     "questions": [
-      {
-        "id": 1268,
-        "description": "The label of a herbarium sheet does not carry information on",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-18T12:49:33.044+05:30",
-        "updated_at": "2024-08-02T10:15:11.365+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 5077,
-            "description": "date of collection",
-            "question_id": 1268,
-            "is_correct": false,
-            "created_at": "2024-06-18T12:49:33.048+05:30",
-            "updated_at": "2024-06-18T12:49:33.048+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 5078,
-            "description": "name of collector",
-            "question_id": 1268,
-            "is_correct": false,
-            "created_at": "2024-06-18T12:49:33.051+05:30",
-            "updated_at": "2024-06-18T12:49:33.051+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 5079,
-            "description": "local names",
-            "question_id": 1268,
-            "is_correct": false,
-            "created_at": "2024-06-18T12:49:33.054+05:30",
-            "updated_at": "2024-06-18T12:49:33.054+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 5080,
-            "description": "height of the plant",
-            "question_id": 1268,
-            "is_correct": true,
-            "created_at": "2024-06-18T12:49:33.055+05:30",
-            "updated_at": "2024-06-18T12:49:33.055+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1269,
-        "description": "Which of the following serves as a quick referral systems in taxonomical studies?",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-18T12:52:09.560+05:30",
-        "updated_at": "2024-08-02T10:15:11.468+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 5081,
-            "description": "Museum",
-            "question_id": 1269,
-            "is_correct": false,
-            "created_at": "2024-06-18T12:52:09.564+05:30",
-            "updated_at": "2024-06-18T12:52:09.564+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 5082,
-            "description": "Zoological park",
-            "question_id": 1269,
-            "is_correct": false,
-            "created_at": "2024-06-18T12:52:09.566+05:30",
-            "updated_at": "2024-06-18T12:52:09.566+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 5083,
-            "description": "Herbarium",
-            "question_id": 1269,
-            "is_correct": true,
-            "created_at": "2024-06-18T12:52:09.568+05:30",
-            "updated_at": "2024-06-18T12:52:09.568+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 5084,
-            "description": "Botanical garden",
-            "question_id": 1269,
-            "is_correct": false,
-            "created_at": "2024-06-18T12:52:09.569+05:30",
-            "updated_at": "2024-06-18T12:52:09.569+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1167,
-        "description": "In taxonomic hierarchy, cats are placed under the genus",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-17T10:30:49.015+05:30",
-        "updated_at": "2024-08-02T10:15:06.506+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 4672,
-            "description": "Felis",
-            "question_id": 1167,
-            "is_correct": true,
-            "created_at": "2024-06-17T10:30:49.019+05:30",
-            "updated_at": "2024-06-17T10:30:49.019+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4673,
-            "description": "Panthera",
-            "question_id": 1167,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:30:49.022+05:30",
-            "updated_at": "2024-06-17T10:30:49.022+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4674,
-            "description": "Canis",
-            "question_id": 1167,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:30:49.024+05:30",
-            "updated_at": "2024-06-17T10:30:49.024+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4675,
-            "description": "none of these",
-            "question_id": 1167,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:30:49.025+05:30",
-            "updated_at": "2024-06-17T10:30:49.025+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1168,
-        "description": "Which of the following is less general in characters as compared to genus?",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-17T10:32:53.207+05:30",
-        "updated_at": "2024-08-02T10:15:11.269+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 4676,
-            "description": "Species",
-            "question_id": 1168,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:32:53.210+05:30",
-            "updated_at": "2024-06-17T10:32:53.210+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4677,
-            "description": "Division",
-            "question_id": 1168,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:32:53.212+05:30",
-            "updated_at": "2024-06-17T10:32:53.212+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4678,
-            "description": "Class",
-            "question_id": 1168,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:32:53.214+05:30",
-            "updated_at": "2024-06-17T10:32:53.214+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4679,
-            "description": "Family",
-            "question_id": 1168,
-            "is_correct": true,
-            "created_at": "2024-06-17T10:32:53.216+05:30",
-            "updated_at": "2024-06-17T10:32:53.216+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1169,
-        "description": "Which is the odd one in the following series?",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-17T10:34:29.531+05:30",
-        "updated_at": "2024-08-02T10:15:06.623+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 4680,
-            "description": "Leopard",
-            "question_id": 1169,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:34:29.535+05:30",
-            "updated_at": "2024-06-17T10:34:29.535+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4681,
-            "description": "Lion",
-            "question_id": 1169,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:34:29.537+05:30",
-            "updated_at": "2024-06-17T10:34:29.537+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4682,
-            "description": "Tiger",
-            "question_id": 1169,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:34:29.538+05:30",
-            "updated_at": "2024-06-17T10:34:29.538+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4683,
-            "description": "Cat",
-            "question_id": 1169,
-            "is_correct": true,
-            "created_at": "2024-06-17T10:34:29.540+05:30",
-            "updated_at": "2024-06-17T10:34:29.540+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1170,
-        "description": "The taxonomic category below the level of family is",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-17T10:36:19.659+05:30",
-        "updated_at": "2024-08-02T10:15:06.722+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 4684,
-            "description": "class",
-            "question_id": 1170,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:36:19.664+05:30",
-            "updated_at": "2024-06-17T10:36:19.664+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4685,
-            "description": "kingdom",
-            "question_id": 1170,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:36:19.667+05:30",
-            "updated_at": "2024-06-17T10:36:19.667+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4686,
-            "description": "phylum",
-            "question_id": 1170,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:36:19.669+05:30",
-            "updated_at": "2024-06-17T10:36:19.669+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4687,
-            "description": "genus",
-            "question_id": 1170,
-            "is_correct": true,
-            "created_at": "2024-06-17T10:36:19.672+05:30",
-            "updated_at": "2024-06-17T10:36:19.672+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1171,
-        "description": "In a taxonomic hierarchy, genus is interpolated between",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-17T10:40:16.372+05:30",
-        "updated_at": "2024-08-02T10:15:06.816+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 4688,
-            "description": "Kingdom and class",
-            "question_id": 1171,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:40:16.376+05:30",
-            "updated_at": "2024-06-17T10:40:16.376+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4689,
-            "description": "phylum and order",
-            "question_id": 1171,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:40:16.379+05:30",
-            "updated_at": "2024-06-17T10:40:16.379+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4690,
-            "description": "order and species",
-            "question_id": 1171,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:40:16.381+05:30",
-            "updated_at": "2024-06-17T10:40:16.381+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4691,
-            "description": "family and species",
-            "question_id": 1171,
-            "is_correct": true,
-            "created_at": "2024-06-17T10:40:16.382+05:30",
-            "updated_at": "2024-06-17T10:40:16.382+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1172,
-        "description": "Related genera belong to the same",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-17T10:42:16.385+05:30",
-        "updated_at": "2024-08-02T10:15:06.919+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 4692,
-            "description": "species",
-            "question_id": 1172,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:42:16.389+05:30",
-            "updated_at": "2024-06-17T10:42:16.389+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4693,
-            "description": "variety",
-            "question_id": 1172,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:42:16.392+05:30",
-            "updated_at": "2024-06-17T10:42:16.392+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4694,
-            "description": "family",
-            "question_id": 1172,
-            "is_correct": true,
-            "created_at": "2024-06-17T10:42:16.394+05:30",
-            "updated_at": "2024-06-17T10:42:16.394+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4695,
-            "description": "breed",
-            "question_id": 1172,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:42:16.396+05:30",
-            "updated_at": "2024-06-17T10:42:16.396+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1173,
-        "description": "The suffix-oideae is used for",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-17T10:44:17.408+05:30",
-        "updated_at": "2024-08-02T10:15:07.038+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 4696,
-            "description": "tribe",
-            "question_id": 1173,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:44:17.412+05:30",
-            "updated_at": "2024-06-17T10:44:17.412+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4697,
-            "description": "family",
-            "question_id": 1173,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:44:17.414+05:30",
-            "updated_at": "2024-06-17T10:44:17.414+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4698,
-            "description": "class",
-            "question_id": 1173,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:44:17.416+05:30",
-            "updated_at": "2024-06-17T10:44:17.416+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4699,
-            "description": "subfamily",
-            "question_id": 1173,
-            "is_correct": true,
-            "created_at": "2024-06-17T10:44:17.417+05:30",
-            "updated_at": "2024-06-17T10:44:17.417+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1174,
-        "description": "In a taxonomic hierarchy, family is interpolated between",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-17T10:48:56.044+05:30",
-        "updated_at": "2024-08-02T10:15:07.136+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 4700,
-            "description": "kingdom and class",
-            "question_id": 1174,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:48:56.048+05:30",
-            "updated_at": "2024-06-17T10:48:56.048+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4701,
-            "description": "class and order",
-            "question_id": 1174,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:48:56.051+05:30",
-            "updated_at": "2024-06-17T10:48:56.051+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4702,
-            "description": "order and  genus",
-            "question_id": 1174,
-            "is_correct": true,
-            "created_at": "2024-06-17T10:48:56.053+05:30",
-            "updated_at": "2024-06-17T10:48:56.053+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4703,
-            "description": "Class and genus",
-            "question_id": 1174,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:48:56.054+05:30",
-            "updated_at": "2024-06-17T10:48:56.054+05:30",
-            "unanswered": false
-          }
-        ]
-      },
-      {
-        "id": 1175,
-        "description": "Which of the following taxonomic categories includes all the others?",
-        "difficulty_level": null,
-        "topic": "The Living World",
-        "is_published": true,
-        "created_at": "2024-06-17T10:50:56.123+05:30",
-        "updated_at": "2024-08-02T10:15:07.243+05:30",
-        "detailed_solution": "",
-        "type": "",
-        "is_mandatory": false,
-        "show_in_feed": true,
-        "pyq_label": null,
-        "topic_id": null,
-        "is_saved": false,
-        "options": [
-          {
-            "id": 4704,
-            "description": "Family",
-            "question_id": 1175,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:50:56.127+05:30",
-            "updated_at": "2024-06-17T10:50:56.127+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4705,
-            "description": "Order",
-            "question_id": 1175,
-            "is_correct": true,
-            "created_at": "2024-06-17T10:50:56.130+05:30",
-            "updated_at": "2024-06-17T10:50:56.130+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4706,
-            "description": "Genus",
-            "question_id": 1175,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:50:56.132+05:30",
-            "updated_at": "2024-06-17T10:50:56.132+05:30",
-            "unanswered": false
-          },
-          {
-            "id": 4707,
-            "description": "Species",
-            "question_id": 1175,
-            "is_correct": false,
-            "created_at": "2024-06-17T10:50:56.134+05:30",
-            "updated_at": "2024-06-17T10:50:56.134+05:30",
-            "unanswered": false
-          }
-        ]
-      }
+        {
+            "id": 1268,
+            "description": "The label of a herbarium sheet does not carry information on",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-18T12:49:33.044+05:30",
+            "updated_at": "2024-08-02T10:15:11.365+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 5077,
+                    "description": "date of collection",
+                    "question_id": 1268,
+                    "is_correct": false,
+                    "created_at": "2024-06-18T12:49:33.048+05:30",
+                    "updated_at": "2024-06-18T12:49:33.048+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 5078,
+                    "description": "name of collector",
+                    "question_id": 1268,
+                    "is_correct": false,
+                    "created_at": "2024-06-18T12:49:33.051+05:30",
+                    "updated_at": "2024-06-18T12:49:33.051+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 5079,
+                    "description": "local names",
+                    "question_id": 1268,
+                    "is_correct": false,
+                    "created_at": "2024-06-18T12:49:33.054+05:30",
+                    "updated_at": "2024-06-18T12:49:33.054+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 5080,
+                    "description": "height of the plant",
+                    "question_id": 1268,
+                    "is_correct": true,
+                    "created_at": "2024-06-18T12:49:33.055+05:30",
+                    "updated_at": "2024-06-18T12:49:33.055+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "herbarium sheet",
+                "label",
+                "information",
+                "plant",
+                "height"
+            ],
+            "content_html": "<h2>Meet the Herbarium Sheet: A Plant Passport!</h2>\n<p><strong>What is a herbarium sheet?</strong> </p>\n<ul>\n<li>A herbarium sheet is like a plant passport that helps scientists study and identify plants! </li>\n<li>It's a pressed and dried plant specimen carefully mounted on a sheet of paper. </li>\n</ul>\n<p><strong>What's on the label?</strong></p>\n<ul>\n<li><strong>Scientific Name:</strong> The fancy, Latin name that helps scientists worldwide know exactly which plant it is.</li>\n<li><strong>Location:</strong> Where did the plant grow? This helps us understand where different plants are found.</li>\n<li><strong>Collection Date:</strong>  When was the plant collected? This tells us how old the specimen is. </li>\n</ul>\n<p><strong>What's missing?</strong></p>\n<ul>\n<li>You won't find the plant's height on the label. Scientists usually focus on other details to identify plants. </li>\n</ul>",
+            "html_with_keywords": "<h2>Meet the Herbarium Sheet: A Plant Passport!</h2><p><strong>What is a <span class=\"important\">herbarium sheet</span>?</strong> </p><ul><li>A <span class=\"important\">herbarium sheet</span> is like a <span class=\"important\">plant passport</span> that helps scientists study and identify <span class=\"important\">plants</span>! </li><li>It's a <span class=\"important\">pressed and dried plant specimen</span> carefully mounted on a sheet of paper. </li></ul><p><strong>What's on the <span class=\"important\">label</span>?</strong></p><ul><li><strong><span class=\"important\">Scientific Name</span>:</strong> The fancy, Latin name that helps scientists worldwide know exactly which <span class=\"important\">plant</span> it is.</li><li><strong><span class=\"important\">Location</span>:</strong> Where did the <span class=\"important\">plant</span> grow? This helps us understand where different <span class=\"important\">plants</span> are found.</li><li><strong><span class=\"important\">Collection Date</span>:</strong>  When was the <span class=\"important\">plant</span> collected? This tells us how old the specimen is. </li></ul><p><strong>What's missing?</strong></p><ul><li>You won't find the <span class=\"important\">plant's height</span> on the <span class=\"important\">label</span>. Scientists usually focus on other details to identify <span class=\"important\">plants</span>. </li></ul>"
+        },
+        {
+            "id": 1269,
+            "description": "Which of the following serves as a quick referral systems in taxonomical studies?",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-18T12:52:09.560+05:30",
+            "updated_at": "2024-08-02T10:15:11.468+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 5081,
+                    "description": "Museum",
+                    "question_id": 1269,
+                    "is_correct": false,
+                    "created_at": "2024-06-18T12:52:09.564+05:30",
+                    "updated_at": "2024-06-18T12:52:09.564+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 5082,
+                    "description": "Zoological park",
+                    "question_id": 1269,
+                    "is_correct": false,
+                    "created_at": "2024-06-18T12:52:09.566+05:30",
+                    "updated_at": "2024-06-18T12:52:09.566+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 5083,
+                    "description": "Herbarium",
+                    "question_id": 1269,
+                    "is_correct": true,
+                    "created_at": "2024-06-18T12:52:09.568+05:30",
+                    "updated_at": "2024-06-18T12:52:09.568+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 5084,
+                    "description": "Botanical garden",
+                    "question_id": 1269,
+                    "is_correct": false,
+                    "created_at": "2024-06-18T12:52:09.569+05:30",
+                    "updated_at": "2024-06-18T12:52:09.569+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "taxonomy",
+                "taxonomical studies",
+                "quick referral system",
+                "biological classification",
+                "herbarium"
+            ],
+            "content_html": "<h2>Exploring the World of Living Things: Taxonomy</h2>\n<p><strong>Let's dive into the fascinating world of classifying living things!</strong></p>\n<p><strong>Chapter 1:  What is Taxonomy?</strong></p>\n<ul>\n<li>Taxonomy is like a detective story for scientists, helping them organize and understand all the amazing life forms on Earth.</li>\n<li>Imagine a giant library filled with millions of books, each representing a different plant or animal.  Taxonomy is the system that helps us find the right book quickly!</li>\n</ul>\n<p><strong>Chapter 2:  The Taxonomic Hierarchy</strong></p>\n<ul>\n<li><strong>Kingdom:</strong> This is the broadest category, like the main sections of a library. </li>\n<li><strong>Phylum or Division:</strong> Imagine these as different aisles within the main library sections. </li>\n<li><strong>Class:</strong> Think of these as the bookcases within each aisle.</li>\n<li><strong>Order:</strong> Like specific shelves on a bookcase, orders group organisms with similar characteristics.</li>\n<li><strong>Family:</strong> This is a smaller group within an order, like a specific category of books. </li>\n<li><strong>Genus:</strong> Think of this as a specific set of books within a family, sharing many similarities.</li>\n<li><strong>Species:</strong>  This is the most specific category, like a single book with a unique title.</li>\n</ul>\n<p><strong>Chapter 3:  The Importance of Scientific Names</strong></p>\n<ul>\n<li>Just like a book needs a unique title, each organism has a unique scientific name. </li>\n<li><strong>Binomial Nomenclature:</strong> This system gives each organism a two-part name. The first part is the <em>genus</em>, and the second part is the <em>species</em>.  </li>\n</ul>\n<p><strong>Chapter 4:  Tools of Taxonomy</strong></p>\n<ul>\n<li><strong>Herbarium:</strong> This is like a library of pressed and dried plants.  Scientists use them to compare and study different plant species.</li>\n</ul>\n<p><strong>Chapter 5:  What is Systematics?</strong></p>\n<ul>\n<li><strong>Systematics:</strong>  This is the science of understanding how organisms are related to each other and how they have evolved over time. </li>\n</ul>",
+            "html_with_keywords": "<h2>Exploring the World of Living Things: <span class=\"important\">Taxonomy</span></h2><p><strong>Let's dive into the fascinating world of classifying living things!</strong></p><p><strong>Chapter 1:  What is <span class=\"important\">Taxonomy</span>?</strong></p><ul><li><span class=\"important\">Taxonomy</span> is like a detective story for scientists, helping them organize and understand all the amazing life forms on Earth.</li><li>Imagine a giant library filled with millions of books, each representing a different plant or animal.  <span class=\"important\">Taxonomy</span> is the system that helps us find the right book quickly!</li></ul><p><strong>Chapter 2:  The <span class=\"important\">Taxonomic</span> Hierarchy</strong></p><ul><li><strong>Kingdom:</strong> This is the broadest category, like the main sections of a library. </li><li><strong>Phylum or Division:</strong> Imagine these as different aisles within the main library sections. </li><li><strong>Class:</strong> Think of these as the bookcases within each aisle.</li><li><strong>Order:</strong> Like specific shelves on a bookcase, orders group organisms with similar characteristics.</li><li><strong>Family:</strong> This is a smaller group within an order, like a specific category of books. </li><li><strong>Genus:</strong> Think of this as a specific set of books within a family, sharing many similarities.</li><li><strong>Species:</strong>  This is the most specific category, like a single book with a unique title.</li></ul><p><strong>Chapter 3:  The Importance of <span class=\"important\">Scientific Names</span></strong></p><ul><li>Just like a book needs a unique title, each organism has a unique <span class=\"important\">scientific name</span>. </li><li><strong>Binomial Nomenclature:</strong> This system gives each organism a two-part name. The first part is the <em>genus</em>, and the second part is the <em>species</em>.  </li></ul><p><strong>Chapter 4:  Tools of <span class=\"important\">Taxonomy</span></strong></p><ul><li><span class=\"important\">Herbarium</span>: This is like a library of pressed and dried plants.  Scientists use them to compare and study different plant species.</li></ul><p><strong>Chapter 5:  What is Systematics?</strong></p><ul><li><strong>Systematics:</strong>  This is the science of understanding how organisms are related to each other and how they have evolved over time. </li></ul>"
+        },
+        {
+            "id": 1167,
+            "description": "In taxonomic hierarchy, cats are placed under the genus",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-17T10:30:49.015+05:30",
+            "updated_at": "2024-08-02T10:15:06.506+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 4672,
+                    "description": "Felis",
+                    "question_id": 1167,
+                    "is_correct": true,
+                    "created_at": "2024-06-17T10:30:49.019+05:30",
+                    "updated_at": "2024-06-17T10:30:49.019+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4673,
+                    "description": "Panthera",
+                    "question_id": 1167,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:30:49.022+05:30",
+                    "updated_at": "2024-06-17T10:30:49.022+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4674,
+                    "description": "Canis",
+                    "question_id": 1167,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:30:49.024+05:30",
+                    "updated_at": "2024-06-17T10:30:49.024+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4675,
+                    "description": "none of these",
+                    "question_id": 1167,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:30:49.025+05:30",
+                    "updated_at": "2024-06-17T10:30:49.025+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "taxonomic hierarchy",
+                "genus",
+                "Felis",
+                "biological classification",
+                "taxonomy"
+            ],
+            "content_html": "<h2>Let's explore the world of living things!</h2>\n<p><strong>Chapter 2:  Biological Classification</strong></p>\n<ul>\n<li>Imagine a world full of amazing creatures - from tiny insects to giant whales! Scientists need a way to organize all these living things, right? This is where <strong>biological classification</strong> comes in.</li>\n<li><strong>Taxonomy</strong> is like a detective's guide to the living world. It's the science of naming and classifying organisms. </li>\n</ul>\n<p><strong>Step by step:</strong></p>\n<ul>\n<li><strong>Think of it as a big family tree, where the branches get bigger and bigger.</strong></li>\n<li><strong>The smallest branch is the species - a group of organisms that can reproduce and make more of their kind.</strong></li>\n<li><strong>A group of closely related species forms a genus.</strong> For example, lions, tigers, and leopards all belong to the genus Panthera.</li>\n<li><strong>Genus is part of a bigger family, which includes multiple genera.</strong> For example, the cat family (Felidae) includes both lions and house cats.</li>\n<li><strong>Families are then grouped into orders, orders into classes, classes into phyla, and finally, phyla into kingdoms.</strong></li>\n</ul>\n<p><strong>Remember, it's all about similarities and differences!</strong>  Scientists use these characteristics to place organisms into the right category. </p>",
+            "html_with_keywords": "<h2>Let's explore the world of living things!</h2><p><strong>Chapter 2:  Biological Classification</strong></p><ul><li>Imagine a world full of amazing creatures - from tiny insects to giant whales! Scientists need a way to organize all these living things, right? This is where <span class=\"important\">biological classification</span> comes in.</li><li><span class=\"important\">Taxonomy</span> is like a detective's guide to the living world. It's the science of naming and classifying organisms. </li></ul><p><strong>Step by step:</strong></p><ul><li><strong>Think of it as a big family tree, where the branches get bigger and bigger.</strong></li><li><strong>The smallest branch is the <span class=\"important\">species</span> - a group of organisms that can reproduce and make more of their kind.</strong></li><li><strong>A group of closely related <span class=\"important\">species</span> forms a <span class=\"important\">genus</span>.</strong> For example, lions, tigers, and leopards all belong to the <span class=\"important\">genus</span> Panthera.</li><li><strong><span class=\"important\">Genus</span> is part of a bigger <span class=\"important\">family</span>, which includes multiple genera.</strong> For example, the cat <span class=\"important\">family</span> (Felidae) includes both lions and house cats.</li><li><strong><span class=\"important\">Families</span> are then grouped into <span class=\"important\">orders</span>, <span class=\"important\">orders</span> into <span class=\"important\">classes</span>, <span class=\"important\">classes</span> into <span class=\"important\">phyla</span>, and finally, <span class=\"important\">phyla</span> into <span class=\"important\">kingdoms</span>.</strong></li></ul><p><strong>Remember, it's all about similarities and differences!</strong>  Scientists use these characteristics to place organisms into the right category. </p>"
+        },
+        {
+            "id": 1168,
+            "description": "Which of the following is less general in characters as compared to genus?",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-17T10:32:53.207+05:30",
+            "updated_at": "2024-08-02T10:15:11.269+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 4676,
+                    "description": "Species",
+                    "question_id": 1168,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:32:53.210+05:30",
+                    "updated_at": "2024-06-17T10:32:53.210+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4677,
+                    "description": "Division",
+                    "question_id": 1168,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:32:53.212+05:30",
+                    "updated_at": "2024-06-17T10:32:53.212+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4678,
+                    "description": "Class",
+                    "question_id": 1168,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:32:53.214+05:30",
+                    "updated_at": "2024-06-17T10:32:53.214+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4679,
+                    "description": "Family",
+                    "question_id": 1168,
+                    "is_correct": true,
+                    "created_at": "2024-06-17T10:32:53.216+05:30",
+                    "updated_at": "2024-06-17T10:32:53.216+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "Genus",
+                "Family",
+                "Species",
+                "Taxonomic Categories",
+                "Hierarchy"
+            ],
+            "content_html": "<h2>Let's Learn About Taxonomy!</h2>\n<p>Have you ever wondered how scientists organize all the amazing creatures and plants on Earth?  It's like a giant puzzle! That's where <strong>taxonomy</strong> comes in.</p>\n<h3>Introducing the Taxon Hierarchy</h3>\n<p>Taxonomy is the science of classifying organisms based on shared features. Think of it like a pyramid with different levels.  Each level is called a <strong>taxon</strong>, and the levels are arranged from <strong>broadest</strong> to <strong>most specific</strong>.</p>\n<p><strong>Here's the order of the taxonomic hierarchy:</strong></p>\n<ul>\n<li><strong>Kingdom:</strong> This is the broadest level! It includes a huge variety of organisms with only basic similarities.</li>\n<li><strong>Phylum (or Division for plants):</strong> A phylum is a smaller group of organisms within a kingdom, sharing more specific characteristics.</li>\n<li><strong>Class:</strong>  Classes are more specific than phyla and include organisms with even more features in common.</li>\n<li><strong>Order:</strong> Orders contain families of organisms with close evolutionary relationships.</li>\n<li><strong>Family:</strong> Families include organisms with similar features, like the cat family or the rose family.</li>\n<li><strong>Genus:</strong> A genus is a group of closely related species.  For example, the genus <em>Panthera</em> includes lions, tigers, leopards, and jaguars.</li>\n<li><strong>Species:</strong> This is the most specific level! A species is a group of organisms that can reproduce with each other and share unique characteristics.</li>\n</ul>\n<h3>A Helpful Analogy</h3>\n<p>Think of it like this: your family is less specific than your class, and your class is less specific than your school.  Each group gets more specific as you move down the hierarchy. </p>\n<h2>Why Taxonomy Matters</h2>\n<p>Taxonomy helps scientists understand how organisms are related and how they evolved over time.  It's also essential for conservation efforts and for identifying new species.</p>\n<p>Let's explore the different taxonomic levels in more detail to gain a deeper understanding of this fascinating field! </p>",
+            "html_with_keywords": "<h2>Let's Learn About Taxonomy!</h2><p>Have you ever wondered how scientists organize all the amazing creatures and plants on Earth?  It's like a giant puzzle! That's where <span class=\"important\">taxonomy</span> comes in.</p><h3>Introducing the Taxon Hierarchy</h3><p>Taxonomy is the science of classifying organisms based on shared features. Think of it like a pyramid with different levels.  Each level is called a <span class=\"important\">taxon</span>, and the levels are arranged from <span class=\"important\">broadest</span> to <span class=\"important\">most specific</span>.</p><p><strong>Here's the order of the taxonomic hierarchy:</strong></p><ul><li><span class=\"important\">Kingdom</span>: This is the broadest level! It includes a huge variety of organisms with only basic similarities.</li><li><span class=\"important\">Phylum</span> (or Division for plants): A phylum is a smaller group of organisms within a kingdom, sharing more specific characteristics.</li><li><span class=\"important\">Class</span>:  Classes are more specific than phyla and include organisms with even more features in common.</li><li><span class=\"important\">Order</span>: Orders contain families of organisms with close evolutionary relationships.</li><li><span class=\"important\">Family</span>: Families include organisms with similar features, like the cat family or the rose family.</li><li><span class=\"important\">Genus</span>: A genus is a group of closely related species.  For example, the genus <em>Panthera</em> includes lions, tigers, leopards, and jaguars.</li><li><span class=\"important\">Species</span>: This is the most specific level! A species is a group of organisms that can reproduce with each other and share unique characteristics.</li></ul><h3>A Helpful Analogy</h3><p>Think of it like this: your family is less specific than your class, and your class is less specific than your school.  Each group gets more specific as you move down the hierarchy. </p><h2>Why Taxonomy Matters</h2><p>Taxonomy helps scientists understand how organisms are related and how they evolved over time.  It's also essential for conservation efforts and for identifying new species.</p><p>Let's explore the different taxonomic levels in more detail to gain a deeper understanding of this fascinating field! </p>"
+        },
+        {
+            "id": 1169,
+            "description": "Which is the odd one in the following series?",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-17T10:34:29.531+05:30",
+            "updated_at": "2024-08-02T10:15:06.623+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 4680,
+                    "description": "Leopard",
+                    "question_id": 1169,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:34:29.535+05:30",
+                    "updated_at": "2024-06-17T10:34:29.535+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4681,
+                    "description": "Lion",
+                    "question_id": 1169,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:34:29.537+05:30",
+                    "updated_at": "2024-06-17T10:34:29.537+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4682,
+                    "description": "Tiger",
+                    "question_id": 1169,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:34:29.538+05:30",
+                    "updated_at": "2024-06-17T10:34:29.538+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4683,
+                    "description": "Cat",
+                    "question_id": 1169,
+                    "is_correct": true,
+                    "created_at": "2024-06-17T10:34:29.540+05:30",
+                    "updated_at": "2024-06-17T10:34:29.540+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "biological classification",
+                "taxonomic categories",
+                "kingdom",
+                "species",
+                "genus"
+            ],
+            "content_html": "<h2>Let's Classify!</h2>\n<p><strong>Chapter 1:  The Living World</strong></p>\n<ul>\n<li>Biology is the study of life forms and how they work. The living world is a fascinating place with a huge variety of organisms! </li>\n<li>Early humans noticed the difference between living and non-living things, and even worshipped some of them.</li>\n<li>Over time, scientists began to understand that all living things share similarities and developed systems to identify and classify them. This helps us learn about biodiversity, which is super important for protecting our planet.</li>\n</ul>\n<p><strong>Chapter 2: Biological Classification</strong></p>\n<ul>\n<li><strong>Why do we classify?</strong> Imagine trying to learn about millions of different organisms!  Classification helps us organize and understand them better.</li>\n<li>Scientists use a <strong>hierarchical system</strong> to classify organisms, meaning they are grouped into categories from broad to specific.</li>\n<li>The most inclusive category is the <strong>kingdom</strong>, which groups together all living things with similar fundamental traits.</li>\n</ul>\n<p><strong>Chapter 3: Taxonomic Categories</strong></p>\n<ul>\n<li><strong>Kingdom</strong> is the broadest category, like a big umbrella covering all living things. </li>\n<li><strong>Phylum</strong> or <strong>Division</strong> (for plants) is a smaller category within a kingdom.</li>\n<li><strong>Class</strong> groups organisms with shared characteristics, like how mammals share having fur.</li>\n<li><strong>Order</strong> is a more specific grouping within a class, like carnivores who eat meat.</li>\n<li><strong>Family</strong> brings together organisms with even more similarities, like cats all belonging to the Felidae family.</li>\n<li><strong>Genus</strong> is a group of closely related species that share common features.</li>\n<li><strong>Species</strong> is the most specific category. This is a group of organisms that can interbreed and produce fertile offspring.</li>\n</ul>\n<p><strong>Chapter 4:  The Odd One Out</strong></p>\n<ul>\n<li>The term \"cat\" refers to a specific species, like a <em>Felis catus</em>.</li>\n<li>The other terms like <strong>biological classification, taxonomic categories, kingdom, and genus</strong> represent broader and more general groups within the classification system. </li>\n</ul>",
+            "html_with_keywords": "<h2>Let's Classify!</h2><p><strong>Chapter 1:  The Living World</strong></p><ul><li>Biology is the study of life forms and how they work. The <span class=\"important\">living</span> world is a fascinating place with a huge variety of <span class=\"important\">organisms</span>! </li><li>Early humans noticed the difference between <span class=\"important\">living</span> and non-living things, and even worshipped some of them.</li><li>Over time, scientists began to understand that all <span class=\"important\">living</span> things share <span class=\"important\">similarities</span> and developed systems to identify and classify them. This helps us learn about <span class=\"important\">biodiversity</span>, which is super important for protecting our planet.</li></ul><p><strong>Chapter 2: Biological Classification</strong></p><ul><li><strong>Why do we classify?</strong> Imagine trying to learn about millions of different <span class=\"important\">organisms</span>!  <span class=\"important\">Classification</span> helps us organize and understand them better.</li><li>Scientists use a <span class=\"important\">hierarchical system</span> to classify <span class=\"important\">organisms</span>, meaning they are grouped into categories from broad to <span class=\"important\">specific</span>.</li><li>The most inclusive category is the <span class=\"important\">kingdom</span>, which groups together all <span class=\"important\">living</span> things with similar fundamental <span class=\"important\">traits</span>.</li></ul><p><strong>Chapter 3: Taxonomic Categories</strong></p><ul><li><span class=\"important\">Kingdom</span> is the broadest category, like a big umbrella covering all <span class=\"important\">living</span> things. </li><li><span class=\"important\">Phylum</span> or <span class=\"important\">Division</span> (for plants) is a smaller category within a <span class=\"important\">kingdom</span>.</li><li><span class=\"important\">Class</span> groups <span class=\"important\">organisms</span> with shared <span class=\"important\">characteristics</span>, like how mammals share having fur.</li><li><span class=\"important\">Order</span> is a more <span class=\"important\">specific</span> grouping within a <span class=\"important\">class</span>, like carnivores who eat meat.</li><li><span class=\"important\">Family</span> brings together <span class=\"important\">organisms</span> with even more <span class=\"important\">similarities</span>, like cats all belonging to the Felidae family.</li><li><span class=\"important\">Genus</span> is a group of closely related <span class=\"important\">species</span> that share common features.</li><li><span class=\"important\">Species</span> is the most <span class=\"important\">specific</span> category. This is a group of <span class=\"important\">organisms</span> that can <span class=\"important\">interbreed</span> and produce fertile <span class=\"important\">offspring</span>.</li></ul><p><strong>Chapter 4:  The Odd One Out</strong></p><ul><li>The term \"cat\" refers to a <span class=\"important\">specific</span> <span class=\"important\">species</span>, like a <em>Felis catus</em>.</li><li>The other terms like <span class=\"important\">biological classification</span>, <span class=\"important\">taxonomic categories</span>, <span class=\"important\">kingdom</span>, and <span class=\"important\">genus</span> represent broader and more general groups within the <span class=\"important\">classification</span> system. </li></ul>"
+        },
+        {
+            "id": 1170,
+            "description": "The taxonomic category below the level of family is",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-17T10:36:19.659+05:30",
+            "updated_at": "2024-08-02T10:15:06.722+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 4684,
+                    "description": "class",
+                    "question_id": 1170,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:36:19.664+05:30",
+                    "updated_at": "2024-06-17T10:36:19.664+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4685,
+                    "description": "kingdom",
+                    "question_id": 1170,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:36:19.667+05:30",
+                    "updated_at": "2024-06-17T10:36:19.667+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4686,
+                    "description": "phylum",
+                    "question_id": 1170,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:36:19.669+05:30",
+                    "updated_at": "2024-06-17T10:36:19.669+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4687,
+                    "description": "genus",
+                    "question_id": 1170,
+                    "is_correct": true,
+                    "created_at": "2024-06-17T10:36:19.672+05:30",
+                    "updated_at": "2024-06-17T10:36:19.672+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "taxonomy",
+                "taxonomic category",
+                "family",
+                "genus",
+                "classification"
+            ],
+            "content_html": "<h2>Let's Classify Living Things!</h2>\n<p><strong>Section 1:  The Big Picture</strong></p>\n<ul>\n<li>Imagine a giant family tree for all living things!  Scientists use a special system called <strong>taxonomy</strong> to organize and classify them. </li>\n<li>Think of it like a big puzzle, where pieces fit together based on similarities and differences.</li>\n</ul>\n<p><strong>Section 2:  The Family Tree</strong></p>\n<ul>\n<li>\n<p>In taxonomy, we use a <strong>hierarchy</strong> of categories, like steps on a ladder. These categories go from broad to specific:</p>\n<ul>\n<li><strong>Kingdom:</strong>  The biggest group, like \"animals\" or \"plants.\" </li>\n<li><strong>Phylum (or Division):</strong>  Smaller groups within Kingdoms, like \"mammals\" or \"flowering plants.\"</li>\n<li><strong>Class:</strong>  Even smaller groups within Phyla, like \"reptiles\" or \"monocots\" (plants with one seed leaf).</li>\n<li><strong>Order:</strong>  More specific groups within Classes, like \"primates\" or \"grass orders.\"</li>\n<li><strong>Family:</strong>  Closely related groups within Orders, like \"cat family\" or \"rose family.\"</li>\n<li><strong>Genus:</strong>  A group of very similar species, like different types of cats.</li>\n<li><strong>Species:</strong>  The most specific group, like \"lion\" or \"house cat.\"</li>\n</ul>\n</li>\n</ul>\n<p><strong>Section 3:  Naming Things</strong></p>\n<ul>\n<li>Scientists use <strong>two words</strong> to name each species, called <strong>binomial nomenclature</strong>.  </li>\n<li>The first word is the <strong>genus</strong>, like <em>Canis</em> (dogs).</li>\n<li>The second word is the <strong>species</strong>, like <em>familiaris</em> (domestic dog). </li>\n<li>So, a dog's scientific name is <em>Canis familiaris</em>. </li>\n</ul>\n<p><strong>Section 4: Why It Matters</strong></p>\n<ul>\n<li>Taxonomy helps us understand the relationships between living things and how they've evolved over time. </li>\n<li>It's also essential for protecting biodiversity, identifying useful plants and animals, and understanding ecosystems. </li>\n</ul>",
+            "html_with_keywords": "<h2>Let's Classify Living Things!</h2><p><strong>Section 1:  The Big Picture</strong></p><ul><li>Imagine a giant family tree for all living things!  Scientists use a special system called <span class=\"important\">taxonomy</span> to organize and classify them. </li><li>Think of it like a big puzzle, where pieces fit together based on similarities and differences.</li></ul><p><strong>Section 2:  The Family Tree</strong></p><ul><li><p>In <span class=\"important\">taxonomy</span>, we use a <span class=\"important\">hierarchy</span> of categories, like steps on a ladder. These categories go from broad to specific:</p><ul><li><span class=\"important\">Kingdom</span>:  The biggest group, like \"animals\" or \"plants.\" </li><li><span class=\"important\">Phylum</span> (or Division):  Smaller groups within Kingdoms, like \"mammals\" or \"flowering plants.\"</li><li><span class=\"important\">Class</span>:  Even smaller groups within Phyla, like \"reptiles\" or \"monocots\" (plants with one seed leaf).</li><li><span class=\"important\">Order</span>:  More specific groups within Classes, like \"primates\" or \"grass orders.\"</li><li><span class=\"important\">Family</span>:  Closely related groups within Orders, like \"cat family\" or \"rose family.\"</li><li><span class=\"important\">Genus</span>:  A group of very similar species, like different types of cats.</li><li><span class=\"important\">Species</span>:  The most specific group, like \"lion\" or \"house cat.\"</li></ul></li></ul><p><strong>Section 3:  Naming Things</strong></p><ul><li>Scientists use <span class=\"important\">two words</span> to name each species, called <span class=\"important\">binomial nomenclature</span>.  </li><li>The first word is the <span class=\"important\">genus</span>, like <em>Canis</em> (dogs).</li><li>The second word is the <span class=\"important\">species</span>, like <em>familiaris</em> (domestic dog). </li><li>So, a dog's scientific name is <em>Canis familiaris</em>. </li></ul><p><strong>Section 4: Why It Matters</strong></p><ul><li><span class=\"important\">Taxonomy</span> helps us understand the relationships between living things and how they've evolved over time. </li><li>It's also essential for protecting <span class=\"important\">biodiversity</span>, identifying useful plants and animals, and understanding <span class=\"important\">ecosystems</span>. </li></ul>"
+        },
+        {
+            "id": 1171,
+            "description": "In a taxonomic hierarchy, genus is interpolated between",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-17T10:40:16.372+05:30",
+            "updated_at": "2024-08-02T10:15:06.816+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 4688,
+                    "description": "Kingdom and class",
+                    "question_id": 1171,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:40:16.376+05:30",
+                    "updated_at": "2024-06-17T10:40:16.376+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4689,
+                    "description": "phylum and order",
+                    "question_id": 1171,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:40:16.379+05:30",
+                    "updated_at": "2024-06-17T10:40:16.379+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4690,
+                    "description": "order and species",
+                    "question_id": 1171,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:40:16.381+05:30",
+                    "updated_at": "2024-06-17T10:40:16.381+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4691,
+                    "description": "family and species",
+                    "question_id": 1171,
+                    "is_correct": true,
+                    "created_at": "2024-06-17T10:40:16.382+05:30",
+                    "updated_at": "2024-06-17T10:40:16.382+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "taxonomic hierarchy",
+                "genus",
+                "family",
+                "species",
+                "biological classification"
+            ],
+            "content_html": "<h2>Let's Explore the Amazing World of Classification!</h2>\n<p><strong>Chapter 2: Biological Classification</strong></p>\n<p>Have you ever wondered how scientists organize the incredible diversity of life on Earth?  It's like putting together a giant puzzle, but instead of pieces, we have living things!  </p>\n<p><strong>Section 1:  The Big Picture</strong></p>\n<ul>\n<li><strong>Kingdom:</strong>  Think of this as the largest box, containing all living things.  It's the broadest category.</li>\n<li><strong>Phylum/Division:</strong>  Within the kingdom, we have phyla (for animals) or divisions (for plants), grouping organisms with similar characteristics.</li>\n<li><strong>Class:</strong>  Classes are like smaller boxes within the phylum/division, organizing organisms with even more shared features.</li>\n<li><strong>Order:</strong>  Orders group together families with common traits.</li>\n<li><strong>Family:</strong>  This category brings together genera with similar characteristics.</li>\n<li><strong>Genus:</strong>  A group of closely related species forms a genus. </li>\n<li><strong>Species:</strong>  The most specific category, grouping organisms that can reproduce with each other. This is like a tiny box within the genus!</li>\n</ul>\n<p><strong>Section 2:  The Hierarchy Explained</strong></p>\n<p>Think of this classification system as a ladder, with each rung representing a category.  The broadest category, Kingdom, sits at the top, while the most specific, Species, is at the bottom.</p>\n<p><strong>Section 3:  Let's Get Specific</strong></p>\n<p>To make things even easier, let's remember a key concept: <em>Genus</em> is like a bridge between <em>family</em> and <em>species</em>.  So, think of the ladder as having an extra rung specifically for genus!</p>\n<p><strong>Remember:</strong> By using this system, scientists can easily categorize and study the amazing variety of life forms on Earth!</p>",
+            "html_with_keywords": "<h2>Let's Explore the Amazing World of Classification!</h2><p><strong>Chapter 2: Biological Classification</strong></p><p>Have you ever wondered how scientists organize the incredible diversity of life on Earth?  It's like putting together a giant puzzle, but instead of pieces, we have living things!  </p><p><strong>Section 1:  The Big Picture</strong></p><ul><li><strong><span class=\"important\">Kingdom</span>:</strong>  Think of this as the largest box, containing all living things.  It's the broadest category.</li><li><strong><span class=\"important\">Phylum</span>/Division:</strong>  Within the kingdom, we have phyla (for animals) or divisions (for plants), grouping organisms with similar characteristics.</li><li><strong><span class=\"important\">Class</span>:</strong>  Classes are like smaller boxes within the phylum/division, organizing organisms with even more shared features.</li><li><strong><span class=\"important\">Order</span>:</strong>  Orders group together families with common traits.</li><li><strong><span class=\"important\">Family</span>:</strong>  This category brings together genera with similar characteristics.</li><li><strong><span class=\"important\">Genus</span>:</strong>  A group of closely related species forms a genus. </li><li><strong><span class=\"important\">Species</span>:</strong>  The most specific category, grouping organisms that can reproduce with each other. This is like a tiny box within the genus!</li></ul><p><strong>Section 2:  The Hierarchy Explained</strong></p><p>Think of this classification system as a ladder, with each rung representing a category.  The broadest category, <span class=\"important\">Kingdom</span>, sits at the top, while the most specific, <span class=\"important\">Species</span>, is at the bottom.</p><p><strong>Section 3:  Let's Get Specific</strong></p><p>To make things even easier, let's remember a key concept: <em>Genus</em> is like a bridge between <em>family</em> and <em>species</em>.  So, think of the ladder as having an extra rung specifically for genus!</p><p><strong>Remember:</strong> By using this system, scientists can easily categorize and study the amazing variety of life forms on Earth!</p>"
+        },
+        {
+            "id": 1172,
+            "description": "Related genera belong to the same",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-17T10:42:16.385+05:30",
+            "updated_at": "2024-08-02T10:15:06.919+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 4692,
+                    "description": "species",
+                    "question_id": 1172,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:42:16.389+05:30",
+                    "updated_at": "2024-06-17T10:42:16.389+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4693,
+                    "description": "variety",
+                    "question_id": 1172,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:42:16.392+05:30",
+                    "updated_at": "2024-06-17T10:42:16.392+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4694,
+                    "description": "family",
+                    "question_id": 1172,
+                    "is_correct": true,
+                    "created_at": "2024-06-17T10:42:16.394+05:30",
+                    "updated_at": "2024-06-17T10:42:16.394+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4695,
+                    "description": "breed",
+                    "question_id": 1172,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:42:16.396+05:30",
+                    "updated_at": "2024-06-17T10:42:16.396+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "taxonomy",
+                "classification",
+                "genus",
+                "family",
+                "species"
+            ],
+            "content_html": "<h2>Let's Classify Living Things!</h2>\n<p>Imagine a giant library where all the books are organized by category. We use a similar system to organize living things called <strong>taxonomy</strong>.</p>\n<h3>Levels of Organization:</h3>\n<ul>\n<li><strong>Species:</strong> The most specific category, like all the different types of dogs in the world.</li>\n<li><strong>Genus:</strong> A group of closely related species, like dogs, wolves, and foxes.</li>\n<li><strong>Family:</strong>  A group of related genera, like the dog family which includes dogs, wolves, foxes, and jackals.</li>\n<li><strong>Order:</strong> A grouping of families with more general similarities.</li>\n<li><strong>Kingdom:</strong> The broadest category, encompassing all organisms with fundamental similarities, like plants or animals.</li>\n</ul>\n<p><strong>Think of it like a family tree:</strong>  related genera share common features and are grouped together in the same <strong>family</strong>. </p>",
+            "html_with_keywords": "<h2>Let's Classify Living Things!</h2><p>Imagine a giant library where all the books are organized by category. We use a similar system to organize living things called <span class=\"important\">taxonomy</span>.</p><h3>Levels of Organization:</h3><ul><li><span class=\"important\">Species</span>: The most specific category, like all the different types of dogs in the world.</li><li><span class=\"important\">Genus</span>: A group of closely related <span class=\"important\">species</span>, like dogs, wolves, and foxes.</li><li><span class=\"important\">Family</span>:  A group of related <span class=\"important\">genera</span>, like the dog family which includes dogs, wolves, foxes, and jackals.</li><li><span class=\"important\">Order</span>: A grouping of <span class=\"important\">families</span> with more general similarities.</li><li><span class=\"important\">Kingdom</span>: The broadest category, encompassing all organisms with fundamental similarities, like plants or animals.</li></ul><p>Think of it like a family tree:  related <span class=\"important\">genera</span> share common features and are grouped together in the same <span class=\"important\">family</span>. </p>"
+        },
+        {
+            "id": 1173,
+            "description": "The suffix-oideae is used for",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-17T10:44:17.408+05:30",
+            "updated_at": "2024-08-02T10:15:07.038+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 4696,
+                    "description": "tribe",
+                    "question_id": 1173,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:44:17.412+05:30",
+                    "updated_at": "2024-06-17T10:44:17.412+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4697,
+                    "description": "family",
+                    "question_id": 1173,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:44:17.414+05:30",
+                    "updated_at": "2024-06-17T10:44:17.414+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4698,
+                    "description": "class",
+                    "question_id": 1173,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:44:17.416+05:30",
+                    "updated_at": "2024-06-17T10:44:17.416+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4699,
+                    "description": "subfamily",
+                    "question_id": 1173,
+                    "is_correct": true,
+                    "created_at": "2024-06-17T10:44:17.417+05:30",
+                    "updated_at": "2024-06-17T10:44:17.417+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "taxonomy",
+                "taxonomic hierarchy",
+                "classification",
+                "nomenclature",
+                "suffix"
+            ],
+            "content_html": "<h2>Let's Explore the World of Living Things!</h2>\n<p><strong>Chapter 1: The Living World</strong></p>\n<ul>\n<li><strong>Taxonomy:</strong> The science of classifying living things. Imagine a giant puzzle where we need to sort all living things into groups based on their similarities!</li>\n<li><strong>Taxonomic Hierarchy:</strong> This is a special way we organize the puzzle. It starts with the smallest piece, the <strong>species</strong>, and then groups them into larger and larger categories, until we reach the broadest level, the <strong>kingdom</strong>!</li>\n<li><strong>Classification:</strong> The process of sorting living things into the taxonomic categories, like putting each puzzle piece in its right place.</li>\n<li><strong>Nomenclature:</strong>  This is the system of naming living things. It uses a two-part name, called a <strong>binomial</strong>, like a special code for each organism. The first part is the <strong>genus</strong>, and the second part is the <strong>species</strong>. </li>\n</ul>\n<p><strong>For example:</strong>  <strong>Mangifera indica</strong> is the binomial name for mango!  <strong>Mangifera</strong> is the genus, and <strong>indica</strong> is the species. </p>\n<ul>\n<li><strong>Suffixes:</strong>  These are like special endings to a word that tell us the rank of a group. For example,  \"-oideae\" is used for <strong>subfamily</strong>.  </li>\n</ul>\n<p>Let's keep exploring and learn more about the amazing world of living things! </p>",
+            "html_with_keywords": "<h2>Let's Explore the World of Living Things!</h2><p><strong>Chapter 1: The Living World</strong></p><ul><li><span class=\"important\">Taxonomy</span>: The science of classifying living things. Imagine a giant puzzle where we need to sort all living things into groups based on their similarities!</li><li><span class=\"important\">Taxonomic Hierarchy</span>: This is a special way we organize the puzzle. It starts with the smallest piece, the <span class=\"important\">species</span>, and then groups them into larger and larger categories, until we reach the broadest level, the <span class=\"important\">kingdom</span>!</li><li><span class=\"important\">Classification</span>: The process of sorting living things into the taxonomic categories, like putting each puzzle piece in its right place.</li><li><span class=\"important\">Nomenclature</span>:  This is the system of naming living things. It uses a two-part name, called a <span class=\"important\">binomial</span>, like a special code for each organism. The first part is the <span class=\"important\">genus</span>, and the second part is the <span class=\"important\">species</span>. </li></ul><p><strong>For example:</strong>  <span class=\"important\">Mangifera indica</span> is the binomial name for mango!  <span class=\"important\">Mangifera</span> is the genus, and <span class=\"important\">indica</span> is the species. </p><ul><li><span class=\"important\">Suffixes</span>:  These are like special endings to a word that tell us the rank of a group. For example,  \"-oideae\" is used for <span class=\"important\">subfamily</span>.  </li></ul><p>Let's keep exploring and learn more about the amazing world of living things! </p>"
+        },
+        {
+            "id": 1174,
+            "description": "In a taxonomic hierarchy, family is interpolated between",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-17T10:48:56.044+05:30",
+            "updated_at": "2024-08-02T10:15:07.136+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 4700,
+                    "description": "kingdom and class",
+                    "question_id": 1174,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:48:56.048+05:30",
+                    "updated_at": "2024-06-17T10:48:56.048+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4701,
+                    "description": "class and order",
+                    "question_id": 1174,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:48:56.051+05:30",
+                    "updated_at": "2024-06-17T10:48:56.051+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4702,
+                    "description": "order and  genus",
+                    "question_id": 1174,
+                    "is_correct": true,
+                    "created_at": "2024-06-17T10:48:56.053+05:30",
+                    "updated_at": "2024-06-17T10:48:56.053+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4703,
+                    "description": "Class and genus",
+                    "question_id": 1174,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:48:56.054+05:30",
+                    "updated_at": "2024-06-17T10:48:56.054+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "taxonomic hierarchy",
+                "family",
+                "order",
+                "genus",
+                "classification"
+            ],
+            "content_html": "<h2>The Amazing World of Classification!</h2>\n<p><strong>Let's talk about the incredible diversity of life on Earth!</strong> Scientists use a system called <strong>taxonomic hierarchy</strong> to organize all living things. Think of it like a giant family tree for all organisms, but instead of branches, we have levels of classification. </p>\n<p><strong>Here are the main levels, from broadest to most specific:</strong></p>\n<ul>\n<li><strong>Kingdom:</strong>  The biggest box! This is like the \"grandparent\" level, grouping organisms based on very general features.  For example, plants and animals belong to different kingdoms!</li>\n<li><strong>Phylum/Division:</strong> This is like the \"parent\" level. Within each kingdom, organisms with more specific similarities are grouped together.  For example, all the animals with backbones belong to the phylum Chordata.</li>\n<li><strong>Class:</strong>  This is like the \"aunt/uncle\" level, narrowing down the characteristics even further. For example, all the mammals belong to the class Mammalia.</li>\n<li><strong>Order:</strong> Now we're getting more specific! This level is like a \"cousin\" group, sharing a lot of similarities.  For example, all the cats belong to the order Carnivora.</li>\n<li><strong>Family:</strong>  This is the \"sibling\" level, with even more shared features.  For example, the cat family, Felidae, includes lions, tigers, and leopards.</li>\n<li><strong>Genus:</strong>  This is the \"brother/sister\" level, and it's getting very specific. For example, the genus Panthera includes lions, tigers, and leopards.</li>\n<li><strong>Species:</strong>  This is the most specific level, like an individual within the family.  For example, the species Panthera leo is the scientific name for the lion.</li>\n</ul>\n<p><strong>So, the next time you see a creature, think about its place on this amazing tree of life!</strong> </p>",
+            "html_with_keywords": "<h2>The Amazing World of Classification!</h2><p><strong>Let's talk about the incredible diversity of life on Earth!</strong> Scientists use a system called <span class=\"important\">taxonomic hierarchy</span> to organize all living things. Think of it like a giant family tree for all organisms, but instead of branches, we have levels of classification. </p><p><strong>Here are the main levels, from broadest to most specific:</strong></p><ul><li><strong>Kingdom:</strong>  The biggest box! This is like the \"grandparent\" level, grouping organisms based on very general features.  For example, plants and animals belong to different <span class=\"important\">kingdoms</span>!</li><li><strong>Phylum/Division:</strong> This is like the \"parent\" level. Within each <span class=\"important\">kingdom</span>, organisms with more specific similarities are grouped together.  For example, all the animals with backbones belong to the phylum Chordata.</li><li><strong>Class:</strong>  This is like the \"aunt/uncle\" level, narrowing down the characteristics even further. For example, all the <span class=\"important\">mammals</span> belong to the class Mammalia.</li><li><strong>Order:</strong> Now we're getting more specific! This level is like a \"cousin\" group, sharing a lot of similarities.  For example, all the <span class=\"important\">cats</span> belong to the order <span class=\"important\">Carnivora</span>.</li><li><strong>Family:</strong>  This is the \"sibling\" level, with even more shared features.  For example, the cat family, <span class=\"important\">Felidae</span>, includes <span class=\"important\">lions</span>, <span class=\"important\">tigers</span>, and <span class=\"important\">leopards</span>.</li><li><strong>Genus:</strong>  This is the \"brother/sister\" level, and it's getting very specific. For example, the genus <span class=\"important\">Panthera</span> includes <span class=\"important\">lions</span>, <span class=\"important\">tigers</span>, and <span class=\"important\">leopards</span>.</li><li><strong>Species:</strong>  This is the most specific level, like an individual within the family.  For example, the species <span class=\"important\">Panthera leo</span> is the scientific name for the <span class=\"important\">lion</span>.</li></ul><p><strong>So, the next time you see a creature, think about its place on this amazing tree of life!</strong> </p>"
+        },
+        {
+            "id": 1175,
+            "description": "Which of the following taxonomic categories includes all the others?",
+            "difficulty_level": null,
+            "topic": "The Living World",
+            "is_published": true,
+            "created_at": "2024-06-17T10:50:56.123+05:30",
+            "updated_at": "2024-08-02T10:15:07.243+05:30",
+            "detailed_solution": "",
+            "type": "",
+            "is_mandatory": false,
+            "show_in_feed": true,
+            "pyq_label": null,
+            "topic_id": null,
+            "is_saved": false,
+            "options": [
+                {
+                    "id": 4704,
+                    "description": "Family",
+                    "question_id": 1175,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:50:56.127+05:30",
+                    "updated_at": "2024-06-17T10:50:56.127+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4705,
+                    "description": "Order",
+                    "question_id": 1175,
+                    "is_correct": true,
+                    "created_at": "2024-06-17T10:50:56.130+05:30",
+                    "updated_at": "2024-06-17T10:50:56.130+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4706,
+                    "description": "Genus",
+                    "question_id": 1175,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:50:56.132+05:30",
+                    "updated_at": "2024-06-17T10:50:56.132+05:30",
+                    "unanswered": false
+                },
+                {
+                    "id": 4707,
+                    "description": "Species",
+                    "question_id": 1175,
+                    "is_correct": false,
+                    "created_at": "2024-06-17T10:50:56.134+05:30",
+                    "updated_at": "2024-06-17T10:50:56.134+05:30",
+                    "unanswered": false
+                }
+            ],
+            "keywords": [
+                "taxonomic categories",
+                "hierarchy",
+                "classification",
+                "kingdom",
+                "species"
+            ],
+            "content_html": "<h2>Unlocking the Secrets of Life:  A Journey Through Classification</h2>\n<p><strong>Section 1:  Sorting Out the Living World</strong></p>\n<p>Imagine a giant puzzle with millions of pieces, each representing a different living organism.  How would you put it together?  Scientists use a special system called <strong>taxonomy</strong> to classify all living things, just like organizing a puzzle.  This system helps us understand the amazing diversity of life on Earth!</p>\n<p><strong>Section 2:  The Hierarchy of Life</strong></p>\n<p>Taxonomy uses a series of nested categories to organize living things.  Think of it like a set of Russian nesting dolls, with each doll fitting inside the next.</p>\n<ul>\n<li><strong>Kingdom</strong> is the broadest category, encompassing all living things.  It's like the biggest doll!</li>\n<li><strong>Phylum/Division</strong> (for plants) groups organisms with similar, fundamental features.  This is like the next smaller doll.</li>\n<li><strong>Class</strong> further narrows down the grouping based on shared characteristics.</li>\n<li><strong>Order</strong> groups organisms with even more specific features.</li>\n<li><strong>Family</strong>  represents a close group of related organisms.</li>\n<li><strong>Genus</strong> is a smaller group of closely related organisms.</li>\n<li><strong>Species</strong> is the most specific category, including organisms that can interbreed and produce fertile offspring.</li>\n</ul>\n<p><strong>Section 3:  Naming the Pieces</strong></p>\n<p>Each living organism has a unique scientific name, like a special code. This system, called <strong>binomial nomenclature</strong>, uses two Latin words to name each organism. </p>\n<ul>\n<li>The first word represents the <strong>genus</strong>, like a family name.</li>\n<li>The second word is the <strong>specific epithet</strong>, like a first name, describing something unique about the organism.</li>\n</ul>\n<p><strong>Section 4:  The Importance of Taxonomy</strong></p>\n<p>Understanding taxonomy is crucial for many reasons:</p>\n<ul>\n<li><strong>Organization:</strong>  It helps us organize the vast diversity of life on Earth.</li>\n<li><strong>Communication:</strong>  Scientists worldwide use a common language to communicate about organisms.</li>\n<li><strong>Conservation:</strong>  Knowing how organisms are related helps us protect biodiversity.</li>\n<li><strong>Research:</strong>  It provides a framework for studying how organisms evolve and interact.</li>\n</ul>\n<p><strong>Remember:</strong>  Taxonomy is a fascinating tool that allows us to explore and understand the intricate web of life on our planet!</p>",
+            "html_with_keywords": "<h2>Unlocking the Secrets of Life:  A Journey Through Classification</h2><p><strong>Section 1:  Sorting Out the Living World</strong></p><p>Imagine a giant puzzle with millions of pieces, each representing a different living organism.  How would you put it together?  Scientists use a special system called <span class=\"important\">taxonomy</span> to classify all living things, just like organizing a puzzle.  This system helps us understand the amazing diversity of life on Earth!</p><p><strong>Section 2:  The Hierarchy of Life</strong></p><p>Taxonomy uses a series of nested categories to organize living things.  Think of it like a set of Russian nesting dolls, with each doll fitting inside the next.</p><ul><li><span class=\"important\">Kingdom</span> is the broadest category, encompassing all living things.  It's like the biggest doll!</li><li><span class=\"important\">Phylum/Division</span> (for plants) groups organisms with similar, fundamental features.  This is like the next smaller doll.</li><li><span class=\"important\">Class</span> further narrows down the grouping based on shared characteristics.</li><li><span class=\"important\">Order</span> groups organisms with even more specific features.</li><li><span class=\"important\">Family</span>  represents a close group of related organisms.</li><li><span class=\"important\">Genus</span> is a smaller group of closely related organisms.</li><li><span class=\"important\">Species</span> is the most specific category, including organisms that can interbreed and produce fertile offspring.</li></ul><p><strong>Section 3:  Naming the Pieces</strong></p><p>Each living organism has a unique scientific name, like a special code. This system, called <span class=\"important\">binomial nomenclature</span>, uses two Latin words to name each organism. </p><ul><li>The first word represents the <span class=\"important\">genus</span>, like a family name.</li><li>The second word is the <span class=\"important\">specific epithet</span>, like a first name, describing something unique about the organism.</li></ul><p><strong>Section 4:  The Importance of Taxonomy</strong></p><p>Understanding taxonomy is crucial for many reasons:</p><ul><li><span class=\"important\">Organization</span>:  It helps us organize the vast diversity of life on Earth.</li><li><span class=\"important\">Communication</span>:  Scientists worldwide use a common language to communicate about organisms.</li><li><span class=\"important\">Conservation</span>:  Knowing how organisms are related helps us protect biodiversity.</li><li><span class=\"important\">Research</span>:  It provides a framework for studying how organisms evolve and interact.</li></ul><p><strong>Remember:</strong>  Taxonomy is a fascinating tool that allows us to explore and understand the intricate web of life on our planet!</p>"
+        }
     ]
-  }
+}

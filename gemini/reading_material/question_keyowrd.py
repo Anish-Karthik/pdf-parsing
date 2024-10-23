@@ -33,7 +33,7 @@ def get_correct_option(question):
 def get_question_keywords(question, topic, neet_pdf, retry=0):
     response = model.generate_content([
         get_prompt(question["description"], get_correct_option(question), topic), neet_pdf])
-    return change_response_to_list(response)
+    question["keywords"] = change_response_to_list(response)
 
 
 def populate_question_keywords(input_file_path, neet_pdf):

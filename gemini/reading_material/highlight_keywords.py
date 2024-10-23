@@ -13,7 +13,7 @@ def get_correct_option(question):
 
 def get_highlighted_html(question):
     prompt = f"""
-            question: {question["description"]}
+    question: {question["description"]}
     answer: {get_correct_option(question)}
     metadata: {question["keywords"]}
     content:{question["content_html"]}
@@ -22,7 +22,6 @@ def get_highlighted_html(question):
     """
     response = model.generate_content(prompt)
     print(response.text)
-    
 
     prompt = f"""
     keywords: {response.text}
@@ -39,7 +38,8 @@ def get_highlighted_html(question):
     ).text
 
     question["html_with_keywords"] = question["html_with_keywords"].replace("```html\n", "")
-    question["html_with_keywords"] = question["html_with_keywords"].replace("\n```", "")
+    endIndex = question["html_with_keywords"].find("\n```")
+    question["html_with_keywords"] = question["html_with_keywords"][:endIndex]
     question["html_with_keywords"] = question["html_with_keywords"].replace("\n", "")
     question["html_with_keywords"] = question["html_with_keywords"].replace("\\\"", r"\"")
 
