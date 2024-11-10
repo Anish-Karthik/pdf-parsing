@@ -20,8 +20,9 @@ def get_highlighted_html(question):
     options: {"\n".join(get_all_options(question))}
     answer: {get_correct_option(question)}
     keywords: {question["keywords"]}
-
-    mark the required and important keywords for the reader to answer the question, in the given html by using <span class="important"></span> tags
+    
+    we want to create an interactive reading material based on the below content, mark certain keywords as important for the reader to be engaged in the content,
+    in the given html by using <span class="important"></span> tags
 
     content:{question["content_html"]}
     """
