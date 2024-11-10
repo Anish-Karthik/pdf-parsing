@@ -73,5 +73,55 @@ def parse_pdf(pdf_path):
         with open(page_pdf_path[:-4]+".txt","w") as f:
           f.write(page_content)
 
-parse_pdf("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101.pdf")
+def split_content_into_parts(content, delimiter):
+  prompt = f"""
+    Split each paragraph/distinct sections using the delimiter: {delimiter} and next line. 
+
+            **Don't omit any information.**
+
+            **Don't add any information.**
+
+            Content:
+            {content}
+        """
+  response = model.generate_content(prompt) 
+  return response.text
+
+def remove_empty(parts):
+  parts =[part for part in parts if part.strip() != ""]
+
+  if len(parts[-1]) < 35 and len(parts) > 1:
+    parts[-2] += parts[-1]
+    parts = parts[:-1]
+
+  return parts
+
+def split_ncert_into_parts(folder_path):
+  delimiter = "&&PART&&"
+  splitted_content = []
+  last_part = ""
+  for file in sorted(os.listdir(folder_path)):
+    if not file.endswith(".txt"):
+      continue
+
+    with open(os.path.join(folder_path, file), "r") as f:
+      page_content = f.read()
+
+      split_content = split_content_into_parts(last_part + page_content, delimiter)
+      split_content = delimiter+split_content
+      splitted_content += remove_empty(split_content.split(delimiter))
+      print(splitted_content)
+
+      last_part = splitted_content[-1]
+      splitted_content = splitted_content[:-1]
+
+  splitted_content.append(last_part)
+
+  with open(os.path.join(folder_path, f"kebo101.txt"), "w") as f:
+      f.write(f"\n{delimiter}\n".join(splitted_content))
+      
+      
+
+# parse_pdf("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101.pdf")
+# split_ncert_into_parts("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101")
     
