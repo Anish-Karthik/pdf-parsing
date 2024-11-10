@@ -1,0 +1,98 @@
+
+[
+  {
+    "description": "சாரி, உங்க கேள்விக்கு பதில் சொல்ல முடியாது. நான் ஒரு பெரிய மொழி மாதிரி, படங்களைப் படிக்க முடியாது. அதனால, படத்தைப் பத்தி கேள்வி கேக்க முடியாது. \n\nஉங்களுக்கு வேற ஏதாவது கேள்வி இருந்தா கேளுங்க, நான் பதில் சொல்ல முயற்சிப்பேன்.",
+    "options": [],
+    "answer": []
+  },
+  {
+    "description": "தமிழ்நாடு தொடர்பான எந்த தகவலையும் இந்த உரை கொண்டிருக்கவில்லை என்பது உண்மையா?",
+    "options": ["ஆம்", "இல்லை"],
+    "answer": ["ஆம்"]
+  },
+  {
+    "description": "பெரிய மொழி மாதிரிகள் படங்களைப் படிக்க முடியுமா?",
+    "options": ["ஆம்", "இல்லை"],
+    "answer": ["இல்லை"]
+  },
+  {
+    "description": "Why is the AI unable to generate MCQ questions based on the provided text?",
+    "options": [
+      "The text lacks context about the picture.",
+      "The AI cannot process images.",
+      "The AI needs specific information about the picture.",
+      "All of the above."
+    ],
+    "answer": ["D"]
+  },
+  {
+    "description": "சாரி, நான் ஒரு படத்தைப் படித்து அதைத் திரும்பப் பெற முடியாது. நான் ஒரு பெரிய மொழி மாதிரி, படங்களைப் படிக்க முடியாது.\n\n**கேள்வி:**\n\nமேற்கண்ட வாக்கியத்தில், \"படங்களைப் படிக்க முடியாது\" என்ற கூற்று என்ன குறிப்பிடுகிறது?",
+    "options": [
+      "(a) படங்களைப் படிக்க முடியாது என்பது ஒரு திறமைக்குறைபாடு.",
+      "(b) படங்களைப் படிக்க முடியாது என்பது ஒரு மென்பொருள் குறைபாடு.",
+      "(c) படங்களைப் படிக்க முடியாது என்பது ஒரு செயல்பாட்டு வரம்பு.",
+      "(d) படங்களைப் படிக்க முடியாது என்பது ஒரு பரிணாமப் பின்னடைவு."
+    ],
+    "answer": ["C"]
+  },
+  {
+    "description": "What is the main limitation of the AI mentioned in the text?",
+    "options": [
+      "It cannot process text.",
+      "It cannot understand images.",
+      "It cannot answer multiple-choice questions.",
+      "It cannot create fill-in-the-blank questions."
+    ],
+    "answer": ["B"]
+  },
+  {
+    "description": "What type of information can the AI process regarding images?",
+    "options": [
+      "Image pixels",
+      "Image dimensions",
+      "Text descriptions of images",
+      "Image file formats"
+    ],
+    "answer": ["C"]
+  },
+  {
+    "description": "Fill in the blank: The AI can process ____ descriptions of images.",
+    "options": [
+      "audio",
+      "video",
+      "text",
+      "code"
+    ],
+    "answer": ["C"]
+  },
+  {
+    "description": "What is required for the AI to generate questions about an image?",
+    "options": [
+      "A link to the image",
+      "A physical copy of the image",
+      "A written description of the image",
+      "The image's file size"
+    ],
+    "answer": ["C"]
+  },
+  {
+    "description": "இந்த வாக்கியத்தில் \"சாரி\" என்ற வார்த்தை எதைக் குறிக்கிறது?",
+    "options": [
+      "கேள்வி கேட்பவரைப் பாராட்டுதல்",
+      "மன்னிப்பு கேட்பது",
+      "ஆச்சரியத்தைக் காட்டுதல்",
+      "உடன்படுதல்"
+    ],
+    "answer": ["B"]
+  },
+  {
+    "description": "\"பெரிய மொழி மாதிரி\" என்ற சொற்றொடரின் பொருள் என்ன?",
+    "options": [
+      "பல மொழிகளைப் பேசும் ஒரு மனிதர்",
+      "பல மொழிகளைப் பயிற்சி பெற்ற ஒரு கணினி நிரல்",
+      "மொழி அறிவைப் பற்றிய ஆராய்ச்சி",
+      "மொழி கற்பிக்கும் ஒரு புத்தகம்"
+    ],
+    "answer": ["B"]
+  }
+]

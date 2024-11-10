@@ -1,0 +1,94 @@
+
+[
+  {
+    "description": "What is the reason why the language model cannot read the PDF?",
+    "options": [
+      "The language model is not designed to read PDFs.",
+      "The language model is not connected to the internet.",
+      "The PDF file is corrupted.",
+      "The language model is too large to process the PDF."
+    ],
+    "answer": "A"
+  },
+  {
+    "description": "What is the primary limitation preventing the language model from extracting content from the PDF?",
+    "options": [
+      "The language model cannot understand the structure of a PDF.",
+      "The language model cannot process visual information.",
+      "The language model cannot recognize text within images.",
+      "The language model cannot interpret the PDF's formatting."
+    ],
+    "answer": "A"
+  },
+  {
+    "description": "What is the consequence of the language model's inability to read the PDF?",
+    "options": [
+      "The language model cannot answer questions based on the PDF.",
+      "The language model cannot summarize the PDF's content.",
+      "The language model cannot translate the PDF.",
+      "All of the above."
+    ],
+    "answer": "D"
+  }
+]
+
+[
+    {
+        "description": "சாரி, என்னால் PDF ஐப் படிக்க முடியாது. நான் ஒரு மொழி மாதிரி மட்டுமே. எனவே, நீங்கள் கொடுத்த PDF இல் உள்ள உள்ளடக்கத்திலிருந்து MCQ கேள்விகளை உருவாக்க எனக்கு முடியாது.",
+        "options": [
+            "A. PDF கோப்புகளைப் படிக்கக்கூடிய மொழி மாதிரி நான்",
+            "B. PDF கோப்புகளைப் படிக்க முடியாது",
+            "C. PDF கோப்புகளிலிருந்து MCQ கேள்விகளை உருவாக்க முடியும்",
+            "D. PDF கோப்புகளிலிருந்து MCQ கேள்விகளை உருவாக்க முடியாது"
+        ],
+        "answer": "D"
+    }
+]
+
+[
+    {
+        "description": "சாரி, நீங்க என்ன கேக்குறீங்கன்னு எனக்குப் புரியல. நான் ஒரு மொழி மாதிரி, அதனால PDF ஃபைல்‌ல உள்ளதைப் படிக்க முடியாது. அதனால கேள்விகள் எழுத முடியாது. உங்க கேள்விகளுக்கு ஏதாவது ஒரு வழியில பதில் சொல்ல முடியுமானு பாருங்க.",
+        "options": [],
+        "answer": []
+    }
+]
+
+[
+  {
+    "description": "சாரி, உங்களுக்கு உதவ முடியாது. எனக்கு PDF ஐப் படிக்க முடியாது. \n\nஉங்களுடைய PDF ஐ உரை கோப்பாக மாற்றி எனக்கு அனுப்புங்கள். அப்போது நான் உங்களுக்கு MCQ கேள்விகள் மற்றும் பதில்கள் அமைத்துத் தர முடியும்.",
+    "options": [],
+    "answer": []
+  }
+]
+
+[
+    {
+        "description": "சாரி, நீங்க என்ன கேக்கறீங்கன்னு எனக்குப் புரியல. ஒரு PDF ஐ இணைச்சிருக்கீங்கன்னு சொல்றீங்க, ஆனா எனக்கு அதுல இருக்கற விஷயங்களைப் படிக்க முடியாது. எனக்கு எந்த மாதிரி கேள்விகளை உருவாக்கணும்ன்னு எனக்குப் புரியல.",
+        "options": ["A. PDF-ல என்ன இருக்குன்னு சொல்லுங்க", "B. கேள்விகள் கேளுங்க", "C. PDF-ல இருக்கற விஷயங்களைப் படியுங்க", "D. வேற ஏதாவது கேளுங்க"],
+        "answer": ["A"]
+    },
+    {
+        "description": "PDF ல உள்ள விஷயங்களைச் சேர்த்து கேள்விகளை உருவாக்கணும்னா, PDF ல என்ன இருக்குன்னு எனக்குத் தெரியணும். அதை நீங்க எனக்கு கொடுக்க முடியுமா?  அப்போதான் நான் உங்களுக்கு தேவையான கேள்விகளை உருவாக்க முடியும்.",
+        "options": ["A. ஆமா, PDF-ல என்ன இருக்குன்னு சொல்லுங்க", "B. இல்ல, நான் PDF-யை கொடுக்க முடியாது", "C. எனக்குத் தெரியாது", "D. வேற ஏதாவது கேளுங்க"],
+        "answer": ["A"]
+    }
+]
+நான் உங்களைப் புரிந்துகொள்கிறேன். நீங்கள் ஒரு PDF கோப்பைப் படிக்க முடியாது என்பதால், அது பற்றிய MCQ கேள்விகளை உருவாக்க முடியாது என்று கூறுகிறீர்கள். எனவே, PDF கோப்பை நீங்கள் எனக்கு அனுப்பி, அதன் உள்ளடக்கத்தைப் பற்றிய MCQ கேள்விகளை உருவாக்க வேண்டும் என்று நீங்கள் கேட்கிறீர்கள். இதற்காக நான் உங்களுக்கு உதவ முடியும். 
+
+நான் உங்களுக்கு உதவ முடியும். நீங்கள் PDF கோப்பை எனக்கு அனுப்புங்கள், நான் அதன் உள்ளடக்கத்தைப் படித்து MCQ கேள்விகளை உருவாக்க முயற்சி செய்வேன். கேள்விகள் மற்றும் விருப்பங்கள் JSON வடிவத்தில் இருக்கும், மேலும் சரியான பதிலை A, B, C அல்லது D வடிவில் குறிப்பிட வேண்டும். 
+
+உதாரணமாக, ஒரு PDF கோப்பில் ஒரு கேள்வி இதுபோல் இருக்கலாம்:
+
+
+[
+    {
+        "description": "இந்தக் கட்டுரையின் தலைப்பு என்ன?",
+        "options": [
+            "காலநிலை மாற்றம்",
+            "சுற்றுச்சூழல் பாதுகாப்பு",
+            "பூமிக்குள் எரிசக்தி",
+            "புதுப்பிக்கத்தக்க எரிசக்தி"
+        ],
+        "answer": "A" 
+    }
+]

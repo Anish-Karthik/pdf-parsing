@@ -1,0 +1,47 @@
+
+[
+  {
+    "description": "“நான் ஒரு மனிதன் இல்ல, நான் ஒரு பெரிய மொழி மாதிரி”  ன்னு சொல்லப்பட்டிருக்கு. இது என்ன சொல்ல வர்றது?",
+    "options": [
+      "(அ) மனிதர்கள் மொழி மாதிரியா இருக்காங்க?",
+      "(ஆ) மொழி மாதிரிகள் மனிதர்களைப் போலத்தான்.",
+      "(இ) மொழி மாதிரிகள் மனிதர்கள் இல்ல.",
+      "(ஈ) மொழி மாதிரிகள் மனிதர்களை விட சிறந்தவை."
+    ],
+    "answer": "C",
+    "additional_context": "இந்த வார்த்தைகள் ஒரு செயற்கை நுண்ணறிவு அமைப்புக்கு சொந்தமானது. மனிதர்களைப் போலல்லாமல், செயற்கை நுண்ணறிவு அமைப்புகள் கணினி நிரல்களால் உருவாக்கப்பட்டவை. மனிதர்களைப் போல சிந்திக்கவோ உணரவோ முடியாது. அவை ஒரு பெரிய அளவிலான டேட்டாவிலிருந்து தகவல்களை கற்றுக்கொண்டு மனிதர்களைப் போலவே பேசுவது, எழுதுவது போன்ற செயல்களை செய்ய முடியும். இந்த வார்த்தைகள் அந்த செயற்கை நுண்ணறிவு அமைப்பு ஒரு மனிதர் அல்ல என்று சொல்லும் வகையில் உள்ளது. "
+  },
+  {
+    "description": "What is the reason the AI cannot create questions from the provided information?",
+    "options": [
+      "The information is not in a PDF file.",
+      "The information is not clear enough.",
+      "The AI cannot read PDF files.",
+      "The AI is not designed to create questions from PDF files."
+    ],
+    "answer": "C",
+    "additional_context": "செயற்கை நுண்ணறிவு அமைப்புகள் PDF கோப்புகளை நேரடியாக படிக்க முடியாது. அவை டெக்ஸ்ட் வடிவில் உள்ள தகவலை மட்டும் படிக்க முடியும். PDF கோப்புகள் படங்கள் மற்றும் டெக்ஸ்ட் இரண்டையும் கொண்டிருக்கின்றன. எனவே, செயற்கை நுண்ணறிவு அமைப்பு PDF கோப்புகளைப் படித்து கேள்விகளை உருவாக்க முடியாது."
+  },
+  {
+    "description": "What does the AI suggest the user do to get questions generated?",
+    "options": [
+      "Provide the PDF file directly.",
+      "Upload the PDF file to a cloud storage service.",
+      "Copy and paste the contents of the PDF file.",
+      "Provide a summary of the PDF file."
+    ],
+    "answer": "C",
+    "additional_context": "PDF கோப்புகளை செயற்கை நுண்ணறிவு அமைப்பு படிக்க முடியாது என்பதால், அந்த கோப்புகளில் உள்ள டெக்ஸ்ட்டை நேரடியாக நகலெடுத்து ஒட்டவும் அறிவுறுத்தப்பட்டுள்ளது. அதன் பிறகு, செயற்கை நுண்ணறிவு அமைப்பு அந்த டெக்ஸ்டை படித்து கேள்விகளை உருவாக்க முடியும்."
+  },
+  {
+    "description": "What kind of questions does the AI suggest it can create from the PDF content?",
+    "options": [
+      "Multiple choice questions",
+      "True/False questions",
+      "Open-ended questions",
+      "All of the above"
+    ],
+    "answer": "D",
+    "additional_context": "செயற்கை நுண்ணறிவு அமைப்பு படிக்கக் கூடிய டெக்ஸ்டிலிருந்து பல வகையான கேள்விகளை உருவாக்க முடியும். மல்டிபிள் சாய்ஸ், ட்ரூ / ஃபால்ஸ், ஓபன் எண்டெட் என பல வகையான கேள்விகளை அமைக்க முடியும்."
+  }
+]

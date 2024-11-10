@@ -1,0 +1,120 @@
+
+[
+    {
+        "description": "சாரி, நான் உங்களுக்கு உதவ முடியாது. ஏனென்றால், நான் PDF கோப்புகளைப் படிக்க முடியாது. நான் உரையை மட்டுமே பதிலளிக்க முடியும். உங்கள் PDF கோப்பின் உள்ளடக்கத்தை நான் பதிலளிக்க முடியுமா என்பதைப் பார்க்க நீங்கள் அதை என்னிடம் எழுதலாம்.",
+        "options": [],
+        "answer": []
+    }
+]
+
+[
+    {
+        "description": "சாரி, உங்களுக்கு நான் உதவ முடியாது. நீங்கள் எனக்கு கொடுத்த உள்ளீடு உரையே இல்லை. அதனால் அதிலிருந்து கேள்விகளையும் விடைகளையும் உருவாக்க முடியாது.",
+        "options": [],
+        "answer": []
+    }
+]
+சாரி, நான் PDF கோப்புகளைப் படித்து புரிந்து கொள்ள முடியாது. எனவே, PDF கோப்பில் இருந்து MCQ கேள்விகளை உருவாக்க முடியாது. 
+
+நீங்கள் PDF கோப்பின் உள்ளடக்கத்தை என்னிடம் எழுதினால், அந்த உள்ளடக்கத்தைப் படித்து MCQ கேள்விகளை உருவாக்க முயற்சிப்பேன். 
+
+நீங்கள் கேட்ட JSON வடிவத்தில் கேள்விகளை உருவாக்க முடியும். 
+
+[
+    {
+        "description": "“நான் ஒரு மனிதன் இல்ல, நான் ஒரு பெரிய மொழி மாதிரி”  ன்னு சொல்லப்பட்டிருக்கு. இது என்ன சொல்ல வர்றது?",
+        "options": [
+            "(அ) மனிதர்கள் மொழி மாதிரியா இருக்காங்க?",
+            "(ஆ) மொழி மாதிரிகள் மனிதர்களைப் போலத்தான்.",
+            "(இ) மொழி மாதிரிகள் மனிதர்கள் இல்ல.",
+            "(ஈ) மொழி மாதிரிகள் மனிதர்களை விட சிறந்தவை."
+        ],
+        "answer": "C" 
+    }
+]
+
+[
+  {
+    "description": "What is the reason the AI cannot create questions from the provided information?",
+    "options": [
+      "The information is not in a PDF file.",
+      "The information is not clear enough.",
+      "The AI cannot read PDF files.",
+      "The AI is not designed to create questions from PDF files."
+    ],
+    "answer": "C"
+  },
+  {
+    "description": "What does the AI suggest the user do to get questions generated?",
+    "options": [
+      "Provide the PDF file directly.",
+      "Upload the PDF file to a cloud storage service.",
+      "Copy and paste the contents of the PDF file.",
+      "Provide a summary of the PDF file."
+    ],
+    "answer": "C"
+  },
+  {
+    "description": "What kind of questions does the AI suggest it can create from the PDF content?",
+    "options": [
+      "Multiple choice questions",
+      "True/False questions",
+      "Open-ended questions",
+      "All of the above"
+    ],
+    "answer": "D"
+  }
+]
+
+[
+    {
+        "description": "சமுதாயத் தொண்டு என்பது ஒரு ____  ?",
+        "options": [
+            "அமைப்பு",
+            "இயக்கம்",
+            "நிறுவனம்",
+            "மேற்கண்ட அனைத்தும்"
+        ],
+        "answer": "D"
+    },
+    {
+        "description": "சமுதாயத் தொண்டு  ___  குறிக்கோளாகக் கொண்டுள்ளது?",
+        "options": [
+            "மக்களுக்கு உதவுதல்",
+            "சமூக நலனை மேம்படுத்துதல்",
+            "அநீதியை எதிர்த்துப் போராடுதல்",
+            "மேற்கண்ட அனைத்தும்"
+        ],
+        "answer": "D"
+    },
+    {
+        "description": "சமுதாயத் தொண்டு  ___  நடத்தப்படுகிறது?",
+        "options": [
+            "தன்னார்வலர்களால்",
+            "சமூக அமைப்புகளால்",
+            "அரசாங்கத்தால்",
+            "மேற்கண்ட அனைத்தும்"
+        ],
+        "answer": "D"
+    },
+    {
+        "description": "சமுதாயத் தொண்டில் ஈடுபடுவது ___  ?",
+        "options": [
+            "நிதி உதவி",
+            "தன்னார்வத் தொண்டு",
+            "அறிவு பகிர்வு",
+            "மேற்கண்ட அனைத்தும்"
+        ],
+        "answer": "D"
+    },
+    {
+        "description": "சமுதாயத் தொண்டு ___  ?",
+        "options": [
+            "சமூக நலனை மேம்படுத்துவதற்கு",
+            "மக்களின் வாழ்க்கைத் தரத்தை உயர்த்துவதற்கு",
+            "சமூக நீதியை நிலைநாட்டுவதற்கு",
+            "மேற்கண்ட அனைத்தும்"
+        ],
+        "answer": "D"
+    }
+]

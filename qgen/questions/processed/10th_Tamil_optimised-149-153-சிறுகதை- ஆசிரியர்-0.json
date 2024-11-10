@@ -1,0 +1,76 @@
+[
+          
+  {
+    
+          "description": "Which of the following is TRUE based on the provided text?",
+          "options": [
+      "The text provides information about the role of a short story writer.",
+      "The text explains the process of creating a short story.",
+      "The text discusses the importance of PDF files in short story writing.",
+      "The text states that a large language model can read and analyze PDF files."
+    ],
+    "answer": "A",
+    
+          "additional_context": "இந்தப் பத்தி ஒரு குறுந்தகவல் எழுத்தாளரின் பங்கு பற்றி கூறுகிறது. ஆனால், குறுந்தகவல் எழுதும் முறை பற்றிப் பேசவில்லை. இதில் PDF கோப்புகளைப் பற்றி எதுவும் குறிப்பிடப்படவில்லை. பெரிய மொழி மாதிரி PDF கோப்புகளைப் படிக்க முடியும் எனக் கூறுவது இதில் இல்லை."
+          }
+        ,
+          
+  {
+    
+          "description": "The text implies that a large language model can:",
+          "options": [
+      "Write short stories.",
+      "Extract information from PDF files.",
+      "Create multiple-choice questions.",
+      "Both A and B."
+    ],
+    "answer": "C",
+    
+          "additional_context": "இந்தப் பத்தி பெரிய மொழி மாதிரியின் திறன்களைப் பற்றி கூறுகிறது. பெரிய மொழி மாதிரி குறுந்தகவல்களை எழுத முடியும் என்று இதில் கூறப்படவில்லை. இதில் பெரிய மொழி மாதிரி PDF கோப்புகளைப் படிக்க முடியும் என்று கூறுவது இல்லை. இதில் பெரிய மொழி மாதிரி பலவிதத் தேர்வு கேள்விகளை உருவாக்க முடியும் என்று கூறப்படவில்லை."
+          }
+        ,
+          
+  {
+    
+          "description": "What is the primary reason why MCQ questions cannot be created from the given text?",
+          "options": [
+      "The text is too short and lacks relevant information.",
+      "The text is written in a technical language that is difficult to understand.",
+      "The text focuses on the limitations of a large language model.",
+      "The text is not about short story writing."
+    ],
+    "answer": "D",
+    
+          "additional_context": "இந்தப் பத்தி குறுந்தகவல் எழுத்து பற்றியது அல்ல. இது கலைஞரின் கலையின் மீதுள்ள ஈடுபாடு பற்றியது. எனவே இந்தப் பத்தியிலிருந்து பலவிதத் தேர்வு கேள்விகளை உருவாக்க முடியாது."
+          }
+        ,
+          
+  {
+    
+          "description": "பொருளில், பெரிய மொழி மாதிரி எதைச் செய்ய முடியாது என்று கூறப்பட்டுள்ளது?",
+          "options": [
+      "pdf கோப்புகளை உருவாக்க",
+      "pdf கோப்புகளைப் படிக்க",
+      "pdf கோப்புகளைப் பதிவேற்ற",
+      "pdf கோப்புகளில் இருந்து தகவல்களைப் பிரித்தெடுக்க"
+    ],
+    "answer": "B",
+    
+          "additional_context": "இந்தப் பத்தி பெரிய மொழி மாதிரியின் திறன்களைப் பற்றி கூறுகிறது. பெரிய மொழி மாதிரி PDF கோப்புகளைப் படிக்க முடியும் என்று இதில் கூறப்படவில்லை."
+          }
+        ,
+          
+  {
+    
+          "description": "'பெரிய மொழி மாதிரி' என்ற சொல் எதை குறிக்கிறது?",
+          "options": [
+      "மனிதர்களின் மனதைக் கணிக்கும் ஒரு கருவி",
+      "தகவல் பகுப்பாய்வுக்கான ஒரு மென்பொருள்",
+      "ஒரு வகையான கம்ப்யூட்டர் நிரல்",
+      "உலகின் அனைத்து தகவல்களையும் சேமித்து வைக்கும் ஒரு சாதனம்"
+    ],
+    "answer": "C",
+    
+          "additional_context": "பெரிய மொழி மாதிரி என்பது ஒரு கம்ப்யூட்டர் நிரல். இது மனிதர்களின் மனதைக் கணிக்கவோ, தகவல் பகுப்பாய்வு செய்யவோ, அல்லது உலகின் அனைத்து தகவல்களையும் சேமிக்கவோ செய்யாது."
+          }
+        ]

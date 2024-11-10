@@ -1,0 +1,48 @@
+
+[
+    {
+        "description": "Convert the above in the following json format. answer should be either A,B,C or D. verify this.",
+        "options": [],
+        "answer": [] 
+    },
+    {
+        "description": "What is the main reason the AI cannot help?",
+        "options": [
+            "The user did not provide any text.",
+            "The AI is not capable of generating questions.",
+            "The AI does not understand the user's request.",
+            "The AI is not connected to the internet."
+        ],
+        "answer": "A"
+    },
+    {
+        "description": "What does the AI suggest the user do to get help?",
+        "options": [
+            "Provide more text.",
+            "Ask a different question.",
+            "Try again later.",
+            "Contact the AI developer."
+        ],
+        "answer": "A"
+    },
+    {
+        "description": "சாரி, உனக்கு உதவ முடியாது. எனக்குத் தமிழ் மொழிப் பற்றிய அறிவு இல்லை.  நான் ஆங்கில மொழியிலும், பல வேறு மொழிகளிலும் பேசக்கூடிய ஒரு பெரிய மொழி மாதிரி.",
+        "options": [],
+        "answer": [] 
+    },
+    {
+        "description": "சாரி, உங்களோட கேள்விக்கு பதில் சொல்ல எனக்குத் தெரியாது. நீங்க கொடுத்த டெக்ஸ்ட்ல எந்த கேள்வியும் இல்ல. எனக்கு டெக்ஸ்ட்ல இருந்து கேள்வி எழுத முடியாது. வேற ஏதாவது டெக்ஸ்ட் கொடுங்க, அதைப் பத்தி நான் கேள்வி எழுதுறேன்.",
+        "options": [],
+        "answer": [] 
+    },
+    {
+        "description": "நீங்க என்ன கேக்குறீங்கன்னு எனக்குப் புரியல. நீங்க என்ன உள்ளடக்கத்தைப் பத்திப் பேசறீங்க? அதை எனக்குத் தர முடியுமா? \n\nநீங்க என்ன கேள்விகளை உருவாக்க விரும்புறீங்கன்னும் சொல்லுங்க. \n\nஉதாரணமாக:\n\n* \"இந்தக் கதையில கதாநாயகனோட பெயர் என்ன?\"\n* \"இந்தப் பாடலோட இசையமைப்பாளர் யார்?\"\n* \"இந்த வரலாற்று நிகழ்வினோட தேதி என்ன?\"\n\nநான் உங்களுக்கு MCQ கேள்விகளை உருவாக்க உதவி செய்வேன். ",
+        "options": [],
+        "answer": [] 
+    },
+    {
+        "description": "சாரி, உங்களோட கேள்விக்கு பதில் சொல்ல முடியாது. ஏன்னா, எனக்கு கொடுக்கப்பட்ட பாடத்தில் எந்த தகவலும் இல்லை. உங்களோட கேள்விக்கு பதிலளிக்கத் தேவையான தகவலை எனக்கு கொடுத்தால், நான் சரியான MCQ கேள்விகள் மற்றும் பதில்கள உருவாக்க முடியும்.",
+        "options": [],
+        "answer": []
+    }
+]
