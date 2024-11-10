@@ -1,6 +1,9 @@
 from gemini_utilities import *
 import threading
 
+def get_all_options(question):
+    options = question["options"]
+    return [option["description"] for option in options]
 
 def get_correct_option(question):
     options = question["options"]
@@ -14,24 +17,13 @@ def get_correct_option(question):
 def get_highlighted_html(question):
     prompt = f"""
     question: {question["description"]}
+    options: {"\n".join(get_all_options(question))}
     answer: {get_correct_option(question)}
-    metadata: {question["keywords"]}
+    keywords: {question["keywords"]}
+
+    mark the required and important keywords for the reader to answer the question, in the given html by using <span class="important"></span> tags
+
     content:{question["content_html"]}
-
-    understand the content, question and metadata, return the unique    keywords/ important words
-    """
-    response = model.generate_content(prompt)
-    print(response.text)
-
-    prompt = f"""
-    keywords: {response.text}
-    content:{question["content_html"]}
-
-    mark the first occurrence of each keyword exactly once in the given html in a using <span class="important"></span> tags
-    each keyword should be marked important only once
-
-    verify that each keyword is wrapped only once in the output html.
-
     """
     question["html_with_keywords"] = model.generate_content(
         prompt
