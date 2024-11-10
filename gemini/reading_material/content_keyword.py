@@ -77,6 +77,21 @@ def get_sentence_wise_embeddings(pdf_path) -> list[SentenceWiseEmbeddings]:
                 sentence_wise_embeddings.append(SentenceWiseEmbeddings(sentence_embedding, sentence, page_num))
     return sentence_wise_embeddings
 
+def get_ncert_content_gemini(pdf_path, fact):
+    pdf_text = ""
+    with fitz.open(pdf_path) as pdf_file:
+        for page_num, page in enumerate(pdf_file):
+            pdf_text += page.get_text()
+
+    prompt = f"""
+    fact: {fact}
+
+    extract the content relevent to the fact from the given content
+    {pdf_text}
+    
+    """
+    return get_response_delayed_prompt(prompt)
+
 def belongs_to_range(range,n):
     return n>=range[0]-4 and n<=range[1]+4
 
@@ -220,22 +235,34 @@ def material(neet_pdf, neet_pdf_path):
     # Generate and print reading materials
     for question in random_questions:
         fact = generate_fact_from_question(question)
+        print("fact: ", fact)
+        print("\n\n\n\n")
+        ncert_content = get_ncert_content_gemini(neet_pdf_path, fact)
+        print("NCERT CONTENT gemini: \n\n\n", ncert_content)
+        print("\n\n\n\n")
         top_ncert_matches = search_pdf_top_sentences(ncert_sentence_wise_embeddings, fact)
+        print("pdf page number: ", top_ncert_matches[0].pdf_pg_indices)
+        print(top_ncert_matches[0].raw_ncert_content)
         content = create_reading_material_content(fact, top_ncert_matches[0])
         question["material"] = content
-        # print(content)
+        print(content)
+        print("\n\n\n\n")
+        print(question["description"])
+        print(get_all_options(question))
+        print("\n")
+        print(get_correct_option(question))
         print("\n\n\n\n")
 
     print("\n\n\n\n")
 
     # Print questions and answers
-    print_questions_and_options(random_questions)
-    print("\n\n\n\n")
-    print_correct_answers(random_questions)
+    # print_questions_and_options(random_questions)
+    # print("\n\n\n\n")
+    # print_correct_answers(random_questions)
 
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
-# neet_pdf_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101.pdf"
-# ncert_sentence_wise_embeddings: list[SentenceWiseEmbeddings] = get_sentence_wise_embeddings(neet_pdf_path)
-# neet_pdf = upload_file_to_gemini(neet_pdf_path)
-# material(neet_pdf, neet_pdf_path)
+neet_pdf_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101.pdf"
+ncert_sentence_wise_embeddings: list[SentenceWiseEmbeddings] = get_sentence_wise_embeddings(neet_pdf_path)
+neet_pdf = upload_file_to_gemini(neet_pdf_path)
+material(neet_pdf, neet_pdf_path)
