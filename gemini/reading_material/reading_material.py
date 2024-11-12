@@ -3,12 +3,16 @@ from gemini_utilities import *
 from question_keyowrd import *
 from content_keyword import *
 from highlight_keywords import *
+from parse_pdf import parse_pdf
 import markdown
 import threading
 
 
 quiz_id_to_pdf_map = {
-    "31": "101",
+    "5": "117_b",
+    "50": "117_b",
+    "51": "118_b",
+    "52": "119_b"
 }
 
 
@@ -110,19 +114,18 @@ def read_txt_file(path):
 
 for quiz_id in quiz_id_to_pdf_map:
     json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/{quiz_id}.json"
-    neet_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf"
-    # neet_pdf = upload_file_to_gemini(neet_pdf_path)
-    # populate_question_keywords(json_path, neet_pdf)
-    # print("populated question keywords...")
+    ncert_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf"
+    ncert_pdf = upload_file_to_gemini(ncert_pdf_path)
+    populate_question_keywords(json_path, ncert_pdf)
+    print("populated question keywords")
     
-    # # ncert_sentence_wise_embeddings: list[SentenceWiseEmbeddings] = get_sentence_wise_embeddings(neet_pdf_path)
-    # # print("got sentence wise embeddings...")
+    # # # ncert_sentence_wise_embeddings: list[SentenceWiseEmbeddings] = get_sentence_wise_embeddings(neet_pdf_path)
+    # # # print("got sentence wise embeddings...")
 
-    # ncert_pdf_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101/kebo101.txt"
-    # ncert_content = read_txt_file(ncert_pdf_path)
-    # create_reading_material(json_path, ncert_content)
-    # print("created reading material...")
+    ncert_content = parse_pdf(ncert_pdf_path)
+    create_reading_material(json_path, ncert_content)
+    print("created reading material")
     
     highlight_keywords(json_path)
-
+    highlight_background_all(json_path)
     

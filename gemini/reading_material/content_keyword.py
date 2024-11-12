@@ -86,6 +86,7 @@ def get_ncert_content_gemini(pdf_text, question):
 
     create a reading material to answer the above question from the given content
     **Skip the last part where the question and answer is discussed**
+    **Do not use any image or figure as a reference in the content**
 
     content:
     {pdf_text}

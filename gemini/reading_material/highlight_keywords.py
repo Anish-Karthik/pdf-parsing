@@ -16,13 +16,9 @@ def get_correct_option(question):
 
 def get_highlighted_html(question):
     prompt = f"""
-    question: {question["description"]}
-    options: {"\n".join(get_all_options(question))}
-    answer: {get_correct_option(question)}
-    keywords: {question["keywords"]}
-    
-    we want to create an interactive reading material based on the below content, mark certain keywords as important for the reader to be engaged in the content,
-    in the given html by using <span class="important"></span> tags
+    im a student revising the following content, mark the technical terms as important for me to revise.
+    highlight the given content using <span class="important" style="color:red"></span> tags.
+    dont highlight anything in h tags
 
     content:{question["content_html"]}
     """
@@ -36,6 +32,40 @@ def get_highlighted_html(question):
     question["html_with_keywords"] = question["html_with_keywords"].replace("\n", "")
     question["html_with_keywords"] = question["html_with_keywords"].replace("\\\"", r"\"")
 
+    with open(f"/Users/pranav/Desktop/h-{question['id']}.html", "w") as f:
+        f.write(question["html_with_keywords"])
+
+def highlight_background(question):
+    prompt = f"""
+    question:{question["description"]}
+    options:{get_all_options(question)}
+    correct_option:{get_correct_option(question)}
+
+    mark the relevant portion required to answer the question in the content using <span class="highlight" style="background-color:yellow"></span> tags.
+
+    content:{question["html_with_keywords"]}
+    """
+    question["html_with_keywords"] = model.generate_content(
+        prompt
+    ).text
+
+    question["html_with_keywords"] = question["html_with_keywords"].replace("```html\n", "")
+    endIndex = question["html_with_keywords"].find("\n```")
+    question["html_with_keywords"] = question["html_with_keywords"][:endIndex]
+    question["html_with_keywords"] = question["html_with_keywords"].replace("\n", "")
+    question["html_with_keywords"] = question["html_with_keywords"].replace("\\\"", r"\"")
+
+    with open(f"/Users/pranav/Desktop/h-{question['id']}.html", "w") as f:
+        f.write(question["html_with_keywords"])
+
+def highlight_background_all(path):
+    quiz = read_json_file(path)
+    call_collection_with_threading(
+        func=highlight_background,
+        threads=10,
+        collection=quiz["questions"]
+    )
+    write_json_file(path, quiz)
 
 def highlight_keywords(path):
 
