@@ -1,4 +1,5 @@
 import json
+from clean_reading_material import clean_reading_material
 from gemini_utilities import *
 from question_keyowrd import *
 from content_keyword import *
@@ -162,4 +163,4 @@ for quiz_id in quiz_id_to_pdf_map:
     
     highlight_keywords(json_path)
     highlight_background_all(json_path)
-    
+    clean_reading_material(json_path)

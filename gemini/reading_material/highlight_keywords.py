@@ -17,7 +17,7 @@ def get_correct_option(question):
 def get_highlighted_html(question):
     prompt = f"""
     im a student revising the following content, mark the technical terms as important for me to revise.
-    highlight the given content using <span class="important" style="color:red"></span> tags.
+    highlight the given content using <span class="important"></span> tags.
     dont highlight anything in h tags
 
     content:{question["content_html"]}
@@ -41,7 +41,7 @@ def highlight_background(question):
     options:{get_all_options(question)}
     correct_option:{get_correct_option(question)}
 
-    mark the relevant portion required to answer the question in the content using <span class="highlight" style="background-color:yellow"></span> tags.
+    mark the relevant portion required to answer the question in the content using <span class="highlight"></span> tags.
 
     content:{question["html_with_keywords"]}
     """
