@@ -3,42 +3,59 @@ const fs = require('fs');
 const path = require('path');
 
 // Get list of HTML files
-const htmlFiles = fs.readdirSync('html').filter(file => file.endsWith('.html'));
-const startPageId = Math.min(...htmlFiles.map(file => parseInt(file.replace('.html', ''))));
-const endPageId = Math.max(...htmlFiles.map(file => parseInt(file.replace('.html', ''))));
-console.log(`Found ${htmlFiles.length} HTML files`);
+const startPageId = 0;
+var endPageId = -1;
 
 const server = http.createServer((req, res) => {
-  // Serve static HTML files
-  if (req.url.endsWith('.html')) {
-    const filePath = path.join('html', path.basename(req.url)); // Sanitize path
-    fs.readFile(filePath, (err, content) => {
-      if (err) {
-        res.writeHead(404);
-        res.end('File not found');
-        return;
-      }
-      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-      res.end(content);
-    });
-    return;
-  }
-
   // Handle page routes
   if (req.url.startsWith('/page/')) {
     const pageId = parseInt(req.url.split('/')[2]);
-    if (isNaN(pageId) || pageId < startPageId || pageId > endPageId) {
-      res.writeHead(404);
-      res.end('Page not found');
-      return;
-    }
+    const questions = []
 
-    const html = `
+    fs.readFile('../../Neet/5.json', 'utf8', (err, data) => {
+      if (err) {
+        console.error('Error reading file:', err);
+        return;
+      }
+
+      const jsonData = JSON.parse(data);
+      endPageId = jsonData.questions.length;
+
+      if (isNaN(pageId) || pageId < startPageId || pageId > endPageId) {
+        res.writeHead(404);
+        res.end('Page not found');
+        return;
+      }
+
+      jsonData.questions.forEach(element => {
+        let question = {}
+        question.description = element.description;
+        element.options.forEach(option => {
+          if (option.is_correct) {
+            question.answer = option.description;
+          }
+        });
+        question.ncert_content = element.html_with_keywords_ncert;
+        question.current_content = element.html_with_keywords;
+        questions.push(question);
+      });
+
+      const html = `
       <!DOCTYPE html>
       <html>
       <head>
         <meta charset="utf-8">
         <style>
+          .container {
+            display: flex;
+          }
+
+          .left-section, .right-section {
+            flex: 1;
+          }
+          .left-section {
+            margin-right: 30px;
+          }
           .nav-buttons {
             position: fixed;
             bottom: 20px;
@@ -64,30 +81,36 @@ const server = http.createServer((req, res) => {
         </style>
       </head>
       <body>
-        <div id="content"></div>
+        <div id="content">
+          <div id="question">
+            Question: ${questions[pageId].description}
+            </br>
+            Answer: ${questions[pageId].answer}
+          </div>
+          </br>
+          <div class="container">
+            <div class="left-section">
+              ${questions[pageId].ncert_content}
+            </div>
+            <div class="right-section">
+              ${questions[pageId].current_content}
+            </div>
+          </div>
+        </div>
+
         <div class="nav-buttons">
           <button class="nav-button" ${pageId === startPageId ? 'disabled' : ''} onclick="window.location.href='/page/${pageId > startPageId ? pageId - 1 : startPageId}'">&lt; Previous</button>
           <button class="nav-button" ${pageId === endPageId ? 'disabled' : ''} onclick="window.location.href='/page/${pageId < endPageId ? pageId + 1 : endPageId}'">Next &gt;</button>
         </div>
-        <script>
-          fetch('/${pageId}.html')
-            .then(response => {
-              if (!response.ok) throw new Error('Failed to load content');
-              return response.text();
-            })
-            .then(html => {
-              document.getElementById('content').innerHTML = html;
-            })
-            .catch(err => {
-              document.getElementById('content').innerHTML = 'Error loading content: ' + err.message;
-            });
-        </script>
       </body>
       </html>
     `;
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-    res.end(html);
-    return;
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(html);
+      return;
+    });
+
+
   }
 
   // Redirect root to first page
@@ -98,8 +121,8 @@ const server = http.createServer((req, res) => {
   }
 
   // Handle 404
-  res.writeHead(404);
-  res.end('Not found');
+  // res.writeHead(404);
+  // res.end('Not found');
 });
 
 server.listen(3000, () => {
