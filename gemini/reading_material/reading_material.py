@@ -10,9 +10,9 @@ import threading
 
 quiz_id_to_pdf_map = {
     "5": "117_b",
-    "50": "117_b",
-    "51": "118_b",
-    "52": "119_b"
+    # "50": "117_b",
+    # "51": "118_b",
+    # "52": "119_b"
 }
 
 
@@ -74,6 +74,38 @@ def create_question_material_from_search(question, ncert_sentence_wise_embedding
     question["content_html"] = get_html_from_response(response.text)
 
 def create_question_material_from_gemini(question, ncert_content):
+    content = question["content"]
+    prompt = f"""
+    question: {question["description"]}
+    options: {get_correct_option(question)}
+    correct answer: {get_correct_option(question)}
+
+    explain the below content in plain english, making it easy to understand and to be able to answer the given question.
+    **Skip any part where the question and answer is discussed**
+    **Do not use any image or figure as a reference in the content**
+    
+    {content}
+    """
+    response = model.generate_content(prompt)
+    content = response.text
+    question["new_content"] = content
+
+    prompt = f""" **convert the response from llm to a html format**:
+    {content}
+    """
+    response = model.generate_content(prompt)
+    print(response.text)
+
+    prompt=f"""
+    html: {response.text}
+
+    split the html into sections with relevant subheadings to organize ideas clearly.
+    add <hr> between each section
+    """
+    response = model.generate_content(prompt)
+    question["content_html"] = get_html_from_response(response.text)
+
+def create_question_material_from_gemini1(question, ncert_content):
     content = get_ncert_content_gemini(ncert_content, question)
     question["content"] = content
 
@@ -110,6 +142,8 @@ def create_reading_material(json_path, ncert_content):
 def read_txt_file(path):
     with open(path, "r") as f:
         return f.read()
+
+
 
 
 for quiz_id in quiz_id_to_pdf_map:
