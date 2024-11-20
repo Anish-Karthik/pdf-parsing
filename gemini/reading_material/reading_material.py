@@ -148,19 +148,21 @@ def read_txt_file(path):
 
 
 for quiz_id in quiz_id_to_pdf_map:
-    json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/{quiz_id}.json"
-    ncert_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf"
-    ncert_pdf = upload_file_to_gemini(ncert_pdf_path)
-    populate_question_keywords(json_path, ncert_pdf)
-    print("populated question keywords")
+    # json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/{quiz_id}.json"
+    # ncert_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf"
+    # ncert_pdf = upload_file_to_gemini(ncert_pdf_path)
+    # populate_question_keywords(json_path, ncert_pdf)
+    # print("populated question keywords")
     
-    # # # ncert_sentence_wise_embeddings: list[SentenceWiseEmbeddings] = get_sentence_wise_embeddings(neet_pdf_path)
-    # # # print("got sentence wise embeddings...")
+    # # # # ncert_sentence_wise_embeddings: list[SentenceWiseEmbeddings] = get_sentence_wise_embeddings(neet_pdf_path)
+    # # # # print("got sentence wise embeddings...")
 
-    ncert_content = parse_pdf(ncert_pdf_path)
-    create_reading_material(json_path, ncert_content)
-    print("created reading material")
+    # ncert_content = parse_pdf(ncert_pdf_path)
+    # create_reading_material(json_path, ncert_content)
+    # print("created reading material")
     
-    highlight_keywords(json_path)
-    highlight_background_all(json_path)
-    clean_reading_material(json_path)
+    # highlight_keywords(json_path)
+    # highlight_background_all(json_path)
+    # clean_reading_material(json_path)
+
+    json_path = ""

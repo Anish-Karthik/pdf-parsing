@@ -35,6 +35,7 @@ def clean_reading_material(path):
 
     remove_empty_questions(quiz)
     write_json_file(path, quiz)
+    find_unanswerable_questions(path)
 
 def remove_empty_questions(quiz):
     for question in quiz["questions"]:
@@ -111,13 +112,13 @@ def find_unanswerable_questions(quiz_path):
 
     write_json_file(quiz_path, quiz)
 
-find_unanswerable_questions("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/5.json")
-find_unanswerable_questions("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/50.json")
-find_unanswerable_questions("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/51.json")
-find_unanswerable_questions("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/52.json")
+# find_unanswerable_questions("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/5.json")
+# find_unanswerable_questions("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/50.json")
+# find_unanswerable_questions("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/51.json")
+# find_unanswerable_questions("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/52.json")
 
 
-clean_reading_material("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/5.json")
-clean_reading_material("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/50.json") 
-clean_reading_material("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/51.json") 
-clean_reading_material("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/52.json") 
+# clean_reading_material("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/5.json")
+# clean_reading_material("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/50.json") 
+# clean_reading_material("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/51.json") 
+# clean_reading_material("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/52.json") 

@@ -9,6 +9,9 @@ import fitz
 import threading
 
 
+def get_python_code_from_response(response):
+    return response[response.find("```python")+9:response.rfind("```")]
+
 def configure_client(api_key):
     generativeai.configure(
         api_key=api_key

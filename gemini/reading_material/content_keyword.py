@@ -78,6 +78,33 @@ def get_sentence_wise_embeddings(pdf_path) -> list[SentenceWiseEmbeddings]:
                 sentence_wise_embeddings.append(SentenceWiseEmbeddings(sentence_embedding, sentence, page_num))
     return sentence_wise_embeddings
 
+def get_question_by_id(id, questions):
+    return next((q for q in questions if q["id"] == id), None)
+
+def get_tamil_content_gemini(pdf_text, questions, ids):
+    questions_in_prompt = ""
+    for id in ids:
+        question = get_question_by_id(id, questions)
+        questions_in_prompt += f"question: {question['description']}\noptions: {get_all_options(question)}\ncorrect answer: {get_correct_option(question)}\n\n"
+        
+    prompt = f"""
+
+    create a reading material to answer the given questions from the given content
+    **Skip the last part where the question and answer is discussed**
+    **Do not use any image or figure as a reference in the content**
+    **The output should be in tamil language**
+    
+
+    questions:
+    {questions_in_prompt}
+
+    content:
+    {pdf_text}
+    
+    """
+    return get_response_delayed_prompt(prompt)
+    
+
 def get_ncert_content_gemini(pdf_text, question):
     prompt = f"""
     question: {question["description"]}
@@ -265,10 +292,10 @@ def material(neet_pdf, neet_pdf_path):
 
 
 # model = SentenceTransformer('all-MiniLM-L6-v2')
-neet_pdf_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101.pdf"
-# ncert_sentence_wise_embeddings: list[SentenceWiseEmbeddings] = get_sentence_wise_embeddings(neet_pdf_path)
-# neet_pdf = upload_file_to_gemini(neet_pdf_path)
-ncert_pdf_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101/kebo101.txt"
-with open(ncert_pdf_path, "r") as f:
-    ncert_pdf = f.read()
-material(ncert_pdf, neet_pdf_path)
+# neet_pdf_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101.pdf"
+# # ncert_sentence_wise_embeddings: list[SentenceWiseEmbeddings] = get_sentence_wise_embeddings(neet_pdf_path)
+# # neet_pdf = upload_file_to_gemini(neet_pdf_path)
+# ncert_pdf_path = "/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101/kebo101.txt"
+# with open(ncert_pdf_path, "r") as f:
+#     ncert_pdf = f.read()
+# material(ncert_pdf, neet_pdf_path)
