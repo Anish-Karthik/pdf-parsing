@@ -73,8 +73,8 @@ def group_questions_tamil(json_path):
     """
     response = model.generate_content(prompt)
 
-    grouped_ids = filter_response_into_groups(response.text)
-    return grouped_ids
+    groups_with_ids = filter_response_into_groups(response.text)
+    return groups_with_ids
 
 
 def get_correct_option(question):
@@ -159,9 +159,9 @@ def create_pre_reading_material_from_gemini(ids, tamil_content, quiz):
         question["content_html"] = get_html_from_response(response.text)
 
 
-def create_question_material_from_gemini(ids, tamil_content, quiz):
+def create_question_material_from_gemini(group_with_ids, tamil_content, quiz):
     questions_in_prompt = ""
-    for id in ids:
+    for id in group_with_ids:
         question = get_question_by_id(id, quiz)
         questions_in_prompt += f"""
         question: {question["description"]}
@@ -172,7 +172,7 @@ def create_question_material_from_gemini(ids, tamil_content, quiz):
         
         """
     contents_in_prompt = ""
-    for id in ids:
+    for id in group_with_ids:
         question = get_question_by_id(id, quiz)
         contents_in_prompt += f"""
         {question["content"]}
@@ -208,28 +208,28 @@ def create_question_material_from_gemini(ids, tamil_content, quiz):
     """
     response = model.generate_content(prompt)
 
-    for id in ids:
+    for id in group_with_ids:
         question = get_question_by_id(id, quiz)
-        question["material_id"] = ids[0]
+        question["material_id"] = group_with_ids[0]
         question["new_content"] = content
         question["content_html"] = get_html_from_response(response.text)
 
 
-def create_pre_reading_material(json_path, tamil_content, grouped_ids):
+def create_pre_reading_material(json_path, tamil_content, groups_with_ids):
     quiz = read_json_file(json_path)
 
     call_collection_with_threading(
         func=create_pre_reading_material_from_gemini,
         args=(tamil_content, quiz),
         threads=10,
-        collection=grouped_ids
+        collection=groups_with_ids
     )
 
     write_json_file(json_path, quiz)
     
 
 
-def create_reading_material(json_path, tamil_content, grouped_ids):
+def create_reading_material(json_path, tamil_content, groups_with_ids):
 
     quiz = read_json_file(json_path)
 
@@ -237,7 +237,7 @@ def create_reading_material(json_path, tamil_content, grouped_ids):
         func=create_question_material_from_gemini,
         args=(tamil_content, quiz),
         threads=10,
-        collection=grouped_ids
+        collection=groups_with_ids
     )
 
     write_json_file(json_path, quiz)
@@ -254,11 +254,11 @@ for quiz_id in quiz_id_to_pdf_map:
     tamil_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/qgen/generated/{quiz_id_to_pdf_map[quiz_id]}"
     populate_question_keywords_tamil(json_path, tamil_pdf_path)
     # print("populated tamil question keywords")
-    grouped_ids = group_questions_tamil(json_path)
+    groups_with_ids = group_questions_tamil(json_path)
     # print("grouped tamil questions")
     tamil_content = parse_pdf(tamil_pdf_path)
-    create_pre_reading_material(json_path, tamil_content, grouped_ids)
-    create_reading_material(json_path, tamil_content, grouped_ids)
+    create_pre_reading_material(json_path, tamil_content, groups_with_ids)
+    create_reading_material(json_path, tamil_content, groups_with_ids)
     # print("created reading material")
     highlight_keywords(json_path)
     highlight_background_all(json_path)
