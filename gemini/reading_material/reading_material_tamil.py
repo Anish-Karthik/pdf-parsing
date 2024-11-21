@@ -261,6 +261,9 @@ def create_pre_reading_material(json_path, tamil_content, groups_with_ids):
 def get_readable_content(text, topic):
     prompt = f"""
     Explain the {topic} with the given content in plain tamil, making it easy to understand.
+    *Do not omit any content from the given content*
+
+    Content:
     {text}
     """
     response = model.generate_content(prompt)
