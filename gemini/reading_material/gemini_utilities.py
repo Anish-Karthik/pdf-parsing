@@ -9,6 +9,14 @@ import fitz
 import threading
 
 
+def read_txt_file(file_path):
+    with open(file_path, "r") as f:
+        return f.read()
+
+def write_txt_file(file_path, text):
+    with open(file_path, "w") as f:
+        f.write(text)
+
 def get_python_code_from_response(response):
     return response[response.find("```python")+9:response.rfind("```")]
 
@@ -73,7 +81,7 @@ def call_collection_with_threading(func=None, args=(), threads=10, collection=No
 
 def write_json_file(file_path, data):
     with open(file_path, "w") as f:
-        json.dump(data, f, indent=4)
+        f.write(data)
 
 
 def filter_response(text):

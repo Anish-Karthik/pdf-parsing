@@ -36,6 +36,7 @@ def clean_reading_material(path):
     remove_empty_questions(quiz)
     write_json_file(path, quiz)
     find_unanswerable_questions(path)
+    
 
 def remove_empty_questions(quiz):
     for question in quiz["questions"]:
