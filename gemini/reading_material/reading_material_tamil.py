@@ -267,15 +267,17 @@ def get_readable_content(text, topic):
     return response.text
 
 
-def create_material_for_topic(dir_path, topic, pdf_paths):
-    text_file_path = os.path.join(dir_path, topic + ".txt")
-    readable_file_path = os.path.join(dir_path, topic + "_readable.txt")
+def create_material_for_topic(topic, pdf_paths):
+    topic_wise_dir_path = "/Users/pranav/GitHub/pdf-parsing/gemini/reading_material/topic_wise_tamil"
+    text_file_path = os.path.join(topic_wise_dir_path, topic + ".txt")
+    readable_file_path = os.path.join(topic_wise_dir_path, topic + "_readable.txt")
     if os.path.exists(text_file_path):
         return
 
     text = ""
     for pdf_path in pdf_paths:
         text += parse_pdf(pdf_path)
+        print(f"parsed {pdf_path}")
 
     readable_content = get_readable_content(text, topic)
 
@@ -321,7 +323,7 @@ for quiz_id in quiz_id_to_topic_map:
 #     # print("tamil reading material")
     json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/tamil/{quiz_id}"
     pdf_paths = get_all_pdf_paths_for_topic(quiz_id_to_topic_map[quiz_id])
-    create_material_for_topic(json_path, quiz_id_to_topic_map[quiz_id], pdf_paths)
+    create_material_for_topic(quiz_id_to_topic_map[quiz_id], pdf_paths)
     # tamil_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/qgen/generated/{quiz_id_to_pdf_map[quiz_id]}"
     # populate_question_keywords_tamil(json_path, tamil_pdf_path)
     # # print("populated tamil question keywords")
