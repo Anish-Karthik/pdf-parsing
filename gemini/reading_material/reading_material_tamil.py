@@ -315,13 +315,13 @@ def change_name():
         new_name = f"{group[0]}-{group[1]}-{group[2]}.pdf"
         os.rename(os.path.join(dir_path, pdf_path), os.path.join(dir_path, new_name))
 
-change_name()
+# change_name()
         
-# for quiz_id in quiz_id_to_topic_map:
+for quiz_id in quiz_id_to_topic_map:
 #     # print("tamil reading material")
-    # json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/tamil/{quiz_id}"
-    # pdf_paths = get_all_pdf_paths_for_topic(quiz_id_to_topic_map[quiz_id])
-    # create_material_for_topic(json_path, quiz_id_to_topic_map[quiz_id], pdf_paths)
+    json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/tamil/{quiz_id}"
+    pdf_paths = get_all_pdf_paths_for_topic(quiz_id_to_topic_map[quiz_id])
+    create_material_for_topic(json_path, quiz_id_to_topic_map[quiz_id], pdf_paths)
     # tamil_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/qgen/generated/{quiz_id_to_pdf_map[quiz_id]}"
     # populate_question_keywords_tamil(json_path, tamil_pdf_path)
     # # print("populated tamil question keywords")
