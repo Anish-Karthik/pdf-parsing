@@ -83,7 +83,7 @@ def parse_pdf(pdf_path):
         os.makedirs(folder_path)
 
     if os.path.exists(txt_path):
-        return read_txt_file(txt_path)
+        return txt_path
 
     doc = fitz.open(pdf_path)
     pages = len(doc)
@@ -100,7 +100,7 @@ def parse_pdf(pdf_path):
     with open(txt_path, "w") as f:
         f.write(txt)
 
-    return txt
+    return txt_path
 
 
 def split_content_into_parts(content, delimiter):

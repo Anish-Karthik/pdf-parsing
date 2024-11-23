@@ -9,6 +9,14 @@ import fitz
 import threading
 
 
+
+def clean_split(string : str, delimiter):
+    li = string.split(delimiter)
+    for i in li:
+        if i == "":
+            del i
+    return li
+
 def read_txt_file(file_path):
     with open(file_path, "r") as f:
         return f.read()
