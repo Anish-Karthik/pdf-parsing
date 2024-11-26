@@ -75,6 +75,49 @@ def read_pdf(pdf_path):
         txt += page.get_text()
     return txt
 
+def split_into_chunks(text):
+    prompt = f"""
+    split the content into smaller chunks using the delimiter: </chunk>
+
+    Content:
+    {text}
+    """
+    response = model.generate_content(prompt)
+
+    return clean_split(response.text,"</chunk>")
+
+def parse_pdf_split_into_chunks(pdf_path):
+    txt_path = pdf_path[:-4] + ".txt"
+    folder_path = pdf_path[:-4]
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    if os.path.exists(txt_path):
+        return txt_path
+
+    doc = fitz.open(pdf_path)
+    pages = len(doc)
+    txt = ""
+    total_chunks = []
+    last_chunk_in_prev_page = ""
+    for i in range(1, pages + 1):
+        page_pdf_path = split_pdf(pdf_path, folder_path, i, i)
+        try:
+            page_content = upload_file(page_pdf_path)
+        except Exception as e:
+            print(e)
+            page_content = read_pdf(page_pdf_path)
+
+        page_content_chunks = split_into_chunks(last_chunk_in_prev_page + page_content)
+        total_chunks += page_content_chunks[:-1]
+        last_chunk_in_prev_page = page_content_chunks[-1]
+
+    total_chunks.append(last_chunk_in_prev_page)
+    txt = "\n</chunk>\n".join(total_chunks)
+
+    write_txt_file(txt_path, txt)
+
+    return txt_path
 
 def parse_pdf(pdf_path):
     txt_path = pdf_path[:-4] + ".txt"

@@ -58,6 +58,13 @@ def get_html_from_response(raw_response):
 
     return html
 
+def markdown_to_html(text):
+    pattern = r"\*(.*?)\*"  # Match text surrounded by single asterisks
+    
+    replacement = r"<strong><em>\1</em></strong>"
+    return re.sub(pattern, replacement, text)
+    
+
 def change_response_to_list(raw_response) -> list:
     prompt_2 = f"""Convert the following raw response into a valid Python list.
     remove all unecessary characters:\n{raw_response}"""
