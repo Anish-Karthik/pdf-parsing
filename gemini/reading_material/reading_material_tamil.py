@@ -257,15 +257,89 @@ def create_pre_reading_material(json_path, tamil_content, groups_with_ids):
 
     write_json_file(json_path, quiz)
 
+def create_introduction(text_file_path):
+    text = read_txt_file(text_file_path)
+    print("Metadata",get_blocks_from_response(text, "metadata"))
+    metadata = "\n\n\n".join(get_blocks_from_response(text, "metadata"))
+
+    prompt = f"""
+    create a reading material to give a detailed explanation about the author and about the நூல் வெளி of the given poem/prose/novel from the given content
+    *Use heading and bullets for the content, make it structured*
+    *the output should be in formal tamil*
+    Content:
+    {metadata}
+    """
+    intro = model.generate_content(prompt)
+    prompt = f"""
+    Structure and organize the given content breaking it down, add more bullets 
+    easy to read, avoid paragraphs
+    *the output should be in formal tamil*
+
+    Content:
+    {intro.text}
+    """
+    intro = model.generate_content(prompt)
+    print(intro.text)
+    return intro.text
+    
+
+def classify_chunks_tamil(text_file_path):
+    chunks_file_path = text_file_path[:-4] + "_chunks.txt"
+    text = read_txt_file(chunks_file_path)
+    chunks = clean_split(text, "</chunk>")
+    text_file_path_prose = text_file_path[:-4] + "_prose.txt"
+    text_file_path_grammar = text_file_path[:-4] + "_grammar.txt"
+    text_file_path_metadata = text_file_path[:-4] + "_metadata.txt"
+    text_file_path_meaning = text_file_path[:-4] + "_meaning.txt"
+
+    classified_text = ""
+    for chunk in chunks:
+        prompt = f"""
+        classify the content into one of the following categories and wrap the given content within:
+        1. grammar and vocabulary should be wrapped within: grammar``` ```
+        2. only poem/prose/novel lines should be wrapped within: prose``` ```
+        3. explanation/prose meaning should be wrapped within: meaning``` ```
+        4. about the author,explanation ,the metadata about the content, others should be wrapped within: metadata``` ```
+
+        *output should only be in tamil*
+
+        wrap the given content:
+
+        content:
+        {chunk}
+        """
+        try:
+            response = model.generate_content(prompt)
+            classified_text += "</chunk>" + response.text
+            print(response.text)
+        except Exception as e:
+            print(traceback.format_exc())
+            classified_text += "</chunk>" + chunk
+            
+    write_txt_file(text_file_path, classified_text)
+
+    prose = get_blocks_from_response(classified_text, "prose")
+    grammar = get_blocks_from_response(classified_text, "grammar")
+    metadata = get_blocks_from_response(classified_text, "metadata")
+    meaning = get_blocks_from_response(classified_text, "meaning")
+
+    write_txt_file(text_file_path_prose, "</chunk>".join(prose))
+    write_txt_file(text_file_path_grammar, "</chunk>".join(grammar))
+    write_txt_file(text_file_path_metadata, "</chunk>".join(metadata))
+    write_txt_file(text_file_path_meaning, "</chunk>".join(meaning))
+    
+
 def explain_content(text, meaning):
     prompt = f"""
     for every 2 lines in the poem:
      - give the 2 lines without any change in the content(in italic)
-     - explain the 2 lines of poem in tamil based on the given meaning of the content in a manner that is easy for a student to understand
+     - explain the 2 lines of poem in tamil based on the given meaning of the content
      - also give the meaning for complex words for each two lines.
+     - teach a tamil grammar with each two lines(take example from each two lines)
 
     **The output should only contain tamil language**
     **Avoid any prefix or suffix about the generated content**
+    **Use formal tamil**
     Content:
     {text}
 
@@ -277,14 +351,14 @@ def explain_content(text, meaning):
     return response.text
 
 def extract_meaning(text):
+    second_half_text = text[len(text)//2:]
     prompt = f"""
-        extract the meaning of the given prose/poem from the given text
+        extract the meaning of the given prose/poem from the given text in tamil
         **Do not omit any content**
         **The output should only contain tamil language**
-        **Avoid any prefix or suffix about the generated content**
 
         text:
-        {text}
+        {second_half_text}
     """
     response = model.generate_content(text)
     return response.text
@@ -303,17 +377,15 @@ def split_into_chunks(text):
 def get_readable_content(text_file_path : str):
     # text_file_path = "/Users/pranav/GitHub/pdf-parsing/qgen/generated/9th-78-81.txt"
     new_text_file_path = text_file_path[:-4] + "_readable.txt"
-    meaning_text_file_path = text_file_path[:-4] + "_meaning.txt"
 
     if os.path.exists(new_text_file_path):
         return
     
     text = read_txt_file(text_file_path)
-    meaning = extract_meaning(text)
-    write_txt_file(meaning_text_file_path, meaning)
-    split_content = clean_split(text, "</chunk>")
+    meaning = "\n".join(get_blocks_from_response(text, "meaning"))
+    split_content = get_blocks_from_response(text, "prose")
 
-    merged_content_readable = ""
+    merged_content_readable = create_introduction(text_file_path) + "-------------------------"
     for content in split_content:
         merged_content_readable += "</chunk>" + explain_content(content, meaning)
         
@@ -372,23 +444,10 @@ def get_overview(content):
     print("Overview:  ",response.text)
     return response.text
 
-def get_detailed_metadata(text):
-    prompt=f"""
-    create a reading material which explains in detail about the metadata of the poem/prose/novel and about the author
-    *output should be in tamil language*
-    *skip any qr code or images*
-
-    Overview:
-    {get_overview(text)}
-    """
-    response = model.generate_content(prompt)
-    return response.text
-
 def create_reading_material_topic(text_file_path):
     text = read_txt_file(text_file_path)
-    raw_content = read_txt_file(text_file_path.replace("_readable",""))
-    text = get_detailed_metadata(raw_content)+ text
     content_chunks = clean_split(text,"</chunk>")
+    print(content_chunks[0])
 
     pages = list() 
     for content in content_chunks:
@@ -486,7 +545,7 @@ def change_name():
 # #     # print("tamil reading material")
 # #     json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/tamil/{quiz_id}"
 #     pdf_paths = get_all_pdf_paths_for_topic(quiz_id_to_topic_map[quiz_id])
-    create_material_for_topic(quiz_id_to_topic_map[quiz_id], pdf_paths)
+    # create_material_for_topic(quiz_id_to_topic_map[quiz_id], pdf_paths)
     # tamil_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/qgen/generated/{quiz_id_to_pdf_map[quiz_id]}"
     # populate_question_keywords_tamil(json_path, tamil_pdf_path)
     # # print("populated tamil question keywords")
@@ -500,4 +559,5 @@ def change_name():
     # highlight_background_all(json_path)
     # clean_reading_material(json_path)
 
+create_material_for_topic("சிலப்பதிகாரம் ", ["/Users/pranav/GitHub/pdf-parsing/qgen/generated/10th-178-180.pdf"])
 create_reading_material_topic("/Users/pranav/GitHub/pdf-parsing/qgen/generated/10th-178-180_readable.txt")

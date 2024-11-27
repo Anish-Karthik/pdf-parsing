@@ -86,6 +86,40 @@ def split_into_chunks(text):
 
     return clean_split(response.text,"</chunk>")
 
+def classify_content_tamil(content):
+    prompt = f"""
+    classify each chunk into one of the following categories and wrap the given content within(Don't omit any content):
+        1. grammar and vocabulary should be wrapped within: grammar``` ```
+        2. only poem/prose/novel lines should be wrapped within: prose``` ```
+        3. explanation/prose meaning should be wrapped within: meaning``` ```
+        4. about the author,explanation ,the metadata about the content, others should be wrapped within: metadata``` ```
+
+        *output should only be in tamil*
+
+        wrap the given content:
+        *do not omit any content*
+
+        Example:
+        </chunk>
+        prose```
+        வண்ணமும் சுண்ணமும் தண்நறுஞ் சாந்தமும்
+        பூவும் புகையும் மேவிய விரையும்
+        பகர்வனர் திரிதரு நகர வீதியும்;
+        பட்டினும் மயிரினும் பருத்தி நூலினும்
+        கட்டு நுண்வினைக் காருகர் இருக்கையும்;
+        ```
+        </chunk>
+
+        content:
+        {content}
+    """
+    try:
+        response = model.generate_content(prompt)
+    except Exception as e:
+        print(e)
+        return content
+    return response.text
+
 def parse_pdf_split_into_chunks(pdf_path):
     txt_path = pdf_path[:-4] + ".txt"
     folder_path = pdf_path[:-4]
@@ -108,7 +142,11 @@ def parse_pdf_split_into_chunks(pdf_path):
             print(e)
             page_content = read_pdf(page_pdf_path)
 
-        page_content_chunks = split_into_chunks(last_chunk_in_prev_page + page_content)
+        page_content = last_chunk_in_prev_page + page_content
+        page_content_chunks = "</chunk>".join(split_into_chunks(page_content))
+        classified_content = classify_content_tamil(page_content_chunks)
+        page_content_chunks = clean_split(classified_content,"</chunk>")
+        
         total_chunks += page_content_chunks[:-1]
         last_chunk_in_prev_page = page_content_chunks[-1]
 

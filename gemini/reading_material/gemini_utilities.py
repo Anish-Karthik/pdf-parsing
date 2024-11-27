@@ -8,6 +8,13 @@ import traceback
 import fitz
 import threading
 
+import re
+
+def get_blocks_from_response(raw_response, block_type):
+    pattern = rf'{block_type}```((.|\n)*?)```'
+    print("Matches:\n\n\n",re.findall(pattern, raw_response, re.DOTALL))
+    matches = [match[0] for match in re.findall(pattern, raw_response, re.DOTALL)]
+    return matches
 
 
 def clean_split(string : str, delimiter):
