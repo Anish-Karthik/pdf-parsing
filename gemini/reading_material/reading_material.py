@@ -11,7 +11,7 @@ import threading
 
 quiz_id_to_pdf_map = {
     # "41": "kebo105",
-    "42": "kebo106",
+    # "42": "kebo106",
     # "43": "kebo107",
     # "44": "kebo108",
     # "45": "kebo109",
@@ -156,7 +156,7 @@ def create_reading_material(json_path, ncert_content_path):
     call_collection_with_threading(
         func=create_question_material_from_gemini,
         args=(ncert_content_path,),
-        threads=10,
+        threads=20,
         collection=quiz["questions"]
     )
 
@@ -191,7 +191,7 @@ def create_pre_reading_material(json_path, ncert_content):
     call_collection_with_threading(
         func=get_ncert_content_gemini,
         args=(ncert_content,),
-        threads=10,
+        threads=20,
         collection=quiz["questions"]
     )
 
@@ -212,6 +212,6 @@ for quiz_id in quiz_id_to_pdf_map:
     print("created reading material")
     
     highlight_keywords(json_path)
-    # highlight_background_all(json_path)
+    highlight_background_all(json_path)
     # clean_reading_material(json_path)
 

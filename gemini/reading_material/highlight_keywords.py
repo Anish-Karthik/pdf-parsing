@@ -43,6 +43,8 @@ def highlight_background(question):
     correct_option:{get_correct_option(question)}
 
     mark the relevant portion required to answer the question in the content using <span class="highlight"></span> tags.
+    **Do not modify any other content**
+    **If not answerable, output the content as it is without any modification**
 
     content:{question["html_with_keywords"]}
     """
