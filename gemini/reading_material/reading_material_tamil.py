@@ -145,7 +145,8 @@ Focus on delivering both the explanation of the {question["keywords"]} and the a
 def create_question_material_from_search(question, ncert_sentence_wise_embeddings):
     fact = generate_fact_from_question(question)
     top_ncert_matches = search_pdf_top_sentences(ncert_sentence_wise_embeddings, fact)
-    content = create_reading_material_content(fact, top_ncert_matches[0])
+    # content = create_reading_material_content(fact, top_ncert_matches[0])
+    content = ""
     question["content"] = content
 
     prompt = f""" **convert the response from llm to a html format**:

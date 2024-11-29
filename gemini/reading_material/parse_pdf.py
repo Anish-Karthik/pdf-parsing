@@ -177,6 +177,7 @@ def parse_pdf(pdf_path):
             print(e)
             page_content = read_pdf(page_pdf_path)
         txt += page_content
+        write_txt_file(page_pdf_path[:-4] + ".txt", page_content)
 
     with open(txt_path, "w") as f:
         f.write(txt)
@@ -209,8 +210,7 @@ def remove_empty(parts):
     return parts
 
 
-def split_ncert_into_parts(folder_path):
-    delimiter = "&&PART&&"
+def split_ncert_into_parts(folder_path, txt_file_name, delimiter="</chunk>"):
     splitted_content = []
     last_part = ""
     for file in sorted(os.listdir(folder_path)):
@@ -230,8 +230,10 @@ def split_ncert_into_parts(folder_path):
 
     splitted_content.append(last_part)
 
-    with open(os.path.join(folder_path, f"kebo101.txt"), "w") as f:
+    with open(os.path.join(folder_path, f"{txt_file_name}"), "w") as f:
         f.write(f"\n{delimiter}\n".join(splitted_content))
+
+    return os.path.join(folder_path, f"{txt_file_name}")
 
 
 # parse_pdf("/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo101.pdf")

@@ -43,6 +43,28 @@ def remove_empty_questions(quiz):
         if "html_with_keywords" in question and len(question["html_with_keywords"].split()) < 100:
             del question["html_with_keywords"]
 
+def repopulate_unanswerable_content(question):
+    if "content" not in question:
+        return
+    if question["is_answerable"] == True:
+        return
+
+    prompt = f"""
+    question: {question["description"]}
+    options: {get_all_options(question)}
+    answer: {get_correct_option(question)}
+
+    create a reading material to answer the given question and learn about the given question.
+    
+    content:
+    {question["content"]}
+    """
+    response = model.generate_content(prompt)
+    try:
+        question["content"] = response.text
+    except Exception as e:
+        print(e)
+
 def repopulate_unanswerable_questions(question):
     if "html_with_keywords" not in question:
         return
@@ -73,12 +95,12 @@ def repopulate_unanswerable_questions(question):
     # write_json_file(path, quiz)
 
 def filter_is_answerable(question):
-    if "false" in question["is_answerable"].lower():
+    if "false" in question["is_answerable"].lower() or "does not" in question["content"].lower() or "doesn't" in question["content"].lower():
         question["is_answerable"] = False
     else:
         question["is_answerable"] = True
 
-def is_answerable(question):
+def is_answerable(question, repopulate=True):
     if "html_with_keywords" not in question or len(question["html_with_keywords"]) < 100:
         question["is_answerable"] = False
         repopulate_unanswerable_questions(question)
@@ -103,7 +125,55 @@ def is_answerable(question):
         question["is_answerable"] = False
 
     filter_is_answerable(question)
-    repopulate_unanswerable_questions(question)
+
+    if repopulate:  
+        repopulate_unanswerable_questions(question)
+
+def is_answerable_content(question, repopulate=False):
+    if "content" not in question or len(question["content"]) < 20:
+        question["is_answerable"] = False
+        return
+
+    prompt = f"""
+    Does the given content contain enough information to answer the following question?
+
+    
+    question: {question["description"]}
+    answer: {get_correct_option(question)}
+
+
+    content:
+    {question["content"]}
+
+    output: true or false
+    """
+    response = model.generate_content(prompt)
+
+    try:
+        question["is_answerable"] = response.text
+    except:
+        question["is_answerable"] = False
+
+    filter_is_answerable(question)
+
+    if repopulate:  
+        repopulate_unanswerable_content(question)
+    
+    
+
+    
+
+def find_unanswerable_content(quiz_path, repopulate=False):
+    quiz = read_json_file(quiz_path)
+
+    call_collection_with_threading(
+        func=is_answerable_content,
+        args=(repopulate,),
+        threads=10,
+        collection=quiz["questions"]
+    )
+
+    write_json_file(quiz_path, quiz)
 
     
 def find_unanswerable_questions(quiz_path):

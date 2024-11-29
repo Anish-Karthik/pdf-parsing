@@ -1,19 +1,40 @@
 import json
-from clean_reading_material import clean_reading_material
+from clean_reading_material import * 
 from gemini_utilities import *
 from question_keyowrd import *
 from content_keyword import *
 from highlight_keywords import *
-from parse_pdf import parse_pdf
+from parse_pdf import *
 import markdown
 import threading
 
 
 quiz_id_to_pdf_map = {
-    # "5": "117_b",
-    "50": "117_b",
-    "51": "118_b",
-    "52": "119_b"
+    # "41": "kebo105",
+    "42": "kebo106",
+    # "43": "kebo107",
+    # "44": "kebo108",
+    # "45": "kebo109",
+    # "46": "kebo110",
+    # "47": "kebo111",
+    # "48": "kebo112",
+    # "49": "kebo113",
+    # "50": "kebo114",
+    # "51": "kebo115",
+    # "52": "kebo116",
+    # "53": "kebo117",
+    # "54": "kebo118",
+    # "55": "kebo119",
+    # "56": "lebo101",
+    # "57": "lebo102",
+    # "58": "lebo103",
+    # "59": "lebo104",
+    # "60": "lebo105",
+    # "61": "lebo106",
+    # "62": "lebo107",
+    # "63": "lebo108",
+    # "64": "lebo109",
+    # "65": "lebo110",
 }
 
 
@@ -74,7 +95,8 @@ def create_question_material_from_search(question, ncert_sentence_wise_embedding
     response = model.generate_content(prompt)
     question["content_html"] = get_html_from_response(response.text)
 
-def create_question_material_from_gemini(question, ncert_content):
+def create_question_material_from_gemini(question, ncert_content_path):
+    
     content = question["content"]
     prompt = f"""
     question: {question["description"]}
@@ -127,13 +149,13 @@ def create_question_material_from_gemini1(question, ncert_content):
     
 
 
-def create_reading_material(json_path, ncert_content):
+def create_reading_material(json_path, ncert_content_path):
 
     quiz = read_json_file(json_path)
 
     call_collection_with_threading(
         func=create_question_material_from_gemini,
-        args=(ncert_content,),
+        args=(ncert_content_path,),
         threads=10,
         collection=quiz["questions"]
     )
@@ -144,25 +166,52 @@ def read_txt_file(path):
     with open(path, "r") as f:
         return f.read()
 
+def combine_strings(strings, n):
+    combined_strings = []
+    for i in range(0, len(strings), n):
+        combined_strings.append("\n\n\n\n\n".join(strings[i:i+n]))
+    return combined_strings
+    
+
+def create_reading_material_content(json_path, ncert_content_folder_path):
+    ncert_content_pages_path = filter_files(sorted(os.listdir(ncert_content_folder_path)), ".txt")
+    ncert_content_pages = [read_txt_file(os.path.join(ncert_content_folder_path, page)) for page in ncert_content_pages_path]
+    ncert_content_pages_group = combine_strings(ncert_content_pages, 3)
+
+    for ncert_content in ncert_content_pages_group:
+        create_pre_reading_material(json_path, ncert_content)
+        find_unanswerable_content(json_path)
+
+    find_unanswerable_content(json_path, repopulate=True)
+    find_unanswerable_content(json_path)
+
+def create_pre_reading_material(json_path, ncert_content):
+    quiz = read_json_file(json_path)
+
+    call_collection_with_threading(
+        func=get_ncert_content_gemini,
+        args=(ncert_content,),
+        threads=10,
+        collection=quiz["questions"]
+    )
+
+    write_json_file(json_path, quiz)
 
 
 
 for quiz_id in quiz_id_to_pdf_map:
-    # json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/{quiz_id}.json"
-    # ncert_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/kebo{quiz_id_to_pdf_map[quiz_id]}.pdf"
-    # ncert_pdf = upload_file_to_gemini(ncert_pdf_path)
-    # populate_question_keywords(json_path, ncert_pdf)
-    # print("populated question keywords")
-    
-    # # # # ncert_sentence_wise_embeddings: list[SentenceWiseEmbeddings] = get_sentence_wise_embeddings(neet_pdf_path)
-    # # # # print("got sentence wise embeddings...")
+    json_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/{quiz_id}.json"
+    ncert_pdf_path = f"/Users/pranav/GitHub/pdf-parsing/gemini/Neet/ncert_books/biology/{quiz_id_to_pdf_map[quiz_id]}.pdf"
+    ncert_pdf = upload_file_to_gemini(ncert_pdf_path)
+    populate_question_keywords(json_path, ncert_pdf)
 
-    # ncert_content = parse_pdf(ncert_pdf_path)
-    # create_reading_material(json_path, ncert_content)
-    # print("created reading material")
+    ncert_content_path = parse_pdf(ncert_pdf_path)
+    ncert_content_folder_path = ncert_content_path[:-4]
+    create_reading_material_content(json_path, ncert_content_folder_path)
+    create_reading_material(json_path, ncert_content_path)    
+    print("created reading material")
     
-    # highlight_keywords(json_path)
+    highlight_keywords(json_path)
     # highlight_background_all(json_path)
     # clean_reading_material(json_path)
 
-    json_path = ""

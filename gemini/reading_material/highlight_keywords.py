@@ -19,6 +19,7 @@ def get_highlighted_html(question):
     im a student revising the following content, mark the technical terms as important for me to revise.
     highlight the given content using <span class="important"></span> tags.
     dont highlight anything in h tags
+    **Do not modify any other content**
 
     content:{question["content_html"]}
     """

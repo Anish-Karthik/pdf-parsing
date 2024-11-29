@@ -103,23 +103,40 @@ def get_tamil_content_gemini(pdf_text, questions, ids):
     
     """
     return get_response_delayed_prompt(prompt)
+
+def merge_chunks(chunks, n):
+    merged_chunks = []
+    for i in range(0, len(chunks), n):
+        merged_chunks.append(" ".join(chunks[i : max(i + n, len(chunks))]))
+    return merged_chunks
     
 
-def get_ncert_content_gemini(pdf_text, question):
+def get_ncert_content_gemini(question, ncert_content):
+
+    if "is_answerable" in question and question["is_answerable"] == True:
+        return
+
+    
     prompt = f"""
     question: {question["description"]}
     options: {"\n".join(get_all_options(question))}
     correct answer: {get_correct_option(question)}
 
-    create a reading material to answer the above question from the given content
+    create a complete reading material from the given content to directly answer the given question and answer it.
+    *Structure the reading material*
+
+    
     **Skip the last part where the question and answer is discussed**
     **Do not use any image or figure as a reference in the content**
 
     content:
-    {pdf_text}
+    {ncert_content}
     
     """
-    return get_response_delayed_prompt(prompt)
+    response1 = model.generate_content(prompt)
+    
+    question["content"] = response1.text
+    return
 
 def belongs_to_range(range,n):
     return n>=range[0]-4 and n<=range[1]+4
@@ -180,67 +197,6 @@ def search_pdf_top_sentences(sentence_wise_embeddings, search_query, top_n=1) ->
     top_matches: list[NCERTContentMetadata] = group_nearby_matches(top_matches_with_index)
         
     return top_matches[:top_n]
-
-
-def create_reading_material_content(fact, ncert_content_metadata):
-    prompt = f"""
-    Fact:
-    {fact}
-
-    ncert content:
-    {ncert_content_metadata.raw_ncert_content}
-    understand the content, create a reading material based on ncert for the above fact.
-    """
-    reading_material = get_response_delayed_prompt(prompt)
-
-    prompt = f"""
-    {fact}
-    understand the content, and create a short study material(30-50 words)
-    """
-    important = get_response_delayed_prompt(prompt)
-    # print(reading_material)
-    # return reading_material
-    prompt = f"""
-    reading material : {reading_material}
-
-
-
-
-    important :
-    {important}
-
-
-    in the above reading material insert the important part within
-     important```
-        important text
-     ```
-     where it is found or relevent.
-
-    Example:
-
-    given:
-    important:
-    Cell division occurs continuously in plants and only up to a certain age in animals.
-
-    response:
-### Cell Division in Plants and Animals
-
-**Plants**
-- Cell division in plants occurs continuously throughout the plant's life, especially in regions called meristems (like root tips and shoot tips). These meristematic tissues allow plants to grow in height, spread, and even regenerate damaged tissues.
-- Plant cells divide to form new cells not only for growth but also for healing and reproduction in certain cases.
-- Cell division in plants is important for producing specialized tissues, such as xylem and phloem, which help transport water, nutrients, and food throughout the plant.
-
-    important```
-        Cell division occurs continuously in plants and only up to a certain age in animals.
-    ```
-
-**Animals**
-- In animals, cell division is generally limited to a certain age or developmental stage. Unlike plants, animals do not have meristematic regions where cells continuously divide.
-- After animals reach maturity, cell division is primarily for repair and replacement of cells, rather than growth.
-- Specialized cells in animals, like neurons and muscle cells, often have limited or no ability to divide, making regeneration and healing less extensive than in plants.
-    """
-    return get_response_delayed_prompt(prompt)
-
 
 def print_questions_and_options(questions):
     for question in questions:

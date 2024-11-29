@@ -10,6 +10,9 @@ import threading
 
 import re
 
+def filter_files(files, extension):
+    return [file for file in files if file.endswith(extension)]
+
 def get_blocks_from_response(raw_response, block_type):
     pattern = rf'{block_type}```((.|\n)*?)```'
     print("Matches:\n\n\n",re.findall(pattern, raw_response, re.DOTALL))
@@ -73,7 +76,10 @@ def markdown_to_html(text):
     
 
 def change_response_to_list(raw_response) -> list:
-    prompt_2 = f"""Convert the following raw response into a valid Python list.
+    print("raw response: ", raw_response)
+    prompt_2 = f"""Convert the following raw response into a valid json list. 
+    Example :
+    ["text", "text", "text"]
     remove all unecessary characters:\n{raw_response}"""
     prompt_2_response = get_response_delayed_prompt(prompt_2)
 
@@ -102,6 +108,10 @@ def call_collection_with_threading(func=None, args=(), threads=10, collection=No
 
 
 def write_json_file(file_path, data):
+    with open(file_path, "w") as f:
+        json.dump(data, f, indent=4)
+
+def write_json_file_tamil(file_path, data):
     with open(file_path, "w") as f:
         f.write(data)
 

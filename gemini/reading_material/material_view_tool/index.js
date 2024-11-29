@@ -1,10 +1,12 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+var showdown  = require('showdown');
 
 // Get list of HTML files
 const startPageId = 0;
 var endPageId = -1;
+converter = new showdown.Converter();
 
 const server = http.createServer((req, res) => {
   // Handle page routes
@@ -12,7 +14,7 @@ const server = http.createServer((req, res) => {
     const pageId = parseInt(req.url.split('/')[2]);
     const questions = []
 
-    fs.readFile('../../Neet/5.json', 'utf8', (err, data) => {
+    fs.readFile('../../Neet/42.json', 'utf8', (err, data) => {
       if (err) {
         console.error('Error reading file:', err);
         return;
@@ -35,8 +37,9 @@ const server = http.createServer((req, res) => {
             question.answer = option.description;
           }
         });
-        question.ncert_content = element.html_with_keywords_ncert;
-        question.current_content = element.html_with_keywords;
+        // question.ncert_content = converter.makeHtml(element.content);
+        question.ncert_content = element.html_with_keywords;
+        question.current_content = element.content_html;
         questions.push(question);
       });
 
